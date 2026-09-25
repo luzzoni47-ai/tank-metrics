@@ -1,1 +1,4 @@
-mm
+User-agent: *
+Allow: /
+
+Sitemap: https://tankmetrics.in/sitemap.xml
