@@ -1,0 +1,61 @@
+# Tank Metrics — blog + SEO automation
+
+You maintain the Tank Metrics website (tankmetrics.in): free Indian business
+calculators plus a small blog. Work only inside the cloned repo.
+
+## Read first
+1. `AGENTS.md` and `.openhands/memory/MEMORY.md` — build rules and gotchas.
+2. The existing posts `public/site/blog-*.html` — copy their structure exactly.
+
+## Task, in order
+1. Pick ONE new topic an Indian small-business owner or first-time founder would
+   search for (cost, tax, pricing, cash flow, margins, GST). Do not repeat a
+   topic the blog already covers.
+2. Write `public/site/blog-<slug>.html` with the same shell as the existing posts:
+   - `<head>`: title, meta description, canonical `https://tankmetrics.in/<slug>`,
+     og tags, GA4 tag `G-MHZ0V6HFC6`.
+   - One `<h1>` in the page header. `.post-meta` with tag, date and the
+     `#langToggle` button (badge `H`, label `Hinglish`, title "Read in Hinglish").
+   - One `.post-lang[data-lang="en"]` block holding the English article.
+   - Worked examples stay under ₹10,000 and must reconcile with each other.
+3. Write the Hindi source `tools/hindi/blog-<slug>.hi.html` (body only, starting
+   with the intro paragraphs — NEVER with the post title), then run
+   `python3 tools/hinglish.py --rebuild` to generate the Hinglish block.
+   That block must contain zero Devanagari and exactly the same number of
+   headings as the English block.
+4. Add a card for the new post to `public/site/blog.html`, matching the existing
+   cards and keeping the grid `repeat(2,minmax(0,1fr))`.
+5. Run the pipeline and tests. All must pass before continuing:
+   `python3 tools/clean_urls.py`
+   `python3 tools/test_blog.py`
+   `python3 tools/test_layout.py`
+   `python3 tools/test_clean_urls.py`
+   Fix any failure and re-run. Never commit a red suite.
+6. Commit and push to `main` with `GITHUB_PERSONAL_ACCESS_TOKEN`
+   (plain `GITHUB_TOKEN` is read-only and returns 403).
+7. Deploy to Vercel:
+   - Write `.vercel/project.json` =
+     {"projectId":"prj_Y6MHqnmDyyD5U239ecqEMbrxh4ei",
+      "orgId":"team_TXJMGXfZ9VZ9ZemmkKmoOuYw"} — without it the CLI fails with
+     "User not found", because the token cannot read the team.
+   - `npx vercel deploy --prod --yes --token "$VERCEL_TOKEN"`
+   - A git push does NOT trigger a Vercel build, and the custom domain stays on
+     the old deployment. Move it through the REST API:
+     POST https://api.vercel.com/v2/deployments/<new_dpl_id>/aliases?teamId=team_TXJMGXfZ9VZ9ZemmkKmoOuYw
+     with body {"alias":"tankmetrics.in"}.
+8. Verify `https://tankmetrics.in/<slug>` returns 200 and contains both
+   `data-lang="en"` and `data-lang="hinglish"`.
+9. Check the security headers on https://tankmetrics.in/ (CSP, X-Frame-Options,
+   X-Content-Type-Options, Referrer-Policy, Permissions-Policy). If any are
+   missing, add them in `next.config.mjs` and redeploy.
+
+## Guardrails
+- Never commit `.vercel/`, `node_modules/`, `tools/__pycache__/`, or any token.
+- Never add `vercel` to `package.json` — Vercel installs with
+  `pnpm install --frozen-lockfile` and the build aborts.
+- Do not change the worked-example numbers in the existing four posts.
+- If a required secret is missing, stop and report it instead of guessing.
+
+## Report
+One short summary: the new post URL, the tests that ran and their result, the
+deployment URL, and anything that needs a human decision.
