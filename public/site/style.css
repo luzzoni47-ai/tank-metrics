@@ -12,3 +12,10 @@
 .seo-cat li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .seo-cat h3{font-size:15px;font-weight:600;margin:0 0 6px;font-family:Poppins}
 .seo-cat p{margin:0;font-size:13.5px;line-height:1.55;color:var(--text-dim)}
+
+/* tag-only swaps must keep the exact same look as the old selectors */
+.hero h1{margin:0 0 10px;font-size:28px;font-weight:400;line-height:1.25;max-width:20ch;position:relative;z-index:1}
+.blog-card h2{margin:0;font-size:16px;font-weight:600;font-family:Poppins;color:var(--text);line-height:1.35}
+@media(max-width:880px){.hero h1{font-size:22px}}
+@media(min-width:761px){.topbar .brand-name{animation:desktopBrandGlow 5s ease-in-out infinite}}
+@media(max-width:760px){.topbar .brand-name{position:relative;text-shadow:1px 0 rgba(66,133,244,.18),-1px 0 rgba(234,67,53,.12)}}
