@@ -48,7 +48,10 @@ def build_map() -> dict[str, str]:
         m[f"/{slugs[c['id']]}"] = f"/site/tools/{slugs[c['id']]}.html"
     for f in sorted(SITE.glob("blog-*.html")):
         slug = f.name[len("blog-"):-len(".html")]
-        m[f"/blog/{slug}"] = f"/site/{f.name}"
+        m[f"/{slug}"] = f"/site/{f.name}"
+    dupes = [k for k in m if list(m).count(k) > 1]
+    if len(set(m)) != len(m):
+        raise SystemExit(f"duplicate clean paths: {dupes}")
     return dict(sorted(m.items()))
 
 
@@ -61,6 +64,10 @@ def replacements(m: dict[str, str]) -> list[tuple[str, str]]:
     pairs = []
     for clean, file in m.items():
         pairs.append((file, clean))
+        # An earlier revision nested blog posts under /blog/<slug>. Normalise
+        # that so re-running never leaves a stale canonical behind.
+        if file.startswith("/site/blog-"):
+            pairs.append((f"/blog{clean}", clean))
     # The home page is served by a rewrite from /, so /site/index.html should
     # only ever be linked as /.
     pairs.append(("/site/index.html", "/"))

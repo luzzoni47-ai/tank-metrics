@@ -43,8 +43,8 @@ const nextConfig = {
   async redirects() {
     return [
       ...htmlRedirects,
-      // Static blog posts are now nested under /blog/*.
-      { source: '/site/blog-:slug.html', destination: '/blog/:slug', permanent: true },
+      // Static blog posts live at the root now.
+      { source: '/site/blog-:slug.html', destination: '/:slug', permanent: true },
       { source: '/calculators', destination: '/', permanent: true },
     ]
   },
