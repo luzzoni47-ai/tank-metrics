@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tankmetrics.in</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tankmetrics.in/site/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/site/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tankmetrics.in/site/contact.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tankmetrics.in/site/blog-what-is-ebitda.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/site/blog-startup-valuation-explained.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/site/blog-ltv-cac-ratio-explained.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/site/blog-burn-rate-runway-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/site/privacy-policy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tankmetrics.in/site/terms-and-conditions.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tankmetrics.in/site/disclaimer.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

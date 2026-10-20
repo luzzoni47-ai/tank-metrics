@@ -1,0 +1,18 @@
+# Tank Metrics
+
+> 100 free, instant business and money calculators for entrepreneurs, students
+> and small business owners in India. Every tool runs in the browser; no sign-up.
+
+## Main pages
+- [Home — all 100 calculators](https://tankmetrics.in/): valuation, EBITDA and margins,
+  LTV:CAC and unit economics, burn rate and runway, EMI and loans, pricing,
+  tax and wealth, real estate, and everyday money tools.
+- [Blog](https://tankmetrics.in/site/blog.html): plain-English guides to startup metrics.
+- [About](https://tankmetrics.in/site/about.html)
+- [Contact](https://tankmetrics.in/site/contact.html)
+
+## Guides
+- [What Is EBITDA?](https://tankmetrics.in/site/blog-what-is-ebitda.html)
+- [LTV:CAC Ratio Explained](https://tankmetrics.in/site/blog-ltv-cac-ratio-explained.html)
+- [How Startup Valuation Works](https://tankmetrics.in/site/blog-startup-valuation-explained.html)
+- [Burn Rate and Runway](https://tankmetrics.in/site/blog-burn-rate-runway-guide.html)
