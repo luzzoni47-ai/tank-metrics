@@ -5,12 +5,14 @@ Next.js build. The Hindi toggle is exercised for real: the button is clicked
 and the visibility of the English and Hindi blocks is read back.
 """
 
+import html as html_mod
 import json
 import re
 import socket
 import subprocess
 import sys
 import time
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,7 +27,7 @@ POSTS = [
 ]
 MONEY_LIMIT = 10000
 
-PROBE = """<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+PROBE = r"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body><pre id="out">pending</pre><script>
 const posts = %s;
 const gridUrl = '/site/blog.html';
@@ -78,6 +80,8 @@ function measurePosts(cb) {
         rec.badgeBefore = (btn.querySelector('.lang-badge') || {}).textContent || '';
       }
       if (en && hi && btn) {
+        const hing = d.querySelector('.post-lang[data-lang="hinglish"]');
+        rec.hasHinglish = !!hing;
         rec.enHiddenBefore = en.hidden;
         rec.hiHiddenBefore = hi.hidden;
         rec.langBefore = d.documentElement.lang;
@@ -88,8 +92,19 @@ function measurePosts(cb) {
         rec.hiVisible = w.getComputedStyle(hi).display !== 'none';
         rec.enVisible = w.getComputedStyle(en).display !== 'none';
         rec.labelAfter = btn.querySelector('.lang-toggle-label').textContent;
+        rec.badgeAfter = (btn.querySelector('.lang-badge') || {}).textContent || '';
+        btn.click();
+        if (hing) {
+          rec.hinglishVisible = w.getComputedStyle(hing).display !== 'none'
+            && hing.getBoundingClientRect().height > 100;
+          rec.enGoneInHinglish = w.getComputedStyle(en).display === 'none';
+          rec.hiGoneInHinglish = w.getComputedStyle(hi).display === 'none';
+          rec.hinglishLatinOnly = !/[\u0900-\u097F]/.test(hing.textContent);
+          rec.hinglishChars = hing.textContent.trim().length;
+        }
         btn.click();
         rec.hiHiddenRestored = hi.hidden;
+        rec.hingHiddenRestored = hing ? hing.hidden : true;
       }
       results.posts[p] = rec;
       if (++done === posts.length) cb();
@@ -118,27 +133,41 @@ def run_probe(width: int) -> dict:
         [sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1"],
         cwd=PUBLIC, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
     )
+    url = f"http://127.0.0.1:{port}/_blog_probe.html"
     try:
-        for _ in range(40):
+        # Wait until the probe is actually served: a bare TCP connect succeeds
+        # while the handler is still starting, which makes chromium race it.
+        for _ in range(80):
             try:
-                with socket.create_connection(("127.0.0.1", port), timeout=0.5):
-                    break
-            except OSError:
+                with urllib.request.urlopen(url, timeout=1) as resp:
+                    if resp.status == 200:
+                        break
+            except Exception:
                 time.sleep(0.1)
-        dom = subprocess.run(
-            ["chromium", "--headless", "--disable-gpu", "--no-sandbox",
-             f"--window-size={width},844", "--virtual-time-budget=15000",
-             "--dump-dom", f"http://127.0.0.1:{port}/_blog_probe.html"],
-            capture_output=True, text=True, timeout=180,
-        ).stdout
+        # Headless chromium occasionally finishes its virtual-time budget before
+        # the iframes have settled; a couple of retries keeps the suite stable.
+        dom = ""
+        for attempt in range(3):
+            dom = subprocess.run(
+                ["chromium", "--headless", "--disable-gpu", "--no-sandbox",
+                 f"--window-size={width},844", "--virtual-time-budget=30000",
+                 "--dump-dom", url],
+                capture_output=True, text=True, timeout=240,
+            ).stdout
+            m = re.search(r'<pre id="out">(.*?)</pre>', dom, re.S)
+            if m and html_mod.unescape(m.group(1)).strip().startswith("{"):
+                break
+            time.sleep(1)
     finally:
         server.terminate()
         probe.unlink(missing_ok=True)
     m = re.search(r'<pre id="out">(.*?)</pre>', dom, re.S)
     if not m:
         raise SystemExit("FAIL: probe produced no output")
-    import html as html_mod
-    return json.loads(html_mod.unescape(m.group(1)))
+    payload = html_mod.unescape(m.group(1)).strip()
+    if not payload.startswith("{"):
+        raise SystemExit(f"FAIL: probe did not finish (got {payload[:120]!r})")
+    return json.loads(payload)
 
 
 def check_amounts(failures: list) -> None:
@@ -177,10 +206,24 @@ def main() -> int:
             failures.append(f"{page}: Hindi block is not displayed after toggling")
         if rec["langAfter"] != "hi" or rec["langBefore"] != "en":
             failures.append(f"{page}: lang attribute {rec['langBefore']} -> {rec['langAfter']}, expected en -> hi")
-        if rec["labelAfter"] != "English":
-            failures.append(f"{page}: button label after toggle is {rec['labelAfter']!r}")
+        # The label and badge advertise the *next* mode, so after the first
+        # click (now showing Hindi) they read "Hinglish" / "H".
+        if rec["labelAfter"] != "Hinglish":
+            failures.append(f"{page}: button label after first click is {rec['labelAfter']!r}")
+        if rec.get("badgeAfter") != "H":
+            failures.append(f"{page}: badge after first click is {rec.get('badgeAfter')!r}")
+        if not rec.get("hasHinglish"):
+            failures.append(f"{page}: no Hinglish block found")
+        elif not rec.get("hinglishVisible"):
+            failures.append(f"{page}: Hinglish block is not displayed on the second click")
+        elif not rec.get("enGoneInHinglish") or not rec.get("hiGoneInHinglish"):
+            failures.append(f"{page}: English/Hindi still visible in Hinglish mode")
+        elif not rec.get("hinglishLatinOnly"):
+            failures.append(f"{page}: Hinglish block still contains Devanagari")
         if not rec["hiHiddenRestored"]:
-            failures.append(f"{page}: second click did not return to English")
+            failures.append(f"{page}: third click did not return to English")
+        if not rec.get("hingHiddenRestored"):
+            failures.append(f"{page}: Hinglish block still visible after returning to English")
         if not rec.get("visible"):
             failures.append(f"{page}: language switch is not visible")
         if rec.get("labelBefore") != "हिंदी":
