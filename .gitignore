@@ -22,3 +22,7 @@ next-env.d.ts
 package-lock.json
 # agent scratch (memory, working notes)
 .openhands/
+
+# Python bytecode caches
+__pycache__/
+*.pyc
