@@ -85,13 +85,13 @@ def link_cards() -> bool:
         if marker not in t:
             return False
         t = t.replace(marker, slugs_js + marker, 1)
-    old = "'<h3>'+e.name+'</h3>'"
-    new = ("'<h3><a class=\"tool-link\" href=\"/site/tools/'"
-           "+CARD_SLUG(e)+'\">'+e.name+'</a></h3>'")
+    old = "<h3>'+e.name+'</h3>"
+    new = ("<h3><a class=\"tool-link\" href=\"/'"
+           "+CARD_SLUG(e)+'\">'+e.name+'</a></h3>")
     if old in t:
         t = t.replace(old, new)
     p.write_text(t, encoding="utf-8")
-    return "var SLUGS={" in t and "CARD_SLUG" in t
+    return new in t
 
 
 def write_sitemap() -> int:
