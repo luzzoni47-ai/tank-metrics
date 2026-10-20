@@ -11,6 +11,7 @@ Two jobs:
 import html
 import json
 import re
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -108,13 +109,14 @@ def write_sitemap() -> int:
         pages.append((f"{BASE}/site/{extra}.html", "yearly", "0.3"))
 
     seen, urls = set(), []
+    stamp = date.today().isoformat()
     for loc, cf, pr in pages:
         if loc in seen:
             continue
         seen.add(loc)
         urls.append(
-            f"  <url><loc>{loc}</loc><changefreq>{cf}</changefreq>"
-            f"<priority>{pr}</priority></url>"
+            f"  <url><loc>{loc}</loc><lastmod>{stamp}</lastmod>"
+            f"<changefreq>{cf}</changefreq><priority>{pr}</priority></url>"
         )
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
