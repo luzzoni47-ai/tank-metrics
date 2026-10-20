@@ -95,6 +95,11 @@ function measurePosts(cb) {
           rec.enGoneInHinglish = w.getComputedStyle(en).display === 'none';
           rec.hinglishLatinOnly = !/[\u0900-\u097F]/.test(hing.textContent);
           rec.hinglishChars = hing.textContent.trim().length;
+          // The post title lives in the page header only. A heading at the top
+          // of the Hinglish block would repeat it below the header.
+          rec.hinglishHeads = hing.querySelectorAll('h1,h2,h3').length;
+          rec.englishHeads = en.querySelectorAll('h1,h2,h3').length;
+          rec.hinglishStartsWithHeading = /^\s*<h[1-6]/i.test(hing.innerHTML);
         }
         btn.click();
         rec.backToEnglish = !en.hidden && (!hing || hing.hidden === true);
@@ -214,6 +219,13 @@ def main() -> int:
             failures.append(f"{page}: second click did not return to English")
         if rec.get("labelRestored") != "Hinglish":
             failures.append(f"{page}: label after returning is {rec.get('labelRestored')!r}")
+        if rec.get("hinglishStartsWithHeading"):
+            failures.append(f"{page}: Hinglish block repeats the post title as a heading")
+        if rec.get("hinglishHeads") != rec.get("englishHeads"):
+            failures.append(
+                f"{page}: heading count differs (en={rec.get('englishHeads')}, "
+                f"hinglish={rec.get('hinglishHeads')}) - the Hinglish copy has an extra heading"
+            )
         if not rec.get("visible"):
             failures.append(f"{page}: language switch is not visible")
         if rec.get("labelBefore") != "Hinglish":
