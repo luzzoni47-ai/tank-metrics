@@ -1,0 +1,200 @@
+"""Checks the blog: two-column listing, under-₹10,000 examples, Hindi toggle.
+
+Serves public/ over a plain HTTP server and drives chromium, so it needs no
+Next.js build. The Hindi toggle is exercised for real: the button is clicked
+and the visibility of the English and Hindi blocks is read back.
+"""
+
+import json
+import re
+import socket
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+PUBLIC = ROOT / "public"
+SITE = PUBLIC / "site"
+
+POSTS = [
+    "/site/blog-what-is-ebitda.html",
+    "/site/blog-ltv-cac-ratio-explained.html",
+    "/site/blog-startup-valuation-explained.html",
+    "/site/blog-burn-rate-runway-guide.html",
+]
+MONEY_LIMIT = 10000
+
+PROBE = """<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body><pre id="out">pending</pre><script>
+const posts = %s;
+const gridUrl = '/site/blog.html';
+const results = {grid: {}, posts: {}};
+function measureGrid(cb) {
+  const f = document.createElement('iframe');
+  f.style.width = '100%%'; f.style.height = '600px'; f.src = gridUrl;
+  f.onload = () => {
+    const d = f.contentDocument;
+    const g = d.querySelector('.blog-grid');
+    const cs = f.contentWindow.getComputedStyle(g);
+    const r = g.getBoundingClientRect();
+    results.grid = {
+      columns: cs.gridTemplateColumns.split(' ').length,
+      template: cs.gridTemplateColumns,
+      width: Math.round(r.width),
+      overflow: d.documentElement.scrollWidth - d.documentElement.clientWidth
+    };
+    cb();
+  };
+  document.body.appendChild(f);
+}
+function measurePosts(cb) {
+  let done = 0;
+  posts.forEach(p => {
+    const f = document.createElement('iframe');
+    f.style.width = '100%%'; f.style.height = '600px'; f.src = p;
+    f.onload = () => {
+      const d = f.contentDocument, w = f.contentWindow;
+      const en = d.querySelector('.post-lang[data-lang="en"]');
+      const hi = d.querySelector('.post-lang[data-lang="hi"]');
+      const btn = d.getElementById('langToggle');
+      const rec = {hasEn: !!en, hasHi: !!hi, hasBtn: !!btn};
+      if (btn) {
+        const sw = d.querySelector('.lang-switch');
+        const body = d.querySelector('.post-lang[data-lang="en"]');
+        rec.rightAligned = sw ? Math.round(sw.getBoundingClientRect().right) : -1;
+        rec.wrapRight = Math.round(d.querySelector('.page-wrap').getBoundingClientRect().right);
+        rec.switchAboveBody = sw && body
+          ? sw.getBoundingClientRect().bottom <= body.getBoundingClientRect().top + 1 : false;
+        rec.visible = w.getComputedStyle(btn).display !== 'none'
+          && btn.getBoundingClientRect().height > 0;
+        rec.labelBefore = btn.querySelector('.lang-toggle-label').textContent;
+      }
+      if (en && hi && btn) {
+        rec.enHiddenBefore = en.hidden;
+        rec.hiHiddenBefore = hi.hidden;
+        rec.langBefore = d.documentElement.lang;
+        btn.click();
+        rec.enHiddenAfter = en.hidden;
+        rec.hiHiddenAfter = hi.hidden;
+        rec.langAfter = d.documentElement.lang;
+        rec.hiVisible = w.getComputedStyle(hi).display !== 'none';
+        rec.enVisible = w.getComputedStyle(en).display !== 'none';
+        rec.labelAfter = btn.querySelector('.lang-toggle-label').textContent;
+        btn.click();
+        rec.hiHiddenRestored = hi.hidden;
+      }
+      results.posts[p] = rec;
+      if (++done === posts.length) cb();
+    };
+    document.body.appendChild(f);
+  });
+}
+measureGrid(() => measurePosts(() => {
+  document.getElementById('out').textContent = JSON.stringify(results);
+}));
+</script></body></html>
+"""
+
+
+def free_port() -> int:
+    with socket.socket() as s:
+        s.bind(("127.0.0.1", 0))
+        return s.getsockname()[1]
+
+
+def run_probe(width: int) -> dict:
+    probe = PUBLIC / "_blog_probe.html"
+    probe.write_text(PROBE % json.dumps(POSTS), encoding="utf-8")
+    port = free_port()
+    server = subprocess.Popen(
+        [sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1"],
+        cwd=PUBLIC, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+    )
+    try:
+        for _ in range(40):
+            try:
+                with socket.create_connection(("127.0.0.1", port), timeout=0.5):
+                    break
+            except OSError:
+                time.sleep(0.1)
+        dom = subprocess.run(
+            ["chromium", "--headless", "--disable-gpu", "--no-sandbox",
+             f"--window-size={width},844", "--virtual-time-budget=15000",
+             "--dump-dom", f"http://127.0.0.1:{port}/_blog_probe.html"],
+            capture_output=True, text=True, timeout=180,
+        ).stdout
+    finally:
+        server.terminate()
+        probe.unlink(missing_ok=True)
+    m = re.search(r'<pre id="out">(.*?)</pre>', dom, re.S)
+    if not m:
+        raise SystemExit("FAIL: probe produced no output")
+    import html as html_mod
+    return json.loads(html_mod.unescape(m.group(1)))
+
+
+def check_amounts(failures: list) -> None:
+    for path in sorted(SITE.glob("blog*.html")):
+        body = re.sub(r"<[^>]+>", " ", path.read_text())
+        for m in re.finditer(r"₹([\d,]+)", body):
+            value = int(m.group(1).replace(",", ""))
+            if value >= MONEY_LIMIT:
+                failures.append(f"{path.name}: example amount {m.group(0)} is not under ₹{MONEY_LIMIT:,}")
+
+
+def main() -> int:
+    failures = []
+    check_amounts(failures)
+
+    desktop = run_probe(1280)
+    grid = desktop["grid"]
+    if grid.get("columns") != 2:
+        failures.append(f"blog listing has {grid.get('columns')} columns at 1280px, expected 2 ({grid.get('template')})")
+    if grid.get("overflow", 0) > 0:
+        failures.append(f"blog listing overflows at 1280px by {grid['overflow']}px")
+
+    mobile = run_probe(390)
+    if mobile["grid"].get("columns") != 1:
+        failures.append(f"blog listing has {mobile['grid'].get('columns')} columns at 390px, expected 1")
+
+    for page, rec in desktop["posts"].items():
+        if not (rec.get("hasEn") and rec.get("hasHi") and rec.get("hasBtn")):
+            failures.append(f"{page}: missing English block, Hindi block or toggle button")
+            continue
+        if rec["enHiddenBefore"] or not rec["hiHiddenBefore"]:
+            failures.append(f"{page}: wrong initial state (en hidden={rec['enHiddenBefore']}, hi hidden={rec['hiHiddenBefore']})")
+        if rec["hiHiddenAfter"] or not rec["enHiddenAfter"]:
+            failures.append(f"{page}: toggle did not switch languages")
+        if not rec["hiVisible"]:
+            failures.append(f"{page}: Hindi block is not displayed after toggling")
+        if rec["langAfter"] != "hi" or rec["langBefore"] != "en":
+            failures.append(f"{page}: lang attribute {rec['langBefore']} -> {rec['langAfter']}, expected en -> hi")
+        if rec["labelAfter"] != "Read in English":
+            failures.append(f"{page}: button label after toggle is {rec['labelAfter']!r}")
+        if not rec["hiHiddenRestored"]:
+            failures.append(f"{page}: second click did not return to English")
+        if not rec.get("visible"):
+            failures.append(f"{page}: language switch is not visible")
+        if rec.get("labelBefore") != "हिंदी में पढ़ें":
+            failures.append(f"{page}: switch label is {rec.get('labelBefore')!r}")
+        if abs(rec.get("rightAligned", 0) - rec.get("wrapRight", 0)) > 40:
+            failures.append(
+                f"{page}: switch not right-aligned (right={rec.get('rightAligned')}, "
+                f"content right={rec.get('wrapRight')})"
+            )
+        if not rec.get("switchAboveBody"):
+            failures.append(f"{page}: switch does not sit above the article body")
+
+    print(f"posts checked: {len(desktop['posts'])}")
+    if failures:
+        print(f"FAIL: {len(failures)} problem(s)")
+        for f in failures:
+            print("  " + f)
+        return 1
+    print("ALL PASS: 2-column listing, every example under ₹10,000, Hindi toggle works")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
