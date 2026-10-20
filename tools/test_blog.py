@@ -60,15 +60,22 @@ function measurePosts(cb) {
       const btn = d.getElementById('langToggle');
       const rec = {hasEn: !!en, hasHi: !!hi, hasBtn: !!btn};
       if (btn) {
-        const sw = d.querySelector('.lang-switch');
         const body = d.querySelector('.post-lang[data-lang="en"]');
-        rec.rightAligned = sw ? Math.round(sw.getBoundingClientRect().right) : -1;
-        rec.wrapRight = Math.round(d.querySelector('.page-wrap').getBoundingClientRect().right);
-        rec.switchAboveBody = sw && body
-          ? sw.getBoundingClientRect().bottom <= body.getBoundingClientRect().top + 1 : false;
+        const meta = d.querySelector('.post-meta');
+        const wrap = d.querySelector('.page-wrap');
+        rec.btnRight = Math.round(btn.getBoundingClientRect().right);
+        rec.wrapRight = Math.round(wrap.getBoundingClientRect().right);
+        rec.inMetaRow = meta.contains(btn);
+        rec.metaRowAligned = Math.abs(
+          Math.round(btn.getBoundingClientRect().top + btn.getBoundingClientRect().height / 2)
+          - Math.round(meta.getBoundingClientRect().top + meta.getBoundingClientRect().height / 2)
+        ) <= 8;
+        rec.switchAboveBody = btn.getBoundingClientRect().bottom <= body.getBoundingClientRect().top + 1;
         rec.visible = w.getComputedStyle(btn).display !== 'none'
           && btn.getBoundingClientRect().height > 0;
+        rec.btnHeight = Math.round(btn.getBoundingClientRect().height);
         rec.labelBefore = btn.querySelector('.lang-toggle-label').textContent;
+        rec.badgeBefore = (btn.querySelector('.lang-badge') || {}).textContent || '';
       }
       if (en && hi && btn) {
         rec.enHiddenBefore = en.hidden;
@@ -170,19 +177,27 @@ def main() -> int:
             failures.append(f"{page}: Hindi block is not displayed after toggling")
         if rec["langAfter"] != "hi" or rec["langBefore"] != "en":
             failures.append(f"{page}: lang attribute {rec['langBefore']} -> {rec['langAfter']}, expected en -> hi")
-        if rec["labelAfter"] != "Read in English":
+        if rec["labelAfter"] != "English":
             failures.append(f"{page}: button label after toggle is {rec['labelAfter']!r}")
         if not rec["hiHiddenRestored"]:
             failures.append(f"{page}: second click did not return to English")
         if not rec.get("visible"):
             failures.append(f"{page}: language switch is not visible")
-        if rec.get("labelBefore") != "हिंदी में पढ़ें":
+        if rec.get("labelBefore") != "हिंदी":
             failures.append(f"{page}: switch label is {rec.get('labelBefore')!r}")
-        if abs(rec.get("rightAligned", 0) - rec.get("wrapRight", 0)) > 40:
+        if rec.get("badgeBefore") != "अ":
+            failures.append(f"{page}: switch badge is {rec.get('badgeBefore')!r}")
+        if not rec.get("inMetaRow"):
+            failures.append(f"{page}: switch is not on the category/date line")
+        if not rec.get("metaRowAligned"):
+            failures.append(f"{page}: switch is not vertically aligned with the meta row")
+        if abs(rec.get("btnRight", 0) - rec.get("wrapRight", 0)) > 40:
             failures.append(
-                f"{page}: switch not right-aligned (right={rec.get('rightAligned')}, "
+                f"{page}: switch not right-aligned (right={rec.get('btnRight')}, "
                 f"content right={rec.get('wrapRight')})"
             )
+        if rec.get("btnHeight", 99) > 26:
+            failures.append(f"{page}: switch is too tall ({rec.get('btnHeight')}px), expected a small badge")
         if not rec.get("switchAboveBody"):
             failures.append(f"{page}: switch does not sit above the article body")
 

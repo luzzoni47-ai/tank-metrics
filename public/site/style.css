@@ -35,5 +35,9 @@
    sit inside .legal-page. Match the 14px gutter the footer uses. */
 @media (max-width:760px){.page-hero,.page-wrap:not(.legal-page),.blog-grid{padding-left:28px;padding-right:28px}}
 @media (max-width:760px){.blog-grid{grid-template-columns:1fr}}
-.lang-switch{display:flex;justify-content:flex-end;margin:-14px 0 18px}
-.lang-toggle{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid #cfd9e6;border-radius:22px;padding:7px 15px;box-shadow:0 2px 8px rgba(32,33,36,.06);font-family:Poppins;font-size:12px;font-weight:600;color:var(--blue);cursor:pointer;transition:background .15s ease,color .15s ease,border-color .15s ease}.lang-toggle:hover{background:var(--blue);border-color:var(--blue);color:#fff}.lang-toggle-icon{font-size:15px;line-height:1}.post-lang[hidden]{display:none}.post-lang[data-lang="hi"] .cta-inline{flex-direction:row}
+.post-meta{flex-wrap:wrap}
+.lang-toggle{display:inline-flex;align-items:center;gap:5px;margin-left:auto;background:#fff;border:1px solid #e2e6ec;border-radius:20px;padding:2px 9px 2px 3px;font-family:Poppins;font-size:10.5px;font-weight:600;color:var(--text-dim);cursor:pointer;transition:border-color .15s ease,color .15s ease}
+.lang-toggle:hover{border-color:var(--blue);color:var(--blue)}
+.lang-badge{width:17px;height:17px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700;color:#fff;background:conic-gradient(var(--blue) 0 25%,var(--red) 25% 50%,var(--yellow) 50% 75%,var(--green) 75% 100%)}
+.lang-toggle-label{line-height:1}
+.post-lang[hidden]{display:none}.post-lang[data-lang="hi"] .cta-inline{flex-direction:row}
