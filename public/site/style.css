@@ -28,3 +28,9 @@
 /* Card titles link to their own tool page; keep the heading looking untouched. */
 .tool-link{color:inherit;text-decoration:none}
 .tool-link:hover{text-decoration:underline}
+
+.footer-heart{width:12px;height:12px;display:inline-block;vertical-align:-1.5px;fill:var(--red)}
+/* The hero, prose and blog grid are full-bleed on mobile while .main carries
+   no side padding, so their text ran to the screen edge. Legal pages already
+   sit inside .legal-page. Match the 14px gutter the footer uses. */
+@media (max-width:760px){.page-hero,.page-wrap:not(.legal-page),.blog-grid{padding-left:28px;padding-right:28px}}
