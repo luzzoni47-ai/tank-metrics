@@ -6,6 +6,14 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Tank Metrics',
   description: 'Insights, stories, and updates from Tank Metrics.',
+  icons: {
+    icon: [
+      { url: '/site/favicon.ico', sizes: 'any' },
+      { url: '/site/favicon.svg', type: 'image/svg+xml' },
+      { url: '/site/favicon.png', type: 'image/png', sizes: '64x64' },
+    ],
+    apple: '/site/favicon.png',
+  },
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
