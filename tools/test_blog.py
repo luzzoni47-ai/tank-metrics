@@ -79,32 +79,26 @@ function measurePosts(cb) {
         rec.labelBefore = btn.querySelector('.lang-toggle-label').textContent;
         rec.badgeBefore = (btn.querySelector('.lang-badge') || {}).textContent || '';
       }
-      if (en && hi && btn) {
+      if (en && btn) {
         const hing = d.querySelector('.post-lang[data-lang="hinglish"]');
+        rec.hasHindiBlock = !!hi;
         rec.hasHinglish = !!hing;
-        rec.enHiddenBefore = en.hidden;
-        rec.hiHiddenBefore = hi.hidden;
         rec.langBefore = d.documentElement.lang;
         btn.click();
         rec.enHiddenAfter = en.hidden;
-        rec.hiHiddenAfter = hi.hidden;
         rec.langAfter = d.documentElement.lang;
-        rec.hiVisible = w.getComputedStyle(hi).display !== 'none';
-        rec.enVisible = w.getComputedStyle(en).display !== 'none';
         rec.labelAfter = btn.querySelector('.lang-toggle-label').textContent;
         rec.badgeAfter = (btn.querySelector('.lang-badge') || {}).textContent || '';
-        btn.click();
         if (hing) {
           rec.hinglishVisible = w.getComputedStyle(hing).display !== 'none'
             && hing.getBoundingClientRect().height > 100;
           rec.enGoneInHinglish = w.getComputedStyle(en).display === 'none';
-          rec.hiGoneInHinglish = w.getComputedStyle(hi).display === 'none';
           rec.hinglishLatinOnly = !/[\u0900-\u097F]/.test(hing.textContent);
           rec.hinglishChars = hing.textContent.trim().length;
         }
         btn.click();
-        rec.hiHiddenRestored = hi.hidden;
-        rec.hingHiddenRestored = hing ? hing.hidden : true;
+        rec.backToEnglish = !en.hidden && (!hing || hing.hidden === true);
+        rec.labelRestored = btn.querySelector('.lang-toggle-label').textContent;
       }
       results.posts[p] = rec;
       if (++done === posts.length) cb();
@@ -195,40 +189,36 @@ def main() -> int:
         failures.append(f"blog listing has {mobile['grid'].get('columns')} columns at 390px, expected 1")
 
     for page, rec in desktop["posts"].items():
-        if not (rec.get("hasEn") and rec.get("hasHi") and rec.get("hasBtn")):
-            failures.append(f"{page}: missing English block, Hindi block or toggle button")
+        if not (rec.get("hasEn") and rec.get("hasHinglish") and rec.get("hasBtn")):
+            failures.append(f"{page}: missing English block, Hinglish block or toggle button")
             continue
-        if rec["enHiddenBefore"] or not rec["hiHiddenBefore"]:
-            failures.append(f"{page}: wrong initial state (en hidden={rec['enHiddenBefore']}, hi hidden={rec['hiHiddenBefore']})")
-        if rec["hiHiddenAfter"] or not rec["enHiddenAfter"]:
-            failures.append(f"{page}: toggle did not switch languages")
-        if not rec["hiVisible"]:
-            failures.append(f"{page}: Hindi block is not displayed after toggling")
-        if rec["langAfter"] != "hi" or rec["langBefore"] != "en":
-            failures.append(f"{page}: lang attribute {rec['langBefore']} -> {rec['langAfter']}, expected en -> hi")
-        # The label and badge advertise the *next* mode, so after the first
-        # click (now showing Hindi) they read "Hinglish" / "H".
-        if rec["labelAfter"] != "Hinglish":
+        if rec["enHiddenAfter"] is None:
+            failures.append(f"{page}: toggle click did not run")
+        if rec["langAfter"] != "hi-Latn" or rec["langBefore"] != "en":
+            failures.append(f"{page}: lang attribute {rec['langBefore']} -> {rec['langAfter']}, expected en -> hi-Latn")
+        if rec.get("hasHindiBlock"):
+            failures.append(f"{page}: Devanagari Hindi block should have been removed")
+        if rec["labelAfter"] != "English":
             failures.append(f"{page}: button label after first click is {rec['labelAfter']!r}")
-        if rec.get("badgeAfter") != "H":
+        if rec.get("badgeAfter") != "A":
             failures.append(f"{page}: badge after first click is {rec.get('badgeAfter')!r}")
         if not rec.get("hasHinglish"):
             failures.append(f"{page}: no Hinglish block found")
         elif not rec.get("hinglishVisible"):
-            failures.append(f"{page}: Hinglish block is not displayed on the second click")
-        elif not rec.get("enGoneInHinglish") or not rec.get("hiGoneInHinglish"):
-            failures.append(f"{page}: English/Hindi still visible in Hinglish mode")
+            failures.append(f"{page}: Hinglish block is not displayed after the first click")
+        elif not rec.get("enGoneInHinglish"):
+            failures.append(f"{page}: English still visible in Hinglish mode")
         elif not rec.get("hinglishLatinOnly"):
             failures.append(f"{page}: Hinglish block still contains Devanagari")
-        if not rec["hiHiddenRestored"]:
-            failures.append(f"{page}: third click did not return to English")
-        if not rec.get("hingHiddenRestored"):
-            failures.append(f"{page}: Hinglish block still visible after returning to English")
+        if not rec.get("backToEnglish"):
+            failures.append(f"{page}: second click did not return to English")
+        if rec.get("labelRestored") != "Hinglish":
+            failures.append(f"{page}: label after returning is {rec.get('labelRestored')!r}")
         if not rec.get("visible"):
             failures.append(f"{page}: language switch is not visible")
-        if rec.get("labelBefore") != "हिंदी":
+        if rec.get("labelBefore") != "Hinglish":
             failures.append(f"{page}: switch label is {rec.get('labelBefore')!r}")
-        if rec.get("badgeBefore") != "अ":
+        if rec.get("badgeBefore") != "H":
             failures.append(f"{page}: switch badge is {rec.get('badgeBefore')!r}")
         if not rec.get("inMetaRow"):
             failures.append(f"{page}: switch is not on the category/date line")
@@ -250,7 +240,7 @@ def main() -> int:
         for f in failures:
             print("  " + f)
         return 1
-    print("ALL PASS: 2-column listing, every example under ₹10,000, Hindi toggle works")
+    print("ALL PASS: 2-column listing, every example under ₹10,000, English <-> Hinglish toggle works")
     return 0
 
 

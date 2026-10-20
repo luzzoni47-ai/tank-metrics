@@ -1,13 +1,14 @@
-"""Romanise the Hindi blog blocks into Hinglish.
+"""Generate the blog Hinglish blocks from the Hindi source.
 
-The posts already carry a hand-written Hindi translation; Hinglish is that same
-text in Roman script, which is what most readers of this page actually want.
-Generating it from the Hindi keeps the three languages in step, so editing the
-Hindi copy cannot silently desynchronise the Hinglish one.
+The posts used to carry three language blocks: English, Hindi and Hinglish.
+The site only ships English and Hinglish, so the Hindi source now lives in
+``tools/hindi/*.hi.html`` and this script romanises it into the Hinglish block.
+Keeping the Hindi as the source means the Hinglish text is regenerated from one
+authoritative copy instead of being hand-maintained.
 
 Usage:
     python3 tools/hinglish.py --sample 12     # eyeball quality
-    python3 tools/hinglish.py --apply         # rewrite the posts
+    python3 tools/hinglish.py --rebuild       # rewrite the Hinglish blocks
 """
 from __future__ import annotations
 
@@ -16,7 +17,9 @@ import pathlib
 import re
 import sys
 
-SITE = pathlib.Path(__file__).resolve().parent.parent / 'public' / 'site'
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+SITE = ROOT / 'public' / 'site'
+HINDI = ROOT / 'tools' / 'hindi'
 
 POSTS = [
     'blog-what-is-ebitda.html',
@@ -406,19 +409,6 @@ def _find_block(html: str, start: int) -> int:
     raise AssertionError('unbalanced block')
 
 
-def _extract_hindi_block(html: str) -> str:
-    """Return the exact Hindi block, including its closing tag.
-
-    The English block sits *before* the Hindi one in these posts, so the end
-    cannot be found by searching for the English marker. Walk the div nesting
-    instead: the Hindi block contains its own divs (the inline CTA), and a
-    naive search for the next ``</div>`` would cut it short.
-    """
-    start = html.find('<div class="post-lang" data-lang="hi"')
-    assert start != -1, 'no Hindi block found'
-    return html[start : _find_block(html, start)]
-
-
 def _drop_hinglish_block(html: str) -> str:
     start = html.find('<div class="post-lang" data-lang="hinglish"')
     if start == -1:
@@ -426,13 +416,21 @@ def _drop_hinglish_block(html: str) -> str:
     return html[:start] + html[_find_block(html, start) :]
 
 
-def build_hinglish_block(hindi_block: str) -> str:
-    """Turn the Hindi block into a matching Hinglish block."""
-    body = hindi_block
-    body = body[body.find('>') + 1 :]
-    body = body.rsplit('</div>', 1)[0]
-    body = body.replace('<h2 class="hi-title">', '<h2>')
-    body = _capitalise(to_hinglish(body))
+def _anchor(html: str) -> str:
+    """Return the block the Hinglish copy is inserted after.
+
+    With the Hindi block gone, Hinglish follows the English one. The anchor is
+    located by nesting rather than by the next marker, because the English
+    block is the last child before the closing tags.
+    """
+    start = html.find('<div class="post-lang" data-lang="en"')
+    assert start != -1, 'no English block found'
+    return html[start : _find_block(html, start)]
+
+
+def build_hinglish_block(hindi_body: str) -> str:
+    """Turn the Hindi source into the matching Hinglish block."""
+    body = _capitalise(to_hinglish(hindi_body))
     return (
         '<div class="post-lang" data-lang="hinglish" lang="hi-Latn" hidden>'
         + body
@@ -444,26 +442,25 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument('--sample', type=int, default=0,
                     help='print N transliterated sentences and exit')
-    ap.add_argument('--apply', action='store_true',
-                    help='write the Hinglish blocks into the posts')
     ap.add_argument('--rebuild', action='store_true',
-                    help='replace any existing Hinglish block, then exit')
+                    help='write the Hinglish blocks into the posts')
     args = ap.parse_args()
 
     if args.sample:
-        text = re.sub(r'<[^>]+>', ' ', _extract_hindi_block((SITE / POSTS[0]).read_text()))
-        text = _capitalise(to_hinglish(text))
+        src = (HINDI / (POSTS[0].replace('.html', '.hi.html'))).read_text()
+        text = _capitalise(to_hinglish(re.sub(r'<[^>]+>', ' ', src)))
         sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', text) if s.strip()]
         for s in sentences[: args.sample]:
             print('-', s)
         return 0
 
-    if args.apply or args.rebuild:
+    if args.rebuild:
         for name in POSTS:
             p = SITE / name
             html = _drop_hinglish_block(p.read_text())
-            hindi = _extract_hindi_block(html)
-            html = html.replace(hindi, hindi + build_hinglish_block(hindi), 1)
+            source = (HINDI / name.replace('.html', '.hi.html')).read_text().strip()
+            anchor = _anchor(html)
+            html = html.replace(anchor, anchor + build_hinglish_block(source), 1)
             p.write_text(html)
             print('hinglish written:', name)
         return 0
