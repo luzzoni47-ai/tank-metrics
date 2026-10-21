@@ -2,6 +2,77 @@
   "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
   "items": [
     {
+      "slug": "upi-mdr-deferred-after-diwali-what-shops-pay",
+      "title": "UPI MDR Is Deferred to After Diwali: What a Shop Will Actually Pay",
+      "dek": "NPCI has pushed the 0.4% merchant fee on UPI payments above ₹2,000 to after Diwali. Here is the arithmetic of what that fee costs a small shop, and who is spared.",
+      "category": "Small Business",
+      "date": "2026-10-21",
+      "date_display": "October 21, 2026",
+      "source_name": "Business Standard",
+      "source_url": "https://www.business-standard.com/finance/news/upi-mdr-deferred-until-after-diwali-new-date-to-be-notified-npci-126101300556_1.html",
+      "cta": {
+        "text": "A per-sale fee is a variable cost. See what it does to what each sale contributes.",
+        "href": "/contribution-margin",
+        "label": "Open the Contribution Margin Calculator"
+      },
+      "related": [
+        {
+          "slug": "marketplace-fees-explained",
+          "title": "Marketplace Fees Explained"
+        },
+        {
+          "slug": "net-profit-margin",
+          "title": "Net Profit Margin Calculator"
+        }
+      ],
+      "body_en": [
+        "<p>India's biggest change to digital payments in years has been put on hold. The National Payments Corporation of India (NPCI) has deferred the merchant discount rate (MDR) on select UPI transactions until after Diwali, just two days before it was due to start on October 15. The fee structure itself is unchanged — only the date moved.</p>",
+        "<p>For anyone who takes UPI at a counter, that means a few more weeks of free collections. It is a delay, not a cancellation. Here is what the rule says, what the fee costs in rupees, and what a shop should do before the new date arrives.</p>",
+        "<h2>What NPCI actually announced</h2>",
+        "<p>NPCI said the UPI and Services Steering Committee decided to implement MDR on select person-to-merchant (P2M) UPI transactions \"immediately post Diwali at a date to be notified separately.\" A source confirmed to Business Standard that there will be no change in the MDR structure. Only the start date has been pushed back.</p>",
+        "<p>An MDR is a fee a merchant pays to the bank and the payment company that process a digital transaction. Until now, UPI merchant payments carried no such fee for the merchant. That is what is about to change.</p>",
+        "<h2>What 0.4% means in rupees</h2>",
+        "<p>The levy is set at 0.40% on UPI payments to merchants above ₹2,000, and it is capped at ₹300. Some categories, including bill payments, fuel and education, attract a flat ₹5 instead.</p>",
+        "<p>Percentage fees feel tiny until you put them next to real sales. A ₹5,000 payment costs 0.40% of ₹5,000, which is ₹20. A ₹10,000 payment costs ₹40. A shop that collects ₹1,00,000 a month in merchant UPI payments pays about ₹400 a month, or roughly ₹4,800 over a year.</p>",
+        "<p>Now compare that with profit, not turnover. If the same shop runs at a 5% net margin, ₹1,00,000 of sales leaves ₹5,000 of profit. A ₹400 fee is 8% of that profit gone. On a thin margin, a fee that looks like a rounding error on the bill is a real slice of what the owner keeps.</p>",
+        "<h2>Who pays, and who does not</h2>",
+        "<p>The charge is aimed at merchant payments, not person-to-person transfers. It applies only to UPI payments above ₹2,000, so small everyday payments stay outside the levy. The flat ₹5 applies to a short list of categories rather than everything.</p>",
+        "<p>The cap matters for large bills. A ₹75,000 payment at 0.40% would work out to ₹300, so the cap bites at that level — anything bigger still costs ₹300, not more.</p>",
+        "<p>Business Standard reported that UPI recorded a record average of 802 million transactions a day in September, with an average daily value of ₹97,913 crore. A fee of 0.40% on that volume is a large amount of money changing hands across the system — which is why traders fought it and why the delay happened.</p>",
+        "<h2>Why the delay happened</h2>",
+        "<p>Timing. The fee was due to start on October 15, in the middle of the festive season, when retail volumes peak. Deferring it gives merchants a breather through their busiest weeks, while keeping the rule itself on the books.</p>",
+        "<p>It is worth reading the delay for what it is: a pause for the calendar, not a reversal of policy. Planning for the fee to arrive after Diwali is the safer assumption.</p>",
+        "<h2>What a shop owner should do before the new date</h2>",
+        "<p>First, work out the number for your own counter. Take your monthly merchant UPI collections above ₹2,000, multiply by 0.40%, and apply the ₹300 cap to any single large payment. That figure is the extra cost you are about to carry.</p>",
+        "<p>Second, treat it as a variable cost, because that is what it is. It rises with every sale, exactly like packaging or shipping. Add it to your cost per sale and watch what is left to cover rent, salaries and your own take-home.</p>",
+        "<p>Third, do not panic-price. A ₹20 cost on a ₹5,000 sale does not justify a price rise on its own. Decide on pricing with the full margin in view, and only for the categories where the fee actually bites.</p>",
+        "<p>And keep accepting UPI. The fee is small, the volumes are large, and customers have made their choice. The right response is to know the cost to the rupee, not to turn customers away at the counter.</p>"
+      ],
+      "body_hinglish": [
+        "<p>Digital payments ka sabse bada badlav kuch waqt ke liye ruk gaya hai. National Payments Corporation of India (NPCI) ne select UPI transactions par merchant discount rate (MDR) ko Diwali ke baad tak tal diya hai — shuru hone se sirf do din pehle, jab woh 15 October ko lagu hona tha. Fee structure mein koi badlav nahi hua, sirf tareekh aage khiski hai.</p>",
+        "<p>Counter par UPI lene wale ke liye iska matlab hai kuch hafte aur free collection. Ye rok hai, rad nahi. Aage samjhiye ki rule kya kehta hai, rupaye mein kitna padta hai, aur nayi tareekh se pehle dukaan ko kya karna chahiye.</p>",
+        "<h2>NPCI ne asal mein kya kaha</h2>",
+        "<p>NPCI ne kaha ki UPI and Services Steering Committee ne decide kiya hai ki select person-to-merchant (P2M) UPI transactions par MDR \"immediately post Diwali at a date to be notified separately\" lagu hoga. Business Standard ko ek source ne bataya ki MDR structure mein koi badlav nahi hoga. Sirf shuru hone ki tareekh aage badhi hai.</p>",
+        "<p>MDR woh fee hai jo merchant bank aur payment company ko deta hai, jo digital transaction process karti hai. Ab tak UPI merchant payments par merchant ko aisi koi fee nahi padti thi. Yahi badalne wala hai.</p>",
+        "<h2>0.4% ka matlab rupaye mein</h2>",
+        "<p>Levy ₹2,000 se upar wale UPI merchant payments par 0.40% hai, aur iski cap ₹300 hai. Kuch categories, jaise bill payments, fuel aur education, par flat ₹5 lagta hai.</p>",
+        "<p>Percentage fee chhoti lagti hai jab tak aap usse asli sales ke saath na rakhein. ₹5,000 ke payment par 0.40% matlab ₹20. ₹10,000 ke payment par ₹40. Jo dukaan mahine mein ₹1,00,000 merchant UPI collect karti hai, woh mahine ke lagbhag ₹400 deti hai, ya saal ke karib ₹4,800.</p>",
+        "<p>Ab isse turnover ke saath nahi, profit ke saath compare kariye. Agar wahi dukaan 5% net margin par chalti hai, to ₹1,00,000 ki sales se ₹5,000 profit bachta hai. ₹400 ki fee us profit ka 8% hai. Patle margin par, jo fee bill par rounding error lagti hai, woh owner ki kamai ka asli hissa hai.</p>",
+        "<h2>Kaun deta hai, kaun nahi</h2>",
+        "<p>Ye charge merchant payments ke liye hai, person-to-person transfers ke liye nahi. Ye sirf ₹2,000 se upar wale UPI payments par lagta hai, isliye chhote rozana payments is levy se bahar rehte hain. Flat ₹5 thodi si categories par lagta hai, sab par nahi.</p>",
+        "<p>Cap bade bills ke liye maayne rakhta hai. ₹75,000 ke payment par 0.40% matlab ₹300, isliye cap wahi se lagu hoti hai — usse bada koi bhi payment bhi ₹300 hi hota hai, zyada nahi.</p>",
+        "<p>Business Standard ne bataya ki September mein UPI ne ek din mein record average 802 million transactions kiye, aur average daily value ₹97,913 crore rahi. Us volume par 0.40% fee ka matlab hai poore system mein badi rakam ka lena-dena — isi liye traders ne virodh kiya aur isi liye ye delay hua.</p>",
+        "<h2>Delay kyun hua</h2>",
+        "<p>Timing. Fee 15 October se shuru honi thi, festive season ke beech, jab retail volumes sabse zyada hote hain. Isse talne se merchants ko unke sabse busy hafton mein rahat mili, lekin rule khud kitab mein bana hua hai.</p>",
+        "<p>Is delay ko waise padhiye jaise woh hai: calendar ke liye ruk, policy ka palat nahi. Ye maan kar chaliye ki fee Diwali ke baad aa jaayegi — yahi safe assumption hai.</p>",
+        "<h2>Nayi tareekh se pehle dukaan ko kya karna chahiye</h2>",
+        "<p>Pehle apne counter ka number nikaliye. Apni monthly merchant UPI collections jo ₹2,000 se upar hain, unhe 0.40% se multiply kariye, aur kisi ek bade payment par ₹300 ki cap lagaiye. Wahi figure aapki aane wali extra cost hai.</p>",
+        "<p>Doosre, ise variable cost maaniye, kyunki woh hai. Ye har sale ke saath badhti hai, bilkul packaging ya shipping ki tarah. Ise apni cost per sale mein jodiye aur dekhiye ki rent, salary aur apni kamai ke liye kitna bachta hai.</p>",
+        "<p>Teesre, ghabra kar price na badhaiye. ₹5,000 ki sale par ₹20 ki cost apne aap mein price badhane ka reason nahi hai. Pricing poore margin ko dekh kar tay kariye, aur sirf un categories mein jahan fee asli mein lagti hai.</p>",
+        "<p>Aur UPI lena jaari rakhiye. Fee chhoti hai, volumes bade hain, aur customers apna faisla kar chuke hain. Sahi jawab ye hai ki cost ko rupaye tak jaaniye, counter par customer ko lautane ka nahi.</p>"
+      ]
+    },
+    {
       "slug": "shark-tank-usa-polygons-foldable-spoon-deal",
       "title": "Indian Designer's Foldable Spoon Wins $350,000 on Shark Tank USA",
       "dek": "Rahul Agarwal sold 10% of Polygons for $350,000 to Lori Greiner and Mindy Kaling. Here is the arithmetic behind that deal, and what it says about valuing a simple product.",
