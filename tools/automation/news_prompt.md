@@ -57,6 +57,9 @@ part that eats the clock, so do it first and keep it to a handful of searches.
    `python3 tools/test_blog.py`
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
+   `python3 tools/seo_monitor.py .` - must report 0 problems. This is the guard
+   that catches an over-long title or description, a missing canonical, or
+   missing og:title/og:description on the new story. Fix and re-run until clean.
    Fix any failure and re-run. Never commit a red suite.
    `python3 tools/sync_gsc_list.py` - regenerates `tools/gsc_submit_list.txt`
    from the sitemap, so the new URL is included without hand-editing.
@@ -89,6 +92,8 @@ part that eats the clock, so do it first and keep it to a handful of searches.
 8. Verify `https://tankmetrics.in/<slug>` returns 200 and contains
    `data-lang="en"` and `data-lang="hinglish"`, and that `https://tankmetrics.in/news`
    lists the new story first.
+   Then run `python3 tools/seo_monitor.py https://tankmetrics.in` - it must
+   report 0 problems across the whole live site.
 
 9. Check the security headers on https://tankmetrics.in/ (CSP, X-Frame-Options,
    X-Content-Type-Options, Referrer-Policy, Permissions-Policy). If any are

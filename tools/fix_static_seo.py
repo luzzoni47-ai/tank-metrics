@@ -10,7 +10,10 @@ script, so the fix has to be applied in place:
   data at all, which leaves the AI answer engines and Google guessing about
   what each page is;
 * `/blog` is the hub the guides hang off, so it gets an ItemList of the posts
-  plus a breadcrumb.
+  plus a breadcrumb;
+* none of the six carried `og:title`/`og:description`/`og:url`/`og:type`, so a
+  shared link fell back to the site-wide twitter card. Most of this site's
+  traffic arrives as a shared link, so that is a real cost.
 
 Re-running is safe: blocks written by this script are replaced, not duplicated.
 
@@ -18,6 +21,7 @@ Re-running is safe: blocks written by this script are replaced, not duplicated.
 """
 from __future__ import annotations
 
+import html
 import json
 import re
 from pathlib import Path
@@ -41,6 +45,14 @@ DESC = {
 }
 DESC_TAG = re.compile(r'<meta name="description" content="[^"]*">')
 EXISTING = re.compile(re.escape(MARKER) + r".*?(?=</head>)", re.S)
+OG_TITLE = re.compile(r'<meta property="og:title" content="[^"]*">')
+OG_DESC = re.compile(r'<meta property="og:description" content="[^"]*">')
+OG_TYPE = re.compile(r'<meta property="og:type" content="[^"]*">')
+OG_URL = re.compile(r'<meta property="og:url" content="[^"]*">')
+
+
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;")
 
 
 def crumb(name: str, path: str) -> dict:
@@ -91,6 +103,57 @@ def blocks_for(fname: str) -> list[dict] | None:
     return None
 
 
+# path -> (og:type, canonical path). The title and description are read back
+# out of each page so the card can never drift from the real <head>.
+PAGES = {
+    "blog.html": ("website", "/blog"),
+    "about.html": ("website", "/about"),
+    "contact.html": ("website", "/contact"),
+    "privacy-policy.html": ("website", "/privacy-policy"),
+    "terms-and-conditions.html": ("website", "/terms-and-conditions"),
+    "disclaimer.html": ("website", "/disclaimer"),
+}
+TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
+DESC_READ = re.compile(r'<meta name="description" content="([^"]*)">')
+TW_TITLE = re.compile(r'<meta name="twitter:title" content="[^"]*">')
+TW_DESC = re.compile(r'<meta name="twitter:description" content="[^"]*">')
+
+
+def add_og(fname: str, og_type: str, path: str) -> None:
+    """Write the social tags, reusing the page's own title and description.
+
+    Copying them from the file rather than restating them here means the card
+    cannot fall out of sync when someone edits the title later.
+    """
+    f = SITE / fname
+    t = f.read_text(encoding="utf-8")
+    title = html.unescape(TITLE_RE.search(t).group(1).strip())
+    desc = html.unescape(DESC_READ.search(t).group(1).strip())
+    url = BASE + path
+    e_title, e_desc = esc(title), esc(desc)
+
+    t = TW_TITLE.sub(f'<meta name="twitter:title" content="{e_title}">', t, count=1)
+    t = TW_DESC.sub(f'<meta name="twitter:description" content="{e_desc}">', t, count=1)
+
+    for rx, tag in ((OG_TITLE, f'<meta property="og:title" content="{e_title}">'),
+                    (OG_DESC, f'<meta property="og:description" content="{e_desc}">'),
+                    (OG_TYPE, f'<meta property="og:type" content="{og_type}">'),
+                    (OG_URL, f'<meta property="og:url" content="{url}">')):
+        t = rx.sub(tag, t, count=1) if rx.search(t) else t
+
+    extra = "".join(
+        tag for rx, tag in (
+            (OG_TITLE, f'<meta property="og:title" content="{e_title}">'),
+            (OG_DESC, f'<meta property="og:description" content="{e_desc}">'),
+            (OG_TYPE, f'<meta property="og:type" content="{og_type}">'),
+            (OG_URL, f'<meta property="og:url" content="{url}">'))
+        if not rx.search(t))
+    if extra:
+        t = re.sub(r'(<link rel="canonical"[^>]*>)', r"\1" + extra, t, count=1)
+    f.write_text(t, encoding="utf-8")
+    print(f"  og tags: {fname} (type={og_type}, url={path})")
+
+
 def main() -> None:
     # 1. Descriptions first, so the schema reflects the final text.
     for fname, desc in DESC.items():
@@ -119,6 +182,10 @@ def main() -> None:
         t = t.replace("</head>", out + "</head>", 1)
         f.write_text(t, encoding="utf-8")
         print(f"  schema added: {fname} ({len(blocks)} block(s))")
+
+    # 3. Social preview tags, after the descriptions are final.
+    for fname, (og_type, path) in PAGES.items():
+        add_og(fname, og_type, path)
     print("\ndone")
 
 

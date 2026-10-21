@@ -28,6 +28,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 REPORTS = Path(__file__).resolve().parent / "reports"
 DEFAULT_BASE = "https://tankmetrics.in"
+URL_MAP = Path(__file__).resolve().parent / "url-map.json"
+PUBLIC = Path(__file__).resolve().parent.parent / "public"
 UA = "TankMetrics-SEO-Monitor/1.0"
 TIMEOUT = 25
 WORKERS = 8
@@ -41,6 +43,7 @@ DESC_RE2 = re.compile(r'<meta[^>]+content=' + _ATTR + r'[^>]*name=["\']descripti
 CANON_RE = re.compile(r'<link[^>]+rel=["\']canonical["\'][^>]*href=["\']([^"\']+)["\']', re.I)
 ROBOTS_RE = re.compile(r'<meta[^>]+name=["\']robots["\'][^>]*content=["\']([^"\']*)["\']', re.I)
 LD_RE = re.compile(r'application/ld\+json', re.I)
+OG_RE = re.compile(r'<meta[^>]+property=["\'](og:[a-z:]+)["\'][^>]*content=' + _ATTR, re.I)
 H1_RE = re.compile(r"<h1[\s>]", re.I)
 
 TITLE_MIN, TITLE_MAX = 10, 65
@@ -90,8 +93,11 @@ def sitemap_urls(base: str) -> list[str]:
     return out
 
 
-def check_page(url: str) -> dict:
-    code, body = get(url)
+def check_page(url: str, body: str | None = None) -> dict:
+    if body is None:
+        code, body = get(url)
+    else:
+        code = 200
     page = {"url": url, "status": code, "problems": []}
     if code != 200:
         page["problems"].append(f"HTTP {code}")
@@ -137,15 +143,137 @@ def check_page(url: str) -> dict:
     if not LD_RE.search(body):
         page["problems"].append("no JSON-LD")
 
+    # Social preview tags. A shared link is how most of this site's traffic
+    # arrives, and without these the card is blank or generic.
+    og = {m.group(1).lower(): html.unescape((m.group(2) or m.group(3) or "").strip())
+          for m in OG_RE.finditer(body)}
+    for tag in ("og:title", "og:description", "og:url", "og:type"):
+        if not og.get(tag):
+            page["problems"].append(f"no {tag}")
+    if og.get("og:title") and title and og["og:title"] != title:
+        page["problems"].append("og:title differs from <title>")
+
     page["title"] = title
     page["description"] = desc
     return page
 
 
+def local_pages(base: str) -> list[tuple[str, str]]:
+    """Read the built pages straight off disk, so the check runs before deploy.
+
+    The url-map is the same table next.config.mjs rewrites from, so a clean path
+    here is exactly what a visitor would hit. Reading files avoids needing a
+    server, which is the whole point: the daily run can catch a bad title before
+    it is published instead of after.
+    """
+    mapping = json.loads(URL_MAP.read_text(encoding="utf-8"))
+    # The home page is not in url-map: next.config.mjs rewrites "/" on its own,
+    # so add it here or the check would skip the one page everyone lands on.
+    mapping = {"/": "/site/index.html", **mapping}
+    out = []
+    for clean, backing in mapping.items():
+        path = PUBLIC / backing.lstrip("/")
+        if not path.exists():
+            out.append((base + clean, ""))
+            continue
+        out.append((base + clean, path.read_text(encoding="utf-8", errors="replace")))
+    return out
+
+
+def finish(label: str, urls: list[str], pages: list[dict],
+           problems: list[str], now: datetime) -> int:
+    titles: dict[str, list[str]] = {}
+    descs: dict[str, list[str]] = {}
+    for pg in pages:
+        if pg.get("title"):
+            titles.setdefault(pg["title"], []).append(pg["url"])
+        if pg.get("description"):
+            descs.setdefault(pg["description"], []).append(pg["url"])
+    for ti, us in titles.items():
+        if len(us) > 1:
+            problems.append(f"duplicate title on {len(us)} pages: {ti[:50]}")
+    for de, us in descs.items():
+        if len(us) > 1:
+            problems.append(f"duplicate description on {len(us)} pages: {de[:50]}")
+
+    stamp = now.strftime("%Y-%m-%d")
+    REPORTS.mkdir(exist_ok=True)
+    lines = [
+        f"# SEO check ({label}) - {stamp}",
+        "",
+        f"Pages checked: **{len(urls)}**",
+        f"All 200: **{'yes' if all(pg['status'] == 200 for pg in pages) else 'no'}**",
+        f"Problems: **{len(problems)}**",
+        "",
+    ]
+    if problems:
+        lines.append("## Problems")
+        lines += [f"- {pr}" for pr in problems]
+    else:
+        lines.append("No problems. Every page is fine.")
+    lines.append("")
+    (REPORTS / f"seo-{'local' if label == 'local' else 'latest'}.md").write_text(
+        "\n".join(lines), encoding="utf-8")
+
+    hist_path = REPORTS / "seo-history.json"
+    history = json.loads(hist_path.read_text()) if hist_path.exists() else []
+    history = [h for h in history if h.get("date") != stamp]
+    history.append({"date": stamp, "pages": len(urls),
+                    "problems": len(problems), "mode": label})
+    history.sort(key=lambda h: h["date"])
+    hist_path.write_text(json.dumps(history[-90:], indent=1), encoding="utf-8")
+
+    print(f"[{label}] pages: {len(urls)} | problems: {len(problems)}")
+    for pr in problems[:15]:
+        print(f"  - {pr}")
+    return 1 if problems else 0
+
+
+def run_local(base: str, now: datetime, problems: list[str]) -> int:
+    """Check the built files before anything is deployed."""
+    robots = PUBLIC / "robots.txt"
+    if not robots.exists():
+        problems.append("public/robots.txt missing")
+    elif "sitemap:" not in robots.read_text(encoding="utf-8").lower():
+        problems.append("robots.txt has no Sitemap: line")
+
+    sm = PUBLIC / "sitemap.xml"
+    if not sm.exists():
+        problems.append("public/sitemap.xml missing")
+        return finish("local", [], [], problems, now)
+
+    root = ET.fromstring(sm.read_text(encoding="utf-8"))
+    ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+    sm_paths = [re.sub(r"^https?://[^/]+", "", e.text.strip()) or "/"
+                for e in root.iter(f"{ns}loc") if e.text]
+
+    pairs = local_pages(base)
+    known = {u.replace(base, "") or "/" for u, _ in pairs}
+    for path in sm_paths:
+        if path not in known:
+            problems.append(f"sitemap lists {path} but url-map has no such page")
+    for path in known:
+        if path not in sm_paths:
+            problems.append(f"url-map has {path} but the sitemap does not")
+
+    pages = [check_page(url, body) for url, body in pairs]
+    for pg in pages:
+        for prob in pg["problems"]:
+            problems.append(f"{pg['url'].replace(base, '') or '/'}: {prob}")
+    return finish("local", [u for u, _ in pairs], pages, problems, now)
+
+
 def main() -> int:
-    base = (sys.argv[1] if len(sys.argv) > 1 else DEFAULT_BASE).rstrip("/")
+    argv = sys.argv[1:]
+    local = "--local" in argv
+    argv = [a for a in argv if a != "--local"]
+    base = (argv[0] if argv else
+            ("http://localhost" if local else DEFAULT_BASE)).rstrip("/")
     now = datetime.now(timezone.utc)
     problems: list[str] = []
+
+    if local:
+        return run_local(base, now, problems)
 
     code, body = get(f"{base}/robots.txt")
     if code != 200:
@@ -164,60 +292,17 @@ def main() -> int:
     urls = sitemap_urls(base)
     if not urls:
         problems.append("sitemap.xml unreadable or empty")
-    dupes = {u for u in urls if urls.count(u) > 1}
-    for d in dupes:
+    for d in {u for u in urls if urls.count(u) > 1}:
         problems.append(f"duplicate sitemap entry {d}")
 
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         pages = list(pool.map(check_page, urls))
 
-    for p in pages:
-        for prob in p["problems"]:
-            problems.append(f"{p['url'].replace(base, '') or '/'}: {prob}")
+    for pg in pages:
+        for prob in pg["problems"]:
+            problems.append(f"{pg['url'].replace(base, '') or '/'}: {prob}")
 
-    titles: dict[str, list[str]] = {}
-    descs: dict[str, list[str]] = {}
-    for p in pages:
-        if p.get("title"):
-            titles.setdefault(p["title"], []).append(p["url"])
-        if p.get("description"):
-            descs.setdefault(p["description"], []).append(p["url"])
-    for t, us in titles.items():
-        if len(us) > 1:
-            problems.append(f"duplicate title on {len(us)} pages: {t[:50]}")
-    for d, us in descs.items():
-        if len(us) > 1:
-            problems.append(f"duplicate description on {len(us)} pages: {d[:50]}")
-
-    stamp = now.strftime("%Y-%m-%d")
-    REPORTS.mkdir(exist_ok=True)
-    lines = [
-        f"# SEO check — {stamp}",
-        "",
-        f"Sitemap me pages: **{len(urls)}**",
-        f"Sabhi 200: **{'haan' if all(p['status'] == 200 for p in pages) else 'nahi'}**",
-        f"Problems: **{len(problems)}**",
-        "",
-    ]
-    if problems:
-        lines.append("## Problems")
-        lines += [f"- {p}" for p in problems]
-    else:
-        lines.append("Koi problem nahi. Sab pages theek hain.")
-    lines.append("")
-    (REPORTS / "seo-latest.md").write_text("\n".join(lines), encoding="utf-8")
-
-    hist_path = REPORTS / "seo-history.json"
-    history = json.loads(hist_path.read_text()) if hist_path.exists() else []
-    history = [h for h in history if h.get("date") != stamp]
-    history.append({"date": stamp, "pages": len(urls), "problems": len(problems)})
-    history.sort(key=lambda h: h["date"])
-    hist_path.write_text(json.dumps(history[-90:], indent=1), encoding="utf-8")
-
-    print(f"pages: {len(urls)} | problems: {len(problems)}")
-    for p in problems[:15]:
-        print(f"  - {p}")
-    return 1 if problems else 0
+    return finish("live", urls, pages, problems, now)
 
 
 if __name__ == "__main__":

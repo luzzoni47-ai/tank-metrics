@@ -60,6 +60,9 @@ short on time, commit and push what you have rather than leaving it uncommitted.
    `python3 tools/test_news.py`
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
+   `python3 tools/seo_monitor.py .` - must report 0 problems. This is the guard
+   that catches an over-long title or description, a missing canonical, or
+   missing og:title/og:description on the new post. Fix and re-run until clean.
    Fix any failure and re-run. Never commit a red suite.
    `python3 tools/sync_gsc_list.py` - regenerates `tools/gsc_submit_list.txt`
    from the sitemap, so the new URL is included without hand-editing.
@@ -92,6 +95,8 @@ short on time, commit and push what you have rather than leaving it uncommitted.
 9. Verify `https://tankmetrics.in/<slug>` returns 200 and contains
    `data-lang="en"` and `data-lang="hinglish"`, and that
    `https://tankmetrics.in/blog` shows the new card in the Guides tab.
+   Then run `python3 tools/seo_monitor.py https://tankmetrics.in` - it must
+   report 0 problems across the whole live site.
 
 10. Check the security headers on https://tankmetrics.in/ (CSP, X-Frame-Options,
    X-Content-Type-Options, Referrer-Policy, Permissions-Policy). If any are
