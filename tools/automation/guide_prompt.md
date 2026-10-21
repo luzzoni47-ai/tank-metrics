@@ -26,6 +26,11 @@ short on time, commit and push what you have rather than leaving it uncommitted.
      og tags, GA4 tag `G-MHZ0V6HFC6`, the Google site verification meta, the
      favicon links and `/site/style.css`. Copy the head of an existing post and
      change only the title, description and canonical.
+   - Length limits, because Google truncates past them and the search result
+     starts to look broken: the `<title>` must be **60 characters or fewer
+     including " | Tank Metrics"**, and the meta description must be **150-158
+     characters**. Shorten the headline wording to fit — never drop the brand
+     suffix to make room.
    - Body: tricolor bar, topbar, `.main > .page-hero` (tag `📖 Tank Metrics Blog`,
      one `<h1>`, one `<p>`), then `.page-wrap`.
    - `.post-meta` with the category tag, the date and the `#langToggle` button
@@ -50,6 +55,7 @@ short on time, commit and push what you have rather than leaving it uncommitted.
 
 5. Run the pipeline and the Python tests. All must pass before continuing:
    `python3 tools/clean_urls.py`
+   `python3 tools/add_blog_schema.py`
    `python3 tools/test_blog.py`
    `python3 tools/test_news.py`
    `python3 tools/test_layout.py`

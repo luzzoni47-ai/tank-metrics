@@ -36,6 +36,9 @@ part that eats the clock, so do it first and keep it to a handful of searches.
      figures like 580 or 7,180.
    - Never invent a fact, figure or quote — use only what the sources say, and
      put the source name and URL in `source_name` / `source_url`.
+   - `title` must be **60 characters or fewer on its own** (the page renders it
+     as "<title> | Tank Metrics", and anything past 60 gets truncated in the
+     search result). `dek` must be **150-158 characters**.
    - `body_en` and `body_hinglish` must have the same number of `<h2>`/`<h3>`
      headings, at least 400 English words, and the Hinglish block must be roman
      script with zero Devanagari.

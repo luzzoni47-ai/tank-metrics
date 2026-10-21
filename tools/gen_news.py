@@ -187,10 +187,33 @@ def related_html(item: dict) -> str:
     return f'<h2>Related reading</h2><ul class="news-related">{links}</ul>'
 
 
+def short_title(headline: str, limit: int = 60) -> str:
+    """Fit a headline into what Google shows, without leaving a dangling word.
+
+    A plain cut leaves titles ending in "and", "This" or "Wins", which reads
+    like a bug in the search result. Drop those trailing words as well.
+    """
+    if len(headline) <= limit:
+        return headline
+    cut = headline[:limit].rsplit(" ", 1)[0].rstrip(" ,:;-—")
+    stop = {"a", "an", "and", "as", "at", "but", "by", "for", "from", "in",
+            "into", "is", "it", "its", "of", "on", "or", "that", "the", "this",
+            "to", "was", "were", "will", "with", "why"}
+    words = cut.split()
+    while words and words[-1].lower() in stop:
+        words.pop()
+    return " ".join(words) or cut
+
+
 def story_page(item: dict) -> str:
     slug = item["slug"]
     canonical = f"{BASE}/{slug}"
-    title = f"{item['title']} | Tank Metrics News"
+    # The headline is what earns the click, so it wins over the brand suffix:
+    # the suffix is dropped as soon as the pair would overflow, and the
+    # headline is only shortened when it alone is too long.
+    title = f"{item['title']} | Tank Metrics"
+    if len(title) > 65:
+        title = short_title(item["title"], 65)
     desc = item["dek"]
     if len(desc) > 158:
         desc = desc[:155].rsplit(" ", 1)[0] + "..."

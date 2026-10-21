@@ -9,6 +9,7 @@ link back into the home-page card.
 
 Nothing here changes what visitors already see on the home page.
 """
+import html
 import json
 import re
 from pathlib import Path
@@ -41,8 +42,40 @@ def slugify(name: str) -> str:
     return re.sub(r"-{2,}", "-", s)
 
 
-def title_for(c: dict) -> str:
-    return f"{c['name']} — Free Online Calculator | Tank Metrics"
+def title_for(c: dict, extra: str = "") -> str:
+    """Build a title that stays inside the ~60 chars Google shows.
+
+    The suffix is dropped in steps rather than truncated, so the tool name is
+    never cut mid-word.
+    """
+    name = c["name"] + extra
+    for suffix in (" — Free Online Calculator | Tank Metrics",
+                   " — Free Calculator | Tank Metrics",
+                   " | Tank Metrics"):
+        out = name + suffix
+        if len(out) <= 60:
+            return out
+    return out
+
+
+def build_titles(calcs: list[dict]) -> dict[str, str]:
+    """One unique title per page.
+
+    Two calculators share the name "GST Calculator", so the plain title_for()
+    would hand two pages the same <title>. Append the category to the ones
+    that collide.
+    """
+    catnames = {x["id"]: x["name"] for x in DATA["cats"]}
+    counts: dict[str, int] = {}
+    for c in calcs:
+        counts[c["name"]] = counts.get(c["name"], 0) + 1
+    out = {}
+    for c in calcs:
+        extra = ""
+        if counts[c["name"]] > 1:
+            extra = f" ({catnames.get(c['cat'], c['cat'])})"
+        out[c["id"]] = title_for(c, extra)
+    return out
 
 
 def desc_for(c: dict) -> str:
@@ -51,7 +84,10 @@ def desc_for(c: dict) -> str:
     out = d + extra
     if len(out) > 158:
         out = out[:155].rsplit(" ", 1)[0] + "..."
-    return out
+    # The description is interpolated into a double-quoted attribute, and one
+    # source string contains a literal quote ("50 lakh for 5%"). Unescaped it
+    # closed the attribute early and left the rest as junk markup.
+    return html.escape(out, quote=True)
 
 
 def faqs(c: dict) -> list[tuple[str, str]]:
@@ -149,7 +185,8 @@ def guide_html(c: dict) -> str:
     return "".join(parts)
 
 
-def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str]) -> str:
+def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
+         titles: dict[str, str]) -> str:
     slug = slugs[c["id"]]
     accent = ACCENTS.get(
         next((x["color"] for x in DATA["cats"] if x["id"] == c["cat"]), "blue"), "#4285F4")
@@ -190,13 +227,13 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str]) -> str:
         f"<h3>{q}</h3><p>{a}</p>" for q, a in faqs(c)
     )
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="/site/favicon.ico" sizes="any"><link rel="icon" href="/site/favicon.svg" type="image/svg+xml"><link rel="icon" href="/site/favicon.png" type="image/png" sizes="64x64"><link rel="apple-touch-icon" href="/site/favicon.png"><meta name="google-site-verification" content="CyIhu9CYYQapfzYJOeSLTP_XY_HWq0McbmY4uX342o4"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{title_for(c)}</title>
+<title>{titles[c["id"]]}</title>
 <meta name="description" content="{desc_for(c)}">
 <link rel="canonical" href="{BASE}/site/tools/{slug}.html">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <meta name="theme-color" content="#FF9933">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/site/style.css">
-<meta property="og:type" content="website"><meta property="og:title" content="{title_for(c)}"><meta property="og:description" content="{desc_for(c)}"><meta property="og:url" content="{BASE}/site/tools/{slug}.html"><meta property="og:image" content="{BASE}/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Tank Metrics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title_for(c)}"><meta name="twitter:description" content="{desc_for(c)}"><meta name="twitter:image" content="{BASE}/og-image.png">
+<meta property="og:type" content="website"><meta property="og:title" content="{titles[c['id']]}"><meta property="og:description" content="{desc_for(c)}"><meta property="og:url" content="{BASE}/site/tools/{slug}.html"><meta property="og:image" content="{BASE}/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Tank Metrics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{titles[c['id']]}"><meta name="twitter:description" content="{desc_for(c)}"><meta name="twitter:image" content="{BASE}/og-image.png">
 <script type="application/ld+json">{json.dumps(faq_ld, ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(app_ld, ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(bc_ld, ensure_ascii=False)}</script>
@@ -256,12 +293,13 @@ def main() -> None:
     TOOLS.mkdir(parents=True, exist_ok=True)
     calcs = DATA["calcs"]
     slugs = build_slugs(calcs)
+    titles = build_titles(calcs)
     written = []
     for idx, c in enumerate(calcs):
         prev = calcs[idx - 1]
         nxt = calcs[(idx + 1) % len(calcs)]
         (TOOLS / f"{slugs[c['id']]}.html").write_text(
-            page(c, prev, nxt, slugs), encoding="utf-8")
+            page(c, prev, nxt, slugs, titles), encoding="utf-8")
         written.append((slugs[c["id"]], c["name"], c["cat"]))
     unique = len({s for s, _, _ in written})
     print(f"wrote {len(written)} tool pages ({unique} unique slugs)")
