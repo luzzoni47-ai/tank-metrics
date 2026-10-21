@@ -313,11 +313,9 @@ def write_home_strips(items: list[dict]) -> int:
     Both pages carry a hand-written strip, so a new story would otherwise never
     appear on them. Replace the whole section each run instead of appending.
     """
+    # Only the blog listing carries a strip. The home page stays a clean
+    # calculator catalogue, so a visitor is not pushed into reading first.
     targets = {
-        SITE / "index.html": strip_html(
-            "Today in money &amp; startups",
-            "Funding rounds, Shark Tank deals and tax rule changes \u2014 explained in "
-            "plain English and Hinglish.", items),
         SITE / "blog.html": strip_html(
             "Latest news",
             "Funding rounds, Shark Tank deals and money rules that affect your business.",

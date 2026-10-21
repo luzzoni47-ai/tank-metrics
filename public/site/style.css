@@ -68,3 +68,18 @@
 .news-strip-head h2{font-size:16px}
 .news-strip-head p{font-size:11.5px;min-width:0}
 .news-source{font-size:11px}}
+
+/* Worked example block on the tool pages. Two columns of inputs and results,
+   stacked on phones so the numbers stay readable. */
+.worked{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0}
+.worked-col{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.worked-col h3{margin:0 0 9px;font-size:13px;font-family:Poppins;font-weight:600;color:var(--text)}
+.worked-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.worked-col li{font-size:13px;color:var(--text-dim);line-height:1.5}
+.worked-col li strong{color:var(--text);font-weight:600}
+.plain-list{margin:12px 0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
+.plain-list li{font-size:14px;color:var(--text-dim);line-height:1.65}
+@media (max-width:760px){.worked{grid-template-columns:1fr;gap:10px;margin:12px 0}
+.worked-col{padding:12px;border-radius:10px}
+.worked-col li{font-size:12px}
+.plain-list li{font-size:13px}}

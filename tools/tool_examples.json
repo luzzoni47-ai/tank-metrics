@@ -1,0 +1,1784 @@
+{
+  "percent": {
+    "inputs": {
+      "Percentage": "18 %",
+      "Of this number": "450000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Result",
+        "v": "₹81,000.00"
+      }
+    ],
+    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
+    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+  },
+  "simpleint": {
+    "inputs": {
+      "Amount (Principal)": "100000 ₹",
+      "Interest Rate": "10 % per year",
+      "Time": "5 years"
+    },
+    "rows": [
+      {
+        "l": "Interest Earned",
+        "v": "₹50,000.00"
+      },
+      {
+        "l": "Total Amount",
+        "v": "₹1,50,000.00"
+      }
+    ],
+    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
+    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+  },
+  "compint": {
+    "inputs": {
+      "Amount (Principal)": "100000 ₹",
+      "Interest Rate": "10 % per year",
+      "Time": "5 years",
+      "Times compounded per year": "1"
+    },
+    "rows": [
+      {
+        "l": "Interest Earned",
+        "v": "₹61,051.00"
+      },
+      {
+        "l": "Total Amount",
+        "v": "₹1,61,051.00"
+      }
+    ],
+    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
+    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+  },
+  "emi": {
+    "inputs": {
+      "Loan Amount": "3000000 ₹",
+      "Interest Rate": "8 % per year",
+      "Loan Tenure": "240 months"
+    },
+    "rows": [
+      {
+        "l": "Monthly EMI",
+        "v": "₹25,093.20"
+      },
+      {
+        "l": "Total Amount Paid",
+        "v": "₹60,22,368.50"
+      },
+      {
+        "l": "Total Interest",
+        "v": "₹30,22,368.50"
+      }
+    ],
+    "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
+    "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property."
+  },
+  "savegoal": {
+    "inputs": {
+      "Savings Goal": "1000000 ₹",
+      "Already Saved": "100000 ₹",
+      "Saved Each Month": "10000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Months Needed",
+        "v": "90.0 months"
+      }
+    ],
+    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
+    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+  },
+  "takehome": {
+    "inputs": {
+      "Annual CTC": "1200000 ₹",
+      "Estimated Deductions": "100000 %"
+    },
+    "rows": [
+      {
+        "l": "Estimated Yearly In-Hand",
+        "v": "₹-1,19,88,00,000"
+      },
+      {
+        "l": "Estimated Monthly In-Hand",
+        "v": "₹-9,99,00,000"
+      }
+    ],
+    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
+    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+  },
+  "split": {
+    "inputs": {
+      "Total Bill": "1000 ₹",
+      "Number of People": "4"
+    },
+    "rows": [
+      {
+        "l": "Each Person Pays",
+        "v": "₹250.00"
+      }
+    ],
+    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
+    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+  },
+  "tip": {
+    "inputs": {
+      "Bill Amount": "1000 ₹",
+      "Tip": "10 %"
+    },
+    "rows": [
+      {
+        "l": "Tip Amount",
+        "v": "₹100.00"
+      },
+      {
+        "l": "Total to Pay",
+        "v": "₹1,100.00"
+      }
+    ],
+    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
+    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+  },
+  "simpledisc": {
+    "inputs": {
+      "Original Price": "1000 ₹",
+      "Discount": "20 %"
+    },
+    "rows": [
+      {
+        "l": "You Save",
+        "v": "₹200.00"
+      },
+      {
+        "l": "Final Price",
+        "v": "₹800.00"
+      }
+    ],
+    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
+    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+  },
+  "numwords": {
+    "inputs": {
+      "Number": "100000"
+    },
+    "rows": [
+      {
+        "l": "In Words",
+        "v": "One Lakh"
+      }
+    ],
+    "intro": "Type a figure and the tool writes it the way an Indian cheque expects.",
+    "outro": "Always check the words against the digits before you sign. A mismatch is what causes a payment to be held up."
+  },
+  "gross": {
+    "inputs": {
+      "Total Revenue": "450000 ₹",
+      "Cost of Goods Sold": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Gross Profit",
+        "v": "₹2,70,000"
+      },
+      {
+        "l": "Gross Margin",
+        "v": "60.0%"
+      }
+    ],
+    "intro": "Take a business with a year of trading behind it. Here is what Gross Profit & Margin reports for those figures.",
+    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+  },
+  "ebitda": {
+    "inputs": {
+      "Revenue": "450000 ₹",
+      "Cost of Goods Sold": "180000 ₹",
+      "Operating Expenses": "95000 ₹"
+    },
+    "rows": [
+      {
+        "l": "EBITDA",
+        "v": "₹1,75,000"
+      },
+      {
+        "l": "EBITDA Margin",
+        "v": "38.9%"
+      }
+    ],
+    "intro": "Take a business with a year of trading behind it. Here is what EBITDA & Margin reports for those figures.",
+    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+  },
+  "opmargin": {
+    "inputs": {
+      "Revenue": "450000 ₹",
+      "Operating Profit": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Operating Margin",
+        "v": "40.0%"
+      }
+    ],
+    "intro": "Take a business with a year of trading behind it. Here is what Operating Margin reports for those figures.",
+    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+  },
+  "netmargin": {
+    "inputs": {
+      "Revenue": "450000 ₹",
+      "Net Profit": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Net Profit Margin",
+        "v": "40.0%"
+      }
+    ],
+    "intro": "Take a business with a year of trading behind it. Here is what Net Profit Margin reports for those figures.",
+    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+  },
+  "cm": {
+    "inputs": {
+      "Selling Price / Unit": "450000 ₹",
+      "Variable Cost / Unit": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Contribution Margin",
+        "v": "₹2,70,000.00"
+      },
+      {
+        "l": "CM %",
+        "v": "60.0%"
+      }
+    ],
+    "intro": "Take a business with a year of trading behind it. Here is what Contribution Margin reports for those figures.",
+    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+  },
+  "markup": {
+    "inputs": {
+      "Cost Price": "450000 ₹",
+      "Selling Price": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Markup %",
+        "v": "-60.0%"
+      },
+      {
+        "l": "Margin %",
+        "v": "-150.0%"
+      }
+    ],
+    "intro": "Take a business with a year of trading behind it. Here is what Markup vs Margin reports for those figures.",
+    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+  },
+  "roi": {
+    "inputs": {
+      "Net Profit": "100000 ₹",
+      "Investment Cost": "1000000 ₹"
+    },
+    "rows": [
+      {
+        "l": "ROI",
+        "v": "10.0%"
+      }
+    ],
+    "intro": "Take a business with a year of trading behind it. Here is what Return on Investment (ROI) reports for those figures.",
+    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+  },
+  "roce": {
+    "inputs": {
+      "Operating Profit": "450000 ₹",
+      "Capital Employed": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "ROCE",
+        "v": "250.0%"
+      }
+    ],
+    "intro": "Take a business with a year of trading behind it. Here is what Return on Capital Employed reports for those figures.",
+    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+  },
+  "impval": {
+    "inputs": {
+      "Investment Amount": "1000000 ₹",
+      "Equity Offered": "10 %"
+    },
+    "rows": [
+      {
+        "l": "Implied Valuation",
+        "v": "₹1,00,00,000"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Implied Valuation works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "prepost": {
+    "inputs": {
+      "Pre-Money Valuation": "9000000 ₹",
+      "Investment Amount": "1000000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Post-Money Valuation",
+        "v": "₹1,00,00,000"
+      },
+      {
+        "l": "Equity Given",
+        "v": "10.0%"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Pre-Money & Post-Money Valuation works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "revmul": {
+    "inputs": {
+      "Valuation": "450000 ₹",
+      "Annual Revenue": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Revenue Multiple",
+        "v": "2.50x"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Revenue Multiple works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "ebitdamul": {
+    "inputs": {
+      "Valuation": "450000 ₹",
+      "EBITDA": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "EBITDA Multiple",
+        "v": "2.50x"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once EBITDA Multiple works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "dilution": {
+    "inputs": {
+      "Founder Equity (Before)": "100 %",
+      "Equity Offered in This Deal": "10 %"
+    },
+    "rows": [
+      {
+        "l": "Founder Equity (After)",
+        "v": "90.0%"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Dilution Calculator works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "ask": {
+    "inputs": {
+      "Amount Needed": "450000 ₹",
+      "Your Believed Valuation": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Equity to Offer",
+        "v": "250.0%"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Ask Calculator works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "debteq": {
+    "inputs": {
+      "Total Deal Amount": "450000 ₹",
+      "Debt Portion": "18 %",
+      "Valuation (for equity part)": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Debt Amount",
+        "v": "₹81,000"
+      },
+      {
+        "l": "Equity Amount",
+        "v": "₹3,69,000"
+      },
+      {
+        "l": "Equity %",
+        "v": "205.0%"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Debt + Equity Deal works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "royalty": {
+    "inputs": {
+      "Investment Amount": "450000 ₹",
+      "Royalty Rate": "18 % of revenue",
+      "Expected Annual Revenue": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Annual Royalty",
+        "v": "₹32,400"
+      },
+      {
+        "l": "Payback Period",
+        "v": "13.9 years"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Royalty Deal works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "captable": {
+    "inputs": {
+      "ESOP Pool": "18 %",
+      "Investor Equity": "18 %"
+    },
+    "rows": [
+      {
+        "l": "Founders' Share",
+        "v": "64.0%"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Cap Table & ESOP Pool works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "cofounder": {
+    "inputs": {
+      "Founder A Score": "12",
+      "Founder B Score": "12",
+      "Founder C Score (optional)": "12"
+    },
+    "rows": [
+      {
+        "l": "Founder A",
+        "v": "33.3%"
+      },
+      {
+        "l": "Founder B",
+        "v": "33.3%"
+      },
+      {
+        "l": "Founder C",
+        "v": "33.3%"
+      }
+    ],
+    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Co-founder Equity Split works it through.",
+    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+  },
+  "cac": {
+    "inputs": {
+      "Total Sales + Marketing Spend": "100000 ₹",
+      "New Customers": "200"
+    },
+    "rows": [
+      {
+        "l": "CAC",
+        "v": "₹500.00"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what Customer Acquisition Cost (CAC) says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "ltv": {
+    "inputs": {
+      "Average Order Value": "1000 ₹",
+      "Purchases per Year": "4",
+      "Customer Lifespan": "3 years",
+      "Gross Margin": "50 %"
+    },
+    "rows": [
+      {
+        "l": "LTV",
+        "v": "₹6,000.00"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what Customer Lifetime Value (LTV) says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "ltvcac": {
+    "inputs": {
+      "LTV": "450000 ₹",
+      "CAC": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "LTV : CAC",
+        "v": "2.50 : 1"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what LTV : CAC Ratio says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "payback": {
+    "inputs": {
+      "CAC": "450000 ₹",
+      "Avg Monthly Revenue / Customer": "24 ₹",
+      "Gross Margin": "18 %"
+    },
+    "rows": [
+      {
+        "l": "Payback Period",
+        "v": "1,04,166.7 months"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what CAC Payback Period says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "aov": {
+    "inputs": {
+      "Total Revenue": "100000 ₹",
+      "Total Orders": "200"
+    },
+    "rows": [
+      {
+        "l": "AOV",
+        "v": "₹500.00"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what Average Order Value (AOV) says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "retention": {
+    "inputs": {
+      "Customers (Start)": "12",
+      "Customers (End)": "12",
+      "New Customers Added": "12"
+    },
+    "rows": [
+      {
+        "l": "Retention",
+        "v": "0.0%"
+      },
+      {
+        "l": "Churn",
+        "v": "100.0%"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what Repeat Rate, Retention & Churn says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "roas": {
+    "inputs": {
+      "Revenue from Ads": "100000 ₹",
+      "Ad Spend": "20000 ₹"
+    },
+    "rows": [
+      {
+        "l": "ROAS",
+        "v": "5.00x"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what Return on Ad Spend (ROAS) says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "funnel": {
+    "inputs": {
+      "Ad Spend": "450000 ₹",
+      "Clicks": "12",
+      "Leads": "12",
+      "Conversions": "12"
+    },
+    "rows": [
+      {
+        "l": "Cost per Click",
+        "v": "₹37,500.00"
+      },
+      {
+        "l": "Cost per Lead",
+        "v": "₹37,500.00"
+      },
+      {
+        "l": "Cost per Sale",
+        "v": "₹37,500.00"
+      },
+      {
+        "l": "Conversion Rate",
+        "v": "100.0%"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what CPC, CPL, CPA & Conversion Rate says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "saas": {
+    "inputs": {
+      "Total Monthly Revenue": "100000 ₹",
+      "Active Users": "200"
+    },
+    "rows": [
+      {
+        "l": "ARPU",
+        "v": "₹500.00"
+      },
+      {
+        "l": "MRR",
+        "v": "₹1,00,000"
+      },
+      {
+        "l": "ARR",
+        "v": "₹12,00,000"
+      }
+    ],
+    "intro": "Consider a small online business spending on ads. Here is what ARPU, MRR & ARR says about the customers that spend brings in.",
+    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+  },
+  "runrate": {
+    "inputs": {
+      "Last Month's Revenue": "100000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Annual Run Rate",
+        "v": "₹12,00,000"
+      }
+    ],
+    "intro": "Picture a business six months into trading. Here is what Run Rate shows about where it is heading.",
+    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+  },
+  "momyoy": {
+    "inputs": {
+      "Previous Value": "450000 ₹",
+      "Current Value": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Growth",
+        "v": "-60.0%"
+      }
+    ],
+    "intro": "Picture a business six months into trading. Here is what Month-on-Month / Year-on-Year Growth shows about where it is heading.",
+    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+  },
+  "cagr": {
+    "inputs": {
+      "Starting Value": "450000 ₹",
+      "Ending Value": "12 ₹",
+      "Number of Years": "5"
+    },
+    "rows": [
+      {
+        "l": "CAGR",
+        "v": "-87.8%"
+      }
+    ],
+    "intro": "Picture a business six months into trading. Here is what CAGR (Compound Annual Growth Rate) shows about where it is heading.",
+    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+  },
+  "burn": {
+    "inputs": {
+      "Cash in Bank": "1000000 ₹",
+      "Monthly Burn": "100000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Runway",
+        "v": "10.0 months"
+      }
+    ],
+    "intro": "Picture a business six months into trading. Here is what Burn Rate & Runway shows about where it is heading.",
+    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+  },
+  "breakeven": {
+    "inputs": {
+      "Fixed Costs (per month)": "100000 ₹",
+      "Selling Price / Unit": "1000 ₹",
+      "Variable Cost / Unit": "600 ₹"
+    },
+    "rows": [
+      {
+        "l": "Break-Even Units",
+        "v": "250"
+      },
+      {
+        "l": "Break-Even Revenue",
+        "v": "₹2,50,000"
+      }
+    ],
+    "intro": "Picture a business six months into trading. Here is what Break-Even Point shows about where it is heading.",
+    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+  },
+  "wc": {
+    "inputs": {
+      "Current Assets": "450000 ₹",
+      "Current Liabilities": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Working Capital",
+        "v": "₹2,70,000"
+      }
+    ],
+    "intro": "Picture a business six months into trading. Here is what Working Capital shows about where it is heading.",
+    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+  },
+  "ccc": {
+    "inputs": {
+      "Inventory": "450000 ₹",
+      "COGS (yearly)": "5 ₹",
+      "Receivables": "180000 ₹",
+      "Revenue (yearly)": "5 ₹",
+      "Payables": "95000 ₹",
+      "Purchases (yearly)": "5 ₹"
+    },
+    "rows": [
+      {
+        "l": "Inventory Days",
+        "v": "3,28,50,000"
+      },
+      {
+        "l": "Receivable Days",
+        "v": "1,31,40,000"
+      },
+      {
+        "l": "Payable Days",
+        "v": "69,35,000"
+      },
+      {
+        "l": "Cash Conversion Cycle",
+        "v": "3,90,55,000 days"
+      }
+    ],
+    "intro": "Picture a business six months into trading. Here is what Cash Conversion Cycle shows about where it is heading.",
+    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+  },
+  "depreciation": {
+    "inputs": {
+      "Asset Cost": "450000 ₹",
+      "Salvage Value": "180000 ₹",
+      "Useful Life": "12 years"
+    },
+    "rows": [
+      {
+        "l": "Annual Depreciation",
+        "v": "₹22,500.00"
+      }
+    ],
+    "intro": "Picture a business six months into trading. Here is what Straight-Line Depreciation shows about where it is heading.",
+    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+  },
+  "mrpreverse": {
+    "inputs": {
+      "MRP": "1000 �������",
+      "Retailer Margin": "20 %",
+      "Distributor Margin": "10 %"
+    },
+    "rows": [
+      {
+        "l": "Retailer Buys At",
+        "v": "₹800.00"
+      },
+      {
+        "l": "Distributor Buys At",
+        "v": "₹720.00"
+      }
+    ],
+    "intro": "Take one product with one price. Here is what MRP Reverse Calculator shows once every cost is counted.",
+    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+  },
+  "distmargin": {
+    "inputs": {
+      "Manufacturer Price": "500 ₹",
+      "Distributor Price": "600 ₹",
+      "MRP": "1000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Distributor Margin",
+        "v": "16.7%"
+      },
+      {
+        "l": "Retailer Margin",
+        "v": "40.0%"
+      }
+    ],
+    "intro": "Take one product with one price. Here is what Distributor & Retailer Margin shows once every cost is counted.",
+    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+  },
+  "gst": {
+    "inputs": {
+      "Amount": "10000 ₹",
+      "GST Rate": "18 %"
+    },
+    "rows": [
+      {
+        "l": "If Amount Excludes GST → GST",
+        "v": "₹1,800.00"
+      },
+      {
+        "l": "Amount + GST",
+        "v": "₹11,800.00"
+      },
+      {
+        "l": "If Amount Includes GST → Base Price",
+        "v": "₹8,474.58"
+      },
+      {
+        "l": "GST Hidden Inside",
+        "v": "₹1,525.42"
+      }
+    ],
+    "intro": "Take one product with one price. Here is what GST Calculator shows once every cost is counted.",
+    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+  },
+  "landed": {
+    "inputs": {
+      "Manufacturing Cost": "500 ₹",
+      "Packaging Cost": "50 ₹",
+      "Shipping Cost": "100 ₹",
+      "Other Costs": "50 ₹"
+    },
+    "rows": [
+      {
+        "l": "Total Landed Cost",
+        "v": "₹700.00"
+      }
+    ],
+    "intro": "Take one product with one price. Here is what Landed Cost Calculator shows once every cost is counted.",
+    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+  },
+  "marketplace": {
+    "inputs": {
+      "Selling Price": "10000 ₹",
+      "Commission Rate": "10 %",
+      "Shipping Fee": "500 ₹",
+      "Other Fees": "500 ₹"
+    },
+    "rows": [
+      {
+        "l": "Total Fees",
+        "v": "₹2,000.00"
+      },
+      {
+        "l": "You Receive",
+        "v": "₹8,000.00"
+      }
+    ],
+    "intro": "Take one product with one price. Here is what Marketplace Fee Calculator shows once every cost is counted.",
+    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+  },
+  "codrto": {
+    "inputs": {
+      "Total COD Orders": "1000",
+      "RTO Rate": "20 %",
+      "Loss per RTO Order": "200 ₹"
+    },
+    "rows": [
+      {
+        "l": "RTO Orders",
+        "v": "200"
+      },
+      {
+        "l": "Total Loss",
+        "v": "₹40,000"
+      }
+    ],
+    "intro": "Take one product with one price. Here is what COD & RTO Loss Calculator shows once every cost is counted.",
+    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+  },
+  "discountimpact": {
+    "inputs": {
+      "Selling Price": "1000 ₹",
+      "Cost Price": "700 ₹",
+      "Discount": "10 %"
+    },
+    "rows": [
+      {
+        "l": "Price After Discount",
+        "v": "₹900.00"
+      },
+      {
+        "l": "Profit Before",
+        "v": "₹300.00"
+      },
+      {
+        "l": "Profit After",
+        "v": "₹200.00"
+      },
+      {
+        "l": "Drop in Profit",
+        "v": "33.3%"
+      }
+    ],
+    "intro": "Take one product with one price. Here is what Discount Impact on Profit shows once every cost is counted.",
+    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+  },
+  "importduty": {
+    "inputs": {
+      "Product Value": "100000 ₹",
+      "Customs Duty": "20 %",
+      "IGST": "18 %"
+    },
+    "rows": [
+      {
+        "l": "Duty Amount",
+        "v": "₹20,000.00"
+      },
+      {
+        "l": "IGST Amount",
+        "v": "₹21,600.00"
+      },
+      {
+        "l": "Total Landed Cost",
+        "v": "₹1,41,600.00"
+      }
+    ],
+    "intro": "Take one product with one price. Here is what Import Duty & Customs Calculator shows once every cost is counted.",
+    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+  },
+  "ctc": {
+    "inputs": {
+      "Gross Monthly Salary": "50000 ₹",
+      "Employer PF Contribution": "1800 %",
+      "Other Monthly Benefits": "2000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Monthly CTC",
+        "v": "₹9,52,000.00"
+      },
+      {
+        "l": "Annual CTC",
+        "v": "₹1,14,24,000"
+      }
+    ],
+    "intro": "Consider one hire or one freelancer. Here is what Employee Cost (CTC) Calculator says that really costs.",
+    "outro": "The salary is never the whole cost of a hire. Budget for the full figure, not the number you agreed in the interview."
+  },
+  "freelance": {
+    "inputs": {
+      "Target Monthly Income": "100000 ₹",
+      "Working Hours / Week": "5",
+      "Weeks / Month": "4"
+    },
+    "rows": [
+      {
+        "l": "Hourly Rate to Charge",
+        "v": "₹5,000.00"
+      }
+    ],
+    "intro": "Consider one hire or one freelancer. Here is what Freelancer Hourly Rate says that really costs.",
+    "outro": "The salary is never the whole cost of a hire. Budget for the full figure, not the number you agreed in the interview."
+  },
+  "franchise": {
+    "inputs": {
+      "Starting Investment": "450000 ₹",
+      "Monthly Profit": "24 ₹"
+    },
+    "rows": [
+      {
+        "l": "Payback Period",
+        "v": "18,750.0 months"
+      }
+    ],
+    "intro": "Consider one hire or one freelancer. Here is what Franchise / Store ROI says that really costs.",
+    "outro": "The salary is never the whole cost of a hire. Budget for the full figure, not the number you agreed in the interview."
+  },
+  "moicirr": {
+    "inputs": {
+      "Investment Amount": "450000 ₹",
+      "Exit Amount": "180000 ₹",
+      "Years Held": "5"
+    },
+    "rows": [
+      {
+        "l": "MOIC",
+        "v": "0.40x"
+      },
+      {
+        "l": "IRR",
+        "v": "-16.7%"
+      }
+    ],
+    "intro": "Take an investment held for a few years. Here is what MOIC & IRR reports at the end.",
+    "outro": "Compare the multiple against the years it took. A 3x return over ten years is a very different outcome from a 3x return over three."
+  },
+  "exitcalc": {
+    "inputs": {
+      "Your Equity": "18 %",
+      "Exit Valuation": "450000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Your Payout",
+        "v": "₹81,000"
+      }
+    ],
+    "intro": "Take an investment held for a few years. Here is what Exit Calculator reports at the end.",
+    "outro": "Compare the multiple against the years it took. A 3x return over ten years is a very different outcome from a 3x return over three."
+  },
+  "tam": {
+    "inputs": {
+      "TAM (Total Market)": "10000000 ₹",
+      "SAM": "10 % of TAM",
+      "SOM": "10 % of SAM"
+    },
+    "rows": [
+      {
+        "l": "SAM",
+        "v": "₹10,00,000"
+      },
+      {
+        "l": "SOM",
+        "v": "₹1,00,000"
+      }
+    ],
+    "intro": "Take a market you could sell into. Here is how the three layers stack up.",
+    "outro": "The SOM is the number to defend. Anyone can claim a large TAM; the SOM is where you say how you actually get in."
+  },
+  "agencyroas": {
+    "inputs": {
+      "Ad Revenue": "450000 ₹",
+      "Ad Spend": "12 ��"
+    },
+    "rows": [
+      {
+        "l": "ROAS",
+        "v": "37,500.00x"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what ROAS Calculator shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "cpmcpc": {
+    "inputs": {
+      "CPM": "450000 ₹",
+      "Impressions": "12",
+      "Clicks": "12"
+    },
+    "rows": [
+      {
+        "l": "Estimated Spend",
+        "v": "₹5,400.00"
+      },
+      {
+        "l": "CPC",
+        "v": "₹450.00"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what CPM to CPC Converter shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "cpcpa": {
+    "inputs": {
+      "Cost Per Click": "450000 ₹",
+      "Conversion Rate": "18 %"
+    },
+    "rows": [
+      {
+        "l": "CPA",
+        "v": "₹25,00,000.00"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what CPC to CPA Converter shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "breakevenad": {
+    "inputs": {
+      "Revenue Per Sale": "450000 ₹",
+      "Product Cost Per Sale": "180000 ₹",
+      "Expected Conversions": "12"
+    },
+    "rows": [
+      {
+        "l": "Break-Even Ad Spend",
+        "v": "₹32,40,000.00"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what Break-Even Ad Spend shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "agencycac": {
+    "inputs": {
+      "Marketing Spend": "450000 ₹",
+      "Sales Cost": "180000 ₹",
+      "New Clients": "12"
+    },
+    "rows": [
+      {
+        "l": "Client CAC",
+        "v": "₹52,500.00"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what Client Acquisition Cost (CAC) shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "clientltv": {
+    "inputs": {
+      "Monthly Client Revenue": "24 ₹",
+      "Average Lifetime": "24 months"
+    },
+    "rows": [
+      {
+        "l": "Client LTV",
+        "v": "₹576.00"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what Client Lifetime Value (LTV) shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "agencymargin": {
+    "inputs": {
+      "Agency Revenue": "450000 ₹",
+      "Total Costs": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Profit",
+        "v": "₹2,70,000.00"
+      },
+      {
+        "l": "Profit Margin",
+        "v": "60.0%"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what Agency Profit Margin shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "clientprofit": {
+    "inputs": {
+      "Client Fee": "450000 ₹",
+      "Delivery Cost": "180000 ₹",
+      "Allocated Overhead": "95000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Client Profit",
+        "v": "₹1,75,000.00"
+      },
+      {
+        "l": "Margin",
+        "v": "38.9%"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what Client Profitability shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "utilization": {
+    "inputs": {
+      "Billable Hours": "12 hours",
+      "Available Hours": "12 hours"
+    },
+    "rows": [
+      {
+        "l": "Utilization Rate",
+        "v": "100.0%"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what Employee Utilization Rate shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "churn": {
+    "inputs": {
+      "Clients Lost": "12",
+      "Clients at Start": "12"
+    },
+    "rows": [
+      {
+        "l": "Churn Rate",
+        "v": "100.0%"
+      }
+    ],
+    "intro": "Take an agency running a campaign for a client. Here is what Churn Rate shows.",
+    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+  },
+  "propertyvalue": {
+    "inputs": {
+      "Area": "1000 sq ft",
+      "Price Per Sq. Ft.": "5000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Estimated Property Value",
+        "v": "₹50,00,000.00"
+      }
+    ],
+    "intro": "Take one property. Here is what Property Valuation Calculator works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "homeemi": {
+    "inputs": {
+      "Loan Amount": "3000000 ₹",
+      "Annual Interest Rate": "8 %",
+      "Loan Tenure": "20 years"
+    },
+    "rows": [
+      {
+        "l": "Monthly EMI",
+        "v": "₹25,093.20"
+      },
+      {
+        "l": "Total Repayment",
+        "v": "₹60,22,368.50"
+      }
+    ],
+    "intro": "Take one property. Here is what Home Loan EMI Calculator works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "rentalyield": {
+    "inputs": {
+      "Monthly Rent": "20000 ₹",
+      "Property Price": "5000000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Annual Rent",
+        "v": "₹2,40,000.00"
+      },
+      {
+        "l": "Rental Yield",
+        "v": "4.8%"
+      }
+    ],
+    "intro": "Take one property. Here is what Rental Yield Calculator works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "rentbuy": {
+    "inputs": {
+      "Monthly Rent": "24 ₹",
+      "Years Comparing": "5 years",
+      "Home Price": "450000 ₹",
+      "Upfront Buy Costs": "180000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Total Rent",
+        "v": "₹1,440.00"
+      },
+      {
+        "l": "Buy Cost Before Loan",
+        "v": "₹6,30,000.00"
+      },
+      {
+        "l": "Lower Cost",
+        "v": "Rent"
+      }
+    ],
+    "intro": "Take one property. Here is what Rent vs Buy Calculator works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "stampduty": {
+    "inputs": {
+      "Property Value": "5000000 ₹",
+      "Stamp Duty Rate": "6 %",
+      "Registration Rate": "1 %"
+    },
+    "rows": [
+      {
+        "l": "Stamp Duty",
+        "v": "₹3,00,000.00"
+      },
+      {
+        "l": "Registration",
+        "v": "₹50,000.00"
+      },
+      {
+        "l": "Total Charges",
+        "v": "₹3,50,000.00"
+      }
+    ],
+    "intro": "Take one property. Here is what Stamp Duty Calculator works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "brokerage": {
+    "inputs": {
+      "Transaction Amount": "450000 ₹",
+      "Commission Rate": "18 %"
+    },
+    "rows": [
+      {
+        "l": "Brokerage",
+        "v": "₹81,000.00"
+      }
+    ],
+    "intro": "Take one property. Here is what Brokerage / Agent Commission works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "propertyroi": {
+    "inputs": {
+      "Purchase Price": "5000000 ₹",
+      "Current / Sale Value": "6000000 ₹",
+      "Annual Rent": "20000 ₹",
+      "Holding Period": "5 years"
+    },
+    "rows": [
+      {
+        "l": "Total Return",
+        "v": "₹11,00,000.00"
+      },
+      {
+        "l": "ROI",
+        "v": "22.0%"
+      }
+    ],
+    "intro": "Take one property. Here is what Property ROI Calculator works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "downpayment": {
+    "inputs": {
+      "Property Price": "5000000 ₹",
+      "Loan-to-Value": "80 %"
+    },
+    "rows": [
+      {
+        "l": "Loan Amount",
+        "v": "₹40,00,000.00"
+      },
+      {
+        "l": "Down Payment",
+        "v": "₹10,00,000.00"
+      }
+    ],
+    "intro": "Take one property. Here is what Down Payment Calculator works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "areabreakdown": {
+    "inputs": {
+      "Built-up Area": "12 sq ft",
+      "Loading": "18 %"
+    },
+    "rows": [
+      {
+        "l": "Estimated Carpet Area",
+        "v": "9.84 sq ft"
+      },
+      {
+        "l": "Common / Loaded Area",
+        "v": "2.16 sq ft"
+      }
+    ],
+    "intro": "Take one property. Here is what Built-up Area vs Carpet Area works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "landunits": {
+    "inputs": {
+      "Area": "12 sq ft"
+    },
+    "rows": [
+      {
+        "l": "Square Yard",
+        "v": "1.33 sq yd"
+      },
+      {
+        "l": "Acre",
+        "v": "0.0000 acre"
+      },
+      {
+        "l": "Gaj",
+        "v": "1.33 gaj"
+      },
+      {
+        "l": "Bigha (estimate)",
+        "v": "0.0004 bigha"
+      }
+    ],
+    "intro": "Take one property. Here is what Land Area Unit Converter works out for it.",
+    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+  },
+  "incometax": {
+    "inputs": {
+      "Annual Taxable Income": "1000000 ₹",
+      "Old Regime Deductions": "100000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Old Regime Estimate",
+        "v": "₹1,80,000.00"
+      },
+      {
+        "l": "New Regime Estimate",
+        "v": "₹1,50,000.00"
+      },
+      {
+        "l": "Lower Estimate",
+        "v": "New Regime"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what Income Tax Calculator (Old vs New Regime) projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "hra": {
+    "inputs": {
+      "HRA Received": "20000 ₹",
+      "Annual Rent": "20000 ₹",
+      "Basic Salary": "60000 ₹",
+      "Metro Exemption Rate": "1 %"
+    },
+    "rows": [
+      {
+        "l": "Estimated HRA Exemption",
+        "v": "₹600.00"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what HRA Exemption Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "sip": {
+    "inputs": {
+      "Monthly Investment": "10000 ₹",
+      "Expected Annual Return": "12 %",
+      "Investment Period": "10 years"
+    },
+    "rows": [
+      {
+        "l": "Invested Amount",
+        "v": "₹12,00,000.00"
+      },
+      {
+        "l": "Estimated Value",
+        "v": "₹23,23,390.76"
+      },
+      {
+        "l": "Estimated Gain",
+        "v": "₹11,23,390.76"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what SIP Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "ppf": {
+    "inputs": {
+      "Yearly Contribution": "100000 ₹",
+      "Annual Interest Rate": "7 %",
+      "Tenure": "15 years"
+    },
+    "rows": [
+      {
+        "l": "Total Contribution",
+        "v": "₹15,00,000.00"
+      },
+      {
+        "l": "Estimated Maturity",
+        "v": "₹25,12,902.20"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what PPF Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "fd": {
+    "inputs": {
+      "Deposit Amount": "100000 ₹",
+      "Annual Interest Rate": "7 %",
+      "Tenure": "5 years",
+      "Compounds Per Year": "1"
+    },
+    "rows": [
+      {
+        "l": "Maturity Amount",
+        "v": "₹1,40,255.17"
+      },
+      {
+        "l": "Interest Earned",
+        "v": "₹40,255.17"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what FD (Fixed Deposit) Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "rd": {
+    "inputs": {
+      "Monthly Deposit": "5000 ₹",
+      "Annual Interest Rate": "7 %",
+      "Tenure": "24 months"
+    },
+    "rows": [
+      {
+        "l": "Total Deposits",
+        "v": "₹1,20,000.00"
+      },
+      {
+        "l": "Maturity Amount",
+        "v": "₹1,29,154.19"
+      },
+      {
+        "l": "Interest Earned",
+        "v": "₹9,154.19"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what RD (Recurring Deposit) Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "epf": {
+    "inputs": {
+      "Employee Monthly PF": "5000 ₹",
+      "Employer Monthly PF": "5000 ₹",
+      "Annual Interest Rate": "8 %",
+      "Years": "20 years"
+    },
+    "rows": [
+      {
+        "l": "Total Contributions",
+        "v": "₹24,00,000.00"
+      },
+      {
+        "l": "Estimated EPF Balance",
+        "v": "₹58,90,204.16"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what EPF Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "gratuity": {
+    "inputs": {
+      "Last Drawn Basic + DA": "50000 ₹",
+      "Completed Years": "10 years"
+    },
+    "rows": [
+      {
+        "l": "Estimated Gratuity",
+        "v": "₹2,88,461.54"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what Gratuity Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "nps": {
+    "inputs": {
+      "Monthly Contribution": "5000 ₹",
+      "Expected Annual Return": "10 %",
+      "Years to Retirement": "20 years"
+    },
+    "rows": [
+      {
+        "l": "Invested Amount",
+        "v": "₹12,00,000.00"
+      },
+      {
+        "l": "Estimated Corpus",
+        "v": "₹38,28,484.55"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what NPS Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "gst_taxwealth": {
+    "inputs": {
+      "Base Amount": "10000 ₹",
+      "Discount": "10 %",
+      "GST Rate": "18 %"
+    },
+    "rows": [
+      {
+        "l": "Discount Amount",
+        "v": "₹1,000.00"
+      },
+      {
+        "l": "Taxable Amount After Discount",
+        "v": "₹9,000.00"
+      },
+      {
+        "l": "Total GST",
+        "v": "₹1,620.00"
+      },
+      {
+        "l": "CGST (half of GST)",
+        "v": "₹810.00"
+      },
+      {
+        "l": "SGST (half of GST)",
+        "v": "₹810.00"
+      },
+      {
+        "l": "Final Invoice Total",
+        "v": "₹10,620.00"
+      },
+      {
+        "l": "Reverse: Base From Inclusive Amount",
+        "v": "₹8,474.58"
+      },
+      {
+        "l": "Reverse: GST Inside Inclusive Amount",
+        "v": "₹1,525.42"
+      }
+    ],
+    "intro": "Take one investment or one salary. Here is what GST Calculator projects.",
+    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+  },
+  "agefun": {
+    "inputs": {
+      "Date of Birth": "1995-06-15"
+    },
+    "rows": [
+      {
+        "l": "Exact Age",
+        "v": "31 years, 4 months"
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Age Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "lovefun": {
+    "inputs": {
+      "Your Name": "Rahul",
+      "Their Name": "Priya"
+    },
+    "rows": [
+      {
+        "l": "Compatibility",
+        "v": "38%"
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Love Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "numerology": {
+    "inputs": {
+      "Name": "Aarav",
+      "Date of Birth": "2019-08-14"
+    },
+    "rows": [
+      {
+        "l": "Lucky Number",
+        "v": 3
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Numerology Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "zodiac": {
+    "inputs": {
+      "Date of Birth": "1995-06-15"
+    },
+    "rows": [
+      {
+        "l": "Zodiac Sign",
+        "v": "Gemini"
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Zodiac Sign Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "rashi": {
+    "inputs": {
+      "Date of Birth": "1995-06-15"
+    },
+    "rows": [
+      {
+        "l": "Approximate Rashi",
+        "v": "Karka"
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Rashi (Moon Sign) Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "babyname": {
+    "inputs": {
+      "Baby Name": "Aarav"
+    },
+    "rows": [
+      {
+        "l": "Name Number",
+        "v": 7
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Baby Name Number Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "luckynumber": {
+    "inputs": {
+      "Date of Birth": "1995-06-15"
+    },
+    "rows": [
+      {
+        "l": "Lucky Number",
+        "v": 9
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Lucky Number Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "compatibility": {
+    "inputs": {
+      "First Name": "Rahul",
+      "Second Name": "Priya"
+    },
+    "rows": [
+      {
+        "l": "Compatibility",
+        "v": "95%"
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Compatibility Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "daysbetween": {
+    "inputs": {
+      "Start Date": "2026-04-01",
+      "End Date": "2026-10-21"
+    },
+    "rows": [
+      {
+        "l": "Days Between",
+        "v": "203 days"
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what Days Between Two Dates returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "bmi": {
+    "inputs": {
+      "Weight": "70 kg",
+      "Height": "175 cm"
+    },
+    "rows": [
+      {
+        "l": "BMI",
+        "v": "22.9"
+      },
+      {
+        "l": "Category",
+        "v": "Healthy range"
+      }
+    ],
+    "intro": "Enter a normal set of details. Here is what BMI Calculator returns.",
+    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+  },
+  "pitchscore": {
+    "inputs": {
+      "Your Believed Valuation": "450000 ₹",
+      "Annual Revenue": "180000 ₹",
+      "LTV": "95000 ₹",
+      "CAC": "60000 ₹",
+      "Cash Runway": "12 months",
+      "Gross Margin": "18 %"
+    },
+    "rows": [
+      {
+        "l": "Revenue Multiple",
+        "v": "2.5x"
+      },
+      {
+        "l": "LTV : CAC",
+        "v": "1.6:1"
+      }
+    ],
+    "intro": "Put a real pitch into the check. Here is how the numbers score.",
+    "outro": "Treat the score as a list of questions, not a verdict. Each weak number is something an investor will ask about, so have an answer ready."
+  },
+  "marketshare": {
+    "inputs": {
+      "Total market (units sold)": "10000 units",
+      "Your units sold": "6000 units"
+    },
+    "rows": [
+      {
+        "l": "Your market share",
+        "v": "60.0%"
+      },
+      {
+        "l": "Total market",
+        "v": "10,000 units"
+      },
+      {
+        "l": "You sold",
+        "v": "6,000 units"
+      },
+      {
+        "l": "Others sold",
+        "v": "4,000 units"
+      }
+    ],
+    "intro": "Suppose 10,000 units were sold in your market and 6,000 of them were yours. Here is your share.",
+    "outro": "6,000 out of 10,000 is 60%. Change either number above and the share updates as you type — the arithmetic stays that simple."
+  }
+}

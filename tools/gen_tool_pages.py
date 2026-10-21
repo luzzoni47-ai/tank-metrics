@@ -17,6 +17,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
 TOOLS = SITE / "tools"
 DATA = json.loads((Path(__file__).parent / "calcs.json").read_text(encoding="utf-8"))
+GUIDES = json.loads((Path(__file__).parent / "tool_guides.json").read_text(encoding="utf-8"))
+EXAMPLES = json.loads((Path(__file__).parent / "tool_examples.json").read_text(encoding="utf-8"))
 BASE = "https://tankmetrics.in"
 
 ACCENTS = {
@@ -87,6 +89,66 @@ def field_html(calcd_id: str, inp: dict) -> str:
     )
 
 
+def guide_for(c: dict) -> dict:
+    """Long-form copy for one calculator.
+
+    A hand-written entry in tool_guides.json wins. Anything not yet written
+    falls back to the category template, so every page carries the worked
+    example, the formula and the mistakes section rather than a bare card.
+    """
+    g = GUIDES["calcs"].get(c["id"])
+    if g:
+        return g
+    cat = GUIDES["cats"].get(c["cat"], {})
+    return {
+        "what": cat.get("what", "").replace("{name}", c["name"]).replace("{desc}", c["desc"]),
+        "formula": cat.get("formula", "").replace("{name}", c["name"]),
+        "mistakes": cat.get("mistakes", []),
+        "when": cat.get("when", []),
+    }
+
+
+def example_html(c: dict) -> str:
+    """A worked example whose numbers come from the calculator's own COMPUTE."""
+    ex = EXAMPLES.get(c["id"])
+    if not ex:
+        return ""
+    inputs = "".join(
+        f'<li><strong>{k}:</strong> {v}</li>' for k, v in ex["inputs"].items()
+    )
+    results = "".join(
+        f'<li><strong>{r["l"]}:</strong> {r["v"]}</li>' for r in ex["rows"]
+    )
+    return (
+        f'<h2>Worked example</h2>'
+        f'<p>{ex["intro"]}</p>'
+        f'<div class="worked"><div class="worked-col"><h3>What you enter</h3>'
+        f'<ul>{inputs}</ul></div><div class="worked-col"><h3>What you get</h3>'
+        f'<ul>{results}</ul></div></div>'
+        f'<p>{ex["outro"]}</p>'
+    )
+
+
+def guide_html(c: dict) -> str:
+    g = guide_for(c)
+    parts = []
+    if g.get("what"):
+        parts.append("<h2>What this calculator is for</h2>")
+        parts.append(f'<p>{g["what"]}</p>')
+    if g.get("formula"):
+        parts.append("<h2>How the maths works</h2>")
+        parts.append(f'<p>{g["formula"]}</p>')
+    if g.get("when"):
+        items = "".join(f"<li>{w}</li>" for w in g["when"])
+        parts.append("<h2>When to reach for it</h2>")
+        parts.append(f"<ul class=\"plain-list\">{items}</ul>")
+    if g.get("mistakes"):
+        items = "".join(f"<li>{m}</li>" for m in g["mistakes"])
+        parts.append("<h2>Common mistakes</h2>")
+        parts.append(f"<ul class=\"plain-list\">{items}</ul>")
+    return "".join(parts)
+
+
 def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str]) -> str:
     slug = slugs[c["id"]]
     accent = ACCENTS.get(
@@ -148,6 +210,8 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str]) -> str:
 <h2>How this calculator works</h2>
 <p>{c['desc']} Enter your numbers above and the result appears instantly — nothing is stored or sent anywhere.</p>
 {f'<p><strong>Good to know:</strong> {c["bench"]}</p>' if c['bench'] else ''}
+{example_html(c)}
+{guide_html(c)}
 <h2>Frequently asked questions</h2>
 {faq_html}
 <div class="cta-inline"><p>Want all 100 calculators in one place?</p><a class="btn-primary" href="/#{'card_' + c['id']}">Open on the home page →</a></div>
