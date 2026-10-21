@@ -25,14 +25,18 @@ calculators plus a small blog. Work only inside the cloned repo.
    headings as the English block.
 4. Add a card for the new post to `public/site/blog.html`, matching the existing
    cards and keeping the grid `repeat(2,minmax(0,1fr))`.
-5. Run the pipeline and tests. All must pass before continuing:
+5. Run the pipeline and the Python tests. All must pass before continuing:
    `python3 tools/clean_urls.py`
    `python3 tools/test_blog.py`
    `python3 tools/test_layout.py`
-   `python3 tools/test_clean_urls.py`
    Fix any failure and re-run. Never commit a red suite.
+   Do NOT run `pnpm install`, `npm install` or `next build`, and do NOT run
+   `tools/dom_smoke_tools.js`. They need a full dependency tree, they take
+   longer than this run is allowed, and none of them is needed to publish a
+   blog post — Vercel builds the site on its own servers.
 6. Commit and push to `main` with `GITHUB_PERSONAL_ACCESS_TOKEN`
-   (plain `GITHUB_TOKEN` is read-only and returns 403).
+   (plain `GITHUB_TOKEN` is read-only and returns 403). If the push is
+   rejected, `git pull --rebase origin main` first, then push again.
 7. Deploy to Vercel:
    - Write `.vercel/project.json` =
      {"projectId":"prj_Y6MHqnmDyyD5U239ecqEMbrxh4ei",
@@ -60,4 +64,3 @@ calculators plus a small blog. Work only inside the cloned repo.
 One short summary: the new post URL, the tests that ran and their result, the
 deployment URL, and anything that needs a human decision.
 
-<!-- build trigger probe -->
