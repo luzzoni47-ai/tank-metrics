@@ -39,6 +39,18 @@ f.onload = async () => {
   out.hasPhoneInput = !!d.querySelector('#phone');
   out.optionalLabels = d.querySelectorAll('.contact-form .opt').length;
   out.button = !!d.querySelector('#sendBtn');
+  // Multiple screenshots in one go: the attribute, and the live note that
+  // tells the visitor how many they picked.
+  const picker = d.querySelector('#attachment');
+  out.hasMultiple = !!(picker && picker.multiple);
+  try {
+    const dt = new DataTransfer();
+    dt.items.add(new File(['aa'], 'shot-1.png', { type: 'image/png' }));
+    dt.items.add(new File(['bb'], 'shot-2.png', { type: 'image/png' }));
+    picker.files = dt.files;
+    picker.dispatchEvent(new Event('change'));
+    out.multiNote = d.querySelector('#fileNote').textContent;
+  } catch (e) { out.multiNote = 'ERROR ' + e; }
   // The endpoint is a literal placeholder until the owner pastes the Apps
   // Script URL, and the form behaves differently in each state.
   const src = await (await fetch('/site/contact.js')).text();
@@ -65,6 +77,7 @@ CHECKS = [
     ("hasPhoneInput", True, "an optional phone field must exist"),
     ("optionalLabels", 5, "all five fields must be marked optional"),
     ("button", True, "submit button must exist"),
+    ("hasMultiple", True, "several screenshots must be selectable at once"),
     ("thanksVisible", True, "the visitor must always get a reply on send"),
     ("dialogs", 0, "no alert() may block the visitor"),
 ]
@@ -120,6 +133,14 @@ def main() -> int:
         failures.append(
             f"formHidden: got {data.get('formHidden')!r}, want {want_hidden!r} "
             f"(endpoint is {state})"
+        )
+
+    # Picking two files must be reported back to the visitor by name, so a
+    # silent failure to attach screenshots cannot go unnoticed.
+    note = str(data.get("multiNote", ""))
+    if "shot-1.png" not in note or "shot-2.png" not in note:
+        failures.append(
+            f"multiNote: got {note!r}, want both file names listed"
         )
 
     if failures:

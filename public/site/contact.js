@@ -4,8 +4,8 @@
  * which writes the row into a Google Sheet and drops any upload in Drive.
  *
  * Every field is optional on purpose: the visitor may send only a name, only
- * a message, only a screenshot, or nothing at all. The button always works and
- * the thank-you card always appears, so a visitor never hits a dead end.
+ * a message, only screenshots, or nothing at all. The button always works and
+ * the visitor always gets a reply, so nobody hits a dead end.
  */
 (function () {
   'use strict';
@@ -13,7 +13,11 @@
   // Replace this with the /exec URL from the Apps Script deployment.
   var ENDPOINT = 'PASTE_YOUR_APPS_SCRIPT_EXEC_URL_HERE';
 
-  var MAX_BYTES = 5 * 1024 * 1024;
+  var MAX_BYTES = 5 * 1024 * 1024;   // per file
+  var MAX_TOTAL = 10 * 1024 * 1024;  // all files together
+  var MAX_FILES = 5;
+
+  var NOTE_DEFAULT = 'Screenshot, photo ya PDF — ek saath 5 files tak, har ek 5 MB tak.';
 
   // Until the endpoint is set, the form still thanks the visitor but nothing
   // is stored. Say so loudly in the console so it cannot pass unnoticed.
@@ -44,22 +48,52 @@
     success.style.display = 'block';
   }
 
-  function readFile(file) {
-    return new Promise(function (resolve) {
-      if (!file) return resolve(null);
-      if (file.size > MAX_BYTES) return resolve('too-big');
-      var reader = new FileReader();
-      reader.onload = function () { resolve(reader.result); };
-      reader.onerror = function () { resolve('unreadable'); };
-      reader.readAsDataURL(file);
+  // Reads every chosen file into a data URL. Anything too big, over the total
+  // budget, or unreadable is skipped by name instead of failing the send: the
+  // written message still reaches the owner.
+  function readFiles(files) {
+    var kept = [];
+    var skipped = [];
+    var total = 0;
+    var list = Array.prototype.slice.call(files || []);
+
+    if (list.length > MAX_FILES) {
+      skipped = list.slice(MAX_FILES).map(function (f) { return f.name; });
+      list = list.slice(0, MAX_FILES);
+    }
+
+    return list.reduce(function (chain, file) {
+      return chain.then(function () {
+        if (file.size > MAX_BYTES || total + file.size > MAX_TOTAL) {
+          skipped.push(file.name);
+          return;
+        }
+        total += file.size;
+        return new Promise(function (resolve) {
+          var reader = new FileReader();
+          reader.onload = function () {
+            kept.push({ name: file.name, dataUrl: reader.result });
+            resolve();
+          };
+          reader.onerror = function () { skipped.push(file.name); resolve(); };
+          reader.readAsDataURL(file);
+        });
+      });
+    }, Promise.resolve()).then(function () {
+      return { files: kept, skipped: skipped };
     });
   }
 
   if (picker && note) {
     picker.addEventListener('change', function () {
-      var f = picker.files && picker.files[0];
-      if (!f) return;
-      note.textContent = f.name + ' — ' + Math.round(f.size / 1024) + ' KB';
+      var picked = Array.prototype.slice.call(picker.files || []);
+      if (!picked.length) {
+        note.textContent = NOTE_DEFAULT;
+        return;
+      }
+      note.textContent = picked.length + ' file chuni: ' + picked.map(function (f) {
+        return f.name;
+      }).join(', ');
     });
   }
 
@@ -71,8 +105,6 @@
       showThanks();
       return;
     }
-
-    var file = picker && picker.files ? picker.files[0] : null;
 
     // Before the endpoint exists there is nowhere for a message to go. Say so
     // instead of showing a thank-you for a message that was never stored.
@@ -86,40 +118,35 @@
       button.textContent = 'Sending…';
     }
 
-    readFile(file).then(function (dataUrl) {
+    readFiles(picker && picker.files).then(function (result) {
       var payload = {
         name: val('name'),
         email: val('email'),
         phone: val('phone'),
         message: val('message'),
         page: location.pathname,
-        fileName: dataUrl && dataUrl !== 'too-big' && file ? file.name : '',
-        fileData: dataUrl && dataUrl !== 'too-big' ? dataUrl : ''
+        files: result.files
       };
 
-      var oversized = dataUrl === 'too-big';
-      var failed = oversized || dataUrl === 'unreadable';
+      var failed = false;
 
-      var send = (failed || !configured())
-        ? Promise.resolve()
-        : fetch(ENDPOINT, {
-            method: 'POST',
-            // text/plain keeps this a CORS "simple request": Apps Script does
-            // not answer a preflight, so application/json would be blocked.
-            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-            body: JSON.stringify(payload)
-          }).catch(function () { failed = true; });
-
-      send.then(function () {
-        if (oversized) {
-          showThanks('Thanks! Your message reached us. The file was over 5 MB, so it was skipped — email it across if it matters.');
-        } else if (failed) {
-          showThanks("Thanks! We got your message. The file didn't upload, but the rest did.");
+      fetch(ENDPOINT, {
+        method: 'POST',
+        // text/plain keeps this a CORS "simple request": Apps Script does not
+        // answer a preflight, so application/json would be blocked.
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+      }).catch(function () { failed = true; }).then(function () {
+        if (failed) {
+          showThanks("Thanks! Your message reached us. The files didn't upload, but the rest did.");
+        } else if (result.skipped.length) {
+          showThanks('Thanks! Your message reached us. Ye files skip hui (5 MB se badi ya 5 se zyada): '
+            + result.skipped.join(', ') + ' — email kar dijiye agar zaroori hai.');
         } else {
           showThanks();
         }
         form.reset();
-        if (note) note.textContent = 'Photo, PDF ya document — 5 MB tak.';
+        if (note) note.textContent = NOTE_DEFAULT;
         form.style.display = 'none';
         if (button) {
           button.disabled = false;

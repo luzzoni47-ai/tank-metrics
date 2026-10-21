@@ -16,9 +16,11 @@
 var SHEET_NAME = 'Responses';
 var FOLDER_NAME = 'Tank Metrics - Contact uploads';
 var NOTIFY = true; // email yourself a copy of each message
-var MAX_BYTES = 5 * 1024 * 1024; // 5 MB, matches the website's own cap
+var MAX_BYTES = 5 * 1024 * 1024;    // per file, matches the website's cap
+var MAX_TOTAL = 10 * 1024 * 1024;   // all files together
+var MAX_FILES = 5;
 
-var HEADERS = ['Received', 'Name', 'Email', 'Phone', 'Message', 'File', 'File link', 'Page'];
+var HEADERS = ['Received', 'Name', 'Email', 'Phone', 'Message', 'Files', 'File links', 'Page'];
 
 function doGet() {
   // Lets you confirm the deployment works by opening the URL in a browser.
@@ -36,10 +38,27 @@ function doPost(e) {
       return reply({ ok: true });
     }
 
-    var fileLink = '';
-    var fileName = String(data.fileName || '');
-    if (data.fileData && fileName) {
-      fileLink = saveFile(fileName, data.fileData);
+    // Accept both shapes: the current `files` array and the older single
+    // `fileName`/`fileData` pair, so a browser holding a cached contact.js
+    // still stores its upload instead of silently dropping it.
+    var incoming = data.files;
+    if (!incoming || !incoming.length) {
+      incoming = data.fileData ? [{ name: data.fileName, dataUrl: data.fileData }] : [];
+    }
+    incoming = incoming.slice(0, MAX_FILES);
+
+    var names = [];
+    var links = [];
+    var total = 0;
+
+    for (var i = 0; i < incoming.length; i++) {
+      var item = incoming[i] || {};
+      if (!item.dataUrl || !item.name) continue;
+      var bytes = String(item.dataUrl).length * 0.75;
+      if (bytes > MAX_BYTES || total + bytes > MAX_TOTAL) continue;
+      total += bytes;
+      names.push(String(item.name));
+      links.push(saveFile(String(item.name), item.dataUrl));
     }
 
     var sheet = getSheet();
@@ -49,13 +68,13 @@ function doPost(e) {
       String(data.email || ''),
       String(data.phone || ''),
       String(data.message || ''),
-      fileName,
-      fileLink,
+      names.join(', '),
+      links.join('\n'),
       String(data.page || ''),
     ]);
 
     if (NOTIFY) {
-      notify(data, fileName, fileLink);
+      notify(data, names, links);
     }
     return reply({ ok: true });
   } catch (err) {
@@ -101,7 +120,7 @@ function getFolder() {
   return it.hasNext() ? it.next() : DriveApp.createFolder(FOLDER_NAME);
 }
 
-function notify(data, fileName, fileLink) {
+function notify(data, names, links) {
   var who = String(data.name || 'Someone');
   var lines = [
     'New message from the Tank Metrics contact form.',
@@ -110,10 +129,10 @@ function notify(data, fileName, fileLink) {
     'Email:   ' + (data.email || '(not given)'),
     'Phone:   ' + (data.phone || '(not given)'),
     'Message: ' + (data.message || '(not given)'),
-    'File:    ' + (fileName || '(none)'),
+    'Files:   ' + (names.length ? names.join(', ') : '(none)'),
   ];
-  if (fileLink) {
-    lines.push('Link:    ' + fileLink);
+  for (var i = 0; i < links.length; i++) {
+    lines.push('Link:    ' + links[i]);
   }
   MailApp.sendEmail({
     to: Session.getEffectiveUser().getEmail(),

@@ -71,7 +71,7 @@ If the row does not appear, see below.
 
 **The Sheet** — one row per message:
 
-| Received | Name | Email | Phone | Message | File | File link | Page |
+| Received | Name | Email | Phone | Message | Files | File links | Page |
 |---|---|---|---|---|---|---|---|
 
 Blank fields are stored empty. Nothing is ever rejected, because every field
@@ -81,7 +81,10 @@ is optional by design.
 without opening the Sheet.
 
 **Files** — uploads land in a Drive folder called `Tank Metrics - Contact
-uploads`, up to 5 MB each. The Sheet row links to the file.
+uploads`. A visitor can attach up to **5 files at once** (screenshots, photos,
+PDFs), each up to 5 MB and 10 MB in total. The Sheet row lists every name and
+every Drive link. Anything over those limits is skipped by name and the visitor
+is told which ones, so the written message always gets through.
 
 ---
 
@@ -111,7 +114,7 @@ uploads`, up to 5 MB each. The Sheet row links to the file.
 | Green card, but no Sheet row | `contact.js` still has the placeholder | Do step 4 |
 | Green card, no row, URL is set | Deployment is not "Anyone" | Manage deployments → edit → Who has access: **Anyone** |
 | Nothing happens on click | Browser console shows a CSP error | `next.config.mjs` lost `script.google.com` from `connect-src` |
-| Row appears but file is missing | File was over 5 MB | The card says so; ask for it by email |
+| Row appears but files are missing | Over 5 MB each, over 10 MB total, or more than 5 | The card names the skipped files; ask for them by email |
 | Console says *ENDPOINT is not set* | Same as row 1 | Do step 4 |
 
 Check the browser console (F12 → Console) first — it names the exact problem.
@@ -123,6 +126,7 @@ Check the browser console (F12 → Console) first — it names the exact problem
 - no field is `required`
 - the owner's phone number is gone
 - all five fields are labelled optional
+- several screenshots can be picked in one go, and the note names them
 - the file and phone inputs exist
 - an empty submit still produces a reply
 - no `alert()` ever blocks the visitor
