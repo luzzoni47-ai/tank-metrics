@@ -49,6 +49,7 @@ calculators plus a small blog. Work only inside the cloned repo.
    `python3 tools/test_blog.py`
    `python3 tools/test_news.py`
    `python3 tools/test_layout.py`
+   `python3 tools/test_contact_form.py`
    Fix any failure and re-run. Never commit a red suite.
    Do NOT run `pnpm install`, `npm install` or `next build`, and do NOT run
    `tools/dom_smoke_tools.js`. They need a full dependency tree, they take

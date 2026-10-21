@@ -57,6 +57,7 @@ part that eats the clock, so do it first and keep it to a handful of searches.
    `python3 tools/test_blog.py`
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
+   `python3 tools/test_contact_form.py`
    `python3 tools/seo_monitor.py .` - must report 0 problems. This is the guard
    that catches an over-long title or description, a missing canonical, or
    missing og:title/og:description on the new story. Fix and re-run until clean.

@@ -33,7 +33,9 @@ const csp = [
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "img-src 'self' data:",
-  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com",
+  // script.google.com is the contact form's Apps Script endpoint; it
+  // answers from script.googleusercontent.com after the redirect.
+  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com https://script.google.com https://script.googleusercontent.com",
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'",

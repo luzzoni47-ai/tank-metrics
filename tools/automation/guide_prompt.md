@@ -60,6 +60,7 @@ short on time, commit and push what you have rather than leaving it uncommitted.
    `python3 tools/test_news.py`
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
+   `python3 tools/test_contact_form.py`
    `python3 tools/seo_monitor.py .` - must report 0 problems. This is the guard
    that catches an over-long title or description, a missing canonical, or
    missing og:title/og:description on the new post. Fix and re-run until clean.
