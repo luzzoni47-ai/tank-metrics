@@ -61,8 +61,8 @@ short on time, commit and push what you have rather than leaving it uncommitted.
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
    Fix any failure and re-run. Never commit a red suite.
-   `tools/gsc_submit_list.txt` is hand-maintained: add the new URL in
-   alphabetical order so it gets submitted to Search Console.
+   `python3 tools/sync_gsc_list.py` - regenerates `tools/gsc_submit_list.txt`
+   from the sitemap, so the new URL is included without hand-editing.
    Do NOT run `pnpm install`, `npm install` or `next build`, and do NOT run
    `tools/dom_smoke_tools.js`. They need a full dependency tree, they take
    longer than this run is allowed, and none of them is needed to publish a
@@ -83,11 +83,17 @@ short on time, commit and push what you have rather than leaving it uncommitted.
      POST https://api.vercel.com/v2/deployments/<new_dpl_id>/aliases?teamId=team_TXJMGXfZ9VZ9ZemmkKmoOuYw
      with body {"alias":"tankmetrics.in"}.
 
-8. Verify `https://tankmetrics.in/<slug>` returns 200 and contains
+8. Submit the new URL to the search engines. Google Search Console needs a
+   Google login the agent does not have, but IndexNow does not:
+   `python3 tools/indexnow_submit.py /<slug>`
+   It should print `HTTP 200 accepted` or `202`. A 403 means the key file
+   `https://tankmetrics.in/<key>.txt` is not live yet - deploy first, then retry.
+
+9. Verify `https://tankmetrics.in/<slug>` returns 200 and contains
    `data-lang="en"` and `data-lang="hinglish"`, and that
    `https://tankmetrics.in/blog` shows the new card in the Guides tab.
 
-9. Check the security headers on https://tankmetrics.in/ (CSP, X-Frame-Options,
+10. Check the security headers on https://tankmetrics.in/ (CSP, X-Frame-Options,
    X-Content-Type-Options, Referrer-Policy, Permissions-Policy). If any are
    missing, add them in `next.config.mjs` and redeploy.
 
