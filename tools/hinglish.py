@@ -26,6 +26,7 @@ POSTS = [
     'blog-ltv-cac-ratio-explained.html',
     'blog-startup-valuation-explained.html',
     'blog-burn-rate-runway-guide.html',
+    'blog-marketplace-fees-explained.html',
 ]
 
 VIRAMA = '्'
@@ -273,6 +274,15 @@ OVERRIDES = {
     'आउट': 'out', 'फ़ाइनल': 'final', 'रणनीतिक': 'strategic',
     'विज्ञान': 'vigyan', 'विज्ञापन': 'vigyapan',
     'बैंगलोर': 'Bangalore', 'गाइड': 'guide', 'हिंदी': 'hindi',
+    # marketplace-fees post: the rules misplace the schwa or the vowel on these
+    'ऑनलाइन': 'online', 'बिक्री': 'bikri', 'बिकने': 'bikne',
+    'वापसी': 'vaapasi', 'चौथाई': 'chauthai', 'बनाना': 'banana',
+    'इसी': 'isi', 'करनी': 'karni', 'छीनती': 'chheenti',
+    'बचाएँ': 'bachayein', 'बचता': 'bachta', 'सस्ती': 'sasti',
+    'ग्राम': 'gram', 'डालने': 'daalne', 'चौंकाता': 'chaunkata',
+    'धीमे': 'dheeme', 'पढ़ता': 'padhta', 'पढ़ना': 'padhna',
+    'लंबी': 'lambi', 'जोड़कर': 'jodkar', 'पतले': 'patle',
+    'अकेले': 'akele', 'रकम': 'rakam', 'हाथ': 'haath',
 }
 
 DEVANAGARI = re.compile(r'[\u0900-\u097F]+')

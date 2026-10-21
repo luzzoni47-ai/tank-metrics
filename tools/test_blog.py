@@ -24,6 +24,7 @@ POSTS = [
     "/site/blog-ltv-cac-ratio-explained.html",
     "/site/blog-startup-valuation-explained.html",
     "/site/blog-burn-rate-runway-guide.html",
+    "/site/blog-marketplace-fees-explained.html",
 ]
 MONEY_LIMIT = 10000
 

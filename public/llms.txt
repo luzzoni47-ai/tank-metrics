@@ -16,3 +16,4 @@
 - [LTV:CAC Ratio Explained](https://tankmetrics.in/site/blog-ltv-cac-ratio-explained.html)
 - [How Startup Valuation Works](https://tankmetrics.in/site/blog-startup-valuation-explained.html)
 - [Burn Rate and Runway](https://tankmetrics.in/site/blog-burn-rate-runway-guide.html)
+- [Marketplace Fees Explained](https://tankmetrics.in/site/blog-marketplace-fees-explained.html)
