@@ -170,6 +170,22 @@ def run_probe(width: int) -> dict:
     return json.loads(payload)
 
 
+def check_card_markup(failures: list) -> None:
+    """Each listing card carries one heading, opened and closed with the same tag."""
+    listing = (SITE / "blog.html").read_text()
+    for m in re.finditer(r'<a class="blog-card".*?</a>', listing, re.S):
+        card = m.group(0)
+        opens = re.findall(r"<h([1-6])[ >]", card)
+        closes = re.findall(r"</h([1-6])>", card)
+        if opens != closes:
+            failures.append(
+                f"blog.html: a card opens <h{opens[0] if opens else '?'}> but closes "
+                f"</h{closes[0] if closes else '?'}>"
+            )
+        if len(opens) != 1:
+            failures.append(f"blog.html: a card has {len(opens)} headings, expected 1")
+
+
 def check_amounts(failures: list) -> None:
     for path in sorted(SITE.glob("blog*.html")):
         body = re.sub(r"<[^>]+>", " ", path.read_text())
@@ -182,6 +198,7 @@ def check_amounts(failures: list) -> None:
 def main() -> int:
     failures = []
     check_amounts(failures)
+    check_card_markup(failures)
 
     desktop = run_probe(1280)
     grid = desktop["grid"]
@@ -191,8 +208,12 @@ def main() -> int:
         failures.append(f"blog listing overflows at 1280px by {grid['overflow']}px")
 
     mobile = run_probe(390)
-    if mobile["grid"].get("columns") != 1:
-        failures.append(f"blog listing has {mobile['grid'].get('columns')} columns at 390px, expected 1")
+    # The listing stays two-up on phones: a single column pushed every post but
+    # the newest below the fold.
+    if mobile["grid"].get("columns") != 2:
+        failures.append(f"blog listing has {mobile['grid'].get('columns')} columns at 390px, expected 2")
+    if mobile["grid"].get("overflow", 0) > 0:
+        failures.append(f"blog listing overflows at 390px by {mobile['grid']['overflow']}px")
 
     for page, rec in desktop["posts"].items():
         if not (rec.get("hasEn") and rec.get("hasHinglish") and rec.get("hasBtn")):
