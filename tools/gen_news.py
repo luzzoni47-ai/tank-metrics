@@ -285,26 +285,35 @@ def write_llms(items: list[dict]) -> None:
     p.write_text(t.rstrip() + "\n" + "\n".join(lines) + "\n", encoding="utf-8")
 
 
-STRIP_RE = re.compile(r'<section class="news-strip">.*?</section>', re.S)
+STRIP_RE = re.compile(r'<div class="blog-grid" id="newsGrid">.*?</div>', re.S)
+# One-time migration from the old <section class="news-strip"> wrapper.
+LEGACY_RE = re.compile(r'<section class="news-strip">.*?</section>', re.S)
 
 
-def strip_html(heading: str, sub: str, items: list[dict], limit: int = 4) -> str:
+# A news card should look like a guide card, so the tab switch does not change
+# the page's shape. Categories borrow the guide palette; anything unmapped
+# falls back to the site blue.
+CAT_COLORS = {
+    "Shark Tank": "#f2a600",
+    "Tax Rules": "#ea4335",
+    "Funding": "#4285f4",
+    "Small Business": "#34a853",
+}
+
+
+def strip_html(items: list[dict], limit: int = 6) -> str:
+    """The news pane, built as a plain grid of guide-shaped cards."""
     cards = ""
     for it in items[:limit]:
-        dek = it["dek"]
-        if len(dek) > 120:
-            dek = dek[:120].rsplit(" ", 1)[0] + "\u2026"
+        color = CAT_COLORS.get(it["category"], "#4285f4")
         cards += (
-            f'<a class="blog-card" href="/{it["slug"]}">'
+            f'<a class="blog-card" href="/{it["slug"]}" style="border-top-color:{color}">'
             f'<span class="cat">{html.escape(it["category"])}</span>'
-            f'<h3>{html.escape(it["title"])}</h3>'
-            f'<p>{html.escape(dek)}</p>'
+            f'<h2>{html.escape(it["title"])}</h2>'
+            f'<p>{html.escape(it["dek"])}</p>'
             f'<span class="readmore">Read the story \u2192</span></a>'
         )
-    return (f'<section class="news-strip"><div class="news-strip-head">'
-            f'<h2>{heading}</h2><p>{sub}</p>'
-            f'<a class="news-all" href="/news">All news \u2192</a></div>'
-            f'<div class="blog-grid">{cards}</div></section>')
+    return f'<div class="blog-grid" id="newsGrid">{cards}</div>' 
 
 
 def write_home_strips(items: list[dict]) -> int:
@@ -316,15 +325,14 @@ def write_home_strips(items: list[dict]) -> int:
     # Only the blog listing carries a strip. The home page stays a clean
     # calculator catalogue, so a visitor is not pushed into reading first.
     targets = {
-        SITE / "blog.html": strip_html(
-            "Latest news",
-            "Funding rounds, Shark Tank deals and money rules that affect your business.",
-            items),
+        SITE / "blog.html": strip_html(items),
     }
     updated = 0
     for path, section in targets.items():
         t = path.read_text(encoding="utf-8")
-        if STRIP_RE.search(t):
+        if LEGACY_RE.search(t):
+            t = LEGACY_RE.sub(lambda _: section, t, count=1)
+        elif STRIP_RE.search(t):
             t = STRIP_RE.sub(lambda _: section, t, count=1)
         else:
             continue

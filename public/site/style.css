@@ -51,23 +51,14 @@
 .post-lang[hidden]{display:none}.post-lang[data-lang="hinglish"] .cta-inline{flex-direction:row}
 
 /* The news strip sits above the catalogue on the home page and below the
-   guide grid on the blog. It reuses .blog-grid/.blog-card so the two listings
-   cannot drift apart. */
-.news-strip{margin:0 0 34px}
-.news-strip-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
-.news-strip-head h2{font-size:20px;font-weight:600;font-family:Poppins;margin:0}
-.news-strip-head p{margin:0;font-size:13px;color:var(--text-dim);flex:1;min-width:220px;line-height:1.5}
-.news-all{font-size:12.5px;font-weight:600;color:var(--blue);text-decoration:none;white-space:nowrap}
-.news-all:hover{text-decoration:underline}
+   news pane on the blog. It reuses .blog-grid/.blog-card so the two listings
+   cannot drift apart, and needs no rules of its own. */
 .news-source{margin-top:22px;font-size:12px;color:var(--text-dim);line-height:1.6}
 .news-source a{color:var(--blue)}
 .news-related{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .news-related a{color:var(--blue);text-decoration:none;font-size:13.5px}
 .news-related a:hover{text-decoration:underline}
-@media (max-width:760px){.news-strip{padding-left:28px;padding-right:28px;margin-bottom:22px}
-.news-strip-head h2{font-size:16px}
-.news-strip-head p{font-size:11.5px;min-width:0}
-.news-source{font-size:11px}}
+@media (max-width:760px){.news-source{font-size:11px}}
 
 /* Worked example block on the tool pages. Two columns of inputs and results,
    stacked on phones so the numbers stay readable. */
