@@ -11,7 +11,8 @@ already seen, and do not run anything the guardrails forbid. If you are running
 short on time, commit and push what you have rather than leaving it uncommitted.
 
 ## Read first
-1. `AGENTS.md` and `.openhands/memory/MEMORY.md` — build rules and gotchas.
+1. `AGENTS.md` — build rules and gotchas. (`.openhands/` is gitignored, so no
+   memory file ships in this clone.)
 2. The existing posts `public/site/blog-*.html` — copy their structure exactly.
 
 ## Task, in order
@@ -54,6 +55,8 @@ short on time, commit and push what you have rather than leaving it uncommitted.
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
    Fix any failure and re-run. Never commit a red suite.
+   `tools/gsc_submit_list.txt` is hand-maintained: add the new URL in
+   alphabetical order so it gets submitted to Search Console.
    Do NOT run `pnpm install`, `npm install` or `next build`, and do NOT run
    `tools/dom_smoke_tools.js`. They need a full dependency tree, they take
    longer than this run is allowed, and none of them is needed to publish a

@@ -10,7 +10,8 @@ The run is killed at 30 minutes. Work briskly. The web research in step 1 is the
 part that eats the clock, so do it first and keep it to a handful of searches.
 
 ## Read first
-1. `AGENTS.md` and `.openhands/memory/MEMORY.md` — build rules and gotchas.
+1. `AGENTS.md` — build rules and gotchas. (`.openhands/` is gitignored, so no
+   memory file ships in this clone.)
 2. `tools/news.json` — copy an existing entry for the exact field list.
 3. `tools/gen_news.py` — the generator that renders the pages and the pane.
 
@@ -54,6 +55,8 @@ part that eats the clock, so do it first and keep it to a handful of searches.
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
    Fix any failure and re-run. Never commit a red suite.
+   `tools/gsc_submit_list.txt` is hand-maintained: add the new story URL in
+   alphabetical order so it gets submitted to Search Console.
    Do NOT run `pnpm install`, `npm install` or `next build`, and do NOT run
    `tools/dom_smoke_tools.js`. They need a full dependency tree, they take
    longer than this run is allowed, and none of them is needed to publish a
