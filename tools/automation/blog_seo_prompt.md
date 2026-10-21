@@ -25,19 +25,39 @@ calculators plus a small blog. Work only inside the cloned repo.
    headings as the English block.
 4. Add a card for the new post to `public/site/blog.html`, matching the existing
    cards and keeping the grid `repeat(2,minmax(0,1fr))`.
-5. Run the pipeline and the Python tests. All must pass before continuing:
+5. Add ONE news story to the news desk (`tools/news.json`), then run
+   `python3 tools/gen_news.py`. The desk exists to pull in traffic from whatever
+   is being talked about today, so the topic must be current, not evergreen.
+   - Research first with web search. Look at Indian startup funding rounds from
+     the last few days, Shark Tank India and Shark Tank USA episodes, GST and
+     tax rule changes, and anything a small-business owner would search for
+     this week. US funding news counts too when it says something about India.
+   - Write for a reader who runs a shop or is building a startup. Explain the
+     numbers in the story with arithmetic, and end with what it means for them.
+     Never invent a fact, figure or quote — use only what the sources say, and
+     put the source name and URL in `source_name` / `source_url`.
+   - Append one object to `items` in `tools/news.json`. Copy an existing entry
+     for the exact field list. `body_en` and `body_hinglish` must have the same
+     number of `<h2>`/`<h3>` headings, at least 400 English words, and the
+     Hinglish block must be roman script with zero Devanagari.
+   - Point `cta` at the calculator the story is really about, and add one or two
+     `related` guides.
+   - `gen_news.py` also refreshes the news strip on the home page and the blog,
+     the sitemap, `llms.txt` and `tools/url-map.json`. Do not edit those by hand.
+6. Run the pipeline and the Python tests. All must pass before continuing:
    `python3 tools/clean_urls.py`
    `python3 tools/test_blog.py`
+   `python3 tools/test_news.py`
    `python3 tools/test_layout.py`
    Fix any failure and re-run. Never commit a red suite.
    Do NOT run `pnpm install`, `npm install` or `next build`, and do NOT run
    `tools/dom_smoke_tools.js`. They need a full dependency tree, they take
    longer than this run is allowed, and none of them is needed to publish a
    blog post — Vercel builds the site on its own servers.
-6. Commit and push to `main` with `GITHUB_PERSONAL_ACCESS_TOKEN`
+7. Commit and push to `main` with `GITHUB_PERSONAL_ACCESS_TOKEN`
    (plain `GITHUB_TOKEN` is read-only and returns 403). If the push is
    rejected, `git pull --rebase origin main` first, then push again.
-7. Deploy to Vercel:
+8. Deploy to Vercel:
    - Write `.vercel/project.json` =
      {"projectId":"prj_Y6MHqnmDyyD5U239ecqEMbrxh4ei",
       "orgId":"team_TXJMGXfZ9VZ9ZemmkKmoOuYw"} — without it the CLI fails with
@@ -47,9 +67,11 @@ calculators plus a small blog. Work only inside the cloned repo.
      the old deployment. Move it through the REST API:
      POST https://api.vercel.com/v2/deployments/<new_dpl_id>/aliases?teamId=team_TXJMGXfZ9VZ9ZemmkKmoOuYw
      with body {"alias":"tankmetrics.in"}.
-8. Verify `https://tankmetrics.in/<slug>` returns 200 and contains both
-   `data-lang="en"` and `data-lang="hinglish"`.
-9. Check the security headers on https://tankmetrics.in/ (CSP, X-Frame-Options,
+9. Verify `https://tankmetrics.in/<blog-slug>` and
+   `https://tankmetrics.in/<news-slug>` both return 200 and contain
+   `data-lang="en"` and `data-lang="hinglish"`. Also confirm `/news` lists the
+   new story.
+10. Check the security headers on https://tankmetrics.in/ (CSP, X-Frame-Options,
    X-Content-Type-Options, Referrer-Policy, Permissions-Policy). If any are
    missing, add them in `next.config.mjs` and redeploy.
 

@@ -34,6 +34,7 @@ STATIC_PAGES = {
     "about": "/about",
     "contact": "/contact",
     "blog": "/blog",
+    "news": "/news",
     "privacy-policy": "/privacy-policy",
     "terms-and-conditions": "/terms-and-conditions",
     "disclaimer": "/disclaimer",
@@ -46,6 +47,9 @@ def build_map() -> dict[str, str]:
     slugs = build_slugs(DATA["calcs"])
     for c in DATA["calcs"]:
         m[f"/{slugs[c['id']]}"] = f"/site/tools/{slugs[c['id']]}.html"
+    for f in sorted(SITE.glob("news-*.html")):
+        slug = f.name[len("news-"):-len(".html")]
+        m[f"/{slug}"] = f"/site/{f.name}"
     for f in sorted(SITE.glob("blog-*.html")):
         slug = f.name[len("blog-"):-len(".html")]
         m[f"/{slug}"] = f"/site/{f.name}"

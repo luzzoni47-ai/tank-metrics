@@ -1,0 +1,308 @@
+{
+  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
+  "items": [
+    {
+      "slug": "shark-tank-usa-polygons-foldable-spoon-deal",
+      "title": "Indian Designer's Foldable Spoon Wins $350,000 on Shark Tank USA",
+      "dek": "Rahul Agarwal sold 10% of Polygons for $350,000 to Lori Greiner and Mindy Kaling. Here is the arithmetic behind that deal, and what it says about valuing a simple product.",
+      "category": "Shark Tank",
+      "date": "2026-10-21",
+      "date_display": "October 21, 2026",
+      "source_name": "Indian Express",
+      "source_url": "https://indianexpress.com/article/entertainment/television/shark-tank-rahul-agarwal-indian-entrepreneur-rs-3-crore-deal-spoon-brand-10929028",
+      "cta": {
+        "text": "Value your own idea the way the sharks did.",
+        "href": "/implied-valuation",
+        "label": "Open the Implied Valuation Calculator"
+      },
+      "related": [
+        {
+          "slug": "startup-valuation-explained",
+          "title": "How Startup Valuation Actually Works"
+        },
+        {
+          "slug": "shark-tank-pitch-check",
+          "title": "Shark Tank Pitch Check"
+        }
+      ],
+      "body_en": [
+        "<p>A measuring spoon that folds flat just did what most kitchen gadgets never manage: it walked into <em>Shark Tank USA</em> and left with a cheque. Rahul Agarwal, founder of Polygons, took an origami-inspired design to season 18, episode 4, and closed a $350,000 deal with Lori Greiner and guest shark Mindy Kaling.</p>",
+        "<p>The structure matters more than the headline number, because it is the same structure Indian founders are offered every week on <em>Shark Tank India</em>.</p>",
+        "<h2>What exactly did he give away?</h2>",
+        "<p>Agarwal handed over <strong>8% equity plus 2% in advisory shares</strong> — 10% in total — for $350,000. That puts the deal at a <strong>$3.5 million post-money valuation</strong>, or roughly ₹29 crore at the exchange rate used in reporting.</p>",
+        "<p>He had asked for $350,000 for 7%, which would have valued Polygons at $5 million. The sharks talked him down. That gap — $5 million asked versus $3.5 million agreed — is 30% of the company's value, and it was decided in a few minutes of conversation.</p>",
+        "<h2>The two numbers you should always split apart</h2>",
+        "<p>Every equity deal is two numbers wearing one coat. The amount invested tells you how much cash arrives. The percentage tells you what the company is worth. Confusing them is the most common mistake founders make when they repeat a deal on social media.</p>",
+        "<p>Pre-money valuation is the company's worth <em>before</em> the cheque. Post-money is <em>after</em>. Here, the post-money is $3.5 million, so the pre-money is $3.15 million. If a founder quotes only the post-money, they are quietly flattering themselves.</p>",
+        "<h2>Why a spoon is worth $3.5 million</h2>",
+        "<p>Because it solved a boring problem well. The product replaces a six-piece measuring spoon set with two folding tools, holds a patent, and had shipped more than 200,000 units to over 110 countries before the episode aired. Twenty-plus design awards helped too.</p>",
+        "<p>None of that is glamorous. All of it is the reason the deal happened. Investors do not pay for the idea of a folding spoon. They pay for units already sold, a patent that keeps rivals out, and a founder who shipped before asking for money.</p>",
+        "<h2>What an Indian founder should take from it</h2>",
+        "<p>First, know your numbers cold. Agarwal could name his units shipped and his country count on demand. Sharks test that, and fumbling it costs valuation.</p>",
+        "<p>Second, decide your floor before you walk in. The asking valuation is an opening bid, not a fact. Having a number below which you will walk is what stops a bad deal from feeling like a win.</p>",
+        "<p>Third, remember advisory shares are real shares. That extra 2% was not decoration; it was dilution. Founders often wave it through because it sounds like a formality. It is not.</p>"
+      ],
+      "body_hinglish": [
+        "<p>Ek measuring spoon jo fold ho jaata hai, woh kar gaya jo zyadatar kitchen gadgets kabhi nahi kar paate: <em>Shark Tank USA</em> mein gaya aur cheque le kar nikla. Rahul Agarwal, Polygons ke founder, origami-inspired design le kar season 18, episode 4 mein aaye, aur Lori Greiner aur guest shark Mindy Kaling ke saath $350,000 ka deal kar liya.</p>",
+        "<p>Number se zyada deal ka structure important hai, kyunki yahi structure har hafte <em>Shark Tank India</em> mein Indian founders ko milta hai.</p>",
+        "<h2>Aakhir usne kitna hissa diya?</h2>",
+        "<p>Agarwal ne <strong>8% equity aur 2% advisory shares</strong> diye — total 10% — $350,000 ke liye. Isse deal ki <strong>$3.5 million post-money valuation</strong> banti hai, yaani takriban ₹29 crore.</p>",
+        "<p>Unhone 7% ke liye $350,000 maanga tha, jisse Polygons ki value $5 million hoti. Sharks ne unhe neeche laaya. Yahi gap — $5 million maanga, $3.5 million tay hua — company ki 30% value hai, aur ye kuch minute ki baat-cheet mein tay hua.</p>",
+        "<h2>Do numbers jo hamesha alag-alag dekho</h2>",
+        "<p>Har equity deal do numbers ka joda hota hai. Amount batata hai kitna cash aayega. Percentage batata hai company kitne ki hai. In dono ko mila dena sabse aam galti hai jo founders social media par deal dohraate waqt karte hain.</p>",
+        "<p>Pre-money valuation cheque se <em>pehle</em> ki value hai. Post-money <em>baad</em> ki. Yahan post-money $3.5 million hai, to pre-money $3.15 million. Agar founder sirf post-money bataye, woh chupke se apni tareef kar raha hai.</p>",
+        "<h2>Ek chammach $3.5 million ka kyun?</h2>",
+        "<p>Kyunki usne ek boring problem achhe se solve kiya. Product chhe piece ka set hata kar do folding tools deta hai, patent hai, aur episode se pehle 200,000 se zyada units 110 se zyada deshon mein bhej chuka tha. Bees se zyada design awards ne bhi madad ki.</p>",
+        "<p>Ismein kuch bhi glamorous nahi hai. Phir bhi yahi wajah hai ki deal hui. Investors folding spoon ke idea ke paise nahi dete. Woh already biki units, patent jo competitor ko rokta hai, aur us founder ke paise dete hain jisne maangne se pehle ship kar diya.</p>",
+        "<h2>Indian founder ko isse kya seekhna chahiye</h2>",
+        "<p>Pehla, apne numbers ratlo. Agarwal turant units aur deshon ki ginti bata sakte the. Sharks yahi test karte hain, aur yahan fumble karne se valuation girti hai.</p>",
+        "<p>Doosra, andar ghusne se pehle apna floor tay karo. Asking valuation ek opening bid hai, sach nahi. Ek number jiske neeche aap walk karoge, wahi kharab deal ko jeet jaisa lagne se rokti hai.</p>",
+        "<p>Teesra, yaad rakho advisory shares asli shares hote hain. Woh extra 2% decoration nahi thi; woh dilution thi. Founders ise aksar hawa mein chhod dete hain kyunki formality lagti hai. Hai nahi.</p>"
+      ]
+    },
+    {
+      "slug": "gst-council-october-2026-small-business-changes",
+      "title": "GST Council Scrapped Arrest Powers and Raised the Prosecution Limit to ₹5 Crore",
+      "dek": "The 57th GST Council meeting eased compliance for small businesses without touching tax rates. Here is what actually changed and what it means for your shop or startup.",
+      "category": "Tax Rules",
+      "date": "2026-10-21",
+      "date_display": "October 21, 2026",
+      "source_name": "Economic Times",
+      "source_url": "https://m.economictimes.com/news/economy/policy/gst-reforms-2026-winners-who-benefits-consumers-msmes-businesses-exporters-gst-council-exporters-and-taxpayers-have-plenty-to-gain-heres-how/articleshow/134790594.cms",
+      "cta": {
+        "text": "Add GST to any price, or pull the base price out of a GST-inclusive bill.",
+        "href": "/gst-calculator",
+        "label": "Open the GST Calculator"
+      },
+      "related": [
+        {
+          "slug": "marketplace-fees-explained",
+          "title": "Marketplace Fees Explained"
+        },
+        {
+          "slug": "gst-calculator",
+          "title": "GST Calculator"
+        }
+      ],
+      "body_en": [
+        "<p>On 8 October 2026, the 57th GST Council meeting approved a set of reforms that change how the tax office treats you rather than how much tax you pay. Rates were left untouched. What moved was enforcement, refunds and paperwork.</p>",
+        "<p>For a small seller or a first-time founder, this is the more useful kind of change. A lower rate saves you a little every month. Fewer ways to get into trouble saves you a lot, once.</p>",
+        "<h2>What changed, in plain terms</h2>",
+        "<p><strong>Arrest powers under GST were removed.</strong> That is the headline. Tax officers can no longer arrest someone as an enforcement tool in the ordinary course of a dispute.</p>",
+        "<p><strong>The prosecution threshold rose from ₹1 crore to ₹5 crore.</strong> Below that amount, a dispute is far less likely to turn criminal.</p>",
+        "<p><strong>The general penalty dropped from ₹25,000 to ₹10,000.</strong> A small procedural mistake now costs less than half of what it did.</p>",
+        "<p><strong>Refund acknowledgement fell from 15 days to 10 days,</strong> and the system will provisionally sanction 90% of a claim after risk assessment, with the order issued within three working days.</p>",
+        "<h2>The small-business option worth knowing about</h2>",
+        "<p>The Council approved, in principle, an optional annual return with quarterly payment scheme for qualifying business-to-consumer businesses with turnover up to ₹5 crore. Instead of a steady drumbeat of filings, a small seller could file once a year and pay quarterly.</p>",
+        "<p>Nothing here changes how you calculate GST on a bill. A ₹1,000 item at 18% is still ₹1,180, and the tax inside a ₹1,180 bill is still ₹180. The calculator above does that split either way.</p>",
+        "<h2>What to actually do this week</h2>",
+        "<p>Check whether your turnover puts you inside the ₹5 crore band for the annual-return option. If it does, ask your accountant whether it suits your cash cycle — paying quarterly can help a business that earns unevenly.</p>",
+        "<p>If you export or sell zero-rated goods, expect refunds to arrive faster. Plan your working capital on the new timelines rather than the old ones.</p>",
+        "<p>And keep your returns consistent. The Council also moved to reduce mismatches between what you report and what you claim as input tax credit. Easier enforcement is not absent enforcement.</p>",
+        "<h2>What did not change</h2>",
+        "<p>Rates. The 5%, 12%, 18% and 28% slabs are exactly where they were, and the Council has signalled it wants rate changes to settle into a once-a-year cycle instead of arriving unpredictably.</p>",
+        "<p>Registration thresholds and the basic filing obligation are untouched too. If you were registered last month, you are registered today, and the returns you owe have not changed shape.</p>"
+      ],
+      "body_hinglish": [
+        "<p>8 October 2026 ko 57th GST Council meeting ne aise reforms approve kiye jo ye badalte hain ki tax office aapke saath kaise pesh aata hai, ye nahi ki aap kitna tax dete ho. Rates wahi rahe. Jo badla woh hai enforcement, refunds aur paperwork.</p>",
+        "<p>Ek chhote seller ya pehli baar founder ke liye yahi zyada kaam ki cheez hai. Kam rate har mahine thoda bachata hai. Mushkil mein padne ke kam raste ek baar mein bahut bachate hain.</p>",
+        "<h2>Kya badla, seedhe shabdon mein</h2>",
+        "<p><strong>GST ke arrest powers hata diye gaye.</strong> Yahi headline hai. Tax officers ab aam vivaad mein arrest ko tool ki tarah istemal nahi kar sakte.</p>",
+        "<p><strong>Prosecution threshold ₹1 crore se ₹5 crore ho gayi.</strong> Is amount se neeche vivaad ke criminal banne ke chance kaafi kam hain.</p>",
+        "<p><strong>General penalty ₹25,000 se ₹10,000 ho gayi.</strong> Ek chhoti procedural galti ab pehle se aadhe se bhi kam ki padti hai.</p>",
+        "<p><strong>Refund acknowledgement 15 din se 10 din ho gaya,</strong> aur system risk assessment ke baad claim ka 90% provisional sanction karega, order teen working days mein.</p>",
+        "<h2>Chhote business ka ek option jo jaanna chahiye</h2>",
+        "<p>Council ne in-principle optional annual return with quarterly payment scheme approve kiya hai un B2C businesses ke liye jinki turnover ₹5 crore tak hai. Lagataar filings ki jagah ek chhota seller saal mein ek baar file kar sakta hai aur quarterly pay kar sakta hai.</p>",
+        "<p>Yahan kuch bhi ye nahi badalta ki aap bill par GST kaise nikalte ho. ₹1,000 ka item 18% par ab bhi ₹1,180 hai, aur ₹1,180 ke bill mein tax ab bhi ₹180 hai. Upar wala calculator dono taraf se ye split karta hai.</p>",
+        "<h2>Is hafte asli mein kya karein</h2>",
+        "<p>Dekho ki aapki turnover aapko annual-return option ke ₹5 crore band mein laati hai ya nahi. Agar haan, apne accountant se poocho ki ye aapke cash cycle ke liye theek hai — quarterly pay karna us business ki madad karta hai jiski kamai uneven ho.</p>",
+        "<p>Agar aap export ya zero-rated goods bechte ho, to refund jaldi aane ki umeed rakho. Working capital purane timeline ki jagah naye timeline par plan karo.</p>",
+        "<p>Aur apne returns consistent rakho. Council ne ye bhi kaha hai ki jo aap report karte ho aur jo input tax credit claim karte ho, usme mismatch kam ho. Aasan enforcement ka matlab enforcement gayab nahi hai.</p>",
+        "<h2>Kya nahi badla</h2>",
+        "<p>Rates. 5%, 12%, 18% aur 28% slabs bilkul wahin hain jahan the, aur Council ne ishara diya hai ki rate changes ek saal mein ek baar wale cycle mein aane chahiye, achanak nahi.</p>",
+        "<p>Registration thresholds aur basic filing obligation bhi waise hi hain. Agar aap pichhle mahine registered the, to aaj bhi ho, aur jo returns aapko dene hain unka shape nahi badla.</p>"
+      ]
+    },
+    {
+      "slug": "india-startup-funding-october-2026-flat-year",
+      "title": "Indian Startups Raised $10.9 Billion This Year — But From Far Fewer Deals",
+      "dek": "Funding is flat for a third straight year, yet the average cheque nearly doubled. Here is what that shift means if you are about to raise.",
+      "category": "Funding",
+      "date": "2026-10-21",
+      "date_display": "October 21, 2026",
+      "source_name": "India Business Trade",
+      "source_url": "https://indiabusinesstrade.in/india-startup-vc-funding-stays-flat-at-10-9-billion-in-2026.htm",
+      "cta": {
+        "text": "See how much runway your current cash and burn actually buy you.",
+        "href": "/burn-rate-and-runway",
+        "label": "Open the Burn Rate Calculator"
+      },
+      "related": [
+        {
+          "slug": "burn-rate-runway-guide",
+          "title": "Burn Rate and Runway"
+        },
+        {
+          "slug": "revenue-multiple",
+          "title": "Revenue Multiple Calculator"
+        }
+      ],
+      "body_en": [
+        "<p>Indian startups raised <strong>$10.9 billion across 1,253 rounds</strong> between January and 15 October 2026, according to Tracxn data. That is up 6.8% on the same period last year. On its own, it reads like a flat year.</p>",
+        "<p>The number underneath is the interesting one. In 2025, the same $10.2 billion came from 1,982 rounds. This year it came from 1,253. Average funding per round jumped from <strong>$5.1 million to $8.6 million</strong>.</p>",
+        "<h2>What a rising average cheque really says</h2>",
+        "<p>It says money did not leave the market. It concentrated. Investors are writing fewer, larger cheques to companies they already believe in, and passing on the rest.</p>",
+        "<p>The top ten startups took nearly 36% of all equity funding — $3.92 billion between them. When a third of the money goes to ten companies, the other 1,243 are sharing the rest.</p>",
+        "<h2>Why this is harder than a funding winter</h2>",
+        "<p>A winter is obvious. Everyone struggles, everyone knows why, and the bar drops accordingly. A concentrated market is quieter. The headline total looks healthy, so nobody adjusts expectations, while the median founder finds the door narrower than last year.</p>",
+        "<p>That mismatch is dangerous. Founders read that funding is up 6.8% and plan an 18-month raise. The actual probability of a yes has fallen.</p>",
+        "<h2>What it means if you are raising soon</h2>",
+        "<p><strong>Assume the round takes longer.</strong> With fewer deals closing, plan on a longer runway than you think you need. Run the numbers with a conservative burn and see how many months the cash buys.</p>",
+        "<p><strong>Lead with traction, not the idea.</strong> When investors are writing bigger cheques, they are buying evidence. Revenue, retention and a believable path to the next round beat a large market slide.</p>",
+        "<p><strong>Consider a smaller round.</strong> If the average cheque is growing, an ask that is too small can read as unserious, but so can an ask that is far beyond your traction. Match the number to what you can prove.</p>",
+        "<p><strong>Look at the categories that are winning.</strong> Deeptech, AI and clean energy are pulling the large rounds. If your business sits next to one of those, say so plainly. If it does not, do not pretend — investors hear that pitch all day.</p>",
+        "<h2>The weekly picture is noisier than the yearly one</h2>",
+        "<p>A single week can look explosive. Between 12 and 17 October, 28 Indian startups raised $302.85 million, roughly 2.7 times the week before. Read one week and you will draw the wrong conclusion; read the year and the concentration becomes obvious.</p>"
+      ],
+      "body_hinglish": [
+        "<p>Tracxn data ke mutabik Indian startups ne January se 15 October 2026 ke beech <strong>1,253 rounds mein $10.9 billion</strong> uthaye. Ye pichhle saal ke isi period se 6.8% zyada hai. Akela dekhne par ye flat saal lagta hai.</p>",
+        "<p>Iske neeche wala number zyada dilchasp hai. 2025 mein yahi $10.2 billion 1,982 rounds se aaya tha. Is saal ye 1,253 se aaya. Average funding per round <strong>$5.1 million se $8.6 million</strong> ho gayi.</p>",
+        "<h2>Average cheque badhne ka asli matlab</h2>",
+        "<p>Iska matlab hai ki paisa market se gaya nahi. Woh ek jagah ikattha hua. Investors kam, bade cheques un companies ko de rahe hain jin par unhe pehle se bharosa hai, aur baaki ko chhod rahe hain.</p>",
+        "<p>Top das startups ne kul equity funding ka takriban 36% liya — akele $3.92 billion. Jab ek tihai paisa das companies ko jaata hai, to baaki 1,243 mil kar baaki hissa baant rahi hain.</p>",
+        "<h2>Ye funding winter se zyada mushkil kyun hai</h2>",
+        "<p>Winter saaf dikhta hai. Sab struggle karte hain, sabko wajah pata hoti hai, aur bar uske hisaab se neeche aata hai. Concentrated market zyada shaant hota hai. Headline total theek lagta hai, to koi expectations adjust nahi karta, aur beech ka founder darwaza pichhle saal se tang paata hai.</p>",
+        "<p>Yahi mismatch khatarnak hai. Founders padhte hain ki funding 6.8% badhi hai aur 18 mahine ka raise plan karte hain. Haan milne ki asli sambhavna giri hai.</p>",
+        "<h2>Agar aap jald raise karne wale ho to iska matlab</h2>",
+        "<p><strong>Maano ki round zyada time lega.</strong> Kam deals close ho rahi hain, to jitni runway chahiye soch rahe ho usse zyada plan karo. Conservative burn se numbers nikalo aur dekho cash kitne mahine ka hai.</p>",
+        "<p><strong>Idea se nahi, traction se shuru karo.</strong> Jab investors bade cheque likh rahe hain, woh sabooot kharid rahe hain. Revenue, retention aur agle round ka believable raasta ek bade market slide se behtar hai.</p>",
+        "<p><strong>Chhota round socho.</strong> Average cheque badh raha hai, to bahut chhoti ask non-serious lagti hai, par bahut badi ask bhi lagti hai jab traction uske layak na ho. Number ko us cheez se match karo jo aap prove kar sakte ho.</p>",
+        "<p><strong>Jeetne wali categories dekho.</strong> Deeptech, AI aur clean energy bade rounds kheench rahe hain. Agar aapka business inme se kisi ke paas baithta hai, to saaf bolo. Agar nahi, to natak mat karo — investors ye pitch din bhar sunte hain.</p>",
+        "<h2>Hafta-waar tasveer saal se zyada shor karti hai</h2>",
+        "<p>Ek hafta dhamakedaar lag sakta hai. 12 se 17 October ke beech 28 Indian startups ne $302.85 million uthaye, jo pichhle hafte se takriban 2.7 guna zyada hai. Ek hafta padhoge to galat nateeja nikaaloge; saal padhoge to concentration saaf dikhega.</p>"
+      ]
+    },
+    {
+      "slug": "marketplace-fees-india-sellers-guide",
+      "title": "Why an ₹800 Sale on a Marketplace Often Pays You Only ₹580",
+      "dek": "Commission, shipping and closing fees quietly take a quarter of the selling price. Here is the arithmetic, and how to price so the fees do not eat your margin.",
+      "category": "Small Business",
+      "date": "2026-10-21",
+      "date_display": "October 21, 2026",
+      "source_name": "Tank Metrics",
+      "source_url": "",
+      "cta": {
+        "text": "Put your own price and fees in and see what you actually keep.",
+        "href": "/marketplace-fee-calculator",
+        "label": "Open the Marketplace Fee Calculator"
+      },
+      "related": [
+        {
+          "slug": "marketplace-fees-explained",
+          "title": "Marketplace Fees Explained"
+        },
+        {
+          "slug": "average-order-value-aov",
+          "title": "Average Order Value Calculator"
+        }
+      ],
+      "body_en": [
+        "<p>You list an item at ₹800. The order comes in. You pack it, ship it, and a week later the settlement lands. It is not ₹800. It is rarely even close.</p>",
+        "<p>This is not a scam. It is how marketplaces make money, and it is entirely knowable in advance. Most sellers just never add it up before setting the price.</p>",
+        "<h2>Where the ₹220 goes</h2>",
+        "<p>A typical order carries three or four separate charges. <strong>Commission</strong> is usually the largest, charged as a percentage of the selling price and varying by category — often higher for fashion and lower for electronics.</p>",
+        "<p><strong>Shipping</strong> is charged on weight slabs, and the slab matters more than the actual weight. A 480-gram parcel and a 510-gram parcel can land in different slabs and different fees.</p>",
+        "<p><strong>Closing or fixed fees</strong> apply per order regardless of size, which is why small-ticket items get punished hardest. A ₹200 order with a ₹25 fixed fee has already lost 12.5% before commission.</p>",
+        "<p><strong>Payment gateway charges</strong> and, on cash-on-delivery orders, a COD handling fee round it out.</p>",
+        "<h2>The number that actually matters</h2>",
+        "<p>Not the fee. The <em>effective payout percentage</em>. If you keep ₹580 of an ₹800 sale, your payout ratio is 72.5%. Now compare that to your product cost.</p>",
+        "<p>Suppose the item costs you ₹420 to make or buy. You keep ₹580. Gross profit is ₹160, or 20% of the selling price. A single return wipes out three or four profitable orders.</p>",
+        "<h2>How to price so fees do not eat you</h2>",
+        "<p><strong>Work backwards from your cost.</strong> Decide the margin you need, then gross up for the fee percentage rather than adding fees on top of a price you already chose.</p>",
+        "<p><strong>Push order value up.</strong> Fixed fees punish small baskets. Bundling two items into one order spreads the fixed fee across more revenue and can lift your payout ratio several points.</p>",
+        "<p><strong>Watch the weight slab.</strong> If your parcel is 510 grams and the next slab starts at 500, shaving packaging can drop you a slab and save on every single order.</p>",
+        "<p><strong>Track your RTO rate.</strong> A returned cash-on-delivery order can cost you the forward shipping, the return shipping and the lost sale. Sellers with a high RTO rate often find their real margin is far below what the dashboard shows.</p>",
+        "<p>None of this needs software. It needs you to know your payout ratio before you set a price, not after the settlement report arrives.</p>",
+        "<h2>Do this before your next listing</h2>",
+        "<p>Open a spreadsheet, or the calculator above, and write down the payout ratio for your five best-selling items. Most sellers find one or two are quietly losing money at the current price, and a small correction fixes it before the losses pile up.</p>"
+      ],
+      "body_hinglish": [
+        "<p>Aap ek item ₹800 mein list karte ho. Order aata hai. Aap pack karte ho, ship karte ho, aur ek hafte baad settlement aata hai. Woh ₹800 nahi hai. Zyadatar paas bhi nahi hai.</p>",
+        "<p>Ye scam nahi hai. Marketplaces aise hi paisa kamate hain, aur ye pehle se poori tarah pata kiya ja sakta hai. Zyadatar sellers bas price set karne se pehle ise jodte hi nahi.</p>",
+        "<h2>Woh ₹220 kahan jaate hain</h2>",
+        "<p>Ek aam order mein teen ya chaar alag charges hote hain. <strong>Commission</strong> aam taur par sabse bada hota hai, selling price ke percentage par, aur category ke hisaab se badalta hai — fashion par aksar zyada, electronics par kam.</p>",
+        "<p><strong>Shipping</strong> weight slabs par lagti hai, aur slab asli weight se zyada matter karti hai. 480 gram ka parcel aur 510 gram ka parcel alag slab aur alag fee mein ja sakte hain.</p>",
+        "<p><strong>Closing ya fixed fees</strong> har order par lagti hain, size chahe kuch bhi ho, isliye chhote ticket wale items sabse zyada pit-te hain. ₹200 ke order par ₹25 ki fixed fee commission se pehle hi 12.5% kha jaati hai.</p>",
+        "<p><strong>Payment gateway charges</strong> aur cash-on-delivery orders par COD handling fee ise poora karte hain.</p>",
+        "<h2>Asli number jo matter karta hai</h2>",
+        "<p>Fee nahi. <em>Effective payout percentage</em>. Agar ₹800 ki sale par aapke paas ₹580 aata hai, to payout ratio 72.5% hai. Ab ise apni product cost se compare karo.</p>",
+        "<p>Maano item banane ya kharidne mein ₹420 lagta hai. Aapke paas ₹580 aata hai. Gross profit ₹160, yaani selling price ka 20%. Ek return teen-char profitable orders kha jaata hai.</p>",
+        "<h2>Price kaise rakho ki fees kha na jaayein</h2>",
+        "<p><strong>Apni cost se peeche se chalo.</strong> Decide karo kitna margin chahiye, phir fee percentage ke liye gross up karo, na ki apne chune hue price par fees jodo.</p>",
+        "<p><strong>Order value badhao.</strong> Fixed fees chhoti basket ko saza deti hain. Do items ek order mein bundle karne se fixed fee zyada revenue par bant jaati hai aur payout ratio kuch points badh sakta hai.</p>",
+        "<p><strong>Weight slab dekho.</strong> Agar parcel 510 gram hai aur agli slab 500 se shuru hoti hai, to packaging thodi kam karne se aap ek slab neeche aa sakte ho aur har order par bacha sakte ho.</p>",
+        "<p><strong>Apna RTO rate track karo.</strong> Return hua cash-on-delivery order forward shipping, return shipping aur khoi hui sale — teeno ka kharcha de sakta hai. Jinka RTO rate zyada hai unka asli margin aksar dashboard se kaafi neeche hota hai.</p>",
+        "<p>Ismein koi software nahi chahiye. Sirf ye chahiye ki price set karne se pehle apna payout ratio pata ho, settlement report aane ke baad nahi.</p>",
+        "<h2>Agli listing se pehle ye karo</h2>",
+        "<p>Ek spreadsheet kholo, ya upar wala calculator, aur apne paanch sabse zyada bikne wale items ka payout ratio likho. Zyadatar sellers ko pata chalta hai ki ek-do items chupke se current price par paisa kha rahe hain, aur thoda correction nuksaan badhne se pehle ise theek kar deta hai.</p>"
+      ]
+    },
+    {
+      "slug": "khosla-ventures-even-healthcare-india-bet",
+      "title": "Khosla Ventures Doubled Down on Indian Healthcare — What That Signals",
+      "dek": "A US fund backing an Indian hospital challenger is a bet on cost structure, not technology. Here is how to read a funding signal like this.",
+      "category": "Funding",
+      "date": "2026-10-21",
+      "date_display": "October 21, 2026",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics",
+      "cta": {
+        "text": "Work out the market size your own pitch can honestly claim.",
+        "href": "/tam-sam-som",
+        "label": "Open the TAM / SAM / SOM Calculator"
+      },
+      "related": [
+        {
+          "slug": "startup-valuation-explained",
+          "title": "How Startup Valuation Actually Works"
+        },
+        {
+          "slug": "revenue-multiple",
+          "title": "Revenue Multiple Calculator"
+        }
+      ],
+      "body_en": [
+        "<p>Khosla Ventures put more money into Even Healthcare, an Indian company taking on the economics of Indian hospitals. The amount is less interesting than the reason, because it tells you what foreign capital currently believes about India.</p>",
+        "<h2>The bet is on cost structure</h2>",
+        "<p>Indian hospital economics are unusual. A large share of care is paid for out of pocket, not by insurance, which means price sensitivity is extreme and the middle of the market is underserved. A company that can deliver acceptable care at a lower cost does not need to invent anything. It needs to be structurally cheaper than the incumbent.</p>",
+        "<p>That is a business-model bet, not a technology bet. Investors are paying for the possibility that a different cost base wins in a market where the current one is broken for most people.</p>",
+        "<h2>How to read a funding signal like this</h2>",
+        "<p><strong>Look at what the money is for.</strong> If a round funds capacity — beds, clinics, logistics — the thesis is scale economics. If it funds research, the thesis is a product that does not exist yet. These have very different risk profiles.</p>",
+        "<p><strong>Check who led it.</strong> A follow-on from an existing investor is a conviction signal. A new lead entering is a validation signal. Both are good, but they mean different things.</p>",
+        "<p><strong>Ignore the valuation headline.</strong> Valuations are set by negotiation and market mood. The interesting facts are unit economics: cost to serve one customer, and how that falls as volume rises.</p>",
+        "<h2>What Indian founders should take from it</h2>",
+        "<p>Foreign capital is looking at Indian problems, not just Indian software. If your business solves something structurally broken — healthcare access, credit, logistics in small towns — you are in a category that is actively being funded.</p>",
+        "<p>But be honest about market size. Investors have heard every version of the India-is-1.4-billion-people pitch. The number that lands is the one you can defend: who exactly pays you, how much, and how many of them you can realistically reach.</p>",
+        "<p>Finally, understand that a follow-on round is not a victory lap. It means the existing investor believes enough to protect their position. It also means the next round will be judged against the promises you made in this one.</p>",
+        "<h2>The uncomfortable question for Indian founders</h2>",
+        "<p>If a foreign fund will back an Indian company attacking Indian hospital costs, it will look at your category too. The question is not whether your market is large. It is whether you are structurally cheaper, faster or better than whoever already serves it.</p>"
+      ],
+      "body_hinglish": [
+        "<p>Khosla Ventures ne Even Healthcare mein aur paisa lagaya, ek Indian company jo Indian hospitals ki economics ko challenge kar rahi hai. Amount se zyada wajah dilchasp hai, kyunki ye batati hai ki foreign capital aaj India ke baare mein kya maanta hai.</p>",
+        "<h2>Bet cost structure par hai</h2>",
+        "<p>Indian hospital economics alag hai. Badi hissa ilaaj ka apni jeb se diya jaata hai, insurance se nahi, isliye price sensitivity bahut zyada hai aur beech ka market underserved hai. Jo company kam cost par theek-thaak ilaaj de sake, use kuch invent karne ki zaroorat nahi. Use structurally sasta hona hai.</p>",
+        "<p>Ye business-model ka bet hai, technology ka nahi. Investors us sambhavna ke paise de rahe hain ki ek alag cost base us market mein jeetega jahan aaj ka cost base zyadatar logon ke liye toota hua hai.</p>",
+        "<h2>Aisa funding signal kaise padho</h2>",
+        "<p><strong>Dekho paisa kis liye hai.</strong> Agar round capacity — beds, clinics, logistics — fund karta hai, to thesis scale economics hai. Agar research fund karta hai, to thesis aise product ki hai jo abhi hai hi nahi. Dono ka risk bahut alag hai.</p>",
+        "<p><strong>Dekho kiska lead tha.</strong> Purane investor ka follow-on conviction signal hai. Naya lead aana validation signal hai. Dono achhe hain, par matlab alag hai.</p>",
+        "<p><strong>Valuation headline ignore karo.</strong> Valuation negotiation aur market mood se banti hai. Dilchasp facts unit economics hain: ek customer ko serve karne ki cost, aur volume badhne par woh kaise girti hai.</p>",
+        "<h2>Indian founders ko isse kya seekhna chahiye</h2>",
+        "<p>Foreign capital Indian problems dekh raha hai, sirf Indian software nahi. Agar aapka business kuch structurally toota hua solve karta hai — healthcare access, credit, chhote shahron ki logistics — to aap us category mein ho jise actively fund kiya ja raha hai.</p>",
+        "<p>Par market size par imaandaar raho. Investors ne India-1.4-billion-people pitch ka har version suna hai. Woh number chalta hai jo aap defend kar sakte ho: asli mein kaun aapko paisa deta hai, kitna, aur unmein se kitne tak aap pahunch sakte ho.</p>",
+        "<p>Aakhir, samjho ki follow-on round victory lap nahi hai. Iska matlab hai ki purana investor itna bharosa karta hai ki apni position bachaye. Iska ye bhi matlab hai ki agla round usi promise par judge hoga jo aapne is round mein kiya.</p>",
+        "<h2>Indian founders ke liye uncomfortable sawaal</h2>",
+        "<p>Agar ek foreign fund Indian hospital costs par hamla karne wali Indian company ko support karega, to woh aapki category bhi dekhega. Sawaal ye nahi ki aapka market bada hai. Sawaal ye hai ki aap usse structurally saste, tez ya behtar ho jo pehle se usse serve kar raha hai.</p>"
+      ]
+    }
+  ]
+}

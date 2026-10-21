@@ -31,6 +31,8 @@ PAGES = [
     "/site/blog.html",
     "/site/contact.html",
     "/site/blog-what-is-ebitda.html",
+    "/site/news.html",
+    "/site/news-shark-tank-usa-polygons-foldable-spoon-deal.html",
     "/site/tools/sip-calculator.html",
 ]
 
