@@ -59,3 +59,5 @@ calculators plus a small blog. Work only inside the cloned repo.
 ## Report
 One short summary: the new post URL, the tests that ran and their result, the
 deployment URL, and anything that needs a human decision.
+
+<!-- build trigger probe -->
