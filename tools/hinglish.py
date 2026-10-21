@@ -27,6 +27,7 @@ POSTS = [
     'blog-startup-valuation-explained.html',
     'blog-burn-rate-runway-guide.html',
     'blog-marketplace-fees-explained.html',
+    'blog-markup-vs-margin-explained.html',
 ]
 
 VIRAMA = '्'

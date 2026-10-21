@@ -17,6 +17,7 @@
 - [How Startup Valuation Works](https://tankmetrics.in/site/blog-startup-valuation-explained.html)
 - [Burn Rate and Runway](https://tankmetrics.in/site/blog-burn-rate-runway-guide.html)
 - [Marketplace Fees Explained](https://tankmetrics.in/site/blog-marketplace-fees-explained.html)
+- [Markup vs Margin](https://tankmetrics.in/markup-vs-margin-explained)
 
 ## News
 - [News desk](https://tankmetrics.in/news): funding rounds, Shark Tank deals and money rules for Indian founders.
