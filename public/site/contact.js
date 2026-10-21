@@ -11,7 +11,7 @@
   'use strict';
 
   // Replace this with the /exec URL from the Apps Script deployment.
-  var ENDPOINT = 'PASTE_YOUR_APPS_SCRIPT_EXEC_URL_HERE';
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzkt-62Lx2vjUsJaOEMk4Te6yMfZKXnAZhzz4yE0hvERa6DPJs31iYRBWtzosU5-m6c/exec';
 
   var MAX_BYTES = 5 * 1024 * 1024;   // per file
   var MAX_TOTAL = 10 * 1024 * 1024;  // all files together
