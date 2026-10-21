@@ -83,3 +83,14 @@
 .worked-col{padding:12px;border-radius:10px}
 .worked-col li{font-size:12px}
 .plain-list li{font-size:13px}}
+
+/* Two-way switch at the top of the blog listing. Guides and news live on the
+   same page, so a reader picks which one they came for instead of scrolling
+   past the other. */
+.blog-tabs{display:flex;gap:6px;background:#fff;border:1px solid #e2e6ec;border-radius:24px;padding:4px;margin:0 auto 22px;width:max-content;max-width:100%}
+.blog-tab{border:0;background:transparent;font-family:Poppins;font-size:13px;font-weight:600;color:var(--text-dim);padding:9px 20px;border-radius:20px;cursor:pointer;text-decoration:none;white-space:nowrap;transition:background .15s ease,color .15s ease}
+.blog-tab:hover{color:var(--text)}
+.blog-tab.active{background:var(--blue);color:#fff}
+.blog-tab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (max-width:760px){.blog-tabs{margin:0 28px 18px;width:auto}
+.blog-tab{flex:1;font-size:12px;padding:9px 12px}}
