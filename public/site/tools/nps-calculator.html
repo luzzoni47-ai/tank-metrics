@@ -15,7 +15,7 @@
 <div class="main" style="max-width:1280px;margin:0 auto">
 <div class="page-hero"><div class="tag">🧮 Tax & Wealth Toolkit</div><h1>NPS Calculator</h1><p>Estimate a retirement corpus from monthly NPS contributions and expected returns.</p></div>
 <div class="page-wrap">
-<div class="card" style="--accent:#EA4335"><div class="card-title"><h2>NPS Calculator</h2><button class="clear-btn" id="clearBtn" type="button">Clear</button></div><div class="inputs"><div class="field rupee-field"><label for="nps_monthly">Monthly Contribution</label><div class="row"><input type="number" inputmode="decimal" id="nps_monthly" placeholder="0" data-k="monthly"><span class="unit">₹</span></div></div><div class="field"><label for="nps_rate">Expected Annual Return</label><div class="row"><input type="number" inputmode="decimal" id="nps_rate" placeholder="0" data-k="rate"><span class="unit">%</span></div></div><div class="field"><label for="nps_years">Years to Retirement</label><div class="row"><input type="number" inputmode="decimal" id="nps_years" placeholder="0" data-k="years"><span class="unit">years</span></div></div></div><div class="readout" id="out"></div></div>
+<div class="card" style="--accent:#EA4335"><div class="card-title"><h2>NPS Calculator</h2><button class="clear-btn" id="clearBtn" type="button">Clear</button></div><div class="inputs"><div class="field rupee-field"><label for="nps_monthly">Monthly Contribution</label><div class="row"><input type="text" inputmode="decimal" id="nps_monthly" placeholder="0" data-k="monthly" data-unit="₹"><span class="unit">₹</span></div></div><div class="field"><label for="nps_rate">Expected Annual Return</label><div class="row"><input type="text" inputmode="decimal" id="nps_rate" placeholder="0" data-k="rate" data-unit="%"><span class="unit">%</span></div></div><div class="field"><label for="nps_years">Years to Retirement</label><div class="row"><input type="text" inputmode="decimal" id="nps_years" placeholder="0" data-k="years" data-unit="years"><span class="unit">years</span></div></div></div><div class="readout" id="out"></div></div>
 <h2>How this calculator works</h2>
 <p>Estimate a retirement corpus from monthly NPS contributions and expected returns. Enter your numbers above and the result appears instantly — nothing is stored or sent anywhere.</p>
 <p><strong>Good to know:</strong> NPS outcomes depend on market returns and annuity choices at retirement.</p>
@@ -33,7 +33,7 @@
 <script>ONES=["","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"];
 TENS=["","","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"];
 function fmtIN(e,t){if(null==e||isNaN(e)||!isFinite(e))return"—";t=void 0===t?2:t;var a=e<0,n=(e=Math.abs(e)).toFixed(t).split("."),r=n[0],o=r.slice(-3),i=r.slice(0,-3);""!==i&&(i=i.replace(/\B(?=(\d{2})+(?!\d))/g,",")+",");var l=i+o;return t>0&&(l+="."+n[1]),(a?"-":"")+l}
-function val(e,t){var a=parseFloat(e[t]);return isNaN(a)?0:a}
+function parseAmount(v){if(null==v)return NaN;if(typeof v==="number")return v;var s=String(v).trim().toLowerCase().replace(/[,\s_\u20b9$]/g,"");s=s.replace(/^(?:rs\.?|inr)+/,"").replace(/(?:rupees?|only|rs\.?)$/,"");if(!s)return NaN;var U={k:1e3,thousand:1e3,hazar:1e3,hazaar:1e3,m:1e6,mn:1e6,million:1e6,millions:1e6,b:1e9,billion:1e9,billions:1e9,cr:1e7,crore:1e7,crores:1e7,lakh:1e5,lakhs:1e5,lac:1e5,lacs:1e5};var re=/(-?\d*\.?\d+)([a-z]*)/g,m,total=0,seen=false,ok=true,used="";while((m=re.exec(s))!==null){var n=parseFloat(m[1]),u=m[2];if(isNaN(n)){ok=false;break;}if(u===""){total+=n;}else if(U[u]!==undefined){total+=n*U[u];}else{ok=false;break;}used+=m[0];seen=true;}if(ok&&seen&&used===s)return total;if(/[a-z]/.test(s))return NaN;var f=parseFloat(s);return isNaN(f)?NaN:f}function val(e,t){var a=parseAmount(e[t]);return isNaN(a)?0:a}
 function inr(e){return"₹"+fmtIN(e,0)}
 function inr2(e){return"₹"+fmtIN(e,2)}
 function pct(e){return isNaN(e)||!isFinite(e)?"—":fmtIN(e,1)+"%"}
@@ -44,7 +44,12 @@ function numberToWordsIndian(e){if(0===(e=Math.round(e)))return"Zero";if(e<0)ret
 var COMPUTE=function(e){var t=val(e,"monthly"),a=val(e,"rate")/1200,n=12*val(e,"years"),r=a?t*((Math.pow(1+a,n)-1)/a)*(1+a):t*n;return{rows:[{l:"Invested Amount",v:inr2(t*n)},{l:"Estimated Corpus",v:inr2(r)}]}};
 function run(){var e={};document.querySelectorAll('[data-k]').forEach(function(i){e[i.dataset.k]=i.value;});var r;try{r=COMPUTE(e);}catch(err){r={rows:[{l:'Result',v:'—'}]};}var o=document.getElementById('out');o.innerHTML=(r.rows||[]).map(function(x){return '<div class="r"><span class="l">'+x.l+'</span><span class="v'+(x.cls?' '+x.cls:'')+'">'+x.v+'</span></div>';}).join('')
 +(r.tip?'<div class="benchmark"><b>Tip:</b> '+r.tip+'</div>':'');}
-document.querySelectorAll('[data-k]').forEach(function(i){i.addEventListener('input',run);});
+function reflect(i){if(i.dataset.unit!=='₹')return;var raw=i.value,n=parseAmount(raw);
+var f=i.closest('.field'),box=f&&f.querySelector('.amt-hint');
+if(!raw.trim()||isNaN(n)||!/[a-z]/i.test(raw)){if(box)box.remove();return;}
+if(!box){box=document.createElement('span');box.className='amt-hint';box.setAttribute('aria-live','polite');f.appendChild(box);}
+box.textContent='= ₹'+fmtIN(n,0);}
+document.querySelectorAll('[data-k]').forEach(function(i){i.addEventListener('input',function(){reflect(i);run();});reflect(i);});
 document.getElementById('clearBtn').addEventListener('click',function(){document.querySelectorAll('[data-k]').forEach(function(i){i.value='';});run();});
 run();
 </script>

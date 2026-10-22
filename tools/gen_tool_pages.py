@@ -113,6 +113,10 @@ def field_html(calcd_id: str, inp: dict) -> str:
     """Mirror the exact field markup that index.html's fieldHTML() produces."""
     fid = f"{calcd_id}_{inp['k']}"
     ftype = inp.get("type", "number")
+    # A native number field refuses anything but digits, so "1 Crore" cannot be
+    # typed into one. Amount fields are text; parseAmount() in the shared
+    # helpers turns the words into a number.
+    html_type = "text" if ftype == "number" else ftype
     ph = inp.get("ph") or ("" if ftype == "date" else "0")
     unit = f'<span class="unit">{inp["u"]}</span>' if inp.get("u") else ""
     classes = "field" + (" full" if inp.get("full") else "") + (
@@ -120,8 +124,9 @@ def field_html(calcd_id: str, inp: dict) -> str:
     imode = 'inputmode="decimal" ' if ftype == "number" else ""
     return (
         f'<div class="{classes}"><label for="{fid}">{inp["l"]}</label>'
-        f'<div class="row"><input type="{ftype}" {imode}id="{fid}" '
-        f'placeholder="{ph}" data-k="{inp["k"]}">{unit}</div></div>'
+        f'<div class="row"><input type="{html_type}" {imode}id="{fid}" '
+        f'placeholder="{ph}" data-k="{inp["k"]}" data-unit="{inp.get("u") or ""}">'
+        f'{unit}</div></div>'
     )
 
 
@@ -335,7 +340,12 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
 var COMPUTE={c['compute']};
 function run(){{var e={{}};document.querySelectorAll('[data-k]').forEach(function(i){{e[i.dataset.k]=i.value;}});var r;try{{r=COMPUTE(e);}}catch(err){{r={{rows:[{{l:'Result',v:'—'}}]}};}}var o=document.getElementById('out');o.innerHTML=(r.rows||[]).map(function(x){{return '<div class="r"><span class="l">'+x.l+'</span><span class="v'+(x.cls?' '+x.cls:'')+'">'+x.v+'</span></div>';}}).join('')
 +(r.tip?'<div class="benchmark"><b>Tip:</b> '+r.tip+'</div>':'');}}
-document.querySelectorAll('[data-k]').forEach(function(i){{i.addEventListener('input',run);}});
+function reflect(i){{if(i.dataset.unit!=='\u20b9')return;var raw=i.value,n=parseAmount(raw);
+var f=i.closest('.field'),box=f&&f.querySelector('.amt-hint');
+if(!raw.trim()||isNaN(n)||!/[a-z]/i.test(raw)){{if(box)box.remove();return;}}
+if(!box){{box=document.createElement('span');box.className='amt-hint';box.setAttribute('aria-live','polite');f.appendChild(box);}}
+box.textContent='= \u20b9'+fmtIN(n,0);}}
+document.querySelectorAll('[data-k]').forEach(function(i){{i.addEventListener('input',function(){{reflect(i);run();}});reflect(i);}});
 document.getElementById('clearBtn').addEventListener('click',function(){{document.querySelectorAll('[data-k]').forEach(function(i){{i.value='';}});run();}});
 run();
 </script>

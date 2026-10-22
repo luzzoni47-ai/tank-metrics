@@ -1081,7 +1081,7 @@
     {
      "k": "mrp",
      "l": "MRP",
-     "u": "�������"
+     "u": "₹"
     },
     {
      "k": "retmargin",
@@ -1433,7 +1433,7 @@
     {
      "k": "spend",
      "l": "Ad Spend",
-     "u": "��"
+     "u": "₹"
     }
    ],
    "compute": "function(e){var t=val(e,\"revenue\"),a=val(e,\"spend\");return{rows:[{l:\"ROAS\",v:a?num(t/a,2)+\"x\":\"—\"}]}}"
@@ -2357,5 +2357,5 @@
    "compute": "function(e){var m=val(e,\"market\"),s=val(e,\"sold\");if(m<=0)return{rows:[{l:\"Your market share\",v:\"\\u2014\"}],tip:\"Enter a total market bigger than zero.\"};var share=s/m*100;return{rows:[{l:\"Your market share\",v:pct(share)},{l:\"Total market\",v:num(m,0)+\" units\"},{l:\"You sold\",v:num(s,0)+\" units\"},{l:\"Others sold\",v:num(Math.max(m-s,0),0)+\" units\"}],tip:share>=10?\"You are a real player in this market.\":\"Small share \\u2014 focus on one niche before chasing the whole market.\"}}"
   }
  ],
- "helpers": "ONES=[\"\",\"One\",\"Two\",\"Three\",\"Four\",\"Five\",\"Six\",\"Seven\",\"Eight\",\"Nine\",\"Ten\",\"Eleven\",\"Twelve\",\"Thirteen\",\"Fourteen\",\"Fifteen\",\"Sixteen\",\"Seventeen\",\"Eighteen\",\"Nineteen\"];\nTENS=[\"\",\"\",\"Twenty\",\"Thirty\",\"Forty\",\"Fifty\",\"Sixty\",\"Seventy\",\"Eighty\",\"Ninety\"];\nfunction fmtIN(e,t){if(null==e||isNaN(e)||!isFinite(e))return\"—\";t=void 0===t?2:t;var a=e<0,n=(e=Math.abs(e)).toFixed(t).split(\".\"),r=n[0],o=r.slice(-3),i=r.slice(0,-3);\"\"!==i&&(i=i.replace(/\\B(?=(\\d{2})+(?!\\d))/g,\",\")+\",\");var l=i+o;return t>0&&(l+=\".\"+n[1]),(a?\"-\":\"\")+l}\nfunction val(e,t){var a=parseFloat(e[t]);return isNaN(a)?0:a}\nfunction inr(e){return\"₹\"+fmtIN(e,0)}\nfunction inr2(e){return\"₹\"+fmtIN(e,2)}\nfunction pct(e){return isNaN(e)||!isFinite(e)?\"—\":fmtIN(e,1)+\"%\"}\nfunction num(e,t){return fmtIN(e,void 0===t?2:t)}\nfunction twoDigits(e){return e<20?ONES[e]:(TENS[Math.floor(e/10)]+\" \"+ONES[e%10]).trim()}\nfunction threeDigits(e){var t=\"\";return e>=100&&(t+=ONES[Math.floor(e/100)]+\" Hundred \",e%=100),e>0&&(t+=twoDigits(e)),t.trim()}\nfunction numberToWordsIndian(e){if(0===(e=Math.round(e)))return\"Zero\";if(e<0)return\"Minus \"+numberToWordsIndian(-e);var t=Math.floor(e/1e7);e%=1e7;var a=Math.floor(e/1e5);e%=1e5;var n=Math.floor(e/1e3),r=e%=1e3,o=[];return t&&o.push(threeDigits(t)+\" Crore\"),a&&o.push(threeDigits(a)+\" Lakh\"),n&&o.push(threeDigits(n)+\" Thousand\"),r&&o.push(threeDigits(r)),o.join(\" \").trim()}"
+ "helpers": "ONES=[\"\",\"One\",\"Two\",\"Three\",\"Four\",\"Five\",\"Six\",\"Seven\",\"Eight\",\"Nine\",\"Ten\",\"Eleven\",\"Twelve\",\"Thirteen\",\"Fourteen\",\"Fifteen\",\"Sixteen\",\"Seventeen\",\"Eighteen\",\"Nineteen\"];\nTENS=[\"\",\"\",\"Twenty\",\"Thirty\",\"Forty\",\"Fifty\",\"Sixty\",\"Seventy\",\"Eighty\",\"Ninety\"];\nfunction fmtIN(e,t){if(null==e||isNaN(e)||!isFinite(e))return\"—\";t=void 0===t?2:t;var a=e<0,n=(e=Math.abs(e)).toFixed(t).split(\".\"),r=n[0],o=r.slice(-3),i=r.slice(0,-3);\"\"!==i&&(i=i.replace(/\\B(?=(\\d{2})+(?!\\d))/g,\",\")+\",\");var l=i+o;return t>0&&(l+=\".\"+n[1]),(a?\"-\":\"\")+l}\nfunction parseAmount(v){if(null==v)return NaN;if(typeof v===\"number\")return v;var s=String(v).trim().toLowerCase().replace(/[,\\s_\\u20b9$]/g,\"\");s=s.replace(/^(?:rs\\.?|inr)+/,\"\").replace(/(?:rupees?|only|rs\\.?)$/,\"\");if(!s)return NaN;var U={k:1e3,thousand:1e3,hazar:1e3,hazaar:1e3,m:1e6,mn:1e6,million:1e6,millions:1e6,b:1e9,billion:1e9,billions:1e9,cr:1e7,crore:1e7,crores:1e7,lakh:1e5,lakhs:1e5,lac:1e5,lacs:1e5};var re=/(-?\\d*\\.?\\d+)([a-z]*)/g,m,total=0,seen=false,ok=true,used=\"\";while((m=re.exec(s))!==null){var n=parseFloat(m[1]),u=m[2];if(isNaN(n)){ok=false;break;}if(u===\"\"){total+=n;}else if(U[u]!==undefined){total+=n*U[u];}else{ok=false;break;}used+=m[0];seen=true;}if(ok&&seen&&used===s)return total;if(/[a-z]/.test(s))return NaN;var f=parseFloat(s);return isNaN(f)?NaN:f}function val(e,t){var a=parseAmount(e[t]);return isNaN(a)?0:a}\nfunction inr(e){return\"₹\"+fmtIN(e,0)}\nfunction inr2(e){return\"₹\"+fmtIN(e,2)}\nfunction pct(e){return isNaN(e)||!isFinite(e)?\"—\":fmtIN(e,1)+\"%\"}\nfunction num(e,t){return fmtIN(e,void 0===t?2:t)}\nfunction twoDigits(e){return e<20?ONES[e]:(TENS[Math.floor(e/10)]+\" \"+ONES[e%10]).trim()}\nfunction threeDigits(e){var t=\"\";return e>=100&&(t+=ONES[Math.floor(e/100)]+\" Hundred \",e%=100),e>0&&(t+=twoDigits(e)),t.trim()}\nfunction numberToWordsIndian(e){if(0===(e=Math.round(e)))return\"Zero\";if(e<0)return\"Minus \"+numberToWordsIndian(-e);var t=Math.floor(e/1e7);e%=1e7;var a=Math.floor(e/1e5);e%=1e5;var n=Math.floor(e/1e3),r=e%=1e3,o=[];return t&&o.push(threeDigits(t)+\" Crore\"),a&&o.push(threeDigits(a)+\" Lakh\"),n&&o.push(threeDigits(n)+\" Thousand\"),r&&o.push(threeDigits(r)),o.join(\" \").trim()}"
 }
