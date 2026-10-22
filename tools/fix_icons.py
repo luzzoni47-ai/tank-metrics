@@ -9,7 +9,7 @@ saved 404 HTML page). Write a real bank-mark SVG and point every page at the
 import re
 from pathlib import Path
 
-SITE = Path("/workspace/project/public/site")
+SITE = Path(__file__).resolve().parents[1] / "public" / "site"
 
 # --- brand mark: four Google-coloured quadrants + rupee sign -----------------
 svg = """<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
@@ -30,8 +30,8 @@ svg = """<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox=
 ICON_LINKS = (
     '<link rel="icon" href="/site/favicon.ico" sizes="any">'
     '<link rel="icon" href="/site/favicon.svg" type="image/svg+xml">'
-    '<link rel="icon" href="/site/favicon.png" type="image/png" sizes="64x64">'
-    '<link rel="apple-touch-icon" href="/site/favicon.png">'
+    '<link rel="icon" href="/site/favicon.png" type="image/png" sizes="192x192">'
+    '<link rel="apple-touch-icon" href="/site/favicon.png" sizes="192x192"><link rel="manifest" href="/site/manifest.webmanifest">'
 )
 
 # match every icon-ish link tag so no old reference survives

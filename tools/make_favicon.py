@@ -4,14 +4,25 @@
 The header mark is a four-colour ring with a white centre. Reuse that shape so
 browser tabs match the site, and write .svg, .png and .ico for the site and the
 project root.
+
+Sizes matter for Google: its favicon crawler only accepts a square icon whose
+side is a multiple of 48px (48, 96, 144, 192, ...). The PNG was 256x256, which
+is NOT a multiple of 48, so Google ignored it and kept showing the old cached
+v0 icon in search results. It is 192x192 now. If you ever change the size,
+change FAVICON_PX and the `sizes=` in the <link> tags together - a declaration
+that disagrees with the file makes Google distrust the whole icon.
 """
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
-SITE = Path("/workspace/project/public/site")
-PUB = Path("/workspace/project/public")
+ROOT = Path(__file__).resolve().parents[1]
+SITE = ROOT / "public" / "site"
+PUB = ROOT / "public"
 FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
+# Must be a multiple of 48 for Google to accept it in search results.
+FAVICON_PX = 192
 
 QUADRANTS = ["#4285F4", "#EA4335", "#34A853", "#F2A600"]  # TL, TR, BR, BL
 INK = "#06038D"
@@ -31,7 +42,7 @@ SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox=
 """.format(ink=INK)
 
 
-def mark_png(size: int = 256) -> Image.Image:
+def mark_png(size: int = FAVICON_PX) -> Image.Image:
     """Rasterise the same mark: coloured ring, white centre, rupee glyph."""
     s = size * 4
     img = Image.new("RGBA", (s, s), (255, 255, 255, 0))
@@ -52,14 +63,54 @@ def mark_png(size: int = 256) -> Image.Image:
     return img.resize((size, size), Image.LANCZOS)
 
 
+# PWA / home-screen icons. These are NOT bound by Google's multiple-of-48
+# rule (that one applies to the search-result favicon); 192 and 512 are the
+# sizes Android and Chrome expect in a manifest.
+PWA_SIZES = [192, 512]
+
+MANIFEST = """{{
+  "name": "Tank Metrics",
+  "short_name": "Tank Metrics",
+  "description": "Free business and money calculators for India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF9933",
+  "icons": [
+{icons}
+  ]
+}}
+"""
+
+
 def main() -> None:
     (SITE / "favicon.svg").write_text(SVG, encoding="utf-8")
     (PUB / "favicon.svg").write_text(SVG, encoding="utf-8")
-    for icon in (mark_png(256),):
-        for d in (SITE, PUB):
-            icon.save(d / "favicon.png")
-            icon.save(d / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
-    print("wrote favicon.svg/.png/.ico to public/ and public/site/")
+    icon = mark_png(FAVICON_PX)
+    for d in (SITE, PUB):
+        icon.save(d / "favicon.png")
+        icon.save(d / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
+
+    # Every icon slot the browser or the OS can ask for, so the brand mark
+    # shows up in the tab, in search, and on the home screen alike.
+    entries = []
+    for size in PWA_SIZES:
+        mark_png(size).save(SITE / f"icon-{size}.png")
+        entries.append(
+            '    {{ "src": "/site/icon-{0}.png", "sizes": "{0}x{0}", '
+            '"type": "image/png", "purpose": "any" }},'.format(size)
+        )
+    entries.append(
+        '    { "src": "/site/icon-512.png", "sizes": "512x512", '
+        '"type": "image/png", "purpose": "maskable" }'
+    )
+    (SITE / "manifest.webmanifest").write_text(
+        MANIFEST.format(icons="\n".join(entries)), encoding="utf-8"
+    )
+    print(
+        f"wrote favicon.svg/.png({FAVICON_PX}x{FAVICON_PX})/.ico, "
+        f"icon-{{192,512}}.png and manifest.webmanifest to public/site/"
+    )
 
 
 if __name__ == "__main__":

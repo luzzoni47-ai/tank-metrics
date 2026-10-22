@@ -35,8 +35,9 @@ TOP_NAV = (
 HEAD = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">\
 <link rel="icon" href="/site/favicon.ico" sizes="any">\
 <link rel="icon" href="/site/favicon.svg" type="image/svg+xml">\
-<link rel="icon" href="/site/favicon.png" type="image/png" sizes="64x64">\
-<link rel="apple-touch-icon" href="/site/favicon.png">\
+<link rel="icon" href="/site/favicon.png" type="image/png" sizes="192x192">\
+<link rel="apple-touch-icon" href="/site/favicon.png" sizes="192x192">\
+<link rel="manifest" href="/site/manifest.webmanifest">\
 <meta name="google-site-verification" content="CyIhu9CYYQapfzYJOeSLTP_XY_HWq0McbmY4uX342o4">\
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\
 <title>{title}</title>\

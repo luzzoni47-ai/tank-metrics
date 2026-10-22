@@ -227,8 +227,87 @@ document.getElementById('f').onload = function () {
     return []
 
 
+def check_favicon() -> list:
+    """Google will only show a favicon whose side is a multiple of 48px.
+
+    The mark was rendered at 256x256 - square, live, correct colours, and
+    silently ignored by Google's favicon crawler, so search results kept the
+    old cached v0 icon. The declared `sizes` must also match the real file: a
+    <link> that claims 64x64 over a 256x256 file is the kind of disagreement
+    that gets the whole icon distrusted.
+    """
+    import struct
+
+    failures = []
+    for rel in ("favicon.png", "site/favicon.png"):
+        p = PUBLIC / rel
+        if not p.is_file():
+            failures.append(f"{rel} is missing")
+            continue
+        w, h = struct.unpack(">II", p.read_bytes()[16:24])
+        if w != h:
+            failures.append(f"{rel} is {w}x{h}, not square")
+        if w % 48:
+            failures.append(
+                f"{rel} is {w}x{w}; Google needs a side that is a multiple of 48 "
+                "(48, 96, 144, 192) or it drops the icon from search results"
+            )
+    # Every page must declare the size that the file actually is, and point at
+    # the manifest so a phone home-screen shortcut gets the brand mark too.
+    for page in sorted(PUBLIC.glob("site/**/*.html")):
+        text = page.read_text(encoding="utf-8", errors="replace")
+        for tag in re.findall(r'<link[^>]+rel="[^"]*icon[^"]*"[^>]*>', text):
+            m = re.search(r'sizes="(\d+)x(\d+)"', tag)
+            if m and "favicon.png" in tag and int(m.group(1)) != 192:
+                failures.append(
+                    f"{page.relative_to(PUBLIC)} declares favicon.png as "
+                    f"{m.group(1)}x{m.group(2)} but the file is 192x192"
+                )
+        if "manifest.webmanifest" not in text:
+            failures.append(
+                f"{page.relative_to(PUBLIC)} has no manifest link; a phone "
+                "home-screen shortcut would fall back to a generic icon"
+            )
+    return failures
+
+
+def check_manifest() -> list:
+    """The web app manifest must exist and name icons that really are there.
+
+    Without it, "Add to Home Screen" shows a grey placeholder instead of the
+    Tank Metrics mark - the one place a logo is most visible and most obviously
+    wrong when it is missing.
+    """
+    failures = []
+    manifest = PUBLIC / "site" / "manifest.webmanifest"
+    if not manifest.is_file():
+        return ["site/manifest.webmanifest is missing"]
+    try:
+        data = json.loads(manifest.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        return [f"site/manifest.webmanifest is not valid JSON: {exc}"]
+    icons = data.get("icons") or []
+    if not any(i.get("sizes") == "512x512" for i in icons):
+        failures.append("manifest has no 512x512 icon (Chrome wants one)")
+    if not any(i.get("purpose") == "maskable" for i in icons):
+        failures.append("manifest has no maskable icon (Android crops it badly)")
+    for i in icons:
+        src = i.get("src", "")
+        if not src.startswith("/"):
+            failures.append(f"manifest icon {src!r} is not a same-origin path")
+        elif not (PUBLIC / src.lstrip("/")).is_file():
+            failures.append(f"manifest names {src}, which is not in public/")
+    return failures
+
+
 def main() -> int:
-    failures = check_image_hosts() + check_top_strip() + check_close_button()
+    failures = (
+        check_image_hosts()
+        + check_top_strip()
+        + check_close_button()
+        + check_favicon()
+        + check_manifest()
+    )
 
     probe = PUBLIC / "_layout_probe.html"
     probe.write_text(PROBE % json.dumps(PAGES), encoding="utf-8")

@@ -1,19 +1,23 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Tank Metrics',
-  description: 'Insights, stories, and updates from Tank Metrics.',
+  description: 'Free business and money calculators for India — valuation, EMI, GST, tax and more.',
   icons: {
+    // Keep these in step with tools/make_favicon.py: Google only shows a
+    // favicon whose side is a multiple of 48px, and a `sizes` that disagrees
+    // with the real file (this used to claim 64x64 over a 256x256 png) makes
+    // Google distrust the icon and keep the old cached one.
     icon: [
       { url: '/site/favicon.ico', sizes: 'any' },
       { url: '/site/favicon.svg', type: 'image/svg+xml' },
-      { url: '/site/favicon.png', type: 'image/png', sizes: '64x64' },
+      { url: '/site/favicon.png', type: 'image/png', sizes: '192x192' },
     ],
-    apple: '/site/favicon.png',
+    apple: { url: '/site/favicon.png', sizes: '192x192' },
   },
+  manifest: '/site/manifest.webmanifest',
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -21,27 +25,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         <Script
-  src="https://www.googletagmanager.com/gtag/js?id=G-MHZ0V6HFC6"
-  strategy="afterInteractive"
-/>
-
-<Script id="google-analytics" strategy="afterInteractive">
-  {`
+          src="https://www.googletagmanager.com/gtag/js?id=G-MHZ0V6HFC6"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MHZ0V6HFC6');
   `}
-</Script>
-        <header className="site-header">
-          <Link className="brand" href="/">Tank Metrics</Link>
-          <nav aria-label="Main navigation">
-            <Link href="/">Home</Link>
-            <Link href="/blog">Blog</Link>
-          </nav>
-        </header>
+        </Script>
         {children}
-        <footer className="site-footer">© {new Date().getFullYear()} Tank Metrics</footer>
       </body>
     </html>
   )
