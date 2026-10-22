@@ -77,6 +77,11 @@ const nextConfig = {
   async redirects() {
     return [
       ...htmlRedirects,
+      // /site/index.html is served directly as well as /, which is the same
+      // page twice. The canonical tag already points home, but a redirect is
+      // stronger: it stops Google spending crawl budget on a duplicate and
+      // consolidates every signal on /.
+      { source: '/site/index.html', destination: '/', permanent: true },
       // Static blog posts live at the root now.
       { source: '/site/blog-:slug.html', destination: '/:slug', permanent: true },
       { source: '/calculators', destination: '/', permanent: true },
