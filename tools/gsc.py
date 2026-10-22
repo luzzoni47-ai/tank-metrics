@@ -35,12 +35,18 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://tankmetrics.in/"
-SITEMAP = SITE + "sitemap.xml"
+HOST = "tankmetrics.in"
+SITEMAP_PATH = "/sitemap.xml"
 SCOPES = "https://www.googleapis.com/auth/webmasters"
 TOKEN_URI = "https://oauth2.googleapis.com/token"
 API = "https://www.googleapis.com/webmasters/v3"
 INSPECT_API = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
+
+# The property string differs by property type and the API is strict about it:
+# a Domain property is "sc-domain:tankmetrics.in", a URL-prefix property is
+# "https://tankmetrics.in/". Sir has (or had) both, so resolve it at runtime
+# from /sites instead of hardcoding - a wrong string is an opaque 403/404.
+SITE = ""
 
 
 def load_key() -> dict:
@@ -134,6 +140,29 @@ def call(url: str, token: str, method: str = "GET", payload: dict | None = None)
         sys.exit(f"{method} {url} -> {e.code}\n{detail}")
 
 
+def resolve_site(token: str) -> str:
+    """Pick the property to act on: prefer the Domain property, else the
+    https URL-prefix one, else whatever is visible."""
+    global SITE
+    if SITE:
+        return SITE
+    data = call(f"{API}/sites", token)
+    entries = data.get("siteEntry", [])
+    if not entries:
+        sys.exit(
+            "this service account can see no properties. Add its email "
+            f"({load_key()['client_email']}) as a user in Search Console first."
+        )
+    urls = [e["siteUrl"] for e in entries]
+    for want in (f"sc-domain:{HOST}", f"https://{HOST}/", f"http://{HOST}/"):
+        if want in urls:
+            SITE = want
+            return SITE
+    SITE = urls[0]
+    print(f"(using property {SITE}; expected one for {HOST})")
+    return SITE
+
+
 def cmd_sites(token: str) -> None:
     data = call(f"{API}/sites", token)
     entries = data.get("siteEntry", [])
@@ -144,8 +173,16 @@ def cmd_sites(token: str) -> None:
         print(f"{e['permissionLevel']:<20} {e['siteUrl']}")
 
 
+def sitemap_url() -> str:
+    """The sitemaps API always takes the full URL. (The property-type rule -
+    Domain wants the full URL, URL-prefix wants just `sitemap.xml` - applies to
+    the Search Console UI box, not this API.)"""
+    return f"https://{HOST}{SITEMAP_PATH}"
+
+
 def cmd_sitemaps(token: str) -> None:
-    data = call(f"{API}/sites/{urllib.parse.quote(SITE, safe='')}/sitemaps", token)
+    site = resolve_site(token)
+    data = call(f"{API}/sites/{urllib.parse.quote(site, safe='')}/sitemaps", token)
     subs = data.get("sitemap", [])
     if not subs:
         print("no sitemaps submitted")
@@ -159,20 +196,24 @@ def cmd_sitemaps(token: str) -> None:
 
 
 def cmd_submit(token: str) -> None:
+    site = resolve_site(token)
+    url = sitemap_url()
     call(
-        f"{API}/sites/{urllib.parse.quote(SITE, safe='')}/sitemaps/{urllib.parse.quote(SITEMAP, safe='')}",
+        f"{API}/sites/{urllib.parse.quote(site, safe='')}/sitemaps/{urllib.parse.quote(url, safe='')}",
         token,
         method="PUT",
     )
-    print(f"submitted {SITEMAP}")
+    print(f"submitted {url} to property {site}")
 
 
 def cmd_submit_urls(token: str) -> None:
-    """Google has no public 'submit this URL' API; the closest is a fresh
-    sitemap PUT plus a URL-inspection request, which nudges a recrawl."""
+    """Google has no public 'submit this URL' API; the closest is a URL
+    inspection request per page (which nudges a recrawl) plus a sitemap PUT."""
+    resolve_site(token)
     listing = ROOT / "tools" / "gsc_submit_list.txt"
     urls = [u.strip() for u in listing.read_text(encoding="utf-8").splitlines() if u.strip()]
     print(f"nudging {len(urls)} URL(s) via URL inspection")
+    ok = 0
     for u in urls:
         try:
             call(
@@ -181,18 +222,20 @@ def cmd_submit_urls(token: str) -> None:
                 method="POST",
                 payload={"inspectionUrl": u, "siteUrl": SITE},
             )
-            print("  ok  ", u)
+            ok += 1
         except SystemExit as e:
-            print("  fail", u, str(e)[:120])
+            print("  fail", u, str(e)[:160])
+    print(f"  {ok}/{len(urls)} accepted")
     cmd_submit(token)
 
 
 def cmd_inspect(token: str, url: str) -> None:
+    site = resolve_site(token)
     data = call(
         INSPECT_API,
         token,
         method="POST",
-        payload={"inspectionUrl": url, "siteUrl": SITE},
+        payload={"inspectionUrl": url, "siteUrl": site},
     )
     r = data.get("inspectionResult", {})
     idx = r.get("indexStatusResult", {})
@@ -207,6 +250,7 @@ def cmd_inspect(token: str, url: str) -> None:
 
 
 def cmd_analytics(token: str, days: int) -> None:
+    site = resolve_site(token)
     end = time.strftime("%Y-%m-%d")
     start = time.strftime("%Y-%m-%d", time.localtime(time.time() - days * 86400))
     payload = {
@@ -216,7 +260,7 @@ def cmd_analytics(token: str, days: int) -> None:
         "rowLimit": 25,
     }
     data = call(
-        f"{API}/sites/{urllib.parse.quote(SITE, safe='')}/searchAnalytics/query",
+        f"{API}/sites/{urllib.parse.quote(site, safe='')}/searchAnalytics/query",
         token,
         method="POST",
         payload=payload,
