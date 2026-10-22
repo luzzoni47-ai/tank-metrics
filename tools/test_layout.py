@@ -79,7 +79,48 @@ def free_port() -> int:
         return s.getsockname()[1]
 
 
+def check_image_hosts() -> list:
+    """Every <img> must be same-origin, and the file it names must exist.
+
+    The CSP in next.config.mjs is `img-src 'self' data:`, so an image served
+    from anywhere else is silently blocked: the markup looks right, the page
+    loads, and the picture simply never appears. That is exactly how the founder
+    photo went missing from /about - it pointed at Vercel Blob. A same-origin
+    path that names no file fails the same way, so both are checked.
+    """
+    failures = []
+    for page in sorted(PUBLIC.glob("site/**/*.html")):
+        text = page.read_text(encoding="utf-8", errors="replace")
+        for src in re.findall(r'<img[^>]*\ssrc="([^"]*)"', text):
+            if src.startswith("data:"):
+                continue
+            if not src.startswith("/"):
+                failures.append(
+                    f"{page.relative_to(PUBLIC)} loads an off-site image ({src}); "
+                    "CSP img-src is 'self' data:, so it will not render"
+                )
+                continue
+            if not (PUBLIC / src.lstrip("/")).is_file():
+                failures.append(
+                    f"{page.relative_to(PUBLIC)} points at {src}, which is not in public/"
+                )
+    return failures
+
+
+def report(failures: list, note: str = "") -> None:
+    if note:
+        failures.insert(0, note)
+    if failures:
+        print(f"FAIL: {len(failures)} problem(s)")
+        for f in failures:
+            print("  " + f)
+    else:
+        print("ALL PASS")
+
+
 def main() -> int:
+    failures = check_image_hosts()
+
     probe = PUBLIC / "_layout_probe.html"
     probe.write_text(PROBE % json.dumps(PAGES), encoding="utf-8")
     port = free_port()
@@ -106,12 +147,11 @@ def main() -> int:
 
     m = re.search(r'<pre id="out">(.*?)</pre>', dom, re.S)
     if not m:
-        print("FAIL: probe produced no output")
+        report(failures, "probe produced no output")
         return 1
     import html as html_mod
     data = json.loads(html_mod.unescape(m.group(1)))
 
-    failures = []
     for r in sorted(data, key=lambda x: x["page"]):
         if r.get("error"):
             failures.append(f"{r['page']} -> {r['error']}")
@@ -131,10 +171,8 @@ def main() -> int:
                 failures.append(f"{r['page']} heart fill is {heart['fill']}, expected red")
 
     print(f"pages checked: {len(data)}")
+    report(failures)
     if failures:
-        print(f"FAIL: {len(failures)} problem(s)")
-        for f in failures:
-            print("  " + f)
         return 1
     print(f"ALL PASS: every page keeps a {GUTTER}px mobile gutter and a red footer heart")
     return 0
