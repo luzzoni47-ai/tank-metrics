@@ -2,6 +2,71 @@
   "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
   "items": [
     {
+      "slug": "amazon-festive-sale-seller-sales-3-5x-first-week",
+      "title": "Amazon Festive Sale Lifted Seller Sales 3.5x in Week One",
+      "dek": "Amazon's festive sale lifted seller sales 3.5x in week one, and zero referral fees below ₹1,000 did part of it. Here is what that means for your price.",
+      "category": "Small Business",
+      "date": "2026-10-21",
+      "date_display": "October 21, 2026",
+      "source_name": "ET Retail",
+      "source_url": "https://retail.economictimes.indiatimes.com/news/e-commerce/amazon-great-indian-festival-2026-drives-3-5x-seller-sales-smb-participation-rises-30-per-cent/135091532",
+      "cta": {
+        "text": "Put your own price, commission and shipping in and see what you actually keep.",
+        "href": "/marketplace-fee-calculator",
+        "label": "Open the Marketplace Fee Calculator"
+      },
+      "related": [
+        {
+          "slug": "marketplace-fees-explained",
+          "title": "Marketplace Fees Explained"
+        },
+        {
+          "slug": "average-order-value-aov",
+          "title": "Average Order Value Calculator"
+        }
+      ],
+      "body_en": [
+        "<p>Amazon India's Great Indian Festival 2026 opened with seller sales running <strong>3.5 times</strong> normal levels in its first week, and products selling more than twice as fast, according to ET Retail. Seller participation rose nearly <strong>30%</strong> year on year to a record high, and more than <strong>70%</strong> of the participating small and medium businesses came from Tier 2 and Tier 3 cities.</p>",
+        "<p>A festival week is a strange thing to measure. The number is real, but it is measured against an ordinary week, not against last October. Read it as a spike, not as a new normal.</p>",
+        "<h2>What the numbers actually say</h2>",
+        "<p>The count of SMBs crossing <strong>₹10 lakh</strong> in sales grew more than <strong>4.6 times</strong> in that first week, and the number of sellers crossing <strong>₹1 crore</strong> grew over 1.5 times. Among sellers who were new to the platform, units sold rose more than 2.5 times, the count crossing <strong>₹1 lakh</strong> grew 2.4 times, and those crossing <strong>₹10 lakh</strong> increased more than fourfold.</p>",
+        "<p>Women entrepreneurs in Amazon Saheli recorded sales spikes of up to <strong>10 times</strong>, and sellers in Amazon Karigar, the artisans programme, grew more than 1.5 times. The top five categories by seller sales were jewellery, shoes, automotive, major appliances and wireless products.</p>",
+        "<h2>Why the ₹10 lakh line is the one to watch</h2>",
+        "<p>Growth multiples flatter small bases. A seller who did ₹1 lakh in a normal week and ₹10 lakh in the festival week has grown ten times, and that is a genuine achievement — but it also means the next ordinary week will look like a collapse. If you hired staff or bought stock on the strength of a festival week, the arithmetic of the week after is what pays for it.</p>",
+        "<p>Compare the two groups. The number of sellers crossing ₹1 crore grew 1.5 times, while those crossing ₹10 lakh grew 4.6 times. The bigger the base, the harder the multiple. That is normal, and it is why a headline multiple should never be read as a promise of scale.</p>",
+        "<h2>The fee change doing part of the work</h2>",
+        "<p>Amazon attributed part of the momentum to changes in its seller fee structure, including <strong>zero referral fees on products priced below ₹1,000</strong>. In the first 24 hours of the festival, the number of sellers offering products below ₹500 who recorded a tenfold sales spike grew more than two times compared with a year earlier.</p>",
+        "<p>Here is the arithmetic of why that threshold matters. Suppose your referral fee is 20% and you sell at ₹1,000. The fee is ₹200, so you keep ₹800 before shipping and any closing fee. Sell the same item at ₹900 with no referral fee and you keep ₹900. You take ₹100 less from the customer and still keep ₹100 more. That is the whole argument for knowing where your price sits relative to the threshold.</p>",
+        "<h2>What this means if you sell online</h2>",
+        "<p><strong>Check where your price sits.</strong> If your best-selling item is priced just above a fee threshold, the arithmetic above applies to every single order. Move the price deliberately, not by accident.</p>",
+        "<p><strong>Do not build fixed costs on a spike.</strong> A 3.5 times week is a week. Warehouse rent, extra staff and a large inventory bet are monthly costs, and they do not shrink when the traffic goes back to normal.</p>",
+        "<p><strong>Read your payout ratio, not your sales figure.</strong> The dashboard shows what the customer paid. Your bank account shows what you kept. Those are different numbers, and the gap is fees, shipping and returns.</p>",
+        "<p><strong>Plan the next sale now.</strong> Amazon ran a seller acquisition campaign across more than 150 cities and towns and a Festive Readiness Seller Academy with ten sessions. The sellers who crossed ₹10 lakh in week one had listings, stock and ad budgets ready before the sale opened, not during it.</p>",
+        "<h2>Do this before the next festival</h2>",
+        "<p>Take your five best-selling items and write down the price, the commission percentage, the shipping you pay and the returns you expect. Work out what you actually keep on each one. Most sellers find one or two items earn far less than the sales report suggests, and a small price correction before the next sale is worth more than any discount you can offer during it.</p>"
+      ],
+      "body_hinglish": [
+        "<p>Amazon India ke Great Indian Festival 2026 ke pehle hafte mein seller sales normal level se <strong>3.5 guna</strong> rahi, aur products do guna se zyada tezi se bike, ET Retail ke mutabik. Seller participation pichhle saal se takriban <strong>30%</strong> badhi aur record par pahunchi, aur participate karne wale small aur medium businesses mein se <strong>70%</strong> se zyada Tier 2 aur Tier 3 shehron se the.</p>",
+        "<p>Festival ka hafta naapna ajeeb hota hai. Number sach hai, par woh ek aam hafte se compare kiya gaya hai, pichhle October se nahi. Ise spike samjho, naya normal nahi.</p>",
+        "<h2>Numbers asal mein kya kehte hain</h2>",
+        "<p>Jo SMBs <strong>₹10 lakh</strong> ke sales cross kare, unki ginti us pehle hafte mein <strong>4.6 guna</strong> se zyada badhi, aur <strong>₹1 crore</strong> cross karne wale sellers 1.5 guna se zyada badhe. Naye sellers mein units sold 2.5 guna se zyada badhe, <strong>₹1 lakh</strong> cross karne wale 2.4 guna badhe, aur <strong>₹10 lakh</strong> cross karne wale chaar guna se zyada.</p>",
+        "<p>Amazon Saheli ki women entrepreneurs ne <strong>10 guna</strong> tak ke sales spike dekhe, aur Amazon Karigar ke artisans 1.5 guna se zyada badhe. Seller sales ke hisaab se top paanch categories jewellery, shoes, automotive, major appliances aur wireless products thi.</p>",
+        "<h2>₹10 lakh ki line par nazar kyun rakhni chahiye</h2>",
+        "<p>Growth multiples chhote base ko hawa deti hain. Jo seller aam hafte mein ₹1 lakh karta tha aur festival hafte mein ₹10 lakh, usne das guna growth ki, aur ye asli achievement hai — par iska matlab ye bhi hai ki agla aam hafta collapse jaisa lagega. Agar aapne festival hafte ke bharose staff rakha ya stock kharida, to us agle hafte ka hisaab hi iska paisa deta hai.</p>",
+        "<p>Do groups ko compare karo. ₹1 crore cross karne wale sellers 1.5 guna badhe, aur ₹10 lakh cross karne wale 4.6 guna. Base jitna bada, multiple utna mushkil. Ye normal hai, aur isliye headline multiple ko kabhi scale ka wada nahi samajhna chahiye.</p>",
+        "<h2>Fees mein badlav jo kaam kar raha hai</h2>",
+        "<p>Amazon ne momentum ka ek hissa apne seller fee structure ke badlav ko diya, jisme <strong>₹1,000 se kam ke products par zero referral fees</strong> shamil hai. Festival ke pehle 24 ghanton mein, ₹500 se kam ke products bechne wale sellers jinhone das guna sales spike dekha, unki ginti pichhle saal se do guna se zyada badhi.</p>",
+        "<p>Ye threshold kyun maayne rakhta hai, uska arithmetic dekho. Maan lo referral fee 20% hai aur aap ₹1,000 par bechte ho. Fee ₹200 hai, to shipping aur closing fee se pehle aap ₹800 rakhte ho. Wahi item ₹900 par bina referral fee becho to ₹900 rakhte ho. Customer se ₹100 kam lete ho aur phir bhi ₹100 zyada rakhte ho. Threshold ke hisaab se aapka price kahan hai, ye jaanna poori baat hai.</p>",
+        "<h2>Agar aap online bechte ho to iska matlab</h2>",
+        "<p><strong>Dekho aapka price kahan baithta hai.</strong> Agar aapka best-selling item kisi fee threshold se bas thoda upar hai, to upar ka arithmetic har order par lagta hai. Price deliberately badlo, galti se nahi.</p>",
+        "<p><strong>Spike par fixed cost mat banao.</strong> 3.5 guna hafta ek hafta hai. Warehouse rent, extra staff aur bada inventory bet mahine ka kharcha hain, aur traffic normal hone par woh kam nahi hote.</p>",
+        "<p><strong>Apna payout ratio padho, sales figure nahi.</strong> Dashboard dikhata hai customer ne kitna diya. Bank account dikhata hai aapne kitna rakha. Ye do alag numbers hain, aur beech ka gap fees, shipping aur returns hai.</p>",
+        "<p><strong>Agli sale ki planning ab karo.</strong> Amazon ne 150 se zyada shehron aur towns mein seller acquisition campaign chalaya aur das sessions ki Festive Readiness Seller Academy chalayi. Jo sellers pehle hafte mein ₹10 lakh cross kare, unke listings, stock aur ad budget sale khulne se pehle ready the, sale ke dauraan nahi.</p>",
+        "<h2>Agle festival se pehle ye karo</h2>",
+        "<p>Apne paanch best-selling items lo aur price, commission percentage, jo shipping aap dete ho aur jo returns expect karte ho, sab likho. Har item par aap asal mein kitna rakhte ho, nikaalo. Zyadatar sellers paate hain ki ek-do items sales report se kaafi kam kama rahe hain, aur agli sale se pehle chhota price correction us sale ke dauraan diye gaye kisi bhi discount se zyada kaam ka hai.</p>"
+      ]
+    },
+    {
       "slug": "upi-mdr-deferred-after-diwali-what-shops-pay",
       "title": "UPI MDR Is Deferred to After Diwali: What a Shop Will Actually Pay",
       "dek": "NPCI has pushed the 0.4% merchant fee on UPI payments above ₹2,000 to after Diwali. Here is the arithmetic of what that fee costs a small shop, and who is spared.",
