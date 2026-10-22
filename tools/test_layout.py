@@ -300,6 +300,44 @@ def check_manifest() -> list:
     return failures
 
 
+
+def check_focus_scroll() -> list:
+    """Focusing or typing in a calculator must not move the document.
+
+    On mobile a tapped card is lifted into a `position:fixed` full-screen
+    overlay. `focusCard` used to call `scrollIntoView({block:"center"})` on that
+    card, and this runs on every focus and every keystroke. Scrolling a fixed
+    element into view scrolls the *document*, so the first character typed threw
+    the page to the top and the card was left floating over the wrong scroll
+    offset. The overlay is already full-screen, so there is nothing to scroll to.
+
+    The scroll offset itself cannot be read through the `--dump-dom` harness the
+    other checks use (headless reports scrollY as 0), so this asserts the call is
+    gone and the overlay tracks the keyboard with dvh instead of 100vh.
+    """
+    failures = []
+    html = (PUBLIC / "site" / "index.html").read_text(encoding="utf-8", errors="replace")
+    m = re.search(r"function focusCard\(.*?\n", html)
+    if not m:
+        return ["index.html has no focusCard function"]
+    body = m.group(0)
+    if "scrollIntoView" in body:
+        failures.append(
+            "focusCard calls scrollIntoView; on a position:fixed card that "
+            "scrolls the document, so typing a number throws the page to the top"
+        )
+    css = (PUBLIC / "site" / "style.css").read_text(encoding="utf-8")
+    rule = re.search(r"\.card\.calculator-focused\{[^}]*\}", css)
+    if not rule:
+        failures.append("style.css has no .card.calculator-focused rule")
+    elif "100dvh" not in rule.group(0):
+        failures.append(
+            ".card.calculator-focused sizes itself with 100vh; when the on-screen "
+            "keyboard opens the browser scrolls the page. Use 100dvh."
+        )
+    return failures
+
+
 def main() -> int:
     failures = (
         check_image_hosts()
@@ -307,6 +345,7 @@ def main() -> int:
         + check_close_button()
         + check_favicon()
         + check_manifest()
+        + check_focus_scroll()
     )
 
     probe = PUBLIC / "_layout_probe.html"
