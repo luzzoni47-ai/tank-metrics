@@ -107,6 +107,36 @@ def check_image_hosts() -> list:
     return failures
 
 
+def check_top_strip() -> list:
+    """The header stripe must use the logo's four colours everywhere it appears.
+
+    The same stripe is drawn in three separate rules - `.tricolor` for desktop,
+    `.topbar:after` for mobile, and a `.topbar::after` in the desktop media
+    query - so changing one and missing another silently leaves an old stripe on
+    the screen. That happened: the mobile bar was updated and desktop still
+    showed the old saffron/white/green. Pin all three to the logo variables.
+    """
+    css = (PUBLIC / "site" / "style.css").read_text(encoding="utf-8")
+    logo = ["var(--blue)", "var(--red)", "var(--yellow)", "var(--green)"]
+    failures = []
+    # Four rules mention the stripe; the fourth only repositions it on mobile
+    # (`top:0;bottom:auto`) and paints nothing, so only the gradients matter.
+    gradients = [
+        r for r in re.findall(r"\.tricolor\{[^}]*\}|\.topbar::?after\{[^}]*\}", css)
+        if "linear-gradient" in r
+    ]
+    if len(gradients) != 3:
+        failures.append(f"expected 3 painted header stripes, found {len(gradients)}")
+    for rule in gradients:
+        name = rule.split("{")[0]
+        missing = [v for v in logo if v not in rule]
+        if missing:
+            failures.append(
+                f"{name} is not using the logo colours (missing {', '.join(missing)})"
+            )
+    return failures
+
+
 def report(failures: list, note: str = "") -> None:
     if note:
         failures.insert(0, note)
@@ -119,7 +149,7 @@ def report(failures: list, note: str = "") -> None:
 
 
 def main() -> int:
-    failures = check_image_hosts()
+    failures = check_image_hosts() + check_top_strip()
 
     probe = PUBLIC / "_layout_probe.html"
     probe.write_text(PROBE % json.dumps(PAGES), encoding="utf-8")

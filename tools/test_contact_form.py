@@ -37,7 +37,8 @@ f.onload = async () => {
   out.phoneOnPage = d.body.innerHTML.includes('88515510022');
   out.hasFileInput = !!d.querySelector('#attachment');
   out.hasPhoneInput = !!d.querySelector('#phone');
-  out.optionalLabels = d.querySelectorAll('.contact-form .opt').length;
+  // Count the visible word, not a class name, so renaming the tag cannot hide it.
+  out.optionalLabels = (d.querySelector('#contactForm').textContent.match(/optional/gi) || []).length;
   out.button = !!d.querySelector('#sendBtn');
   // Multiple screenshots in one go: the attribute, and the live note that
   // tells the visitor how many they picked.
@@ -75,7 +76,7 @@ CHECKS = [
     ("phoneOnPage", False, "the owner's phone number must not be published"),
     ("hasFileInput", True, "screenshot upload must exist"),
     ("hasPhoneInput", True, "an optional phone field must exist"),
-    ("optionalLabels", 5, "all five fields must be marked optional"),
+    ("optionalLabels", 0, "no field may be tagged optional"),
     ("button", True, "submit button must exist"),
     ("hasMultiple", True, "several screenshots must be selectable at once"),
     ("thanksVisible", True, "the visitor must always get a reply on send"),
