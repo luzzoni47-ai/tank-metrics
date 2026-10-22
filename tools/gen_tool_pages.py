@@ -203,6 +203,61 @@ def related_html(c: dict, slugs: dict[str, str]) -> str:
     )
 
 
+# Official Indian sources, one line each. Every URL was checked live (HTTP 200)
+# in a real browser before being added: an outbound link to a dead government
+# page is worse than no link at all. These are the E-E-A-T signal Google looks
+# for on a finance site - a calculator that cites the Income Tax Department or
+# RBI is a different thing from one that cites nobody. Keys are calculator ids.
+#
+# Skipped on purpose: epfindia.gov.in (redirects to epfo.gov.in), mca.gov.in and
+# cbic.gov.in (both answer 403 / a JavaScript-only shell to non-browser clients).
+# Do not add them back without re-checking them in a browser.
+SOURCES: dict[str, list[tuple[str, str]]] = {
+    "incometax": [("Income Tax Department e-filing portal", "https://www.incometax.gov.in/iec/foportal/")],
+    "hra": [("Income Tax Department e-filing portal", "https://www.incometax.gov.in/iec/foportal/")],
+    "depreciation": [("Income Tax Department e-filing portal", "https://www.incometax.gov.in/iec/foportal/")],
+    "gst": [("GST Portal, Government of India", "https://www.gst.gov.in/")],
+    "gst_taxwealth": [("GST Portal, Government of India", "https://www.gst.gov.in/")],
+    "nps": [("National Pension System Trust", "https://www.npstrust.org.in/")],
+    "sip": [("Association of Mutual Funds in India (AMFI)", "https://www.amfiindia.com/")],
+    "ppf": [("India Post - Small Savings Schemes", "https://www.indiapost.gov.in/")],
+    "fd": [("Reserve Bank of India", "https://www.rbi.org.in/")],
+    "rd": [("Reserve Bank of India", "https://www.rbi.org.in/")],
+    "emi": [("Reserve Bank of India", "https://www.rbi.org.in/")],
+    "homeemi": [("Reserve Bank of India", "https://www.rbi.org.in/")],
+    "propertyvalue": [("Reserve Bank of India", "https://www.rbi.org.in/")],
+    "rentalyield": [("Reserve Bank of India", "https://www.rbi.org.in/")],
+    "rentbuy": [("Reserve Bank of India", "https://www.rbi.org.in/")],
+    "gratuity": [("Ministry of Labour and Employment", "https://www.labour.gov.in/")],
+    "stampduty": [("National Portal of India", "https://www.india.gov.in/")],
+    "impval": [("SEBI", "https://www.sebi.gov.in/")],
+    "prepost": [("SEBI", "https://www.sebi.gov.in/")],
+    "revmul": [("SEBI", "https://www.sebi.gov.in/")],
+    "ebitdamul": [("SEBI", "https://www.sebi.gov.in/")],
+    "marketshare": [("Ministry of Statistics and Programme Implementation", "https://www.mospi.gov.in/")],
+    "bmi": [("Ministry of Health and Family Welfare", "https://www.mohfw.gov.in/")],
+    "agefun": [("UIDAI", "https://www.uidai.gov.in/")],
+}
+
+
+def sources_html(c: dict) -> str:
+    """Cite the official body behind the number. Nofollow is deliberate: the
+    point is to show where the rule comes from, not to pass equity outward."""
+    rows = SOURCES.get(c["id"])
+    if not rows:
+        return ""
+    items = "".join(
+        f'<li><a href="{url}" rel="noopener nofollow" target="_blank">{name}</a></li>'
+        for name, url in rows
+    )
+    return (
+        '<section class="tool-sources"><h2>Official source</h2>'
+        f'<ul>{items}</ul>'
+        '<p class="sources-note">Rules and rates change. Confirm the current '
+        'figure with the official body before you act on a result.</p></section>'
+    )
+
+
 def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
          titles: dict[str, str]) -> str:
     slug = slugs[c["id"]]
@@ -271,6 +326,7 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
 {faq_html}
 <div class="cta-inline"><p>Want all 100 calculators in one place?</p><a class="btn-primary" href="/#{'card_' + c['id']}">Open on the home page →</a></div>
 {related_html(c, slugs)}
+{sources_html(c)}
 <nav class="tool-nav"><a href="/{slugs[prev['id']]}">← {prev['name']}</a><a href="/{slugs[nxt['id']]}">{nxt['name']} →</a></nav>
 <p><a href="/">← All 100 Tank Metrics calculators</a></p>
 </div></div>

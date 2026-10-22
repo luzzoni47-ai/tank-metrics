@@ -148,8 +148,87 @@ def report(failures: list, note: str = "") -> None:
         print("ALL PASS")
 
 
+def check_close_button() -> list:
+    """The mobile calculator close `×` must sit just under the tip line.
+
+    It used to be `position:absolute; bottom:22px` inside a fixed full-screen
+    card, so on a card whose content is short it floated ~426px below the Tip
+    line - marooned at the bottom of the screen, nowhere near the calculator it
+    closes. It is in normal flow now. Measure the real gap rather than trusting
+    the CSS, because the card is only full-screen while focused.
+    """
+    probe = PUBLIC / "_close_probe.html"
+    probe.write_text(
+        """<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>html,body{margin:0}iframe{width:390px;height:844px;border:0}</style></head>
+<body><iframe id="f" src="/site/index.html"></iframe><pre id="out">pending</pre><script>
+document.getElementById('f').onload = function () {
+  var f = this, d = f.contentDocument;
+  setTimeout(function () {
+    var card = d.querySelector('.card');
+    if (!card) { document.getElementById('out').textContent = JSON.stringify({error: 'no card'}); return; }
+    card.click();
+    setTimeout(function () {
+      var close = d.querySelector('.calculator-focus-close');
+      var tip = card.querySelector('.benchmark');
+      if (!close) { document.getElementById('out').textContent = JSON.stringify({error: 'no close button'}); return; }
+      if (!tip) { document.getElementById('out').textContent = JSON.stringify({error: 'no tip line'}); return; }
+      var c = close.getBoundingClientRect(), t = tip.getBoundingClientRect();
+      document.getElementById('out').textContent = JSON.stringify({
+        gap: Math.round(c.top - t.bottom),
+        closeText: close.textContent,
+        position: f.contentWindow.getComputedStyle(close).position,
+      });
+    }, 700);
+  }, 1300);
+};
+</script></body></html>
+""",
+        encoding="utf-8",
+    )
+    port = free_port()
+    server = subprocess.Popen(
+        [sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1"],
+        cwd=PUBLIC, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+    )
+    try:
+        for _ in range(40):
+            try:
+                with socket.create_connection(("127.0.0.1", port), timeout=0.5):
+                    break
+            except OSError:
+                time.sleep(0.1)
+        dom = subprocess.run(
+            ["chromium", "--headless", "--disable-gpu", "--no-sandbox",
+             f"--window-size={WIDTH},{HEIGHT}", "--virtual-time-budget=15000",
+             "--dump-dom", f"http://127.0.0.1:{port}/_close_probe.html"],
+            capture_output=True, text=True, timeout=180,
+        ).stdout
+    finally:
+        server.terminate()
+        probe.unlink(missing_ok=True)
+
+    m = re.search(r'<pre id="out">(.*?)</pre>', dom, re.S)
+    if not m:
+        return ["close-button probe produced no output"]
+    import html as html_mod
+    try:
+        data = json.loads(html_mod.unescape(m.group(1)))
+    except json.JSONDecodeError:
+        return ["close-button probe returned unreadable data"]
+    if data.get("error"):
+        return [f"close button: {data['error']}"]
+    if data["closeText"] != "\u00d7":
+        return [f"close button reads {data['closeText']!r}, expected '×'"]
+    if data["position"] == "absolute":
+        return ["close button is absolutely positioned again; it will float away from the tip line"]
+    if not 0 <= data["gap"] <= 60:
+        return [f"close button sits {data['gap']}px below the tip line, expected 0-60px"]
+    return []
+
+
 def main() -> int:
-    failures = check_image_hosts() + check_top_strip()
+    failures = check_image_hosts() + check_top_strip() + check_close_button()
 
     probe = PUBLIC / "_layout_probe.html"
     probe.write_text(PROBE % json.dumps(PAGES), encoding="utf-8")
