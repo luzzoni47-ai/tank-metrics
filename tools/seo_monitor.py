@@ -269,6 +269,12 @@ def main() -> int:
     argv = [a for a in argv if a != "--local"]
     base = (argv[0] if argv else
             ("http://localhost" if local else DEFAULT_BASE)).rstrip("/")
+    # A filesystem path carries no scheme, so it can only mean "check the built
+    # files". The daily runbooks call it as `seo_monitor.py .`; without this the
+    # path is treated as a host and urllib raises "unknown url type".
+    if base and "://" not in base:
+        local = True
+        base = ""
     now = datetime.now(timezone.utc)
     problems: list[str] = []
 
