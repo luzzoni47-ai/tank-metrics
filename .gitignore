@@ -9,6 +9,10 @@ __v0_jsx-dev-runtime.ts
 # Environment variables
 .env*.local
 
+# Google Search Console service-account key — never commit this
+*service-account*.json
+gsc_service_account.json
+
 # Common ignores
 node_modules
 .next/
