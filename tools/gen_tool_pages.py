@@ -185,6 +185,24 @@ def guide_html(c: dict) -> str:
     return "".join(parts)
 
 
+def related_html(c: dict, slugs: dict[str, str]) -> str:
+    """Same-category calculators, so a visitor who needs the next step finds it
+    and Google gets a real topical cluster instead of 101 orphan pages."""
+    cat = c["cat"]
+    sibs = [x for x in DATA["calcs"] if x["cat"] == cat and x["id"] != c["id"]]
+    if len(sibs) < 2:
+        sibs = [x for x in DATA["calcs"] if x["id"] != c["id"]][:8]
+    sibs = sibs[:8]
+    links = "".join(
+        f'<li><a href="/{slugs[x["id"]]}">{x["name"]}</a></li>' for x in sibs
+    )
+    catname = next((x["name"] for x in DATA["cats"] if x["id"] == cat), "Tank Metrics")
+    return (
+        f'<section class="related-tools"><h2>More {catname} calculators</h2>'
+        f'<ul class="related-list">{links}</ul></section>'
+    )
+
+
 def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
          titles: dict[str, str]) -> str:
     slug = slugs[c["id"]]
@@ -252,7 +270,8 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
 <h2>Frequently asked questions</h2>
 {faq_html}
 <div class="cta-inline"><p>Want all 100 calculators in one place?</p><a class="btn-primary" href="/#{'card_' + c['id']}">Open on the home page →</a></div>
-<nav class="tool-nav"><a href="/site/tools/{slugs[prev['id']]}.html">← {prev['name']}</a><a href="/site/tools/{slugs[nxt['id']]}.html">{nxt['name']} →</a></nav>
+{related_html(c, slugs)}
+<nav class="tool-nav"><a href="/{slugs[prev['id']]}">← {prev['name']}</a><a href="/{slugs[nxt['id']]}">{nxt['name']} →</a></nav>
 <p><a href="/">← All 100 Tank Metrics calculators</a></p>
 </div></div>
 <footer class="site-footer"><div class="footer-grid"><div class="footer-col"><h4>Tank Metrics</h4><p>100 free business calculators for entrepreneurs, students and small business owners. Everything is calculated right in your browser — nothing you type is ever sent anywhere.</p></div><div class="footer-col"><h4>Company</h4><ul><li><a href="/site/about.html">About Us</a></li><li><a href="/site/blog.html">Blog</a></li><li><a href="/site/contact.html">Contact Us</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/site/privacy-policy.html">Privacy Policy</a></li><li><a href="/site/terms-and-conditions.html">Terms and Conditions</a></li><li><a href="/site/disclaimer.html">Disclaimer</a></li></ul></div><div class="footer-col"><h4>Popular</h4><ul><li><a href="/#cat_val">Valuation &amp; Deals</a></li><li><a href="/#cat_cust">Unit Economics</a></li><li><a href="/#cat_everyday">Everyday Money</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 Tank Metrics. Built for learning and quick estimates — for big decisions, always check with a qualified accountant or financial advisor.</span> <span>Made with <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> in Bangalore, India</span></div></footer>

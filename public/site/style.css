@@ -23,6 +23,13 @@
 /* Prev/next strip on the /site/tools/* pages. Nothing else uses .tool-nav. */
 .tool-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:26px 0 10px;font-size:13.5px;font-weight:500}
 .tool-nav a{color:var(--accent,#4285F4);text-decoration:none}
+/* Same-category cluster. Keeps a visitor moving and gives Google a topical
+   link graph instead of 101 pages that only point home. */
+.related-tools{margin:30px 0 6px;padding-top:20px;border-top:1px solid var(--line,#e6e6e6)}
+.related-tools h2{font-size:17px;margin:0 0 12px}
+.related-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:9px}
+.related-list a{display:block;padding:9px 12px;border:1px solid var(--line,#e6e6e6);border-radius:9px;color:var(--accent,#4285F4);text-decoration:none;font-size:13.5px;font-weight:500}
+.related-list a:hover{border-color:var(--accent,#4285F4)}
 .tool-nav a:hover{text-decoration:underline}
 
 /* Card titles link to their own tool page; keep the heading looking untouched. */
