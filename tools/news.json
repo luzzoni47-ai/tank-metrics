@@ -2,6 +2,57 @@
   "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
   "items": [
     {
+      "slug": "rbi-rate-hike-october-2026-what-it-costs-your-loan",
+      "title": "RBI Hiked the Repo Rate to 5.50%: What It Costs Your Loan",
+      "dek": "RBI's October minutes show a unanimous 25 bps hike to 5.50% and a shift to calibrated tightening. Here is what two more hikes do to a small business loan.",
+      "category": "Small Business",
+      "date": "2026-10-21",
+      "date_display": "October 21, 2026",
+      "source_name": "Reserve Bank of India",
+      "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63839",
+      "cta": {
+        "text": "Put your loan amount, rate and tenure in and see what a higher rate does to your monthly EMI.",
+        "href": "/loan-emi-calculator",
+        "label": "Open the Loan EMI Calculator"
+      },
+      "related": [
+        {
+          "slug": "burn-rate-runway-guide",
+          "title": "Burn Rate and Runway"
+        },
+        {
+          "slug": "break-even-point-explained",
+          "title": "Break-Even Point Explained"
+        }
+      ],
+      "body_en": [
+        "<p>The Reserve Bank of India released the minutes of its 63rd Monetary Policy Committee meeting on October 21, 2026. The committee, chaired by Governor Sanjay Malhotra, voted unanimously to raise the repo rate by 25 basis points to <strong>5.50%</strong> at its October 5 to 7 meeting, and changed its stance from neutral to calibrated tightening.</p>",
+        "<h2>What the minutes say the RBI decided</h2>",
+        "<p>The repo rate is now 5.50%, up from 5.25%. The standing deposit facility rate moved to 5.25%, and the marginal standing facility rate and the Bank Rate moved to 5.75%. The rate rise itself was unanimous. The change of stance was not. Two external members, Dr. Nagesh Kumar and Professor Ram Singh, wanted to keep the neutral stance, arguing that a tightening signal can read as the start of a long cycle of rate increases.</p>",
+        "<h2>Why the committee is worried about prices</h2>",
+        "<p>Consumer price inflation rose to 4.8% in August 2026 from 4.5% in July. Food and fuel led the increase, but core inflation, which strips out food and fuel, also rose, to 4.2%. The RBI expects CPI inflation to average close to 5.8% over the next three quarters, and projects it at 6.0% in the December quarter and 5.7% in the March quarter. The target is 4%. On growth, the RBI kept its projection for the year at 7.1%.</p>",
+        "<h2>The arithmetic of a 25 basis point hike</h2>",
+        "<p>One basis point is one hundredth of a percentage point, so 25 basis points is 0.25%. On a loan of ₹10,00,000, an extra 0.25% is ₹2,500 of interest a year, because 10,00,000 × 0.25 ÷ 100 = 2,500. Stretch that over five years and the same loan costs ₹12,500 more. On a ₹50,00,000 loan the same 0.25% is ₹12,500 a year. Two further hikes of 25 basis points each would add 0.50% in total, which is ₹5,000 a year, or ₹25,000 across five years, on ₹10,00,000.</p>",
+        "<h2>Why 0.25% is not a rounding error</h2>",
+        "<p>For a business, ₹5,000 a year is often the whole annual profit on a small order book. If a shop earns a 10% margin, it has to sell ₹50,000 of extra stock to recover that ₹5,000, because 5,000 ÷ 10% = 50,000. On a working capital line of ₹20,00,000, two hikes add ₹10,000 a year of interest. That money leaves the business before the owner's salary, so it lands straight on the monthly budget.</p>",
+        "<h2>What it means for your shop or startup</h2>",
+        "<p>If you have a floating-rate business loan or an overdraft, the next EMI or interest debit will be higher. Check the reset date on the sanction letter, because many business loans reprice every quarter while some retail loans reprice only once a year. If you are about to borrow, ask for the total interest over the full tenure, not just the EMI, since a longer tenure hides a bigger interest bill. If you hold a fixed deposit or a recurring deposit, the same cycle usually works in your favour over time, because new deposits get the higher rate. And if you are planning a big purchase on credit, run the numbers at a rate 0.50% higher than today's quote, so the next hike does not surprise you.</p>"
+      ],
+      "body_hinglish": [
+        "<p>Reserve Bank of India ne 21 October 2026 ko apni 63rd Monetary Policy Committee meeting ke minutes jaari kiye. Governor Sanjay Malhotra ki adhyakshta wali committee ne 5 se 7 October ki meeting mein repo rate 25 basis points badha kar <strong>5.50%</strong> karne ka unanimous faisla kiya, aur apna stance neutral se calibrated tightening kar diya.</p>",
+        "<h2>Minutes ke mutabik RBI ne kya kiya</h2>",
+        "<p>Repo rate ab 5.50% hai, jo pehle 5.25% tha. Standing deposit facility rate 5.25% ho gaya, aur marginal standing facility rate aur Bank Rate 5.75% ho gaye. Rate badhane ka faisla sabhi members ne ek saath liya. Lekin stance badalne par sabhi sehmat nahi the. Do external members, Dr. Nagesh Kumar aur Professor Ram Singh, neutral stance banaye rakhna chahte the. Unka kehna tha ki tightening ka signal logon ko ek lambi rate-hike cycle ka ishara de sakta hai.</p>",
+        "<h2>Committee ko mehngai ki chinta kyun hai</h2>",
+        "<p>August 2026 mein consumer price inflation July ke 4.5% se badh kar 4.8% ho gayi. Khane aur fuel ki keematein iski main wajah thi, lekin core inflation, jisme khana aur fuel nahi ginte, woh bhi badh kar 4.2% ho gayi. RBI ko ummeed hai ki agle teen quarters mein CPI inflation lagbhag 5.8% rahegi. Uska anumaan hai ki December quarter mein 6.0% aur March quarter mein 5.7% rahegi. Target 4% hai. Growth par, RBI ne is saal ke liye apna anumaan 7.1% hi rakha.</p>",
+        "<h2>25 basis point hike ka hisaab</h2>",
+        "<p>Ek basis point ek percentage point ka sauwan hissa hota hai, isliye 25 basis points matlab 0.25%. ₹10,00,000 ke loan par extra 0.25% saal ka ₹2,500 interest banata hai, kyunki 10,00,000 × 0.25 ÷ 100 = 2,500. Isi loan par paanch saal mein yeh ₹12,500 zyada ho jata hai. ₹50,00,000 ke loan par wahi 0.25% saal ka ₹12,500 hai. Agar 25-25 basis points ke do aur hike aate hain, to total 0.50% badhega: ₹10,00,000 par saal ka ₹5,000, ya paanch saal mein ₹25,000.</p>",
+        "<h2>0.25% koi chhoti baat nahi hai</h2>",
+        "<p>Ek business ke liye saal ka ₹5,000 aksar poore chhote order book ka profit hota hai. Agar dukaan ka margin 10% hai, to yeh ₹5,000 wapas kamane ke liye usse ₹50,000 ka extra maal bechna padega, kyunki 5,000 ÷ 10% = 50,000. ₹20,00,000 ke working capital loan par do hikes saal ka ₹10,000 interest jodte hain. Yeh paisa owner ki salary se pehle cash flow se nikalta hai, isliye seedha monthly budget par asar karta hai.</p>",
+        "<h2>Aapki dukaan ya startup ke liye iska matlab</h2>",
+        "<p>Agar aapke paas floating-rate business loan ya overdraft hai, to agla EMI ya interest debit zyada hoga. Sanction letter par reset date zaroor dekhein, kyunki kai business loans har quarter reprice hote hain, jabki kuch retail loans saal mein ek baar. Agar aap naya loan lene wale hain, to sirf EMI nahi, poore tenure ka total interest poochhein, kyunki lambi tenure bada interest bill chhupa deti hai. Agar aapke paas fixed deposit ya recurring deposit hai, to aam taur par yeh cycle samay ke saath aapke faayde mein kaam karta hai, kyunki naye deposits ko zyada rate milta hai. Aur agar aap credit par koi badi kharidari plan kar rahe hain, to aaj ke quote se 0.50% zyada rate par hisaab lagayein, taaki agla hike aapko chaunkay na.</p>"
+      ]
+    },
+    {
       "slug": "amazon-festive-sale-seller-sales-3-5x-first-week",
       "title": "Amazon Festive Sale Lifted Seller Sales 3.5x in Week One",
       "dek": "Amazon's festive sale lifted seller sales 3.5x in week one, and zero referral fees below ₹1,000 did part of it. Here is what that means for your price.",
