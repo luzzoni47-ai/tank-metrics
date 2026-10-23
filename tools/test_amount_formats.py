@@ -33,15 +33,26 @@ CASES = {
     "10 Million": 10_000_000, "20 Million": 20_000_000,
     "Rs. 10000": 10_000, "10000": 10_000, "1000000": 1_000_000,
     # Spellings and separators people actually type.
-    "1M": 1_000_000, "3 Million": 3_000_000, "1cr": 10_000_000,
-    "2.5 lakh": 250_000, "1,00,000": 100_000, "10 k": 10_000,
-    "1B": 1_000_000_000, "75000": 75_000, "1 thousand": 1_000,
-    "-5K": -5_000, "12.5": 12.5, "2 CR": 20_000_000, "5 Lac": 500_000,
-    "Rs 1 Lakh": 100_000, "INR 5 lakh": 500_000, "10000 rupees": 10_000,
-    "1 Crore only": 10_000_000, "1 crore 50 lakh": 15_000_000,
-    "1 crore 50 lakh rupees": 15_000_000,
+    "1M": 1_000_000, "1 m": 1_000_000, "3 Million": 3_000_000,
+    "1cr": 10_000_000, "2.5 lakh": 250_000, "1,00,000": 100_000,
+    "10 k": 10_000, "1B": 1_000_000_000, "75000": 75_000,
+    "1 thousand": 1_000, "-5K": -5_000, "12.5": 12.5, "2 CR": 20_000_000,
+    "5 Lac": 500_000, "Rs 1 Lakh": 100_000, "INR 5 lakh": 500_000,
+    "10000 rupees": 10_000, "1 Crore only": 10_000_000,
+    "1 crore 50 lakh": 15_000_000, "1 crore 50 lakh rupees": 15_000_000,
+    # Hinglish spellings of crore and lakh - Sir types "karod" and "lekh".
+    "1 karod": 10_000_000, "1 kror": 10_000_000, "1 krod": 10_000_000,
+    "5 karod": 50_000_000, "2.5 karod": 25_000_000, "1 cror": 10_000_000,
+    "1 lekh": 100_000, "10 lekh": 1_000_000, "1 karod 50 lekh": 15_000_000,
+    "1 arab": 1_000_000_000, "1 hazar": 1_000, "1 lack": 100_000,
+    # A small spelling mistake must still give the right answer.
+    "1 milian": 1_000_000, "1 milion": 1_000_000, "1 millon": 1_000_000,
+    "1 milyon": 1_000_000, "1 milon": 1_000_000, "1 bilion": 1_000_000_000,
+    "1 corer": 10_000_000, "1 laakh": 100_000, "1 lakhh": 100_000,
+    "1 hazr": 1_000, "1 thousnd": 1_000, "1 CR": 10_000_000,
     # Nonsense must stay 0 rather than become a confidently wrong number.
     "0": 0, "": None, "abc": None, "12abc": None, "lakh": None,
+    "xyz": None, "qwerty": None, "zzz": None,
 }
 
 
