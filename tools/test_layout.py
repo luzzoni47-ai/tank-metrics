@@ -271,6 +271,43 @@ def check_favicon() -> list:
     return failures
 
 
+def check_icon_shape() -> list:
+    """The app icon must be the same rounded square as the banner mark.
+
+    The icon used to be a circle while the install banner drew a squircle, so
+    the brand looked like two different logos. Sir asked for the app icon to
+    match the banner.
+
+    Telling them apart needs a measurement, not a pixel probe. A circle and a
+    squircle are both opaque at the centre of the top edge and both transparent
+    in the corner, so the first version of this check - which looked at exactly
+    those two pixels - passed on the circle it was meant to catch. The real
+    difference is how much of the TOP ROW is covered: a disc only touches it
+    over ~11% of the width, while a rounded square spans ~47%. Require 30%.
+    """
+    failures = []
+    from PIL import Image
+    for rel in ("site/icon-192.png", "site/icon-512.png", "site/favicon.png"):
+        p = PUBLIC / rel
+        if not p.is_file():
+            failures.append(f"{rel} is missing")
+            continue
+        im = Image.open(p).convert("RGBA")
+        w, h = im.size
+        px = im.load()
+        top = sum(1 for x in range(w) if px[x, 0][3] > 128)
+        pct = top / w
+        if px[1, 1][3] > 8:
+            failures.append(f"{rel} has an opaque top-left corner - not a rounded square")
+        if pct < 0.30:
+            failures.append(
+                f"{rel} covers only {pct:.0%} of its top row, which is the "
+                "signature of a circle. The banner mark is a rounded square "
+                "(~47%); Sir asked the app icon to match it"
+            )
+    return failures
+
+
 def check_manifest() -> list:
     """The web app manifest must exist and name icons that really are there.
 
@@ -338,14 +375,100 @@ def check_focus_scroll() -> list:
     return failures
 
 
+
+# Sir asked for the blank bands inside the /about content block to go. They came
+# from four margins stacking (see the comment in style.css), so a later edit that
+# only touches one of them silently brings the hole back. Measure the real
+# rendered gap at desktop width, where the holes were visible.
+ABOUT_PROBE = """<!doctype html><html><body><pre id="out">pending</pre><script>
+const f = document.createElement('iframe');
+f.style.cssText = 'width:1200px;height:3200px;border:0';
+f.onload = () => setTimeout(() => {
+  const d = f.contentDocument, w = f.contentWindow;
+  const hero = d.querySelector('.page-hero');
+  const photo = d.querySelector('.about-photo');
+  const pw = d.querySelector('.page-wrap');
+  const next = photo ? photo.nextElementSibling : null;
+  const last = pw ? pw.lastElementChild : null;
+  const top = (el) => el.getBoundingClientRect().top;
+  const bottom = (el) => el.getBoundingClientRect().bottom;
+  document.getElementById('out').textContent = JSON.stringify({
+    gapHeroToPhoto: Math.round(top(photo) - bottom(hero)),
+    gapPhotoToNext: next ? Math.round(top(next) - bottom(photo)) : null,
+    gapLastToEnd: last ? Math.round(bottom(pw) - bottom(last)) : null,
+    gapHeroToBlock: Math.round(top(pw) - bottom(hero)),
+  });
+}, 900);
+f.src = '/site/about.html?cb=' + Math.random();
+document.body.appendChild(f);
+</script></body></html>
+"""
+
+# The measured gaps on the fixed page. A little slack, so a font or a
+# one-pixel rounding change does not fail the build, but the old 168px band
+# could never slip back in.
+ABOUT_MAX = {
+    "gapHeroToPhoto": 40,
+    "gapPhotoToNext": 20,
+    "gapLastToEnd": 40,
+    "gapHeroToBlock": 26,
+}
+
+
+def check_about_gaps() -> list:
+    """The /about block must not open a hole above or below the founder photo."""
+    failures = []
+    probe = PUBLIC / "_about_probe.html"
+    probe.write_text(ABOUT_PROBE, encoding="utf-8")
+    port = free_port()
+    server = subprocess.Popen(
+        [sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1"],
+        cwd=PUBLIC, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+    )
+    try:
+        for _ in range(40):
+            try:
+                with socket.create_connection(("127.0.0.1", port), timeout=0.5):
+                    break
+            except OSError:
+                time.sleep(0.1)
+        dom = subprocess.run(
+            ["chromium", "--headless", "--disable-gpu", "--no-sandbox",
+             "--window-size=1300,3300", "--virtual-time-budget=12000",
+             "--dump-dom", f"http://127.0.0.1:{port}/_about_probe.html"],
+            capture_output=True, text=True, timeout=180,
+        ).stdout
+    finally:
+        server.terminate()
+        probe.unlink(missing_ok=True)
+
+    m = re.search(r'<pre id="out">(.*?)</pre>', dom, re.S)
+    if not m:
+        return ["about gap probe produced no output"]
+    import html as html_mod
+    data = json.loads(html_mod.unescape(m.group(1)))
+    for key, limit in ABOUT_MAX.items():
+        got = data.get(key)
+        if got is None:
+            failures.append(f"/about {key} could not be measured")
+        elif got > limit:
+            failures.append(
+                f"/about {key} is {got}px, expected <= {limit}px - the blank "
+                "band Sir asked to remove is back"
+            )
+    return failures
+
+
 def main() -> int:
     failures = (
         check_image_hosts()
         + check_top_strip()
         + check_close_button()
         + check_favicon()
+        + check_icon_shape()
         + check_manifest()
         + check_focus_scroll()
+        + check_about_gaps()
     )
 
     probe = PUBLIC / "_layout_probe.html"

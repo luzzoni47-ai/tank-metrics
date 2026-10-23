@@ -191,3 +191,31 @@ html.nav-open,html.nav-open body{overflow:hidden}
 .tool-meta{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin:14px 0 4px}
 .tool-meta .lang-toggle{margin-left:0}
 .tool-meta .lang-toggle-label{font-size:11px}
+
+/* /about spacing. Sir asked for the gaps inside this page's content block to
+   go: above the founder photo, below it, and after the last paragraph. The
+   holes came from three separate places stacking, not from one margin:
+     .main        (wraps only the hero)      padding-bottom 90px
+     .page-hero   margin-bottom 34px
+     .page-wrap   padding-top 36px
+     .about-photo margin-top 8px
+   which added up to a 168px blank band between the hero and the photo. The
+   photo's own bottom margin also collapsed with the next heading's top
+   margin, so the photo sat 34px off the text under it.
+   Every rule here is scoped to .about-page / .main-prose, so no other page
+   moves. */
+.main-prose{padding-bottom:0}
+.main-prose .page-hero{margin-bottom:16px}
+.about-page{padding-top:12px;padding-bottom:26px}
+.about-page .about-photo{margin:0 auto 0}
+.about-page .about-photo + h2{margin-top:12px}
+.about-page h2{margin:26px 0 10px}
+.about-page p{margin:0 0 12px}
+.about-page .founder-card{margin:16px 0}
+.about-page .cta-inline{margin:18px 0 0}
+.about-page > :last-child{margin-bottom:0}
+@media (max-width:760px){
+  .main-prose{padding-bottom:0}
+  .main-prose .page-hero{margin-bottom:14px}
+  .about-page{padding-top:10px;padding-bottom:20px}
+}

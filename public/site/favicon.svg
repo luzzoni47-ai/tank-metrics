@@ -1,9 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <path d="M32 2A30 30 0 0 1 62 32H32Z" fill="#4285F4"/>
-  <path d="M62 32A30 30 0 0 1 32 62V32Z" fill="#EA4335"/>
-  <path d="M32 62A30 30 0 0 1 2 32h30Z" fill="#34A853"/>
-  <path d="M2 32A30 30 0 0 1 32 2v30Z" fill="#F2A600"/>
-  <circle cx="32" cy="32" r="21" fill="#ffffff"/>
+  <defs><clipPath id="tm"><rect width="64" height="64" rx="20"/></clipPath></defs>
+  <g clip-path="url(#tm)">
+    <path d="M32 0h32v32H32Z" fill="#4285F4"/>
+    <path d="M64 32v32H32V32Z" fill="#EA4335"/>
+    <path d="M32 64H0V32h32Z" fill="#F2A600"/>
+    <path d="M0 32V0h32v32Z" fill="#34A853"/>
+  </g>
+  <rect x="7.6" y="7.6" width="48.8" height="48.8" rx="13.7" fill="#ffffff"/>
   <g fill="none" stroke="#06038D" stroke-width="3.2" stroke-linecap="round">
     <path d="M24 24h16"/>
     <path d="M24 30h16"/>
