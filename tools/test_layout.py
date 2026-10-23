@@ -272,22 +272,31 @@ def check_favicon() -> list:
 
 
 def check_icon_shape() -> list:
-    """The app icon must be the same rounded square as the banner mark.
+    """The app icon must be full-bleed colour with a rounded white panel.
 
-    The icon used to be a circle while the install banner drew a squircle, so
-    the brand looked like two different logos. Sir asked for the app icon to
-    match the banner.
+    Two different defects lived here, and both are caught by measuring the
+    OUTER ring, not by a pixel probe:
 
-    Telling them apart needs a measurement, not a pixel probe. A circle and a
-    squircle are both opaque at the centre of the top edge and both transparent
-    in the corner, so the first version of this check - which looked at exactly
-    those two pixels - passed on the circle it was meant to catch. The real
-    difference is how much of the TOP ROW is covered: a disc only touches it
-    over ~11% of the width, while a rounded square spans ~47%. Require 30%.
+    1. The icon was a circle while the banner drew a squircle, so the brand
+       looked like two logos. A circle and a squircle are both opaque at the
+       centre of the top edge and both transparent in the corner, so a probe of
+       exactly those two pixels passed on the circle. The real difference is how
+       much of the TOP ROW is covered: a disc touches it over ~11% of the width,
+       a rounded square over ~47%.
+    2. Sir then asked for no white and no transparent band on the OUTSIDE - the
+       colour must reach every corner. Rounded outer corners left transparent
+       pixels that the launcher's white background showed through, and the
+       maskable was drawn as a white 512 tile with the art centred, which put a
+       solid white frame around the logo. So the outermost ring must now be
+       OPAQUE and COLOURED all the way round, and the four corners must each be
+       a different ring colour (green TL, blue TR, yellow BL, red BR).
+
+    The white panel is allowed to be inset - that is the logo, not a frame.
     """
     failures = []
     from PIL import Image
-    for rel in ("site/icon-192.png", "site/icon-512.png", "site/favicon.png"):
+    for rel in ("site/icon-192.png", "site/icon-512.png",
+                "site/icon-maskable-512.png", "site/favicon.png"):
         p = PUBLIC / rel
         if not p.is_file():
             failures.append(f"{rel} is missing")
@@ -297,13 +306,40 @@ def check_icon_shape() -> list:
         px = im.load()
         top = sum(1 for x in range(w) if px[x, 0][3] > 128)
         pct = top / w
-        if px[1, 1][3] > 8:
-            failures.append(f"{rel} has an opaque top-left corner - not a rounded square")
         if pct < 0.30:
             failures.append(
                 f"{rel} covers only {pct:.0%} of its top row, which is the "
                 "signature of a circle. The banner mark is a rounded square "
                 "(~47%); Sir asked the app icon to match it"
+            )
+        # The outer ring: every pixel on the border must be opaque colour.
+        ring = (
+            [(x, 0) for x in range(w)] + [(x, h - 1) for x in range(w)]
+            + [(0, y) for y in range(h)] + [(w - 1, y) for y in range(h)]
+        )
+        clear = sum(1 for x, y in ring if px[x, y][3] < 250)
+        white = sum(
+            1 for x, y in ring
+            if px[x, y][3] >= 250 and min(px[x, y][:3]) > 235
+        )
+        if clear:
+            failures.append(
+                f"{rel} has {clear} transparent pixels on its outer edge - the "
+                "launcher's background shows through as a pale border. Sir "
+                "asked for colour to reach every edge"
+            )
+        if white:
+            failures.append(
+                f"{rel} has {white} white pixels on its outer edge - that is the "
+                "pale frame Sir asked to remove (the maskable used to be a white "
+                "tile with the art centred)"
+            )
+        # Four corners, four different ring colours.
+        corners = [px[0, 0][:3], px[w - 1, 0][:3], px[0, h - 1][:3], px[w - 1, h - 1][:3]]
+        if len(set(corners)) != 4:
+            failures.append(
+                f"{rel} corners are {corners}; the mark should have green "
+                "top-left, blue top-right, yellow bottom-left, red bottom-right"
             )
     return failures
 
@@ -379,44 +415,68 @@ def check_focus_scroll() -> list:
 # Sir asked for the blank bands inside the /about content block to go. They came
 # from four margins stacking (see the comment in style.css), so a later edit that
 # only touches one of them silently brings the hole back. Measure the real
-# rendered gap at desktop width, where the holes were visible.
+# rendered gaps AND the photo's letterbox, at desktop AND phone width.
 ABOUT_PROBE = """<!doctype html><html><body><pre id="out">pending</pre><script>
-const f = document.createElement('iframe');
-f.style.cssText = 'width:1200px;height:3200px;border:0';
-f.onload = () => setTimeout(() => {
-  const d = f.contentDocument, w = f.contentWindow;
-  const hero = d.querySelector('.page-hero');
-  const photo = d.querySelector('.about-photo');
-  const pw = d.querySelector('.page-wrap');
-  const next = photo ? photo.nextElementSibling : null;
-  const last = pw ? pw.lastElementChild : null;
-  const top = (el) => el.getBoundingClientRect().top;
-  const bottom = (el) => el.getBoundingClientRect().bottom;
-  document.getElementById('out').textContent = JSON.stringify({
-    gapHeroToPhoto: Math.round(top(photo) - bottom(hero)),
-    gapPhotoToNext: next ? Math.round(top(next) - bottom(photo)) : null,
-    gapLastToEnd: last ? Math.round(bottom(pw) - bottom(last)) : null,
-    gapHeroToBlock: Math.round(top(pw) - bottom(hero)),
-  });
-}, 900);
-f.src = '/site/about.html?cb=' + Math.random();
-document.body.appendChild(f);
+// Two frames: a desktop width and a NARROW one. The letterbox only appears when
+// the photo is wider than the column (a phone), so a probe that only measured
+// 1200px reported a clean page while Sir still saw white bands top and bottom.
+const WIDTHS = [1200, 360];
+let done = 0, results = [];
+WIDTHS.forEach((w) => {
+  const f = document.createElement('iframe');
+  f.style.cssText = 'width:' + w + 'px;height:3200px;border:0';
+  f.onload = () => setTimeout(() => {
+    const d = f.contentDocument;
+    const hero = d.querySelector('.page-hero');
+    const photo = d.querySelector('.about-photo');
+    const pw = d.querySelector('.page-wrap');
+    const next = photo ? photo.nextElementSibling : null;
+    const last = pw ? pw.lastElementChild : null;
+    const top = (el) => el.getBoundingClientRect().top;
+    const bottom = (el) => el.getBoundingClientRect().bottom;
+    const box = photo.getBoundingClientRect();
+    const scale = Math.min(box.width / photo.naturalWidth, box.height / photo.naturalHeight);
+    results.push({
+      w: w,
+      gapHeroToPhoto: Math.round(top(photo) - bottom(hero)),
+      gapPhotoToNext: next ? Math.round(top(next) - bottom(photo)) : null,
+      gapLastToEnd: last ? Math.round(bottom(pw) - bottom(last)) : null,
+      gapHeroToBlock: Math.round(top(pw) - bottom(hero)),
+      letterbox: Math.round((box.height - photo.naturalHeight * scale) / 2),
+    });
+    if (++done === WIDTHS.length) {
+      document.getElementById('out').textContent = JSON.stringify(results);
+    }
+  }, 900);
+  f.src = '/site/about.html?cb=' + Math.random();
+  document.body.appendChild(f);
+});
 </script></body></html>
 """
 
 # The measured gaps on the fixed page. A little slack, so a font or a
 # one-pixel rounding change does not fail the build, but the old 168px band
-# could never slip back in.
+# could never slip back in. The letterbox limit is tight: `object-fit: contain`
+# against a fixed box height leaves 50-70px of white above AND below the photo
+# on a phone, and that is the band Sir kept seeing.
 ABOUT_MAX = {
     "gapHeroToPhoto": 40,
     "gapPhotoToNext": 20,
     "gapLastToEnd": 40,
     "gapHeroToBlock": 26,
+    "letterbox": 2,
 }
 
 
 def check_about_gaps() -> list:
-    """The /about block must not open a hole above or below the founder photo."""
+    """The /about block must not open a hole above or below the founder photo.
+
+    Runs at two widths. The 168px band between the hero and the photo shows on
+    both, but the letterbox - white above AND below the photo - only appears
+    when the photo is wider than its column, i.e. on a phone. The first version
+    of this check measured desktop only and reported a clean page while Sir
+    still saw the bands.
+    """
     failures = []
     probe = PUBLIC / "_about_probe.html"
     probe.write_text(ABOUT_PROBE, encoding="utf-8")
@@ -434,7 +494,7 @@ def check_about_gaps() -> list:
                 time.sleep(0.1)
         dom = subprocess.run(
             ["chromium", "--headless", "--disable-gpu", "--no-sandbox",
-             "--window-size=1300,3300", "--virtual-time-budget=12000",
+             "--window-size=1300,3300", "--virtual-time-budget=14000",
              "--dump-dom", f"http://127.0.0.1:{port}/_about_probe.html"],
             capture_output=True, text=True, timeout=180,
         ).stdout
@@ -447,15 +507,16 @@ def check_about_gaps() -> list:
         return ["about gap probe produced no output"]
     import html as html_mod
     data = json.loads(html_mod.unescape(m.group(1)))
-    for key, limit in ABOUT_MAX.items():
-        got = data.get(key)
-        if got is None:
-            failures.append(f"/about {key} could not be measured")
-        elif got > limit:
-            failures.append(
-                f"/about {key} is {got}px, expected <= {limit}px - the blank "
-                "band Sir asked to remove is back"
-            )
+    for row in data:
+        for key, limit in ABOUT_MAX.items():
+            got = row.get(key)
+            if got is None:
+                failures.append(f"/about {key} could not be measured at {row.get('w')}px")
+            elif got > limit:
+                failures.append(
+                    f"/about {key} is {got}px at {row['w']}px wide, expected "
+                    f"<= {limit}px - the blank band Sir asked to remove is back"
+                )
     return failures
 
 

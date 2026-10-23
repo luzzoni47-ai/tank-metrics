@@ -332,12 +332,17 @@ def check_offline() -> list:
 
 
 def check_banner_design() -> list:
-    """The strip Sir asked to be beautiful, and the icon he asked to be white.
+    """The strip Sir asked to be beautiful, and the icon's colour edge.
 
     Both are easy to lose: a redesign that drops the mark, or a regenerated
-    maskable icon that puts a coloured tile back, would still "work" - the
-    strip would still appear and the icon would still load - so nothing else
-    in this suite would notice.
+    maskable icon that goes back to a white tile, would still "work" - the strip
+    would still appear and the icon would still load - so nothing else in this
+    suite would notice.
+
+    The maskable icon was a WHITE 512 tile with the art centred, which put a
+    solid white frame around the logo. Sir asked for the opposite: the colour
+    must reach every corner and no white may show on the OUTER side. So the
+    corner is asserted to be a ring colour, not white.
     """
     failures = []
     css = (SITE / "style.css").read_text(encoding="utf-8")
@@ -374,10 +379,20 @@ def check_banner_design() -> list:
     if icon.exists():
         from PIL import Image
         im = Image.open(icon).convert("RGBA")
-        corner = im.getpixel((2, 2))[:3]
-        if corner != (255, 255, 255):
+        corner = im.getpixel((2, 2))
+        ring = [(52, 168, 83), (66, 133, 244), (242, 166, 0), (234, 67, 53)]
+        if corner[3] < 250:
             failures.append(
-                f"maskable icon tile is {corner}, not white - Sir asked for white")
+                f"maskable icon corner is transparent {corner} - the launcher's "
+                "background shows through as a pale border")
+        elif min(corner[:3]) > 235:
+            failures.append(
+                f"maskable icon corner is white {corner} - Sir asked for colour "
+                "to reach every corner, with no white on the outer side")
+        elif min(abs(corner[i] - ring[0][i]) for i in range(3)) > 30:
+            failures.append(
+                f"maskable icon corner {corner[:3]} is not a ring colour "
+                f"({ring}) - the colour must merge into each corner")
     return failures
 
 
