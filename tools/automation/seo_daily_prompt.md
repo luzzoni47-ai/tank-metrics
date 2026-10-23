@@ -97,15 +97,28 @@ Read `lighthouseResult.categories.performance.score` and the largest
 `audits[*].score < 1` with a real saving. If the API answers 429 (daily quota),
 skip it - it is a nice-to-have, not a blocker. Report the score in the summary.
 
-### 4. Prepare ONE human-posted answer (no login needed)
+### 4. Prepare backlinks and one human-posted answer (no login needed)
 
-`tools/keyword_radar.py` prints phrases with a `+` that the site has no page for.
-Take the top one and write a 150-200 word, genuinely useful answer that a real
-person would post on Quora or Reddit, ending with the relevant Tank Metrics
-calculator link. Save it to `tools/outreach/draft-<date>.md`. **Do not post it** —
-Sir posts it himself. Add a one-line note at the top saying it is agent-drafted.
+Two jobs, both "prepare, never post":
 
-This is the honest version of the Quora/Reddit/Medium/LinkedIn/HARO row: an
+```
+python3 tools/link_builder.py --top 3
+```
+
+This walks the curated list of real prospects (Product Hunt, AlternativeTo,
+Hacker News, Crunchbase, Startup India, Indian finance blogs, Quora, Reddit),
+checks each is live, and writes submission-ready copy or an outreach email into
+`tools/outreach/`. It remembers what it already prepared in the KV store, so a
+daily run never repeats a prospect. **Never send or submit anything** - Sir does
+that from his own accounts. `tools/test_outreach.py` fails the build if the tool
+ever grows a send/post call, because a mail blast or a forum auto-post is what
+gets a domain penalised.
+
+Then, from `tools/keyword_radar.py`'s `+` gap phrases, write ONE 150-200 word
+answer a real person would post on Quora or Reddit, ending with the relevant
+calculator link, saved to `tools/outreach/draft-<date>.md`. Draft only.
+
+That is the honest version of the Quora/Reddit/Medium/LinkedIn/HARO row: an
 agent cannot hold those accounts, but it can remove the work of writing.
 
 ### 5. Publish and report
@@ -121,14 +134,18 @@ SEO run <date>
   pages indexed-blocking duplicates: A of 101 (was B), median overlap C% (was D)
   guides written this run: <ids>
   PageSpeed mobile: <score or "quota exceeded">
-  outreach draft: tools/outreach/draft-<date>.md
-  Sir's one-time to-dos (agent cannot do these): Google My Business, Crunchbase,
-    Product Hunt, Indie Hackers profiles
+  backlink drafts written: tools/outreach/ (list them)
+  outreach answer: tools/outreach/draft-<date>.md
+  Sir's to-dos (agent cannot do these): submit the listings and send the emails
+    from his own accounts; set up Google My Business, Crunchbase, Product Hunt,
+    Indie Hackers profiles once
 ```
 
 ## Hard rules
 - Never claim to have used a tool that needs a login.
-- Never post to Quora, Reddit, Medium or LinkedIn. Draft only.
+- Never post to Quora, Reddit, Medium or LinkedIn, and never send an outreach
+  email or submit a directory listing. Draft only; Sir sends from his own account.
+- Never buy a link. Paid links are a penalty risk, not a shortcut.
 - Never invent keyword data. Use `keyword_radar.py` output.
 - Title <= 60 chars including " | Tank Metrics"; description 150-158.
 - Worked examples use round numbers (10,000 / 6,000 / 8%).
