@@ -58,16 +58,13 @@ calculators plus a small blog. Work only inside the cloned repo.
 7. Commit and push to `main` with `GITHUB_PERSONAL_ACCESS_TOKEN`
    (plain `GITHUB_TOKEN` is read-only and returns 403). If the push is
    rejected, `git pull --rebase origin main` first, then push again.
-8. Deploy to Vercel:
-   - Write `.vercel/project.json` =
-     {"projectId":"prj_Y6MHqnmDyyD5U239ecqEMbrxh4ei",
-      "orgId":"team_TXJMGXfZ9VZ9ZemmkKmoOuYw"} — without it the CLI fails with
-     "User not found", because the token cannot read the team.
-   - `npx vercel deploy --prod --yes --token "$VERCEL_TOKEN"`
-   - A git push does NOT trigger a Vercel build, and the custom domain stays on
-     the old deployment. Move it through the REST API:
-     POST https://api.vercel.com/v2/deployments/<new_dpl_id>/aliases?teamId=team_TXJMGXfZ9VZ9ZemmkKmoOuYw
-     with body {"alias":"tankmetrics.in"}.
+8. Deploy to Vercel: `tools/deploy.sh /<slug>` (pass every new path). It builds,
+   ships, waits for READY, points tankmetrics.in and www at the new deployment,
+   checks the live paths, and announces each path through IndexNow afterwards -
+   so the submit step below is already covered when you pass the slug.
+   A push to `main` does NOT trigger a Vercel build: the project's stored
+   link.repoId is stale, so Vercel never matches the push. That is why the
+   deploy is explicit.
 9. Verify `https://tankmetrics.in/<blog-slug>` and
    `https://tankmetrics.in/<news-slug>` both return 200 and contain
    `data-lang="en"` and `data-lang="hinglish"`. Also confirm `/news` lists the

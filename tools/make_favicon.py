@@ -102,8 +102,10 @@ def main() -> None:
         )
     # A maskable icon is cropped to whatever shape the launcher likes (a
     # circle on most Androids), so the art must fit an 80% safe zone or the
-    # ring gets sliced. Paint it on a full-bleed brand tile with that margin.
-    maskable = Image.new("RGBA", (512, 512), "#FF9933")
+    # ring gets sliced. The tile behind the mark is WHITE - Sir asked for it:
+    # a coloured tile made the home-screen icon look like a blob next to every
+    # other white-backed app icon.
+    maskable = Image.new("RGBA", (512, 512), "#FFFFFF")
     art = mark_png(410)
     maskable.paste(art, ((512 - 410) // 2, (512 - 410) // 2), art)
     maskable.save(SITE / "icon-maskable-512.png")

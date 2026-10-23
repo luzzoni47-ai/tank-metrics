@@ -193,6 +193,17 @@ def main() -> dict:
     state = load_state()
     first_run = not state
 
+    # Running this often is only affordable if the common case costs one
+    # request. A page can only be new or changed if the sitemap itself moved,
+    # so compare its shape first and stop here when it has not. A weekly sweep
+    # still fingerprints everything, which catches an edit that left the
+    # sitemap untouched.
+    sig = f"{len(urls)}|{newest}"
+    if not DRY and not first_run and time.gmtime().tm_wday != 6 and state.get("_sig") == sig:
+        print("sitemap unchanged since the last sweep; nothing to do")
+        return {"urls": len(urls), "new": 0, "changed": 0, "gone": 0,
+                "submitted": 0, "status": "sitemap unchanged"}
+
     with ThreadPoolExecutor(max_workers=8) as pool:
         prints = list(pool.map(fingerprint, urls))
 
@@ -200,10 +211,11 @@ def main() -> dict:
     for u, fp in zip(urls, prints):
         if fp is not None:
             current[u] = fp
+    previous = {k: v for k, v in state.items() if not k.startswith("_")}
 
-    changed = [u for u, fp in current.items() if state.get(u) != fp]
-    new = [u for u in current if u not in state]
-    gone = [u for u in state if u not in current]
+    changed = [u for u, fp in current.items() if previous.get(u) != fp]
+    new = [u for u in current if u not in previous]
+    gone = [u for u in previous if u not in current]
 
     weekly = time.gmtime().tm_wday == 6
     if first_run or weekly:
@@ -224,6 +236,7 @@ def main() -> dict:
             print(f"IndexNow -> {result} for {len(targets)} URL(s)")
 
     if not DRY:
+        current["_sig"] = sig
         save_state(current)
     return {
         "urls": len(urls),

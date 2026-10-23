@@ -76,19 +76,19 @@ short on time, commit and push what you have rather than leaving it uncommitted.
    (plain `GITHUB_TOKEN` is read-only and returns 403). If the push is
    rejected, `git pull --rebase origin main` first, then push again.
 
-7. Deploy to Vercel. A push to `main` does NOT trigger a Vercel build, so the
-   deploy must be run by hand:
-   - Write `.vercel/project.json` =
-     {"projectId":"prj_Y6MHqnmDyyD5U239ecqEMbrxh4ei",
-      "orgId":"team_TXJMGXfZ9VZ9ZemmkKmoOuYw"} — without it the CLI fails with
-     "User not found", because the token cannot read the team.
-   - `npx vercel deploy --prod --yes --token "$VERCEL_TOKEN"`
-   - The custom domain stays on the old deployment. Move it through the REST API:
-     POST https://api.vercel.com/v2/deployments/<new_dpl_id>/aliases?teamId=team_TXJMGXfZ9VZ9ZemmkKmoOuYw
-     with body {"alias":"tankmetrics.in"}.
+7. Deploy to Vercel: `tools/deploy.sh /<slug>` (pass every new path). It builds,
+   ships, waits for READY, points tankmetrics.in and www at the new deployment,
+   checks the live paths, and announces each path through IndexNow afterwards -
+   so the submit step below is already covered when you pass the slug.
+   A push to `main` does NOT trigger a Vercel build: the project's stored
+   link.repoId is stale, so Vercel never matches the push. That is why the
+   deploy is explicit.
 
 8. Submit the new URL to the search engines. Google Search Console needs a
-   Google login the agent does not have, but IndexNow does not:
+   Google login the agent does not have, but IndexNow does not. A sweep already
+   runs every 15 minutes and picks up anything the sitemap gained, so this step
+   is the belt to that suspenders - it announces the page the moment it is
+   live instead of within the quarter hour:
    `python3 tools/indexnow_submit.py /<slug>`
    It should print `HTTP 200 accepted` or `202`. A 403 means the key file
    `https://tankmetrics.in/<key>.txt` is not live yet - deploy first, then retry.

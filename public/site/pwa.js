@@ -38,14 +38,34 @@
     return t && Date.now() - t < SNOOZE_MS;
   }
 
-  function show(kind, text, actionLabel, action, onDismiss) {
+  function show(kind, title, sub, actionLabel, action, onDismiss) {
     if (banner) banner.remove();
     banner = document.createElement("div");
     banner.className = "pwa-banner pwa-" + kind;
     banner.setAttribute("role", "status");
-    var span = document.createElement("span");
-    span.textContent = text;
-    banner.appendChild(span);
+
+    // The brand mark, drawn the same way the header draws it, so the strip
+    // reads as part of the site rather than a browser notice.
+    var mark = document.createElement("div");
+    mark.className = "pwa-mark";
+    mark.setAttribute("aria-hidden", "true");
+    var glyph = document.createElement("i");
+    glyph.textContent = "\u20b9";
+    mark.appendChild(glyph);
+    banner.appendChild(mark);
+
+    var copy = document.createElement("div");
+    copy.className = "pwa-copy";
+    var strong = document.createElement("b");
+    strong.textContent = title;
+    copy.appendChild(strong);
+    if (sub) {
+      var small = document.createElement("small");
+      small.textContent = sub;
+      copy.appendChild(small);
+    }
+    banner.appendChild(copy);
+
     if (actionLabel && action) {
       var btn = document.createElement("button");
       btn.type = "button";
@@ -53,6 +73,7 @@
       btn.addEventListener("click", action);
       banner.appendChild(btn);
     }
+
     var close = document.createElement("button");
     close.type = "button";
     close.className = "pwa-x";
@@ -60,14 +81,21 @@
     close.textContent = "\u00d7";
     close.addEventListener("click", function () {
       if (onDismiss) onDismiss();
-      banner.remove();
-      banner = null;
+      dismiss();
     });
     banner.appendChild(close);
     document.body.appendChild(banner);
   }
 
-  function hide() { if (banner) { banner.remove(); banner = null; } }
+  function dismiss() {
+    if (!banner) return;
+    var el = banner;
+    banner = null;
+    el.classList.add("pwa-out");
+    setTimeout(function () { el.remove(); }, 320);
+  }
+
+  function hide() { dismiss(); }
 
   function notify(label) {
     if (!window.Notification || Notification.permission !== "granted") return;
@@ -82,7 +110,7 @@
     navigator.serviceWorker.register("/sw.js").catch(function () {});
     navigator.serviceWorker.addEventListener("controllerchange", function () {
       if (!hadController) return;
-      show("update", "A newer version is ready.", "Refresh", function () {
+      show("update", "New version is ready", "Refresh to get the latest calculators.", "Refresh", function () {
         window.location.reload();
       });
     });
@@ -101,7 +129,8 @@
     if (window.matchMedia("(display-mode: standalone)").matches) return;
     if (snoozed(INSTALL_SNOOZE)) return;
     if (installEvent) {
-      show("install", "Use Tank Metrics like an app, offline too.", "Install", function () {
+      show("install", "Keep Tank Metrics on your phone",
+        "Install it and every calculator works offline.", "Install", function () {
         installEvent.prompt();
         installEvent = null;
         hide();
@@ -110,8 +139,9 @@
     }
     // iOS never fires beforeinstallprompt, so point at the share sheet.
     if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-      show("install", "Add Tank Metrics to your home screen: tap Share, then Add to Home Screen.",
-        null, null, function () { save(INSTALL_SNOOZE, String(Date.now())); });
+      show("install", "Keep Tank Metrics on your phone",
+        "Tap Share, then Add to Home Screen.", null, null,
+        function () { save(INSTALL_SNOOZE, String(Date.now())); });
     }
   }
 
@@ -125,7 +155,8 @@
   function offerNotifications() {
     if (!window.Notification || Notification.permission !== "default") return;
     if (store(OPT_IN_KEY) || snoozed(NOTIFY_SNOOZE)) return;
-    show("news", "Get told when new calculators are added?", "Enable", function () {
+    show("news", "Never miss a new calculator",
+        "Turn on updates and we will tell you when one lands.", "Turn on", function () {
       save(OPT_IN_KEY, "1");
       Notification.requestPermission().then(function (p) {
         hide();
@@ -150,7 +181,7 @@
     save(SEEN_KEY, data.version);
     var label = data.label || "New calculators have been added.";
     notify(label);
-    show("news", label, "See what's new", function () {
+    show("news", "Something new is live", label, "See it", function () {
       window.location.href = data.href || "/blog";
     });
   }
