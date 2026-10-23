@@ -250,8 +250,59 @@ def check_offline() -> list:
     return failures
 
 
+
+def check_banner_design() -> list:
+    """The strip Sir asked to be beautiful, and the icon he asked to be white.
+
+    Both are easy to lose: a redesign that drops the mark, or a regenerated
+    maskable icon that puts a coloured tile back, would still "work" - the
+    strip would still appear and the icon would still load - so nothing else
+    in this suite would notice.
+    """
+    failures = []
+    css = (SITE / "style.css").read_text(encoding="utf-8")
+    for token in ["pwa-mark", "pwa-copy", "@keyframes pwaIn", "@keyframes pwaOut",
+                  "conic-gradient", "translateY(140%)"]:
+        if token not in css:
+            failures.append(f"style.css lost the banner design piece {token!r}")
+    # A stale flat rule surviving alongside the new one is what happened the
+    # first time this was written: the dark bar was still in the file and the
+    # new rule merely overrode it. Assert the old look is gone, not just that
+    # the new look is present.
+    if "#111827" in css:
+        failures.append("style.css still carries the old dark banner rule")
+    if css.count(".pwa-banner{") != 2:
+        failures.append(
+            f"expected 2 .pwa-banner rules (base + mobile), found {css.count('.pwa-banner{')}")
+
+    js = (SITE / "pwa.js").read_text(encoding="utf-8")
+    if 'className = "pwa-mark"' not in js:
+        failures.append("pwa.js no longer draws the brand mark in the banner")
+    if "pwa-copy" not in js:
+        failures.append("pwa.js no longer writes the title/subtitle block")
+    if "function dismiss()" not in js or "pwa-out" not in js:
+        failures.append("pwa.js has no dismiss animation")
+    # every call site must pass a title and a subtitle, not one flat string
+    if js.count('show("') < 5:
+        failures.append("pwa.js lost a banner call site")
+    for phrase in ["Keep Tank Metrics on your phone", "Never miss a new calculator",
+                   "New version is ready", "Something new is live"]:
+        if phrase not in js:
+            failures.append(f"pwa.js lost the banner copy {phrase!r}")
+
+    icon = SITE / "icon-maskable-512.png"
+    if icon.exists():
+        from PIL import Image
+        im = Image.open(icon).convert("RGBA")
+        corner = im.getpixel((2, 2))[:3]
+        if corner != (255, 255, 255):
+            failures.append(
+                f"maskable icon tile is {corner}, not white - Sir asked for white")
+    return failures
+
+
 def main() -> int:
-    failures = check_files() + check_pages()
+    failures = check_files() + check_pages() + check_banner_design()
     if "--static" not in sys.argv:
         try:
             failures += check_offline()
