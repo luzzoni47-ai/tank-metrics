@@ -19,6 +19,8 @@ SITE = ROOT / "public" / "site"
 TOOLS = SITE / "tools"
 DATA = json.loads((Path(__file__).parent / "calcs.json").read_text(encoding="utf-8"))
 GUIDES = json.loads((Path(__file__).parent / "tool_guides.json").read_text(encoding="utf-8"))
+HGUIDES = json.loads(
+    (Path(__file__).parent / "tool_guides_hinglish.json").read_text(encoding="utf-8"))
 EXAMPLES = json.loads((Path(__file__).parent / "tool_examples.json").read_text(encoding="utf-8"))
 BASE = "https://tankmetrics.in"
 
@@ -146,6 +148,97 @@ def guide_for(c: dict) -> dict:
         "mistakes": cat.get("mistakes", []),
         "when": cat.get("when", []),
     }
+
+
+def guide_for_hinglish(c: dict) -> dict:
+    """The same guide copy in Hinglish.
+
+    The blog posts already carry a Hinglish block; the calculator pages did not,
+    and Sir wants the translate button there too. A hand-written entry in
+    tool_guides_hinglish.json wins, otherwise the category template covers it,
+    so all 101 tools get a real Hinglish block instead of a bare English page.
+    """
+    g = HGUIDES["calcs"].get(c["id"])
+    if g:
+        return g
+    cat = HGUIDES["cats"].get(c["cat"], {})
+    return {
+        "what": cat.get("what", "").replace("{name}", c["name"]).replace("{desc}", c["desc"]),
+        "formula": cat.get("formula", "").replace("{name}", c["name"]),
+        "when": cat.get("when", []),
+        "mistakes": cat.get("mistakes", []),
+    }
+
+
+def guide_html_hinglish(c: dict) -> str:
+    g = guide_for_hinglish(c)
+    parts = []
+    if g.get("what"):
+        parts.append("<h2>Ye calculator kis kaam ka hai</h2>")
+        parts.append(f'<p>{g["what"]}</p>')
+    if g.get("formula"):
+        parts.append("<h2>Ganit kaise chalta hai</h2>")
+        parts.append(f'<p>{g["formula"]}</p>')
+    if g.get("when"):
+        items = "".join(f"<li>{w}</li>" for w in g["when"])
+        parts.append("<h2>Kab use karein</h2>")
+        parts.append(f'<ul class="plain-list">{items}</ul>')
+    if g.get("mistakes"):
+        items = "".join(f"<li>{m}</li>" for m in g["mistakes"])
+        parts.append("<h2>Aam galtiyan</h2>")
+        parts.append(f'<ul class="plain-list">{items}</ul>')
+    return "".join(parts)
+
+
+def example_html_hinglish(c: dict) -> str:
+    ex = EXAMPLES.get(c["id"])
+    if not ex:
+        return ""
+    inputs = "".join(
+        f'<li><strong>{k}:</strong> {v}</li>' for k, v in ex["inputs"].items()
+    )
+    results = "".join(
+        f'<li><strong>{r["l"]}:</strong> {r["v"]}</li>' for r in ex["rows"]
+    )
+    return (
+        f'<h2>Ek worked example</h2>'
+        f'<p>Maano aapko bina spreadsheet kholne ke jaldi jawab chahiye. Yahi wahi '
+        f'ganit hai jo upar wala tool karta hai, ek set numbers ke saath.</p>'
+        f'<div class="worked"><div class="worked-col"><h3>Aap kya daalte ho</h3>'
+        f'<ul>{inputs}</ul></div><div class="worked-col"><h3>Aapko kya milta hai</h3>'
+        f'<ul>{results}</ul></div></div>'
+        f'<p>Upar koi bhi input badlo aur jawab type karte hi update ho jaata hai. '
+        f'Kuch bhi kahin nahi bheja jaata — ganit aapke browser me hi hota hai.</p>'
+    )
+
+
+LANG_TOGGLE = (
+    '<button class="lang-toggle" id="langToggle" type="button" '
+    'aria-pressed="false" title="Hinglish me padhein">'
+    '<span class="lang-badge" aria-hidden="true">H</span>'
+    '<span class="lang-toggle-label">Hinglish</span></button>'
+)
+
+LANG_SCRIPT = """<script>(function(){
+  var b=document.getElementById("langToggle");
+  if(!b)return;
+  var badge=b.querySelector(".lang-badge");
+  var lab=b.querySelector(".lang-toggle-label");
+  var en=document.querySelector('.post-lang[data-lang="en"]');
+  var hing=document.querySelector('.post-lang[data-lang="hinglish"]');
+  if(!en||!hing)return;
+  var hinglish=false;
+  function render(){
+    en.hidden=hinglish;
+    hing.hidden=!hinglish;
+    lab.textContent=hinglish?"English":"Hinglish";
+    if(badge)badge.textContent=hinglish?"A":"H";
+    b.title=hinglish?"Read in English":"Hinglish me padhein";
+    document.documentElement.lang=hinglish?"hi-Latn":"en";
+    b.setAttribute("aria-pressed",hinglish?"true":"false");
+  }
+  b.addEventListener("click",function(){hinglish=!hinglish;render();});
+})();</script>"""
 
 
 def example_html(c: dict) -> str:
@@ -321,11 +414,18 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
 <div class="page-hero"><div class="tag">🧮 {cat['name']}</div><h1>{c['name']}</h1><p>{c['desc']}</p></div>
 <div class="page-wrap">
 <div class="card" style="--accent:{accent}"><div class="card-title"><h2>{c['name']}</h2><button class="clear-btn" id="clearBtn" type="button">Clear</button></div><div class="inputs">{fields}</div><div class="readout" id="out"></div></div>
+<div class="tool-meta">{LANG_TOGGLE}</div>
+<div class="post-lang" data-lang="en">
 <h2>How this calculator works</h2>
 <p>{c['desc']} Enter your numbers above and the result appears instantly — nothing is stored or sent anywhere.</p>
 {f'<p><strong>Good to know:</strong> {c["bench"]}</p>' if c['bench'] else ''}
 {example_html(c)}
 {guide_html(c)}
+</div>
+<div class="post-lang" data-lang="hinglish" lang="hi-Latn" hidden>
+{example_html_hinglish(c)}
+{guide_html_hinglish(c)}
+</div>
 <h2>Frequently asked questions</h2>
 {faq_html}
 <div class="cta-inline"><p>Want all 100 calculators in one place?</p><a class="btn-primary" href="/#{'card_' + c['id']}">Open on the home page →</a></div>
@@ -348,6 +448,7 @@ document.querySelectorAll('[data-k]').forEach(function(i){{i.addEventListener('i
 document.getElementById('clearBtn').addEventListener('click',function(){{document.querySelectorAll('[data-k]').forEach(function(i){{i.value='';}});run();}});
 run();
 </script>
+{LANG_SCRIPT}
 </body></html>
 """
 
@@ -391,15 +492,21 @@ def main() -> None:
 
 
 def _apply_pwa() -> None:
-    """The generator rewrites each tool page from scratch, so the PWA block has
-    to be re-applied here or a plain `gen_tool_pages.py` run silently drops
-    offline support from all 101 pages."""
+    """Re-apply the per-page extras the generator would otherwise drop.
+
+    This writes each tool page from scratch, so anything added to those pages by
+    a separate step disappears on a plain run: the PWA block (offline support)
+    and the blog back-links (`wire_blog_tools.py`). Both are re-applied here so
+    a regeneration cannot silently undo them.
+    """
     import sys
 
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import add_pwa
+    import wire_blog_tools
 
     add_pwa.main()
+    wire_blog_tools.main()
 
 
 if __name__ == "__main__":

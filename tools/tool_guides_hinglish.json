@@ -1,0 +1,258 @@
+{
+ "_comment": "Hinglish guides for the calculator pages, same shape as tool_guides.json. A hand-written entry under calcs wins; otherwise the category template is used, so all 101 tools get a Hinglish block. Same {name} and {desc} placeholders. Hinglish is roman script only, never Devanagari. Technical terms (EBITDA, LTV:CAC, gross margin, GST) stay in English, because that is how an Indian founder actually says them.",
+ "cats": {
+  "everyday": {
+   "what": "{name} un chhote sawaalon ka jawab deta hai jo har hafte aate hain — bill par kitna percent off, total ka kitna hissa, simple interest kitna. Iska maksad ye hai ki aapko calculator app, copy aur aadha-adhoora formula yaad karne ki zaroorat na pade. {desc} Sab kuch aapke browser me hi chalta hai, isliye aapka koi number kahin nahi jaata.",
+   "formula": "In saare tools me ek hi ganit ka rule lagta hai, aapke daale number par. Percentage matlab hissa ko poore se divide karke 100 se guna karo. Simple interest matlab principal x rate x time. Compound interest me har period par byaaj wapas principal me jud jaata hai, isliye base badhta rehta hai. Tool rule lagata hai aur aapko result, beech ke steps, aur jahan zaroori ho wahan kul kitna dena ya milega wo bhi dikhata hai.",
+   "when": [
+    "Jab aap dukaan ka bill ya online discount pay karne se pehle check kar rahe ho.",
+    "Jab aap total ka hissa nikal rahe ho — partner ka cut, deposit, ya commission.",
+    "Jab form me number likhne se pehle ek quick sanity check chahiye."
+   ],
+   "mistakes": [
+    "Percentages ko jod dena. 10% badhne ke baad 10% gire to wapas wahi nahi hota — 99% reh jaata hai.",
+    "Ek saal se zyada ke liye simple interest lagana. Bank compound karte hain, isliye simple interest ka jawab kam dikhata hai.",
+    "Bahut jaldi rounding kar dena. Poora number rakho aur sirf final jawab round karo."
+   ]
+  },
+  "profit": {
+   "what": "{name} dikhata hai ki business asli me kitna bachata hai, sirf kitna kamata hai wo nahi. Revenue aasaan number hai aur akela sabse kam kaam ka. {desc} Ye tool costs wapas jodta hai, taki aap wo margin dekh sako jo agla order, agli hiring aur agla kharab mahina sambhalta hai.",
+   "formula": "Profit matlab revenue se har wo cost ghata do jo use kamane me lagi. Margin matlab wahi profit revenue se divide, percentage me. 20% margin ka matlab hai ki har rupee ki sale me bees paise aapke paas rehte hain; baaki goods, ads, salaries, fees aur tax kha jaate hain. Ek cost badlo to margin hilta hai, isliye tool har line alag-alag badalne deta hai, sirf total nahi.",
+   "when": [
+    "Jab aap price set kar rahe ho aur dekhna chahte ho ki asli costs ke baad margin bachta hai ya nahi.",
+    "Jab mahina busy laga lekin bank balance nahi badla, aur aap wajah dhoondhna chahte ho.",
+    "Jab do products ya do clients compare kar rahe ho ye decide karne ke liye ki mehnat kahan lagayein."
+   ],
+   "mistakes": [
+    "Revenue ko profit maan lena. 2% margin par ek crore ki sale ka matlab hai bees lakh profit — aur ek kharab mahina use mita sakta hai.",
+    "Der se aane wali costs bhool jaana: GST, marketplace fees, returns, payment-gateway charges.",
+    "Aise competitor ko dekh kar price set karna jiski costs aapko dikhti hi nahi."
+   ]
+  },
+  "val": {
+   "what": "{name} ek funding round ya company valuation ka ganit samjhata hai. {desc} Yahi wo numbers hain jin par founders aur investors bahas karte hain, aur zyadatar bahas inhi figures me se ek par aake rukti hai.",
+   "formula": "Valuation matlab poori company ki tay hui keemat. Pre-money wo keemat hai naya paisa aane se pehle; post-money uske baad. Jab investor kisi stake ke liye amount daalta hai, to post-money = investment ÷ stake, aur pre-money = post-money minus investment. Revenue multiple, EBITDA multiple aur implied value — ye sab company ke apne numbers se usi price tak pahunchne ke alag tarike hain.",
+   "when": [
+    "Jab aap fundraise ki taiyari kar rahe ho aur jaanna chahte ho ki aapke numbers kya kehte hain.",
+    "Jab aapke paas term sheet hai aur aap check karna chahte ho ki wo asli me kitna hissa le raha hai.",
+    "Jab aap apni valuation ko un companies se compare kar rahe ho jinhone similar round kiya."
+   ],
+   "mistakes": [
+    "Stake dekhe bina valuation padhna. Zyada valuation jo aadhi company le leti hai, us se behtar hai kam valuation jo dasva hissa leti hai.",
+    "Ek fast-growing company ka revenue multiple ek slow, profitable business ke saath compare karna.",
+    "Ye bhool jaana ki post-money valuation me naya paisa shaamil hai, isliye founder ka percentage girta hai."
+   ]
+  },
+  "cust": {
+   "what": "{name} ek single customer ki economics naapta hai. {desc} Yahi numbers decide karte hain ki growth paisa banayegi ya jalayegi, aur serious investor sabse pehle yahi dekhta hai.",
+   "formula": "Customer ko laane ki lagat (CAC) matlab sales aur marketing par kharch sab kuch, divided by kitne customers mile. Lifetime value (LTV) matlab ek customer poori relationship me kitna laata hai — average order value, guna kitni baar kharidta hai, guna kitne saal rukta hai, guna aapka gross margin. LTV ko CAC se divide karo to ratio milta hai. Lagbhag 3:1 aam rule hai; 1:1 se neeche aap har naye customer par paisa gawa rahe ho.",
+   "when": [
+    "Jab aap ad budget badhane wale ho aur jaanna chahte ho ki wo wapas milega ya nahi.",
+    "Jab koi channel sasta customer la raha ho aur aap jaanna chahte ho ki ye chalega ya nahi.",
+    "Jab aap pitch ki taiyari kar rahe ho aur unit-economics slide chahiye."
+   ],
+   "mistakes": [
+    "LTV ke liye gross margin ki jagah revenue use karna. Customer sale laata hai, profit nahi.",
+    "CAC me sirf ad spend ginnna aur salaries, tools aur agency fees chhod dena.",
+    "Ye maan lena ki customer saalon tak rahega jab data dikhata hai ki zyadatar kuch mahine me chale jaate hain."
+   ]
+  },
+  "growth": {
+   "what": "{name} un do cheezon ko track karta hai jo young businesses ko maarti hain: cash khatam hona, aur cash se zyada tez badhna. {desc} Growth ek headline hai; cash oxygen hai.",
+   "formula": "Burn matlab wo cash jo business har mahine kamai se zyada kharch karta hai. Runway matlab aapke paas ka cash divided by wo monthly burn — yaani kitne mahine baad paisa khatam. Run rate ek period ka revenue utha kar poore saal tak scale karta hai, jo compare karne me kaam ka hai lekin maanta hai ki wo period dohrayega. Break-even wo sales level hai jahan contribution aapki fixed costs cover kar deta hai, isliye profit zero hota hai aur har extra sale profit ban jaati hai.",
+   "when": [
+    "Jab aap jaanna chahte ho ki raise karne ya cut karne se pehle kitne mahine bache hain.",
+    "Jab aap decide kar rahe ho ki abhi hire karein ya ek quarter ruk jaayein.",
+    "Jab ek mahina asaadharan strong tha aur aap usse saal ke baaki hisson se theek se compare karna chahte ho."
+   ],
+   "mistakes": [
+    "Runway ko revenue se naapna, bank me pade cash se nahi.",
+    "Run rate ko forecast maan lena. Ye ek snapshot hai, koi promise nahi.",
+    "Sabse pehle wahi kharch kaatna jo customers laata hai. Isse abhi runway chhota hota hai aur baad me business bhi."
+   ]
+  },
+  "pricing": {
+   "what": "{name} ulta chalta hai — customer jo deta hai usse le kar aapke paas kya bachta hai tak. {desc} Pricing chhote business ke paas sabse tez lever hai — per unit ek rupaya badalna seedha profit me jaata hai — aur yahi wo cheez hai jo zyadatar owners andaaze se set karte hain.",
+   "formula": "Customer jo price deta hai wahan se shuru karo, phir us price aur aapke bank account ke beech ka sab kuch ghatao: marketplace commission, shipping, packaging, payment fees, returns aur discounts. Jo bacha wo aapka contribution hai. Goods ki cost ghatao to ek unit ka profit milta hai. Tool har subtraction dikhata hai taki aap dekh sako ki nuksaan kaun kar raha hai.",
+   "when": [
+    "Jab aap product launch kar rahe ho aur aisa price chahiye jo asli margin de.",
+    "Jab kisi marketplace ne commission badha diya ho aur aap jaanna chahte ho ki price kitna badhega.",
+    "Jab aap discount dene wale ho aur dekhna chahte ho ki profit par kya asar padega."
+   ],
+   "mistakes": [
+    "Cost plus markup se price set karna, bina dekhe ki market kitna dega.",
+    "Returns ignore karna. Kuch categories me paanch me se ek order wapas aata hai aur shipping do baar aap bharte ho.",
+    "Bina ye dekhe discount dena ki stand-still rehne ke liye kitna extra volume chahiye."
+   ]
+  },
+  "ops": {
+   "what": "{name} un cheezon ka price nikalta hai jo chhoti team logon par kharch karti hai. {desc} Jo salary aap tay karte ho wo hire ki cost nahi hai, aur jo invoice aap dete ho wo freelancer ki cost nahi hai.",
+   "formula": "Ek employee ki poori cost matlab salary plus provident fund, insurance, equipment, software, aur unhe manage karne me laga samay. Freelancer ke liye, rate guna ghante, plus briefing aur revision me gaye ghante. Utilisation — paid ghanton me se kitne asli me billable hain — yahi decide karta hai ki team paisa banati hai ya nahi.",
+   "when": [
+    "Jab aap pehli hiring karne wale ho aur asli monthly commitment jaanna chahte ho.",
+    "Jab aap freelancer ko full-time salary se compare kar rahe ho.",
+    "Jab aap jaanna chahte ho ki team ko apni cost cover karne ke liye kitne billable ghante bechne honge."
+   ],
+   "mistakes": [
+    "Sirf salary ka budget banana. Poori cost aksar tay kiye number ka 1.2 se 1.4 guna hoti hai.",
+    "Ye maan lena ki freelancer har us ghante ka bill karega jiska aap paisa dete ho.",
+    "Us revenue se pehle hire kar dena jo us hire ka paisa dega."
+   ]
+  },
+  "investor": {
+   "what": "{name} ek investment ko investor ki nazar se dekhta hai. {desc} Founders valuation par bahut samay lagate hain aur us return par bahut kam jo paise ko kamana hai — aur asli me wahi number round close karta hai.",
+   "formula": "Return on investment matlab gain divided by jo daala gaya, percentage me. Multiple matlab final value divided by invest kiya amount — 3x ka matlab hai har ek rupaye par teen rupaye wapas. Annualised return us multiple ko saalana rate me badal deta hai, aur teen saal ke exit ko das saal wale se compare karne ka sirf yahi sahi tarika hai.",
+   "when": [
+    "Jab aap do investments compare kar rahe ho jo alag-alag samay ke liye hold kiye gaye.",
+    "Jab aap model kar rahe ho ki aapke round ko investor ke liye samajh aane wala banane ke liye unhe kya dekhna hoga.",
+    "Jab aap check kar rahe ho ki kisi fund ka bataya return utna hi achha hai jitna sunne me lagta hai."
+   ],
+   "mistakes": [
+    "Holding period ke bina multiples compare karna. Teen saal me 3x, das saal me 3x se behtar hai.",
+    "Dilution ignore karna. Aapka multiple us stake par hai jo abhi aapke paas hai, poori company par nahi.",
+    "Paper valuation ko cash maan lena. Ye return tab hai jab koi kharidta hai."
+   ]
+  },
+  "bonus": {
+   "what": "{name} ek pitch ko unhi checks se guzarta hai jo ek investor lagata. {desc} Ye rehearsal hai, faisla nahi — maksad ye hai ki kamzor number meeting se pehle mil jaaye.",
+   "formula": "Pitch ka har figure ek range ke against score hota hai jise investors normal maante hain: growth un companies ke against jo similar hain, margin category ke against, runway us samay ke against jo raise me lagta hai, aur ask us traction ke against jo use justify karta hai. Tool scores jodta hai aur un lines ke naam batata hai jo total ko neeche kheenchti hain.",
+   "when": [
+    "Jab aapke paas deck hai aur bhejne se pehle dusri raay chahiye.",
+    "Jab aap pitch ki practice kar rahe ho aur jaanna chahte ho ki kaunsi slide sawaal kheenchengi.",
+    "Jab aap decide kar rahe ho ki raise ke liye taiyaar ho ya ek quarter rukein."
+   ],
+   "mistakes": [
+    "Kam score ko rejection samajh lena. Ye un cheezon ki list hai jinhe theek karna ya samjhana hai.",
+    "Inputs ko tune karte rehna jab tak score achha na lage, jo poore maksad ko hi khatam kar deta hai.",
+    "Sabse kamzor line ko ignore karna kyunki total zyada hai."
+   ]
+  },
+  "agency": {
+   "what": "{name} client work chalane ki economics cover karta hai. {desc} Agencies do cheezon par fail hoti hain: bahut zyada unbilled time, aur aise clients jo naye aane se pehle chale jaate hain.",
+   "formula": "Profit matlab jo fees aap bill karte ho minus kaam deliver karne ki cost, jo zyadatar logon ka samay hoti hai. Utilisation matlab billable ghante divided by available ghante. Churn matlab gaye clients divided by shuru ke clients, aur churn rate ek mota-andaza bhi deta hai ki client kitna samay rukta hai. Tool ye sab dikhata hai taki aap dekh sako ki leak kahan hai.",
+   "when": [
+    "Jab aap retainer ka price de rahe ho aur quote karne se pehle margin jaanna chahte ho.",
+    "Jab mahina bhara hua laga lekin profit patla nikla.",
+    "Jab aap jaanna chahte ho ki jaane wale clients ki jagah lene ke liye kitne naye jeetne honge."
+   ],
+   "mistakes": [
+    "Monthly cost se retainer quote karna, bina unbilled revision rounds ka hisaab rakhe.",
+    "Client ko permanent maan lena. 3% monthly churn par, do saal se kam me aadhe chale jaate hain.",
+    "Kaam ke kul ghante ginna, billable ghanton ki jagah."
+   ]
+  },
+  "realestate": {
+   "what": "{name} property kharidne ya kiraye par dene ke numbers chalata hai. {desc} Property zyadatar families ki sabse badi kharid hoti hai, aur jo costs logon ko chauka deti hain wo registration ke din bharni padti hain.",
+   "formula": "Kharidne ki cost matlab price plus stamp duty, registration aur koi brokerage. Rental yield matlab saalana kiraya divided by property ki cost, percentage me. Sale par return matlab sale price minus purchase price aur costs, divided by jo paisa aapne daala. Loan tasveer badal deta hai: EMI me byaaj shaamil hota hai, isliye shuru ki payments principal ko mushkil se kam karti hain.",
+   "when": [
+    "Jab aap do properties compare kar rahe ho aur dekhna chahte ho ki kaunsi zyada kamati hai.",
+    "Jab aap jaanna chahte ho ki registration ke din kitna cash chahiye, sirf price nahi.",
+    "Jab aap kharidne aur kiraye par rehne ke beech decide kar rahe ho."
+   ],
+   "mistakes": [
+    "Stamp duty aur registration bhool jaana, jo mil kar price me 6% se 8% tak jod dete hain.",
+    "Gross rent ko EMI se compare karna. Rent maintenance, tax aur vacancy se pehle hota hai.",
+    "Ye maan lena ki prices sirf badhti hain, aur ek slow saal ke liye jagah na chhodna."
+   ]
+  },
+  "taxwealth": {
+   "what": "{name} tax aur long-term saving ke figures ka andaaza deta hai. {desc} Rules badalte rehte hain, aur alag-alag income ko alag tarah treat karte hain, isliye ye tools ek fixed jawab ki jagah ganit dikhate hain.",
+   "formula": "Income tax slab by slab nikalta hai: rate sirf aapki income ke us hisse par lagta hai jo us band me aata hai, poore amount par nahi. Deductions us income ko kam karte hain jis par slabs lagte hain. Savings me, future value matlab jo aap daalte ho plus us par mila byaaj ya return, aur agar returns reinvest ho rahe hain to wo compound hote hain. Tool dikhata hai ki aap kul kitna daalte ho aur wo kitna ban jaata hai, taki aap split dekh sako.",
+   "when": [
+    "Jab aap purane aur naye tax regime ke beech choose kar rahe ho.",
+    "Jab aap jaanna chahte ho ki monthly saving das ya bees saal me kitni ban jaati hai.",
+    "Jab aap payslip ya Form 16 ko rules ke against check kar rahe ho."
+   ],
+   "mistakes": [
+    "Ye maan lena ki zyada slab aapki poori income par wahi rate lagata hai. Aisa nahi hota.",
+    "Tax-free option ko taxed option se compare karna, bina tax ka hisaab rakhe.",
+    "Projected return ko guaranteed maan lena."
+   ]
+  },
+  "dailyfun": {
+   "what": "{name} site ke halke-phulke tools me se ek hai. {desc} Ye maze ke liye hai — ek sawaal ka jaldi jawab jiska aapke paise se koi lena-dena nahi.",
+   "formula": "Ye tools apne-apne published rule follow karte hain — naam par based pairing, date ka ganit, ya number ko shabdon me likhna. Isme koi financial formula nahi hai aur kuch bhi store nahi hota.",
+   "when": [
+    "Jab aap curious ho aur jaldi jawab chahiye.",
+    "Jab aap doston ke saath ek dosti ka sawaal nipta na chahte ho.",
+    "Jab aap doston ke saath kuch share karna chahte ho."
+   ],
+   "mistakes": [
+    "Ek fun result ke bharose asli decision lena.",
+    "Kisi bhi tarah ke fun score ko salah samajh lena."
+   ]
+  }
+ },
+ "calcs": {
+  "emi": {
+   "what": "Loan EMI Calculator ek loan ki fixed monthly payment nikalta hai — amount, interest rate aur tenure ke hisaab se. {desc} Yahi number aapki monthly budget tay karta hai, isliye isse pehle jaanna zaroori hai ki aap kya commit kar rahe ho.",
+   "formula": "EMI ka formula hai: P x r x (1+r)^n ÷ ((1+r)^n - 1), jahan P loan amount hai, r monthly interest rate (saalana rate ÷ 12 ÷ 100), aur n kitne mahine. Kyunki EMI me byaaj aur principal dono hote hain, shuru ke mahinon me zyadatar hissa byaaj jaata hai. Isliye tenure badhane se EMI kam hoti hai lekin kul byaaj kaafi zyada ho jaata hai.",
+   "when": [
+    "Jab aap home, car ya personal loan lene se pehle monthly commitment jaanna chahte ho.",
+    "Jab aap dekhan chahte ho ki tenure badhane se EMI kitni girti hai aur kul byaaj kitna badhta hai.",
+    "Jab aap do banks ke offers compare kar rahe ho."
+   ],
+   "mistakes": [
+    "Sirf EMI dekhna aur kul byaaj na dekhna. Lambi tenure sasti lagti hai, hoti nahi.",
+    "Ye bhool jaana ki floating rate hone par EMI ya tenure aage badal sakti hai.",
+    "Budget me sirf EMI rakhna, processing fee aur insurance ke liye jagah na chhodna."
+   ]
+  },
+  "tam": {
+   "what": "TAM, SAM aur SOM market size ko teen layer me todta hai: poora market (TAM), jise aap asli me serve kar sakte ho (SAM), aur jitna aap sach me jeet sakte ho (SOM). {desc} Investors yahi poochte hain jab wo kehte hain 'market kitna bada hai', aur ek mota number dena unhe sabse jaldi shak me daalta hai.",
+   "formula": "TAM nikalne ka sabse saaf tarika bottom-up hai: kitne possible customers hain, guna ek customer saal me kitna kharch karta hai. SAM matlab wahi market, lekin aapke geography, product aur price band tak seemit. SOM matlab realistic share jo aap kuch saal me le sakte ho, aam taur par SAM ka ek chhota percentage. Top-down numbers (jaise 'India ka retail market 100 lakh crore hai') impress karte hain par kisi kaam ke nahi hote.",
+   "when": [
+    "Jab aap pitch deck ka market-size slide bana rahe ho.",
+    "Jab aap naya product launch karne se pehle dekhna chahte ho ki opportunity kitni badi hai.",
+    "Jab aap investors ke 'TAM kitna hai' wale sawaal ke liye taiyaar ho rahe ho."
+   ],
+   "mistakes": [
+    "Top-down TAM dikhana. Bada number acha lagta hai par sawaal khada karta hai.",
+    "TAM me apne aap ko market ka 1% maan lena, bina ye bataye ki wo 1% kaise aayega.",
+    "SAM ko ignore karke sirf TAM bolna, jab investor SAM aur SOM ke baare me poochta hai."
+   ]
+  },
+  "savingsgoal": {
+   "what": "Savings Goal Planner batata hai ki aapke target tak pahunchne me kitne mahine lagenge, aapki abhi ki savings aur monthly amount ke hisaab se. {desc} Ye ek simple calculation hai, lekin yahi ek number logon ko saving shuru karne me sabse zyada madad karta hai.",
+   "formula": "Mahine = (Goal minus ab tak bachaya) ÷ har mahine bachaya jaane wala amount. Agar monthly amount zero hai to jawab nahi milta — target kabhi nahi pahunchega. Ye tool byaaj nahi jodta, isliye ye ek saada, conservative andaaza hai; agar aap paisa aisi jagah rakhte ho jahan return milta hai, to asli samay isse kam lagega.",
+   "when": [
+    "Jab aap kisi bade target ke liye saving plan bana rahe ho — phone, trip, down payment.",
+    "Jab aap dekhna chahte ho ki monthly amount thoda badhane se kitne mahine bach jaate hain.",
+    "Jab aap ek naya recurring kharch karne se pehle apne plan par asar dekhna chahte ho."
+   ],
+   "mistakes": [
+    "Ye maan lena ki jo amount aaj bacha rahe ho wo har mahine possible hoga.",
+    "Byaaj ya return ko plan me jod dena jab aap paisa savings account me hi rakhte ho.",
+    "Target ko bina emergency fund banaye poori saving usi me daal dena."
+   ]
+  },
+  "percent": {
+   "what": "Percentage Calculator batata hai ki kisi number ka ek percentage kitna hota hai — har doosre tool ka base rule. {desc} Chhota sawaal lagta hai, par discount, tip, share aur margin sab isi se shuru hote hain.",
+   "formula": "Result = number x percentage ÷ 100. Ulta nikalna ho — matlab 'ye number kis number ka X% hai' — to result ko percentage se divide karke 100 se guna karo. Percentage change nikalne ke liye: (naya - purana) ÷ purana x 100. Yaad rakho, do percentages ko jodna galat hota hai: 10% badhna phir 10% girna wapas shuru par nahi laata.",
+   "when": [
+    "Jab bill ya price par discount nikalna ho.",
+    "Jab aap dekhna chahte ho ki aapka kharch aapki income ka kitna percent hai.",
+    "Jab kisi do numbers ke beech percentage change nikalna ho."
+   ],
+   "mistakes": [
+    "Percentages ko jod dena. 10% + 10% kabhi 20% nahi hota jab wo alag-alag base par lagein.",
+    "Base galat lena. 'X% badha' ka base purana number hota hai, naya nahi.",
+    "Round karke ganna. Pehle poora ganna karo, aakhir me round karo."
+   ]
+  },
+  "gst": {
+   "what": "GST Calculator GST amount aur total nikalta hai — price se GST jodne ke liye ya GST-wale price se base nikalne ke liye. {desc} GST har invoice par lagta hai, isliye ye ek basic number hai jo aapko roz chahiye.",
+   "formula": "GST jodne ke liye: GST amount = base price x rate ÷ 100, aur total = base + GST. Agar aapke paas GST-shaamil price hai aur base nikalna hai (reverse), to base = total x 100 ÷ (100 + rate), aur GST = total - base. CGST aur SGST me rate aadha-aadha bat jaata hai jab sale usi state me ho; IGST poora lagta hai inter-state sale par.",
+   "when": [
+    "Jab aap invoice bana rahe ho aur base price se total nikalna ho.",
+    "Jab aapke paas GST-wala bill hai aur aapko base aur tax alag-alag chahiye.",
+    "Jab aap check karna chahte ho ki kisi price me GST kitna hai."
+   ],
+   "mistakes": [
+    "Reverse calculation me rate ko total par seedha lagana, base par nahi.",
+    "CGST aur SGST ko alag-alag rate samajh lena; dono mil kar ek hi rate banate hain.",
+    "Ye maan lena ki har product par ek hi GST rate hai — rates category ke hisaab se badalte hain."
+   ]
+  }
+ }
+}

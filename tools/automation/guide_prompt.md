@@ -18,8 +18,20 @@ short on time, commit and push what you have rather than leaving it uncommitted.
 ## Task, in order
 1. Pick ONE new topic an Indian small-business owner or first-time founder would
    search for (cost, tax, pricing, cash flow, margins, GST, unit economics).
-   Read the existing `blog-*.html` titles first and do not repeat a topic the
-   blog already covers. No web research is needed — these guides are evergreen.
+   Start from real query data instead of a guess:
+
+   ```
+   python3 tools/keyword_radar.py --top 30
+   ```
+
+   That reads Google's autocomplete for this site's own subjects and prints the
+   phrases people actually type, ranked. A `+` in front means the site has no
+   page that answers the phrase yet — prefer those, because a guide that fills a
+   real gap earns traffic; one that repeats a calculator you already have does
+   not. If the radar fails (no network), fall back to picking by hand.
+
+   Read the existing `blog-*.html` titles as well and do not repeat a topic the
+   blog already covers. The guides are evergreen, so no web research is needed.
 
 2. Write `public/site/blog-<slug>.html` with the same shell as the existing posts:
    - `<head>`: title, meta description, canonical `https://tankmetrics.in/<slug>`,
@@ -53,7 +65,12 @@ short on time, commit and push what you have rather than leaving it uncommitted.
    `<h2>`, a `<p>` and a `.readmore` span. Keep the grid
    `repeat(2,minmax(0,1fr))` and do not touch the `id="paneNews"` pane.
 
-5. Run the pipeline and the Python tests. All must pass before continuing:
+5. Link the new post to the calculators that answer it, then run the pipeline
+   and the Python tests. All must pass before continuing:
+   `python3 tools/wire_blog_tools.py` - adds the "Run the numbers" section to
+   the new post and a "Read the guide" back-link on the matching calculator
+   pages. It picks the tools from the post title when there is no hand-written
+   entry, so it always finds something. Run it BEFORE `clean_urls.py`.
    `python3 tools/clean_urls.py`
    `python3 tools/add_blog_schema.py`
    `python3 tools/test_blog.py`
@@ -61,6 +78,8 @@ short on time, commit and push what you have rather than leaving it uncommitted.
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
    `python3 tools/test_contact_form.py`
+   `python3 tools/test_interlinks.py` - every blog post must link to real
+   calculators and every internal link must resolve, not 404.
    `python3 tools/seo_monitor.py .` - must report 0 problems. This is the guard
    that catches an over-long title or description, a missing canonical, or
    missing og:title/og:description on the new post. Fix and re-run until clean.

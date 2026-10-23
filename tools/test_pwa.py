@@ -12,6 +12,7 @@ stops the server, reloads, and asserts the page still renders. Run with
 """
 import http.server
 import json
+import os
 import re
 import subprocess
 import sys
@@ -25,6 +26,31 @@ SITE = PUBLIC / "site"
 
 PAGES = sorted(SITE.glob("*.html")) + sorted((SITE / "tools").glob("*.html"))
 PAGES = sorted(set(PAGES + [SITE / "index.html"]))
+
+URL_MAP = json.loads((ROOT / "tools" / "url-map.json").read_text(encoding="utf-8"))
+
+
+class RewriteHandler(http.server.SimpleHTTPRequestHandler):
+    """Serve public/ the way production does.
+
+    In production Next.js rewrites a clean path such as /about to
+    /site/about.html. A bare http.server does not, so /about 404s and an
+    offline check that navigates there would fail for a reason that has
+    nothing to do with the service worker. Mirroring the rewrites here keeps
+    the test honest: it exercises the same URLs a visitor actually opens.
+    """
+
+    def translate_path(self, path):
+        clean = path.split("?", 1)[0].split("#", 1)[0]
+        target = URL_MAP.get(clean)
+        if clean == "/":
+            target = "/site/index.html"
+        if target:
+            return str(PUBLIC / target.lstrip("/"))
+        return super().translate_path(path)
+
+    def log_message(self, *args):
+        pass
 
 
 def check_files() -> list:
@@ -154,7 +180,28 @@ const offline = await evaluate(`({
   emi: (document.querySelector("#out .r .v") || {}).textContent || null,
   sw: !!navigator.serviceWorker.controller
 })`);
-console.log(JSON.stringify({ probe, offline }));
+
+// 3. A page the visitor never opened must ALSO work offline. This is the bug
+//    the whole precache list exists for: before it, only the visited page and
+//    the shell were cached, so /about, /blog, /news and 100 calculators were
+//    dead the moment the network dropped.
+await send("Page.navigate", { url: base + "/about" });
+await new Promise((r) => setTimeout(r, 4000));
+const unseen = await evaluate(`({
+  title: document.title,
+  body: (document.body.innerText || "").slice(0, 60),
+  sw: !!navigator.serviceWorker.controller
+})`);
+
+await send("Page.navigate", { url: base + "/blog" });
+await new Promise((r) => setTimeout(r, 4000));
+const unseenBlog = await evaluate(`({
+  title: document.title,
+  cards: document.querySelectorAll(".blog-card").length,
+  sw: !!navigator.serviceWorker.controller
+})`);
+
+console.log(JSON.stringify({ probe, offline, unseen, unseenBlog }));
 ws.close();
 """
 
@@ -174,10 +221,9 @@ def check_offline() -> list:
     driver.write_text(CDP_DRIVER, encoding="utf-8")
     port = free_port()
     debug_port = free_port()
-    server = subprocess.Popen(
-        [sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1"],
-        cwd=PUBLIC, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-    )
+    os.chdir(PUBLIC)
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", port), RewriteHandler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
     # A throwaway profile per run. Chromium keeps service workers and Cache
     # Storage in its profile, so sharing the default one lets a previous run
     # leave a populated cache behind and the offline check passes without ever
@@ -210,7 +256,8 @@ def check_offline() -> list:
             capture_output=True, text=True, timeout=180,
         )
     finally:
-        server.terminate()
+        server.shutdown()
+        server.server_close()
         browser.terminate()
         probe.unlink(missing_ok=True)
         driver.unlink(missing_ok=True)
@@ -238,6 +285,25 @@ def check_offline() -> list:
     if "/site/tools/loan-emi-calculator.html" not in cached:
         failures.append("the visited page was not cached, so it cannot work offline")
 
+    # The precache list is the whole offline story, and asserting the offline
+    # *navigation* alone is not enough to prove it: chromium's own HTTP cache
+    # can serve a page that the worker never stored, so a broken precache still
+    # "passes" (verified by disabling the list and watching this test stay
+    # green). Assert the pages are in the worker's cache directly.
+    precache = json.loads((SITE / "precache.json").read_text(encoding="utf-8"))["paths"]
+    must_have = ["/about", "/blog", "/news", "/contact",
+                 "/site/tools/loan-emi-calculator.html"]
+    must_have += [p for p in precache if p.startswith("/site/tools/")][:5]
+    for want in dict.fromkeys(must_have):
+        if want not in cached:
+            failures.append(
+                f"the precache list did not store {want}, so it is not offline")
+    missing = [p for p in precache if p not in cached]
+    if missing:
+        failures.append(
+            f"{len(missing)} of {len(precache)} precache paths never reached the "
+            f"worker cache, e.g. {missing[:3]}")
+
     offline = data.get("offline") or {}
     if not offline.get("title"):
         failures.append("offline load produced no page at all")
@@ -247,6 +313,20 @@ def check_offline() -> list:
         failures.append("offline page lost its calculator logic")
     if not offline.get("sw"):
         failures.append("the offline load was not served by the service worker")
+
+    # The pages nobody visited are the real test of the precache list.
+    unseen = data.get("unseen") or {}
+    if "About" not in (unseen.get("title") or ""):
+        failures.append(
+            "an unvisited page (/about) did not work offline: "
+            f"{unseen.get('title')!r} - the precache list is not being installed"
+        )
+    blog = data.get("unseenBlog") or {}
+    if not blog.get("cards"):
+        failures.append(
+            "an unvisited /blog worked offline but rendered no cards, "
+            "so the cached copy is not the real page"
+        )
     return failures
 
 

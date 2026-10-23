@@ -32,7 +32,28 @@ BLOCK = MARKER + (
     '<meta name="apple-mobile-web-app-title" content="Tank Metrics">'
     '<link rel="apple-touch-icon" href="/site/icon-192.png">'
     '<script defer src="/site/pwa.js"></script>'
+    '<script defer src="/site/nav.js"></script>'
 )
+
+# The menu button was hidden on every page except the home page, and the home
+# page's own sidebar is the only thing it ever opened. Show it everywhere and
+# label it with three dots, so the drawer in nav.js is reachable.
+OLD_MENU = ('<button class="menu-btn" id="menuBtn" aria-label="Menu" '
+            'style="visibility:hidden">\u2630</button>')
+NEW_MENU = ('<button class="menu-btn" id="menuBtn" type="button" '
+            'aria-label="Open menu" aria-expanded="false">\u2022\u2022\u2022</button>')
+NAV_SCRIPT = '<script defer src="/site/nav.js"></script>'
+
+
+def patch_nav(text: str) -> str:
+    """Add the drawer script and un-hide the menu button. Idempotent."""
+    if NAV_SCRIPT not in text:
+        if "</body>" in text:
+            text = text.replace("</body>", NAV_SCRIPT + "</body>", 1)
+        else:
+            text = text + NAV_SCRIPT
+    text = text.replace(OLD_MENU, NEW_MENU)
+    return text
 
 
 def pages() -> list:
@@ -65,11 +86,11 @@ def main() -> None:
     changed = 0
     for page in pages():
         text = page.read_text(encoding="utf-8")
-        new = patch(text)
+        new = patch_nav(patch(text))
         if new != text:
             page.write_text(new, encoding="utf-8")
             changed += 1
-    print(f"pwa block added to {changed} page(s)")
+    print(f"pwa block + nav drawer added to {changed} page(s)")
 
 
 if __name__ == "__main__":

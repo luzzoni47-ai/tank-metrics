@@ -18,7 +18,15 @@ part that eats the clock, so do it first and keep it to a handful of searches.
 ## Task, in order
 1. Research ONE current story with web search. The desk exists to pull in
    traffic from whatever is being talked about today, so the topic must be
-   current, not evergreen. Look at:
+   current, not evergreen. If you are unsure which angle to take, this shows
+   what the audience is typing into Google right now:
+
+   ```
+   python3 tools/keyword_radar.py --top 30
+   ```
+
+   Use it only to pick the angle, not the facts — the story itself must still
+   come from today's sources. Look at:
    - Indian startup funding rounds from the last few days
    - Shark Tank India and Shark Tank USA episodes
    - GST and tax rule changes
@@ -58,6 +66,7 @@ part that eats the clock, so do it first and keep it to a handful of searches.
    `python3 tools/test_layout.py`
    `python3 tools/test_blog_tabs.py`
    `python3 tools/test_contact_form.py`
+   `python3 tools/test_interlinks.py`
    `python3 tools/seo_monitor.py .` - must report 0 problems. This is the guard
    that catches an over-long title or description, a missing canonical, or
    missing og:title/og:description on the new story. Fix and re-run until clean.

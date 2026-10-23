@@ -5,7 +5,11 @@
  * seen it can be served from cache forever.
  *
  * Strategy
- *  - Precache the shell (home, stylesheet, manifest, icons) on install.
+ *  - Precache the shell (stylesheet, manifest, icons) on install, then read
+ *    /site/precache.json and store EVERY page in it. The whole site is meant
+ *    to work offline, and caching only the pages a visitor happened to open
+ *    left the other 100 calculators, the blog, the news and the legal pages
+ *    dead the moment the network dropped.
  *  - Navigations: network first, fall back to the cached copy of the exact
  *    page, then to the cached home page. So a fresh page when online, and
  *    something useful when offline.
@@ -13,13 +17,12 @@
  *  - Never touch a non-GET, a cross-origin request, or the Apps Script
  *    endpoint (the contact form must always reach the network).
  */
-const VERSION = "tm-v1";
+const VERSION = "tm-v2";
 const SHELL = VERSION + "-shell";
 const PAGES = VERSION + "-pages";
 const ASSETS = VERSION + "-assets";
 
 const SHELL_URLS = [
-  "/",
   "/site/style.css",
   "/site/manifest.webmanifest",
   "/site/icon-192.png",
@@ -28,9 +31,32 @@ const SHELL_URLS = [
   "/site/pwa.js",
 ];
 
+// Pulling 124 pages in one addAll means a single 404 aborts the whole install
+// and the worker never activates, which is worse than the old behaviour. Add
+// them one by one and ignore the strays.
+function cachePages(cache, paths) {
+  return Promise.all(
+    paths.map((path) =>
+      cache.add(path).catch(() => {})
+    )
+  );
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(SHELL).then((cache) => cache.addAll(SHELL_URLS)).then(() => self.skipWaiting())
+    caches
+      .open(SHELL)
+      .then((cache) => cache.addAll(SHELL_URLS))
+      .then(() =>
+        fetch("/site/precache.json", { cache: "no-store" })
+          .then((r) => (r.ok ? r.json() : null))
+          .then((d) => (d && d.paths ? d.paths : []))
+          .catch(() => [])
+      )
+      .then((paths) =>
+        caches.open(PAGES).then((cache) => cachePages(cache, ["/"].concat(paths)))
+      )
+      .then(() => self.skipWaiting())
   );
 });
 

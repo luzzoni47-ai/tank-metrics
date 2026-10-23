@@ -45,6 +45,7 @@ calculators plus a small blog. Work only inside the cloned repo.
    - `gen_news.py` also refreshes the news strip on the home page and the blog,
      the sitemap, `llms.txt` and `tools/url-map.json`. Do not edit those by hand.
 6. Run the pipeline and the Python tests. All must pass before continuing:
+   `python3 tools/wire_blog_tools.py`
    `python3 tools/clean_urls.py`
    `python3 tools/test_blog.py`
    `python3 tools/test_news.py`
