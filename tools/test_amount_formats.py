@@ -91,8 +91,15 @@ def check_fields() -> list:
         # is checked, because those are the ones users type amounts into.
         for m in re.finditer(r'<input[^>]*>', text):
             tag = m.group(0)
-            if 'data-unit="\u20b9"' in tag and 'type="number"' in tag:
+            if 'data-unit="\u20b9"' not in tag:
+                continue
+            if 'type="number"' in tag:
                 failures.append(f"{page.relative_to(PUBLIC)} has a rupee field as type=number: {tag[:90]}")
+            # inputmode="decimal" opens a digits-only keypad on a phone, so the
+            # user cannot type the "Lakh" in "5 Lakh" at all. It must be absent
+            # from an amount field, not just from the type attribute.
+            if "inputmode=\"decimal\"" in tag:
+                failures.append(f"{page.relative_to(PUBLIC)} rupee field has inputmode=decimal (letters untypable on mobile): {tag[:90]}")
     return failures
 
 

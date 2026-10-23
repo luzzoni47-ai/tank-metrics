@@ -36,6 +36,9 @@ const csp = [
   // script.google.com is the contact form's Apps Script endpoint; it
   // answers from script.googleusercontent.com after the redirect.
   "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com https://script.google.com https://script.googleusercontent.com",
+  // The PWA needs to load its manifest and its service worker.
+  "manifest-src 'self'",
+  "worker-src 'self'",
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'",

@@ -100,8 +100,15 @@ def main() -> None:
             '    {{ "src": "/site/icon-{0}.png", "sizes": "{0}x{0}", '
             '"type": "image/png", "purpose": "any" }},'.format(size)
         )
+    # A maskable icon is cropped to whatever shape the launcher likes (a
+    # circle on most Androids), so the art must fit an 80% safe zone or the
+    # ring gets sliced. Paint it on a full-bleed brand tile with that margin.
+    maskable = Image.new("RGBA", (512, 512), "#FF9933")
+    art = mark_png(410)
+    maskable.paste(art, ((512 - 410) // 2, (512 - 410) // 2), art)
+    maskable.save(SITE / "icon-maskable-512.png")
     entries.append(
-        '    { "src": "/site/icon-512.png", "sizes": "512x512", '
+        '    { "src": "/site/icon-maskable-512.png", "sizes": "512x512", '
         '"type": "image/png", "purpose": "maskable" }'
     )
     (SITE / "manifest.webmanifest").write_text(

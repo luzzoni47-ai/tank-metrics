@@ -121,10 +121,9 @@ def field_html(calcd_id: str, inp: dict) -> str:
     unit = f'<span class="unit">{inp["u"]}</span>' if inp.get("u") else ""
     classes = "field" + (" full" if inp.get("full") else "") + (
         " rupee-field" if inp.get("u") == "₹" else "")
-    imode = 'inputmode="decimal" ' if ftype == "number" else ""
     return (
         f'<div class="{classes}"><label for="{fid}">{inp["l"]}</label>'
-        f'<div class="row"><input type="{html_type}" {imode}id="{fid}" '
+        f'<div class="row"><input type="{html_type}" id="{fid}" '
         f'placeholder="{ph}" data-k="{inp["k"]}" data-unit="{inp.get("u") or ""}">'
         f'{unit}</div></div>'
     )
@@ -391,5 +390,18 @@ def main() -> None:
     return written
 
 
+def _apply_pwa() -> None:
+    """The generator rewrites each tool page from scratch, so the PWA block has
+    to be re-applied here or a plain `gen_tool_pages.py` run silently drops
+    offline support from all 101 pages."""
+    import sys
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import add_pwa
+
+    add_pwa.main()
+
+
 if __name__ == "__main__":
     main()
+    _apply_pwa()
