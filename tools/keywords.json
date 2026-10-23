@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T03:34:51Z",
+ "generated": "2026-10-23T16:27:45Z",
  "seed_count": 150,
  "suggestion_count": 1035,
  "keywords": [
@@ -64,15 +64,6 @@
    "score": 22.08,
    "from": [
     "mrp reverse calculator"
-   ]
-  },
-  {
-   "query": "distributor margin in pharma",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "distributor margin"
    ]
   },
   {
@@ -145,6 +136,15 @@
    "score": 18.4,
    "from": [
     "cagr calculator"
+   ]
+  },
+  {
+   "query": "distributor margin in pharma",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "distributor margin"
    ]
   },
   {
@@ -292,15 +292,6 @@
    ]
   },
   {
-   "query": "marketplace fees kya hoti hai",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "marketplace fees"
-   ]
-  },
-  {
    "query": "marketplace price calculator",
    "demand": 9,
    "covered": false,
@@ -319,12 +310,12 @@
    ]
   },
   {
-   "query": "rental yield in mumbai",
+   "query": "property valuation report",
    "demand": 9,
    "covered": false,
    "score": 16.56,
    "from": [
-    "rental yield"
+    "property valuation"
    ]
   },
   {
@@ -400,15 +391,6 @@
    ]
   },
   {
-   "query": "distributor margin in fmcg",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "distributor margin"
-   ]
-  },
-  {
    "query": "ebitda and ebitda margin difference",
    "demand": 8,
    "covered": false,
@@ -454,6 +436,15 @@
    ]
   },
   {
+   "query": "marketplace fees kya hoti hai",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "marketplace fees"
+   ]
+  },
+  {
    "query": "msme loan kya hota hai",
    "demand": 8,
    "covered": false,
@@ -463,12 +454,12 @@
    ]
   },
   {
-   "query": "property valuation report",
+   "query": "rental yield in mumbai",
    "demand": 8,
    "covered": false,
    "score": 14.72,
    "from": [
-    "property valuation"
+    "rental yield"
    ]
   },
   {
@@ -562,6 +553,15 @@
    ]
   },
   {
+   "query": "distributor margin in fmcg",
+   "demand": 7,
+   "covered": false,
+   "score": 12.88,
+   "from": [
+    "distributor margin"
+   ]
+  },
+  {
    "query": "ebitda meaning in hindi",
    "demand": 7,
    "covered": false,
@@ -607,7 +607,7 @@
    ]
   },
   {
-   "query": "msme loan for women",
+   "query": "msme loan full form",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -783,7 +783,7 @@
    ]
   },
   {
-   "query": "msme loan full form",
+   "query": "msme loan for women",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -811,7 +811,7 @@
    ]
   },
   {
-   "query": "property valuation in west bengal",
+   "query": "property valuation west bengal",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -982,7 +982,7 @@
    ]
   },
   {
-   "query": "cagr calculator in months",
+   "query": "cagr calculator monthly",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -1000,15 +1000,6 @@
    ]
   },
   {
-   "query": "customer acquisition cost in marketing",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "customer acquisition cost"
-   ]
-  },
-  {
    "query": "distributor margin calculation excel",
    "demand": 5,
    "covered": false,
@@ -1018,7 +1009,7 @@
    ]
   },
   {
-   "query": "ebitda kya hota hai",
+   "query": "ebitda share price",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -1477,7 +1468,7 @@
    ]
   },
   {
-   "query": "loan emi calculator",
+   "query": "loan emi calculator sbi",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1686,7 +1677,7 @@
    ]
   },
   {
-   "query": "return on investment roi",
+   "query": "return on investment roi formula",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1722,7 +1713,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -2091,7 +2082,7 @@
    ]
   },
   {
-   "query": "epf calculator online",
+   "query": "epf calculator with existing balance",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2154,7 +2145,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2190,7 +2181,7 @@
    ]
   },
   {
-   "query": "loan emi calculator sbi",
+   "query": "loan emi calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2352,7 +2343,7 @@
    ]
   },
   {
-   "query": "return on investment roi formula",
+   "query": "return on investment roi",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2388,7 +2379,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2532,7 +2523,7 @@
    ]
   },
   {
-   "query": "bmi calculator for women",
+   "query": "bmi calculator women",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2686,6 +2677,15 @@
    ]
   },
   {
+   "query": "distributor margin formula",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "distributor margin"
+   ]
+  },
+  {
    "query": "down payment calculator bike",
    "demand": 11,
    "covered": true,
@@ -2713,7 +2713,7 @@
    ]
   },
   {
-   "query": "epf calculator with existing balance",
+   "query": "epf calculator with current balance",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2767,7 +2767,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2821,7 +2821,7 @@
    ]
   },
   {
-   "query": "loan emi calculator online",
+   "query": "loan emi calculator monthly",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2830,7 +2830,7 @@
    ]
   },
   {
-   "query": "ltv cac ratio formula",
+   "query": "ltv cac ratio benchmark",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3046,7 +3046,7 @@
    ]
   },
   {
-   "query": "stamp duty calculator gujarat",
+   "query": "stamp duty calculator mumbai",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3125,6 +3125,15 @@
    "score": 7.36,
    "from": [
     "ebitda and margin"
+   ]
+  },
+  {
+   "query": "ebitda kya hota hai",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "ebitda"
    ]
   },
   {
@@ -3242,15 +3251,6 @@
    "score": 7.36,
    "from": [
     "shop profit margin"
-   ]
-  },
-  {
-   "query": "average order value formula in excel",
-   "demand": 5,
-   "covered": false,
-   "score": 7.2,
-   "from": [
-    "average order value"
    ]
   },
   {
@@ -3535,7 +3535,7 @@
    ]
   },
   {
-   "query": "epf calculator with current balance",
+   "query": "epf calculator on salary",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3580,7 +3580,7 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3616,7 +3616,7 @@
    ]
   },
   {
-   "query": "loan emi calculator monthly",
+   "query": "loan emi calculator home",
    "demand": 10,
    "covered": true,
    "score": 6.9,

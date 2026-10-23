@@ -1,0 +1,54 @@
+{
+ "pages_measured": 101,
+ "pages_with_a_near_duplicate": 94,
+ "worst_pairs": [
+  {
+   "overlap": 0.771,
+   "a": "/ebitda-multiple",
+   "b": "/revenue-multiple"
+  },
+  {
+   "overlap": 0.741,
+   "a": "/compound-interest",
+   "b": "/simple-interest"
+  },
+  {
+   "overlap": 0.715,
+   "a": "/discount-calculator",
+   "b": "/tip-calculator"
+  },
+  {
+   "overlap": 0.711,
+   "a": "/net-profit-margin",
+   "b": "/operating-margin"
+  },
+  {
+   "overlap": 0.707,
+   "a": "/return-on-capital-employed",
+   "b": "/return-on-investment-roi"
+  }
+ ],
+ "worst_pages": [
+  {
+   "page": "/ebitda-multiple",
+   "closest_overlap": 0.771
+  },
+  {
+   "page": "/revenue-multiple",
+   "closest_overlap": 0.771
+  },
+  {
+   "page": "/compound-interest",
+   "closest_overlap": 0.741
+  },
+  {
+   "page": "/simple-interest",
+   "closest_overlap": 0.741
+  },
+  {
+   "page": "/discount-calculator",
+   "closest_overlap": 0.715
+  }
+ ],
+ "median_overlap": 0.659
+}
