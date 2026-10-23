@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# Regenerate every derived page in the one order that works.
+#
+# The order matters and getting it wrong is silent. `gen_tool_pages.py` and
+# `wire_crawl_graph.py` both emit raw /site/*.html links on purpose, and
+# `clean_urls.py` is the single place that turns those into clean public URLs.
+# Run clean_urls before the two of them and it rewrites nothing: the canonicals
+# stay /site/tools/x.html, the sitemap lists 116 URLs instead of 125, and the
+# news pages drop out entirely. That happened on 2026-10-23. One script with
+# the order baked in is the fix.
+#
+# `add_pwa.py` is last because it must see the final files - the PWA shell and
+# the nav drawer go into the pages that clean_urls has already rewritten.
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+echo "==> gen_tool_pages"
+python3 tools/gen_tool_pages.py
+echo "==> gen_news"
+python3 tools/gen_news.py
+echo "==> wire_crawl_graph (writes the sitemap, incl. news)"
+python3 tools/wire_crawl_graph.py
+echo "==> clean_urls (the only place that decides the public URL shape)"
+python3 tools/clean_urls.py
+echo "==> make_favicon"
+python3 tools/make_favicon.py
+echo "==> fix_blog_meta"
+python3 tools/fix_blog_meta.py
+echo "==> fix_static_seo"
+python3 tools/fix_static_seo.py
+echo "==> add_pwa"
+python3 tools/add_pwa.py
+echo "==> gen_updates"
+python3 tools/gen_updates.py
+
+echo "==> seo_monitor --local"
+python3 tools/seo_monitor.py --local

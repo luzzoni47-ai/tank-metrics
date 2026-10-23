@@ -98,6 +98,7 @@ def write_sitemap() -> int:
     pages = [
         (f"{BASE}/", "daily", "1.0"),
         (f"{BASE}/site/blog.html", "weekly", "0.8"),
+        (f"{BASE}/site/news.html", "daily", "0.8"),
         (f"{BASE}/site/about.html", "monthly", "0.6"),
         (f"{BASE}/site/contact.html", "monthly", "0.6"),
     ]
@@ -105,6 +106,11 @@ def write_sitemap() -> int:
         pages.append((f"{BASE}/site/tools/{SLUGS[c['id']]}.html", "monthly", "0.7"))
     for b in sorted(SITE.glob("blog-*.html")):
         pages.append((f"{BASE}/site/{b.name}", "monthly", "0.7"))
+    # News pages belong in the sitemap too. They were missing until 2026-10-23,
+    # so Google had no crawl path to them at all - nine URLs, including the
+    # /news index, simply did not exist as far as the sitemap was concerned.
+    for n in sorted(SITE.glob("news-*.html")):
+        pages.append((f"{BASE}/site/{n.name}", "weekly", "0.6"))
     for extra in ("privacy-policy", "terms-and-conditions", "disclaimer"):
         pages.append((f"{BASE}/site/{extra}.html", "yearly", "0.3"))
 
