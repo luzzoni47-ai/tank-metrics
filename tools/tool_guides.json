@@ -1,268 +1,310 @@
 {
-  "_comment": "Long-form guide copy for the tool pages, keyed by calculator id. 'what' is 2 paragraphs, 'formula' is how the maths works, 'mistakes' is a list of common errors. gen_tool_pages.py renders these under the calculator card.",
-  "cats": {
-    "everyday": {
-      "what": "{name} answers one of the small questions that come up every week — a percentage off a bill, a share of a total, a simple interest figure. It exists so you do not have to reach for a calculator app, a notebook and a formula you half-remember. {desc} Everything runs inside your browser, so no figure you type is sent anywhere.",
-      "formula": "Every one of these tools is one arithmetic rule applied to the numbers you type. A percentage is the part divided by the whole, multiplied by 100. Simple interest is principal x rate x time. Compound interest adds the interest back to the principal at each period, so the base grows. The calculator applies the rule and shows you the result, the intermediate steps and, where it matters, the total you will actually pay or receive.",
-      "when": [
-        "You are checking a shop bill or an online discount before you pay.",
-        "You are working out a share of a total — a partner's cut, a deposit, a commission.",
-        "You want a quick sanity check before you commit to a number on a form."
-      ],
-      "mistakes": [
-        "Adding percentages together. A 10% rise followed by a 10% fall is not back to where you started — it is 99% of it.",
-        "Using simple interest for anything longer than a year. Banks compound, so a simple-interest answer will understate what you owe.",
-        "Rounding too early. Keep the full figure and round only the answer you write down."
-      ]
-    },
-    "profit": {
-      "what": "{name} shows what a business actually keeps, not what it collects. Revenue is the easy number and the least useful one on its own. {desc} This tool puts the costs back in, so you can see the margin that funds the next order, the next hire and the next bad month.",
-      "formula": "Profit is revenue minus every cost that went into earning it. Margin is that profit divided by revenue, shown as a percentage. A 20% margin means twenty paise of every rupee of sales stays with you; the rest is eaten by goods, ads, salaries, fees and tax. Change one cost and the margin moves, which is why the tool lets you vary each line separately rather than only the total.",
-      "when": [
-        "You are setting a price and want to know if the margin survives your real costs.",
-        "A month looked busy but the bank balance did not move, and you want to find out why.",
-        "You are comparing two products or two clients to decide where to put your effort."
-      ],
-      "mistakes": [
-        "Counting revenue as profit. A crore of sales at a 2% margin is twenty lakh of profit — and one bad month can wipe it out.",
-        "Forgetting the costs that arrive late: GST, marketplace fees, returns, payment-gateway charges.",
-        "Setting a price by copying a competitor whose costs you cannot see."
-      ]
-    },
-    "val": {
-      "what": "{name} works through the arithmetic of a funding round or a company valuation. {desc} These are the numbers founders and investors argue about, and most of the arguments come down to one of the figures this tool calculates.",
-      "formula": "Valuation is a price agreed for the whole company. Pre-money is that price before new money goes in; post-money is after. When an investor puts in an amount for a stake, the post-money is the investment divided by the stake, and the pre-money is post-money minus the investment. Revenue multiples, EBITDA multiples and implied values are different ways of arriving at the same price from the company's own numbers.",
-      "when": [
-        "You are preparing for a fundraise and want to know what your numbers imply.",
-        "You have a term sheet and want to check the stake it actually gives away.",
-        "You are comparing your valuation against what similar companies raised at."
-      ],
-      "mistakes": [
-        "Reading a valuation without the stake. A high valuation that costs half the company is worse than a lower one that costs a tenth.",
-        "Comparing a revenue multiple for a fast grower with one for a slow, profitable business.",
-        "Forgetting that a post-money valuation includes the new money, so the founder's percentage falls."
-      ]
-    },
-    "cust": {
-      "what": "{name} measures the economics of a single customer. {desc} These numbers decide whether growth makes money or burns it, and they are the first thing a serious investor checks.",
-      "formula": "The cost to acquire a customer (CAC) is everything you spend on sales and marketing divided by the customers it won. Lifetime value (LTV) is what one customer brings in over the whole relationship — average order value, times how often they buy, times how many years they stay, times your gross margin. Divide LTV by CAC and you have the ratio. Around 3:1 is the common rule of thumb; below 1:1 you lose money on every customer you win.",
-      "when": [
-        "You are about to increase your ad budget and want to know if it will pay back.",
-        "A channel is winning customers cheaply and you want to know if that will last.",
-        "You are preparing a pitch and need the unit-economics slide."
-      ],
-      "mistakes": [
-        "Using revenue for LTV instead of gross margin. The customer brings in sales, not profit.",
-        "Counting only ad spend as CAC and leaving out salaries, tools and agency fees.",
-        "Assuming a customer stays for years when your data shows most leave after a few months."
-      ]
-    },
-    "growth": {
-      "what": "{name} tracks the two things that kill young businesses: running out of cash, and growing faster than the cash can follow. {desc} Growth is a headline; cash is the oxygen.",
-      "formula": "Burn is the cash a business spends each month beyond what it earns. Runway is the cash you hold divided by that monthly burn — the number of months before the money is gone. Run rate takes one period's revenue and scales it to a year, which is useful for comparison but assumes the period repeats. Break-even is the sales level at which contribution covers your fixed costs, so profit is zero and every extra sale is profit.",
-      "when": [
-        "You want to know how many months you have before you must raise or cut.",
-        "You are deciding between hiring now and waiting a quarter.",
-        "A month was unusually strong and you want to compare it fairly with the rest of the year."
-      ],
-      "mistakes": [
-        "Measuring runway from revenue instead of cash in the bank.",
-        "Treating run rate as a forecast. It is a snapshot, not a promise.",
-        "Cutting the spending that wins customers first. That shortens runway now and shrinks the business later."
-      ]
-    },
-    "pricing": {
-      "what": "{name} works backwards from what you can charge to what you keep. {desc} Pricing is the fastest lever a small business has — a one-rupee change per unit drops straight to profit — and the one most owners set by guesswork.",
-      "formula": "Start with the price the customer pays, then subtract everything between that price and your bank account: marketplace commission, shipping, packaging, payment fees, returns and discounts. What is left is your contribution. Subtract the cost of the goods and you have the profit on one unit. The tool shows each subtraction so you can see which one is doing the damage.",
-      "when": [
-        "You are launching a product and need a price that leaves a real margin.",
-        "A marketplace raised its commission and you want to know how much price must move.",
-        "You are about to run a discount and want to see what it does to profit."
-      ],
-      "mistakes": [
-        "Setting a price from cost plus a markup, without checking what the market will pay.",
-        "Ignoring returns. In some categories, a fifth of orders come back and the shipping is yours to pay twice.",
-        "Discounting the price without checking the extra volume needed to stand still."
-      ]
-    },
-    "ops": {
-      "what": "{name} prices the things a small team spends on people. {desc} The salary you agree is not the cost of the hire, and the invoice you pay is not the cost of the freelancer.",
-      "formula": "The full cost of an employee is the salary plus provident fund, insurance, equipment, software and the time spent managing them. For a freelancer, it is the rate times the hours, plus the hours lost to briefing and revision. Utilisation — the share of paid hours that are actually billable — is what decides whether a team makes money.",
-      "when": [
-        "You are about to make a first hire and want the real monthly commitment.",
-        "You are comparing a freelancer against a full-time salary.",
-        "You want to know how many billable hours your team must sell to cover its own cost."
-      ],
-      "mistakes": [
-        "Budgeting for the salary only. The full cost is often 1.2 to 1.4 times the number you agreed.",
-        "Assuming a freelancer bills every hour you pay for.",
-        "Hiring ahead of the revenue that will pay for the hire."
-      ]
-    },
-    "investor": {
-      "what": "{name} looks at an investment from the investor's side. {desc} Founders spend a lot of time on valuation and very little on the return the money has to earn, which is the number that actually closes a round.",
-      "formula": "Return on investment is the gain divided by what was put in, shown as a percentage. A multiple is the final value divided by the amount invested — 3x means you got three rupees back for every one. The annualised return converts that multiple into a yearly rate, which is the only fair way to compare a three-year exit with a ten-year one.",
-      "when": [
-        "You are comparing two investments held for different lengths of time.",
-        "You are modelling what an investor needs to see for your round to make sense to them.",
-        "You are checking whether a fund's quoted return is as good as it sounds."
-      ],
-      "mistakes": [
-        "Comparing multiples without the holding period. 3x in three years beats 3x in ten.",
-        "Ignoring dilution. Your multiple is on the stake you still own, not the whole company.",
-        "Treating a paper valuation as cash. It is only a return when someone buys."
-      ]
-    },
-    "bonus": {
-      "what": "{name} puts a pitch through the same checks an investor would run. {desc} It is a rehearsal, not a verdict — the point is to find the weak number before the meeting does.",
-      "formula": "Each figure in the pitch is scored against a range that investors treat as normal: growth against what similar companies do, margin against the category, runway against the time a raise takes, and the ask against what the traction justifies. The tool combines the scores and names the lines that pull the total down.",
-      "when": [
-        "You have a deck and want a second opinion before you send it.",
-        "You are practising the pitch and want to know which slide will draw questions.",
-        "You are deciding whether you are ready to raise or should wait a quarter."
-      ],
-      "mistakes": [
-        "Reading a low score as a rejection. It is a list of things to fix or explain.",
-        "Tuning the inputs until the score looks good, which defeats the purpose.",
-        "Ignoring the weakest line because the total is high."
-      ]
-    },
-    "agency": {
-      "what": "{name} covers the economics of running client work. {desc} Agencies fail on two things: too much unbilled time, and clients who leave faster than new ones arrive.",
-      "formula": "Profit is the fees you bill minus the cost of delivering the work, which is mostly people's time. Utilisation is billable hours divided by available hours. Churn is the clients lost divided by the clients you started with, and a churn rate doubles as a rough measure of how long a client stays. The tool shows each of these so you can see which one is leaking.",
-      "when": [
-        "You are pricing a retainer and want to know the margin before you quote.",
-        "A month felt full but the profit was thin.",
-        "You want to know how many clients you must win just to replace the ones leaving."
-      ],
-      "mistakes": [
-        "Quoting a retainer from a monthly cost without allowing for unbilled revision rounds.",
-        "Treating a client as permanent. At 3% monthly churn, half are gone in under two years.",
-        "Counting total hours worked instead of billable ones."
-      ]
-    },
-    "realestate": {
-      "what": "{name} runs the numbers on a property purchase or a rental. {desc} Property is the largest purchase most families make, and the costs that surprise people are the ones paid on the day of registration.",
-      "formula": "The cost of buying is the price plus stamp duty, registration and any brokerage. Rental yield is the annual rent divided by what the property cost, shown as a percentage. Return on a sale is the sale price minus the purchase price and costs, divided by the money you put in. A loan changes the picture: the EMI includes interest, so early payments barely reduce the principal.",
-      "when": [
-        "You are comparing two properties and want to see which one earns more.",
-        "You want to know the cash you need on the day of registration, not just the price.",
-        "You are deciding between buying and continuing to rent."
-      ],
-      "mistakes": [
-        "Forgetting stamp duty and registration, which together can add 6% to 8% to the price.",
-        "Comparing gross rent with the EMI. Rent is before maintenance, tax and vacancy.",
-        "Assuming prices only rise, and leaving no room for a slow year."
-      ]
-    },
-    "taxwealth": {
-      "what": "{name} estimates tax and long-term saving figures. {desc} The rules change, and they treat different kinds of income differently, so these tools show the arithmetic rather than a fixed answer.",
-      "formula": "Income tax is worked out slab by slab: the rate applies only to the part of your income that falls in each band, not to the whole amount. Deductions reduce the income the slabs apply to. For savings, the future value is the amount you put in plus the interest or returns it earns, with the returns compounding if they are reinvested. The tool shows the total you contribute and the total it grows to, so you can see the split.",
-      "when": [
-        "You are choosing between the old and new tax regimes.",
-        "You want to know what a monthly saving becomes over ten or twenty years.",
-        "You are checking a payslip or a Form 16 against the rules."
-      ],
-      "mistakes": [
-        "Assuming a higher slab taxes all your income at that rate. It does not.",
-        "Comparing a tax-free option with a taxed one without adjusting for the tax.",
-        "Treating a projected return as guaranteed."
-      ]
-    },
-    "dailyfun": {
-      "what": "{name} is one of the lighter tools on the site. {desc} It is here for the fun of it — a quick answer to a question that has no bearing on your money.",
-      "formula": "These tools follow their own published rule — a name-based pairing, a date arithmetic, a number spelled out in words. There is no financial formula involved and nothing is stored.",
-      "when": [
-        "You are curious and want a quick answer.",
-        "You want to settle a friendly argument.",
-        "You are sharing something with friends."
-      ],
-      "mistakes": [
-        "Making a real decision on the strength of a fun result.",
-        "Reading a fun score as advice of any kind."
-      ]
-    }
+ "_comment": "Long-form guide copy for the tool pages, keyed by calculator id. 'what' is 2 paragraphs, 'formula' is how the maths works, 'mistakes' is a list of common errors. gen_tool_pages.py renders these under the calculator card.",
+ "cats": {
+  "everyday": {
+   "what": "{name} answers one of the small questions that come up every week — a percentage off a bill, a share of a total, a simple interest figure. It exists so you do not have to reach for a calculator app, a notebook and a formula you half-remember. {desc} Everything runs inside your browser, so no figure you type is sent anywhere.",
+   "formula": "Every one of these tools is one arithmetic rule applied to the numbers you type. A percentage is the part divided by the whole, multiplied by 100. Simple interest is principal x rate x time. Compound interest adds the interest back to the principal at each period, so the base grows. The calculator applies the rule and shows you the result, the intermediate steps and, where it matters, the total you will actually pay or receive.",
+   "when": [
+    "You are checking a shop bill or an online discount before you pay.",
+    "You are working out a share of a total — a partner's cut, a deposit, a commission.",
+    "You want a quick sanity check before you commit to a number on a form."
+   ],
+   "mistakes": [
+    "Adding percentages together. A 10% rise followed by a 10% fall is not back to where you started — it is 99% of it.",
+    "Using simple interest for anything longer than a year. Banks compound, so a simple-interest answer will understate what you owe.",
+    "Rounding too early. Keep the full figure and round only the answer you write down."
+   ]
   },
-  "calcs": {
-    "tam": {
-      "what": "TAM / SAM / SOM sizes a market before you commit money to it. TAM is everyone who could ever buy this kind of product. SAM is the slice you can actually reach — the cities you ship to, the customers your price suits. SOM is the slice you can realistically win in the next few years with the team and budget you have. Investors ask for all three because a huge TAM with a tiny SOM tells them the market exists but you have no route into it.",
-      "formula": "SAM is TAM times the share of it you can serve, as a percentage. SOM is SAM times the share of that you expect to win, also as a percentage. The tool multiplies through and shows both. The important part is the assumption behind each percentage: if you claim 40% of a reachable market, you are claiming to be the biggest player in it, which needs a reason.",
-      "when": [
-        "You are writing the market slide for a pitch and want numbers that survive a question.",
-        "You are deciding which customer segment to build for first.",
-        "You want to check whether the market you are aiming at is big enough to matter."
-      ],
-      "mistakes": [
-        "Quoting the whole TAM as your opportunity. It is the least useful of the three numbers on its own.",
-        "Claiming a SOM that would make you the market leader without a plan to get there.",
-        "Sizing the market in rupees when your customers buy in units, which hides how few buyers there are."
-      ],
-      "intro": "Take a market you could sell into. Here is how the three layers stack up.",
-      "outro": "The SOM is the number to defend. Anyone can claim a large TAM; the SOM is where you say how you actually get in."
-    },
-    "emi": {
-      "what": "The Loan EMI Calculator shows what a loan really costs per month and over its whole life. The EMI is the fixed amount you pay every month; it contains both interest and a repayment of the amount borrowed. Early payments are almost all interest, which is why a loan feels like it is not shrinking for the first few years.",
-      "formula": "The EMI is calculated so that every payment, compounded at the monthly rate over the full term, exactly clears the loan. The monthly rate is the annual rate divided by twelve, and the term is the number of months. Total interest is the EMI multiplied by the number of months, minus the amount borrowed. A longer term lowers the EMI but raises the total interest, which is the trade the calculator lets you test.",
-      "when": [
-        "You are comparing two loan offers with different rates or terms.",
-        "You want to know the monthly payment before you commit to a property.",
-        "You are deciding whether a longer term is worth the extra interest."
-      ],
-      "mistakes": [
-        "Choosing the offer with the lowest EMI without checking the total interest.",
-        "Forgetting the processing fee and insurance, which are added to the cost of borrowing.",
-        "Assuming the rate is fixed for the whole term when it is linked to a benchmark that moves."
-      ],
-      "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
-      "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property."
-    },
-    "savingsgoal": {
-      "what": "The Savings Goal Planner tells you how much to put aside each month to reach a target, or how long a monthly amount will take to get there. It is for a down payment, an emergency fund, a wedding or any goal with a number and a date attached.",
-      "formula": "The tool works from the target, what you already have, and what you can save each month. If you fix the monthly amount, it solves for the time; if you fix the time, it solves for the monthly amount. Where a return is included, the existing balance and each monthly contribution both earn it, which is why the total you contribute is less than the goal.",
-      "when": [
-        "You have a target amount and a date and want to know the monthly number.",
-        "You are deciding whether to save more or push the date out.",
-        "You want to see how much of the goal your savings are doing versus the returns."
-      ],
-      "mistakes": [
-        "Ignoring inflation. A goal ten years away costs more than the same goal today.",
-        "Counting on a return that is not guaranteed, especially over a short period.",
-        "Saving whatever is left at the end of the month instead of a fixed amount on payday."
-      ],
-      "intro": "Say you want ₹5,00,000, you already have ₹1,00,000, and you can put aside ₹15,000 a month.",
-      "outro": "Change the monthly amount above and the time to the goal moves with it. Even a small increase, held for years, moves the date a long way."
-    },
-    "numwords": {
-      "what": "Number to Words spells a figure out in Indian English — lakh and crore rather than million and billion. It is for cheques, invoices, legal documents and any form that asks for the amount in words as well as figures.",
-      "formula": "The number is split from the left into crore, lakh, thousand and the final hundreds, because that is how the Indian system groups digits. Each group is then read as a number of up to three digits and joined with its scale word. Two and a half crore is 2,50,00,000, so the tool reads the groups rather than the individual digits.",
-      "when": [
-        "You are filling in a cheque and need the amount in words.",
-        "You are drafting an invoice or an agreement that requires both forms.",
-        "You want to check that a figure written in words matches the digits."
-      ],
-      "mistakes": [
-        "Mixing the Indian and international systems in one document.",
-        "Writing the words differently from the figures, which is the kind of mismatch a bank will query.",
-        "Dropping the 'only' at the end, which is the convention on cheques."
-      ],
-      "intro": "Type a figure and the tool writes it the way an Indian cheque expects.",
-      "outro": "Always check the words against the digits before you sign. A mismatch is what causes a payment to be held up."
-    },
-    "marketshare": {
-      "what": "The Market Share Calculator answers one question in plain numbers: out of everything sold in your market, how much is yours? Enter the total units sold in the market and the units you sold. That is it. You get your share as a percentage, plus how many units everyone else sold.",
-      "formula": "Your market share is your units divided by the total units, times 100. If 10,000 units were sold in the market and 6,000 of them were yours, your share is 6,000 / 10,000 = 60%. There is no compounding and no hidden step — it is one division. The tool also shows the other side: 4,000 units, or 40%, went to everyone else.",
-      "when": [
-        "You want to know how big you are in your own market, not in revenue terms.",
-        "You are checking whether a claim like 'we are the market leader' is actually true.",
-        "You are setting a target and want a starting share to grow from."
-      ],
-      "mistakes": [
-        "Mixing units with rupees. Count units against units, or money against money, never one of each.",
-        "Using a market figure that is bigger than the market you actually compete in, which flatters the share.",
-        "Reading a big share as automatically good — a 60% share of a tiny market is still a tiny business."
-      ],
-      "intro": "Suppose 10,000 units were sold in your market and 6,000 of them were yours. Here is your share.",
-      "outro": "6,000 out of 10,000 is 60%. Change either number above and the share updates as you type — the arithmetic stays that simple."
-    }
+  "profit": {
+   "what": "{name} shows what a business actually keeps, not what it collects. Revenue is the easy number and the least useful one on its own. {desc} This tool puts the costs back in, so you can see the margin that funds the next order, the next hire and the next bad month.",
+   "formula": "Profit is revenue minus every cost that went into earning it. Margin is that profit divided by revenue, shown as a percentage. A 20% margin means twenty paise of every rupee of sales stays with you; the rest is eaten by goods, ads, salaries, fees and tax. Change one cost and the margin moves, which is why the tool lets you vary each line separately rather than only the total.",
+   "when": [
+    "You are setting a price and want to know if the margin survives your real costs.",
+    "A month looked busy but the bank balance did not move, and you want to find out why.",
+    "You are comparing two products or two clients to decide where to put your effort."
+   ],
+   "mistakes": [
+    "Counting revenue as profit. A crore of sales at a 2% margin is twenty lakh of profit — and one bad month can wipe it out.",
+    "Forgetting the costs that arrive late: GST, marketplace fees, returns, payment-gateway charges.",
+    "Setting a price by copying a competitor whose costs you cannot see."
+   ]
+  },
+  "val": {
+   "what": "{name} works through the arithmetic of a funding round or a company valuation. {desc} These are the numbers founders and investors argue about, and most of the arguments come down to one of the figures this tool calculates.",
+   "formula": "Valuation is a price agreed for the whole company. Pre-money is that price before new money goes in; post-money is after. When an investor puts in an amount for a stake, the post-money is the investment divided by the stake, and the pre-money is post-money minus the investment. Revenue multiples, EBITDA multiples and implied values are different ways of arriving at the same price from the company's own numbers.",
+   "when": [
+    "You are preparing for a fundraise and want to know what your numbers imply.",
+    "You have a term sheet and want to check the stake it actually gives away.",
+    "You are comparing your valuation against what similar companies raised at."
+   ],
+   "mistakes": [
+    "Reading a valuation without the stake. A high valuation that costs half the company is worse than a lower one that costs a tenth.",
+    "Comparing a revenue multiple for a fast grower with one for a slow, profitable business.",
+    "Forgetting that a post-money valuation includes the new money, so the founder's percentage falls."
+   ]
+  },
+  "cust": {
+   "what": "{name} measures the economics of a single customer. {desc} These numbers decide whether growth makes money or burns it, and they are the first thing a serious investor checks.",
+   "formula": "The cost to acquire a customer (CAC) is everything you spend on sales and marketing divided by the customers it won. Lifetime value (LTV) is what one customer brings in over the whole relationship — average order value, times how often they buy, times how many years they stay, times your gross margin. Divide LTV by CAC and you have the ratio. Around 3:1 is the common rule of thumb; below 1:1 you lose money on every customer you win.",
+   "when": [
+    "You are about to increase your ad budget and want to know if it will pay back.",
+    "A channel is winning customers cheaply and you want to know if that will last.",
+    "You are preparing a pitch and need the unit-economics slide."
+   ],
+   "mistakes": [
+    "Using revenue for LTV instead of gross margin. The customer brings in sales, not profit.",
+    "Counting only ad spend as CAC and leaving out salaries, tools and agency fees.",
+    "Assuming a customer stays for years when your data shows most leave after a few months."
+   ]
+  },
+  "growth": {
+   "what": "{name} tracks the two things that kill young businesses: running out of cash, and growing faster than the cash can follow. {desc} Growth is a headline; cash is the oxygen.",
+   "formula": "Burn is the cash a business spends each month beyond what it earns. Runway is the cash you hold divided by that monthly burn — the number of months before the money is gone. Run rate takes one period's revenue and scales it to a year, which is useful for comparison but assumes the period repeats. Break-even is the sales level at which contribution covers your fixed costs, so profit is zero and every extra sale is profit.",
+   "when": [
+    "You want to know how many months you have before you must raise or cut.",
+    "You are deciding between hiring now and waiting a quarter.",
+    "A month was unusually strong and you want to compare it fairly with the rest of the year."
+   ],
+   "mistakes": [
+    "Measuring runway from revenue instead of cash in the bank.",
+    "Treating run rate as a forecast. It is a snapshot, not a promise.",
+    "Cutting the spending that wins customers first. That shortens runway now and shrinks the business later."
+   ]
+  },
+  "pricing": {
+   "what": "{name} works backwards from what you can charge to what you keep. {desc} Pricing is the fastest lever a small business has — a one-rupee change per unit drops straight to profit — and the one most owners set by guesswork.",
+   "formula": "Start with the price the customer pays, then subtract everything between that price and your bank account: marketplace commission, shipping, packaging, payment fees, returns and discounts. What is left is your contribution. Subtract the cost of the goods and you have the profit on one unit. The tool shows each subtraction so you can see which one is doing the damage.",
+   "when": [
+    "You are launching a product and need a price that leaves a real margin.",
+    "A marketplace raised its commission and you want to know how much price must move.",
+    "You are about to run a discount and want to see what it does to profit."
+   ],
+   "mistakes": [
+    "Setting a price from cost plus a markup, without checking what the market will pay.",
+    "Ignoring returns. In some categories, a fifth of orders come back and the shipping is yours to pay twice.",
+    "Discounting the price without checking the extra volume needed to stand still."
+   ]
+  },
+  "ops": {
+   "what": "{name} prices the things a small team spends on people. {desc} The salary you agree is not the cost of the hire, and the invoice you pay is not the cost of the freelancer.",
+   "formula": "The full cost of an employee is the salary plus provident fund, insurance, equipment, software and the time spent managing them. For a freelancer, it is the rate times the hours, plus the hours lost to briefing and revision. Utilisation — the share of paid hours that are actually billable — is what decides whether a team makes money.",
+   "when": [
+    "You are about to make a first hire and want the real monthly commitment.",
+    "You are comparing a freelancer against a full-time salary.",
+    "You want to know how many billable hours your team must sell to cover its own cost."
+   ],
+   "mistakes": [
+    "Budgeting for the salary only. The full cost is often 1.2 to 1.4 times the number you agreed.",
+    "Assuming a freelancer bills every hour you pay for.",
+    "Hiring ahead of the revenue that will pay for the hire."
+   ]
+  },
+  "investor": {
+   "what": "{name} looks at an investment from the investor's side. {desc} Founders spend a lot of time on valuation and very little on the return the money has to earn, which is the number that actually closes a round.",
+   "formula": "Return on investment is the gain divided by what was put in, shown as a percentage. A multiple is the final value divided by the amount invested — 3x means you got three rupees back for every one. The annualised return converts that multiple into a yearly rate, which is the only fair way to compare a three-year exit with a ten-year one.",
+   "when": [
+    "You are comparing two investments held for different lengths of time.",
+    "You are modelling what an investor needs to see for your round to make sense to them.",
+    "You are checking whether a fund's quoted return is as good as it sounds."
+   ],
+   "mistakes": [
+    "Comparing multiples without the holding period. 3x in three years beats 3x in ten.",
+    "Ignoring dilution. Your multiple is on the stake you still own, not the whole company.",
+    "Treating a paper valuation as cash. It is only a return when someone buys."
+   ]
+  },
+  "bonus": {
+   "what": "{name} puts a pitch through the same checks an investor would run. {desc} It is a rehearsal, not a verdict — the point is to find the weak number before the meeting does.",
+   "formula": "Each figure in the pitch is scored against a range that investors treat as normal: growth against what similar companies do, margin against the category, runway against the time a raise takes, and the ask against what the traction justifies. The tool combines the scores and names the lines that pull the total down.",
+   "when": [
+    "You have a deck and want a second opinion before you send it.",
+    "You are practising the pitch and want to know which slide will draw questions.",
+    "You are deciding whether you are ready to raise or should wait a quarter."
+   ],
+   "mistakes": [
+    "Reading a low score as a rejection. It is a list of things to fix or explain.",
+    "Tuning the inputs until the score looks good, which defeats the purpose.",
+    "Ignoring the weakest line because the total is high."
+   ]
+  },
+  "agency": {
+   "what": "{name} covers the economics of running client work. {desc} Agencies fail on two things: too much unbilled time, and clients who leave faster than new ones arrive.",
+   "formula": "Profit is the fees you bill minus the cost of delivering the work, which is mostly people's time. Utilisation is billable hours divided by available hours. Churn is the clients lost divided by the clients you started with, and a churn rate doubles as a rough measure of how long a client stays. The tool shows each of these so you can see which one is leaking.",
+   "when": [
+    "You are pricing a retainer and want to know the margin before you quote.",
+    "A month felt full but the profit was thin.",
+    "You want to know how many clients you must win just to replace the ones leaving."
+   ],
+   "mistakes": [
+    "Quoting a retainer from a monthly cost without allowing for unbilled revision rounds.",
+    "Treating a client as permanent. At 3% monthly churn, half are gone in under two years.",
+    "Counting total hours worked instead of billable ones."
+   ]
+  },
+  "realestate": {
+   "what": "{name} runs the numbers on a property purchase or a rental. {desc} Property is the largest purchase most families make, and the costs that surprise people are the ones paid on the day of registration.",
+   "formula": "The cost of buying is the price plus stamp duty, registration and any brokerage. Rental yield is the annual rent divided by what the property cost, shown as a percentage. Return on a sale is the sale price minus the purchase price and costs, divided by the money you put in. A loan changes the picture: the EMI includes interest, so early payments barely reduce the principal.",
+   "when": [
+    "You are comparing two properties and want to see which one earns more.",
+    "You want to know the cash you need on the day of registration, not just the price.",
+    "You are deciding between buying and continuing to rent."
+   ],
+   "mistakes": [
+    "Forgetting stamp duty and registration, which together can add 6% to 8% to the price.",
+    "Comparing gross rent with the EMI. Rent is before maintenance, tax and vacancy.",
+    "Assuming prices only rise, and leaving no room for a slow year."
+   ]
+  },
+  "taxwealth": {
+   "what": "{name} estimates tax and long-term saving figures. {desc} The rules change, and they treat different kinds of income differently, so these tools show the arithmetic rather than a fixed answer.",
+   "formula": "Income tax is worked out slab by slab: the rate applies only to the part of your income that falls in each band, not to the whole amount. Deductions reduce the income the slabs apply to. For savings, the future value is the amount you put in plus the interest or returns it earns, with the returns compounding if they are reinvested. The tool shows the total you contribute and the total it grows to, so you can see the split.",
+   "when": [
+    "You are choosing between the old and new tax regimes.",
+    "You want to know what a monthly saving becomes over ten or twenty years.",
+    "You are checking a payslip or a Form 16 against the rules."
+   ],
+   "mistakes": [
+    "Assuming a higher slab taxes all your income at that rate. It does not.",
+    "Comparing a tax-free option with a taxed one without adjusting for the tax.",
+    "Treating a projected return as guaranteed."
+   ]
+  },
+  "dailyfun": {
+   "what": "{name} is one of the lighter tools on the site. {desc} It is here for the fun of it — a quick answer to a question that has no bearing on your money.",
+   "formula": "These tools follow their own published rule — a name-based pairing, a date arithmetic, a number spelled out in words. There is no financial formula involved and nothing is stored.",
+   "when": [
+    "You are curious and want a quick answer.",
+    "You want to settle a friendly argument.",
+    "You are sharing something with friends."
+   ],
+   "mistakes": [
+    "Making a real decision on the strength of a fun result.",
+    "Reading a fun score as advice of any kind."
+   ]
   }
+ },
+ "calcs": {
+  "tam": {
+   "what": "TAM / SAM / SOM sizes a market before you commit money to it. TAM is everyone who could ever buy this kind of product. SAM is the slice you can actually reach — the cities you ship to, the customers your price suits. SOM is the slice you can realistically win in the next few years with the team and budget you have. Investors ask for all three because a huge TAM with a tiny SOM tells them the market exists but you have no route into it.",
+   "formula": "SAM is TAM times the share of it you can serve, as a percentage. SOM is SAM times the share of that you expect to win, also as a percentage. The tool multiplies through and shows both. The important part is the assumption behind each percentage: if you claim 40% of a reachable market, you are claiming to be the biggest player in it, which needs a reason.",
+   "when": [
+    "You are writing the market slide for a pitch and want numbers that survive a question.",
+    "You are deciding which customer segment to build for first.",
+    "You want to check whether the market you are aiming at is big enough to matter."
+   ],
+   "mistakes": [
+    "Quoting the whole TAM as your opportunity. It is the least useful of the three numbers on its own.",
+    "Claiming a SOM that would make you the market leader without a plan to get there.",
+    "Sizing the market in rupees when your customers buy in units, which hides how few buyers there are."
+   ],
+   "intro": "Take a market you could sell into. Here is how the three layers stack up.",
+   "outro": "The SOM is the number to defend. Anyone can claim a large TAM; the SOM is where you say how you actually get in."
+  },
+  "emi": {
+   "what": "The Loan EMI Calculator shows what a loan really costs per month and over its whole life. The EMI is the fixed amount you pay every month; it contains both interest and a repayment of the amount borrowed. Early payments are almost all interest, which is why a loan feels like it is not shrinking for the first few years.",
+   "formula": "The EMI is calculated so that every payment, compounded at the monthly rate over the full term, exactly clears the loan. The monthly rate is the annual rate divided by twelve, and the term is the number of months. Total interest is the EMI multiplied by the number of months, minus the amount borrowed. A longer term lowers the EMI but raises the total interest, which is the trade the calculator lets you test.",
+   "when": [
+    "You are comparing two loan offers with different rates or terms.",
+    "You want to know the monthly payment before you commit to a property.",
+    "You are deciding whether a longer term is worth the extra interest."
+   ],
+   "mistakes": [
+    "Choosing the offer with the lowest EMI without checking the total interest.",
+    "Forgetting the processing fee and insurance, which are added to the cost of borrowing.",
+    "Assuming the rate is fixed for the whole term when it is linked to a benchmark that moves."
+   ],
+   "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
+   "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property."
+  },
+  "savingsgoal": {
+   "what": "The Savings Goal Planner tells you how much to put aside each month to reach a target, or how long a monthly amount will take to get there. It is for a down payment, an emergency fund, a wedding or any goal with a number and a date attached.",
+   "formula": "The tool works from the target, what you already have, and what you can save each month. If you fix the monthly amount, it solves for the time; if you fix the time, it solves for the monthly amount. Where a return is included, the existing balance and each monthly contribution both earn it, which is why the total you contribute is less than the goal.",
+   "when": [
+    "You have a target amount and a date and want to know the monthly number.",
+    "You are deciding whether to save more or push the date out.",
+    "You want to see how much of the goal your savings are doing versus the returns."
+   ],
+   "mistakes": [
+    "Ignoring inflation. A goal ten years away costs more than the same goal today.",
+    "Counting on a return that is not guaranteed, especially over a short period.",
+    "Saving whatever is left at the end of the month instead of a fixed amount on payday."
+   ],
+   "intro": "Say you want ₹5,00,000, you already have ₹1,00,000, and you can put aside ₹15,000 a month.",
+   "outro": "Change the monthly amount above and the time to the goal moves with it. Even a small increase, held for years, moves the date a long way."
+  },
+  "numwords": {
+   "what": "Number to Words spells a figure out in Indian English — lakh and crore rather than million and billion. It is for cheques, invoices, legal documents and any form that asks for the amount in words as well as figures.",
+   "formula": "The number is split from the left into crore, lakh, thousand and the final hundreds, because that is how the Indian system groups digits. Each group is then read as a number of up to three digits and joined with its scale word. Two and a half crore is 2,50,00,000, so the tool reads the groups rather than the individual digits.",
+   "when": [
+    "You are filling in a cheque and need the amount in words.",
+    "You are drafting an invoice or an agreement that requires both forms.",
+    "You want to check that a figure written in words matches the digits."
+   ],
+   "mistakes": [
+    "Mixing the Indian and international systems in one document.",
+    "Writing the words differently from the figures, which is the kind of mismatch a bank will query.",
+    "Dropping the 'only' at the end, which is the convention on cheques."
+   ],
+   "intro": "Type a figure and the tool writes it the way an Indian cheque expects.",
+   "outro": "Always check the words against the digits before you sign. A mismatch is what causes a payment to be held up."
+  },
+  "marketshare": {
+   "what": "The Market Share Calculator answers one question in plain numbers: out of everything sold in your market, how much is yours? Enter the total units sold in the market and the units you sold. That is it. You get your share as a percentage, plus how many units everyone else sold.",
+   "formula": "Your market share is your units divided by the total units, times 100. If 10,000 units were sold in the market and 6,000 of them were yours, your share is 6,000 / 10,000 = 60%. There is no compounding and no hidden step — it is one division. The tool also shows the other side: 4,000 units, or 40%, went to everyone else.",
+   "when": [
+    "You want to know how big you are in your own market, not in revenue terms.",
+    "You are checking whether a claim like 'we are the market leader' is actually true.",
+    "You are setting a target and want a starting share to grow from."
+   ],
+   "mistakes": [
+    "Mixing units with rupees. Count units against units, or money against money, never one of each.",
+    "Using a market figure that is bigger than the market you actually compete in, which flatters the share.",
+    "Reading a big share as automatically good — a 60% share of a tiny market is still a tiny business."
+   ],
+   "intro": "Suppose 10,000 units were sold in your market and 6,000 of them were yours. Here is your share.",
+   "outro": "6,000 out of 10,000 is 60%. Change either number above and the share updates as you type — the arithmetic stays that simple."
+  },
+  "revmul": {
+   "what": "The Revenue Multiple divides what a company is being valued at by its yearly revenue. If a business earns ₹1 crore a year and someone offers ₹5 crore for it, the multiple is 5x. It is the quickest sanity check in a valuation because revenue is the hardest number to argue about: it is on the invoices, not on an assumption sheet. It says nothing about profit, so it is only meaningful next to a margin figure.",
+   "formula": "Revenue Multiple = Valuation ÷ Annual Revenue. The tool takes the valuation you enter and divides it by the yearly revenue, then shows the answer as a number of times. A 3x multiple means the buyer is paying three rupees for every one rupee of yearly sales. Change either figure and the multiple moves, which is the point: the same ₹5 crore price is cheap at 2x and expensive at 12x.",
+   "when": [
+    "A founder has an offer or a term sheet and wants to know whether the price is in a normal range.",
+    "You are comparing two companies in the same line of business and revenue is the only figure you have for both.",
+    "You are setting your own asking price and want to work backwards from a multiple buyers in your category actually pay."
+   ],
+   "mistakes": [
+    "Using the wrong revenue. A buyer means the last twelve months, or the next twelve, and the two can differ by 40% in a growing business — the multiple swings with it.",
+    "Reading a high multiple as good news. A 10x revenue price on a business with 5% margins is worse than a 3x price on one with 30% margins.",
+    "Mixing recurring and one-off revenue. Subscription revenue earns a far higher multiple than project revenue, so a blended figure misleads both sides."
+   ]
+  },
+  "ebitdamul": {
+   "what": "The EBITDA Multiple divides a valuation by EBITDA — earnings before interest, tax, depreciation and amortisation. It is the multiple most small-business deals are actually priced on, because it ignores how the current owner financed the business and how the accountant spread the cost of equipment. Two identical shops with different loans and different depreciation policies show the same EBITDA, so the multiple compares like with like.",
+   "formula": "EBITDA Multiple = Valuation ÷ EBITDA. The tool divides the valuation you enter by the EBITDA figure and shows the result in times. A 6x multiple means the buyer pays six rupees for every one rupee of yearly operating profit. Because EBITDA is a profit measure and revenue is not, this multiple is always lower than the revenue multiple for the same deal.",
+   "when": [
+    "You are selling or buying a business and want a price that a lender or an investor will recognise as normal.",
+    "You are comparing an offer against the 4-8x range most small business deals fall in.",
+    "You want to check what EBITDA the business must reach for the asking price to be reasonable."
+   ],
+   "mistakes": [
+    "Adding back costs that are real. A one-off saving the owner made by not paying himself is not a permanent add-back, and buyers discount it.",
+    "Comparing an EBITDA multiple to a revenue multiple. They measure different things; a 6x EBITDA price is not 'cheaper' than a 3x revenue price without the margin between them.",
+    "Using a stale EBITDA. One good year lifts the multiple's denominator and makes an average business look cheap."
+   ]
+  },
+  "compint": {
+   "what": "Compound Interest works out what an amount grows to when the interest is added back and earns interest itself. ₹10,000 at 8% for five years is not ₹14,000; it is more, because each year's interest joins the balance. The tool also takes how many times a year the interest compounds, which is the part most people miss: the same rate paid monthly ends higher than the same rate paid once a year.",
+   "formula": "Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Rate is the yearly percentage, Times is how often interest is added in a year (1, 4 or 12), and Years is the term. The tool subtracts the principal from the total to show the interest earned on its own. Raising the Times figure raises the total for the same headline rate.",
+   "when": [
+    "You are comparing a fixed deposit that compounds quarterly with one that compounds monthly.",
+    "You are projecting what a monthly SIP or a lump sum grows to over several years.",
+    "You want to see how much of a long loan's total cost is interest rather than principal."
+   ],
+   "mistakes": [
+    "Using simple interest for a multi-year figure. Banks compound, so a simple-interest answer always understates what you will owe or earn.",
+    "Ignoring how often it compounds. 8% paid monthly is not the same as 8% paid yearly, and the gap widens with the term.",
+    "Forgetting that the rate is annual. Entering a monthly rate in the yearly field multiplies the answer by twelve times over."
+   ]
+  }
+ }
 }

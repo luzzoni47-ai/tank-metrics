@@ -253,6 +253,48 @@
     "CGST aur SGST ko alag-alag rate samajh lena; dono mil kar ek hi rate banate hain.",
     "Ye maan lena ki har product par ek hi GST rate hai — rates category ke hisaab se badalte hain."
    ]
+  },
+  "revmul": {
+   "what": "Revenue Multiple batata hai ki company ki valuation uski saalana revenue ka kitna guna hai. Agar business ₹1 crore kamata hai aur koi ₹5 crore de raha hai, to multiple 5x hai. Ye valuation ka sabse tez sanity check hai kyunki revenue par bahas nahi hoti — wo invoice par likha hota hai, kisi assumption sheet par nahi. Profit ke baare me ye kuch nahi batata, isliye isse margin ke saath hi padho.",
+   "formula": "Revenue Multiple = Valuation ÷ Annual Revenue. Tool aapki daali valuation ko saalana revenue se divide karta hai aur jawab times me dikhata hai. 3x ka matlab hai buyer har ek rupaye ki saalana bikri par teen rupaye de raha hai. Koi bhi figure badlo to multiple badal jaata hai — yahi baat hai: wahi ₹5 crore ka price 2x par sasta hai aur 12x par mehenga.",
+   "when": [
+    "Jab founder ke paas offer ya term sheet ho aur wo jaanna chahe ki price normal range me hai ya nahi.",
+    "Jab aap ek hi business ke do companies compare kar rahe ho aur dono ka sirf revenue figure available ho.",
+    "Jab aap apna asking price tay kar rahe ho aur chahte ho ki category me buyers jo multiple dete hain usse peeche chalo."
+   ],
+   "mistakes": [
+    "Galat revenue lena. Buyer ka matlab hota hai pichhle barah mahine ya agle barah, aur badhti business me dono me 40% ka farak ho sakta hai — multiple uske saath hilta hai.",
+    "High multiple ko achhi khabar maan lena. 5% margin wali business par 10x revenue ka price, 30% margin wali par 3x se kharab hai.",
+    "Recurring aur one-off revenue mila dena. Subscription revenue ko project revenue se kaafi zyada multiple milta hai, isliye blended figure dono taraf ko galat batata hai."
+   ]
+  },
+  "ebitdamul": {
+   "what": "EBITDA Multiple valuation ko EBITDA se divide karta hai — earnings before interest, tax, depreciation aur amortisation. Chhote business deals me zyadatar price isi multiple par tay hota hai, kyunki ye ignore karta hai ki current owner ne business ko kaise finance kiya aur accountant ne equipment ki cost kaise phailayi. Do same dukaan, alag loan aur alag depreciation policy ke saath, ek hi EBITDA dikhati hain, isliye multiple like-to-like compare karta hai.",
+   "formula": "EBITDA Multiple = Valuation ÷ EBITDA. Tool aapki valuation ko EBITDA se divide karke times me dikhata hai. 6x ka matlab hai buyer saalana operating profit ke har ek rupaye par chhah rupaye de raha hai. Kyunki EBITDA profit ka measure hai aur revenue nahi, isliye same deal par ye multiple revenue multiple se hamesha kam hota hai.",
+   "when": [
+    "Jab aap business bech ya kharid rahe ho aur aisa price chahiye jo lender ya investor ko normal lage.",
+    "Jab aap kisi offer ko 4-8x range se compare kar rahe ho jisme zyadatar chhote business deals aate hain.",
+    "Jab aap dekhna chahte ho ki asking price sahi lagne ke liye business ko kitna EBITDA chahiye."
+   ],
+   "mistakes": [
+    "Aisi costs add back karna jo asli hain. Owner ne khud ko salary na dekar jo one-off bachat ki, wo permanent add-back nahi hoti, aur buyers usse discount karte hain.",
+    "EBITDA multiple ko revenue multiple se compare karna. Dono alag cheez naapte hain; 6x EBITDA price, 3x revenue price se 'sasta' nahi hai bina margin dekhe.",
+    "Purana EBITDA use karna. Ek achha saal multiple ke denominator ko badha deta hai aur average business sasta dikhta hai."
+   ]
+  },
+  "compint": {
+   "what": "Compound Interest batata hai ki koi amount kitna badhta hai jab byaaj wapas principal me jud jaata hai aur khud byaaj kamata hai. ₹10,000, 8% par paanch saal me ₹14,000 nahi hota; usse zyada hota hai, kyunki har saal ka byaaj balance me jud jaata hai. Tool ye bhi leta hai ki saal me kitni baar byaaj judta hai, aur yahi baat log miss karte hain: wahi rate mahine-mahine dene par saal me ek baar dene se zyada par pahunchta hai.",
+   "formula": "Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Rate saalana percentage hai, Times batata hai saal me kitni baar byaaj judta hai (1, 4 ya 12), aur Years term hai. Tool total se principal ghata kar sirf interest dikhata hai. Same headline rate par Times badhane se total badhta hai.",
+   "when": [
+    "Jab aap quarterly compound hone wali FD ko monthly compound hone wali FD se compare kar rahe ho.",
+    "Jab aap project kar rahe ho ki monthly SIP ya lump sum kuch saalon me kitna banega.",
+    "Jab aap dekhna chahte ho ki lambe loan ki kul cost me kitna hissa byaaj hai, principal nahi."
+   ],
+   "mistakes": [
+    "Multi-year figure ke liye simple interest lagana. Bank compound karte hain, isliye simple interest ka jawab hamesha kam dikhata hai ki aap kitna denge ya kamayenge.",
+    "Ye bhoolna ki byaaj kitni baar judta hai. 8% mahine-mahine dene ka matlab 8% saal me ek baar dene se alag hai, aur term badhne par gap badhta hai.",
+    "Ye bhoolna ki rate saalana hai. Yearly field me monthly rate daalne se jawab barah guna ho jaata hai."
+   ]
   }
  }
 }
