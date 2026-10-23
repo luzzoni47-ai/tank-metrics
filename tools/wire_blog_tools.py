@@ -78,6 +78,14 @@ MAP: dict[str, list[tuple[str, str, str]]] = {
         ("/contribution-margin", "Contribution Margin",
          "work out how much each sale adds towards fixed costs"),
     ],
+    "blog-discount-impact-on-profit-explained": [
+        ("/discount-impact-on-profit", "Discount Impact on Profit",
+         "see what a discount leaves of your profit before you announce it"),
+        ("/gross-profit-and-margin", "Gross Profit & Margin",
+         "get the margin the discount is eating into"),
+        ("/break-even-point", "Break-Even Point",
+         "find how many extra sales a discount forces you to make"),
+    ],
 }
 
 BACKLINK_MARKER = "<!-- tool-blog -->"
