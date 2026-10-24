@@ -55,8 +55,18 @@ fi
 echo "==> pushing main"
 git push -q origin main
 
-echo "==> building"
-npx next build >/dev/null
+# The deployment is built by Vercel from GitHub (gitSource below), so a local
+# `next build` ships nothing - it is only a pre-flight check. A fresh clone has
+# no node_modules (gitignored), and there `npx` tries to DOWNLOAD next from npm
+# (the wrong version) and hangs, which is what killed every automation run.
+# So: build only when the dependency tree is actually present, and never let it
+# hang the run.
+if [ -d node_modules ]; then
+  echo "==> building (local pre-flight)"
+  timeout 600 npx next build >/dev/null || echo "    local build failed; Vercel builds from GitHub anyway"
+else
+  echo "==> no node_modules; skipping the local build (Vercel builds from GitHub)"
+fi
 
 echo "==> deploying to production"
 DEPLOY=$(curl -s -X POST \

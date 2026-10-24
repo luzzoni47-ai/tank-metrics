@@ -59,10 +59,12 @@ calculators plus a small blog. Work only inside the cloned repo.
 7. Commit and push to `main` with `GITHUB_PERSONAL_ACCESS_TOKEN`
    (plain `GITHUB_TOKEN` is read-only and returns 403). If the push is
    rejected, `git pull --rebase origin main` first, then push again.
-8. Deploy to Vercel: `tools/deploy.sh /<slug>` (pass every new path). It builds,
+8. Deploy to Vercel: `tools/deploy.sh /<slug>` (pass every new path). It pushes,
    ships, waits for READY, points tankmetrics.in and www at the new deployment,
    checks the live paths, and announces each path through IndexNow afterwards -
    so the submit step below is already covered when you pass the slug.
+   Vercel builds the site from GitHub, so the script does NOT run a local
+   `next build`; never run one yourself either.
    A push to `main` does NOT trigger a Vercel build: the project's stored
    link.repoId is stale, so Vercel never matches the push. That is why the
    deploy is explicit.

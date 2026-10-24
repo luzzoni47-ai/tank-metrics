@@ -82,19 +82,21 @@ part that eats the clock, so do it first and keep it to a handful of searches.
    (plain `GITHUB_TOKEN` is read-only and returns 403). If the push is
    rejected, `git pull --rebase origin main` first, then push again.
 
-6. Deploy to Vercel: `tools/deploy.sh /<slug>` (pass every new path). It builds,
+6. Deploy to Vercel: `tools/deploy.sh /<slug>` (pass every new path). It pushes,
    ships, waits for READY, points tankmetrics.in and www at the new deployment,
    checks the live paths, and announces each path through IndexNow afterwards -
    so the submit step below is already covered when you pass the slug.
+   Vercel builds the site from GitHub, so the script does NOT run a local
+   `next build`; never run one yourself either.
    A push to `main` does NOT trigger a Vercel build: the project's stored
    link.repoId is stale, so Vercel never matches the push. That is why the
    deploy is explicit.
 
 7. Submit the new URL to the search engines. Google Search Console needs a
    Google login the agent does not have, but IndexNow does not. A sweep already
-   runs every 15 minutes and picks up anything the sitemap gained, so this step
-   is the belt to that suspenders - it announces the page the moment it is
-   live instead of within the quarter hour:
+   runs a few times a day and picks up anything the sitemap gained, so this step
+   is the belt to that suspenders - it announces the page the moment it is live
+   instead of waiting for the next sweep:
    `python3 tools/indexnow_submit.py /<slug>`
    It should print `HTTP 200 accepted` or `202`. A 403 means the key file
    `https://tankmetrics.in/<key>.txt` is not live yet - deploy first, then retry.
