@@ -91,6 +91,52 @@ def check_downloads() -> None:
             FAILURES.append(f"public/{rel} looks empty ({f.stat().st_size} bytes)")
 
 
+def check_licence_gate() -> None:
+    """The paid files must not be reachable by a plain link.
+
+    A public URL cannot be revoked, so the whole refund story depends on the
+    paid files having no public URL at all. If someone ever links the workbook
+    or the masterclass directly, this fails.
+    """
+    page = (SITE / "digital-products.html").read_text(encoding="utf-8")
+
+    if "licence-form" not in page:
+        FAILURES.append("the licence form is missing from the products page")
+    if "/site/licence.js" not in page:
+        FAILURES.append("licence.js is not loaded by the products page")
+
+    # The paid deliverables must never appear as a downloadable link.
+    for paid in ("Indian-Business-Financial-Model.xlsx",
+                 "Masterclass-Manual.pdf"):
+        if paid in page:
+            FAILURES.append(f"the paid file {paid} is named on the page")
+
+    # And they must not exist under public/ where the web server would serve
+    # them. The free sample and reckoner are allowed; the paid ones are not.
+    for name in ("Indian-Business-Financial-Model.xlsx",
+                 "Masterclass-Manual.pdf"):
+        hits = list((ROOT / "public").rglob(name))
+        if hits:
+            FAILURES.append(f"paid file served from public/: {hits[0]}")
+
+    js = ROOT / "public" / "site" / "licence.js"
+    if not js.exists():
+        FAILURES.append("public/site/licence.js is missing")
+    else:
+        src = js.read_text(encoding="utf-8")
+        if "action: 'redeem'" not in src and 'action: "redeem"' not in src:
+            FAILURES.append("licence.js does not call the redeem action")
+        if "text/plain" not in src:
+            FAILURES.append("licence.js must post text/plain to avoid a preflight")
+
+    # The Apps Script must gate every delivery behind a licence check.
+    gs = (ROOT / "tools" / "apps_script" / "Code.gs").read_text(encoding="utf-8")
+    for needed in ("function redeem", "licenceState", "function revoke",
+                   "ADMIN_SECRET", "function issue"):
+        if needed not in gs:
+            FAILURES.append(f"Code.gs is missing {needed}")
+
+
 def check_no_home_page_change() -> None:
     """The product link belongs in the footer, not the home hero or nav."""
     home = (SITE / "index.html").read_text(encoding="utf-8")
@@ -105,6 +151,7 @@ def main() -> int:
     check_footer_links()
     check_buy_button_honesty()
     check_downloads()
+    check_licence_gate()
     check_no_home_page_change()
     if FAILURES:
         print(f"FAIL: {len(FAILURES)} problem(s)")

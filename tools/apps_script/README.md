@@ -135,3 +135,93 @@ Check the browser console (F12 → Console) first — it names the exact problem
 Run it after any change to `contact.html`, `contact.js` or `style.css`. It is
 also part of all three daily automation prompts, so a daily run cannot quietly
 break the form.
+
+---
+
+# Licence-gated delivery (paid products)
+
+The paid workbook and masterclass are **not** on the website. There is no public
+URL for them anywhere. The only way to receive a file is to type a licence key,
+and the Apps Script checks that key before it hands anything over.
+
+That is what makes a refund work. Mark the licence `revoked` and the next
+redeem fails — for everyone, at once. A public link could never do that.
+
+## One-time setup
+
+1. In the **same** Apps Script project, change `ADMIN_SECRET` in `Code.gs` from
+   the placeholder to a long random string. Keep it private. It is only used
+   from your own terminal, never from the website.
+2. In Google Drive, make a folder named exactly
+   `Tank Metrics - Paid products` and upload:
+   - `Indian-Business-Financial-Model.xlsx`
+   - `Masterclass-Manual.pdf`
+
+   Leave the folder private. Do **not** share it or make it link-readable. The
+   script reads the files as you, so the buyer never sees the folder.
+3. **Deploy → Manage deployments → edit → Version: New version → Deploy.**
+   (A new deployment gets a new URL; editing the existing one keeps the URL the
+   website already has.)
+4. Put that `/exec` URL in `public/site/licence.js` as `ENDPOINT`, if it is not
+   already there from the contact form.
+
+## Selling one copy
+
+```bash
+export LICENCE_ENDPOINT="https://script.google.com/macros/s/.../exec"
+export LICENCE_SECRET="the-secret-you-set"
+
+python3 tools/licence_admin.py issue --email buyer@x.com --name "Ravi Kumar" \
+    --order RZP-12345 --plan bundle
+```
+
+That creates the key, appends a row to the `Licenses` sheet, and emails the
+buyer their key and the download link. `--plan` is one of `model`, `manual` or
+`bundle`.
+
+## Refunding one copy
+
+```bash
+python3 tools/licence_admin.py revoke --key TM-ABCD-EFGH-JKLM-NPQR \
+    --reason "refunded, order RZP-12345"
+```
+
+The key stops working immediately. The buyer sees *"This licence is no longer
+active"* if they try again. You can also just set the Status cell to `revoked`
+in the Sheet — same effect.
+
+## Seeing who has what
+
+```bash
+python3 tools/licence_admin.py list
+```
+
+## What this does and does not stop
+
+It **does** stop:
+
+- anyone without a key, since there is no public file URL to find
+- a refunded buyer, because the key is dead
+- casual resharing, because a key works on a limited number of downloads and
+  every copy is watermarked with the buyer's own name
+
+It does **not** stop a determined buyer from screenshotting pages or saving the
+file and passing it on. No download system can. The aim is that sharing is
+harder than paying, and that a leak can be traced back to the order.
+
+## Sheets the script uses
+
+- `Responses` — the contact form, unchanged
+- `Licenses` — one row per key: status, plan, expiry, downloads used
+- `Access log` — every redeem, including the ones that were refused
+
+## Tests
+
+```bash
+python3 tools/test_licence.py     # a key delivers; a refund cuts it off
+python3 tools/test_products.py    # no paid file is ever served from public/
+```
+
+`test_licence.py` starts a server that speaks the same protocol as `Code.gs`,
+then drives the real `licence_admin.py` against it. If a field is renamed on one
+side and not the other, the test fails.

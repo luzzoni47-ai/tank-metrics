@@ -49,6 +49,58 @@ def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace('"', "&quot;")
 
 
+PAGE_CSS = """
+.licence-form { display:flex; flex-wrap:wrap; gap:10px; align-items:flex-end;
+                margin:14px 0 6px; }
+.licence-form label { flex:1 1 100%; font-weight:600; font-size:.92rem;
+                      color:#1F3864; }
+.licence-form input { flex:1 1 260px; padding:12px 14px; font-size:1rem;
+                      font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+                      letter-spacing:.06em; text-transform:uppercase;
+                      border:1.5px solid #CBD5E1; border-radius:10px;
+                      background:#fff; }
+.licence-form input:focus { outline:none; border-color:#2E5C8A;
+                            box-shadow:0 0 0 3px rgba(46,92,138,.14); }
+.licence-form button { flex:0 0 auto; padding:12px 22px; font-size:1rem;
+                       font-weight:600; color:#fff; background:#1F3864;
+                       border:0; border-radius:10px; cursor:pointer; }
+.licence-form button:hover:not(:disabled) { background:#2E5C8A; }
+.licence-form button:disabled { opacity:.6; cursor:progress; }
+.licence-result { margin:12px 0; padding:14px 16px; border-radius:10px;
+                  font-size:.95rem; line-height:1.55; }
+.licence-info { background:#EEF4FB; border-left:4px solid #2E5C8A; }
+.licence-good { background:#EFF8F0; border-left:4px solid #138808; }
+.licence-bad  { background:#FDECEC; border-left:4px solid #C0392B; }
+.licence-result code { font-family:ui-monospace,Menlo,monospace;
+                       background:rgba(0,0,0,.06); padding:1px 5px;
+                       border-radius:4px; }
+"""
+
+LICENCE_ENDPOINT_SET = True  # matches ENDPOINT in public/site/licence.js
+
+
+def licence_block() -> str:
+    """The download box. Files are not linked here; a key unlocks them.
+
+    A public link cannot be revoked. A licence key can, which is what makes a
+    refund actually cut off access.
+    """
+    return """<h2>Already bought? Get your files</h2>
+<p>Enter the licence key from your order email. It looks like
+<code>TM-XXXX-XXXX-XXXX-XXXX</code>.</p>
+<form id="licence-form" class="licence-form" autocomplete="off">
+  <label for="licence-key">Licence key</label>
+  <input id="licence-key" name="key" type="text" inputmode="text"
+         placeholder="TM-XXXX-XXXX-XXXX-XXXX" spellcheck="false" required>
+  <button id="licence-submit" type="submit">Get my files</button>
+</form>
+<div id="licence-result" class="licence-result" hidden></div>
+<p class="amt-hint">Lost your key? Email
+<a href="mailto:hello@tankmetrics.in?subject=Lost%20licence%20key">hello@tankmetrics.in</a>
+with your order number and I will resend it.</p>
+<script src="/site/licence.js" defer></script>"""
+
+
 def buy_block() -> str:
     if PAYMENT_URL:
         return (f'<a class="btn-primary" href="{esc(PAYMENT_URL)}" '
@@ -86,24 +138,46 @@ SHEETS = [
 ]
 
 CHAPTERS = [
-    "How to read the model in ten minutes",
-    "Assumptions: top-down vs bottom-up, and what is realistic in India",
-    "Revenue: units, subscriptions and billable hours",
-    "GST inside the model — output, input credit and cash timing",
-    "TDS, TCS and why your cash and your profit differ",
-    "India payroll: CTC structure, PF, ESI, professional tax and gratuity",
-    "Working capital: DSO, DPO and inventory days",
-    "Depreciation and capital expenditure under the IT Act",
-    "Debt: term loans, moratorium, EMI and working-capital limits",
-    "Cap table and dilution maths — fully diluted, ESOP pool, preference shares",
-    "How the three statements tie together, step by step",
-    "Unit economics: CAC, LTV, payback and contribution margin",
-    "Burn, runway and default alive vs default dead",
-    "Valuation: DCF, multiples and the Indian SME reality",
-    "The metrics an investor actually checks",
-    "Fifteen mistakes almost every founder makes in a model",
-    "Glossary of 100+ finance terms",
-    "Case study: one Indian business, modelled screen by screen",
+    ("Part 1 — Foundations",
+     "The model in ten minutes; the three statements and why they tie; "
+     "top-down versus bottom-up assumptions."),
+    ("Part 2 — Your business type",
+     "One chapter each for manufacturing, trading, services, agency and SaaS, "
+     "with what drives revenue and where the cash hides."),
+    ("Part 3 — The Indian layer",
+     "GST, TDS, payroll with PF and ESI, depreciation under the IT Act, "
+     "working capital, and debt with a full EMI schedule."),
+    ("Part 4 — Value and money",
+     "Unit economics, break-even, valuation by DCF and multiple, fundraising, "
+     "burn and runway, and fifteen mistakes to avoid."),
+    ("Part 5 — Case study",
+     "One Indian manufacturer, modelled month by month from assumptions to "
+     "valuation."),
+    ("Part 6 — Building in India",
+     "Choosing a structure, MSME benefits, pricing, inventory valuation, "
+     "budgeting, working with a CA, due diligence and the compliance calendar."),
+    ("Part 7 — Advanced modelling",
+     "Seasonality, multiple products, sensitivity, sector benchmarks, model "
+     "hygiene and hiring."),
+    ("Part 8 — Sector playbooks",
+     "Twelve more sectors: restaurants, construction, healthcare, education, "
+     "logistics, agri, exports, D2C, professional firms, local services, "
+     "franchising, and cash intensity ranked."),
+    ("Part 9 — Investor conversations",
+     "Fifty questions an investor asks, with how to answer each, and four more "
+     "case studies."),
+    ("Part 10 — Reading the numbers",
+     "Every ratio that matters, applying for a bank loan, and the statements "
+     "line by line."),
+    ("Part 11 — Putting it to work",
+     "A 90-day plan, a fundability self-assessment, and the Excel recipes you "
+     "will want."),
+    ("Part 12 — The founder's toolkit",
+     "A cash-crisis playbook, a Hinglish glossary of the terms you actually "
+     "use, and scripts for the conversations founders avoid."),
+    ("Part 13 — Working with the model",
+     "Presenting the model, reviewing anyone's model in twenty minutes, and a "
+     "one-page quick reference."),
 ]
 
 
@@ -113,7 +187,8 @@ def build_body() -> str:
         f'<h3 class="card-title">{i + 1}. {n}</h3>'
         f'<p class="card-desc">{d}</p></div></div>'
         for i, (n, d) in enumerate(SHEETS))
-    chapters = "".join(f"<li>{c}</li>" for c in CHAPTERS)
+    chapters = "".join(
+        f'<li><strong>{title}</strong> — {desc}</li>' for title, desc in CHAPTERS)
     return f'''<div class="main main-prose" style="max-width:1100px;margin:0 auto">
 <div class="page-hero"><div class="tag">📘 Digital Products</div>
 <h1>Indian Business Financial Model</h1>
@@ -180,6 +255,8 @@ knowing. A useful guide on its own.</li>
 One payment, no subscription. GST invoice provided.</p>
 {buy_block()}
 
+{licence_block()}
+
 <h2>Questions</h2>
 <div class="card"><div class="card-body">
 <h3 class="card-title">Does it work on Google Sheets?</h3>
@@ -245,6 +322,7 @@ def build_page() -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site/style.css">
+<style>{PAGE_CSS}</style>
 <script type="application/ld+json">{schema}</script>
 <script type="application/ld+json">{crumb}</script>
 </head><body>
