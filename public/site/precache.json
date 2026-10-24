@@ -1,9 +1,8 @@
 {
- "version": "707f22249e2e",
+ "version": "ec957be9b191",
  "paths": [
   "/",
   "/blog",
-  "/news",
   "/about",
   "/contact",
   "/percentage-calculator",
@@ -115,17 +114,18 @@
   "/markup-vs-margin-explained",
   "/startup-valuation-explained",
   "/what-is-ebitda",
-  "/amazon-festive-sale-seller-sales-3-5x-first-week",
-  "/gst-council-october-2026-small-business-changes",
-  "/india-startup-funding-october-2026-flat-year",
-  "/khosla-ventures-even-healthcare-india-bet",
-  "/marketplace-fees-india-sellers-guide",
-  "/rbi-rate-hike-october-2026-what-it-costs-your-loan",
-  "/shark-tank-usa-polygons-foldable-spoon-deal",
-  "/upi-mdr-deferred-after-diwali-what-shops-pay",
   "/privacy-policy",
   "/terms-and-conditions",
   "/disclaimer",
-  "/gst-rule-14b-ecommerce-sellers-november-1"
+  "/news",
+  "/gst-rule-14b-ecommerce-sellers-november-1",
+  "/rbi-rate-hike-october-2026-what-it-costs-your-loan",
+  "/amazon-festive-sale-seller-sales-3-5x-first-week",
+  "/upi-mdr-deferred-after-diwali-what-shops-pay",
+  "/shark-tank-usa-polygons-foldable-spoon-deal",
+  "/gst-council-october-2026-small-business-changes",
+  "/india-startup-funding-october-2026-flat-year",
+  "/marketplace-fees-india-sellers-guide",
+  "/khosla-ventures-even-healthcare-india-bet"
  ]
 }
