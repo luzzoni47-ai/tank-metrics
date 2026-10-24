@@ -76,6 +76,21 @@ def check_buy_button_honesty() -> None:
             FAILURES.append("no payment link and no email fallback")
 
 
+def check_downloads() -> None:
+    """The two free PDFs the page links to must actually exist and be real."""
+    for rel in ("site/downloads/sample-preview.pdf",
+                "site/downloads/gst-tax-reckoner.pdf"):
+        f = ROOT / "public" / rel
+        if not f.exists():
+            FAILURES.append(f"public/{rel} is missing")
+            continue
+        head = f.read_bytes()[:5]
+        if head != b"%PDF-":
+            FAILURES.append(f"public/{rel} is not a PDF")
+        if f.stat().st_size < 20_000:
+            FAILURES.append(f"public/{rel} looks empty ({f.stat().st_size} bytes)")
+
+
 def check_no_home_page_change() -> None:
     """The product link belongs in the footer, not the home hero or nav."""
     home = (SITE / "index.html").read_text(encoding="utf-8")
@@ -89,6 +104,7 @@ def main() -> int:
     check_page()
     check_footer_links()
     check_buy_button_honesty()
+    check_downloads()
     check_no_home_page_change()
     if FAILURES:
         print(f"FAIL: {len(FAILURES)} problem(s)")

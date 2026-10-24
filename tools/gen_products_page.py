@@ -27,13 +27,17 @@ CONTACT_EMAIL = "hello@tankmetrics.in"
 TITLE = "Digital Products — Tank Metrics"
 DESC = (
     "The Indian Business Financial Model: a 21-sheet Excel model plus a "
-    "150-page manual covering manufacturing, trading, services, agency and SaaS."
+    "156-page masterclass covering manufacturing, trading, services, agency "
+    "and SaaS."
 )
 CANON = f"{BASE}/digital-products"
 
 PRODUCT = "Indian Business Financial Model"
 PRICE = "₹4,999"
 MRP = "₹7,999"
+MANUAL_PAGES = 156
+SAMPLE = "/site/downloads/sample-preview.pdf"
+RECKONER = "/site/downloads/gst-tax-reckoner.pdf"
 
 FOOTER_LINK = ('<li><a href="/digital-products">Digital Products</a></li>')
 
@@ -130,7 +134,7 @@ language.</p>
 <h2>Inside the Excel model — {len(SHEETS)} sheets</h2>
 <div class="grid">{sheets}</div>
 
-<h2>Inside the manual — {len(CHAPTERS)} chapters</h2>
+<h2>Inside the masterclass — {MANUAL_PAGES} pages</h2>
 <ol class="plain-list">{chapters}</ol>
 
 <h2>Who it is for</h2>
@@ -160,6 +164,16 @@ language.</p>
 <li>Open the Checks sheet. Every month must say OK.</li>
 <li>Read the Investor Dashboard. That is your one-page story.</li>
 </ol>
+
+<h2>Read before you buy</h2>
+<p>Two free PDFs, no email needed.</p>
+<ul class="plain-list">
+<li><a href="{SAMPLE}"><strong>Download the sample preview</strong></a> — the
+first three chapters, plus a sample from every later part, watermarked.</li>
+<li><a href="{RECKONER}"><strong>Download the GST + Tax Reckoner</strong></a> —
+GST slabs, TDS sections, the compliance calendar and the deductions worth
+knowing. A useful guide on its own.</li>
+</ul>
 
 <h2>Price</h2>
 <p><strong>{PRICE}</strong> — launch price, {MRP} after the first fifty buyers.
