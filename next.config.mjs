@@ -85,6 +85,11 @@ const nextConfig = {
       // stronger: it stops Google spending crawl budget on a duplicate and
       // consolidates every signal on /.
       { source: '/site/index.html', destination: '/', permanent: true },
+      // The bare /site path also served the home page, byte for byte the same
+      // document as /. Exact matches only: /site/style.css and friends must
+      // keep working, so this is not a /site/:path* wildcard.
+      { source: '/site', destination: '/', permanent: true },
+      { source: '/site/', destination: '/', permanent: true },
       // Static blog posts live at the root now.
       { source: '/site/blog-:slug.html', destination: '/:slug', permanent: true },
       { source: '/calculators', destination: '/', permanent: true },
