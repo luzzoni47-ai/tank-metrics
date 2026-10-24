@@ -121,7 +121,30 @@ calculator link, saved to `tools/outreach/draft-<date>.md`. Draft only.
 That is the honest version of the Quora/Reddit/Medium/LinkedIn/HARO row: an
 agent cannot hold those accounts, but it can remove the work of writing.
 
-### 5. Publish and report
+### 5. Watch for anyone writing about the brand
+
+```
+python3 tools/brand_monitor.py
+```
+
+Sir's standing ask: if anyone writes "Tank Metrics" or "tankmetrics" anywhere, he
+wants to see it. This scans Hacker News, Bing, Google News and DuckDuckGo - all
+free, none needing a login - and writes `tools/reports/brand-latest.md`.
+
+**Read the report before reporting it.** The classifier splits every hit three
+ways and the split is the whole value:
+
+- **About us** - a page on tankmetrics.in
+- **Others linking to us** - a stranger's page that points at us. A real
+  citation; the one to be pleased about.
+- **Namesakes (not us)** - shares the words only. `tankmetrics.com`, BattleMetrics
+  and a fuel-logging Chrome extension all sit here and are NOT about us.
+
+Never tell Sir a namesake is a mention. If only namesakes were found, say so
+plainly: nobody wrote about the brand this run. `tools/test_brand_monitor.py`
+fails the build if a namesake is ever filed under "About us".
+
+### 6. Publish and report
 
 ```
 tools/deploy.sh -m "SEO run <date>: real copy for <ids>, median overlap X% -> Y%"
@@ -136,6 +159,7 @@ SEO run <date>
   PageSpeed mobile: <score or "quota exceeded">
   backlink drafts written: tools/outreach/ (list them)
   outreach answer: tools/outreach/draft-<date>.md
+  brand mentions: N about us, M citing us, K namesakes (tools/reports/brand-latest.md)
   Sir's to-dos (agent cannot do these): submit the listings and send the emails
     from his own accounts; set up Google My Business, Crunchbase, Product Hunt,
     Indie Hackers profiles once
@@ -150,5 +174,6 @@ SEO run <date>
 - Title <= 60 chars including " | Tank Metrics"; description 150-158.
 - Worked examples use round numbers (10,000 / 6,000 / 8%).
 - Tool pages stay >= 400 words.
-- Run the test suite before deploying; it takes ~8 seconds and is never the
-  reason a run is late.
+- Run the test suite before deploying, including `test_brand_monitor.py`; a
+  false "mention" is worse than a missed one. It takes ~8 seconds and is never
+  the reason a run is late.
