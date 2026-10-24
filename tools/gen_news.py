@@ -285,8 +285,17 @@ def write_sitemap_entries(slugs: list[str]) -> None:
     """Append the news URLs to public/sitemap.xml, replacing any earlier block."""
     p = ROOT / "public" / "sitemap.xml"
     xml = p.read_text(encoding="utf-8")
-    xml = re.sub(r"\n  <url><loc>[^<]*</loc><lastmod>[^<]*</lastmod>"
-                 r"<changefreq>daily</changefreq><priority>0\.9</priority></url>", "", xml)
+    # Strip every news entry regardless of the changefreq/priority an earlier
+    # writer gave it. wire_crawl_graph.py emits these same pages as weekly/0.6
+    # (clean_urls.py then rewrites the loc), so matching only the daily/0.9
+    # shape left a second copy behind and the sitemap advertised each story
+    # twice - which the live SEO monitor reports as duplicate entries, titles
+    # and descriptions.
+    news = {f"{BASE}/news", *(f"{BASE}/{s}" for s in slugs)}
+    xml = re.sub(
+        r"\n  <url><loc>(?:" + "|".join(re.escape(u) for u in sorted(news)) + r")</loc>"
+        r"<lastmod>[^<]*</lastmod><changefreq>[^<]*</changefreq>"
+        r"<priority>[^<]*</priority></url>", "", xml)
     stamp = date.today().isoformat()
     block = (f'  <url><loc>{BASE}/news</loc><lastmod>{stamp}</lastmod>'
              f'<changefreq>daily</changefreq><priority>0.9</priority></url>')

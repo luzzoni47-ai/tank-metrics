@@ -247,6 +247,13 @@ def run_local(base: str, now: datetime, problems: list[str]) -> int:
     sm_paths = [re.sub(r"^https?://[^/]+", "", e.text.strip()) or "/"
                 for e in root.iter(f"{ns}loc") if e.text]
 
+    # A page listed twice is a duplicate for the crawler just as it is live, and
+    # the live branch below flags it. Checking it here too means a duplicate is
+    # caught before the deploy rather than after, which is the whole point of
+    # running the monitor locally.
+    for path in {p for p in sm_paths if sm_paths.count(p) > 1}:
+        problems.append(f"duplicate sitemap entry {base}{path}")
+
     pairs = local_pages(base)
     known = {u.replace(base, "") or "/" for u, _ in pairs}
     for path in sm_paths:
