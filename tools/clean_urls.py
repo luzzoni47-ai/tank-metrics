@@ -39,12 +39,23 @@ STATIC_PAGES = {
     "terms-and-conditions": "/terms-and-conditions",
     "disclaimer": "/disclaimer",
     "digital-products": "/digital-products",
+    "refund-policy": "/refund-policy",
+}
+
+# Pages that live in their own directory under /site and keep a nested clean
+# URL, e.g. the product landing page at /digital-products/<slug>. A flat
+# STATIC_PAGES entry cannot express this, because the clean path and the file
+# path share the /digital-products segment.
+NESTED_PAGES = {
+    "digital-products/indian-business-financial-model":
+        "/digital-products/indian-business-financial-model",
 }
 
 
 def build_map() -> dict[str, str]:
     """clean path -> backing static file, for every public page."""
     m: dict[str, str] = {v: f"/site/{k}.html" for k, v in STATIC_PAGES.items()}
+    m.update({v: f"/site/{k}.html" for k, v in NESTED_PAGES.items()})
     slugs = build_slugs(DATA["calcs"])
     for c in DATA["calcs"]:
         m[f"/{slugs[c['id']]}"] = f"/site/tools/{slugs[c['id']]}.html"

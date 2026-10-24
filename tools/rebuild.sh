@@ -16,12 +16,23 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
+# Drop stale bytecode first. Python decides a .pyc is current by comparing the
+# source's mtime and size, and an edit that keeps the same length within the
+# same second defeats both. On 2026-10-24 a landing_style.py edit changed
+# `padding:52px` to `padding:96px` - same length, same second - so Python kept
+# serving the old rule from __pycache__ and the mobile hero stayed clipped while
+# the source looked correct. Cheap to clear, and it removes the whole class of
+# "the fix is in the file but not in the page".
+find tools -name "__pycache__" -type d -prune -exec rm -rf {} + 2>/dev/null || true
+
 echo "==> gen_tool_pages"
 python3 tools/gen_tool_pages.py
 echo "==> gen_news"
 python3 tools/gen_news.py
 echo "==> gen_products_page (after gen_news, so news footers get the link)"
 python3 tools/gen_products_page.py
+echo "==> gen_landing_page (the product landing page)"
+python3 tools/gen_landing_page.py
 echo "==> wire_crawl_graph (writes the sitemap, incl. news)"
 python3 tools/wire_crawl_graph.py
 echo "==> clean_urls (the only place that decides the public URL shape)"

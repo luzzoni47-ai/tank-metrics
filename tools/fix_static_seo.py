@@ -100,6 +100,8 @@ def blocks_for(fname: str) -> list[dict] | None:
         return [crumb("Terms and Conditions", "/terms-and-conditions")]
     if fname == "disclaimer.html":
         return [crumb("Disclaimer", "/disclaimer")]
+    if fname == "refund-policy.html":
+        return [crumb("Refund Policy", "/refund-policy")]
     return None
 
 
@@ -112,6 +114,7 @@ PAGES = {
     "privacy-policy.html": ("website", "/privacy-policy"),
     "terms-and-conditions.html": ("website", "/terms-and-conditions"),
     "disclaimer.html": ("website", "/disclaimer"),
+    "refund-policy.html": ("website", "/refund-policy"),
 }
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 DESC_READ = re.compile(r'<meta name="description" content="([^"]*)">')
@@ -167,7 +170,8 @@ def main() -> None:
 
     # 2. Structured data.
     for fname in ("blog.html", "about.html", "contact.html", "privacy-policy.html",
-                  "terms-and-conditions.html", "disclaimer.html"):
+                  "terms-and-conditions.html", "disclaimer.html",
+                  "refund-policy.html"):
         f = SITE / fname
         blocks = blocks_for(fname)
         if not blocks:

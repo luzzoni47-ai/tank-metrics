@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
 SITE = PUBLIC / "site"
 
-PAGES = sorted(SITE.glob("*.html")) + sorted((SITE / "tools").glob("*.html"))
+PAGES = sorted(SITE.rglob("*.html"))
 PAGES = sorted(set(PAGES + [SITE / "index.html"]))
 
 URL_MAP = json.loads((ROOT / "tools" / "url-map.json").read_text(encoding="utf-8"))

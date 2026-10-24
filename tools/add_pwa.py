@@ -58,8 +58,10 @@ def patch_nav(text: str) -> str:
 
 def pages() -> list:
     found = [SITE / "index.html"]
-    found += sorted(SITE.glob("*.html"))
-    found += sorted((SITE / "tools").glob("*.html"))
+    # rglob, not glob: a page in its own directory (the product landing page at
+    # /site/digital-products/<slug>.html) is a real page and needs the same PWA
+    # shell and nav drawer as everything else. A flat glob silently skipped it.
+    found += sorted(SITE.rglob("*.html"))
     return sorted(set(found))
 
 

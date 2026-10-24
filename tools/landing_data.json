@@ -1,0 +1,90 @@
+{
+ "_note": "Figures below are produced by the shipped workbook products/business-money-school/src/Indian-Business-Financial-Model.xlsx with its own default assumptions, one run per business type. Regenerate with tools/gen_landing_data.py. They are the model's defaults, not a forecast or a promise.",
+ "business_types": {
+  "Manufacturing": {
+   "revenue_month_60": 9710425.0,
+   "gross_profit_month_60": 4855213.0,
+   "gross_margin": 0.5,
+   "ebitda_month_60": 4531027.0,
+   "net_profit_month_60": 3398270.0,
+   "cash_month_60": 61652807.0,
+   "break_even_revenue_month": 648371.0,
+   "break_even_units_month": 81.0,
+   "valuation_blended": 22145126.0,
+   "driver_month_1": 120.0,
+   "price_per_unit": 8000.0,
+   "loan_outstanding_month_60": 0.0
+  },
+  "Trading": {
+   "revenue_month_60": 9710425.0,
+   "gross_profit_month_60": 4855213.0,
+   "gross_margin": 0.5,
+   "ebitda_month_60": 4531027.0,
+   "net_profit_month_60": 3398270.0,
+   "cash_month_60": 61652807.0,
+   "break_even_revenue_month": 648371.0,
+   "break_even_units_month": 81.0,
+   "valuation_blended": 22145126.0,
+   "driver_month_1": 120.0,
+   "price_per_unit": 8000.0,
+   "loan_outstanding_month_60": 0.0
+  },
+  "Services": {
+   "revenue_month_60": 32368084.0,
+   "gross_profit_month_60": 16184042.0,
+   "gross_margin": 0.5,
+   "ebitda_month_60": 15859857.0,
+   "net_profit_month_60": 11894892.0,
+   "cash_month_60": 216249665.0,
+   "break_even_revenue_month": 648371.0,
+   "break_even_units_month": 81.0,
+   "valuation_blended": 75438936.0,
+   "driver_month_1": 400.0,
+   "price_per_unit": 8000.0,
+   "loan_outstanding_month_60": 0.0
+  },
+  "Agency": {
+   "revenue_month_60": 32368084.0,
+   "gross_profit_month_60": 16184042.0,
+   "gross_margin": 0.5,
+   "ebitda_month_60": 15859857.0,
+   "net_profit_month_60": 11894892.0,
+   "cash_month_60": 216249665.0,
+   "break_even_revenue_month": 648371.0,
+   "break_even_units_month": 81.0,
+   "valuation_blended": 75438936.0,
+   "driver_month_1": 400.0,
+   "price_per_unit": 8000.0,
+   "loan_outstanding_month_60": 0.0
+  },
+  "SaaS": {
+   "revenue_month_60": 2573357.0,
+   "gross_profit_month_60": 1286679.0,
+   "gross_margin": 0.5,
+   "ebitda_month_60": 962493.0,
+   "net_profit_month_60": 721870.0,
+   "cash_month_60": 24465758.0,
+   "break_even_revenue_month": 648371.0,
+   "break_even_units_month": 81.0,
+   "valuation_blended": 5635198.0,
+   "driver_month_1": 100.0,
+   "price_per_unit": 8000.0,
+   "loan_outstanding_month_60": 0.0
+  }
+ },
+ "dashboard_default": {
+  "Monthly revenue (month 60)": 9710425.0,
+  "ARR (revenue x 12)": 116525104.0,
+  "Gross margin %": 0.0,
+  "EBITDA (month 60)": 4531027.0,
+  "Net profit (month 60)": 3398270.0,
+  "Cash in bank (month 60)": 61652807.0,
+  "Total equity": 0.0
+ },
+ "break_even_default": {
+  "Contribution margin %": 0.5,
+  "Break-even revenue (per month)": 648371.301,
+  "Break-even units (per month)": 81.0464,
+  "Break-even revenue (per year)": 7780455.6119
+ }
+}

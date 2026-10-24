@@ -95,8 +95,7 @@ def check_markup() -> list:
     """Every page loads nav.js and shows a three-dot button, home excluded."""
     failures = []
     pages = [SITE / "index.html"]
-    pages += sorted(SITE.glob("*.html"))
-    pages += sorted((SITE / "tools").glob("*.html"))
+    pages += sorted(SITE.rglob("*.html"))
     for page in sorted(set(pages)):
         text = page.read_text(encoding="utf-8", errors="replace")
         rel = page.relative_to(PUBLIC)

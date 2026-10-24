@@ -57,6 +57,11 @@ def main() -> int:
         candidates = {stem}
         if rel.startswith("tools/"):
             candidates.add(f.stem)
+        # A page in its own directory keeps the directory in its clean URL:
+        # /site/digital-products/<slug>.html is served at
+        # /digital-products/<slug>, so the bare stem alone would never match.
+        if "/" in rel:
+            candidates.add(rel[:-len(".html")])
         if not (candidates & slugs):
             missing.append(rel)
 

@@ -1,0 +1,178 @@
+{
+ "sheet_count": 22,
+ "sheets": [
+  "START HERE",
+  "Assumptions",
+  "Revenue Build",
+  "Headcount",
+  "OpEx",
+  "CapEx & Depreciation",
+  "Working Capital",
+  "Debt",
+  "P&L",
+  "Balance Sheet",
+  "Cash Flow",
+  "Checks",
+  "Unit Economics",
+  "Scenarios",
+  "Valuation",
+  "Investor Dashboard",
+  "Fundraise Summary",
+  "Partner Split",
+  "GST & TDS",
+  "Break-even",
+  "Monthly Close",
+  "License"
+ ],
+ "assumptions": [
+  {
+   "label": "Start month",
+   "value": "2026-04-01 00:00:00",
+   "note": "Month 1 of the model."
+  },
+  {
+   "label": "Business type",
+   "value": "Manufacturing",
+   "note": "Manufacturing / Trading / Services / Agency / SaaS"
+  },
+  {
+   "label": "Monthly growth rate",
+   "value": "0.04",
+   "note": "Applied to units, customers and hours."
+  },
+  {
+   "label": "Monthly churn (SaaS)",
+   "value": "0.02",
+   "note": "Only used when type = SaaS."
+  },
+  {
+   "label": "Price / unit price / hourly rate",
+   "value": "8000",
+   "note": "Match it to your type."
+  },
+  {
+   "label": "Variable cost per unit",
+   "value": "4000",
+   "note": "Raw material + direct labour."
+  },
+  {
+   "label": "Opening units (month 1)",
+   "value": "120",
+   "note": "Manufacturing / Trading start here."
+  },
+  {
+   "label": "Opening customers (month 1)",
+   "value": "100",
+   "note": "SaaS starts here."
+  },
+  {
+   "label": "Opening billable hours (month 1)",
+   "value": "400",
+   "note": "Services / Agency start here."
+  },
+  {
+   "label": "Employer PF + ESI on salary",
+   "value": "0.15",
+   "note": "~12% PF + 3.25% ESI on eligible wages."
+  },
+  {
+   "label": "Annual salary hike",
+   "value": "0.08",
+   "note": "Applied every 12 months."
+  },
+  {
+   "label": "Monthly fixed OpEx (month 1)",
+   "value": "90000",
+   "note": "Rent + tools + admin, month 1."
+  }
+ ],
+ "checks": [
+  "Checks \u2014 every month must say OK",
+  "Check 1: balance sheet",
+  "Check 2: no negative cash",
+  "Check 3: debt never negative"
+ ],
+ "monthly_close": [
+  "Reconcile every bank account to the bank statement.",
+  "Update the sales register and match it to invoices raised.",
+  "Update the purchase register and match it to supplier bills.",
+  "Check GST output vs input; note the net payable.",
+  "Check TDS deducted by customers appears in 26AS.",
+  "Update the debtor list and chase anything over 60 days.",
+  "Update the creditor list and plan this week's payments.",
+  "Count inventory (or reconcile the stock system) and value it.",
+  "Run payroll, pay PF and ESI before the due date.",
+  "Enter this month's actuals into Revenue, Headcount, OpEx and CapEx."
+ ],
+ "revenue_12m": [
+  960000.0,
+  998400.0000000001,
+  1038336.0000000002,
+  1079869.4400000004,
+  1123064.2176000003,
+  1167986.7863040003,
+  1214706.2577561603,
+  1263294.5080664067,
+  1313826.288389063,
+  1366379.3399246256,
+  1421034.5135216108,
+  1477875.8940624753
+ ],
+ "gross_profit_12m": [
+  480000.0,
+  499200.00000000006,
+  519168.0000000001,
+  539934.7200000002,
+  561532.1088000002,
+  583993.3931520001,
+  607353.1288780802,
+  631647.2540332034,
+  656913.1441945315,
+  683189.6699623128,
+  710517.2567608054,
+  738937.9470312377
+ ],
+ "ebitda_12m": [
+  240500.0,
+  259250.00000000006,
+  278765.7500000002,
+  299077.9587500002,
+  320218.5637437502,
+  342220.780370469,
+  365119.15303264133,
+  388949.6083085373,
+  413749.5102412421,
+  439557.717839257,
+  466414.6448771343,
+  494362.32208814827
+ ],
+ "net_profit_12m": [
+  180375.0,
+  194437.50000000006,
+  209074.31250000012,
+  224308.46906250017,
+  240163.92280781266,
+  256665.58527785173,
+  273839.364774481,
+  291712.20623140293,
+  310312.1326809316,
+  329668.28837944276,
+  349810.9836578507,
+  370771.7415661112
+ ],
+ "dashboard": {
+  "Monthly revenue (month 60)": 9710425.299741097,
+  "ARR (revenue x 12)": 116525103.59689316,
+  "Gross margin %": 0.5,
+  "EBITDA (month 60)": 4531026.999375984,
+  "Net profit (month 60)": 3398270.249531988,
+  "Cash in bank (month 60)": 61652807.421897694,
+  "Total equity": 0.0
+ },
+ "breakeven": {
+  "Contribution margin %": 0.5,
+  "Break-even revenue (per month)": 648371.3009891298,
+  "Break-even units (per month)": 81.04641262364123,
+  "Break-even revenue (per year)": 7780455.611869558
+ }
+}

@@ -192,7 +192,10 @@ def build_body() -> str:
     return f'''<div class="main main-prose" style="max-width:1100px;margin:0 auto">
 <div class="page-hero"><div class="tag">📘 Digital Products</div>
 <h1>Indian Business Financial Model</h1>
-<p>One Excel model and one masterclass for manufacturing, trading, services, agency and SaaS businesses — {PRICE}.</p></div>
+<p>One Excel model and one masterclass for manufacturing, trading, services, agency and SaaS businesses — {PRICE}.</p>
+<div class="btn-row" style="margin-top:18px">
+<a class="btn-primary" href="/digital-products/indian-business-financial-model">See the full product page</a>
+</div></div>
 </div>
 
 <div class="page-wrap" style="max-width:1100px">

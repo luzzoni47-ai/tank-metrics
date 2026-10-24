@@ -1,5 +1,5 @@
 {
- "version": "11af02c5bf69",
+ "version": "4039c543ed4e",
  "paths": [
   "/",
   "/blog",
@@ -7,6 +7,8 @@
   "/about",
   "/contact",
   "/digital-products",
+  "/digital-products/indian-business-financial-model",
+  "/refund-policy",
   "/percentage-calculator",
   "/simple-interest",
   "/compound-interest",
