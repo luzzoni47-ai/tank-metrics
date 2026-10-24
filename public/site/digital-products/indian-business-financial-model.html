@@ -428,6 +428,55 @@
 .lp .lp-foot nav a{font-size:13px;color:var(--lp-ink-2);font-weight:500}
 .lp .lp-foot nav a:hover{color:var(--lp-blue);text-decoration:underline}
 
+/* ---------- licence unlock ---------- */
+.lp .unlock{
+  max-width:720px;margin:0 auto;background:#fff;border:1px solid var(--lp-line);
+  border-radius:var(--lp-radius);padding:34px 32px;box-shadow:var(--lp-shadow);
+  text-align:center;
+}
+.lp .unlock h2{font-size:clamp(22px,2.6vw,30px);margin-bottom:10px}
+.lp .unlock > p{color:var(--lp-muted);font-size:15px;line-height:1.7}
+.lp .unlock code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;
+  background:rgba(11,16,32,.06);padding:2px 7px;border-radius:6px;
+}
+.lp .licence-form{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 4px;
+  text-align:left}
+.lp .licence-form label{
+  flex:1 1 100%;font-size:13px;font-weight:600;color:var(--lp-ink-2);
+}
+.lp .licence-form input{
+  flex:1 1 260px;min-width:0;padding:14px 16px;font-size:15px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--lp-ink);background:var(--lp-bg);
+  border:1.5px solid var(--lp-line);border-radius:var(--lp-radius-sm);
+}
+.lp .licence-form input:focus{
+  outline:none;border-color:var(--lp-blue);
+  box-shadow:0 0 0 3px rgba(22,120,253,.16);
+}
+.lp .licence-form button{
+  flex:0 0 auto;padding:14px 26px;font-family:Poppins,sans-serif;
+  font-weight:600;font-size:15px;color:#fff;background:var(--lp-navy);
+  border:0;border-radius:999px;cursor:pointer;transition:background .18s ease;
+}
+.lp .licence-form button:hover:not(:disabled){background:var(--lp-blue)}
+.lp .licence-form button:disabled{opacity:.6;cursor:progress}
+.lp .licence-result{
+  margin:16px 0 0;padding:14px 18px;border-radius:var(--lp-radius-sm);
+  font-size:14.5px;line-height:1.6;text-align:left;
+}
+.lp .licence-info{background:#EEF4FB;border-left:4px solid var(--lp-blue)}
+.lp .licence-good{background:#EFF8F0;border-left:4px solid var(--lp-green)}
+.lp .licence-bad{background:#FDECEC;border-left:4px solid var(--lp-red)}
+.lp .licence-result code{
+  font-family:ui-monospace,Menlo,monospace;background:rgba(0,0,0,.06);
+  padding:1px 5px;border-radius:4px;
+}
+.lp .unlock-hint{font-size:13px;color:var(--lp-muted);margin-top:14px}
+.lp .unlock-hint a{color:var(--lp-blue);font-weight:600}
+.lp .unlock-hint a:hover{text-decoration:underline}
+
 /* ---------- reveal animation ---------- */
 /* Progressive enhancement: the content is visible by default, and the script
    adds `.lp-anim` to <html> only when it is able to reveal it again. Hiding the
@@ -471,6 +520,8 @@
   .lp .demo-note{padding:14px 18px}
   .lp .price-card{padding:28px 20px}
   .lp .price-badge{left:20px}
+  .lp .unlock{padding:26px 20px}
+  .lp .licence-form button{width:100%}
   .lp .price-now b{font-size:38px}
   .lp .final{padding:40px 22px;border-radius:18px}
   .lp .kpis{grid-template-columns:1fr 1fr}
@@ -487,13 +538,13 @@
   .lp .fact{flex:1 1 calc(50% - 8px);min-width:0}
 }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Indian Business Financial Model","description":"A 21-sheet Excel financial model and a 156-page masterclass for Indian businesses — manufacturing, trading, services, agency and SaaS. ₹4,999 launch price.","url":"https://tankmetrics.in/digital-products/indian-business-financial-model","brand":{"@type":"Brand","name":"Tank Metrics"},"offers":{"@type":"Offer","price":"4999","priceCurrency":"INR","availability":"https://schema.org/InStock","url":"https://tankmetrics.in/digital-products/indian-business-financial-model"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tankmetrics.in/"},{"@type":"ListItem","position":2,"name":"Digital Products","item":"https://tankmetrics.in/digital-products"},{"@type":"ListItem","position":3,"name":"Indian Business Financial Model","item":"https://tankmetrics.in/digital-products/indian-business-financial-model"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the model work in Google Sheets?","acceptedAnswer":{"@type":"Answer","text":"The file is .xlsx, and Google Sheets opens it with the formulas intact. A few formatting details shift, and very large workbooks can feel slow. For the full experience use desktop Excel, LibreOffice Calc or WPS Office. Whichever you choose, open the Checks sheet first and confirm every month still reads OK before you rely on the numbers — every spreadsheet application evaluates formulas slightly differently."}},{"@type":"Question","name":"Do I need accounting knowledge?","acceptedAnswer":{"@type":"Answer","text":"No. The manual starts from the basics and explains each term the first time it is used. If you can read a bank statement and a GST invoice, you can use this model. Where a concept needs more depth, the relevant chapter is linked from the sheet."}},{"@type":"Question","name":"Is it useful for a CA, or only for a business owner?","acceptedAnswer":{"@type":"Answer","text":"Both. It is built for owners who want to understand their own numbers, and accountants find it a useful starting structure to work from. It is a planning and decision tool — it does not file returns, and it does not replace your CA."}},{"@type":"Question","name":"Which business types are supported?","acceptedAnswer":{"@type":"Answer","text":"Five: manufacturing, trading and distribution, services, agency and freelancers, and SaaS or subscription businesses. Each one changes the revenue driver in the model — units for manufacturing and trading, billable hours for services and agency, customers for SaaS."}},{"@type":"Question","name":"How do I receive the product?","acceptedAnswer":{"@type":"Answer","text":"After your payment is confirmed you receive a licence key by email. Enter that key on the digital products page and the workbook and manual unlock for you. There is no public download link, which is what lets a refund genuinely cut off access."}},{"@type":"Question","name":"What does the refund policy cover?","acceptedAnswer":{"@type":"Answer","text":"A seven-day refund window from the date of purchase, subject to the published terms. Write to hello@tankmetrics.in with your order number. The full terms are on the refund policy page."}},{"@type":"Question","name":"Is this a tax filing tool?","acceptedAnswer":{"@type":"Answer","text":"No. It is a financial planning and educational aid. It helps you model GST, TDS, payroll cost, depreciation and tax as planning assumptions. It does not compute your statutory liability, file a return or substitute for professional advice. Confirm applicable rates with a qualified professional."}},{"@type":"Question","name":"Are updates included?","acceptedAnswer":{"@type":"Answer","text":"Yes. When a statutory rate that the model uses changes — GST, income tax, PF or ESI limits — the workbook is revised and every buyer gets the updated file free. You keep lifetime access to the product you bought."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Indian Business Financial Model — walkthrough","description":"A 45-second screen-by-screen walkthrough of the Indian Business Financial Model workbook.","thumbnailUrl":"https://tankmetrics.in/site/video/walkthrough.jpg","contentUrl":"https://tankmetrics.in/site/video/walkthrough.mp4","uploadDate":"2026-10-24","duration":"PT44S"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Indian Business Financial Model","description":"A 21-sheet Excel financial model and a 156-page masterclass for Indian businesses — manufacturing, trading, services, agency and SaaS. ₹4,999 launch price.","url":"https://tankmetrics.in/digital-products/indian-business-financial-model","brand":{"@type":"Brand","name":"Tank Metrics"},"offers":{"@type":"Offer","price":"4999","priceCurrency":"INR","availability":"https://schema.org/InStock","url":"https://tankmetrics.in/digital-products/indian-business-financial-model"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tankmetrics.in/"},{"@type":"ListItem","position":2,"name":"Indian Business Financial Model","item":"https://tankmetrics.in/digital-products/indian-business-financial-model"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the model work in Google Sheets?","acceptedAnswer":{"@type":"Answer","text":"The file is .xlsx, and Google Sheets opens it with the formulas intact. A few formatting details shift, and very large workbooks can feel slow. For the full experience use desktop Excel, LibreOffice Calc or WPS Office. Whichever you choose, open the Checks sheet first and confirm every month still reads OK before you rely on the numbers — every spreadsheet application evaluates formulas slightly differently."}},{"@type":"Question","name":"Do I need accounting knowledge?","acceptedAnswer":{"@type":"Answer","text":"No. The manual starts from the basics and explains each term the first time it is used. If you can read a bank statement and a GST invoice, you can use this model. Where a concept needs more depth, the relevant chapter is linked from the sheet."}},{"@type":"Question","name":"Is it useful for a CA, or only for a business owner?","acceptedAnswer":{"@type":"Answer","text":"Both. It is built for owners who want to understand their own numbers, and accountants find it a useful starting structure to work from. It is a planning and decision tool — it does not file returns, and it does not replace your CA."}},{"@type":"Question","name":"Which business types are supported?","acceptedAnswer":{"@type":"Answer","text":"Five: manufacturing, trading and distribution, services, agency and freelancers, and SaaS or subscription businesses. Each one changes the revenue driver in the model — units for manufacturing and trading, billable hours for services and agency, customers for SaaS."}},{"@type":"Question","name":"How do I receive the product?","acceptedAnswer":{"@type":"Answer","text":"After your payment is confirmed you receive a licence key by email. Enter that key in the box on this page and the workbook and manual unlock for you. There is no public download link, which is what lets a refund genuinely cut off access."}},{"@type":"Question","name":"What does the refund policy cover?","acceptedAnswer":{"@type":"Answer","text":"A seven-day refund window from the date of purchase, subject to the published terms. Write to hello@tankmetrics.in with your order number and the refund is processed on the same key that delivered your files."}},{"@type":"Question","name":"Is this a tax filing tool?","acceptedAnswer":{"@type":"Answer","text":"No. It is a financial planning and educational aid. It helps you model GST, TDS, payroll cost, depreciation and tax as planning assumptions. It does not compute your statutory liability, file a return or substitute for professional advice. Confirm applicable rates with a qualified professional."}},{"@type":"Question","name":"Are updates included?","acceptedAnswer":{"@type":"Answer","text":"Yes. When a statutory rate that the model uses changes — GST, income tax, PF or ESI limits — the workbook is revised and every buyer gets the updated file free. You keep lifetime access to the product you bought."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Indian Business Financial Model — walkthrough","description":"A 45-second screen-by-screen walkthrough of the Indian Business Financial Model workbook.","thumbnailUrl":"https://tankmetrics.in/site/video/walkthrough.jpg","contentUrl":"https://tankmetrics.in/site/video/walkthrough.mp4","uploadDate":"2026-10-24","duration":"PT44S"}</script>
 <!-- pwa --><link rel="manifest" href="/site/manifest.webmanifest"><meta name="theme-color" content="#FF9933"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Tank Metrics"><link rel="apple-touch-icon" href="/site/icon-192.png"><script defer src="/site/pwa.js"></script><script defer src="/site/nav.js"></script></head><body>
 <div class="tricolor"></div>
 <div class="topbar"><div class="topbar-inner">
 <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">•••</button>
 <div class="brand"><a href="/" class="brand-home-link" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit"><div class="brand-mark"><span class="rs">₹</span></div><div class="brand-text"><span class="brand-name">Tank Metrics</span><p>Simple money calculators, made for beginners</p></div></a></div>
-<nav class="toplinks"><a href="/">Home</a> <a href="/news">News</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/digital-products" class="active">Products</a> <a href="/contact">Contact</a></nav>
+<nav class="toplinks"><a href="/">Home</a> <a href="/news">News</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/digital-products/indian-business-financial-model" class="active">Products</a> <a href="/contact">Contact</a></nav>
 </div></div>
 <div class="lp">
 
@@ -794,11 +845,11 @@
         </div>
         <div class="side-card side-dark rv">
           <h3>Already bought it?</h3>
-          <p>Enter your licence key on the digital products page and your files
-          unlock. Every copy is stamped with the buyer&rsquo;s details, which is
-          what makes a refund able to cut off access.</p>
+          <p>Enter your licence key below and your files unlock. Every copy is
+          stamped with the buyer&rsquo;s details, which is what makes a refund
+          able to cut off access.</p>
           <div class="btn-row" style="margin-top:16px">
-            <a class="btn btn-dark" href="/digital-products">Unlock my files
+            <a class="btn btn-dark" href="#unlock">Unlock my files
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
           </div>
         </div>
@@ -807,13 +858,34 @@
   </div>
 </section>
 
+<section class="sec-tight" id="unlock">
+  <div class="wrap">
+    <div class="unlock rv">
+      <h2>Already bought? Get your files</h2>
+      <p>Enter the licence key from your order email. It looks like
+      <code>TM-XXXX-XXXX-XXXX-XXXX</code>.</p>
+      <form id="licence-form" class="licence-form" autocomplete="off">
+        <label for="licence-key">Licence key</label>
+        <input id="licence-key" name="key" type="text" inputmode="text"
+               placeholder="TM-XXXX-XXXX-XXXX-XXXX" spellcheck="false" required>
+        <button id="licence-submit" type="submit">Get my files</button>
+      </form>
+      <div id="licence-result" class="licence-result" hidden></div>
+      <p class="unlock-hint">Lost your key? Email
+      <a href="mailto:hello@tankmetrics.in?subject=Lost%20licence%20key">hello@tankmetrics.in</a>
+      with your order number and I will resend it.</p>
+    </div>
+  </div>
+</section>
+<script src="/site/licence.js" defer></script>
+
 <section class="sec" id="faq">
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow">Questions</span>
       <h2>Straight answers</h2>
     </div>
-    <div class="faq"><details><summary>Does the model work in Google Sheets?</summary><div class="a">The file is .xlsx, and Google Sheets opens it with the formulas intact. A few formatting details shift, and very large workbooks can feel slow. For the full experience use desktop Excel, LibreOffice Calc or WPS Office. Whichever you choose, open the Checks sheet first and confirm every month still reads OK before you rely on the numbers — every spreadsheet application evaluates formulas slightly differently.</div></details><details><summary>Do I need accounting knowledge?</summary><div class="a">No. The manual starts from the basics and explains each term the first time it is used. If you can read a bank statement and a GST invoice, you can use this model. Where a concept needs more depth, the relevant chapter is linked from the sheet.</div></details><details><summary>Is it useful for a CA, or only for a business owner?</summary><div class="a">Both. It is built for owners who want to understand their own numbers, and accountants find it a useful starting structure to work from. It is a planning and decision tool — it does not file returns, and it does not replace your CA.</div></details><details><summary>Which business types are supported?</summary><div class="a">Five: manufacturing, trading and distribution, services, agency and freelancers, and SaaS or subscription businesses. Each one changes the revenue driver in the model — units for manufacturing and trading, billable hours for services and agency, customers for SaaS.</div></details><details><summary>How do I receive the product?</summary><div class="a">After your payment is confirmed you receive a licence key by email. Enter that key on the digital products page and the workbook and manual unlock for you. There is no public download link, which is what lets a refund genuinely cut off access.</div></details><details><summary>What does the refund policy cover?</summary><div class="a">A seven-day refund window from the date of purchase, subject to the published terms. Write to hello@tankmetrics.in with your order number. The full terms are on the <a href="/refund-policy">refund policy</a> page.</div></details><details><summary>Is this a tax filing tool?</summary><div class="a">No. It is a financial planning and educational aid. It helps you model GST, TDS, payroll cost, depreciation and tax as planning assumptions. It does not compute your statutory liability, file a return or substitute for professional advice. Confirm applicable rates with a qualified professional.</div></details><details><summary>Are updates included?</summary><div class="a">Yes. When a statutory rate that the model uses changes — GST, income tax, PF or ESI limits — the workbook is revised and every buyer gets the updated file free. You keep lifetime access to the product you bought.</div></details></div>
+    <div class="faq"><details><summary>Does the model work in Google Sheets?</summary><div class="a">The file is .xlsx, and Google Sheets opens it with the formulas intact. A few formatting details shift, and very large workbooks can feel slow. For the full experience use desktop Excel, LibreOffice Calc or WPS Office. Whichever you choose, open the Checks sheet first and confirm every month still reads OK before you rely on the numbers — every spreadsheet application evaluates formulas slightly differently.</div></details><details><summary>Do I need accounting knowledge?</summary><div class="a">No. The manual starts from the basics and explains each term the first time it is used. If you can read a bank statement and a GST invoice, you can use this model. Where a concept needs more depth, the relevant chapter is linked from the sheet.</div></details><details><summary>Is it useful for a CA, or only for a business owner?</summary><div class="a">Both. It is built for owners who want to understand their own numbers, and accountants find it a useful starting structure to work from. It is a planning and decision tool — it does not file returns, and it does not replace your CA.</div></details><details><summary>Which business types are supported?</summary><div class="a">Five: manufacturing, trading and distribution, services, agency and freelancers, and SaaS or subscription businesses. Each one changes the revenue driver in the model — units for manufacturing and trading, billable hours for services and agency, customers for SaaS.</div></details><details><summary>How do I receive the product?</summary><div class="a">After your payment is confirmed you receive a licence key by email. Enter that key in the box on this page and the workbook and manual unlock for you. There is no public download link, which is what lets a refund genuinely cut off access.</div></details><details><summary>What does the refund policy cover?</summary><div class="a">A seven-day refund window from the date of purchase, subject to the published terms. Write to hello@tankmetrics.in with your order number and the refund is processed on the same key that delivered your files.</div></details><details><summary>Is this a tax filing tool?</summary><div class="a">No. It is a financial planning and educational aid. It helps you model GST, TDS, payroll cost, depreciation and tax as planning assumptions. It does not compute your statutory liability, file a return or substitute for professional advice. Confirm applicable rates with a qualified professional.</div></details><details><summary>Are updates included?</summary><div class="a">Yes. When a statutory rate that the model uses changes — GST, income tax, PF or ESI limits — the workbook is revised and every buyer gets the updated file free. You keep lifetime access to the product you bought.</div></details></div>
   </div>
 </section>
 
@@ -855,19 +927,16 @@
   planning and learning aid, not tax or accounting advice.</p>
   <nav aria-label="Footer">
     <a href="/">Home</a>
-    <a href="/digital-products">Digital Products</a>
+    <a href="/digital-products/indian-business-financial-model">Indian Business Financial Model</a>
     <a href="/blog">Blog</a>
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
-    <a href="/privacy-policy">Privacy</a>
-    <a href="/terms-and-conditions">Terms</a>
-    <a href="/refund-policy">Refund Policy</a>
   </nav>
 </div></div>
 
 </div>
 
-<footer class="site-footer"><div class="footer-grid"><div class="footer-col"><h4>Tank Metrics</h4><p>100 free business calculators for entrepreneurs, students and small business owners. Everything is calculated right in your browser — nothing you type is ever sent anywhere.</p><span class="footer-flag"><span class="s"></span><span class="w"></span><span class="g"></span></span></div><div class="footer-col"><h4>Company</h4><ul><li><a href="/about">About Us</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact Us</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/terms-and-conditions">Terms and Conditions</a></li><li><a href="/refund-policy">Refund Policy</a></li><li><a href="/disclaimer">Disclaimer</a></li><li><a href="/digital-products">Digital Products</a></li></ul></div><div class="footer-col"><h4>Popular</h4><ul><li><a href="/#cat_val">Valuation &amp; Deals</a></li><li><a href="/#cat_cust">Unit Economics</a></li><li><a href="/#cat_everyday">Everyday Money</a></li></ul></div></div><div class="footer-bottom"><span>© <span id="year"></span> Tank Metrics. Built for learning and quick estimates — for big decisions, always check with a qualified accountant or financial advisor.</span> <span>Made with <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> in Bangalore, India</span></div></footer>
+<footer class="site-footer"><div class="footer-grid"><div class="footer-col"><h4>Tank Metrics</h4><p>100 free business calculators for entrepreneurs, students and small business owners. Everything is calculated right in your browser — nothing you type is ever sent anywhere.</p><span class="footer-flag"><span class="s"></span><span class="w"></span><span class="g"></span></span></div><div class="footer-col"><h4>Company</h4><ul><li><a href="/about">About Us</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact Us</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/terms-and-conditions">Terms and Conditions</a></li><li><a href="/refund-policy">Refund Policy</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div><div class="footer-col"><h4>Popular</h4><ul><li><a href="/#cat_val">Valuation &amp; Deals</a></li><li><a href="/#cat_cust">Unit Economics</a></li><li><a href="/#cat_everyday">Everyday Money</a></li></ul></div><div class="footer-col"><h4>Digital Products</h4><ul><li><a href="/digital-products/indian-business-financial-model">Indian Business Financial Model</a></li></ul></div></div><div class="footer-bottom"><span>© <span id="year"></span> Tank Metrics. Built for learning and quick estimates — for big decisions, always check with a qualified accountant or financial advisor.</span> <span>Made with <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> in Bangalore, India</span></div></footer>
 <script>document.getElementById("year").textContent=(new Date).getFullYear()</script>
 
 <script>

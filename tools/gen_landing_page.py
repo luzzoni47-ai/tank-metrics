@@ -260,14 +260,13 @@ FAQ: list[tuple[str, str]] = [
      "billable hours for services and agency, customers for SaaS."),
     ("How do I receive the product?",
      "After your payment is confirmed you receive a licence key by email. "
-     "Enter that key on the digital products page and the workbook and manual "
-     "unlock for you. There is no public download link, which is what lets a "
-     "refund genuinely cut off access."),
+     "Enter that key in the box on this page and the workbook and manual unlock "
+     "for you. There is no public download link, which is what lets a refund "
+     "genuinely cut off access."),
     ("What does the refund policy cover?",
      "A seven-day refund window from the date of purchase, subject to the "
-     "published terms. Write to hello@tankmetrics.in with your order number. "
-     "The full terms are on the <a href=\"/refund-policy\">refund policy</a> "
-     "page."),
+     "published terms. Write to hello@tankmetrics.in with your order number and "
+     "the refund is processed on the same key that delivered your files."),
     ("Is this a tax filing tool?",
      "No. It is a financial planning and educational aid. It helps you model "
      "GST, TDS, payroll cost, depreciation and tax as planning assumptions. "
@@ -838,11 +837,11 @@ def pricing() -> str:
         </div>
         <div class="side-card side-dark rv">
           <h3>Already bought it?</h3>
-          <p>Enter your licence key on the digital products page and your files
-          unlock. Every copy is stamped with the buyer&rsquo;s details, which is
-          what makes a refund able to cut off access.</p>
+          <p>Enter your licence key below and your files unlock. Every copy is
+          stamped with the buyer&rsquo;s details, which is what makes a refund
+          able to cut off access.</p>
           <div class="btn-row" style="margin-top:16px">
-            <a class="btn btn-dark" href="/digital-products">Unlock my files
+            <a class="btn btn-dark" href="#unlock">Unlock my files
             {ICON['arrow']}</a>
           </div>
         </div>
@@ -867,6 +866,37 @@ def faq_section() -> str:
     <div class="faq">{items}</div>
   </div>
 </section>"""
+
+
+def unlock_section() -> str:
+    """The licence box.
+
+    It lives here rather than on a separate page because /digital-products is
+    now a redirect: a buyer who paid must be able to redeem on the same page
+    that sold them the product. The files have no public URL, so this box is
+    the only way in, and a refund revokes the key it hands out.
+    """
+    return """
+<section class="sec-tight" id="unlock">
+  <div class="wrap">
+    <div class="unlock rv">
+      <h2>Already bought? Get your files</h2>
+      <p>Enter the licence key from your order email. It looks like
+      <code>TM-XXXX-XXXX-XXXX-XXXX</code>.</p>
+      <form id="licence-form" class="licence-form" autocomplete="off">
+        <label for="licence-key">Licence key</label>
+        <input id="licence-key" name="key" type="text" inputmode="text"
+               placeholder="TM-XXXX-XXXX-XXXX-XXXX" spellcheck="false" required>
+        <button id="licence-submit" type="submit">Get my files</button>
+      </form>
+      <div id="licence-result" class="licence-result" hidden></div>
+      <p class="unlock-hint">Lost your key? Email
+      <a href="mailto:hello@tankmetrics.in?subject=Lost%20licence%20key">hello@tankmetrics.in</a>
+      with your order number and I will resend it.</p>
+    </div>
+  </div>
+</section>
+<script src="/site/licence.js" defer></script>"""
 
 
 def closing() -> str:
@@ -905,7 +935,7 @@ def closing() -> str:
 
 
 SITE_FOOTER = """
-<footer class="site-footer"><div class="footer-grid"><div class="footer-col"><h4>Tank Metrics</h4><p>100 free business calculators for entrepreneurs, students and small business owners. Everything is calculated right in your browser — nothing you type is ever sent anywhere.</p><span class="footer-flag"><span class="s"></span><span class="w"></span><span class="g"></span></span></div><div class="footer-col"><h4>Company</h4><ul><li><a href="/about">About Us</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact Us</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/terms-and-conditions">Terms and Conditions</a></li><li><a href="/refund-policy">Refund Policy</a></li><li><a href="/disclaimer">Disclaimer</a></li><li><a href="/digital-products">Digital Products</a></li></ul></div><div class="footer-col"><h4>Popular</h4><ul><li><a href="/#cat_val">Valuation &amp; Deals</a></li><li><a href="/#cat_cust">Unit Economics</a></li><li><a href="/#cat_everyday">Everyday Money</a></li></ul></div></div><div class="footer-bottom"><span>© <span id="year"></span> Tank Metrics. Built for learning and quick estimates — for big decisions, always check with a qualified accountant or financial advisor.</span> <span>Made with <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> in Bangalore, India</span></div></footer>
+<footer class="site-footer"><div class="footer-grid"><div class="footer-col"><h4>Tank Metrics</h4><p>100 free business calculators for entrepreneurs, students and small business owners. Everything is calculated right in your browser — nothing you type is ever sent anywhere.</p><span class="footer-flag"><span class="s"></span><span class="w"></span><span class="g"></span></span></div><div class="footer-col"><h4>Company</h4><ul><li><a href="/about">About Us</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact Us</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/terms-and-conditions">Terms and Conditions</a></li><li><a href="/refund-policy">Refund Policy</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div><div class="footer-col"><h4>Popular</h4><ul><li><a href="/#cat_val">Valuation &amp; Deals</a></li><li><a href="/#cat_cust">Unit Economics</a></li><li><a href="/#cat_everyday">Everyday Money</a></li></ul></div><div class="footer-col"><h4>Digital Products</h4><ul><li><a href="/digital-products/indian-business-financial-model">Indian Business Financial Model</a></li></ul></div></div><div class="footer-bottom"><span>© <span id="year"></span> Tank Metrics. Built for learning and quick estimates — for big decisions, always check with a qualified accountant or financial advisor.</span> <span>Made with <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> in Bangalore, India</span></div></footer>
 <script>document.getElementById("year").textContent=(new Date).getFullYear()</script>
 """
 
@@ -916,13 +946,10 @@ LP_FOOT = """
   planning and learning aid, not tax or accounting advice.</p>
   <nav aria-label="Footer">
     <a href="/">Home</a>
-    <a href="/digital-products">Digital Products</a>
+    <a href="/digital-products/indian-business-financial-model">Indian Business Financial Model</a>
     <a href="/blog">Blog</a>
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
-    <a href="/privacy-policy">Privacy</a>
-    <a href="/terms-and-conditions">Terms</a>
-    <a href="/refund-policy">Refund Policy</a>
   </nav>
 </div></div>
 """
@@ -1019,9 +1046,7 @@ def build_page() -> str:
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{BASE}/"},
-            {"@type": "ListItem", "position": 2, "name": "Digital Products",
-             "item": f"{BASE}/digital-products"},
-            {"@type": "ListItem", "position": 3, "name": PRODUCT, "item": CANON},
+            {"@type": "ListItem", "position": 2, "name": PRODUCT, "item": CANON},
         ],
     }
     faq_schema = {
@@ -1081,7 +1106,7 @@ def build_page() -> str:
 <div class="topbar"><div class="topbar-inner">
 <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">•••</button>
 <div class="brand"><a href="/" class="brand-home-link" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit"><div class="brand-mark"><span class="rs">₹</span></div><div class="brand-text"><span class="brand-name">Tank Metrics</span><p>Simple money calculators, made for beginners</p></div></a></div>
-<nav class="toplinks"><a href="/">Home</a> <a href="/news">News</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/digital-products" class="active">Products</a> <a href="/contact">Contact</a></nav>
+<nav class="toplinks"><a href="/">Home</a> <a href="/news">News</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/digital-products/indian-business-financial-model" class="active">Products</a> <a href="/contact">Contact</a></nav>
 </div></div>
 <div class="lp">
 {hero()}
@@ -1095,6 +1120,7 @@ def build_page() -> str:
 {audience_section()}
 {steps_section()}
 {pricing()}
+{unlock_section()}
 {faq_section()}
 {closing()}
 {LP_FOOT}

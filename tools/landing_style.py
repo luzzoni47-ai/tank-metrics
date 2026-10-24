@@ -420,6 +420,55 @@ LP_CSS = """
 .lp .lp-foot nav a{font-size:13px;color:var(--lp-ink-2);font-weight:500}
 .lp .lp-foot nav a:hover{color:var(--lp-blue);text-decoration:underline}
 
+/* ---------- licence unlock ---------- */
+.lp .unlock{
+  max-width:720px;margin:0 auto;background:#fff;border:1px solid var(--lp-line);
+  border-radius:var(--lp-radius);padding:34px 32px;box-shadow:var(--lp-shadow);
+  text-align:center;
+}
+.lp .unlock h2{font-size:clamp(22px,2.6vw,30px);margin-bottom:10px}
+.lp .unlock > p{color:var(--lp-muted);font-size:15px;line-height:1.7}
+.lp .unlock code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;
+  background:rgba(11,16,32,.06);padding:2px 7px;border-radius:6px;
+}
+.lp .licence-form{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 4px;
+  text-align:left}
+.lp .licence-form label{
+  flex:1 1 100%;font-size:13px;font-weight:600;color:var(--lp-ink-2);
+}
+.lp .licence-form input{
+  flex:1 1 260px;min-width:0;padding:14px 16px;font-size:15px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--lp-ink);background:var(--lp-bg);
+  border:1.5px solid var(--lp-line);border-radius:var(--lp-radius-sm);
+}
+.lp .licence-form input:focus{
+  outline:none;border-color:var(--lp-blue);
+  box-shadow:0 0 0 3px rgba(22,120,253,.16);
+}
+.lp .licence-form button{
+  flex:0 0 auto;padding:14px 26px;font-family:Poppins,sans-serif;
+  font-weight:600;font-size:15px;color:#fff;background:var(--lp-navy);
+  border:0;border-radius:999px;cursor:pointer;transition:background .18s ease;
+}
+.lp .licence-form button:hover:not(:disabled){background:var(--lp-blue)}
+.lp .licence-form button:disabled{opacity:.6;cursor:progress}
+.lp .licence-result{
+  margin:16px 0 0;padding:14px 18px;border-radius:var(--lp-radius-sm);
+  font-size:14.5px;line-height:1.6;text-align:left;
+}
+.lp .licence-info{background:#EEF4FB;border-left:4px solid var(--lp-blue)}
+.lp .licence-good{background:#EFF8F0;border-left:4px solid var(--lp-green)}
+.lp .licence-bad{background:#FDECEC;border-left:4px solid var(--lp-red)}
+.lp .licence-result code{
+  font-family:ui-monospace,Menlo,monospace;background:rgba(0,0,0,.06);
+  padding:1px 5px;border-radius:4px;
+}
+.lp .unlock-hint{font-size:13px;color:var(--lp-muted);margin-top:14px}
+.lp .unlock-hint a{color:var(--lp-blue);font-weight:600}
+.lp .unlock-hint a:hover{text-decoration:underline}
+
 /* ---------- reveal animation ---------- */
 /* Progressive enhancement: the content is visible by default, and the script
    adds `.lp-anim` to <html> only when it is able to reveal it again. Hiding the
@@ -463,6 +512,8 @@ LP_CSS = """
   .lp .demo-note{padding:14px 18px}
   .lp .price-card{padding:28px 20px}
   .lp .price-badge{left:20px}
+  .lp .unlock{padding:26px 20px}
+  .lp .licence-form button{width:100%}
   .lp .price-now b{font-size:38px}
   .lp .final{padding:40px 22px;border-radius:18px}
   .lp .kpis{grid-template-columns:1fr 1fr}

@@ -101,7 +101,6 @@ def write_sitemap() -> int:
         (f"{BASE}/site/news.html", "daily", "0.8"),
         (f"{BASE}/site/about.html", "monthly", "0.6"),
         (f"{BASE}/site/contact.html", "monthly", "0.6"),
-        (f"{BASE}/site/digital-products.html", "monthly", "0.6"),
         # The product landing page. It lives in its own directory, so the
         # blog-/news- globs below cannot find it; without this line it would be
         # served but never crawled, which is the same defect the news pages had.

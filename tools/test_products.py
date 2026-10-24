@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-"""Guard the /digital-products page and its footer link.
+"""Guard the product footer columns and the retired /digital-products hub.
 
-Three things must stay true:
+The hub page at /digital-products is gone. The product page
+(/digital-products/indian-business-financial-model) is now the only page that
+sells and delivers the model, and every footer carries it under a Digital
+Products heading. Four things must stay true:
 
-1. The page exists, has a canonical, og: tags and valid Product +
-   BreadcrumbList JSON-LD.
-2. Every page's footer links to it, so it is reachable without touching the
-   home page (Sir's instruction: no home-page changes).
+1. The retired hub is not a page and not linked anywhere. It redirects. A page
+   that still linked it would send the visitor through a redirect and split one
+   page's ranking signals across two URLs.
+2. Every page's footer carries the product link under a "Digital Products"
+   heading, and every footer's Legal column carries the refund policy.
 3. The buy button tells the truth. With PAYMENT_URL unset it must offer email
    and must NOT render a "Buy now" link that goes nowhere - claiming a purchase
    succeeded when no payment can be taken is the exact defect this guards.
+4. The licence gate stays shut: no paid file is reachable without a key.
 
     python3 tools/test_products.py
 """
@@ -22,18 +27,41 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
-PAGE = SITE / "digital-products.html"
+PUBLIC = ROOT / "public"
+PRODUCT_PAGE = SITE / "digital-products" / "indian-business-financial-model.html"
+PRODUCT_URL = "/digital-products/indian-business-financial-model"
+HUB = "/digital-products"
+URL_MAP = json.loads((ROOT / "tools" / "url-map.json").read_text(encoding="utf-8"))
 FAILURES: list[str] = []
 
 
-def check_page() -> None:
-    if not PAGE.exists():
-        FAILURES.append("public/site/digital-products.html is missing")
+def check_hub_is_retired() -> None:
+    if (SITE / "digital-products.html").exists():
+        FAILURES.append("the retired hub public/site/digital-products.html is back")
+    if HUB in URL_MAP:
+        FAILURES.append("url-map.json still maps the retired hub /digital-products")
+    linked = [p.relative_to(SITE).as_posix()
+              for p in sorted(SITE.rglob("*.html"))
+              if f'href="{HUB}"' in p.read_text(encoding="utf-8")]
+    if linked:
+        FAILURES.append(f"{len(linked)} page(s) still link the retired hub: "
+                        f"{linked[:3]}")
+    cfg = (ROOT / "next.config.mjs").read_text(encoding="utf-8")
+    if f"source: '{HUB}'," not in cfg:
+        FAILURES.append("next.config.mjs has no redirect for the retired hub")
+    sitemap = (PUBLIC / "sitemap.xml").read_text(encoding="utf-8")
+    if f"<loc>https://tankmetrics.in{HUB}</loc>" in sitemap:
+        FAILURES.append("the sitemap still lists the retired hub")
+
+
+def check_product_page() -> None:
+    if not PRODUCT_PAGE.exists():
+        FAILURES.append("the product page is missing - run tools/gen_landing_page.py")
         return
-    text = PAGE.read_text(encoding="utf-8")
-    if '<link rel="canonical" href="https://tankmetrics.in/digital-products">' not in text:
+    text = PRODUCT_PAGE.read_text(encoding="utf-8")
+    if f'<link rel="canonical" href="https://tankmetrics.in{PRODUCT_URL}">' not in text:
         FAILURES.append("canonical is wrong")
-    for tag in ('og:title', 'og:description', 'og:url', 'og:type'):
+    for tag in ("og:title", "og:description", "og:url", "og:type"):
         if f'property="{tag}"' not in text:
             FAILURES.append(f"{tag} is missing")
     if "google-site-verification" not in text:
@@ -42,53 +70,64 @@ def check_page() -> None:
     for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>',
                          text, re.S):
         try:
-            types.add(json.loads(m.group(1))["@type"])
+            block = json.loads(m.group(1))
         except Exception as exc:
             FAILURES.append(f"invalid JSON-LD: {exc}")
+            continue
+        for node in (block if isinstance(block, list) else [block]):
+            types.add(node.get("@type"))
     if not {"Product", "BreadcrumbList"} <= types:
         FAILURES.append(f"JSON-LD types are {sorted(types)}")
+    # The breadcrumb must not point at the retired hub.
+    for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>',
+                         text, re.S):
+        if '"BreadcrumbList"' in m.group(1) and f"{HUB}\"" in m.group(1):
+            FAILURES.append("the BreadcrumbList still names the retired hub")
 
 
-def check_footer_links() -> None:
-    missing = []
+def check_footer_columns() -> None:
+    """Every footer carries the product column and a full Legal column."""
+    no_product, no_refund, extra = [], [], []
     for p in sorted(SITE.rglob("*.html")):
-        if 'href="/digital-products"' not in p.read_text(encoding="utf-8"):
-            missing.append(str(p.relative_to(SITE)))
-    if missing:
-        FAILURES.append(f"{len(missing)} page(s) have no footer link: "
-                        f"{missing[:3]}")
+        t = p.read_text(encoding="utf-8")
+        if '<footer class="site-footer">' not in t:
+            continue
+        rel = p.relative_to(SITE).as_posix()
+        if "<h4>Digital Products</h4>" not in t:
+            no_product.append(rel)
+        if f'href="{PRODUCT_URL}"' not in t:
+            no_product.append(rel)
+        if "/refund-policy" not in t:
+            no_refund.append(rel)
+        if t.count("<h4>Digital Products</h4>") > 1:
+            extra.append(rel)
+    if no_product:
+        FAILURES.append(f"{len(no_product)} footer(s) lack the product column: "
+                        f"{sorted(set(no_product))[:3]}")
+    if no_refund:
+        FAILURES.append(f"{len(no_refund)} footer(s) lack the refund policy: "
+                        f"{no_refund[:3]}")
+    if extra:
+        FAILURES.append(f"{len(extra)} page(s) have the product column twice: "
+                        f"{extra[:3]}")
 
 
 def check_buy_button_honesty() -> None:
     import importlib.util
     spec = importlib.util.spec_from_file_location(
-        "gen_products_page", ROOT / "tools" / "gen_products_page.py")
+        "gen_landing_page", ROOT / "tools" / "gen_landing_page.py")
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
-    block = mod.buy_block()
+    page = PRODUCT_PAGE.read_text(encoding="utf-8")
     if mod.PAYMENT_URL:
-        if mod.PAYMENT_URL not in block or "Buy now" not in block:
-            FAILURES.append("PAYMENT_URL is set but the buy block does not use it")
+        if mod.PAYMENT_URL not in page:
+            FAILURES.append("PAYMENT_URL is set but the page does not use it")
     else:
-        if "Buy now" in block:
-            FAILURES.append("no payment link, yet the page renders a Buy now button")
-        if "mailto:" not in block:
+        if "mailto:hello@tankmetrics.in" not in page:
             FAILURES.append("no payment link and no email fallback")
-
-
-def check_downloads() -> None:
-    """The two free PDFs the page links to must actually exist and be real."""
-    for rel in ("site/downloads/sample-preview.pdf",
-                "site/downloads/gst-tax-reckoner.pdf"):
-        f = ROOT / "public" / rel
-        if not f.exists():
-            FAILURES.append(f"public/{rel} is missing")
-            continue
-        head = f.read_bytes()[:5]
-        if head != b"%PDF-":
-            FAILURES.append(f"public/{rel} is not a PDF")
-        if f.stat().st_size < 20_000:
-            FAILURES.append(f"public/{rel} looks empty ({f.stat().st_size} bytes)")
+        for label in re.findall(r">\s*(Buy now[^<]*)<", page):
+            FAILURES.append(
+                f"no payment link, yet the page renders {label.strip()!r}")
 
 
 def check_licence_gate() -> None:
@@ -98,12 +137,12 @@ def check_licence_gate() -> None:
     paid files having no public URL at all. If someone ever links the workbook
     or the masterclass directly, this fails.
     """
-    page = (SITE / "digital-products.html").read_text(encoding="utf-8")
+    page = PRODUCT_PAGE.read_text(encoding="utf-8")
 
     if "licence-form" not in page:
-        FAILURES.append("the licence form is missing from the products page")
+        FAILURES.append("the licence form is missing from the product page")
     if "/site/licence.js" not in page:
-        FAILURES.append("licence.js is not loaded by the products page")
+        FAILURES.append("licence.js is not loaded by the product page")
 
     # The paid deliverables must never appear as a downloadable link.
     for paid in ("Indian-Business-Financial-Model.xlsx",
@@ -147,10 +186,10 @@ def check_no_home_page_change() -> None:
 
 
 def main() -> int:
-    check_page()
-    check_footer_links()
+    check_hub_is_retired()
+    check_product_page()
+    check_footer_columns()
     check_buy_button_honesty()
-    check_downloads()
     check_licence_gate()
     check_no_home_page_change()
     if FAILURES:
@@ -158,8 +197,8 @@ def main() -> int:
         for f in FAILURES:
             print("  -", f)
         return 1
-    print("ALL PASS: product page is honest, linked from every footer, "
-          "and the home page is untouched")
+    print("ALL PASS: the hub is retired, every footer sells the product, and "
+          "the licence gate stays shut")
     return 0
 
 

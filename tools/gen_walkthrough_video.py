@@ -597,10 +597,12 @@ def scene_outro(img, t, data):
     d.text((W // 2, 382), "launch price  \u00b7  \u20b97,999 after the first 50 buyers",
            font=font(F_REG, 17), fill=lerp(DARK, DARKTXT, c), anchor="mm")
     e = ease(min(1.0, max(0.0, (t - 0.55) * 2.2)))
-    d.rounded_rectangle([W // 2 - 210, 442, W // 2 + 210, 500], radius=29,
+    # The product URL is 62 characters, so the pill has to be wider than the
+    # old /digital-products card or the text runs past its rounded edge.
+    d.rounded_rectangle([W // 2 - 300, 442, W // 2 + 300, 500], radius=29,
                         fill=lerp(DARK, BLUE, e))
-    d.text((W // 2, 471), "tankmetrics.in/digital-products", font=font(F_BOLD, 19),
-           fill=lerp(DARK, WHITE, e), anchor="mm")
+    d.text((W // 2, 471), "tankmetrics.in/digital-products/indian-business-financial-model",
+           font=font(F_BOLD, 14), fill=lerp(DARK, WHITE, e), anchor="mm")
     f = ease(min(1.0, max(0.0, (t - 0.7) * 2.2)))
     d.text((W // 2, 546), "Illustrative figures from the shipped model's defaults.",
            font=font(F_REG, 13), fill=lerp(DARK, DARKMUT, f), anchor="mm")

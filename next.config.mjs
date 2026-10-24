@@ -93,6 +93,15 @@ const nextConfig = {
       // Static blog posts live at the root now.
       { source: '/site/blog-:slug.html', destination: '/:slug', permanent: true },
       { source: '/calculators', destination: '/', permanent: true },
+      // /digital-products was the product hub. It is retired: the
+      // product page is now the only page that sells and delivers the
+      // model, so the old URL redirects rather than competing with it.
+      { source: '/digital-products',
+        destination: '/digital-products/indian-business-financial-model',
+        permanent: true },
+      { source: '/site/digital-products.html',
+        destination: '/digital-products/indian-business-financial-model',
+        permanent: true },
     ]
   },
 }

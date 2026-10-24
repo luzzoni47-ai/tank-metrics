@@ -46,7 +46,6 @@ CANON = f"https://tankmetrics.in{CLEAN}"
 STATIC_OK = {
     "/", "/blog", "/news", "/about", "/contact", "/privacy-policy",
     "/terms-and-conditions", "/disclaimer", "/refund-policy",
-    "/digital-products",
 }
 
 FAILURES: list[str] = []
@@ -318,9 +317,12 @@ def check_links() -> None:
             if (PUBLIC / href.lstrip("/")).exists():
                 continue
         FAILURES.append(f"the page links to {href}, which is not a real route")
-    # No placeholder anchors left behind.
+    # No placeholder anchors left behind. `placeholder="..."` is a real HTML
+    # attribute (the licence key box uses one), so strip it before the scan or
+    # the attribute name reads as leftover placeholder content.
+    scan = re.sub(r'\bplaceholder="[^"]*"', "", page, flags=re.I)
     for bad in ('href="#"', 'href=""', "TODO", "PLACEHOLDER", "lorem ipsum"):
-        if bad.lower() in page.lower():
+        if bad.lower() in scan.lower():
             FAILURES.append(f"the page still contains {bad!r}")
 
 
