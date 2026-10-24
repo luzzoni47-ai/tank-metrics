@@ -101,6 +101,7 @@ def write_sitemap() -> int:
         (f"{BASE}/site/news.html", "daily", "0.8"),
         (f"{BASE}/site/about.html", "monthly", "0.6"),
         (f"{BASE}/site/contact.html", "monthly", "0.6"),
+        (f"{BASE}/site/digital-products.html", "monthly", "0.6"),
     ]
     for c in DATA["calcs"]:
         pages.append((f"{BASE}/site/tools/{SLUGS[c['id']]}.html", "monthly", "0.7"))

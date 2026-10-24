@@ -38,6 +38,7 @@ STATIC_PAGES = {
     "privacy-policy": "/privacy-policy",
     "terms-and-conditions": "/terms-and-conditions",
     "disclaimer": "/disclaimer",
+    "digital-products": "/digital-products",
 }
 
 

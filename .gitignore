@@ -30,3 +30,8 @@ package-lock.json
 # Python bytecode caches
 __pycache__/
 *.pyc
+
+# Digital products are a commercial asset, not open source. The repo is public,
+# so the workbook, manual, lead magnet and previews must stay out of git or
+# anyone could pull them for free.
+products/

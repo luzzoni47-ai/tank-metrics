@@ -20,6 +20,8 @@ echo "==> gen_tool_pages"
 python3 tools/gen_tool_pages.py
 echo "==> gen_news"
 python3 tools/gen_news.py
+echo "==> gen_products_page (after gen_news, so news footers get the link)"
+python3 tools/gen_products_page.py
 echo "==> wire_crawl_graph (writes the sitemap, incl. news)"
 python3 tools/wire_crawl_graph.py
 echo "==> clean_urls (the only place that decides the public URL shape)"

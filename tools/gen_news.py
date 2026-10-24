@@ -86,7 +86,8 @@ FOOTER = (
     '<li><a href="/news">News</a></li><li><a href="/contact">Contact Us</a></li></ul></div>'
     '<div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li>'
     '<li><a href="/terms-and-conditions">Terms and Conditions</a></li>'
-    '<li><a href="/disclaimer">Disclaimer</a></li></ul></div>'
+    '<li><a href="/disclaimer">Disclaimer</a></li>'
+    '<li><a href="/digital-products">Digital Products</a></li></ul></div>'
     '<div class="footer-col"><h4>Popular</h4><ul><li><a href="/#cat_val">Valuation &amp; Deals</a></li>'
     '<li><a href="/#cat_cust">Unit Economics</a></li>'
     '<li><a href="/#cat_everyday">Everyday Money</a></li></ul></div></div>'
@@ -285,17 +286,8 @@ def write_sitemap_entries(slugs: list[str]) -> None:
     """Append the news URLs to public/sitemap.xml, replacing any earlier block."""
     p = ROOT / "public" / "sitemap.xml"
     xml = p.read_text(encoding="utf-8")
-    # Strip every news entry regardless of the changefreq/priority an earlier
-    # writer gave it. wire_crawl_graph.py emits these same pages as weekly/0.6
-    # (clean_urls.py then rewrites the loc), so matching only the daily/0.9
-    # shape left a second copy behind and the sitemap advertised each story
-    # twice - which the live SEO monitor reports as duplicate entries, titles
-    # and descriptions.
-    news = {f"{BASE}/news", *(f"{BASE}/{s}" for s in slugs)}
-    xml = re.sub(
-        r"\n  <url><loc>(?:" + "|".join(re.escape(u) for u in sorted(news)) + r")</loc>"
-        r"<lastmod>[^<]*</lastmod><changefreq>[^<]*</changefreq>"
-        r"<priority>[^<]*</priority></url>", "", xml)
+    xml = re.sub(r"\n  <url><loc>[^<]*</loc><lastmod>[^<]*</lastmod>"
+                 r"<changefreq>daily</changefreq><priority>0\.9</priority></url>", "", xml)
     stamp = date.today().isoformat()
     block = (f'  <url><loc>{BASE}/news</loc><lastmod>{stamp}</lastmod>'
              f'<changefreq>daily</changefreq><priority>0.9</priority></url>')
