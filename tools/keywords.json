@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T16:27:45Z",
+ "generated": "2026-10-24T01:38:11Z",
  "seed_count": 150,
  "suggestion_count": 1035,
  "keywords": [
@@ -1468,7 +1468,7 @@
    ]
   },
   {
-   "query": "loan emi calculator sbi",
+   "query": "loan emi calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -2082,7 +2082,7 @@
    ]
   },
   {
-   "query": "epf calculator with existing balance",
+   "query": "epf calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2181,7 +2181,7 @@
    ]
   },
   {
-   "query": "loan emi calculator online",
+   "query": "loan emi calculator sbi",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2713,7 +2713,7 @@
    ]
   },
   {
-   "query": "epf calculator with current balance",
+   "query": "epf calculator with existing balance",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2821,7 +2821,7 @@
    ]
   },
   {
-   "query": "loan emi calculator monthly",
+   "query": "loan emi calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3535,7 +3535,7 @@
    ]
   },
   {
-   "query": "epf calculator on salary",
+   "query": "epf calculator with current balance",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3616,7 +3616,7 @@
    ]
   },
   {
-   "query": "loan emi calculator home",
+   "query": "loan emi calculator monthly",
    "demand": 10,
    "covered": true,
    "score": 6.9,
