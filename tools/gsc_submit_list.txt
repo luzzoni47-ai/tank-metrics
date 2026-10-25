@@ -38,6 +38,7 @@ https://tankmetrics.in/customer-acquisition-cost-cac
 https://tankmetrics.in/customer-lifetime-value-ltv
 https://tankmetrics.in/days-between-two-dates
 https://tankmetrics.in/debt-equity-deal
+https://tankmetrics.in/digital-products/indian-business-financial-model
 https://tankmetrics.in/dilution-calculator
 https://tankmetrics.in/disclaimer
 https://tankmetrics.in/discount-calculator
@@ -51,6 +52,7 @@ https://tankmetrics.in/employee-cost-ctc-calculator
 https://tankmetrics.in/employee-utilization-rate
 https://tankmetrics.in/epf-calculator
 https://tankmetrics.in/exit-calculator
+https://tankmetrics.in/export-certification-cost-support-micro-exporters
 https://tankmetrics.in/fd-fixed-deposit-calculator
 https://tankmetrics.in/franchise-store-roi
 https://tankmetrics.in/freelancer-hourly-rate
@@ -98,6 +100,7 @@ https://tankmetrics.in/property-valuation-calculator
 https://tankmetrics.in/rashi-moon-sign-calculator
 https://tankmetrics.in/rbi-rate-hike-october-2026-what-it-costs-your-loan
 https://tankmetrics.in/rd-recurring-deposit-calculator
+https://tankmetrics.in/refund-policy
 https://tankmetrics.in/rent-vs-buy-calculator
 https://tankmetrics.in/rental-yield-calculator
 https://tankmetrics.in/repeat-rate-retention-and-churn

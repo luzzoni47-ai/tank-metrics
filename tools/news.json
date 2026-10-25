@@ -2,6 +2,75 @@
   "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
   "items": [
     {
+      "slug": "export-certification-cost-support-micro-exporters",
+      "title": "Govt to Bear Certification Costs for Small Exporters",
+      "dek": "Micro and small exporters can claim up to 75% of certification costs under the Export Promotion Mission, with a ₹25 lakh yearly cap and EU CBAM cover.",
+      "category": "Small Business",
+      "date": "2026-10-23",
+      "date_display": "October 23, 2026",
+      "source_name": "Business Standard",
+      "source_url": "https://www.business-standard.com/industry/news/govt-to-bear-certification-costs-for-micro-small-exporter-under-epm-goyal-126102300503_1.html",
+      "cta": {
+        "text": "Certification is one more line in what a unit costs you. Put it beside packaging, freight and material and see the true per-unit cost before you quote a price.",
+        "href": "/landed-cost-calculator",
+        "label": "Open the Landed Cost Calculator"
+      },
+      "related": [
+        {
+          "slug": "markup-vs-margin-explained",
+          "title": "Markup vs Margin Explained"
+        },
+        {
+          "slug": "break-even-point-explained",
+          "title": "Break-Even Point Explained"
+        }
+      ],
+      "body_en": [
+        "<p>On October 23, 2026, Commerce and Industry Minister Piyush Goyal said the government is willing to bear the entire cost of \"expensive\" certification for micro and small enterprises that want to export, under the Export Promotion Mission. He asked both existing and new exporters to approach the Directorate General of Foreign Trade for the support.</p>",
+        "<p>The promise matters because certification is one of the first big bills a small exporter meets: the testing, inspection, conformity and traceability reports a buyer in Europe or the United States asks for before placing an order.</p>",
+        "<h2>What the government announced</h2>",
+        "<p>Goyal, speaking to reporters in Berlin, said: \"Under the mission, we are willing to support everybody who wants to export anywhere in the world. We will give them support. For micro and small (enterprises), we are willing to literally take care of the entire cost of certification and others also, if there is some very expensive certification or process.\"</p>",
+        "<p>He added that the cost of complying with European Union regulations, including the Carbon Border Adjustment Mechanism and the EU Deforestation Regulation, would be covered for micro and small enterprises. Support for bigger businesses would come on a graded basis. He also urged exporters across product categories and sectors to use the scheme, saying it would encourage new products, new markets and new exporters.</p>",
+        "<h2>The mission and the money behind it</h2>",
+        "<p>The Export Promotion Mission was approved in November 2025 with an outlay of ₹25,060 crore for six financial years. It runs through two sub-schemes: Niryat Protsahan, with ₹10,401 crore, and Niryat Disha, with ₹14,659 crore.</p>",
+        "<p>The certification support sits inside a component called Trade Regulations, Accreditation and Compliance Enablement, or TRACE. It pays for the international testing, inspection, certification and other conformity work that opens a market. To use it, an exporter needs a valid Importer Exporter Code and a valid MSME Udyam registration number.</p>",
+        "<p>The published rates are tiered. For certifications on the notified Positive List, assistance is 60% of the actual cost net of taxes, or ₹25 lakh, whichever is lower. For the notified Priority Positive List, it is 75%, again capped at ₹25 lakh. The annual cap for one exporter under TRACE is ₹25 lakh.</p>",
+        "<h2>The arithmetic of one certification claim</h2>",
+        "<p>Suppose a laboratory test, a notified body and a traceability audit together cost ₹10,00,000 for your product line. On the Positive List, 60% of ₹10,00,000 is ₹6,00,000, because 10,00,000 × 60 ÷ 100 = 6,00,000. You pay the other ₹4,00,000.</p>",
+        "<p>If that same certification sits on the Priority Positive List, 75% of ₹10,00,000 is ₹7,50,000, so your own share falls to ₹2,50,000. The difference between the two lists is ₹1,50,000 on a bill of ₹10,00,000, which is worth checking before you file.</p>",
+        "<p>Now push the bill up. At ₹30,00,000 of certification cost, 75% works out to ₹22,50,000, still under the ceiling, so the cap does not bite. At ₹40,00,000, 75% would be ₹30,00,000, but the ceiling cuts the support to ₹25,00,000 and you carry the rest. The cap starts to matter once your certification bill crosses roughly ₹33,00,000, because 25,00,000 ÷ 75 × 100 is about ₹33,33,333.</p>",
+        "<h2>Why the EU rules are the live part</h2>",
+        "<p>The European Union is where the pressure is sharpest. India's exports to EU countries fell 4.57% to $72.4 billion in 2025-26 from $75.85 billion a year earlier, and the EU took about 17% of India's merchandise shipments. The Carbon Border Adjustment Mechanism asks exporters of steel, aluminium, cement and fertiliser to report the emissions locked into what they ship, and the EU Deforestation Regulation asks for proof that the product is not linked to deforested land.</p>",
+        "<p>Both need records a small factory often does not keep: energy bills, process data, supplier declarations. Meeting them means paying an auditor, a lab or a consultant, and that is exactly the bill TRACE is meant to share. The minister's remarks are significant because MSMEs had flagged the cost of reporting, certification, emissions monitoring and traceability as a burden that could make Indian goods costlier in Europe.</p>",
+        "<h2>What it means for your shop or startup</h2>",
+        "<p>If you already export, first check that your Udyam registration is current and your Importer Exporter Code is valid, because TRACE is closed without both. Then write down every certification, test report and audit your main buyer asks for, and price each one. That list is what you claim against, and it is also the number you have been absorbing quietly.</p>",
+        "<p>If you are exporting for the first time, work the cost into your unit price before you quote. Say the bill is ₹10,00,000 and you pay ₹2,50,000 of it yourself. Spread over 10,000 units that is ₹25 a unit, because 2,50,000 ÷ 10,000 = 25. Spread over 1,000 units it is ₹250 a unit. The grant is the same either way; the volume is what turns it into a margin.</p>",
+        "<p>One caution. This is a policy promise, and the detailed procedure, the notified positive and priority lists, and the claim window come from DGFT notifications. Read the notification before you spend, keep every invoice, and remember that assistance is paid on actual cost net of taxes. If you cannot find your certification on the notified list, ask DGFT before assuming it is covered.</p>"
+      ],
+      "body_hinglish": [
+        "<p>23 October 2026 ko, Commerce and Industry Minister Piyush Goyal ne kaha ki government Export Promotion Mission ke tehat micro aur small enterprises ke liye \"expensive\" certification ka poora kharcha uthane ko taiyar hai. Unhone purane aur naye dono exporters se kaha ki support ke liye Directorate General of Foreign Trade se sampark karein.</p>",
+        "<p>Ye vaada matter karta hai kyunki certification ek chhote exporter ka pehla bada bill hota hai: testing, inspection, conformity aur traceability reports, jo Europe ya United States ka buyer order dene se pehle maangta hai.</p>",
+        "<h2>Government ne kya announce kiya</h2>",
+        "<p>Berlin mein reporters se baat karte hue Goyal ne kaha: \"Under the mission, we are willing to support everybody who wants to export anywhere in the world. We will give them support. For micro and small (enterprises), we are willing to literally take care of the entire cost of certification and others also, if there is some very expensive certification or process.\"</p>",
+        "<p>Unhone kaha ki European Union ke regulations, including Carbon Border Adjustment Mechanism aur EU Deforestation Regulation, ka compliance kharcha micro aur small enterprises ke liye cover kiya jayega. Bade businesses ko graded basis par support milega. Unhone exporters se har product category aur sector mein scheme ka fayda uthane ko bhi kaha, aur kaha ki isse naye products, naye markets aur naye exporters badhenge.</p>",
+        "<h2>Mission aur iske peeche ka paisa</h2>",
+        "<p>Export Promotion Mission November 2025 mein approve hui thi, ₹25,060 crore ke outlay ke saath chhe financial years ke liye. Ye do sub-schemes se chalti hai: Niryat Protsahan, ₹10,401 crore ke saath, aur Niryat Disha, ₹14,659 crore ke saath.</p>",
+        "<p>Certification ka support ek component mein hai jiska naam Trade Regulations, Accreditation and Compliance Enablement, ya TRACE hai. Ye us international testing, inspection, certification aur conformity kaam ka paisa deta hai jo market kholta hai. Iske liye exporter ke paas valid Importer Exporter Code aur valid MSME Udyam registration number hona chahiye.</p>",
+        "<p>Published rates tiered hain. Notified Positive List ki certifications par assistance actual cost ka 60% hai, taxes ke baad, ya ₹25 lakh, jo kam ho. Notified Priority Positive List par ye 75% hai, phir bhi ₹25 lakh par capped. TRACE ke tehat ek exporter ke liye saalana cap ₹25 lakh hai.</p>",
+        "<h2>Ek certification claim ka hisaab</h2>",
+        "<p>Maano ek laboratory test, ek notified body aur ek traceability audit mil kar aapki product line ke liye ₹10,00,000 ka hote hain. Positive List par, ₹10,00,000 ka 60% ₹6,00,000 hai, kyunki 10,00,000 × 60 ÷ 100 = 6,00,000. Baaki ₹4,00,000 aap dete ho.</p>",
+        "<p>Agar wahi certification Priority Positive List par hai, to ₹10,00,000 ka 75% ₹7,50,000 hai, isliye aapka hissa ₹2,50,000 reh jaata hai. Dono lists ke beech ka farak ₹10,00,000 ke bill par ₹1,50,000 hai, isliye file karne se pehle ye check karna faayda deta hai.</p>",
+        "<p>Ab bill badhao. ₹30,00,000 ke certification cost par 75% matlab ₹22,50,000, jo ceiling se neeche hai, isliye cap nahi lagta. ₹40,00,000 par 75% ₹30,00,000 hota, lekin ceiling support ko ₹25,00,000 par kaat deti hai aur baaki aap uthate ho. Cap tab matter karta hai jab aapka certification bill lagbhag ₹33,00,000 se upar jaata hai, kyunki 25,00,000 ÷ 75 × 100 lagbhag ₹33,33,333 hai.</p>",
+        "<h2>EU ke rules hi asli hissa kyun hain</h2>",
+        "<p>European Union mein ye dabav sabse zyada hai. India ka EU countries ko export 4.57% giriya, 2025-26 mein $72.4 billion, jabki pichhle saal $75.85 billion tha, aur EU ne India ki merchandise shipments ka lagbhag 17% liya. Carbon Border Adjustment Mechanism un exporters se, jo steel, aluminium, cement aur fertiliser bhejte hain, maangta hai ki wo apne shipment ki emissions report karein, aur EU Deforestation Regulation proof maangta hai ki product deforested zameen se juda nahi hai.</p>",
+        "<p>Dono ke liye wo records chahiye jo ek chhoti factory aksar nahi rakhti: energy bills, process data, supplier declarations. Inhe pura karne ka matlab hai auditor, lab ya consultant ka kharcha, aur yahi bill TRACE baantne ke liye bana hai. Minister ki baat isliye important hai kyunki MSMEs ne reporting, certification, emissions monitoring aur traceability ka kharcha ek bojh bataya tha jo Indian goods ko Europe mein mehnga kar sakta hai.</p>",
+        "<h2>Aapki dukaan ya startup ke liye iska matlab</h2>",
+        "<p>Agar aap pehle se export karte ho, to pehle ye dekho ki aapki Udyam registration current hai aur Importer Exporter Code valid hai, kyunki dono ke bina TRACE band hai. Phir har wo certification, test report aur audit likho jo aapka main buyer maangta hai, aur har ek ka price lagao. Wahi list aapke claim ka base hai, aur wahi number jo aap chupchap bhugat rahe the.</p>",
+        "<p>Agar aap pehli baar export kar rahe ho, to quote dene se pehle ye cost apne unit price mein daalo. Maano bill ₹10,00,000 ka hai aur aap usme se ₹2,50,000 dete ho. 10,000 units par ye ₹25 per unit hai, kyunki 2,50,000 ÷ 10,000 = 25. 1,000 units par ye ₹250 per unit hai. Grant dono mein same hai; volume hi ise margin banata hai.</p>",
+        "<p>Ek savdhani. Ye ek policy vaada hai, aur detailed procedure, notified positive aur priority lists, aur claim window DGFT notifications se aate hain. Kharch karne se pehle notification padho, har invoice sambhal kar rakho, aur yaad rakho ki assistance actual cost par milti hai, taxes ke baad. Agar aapki certification notified list par nahi milti, to ye maanne se pehle DGFT se poocho ki wo cover hai ya nahi.</p>"
+      ]
+    },
+    {
       "slug": "gst-rule-14b-ecommerce-sellers-november-1",
       "title": "GST Registration for Small E-Commerce Sellers Opens Nov 1",
       "dek": "Small sellers can register in a new state from November 1 using the platform's warehouse as their place of business, if monthly credit is under ₹2.5 lakh.",

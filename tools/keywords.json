@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T01:38:11Z",
+ "generated": "2026-10-25T01:42:18Z",
  "seed_count": 150,
  "suggestion_count": 1035,
  "keywords": [
@@ -1938,15 +1938,6 @@
    ]
   },
   {
-   "query": "cash conversion cycle formula",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "cash conversion cycle"
-   ]
-  },
-  {
    "query": "churn rate meaning",
    "demand": 12,
    "covered": true,
@@ -2145,7 +2136,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2496,7 +2487,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2523,7 +2514,7 @@
    ]
   },
   {
-   "query": "bmi calculator women",
+   "query": "bmi calculator for women",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2767,7 +2758,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3327,7 +3318,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator by year",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3622,6 +3613,15 @@
    "score": 6.9,
    "from": [
     "loan emi calculator"
+   ]
+  },
+  {
+   "query": "love calculator name test",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "love calculator"
    ]
   }
  ]
