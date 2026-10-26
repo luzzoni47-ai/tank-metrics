@@ -1,629 +1,680 @@
 {
-  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
-  "items": [
+ "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
+ "items": [
+  {
+   "slug": "rupee-falls-to-95-22-what-it-costs-importers-exporters",
+   "title": "Rupee Falls to 95.22: What It Costs Importers",
+   "dek": "A third straight day of losses left the rupee at 95.22 against the dollar on October 26. Here is what that adds to an import bill and pays an exporter.",
+   "category": "Small Business",
+   "date": "2026-10-26",
+   "date_display": "October 26, 2026",
+   "source_name": "The Hindu",
+   "source_url": "https://www.thehindu.com/business/markets/rupee-falls-29-paise-to-close-at-9522-against-us-dollar/article71626594.ece",
+   "cta": {
+    "text": "The exchange rate is one line in what a landed unit costs you. Put it beside freight, duty and insurance and see the true cost before you quote a price.",
+    "href": "/landed-cost-calculator",
+    "label": "Open the Landed Cost Calculator"
+   },
+   "related": [
     {
-      "slug": "export-certification-cost-support-micro-exporters",
-      "title": "Govt to Bear Certification Costs for Small Exporters",
-      "dek": "Micro and small exporters can claim up to 75% of certification costs under the Export Promotion Mission, with a ₹25 lakh yearly cap and EU CBAM cover.",
-      "category": "Small Business",
-      "date": "2026-10-23",
-      "date_display": "October 23, 2026",
-      "source_name": "Business Standard",
-      "source_url": "https://www.business-standard.com/industry/news/govt-to-bear-certification-costs-for-micro-small-exporter-under-epm-goyal-126102300503_1.html",
-      "cta": {
-        "text": "Certification is one more line in what a unit costs you. Put it beside packaging, freight and material and see the true per-unit cost before you quote a price.",
-        "href": "/landed-cost-calculator",
-        "label": "Open the Landed Cost Calculator"
-      },
-      "related": [
-        {
-          "slug": "markup-vs-margin-explained",
-          "title": "Markup vs Margin Explained"
-        },
-        {
-          "slug": "break-even-point-explained",
-          "title": "Break-Even Point Explained"
-        }
-      ],
-      "body_en": [
-        "<p>On October 23, 2026, Commerce and Industry Minister Piyush Goyal said the government is willing to bear the entire cost of \"expensive\" certification for micro and small enterprises that want to export, under the Export Promotion Mission. He asked both existing and new exporters to approach the Directorate General of Foreign Trade for the support.</p>",
-        "<p>The promise matters because certification is one of the first big bills a small exporter meets: the testing, inspection, conformity and traceability reports a buyer in Europe or the United States asks for before placing an order.</p>",
-        "<h2>What the government announced</h2>",
-        "<p>Goyal, speaking to reporters in Berlin, said: \"Under the mission, we are willing to support everybody who wants to export anywhere in the world. We will give them support. For micro and small (enterprises), we are willing to literally take care of the entire cost of certification and others also, if there is some very expensive certification or process.\"</p>",
-        "<p>He added that the cost of complying with European Union regulations, including the Carbon Border Adjustment Mechanism and the EU Deforestation Regulation, would be covered for micro and small enterprises. Support for bigger businesses would come on a graded basis. He also urged exporters across product categories and sectors to use the scheme, saying it would encourage new products, new markets and new exporters.</p>",
-        "<h2>The mission and the money behind it</h2>",
-        "<p>The Export Promotion Mission was approved in November 2025 with an outlay of ₹25,060 crore for six financial years. It runs through two sub-schemes: Niryat Protsahan, with ₹10,401 crore, and Niryat Disha, with ₹14,659 crore.</p>",
-        "<p>The certification support sits inside a component called Trade Regulations, Accreditation and Compliance Enablement, or TRACE. It pays for the international testing, inspection, certification and other conformity work that opens a market. To use it, an exporter needs a valid Importer Exporter Code and a valid MSME Udyam registration number.</p>",
-        "<p>The published rates are tiered. For certifications on the notified Positive List, assistance is 60% of the actual cost net of taxes, or ₹25 lakh, whichever is lower. For the notified Priority Positive List, it is 75%, again capped at ₹25 lakh. The annual cap for one exporter under TRACE is ₹25 lakh.</p>",
-        "<h2>The arithmetic of one certification claim</h2>",
-        "<p>Suppose a laboratory test, a notified body and a traceability audit together cost ₹10,00,000 for your product line. On the Positive List, 60% of ₹10,00,000 is ₹6,00,000, because 10,00,000 × 60 ÷ 100 = 6,00,000. You pay the other ₹4,00,000.</p>",
-        "<p>If that same certification sits on the Priority Positive List, 75% of ₹10,00,000 is ₹7,50,000, so your own share falls to ₹2,50,000. The difference between the two lists is ₹1,50,000 on a bill of ₹10,00,000, which is worth checking before you file.</p>",
-        "<p>Now push the bill up. At ₹30,00,000 of certification cost, 75% works out to ₹22,50,000, still under the ceiling, so the cap does not bite. At ₹40,00,000, 75% would be ₹30,00,000, but the ceiling cuts the support to ₹25,00,000 and you carry the rest. The cap starts to matter once your certification bill crosses roughly ₹33,00,000, because 25,00,000 ÷ 75 × 100 is about ₹33,33,333.</p>",
-        "<h2>Why the EU rules are the live part</h2>",
-        "<p>The European Union is where the pressure is sharpest. India's exports to EU countries fell 4.57% to $72.4 billion in 2025-26 from $75.85 billion a year earlier, and the EU took about 17% of India's merchandise shipments. The Carbon Border Adjustment Mechanism asks exporters of steel, aluminium, cement and fertiliser to report the emissions locked into what they ship, and the EU Deforestation Regulation asks for proof that the product is not linked to deforested land.</p>",
-        "<p>Both need records a small factory often does not keep: energy bills, process data, supplier declarations. Meeting them means paying an auditor, a lab or a consultant, and that is exactly the bill TRACE is meant to share. The minister's remarks are significant because MSMEs had flagged the cost of reporting, certification, emissions monitoring and traceability as a burden that could make Indian goods costlier in Europe.</p>",
-        "<h2>What it means for your shop or startup</h2>",
-        "<p>If you already export, first check that your Udyam registration is current and your Importer Exporter Code is valid, because TRACE is closed without both. Then write down every certification, test report and audit your main buyer asks for, and price each one. That list is what you claim against, and it is also the number you have been absorbing quietly.</p>",
-        "<p>If you are exporting for the first time, work the cost into your unit price before you quote. Say the bill is ₹10,00,000 and you pay ₹2,50,000 of it yourself. Spread over 10,000 units that is ₹25 a unit, because 2,50,000 ÷ 10,000 = 25. Spread over 1,000 units it is ₹250 a unit. The grant is the same either way; the volume is what turns it into a margin.</p>",
-        "<p>One caution. This is a policy promise, and the detailed procedure, the notified positive and priority lists, and the claim window come from DGFT notifications. Read the notification before you spend, keep every invoice, and remember that assistance is paid on actual cost net of taxes. If you cannot find your certification on the notified list, ask DGFT before assuming it is covered.</p>"
-      ],
-      "body_hinglish": [
-        "<p>23 October 2026 ko, Commerce and Industry Minister Piyush Goyal ne kaha ki government Export Promotion Mission ke tehat micro aur small enterprises ke liye \"expensive\" certification ka poora kharcha uthane ko taiyar hai. Unhone purane aur naye dono exporters se kaha ki support ke liye Directorate General of Foreign Trade se sampark karein.</p>",
-        "<p>Ye vaada matter karta hai kyunki certification ek chhote exporter ka pehla bada bill hota hai: testing, inspection, conformity aur traceability reports, jo Europe ya United States ka buyer order dene se pehle maangta hai.</p>",
-        "<h2>Government ne kya announce kiya</h2>",
-        "<p>Berlin mein reporters se baat karte hue Goyal ne kaha: \"Under the mission, we are willing to support everybody who wants to export anywhere in the world. We will give them support. For micro and small (enterprises), we are willing to literally take care of the entire cost of certification and others also, if there is some very expensive certification or process.\"</p>",
-        "<p>Unhone kaha ki European Union ke regulations, including Carbon Border Adjustment Mechanism aur EU Deforestation Regulation, ka compliance kharcha micro aur small enterprises ke liye cover kiya jayega. Bade businesses ko graded basis par support milega. Unhone exporters se har product category aur sector mein scheme ka fayda uthane ko bhi kaha, aur kaha ki isse naye products, naye markets aur naye exporters badhenge.</p>",
-        "<h2>Mission aur iske peeche ka paisa</h2>",
-        "<p>Export Promotion Mission November 2025 mein approve hui thi, ₹25,060 crore ke outlay ke saath chhe financial years ke liye. Ye do sub-schemes se chalti hai: Niryat Protsahan, ₹10,401 crore ke saath, aur Niryat Disha, ₹14,659 crore ke saath.</p>",
-        "<p>Certification ka support ek component mein hai jiska naam Trade Regulations, Accreditation and Compliance Enablement, ya TRACE hai. Ye us international testing, inspection, certification aur conformity kaam ka paisa deta hai jo market kholta hai. Iske liye exporter ke paas valid Importer Exporter Code aur valid MSME Udyam registration number hona chahiye.</p>",
-        "<p>Published rates tiered hain. Notified Positive List ki certifications par assistance actual cost ka 60% hai, taxes ke baad, ya ₹25 lakh, jo kam ho. Notified Priority Positive List par ye 75% hai, phir bhi ₹25 lakh par capped. TRACE ke tehat ek exporter ke liye saalana cap ₹25 lakh hai.</p>",
-        "<h2>Ek certification claim ka hisaab</h2>",
-        "<p>Maano ek laboratory test, ek notified body aur ek traceability audit mil kar aapki product line ke liye ₹10,00,000 ka hote hain. Positive List par, ₹10,00,000 ka 60% ₹6,00,000 hai, kyunki 10,00,000 × 60 ÷ 100 = 6,00,000. Baaki ₹4,00,000 aap dete ho.</p>",
-        "<p>Agar wahi certification Priority Positive List par hai, to ₹10,00,000 ka 75% ₹7,50,000 hai, isliye aapka hissa ₹2,50,000 reh jaata hai. Dono lists ke beech ka farak ₹10,00,000 ke bill par ₹1,50,000 hai, isliye file karne se pehle ye check karna faayda deta hai.</p>",
-        "<p>Ab bill badhao. ₹30,00,000 ke certification cost par 75% matlab ₹22,50,000, jo ceiling se neeche hai, isliye cap nahi lagta. ₹40,00,000 par 75% ₹30,00,000 hota, lekin ceiling support ko ₹25,00,000 par kaat deti hai aur baaki aap uthate ho. Cap tab matter karta hai jab aapka certification bill lagbhag ₹33,00,000 se upar jaata hai, kyunki 25,00,000 ÷ 75 × 100 lagbhag ₹33,33,333 hai.</p>",
-        "<h2>EU ke rules hi asli hissa kyun hain</h2>",
-        "<p>European Union mein ye dabav sabse zyada hai. India ka EU countries ko export 4.57% giriya, 2025-26 mein $72.4 billion, jabki pichhle saal $75.85 billion tha, aur EU ne India ki merchandise shipments ka lagbhag 17% liya. Carbon Border Adjustment Mechanism un exporters se, jo steel, aluminium, cement aur fertiliser bhejte hain, maangta hai ki wo apne shipment ki emissions report karein, aur EU Deforestation Regulation proof maangta hai ki product deforested zameen se juda nahi hai.</p>",
-        "<p>Dono ke liye wo records chahiye jo ek chhoti factory aksar nahi rakhti: energy bills, process data, supplier declarations. Inhe pura karne ka matlab hai auditor, lab ya consultant ka kharcha, aur yahi bill TRACE baantne ke liye bana hai. Minister ki baat isliye important hai kyunki MSMEs ne reporting, certification, emissions monitoring aur traceability ka kharcha ek bojh bataya tha jo Indian goods ko Europe mein mehnga kar sakta hai.</p>",
-        "<h2>Aapki dukaan ya startup ke liye iska matlab</h2>",
-        "<p>Agar aap pehle se export karte ho, to pehle ye dekho ki aapki Udyam registration current hai aur Importer Exporter Code valid hai, kyunki dono ke bina TRACE band hai. Phir har wo certification, test report aur audit likho jo aapka main buyer maangta hai, aur har ek ka price lagao. Wahi list aapke claim ka base hai, aur wahi number jo aap chupchap bhugat rahe the.</p>",
-        "<p>Agar aap pehli baar export kar rahe ho, to quote dene se pehle ye cost apne unit price mein daalo. Maano bill ₹10,00,000 ka hai aur aap usme se ₹2,50,000 dete ho. 10,000 units par ye ₹25 per unit hai, kyunki 2,50,000 ÷ 10,000 = 25. 1,000 units par ye ₹250 per unit hai. Grant dono mein same hai; volume hi ise margin banata hai.</p>",
-        "<p>Ek savdhani. Ye ek policy vaada hai, aur detailed procedure, notified positive aur priority lists, aur claim window DGFT notifications se aate hain. Kharch karne se pehle notification padho, har invoice sambhal kar rakho, aur yaad rakho ki assistance actual cost par milti hai, taxes ke baad. Agar aapki certification notified list par nahi milti, to ye maanne se pehle DGFT se poocho ki wo cover hai ya nahi.</p>"
-      ]
+     "slug": "markup-vs-margin-explained",
+     "title": "Markup vs Margin Explained"
     },
     {
-      "slug": "gst-rule-14b-ecommerce-sellers-november-1",
-      "title": "GST Registration for Small E-Commerce Sellers Opens Nov 1",
-      "dek": "Small sellers can register in a new state from November 1 using the platform's warehouse as their place of business, if monthly credit is under ₹2.5 lakh.",
-      "category": "Tax Rules",
-      "date": "2026-10-23",
-      "date_display": "October 23, 2026",
-      "source_name": "Business Standard",
-      "source_url": "https://www.business-standard.com/economy/news/gst-registration-for-small-e-commerce-sellers-to-begin-from-november-1-126102201388_1.html",
-      "cta": {
-        "text": "Splitting a bill into base price and GST, or working back from a GST-inclusive price, is the same sum the new registration rule turns on.",
-        "href": "/gst-calculator",
-        "label": "Open the GST Calculator"
-      },
-      "related": [
-        {
-          "slug": "marketplace-fees-explained",
-          "title": "Marketplace Fees Explained"
-        },
-        {
-          "slug": "marketplace-fees-india-sellers-guide",
-          "title": "Marketplace Fees in India: A Seller's Guide"
-        }
-      ],
-      "body_en": [
-        "<p>From November 1, 2026, a small seller who sells only through Amazon, Flipkart, Meesho or another e-commerce platform can register for GST in a new state without opening an office or a shop there. A senior finance ministry official said on October 22 that the system changes needed for the new route are ready and the facility will go live on the GST portal from the beginning of next month.</p>",
-        "<p>The route was proposed by the 57th GST Council earlier in October, under a new Rule 14B of the Central Goods and Services Tax Rules, 2017. It is separate from the enforcement and refund changes the same Council approved. This one is about the paperwork that stops a seller from shipping to customers outside their home state.</p>",
-        "<h2>What actually changes on November 1</h2>",
-        "<p>Under the rules as they stand, a seller who wants to hold stock in another state and sell from there needs a GST registration in that state. That usually means a rented premises, an address proof and a separate compliance routine. Many small sellers stay in one state for exactly this reason.</p>",
-        "<p>Rule 14B offers an optional alternative. A small seller of goods who supplies exclusively through electronic commerce operators can declare the warehouse of the e-commerce platform as their principal place of business in that state. They do not need to set up their own office or shop there. The consent of the e-commerce operator is obtained through the system, so the platform has to agree before the registration goes through.</p>",
-        "<p>Prashanth Agarwal, a partner at PwC India, called it a radical reform that can have a positive impact beyond GST on the economy at large. He said e-commerce sellers are generally reluctant to expand beyond their home state because of the compliance requirement, and that letting platform players support these sellers through the GSTN platform should go a long way in solving that.</p>",
-        "<h2>Who qualifies, and the &#8377;2.5 lakh rule</h2>",
-        "<p>Three conditions decide whether this is for you. First, you must already have a physical presence and a GST registration in at least one state, and that state will remain your home state. Second, the registration obtained this way can be used only for supplies made through e-commerce platforms, not for your own counter sales in that state. Third, you must pass on input tax credit of not more than &#8377;2.5 lakh a month.</p>",
-        "<p>The third condition is the one to check with your accountant, because it is a ceiling on credit, not a ceiling on turnover.</p>",
-        "<h2>The arithmetic of the &#8377;2.5 lakh ceiling</h2>",
-        "<p>Input tax credit is the GST you have already paid on your purchases, which you set off against the GST you collect on your sales. At 18%, every &#8377;10,00,000 of purchases carries &#8377;1,80,000 of credit, because 10,00,000 &#215; 18 &#247; 100 = 1,80,000. So a monthly credit ceiling of &#8377;2.5 lakh works out to roughly &#8377;13,00,000 to &#8377;14,00,000 of purchases a month at 18%.</p>",
-        "<p>Across a year, &#8377;2.5 lakh a month is &#8377;30,00,000 of credit. If your purchases run above that, this simplified route is not for you and you will keep registering the ordinary way. If you sell goods at 5% or 12%, the same &#8377;2.5 lakh of credit covers more purchases, because each rupee of purchase carries less tax.</p>",
-        "<h2>What it costs you in extra filings</h2>",
-        "<p>Every additional state registration means another GSTIN, and another monthly return. That is real work, and it is why a seller should add a state only when the sales there justify it. Say you sell &#8377;5,00,000 of goods in a month in one state and charge 18% GST. The tax inside that month's bills is &#8377;90,000, because 5,00,000 &#215; 18 &#247; 100 = 90,000, and the customer pays &#8377;5,90,000 in all.</p>",
-        "<p>Now set that against the credit you would claim on the stock you moved into the state. If that stock cost &#8377;4,00,000, the credit on it is &#8377;72,000. The extra return you file each month is the price of holding stock locally and shipping in a day instead of a week.</p>",
-        "<h2>What it means for your shop or startup</h2>",
-        "<p>If you sell only through marketplaces and your monthly input tax credit stays under &#8377;2.5 lakh, this is the cheapest way to start selling in a second state. The first thing to check is whether your platform has opted into the consent process, because the registration cannot go through without it. Detailed circulars explaining the process and the related notifications are expected in the next few days, so read them before you apply rather than after.</p>",
-        "<p>Separately, notifications and circulars covering the refund changes approved by the Council are also expected soon, which matters if you sell zero-rated or exported goods. And the long-running dispute over Section 16(2)(c), which lets a genuine buyer lose credit when a supplier does not deposit tax, has gone to a committee of officers. Its report is expected within three months, it will then go to the Council, and any decision is targeted for implementation from April 1, 2027. That is the bigger number for most sellers, and it is still open.</p>"
-      ],
-      "body_hinglish": [
-        "<p>1 November 2026 se, jo chhota seller sirf Amazon, Flipkart, Meesho ya kisi aur e-commerce platform par bechta hai, wo naye state mein GST registration karwa sakta hai bina wahan office ya dukaan khole. Ek senior finance ministry official ne 22 October ko kaha ki naye raaste ke liye zaroori system changes taiyar hain aur ye facility agle mahine ki shuruaat se GST portal par live ho jayegi.</p>",
-        "<p>Ye raasta 57th GST Council ne October ke shuru mein propose kiya tha, Central Goods and Services Tax Rules, 2017 ke naye Rule 14B ke tehat. Ye usi Council ke enforcement aur refund wale changes se alag hai. Ye us paperwork ke baare mein hai jo seller ko apne home state ke bahar customers ko bhejne se rokta hai.</p>",
-        "<h2>1 November se asli mein kya badalta hai</h2>",
-        "<p>Abhi ke rules ke hisaab se, jo seller doosre state mein stock rakh kar wahan se bechna chahta hai, usse us state mein GST registration chahiye. Iska matlab aam taur par kiraye ka premises, address proof aur alag compliance routine. Bahut se chhote sellers sirf isi wajah se ek hi state mein rehte hain.</p>",
-        "<p>Rule 14B ek optional raasta deta hai. Jo chhota seller sirf electronic commerce operators ke through goods bechta hai, wo us state mein e-commerce platform ke warehouse ko apna principal place of business declare kar sakta hai. Unhe wahan apna office ya dukaan set up karne ki zaroorat nahi hai. E-commerce operator ki consent system ke through li jaati hai, isliye platform ko pehle haan kehna padta hai.</p>",
-        "<p>PwC India ke partner Prashanth Agarwal ne ise radical reform kaha jo GST se aage ja kar poori economy par positive asar daal sakta hai. Unhone kaha ki e-commerce sellers aam taur par compliance requirement ki wajah se apne home state se bahar jaane mein hichakte hain, aur platform players ko GSTN ke through in sellers ki madad karne dene se ye problem kaafi had tak hal ho sakti hai.</p>",
-        "<h2>Kaun qualify karta hai, aur &#8377;2.5 lakh ka rule</h2>",
-        "<p>Teen shartein tay karti hain ki ye aapke liye hai ya nahi. Pehli, aapke paas kam se kam ek state mein physical presence aur GST registration pehle se hona chahiye, aur wahi state aapka home state rahega. Doosri, is tarah liya gaya registration sirf e-commerce platforms ke through ki gayi supplies ke liye use ho sakta hai, us state mein aapki apni counter sales ke liye nahi. Teesri, aapko mahine mein &#8377;2.5 lakh se zyada input tax credit pass on nahi karna chahiye.</p>",
-        "<p>Teesri shart apne accountant se check karein, kyunki ye credit par limit hai, turnover par nahi.</p>",
-        "<h2>&#8377;2.5 lakh ceiling ka hisaab</h2>",
-        "<p>Input tax credit wo GST hai jo aap apni kharidari par pehle hi de chuke ho, aur jise aap apni sales par collect kiye gaye GST se set off karte ho. 18% par, har &#8377;10,00,000 ki kharidari par &#8377;1,80,000 ka credit banta hai, kyunki 10,00,000 &#215; 18 &#247; 100 = 1,80,000. Isliye &#8377;2.5 lakh ki monthly credit limit 18% par lagbhag &#8377;13,00,000 se &#8377;14,00,000 ki mahine ki kharidari ke barabar hai.</p>",
-        "<p>Saal bhar mein &#8377;2.5 lakh mahina matlab &#8377;30,00,000 ka credit. Agar aapki kharidari isse zyada hai, to ye simplified raasta aapke liye nahi hai aur aap purane tareeke se hi registration karte rahenge. Agar aap 5% ya 12% ke goods bechte ho, to wahi &#8377;2.5 lakh ka credit zyada kharidari cover karta hai, kyunki har rupaye ki kharidari par kam tax hota hai.</p>",
-        "<h2>Extra filings ka kitna kharcha</h2>",
-        "<p>Har extra state registration ka matlab ek aur GSTIN, aur ek aur monthly return. Ye asli kaam hai, isliye seller ko state tabhi add karna chahiye jab wahan ki sales ise justify karein. Maano aap ek state mein ek mahine mein &#8377;5,00,000 ke goods bechte ho aur 18% GST lagate ho. Us mahine ke bills mein tax &#8377;90,000 hai, kyunki 5,00,000 &#215; 18 &#247; 100 = 90,000, aur customer kul &#8377;5,90,000 deta hai.</p>",
-        "<p>Ab ise us credit se compare karo jo us state mein bheje gaye stock par milega. Agar wo stock &#8377;4,00,000 ka tha, to uspar credit &#8377;72,000 hai. Har mahine ki ye extra return us price ka hissa hai jo aap local stock rakhne aur hafte ki jagah ek din mein ship karne ke liye dete ho.</p>",
-        "<h2>Aapki dukaan ya startup ke liye iska matlab</h2>",
-        "<p>Agar aap sirf marketplaces par bechte ho aur aapka monthly input tax credit &#8377;2.5 lakh se neeche rehta hai, to doosre state mein bechna shuru karne ka ye sabse sasta raasta hai. Sabse pehle ye dekho ki aapka platform consent process mein shamil hua hai ya nahi, kyunki iske bina registration nahi ho sakta. Process samjhane wale detailed circulars aur related notifications agle kuch dinon mein aane ki umeed hai, isliye apply karne se pehle padho, baad mein nahi.</p>",
-        "<p>Alag se, Council ne jo refund changes approve kiye hain, unke notifications aur circulars bhi jaldi aane ki umeed hai, jo aapke liye matter karta hai agar aap zero-rated ya export goods bechte ho. Aur Section 16(2)(c) ka purana vivaad, jisme supplier tax jama na kare to ek genuine buyer ka credit chala jaata hai, officers ki committee ko bhej diya gaya hai. Uski report teen mahine mein aane ki umeed hai, phir ye Council ke saamne jaayegi, aur koi bhi faisla 1 April 2027 se lagu karne ka target hai. Zyadatar sellers ke liye yahi bada number hai, aur ye abhi khula hai.</p>"
-      ]
-    },
-    {
-      "slug": "rbi-rate-hike-october-2026-what-it-costs-your-loan",
-      "title": "RBI Hiked the Repo Rate to 5.50%: What It Costs Your Loan",
-      "dek": "RBI's October minutes show a unanimous 25 bps hike to 5.50% and a shift to calibrated tightening. Here is what two more hikes do to a small business loan.",
-      "category": "Small Business",
-      "date": "2026-10-21",
-      "date_display": "October 21, 2026",
-      "source_name": "Reserve Bank of India",
-      "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63839",
-      "cta": {
-        "text": "Put your loan amount, rate and tenure in and see what a higher rate does to your monthly EMI.",
-        "href": "/loan-emi-calculator",
-        "label": "Open the Loan EMI Calculator"
-      },
-      "related": [
-        {
-          "slug": "burn-rate-runway-guide",
-          "title": "Burn Rate and Runway"
-        },
-        {
-          "slug": "break-even-point-explained",
-          "title": "Break-Even Point Explained"
-        }
-      ],
-      "body_en": [
-        "<p>The Reserve Bank of India released the minutes of its 63rd Monetary Policy Committee meeting on October 21, 2026. The committee, chaired by Governor Sanjay Malhotra, voted unanimously to raise the repo rate by 25 basis points to <strong>5.50%</strong> at its October 5 to 7 meeting, and changed its stance from neutral to calibrated tightening.</p>",
-        "<h2>What the minutes say the RBI decided</h2>",
-        "<p>The repo rate is now 5.50%, up from 5.25%. The standing deposit facility rate moved to 5.25%, and the marginal standing facility rate and the Bank Rate moved to 5.75%. The rate rise itself was unanimous. The change of stance was not. Two external members, Dr. Nagesh Kumar and Professor Ram Singh, wanted to keep the neutral stance, arguing that a tightening signal can read as the start of a long cycle of rate increases.</p>",
-        "<h2>Why the committee is worried about prices</h2>",
-        "<p>Consumer price inflation rose to 4.8% in August 2026 from 4.5% in July. Food and fuel led the increase, but core inflation, which strips out food and fuel, also rose, to 4.2%. The RBI expects CPI inflation to average close to 5.8% over the next three quarters, and projects it at 6.0% in the December quarter and 5.7% in the March quarter. The target is 4%. On growth, the RBI kept its projection for the year at 7.1%.</p>",
-        "<h2>The arithmetic of a 25 basis point hike</h2>",
-        "<p>One basis point is one hundredth of a percentage point, so 25 basis points is 0.25%. On a loan of ₹10,00,000, an extra 0.25% is ₹2,500 of interest a year, because 10,00,000 × 0.25 ÷ 100 = 2,500. Stretch that over five years and the same loan costs ₹12,500 more. On a ₹50,00,000 loan the same 0.25% is ₹12,500 a year. Two further hikes of 25 basis points each would add 0.50% in total, which is ₹5,000 a year, or ₹25,000 across five years, on ₹10,00,000.</p>",
-        "<h2>Why 0.25% is not a rounding error</h2>",
-        "<p>For a business, ₹5,000 a year is often the whole annual profit on a small order book. If a shop earns a 10% margin, it has to sell ₹50,000 of extra stock to recover that ₹5,000, because 5,000 ÷ 10% = 50,000. On a working capital line of ₹20,00,000, two hikes add ₹10,000 a year of interest. That money leaves the business before the owner's salary, so it lands straight on the monthly budget.</p>",
-        "<h2>What it means for your shop or startup</h2>",
-        "<p>If you have a floating-rate business loan or an overdraft, the next EMI or interest debit will be higher. Check the reset date on the sanction letter, because many business loans reprice every quarter while some retail loans reprice only once a year. If you are about to borrow, ask for the total interest over the full tenure, not just the EMI, since a longer tenure hides a bigger interest bill. If you hold a fixed deposit or a recurring deposit, the same cycle usually works in your favour over time, because new deposits get the higher rate. And if you are planning a big purchase on credit, run the numbers at a rate 0.50% higher than today's quote, so the next hike does not surprise you.</p>"
-      ],
-      "body_hinglish": [
-        "<p>Reserve Bank of India ne 21 October 2026 ko apni 63rd Monetary Policy Committee meeting ke minutes jaari kiye. Governor Sanjay Malhotra ki adhyakshta wali committee ne 5 se 7 October ki meeting mein repo rate 25 basis points badha kar <strong>5.50%</strong> karne ka unanimous faisla kiya, aur apna stance neutral se calibrated tightening kar diya.</p>",
-        "<h2>Minutes ke mutabik RBI ne kya kiya</h2>",
-        "<p>Repo rate ab 5.50% hai, jo pehle 5.25% tha. Standing deposit facility rate 5.25% ho gaya, aur marginal standing facility rate aur Bank Rate 5.75% ho gaye. Rate badhane ka faisla sabhi members ne ek saath liya. Lekin stance badalne par sabhi sehmat nahi the. Do external members, Dr. Nagesh Kumar aur Professor Ram Singh, neutral stance banaye rakhna chahte the. Unka kehna tha ki tightening ka signal logon ko ek lambi rate-hike cycle ka ishara de sakta hai.</p>",
-        "<h2>Committee ko mehngai ki chinta kyun hai</h2>",
-        "<p>August 2026 mein consumer price inflation July ke 4.5% se badh kar 4.8% ho gayi. Khane aur fuel ki keematein iski main wajah thi, lekin core inflation, jisme khana aur fuel nahi ginte, woh bhi badh kar 4.2% ho gayi. RBI ko ummeed hai ki agle teen quarters mein CPI inflation lagbhag 5.8% rahegi. Uska anumaan hai ki December quarter mein 6.0% aur March quarter mein 5.7% rahegi. Target 4% hai. Growth par, RBI ne is saal ke liye apna anumaan 7.1% hi rakha.</p>",
-        "<h2>25 basis point hike ka hisaab</h2>",
-        "<p>Ek basis point ek percentage point ka sauwan hissa hota hai, isliye 25 basis points matlab 0.25%. ₹10,00,000 ke loan par extra 0.25% saal ka ₹2,500 interest banata hai, kyunki 10,00,000 × 0.25 ÷ 100 = 2,500. Isi loan par paanch saal mein yeh ₹12,500 zyada ho jata hai. ₹50,00,000 ke loan par wahi 0.25% saal ka ₹12,500 hai. Agar 25-25 basis points ke do aur hike aate hain, to total 0.50% badhega: ₹10,00,000 par saal ka ₹5,000, ya paanch saal mein ₹25,000.</p>",
-        "<h2>0.25% koi chhoti baat nahi hai</h2>",
-        "<p>Ek business ke liye saal ka ₹5,000 aksar poore chhote order book ka profit hota hai. Agar dukaan ka margin 10% hai, to yeh ₹5,000 wapas kamane ke liye usse ₹50,000 ka extra maal bechna padega, kyunki 5,000 ÷ 10% = 50,000. ₹20,00,000 ke working capital loan par do hikes saal ka ₹10,000 interest jodte hain. Yeh paisa owner ki salary se pehle cash flow se nikalta hai, isliye seedha monthly budget par asar karta hai.</p>",
-        "<h2>Aapki dukaan ya startup ke liye iska matlab</h2>",
-        "<p>Agar aapke paas floating-rate business loan ya overdraft hai, to agla EMI ya interest debit zyada hoga. Sanction letter par reset date zaroor dekhein, kyunki kai business loans har quarter reprice hote hain, jabki kuch retail loans saal mein ek baar. Agar aap naya loan lene wale hain, to sirf EMI nahi, poore tenure ka total interest poochhein, kyunki lambi tenure bada interest bill chhupa deti hai. Agar aapke paas fixed deposit ya recurring deposit hai, to aam taur par yeh cycle samay ke saath aapke faayde mein kaam karta hai, kyunki naye deposits ko zyada rate milta hai. Aur agar aap credit par koi badi kharidari plan kar rahe hain, to aaj ke quote se 0.50% zyada rate par hisaab lagayein, taaki agla hike aapko chaunkay na.</p>"
-      ]
-    },
-    {
-      "slug": "amazon-festive-sale-seller-sales-3-5x-first-week",
-      "title": "Amazon Festive Sale Lifted Seller Sales 3.5x in Week One",
-      "dek": "Amazon's festive sale lifted seller sales 3.5x in week one, and zero referral fees below ₹1,000 did part of it. Here is what that means for your price.",
-      "category": "Small Business",
-      "date": "2026-10-21",
-      "date_display": "October 21, 2026",
-      "source_name": "ET Retail",
-      "source_url": "https://retail.economictimes.indiatimes.com/news/e-commerce/amazon-great-indian-festival-2026-drives-3-5x-seller-sales-smb-participation-rises-30-per-cent/135091532",
-      "cta": {
-        "text": "Put your own price, commission and shipping in and see what you actually keep.",
-        "href": "/marketplace-fee-calculator",
-        "label": "Open the Marketplace Fee Calculator"
-      },
-      "related": [
-        {
-          "slug": "marketplace-fees-explained",
-          "title": "Marketplace Fees Explained"
-        },
-        {
-          "slug": "average-order-value-aov",
-          "title": "Average Order Value Calculator"
-        }
-      ],
-      "body_en": [
-        "<p>Amazon India's Great Indian Festival 2026 opened with seller sales running <strong>3.5 times</strong> normal levels in its first week, and products selling more than twice as fast, according to ET Retail. Seller participation rose nearly <strong>30%</strong> year on year to a record high, and more than <strong>70%</strong> of the participating small and medium businesses came from Tier 2 and Tier 3 cities.</p>",
-        "<p>A festival week is a strange thing to measure. The number is real, but it is measured against an ordinary week, not against last October. Read it as a spike, not as a new normal.</p>",
-        "<h2>What the numbers actually say</h2>",
-        "<p>The count of SMBs crossing <strong>₹10 lakh</strong> in sales grew more than <strong>4.6 times</strong> in that first week, and the number of sellers crossing <strong>₹1 crore</strong> grew over 1.5 times. Among sellers who were new to the platform, units sold rose more than 2.5 times, the count crossing <strong>₹1 lakh</strong> grew 2.4 times, and those crossing <strong>₹10 lakh</strong> increased more than fourfold.</p>",
-        "<p>Women entrepreneurs in Amazon Saheli recorded sales spikes of up to <strong>10 times</strong>, and sellers in Amazon Karigar, the artisans programme, grew more than 1.5 times. The top five categories by seller sales were jewellery, shoes, automotive, major appliances and wireless products.</p>",
-        "<h2>Why the ₹10 lakh line is the one to watch</h2>",
-        "<p>Growth multiples flatter small bases. A seller who did ₹1 lakh in a normal week and ₹10 lakh in the festival week has grown ten times, and that is a genuine achievement — but it also means the next ordinary week will look like a collapse. If you hired staff or bought stock on the strength of a festival week, the arithmetic of the week after is what pays for it.</p>",
-        "<p>Compare the two groups. The number of sellers crossing ₹1 crore grew 1.5 times, while those crossing ₹10 lakh grew 4.6 times. The bigger the base, the harder the multiple. That is normal, and it is why a headline multiple should never be read as a promise of scale.</p>",
-        "<h2>The fee change doing part of the work</h2>",
-        "<p>Amazon attributed part of the momentum to changes in its seller fee structure, including <strong>zero referral fees on products priced below ₹1,000</strong>. In the first 24 hours of the festival, the number of sellers offering products below ₹500 who recorded a tenfold sales spike grew more than two times compared with a year earlier.</p>",
-        "<p>Here is the arithmetic of why that threshold matters. Suppose your referral fee is 20% and you sell at ₹1,000. The fee is ₹200, so you keep ₹800 before shipping and any closing fee. Sell the same item at ₹900 with no referral fee and you keep ₹900. You take ₹100 less from the customer and still keep ₹100 more. That is the whole argument for knowing where your price sits relative to the threshold.</p>",
-        "<h2>What this means if you sell online</h2>",
-        "<p><strong>Check where your price sits.</strong> If your best-selling item is priced just above a fee threshold, the arithmetic above applies to every single order. Move the price deliberately, not by accident.</p>",
-        "<p><strong>Do not build fixed costs on a spike.</strong> A 3.5 times week is a week. Warehouse rent, extra staff and a large inventory bet are monthly costs, and they do not shrink when the traffic goes back to normal.</p>",
-        "<p><strong>Read your payout ratio, not your sales figure.</strong> The dashboard shows what the customer paid. Your bank account shows what you kept. Those are different numbers, and the gap is fees, shipping and returns.</p>",
-        "<p><strong>Plan the next sale now.</strong> Amazon ran a seller acquisition campaign across more than 150 cities and towns and a Festive Readiness Seller Academy with ten sessions. The sellers who crossed ₹10 lakh in week one had listings, stock and ad budgets ready before the sale opened, not during it.</p>",
-        "<h2>Do this before the next festival</h2>",
-        "<p>Take your five best-selling items and write down the price, the commission percentage, the shipping you pay and the returns you expect. Work out what you actually keep on each one. Most sellers find one or two items earn far less than the sales report suggests, and a small price correction before the next sale is worth more than any discount you can offer during it.</p>"
-      ],
-      "body_hinglish": [
-        "<p>Amazon India ke Great Indian Festival 2026 ke pehle hafte mein seller sales normal level se <strong>3.5 guna</strong> rahi, aur products do guna se zyada tezi se bike, ET Retail ke mutabik. Seller participation pichhle saal se takriban <strong>30%</strong> badhi aur record par pahunchi, aur participate karne wale small aur medium businesses mein se <strong>70%</strong> se zyada Tier 2 aur Tier 3 shehron se the.</p>",
-        "<p>Festival ka hafta naapna ajeeb hota hai. Number sach hai, par woh ek aam hafte se compare kiya gaya hai, pichhle October se nahi. Ise spike samjho, naya normal nahi.</p>",
-        "<h2>Numbers asal mein kya kehte hain</h2>",
-        "<p>Jo SMBs <strong>₹10 lakh</strong> ke sales cross kare, unki ginti us pehle hafte mein <strong>4.6 guna</strong> se zyada badhi, aur <strong>₹1 crore</strong> cross karne wale sellers 1.5 guna se zyada badhe. Naye sellers mein units sold 2.5 guna se zyada badhe, <strong>₹1 lakh</strong> cross karne wale 2.4 guna badhe, aur <strong>₹10 lakh</strong> cross karne wale chaar guna se zyada.</p>",
-        "<p>Amazon Saheli ki women entrepreneurs ne <strong>10 guna</strong> tak ke sales spike dekhe, aur Amazon Karigar ke artisans 1.5 guna se zyada badhe. Seller sales ke hisaab se top paanch categories jewellery, shoes, automotive, major appliances aur wireless products thi.</p>",
-        "<h2>₹10 lakh ki line par nazar kyun rakhni chahiye</h2>",
-        "<p>Growth multiples chhote base ko hawa deti hain. Jo seller aam hafte mein ₹1 lakh karta tha aur festival hafte mein ₹10 lakh, usne das guna growth ki, aur ye asli achievement hai — par iska matlab ye bhi hai ki agla aam hafta collapse jaisa lagega. Agar aapne festival hafte ke bharose staff rakha ya stock kharida, to us agle hafte ka hisaab hi iska paisa deta hai.</p>",
-        "<p>Do groups ko compare karo. ₹1 crore cross karne wale sellers 1.5 guna badhe, aur ₹10 lakh cross karne wale 4.6 guna. Base jitna bada, multiple utna mushkil. Ye normal hai, aur isliye headline multiple ko kabhi scale ka wada nahi samajhna chahiye.</p>",
-        "<h2>Fees mein badlav jo kaam kar raha hai</h2>",
-        "<p>Amazon ne momentum ka ek hissa apne seller fee structure ke badlav ko diya, jisme <strong>₹1,000 se kam ke products par zero referral fees</strong> shamil hai. Festival ke pehle 24 ghanton mein, ₹500 se kam ke products bechne wale sellers jinhone das guna sales spike dekha, unki ginti pichhle saal se do guna se zyada badhi.</p>",
-        "<p>Ye threshold kyun maayne rakhta hai, uska arithmetic dekho. Maan lo referral fee 20% hai aur aap ₹1,000 par bechte ho. Fee ₹200 hai, to shipping aur closing fee se pehle aap ₹800 rakhte ho. Wahi item ₹900 par bina referral fee becho to ₹900 rakhte ho. Customer se ₹100 kam lete ho aur phir bhi ₹100 zyada rakhte ho. Threshold ke hisaab se aapka price kahan hai, ye jaanna poori baat hai.</p>",
-        "<h2>Agar aap online bechte ho to iska matlab</h2>",
-        "<p><strong>Dekho aapka price kahan baithta hai.</strong> Agar aapka best-selling item kisi fee threshold se bas thoda upar hai, to upar ka arithmetic har order par lagta hai. Price deliberately badlo, galti se nahi.</p>",
-        "<p><strong>Spike par fixed cost mat banao.</strong> 3.5 guna hafta ek hafta hai. Warehouse rent, extra staff aur bada inventory bet mahine ka kharcha hain, aur traffic normal hone par woh kam nahi hote.</p>",
-        "<p><strong>Apna payout ratio padho, sales figure nahi.</strong> Dashboard dikhata hai customer ne kitna diya. Bank account dikhata hai aapne kitna rakha. Ye do alag numbers hain, aur beech ka gap fees, shipping aur returns hai.</p>",
-        "<p><strong>Agli sale ki planning ab karo.</strong> Amazon ne 150 se zyada shehron aur towns mein seller acquisition campaign chalaya aur das sessions ki Festive Readiness Seller Academy chalayi. Jo sellers pehle hafte mein ₹10 lakh cross kare, unke listings, stock aur ad budget sale khulne se pehle ready the, sale ke dauraan nahi.</p>",
-        "<h2>Agle festival se pehle ye karo</h2>",
-        "<p>Apne paanch best-selling items lo aur price, commission percentage, jo shipping aap dete ho aur jo returns expect karte ho, sab likho. Har item par aap asal mein kitna rakhte ho, nikaalo. Zyadatar sellers paate hain ki ek-do items sales report se kaafi kam kama rahe hain, aur agli sale se pehle chhota price correction us sale ke dauraan diye gaye kisi bhi discount se zyada kaam ka hai.</p>"
-      ]
-    },
-    {
-      "slug": "upi-mdr-deferred-after-diwali-what-shops-pay",
-      "title": "UPI MDR Is Deferred to After Diwali: What a Shop Will Actually Pay",
-      "dek": "NPCI has pushed the 0.4% merchant fee on UPI payments above ₹2,000 to after Diwali. Here is the arithmetic of what that fee costs a small shop, and who is spared.",
-      "category": "Small Business",
-      "date": "2026-10-21",
-      "date_display": "October 21, 2026",
-      "source_name": "Business Standard",
-      "source_url": "https://www.business-standard.com/finance/news/upi-mdr-deferred-until-after-diwali-new-date-to-be-notified-npci-126101300556_1.html",
-      "cta": {
-        "text": "A per-sale fee is a variable cost. See what it does to what each sale contributes.",
-        "href": "/contribution-margin",
-        "label": "Open the Contribution Margin Calculator"
-      },
-      "related": [
-        {
-          "slug": "marketplace-fees-explained",
-          "title": "Marketplace Fees Explained"
-        },
-        {
-          "slug": "net-profit-margin",
-          "title": "Net Profit Margin Calculator"
-        }
-      ],
-      "body_en": [
-        "<p>India's biggest change to digital payments in years has been put on hold. The National Payments Corporation of India (NPCI) has deferred the merchant discount rate (MDR) on select UPI transactions until after Diwali, just two days before it was due to start on October 15. The fee structure itself is unchanged — only the date moved.</p>",
-        "<p>For anyone who takes UPI at a counter, that means a few more weeks of free collections. It is a delay, not a cancellation. Here is what the rule says, what the fee costs in rupees, and what a shop should do before the new date arrives.</p>",
-        "<h2>What NPCI actually announced</h2>",
-        "<p>NPCI said the UPI and Services Steering Committee decided to implement MDR on select person-to-merchant (P2M) UPI transactions \"immediately post Diwali at a date to be notified separately.\" A source confirmed to Business Standard that there will be no change in the MDR structure. Only the start date has been pushed back.</p>",
-        "<p>An MDR is a fee a merchant pays to the bank and the payment company that process a digital transaction. Until now, UPI merchant payments carried no such fee for the merchant. That is what is about to change.</p>",
-        "<h2>What 0.4% means in rupees</h2>",
-        "<p>The levy is set at 0.40% on UPI payments to merchants above ₹2,000, and it is capped at ₹300. Some categories, including bill payments, fuel and education, attract a flat ₹5 instead.</p>",
-        "<p>Percentage fees feel tiny until you put them next to real sales. A ₹5,000 payment costs 0.40% of ₹5,000, which is ₹20. A ₹10,000 payment costs ₹40. A shop that collects ₹1,00,000 a month in merchant UPI payments pays about ₹400 a month, or roughly ₹4,800 over a year.</p>",
-        "<p>Now compare that with profit, not turnover. If the same shop runs at a 5% net margin, ₹1,00,000 of sales leaves ₹5,000 of profit. A ₹400 fee is 8% of that profit gone. On a thin margin, a fee that looks like a rounding error on the bill is a real slice of what the owner keeps.</p>",
-        "<h2>Who pays, and who does not</h2>",
-        "<p>The charge is aimed at merchant payments, not person-to-person transfers. It applies only to UPI payments above ₹2,000, so small everyday payments stay outside the levy. The flat ₹5 applies to a short list of categories rather than everything.</p>",
-        "<p>The cap matters for large bills. A ₹75,000 payment at 0.40% would work out to ₹300, so the cap bites at that level — anything bigger still costs ₹300, not more.</p>",
-        "<p>Business Standard reported that UPI recorded a record average of 802 million transactions a day in September, with an average daily value of ₹97,913 crore. A fee of 0.40% on that volume is a large amount of money changing hands across the system — which is why traders fought it and why the delay happened.</p>",
-        "<h2>Why the delay happened</h2>",
-        "<p>Timing. The fee was due to start on October 15, in the middle of the festive season, when retail volumes peak. Deferring it gives merchants a breather through their busiest weeks, while keeping the rule itself on the books.</p>",
-        "<p>It is worth reading the delay for what it is: a pause for the calendar, not a reversal of policy. Planning for the fee to arrive after Diwali is the safer assumption.</p>",
-        "<h2>What a shop owner should do before the new date</h2>",
-        "<p>First, work out the number for your own counter. Take your monthly merchant UPI collections above ₹2,000, multiply by 0.40%, and apply the ₹300 cap to any single large payment. That figure is the extra cost you are about to carry.</p>",
-        "<p>Second, treat it as a variable cost, because that is what it is. It rises with every sale, exactly like packaging or shipping. Add it to your cost per sale and watch what is left to cover rent, salaries and your own take-home.</p>",
-        "<p>Third, do not panic-price. A ₹20 cost on a ₹5,000 sale does not justify a price rise on its own. Decide on pricing with the full margin in view, and only for the categories where the fee actually bites.</p>",
-        "<p>And keep accepting UPI. The fee is small, the volumes are large, and customers have made their choice. The right response is to know the cost to the rupee, not to turn customers away at the counter.</p>"
-      ],
-      "body_hinglish": [
-        "<p>Digital payments ka sabse bada badlav kuch waqt ke liye ruk gaya hai. National Payments Corporation of India (NPCI) ne select UPI transactions par merchant discount rate (MDR) ko Diwali ke baad tak tal diya hai — shuru hone se sirf do din pehle, jab woh 15 October ko lagu hona tha. Fee structure mein koi badlav nahi hua, sirf tareekh aage khiski hai.</p>",
-        "<p>Counter par UPI lene wale ke liye iska matlab hai kuch hafte aur free collection. Ye rok hai, rad nahi. Aage samjhiye ki rule kya kehta hai, rupaye mein kitna padta hai, aur nayi tareekh se pehle dukaan ko kya karna chahiye.</p>",
-        "<h2>NPCI ne asal mein kya kaha</h2>",
-        "<p>NPCI ne kaha ki UPI and Services Steering Committee ne decide kiya hai ki select person-to-merchant (P2M) UPI transactions par MDR \"immediately post Diwali at a date to be notified separately\" lagu hoga. Business Standard ko ek source ne bataya ki MDR structure mein koi badlav nahi hoga. Sirf shuru hone ki tareekh aage badhi hai.</p>",
-        "<p>MDR woh fee hai jo merchant bank aur payment company ko deta hai, jo digital transaction process karti hai. Ab tak UPI merchant payments par merchant ko aisi koi fee nahi padti thi. Yahi badalne wala hai.</p>",
-        "<h2>0.4% ka matlab rupaye mein</h2>",
-        "<p>Levy ₹2,000 se upar wale UPI merchant payments par 0.40% hai, aur iski cap ₹300 hai. Kuch categories, jaise bill payments, fuel aur education, par flat ₹5 lagta hai.</p>",
-        "<p>Percentage fee chhoti lagti hai jab tak aap usse asli sales ke saath na rakhein. ₹5,000 ke payment par 0.40% matlab ₹20. ₹10,000 ke payment par ₹40. Jo dukaan mahine mein ₹1,00,000 merchant UPI collect karti hai, woh mahine ke lagbhag ₹400 deti hai, ya saal ke karib ₹4,800.</p>",
-        "<p>Ab isse turnover ke saath nahi, profit ke saath compare kariye. Agar wahi dukaan 5% net margin par chalti hai, to ₹1,00,000 ki sales se ₹5,000 profit bachta hai. ₹400 ki fee us profit ka 8% hai. Patle margin par, jo fee bill par rounding error lagti hai, woh owner ki kamai ka asli hissa hai.</p>",
-        "<h2>Kaun deta hai, kaun nahi</h2>",
-        "<p>Ye charge merchant payments ke liye hai, person-to-person transfers ke liye nahi. Ye sirf ₹2,000 se upar wale UPI payments par lagta hai, isliye chhote rozana payments is levy se bahar rehte hain. Flat ₹5 thodi si categories par lagta hai, sab par nahi.</p>",
-        "<p>Cap bade bills ke liye maayne rakhta hai. ₹75,000 ke payment par 0.40% matlab ₹300, isliye cap wahi se lagu hoti hai — usse bada koi bhi payment bhi ₹300 hi hota hai, zyada nahi.</p>",
-        "<p>Business Standard ne bataya ki September mein UPI ne ek din mein record average 802 million transactions kiye, aur average daily value ₹97,913 crore rahi. Us volume par 0.40% fee ka matlab hai poore system mein badi rakam ka lena-dena — isi liye traders ne virodh kiya aur isi liye ye delay hua.</p>",
-        "<h2>Delay kyun hua</h2>",
-        "<p>Timing. Fee 15 October se shuru honi thi, festive season ke beech, jab retail volumes sabse zyada hote hain. Isse talne se merchants ko unke sabse busy hafton mein rahat mili, lekin rule khud kitab mein bana hua hai.</p>",
-        "<p>Is delay ko waise padhiye jaise woh hai: calendar ke liye ruk, policy ka palat nahi. Ye maan kar chaliye ki fee Diwali ke baad aa jaayegi — yahi safe assumption hai.</p>",
-        "<h2>Nayi tareekh se pehle dukaan ko kya karna chahiye</h2>",
-        "<p>Pehle apne counter ka number nikaliye. Apni monthly merchant UPI collections jo ₹2,000 se upar hain, unhe 0.40% se multiply kariye, aur kisi ek bade payment par ₹300 ki cap lagaiye. Wahi figure aapki aane wali extra cost hai.</p>",
-        "<p>Doosre, ise variable cost maaniye, kyunki woh hai. Ye har sale ke saath badhti hai, bilkul packaging ya shipping ki tarah. Ise apni cost per sale mein jodiye aur dekhiye ki rent, salary aur apni kamai ke liye kitna bachta hai.</p>",
-        "<p>Teesre, ghabra kar price na badhaiye. ₹5,000 ki sale par ₹20 ki cost apne aap mein price badhane ka reason nahi hai. Pricing poore margin ko dekh kar tay kariye, aur sirf un categories mein jahan fee asli mein lagti hai.</p>",
-        "<p>Aur UPI lena jaari rakhiye. Fee chhoti hai, volumes bade hain, aur customers apna faisla kar chuke hain. Sahi jawab ye hai ki cost ko rupaye tak jaaniye, counter par customer ko lautane ka nahi.</p>"
-      ]
-    },
-    {
-      "slug": "shark-tank-usa-polygons-foldable-spoon-deal",
-      "title": "Indian Designer's Foldable Spoon Wins $350,000 on Shark Tank USA",
-      "dek": "Rahul Agarwal sold 10% of Polygons for $350,000 to Lori Greiner and Mindy Kaling. Here is the arithmetic behind that deal, and what it says about valuing a simple product.",
-      "category": "Shark Tank",
-      "date": "2026-10-21",
-      "date_display": "October 21, 2026",
-      "source_name": "Indian Express",
-      "source_url": "https://indianexpress.com/article/entertainment/television/shark-tank-rahul-agarwal-indian-entrepreneur-rs-3-crore-deal-spoon-brand-10929028",
-      "cta": {
-        "text": "Value your own idea the way the sharks did.",
-        "href": "/implied-valuation",
-        "label": "Open the Implied Valuation Calculator"
-      },
-      "related": [
-        {
-          "slug": "startup-valuation-explained",
-          "title": "How Startup Valuation Actually Works"
-        },
-        {
-          "slug": "shark-tank-pitch-check",
-          "title": "Shark Tank Pitch Check"
-        }
-      ],
-      "body_en": [
-        "<p>A measuring spoon that folds flat just did what most kitchen gadgets never manage: it walked into <em>Shark Tank USA</em> and left with a cheque. Rahul Agarwal, founder of Polygons, took an origami-inspired design to season 18, episode 4, and closed a $350,000 deal with Lori Greiner and guest shark Mindy Kaling.</p>",
-        "<p>The structure matters more than the headline number, because it is the same structure Indian founders are offered every week on <em>Shark Tank India</em>.</p>",
-        "<h2>What exactly did he give away?</h2>",
-        "<p>Agarwal handed over <strong>8% equity plus 2% in advisory shares</strong> — 10% in total — for $350,000. That puts the deal at a <strong>$3.5 million post-money valuation</strong>, or roughly ₹29 crore at the exchange rate used in reporting.</p>",
-        "<p>He had asked for $350,000 for 7%, which would have valued Polygons at $5 million. The sharks talked him down. That gap — $5 million asked versus $3.5 million agreed — is 30% of the company's value, and it was decided in a few minutes of conversation.</p>",
-        "<h2>The two numbers you should always split apart</h2>",
-        "<p>Every equity deal is two numbers wearing one coat. The amount invested tells you how much cash arrives. The percentage tells you what the company is worth. Confusing them is the most common mistake founders make when they repeat a deal on social media.</p>",
-        "<p>Pre-money valuation is the company's worth <em>before</em> the cheque. Post-money is <em>after</em>. Here, the post-money is $3.5 million, so the pre-money is $3.15 million. If a founder quotes only the post-money, they are quietly flattering themselves.</p>",
-        "<h2>Why a spoon is worth $3.5 million</h2>",
-        "<p>Because it solved a boring problem well. The product replaces a six-piece measuring spoon set with two folding tools, holds a patent, and had shipped more than 200,000 units to over 110 countries before the episode aired. Twenty-plus design awards helped too.</p>",
-        "<p>None of that is glamorous. All of it is the reason the deal happened. Investors do not pay for the idea of a folding spoon. They pay for units already sold, a patent that keeps rivals out, and a founder who shipped before asking for money.</p>",
-        "<h2>What an Indian founder should take from it</h2>",
-        "<p>First, know your numbers cold. Agarwal could name his units shipped and his country count on demand. Sharks test that, and fumbling it costs valuation.</p>",
-        "<p>Second, decide your floor before you walk in. The asking valuation is an opening bid, not a fact. Having a number below which you will walk is what stops a bad deal from feeling like a win.</p>",
-        "<p>Third, remember advisory shares are real shares. That extra 2% was not decoration; it was dilution. Founders often wave it through because it sounds like a formality. It is not.</p>"
-      ],
-      "body_hinglish": [
-        "<p>Ek measuring spoon jo fold ho jaata hai, woh kar gaya jo zyadatar kitchen gadgets kabhi nahi kar paate: <em>Shark Tank USA</em> mein gaya aur cheque le kar nikla. Rahul Agarwal, Polygons ke founder, origami-inspired design le kar season 18, episode 4 mein aaye, aur Lori Greiner aur guest shark Mindy Kaling ke saath $350,000 ka deal kar liya.</p>",
-        "<p>Number se zyada deal ka structure important hai, kyunki yahi structure har hafte <em>Shark Tank India</em> mein Indian founders ko milta hai.</p>",
-        "<h2>Aakhir usne kitna hissa diya?</h2>",
-        "<p>Agarwal ne <strong>8% equity aur 2% advisory shares</strong> diye — total 10% — $350,000 ke liye. Isse deal ki <strong>$3.5 million post-money valuation</strong> banti hai, yaani takriban ₹29 crore.</p>",
-        "<p>Unhone 7% ke liye $350,000 maanga tha, jisse Polygons ki value $5 million hoti. Sharks ne unhe neeche laaya. Yahi gap — $5 million maanga, $3.5 million tay hua — company ki 30% value hai, aur ye kuch minute ki baat-cheet mein tay hua.</p>",
-        "<h2>Do numbers jo hamesha alag-alag dekho</h2>",
-        "<p>Har equity deal do numbers ka joda hota hai. Amount batata hai kitna cash aayega. Percentage batata hai company kitne ki hai. In dono ko mila dena sabse aam galti hai jo founders social media par deal dohraate waqt karte hain.</p>",
-        "<p>Pre-money valuation cheque se <em>pehle</em> ki value hai. Post-money <em>baad</em> ki. Yahan post-money $3.5 million hai, to pre-money $3.15 million. Agar founder sirf post-money bataye, woh chupke se apni tareef kar raha hai.</p>",
-        "<h2>Ek chammach $3.5 million ka kyun?</h2>",
-        "<p>Kyunki usne ek boring problem achhe se solve kiya. Product chhe piece ka set hata kar do folding tools deta hai, patent hai, aur episode se pehle 200,000 se zyada units 110 se zyada deshon mein bhej chuka tha. Bees se zyada design awards ne bhi madad ki.</p>",
-        "<p>Ismein kuch bhi glamorous nahi hai. Phir bhi yahi wajah hai ki deal hui. Investors folding spoon ke idea ke paise nahi dete. Woh already biki units, patent jo competitor ko rokta hai, aur us founder ke paise dete hain jisne maangne se pehle ship kar diya.</p>",
-        "<h2>Indian founder ko isse kya seekhna chahiye</h2>",
-        "<p>Pehla, apne numbers ratlo. Agarwal turant units aur deshon ki ginti bata sakte the. Sharks yahi test karte hain, aur yahan fumble karne se valuation girti hai.</p>",
-        "<p>Doosra, andar ghusne se pehle apna floor tay karo. Asking valuation ek opening bid hai, sach nahi. Ek number jiske neeche aap walk karoge, wahi kharab deal ko jeet jaisa lagne se rokti hai.</p>",
-        "<p>Teesra, yaad rakho advisory shares asli shares hote hain. Woh extra 2% decoration nahi thi; woh dilution thi. Founders ise aksar hawa mein chhod dete hain kyunki formality lagti hai. Hai nahi.</p>"
-      ]
-    },
-    {
-      "slug": "gst-council-october-2026-small-business-changes",
-      "title": "GST Council Scrapped Arrest Powers and Raised the Prosecution Limit to ₹5 Crore",
-      "dek": "The 57th GST Council meeting eased compliance for small businesses without touching tax rates. Here is what actually changed and what it means for your shop or startup.",
-      "category": "Tax Rules",
-      "date": "2026-10-21",
-      "date_display": "October 21, 2026",
-      "source_name": "Economic Times",
-      "source_url": "https://m.economictimes.com/news/economy/policy/gst-reforms-2026-winners-who-benefits-consumers-msmes-businesses-exporters-gst-council-exporters-and-taxpayers-have-plenty-to-gain-heres-how/articleshow/134790594.cms",
-      "cta": {
-        "text": "Add GST to any price, or pull the base price out of a GST-inclusive bill.",
-        "href": "/gst-calculator",
-        "label": "Open the GST Calculator"
-      },
-      "related": [
-        {
-          "slug": "marketplace-fees-explained",
-          "title": "Marketplace Fees Explained"
-        },
-        {
-          "slug": "gst-calculator",
-          "title": "GST Calculator"
-        }
-      ],
-      "body_en": [
-        "<p>On 8 October 2026, the 57th GST Council meeting approved a set of reforms that change how the tax office treats you rather than how much tax you pay. Rates were left untouched. What moved was enforcement, refunds and paperwork.</p>",
-        "<p>For a small seller or a first-time founder, this is the more useful kind of change. A lower rate saves you a little every month. Fewer ways to get into trouble saves you a lot, once.</p>",
-        "<h2>What changed, in plain terms</h2>",
-        "<p><strong>Arrest powers under GST were removed.</strong> That is the headline. Tax officers can no longer arrest someone as an enforcement tool in the ordinary course of a dispute.</p>",
-        "<p><strong>The prosecution threshold rose from ₹1 crore to ₹5 crore.</strong> Below that amount, a dispute is far less likely to turn criminal.</p>",
-        "<p><strong>The general penalty dropped from ₹25,000 to ₹10,000.</strong> A small procedural mistake now costs less than half of what it did.</p>",
-        "<p><strong>Refund acknowledgement fell from 15 days to 10 days,</strong> and the system will provisionally sanction 90% of a claim after risk assessment, with the order issued within three working days.</p>",
-        "<h2>The small-business option worth knowing about</h2>",
-        "<p>The Council approved, in principle, an optional annual return with quarterly payment scheme for qualifying business-to-consumer businesses with turnover up to ₹5 crore. Instead of a steady drumbeat of filings, a small seller could file once a year and pay quarterly.</p>",
-        "<p>Nothing here changes how you calculate GST on a bill. A ₹1,000 item at 18% is still ₹1,180, and the tax inside a ₹1,180 bill is still ₹180. The calculator above does that split either way.</p>",
-        "<h2>What to actually do this week</h2>",
-        "<p>Check whether your turnover puts you inside the ₹5 crore band for the annual-return option. If it does, ask your accountant whether it suits your cash cycle — paying quarterly can help a business that earns unevenly.</p>",
-        "<p>If you export or sell zero-rated goods, expect refunds to arrive faster. Plan your working capital on the new timelines rather than the old ones.</p>",
-        "<p>And keep your returns consistent. The Council also moved to reduce mismatches between what you report and what you claim as input tax credit. Easier enforcement is not absent enforcement.</p>",
-        "<h2>What did not change</h2>",
-        "<p>Rates. The 5%, 12%, 18% and 28% slabs are exactly where they were, and the Council has signalled it wants rate changes to settle into a once-a-year cycle instead of arriving unpredictably.</p>",
-        "<p>Registration thresholds and the basic filing obligation are untouched too. If you were registered last month, you are registered today, and the returns you owe have not changed shape.</p>"
-      ],
-      "body_hinglish": [
-        "<p>8 October 2026 ko 57th GST Council meeting ne aise reforms approve kiye jo ye badalte hain ki tax office aapke saath kaise pesh aata hai, ye nahi ki aap kitna tax dete ho. Rates wahi rahe. Jo badla woh hai enforcement, refunds aur paperwork.</p>",
-        "<p>Ek chhote seller ya pehli baar founder ke liye yahi zyada kaam ki cheez hai. Kam rate har mahine thoda bachata hai. Mushkil mein padne ke kam raste ek baar mein bahut bachate hain.</p>",
-        "<h2>Kya badla, seedhe shabdon mein</h2>",
-        "<p><strong>GST ke arrest powers hata diye gaye.</strong> Yahi headline hai. Tax officers ab aam vivaad mein arrest ko tool ki tarah istemal nahi kar sakte.</p>",
-        "<p><strong>Prosecution threshold ₹1 crore se ₹5 crore ho gayi.</strong> Is amount se neeche vivaad ke criminal banne ke chance kaafi kam hain.</p>",
-        "<p><strong>General penalty ₹25,000 se ₹10,000 ho gayi.</strong> Ek chhoti procedural galti ab pehle se aadhe se bhi kam ki padti hai.</p>",
-        "<p><strong>Refund acknowledgement 15 din se 10 din ho gaya,</strong> aur system risk assessment ke baad claim ka 90% provisional sanction karega, order teen working days mein.</p>",
-        "<h2>Chhote business ka ek option jo jaanna chahiye</h2>",
-        "<p>Council ne in-principle optional annual return with quarterly payment scheme approve kiya hai un B2C businesses ke liye jinki turnover ₹5 crore tak hai. Lagataar filings ki jagah ek chhota seller saal mein ek baar file kar sakta hai aur quarterly pay kar sakta hai.</p>",
-        "<p>Yahan kuch bhi ye nahi badalta ki aap bill par GST kaise nikalte ho. ₹1,000 ka item 18% par ab bhi ₹1,180 hai, aur ₹1,180 ke bill mein tax ab bhi ₹180 hai. Upar wala calculator dono taraf se ye split karta hai.</p>",
-        "<h2>Is hafte asli mein kya karein</h2>",
-        "<p>Dekho ki aapki turnover aapko annual-return option ke ₹5 crore band mein laati hai ya nahi. Agar haan, apne accountant se poocho ki ye aapke cash cycle ke liye theek hai — quarterly pay karna us business ki madad karta hai jiski kamai uneven ho.</p>",
-        "<p>Agar aap export ya zero-rated goods bechte ho, to refund jaldi aane ki umeed rakho. Working capital purane timeline ki jagah naye timeline par plan karo.</p>",
-        "<p>Aur apne returns consistent rakho. Council ne ye bhi kaha hai ki jo aap report karte ho aur jo input tax credit claim karte ho, usme mismatch kam ho. Aasan enforcement ka matlab enforcement gayab nahi hai.</p>",
-        "<h2>Kya nahi badla</h2>",
-        "<p>Rates. 5%, 12%, 18% aur 28% slabs bilkul wahin hain jahan the, aur Council ne ishara diya hai ki rate changes ek saal mein ek baar wale cycle mein aane chahiye, achanak nahi.</p>",
-        "<p>Registration thresholds aur basic filing obligation bhi waise hi hain. Agar aap pichhle mahine registered the, to aaj bhi ho, aur jo returns aapko dene hain unka shape nahi badla.</p>"
-      ]
-    },
-    {
-      "slug": "india-startup-funding-october-2026-flat-year",
-      "title": "Indian Startups Raised $10.9 Billion This Year — But From Far Fewer Deals",
-      "dek": "Funding is flat for a third straight year, yet the average cheque nearly doubled. Here is what that shift means if you are about to raise.",
-      "category": "Funding",
-      "date": "2026-10-21",
-      "date_display": "October 21, 2026",
-      "source_name": "India Business Trade",
-      "source_url": "https://indiabusinesstrade.in/india-startup-vc-funding-stays-flat-at-10-9-billion-in-2026.htm",
-      "cta": {
-        "text": "See how much runway your current cash and burn actually buy you.",
-        "href": "/burn-rate-and-runway",
-        "label": "Open the Burn Rate Calculator"
-      },
-      "related": [
-        {
-          "slug": "burn-rate-runway-guide",
-          "title": "Burn Rate and Runway"
-        },
-        {
-          "slug": "revenue-multiple",
-          "title": "Revenue Multiple Calculator"
-        }
-      ],
-      "body_en": [
-        "<p>Indian startups raised <strong>$10.9 billion across 1,253 rounds</strong> between January and 15 October 2026, according to Tracxn data. That is up 6.8% on the same period last year. On its own, it reads like a flat year.</p>",
-        "<p>The number underneath is the interesting one. In 2025, the same $10.2 billion came from 1,982 rounds. This year it came from 1,253. Average funding per round jumped from <strong>$5.1 million to $8.6 million</strong>.</p>",
-        "<h2>What a rising average cheque really says</h2>",
-        "<p>It says money did not leave the market. It concentrated. Investors are writing fewer, larger cheques to companies they already believe in, and passing on the rest.</p>",
-        "<p>The top ten startups took nearly 36% of all equity funding — $3.92 billion between them. When a third of the money goes to ten companies, the other 1,243 are sharing the rest.</p>",
-        "<h2>Why this is harder than a funding winter</h2>",
-        "<p>A winter is obvious. Everyone struggles, everyone knows why, and the bar drops accordingly. A concentrated market is quieter. The headline total looks healthy, so nobody adjusts expectations, while the median founder finds the door narrower than last year.</p>",
-        "<p>That mismatch is dangerous. Founders read that funding is up 6.8% and plan an 18-month raise. The actual probability of a yes has fallen.</p>",
-        "<h2>What it means if you are raising soon</h2>",
-        "<p><strong>Assume the round takes longer.</strong> With fewer deals closing, plan on a longer runway than you think you need. Run the numbers with a conservative burn and see how many months the cash buys.</p>",
-        "<p><strong>Lead with traction, not the idea.</strong> When investors are writing bigger cheques, they are buying evidence. Revenue, retention and a believable path to the next round beat a large market slide.</p>",
-        "<p><strong>Consider a smaller round.</strong> If the average cheque is growing, an ask that is too small can read as unserious, but so can an ask that is far beyond your traction. Match the number to what you can prove.</p>",
-        "<p><strong>Look at the categories that are winning.</strong> Deeptech, AI and clean energy are pulling the large rounds. If your business sits next to one of those, say so plainly. If it does not, do not pretend — investors hear that pitch all day.</p>",
-        "<h2>The weekly picture is noisier than the yearly one</h2>",
-        "<p>A single week can look explosive. Between 12 and 17 October, 28 Indian startups raised $302.85 million, roughly 2.7 times the week before. Read one week and you will draw the wrong conclusion; read the year and the concentration becomes obvious.</p>"
-      ],
-      "body_hinglish": [
-        "<p>Tracxn data ke mutabik Indian startups ne January se 15 October 2026 ke beech <strong>1,253 rounds mein $10.9 billion</strong> uthaye. Ye pichhle saal ke isi period se 6.8% zyada hai. Akela dekhne par ye flat saal lagta hai.</p>",
-        "<p>Iske neeche wala number zyada dilchasp hai. 2025 mein yahi $10.2 billion 1,982 rounds se aaya tha. Is saal ye 1,253 se aaya. Average funding per round <strong>$5.1 million se $8.6 million</strong> ho gayi.</p>",
-        "<h2>Average cheque badhne ka asli matlab</h2>",
-        "<p>Iska matlab hai ki paisa market se gaya nahi. Woh ek jagah ikattha hua. Investors kam, bade cheques un companies ko de rahe hain jin par unhe pehle se bharosa hai, aur baaki ko chhod rahe hain.</p>",
-        "<p>Top das startups ne kul equity funding ka takriban 36% liya — akele $3.92 billion. Jab ek tihai paisa das companies ko jaata hai, to baaki 1,243 mil kar baaki hissa baant rahi hain.</p>",
-        "<h2>Ye funding winter se zyada mushkil kyun hai</h2>",
-        "<p>Winter saaf dikhta hai. Sab struggle karte hain, sabko wajah pata hoti hai, aur bar uske hisaab se neeche aata hai. Concentrated market zyada shaant hota hai. Headline total theek lagta hai, to koi expectations adjust nahi karta, aur beech ka founder darwaza pichhle saal se tang paata hai.</p>",
-        "<p>Yahi mismatch khatarnak hai. Founders padhte hain ki funding 6.8% badhi hai aur 18 mahine ka raise plan karte hain. Haan milne ki asli sambhavna giri hai.</p>",
-        "<h2>Agar aap jald raise karne wale ho to iska matlab</h2>",
-        "<p><strong>Maano ki round zyada time lega.</strong> Kam deals close ho rahi hain, to jitni runway chahiye soch rahe ho usse zyada plan karo. Conservative burn se numbers nikalo aur dekho cash kitne mahine ka hai.</p>",
-        "<p><strong>Idea se nahi, traction se shuru karo.</strong> Jab investors bade cheque likh rahe hain, woh sabooot kharid rahe hain. Revenue, retention aur agle round ka believable raasta ek bade market slide se behtar hai.</p>",
-        "<p><strong>Chhota round socho.</strong> Average cheque badh raha hai, to bahut chhoti ask non-serious lagti hai, par bahut badi ask bhi lagti hai jab traction uske layak na ho. Number ko us cheez se match karo jo aap prove kar sakte ho.</p>",
-        "<p><strong>Jeetne wali categories dekho.</strong> Deeptech, AI aur clean energy bade rounds kheench rahe hain. Agar aapka business inme se kisi ke paas baithta hai, to saaf bolo. Agar nahi, to natak mat karo — investors ye pitch din bhar sunte hain.</p>",
-        "<h2>Hafta-waar tasveer saal se zyada shor karti hai</h2>",
-        "<p>Ek hafta dhamakedaar lag sakta hai. 12 se 17 October ke beech 28 Indian startups ne $302.85 million uthaye, jo pichhle hafte se takriban 2.7 guna zyada hai. Ek hafta padhoge to galat nateeja nikaaloge; saal padhoge to concentration saaf dikhega.</p>"
-      ]
-    },
-    {
-      "slug": "marketplace-fees-india-sellers-guide",
-      "title": "Why an ₹800 Sale on a Marketplace Often Pays You Only ₹580",
-      "dek": "Commission, shipping and closing fees quietly take a quarter of the selling price. Here is the arithmetic, and how to price so the fees do not eat your margin.",
-      "category": "Small Business",
-      "date": "2026-10-21",
-      "date_display": "October 21, 2026",
-      "source_name": "Tank Metrics",
-      "source_url": "",
-      "cta": {
-        "text": "Put your own price and fees in and see what you actually keep.",
-        "href": "/marketplace-fee-calculator",
-        "label": "Open the Marketplace Fee Calculator"
-      },
-      "related": [
-        {
-          "slug": "marketplace-fees-explained",
-          "title": "Marketplace Fees Explained"
-        },
-        {
-          "slug": "average-order-value-aov",
-          "title": "Average Order Value Calculator"
-        }
-      ],
-      "body_en": [
-        "<p>You list an item at ₹800. The order comes in. You pack it, ship it, and a week later the settlement lands. It is not ₹800. It is rarely even close.</p>",
-        "<p>This is not a scam. It is how marketplaces make money, and it is entirely knowable in advance. Most sellers just never add it up before setting the price.</p>",
-        "<h2>Where the ₹220 goes</h2>",
-        "<p>A typical order carries three or four separate charges. <strong>Commission</strong> is usually the largest, charged as a percentage of the selling price and varying by category — often higher for fashion and lower for electronics.</p>",
-        "<p><strong>Shipping</strong> is charged on weight slabs, and the slab matters more than the actual weight. A 480-gram parcel and a 510-gram parcel can land in different slabs and different fees.</p>",
-        "<p><strong>Closing or fixed fees</strong> apply per order regardless of size, which is why small-ticket items get punished hardest. A ₹200 order with a ₹25 fixed fee has already lost 12.5% before commission.</p>",
-        "<p><strong>Payment gateway charges</strong> and, on cash-on-delivery orders, a COD handling fee round it out.</p>",
-        "<h2>The number that actually matters</h2>",
-        "<p>Not the fee. The <em>effective payout percentage</em>. If you keep ₹580 of an ₹800 sale, your payout ratio is 72.5%. Now compare that to your product cost.</p>",
-        "<p>Suppose the item costs you ₹420 to make or buy. You keep ₹580. Gross profit is ₹160, or 20% of the selling price. A single return wipes out three or four profitable orders.</p>",
-        "<h2>How to price so fees do not eat you</h2>",
-        "<p><strong>Work backwards from your cost.</strong> Decide the margin you need, then gross up for the fee percentage rather than adding fees on top of a price you already chose.</p>",
-        "<p><strong>Push order value up.</strong> Fixed fees punish small baskets. Bundling two items into one order spreads the fixed fee across more revenue and can lift your payout ratio several points.</p>",
-        "<p><strong>Watch the weight slab.</strong> If your parcel is 510 grams and the next slab starts at 500, shaving packaging can drop you a slab and save on every single order.</p>",
-        "<p><strong>Track your RTO rate.</strong> A returned cash-on-delivery order can cost you the forward shipping, the return shipping and the lost sale. Sellers with a high RTO rate often find their real margin is far below what the dashboard shows.</p>",
-        "<p>None of this needs software. It needs you to know your payout ratio before you set a price, not after the settlement report arrives.</p>",
-        "<h2>Do this before your next listing</h2>",
-        "<p>Open a spreadsheet, or the calculator above, and write down the payout ratio for your five best-selling items. Most sellers find one or two are quietly losing money at the current price, and a small correction fixes it before the losses pile up.</p>"
-      ],
-      "body_hinglish": [
-        "<p>Aap ek item ₹800 mein list karte ho. Order aata hai. Aap pack karte ho, ship karte ho, aur ek hafte baad settlement aata hai. Woh ₹800 nahi hai. Zyadatar paas bhi nahi hai.</p>",
-        "<p>Ye scam nahi hai. Marketplaces aise hi paisa kamate hain, aur ye pehle se poori tarah pata kiya ja sakta hai. Zyadatar sellers bas price set karne se pehle ise jodte hi nahi.</p>",
-        "<h2>Woh ₹220 kahan jaate hain</h2>",
-        "<p>Ek aam order mein teen ya chaar alag charges hote hain. <strong>Commission</strong> aam taur par sabse bada hota hai, selling price ke percentage par, aur category ke hisaab se badalta hai — fashion par aksar zyada, electronics par kam.</p>",
-        "<p><strong>Shipping</strong> weight slabs par lagti hai, aur slab asli weight se zyada matter karti hai. 480 gram ka parcel aur 510 gram ka parcel alag slab aur alag fee mein ja sakte hain.</p>",
-        "<p><strong>Closing ya fixed fees</strong> har order par lagti hain, size chahe kuch bhi ho, isliye chhote ticket wale items sabse zyada pit-te hain. ₹200 ke order par ₹25 ki fixed fee commission se pehle hi 12.5% kha jaati hai.</p>",
-        "<p><strong>Payment gateway charges</strong> aur cash-on-delivery orders par COD handling fee ise poora karte hain.</p>",
-        "<h2>Asli number jo matter karta hai</h2>",
-        "<p>Fee nahi. <em>Effective payout percentage</em>. Agar ₹800 ki sale par aapke paas ₹580 aata hai, to payout ratio 72.5% hai. Ab ise apni product cost se compare karo.</p>",
-        "<p>Maano item banane ya kharidne mein ₹420 lagta hai. Aapke paas ₹580 aata hai. Gross profit ₹160, yaani selling price ka 20%. Ek return teen-char profitable orders kha jaata hai.</p>",
-        "<h2>Price kaise rakho ki fees kha na jaayein</h2>",
-        "<p><strong>Apni cost se peeche se chalo.</strong> Decide karo kitna margin chahiye, phir fee percentage ke liye gross up karo, na ki apne chune hue price par fees jodo.</p>",
-        "<p><strong>Order value badhao.</strong> Fixed fees chhoti basket ko saza deti hain. Do items ek order mein bundle karne se fixed fee zyada revenue par bant jaati hai aur payout ratio kuch points badh sakta hai.</p>",
-        "<p><strong>Weight slab dekho.</strong> Agar parcel 510 gram hai aur agli slab 500 se shuru hoti hai, to packaging thodi kam karne se aap ek slab neeche aa sakte ho aur har order par bacha sakte ho.</p>",
-        "<p><strong>Apna RTO rate track karo.</strong> Return hua cash-on-delivery order forward shipping, return shipping aur khoi hui sale — teeno ka kharcha de sakta hai. Jinka RTO rate zyada hai unka asli margin aksar dashboard se kaafi neeche hota hai.</p>",
-        "<p>Ismein koi software nahi chahiye. Sirf ye chahiye ki price set karne se pehle apna payout ratio pata ho, settlement report aane ke baad nahi.</p>",
-        "<h2>Agli listing se pehle ye karo</h2>",
-        "<p>Ek spreadsheet kholo, ya upar wala calculator, aur apne paanch sabse zyada bikne wale items ka payout ratio likho. Zyadatar sellers ko pata chalta hai ki ek-do items chupke se current price par paisa kha rahe hain, aur thoda correction nuksaan badhne se pehle ise theek kar deta hai.</p>"
-      ]
-    },
-    {
-      "slug": "khosla-ventures-even-healthcare-india-bet",
-      "title": "Khosla Ventures Doubled Down on Indian Healthcare — What That Signals",
-      "dek": "A US fund backing an Indian hospital challenger is a bet on cost structure, not technology. Here is how to read a funding signal like this.",
-      "category": "Funding",
-      "date": "2026-10-21",
-      "date_display": "October 21, 2026",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics",
-      "cta": {
-        "text": "Work out the market size your own pitch can honestly claim.",
-        "href": "/tam-sam-som",
-        "label": "Open the TAM / SAM / SOM Calculator"
-      },
-      "related": [
-        {
-          "slug": "startup-valuation-explained",
-          "title": "How Startup Valuation Actually Works"
-        },
-        {
-          "slug": "revenue-multiple",
-          "title": "Revenue Multiple Calculator"
-        }
-      ],
-      "body_en": [
-        "<p>Khosla Ventures put more money into Even Healthcare, an Indian company taking on the economics of Indian hospitals. The amount is less interesting than the reason, because it tells you what foreign capital currently believes about India.</p>",
-        "<h2>The bet is on cost structure</h2>",
-        "<p>Indian hospital economics are unusual. A large share of care is paid for out of pocket, not by insurance, which means price sensitivity is extreme and the middle of the market is underserved. A company that can deliver acceptable care at a lower cost does not need to invent anything. It needs to be structurally cheaper than the incumbent.</p>",
-        "<p>That is a business-model bet, not a technology bet. Investors are paying for the possibility that a different cost base wins in a market where the current one is broken for most people.</p>",
-        "<h2>How to read a funding signal like this</h2>",
-        "<p><strong>Look at what the money is for.</strong> If a round funds capacity — beds, clinics, logistics — the thesis is scale economics. If it funds research, the thesis is a product that does not exist yet. These have very different risk profiles.</p>",
-        "<p><strong>Check who led it.</strong> A follow-on from an existing investor is a conviction signal. A new lead entering is a validation signal. Both are good, but they mean different things.</p>",
-        "<p><strong>Ignore the valuation headline.</strong> Valuations are set by negotiation and market mood. The interesting facts are unit economics: cost to serve one customer, and how that falls as volume rises.</p>",
-        "<h2>What Indian founders should take from it</h2>",
-        "<p>Foreign capital is looking at Indian problems, not just Indian software. If your business solves something structurally broken — healthcare access, credit, logistics in small towns — you are in a category that is actively being funded.</p>",
-        "<p>But be honest about market size. Investors have heard every version of the India-is-1.4-billion-people pitch. The number that lands is the one you can defend: who exactly pays you, how much, and how many of them you can realistically reach.</p>",
-        "<p>Finally, understand that a follow-on round is not a victory lap. It means the existing investor believes enough to protect their position. It also means the next round will be judged against the promises you made in this one.</p>",
-        "<h2>The uncomfortable question for Indian founders</h2>",
-        "<p>If a foreign fund will back an Indian company attacking Indian hospital costs, it will look at your category too. The question is not whether your market is large. It is whether you are structurally cheaper, faster or better than whoever already serves it.</p>"
-      ],
-      "body_hinglish": [
-        "<p>Khosla Ventures ne Even Healthcare mein aur paisa lagaya, ek Indian company jo Indian hospitals ki economics ko challenge kar rahi hai. Amount se zyada wajah dilchasp hai, kyunki ye batati hai ki foreign capital aaj India ke baare mein kya maanta hai.</p>",
-        "<h2>Bet cost structure par hai</h2>",
-        "<p>Indian hospital economics alag hai. Badi hissa ilaaj ka apni jeb se diya jaata hai, insurance se nahi, isliye price sensitivity bahut zyada hai aur beech ka market underserved hai. Jo company kam cost par theek-thaak ilaaj de sake, use kuch invent karne ki zaroorat nahi. Use structurally sasta hona hai.</p>",
-        "<p>Ye business-model ka bet hai, technology ka nahi. Investors us sambhavna ke paise de rahe hain ki ek alag cost base us market mein jeetega jahan aaj ka cost base zyadatar logon ke liye toota hua hai.</p>",
-        "<h2>Aisa funding signal kaise padho</h2>",
-        "<p><strong>Dekho paisa kis liye hai.</strong> Agar round capacity — beds, clinics, logistics — fund karta hai, to thesis scale economics hai. Agar research fund karta hai, to thesis aise product ki hai jo abhi hai hi nahi. Dono ka risk bahut alag hai.</p>",
-        "<p><strong>Dekho kiska lead tha.</strong> Purane investor ka follow-on conviction signal hai. Naya lead aana validation signal hai. Dono achhe hain, par matlab alag hai.</p>",
-        "<p><strong>Valuation headline ignore karo.</strong> Valuation negotiation aur market mood se banti hai. Dilchasp facts unit economics hain: ek customer ko serve karne ki cost, aur volume badhne par woh kaise girti hai.</p>",
-        "<h2>Indian founders ko isse kya seekhna chahiye</h2>",
-        "<p>Foreign capital Indian problems dekh raha hai, sirf Indian software nahi. Agar aapka business kuch structurally toota hua solve karta hai — healthcare access, credit, chhote shahron ki logistics — to aap us category mein ho jise actively fund kiya ja raha hai.</p>",
-        "<p>Par market size par imaandaar raho. Investors ne India-1.4-billion-people pitch ka har version suna hai. Woh number chalta hai jo aap defend kar sakte ho: asli mein kaun aapko paisa deta hai, kitna, aur unmein se kitne tak aap pahunch sakte ho.</p>",
-        "<p>Aakhir, samjho ki follow-on round victory lap nahi hai. Iska matlab hai ki purana investor itna bharosa karta hai ki apni position bachaye. Iska ye bhi matlab hai ki agla round usi promise par judge hoga jo aapne is round mein kiya.</p>",
-        "<h2>Indian founders ke liye uncomfortable sawaal</h2>",
-        "<p>Agar ek foreign fund Indian hospital costs par hamla karne wali Indian company ko support karega, to woh aapki category bhi dekhega. Sawaal ye nahi ki aapka market bada hai. Sawaal ye hai ki aap usse structurally saste, tez ya behtar ho jo pehle se usse serve kar raha hai.</p>"
-      ]
+     "slug": "break-even-point-explained",
+     "title": "Break-Even Point Explained"
     }
-  ]
+   ],
+   "body_en": [
+    "<p>The rupee fell for the third straight day on Monday, October 26, 2026, settling 29 paise lower at 95.22 against the U.S. dollar. It opened the day at 94.92, touched an intra-day low of 95.26 and closed at 95.22. The fall came on top of Friday's 12 paise slide to 94.93, so the currency has now given up ground in three sessions running.</p>",
+    "<h2>Why the rupee is falling</h2>",
+    "<p>Forex traders put the slide down to a stronger dollar, slight gains in U.S. Treasury yields and elevated crude oil prices, with geopolitical tension in West Asia weighing on sentiment. A recovery in the domestic markets cushioned the downside, which is why the rupee finished the day above its worst level rather than at it.</p>",
+    "<h2>What a weaker rupee costs an importer</h2>",
+    "<p>A weaker rupee makes every dollar-denominated purchase dearer, and the effect is immediate. Take a $10,000 import order. At Friday's rate of 94.93 it cost ₹9,49,300. At Monday's 95.22 the same order costs ₹9,52,200 — ₹2,900 more for a 29-paise move, and that is before customs duty, freight or insurance are added.</p>",
+    "<p>The rule of thumb is easier to remember than the arithmetic: every ₹1 the rupee falls adds ₹10,000 to a $10,000 bill. A shop that imports twice a year can absorb that. A trader placing monthly orders cannot, which is why the rate belongs in the price you quote, not in a footnote.</p>",
+    "<h2>What it pays an exporter</h2>",
+    "<p>The same move works in reverse for anyone who earns in dollars. A $10,000 export invoice that fetched ₹9,49,300 on Friday now brings in ₹9,52,200. An exporter whose costs are in rupees and whose price is in dollars therefore sees the margin widen as the rupee weakens, provided the rate has not already been locked with a forward contract.</p>",
+    "<h2>What to do about it</h2>",
+    "<p>For a small business the practical answer is to plan against a range rather than a single number. Check whether your margin still holds if the rupee moves another rupee in either direction, because a rate that flatters your numbers today can turn a profitable order into a break-even one next month. Re-run your landed cost with the current rate before you quote, and treat the exchange rate as one more line item that moves, the same way you treat freight or packaging.</p>",
+    "<p>None of this is a forecast. The rupee closed at 95.22 on October 26 after opening at 94.92, and where it goes next depends on crude prices, U.S. yields and events no calculator can see. What a calculator can do is tell you the number your margin can survive.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Monday, October 26, 2026 ko rupee teesre din bhi gira aur dollar ke against 29 paise kam hokar 95.22 par band hua. Din ki shuruaat 94.92 par hui, din mein 95.26 tak gira aur 95.22 par band hua. Friday ko bhi 12 paise gir kar 94.93 par band hua tha, to teen session se rupee peeche ja raha hai.</p>",
+    "<h2>Rupee kyun gir raha hai</h2>",
+    "<p>Forex traders ke mutabik wajah hai mazboot dollar, US Treasury yields mein halki badhotri aur mehnga crude oil, aur West Asia ka geopolitical tension sentiment par bhaari pad raha hai. Domestic market mein recovery ne nuksan kam kiya, isliye rupee din ke sabse neeche level se upar band hua.</p>",
+    "<h2>Kamzor rupee importer ko kitna mehnga padta hai</h2>",
+    "<p>Kamzor rupee har dollar wali kharid ko mehnga kar deta hai, aur asar turant hota hai. Maan lo $10,000 ka import order hai. Friday ke 94.93 par iski cost ₹9,49,300 thi. Monday ke 95.22 par wahi order ₹9,52,200 padta hai — 29 paise ke move par ₹2,900 zyada, aur ye customs duty, freight ya insurance se pehle ki baat hai.</p>",
+    "<p>Yaad rakhne ka aasan rule: rupee jitna ₹1 girta hai, $10,000 ke bill par ₹10,000 jud jaata hai. Saal mein do baar import karne wala dukaan ise jhel lega. Har mahine order karne wala nahi, isliye rate ko apne quote ki price mein rakho, footnote mein nahi.</p>",
+    "<h2>Exporter ko kitna milta hai</h2>",
+    "<p>Jo dollar mein kamata hai, uske liye yahi move ulta kaam karta hai. Friday ko $10,000 ka export invoice ₹9,49,300 deta tha, ab ₹9,52,200 dega. Jis exporter ki cost rupee mein hai aur price dollar mein, uska margin rupee kamzor hone par badhta hai — bas rate forward contract se pehle se lock na ho.</p>",
+    "<h2>Iska kya karna hai</h2>",
+    "<p>Chhote business ke liye practical baat ye hai ki ek number ke bajaye ek range par plan karo. Dekho ki rupee ek rupaya idhar ya udhar move kare to bhi tumhara margin tikta hai ya nahi, kyunki aaj ka rate jo achha lag raha hai wo agle mahine order ko break-even bana sakta hai. Quote karne se pehle current rate par apna landed cost dobara chalao, aur exchange rate ko bhi ek aise line item ki tarah dekho jo move karta hai, jaise freight ya packaging.</p>",
+    "<p>Ye koi forecast nahi hai. October 26 ko rupee 94.92 par khula aur 95.22 par band hua, aur aage kya hoga wo crude prices, US yields aur un events par nirbhar karta hai jo koi calculator nahi dekh sakta. Calculator sirf itna bata sakta hai ki tumhara margin kaunsa number jhel sakta hai.</p>"
+   ]
+  },
+  {
+   "slug": "export-certification-cost-support-micro-exporters",
+   "title": "Govt to Bear Certification Costs for Small Exporters",
+   "dek": "Micro and small exporters can claim up to 75% of certification costs under the Export Promotion Mission, with a ₹25 lakh yearly cap and EU CBAM cover.",
+   "category": "Small Business",
+   "date": "2026-10-23",
+   "date_display": "October 23, 2026",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/industry/news/govt-to-bear-certification-costs-for-micro-small-exporter-under-epm-goyal-126102300503_1.html",
+   "cta": {
+    "text": "Certification is one more line in what a unit costs you. Put it beside packaging, freight and material and see the true per-unit cost before you quote a price.",
+    "href": "/landed-cost-calculator",
+    "label": "Open the Landed Cost Calculator"
+   },
+   "related": [
+    {
+     "slug": "markup-vs-margin-explained",
+     "title": "Markup vs Margin Explained"
+    },
+    {
+     "slug": "break-even-point-explained",
+     "title": "Break-Even Point Explained"
+    }
+   ],
+   "body_en": [
+    "<p>On October 23, 2026, Commerce and Industry Minister Piyush Goyal said the government is willing to bear the entire cost of \"expensive\" certification for micro and small enterprises that want to export, under the Export Promotion Mission. He asked both existing and new exporters to approach the Directorate General of Foreign Trade for the support.</p>",
+    "<p>The promise matters because certification is one of the first big bills a small exporter meets: the testing, inspection, conformity and traceability reports a buyer in Europe or the United States asks for before placing an order.</p>",
+    "<h2>What the government announced</h2>",
+    "<p>Goyal, speaking to reporters in Berlin, said: \"Under the mission, we are willing to support everybody who wants to export anywhere in the world. We will give them support. For micro and small (enterprises), we are willing to literally take care of the entire cost of certification and others also, if there is some very expensive certification or process.\"</p>",
+    "<p>He added that the cost of complying with European Union regulations, including the Carbon Border Adjustment Mechanism and the EU Deforestation Regulation, would be covered for micro and small enterprises. Support for bigger businesses would come on a graded basis. He also urged exporters across product categories and sectors to use the scheme, saying it would encourage new products, new markets and new exporters.</p>",
+    "<h2>The mission and the money behind it</h2>",
+    "<p>The Export Promotion Mission was approved in November 2025 with an outlay of ₹25,060 crore for six financial years. It runs through two sub-schemes: Niryat Protsahan, with ₹10,401 crore, and Niryat Disha, with ₹14,659 crore.</p>",
+    "<p>The certification support sits inside a component called Trade Regulations, Accreditation and Compliance Enablement, or TRACE. It pays for the international testing, inspection, certification and other conformity work that opens a market. To use it, an exporter needs a valid Importer Exporter Code and a valid MSME Udyam registration number.</p>",
+    "<p>The published rates are tiered. For certifications on the notified Positive List, assistance is 60% of the actual cost net of taxes, or ₹25 lakh, whichever is lower. For the notified Priority Positive List, it is 75%, again capped at ₹25 lakh. The annual cap for one exporter under TRACE is ₹25 lakh.</p>",
+    "<h2>The arithmetic of one certification claim</h2>",
+    "<p>Suppose a laboratory test, a notified body and a traceability audit together cost ₹10,00,000 for your product line. On the Positive List, 60% of ₹10,00,000 is ₹6,00,000, because 10,00,000 × 60 ÷ 100 = 6,00,000. You pay the other ₹4,00,000.</p>",
+    "<p>If that same certification sits on the Priority Positive List, 75% of ₹10,00,000 is ₹7,50,000, so your own share falls to ₹2,50,000. The difference between the two lists is ₹1,50,000 on a bill of ₹10,00,000, which is worth checking before you file.</p>",
+    "<p>Now push the bill up. At ₹30,00,000 of certification cost, 75% works out to ₹22,50,000, still under the ceiling, so the cap does not bite. At ₹40,00,000, 75% would be ₹30,00,000, but the ceiling cuts the support to ₹25,00,000 and you carry the rest. The cap starts to matter once your certification bill crosses roughly ₹33,00,000, because 25,00,000 ÷ 75 × 100 is about ₹33,33,333.</p>",
+    "<h2>Why the EU rules are the live part</h2>",
+    "<p>The European Union is where the pressure is sharpest. India's exports to EU countries fell 4.57% to $72.4 billion in 2025-26 from $75.85 billion a year earlier, and the EU took about 17% of India's merchandise shipments. The Carbon Border Adjustment Mechanism asks exporters of steel, aluminium, cement and fertiliser to report the emissions locked into what they ship, and the EU Deforestation Regulation asks for proof that the product is not linked to deforested land.</p>",
+    "<p>Both need records a small factory often does not keep: energy bills, process data, supplier declarations. Meeting them means paying an auditor, a lab or a consultant, and that is exactly the bill TRACE is meant to share. The minister's remarks are significant because MSMEs had flagged the cost of reporting, certification, emissions monitoring and traceability as a burden that could make Indian goods costlier in Europe.</p>",
+    "<h2>What it means for your shop or startup</h2>",
+    "<p>If you already export, first check that your Udyam registration is current and your Importer Exporter Code is valid, because TRACE is closed without both. Then write down every certification, test report and audit your main buyer asks for, and price each one. That list is what you claim against, and it is also the number you have been absorbing quietly.</p>",
+    "<p>If you are exporting for the first time, work the cost into your unit price before you quote. Say the bill is ₹10,00,000 and you pay ₹2,50,000 of it yourself. Spread over 10,000 units that is ₹25 a unit, because 2,50,000 ÷ 10,000 = 25. Spread over 1,000 units it is ₹250 a unit. The grant is the same either way; the volume is what turns it into a margin.</p>",
+    "<p>One caution. This is a policy promise, and the detailed procedure, the notified positive and priority lists, and the claim window come from DGFT notifications. Read the notification before you spend, keep every invoice, and remember that assistance is paid on actual cost net of taxes. If you cannot find your certification on the notified list, ask DGFT before assuming it is covered.</p>"
+   ],
+   "body_hinglish": [
+    "<p>23 October 2026 ko, Commerce and Industry Minister Piyush Goyal ne kaha ki government Export Promotion Mission ke tehat micro aur small enterprises ke liye \"expensive\" certification ka poora kharcha uthane ko taiyar hai. Unhone purane aur naye dono exporters se kaha ki support ke liye Directorate General of Foreign Trade se sampark karein.</p>",
+    "<p>Ye vaada matter karta hai kyunki certification ek chhote exporter ka pehla bada bill hota hai: testing, inspection, conformity aur traceability reports, jo Europe ya United States ka buyer order dene se pehle maangta hai.</p>",
+    "<h2>Government ne kya announce kiya</h2>",
+    "<p>Berlin mein reporters se baat karte hue Goyal ne kaha: \"Under the mission, we are willing to support everybody who wants to export anywhere in the world. We will give them support. For micro and small (enterprises), we are willing to literally take care of the entire cost of certification and others also, if there is some very expensive certification or process.\"</p>",
+    "<p>Unhone kaha ki European Union ke regulations, including Carbon Border Adjustment Mechanism aur EU Deforestation Regulation, ka compliance kharcha micro aur small enterprises ke liye cover kiya jayega. Bade businesses ko graded basis par support milega. Unhone exporters se har product category aur sector mein scheme ka fayda uthane ko bhi kaha, aur kaha ki isse naye products, naye markets aur naye exporters badhenge.</p>",
+    "<h2>Mission aur iske peeche ka paisa</h2>",
+    "<p>Export Promotion Mission November 2025 mein approve hui thi, ₹25,060 crore ke outlay ke saath chhe financial years ke liye. Ye do sub-schemes se chalti hai: Niryat Protsahan, ₹10,401 crore ke saath, aur Niryat Disha, ₹14,659 crore ke saath.</p>",
+    "<p>Certification ka support ek component mein hai jiska naam Trade Regulations, Accreditation and Compliance Enablement, ya TRACE hai. Ye us international testing, inspection, certification aur conformity kaam ka paisa deta hai jo market kholta hai. Iske liye exporter ke paas valid Importer Exporter Code aur valid MSME Udyam registration number hona chahiye.</p>",
+    "<p>Published rates tiered hain. Notified Positive List ki certifications par assistance actual cost ka 60% hai, taxes ke baad, ya ₹25 lakh, jo kam ho. Notified Priority Positive List par ye 75% hai, phir bhi ₹25 lakh par capped. TRACE ke tehat ek exporter ke liye saalana cap ₹25 lakh hai.</p>",
+    "<h2>Ek certification claim ka hisaab</h2>",
+    "<p>Maano ek laboratory test, ek notified body aur ek traceability audit mil kar aapki product line ke liye ₹10,00,000 ka hote hain. Positive List par, ₹10,00,000 ka 60% ₹6,00,000 hai, kyunki 10,00,000 × 60 ÷ 100 = 6,00,000. Baaki ₹4,00,000 aap dete ho.</p>",
+    "<p>Agar wahi certification Priority Positive List par hai, to ₹10,00,000 ka 75% ₹7,50,000 hai, isliye aapka hissa ₹2,50,000 reh jaata hai. Dono lists ke beech ka farak ₹10,00,000 ke bill par ₹1,50,000 hai, isliye file karne se pehle ye check karna faayda deta hai.</p>",
+    "<p>Ab bill badhao. ₹30,00,000 ke certification cost par 75% matlab ₹22,50,000, jo ceiling se neeche hai, isliye cap nahi lagta. ₹40,00,000 par 75% ₹30,00,000 hota, lekin ceiling support ko ₹25,00,000 par kaat deti hai aur baaki aap uthate ho. Cap tab matter karta hai jab aapka certification bill lagbhag ₹33,00,000 se upar jaata hai, kyunki 25,00,000 ÷ 75 × 100 lagbhag ₹33,33,333 hai.</p>",
+    "<h2>EU ke rules hi asli hissa kyun hain</h2>",
+    "<p>European Union mein ye dabav sabse zyada hai. India ka EU countries ko export 4.57% giriya, 2025-26 mein $72.4 billion, jabki pichhle saal $75.85 billion tha, aur EU ne India ki merchandise shipments ka lagbhag 17% liya. Carbon Border Adjustment Mechanism un exporters se, jo steel, aluminium, cement aur fertiliser bhejte hain, maangta hai ki wo apne shipment ki emissions report karein, aur EU Deforestation Regulation proof maangta hai ki product deforested zameen se juda nahi hai.</p>",
+    "<p>Dono ke liye wo records chahiye jo ek chhoti factory aksar nahi rakhti: energy bills, process data, supplier declarations. Inhe pura karne ka matlab hai auditor, lab ya consultant ka kharcha, aur yahi bill TRACE baantne ke liye bana hai. Minister ki baat isliye important hai kyunki MSMEs ne reporting, certification, emissions monitoring aur traceability ka kharcha ek bojh bataya tha jo Indian goods ko Europe mein mehnga kar sakta hai.</p>",
+    "<h2>Aapki dukaan ya startup ke liye iska matlab</h2>",
+    "<p>Agar aap pehle se export karte ho, to pehle ye dekho ki aapki Udyam registration current hai aur Importer Exporter Code valid hai, kyunki dono ke bina TRACE band hai. Phir har wo certification, test report aur audit likho jo aapka main buyer maangta hai, aur har ek ka price lagao. Wahi list aapke claim ka base hai, aur wahi number jo aap chupchap bhugat rahe the.</p>",
+    "<p>Agar aap pehli baar export kar rahe ho, to quote dene se pehle ye cost apne unit price mein daalo. Maano bill ₹10,00,000 ka hai aur aap usme se ₹2,50,000 dete ho. 10,000 units par ye ₹25 per unit hai, kyunki 2,50,000 ÷ 10,000 = 25. 1,000 units par ye ₹250 per unit hai. Grant dono mein same hai; volume hi ise margin banata hai.</p>",
+    "<p>Ek savdhani. Ye ek policy vaada hai, aur detailed procedure, notified positive aur priority lists, aur claim window DGFT notifications se aate hain. Kharch karne se pehle notification padho, har invoice sambhal kar rakho, aur yaad rakho ki assistance actual cost par milti hai, taxes ke baad. Agar aapki certification notified list par nahi milti, to ye maanne se pehle DGFT se poocho ki wo cover hai ya nahi.</p>"
+   ]
+  },
+  {
+   "slug": "gst-rule-14b-ecommerce-sellers-november-1",
+   "title": "GST Registration for Small E-Commerce Sellers Opens Nov 1",
+   "dek": "Small sellers can register in a new state from November 1 using the platform's warehouse as their place of business, if monthly credit is under ₹2.5 lakh.",
+   "category": "Tax Rules",
+   "date": "2026-10-23",
+   "date_display": "October 23, 2026",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/economy/news/gst-registration-for-small-e-commerce-sellers-to-begin-from-november-1-126102201388_1.html",
+   "cta": {
+    "text": "Splitting a bill into base price and GST, or working back from a GST-inclusive price, is the same sum the new registration rule turns on.",
+    "href": "/gst-calculator",
+    "label": "Open the GST Calculator"
+   },
+   "related": [
+    {
+     "slug": "marketplace-fees-explained",
+     "title": "Marketplace Fees Explained"
+    },
+    {
+     "slug": "marketplace-fees-india-sellers-guide",
+     "title": "Marketplace Fees in India: A Seller's Guide"
+    }
+   ],
+   "body_en": [
+    "<p>From November 1, 2026, a small seller who sells only through Amazon, Flipkart, Meesho or another e-commerce platform can register for GST in a new state without opening an office or a shop there. A senior finance ministry official said on October 22 that the system changes needed for the new route are ready and the facility will go live on the GST portal from the beginning of next month.</p>",
+    "<p>The route was proposed by the 57th GST Council earlier in October, under a new Rule 14B of the Central Goods and Services Tax Rules, 2017. It is separate from the enforcement and refund changes the same Council approved. This one is about the paperwork that stops a seller from shipping to customers outside their home state.</p>",
+    "<h2>What actually changes on November 1</h2>",
+    "<p>Under the rules as they stand, a seller who wants to hold stock in another state and sell from there needs a GST registration in that state. That usually means a rented premises, an address proof and a separate compliance routine. Many small sellers stay in one state for exactly this reason.</p>",
+    "<p>Rule 14B offers an optional alternative. A small seller of goods who supplies exclusively through electronic commerce operators can declare the warehouse of the e-commerce platform as their principal place of business in that state. They do not need to set up their own office or shop there. The consent of the e-commerce operator is obtained through the system, so the platform has to agree before the registration goes through.</p>",
+    "<p>Prashanth Agarwal, a partner at PwC India, called it a radical reform that can have a positive impact beyond GST on the economy at large. He said e-commerce sellers are generally reluctant to expand beyond their home state because of the compliance requirement, and that letting platform players support these sellers through the GSTN platform should go a long way in solving that.</p>",
+    "<h2>Who qualifies, and the &#8377;2.5 lakh rule</h2>",
+    "<p>Three conditions decide whether this is for you. First, you must already have a physical presence and a GST registration in at least one state, and that state will remain your home state. Second, the registration obtained this way can be used only for supplies made through e-commerce platforms, not for your own counter sales in that state. Third, you must pass on input tax credit of not more than &#8377;2.5 lakh a month.</p>",
+    "<p>The third condition is the one to check with your accountant, because it is a ceiling on credit, not a ceiling on turnover.</p>",
+    "<h2>The arithmetic of the &#8377;2.5 lakh ceiling</h2>",
+    "<p>Input tax credit is the GST you have already paid on your purchases, which you set off against the GST you collect on your sales. At 18%, every &#8377;10,00,000 of purchases carries &#8377;1,80,000 of credit, because 10,00,000 &#215; 18 &#247; 100 = 1,80,000. So a monthly credit ceiling of &#8377;2.5 lakh works out to roughly &#8377;13,00,000 to &#8377;14,00,000 of purchases a month at 18%.</p>",
+    "<p>Across a year, &#8377;2.5 lakh a month is &#8377;30,00,000 of credit. If your purchases run above that, this simplified route is not for you and you will keep registering the ordinary way. If you sell goods at 5% or 12%, the same &#8377;2.5 lakh of credit covers more purchases, because each rupee of purchase carries less tax.</p>",
+    "<h2>What it costs you in extra filings</h2>",
+    "<p>Every additional state registration means another GSTIN, and another monthly return. That is real work, and it is why a seller should add a state only when the sales there justify it. Say you sell &#8377;5,00,000 of goods in a month in one state and charge 18% GST. The tax inside that month's bills is &#8377;90,000, because 5,00,000 &#215; 18 &#247; 100 = 90,000, and the customer pays &#8377;5,90,000 in all.</p>",
+    "<p>Now set that against the credit you would claim on the stock you moved into the state. If that stock cost &#8377;4,00,000, the credit on it is &#8377;72,000. The extra return you file each month is the price of holding stock locally and shipping in a day instead of a week.</p>",
+    "<h2>What it means for your shop or startup</h2>",
+    "<p>If you sell only through marketplaces and your monthly input tax credit stays under &#8377;2.5 lakh, this is the cheapest way to start selling in a second state. The first thing to check is whether your platform has opted into the consent process, because the registration cannot go through without it. Detailed circulars explaining the process and the related notifications are expected in the next few days, so read them before you apply rather than after.</p>",
+    "<p>Separately, notifications and circulars covering the refund changes approved by the Council are also expected soon, which matters if you sell zero-rated or exported goods. And the long-running dispute over Section 16(2)(c), which lets a genuine buyer lose credit when a supplier does not deposit tax, has gone to a committee of officers. Its report is expected within three months, it will then go to the Council, and any decision is targeted for implementation from April 1, 2027. That is the bigger number for most sellers, and it is still open.</p>"
+   ],
+   "body_hinglish": [
+    "<p>1 November 2026 se, jo chhota seller sirf Amazon, Flipkart, Meesho ya kisi aur e-commerce platform par bechta hai, wo naye state mein GST registration karwa sakta hai bina wahan office ya dukaan khole. Ek senior finance ministry official ne 22 October ko kaha ki naye raaste ke liye zaroori system changes taiyar hain aur ye facility agle mahine ki shuruaat se GST portal par live ho jayegi.</p>",
+    "<p>Ye raasta 57th GST Council ne October ke shuru mein propose kiya tha, Central Goods and Services Tax Rules, 2017 ke naye Rule 14B ke tehat. Ye usi Council ke enforcement aur refund wale changes se alag hai. Ye us paperwork ke baare mein hai jo seller ko apne home state ke bahar customers ko bhejne se rokta hai.</p>",
+    "<h2>1 November se asli mein kya badalta hai</h2>",
+    "<p>Abhi ke rules ke hisaab se, jo seller doosre state mein stock rakh kar wahan se bechna chahta hai, usse us state mein GST registration chahiye. Iska matlab aam taur par kiraye ka premises, address proof aur alag compliance routine. Bahut se chhote sellers sirf isi wajah se ek hi state mein rehte hain.</p>",
+    "<p>Rule 14B ek optional raasta deta hai. Jo chhota seller sirf electronic commerce operators ke through goods bechta hai, wo us state mein e-commerce platform ke warehouse ko apna principal place of business declare kar sakta hai. Unhe wahan apna office ya dukaan set up karne ki zaroorat nahi hai. E-commerce operator ki consent system ke through li jaati hai, isliye platform ko pehle haan kehna padta hai.</p>",
+    "<p>PwC India ke partner Prashanth Agarwal ne ise radical reform kaha jo GST se aage ja kar poori economy par positive asar daal sakta hai. Unhone kaha ki e-commerce sellers aam taur par compliance requirement ki wajah se apne home state se bahar jaane mein hichakte hain, aur platform players ko GSTN ke through in sellers ki madad karne dene se ye problem kaafi had tak hal ho sakti hai.</p>",
+    "<h2>Kaun qualify karta hai, aur &#8377;2.5 lakh ka rule</h2>",
+    "<p>Teen shartein tay karti hain ki ye aapke liye hai ya nahi. Pehli, aapke paas kam se kam ek state mein physical presence aur GST registration pehle se hona chahiye, aur wahi state aapka home state rahega. Doosri, is tarah liya gaya registration sirf e-commerce platforms ke through ki gayi supplies ke liye use ho sakta hai, us state mein aapki apni counter sales ke liye nahi. Teesri, aapko mahine mein &#8377;2.5 lakh se zyada input tax credit pass on nahi karna chahiye.</p>",
+    "<p>Teesri shart apne accountant se check karein, kyunki ye credit par limit hai, turnover par nahi.</p>",
+    "<h2>&#8377;2.5 lakh ceiling ka hisaab</h2>",
+    "<p>Input tax credit wo GST hai jo aap apni kharidari par pehle hi de chuke ho, aur jise aap apni sales par collect kiye gaye GST se set off karte ho. 18% par, har &#8377;10,00,000 ki kharidari par &#8377;1,80,000 ka credit banta hai, kyunki 10,00,000 &#215; 18 &#247; 100 = 1,80,000. Isliye &#8377;2.5 lakh ki monthly credit limit 18% par lagbhag &#8377;13,00,000 se &#8377;14,00,000 ki mahine ki kharidari ke barabar hai.</p>",
+    "<p>Saal bhar mein &#8377;2.5 lakh mahina matlab &#8377;30,00,000 ka credit. Agar aapki kharidari isse zyada hai, to ye simplified raasta aapke liye nahi hai aur aap purane tareeke se hi registration karte rahenge. Agar aap 5% ya 12% ke goods bechte ho, to wahi &#8377;2.5 lakh ka credit zyada kharidari cover karta hai, kyunki har rupaye ki kharidari par kam tax hota hai.</p>",
+    "<h2>Extra filings ka kitna kharcha</h2>",
+    "<p>Har extra state registration ka matlab ek aur GSTIN, aur ek aur monthly return. Ye asli kaam hai, isliye seller ko state tabhi add karna chahiye jab wahan ki sales ise justify karein. Maano aap ek state mein ek mahine mein &#8377;5,00,000 ke goods bechte ho aur 18% GST lagate ho. Us mahine ke bills mein tax &#8377;90,000 hai, kyunki 5,00,000 &#215; 18 &#247; 100 = 90,000, aur customer kul &#8377;5,90,000 deta hai.</p>",
+    "<p>Ab ise us credit se compare karo jo us state mein bheje gaye stock par milega. Agar wo stock &#8377;4,00,000 ka tha, to uspar credit &#8377;72,000 hai. Har mahine ki ye extra return us price ka hissa hai jo aap local stock rakhne aur hafte ki jagah ek din mein ship karne ke liye dete ho.</p>",
+    "<h2>Aapki dukaan ya startup ke liye iska matlab</h2>",
+    "<p>Agar aap sirf marketplaces par bechte ho aur aapka monthly input tax credit &#8377;2.5 lakh se neeche rehta hai, to doosre state mein bechna shuru karne ka ye sabse sasta raasta hai. Sabse pehle ye dekho ki aapka platform consent process mein shamil hua hai ya nahi, kyunki iske bina registration nahi ho sakta. Process samjhane wale detailed circulars aur related notifications agle kuch dinon mein aane ki umeed hai, isliye apply karne se pehle padho, baad mein nahi.</p>",
+    "<p>Alag se, Council ne jo refund changes approve kiye hain, unke notifications aur circulars bhi jaldi aane ki umeed hai, jo aapke liye matter karta hai agar aap zero-rated ya export goods bechte ho. Aur Section 16(2)(c) ka purana vivaad, jisme supplier tax jama na kare to ek genuine buyer ka credit chala jaata hai, officers ki committee ko bhej diya gaya hai. Uski report teen mahine mein aane ki umeed hai, phir ye Council ke saamne jaayegi, aur koi bhi faisla 1 April 2027 se lagu karne ka target hai. Zyadatar sellers ke liye yahi bada number hai, aur ye abhi khula hai.</p>"
+   ]
+  },
+  {
+   "slug": "rbi-rate-hike-october-2026-what-it-costs-your-loan",
+   "title": "RBI Hiked the Repo Rate to 5.50%: What It Costs Your Loan",
+   "dek": "RBI's October minutes show a unanimous 25 bps hike to 5.50% and a shift to calibrated tightening. Here is what two more hikes do to a small business loan.",
+   "category": "Small Business",
+   "date": "2026-10-21",
+   "date_display": "October 21, 2026",
+   "source_name": "Reserve Bank of India",
+   "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63839",
+   "cta": {
+    "text": "Put your loan amount, rate and tenure in and see what a higher rate does to your monthly EMI.",
+    "href": "/loan-emi-calculator",
+    "label": "Open the Loan EMI Calculator"
+   },
+   "related": [
+    {
+     "slug": "burn-rate-runway-guide",
+     "title": "Burn Rate and Runway"
+    },
+    {
+     "slug": "break-even-point-explained",
+     "title": "Break-Even Point Explained"
+    }
+   ],
+   "body_en": [
+    "<p>The Reserve Bank of India released the minutes of its 63rd Monetary Policy Committee meeting on October 21, 2026. The committee, chaired by Governor Sanjay Malhotra, voted unanimously to raise the repo rate by 25 basis points to <strong>5.50%</strong> at its October 5 to 7 meeting, and changed its stance from neutral to calibrated tightening.</p>",
+    "<h2>What the minutes say the RBI decided</h2>",
+    "<p>The repo rate is now 5.50%, up from 5.25%. The standing deposit facility rate moved to 5.25%, and the marginal standing facility rate and the Bank Rate moved to 5.75%. The rate rise itself was unanimous. The change of stance was not. Two external members, Dr. Nagesh Kumar and Professor Ram Singh, wanted to keep the neutral stance, arguing that a tightening signal can read as the start of a long cycle of rate increases.</p>",
+    "<h2>Why the committee is worried about prices</h2>",
+    "<p>Consumer price inflation rose to 4.8% in August 2026 from 4.5% in July. Food and fuel led the increase, but core inflation, which strips out food and fuel, also rose, to 4.2%. The RBI expects CPI inflation to average close to 5.8% over the next three quarters, and projects it at 6.0% in the December quarter and 5.7% in the March quarter. The target is 4%. On growth, the RBI kept its projection for the year at 7.1%.</p>",
+    "<h2>The arithmetic of a 25 basis point hike</h2>",
+    "<p>One basis point is one hundredth of a percentage point, so 25 basis points is 0.25%. On a loan of ₹10,00,000, an extra 0.25% is ₹2,500 of interest a year, because 10,00,000 × 0.25 ÷ 100 = 2,500. Stretch that over five years and the same loan costs ₹12,500 more. On a ₹50,00,000 loan the same 0.25% is ₹12,500 a year. Two further hikes of 25 basis points each would add 0.50% in total, which is ₹5,000 a year, or ₹25,000 across five years, on ₹10,00,000.</p>",
+    "<h2>Why 0.25% is not a rounding error</h2>",
+    "<p>For a business, ₹5,000 a year is often the whole annual profit on a small order book. If a shop earns a 10% margin, it has to sell ₹50,000 of extra stock to recover that ₹5,000, because 5,000 ÷ 10% = 50,000. On a working capital line of ₹20,00,000, two hikes add ₹10,000 a year of interest. That money leaves the business before the owner's salary, so it lands straight on the monthly budget.</p>",
+    "<h2>What it means for your shop or startup</h2>",
+    "<p>If you have a floating-rate business loan or an overdraft, the next EMI or interest debit will be higher. Check the reset date on the sanction letter, because many business loans reprice every quarter while some retail loans reprice only once a year. If you are about to borrow, ask for the total interest over the full tenure, not just the EMI, since a longer tenure hides a bigger interest bill. If you hold a fixed deposit or a recurring deposit, the same cycle usually works in your favour over time, because new deposits get the higher rate. And if you are planning a big purchase on credit, run the numbers at a rate 0.50% higher than today's quote, so the next hike does not surprise you.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Reserve Bank of India ne 21 October 2026 ko apni 63rd Monetary Policy Committee meeting ke minutes jaari kiye. Governor Sanjay Malhotra ki adhyakshta wali committee ne 5 se 7 October ki meeting mein repo rate 25 basis points badha kar <strong>5.50%</strong> karne ka unanimous faisla kiya, aur apna stance neutral se calibrated tightening kar diya.</p>",
+    "<h2>Minutes ke mutabik RBI ne kya kiya</h2>",
+    "<p>Repo rate ab 5.50% hai, jo pehle 5.25% tha. Standing deposit facility rate 5.25% ho gaya, aur marginal standing facility rate aur Bank Rate 5.75% ho gaye. Rate badhane ka faisla sabhi members ne ek saath liya. Lekin stance badalne par sabhi sehmat nahi the. Do external members, Dr. Nagesh Kumar aur Professor Ram Singh, neutral stance banaye rakhna chahte the. Unka kehna tha ki tightening ka signal logon ko ek lambi rate-hike cycle ka ishara de sakta hai.</p>",
+    "<h2>Committee ko mehngai ki chinta kyun hai</h2>",
+    "<p>August 2026 mein consumer price inflation July ke 4.5% se badh kar 4.8% ho gayi. Khane aur fuel ki keematein iski main wajah thi, lekin core inflation, jisme khana aur fuel nahi ginte, woh bhi badh kar 4.2% ho gayi. RBI ko ummeed hai ki agle teen quarters mein CPI inflation lagbhag 5.8% rahegi. Uska anumaan hai ki December quarter mein 6.0% aur March quarter mein 5.7% rahegi. Target 4% hai. Growth par, RBI ne is saal ke liye apna anumaan 7.1% hi rakha.</p>",
+    "<h2>25 basis point hike ka hisaab</h2>",
+    "<p>Ek basis point ek percentage point ka sauwan hissa hota hai, isliye 25 basis points matlab 0.25%. ₹10,00,000 ke loan par extra 0.25% saal ka ₹2,500 interest banata hai, kyunki 10,00,000 × 0.25 ÷ 100 = 2,500. Isi loan par paanch saal mein yeh ₹12,500 zyada ho jata hai. ₹50,00,000 ke loan par wahi 0.25% saal ka ₹12,500 hai. Agar 25-25 basis points ke do aur hike aate hain, to total 0.50% badhega: ₹10,00,000 par saal ka ₹5,000, ya paanch saal mein ₹25,000.</p>",
+    "<h2>0.25% koi chhoti baat nahi hai</h2>",
+    "<p>Ek business ke liye saal ka ₹5,000 aksar poore chhote order book ka profit hota hai. Agar dukaan ka margin 10% hai, to yeh ₹5,000 wapas kamane ke liye usse ₹50,000 ka extra maal bechna padega, kyunki 5,000 ÷ 10% = 50,000. ₹20,00,000 ke working capital loan par do hikes saal ka ₹10,000 interest jodte hain. Yeh paisa owner ki salary se pehle cash flow se nikalta hai, isliye seedha monthly budget par asar karta hai.</p>",
+    "<h2>Aapki dukaan ya startup ke liye iska matlab</h2>",
+    "<p>Agar aapke paas floating-rate business loan ya overdraft hai, to agla EMI ya interest debit zyada hoga. Sanction letter par reset date zaroor dekhein, kyunki kai business loans har quarter reprice hote hain, jabki kuch retail loans saal mein ek baar. Agar aap naya loan lene wale hain, to sirf EMI nahi, poore tenure ka total interest poochhein, kyunki lambi tenure bada interest bill chhupa deti hai. Agar aapke paas fixed deposit ya recurring deposit hai, to aam taur par yeh cycle samay ke saath aapke faayde mein kaam karta hai, kyunki naye deposits ko zyada rate milta hai. Aur agar aap credit par koi badi kharidari plan kar rahe hain, to aaj ke quote se 0.50% zyada rate par hisaab lagayein, taaki agla hike aapko chaunkay na.</p>"
+   ]
+  },
+  {
+   "slug": "amazon-festive-sale-seller-sales-3-5x-first-week",
+   "title": "Amazon Festive Sale Lifted Seller Sales 3.5x in Week One",
+   "dek": "Amazon's festive sale lifted seller sales 3.5x in week one, and zero referral fees below ₹1,000 did part of it. Here is what that means for your price.",
+   "category": "Small Business",
+   "date": "2026-10-21",
+   "date_display": "October 21, 2026",
+   "source_name": "ET Retail",
+   "source_url": "https://retail.economictimes.indiatimes.com/news/e-commerce/amazon-great-indian-festival-2026-drives-3-5x-seller-sales-smb-participation-rises-30-per-cent/135091532",
+   "cta": {
+    "text": "Put your own price, commission and shipping in and see what you actually keep.",
+    "href": "/marketplace-fee-calculator",
+    "label": "Open the Marketplace Fee Calculator"
+   },
+   "related": [
+    {
+     "slug": "marketplace-fees-explained",
+     "title": "Marketplace Fees Explained"
+    },
+    {
+     "slug": "average-order-value-aov",
+     "title": "Average Order Value Calculator"
+    }
+   ],
+   "body_en": [
+    "<p>Amazon India's Great Indian Festival 2026 opened with seller sales running <strong>3.5 times</strong> normal levels in its first week, and products selling more than twice as fast, according to ET Retail. Seller participation rose nearly <strong>30%</strong> year on year to a record high, and more than <strong>70%</strong> of the participating small and medium businesses came from Tier 2 and Tier 3 cities.</p>",
+    "<p>A festival week is a strange thing to measure. The number is real, but it is measured against an ordinary week, not against last October. Read it as a spike, not as a new normal.</p>",
+    "<h2>What the numbers actually say</h2>",
+    "<p>The count of SMBs crossing <strong>₹10 lakh</strong> in sales grew more than <strong>4.6 times</strong> in that first week, and the number of sellers crossing <strong>₹1 crore</strong> grew over 1.5 times. Among sellers who were new to the platform, units sold rose more than 2.5 times, the count crossing <strong>₹1 lakh</strong> grew 2.4 times, and those crossing <strong>₹10 lakh</strong> increased more than fourfold.</p>",
+    "<p>Women entrepreneurs in Amazon Saheli recorded sales spikes of up to <strong>10 times</strong>, and sellers in Amazon Karigar, the artisans programme, grew more than 1.5 times. The top five categories by seller sales were jewellery, shoes, automotive, major appliances and wireless products.</p>",
+    "<h2>Why the ₹10 lakh line is the one to watch</h2>",
+    "<p>Growth multiples flatter small bases. A seller who did ₹1 lakh in a normal week and ₹10 lakh in the festival week has grown ten times, and that is a genuine achievement — but it also means the next ordinary week will look like a collapse. If you hired staff or bought stock on the strength of a festival week, the arithmetic of the week after is what pays for it.</p>",
+    "<p>Compare the two groups. The number of sellers crossing ₹1 crore grew 1.5 times, while those crossing ₹10 lakh grew 4.6 times. The bigger the base, the harder the multiple. That is normal, and it is why a headline multiple should never be read as a promise of scale.</p>",
+    "<h2>The fee change doing part of the work</h2>",
+    "<p>Amazon attributed part of the momentum to changes in its seller fee structure, including <strong>zero referral fees on products priced below ₹1,000</strong>. In the first 24 hours of the festival, the number of sellers offering products below ₹500 who recorded a tenfold sales spike grew more than two times compared with a year earlier.</p>",
+    "<p>Here is the arithmetic of why that threshold matters. Suppose your referral fee is 20% and you sell at ₹1,000. The fee is ₹200, so you keep ₹800 before shipping and any closing fee. Sell the same item at ₹900 with no referral fee and you keep ₹900. You take ₹100 less from the customer and still keep ₹100 more. That is the whole argument for knowing where your price sits relative to the threshold.</p>",
+    "<h2>What this means if you sell online</h2>",
+    "<p><strong>Check where your price sits.</strong> If your best-selling item is priced just above a fee threshold, the arithmetic above applies to every single order. Move the price deliberately, not by accident.</p>",
+    "<p><strong>Do not build fixed costs on a spike.</strong> A 3.5 times week is a week. Warehouse rent, extra staff and a large inventory bet are monthly costs, and they do not shrink when the traffic goes back to normal.</p>",
+    "<p><strong>Read your payout ratio, not your sales figure.</strong> The dashboard shows what the customer paid. Your bank account shows what you kept. Those are different numbers, and the gap is fees, shipping and returns.</p>",
+    "<p><strong>Plan the next sale now.</strong> Amazon ran a seller acquisition campaign across more than 150 cities and towns and a Festive Readiness Seller Academy with ten sessions. The sellers who crossed ₹10 lakh in week one had listings, stock and ad budgets ready before the sale opened, not during it.</p>",
+    "<h2>Do this before the next festival</h2>",
+    "<p>Take your five best-selling items and write down the price, the commission percentage, the shipping you pay and the returns you expect. Work out what you actually keep on each one. Most sellers find one or two items earn far less than the sales report suggests, and a small price correction before the next sale is worth more than any discount you can offer during it.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Amazon India ke Great Indian Festival 2026 ke pehle hafte mein seller sales normal level se <strong>3.5 guna</strong> rahi, aur products do guna se zyada tezi se bike, ET Retail ke mutabik. Seller participation pichhle saal se takriban <strong>30%</strong> badhi aur record par pahunchi, aur participate karne wale small aur medium businesses mein se <strong>70%</strong> se zyada Tier 2 aur Tier 3 shehron se the.</p>",
+    "<p>Festival ka hafta naapna ajeeb hota hai. Number sach hai, par woh ek aam hafte se compare kiya gaya hai, pichhle October se nahi. Ise spike samjho, naya normal nahi.</p>",
+    "<h2>Numbers asal mein kya kehte hain</h2>",
+    "<p>Jo SMBs <strong>₹10 lakh</strong> ke sales cross kare, unki ginti us pehle hafte mein <strong>4.6 guna</strong> se zyada badhi, aur <strong>₹1 crore</strong> cross karne wale sellers 1.5 guna se zyada badhe. Naye sellers mein units sold 2.5 guna se zyada badhe, <strong>₹1 lakh</strong> cross karne wale 2.4 guna badhe, aur <strong>₹10 lakh</strong> cross karne wale chaar guna se zyada.</p>",
+    "<p>Amazon Saheli ki women entrepreneurs ne <strong>10 guna</strong> tak ke sales spike dekhe, aur Amazon Karigar ke artisans 1.5 guna se zyada badhe. Seller sales ke hisaab se top paanch categories jewellery, shoes, automotive, major appliances aur wireless products thi.</p>",
+    "<h2>₹10 lakh ki line par nazar kyun rakhni chahiye</h2>",
+    "<p>Growth multiples chhote base ko hawa deti hain. Jo seller aam hafte mein ₹1 lakh karta tha aur festival hafte mein ₹10 lakh, usne das guna growth ki, aur ye asli achievement hai — par iska matlab ye bhi hai ki agla aam hafta collapse jaisa lagega. Agar aapne festival hafte ke bharose staff rakha ya stock kharida, to us agle hafte ka hisaab hi iska paisa deta hai.</p>",
+    "<p>Do groups ko compare karo. ₹1 crore cross karne wale sellers 1.5 guna badhe, aur ₹10 lakh cross karne wale 4.6 guna. Base jitna bada, multiple utna mushkil. Ye normal hai, aur isliye headline multiple ko kabhi scale ka wada nahi samajhna chahiye.</p>",
+    "<h2>Fees mein badlav jo kaam kar raha hai</h2>",
+    "<p>Amazon ne momentum ka ek hissa apne seller fee structure ke badlav ko diya, jisme <strong>₹1,000 se kam ke products par zero referral fees</strong> shamil hai. Festival ke pehle 24 ghanton mein, ₹500 se kam ke products bechne wale sellers jinhone das guna sales spike dekha, unki ginti pichhle saal se do guna se zyada badhi.</p>",
+    "<p>Ye threshold kyun maayne rakhta hai, uska arithmetic dekho. Maan lo referral fee 20% hai aur aap ₹1,000 par bechte ho. Fee ₹200 hai, to shipping aur closing fee se pehle aap ₹800 rakhte ho. Wahi item ₹900 par bina referral fee becho to ₹900 rakhte ho. Customer se ₹100 kam lete ho aur phir bhi ₹100 zyada rakhte ho. Threshold ke hisaab se aapka price kahan hai, ye jaanna poori baat hai.</p>",
+    "<h2>Agar aap online bechte ho to iska matlab</h2>",
+    "<p><strong>Dekho aapka price kahan baithta hai.</strong> Agar aapka best-selling item kisi fee threshold se bas thoda upar hai, to upar ka arithmetic har order par lagta hai. Price deliberately badlo, galti se nahi.</p>",
+    "<p><strong>Spike par fixed cost mat banao.</strong> 3.5 guna hafta ek hafta hai. Warehouse rent, extra staff aur bada inventory bet mahine ka kharcha hain, aur traffic normal hone par woh kam nahi hote.</p>",
+    "<p><strong>Apna payout ratio padho, sales figure nahi.</strong> Dashboard dikhata hai customer ne kitna diya. Bank account dikhata hai aapne kitna rakha. Ye do alag numbers hain, aur beech ka gap fees, shipping aur returns hai.</p>",
+    "<p><strong>Agli sale ki planning ab karo.</strong> Amazon ne 150 se zyada shehron aur towns mein seller acquisition campaign chalaya aur das sessions ki Festive Readiness Seller Academy chalayi. Jo sellers pehle hafte mein ₹10 lakh cross kare, unke listings, stock aur ad budget sale khulne se pehle ready the, sale ke dauraan nahi.</p>",
+    "<h2>Agle festival se pehle ye karo</h2>",
+    "<p>Apne paanch best-selling items lo aur price, commission percentage, jo shipping aap dete ho aur jo returns expect karte ho, sab likho. Har item par aap asal mein kitna rakhte ho, nikaalo. Zyadatar sellers paate hain ki ek-do items sales report se kaafi kam kama rahe hain, aur agli sale se pehle chhota price correction us sale ke dauraan diye gaye kisi bhi discount se zyada kaam ka hai.</p>"
+   ]
+  },
+  {
+   "slug": "upi-mdr-deferred-after-diwali-what-shops-pay",
+   "title": "UPI MDR Is Deferred to After Diwali: What a Shop Will Actually Pay",
+   "dek": "NPCI has pushed the 0.4% merchant fee on UPI payments above ₹2,000 to after Diwali. Here is the arithmetic of what that fee costs a small shop, and who is spared.",
+   "category": "Small Business",
+   "date": "2026-10-21",
+   "date_display": "October 21, 2026",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/finance/news/upi-mdr-deferred-until-after-diwali-new-date-to-be-notified-npci-126101300556_1.html",
+   "cta": {
+    "text": "A per-sale fee is a variable cost. See what it does to what each sale contributes.",
+    "href": "/contribution-margin",
+    "label": "Open the Contribution Margin Calculator"
+   },
+   "related": [
+    {
+     "slug": "marketplace-fees-explained",
+     "title": "Marketplace Fees Explained"
+    },
+    {
+     "slug": "net-profit-margin",
+     "title": "Net Profit Margin Calculator"
+    }
+   ],
+   "body_en": [
+    "<p>India's biggest change to digital payments in years has been put on hold. The National Payments Corporation of India (NPCI) has deferred the merchant discount rate (MDR) on select UPI transactions until after Diwali, just two days before it was due to start on October 15. The fee structure itself is unchanged — only the date moved.</p>",
+    "<p>For anyone who takes UPI at a counter, that means a few more weeks of free collections. It is a delay, not a cancellation. Here is what the rule says, what the fee costs in rupees, and what a shop should do before the new date arrives.</p>",
+    "<h2>What NPCI actually announced</h2>",
+    "<p>NPCI said the UPI and Services Steering Committee decided to implement MDR on select person-to-merchant (P2M) UPI transactions \"immediately post Diwali at a date to be notified separately.\" A source confirmed to Business Standard that there will be no change in the MDR structure. Only the start date has been pushed back.</p>",
+    "<p>An MDR is a fee a merchant pays to the bank and the payment company that process a digital transaction. Until now, UPI merchant payments carried no such fee for the merchant. That is what is about to change.</p>",
+    "<h2>What 0.4% means in rupees</h2>",
+    "<p>The levy is set at 0.40% on UPI payments to merchants above ₹2,000, and it is capped at ₹300. Some categories, including bill payments, fuel and education, attract a flat ₹5 instead.</p>",
+    "<p>Percentage fees feel tiny until you put them next to real sales. A ₹5,000 payment costs 0.40% of ₹5,000, which is ₹20. A ₹10,000 payment costs ₹40. A shop that collects ₹1,00,000 a month in merchant UPI payments pays about ₹400 a month, or roughly ₹4,800 over a year.</p>",
+    "<p>Now compare that with profit, not turnover. If the same shop runs at a 5% net margin, ₹1,00,000 of sales leaves ₹5,000 of profit. A ₹400 fee is 8% of that profit gone. On a thin margin, a fee that looks like a rounding error on the bill is a real slice of what the owner keeps.</p>",
+    "<h2>Who pays, and who does not</h2>",
+    "<p>The charge is aimed at merchant payments, not person-to-person transfers. It applies only to UPI payments above ₹2,000, so small everyday payments stay outside the levy. The flat ₹5 applies to a short list of categories rather than everything.</p>",
+    "<p>The cap matters for large bills. A ₹75,000 payment at 0.40% would work out to ₹300, so the cap bites at that level — anything bigger still costs ₹300, not more.</p>",
+    "<p>Business Standard reported that UPI recorded a record average of 802 million transactions a day in September, with an average daily value of ₹97,913 crore. A fee of 0.40% on that volume is a large amount of money changing hands across the system — which is why traders fought it and why the delay happened.</p>",
+    "<h2>Why the delay happened</h2>",
+    "<p>Timing. The fee was due to start on October 15, in the middle of the festive season, when retail volumes peak. Deferring it gives merchants a breather through their busiest weeks, while keeping the rule itself on the books.</p>",
+    "<p>It is worth reading the delay for what it is: a pause for the calendar, not a reversal of policy. Planning for the fee to arrive after Diwali is the safer assumption.</p>",
+    "<h2>What a shop owner should do before the new date</h2>",
+    "<p>First, work out the number for your own counter. Take your monthly merchant UPI collections above ₹2,000, multiply by 0.40%, and apply the ₹300 cap to any single large payment. That figure is the extra cost you are about to carry.</p>",
+    "<p>Second, treat it as a variable cost, because that is what it is. It rises with every sale, exactly like packaging or shipping. Add it to your cost per sale and watch what is left to cover rent, salaries and your own take-home.</p>",
+    "<p>Third, do not panic-price. A ₹20 cost on a ₹5,000 sale does not justify a price rise on its own. Decide on pricing with the full margin in view, and only for the categories where the fee actually bites.</p>",
+    "<p>And keep accepting UPI. The fee is small, the volumes are large, and customers have made their choice. The right response is to know the cost to the rupee, not to turn customers away at the counter.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Digital payments ka sabse bada badlav kuch waqt ke liye ruk gaya hai. National Payments Corporation of India (NPCI) ne select UPI transactions par merchant discount rate (MDR) ko Diwali ke baad tak tal diya hai — shuru hone se sirf do din pehle, jab woh 15 October ko lagu hona tha. Fee structure mein koi badlav nahi hua, sirf tareekh aage khiski hai.</p>",
+    "<p>Counter par UPI lene wale ke liye iska matlab hai kuch hafte aur free collection. Ye rok hai, rad nahi. Aage samjhiye ki rule kya kehta hai, rupaye mein kitna padta hai, aur nayi tareekh se pehle dukaan ko kya karna chahiye.</p>",
+    "<h2>NPCI ne asal mein kya kaha</h2>",
+    "<p>NPCI ne kaha ki UPI and Services Steering Committee ne decide kiya hai ki select person-to-merchant (P2M) UPI transactions par MDR \"immediately post Diwali at a date to be notified separately\" lagu hoga. Business Standard ko ek source ne bataya ki MDR structure mein koi badlav nahi hoga. Sirf shuru hone ki tareekh aage badhi hai.</p>",
+    "<p>MDR woh fee hai jo merchant bank aur payment company ko deta hai, jo digital transaction process karti hai. Ab tak UPI merchant payments par merchant ko aisi koi fee nahi padti thi. Yahi badalne wala hai.</p>",
+    "<h2>0.4% ka matlab rupaye mein</h2>",
+    "<p>Levy ₹2,000 se upar wale UPI merchant payments par 0.40% hai, aur iski cap ₹300 hai. Kuch categories, jaise bill payments, fuel aur education, par flat ₹5 lagta hai.</p>",
+    "<p>Percentage fee chhoti lagti hai jab tak aap usse asli sales ke saath na rakhein. ₹5,000 ke payment par 0.40% matlab ₹20. ₹10,000 ke payment par ₹40. Jo dukaan mahine mein ₹1,00,000 merchant UPI collect karti hai, woh mahine ke lagbhag ₹400 deti hai, ya saal ke karib ₹4,800.</p>",
+    "<p>Ab isse turnover ke saath nahi, profit ke saath compare kariye. Agar wahi dukaan 5% net margin par chalti hai, to ₹1,00,000 ki sales se ₹5,000 profit bachta hai. ₹400 ki fee us profit ka 8% hai. Patle margin par, jo fee bill par rounding error lagti hai, woh owner ki kamai ka asli hissa hai.</p>",
+    "<h2>Kaun deta hai, kaun nahi</h2>",
+    "<p>Ye charge merchant payments ke liye hai, person-to-person transfers ke liye nahi. Ye sirf ₹2,000 se upar wale UPI payments par lagta hai, isliye chhote rozana payments is levy se bahar rehte hain. Flat ₹5 thodi si categories par lagta hai, sab par nahi.</p>",
+    "<p>Cap bade bills ke liye maayne rakhta hai. ₹75,000 ke payment par 0.40% matlab ₹300, isliye cap wahi se lagu hoti hai — usse bada koi bhi payment bhi ₹300 hi hota hai, zyada nahi.</p>",
+    "<p>Business Standard ne bataya ki September mein UPI ne ek din mein record average 802 million transactions kiye, aur average daily value ₹97,913 crore rahi. Us volume par 0.40% fee ka matlab hai poore system mein badi rakam ka lena-dena — isi liye traders ne virodh kiya aur isi liye ye delay hua.</p>",
+    "<h2>Delay kyun hua</h2>",
+    "<p>Timing. Fee 15 October se shuru honi thi, festive season ke beech, jab retail volumes sabse zyada hote hain. Isse talne se merchants ko unke sabse busy hafton mein rahat mili, lekin rule khud kitab mein bana hua hai.</p>",
+    "<p>Is delay ko waise padhiye jaise woh hai: calendar ke liye ruk, policy ka palat nahi. Ye maan kar chaliye ki fee Diwali ke baad aa jaayegi — yahi safe assumption hai.</p>",
+    "<h2>Nayi tareekh se pehle dukaan ko kya karna chahiye</h2>",
+    "<p>Pehle apne counter ka number nikaliye. Apni monthly merchant UPI collections jo ₹2,000 se upar hain, unhe 0.40% se multiply kariye, aur kisi ek bade payment par ₹300 ki cap lagaiye. Wahi figure aapki aane wali extra cost hai.</p>",
+    "<p>Doosre, ise variable cost maaniye, kyunki woh hai. Ye har sale ke saath badhti hai, bilkul packaging ya shipping ki tarah. Ise apni cost per sale mein jodiye aur dekhiye ki rent, salary aur apni kamai ke liye kitna bachta hai.</p>",
+    "<p>Teesre, ghabra kar price na badhaiye. ₹5,000 ki sale par ₹20 ki cost apne aap mein price badhane ka reason nahi hai. Pricing poore margin ko dekh kar tay kariye, aur sirf un categories mein jahan fee asli mein lagti hai.</p>",
+    "<p>Aur UPI lena jaari rakhiye. Fee chhoti hai, volumes bade hain, aur customers apna faisla kar chuke hain. Sahi jawab ye hai ki cost ko rupaye tak jaaniye, counter par customer ko lautane ka nahi.</p>"
+   ]
+  },
+  {
+   "slug": "shark-tank-usa-polygons-foldable-spoon-deal",
+   "title": "Indian Designer's Foldable Spoon Wins $350,000 on Shark Tank USA",
+   "dek": "Rahul Agarwal sold 10% of Polygons for $350,000 to Lori Greiner and Mindy Kaling. Here is the arithmetic behind that deal, and what it says about valuing a simple product.",
+   "category": "Shark Tank",
+   "date": "2026-10-21",
+   "date_display": "October 21, 2026",
+   "source_name": "Indian Express",
+   "source_url": "https://indianexpress.com/article/entertainment/television/shark-tank-rahul-agarwal-indian-entrepreneur-rs-3-crore-deal-spoon-brand-10929028",
+   "cta": {
+    "text": "Value your own idea the way the sharks did.",
+    "href": "/implied-valuation",
+    "label": "Open the Implied Valuation Calculator"
+   },
+   "related": [
+    {
+     "slug": "startup-valuation-explained",
+     "title": "How Startup Valuation Actually Works"
+    },
+    {
+     "slug": "shark-tank-pitch-check",
+     "title": "Shark Tank Pitch Check"
+    }
+   ],
+   "body_en": [
+    "<p>A measuring spoon that folds flat just did what most kitchen gadgets never manage: it walked into <em>Shark Tank USA</em> and left with a cheque. Rahul Agarwal, founder of Polygons, took an origami-inspired design to season 18, episode 4, and closed a $350,000 deal with Lori Greiner and guest shark Mindy Kaling.</p>",
+    "<p>The structure matters more than the headline number, because it is the same structure Indian founders are offered every week on <em>Shark Tank India</em>.</p>",
+    "<h2>What exactly did he give away?</h2>",
+    "<p>Agarwal handed over <strong>8% equity plus 2% in advisory shares</strong> — 10% in total — for $350,000. That puts the deal at a <strong>$3.5 million post-money valuation</strong>, or roughly ₹29 crore at the exchange rate used in reporting.</p>",
+    "<p>He had asked for $350,000 for 7%, which would have valued Polygons at $5 million. The sharks talked him down. That gap — $5 million asked versus $3.5 million agreed — is 30% of the company's value, and it was decided in a few minutes of conversation.</p>",
+    "<h2>The two numbers you should always split apart</h2>",
+    "<p>Every equity deal is two numbers wearing one coat. The amount invested tells you how much cash arrives. The percentage tells you what the company is worth. Confusing them is the most common mistake founders make when they repeat a deal on social media.</p>",
+    "<p>Pre-money valuation is the company's worth <em>before</em> the cheque. Post-money is <em>after</em>. Here, the post-money is $3.5 million, so the pre-money is $3.15 million. If a founder quotes only the post-money, they are quietly flattering themselves.</p>",
+    "<h2>Why a spoon is worth $3.5 million</h2>",
+    "<p>Because it solved a boring problem well. The product replaces a six-piece measuring spoon set with two folding tools, holds a patent, and had shipped more than 200,000 units to over 110 countries before the episode aired. Twenty-plus design awards helped too.</p>",
+    "<p>None of that is glamorous. All of it is the reason the deal happened. Investors do not pay for the idea of a folding spoon. They pay for units already sold, a patent that keeps rivals out, and a founder who shipped before asking for money.</p>",
+    "<h2>What an Indian founder should take from it</h2>",
+    "<p>First, know your numbers cold. Agarwal could name his units shipped and his country count on demand. Sharks test that, and fumbling it costs valuation.</p>",
+    "<p>Second, decide your floor before you walk in. The asking valuation is an opening bid, not a fact. Having a number below which you will walk is what stops a bad deal from feeling like a win.</p>",
+    "<p>Third, remember advisory shares are real shares. That extra 2% was not decoration; it was dilution. Founders often wave it through because it sounds like a formality. It is not.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Ek measuring spoon jo fold ho jaata hai, woh kar gaya jo zyadatar kitchen gadgets kabhi nahi kar paate: <em>Shark Tank USA</em> mein gaya aur cheque le kar nikla. Rahul Agarwal, Polygons ke founder, origami-inspired design le kar season 18, episode 4 mein aaye, aur Lori Greiner aur guest shark Mindy Kaling ke saath $350,000 ka deal kar liya.</p>",
+    "<p>Number se zyada deal ka structure important hai, kyunki yahi structure har hafte <em>Shark Tank India</em> mein Indian founders ko milta hai.</p>",
+    "<h2>Aakhir usne kitna hissa diya?</h2>",
+    "<p>Agarwal ne <strong>8% equity aur 2% advisory shares</strong> diye — total 10% — $350,000 ke liye. Isse deal ki <strong>$3.5 million post-money valuation</strong> banti hai, yaani takriban ₹29 crore.</p>",
+    "<p>Unhone 7% ke liye $350,000 maanga tha, jisse Polygons ki value $5 million hoti. Sharks ne unhe neeche laaya. Yahi gap — $5 million maanga, $3.5 million tay hua — company ki 30% value hai, aur ye kuch minute ki baat-cheet mein tay hua.</p>",
+    "<h2>Do numbers jo hamesha alag-alag dekho</h2>",
+    "<p>Har equity deal do numbers ka joda hota hai. Amount batata hai kitna cash aayega. Percentage batata hai company kitne ki hai. In dono ko mila dena sabse aam galti hai jo founders social media par deal dohraate waqt karte hain.</p>",
+    "<p>Pre-money valuation cheque se <em>pehle</em> ki value hai. Post-money <em>baad</em> ki. Yahan post-money $3.5 million hai, to pre-money $3.15 million. Agar founder sirf post-money bataye, woh chupke se apni tareef kar raha hai.</p>",
+    "<h2>Ek chammach $3.5 million ka kyun?</h2>",
+    "<p>Kyunki usne ek boring problem achhe se solve kiya. Product chhe piece ka set hata kar do folding tools deta hai, patent hai, aur episode se pehle 200,000 se zyada units 110 se zyada deshon mein bhej chuka tha. Bees se zyada design awards ne bhi madad ki.</p>",
+    "<p>Ismein kuch bhi glamorous nahi hai. Phir bhi yahi wajah hai ki deal hui. Investors folding spoon ke idea ke paise nahi dete. Woh already biki units, patent jo competitor ko rokta hai, aur us founder ke paise dete hain jisne maangne se pehle ship kar diya.</p>",
+    "<h2>Indian founder ko isse kya seekhna chahiye</h2>",
+    "<p>Pehla, apne numbers ratlo. Agarwal turant units aur deshon ki ginti bata sakte the. Sharks yahi test karte hain, aur yahan fumble karne se valuation girti hai.</p>",
+    "<p>Doosra, andar ghusne se pehle apna floor tay karo. Asking valuation ek opening bid hai, sach nahi. Ek number jiske neeche aap walk karoge, wahi kharab deal ko jeet jaisa lagne se rokti hai.</p>",
+    "<p>Teesra, yaad rakho advisory shares asli shares hote hain. Woh extra 2% decoration nahi thi; woh dilution thi. Founders ise aksar hawa mein chhod dete hain kyunki formality lagti hai. Hai nahi.</p>"
+   ]
+  },
+  {
+   "slug": "gst-council-october-2026-small-business-changes",
+   "title": "GST Council Scrapped Arrest Powers and Raised the Prosecution Limit to ₹5 Crore",
+   "dek": "The 57th GST Council meeting eased compliance for small businesses without touching tax rates. Here is what actually changed and what it means for your shop or startup.",
+   "category": "Tax Rules",
+   "date": "2026-10-21",
+   "date_display": "October 21, 2026",
+   "source_name": "Economic Times",
+   "source_url": "https://m.economictimes.com/news/economy/policy/gst-reforms-2026-winners-who-benefits-consumers-msmes-businesses-exporters-gst-council-exporters-and-taxpayers-have-plenty-to-gain-heres-how/articleshow/134790594.cms",
+   "cta": {
+    "text": "Add GST to any price, or pull the base price out of a GST-inclusive bill.",
+    "href": "/gst-calculator",
+    "label": "Open the GST Calculator"
+   },
+   "related": [
+    {
+     "slug": "marketplace-fees-explained",
+     "title": "Marketplace Fees Explained"
+    },
+    {
+     "slug": "gst-calculator",
+     "title": "GST Calculator"
+    }
+   ],
+   "body_en": [
+    "<p>On 8 October 2026, the 57th GST Council meeting approved a set of reforms that change how the tax office treats you rather than how much tax you pay. Rates were left untouched. What moved was enforcement, refunds and paperwork.</p>",
+    "<p>For a small seller or a first-time founder, this is the more useful kind of change. A lower rate saves you a little every month. Fewer ways to get into trouble saves you a lot, once.</p>",
+    "<h2>What changed, in plain terms</h2>",
+    "<p><strong>Arrest powers under GST were removed.</strong> That is the headline. Tax officers can no longer arrest someone as an enforcement tool in the ordinary course of a dispute.</p>",
+    "<p><strong>The prosecution threshold rose from ₹1 crore to ₹5 crore.</strong> Below that amount, a dispute is far less likely to turn criminal.</p>",
+    "<p><strong>The general penalty dropped from ₹25,000 to ₹10,000.</strong> A small procedural mistake now costs less than half of what it did.</p>",
+    "<p><strong>Refund acknowledgement fell from 15 days to 10 days,</strong> and the system will provisionally sanction 90% of a claim after risk assessment, with the order issued within three working days.</p>",
+    "<h2>The small-business option worth knowing about</h2>",
+    "<p>The Council approved, in principle, an optional annual return with quarterly payment scheme for qualifying business-to-consumer businesses with turnover up to ₹5 crore. Instead of a steady drumbeat of filings, a small seller could file once a year and pay quarterly.</p>",
+    "<p>Nothing here changes how you calculate GST on a bill. A ₹1,000 item at 18% is still ₹1,180, and the tax inside a ₹1,180 bill is still ₹180. The calculator above does that split either way.</p>",
+    "<h2>What to actually do this week</h2>",
+    "<p>Check whether your turnover puts you inside the ₹5 crore band for the annual-return option. If it does, ask your accountant whether it suits your cash cycle — paying quarterly can help a business that earns unevenly.</p>",
+    "<p>If you export or sell zero-rated goods, expect refunds to arrive faster. Plan your working capital on the new timelines rather than the old ones.</p>",
+    "<p>And keep your returns consistent. The Council also moved to reduce mismatches between what you report and what you claim as input tax credit. Easier enforcement is not absent enforcement.</p>",
+    "<h2>What did not change</h2>",
+    "<p>Rates. The 5%, 12%, 18% and 28% slabs are exactly where they were, and the Council has signalled it wants rate changes to settle into a once-a-year cycle instead of arriving unpredictably.</p>",
+    "<p>Registration thresholds and the basic filing obligation are untouched too. If you were registered last month, you are registered today, and the returns you owe have not changed shape.</p>"
+   ],
+   "body_hinglish": [
+    "<p>8 October 2026 ko 57th GST Council meeting ne aise reforms approve kiye jo ye badalte hain ki tax office aapke saath kaise pesh aata hai, ye nahi ki aap kitna tax dete ho. Rates wahi rahe. Jo badla woh hai enforcement, refunds aur paperwork.</p>",
+    "<p>Ek chhote seller ya pehli baar founder ke liye yahi zyada kaam ki cheez hai. Kam rate har mahine thoda bachata hai. Mushkil mein padne ke kam raste ek baar mein bahut bachate hain.</p>",
+    "<h2>Kya badla, seedhe shabdon mein</h2>",
+    "<p><strong>GST ke arrest powers hata diye gaye.</strong> Yahi headline hai. Tax officers ab aam vivaad mein arrest ko tool ki tarah istemal nahi kar sakte.</p>",
+    "<p><strong>Prosecution threshold ₹1 crore se ₹5 crore ho gayi.</strong> Is amount se neeche vivaad ke criminal banne ke chance kaafi kam hain.</p>",
+    "<p><strong>General penalty ₹25,000 se ₹10,000 ho gayi.</strong> Ek chhoti procedural galti ab pehle se aadhe se bhi kam ki padti hai.</p>",
+    "<p><strong>Refund acknowledgement 15 din se 10 din ho gaya,</strong> aur system risk assessment ke baad claim ka 90% provisional sanction karega, order teen working days mein.</p>",
+    "<h2>Chhote business ka ek option jo jaanna chahiye</h2>",
+    "<p>Council ne in-principle optional annual return with quarterly payment scheme approve kiya hai un B2C businesses ke liye jinki turnover ₹5 crore tak hai. Lagataar filings ki jagah ek chhota seller saal mein ek baar file kar sakta hai aur quarterly pay kar sakta hai.</p>",
+    "<p>Yahan kuch bhi ye nahi badalta ki aap bill par GST kaise nikalte ho. ₹1,000 ka item 18% par ab bhi ₹1,180 hai, aur ₹1,180 ke bill mein tax ab bhi ₹180 hai. Upar wala calculator dono taraf se ye split karta hai.</p>",
+    "<h2>Is hafte asli mein kya karein</h2>",
+    "<p>Dekho ki aapki turnover aapko annual-return option ke ₹5 crore band mein laati hai ya nahi. Agar haan, apne accountant se poocho ki ye aapke cash cycle ke liye theek hai — quarterly pay karna us business ki madad karta hai jiski kamai uneven ho.</p>",
+    "<p>Agar aap export ya zero-rated goods bechte ho, to refund jaldi aane ki umeed rakho. Working capital purane timeline ki jagah naye timeline par plan karo.</p>",
+    "<p>Aur apne returns consistent rakho. Council ne ye bhi kaha hai ki jo aap report karte ho aur jo input tax credit claim karte ho, usme mismatch kam ho. Aasan enforcement ka matlab enforcement gayab nahi hai.</p>",
+    "<h2>Kya nahi badla</h2>",
+    "<p>Rates. 5%, 12%, 18% aur 28% slabs bilkul wahin hain jahan the, aur Council ne ishara diya hai ki rate changes ek saal mein ek baar wale cycle mein aane chahiye, achanak nahi.</p>",
+    "<p>Registration thresholds aur basic filing obligation bhi waise hi hain. Agar aap pichhle mahine registered the, to aaj bhi ho, aur jo returns aapko dene hain unka shape nahi badla.</p>"
+   ]
+  },
+  {
+   "slug": "india-startup-funding-october-2026-flat-year",
+   "title": "Indian Startups Raised $10.9 Billion This Year — But From Far Fewer Deals",
+   "dek": "Funding is flat for a third straight year, yet the average cheque nearly doubled. Here is what that shift means if you are about to raise.",
+   "category": "Funding",
+   "date": "2026-10-21",
+   "date_display": "October 21, 2026",
+   "source_name": "India Business Trade",
+   "source_url": "https://indiabusinesstrade.in/india-startup-vc-funding-stays-flat-at-10-9-billion-in-2026.htm",
+   "cta": {
+    "text": "See how much runway your current cash and burn actually buy you.",
+    "href": "/burn-rate-and-runway",
+    "label": "Open the Burn Rate Calculator"
+   },
+   "related": [
+    {
+     "slug": "burn-rate-runway-guide",
+     "title": "Burn Rate and Runway"
+    },
+    {
+     "slug": "revenue-multiple",
+     "title": "Revenue Multiple Calculator"
+    }
+   ],
+   "body_en": [
+    "<p>Indian startups raised <strong>$10.9 billion across 1,253 rounds</strong> between January and 15 October 2026, according to Tracxn data. That is up 6.8% on the same period last year. On its own, it reads like a flat year.</p>",
+    "<p>The number underneath is the interesting one. In 2025, the same $10.2 billion came from 1,982 rounds. This year it came from 1,253. Average funding per round jumped from <strong>$5.1 million to $8.6 million</strong>.</p>",
+    "<h2>What a rising average cheque really says</h2>",
+    "<p>It says money did not leave the market. It concentrated. Investors are writing fewer, larger cheques to companies they already believe in, and passing on the rest.</p>",
+    "<p>The top ten startups took nearly 36% of all equity funding — $3.92 billion between them. When a third of the money goes to ten companies, the other 1,243 are sharing the rest.</p>",
+    "<h2>Why this is harder than a funding winter</h2>",
+    "<p>A winter is obvious. Everyone struggles, everyone knows why, and the bar drops accordingly. A concentrated market is quieter. The headline total looks healthy, so nobody adjusts expectations, while the median founder finds the door narrower than last year.</p>",
+    "<p>That mismatch is dangerous. Founders read that funding is up 6.8% and plan an 18-month raise. The actual probability of a yes has fallen.</p>",
+    "<h2>What it means if you are raising soon</h2>",
+    "<p><strong>Assume the round takes longer.</strong> With fewer deals closing, plan on a longer runway than you think you need. Run the numbers with a conservative burn and see how many months the cash buys.</p>",
+    "<p><strong>Lead with traction, not the idea.</strong> When investors are writing bigger cheques, they are buying evidence. Revenue, retention and a believable path to the next round beat a large market slide.</p>",
+    "<p><strong>Consider a smaller round.</strong> If the average cheque is growing, an ask that is too small can read as unserious, but so can an ask that is far beyond your traction. Match the number to what you can prove.</p>",
+    "<p><strong>Look at the categories that are winning.</strong> Deeptech, AI and clean energy are pulling the large rounds. If your business sits next to one of those, say so plainly. If it does not, do not pretend — investors hear that pitch all day.</p>",
+    "<h2>The weekly picture is noisier than the yearly one</h2>",
+    "<p>A single week can look explosive. Between 12 and 17 October, 28 Indian startups raised $302.85 million, roughly 2.7 times the week before. Read one week and you will draw the wrong conclusion; read the year and the concentration becomes obvious.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Tracxn data ke mutabik Indian startups ne January se 15 October 2026 ke beech <strong>1,253 rounds mein $10.9 billion</strong> uthaye. Ye pichhle saal ke isi period se 6.8% zyada hai. Akela dekhne par ye flat saal lagta hai.</p>",
+    "<p>Iske neeche wala number zyada dilchasp hai. 2025 mein yahi $10.2 billion 1,982 rounds se aaya tha. Is saal ye 1,253 se aaya. Average funding per round <strong>$5.1 million se $8.6 million</strong> ho gayi.</p>",
+    "<h2>Average cheque badhne ka asli matlab</h2>",
+    "<p>Iska matlab hai ki paisa market se gaya nahi. Woh ek jagah ikattha hua. Investors kam, bade cheques un companies ko de rahe hain jin par unhe pehle se bharosa hai, aur baaki ko chhod rahe hain.</p>",
+    "<p>Top das startups ne kul equity funding ka takriban 36% liya — akele $3.92 billion. Jab ek tihai paisa das companies ko jaata hai, to baaki 1,243 mil kar baaki hissa baant rahi hain.</p>",
+    "<h2>Ye funding winter se zyada mushkil kyun hai</h2>",
+    "<p>Winter saaf dikhta hai. Sab struggle karte hain, sabko wajah pata hoti hai, aur bar uske hisaab se neeche aata hai. Concentrated market zyada shaant hota hai. Headline total theek lagta hai, to koi expectations adjust nahi karta, aur beech ka founder darwaza pichhle saal se tang paata hai.</p>",
+    "<p>Yahi mismatch khatarnak hai. Founders padhte hain ki funding 6.8% badhi hai aur 18 mahine ka raise plan karte hain. Haan milne ki asli sambhavna giri hai.</p>",
+    "<h2>Agar aap jald raise karne wale ho to iska matlab</h2>",
+    "<p><strong>Maano ki round zyada time lega.</strong> Kam deals close ho rahi hain, to jitni runway chahiye soch rahe ho usse zyada plan karo. Conservative burn se numbers nikalo aur dekho cash kitne mahine ka hai.</p>",
+    "<p><strong>Idea se nahi, traction se shuru karo.</strong> Jab investors bade cheque likh rahe hain, woh sabooot kharid rahe hain. Revenue, retention aur agle round ka believable raasta ek bade market slide se behtar hai.</p>",
+    "<p><strong>Chhota round socho.</strong> Average cheque badh raha hai, to bahut chhoti ask non-serious lagti hai, par bahut badi ask bhi lagti hai jab traction uske layak na ho. Number ko us cheez se match karo jo aap prove kar sakte ho.</p>",
+    "<p><strong>Jeetne wali categories dekho.</strong> Deeptech, AI aur clean energy bade rounds kheench rahe hain. Agar aapka business inme se kisi ke paas baithta hai, to saaf bolo. Agar nahi, to natak mat karo — investors ye pitch din bhar sunte hain.</p>",
+    "<h2>Hafta-waar tasveer saal se zyada shor karti hai</h2>",
+    "<p>Ek hafta dhamakedaar lag sakta hai. 12 se 17 October ke beech 28 Indian startups ne $302.85 million uthaye, jo pichhle hafte se takriban 2.7 guna zyada hai. Ek hafta padhoge to galat nateeja nikaaloge; saal padhoge to concentration saaf dikhega.</p>"
+   ]
+  },
+  {
+   "slug": "marketplace-fees-india-sellers-guide",
+   "title": "Why an ₹800 Sale on a Marketplace Often Pays You Only ₹580",
+   "dek": "Commission, shipping and closing fees quietly take a quarter of the selling price. Here is the arithmetic, and how to price so the fees do not eat your margin.",
+   "category": "Small Business",
+   "date": "2026-10-21",
+   "date_display": "October 21, 2026",
+   "source_name": "Tank Metrics",
+   "source_url": "",
+   "cta": {
+    "text": "Put your own price and fees in and see what you actually keep.",
+    "href": "/marketplace-fee-calculator",
+    "label": "Open the Marketplace Fee Calculator"
+   },
+   "related": [
+    {
+     "slug": "marketplace-fees-explained",
+     "title": "Marketplace Fees Explained"
+    },
+    {
+     "slug": "average-order-value-aov",
+     "title": "Average Order Value Calculator"
+    }
+   ],
+   "body_en": [
+    "<p>You list an item at ₹800. The order comes in. You pack it, ship it, and a week later the settlement lands. It is not ₹800. It is rarely even close.</p>",
+    "<p>This is not a scam. It is how marketplaces make money, and it is entirely knowable in advance. Most sellers just never add it up before setting the price.</p>",
+    "<h2>Where the ₹220 goes</h2>",
+    "<p>A typical order carries three or four separate charges. <strong>Commission</strong> is usually the largest, charged as a percentage of the selling price and varying by category — often higher for fashion and lower for electronics.</p>",
+    "<p><strong>Shipping</strong> is charged on weight slabs, and the slab matters more than the actual weight. A 480-gram parcel and a 510-gram parcel can land in different slabs and different fees.</p>",
+    "<p><strong>Closing or fixed fees</strong> apply per order regardless of size, which is why small-ticket items get punished hardest. A ₹200 order with a ₹25 fixed fee has already lost 12.5% before commission.</p>",
+    "<p><strong>Payment gateway charges</strong> and, on cash-on-delivery orders, a COD handling fee round it out.</p>",
+    "<h2>The number that actually matters</h2>",
+    "<p>Not the fee. The <em>effective payout percentage</em>. If you keep ₹580 of an ₹800 sale, your payout ratio is 72.5%. Now compare that to your product cost.</p>",
+    "<p>Suppose the item costs you ₹420 to make or buy. You keep ₹580. Gross profit is ₹160, or 20% of the selling price. A single return wipes out three or four profitable orders.</p>",
+    "<h2>How to price so fees do not eat you</h2>",
+    "<p><strong>Work backwards from your cost.</strong> Decide the margin you need, then gross up for the fee percentage rather than adding fees on top of a price you already chose.</p>",
+    "<p><strong>Push order value up.</strong> Fixed fees punish small baskets. Bundling two items into one order spreads the fixed fee across more revenue and can lift your payout ratio several points.</p>",
+    "<p><strong>Watch the weight slab.</strong> If your parcel is 510 grams and the next slab starts at 500, shaving packaging can drop you a slab and save on every single order.</p>",
+    "<p><strong>Track your RTO rate.</strong> A returned cash-on-delivery order can cost you the forward shipping, the return shipping and the lost sale. Sellers with a high RTO rate often find their real margin is far below what the dashboard shows.</p>",
+    "<p>None of this needs software. It needs you to know your payout ratio before you set a price, not after the settlement report arrives.</p>",
+    "<h2>Do this before your next listing</h2>",
+    "<p>Open a spreadsheet, or the calculator above, and write down the payout ratio for your five best-selling items. Most sellers find one or two are quietly losing money at the current price, and a small correction fixes it before the losses pile up.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Aap ek item ₹800 mein list karte ho. Order aata hai. Aap pack karte ho, ship karte ho, aur ek hafte baad settlement aata hai. Woh ₹800 nahi hai. Zyadatar paas bhi nahi hai.</p>",
+    "<p>Ye scam nahi hai. Marketplaces aise hi paisa kamate hain, aur ye pehle se poori tarah pata kiya ja sakta hai. Zyadatar sellers bas price set karne se pehle ise jodte hi nahi.</p>",
+    "<h2>Woh ₹220 kahan jaate hain</h2>",
+    "<p>Ek aam order mein teen ya chaar alag charges hote hain. <strong>Commission</strong> aam taur par sabse bada hota hai, selling price ke percentage par, aur category ke hisaab se badalta hai — fashion par aksar zyada, electronics par kam.</p>",
+    "<p><strong>Shipping</strong> weight slabs par lagti hai, aur slab asli weight se zyada matter karti hai. 480 gram ka parcel aur 510 gram ka parcel alag slab aur alag fee mein ja sakte hain.</p>",
+    "<p><strong>Closing ya fixed fees</strong> har order par lagti hain, size chahe kuch bhi ho, isliye chhote ticket wale items sabse zyada pit-te hain. ₹200 ke order par ₹25 ki fixed fee commission se pehle hi 12.5% kha jaati hai.</p>",
+    "<p><strong>Payment gateway charges</strong> aur cash-on-delivery orders par COD handling fee ise poora karte hain.</p>",
+    "<h2>Asli number jo matter karta hai</h2>",
+    "<p>Fee nahi. <em>Effective payout percentage</em>. Agar ₹800 ki sale par aapke paas ₹580 aata hai, to payout ratio 72.5% hai. Ab ise apni product cost se compare karo.</p>",
+    "<p>Maano item banane ya kharidne mein ₹420 lagta hai. Aapke paas ₹580 aata hai. Gross profit ₹160, yaani selling price ka 20%. Ek return teen-char profitable orders kha jaata hai.</p>",
+    "<h2>Price kaise rakho ki fees kha na jaayein</h2>",
+    "<p><strong>Apni cost se peeche se chalo.</strong> Decide karo kitna margin chahiye, phir fee percentage ke liye gross up karo, na ki apne chune hue price par fees jodo.</p>",
+    "<p><strong>Order value badhao.</strong> Fixed fees chhoti basket ko saza deti hain. Do items ek order mein bundle karne se fixed fee zyada revenue par bant jaati hai aur payout ratio kuch points badh sakta hai.</p>",
+    "<p><strong>Weight slab dekho.</strong> Agar parcel 510 gram hai aur agli slab 500 se shuru hoti hai, to packaging thodi kam karne se aap ek slab neeche aa sakte ho aur har order par bacha sakte ho.</p>",
+    "<p><strong>Apna RTO rate track karo.</strong> Return hua cash-on-delivery order forward shipping, return shipping aur khoi hui sale — teeno ka kharcha de sakta hai. Jinka RTO rate zyada hai unka asli margin aksar dashboard se kaafi neeche hota hai.</p>",
+    "<p>Ismein koi software nahi chahiye. Sirf ye chahiye ki price set karne se pehle apna payout ratio pata ho, settlement report aane ke baad nahi.</p>",
+    "<h2>Agli listing se pehle ye karo</h2>",
+    "<p>Ek spreadsheet kholo, ya upar wala calculator, aur apne paanch sabse zyada bikne wale items ka payout ratio likho. Zyadatar sellers ko pata chalta hai ki ek-do items chupke se current price par paisa kha rahe hain, aur thoda correction nuksaan badhne se pehle ise theek kar deta hai.</p>"
+   ]
+  },
+  {
+   "slug": "khosla-ventures-even-healthcare-india-bet",
+   "title": "Khosla Ventures Doubled Down on Indian Healthcare — What That Signals",
+   "dek": "A US fund backing an Indian hospital challenger is a bet on cost structure, not technology. Here is how to read a funding signal like this.",
+   "category": "Funding",
+   "date": "2026-10-21",
+   "date_display": "October 21, 2026",
+   "source_name": "TechCrunch",
+   "source_url": "https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics",
+   "cta": {
+    "text": "Work out the market size your own pitch can honestly claim.",
+    "href": "/tam-sam-som",
+    "label": "Open the TAM / SAM / SOM Calculator"
+   },
+   "related": [
+    {
+     "slug": "startup-valuation-explained",
+     "title": "How Startup Valuation Actually Works"
+    },
+    {
+     "slug": "revenue-multiple",
+     "title": "Revenue Multiple Calculator"
+    }
+   ],
+   "body_en": [
+    "<p>Khosla Ventures put more money into Even Healthcare, an Indian company taking on the economics of Indian hospitals. The amount is less interesting than the reason, because it tells you what foreign capital currently believes about India.</p>",
+    "<h2>The bet is on cost structure</h2>",
+    "<p>Indian hospital economics are unusual. A large share of care is paid for out of pocket, not by insurance, which means price sensitivity is extreme and the middle of the market is underserved. A company that can deliver acceptable care at a lower cost does not need to invent anything. It needs to be structurally cheaper than the incumbent.</p>",
+    "<p>That is a business-model bet, not a technology bet. Investors are paying for the possibility that a different cost base wins in a market where the current one is broken for most people.</p>",
+    "<h2>How to read a funding signal like this</h2>",
+    "<p><strong>Look at what the money is for.</strong> If a round funds capacity — beds, clinics, logistics — the thesis is scale economics. If it funds research, the thesis is a product that does not exist yet. These have very different risk profiles.</p>",
+    "<p><strong>Check who led it.</strong> A follow-on from an existing investor is a conviction signal. A new lead entering is a validation signal. Both are good, but they mean different things.</p>",
+    "<p><strong>Ignore the valuation headline.</strong> Valuations are set by negotiation and market mood. The interesting facts are unit economics: cost to serve one customer, and how that falls as volume rises.</p>",
+    "<h2>What Indian founders should take from it</h2>",
+    "<p>Foreign capital is looking at Indian problems, not just Indian software. If your business solves something structurally broken — healthcare access, credit, logistics in small towns — you are in a category that is actively being funded.</p>",
+    "<p>But be honest about market size. Investors have heard every version of the India-is-1.4-billion-people pitch. The number that lands is the one you can defend: who exactly pays you, how much, and how many of them you can realistically reach.</p>",
+    "<p>Finally, understand that a follow-on round is not a victory lap. It means the existing investor believes enough to protect their position. It also means the next round will be judged against the promises you made in this one.</p>",
+    "<h2>The uncomfortable question for Indian founders</h2>",
+    "<p>If a foreign fund will back an Indian company attacking Indian hospital costs, it will look at your category too. The question is not whether your market is large. It is whether you are structurally cheaper, faster or better than whoever already serves it.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Khosla Ventures ne Even Healthcare mein aur paisa lagaya, ek Indian company jo Indian hospitals ki economics ko challenge kar rahi hai. Amount se zyada wajah dilchasp hai, kyunki ye batati hai ki foreign capital aaj India ke baare mein kya maanta hai.</p>",
+    "<h2>Bet cost structure par hai</h2>",
+    "<p>Indian hospital economics alag hai. Badi hissa ilaaj ka apni jeb se diya jaata hai, insurance se nahi, isliye price sensitivity bahut zyada hai aur beech ka market underserved hai. Jo company kam cost par theek-thaak ilaaj de sake, use kuch invent karne ki zaroorat nahi. Use structurally sasta hona hai.</p>",
+    "<p>Ye business-model ka bet hai, technology ka nahi. Investors us sambhavna ke paise de rahe hain ki ek alag cost base us market mein jeetega jahan aaj ka cost base zyadatar logon ke liye toota hua hai.</p>",
+    "<h2>Aisa funding signal kaise padho</h2>",
+    "<p><strong>Dekho paisa kis liye hai.</strong> Agar round capacity — beds, clinics, logistics — fund karta hai, to thesis scale economics hai. Agar research fund karta hai, to thesis aise product ki hai jo abhi hai hi nahi. Dono ka risk bahut alag hai.</p>",
+    "<p><strong>Dekho kiska lead tha.</strong> Purane investor ka follow-on conviction signal hai. Naya lead aana validation signal hai. Dono achhe hain, par matlab alag hai.</p>",
+    "<p><strong>Valuation headline ignore karo.</strong> Valuation negotiation aur market mood se banti hai. Dilchasp facts unit economics hain: ek customer ko serve karne ki cost, aur volume badhne par woh kaise girti hai.</p>",
+    "<h2>Indian founders ko isse kya seekhna chahiye</h2>",
+    "<p>Foreign capital Indian problems dekh raha hai, sirf Indian software nahi. Agar aapka business kuch structurally toota hua solve karta hai — healthcare access, credit, chhote shahron ki logistics — to aap us category mein ho jise actively fund kiya ja raha hai.</p>",
+    "<p>Par market size par imaandaar raho. Investors ne India-1.4-billion-people pitch ka har version suna hai. Woh number chalta hai jo aap defend kar sakte ho: asli mein kaun aapko paisa deta hai, kitna, aur unmein se kitne tak aap pahunch sakte ho.</p>",
+    "<p>Aakhir, samjho ki follow-on round victory lap nahi hai. Iska matlab hai ki purana investor itna bharosa karta hai ki apni position bachaye. Iska ye bhi matlab hai ki agla round usi promise par judge hoga jo aapne is round mein kiya.</p>",
+    "<h2>Indian founders ke liye uncomfortable sawaal</h2>",
+    "<p>Agar ek foreign fund Indian hospital costs par hamla karne wali Indian company ko support karega, to woh aapki category bhi dekhega. Sawaal ye nahi ki aapka market bada hai. Sawaal ye hai ki aap usse structurally saste, tez ya behtar ho jo pehle se usse serve kar raha hai.</p>"
+   ]
+  }
+ ]
 }

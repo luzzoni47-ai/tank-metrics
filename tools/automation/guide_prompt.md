@@ -71,6 +71,10 @@ short on time, commit and push what you have rather than leaving it uncommitted.
    the new post and a "Read the guide" back-link on the matching calculator
    pages. It picks the tools from the post title when there is no hand-written
    entry, so it always finds something. Run it BEFORE `clean_urls.py`.
+   `python3 tools/wire_crawl_graph.py` - rebuilds `public/sitemap.xml` from the
+   files on disk. `clean_urls.py` only rewrites URLs that are ALREADY in the
+   sitemap, so a brand-new post is invisible to Google until this runs. Run it
+   BEFORE `clean_urls.py` too.
    `python3 tools/clean_urls.py`
    `python3 tools/add_blog_schema.py`
    `python3 tools/test_blog.py`

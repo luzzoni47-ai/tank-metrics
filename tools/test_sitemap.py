@@ -75,6 +75,18 @@ def main() -> int:
     if "news" not in slugs:
         failures.append("/news is not in the sitemap")
 
+    # A duplicated <loc> is invalid XML for a sitemap and makes Google distrust
+    # the whole file. Two writers edit it (wire_crawl_graph and gen_news) and
+    # they once disagreed on the URL shape, so every news URL landed twice -
+    # 12 duplicates, and nothing caught it because the set() above hides them.
+    locs_all = re.findall(r"<loc>\s*(.*?)\s*</loc>", SITEMAP.read_text(encoding="utf-8"))
+    dupes = sorted({u for u in locs_all if locs_all.count(u) > 1})
+    if dupes:
+        failures.append(
+            f"{len(dupes)} URL(s) appear more than once in the sitemap, which is "
+            "invalid: " + ", ".join(dupes[:5])
+        )
+
     if failures:
         print(f"FAIL: {len(failures)} problem(s)")
         for f in failures:

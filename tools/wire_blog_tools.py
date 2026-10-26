@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-import-duty-explained": [
+        ("/import-duty-and-customs-calculator", "Import Duty & Customs",
+         "add customs duty and IGST to your own order value"),
+        ("/landed-cost-calculator", "Landed Cost",
+         "roll every cost up into the real price of the goods"),
+    ],
     "blog-what-is-ebitda": [
         ("/ebitda-and-margin", "EBITDA & Margin",
          "enter your revenue, cost of goods and operating expenses"),

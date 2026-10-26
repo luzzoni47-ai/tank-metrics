@@ -30,6 +30,7 @@ POSTS = [
     'blog-markup-vs-margin-explained.html',
     'blog-break-even-point-explained.html',
     'blog-discount-impact-on-profit-explained.html',
+    'blog-import-duty-explained.html',
 ]
 
 VIRAMA = '्'

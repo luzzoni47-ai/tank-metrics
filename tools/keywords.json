@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T01:42:18Z",
+ "generated": "2026-10-26T14:59:34Z",
  "seed_count": 150,
  "suggestion_count": 1035,
  "keywords": [
@@ -31,7 +31,7 @@
    ]
   },
   {
-   "query": "fd calculator sbi",
+   "query": "fd calculator hdfc",
    "demand": 12,
    "covered": false,
    "score": 22.08,
@@ -76,7 +76,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc",
+   "query": "fd calculator monthly interest",
    "demand": 11,
    "covered": false,
    "score": 20.24,
@@ -148,7 +148,7 @@
    ]
   },
   {
-   "query": "fd calculator monthly interest",
+   "query": "fd calculator post office",
    "demand": 10,
    "covered": false,
    "score": 18.4,
@@ -247,7 +247,7 @@
    ]
   },
   {
-   "query": "fd calculator post office",
+   "query": "fd calculator axis bank",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -409,7 +409,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator icici",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -571,7 +571,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator monthly payout",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -743,15 +743,6 @@
    "from": [
     "employee utilisation",
     "employee utilization rate"
-   ]
-  },
-  {
-   "query": "fd calculator monthly payout",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -1033,6 +1024,15 @@
    "score": 9.2,
    "from": [
     "exit calculator"
+   ]
+  },
+  {
+   "query": "fd calculator indusind bank",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -1938,6 +1938,15 @@
    ]
   },
   {
+   "query": "cash conversion cycle formula",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "cash conversion cycle"
+   ]
+  },
+  {
    "query": "churn rate meaning",
    "demand": 12,
    "covered": true,
@@ -2487,7 +2496,7 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "age calculator by year",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2758,7 +2767,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3137,7 +3146,7 @@
    ]
   },
   {
-   "query": "fd calculator indusind bank",
+   "query": "fd calculator pnb",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3318,7 +3327,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator app",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3571,7 +3580,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator cgst sgst",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3613,15 +3622,6 @@
    "score": 6.9,
    "from": [
     "loan emi calculator"
-   ]
-  },
-  {
-   "query": "love calculator name test",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "love calculator"
    ]
   }
  ]

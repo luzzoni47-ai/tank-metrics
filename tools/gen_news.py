@@ -286,19 +286,36 @@ def index_page(items: list[dict]) -> str:
 
 
 def write_sitemap_entries(slugs: list[str]) -> None:
-    """Append the news URLs to public/sitemap.xml, replacing any earlier block."""
+    """Drop every news URL already in the sitemap, then write a fresh block.
+
+    Two writers touch public/sitemap.xml and they disagree on the URL shape:
+    wire_crawl_graph rebuilds the file and writes `/site/news-<slug>.html`,
+    while this function writes the clean `/news` and `/<slug>` that clean_urls
+    would settle on. Removing only our own lines left the other writer's lines
+    behind, so once both had run every news URL was in the file twice (12
+    duplicates) - invalid sitemap XML. Match on the PATH in any form, so the
+    block is replaced no matter who wrote it or how often this runs.
+    """
     p = ROOT / "public" / "sitemap.xml"
     xml = p.read_text(encoding="utf-8")
-    xml = re.sub(r"\n  <url><loc>[^<]*</loc><lastmod>[^<]*</lastmod>"
-                 r"<changefreq>daily</changefreq><priority>0\.9</priority></url>", "", xml)
+    wanted = {"/news"} | {f"/{s}" for s in slugs}
+    kept = []
+    for url in re.findall(r"\s*<url>.*?</url>", xml, re.S):
+        loc = re.search(r"<loc>\s*(.*?)\s*</loc>", url)
+        path = (loc.group(1).split("tankmetrics.in", 1)[-1] if loc else "").strip()
+        if path in wanted or path.startswith("/site/news"):
+            continue
+        kept.append(url)
     stamp = date.today().isoformat()
     block = (f'  <url><loc>{BASE}/news</loc><lastmod>{stamp}</lastmod>'
              f'<changefreq>daily</changefreq><priority>0.9</priority></url>')
     for s in slugs:
         block += (f'\n  <url><loc>{BASE}/{s}</loc><lastmod>{stamp}</lastmod>'
                   f'<changefreq>daily</changefreq><priority>0.9</priority></url>')
-    xml = xml.replace("</urlset>", block + "\n</urlset>")
-    p.write_text(xml, encoding="utf-8")
+    head = xml[: xml.index("<urlset")]
+    open_tag = xml[xml.index("<urlset"):].split(">", 1)[0] + ">"
+    p.write_text(head + open_tag + "".join(kept) + "\n" + block + "\n</urlset>\n",
+                 encoding="utf-8")
 
 
 def write_llms(items: list[dict]) -> None:

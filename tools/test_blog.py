@@ -195,9 +195,37 @@ def check_amounts(failures: list) -> None:
                 failures.append(f"{path.name}: example amount {m.group(0)} is not under ₹{MONEY_LIMIT:,}")
 
 
+def check_post_structure(failures: list) -> None:
+    """Static checks that do not need a browser.
+
+    A post is assembled from a template, so a copy/paste slip shows up as
+    structural damage rather than as bad prose: the shell already carries one
+    `<div class="main">`, and a second one nests the whole page inside itself;
+    a missing CTA leaves the reader with no calculator to click; an unbalanced
+    <div> breaks the layout from that point down. None of these are visible in
+    a screenshot of the top of the page, so they are worth asserting.
+    """
+    for path in sorted(SITE.glob("blog-*.html")):
+        body = path.read_text(encoding="utf-8")
+        mains = len(re.findall(r'<div class="main"', body))
+        if mains != 1:
+            failures.append(f"{path.name}: {mains} <div class=\"main\"> wrappers, expected 1")
+        if len(re.findall(r"<h1", body)) != 1:
+            failures.append(f"{path.name}: {len(re.findall(r'<h1', body))} <h1> tags, expected 1")
+        opens, closes = len(re.findall(r"<div\b", body)), len(re.findall(r"</div>", body))
+        if opens != closes:
+            failures.append(f"{path.name}: {opens} <div> opened but {closes} closed")
+        en = re.search(r'<div class="post-lang" data-lang="en">(.*?)(?=<div class="post-lang" data-lang="hinglish")', body, re.S)
+        hi = re.search(r'<div class="post-lang" data-lang="hinglish"[^>]*>(.*)', body, re.S)
+        for label, block in (("English", en), ("Hinglish", hi)):
+            if block and not re.search(r'class="cta-inline"', block.group(1)):
+                failures.append(f"{path.name}: {label} block has no cta-inline call to action")
+
+
 def main() -> int:
     failures = []
     check_amounts(failures)
+    check_post_structure(failures)
     check_card_markup(failures)
 
     desktop = run_probe(1280)

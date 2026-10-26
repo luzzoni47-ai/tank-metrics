@@ -50,6 +50,10 @@ FIX = {
         "Startup Valuation: Pre-Money vs Post-Money",
         "Pre-money and post-money valuation with a worked example: an investor offers 50 lakh for 5%, and how to check the dilution math yourself in one minute.",
     ),
+    "import-duty-explained": (
+        "What Import Duty Really Adds to Your Order",
+        "Import duty and IGST explained for Indian importers: why the tax is charged on the duty too, and what a small order truly costs once both charges are added.",
+    ),
     "what-is-ebitda": (
         "What Is EBITDA? A Simple Guide for Founders",
         "EBITDA explained in plain English: what it stands for, the formula, a worked example in rupees, and why investors always ask about it first of everything.",
@@ -68,6 +72,37 @@ TW_DESC = re.compile(r'<meta name="twitter:description" content="[^"]*">')
 
 def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;")
+
+
+def sync_social_from_page(f: Path) -> bool:
+    """Make og:/twitter: mirror the page's own <title> and description.
+
+    The FIX dict only knows the posts that existed when it was written, so a
+    newly published guide kept the PREVIOUS post's og:title - a stale headline
+    on every WhatsApp and Facebook share of the new link. Deriving the tags from
+    the page itself means the card cannot drift, whatever the post is.
+    """
+    t = f.read_text(encoding="utf-8")
+    m = TITLE_TAG.search(t)
+    if not m:
+        return False
+    title = m.group(0)[len("<title>"):-len("</title>")]
+    dm = DESC_TAG.search(t)
+    if not dm:
+        return False
+    desc = dm.group(0).split('content="', 1)[1].rsplit('"', 1)[0]
+    cm = re.search(r'<link rel="canonical" href="([^"]*)"', t)
+    before = t
+    t = OG_TITLE.sub(f'<meta property="og:title" content="{title}">', t, count=1)
+    t = TW_TITLE.sub(f'<meta name="twitter:title" content="{title}">', t, count=1)
+    t = OG_DESC.sub(f'<meta property="og:description" content="{desc}">', t, count=1)
+    t = TW_DESC.sub(f'<meta name="twitter:description" content="{desc}">', t, count=1)
+    if cm:
+        t = OG_URL.sub(f'<meta property="og:url" content="{cm.group(1)}">', t, count=1)
+    if t != before:
+        f.write_text(t, encoding="utf-8")
+        return True
+    return False
 
 
 def main() -> None:
@@ -118,6 +153,9 @@ def main() -> None:
             t = re.sub(r'(<link rel="canonical"[^>]*>)', r"\1" + extra, t, count=1)
         f.write_text(t, encoding="utf-8")
         print(f"  fixed {f.name}  title={len(title)} desc={len(desc)}")
+
+    synced = sum(sync_social_from_page(f) for f in sorted(SITE.glob("blog-*.html")))
+    print(f"  social tags synced from page: {synced}")
     print("\ndone")
 
 
