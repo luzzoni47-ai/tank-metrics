@@ -100,6 +100,14 @@ MAP: dict[str, list[tuple[str, str, str]]] = {
         ("/break-even-point", "Break-Even Point",
          "find how many extra sales a discount forces you to make"),
     ],
+    "blog-arpu-average-revenue-per-user": [
+        ("/arpu-mrr-and-arr", "ARPU, MRR & ARR",
+         "put your own revenue and user count into the ARPU formula"),
+        ("/customer-lifetime-value-ltv", "Customer Lifetime Value",
+         "turn a monthly ARPU into what one user is worth over their whole life"),
+        ("/churn-rate", "Churn Rate",
+         "measure how fast users leave, which caps what ARPU can earn you"),
+    ],
 }
 
 BACKLINK_MARKER = "<!-- tool-blog -->"

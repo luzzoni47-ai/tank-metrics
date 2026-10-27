@@ -32,6 +32,7 @@ POSTS = [
     'blog-discount-impact-on-profit-explained.html',
     'blog-import-duty-explained.html',
     'blog-pharma-distributor-margin-explained.html',
+    'blog-arpu-average-revenue-per-user.html',
 ]
 
 VIRAMA = '्'

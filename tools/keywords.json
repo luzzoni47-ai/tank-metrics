@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T05:38:48Z",
+ "generated": "2026-10-27T13:43:03Z",
  "seed_count": 150,
- "suggestion_count": 1035,
+ "suggestion_count": 1036,
  "keywords": [
   {
    "query": "average revenue per user (arpu)",
@@ -1460,6 +1460,15 @@
    ]
   },
   {
+   "query": "lucky number calculator",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "market share calculator",
    "demand": 13,
    "covered": true,
@@ -1668,7 +1677,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -2163,15 +2172,6 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "market share calculator online",
    "demand": 12,
    "covered": true,
@@ -2352,7 +2352,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2740,7 +2740,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2803,7 +2803,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator by name",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2884,7 +2884,7 @@
    ]
   },
   {
-   "query": "ppf calculator sbi",
+   "query": "ppf calculator monthly",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3264,15 +3264,6 @@
    ]
   },
   {
-   "query": "lucky number calculator by date of birth",
-   "demand": 13,
-   "covered": true,
-   "score": 7.02,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3553,7 +3544,7 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3622,6 +3613,15 @@
    "score": 6.9,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator in tamil",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "lucky number calculator"
    ]
   }
  ]
