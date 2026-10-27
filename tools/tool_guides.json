@@ -305,6 +305,54 @@
     "Ignoring how often it compounds. 8% paid monthly is not the same as 8% paid yearly, and the gap widens with the term.",
     "Forgetting that the rate is annual. Entering a monthly rate in the yearly field multiplies the answer by twelve times over."
    ]
+  },
+  "simpledisc": {
+   "what": "The Discount Calculator works out what a percentage off actually takes off a price. Enter the original price and the discount, and it shows two things: the rupees you save and the price you finally pay. That is the number that decides whether a sale is worth acting on — not the percentage, which is the part shops advertise because it sounds bigger than it is.",
+   "formula": "The saving is the original price multiplied by the discount, divided by 100: `price` × `disc` ÷ 100. The final price is the original minus that saving: `price` − saving. At ₹2,000 with a 25% discount the saving is ₹500 and the final price is ₹1,500. Two discounts applied one after another are not added together — 30% then 20% leaves you paying 0.7 × 0.8 = 0.56 of the price, which is 44% off, not 50%.",
+   "when": [
+    "A marketplace or shop shows a flat percentage off and you want the rupee amount before you decide.",
+    "You are comparing two sale prices where the discounts and the original prices are both different.",
+    "A coupon stacks on top of an existing sale and you want to know the real final price."
+   ],
+   "mistakes": [
+    "Adding two discounts together. A 30% discount followed by a 20% one is 44% off the original, not 50%, because the second discount applies to the already-reduced price.",
+    "Reading the discount as a share of the final price. The percentage is taken off the original marked price; once the price has dropped, the same rupees are a larger percentage of what is left.",
+    "Comparing discount percentages across different prices. 40% off ₹2,000 saves ₹800, which is more than 50% off ₹1,000 at ₹500."
+   ],
+   "intro": "Take a ₹2,000 jacket with 25% off in a sale. Here is what the discount takes off.",
+   "outro": "The percentage is the shop's number; the ₹500 saving and the ₹1,500 final price are yours. Change either figure above and both move together."
+  },
+  "tip": {
+   "what": "The Tip Calculator works out how much to leave and what the bill comes to once it is added. Give it the bill and a percentage, and it returns the tip amount and the total you hand over. That total is the figure that matters when you are paying cash, splitting with friends, or checking a bill against what you expected.",
+   "formula": "The tip amount is the bill multiplied by the tip percentage, divided by 100: `bill` × `tip` ÷ 100. The total is the bill plus the tip amount: `bill` + tip amount. On a ₹1,000 bill at 10%, the tip is ₹100 and you pay ₹1,100. If you want to tip on the pre-tax bill, enter the pre-tax figure — the percentage is applied to whatever number is in the bill field.",
+   "when": [
+    "You are at a restaurant and want to leave a fair, round amount without doing the arithmetic in your head.",
+    "The bill already carries a service charge and you want to see what an extra tip would add.",
+    "You are splitting a bill and need each person's share of the bill plus tip."
+   ],
+   "mistakes": [
+    "Tipping on the total instead of the bill. If the number you enter already includes the tip, applying the percentage again charges it twice.",
+    "Leaving a second tip when a service charge is already printed. The service charge is the tip; check the bill before you add more.",
+    "Splitting the bill and then tipping on each share. Work out the tip on the whole bill once, then divide the total, or the rounding on each share inflates it."
+   ],
+   "intro": "Take a ₹1,000 bill and a 10% tip. Here is what you leave and what you pay.",
+   "outro": "The tip is ₹100 on a ₹1,000 bill, so the total is ₹1,100. Change the bill or the percentage above and both the tip and the total follow."
+  },
+  "netmargin": {
+   "what": "The Net Profit Margin Calculator turns two figures — revenue and net profit — into the one percentage that says how much of every rupee of sales the business actually keeps. Net profit is the last line: after the cost of goods, after salaries and rent, after interest on any loan, and after tax. So this is the smallest and the most honest of the margin figures.",
+   "formula": "Net margin is net profit divided by revenue, multiplied by 100: `np` ÷ `rev` × 100. If a business earns ₹4,50,000 of revenue and keeps ₹1,80,000 after every cost and tax, the net margin is 1,80,000 ÷ 4,50,000 = 40%. Net profit is what remains after cost of goods, operating expenses, interest and tax; subtract any one of those later and the percentage rises.",
+   "when": [
+    "You want to know how much of each rupee of sales the business keeps after everything is paid.",
+    "You are comparing your margin with others selling the same kind of product or service.",
+    "You are preparing accounts or a pitch and need the bottom-line percentage investors will ask for."
+   ],
+   "mistakes": [
+    "Comparing the margin against a business in another industry. A grocery chain at 3% can be healthy while a software company at 3% is in trouble; the fair comparison is within the same trade.",
+    "Using profit before tax and calling it net. Net means after tax and after interest, which is why it is lower than the operating margin on the same revenue.",
+    "Reading a high percentage on a small revenue as a strong business. 40% of ₹4,50,000 is ₹1,80,000 — a large margin on a tiny turnover is still a small profit."
+   ],
+   "intro": "Take a business with ₹4,50,000 of revenue that keeps ₹1,80,000 after every cost and tax. Here is the net margin.",
+   "outro": "40% is a strong net margin for most trades. If your figure is much lower, the leak is below the gross line — look at overheads, interest and tax before you look at price."
   }
  }
 }

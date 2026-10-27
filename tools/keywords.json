@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T04:16:21Z",
+ "generated": "2026-10-27T05:38:48Z",
  "seed_count": 150,
- "suggestion_count": 1036,
+ "suggestion_count": 1035,
  "keywords": [
   {
    "query": "average revenue per user (arpu)",
@@ -118,15 +118,6 @@
    "score": 18.4,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "distributor margin in pharma",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "distributor margin"
    ]
   },
   {
@@ -1378,7 +1369,7 @@
    ]
   },
   {
-   "query": "home loan emi calculator",
+   "query": "home loan emi calculator sbi",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1466,15 +1457,6 @@
    "from": [
     "client lifetime value ltv",
     "customer lifetime value ltv"
-   ]
-  },
-  {
-   "query": "lucky number calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "lucky number calculator"
    ]
   },
   {
@@ -2127,7 +2109,7 @@
    ]
   },
   {
-   "query": "home loan emi calculator sbi",
+   "query": "home loan emi calculator hdfc",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2178,6 +2160,15 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator by name",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -2758,15 +2749,6 @@
    ]
   },
   {
-   "query": "home loan emi calculator hdfc",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "home loan emi calculator"
-   ]
-  },
-  {
    "query": "hra exemption calculator income tax",
    "demand": 11,
    "covered": true,
@@ -2821,7 +2803,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator in tamil",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3282,6 +3264,15 @@
    ]
   },
   {
+   "query": "lucky number calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3463,6 +3454,15 @@
    ]
   },
   {
+   "query": "distributor margin in pharma",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "distributor margin"
+   ]
+  },
+  {
    "query": "down payment calculator for mobile",
    "demand": 10,
    "covered": true,
@@ -3562,6 +3562,15 @@
    ]
   },
   {
+   "query": "home loan emi calculator icici",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "home loan emi calculator"
+   ]
+  },
+  {
    "query": "hra exemption calculator online",
    "demand": 10,
    "covered": true,
@@ -3613,15 +3622,6 @@
    "score": 6.9,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "lucky number calculator in tamil",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "lucky number calculator"
    ]
   }
  ]

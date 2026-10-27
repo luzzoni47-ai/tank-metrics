@@ -1,55 +1,69 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 91,
+ "pages_with_a_near_duplicate": 88,
  "worst_pairs": [
-  {
-   "overlap": 0.715,
-   "a": "/discount-calculator",
-   "b": "/tip-calculator"
-  },
-  {
-   "overlap": 0.711,
-   "a": "/net-profit-margin",
-   "b": "/operating-margin"
-  },
   {
    "overlap": 0.707,
    "a": "/return-on-capital-employed",
    "b": "/return-on-investment-roi"
   },
   {
-   "overlap": 0.707,
+   "overlap": 0.695,
    "a": "/bill-splitter",
-   "b": "/tip-calculator"
+   "b": "/salary-take-home-estimator"
   },
   {
-   "overlap": 0.702,
-   "a": "/bill-splitter",
-   "b": "/discount-calculator"
+   "overlap": 0.694,
+   "a": "/operating-margin",
+   "b": "/return-on-investment-roi"
   },
   {
-   "overlap": 0.699,
+   "overlap": 0.693,
+   "a": "/bill-splitter",
+   "b": "/simple-interest"
+  },
+  {
+   "overlap": 0.691,
+   "a": "/contribution-margin",
+   "b": "/operating-margin"
+  },
+  {
+   "overlap": 0.691,
+   "a": "/operating-margin",
+   "b": "/return-on-capital-employed"
+  },
+  {
+   "overlap": 0.691,
+   "a": "/implied-valuation",
+   "b": "/pre-money-and-post-money-valuation"
+  },
+  {
+   "overlap": 0.689,
+   "a": "/bill-splitter",
+   "b": "/savings-goal-planner"
+  },
+  {
+   "overlap": 0.686,
+   "a": "/churn-rate",
+   "b": "/employee-utilization-rate"
+  },
+  {
+   "overlap": 0.684,
    "a": "/ebitda-and-margin",
-   "b": "/net-profit-margin"
+   "b": "/operating-margin"
+  },
+  {
+   "overlap": 0.683,
+   "a": "/nps-calculator",
+   "b": "/sip-calculator"
+  },
+  {
+   "overlap": 0.683,
+   "a": "/month-on-month-year-on-year-growth",
+   "b": "/working-capital"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/discount-calculator",
-   "closest_overlap": 0.715
-  },
-  {
-   "page": "/tip-calculator",
-   "closest_overlap": 0.715
-  },
-  {
-   "page": "/net-profit-margin",
-   "closest_overlap": 0.711
-  },
-  {
-   "page": "/operating-margin",
-   "closest_overlap": 0.711
-  },
   {
    "page": "/return-on-capital-employed",
    "closest_overlap": 0.707
@@ -57,6 +71,46 @@
   {
    "page": "/return-on-investment-roi",
    "closest_overlap": 0.707
+  },
+  {
+   "page": "/bill-splitter",
+   "closest_overlap": 0.695
+  },
+  {
+   "page": "/salary-take-home-estimator",
+   "closest_overlap": 0.695
+  },
+  {
+   "page": "/operating-margin",
+   "closest_overlap": 0.694
+  },
+  {
+   "page": "/simple-interest",
+   "closest_overlap": 0.693
+  },
+  {
+   "page": "/contribution-margin",
+   "closest_overlap": 0.691
+  },
+  {
+   "page": "/implied-valuation",
+   "closest_overlap": 0.691
+  },
+  {
+   "page": "/pre-money-and-post-money-valuation",
+   "closest_overlap": 0.691
+  },
+  {
+   "page": "/savings-goal-planner",
+   "closest_overlap": 0.689
+  },
+  {
+   "page": "/churn-rate",
+   "closest_overlap": 0.686
+  },
+  {
+   "page": "/employee-utilization-rate",
+   "closest_overlap": 0.686
   }
  ],
  "median_overlap": 0.659

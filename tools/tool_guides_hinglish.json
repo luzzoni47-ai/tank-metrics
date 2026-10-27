@@ -295,6 +295,48 @@
     "Ye bhoolna ki byaaj kitni baar judta hai. 8% mahine-mahine dene ka matlab 8% saal me ek baar dene se alag hai, aur term badhne par gap badhta hai.",
     "Ye bhoolna ki rate saalana hai. Yearly field me monthly rate daalne se jawab barah guna ho jaata hai."
    ]
+  },
+  "simpledisc": {
+   "what": "Discount Calculator batata hai ki kisi price par diya gaya percentage off asli me kitna paisa bachata hai. Original price aur discount daalo, aur tool do cheezein dikhata hai: kitne rupaye bache aur final kitna dena padega. Yahi number decide karta hai ki sale sach me faydemand hai ya nahi — sirf percentage nahi, kyunki dukaan wahi dikhati hai jo bada lagta hai.",
+   "formula": "Bachat = original price × discount ÷ 100 (`price` × `disc` ÷ 100). Final price = original minus bachat (`price` − saving). ₹2,000 par 25% discount me bachat ₹500 aur final price ₹1,500 hota hai. Do discount ek ke baad ek lagte hain to unhe jodte nahi — 30% phir 20% me aap price ka 0.7 × 0.8 = 0.56 dete ho, matlab 44% off, 50% nahi.",
+   "when": [
+    "Marketplace ya dukaan flat percentage off dikhaye aur aap decide karne se pehle rupaye me amount jaanna chahein.",
+    "Do sale prices compare kar rahe ho jahan discount aur original price dono alag hain.",
+    "Coupon kisi chalti sale ke upar lage aur aapko asli final price jaanna ho."
+   ],
+   "mistakes": [
+    "Do discounts ko jod dena. 30% discount ke baad 20% matlab 44% off, 50% nahi, kyunki doosra discount pehle se kam hue price par lagta hai.",
+    "Discount ko final price ka hissa maan lena. Percentage original marked price se ghata jaata hai; price girne ke baad wahi rupaye bacha hua price ka bada percentage ban jaate hain.",
+    "Alag alag prices par sirf discount percentage compare karna. ₹2,000 par 40% se ₹800 bachte hain, jo ₹1,000 par 50% ke ₹500 se zyada hai."
+   ]
+  },
+  "tip": {
+   "what": "Tip Calculator batata hai kitna tip chhodna hai aur bill tip jodne ke baad kitna banta hai. Bill aur percentage daalo, tool tip amount aur total — jo aap actually dete ho — dono deta hai. Cash de rahe ho, doston me split kar rahe ho, ya bill apni expectation se check kar rahe ho, tab yahi total kaam aata hai.",
+   "formula": "Tip amount = bill × tip percentage ÷ 100 (`bill` × `tip` ÷ 100). Total = bill + tip amount (`bill` + tip). ₹1,000 ke bill par 10% me tip ₹100 aur aap ₹1,100 dete ho. Pre-tax bill par tip dena ho to pre-tax figure daalo — percentage usi number par lagta hai jo bill field me hai.",
+   "when": [
+    "Restaurant me ho aur bina dimaag me ganit kiye ek theek, round amount chhodna ho.",
+    "Bill par service charge pehle se ho aur aap dekhna chahein ki extra tip kitna jodega.",
+    "Bill split kar rahe ho aur har bande ka bill plus tip ka hissa chahiye."
+   ],
+   "mistakes": [
+    "Total par tip dena, bill par nahi. Agar daala hua number pehle se tip shaamil hai, to percentage dobara lagane se tip double ho jaata hai.",
+    "Service charge pehle se ho aur upar se phir tip chhod dena. Service charge hi tip hai; aur dene se pehle bill check karo.",
+    "Bill split karke har hisse par alag tip dena. Poora tip ek baar nikalo, phir total baanto, warna har hisse ka rounding tip badha deta hai."
+   ]
+  },
+  "netmargin": {
+   "what": "Net Profit Margin Calculator do figure — revenue aur net profit — ko us ek percentage me badal deta hai jo batata hai ki sales ke har rupaye me se business asli me kitna rakhta hai. Net profit last line hai: cost of goods ke baad, salary aur rent ke baad, loan ke interest ke baad, aur tax ke baad. Isliye ye teen margin numbers me sabse chhota aur sabse sachcha hai.",
+   "formula": "Net margin = net profit ÷ revenue × 100 (`np` ÷ `rev` × 100). Agar business ₹4,50,000 revenue kamaye aur har cost aur tax ke baad ₹1,80,000 bachaye, to net margin 1,80,000 ÷ 4,50,000 = 40% hai. Net profit wo bachta hai jo cost of goods, operating expenses, interest aur tax ke baad rehta hai; inme se koi bhi kam ho to percentage badh jaata hai.",
+   "when": [
+    "Aap jaanna chahein ki sales ke har rupaye me se sab kuch dene ke baad business kitna rakhta hai.",
+    "Apne margin ko usi tarah ka product ya service bechne walon se compare kar rahe ho.",
+    "Accounts ya pitch taiyaar kar rahe ho aur bottom-line percentage chahiye jo investor poochta hai."
+   ],
+   "mistakes": [
+    "Margin ko doosri industry ke business se compare karna. Grocery chain ka 3% theek ho sakta hai jabki software company ka 3% mushkil me hai; sahi comparison apne hi trade me hai.",
+    "Profit before tax ko net keh dena. Net matlab tax aur interest ke baad, isliye wahi revenue par operating margin se kam hota hai.",
+    "Chhoti revenue par bada percentage dekh kar business ko strong maan lena. ₹4,50,000 ka 40% matlab ₹1,80,000 — chhoti turnover par bada margin bhi chhota profit hi hai."
+   ]
   }
  }
 }

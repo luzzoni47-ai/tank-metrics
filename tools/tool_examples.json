@@ -137,8 +137,8 @@
         "v": "₹1,100.00"
       }
     ],
-    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+    "intro": "Take a ₹1,000 bill and a 10% tip. Here is what you leave and what you pay.",
+    "outro": "The tip is ₹100 on a ₹1,000 bill, so the total is ₹1,100. Change the bill or the percentage above and both the tip and the total follow."
   },
   "simpledisc": {
     "inputs": {
@@ -155,8 +155,8 @@
         "v": "₹800.00"
       }
     ],
-    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+    "intro": "Take a ₹2,000 jacket with 25% off in a sale. Here is what the discount takes off.",
+    "outro": "The percentage is the shop's number; the ₹500 saving and the ₹1,500 final price are yours. Change either figure above and both move together."
   },
   "numwords": {
     "inputs": {
@@ -233,8 +233,8 @@
         "v": "40.0%"
       }
     ],
-    "intro": "Take a business with a year of trading behind it. Here is what Net Profit Margin reports for those figures.",
-    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+    "intro": "Take a business with ₹4,50,000 of revenue that keeps ₹1,80,000 after every cost and tax. Here is the net margin.",
+    "outro": "40% is a strong net margin for most trades. If your figure is much lower, the leak is below the gross line — look at overheads, interest and tax before you look at price."
   },
   "cm": {
     "inputs": {
@@ -759,7 +759,7 @@
   },
   "mrpreverse": {
     "inputs": {
-      "MRP": "1000 �������",
+      "MRP": "1000 ₹",
       "Retailer Margin": "20 %",
       "Distributor Margin": "10 %"
     },
@@ -1029,12 +1029,12 @@
   "agencyroas": {
     "inputs": {
       "Ad Revenue": "450000 ₹",
-      "Ad Spend": "12 ��"
+      "Ad Spend": "180000 ₹"
     },
     "rows": [
       {
         "l": "ROAS",
-        "v": "37,500.00x"
+        "v": "2.50x"
       }
     ],
     "intro": "Take an agency running a campaign for a client. Here is what ROAS Calculator shows.",
