@@ -2,6 +2,65 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "relief-scheme-exporters-extended-march-2027",
+   "title": "RELIEF Scheme Extended to March 2027: What MSMEs Get",
+   "dek": "India extended the RELIEF export scheme to March 31, 2027, keeping 95% ECGC risk cover for West Asia shipments. Here is exactly what an MSME exporter gets.",
+   "category": "Small Business",
+   "date": "2026-10-26",
+   "date_display": "October 26, 2026",
+   "source_name": "The New Indian Express",
+   "source_url": "https://www.newindianexpress.com/business/2026/Oct/26/govt-extends-relief-scheme-till-march-end-msme-exporters-seek-more-fiscal-support",
+   "cta": {
+    "text": "Extra freight and war-risk premiums are paid up front and any reimbursement comes months later. See how much working capital that ties up before you accept the order.",
+    "href": "/working-capital",
+    "label": "Open the Working Capital Calculator"
+   },
+   "related": [
+    {
+     "slug": "markup-vs-margin-explained",
+     "title": "Markup vs Margin Explained"
+    },
+    {
+     "slug": "break-even-point-explained",
+     "title": "Break-Even Point Explained"
+    }
+   ],
+   "body_en": [
+    "<p>The Commerce Ministry extended the RELIEF scheme for exporters on Monday, October 26, 2026, pushing its run to March 31, 2027. RELIEF stands for Resilience and Logistics Intervention for Export Facilitation, and it sits under the Export Promotion Mission. The reason it exists is simple: shipping through the Gulf and West Asia has become both costly and unpredictable, and the exporter is who pays for that.</p>",
+    "<h2>What the extension actually keeps</h2>",
+    "<p>Only one part of the scheme has been carried forward, and it is Component II. That component gives exporters 95% risk cover through the Export Credit Guarantee Corporation (ECGC) on upcoming shipments to a listed set of countries, and it now runs to the end of the financial year. The original scheme was notified in March 2026 with an outlay of ₹497 crore and covered consignments to the UAE, Saudi Arabia, Kuwait, Qatar, Oman, Bahrain, Iraq, Iran, Israel and Yemen.</p>",
+    "<h2>What 95% cover means in rupees</h2>",
+    "<p>Risk cover is not a subsidy, it is an insurance backstop, so the number it produces is what you get back when a buyer does not pay. Suppose you ship ₹20,00,000 of goods to Dubai and the buyer defaults. At 95% cover, ECGC pays ₹19,00,000 and you absorb the remaining 5%, which is ₹1,00,000. If your margin on that order is 10%, you had ₹2,00,000 of gross profit and you are left with ₹1,00,000. The cover stops the order from becoming a total loss; it does not make you whole.</p>",
+    "<p>That is still worth having. Without the cover the same default costs you the full ₹20,00,000, and that is the kind of hit that closes a small firm. This is the part of the scheme that MSME exporters say is genuinely working, and it is why the extension was welcomed even by groups that are unhappy about the rest of it.</p>",
+    "<h2>What MSME exporters lost</h2>",
+    "<p>The complaint is about Component III, which was left out of the extension. That component reimbursed up to 50% of the extra freight and insurance costs for MSME exporters who are not covered by ECGC, with a ceiling of ₹50 lakh per exporter and ₹282 crore set aside for it. Exporters without credit insurance therefore get nothing from this extension, even though the war-risk surcharge and the freight hikes are exactly the costs they are carrying.</p>",
+    "<p>Vinod Kumar, president of the India SME Forum, said the exclusion leaves “thousands of micro and small enterprises operating without credit insurance ... to absorb crushing freight hikes and war-risk surcharges alone”. Animesh Saxena, a former president of FISME, said MSMEs cannot negotiate rates the way large corporates can and asked for a freight subsidy at the national level; Haryana, Uttar Pradesh and Madhya Pradesh already run their own. Exporters have also asked for a 24-month rolling scheme, arguing that a six-to-nine-month production and shipping cycle makes a March deadline hard to plan around.</p>",
+    "<h2>Why the freight bill is the real problem</h2>",
+    "<p>Run the arithmetic on a year of exports and the gap becomes clear. Say a small firm ships ₹1 crore of goods to West Asia in a year. If the war-risk premium and higher freight add 6% on top of what the same cargo cost before, that is ₹6,00,000 of extra cost in the year. Under Component III half of it, ₹3,00,000, would have come back, and the full ₹6,00,000 sits well under the ₹50 lakh cap. With Component III gone, the firm absorbs all ₹6,00,000.</p>",
+    "<p>On a business whose net margin is 8%, ₹6,00,000 is the profit on ₹75,00,000 of sales. In other words, the freight increase alone can wipe out the margin on three-quarters of the year's turnover, which is why the ask is for a subsidy and not just for insurance.</p>",
+    "<h2>What it means for your business</h2>",
+    "<p>If you export to West Asia and you already hold ECGC cover, the extension is straightforward good news: your shipments are protected at 95% until March 2027 and there is nothing extra to do to claim it. If you are an MSME without credit insurance, plan on paying the full freight and war-risk cost yourself, because this extension does not reimburse any of it.</p>",
+    "<p>Either way the practical step is the same. Put the extra freight and premium into your cost sheet as a line item, not a footnote, and check what it does to your break-even before you quote the next order. Extra freight and war-risk premiums are paid up front while any reimbursement arrives months later, so the cash has to come from somewhere in between. Working out how much working capital that ties up, and how much of the extra cost your price can carry, is the difference between an order that looks busy and an order that pays.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Commerce Ministry ne Monday, October 26, 2026 ko exporters ke liye RELIEF scheme ko March 31, 2027 tak badha diya. RELIEF ka matlab hai Resilience and Logistics Intervention for Export Facilitation, aur ye Export Promotion Mission ke andar chalti hai. Iski zaroorat isliye hai kyunki Gulf aur West Asia ke raste se shipping mehngi bhi ho gayi hai aur bharosemand bhi nahi rahi, aur iska bill exporter bharta hai.</p>",
+    "<h2>Extension mein kya bacha</h2>",
+    "<p>Scheme ka sirf ek hissa aage badhaya gaya hai, aur wo hai Component II. Ye component exporters ko listed deshon ki upcoming shipments par Export Credit Guarantee Corporation (ECGC) ke through 95% risk cover deta hai, aur ab ye financial year ke end tak chalega. Original scheme March 2026 mein ₹497 crore ke outlay ke saath notify hui thi aur isme UAE, Saudi Arabia, Kuwait, Qatar, Oman, Bahrain, Iraq, Iran, Israel aur Yemen ki consignments cover hoti thi.</p>",
+    "<h2>95% cover ka matlab rupaye mein</h2>",
+    "<p>Risk cover koi subsidy nahi hai, ye insurance ka sahara hai, to iska number wahi hai jo buyer na dene par wapas milta hai. Maan lo tum ₹20,00,000 ka maal Dubai bhejte ho aur buyer default kar deta hai. 95% cover par ECGC ₹19,00,000 deta hai aur bache 5% yaani ₹1,00,000 tum par aate hain. Agar us order par tumhara margin 10% hai, to tumhare paas ₹2,00,000 ka gross profit tha aur ab ₹1,00,000 bacha. Cover order ko poore nuksan banne se bachata hai; ye tumhe pura nahi karta.</p>",
+    "<p>Phir bhi ye kaafi hai. Cover ke bina wahi default tumhe poore ₹20,00,000 ka nuksan deta hai, aur itna jhatka chhoti firm ko band kar deta hai. Yahi hissa hai jise MSME exporters sach mein kaam karta hua maante hain, isliye baaki baaton se na khush hone wale groups ne bhi extension ko welcome kiya.</p>",
+    "<h2>MSME exporters ne kya khoya</h2>",
+    "<p>Shikayat Component III ki hai, jise extension mein shamil nahi kiya gaya. Wo component un MSME exporters ko, jo ECGC ke cover mein nahi aate, unke extra freight aur insurance cost ka 50% tak reimburse karta tha, ₹50 lakh per exporter ki limit ke saath, aur uske liye ₹282 crore rakhe gaye the. Credit insurance ke bina wale exporters ko is extension se kuch nahi milta, jabki war-risk surcharge aur freight hike wahi costs hain jo wo utha rahe hain.</p>",
+    "<p>India SME Forum ke president Vinod Kumar ne kaha ki is chhoot se “thousands of micro and small enterprises operating without credit insurance ... to absorb crushing freight hikes and war-risk surcharges alone”. FISME ke former president Animesh Saxena ne kaha ki MSMEs badi companies ki tarah rates negotiate nahi kar sakte, aur unhone national level par freight subsidy maangi; Haryana, Uttar Pradesh aur Madhya Pradesh apni subsidy chala rahe hain. Exporters ne 24 mahine ki rolling scheme bhi maangi hai, ye kehte hue ki chhe se nau mahine ke production aur shipping cycle ke saath March ki deadline plan karna mushkil hai.</p>",
+    "<h2>Asli problem freight bill hai</h2>",
+    "<p>Ek saal ke exports ka hisaab lagao to gap saaf dikhta hai. Maan lo ek chhoti firm saal mein ₹1 crore ka maal West Asia bhejti hai. Agar war-risk premium aur mehnga freight pehle ke muqable 6% jod de, to saal ka extra cost ₹6,00,000 banega. Component III ke under iska aadha, ₹3,00,000, wapas mil jaata, aur poora ₹6,00,000 ₹50 lakh ki limit se kaafi kam hai. Component III hatne ke baad firm poora ₹6,00,000 khud jhelti hai.</p>",
+    "<p>Jis business ka net margin 8% hai, uske liye ₹6,00,000 matlab ₹75,00,000 ki sales ka profit. Yaani sirf freight ka badhaawa saal ke teen-chauthai turnover ka margin kha sakta hai, isliye maang insurance ke saath subsidy ki bhi hai.</p>",
+    "<h2>Tumhare business ke liye iska matlab</h2>",
+    "<p>Agar tum West Asia ko export karte ho aur tumhare paas ECGC cover hai, to extension seedhi achhi khabar hai: March 2027 tak tumhari shipments 95% par protected hain aur claim ke liye kuch alag karna nahi hai. Agar tum ECGC cover ke bina wale MSME ho, to poora freight aur war-risk cost khud dene ki tayari rakho, kyunki is extension mein uska ek paisa bhi reimburse nahi hota.</p>",
+    "<p>Dono haal mein practical step ek hi hai. Extra freight aur premium ko apni cost sheet mein ek line item ki tarah daalo, footnote ki tarah nahi, aur agla order quote karne se pehle dekho ki tumhara break-even kahan jaata hai. Extra freight aur war-risk premium pehle dena padta hai aur reimbursement mahino baad aata hai, to beech ke samay ka cash kahin se aana padega. Ye pata karna ki isse kitna working capital block hota hai, aur tumhari price is extra cost ka kitna hissa utha sakti hai, ek busy dikhne wale order aur paisa dene wale order ka farak hai.</p>"
+   ]
+  },
+  {
    "slug": "rupee-falls-to-95-22-what-it-costs-importers-exporters",
    "title": "Rupee Falls to 95.22: What It Costs Importers",
    "dek": "A third straight day of losses left the rupee at 95.22 against the dollar on October 26. Here is what that adds to an import bill and pays an exporter.",
