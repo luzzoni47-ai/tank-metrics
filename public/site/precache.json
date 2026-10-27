@@ -1,5 +1,5 @@
 {
- "version": "177902cbcca4",
+ "version": "c8a849ed3740",
  "paths": [
   "/",
   "/blog",
@@ -109,6 +109,7 @@
   "/bmi-calculator",
   "/shark-tank-pitch-check",
   "/market-share-calculator",
+  "/arpu-average-revenue-per-user",
   "/break-even-point-explained",
   "/burn-rate-runway-guide",
   "/discount-impact-on-profit-explained",
