@@ -31,6 +31,7 @@ POSTS = [
     'blog-break-even-point-explained.html',
     'blog-discount-impact-on-profit-explained.html',
     'blog-import-duty-explained.html',
+    'blog-pharma-distributor-margin-explained.html',
 ]
 
 VIRAMA = '्'

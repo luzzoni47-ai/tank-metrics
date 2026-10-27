@@ -84,6 +84,14 @@ MAP: dict[str, list[tuple[str, str, str]]] = {
         ("/contribution-margin", "Contribution Margin",
          "work out how much each sale adds towards fixed costs"),
     ],
+    "blog-pharma-distributor-margin-explained": [
+        ("/distributor-and-retailer-margin", "Distributor & Retailer Margin",
+         "split an MRP into the stockist, retailer and manufacturer prices"),
+        ("/mrp-reverse-calculator", "MRP Reverse",
+         "work back from an MRP to the cost the pack has to come in at"),
+        ("/markup-vs-margin", "Markup vs Margin",
+         "see why the same rupee figure is two different percentages"),
+    ],
     "blog-discount-impact-on-profit-explained": [
         ("/discount-impact-on-profit", "Discount Impact on Profit",
          "see what a discount leaves of your profit before you announce it"),

@@ -1,17 +1,8 @@
 {
- "generated": "2026-10-26T14:59:34Z",
+ "generated": "2026-10-27T04:16:21Z",
  "seed_count": 150,
- "suggestion_count": 1035,
+ "suggestion_count": 1036,
  "keywords": [
-  {
-   "query": "msme loan",
-   "demand": 13,
-   "covered": false,
-   "score": 23.92,
-   "from": [
-    "msme loan"
-   ]
-  },
   {
    "query": "average revenue per user (arpu)",
    "demand": 12,
@@ -31,7 +22,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc",
+   "query": "fd calculator sbi",
    "demand": 12,
    "covered": false,
    "score": 22.08,
@@ -46,15 +37,6 @@
    "score": 22.08,
    "from": [
     "income tax calculator"
-   ]
-  },
-  {
-   "query": "msme loan interest rate",
-   "demand": 12,
-   "covered": false,
-   "score": 22.08,
-   "from": [
-    "msme loan"
    ]
   },
   {
@@ -76,7 +58,7 @@
    ]
   },
   {
-   "query": "fd calculator monthly interest",
+   "query": "fd calculator hdfc",
    "demand": 11,
    "covered": false,
    "score": 20.24,
@@ -148,7 +130,7 @@
    ]
   },
   {
-   "query": "fd calculator post office",
+   "query": "fd calculator monthly interest",
    "demand": 10,
    "covered": false,
    "score": 18.4,
@@ -181,15 +163,6 @@
    "score": 18.4,
    "from": [
     "franchise roi"
-   ]
-  },
-  {
-   "query": "msme loan scheme",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "msme loan"
    ]
   },
   {
@@ -247,7 +220,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator post office",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -409,7 +382,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator axis bank",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -571,7 +544,7 @@
    ]
   },
   {
-   "query": "fd calculator monthly payout",
+   "query": "fd calculator icici",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -604,15 +577,6 @@
    "score": 12.88,
    "from": [
     "marketplace fee calculator"
-   ]
-  },
-  {
-   "query": "msme loan full form",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "msme loan"
    ]
   },
   {
@@ -743,6 +707,15 @@
    "from": [
     "employee utilisation",
     "employee utilization rate"
+   ]
+  },
+  {
+   "query": "fd calculator monthly payout",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -1024,15 +997,6 @@
    "score": 9.2,
    "from": [
     "exit calculator"
-   ]
-  },
-  {
-   "query": "fd calculator indusind bank",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -1547,6 +1511,15 @@
    "score": 8.97,
    "from": [
     "markup vs margin"
+   ]
+  },
+  {
+   "query": "msme loan",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "msme loan"
    ]
   },
   {
@@ -2241,6 +2214,15 @@
    "score": 8.28,
    "from": [
     "markup vs margin"
+   ]
+  },
+  {
+   "query": "msme loan interest rate",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "msme loan"
    ]
   },
   {
@@ -3146,7 +3128,7 @@
    ]
   },
   {
-   "query": "fd calculator pnb",
+   "query": "fd calculator indusind bank",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3179,15 +3161,6 @@
    "score": 7.36,
    "from": [
     "franchise roi"
-   ]
-  },
-  {
-   "query": "msme loan means",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "msme loan"
    ]
   },
   {
@@ -3622,6 +3595,33 @@
    "score": 6.9,
    "from": [
     "loan emi calculator"
+   ]
+  },
+  {
+   "query": "love calculator name test",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "love calculator"
+   ]
+  },
+  {
+   "query": "ltv cac ratio formula",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator in tamil",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "lucky number calculator"
    ]
   }
  ]
