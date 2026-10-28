@@ -100,6 +100,14 @@ MAP: dict[str, list[tuple[str, str, str]]] = {
         ("/break-even-point", "Break-Even Point",
          "find how many extra sales a discount forces you to make"),
     ],
+    "blog-boutique-profit-margin-explained": [
+        ("/break-even-point", "Break-Even Point",
+         "find the pieces you must sell to cover the shop's fixed costs"),
+        ("/gross-profit-and-margin", "Gross Profit & Margin",
+         "get the margin on a single piece from its price and cost"),
+        ("/contribution-margin", "Contribution Margin",
+         "see how much each piece adds towards the rent"),
+    ],
     "blog-arpu-average-revenue-per-user": [
         ("/arpu-mrr-and-arr", "ARPU, MRR & ARR",
          "put your own revenue and user count into the ARPU formula"),
@@ -236,13 +244,32 @@ def main() -> None:
         if not page.exists():
             continue
         text = page.read_text(encoding="utf-8")
-        if BACKLINK_MARKER in text:
-            continue
         items = "".join(
             f'<li><a href="{clean_url(slug)}">{title}</a> — the guide behind '
             f"this calculator.</li>"
             for slug, title in posts
         )
+        if BACKLINK_MARKER in text:
+            # The section already exists, so a new guide has to be merged into
+            # it; skipping outright would leave every later post with a
+            # one-way link. Only the missing guides are appended.
+            m = re.search(
+                re.escape(BACKLINK_MARKER) + r".*?<ul class=\"related-list\">(.*?)</ul>",
+                text, re.S)
+            if not m:
+                continue
+            have = set(re.findall(r'href="([^"]+)"', m.group(1)))
+            extra = "".join(
+                f'<li><a href="{clean_url(slug)}">{title}</a> — the guide '
+                f"behind this calculator.</li>"
+                for slug, title in posts if clean_url(slug) not in have
+            )
+            if not extra:
+                continue
+            text = text[: m.end(1)] + extra + text[m.end(1) :]
+            page.write_text(text, encoding="utf-8")
+            changed_tools += 1
+            continue
         section = (
             BACKLINK_MARKER
             + '<section class="related-tools tool-blog"><h2>Read the guide</h2>'

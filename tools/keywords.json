@@ -1,17 +1,8 @@
 {
- "generated": "2026-10-27T13:43:03Z",
+ "generated": "2026-10-28T04:39:09Z",
  "seed_count": 150,
- "suggestion_count": 1036,
+ "suggestion_count": 1035,
  "keywords": [
-  {
-   "query": "average revenue per user (arpu)",
-   "demand": 12,
-   "covered": false,
-   "score": 22.08,
-   "from": [
-    "arpu mrr and arr"
-   ]
-  },
   {
    "query": "exit load calculator",
    "demand": 12,
@@ -148,6 +139,15 @@
    ]
   },
   {
+   "query": "marketplace price calculator",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "marketplace fee calculator"
+   ]
+  },
+  {
    "query": "mcdonald's franchise roi",
    "demand": 10,
    "covered": false,
@@ -256,15 +256,6 @@
    ]
   },
   {
-   "query": "marketplace price calculator",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "marketplace fee calculator"
-   ]
-  },
-  {
    "query": "msme loan eligibility",
    "demand": 9,
    "covered": false,
@@ -292,6 +283,15 @@
    ]
   },
   {
+   "query": "small business in indianapolis",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "small business tax india"
+   ]
+  },
+  {
    "query": "startup valuation model",
    "demand": 9,
    "covered": false,
@@ -301,12 +301,12 @@
    ]
   },
   {
-   "query": "zudio franchise roi",
-   "demand": 9,
+   "query": "small business in india with low investment",
+   "demand": 11,
    "covered": false,
-   "score": 16.56,
+   "score": 15.84,
    "from": [
-    "franchise roi"
+    "small business tax india"
    ]
   },
   {
@@ -328,15 +328,6 @@
    ]
   },
   {
-   "query": "business profit margin in islam",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "shop profit margin"
-   ]
-  },
-  {
    "query": "cagr calculator lumpsum",
    "demand": 8,
    "covered": false,
@@ -346,7 +337,7 @@
    ]
   },
   {
-   "query": "cagr cumulative annual growth rate",
+   "query": "cumulative annual growth rate cagr",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -436,21 +427,21 @@
    ]
   },
   {
+   "query": "zudio franchise roi",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "franchise roi"
+   ]
+  },
+  {
    "query": "import duty & customs duty calculator mygts global",
    "demand": 10,
    "covered": false,
    "score": 14.4,
    "from": [
     "import duty and customs calculator"
-   ]
-  },
-  {
-   "query": "small business in india with low investment",
-   "demand": 10,
-   "covered": false,
-   "score": 14.4,
-   "from": [
-    "small business tax india"
    ]
   },
   {
@@ -469,15 +460,6 @@
    "score": 12.96,
    "from": [
     "rd recurring deposit calculator"
-   ]
-  },
-  {
-   "query": "amul franchise roi",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "franchise roi"
    ]
   },
   {
@@ -598,7 +580,7 @@
    ]
   },
   {
-   "query": "small business in indianapolis",
+   "query": "small business in india reddit",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -622,6 +604,15 @@
    "score": 12.88,
    "from": [
     "startup valuation"
+   ]
+  },
+  {
+   "query": "store profit margin grocery",
+   "demand": 7,
+   "covered": false,
+   "score": 12.88,
+   "from": [
+    "shop profit margin"
    ]
   },
   {
@@ -659,6 +650,15 @@
    "score": 11.04,
    "from": [
     "burn rate"
+   ]
+  },
+  {
+   "query": "coffee shop profit margin",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "shop profit margin"
    ]
   },
   {
@@ -831,15 +831,6 @@
    ]
   },
   {
-   "query": "store profit margin grocery",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "shop profit margin"
-   ]
-  },
-  {
    "query": "valuation implied returns",
    "demand": 6,
    "covered": false,
@@ -937,21 +928,21 @@
    ]
   },
   {
+   "query": "amul franchise roi",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "franchise roi"
+   ]
+  },
+  {
    "query": "cagr calculator monthly",
    "demand": 5,
    "covered": false,
    "score": 9.2,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "coffee shop profit margin",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "shop profit margin"
    ]
   },
   {
@@ -1027,7 +1018,7 @@
    ]
   },
   {
-   "query": "share market calculator 2025",
+   "query": "share market calculator nepal",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -1036,7 +1027,7 @@
    ]
   },
   {
-   "query": "small business in india reddit",
+   "query": "small business in india ideas",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -1051,6 +1042,15 @@
    "score": 9.2,
    "from": [
     "startup valuation"
+   ]
+  },
+  {
+   "query": "wine shop profit margin",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "shop profit margin"
    ]
   },
   {
@@ -1369,7 +1369,7 @@
    ]
   },
   {
-   "query": "home loan emi calculator sbi",
+   "query": "home loan emi calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1821,6 +1821,15 @@
    ]
   },
   {
+   "query": "average revenue per user (arpu)",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "arpu mrr and arr"
+   ]
+  },
+  {
    "query": "baby name numerology calculator",
    "demand": 12,
    "covered": true,
@@ -2118,7 +2127,7 @@
    ]
   },
   {
-   "query": "home loan emi calculator hdfc",
+   "query": "home loan emi calculator sbi",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2397,7 +2406,7 @@
    ]
   },
   {
-   "query": "small business tax india",
+   "query": "small business in india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2686,6 +2695,15 @@
    ]
   },
   {
+   "query": "employee utilization rate calculator",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "employee utilization rate"
+   ]
+  },
+  {
    "query": "epf calculator with existing balance",
    "demand": 11,
    "covered": true,
@@ -2746,6 +2764,15 @@
    "score": 7.59,
    "from": [
     "gst calculator"
+   ]
+  },
+  {
+   "query": "home loan emi calculator hdfc",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "home loan emi calculator"
    ]
   },
   {
@@ -2884,7 +2911,7 @@
    ]
   },
   {
-   "query": "ppf calculator monthly",
+   "query": "ppf calculator sbi",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2998,15 +3025,6 @@
    "score": 7.59,
    "from": [
     "sip calculator"
-   ]
-  },
-  {
-   "query": "small business in india",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "small business tax india"
    ]
   },
   {
@@ -3128,21 +3146,30 @@
    ]
   },
   {
+   "query": "hardware shop profit margin",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "shop profit margin"
+   ]
+  },
+  {
+   "query": "kfc franchise roi",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "franchise roi"
+   ]
+  },
+  {
    "query": "landed cost odoo 19",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
     "landed cost"
-   ]
-  },
-  {
-   "query": "lenskart franchise roi",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "franchise roi"
    ]
   },
   {
@@ -3173,21 +3200,12 @@
    ]
   },
   {
-   "query": "share market calculator nepal",
+   "query": "share market calculator 2025",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
     "market share calculator"
-   ]
-  },
-  {
-   "query": "small business in india ideas",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "small business tax india"
    ]
   },
   {
@@ -3197,15 +3215,6 @@
    "score": 7.36,
    "from": [
     "startup valuation"
-   ]
-  },
-  {
-   "query": "wine shop profit margin",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "shop profit margin"
    ]
   },
   {
@@ -3490,15 +3499,6 @@
    ]
   },
   {
-   "query": "employee utilization rate calculator",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "employee utilization rate"
-   ]
-  },
-  {
    "query": "epf calculator with current balance",
    "demand": 10,
    "covered": true,
@@ -3550,15 +3550,6 @@
    "score": 6.9,
    "from": [
     "gst calculator"
-   ]
-  },
-  {
-   "query": "home loan emi calculator icici",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "home loan emi calculator"
    ]
   },
   {
@@ -3622,6 +3613,15 @@
    "score": 6.9,
    "from": [
     "lucky number calculator"
+   ]
+  },
+  {
+   "query": "markup vs margin difference",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "markup vs margin"
    ]
   }
  ]

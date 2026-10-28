@@ -33,6 +33,7 @@ POSTS = [
     'blog-import-duty-explained.html',
     'blog-pharma-distributor-margin-explained.html',
     'blog-arpu-average-revenue-per-user.html',
+    'blog-boutique-profit-margin-explained.html',
 ]
 
 VIRAMA = '्'
@@ -289,6 +290,17 @@ OVERRIDES = {
     'धीमे': 'dheeme', 'पढ़ता': 'padhta', 'पढ़ना': 'padhna',
     'लंबी': 'lambi', 'जोड़कर': 'jodkar', 'पतले': 'patle',
     'अकेले': 'akele', 'रकम': 'rakam', 'हाथ': 'haath',
+    # boutique-margin post: agreement and loanword spellings the rules miss
+    'दुकान': 'dukaan', 'बेचती': 'bechti', 'बेचते': 'bechte',
+    'बेचना': 'bechna', 'बेचें': 'bechen', 'कीमत': 'keemat',
+    'कपड़ा': 'kapada', 'सिलाई': 'silai', 'बिजली': 'bijli', 'पानी': 'paani',
+    'ढकते': 'dhakte', 'ढक': 'dhak', 'मिटा': 'mita', 'बिकता': 'bikta',
+    'सोचता': 'sochta', 'लगभग': 'lagabhag', 'चुपचाप': 'chupchaap',
+    'बाँध': 'baandh', 'टकराता': 'takrata', 'रुकावट': 'rukaavat',
+    'वापस': 'vaapas', 'भारी': 'bhaari', 'गल्ला': 'galla',
+    'जाँचिए': 'jaanchie', 'देखिए': 'dekhie', 'गिनिए': 'ginie',
+    'बेचिए': 'bechie', 'ठीक': 'theek', 'हिस्सा': 'hissa',
+    'महँगे': 'mahange', 'महँगा': 'mahanga',
 }
 
 DEVANAGARI = re.compile(r'[\u0900-\u097F]+')
