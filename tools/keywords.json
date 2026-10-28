@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T04:39:09Z",
+ "generated": "2026-10-28T04:56:52Z",
  "seed_count": 150,
  "suggestion_count": 1035,
  "keywords": [
@@ -91,15 +91,6 @@
    "score": 20.24,
    "from": [
     "startup valuation"
-   ]
-  },
-  {
-   "query": "boutique profit margin",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "shop profit margin"
    ]
   },
   {
@@ -3333,6 +3324,15 @@
    "score": 6.9,
    "from": [
     "bmi calculator"
+   ]
+  },
+  {
+   "query": "boutique profit margin",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "shop profit margin"
    ]
   },
   {
