@@ -337,6 +337,48 @@
     "Profit before tax ko net keh dena. Net matlab tax aur interest ke baad, isliye wahi revenue par operating margin se kam hota hai.",
     "Chhoti revenue par bada percentage dekh kar business ko strong maan lena. ₹4,50,000 ka 40% matlab ₹1,80,000 — chhoti turnover par bada margin bhi chhota profit hi hai."
    ]
+  },
+  "roce": {
+   "what": "Return on Capital Employed wahi sawaal uthata hai jo ROI nahi uthata: is business me jo bhi paisa laga hai - aapka ho ya bank ka - wo kitni mehnat kar raha hai? Capital employed matlab shareholders' equity plus long-term debt, isliye ek bina-karz ki dukaan aur ek bhaari loan wali dukaan ek hi scale par aa jaati hain. Do business ka ROI same ho sakta hai aur ROCE bilkul alag, aur wo gap aam taur par udhaar ka hota hai.\n\nJab aap acquisition, nayi machine ya doosri branch ko pehle se lage paise se compare kar rahe ho, tab yahi tool kholo. Ye interest se pehle ka number hai: tool operating profit ko capital employed se divide karta hai aur wahin ruk jaata hai, kyunki paisa kahan se aaya yahi to dekhna hai.",
+   "formula": "ROCE = operating profit (EBIT) / capital employed x 100. Is tool me 'Operating Profit' ebit field hai aur 'Capital Employed' ce field. Capital employed matlab total assets minus current liabilities, jo shareholders' equity plus long-term debt ke barabar hai. Rs 4,50,000 operating profit par Rs 18,00,000 capital employed = 25%. Kyunki upar wala number interest aur tax se pehle nikalta hai, ROCE udhaar badalne se nahi hilta - isi wajah se alag-alag funded companies compare ho paati hain.",
+   "when": [
+    "Jab do companies ka karz alag ho aur aap like-for-like return dekhna chahte ho.",
+    "Jab aap tay kar rahe ho ki nayi machine ya nayi branch business me lage paise se zyada kamayegi ya nahi.",
+    "Jab investor poochta hai ki company poori balance sheet ka kitna acha use kar rahi hai, sirf founders ke paise ka nahi."
+   ],
+   "mistakes": [
+    "Numerator me interest ke baad ka profit daal dena. ROCE jaan-boojhkar EBIT leta hai taki karz number ko na chamkaye na dabaye; net profit ROE ka kaam hai.",
+    "Capital employed ke saath chhedchhad - short-term creditors do baar ghata dena, ya cash poori tarah hata dena - number uchhal jaata hai par asli me kuch nahi badalta.",
+    "Bahut kam capital employed wale business ka 200% ROCE dekh kar khush ho jaana. Jo firm sab kuch kiraye par leti hai wo 200% dikha sakti hai aur phir bhi kuch kharidne layak nahi hota."
+   ]
+  },
+  "roi": {
+   "what": "Return on Investment sabse seedha return ka number hai: jo lagaya uske badle kitna wapas aaya? Tool net profit leta hai - har kharch ke baad, interest aur tax bhi - aur usko investment cost se divide karta hai. Rs 10,00,000 par Rs 1,00,000 profit matlab 10%. Yahan koi annualise nahi hota aur koi risk adjust nahi hota, isliye do projects ka same ROI tabhi compare ho sakta hai jab dono ne utna hi waqt liya ho.\n\nHar us kharch par pehla filter yahi rakho jiske saath number juda ho: ad campaign, machine, course, dukaan ka fit-out. Ye jaan-boojhkar simple hai, aur yahi iski kamzori bhi - ye nahi batata ki 10% chhe mahine me aaya ya chhe saal me. Jab timing hi asli sawaal ho to payback ya CAGR nikalo.",
+   "formula": "ROI = net profit / investment cost x 100. Yahan 'Net Profit' profit field hai aur 'Investment Cost' inv field. Net profit wo hai jo goods, salary, ads, fees, interest aur tax ke baad bachta hai - revenue nahi, gross margin nahi. Rs 10,00,000 laga kar Rs 1,00,000 net profit = 10% ROI. Tool saal se divide nahi karta, isliye ek saal ka 10% aur paanch saal ka 10% is page par ek jaisa dikhta hai.",
+   "when": [
+    "Jab aap ek ad campaign, machine ya course par paisa chhodne se pehle usko judge kar rahe ho.",
+    "Jab kai chhote kharche ka ek number me ranking chahiye aur sab me lagbhag same time lagta ho.",
+    "Jab koi ROI ka number bole aur aap unke profit aur cost se wo dobara nikal kar check karna chahte ho."
+   ],
+   "mistakes": [
+    "Numerator me gross profit ya revenue daal dena, jisse 10% ROI 40% jaisa dikhne lagta hai.",
+    "Sale ke baad wale kharche chhod dena - GST, marketplace commission, returns, gateway fees - aur profit ka optimistic version dikha dena.",
+    "Chhe mahine ka 10% ROI aur paanch saal ka 10% ROI ek maan lena; tool annualise nahi karta, isliye aapko karna padega."
+   ]
+  },
+  "split": {
+   "what": "Bill Splitter ek shared amount ko paid karne wale logon ki ginti se divide karta hai, aur bas itna hi. Ye table ke aakhri do minute ka tool hai: bill par total likha hai, chaar log pay kar rahe hain, har ek ko chauthai dena hai. Ganit sirf ek division hai, isliye asli fayda maths me nahi - fayda ye hai ki per-head number pehle hi pata ho, isse pehle ki koi apne mann me rounding kar ke numbers alag-alag kar de.\n\nYe jaan-boojhkar simple case ke liye hai. Ye tay nahi karta ki paneer kisne order kiya, tip nahi jodta, aur service charge wale bill ko dobara split nahi karta. Yahi iski khoobi hai: barabar ka split hi wo split hai jo jhagda khatam karta hai, aur har uneven hisaab baad me aasani se set ho jaata hai jab equal share saamne aa jaata hai.",
+   "formula": "Har banda deta hai total bill / number of people. Is tool me 'Total Bill' total field hai aur 'Number of People' people field. Rs 1,000 aur 4 log = Rs 250 per head. Jab total barabar na bante - Rs 1,000 aur 3 log - tool Rs 333.33 dikhata hai, aur saaf tareeka ye hai ki ek banda thode paise kha le ya sab thoda upar round karke difference tip me chhod dein.",
+   "when": [
+    "Jab group dinner ya trip khatam ho aur bill wahin settle karna ho.",
+    "Jab roommates har mahine ka shared bijli ya grocery ka bill barabar baantte hain.",
+    "Jab co-founders ya chhoti team shared subscription ya taxi fare baantti hai."
+   ],
+   "mistakes": [
+    "Pre-tax subtotal split karke bill par chhapa GST aur service charge bhool jaana.",
+    "Aane wale logon ki ginti se divide karna, un logon ki nahi jo pay kar rahe hain, jab kisi ko treat kiya ja raha ho.",
+    "Har share neeche round kar dena aur aakhri banda shortfall me chhod dena; upar round karo, ya ek banda thode rupees le le."
+   ]
   }
  }
 }

@@ -353,6 +353,48 @@
    ],
    "intro": "Take a business with ₹4,50,000 of revenue that keeps ₹1,80,000 after every cost and tax. Here is the net margin.",
    "outro": "40% is a strong net margin for most trades. If your figure is much lower, the leak is below the gross line — look at overheads, interest and tax before you look at price."
+  },
+  "roce": {
+   "what": "Return on Capital Employed answers a question ROI cannot: how hard is every rupee inside this business working, whether it came from you or from a lender? Capital employed is shareholders' equity plus long-term debt, so ROCE puts a debt-free shop and a heavily borrowed one on the same ruler. Two businesses can post the same ROI and very different ROCE, and the gap is almost always the borrowing.\n\nReach for it when you are weighing an acquisition, a new machine or a second outlet against the money already tied up in the first one. It is a before-interest number: the tool divides operating profit by capital employed and stops there, because how the capital was financed is exactly the thing you are trying to see past.",
+   "formula": "ROCE is operating profit (EBIT) divided by capital employed, times 100. In this tool 'Operating Profit' is the ebit field and 'Capital Employed' is the ce field. Capital employed is total assets minus current liabilities, which is the same as shareholders' equity plus long-term debt. Rs 4,50,000 of operating profit on Rs 18,00,000 of capital employed gives 25%. Because the numerator is struck before interest and tax, ROCE does not move when the debt does, and that is what makes two differently financed companies comparable.",
+   "when": [
+    "You are comparing two companies with different debt levels and want a like-for-like return.",
+    "You are deciding whether a new machine or outlet earns more than the capital already sitting in the business.",
+    "An investor asks how well the company uses the whole balance sheet, not just the founders' money."
+   ],
+   "mistakes": [
+    "Putting profit after interest in the numerator. ROCE takes EBIT on purpose so the debt neither flatters nor punishes the number; net profit belongs in ROE, not here.",
+    "Tinkering with capital employed - subtracting short-term creditors twice, or dropping cash entirely - so the ratio jumps while nothing real has changed.",
+    "Cheering a high ROCE on a business with almost no capital employed. A services firm that rents everything can show 200% and still own nothing worth buying."
+   ]
+  },
+  "roi": {
+   "what": "Return on Investment is the bluntest of the return measures: what did I get back compared with what I put in? The tool takes net profit - after every cost, including interest and tax - and divides it by the investment cost. Rs 1,00,000 of profit on Rs 10,00,000 spent is 10%. Nothing here is annualised and nothing is adjusted for risk, so two projects showing the same ROI are only comparable if they took the same time to pay back.\n\nUse it as the first filter on any spend that has a number attached: an ad campaign, a machine, a course, a shop fit-out. It is deliberately simple, and that simplicity is the weakness - it will not tell you whether the 10% took six months or six years. Bring in payback or CAGR when the timing is what you are actually deciding.",
+   "formula": "ROI is net profit divided by investment cost, times 100. Here 'Net Profit' is the profit field and 'Investment Cost' is the inv field. Net profit is what survives goods, salaries, ads, fees, interest and tax - not revenue, and not gross margin. Rs 10,00,000 put in for Rs 1,00,000 of net profit is a 10% ROI. The tool does not divide by the number of years, so a 10% ROI over one year and a 10% ROI over five years read identically on this page.",
+   "when": [
+    "You are judging one ad campaign, machine or course before you release the money.",
+    "You want a single number to rank several small spends that all take about the same time.",
+    "Someone quotes an ROI figure and you want to reproduce it from their profit and their cost."
+   ],
+   "mistakes": [
+    "Feeding gross profit or revenue into the numerator, which turns a 10% ROI into something that reads like 40%.",
+    "Leaving out the costs that arrive after the sale - GST, marketplace commission, returns, gateway fees - so the profit is the optimistic version.",
+    "Treating a 10% ROI over six months as equal to a 10% ROI over five years; the tool does not annualise, so you have to."
+   ]
+  },
+  "split": {
+   "what": "Bill Splitter divides one shared amount by the number of people paying it, and nothing else. It is the tool for the last two minutes at a table: the total is on the bill, four of you are paying, each owes a quarter. The arithmetic is a single division, so the value is not in the maths - it is in having the per-head figure before anyone starts rounding in their head and the numbers stop agreeing.\n\nIt handles the plain case on purpose. It does not decide who ordered the paneer, it does not add a tip, and it does not re-split a bill that already carries a service charge. That is a feature: an equal split is the only split that ends an argument, and every uneven arrangement is easier to settle once the equal share is on the table.",
+   "formula": "Each person pays the total bill divided by the number of people. In this tool 'Total Bill' is the total field and 'Number of People' is the people field. Rs 1,000 across 4 people is Rs 250 each. When the total does not divide evenly - Rs 1,000 across 3 - the tool shows Rs 333.33, and the honest fix is for one person to absorb the odd paise or for everyone to round up and leave the difference in the tip.",
+   "when": [
+    "A group dinner or a trip ends and the bill has to be settled on the spot.",
+    "Roommates split a shared utility or grocery bill evenly each month.",
+    "Co-founders or a small team split a shared subscription or a taxi fare."
+   ],
+   "mistakes": [
+    "Splitting the pre-tax subtotal and forgetting the GST and service charge already printed on the bill.",
+    "Dividing by the number of people who came rather than the number who are paying, when someone is being treated.",
+    "Rounding every share down and leaving the last person with the shortfall; round up, or let one person take the odd rupees."
+   ]
   }
  }
 }

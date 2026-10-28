@@ -1,55 +1,20 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 88,
+ "pages_with_a_near_duplicate": 85,
  "worst_pairs": [
-  {
-   "overlap": 0.707,
-   "a": "/return-on-capital-employed",
-   "b": "/return-on-investment-roi"
-  },
-  {
-   "overlap": 0.695,
-   "a": "/bill-splitter",
-   "b": "/salary-take-home-estimator"
-  },
-  {
-   "overlap": 0.694,
-   "a": "/operating-margin",
-   "b": "/return-on-investment-roi"
-  },
-  {
-   "overlap": 0.693,
-   "a": "/bill-splitter",
-   "b": "/simple-interest"
-  },
-  {
-   "overlap": 0.691,
-   "a": "/contribution-margin",
-   "b": "/operating-margin"
-  },
-  {
-   "overlap": 0.691,
-   "a": "/operating-margin",
-   "b": "/return-on-capital-employed"
-  },
   {
    "overlap": 0.691,
    "a": "/implied-valuation",
    "b": "/pre-money-and-post-money-valuation"
   },
   {
-   "overlap": 0.689,
-   "a": "/bill-splitter",
-   "b": "/savings-goal-planner"
-  },
-  {
-   "overlap": 0.686,
-   "a": "/churn-rate",
-   "b": "/employee-utilization-rate"
+   "overlap": 0.684,
+   "a": "/ebitda-and-margin",
+   "b": "/operating-margin"
   },
   {
    "overlap": 0.684,
-   "a": "/ebitda-and-margin",
+   "a": "/contribution-margin",
    "b": "/operating-margin"
   },
   {
@@ -61,37 +26,44 @@
    "overlap": 0.683,
    "a": "/month-on-month-year-on-year-growth",
    "b": "/working-capital"
+  },
+  {
+   "overlap": 0.682,
+   "a": "/salary-take-home-estimator",
+   "b": "/savings-goal-planner"
+  },
+  {
+   "overlap": 0.681,
+   "a": "/salary-take-home-estimator",
+   "b": "/simple-interest"
+  },
+  {
+   "overlap": 0.68,
+   "a": "/savings-goal-planner",
+   "b": "/simple-interest"
+  },
+  {
+   "overlap": 0.677,
+   "a": "/rashi-moon-sign-calculator",
+   "b": "/zodiac-sign-calculator"
+  },
+  {
+   "overlap": 0.673,
+   "a": "/ask-calculator",
+   "b": "/dilution-calculator"
+  },
+  {
+   "overlap": 0.671,
+   "a": "/fd-fixed-deposit-calculator",
+   "b": "/rd-recurring-deposit-calculator"
+  },
+  {
+   "overlap": 0.67,
+   "a": "/burn-rate-and-runway",
+   "b": "/run-rate"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/return-on-capital-employed",
-   "closest_overlap": 0.707
-  },
-  {
-   "page": "/return-on-investment-roi",
-   "closest_overlap": 0.707
-  },
-  {
-   "page": "/bill-splitter",
-   "closest_overlap": 0.695
-  },
-  {
-   "page": "/salary-take-home-estimator",
-   "closest_overlap": 0.695
-  },
-  {
-   "page": "/operating-margin",
-   "closest_overlap": 0.694
-  },
-  {
-   "page": "/simple-interest",
-   "closest_overlap": 0.693
-  },
-  {
-   "page": "/contribution-margin",
-   "closest_overlap": 0.691
-  },
   {
    "page": "/implied-valuation",
    "closest_overlap": 0.691
@@ -101,17 +73,45 @@
    "closest_overlap": 0.691
   },
   {
+   "page": "/ebitda-and-margin",
+   "closest_overlap": 0.684
+  },
+  {
+   "page": "/operating-margin",
+   "closest_overlap": 0.684
+  },
+  {
+   "page": "/contribution-margin",
+   "closest_overlap": 0.684
+  },
+  {
+   "page": "/nps-calculator",
+   "closest_overlap": 0.683
+  },
+  {
+   "page": "/sip-calculator",
+   "closest_overlap": 0.683
+  },
+  {
+   "page": "/month-on-month-year-on-year-growth",
+   "closest_overlap": 0.683
+  },
+  {
+   "page": "/working-capital",
+   "closest_overlap": 0.683
+  },
+  {
+   "page": "/salary-take-home-estimator",
+   "closest_overlap": 0.682
+  },
+  {
    "page": "/savings-goal-planner",
-   "closest_overlap": 0.689
+   "closest_overlap": 0.682
   },
   {
-   "page": "/churn-rate",
-   "closest_overlap": 0.686
-  },
-  {
-   "page": "/employee-utilization-rate",
-   "closest_overlap": 0.686
+   "page": "/simple-interest",
+   "closest_overlap": 0.681
   }
  ],
- "median_overlap": 0.659
+ "median_overlap": 0.658
 }

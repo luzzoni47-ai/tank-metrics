@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-28T04:56:52Z",
+ "generated": "2026-10-28T05:41:41Z",
  "seed_count": 150,
- "suggestion_count": 1035,
+ "suggestion_count": 1036,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -37,15 +37,6 @@
    "score": 22.08,
    "from": [
     "mrp reverse calculator"
-   ]
-  },
-  {
-   "query": "ebitda and gross margin difference",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "ebitda and margin"
    ]
   },
   {
@@ -103,6 +94,15 @@
    ]
   },
   {
+   "query": "ebitda and gross margin difference",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "ebitda and margin"
+   ]
+  },
+  {
    "query": "fd calculator monthly interest",
    "demand": 10,
    "covered": false,
@@ -118,6 +118,15 @@
    "score": 18.4,
    "from": [
     "fd fixed deposit calculator"
+   ]
+  },
+  {
+   "query": "freelance hourly rate germany",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "freelancer hourly rate"
    ]
   },
   {
@@ -184,7 +193,7 @@
    ]
   },
   {
-   "query": "ask taxman calculator",
+   "query": "ask astrology calculator",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -217,15 +226,6 @@
    "score": 16.56,
    "from": [
     "fd fixed deposit calculator"
-   ]
-  },
-  {
-   "query": "freelance hourly rate germany",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "freelancer hourly rate"
    ]
   },
   {
@@ -274,21 +274,21 @@
    ]
   },
   {
-   "query": "small business in indianapolis",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "small business tax india"
-   ]
-  },
-  {
    "query": "startup valuation model",
    "demand": 9,
    "covered": false,
    "score": 16.56,
    "from": [
     "startup valuation"
+   ]
+  },
+  {
+   "query": "zudio franchise roi",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "franchise roi"
    ]
   },
   {
@@ -301,7 +301,7 @@
    ]
   },
   {
-   "query": "ask astrology calculator",
+   "query": "ask edie calculator",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -325,15 +325,6 @@
    "score": 14.72,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "cumulative annual growth rate cagr",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "cagr compound annual growth rate"
    ]
   },
   {
@@ -418,12 +409,12 @@
    ]
   },
   {
-   "query": "zudio franchise roi",
+   "query": "small business in indianapolis",
    "demand": 8,
    "covered": false,
    "score": 14.72,
    "from": [
-    "franchise roi"
+    "small business tax india"
    ]
   },
   {
@@ -454,7 +445,7 @@
    ]
   },
   {
-   "query": "ask edie calculator",
+   "query": "ask taxman calculator",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -478,6 +469,15 @@
    "score": 12.88,
    "from": [
     "cagr calculator"
+   ]
+  },
+  {
+   "query": "cumulative annual growth rate cagr",
+   "demand": 7,
+   "covered": false,
+   "score": 12.88,
+   "from": [
+    "cagr compound annual growth rate"
    ]
   },
   {
@@ -738,7 +738,7 @@
    ]
   },
   {
-   "query": "pre money post money safe",
+   "query": "pre money post money difference",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -1000,16 +1000,7 @@
    ]
   },
   {
-   "query": "pre money post money difference",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "pre money post money"
-   ]
-  },
-  {
-   "query": "share market calculator nepal",
+   "query": "share market calculator 2025",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -1204,6 +1195,16 @@
    "score": 8.97,
    "from": [
     "customer acquisition cost cac"
+   ]
+  },
+  {
+   "query": "customer lifetime value ltv meaning",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "client lifetime value ltv",
+    "customer lifetime value ltv"
    ]
   },
   {
@@ -1438,16 +1439,6 @@
    "score": 8.97,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "ltv meaning customer lifetime value",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "client lifetime value ltv",
-    "customer lifetime value ltv"
    ]
   },
   {
@@ -1767,15 +1758,6 @@
    ]
   },
   {
-   "query": "cagr calculator calculate compound annual growth rate online icici direct",
-   "demand": 6,
-   "covered": false,
-   "score": 8.64,
-   "from": [
-    "cagr compound annual growth rate"
-   ]
-  },
-  {
    "query": "gross margin and net margin difference",
    "demand": 6,
    "covered": false,
@@ -2001,15 +1983,6 @@
    ]
   },
   {
-   "query": "ebitda and gross margin",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda and margin"
-   ]
-  },
-  {
    "query": "ebitda full form",
    "demand": 12,
    "covered": true,
@@ -2019,21 +1992,21 @@
    ]
   },
   {
+   "query": "ebitda margin and revenue",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda and margin"
+   ]
+  },
+  {
    "query": "ebitda multiple formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "ebitda multiple"
-   ]
-  },
-  {
-   "query": "employee utilisation rate",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "employee utilisation"
    ]
   },
   {
@@ -2109,7 +2082,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2604,15 +2577,6 @@
    ]
   },
   {
-   "query": "cpm/cac to ltv/cac",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "cpm to cpc"
-   ]
-  },
-  {
    "query": "customer acquisition cost cac definition",
    "demand": 11,
    "covered": true,
@@ -2668,6 +2632,15 @@
    ]
   },
   {
+   "query": "ebitda and gross margin",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "ebitda and margin"
+   ]
+  },
+  {
    "query": "ebitda means",
    "demand": 11,
    "covered": true,
@@ -2683,6 +2656,15 @@
    "score": 7.59,
    "from": [
     "ebitda multiple"
+   ]
+  },
+  {
+   "query": "employee utilization formula",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "employee utilisation"
    ]
   },
   {
@@ -2749,7 +2731,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3092,12 +3074,12 @@
    ]
   },
   {
-   "query": "ebitda and ebitda margin graph",
+   "query": "domino's franchise roi",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
-    "ebitda and margin"
+    "franchise roi"
    ]
   },
   {
@@ -3146,21 +3128,21 @@
    ]
   },
   {
-   "query": "kfc franchise roi",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "franchise roi"
-   ]
-  },
-  {
    "query": "landed cost odoo 19",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
     "landed cost"
+   ]
+  },
+  {
+   "query": "pre money post money safe",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "pre money post money"
    ]
   },
   {
@@ -3191,7 +3173,7 @@
    ]
   },
   {
-   "query": "share market calculator 2025",
+   "query": "share market calculator nepal",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3209,7 +3191,7 @@
    ]
   },
   {
-   "query": "cagr stands for compound annual growth rate",
+   "query": "cagr calculator calculate compound annual growth rate online icici direct",
    "demand": 5,
    "covered": false,
    "score": 7.2,
@@ -3490,15 +3472,6 @@
    ]
   },
   {
-   "query": "employee utilization formula",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "employee utilisation"
-   ]
-  },
-  {
    "query": "epf calculator with current balance",
    "demand": 10,
    "covered": true,
@@ -3544,7 +3517,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator cgst sgst",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3622,6 +3595,33 @@
    "score": 6.9,
    "from": [
     "markup vs margin"
+   ]
+  },
+  {
+   "query": "moic and irr formula",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "moic and irr"
+   ]
+  },
+  {
+   "query": "msme loan scheme",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "msme loan"
+   ]
+  },
+  {
+   "query": "net profit margin ratio",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "net profit margin"
    ]
   }
  ]
