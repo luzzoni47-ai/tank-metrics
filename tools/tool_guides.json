@@ -395,17 +395,17 @@
       ]
     },
     "impval": {
-      "what": "Implied Valuation turns one short line in a pitch — “I am putting in ₹50 lakh for 5%” — into the number it actually implies about the whole company. Divide the investment by the equity offered and you have the price the deal is putting on the business. It is the fastest sanity check in a funding conversation: the moment a stake is named, the valuation is decided, whether or not anyone says it out loud.\n\nThe figure is only as good as the stake behind it, which is why the tool asks for both inputs. ₹50 lakh for 5% implies a ₹10 crore company; the same ₹50 lakh for 20% implies only a ₹2.5 crore company. Founders quote the first number and forget the second, and investors do the reverse. Having the implied valuation in front of you ends the roundabout talk and moves the discussion to the assumption underneath — the stake itself.",
-      "formula": "Implied Valuation = Investment Amount ÷ (Equity Offered ÷ 100). Type the amount (amt) and the equity percentage (eq); the tool divides the equity by 100 to make it a fraction, then divides the investment by that fraction. ₹10,00,000 for 10% implies ₹1,00,00,000. The arithmetic is a single division, so the value is not the maths but the discipline of stating the amount and the stake together.",
+      "what": "An implied valuation is the value of a whole company worked backwards from one small deal. When someone says \"50 lakh for 5%\", they have just told you what they think the company is worth: 50 lakh is 5% of the company, so the company is worth 10 crore. Nobody wrote that number down - it is implied by the deal. That is the whole idea, and it is the fastest way to sanity-check any offer, because the person making it usually does not realise they have revealed their number.",
+      "formula": "Implied Valuation = Investment ÷ Equity % × 100. \"50 lakh for 5%\" is 50,00,000 ÷ 5 × 100 = ₹10 crore. Reversing it gives the implied equity: Investment ÷ Valuation × 100. The formula is the same one behind pre-money and post-money valuation - implied valuation is simply what you get when you run it backwards from the offer instead of forwards from the cap table.",
       "when": [
-        "An investor or acquirer names a stake and you want the price it implies before you reply.",
-        "You are the investor and want to check whether the slice you are asking for is fair for the money.",
-        "You are writing a term-sheet summary and need the valuation behind each offer on one line."
+        "Someone quotes a price and a stake together - \"2 crore for 10%\" - and you want the company value behind it.",
+        "You are comparing two offers on different stakes and need one number to compare them on.",
+        "An investor tells you your company is worth X and you want to test what that implies for the cheque they are offering."
       ],
       "mistakes": [
-        "Reading the valuation without the stake. ₹50 lakh for 5% and ₹50 lakh for 20% are two very different companies.",
-        "Treating the implied valuation as agreed. It is what the offer implies, not what the company is worth; the argument is usually about the stake, not the price.",
-        "Forgetting that money normally goes in on a post-money basis, so the implied price already includes the new cheque and the founder's own stake is diluted by it."
+        "Treating the implied number as post-money when the investor meant pre-money. The difference is the cheque itself, and it is a real amount of equity.",
+        "Running the maths on a deal that includes a royalty or a loan - those are not equity, so the implied valuation is meaningless until the equity part is separated out.",
+        "Quoting an implied valuation as if a valuer certified it. It is a reading of an offer, not a registered valuation, and a CA or merchant banker is still needed for anything official."
       ]
     },
     "opmargin": {

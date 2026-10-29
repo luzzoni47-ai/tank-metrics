@@ -381,17 +381,17 @@
       ]
     },
     "impval": {
-      "what": "Implied Valuation pitch ke ek chhote se vaakya — “main ₹50 lakh lagata hoon 5% ke liye” — ko us number me badal deta hai jo wo poori company ke baare me keh raha hota hai. Investment ko equity se divide karo aur deal ki price saamne aa jaati hai. Funding baat-cheet me ye sabse tez sanity check hai: jis pal stake boli jaati hai, valuation decide ho jaati hai, chahe koi usko zubaan par na laaye.\n\nYe number utna hi accha hota hai jitna uske peeche ka stake, isliye tool dono input maangta hai. ₹50 lakh 5% ke liye matlab ₹10 crore ki company; wahi ₹50 lakh 20% ke liye matlab sirf ₹2.5 crore ki company. Founders pehla number bolte hain aur doosra bhool jaate hain, investors ulta karte hain. Implied valuation saamne hone se ghumaav ki baat khatam ho jaati hai aur baat asli assumption — stake — par aa jaati hai.",
-      "formula": "Implied Valuation = Investment Amount ÷ (Equity Offered ÷ 100). Amount (amt) aur equity percentage (eq) daalo; tool equity ko 100 se divide karke fraction banata hai aur investment ko usse divide karta hai. ₹10,00,000 for 10% ka matlab ₹1,00,00,000. Ganit ek hi division hai, isliye tool ki value maths me nahi, amount aur stake ko saath likhne ki aadat me hai.",
+      "what": "Implied valuation matlab ek chhote deal se poori company ki value ulti nikaalna. Jab koi kehta hai \"50 lakh for 5%\", wo actually bata deta hai ki uske hisaab se company kitne ki hai: 50 lakh company ka 5% hai, matlab company ₹10 crore ki hai. Ye number kisi ne likha nahi hota - deal se implied hai. Yahi poori baat hai, aur kisi bhi offer ko turant check karne ka ye sabse tez tareeka hai, kyunki jaan-boojh kar offer dene wala aksar ye nahi samajhta ki usne apna number bata diya.",
+      "formula": "Implied Valuation = Investment ÷ Equity % × 100. \"50 lakh for 5%\" matlab 50,00,000 ÷ 5 × 100 = ₹10 crore. Ulta karne par implied equity milti hai: Investment ÷ Valuation × 100. Yahi formula pre-money aur post-money ke peeche bhi hai - implied valuation bas offer se ulta chalane par milti hai.",
       "when": [
-        "Jab investor ya acquirer stake bata de aur aapko reply se pehle uski implied price jaanni ho.",
-        "Jab aap khud investor ho aur dekhna chahte ho ki maanga gaya stake amount ke hisaab se theek hai ya nahi.",
-        "Jab aap term-sheet summary bana rahe ho aur har offer ke peeche ki valuation ek line me chahiye."
+        "Koi price aur stake saath me bolta hai - \"2 crore for 10%\" - aur aap uske peeche ki company value jaanna chahte ho.",
+        "Do offers alag-alag stake par compare kar rahe ho aur ek number chahiye.",
+        "Investor bolta hai company ki value X hai aur aap check karna chahte ho ki uske cheque ke liye iska matlab kya hai."
       ],
       "mistakes": [
-        "Valuation ko stake ke bina padhna. ₹50 lakh for 5% aur ₹50 lakh for 20% do bilkul alag company hain.",
-        "Implied valuation ko final maan lena. Ye offer jo dikha raha hai wahi hai, company ki asli keemat nahi; bahas aksar stake par hoti hai, price par nahi.",
-        "Ye bhoolna ki paisa aksar post-money basis par aata hai, isliye implied price me naya cheque shamil hota hai aur founder ka stake dilute hota hai."
+        "Implied number ko post-money maan lena jab investor pre-money bol raha ho. Farak cheque ka hai, aur wo asli equity hai.",
+        "Aise deal par ganit chalana jisme royalty ya loan hai - wo equity nahi hai, isliye equity alag kiye bina implied valuation ka koi matlab nahi.",
+        "Implied valuation ko certified valuation bata dena. Ye offer ka reading hai, registered valuation nahi - official kaam ke liye CA ya merchant banker chahiye."
       ]
     },
     "opmargin": {
