@@ -16,7 +16,7 @@ What an agent CAN do, every day, with no login:
 
 | Tool Sir named | How this run covers it |
 |---|---|
-| Google Search Console | Cannot log in. `tools/gsc.py` needs a service-account key that does not exist. Substitute: the sitemap + `tools/content_uniqueness.py` measure what GSC would have told us - which pages are thin or duplicated. |
+| Google Search Console | Cannot log into the UI, but `tools/gsc.py` drives the API with a service-account key (`GSC_SA_JSON`). If the key is set, USE IT (step 1b) - it gives Google's own index verdict per page. If it is not set, substitute the sitemap + `tools/content_uniqueness.py`. Setup: `tools/automation/gsc_setup.md`. |
 | PageSpeed Insights | Free public API, no key for a handful of calls. Measure the home page and one calculator. Report the score and the top opportunity. |
 | Screaming Frog | Replaced by `tools/seo_monitor.py --local` and `tools/automation/site_health` - the same crawl (status, title, canonical, description, noindex, dead internal links). |
 | Google Keyword Planner | Needs a Google Ads login. Substitute: `tools/keyword_radar.py` (Google autocomplete, free, no key). |
@@ -52,6 +52,24 @@ python3 tools/keyword_radar.py --top 20
 near-duplicates of another page. On 2026-10-22 that was **94 of 101 pages, median
 66% overlap** — this is the reason only 5 pages are indexed in Google. Every run
 must drive this number down. It is the single most important metric here.
+
+### 1b. Search Console, when the key is present
+
+If `GSC_SA_JSON` (or `~/.gsc_service_account.json`) exists, this is the run's
+best evidence - Google's own verdict, not a proxy:
+
+```
+python3 tools/gsc.py sites                    # property visible?
+python3 tools/gsc.py sitemaps                 # submitted vs indexed
+python3 tools/gsc.py analytics 28             # top queries + pages
+python3 tools/gsc.py inspect https://tankmetrics.in/<worst-page>
+```
+
+Run `inspect` on the three worst pages from step 1 and on any page GSC reports
+as "Crawled - currently not indexed" or "Discovered - not indexed". The
+`coverageState` and `googleCanonical` lines are the reason, per page. Report
+them in the summary. If the key is absent, say so plainly and continue - do NOT
+claim a Search Console run. Setup is in `tools/automation/gsc_setup.md`.
 
 ### 2. Write real copy for the worst offenders (the actual indexing fix)
 
