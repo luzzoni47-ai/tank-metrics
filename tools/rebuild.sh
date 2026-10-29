@@ -25,6 +25,12 @@ cd "$ROOT"
 # "the fix is in the file but not in the page".
 find tools -name "__pycache__" -type d -prune -exec rm -rf {} + 2>/dev/null || true
 
+# The keyword pages are written FIRST. gen_tool_pages.py re-applies the PWA
+# block and wire_blog_tools.py adds the "Run the numbers" section to every
+# blog-*.html; running the keyword generator after them would overwrite those
+# sections on the keyword pages, because it rewrites the whole file.
+echo "==> gen_keyword_pages (keyword-targeted calculator pages)"
+python3 tools/gen_keyword_pages.py
 echo "==> gen_tool_pages"
 python3 tools/gen_tool_pages.py
 echo "==> gen_news"
@@ -41,6 +47,8 @@ echo "==> make_favicon"
 python3 tools/make_favicon.py
 echo "==> fix_blog_meta"
 python3 tools/fix_blog_meta.py
+echo "==> add_blog_schema (Article + BreadcrumbList on guides, incl. keyword pages)"
+python3 tools/add_blog_schema.py
 echo "==> fix_static_seo"
 python3 tools/fix_static_seo.py
 echo "==> add_pwa"
