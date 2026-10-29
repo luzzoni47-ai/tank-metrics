@@ -97,7 +97,7 @@ def load_state() -> dict:
         return {}
     try:
         req = urllib.request.Request(
-            f"{_KV_BASE}/kv/{_STATE_KEY}",
+            f"{_KV_BASE}/v1/kv/{_STATE_KEY}",
             headers={"Authorization": f"Bearer {_KV_TOKEN}"})
         with urllib.request.urlopen(req, timeout=20) as r:
             v = json.loads(r.read().decode())
@@ -111,7 +111,7 @@ def save_state(state: dict) -> None:
         return
     try:
         req = urllib.request.Request(
-            f"{_KV_BASE}/kv/{_STATE_KEY}",
+            f"{_KV_BASE}/v1/kv/{_STATE_KEY}",
             data=json.dumps({"value": state}).encode(),
             method="PUT",
             headers={"Authorization": f"Bearer {_KV_TOKEN}",
