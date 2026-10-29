@@ -81,7 +81,9 @@ OAUTH_AUTH_URI = "https://accounts.google.com/o/oauth2/v2/auth"
 # the consent URL, Google redirects to localhost with ?code=..., and the address
 # bar still shows that code even though nothing is listening. That is why this
 # works on a headless box with no browser.
-OAUTH_REDIRECT = "http://localhost"
+# Overridable: Google allows the loopback forms for Desktop clients, and if the
+# console only accepts one of them, GSC_OAUTH_REDIRECT fixes it without an edit.
+OAUTH_REDIRECT = os.environ.get("GSC_OAUTH_REDIRECT", "http://localhost")
 
 
 def load_oauth() -> dict:
