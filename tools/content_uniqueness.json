@@ -43,11 +43,6 @@
    "b": "/rd-recurring-deposit-calculator"
   },
   {
-   "overlap": 0.67,
-   "a": "/burn-rate-and-runway",
-   "b": "/run-rate"
-  },
-  {
    "overlap": 0.669,
    "a": "/gratuity-calculator",
    "b": "/nps-calculator"
@@ -56,11 +51,6 @@
    "overlap": 0.666,
    "a": "/ppf-calculator",
    "b": "/sip-calculator"
-  },
-  {
-   "overlap": 0.666,
-   "a": "/churn-rate",
-   "b": "/employee-utilization-rate"
   }
  ],
  "worst_pages": [
@@ -103,15 +93,7 @@
   {
    "page": "/ask-calculator",
    "closest_overlap": 0.673
-  },
-  {
-   "page": "/dilution-calculator",
-   "closest_overlap": 0.673
-  },
-  {
-   "page": "/fd-fixed-deposit-calculator",
-   "closest_overlap": 0.671
   }
  ],
- "median_overlap": 0.657
+ "median_overlap": 0.654
 }
