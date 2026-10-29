@@ -877,6 +877,63 @@
     "<h2>Indian founders ke liye uncomfortable sawaal</h2>",
     "<p>Agar ek foreign fund Indian hospital costs par hamla karne wali Indian company ko support karega, to woh aapki category bhi dekhega. Sawaal ye nahi ki aapka market bada hai. Sawaal ye hai ki aap usse structurally saste, tez ya behtar ho jo pehle se usse serve kar raha hai.</p>"
    ]
+  },
+  {
+   "slug": "gst-inverted-duty-refund-input-services-november-2026",
+   "title": "GST Refund Formula Widened for Manufacturers From Nov 1",
+   "dek": "Eligible input services now count towards the credit base for inverted-duty refunds from November 1, 2026. Here is what it changes for a small manufacturer.",
+   "category": "Tax Rules",
+   "date": "2026-10-29",
+   "date_display": "October 29, 2026",
+   "source_name": "Business Today",
+   "source_url": "https://www.businesstoday.in/latest/corporate/story/gst-inverted-duty-refunds-new-formula-could-change-claims-for-manufacturers-check-details-564485-2026-10-29",
+   "cta": {
+    "text": "See what GST you owe after setting off the credit on your inputs.",
+    "href": "/gst-calculator",
+    "label": "Open the GST Calculator"
+   },
+   "related": [
+    {
+     "slug": "gst-input-tax-credit-explained",
+     "title": "Input Tax Credit: Why You Get GST Back"
+    },
+    {
+     "slug": "import-duty-explained",
+     "title": "What Import Duty Really Adds to Your Order"
+    }
+   ],
+   "body_en": [
+    "<p>The government has changed how it works out one particular GST refund, and the first half of the change starts on November 1, 2026. It matters to any business that pays more GST on what it buys than it charges on what it sells.</p>",
+    "<h2>What an inverted duty structure is</h2>",
+    "<p>An inverted duty structure is when the GST rate on your inputs is higher than the rate on your final product. A manufacturer might pay 18% GST on inputs and input services, then charge only 5% GST on the finished goods. Because the tax going out is smaller than the tax coming in, the credit does not get used up. It piles up, and that pile is money the business has already spent.</p>",
+    "<h2>The refund formula, and what changed</h2>",
+    "<p>GST law allows a refund of that unused credit in specified inverted-duty cases. The formula is: (Turnover of inverted-rated supply × Net ITC ÷ Adjusted total turnover) − Tax payable on inverted-rated supply.</p>",
+    "<p>The Central Goods and Services Tax (Amendment) Rules, 2026, notified through Notification No. 05/2026–Central Tax dated October 26, 2026, now allow eligible input services to be included in Net ITC for this calculation from November 1, 2026. Eligible credit on capital goods — machinery, equipment and similar assets — is to be included from April 1, 2027. So the base of credit in the formula gets wider in two steps, not one.</p>",
+    "<h2>What it means in rupees</h2>",
+    "<p>Take an illustration. A manufacturer's turnover of inverted-rated supply is ₹8,00,000 and its adjusted total turnover is ₹10,00,000. Suppose its Net ITC is ₹60,000 and the tax payable on the inverted-rated supply is ₹40,000. The maximum refund is (8,00,000 × 60,000 ÷ 10,00,000) − 40,000, which is 48,000 − 40,000, or ₹8,000.</p>",
+    "<p>Now suppose ₹20,000 of that credit came from input services that were not counted before November 1. Net ITC rises to ₹80,000. The refund becomes (8,00,000 × 80,000 ÷ 10,00,000) − 40,000, which is 64,000 − 40,000, or ₹24,000. The same turnover and the same tax bill now release ₹16,000 more in cash, and that money was already spent on services the business needed.</p>",
+    "<h2>What to check before you file</h2>",
+    "<p>Businesses should review how they classify credit before claiming under the amended rules.</p>",
+    "<ul><li>Separate eligible input services from other expenses, so the credit you include is credit you can defend.</li><li>Keep the tax invoices and input credit records for those services on file.</li><li>Recheck the adjusted total turnover figures you feed into the formula.</li><li>Remember capital goods credit waits until April 1, 2027, and carries its own conditions.</li></ul>",
+    "<h2>What this means for a small business</h2>",
+    "<p>A wider credit base improves working capital, but it is not an automatic windfall. Eligibility restrictions, documentation and the formula itself still apply, and a business with no accumulated credit has nothing extra to claim. The practical step is to find out how much of your blocked-up credit sits in input services. If it is a meaningful share of your production cost, the change is worth real money to you from November 1. Confirm the final notified provisions with a tax professional before you change your refund claims.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Sarkar ne ek khaas GST refund ka hisaab badal diya hai, aur is badlaav ka pehla hissa 1 November 2026 se shuru hota hai. Yeh un sab karobaaron ke liye maayne rakhta hai jo jo khareedate hain us par bikri se zyada GST dete hain.</p>",
+    "<h2>Inverted duty structure kya hota hai</h2>",
+    "<p>Inverted duty structure tab hota hai jab aapke inputs par GST ki dar aapke final product se zyada ho. Ek manufacturer inputs aur input services par 18% GST de sakta hai, aur taiyaar maal par sirf 5% GST le. Kyunki bahar jaane wala tax andar aane wale tax se chhota hai, credit khatam nahi hota. Woh jama hota jaata hai, aur woh jama hua paisa karobar pehle hi kharch kar chuka hota hai.</p>",
+    "<h2>Refund ka formula, aur kya badla</h2>",
+    "<p>GST kanoon aise inverted-duty cases mein is istemaal na hue credit ka refund deta hai. Formula hai: (inverted-rated supply ka turnover × Net ITC ÷ adjusted total turnover) − inverted-rated supply par dey tax.</p>",
+    "<p>Central Goods and Services Tax (Amendment) Rules, 2026, jo 26 October 2026 ki Notification No. 05/2026–Central Tax se jaari hui, ab 1 November 2026 se eligible input services ko is hisaab ke Net ITC mein shamil karne deti hai. Capital goods par eligible credit — machinery, equipment aur aise assets — 1 April 2027 se shamil hoga. Yani formula mein credit ka base do kadmon mein badhta hai, ek mein nahi.</p>",
+    "<h2>Rupees mein iska matlab</h2>",
+    "<p>Ek udaharan lein. Ek manufacturer ki inverted-rated supply ka turnover ₹8,00,000 hai aur adjusted total turnover ₹10,00,000 hai. Maan lijiye Net ITC ₹60,000 hai aur inverted-rated supply par dey tax ₹40,000. Maximum refund hai (8,00,000 × 60,000 ÷ 10,00,000) − 40,000, yani 48,000 − 40,000, yani ₹8,000.</p>",
+    "<p>Ab maan lijiye us credit mein se ₹20,000 aise input services se aaya jo 1 November se pehle gine nahi jaate the. Net ITC ₹80,000 ho jaata hai. Refund ban jaata hai (8,00,000 × 80,000 ÷ 10,00,000) − 40,000, yani 64,000 − 40,000, yani ₹24,000. Wahi turnover aur wahi tax bill ab ₹16,000 zyada cash chhodta hai, aur woh paisa pehle hi un services par kharch ho chuka tha jo karobar ko chahiye thi.</p>",
+    "<h2>File karne se pehle kya dekhein</h2>",
+    "<p>Karobaaron ko amended rules ke tehat claim karne se pehle apni credit classification dobara dekhni chahiye.</p>",
+    "<ul><li>Eligible input services ko doosre kharch se alag karein, taaki jo credit aap jodein woh defend ho sake.</li><li>Un services ke tax invoices aur input credit records file par rakhein.</li><li>Formula mein daale jaane wale adjusted total turnover ke aankde dobara jaanchein.</li><li>Yaad rakhein capital goods credit 1 April 2027 tak rukta hai, aur uski apni shartein hain.</li></ul>",
+    "<h2>Chhote karobar ke liye iska matlab</h2>",
+    "<p>Chhota credit base working capital sudhaarta hai, lekin yeh apne aap koi meharbani nahi hai. Eligibility restrictions, documentation aur formula khud ab bhi laagu hote hain, aur jis karobar ke paas jama credit nahi hai uske paas extra claim karne ko kuch nahi. Asli kadam yeh hai ki aap pata karein aapka jama hua credit kitna input services mein baitha hai. Agar woh aapki production cost ka theek-thaak hissa hai, to 1 November se yeh badlaav aapke liye asli paisa hai. Refund claims badalne se pehle final notified provisions kisi tax professional se confirm karein.</p>"
+   ]
   }
  ]
 }
