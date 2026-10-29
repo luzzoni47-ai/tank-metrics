@@ -519,6 +519,118 @@
         "One-off costs - tax bill, bada renewal - bhool jaana jo runway window me aate hain.",
         "Runway ko fixed maan lena; revenue ya spend badalte hi ye badal jaata hai, isliye har mahine nikalo."
       ]
+    },
+    "ask": {
+      "what": "Ask Calculator wo sawaal ka jawab deta hai jo har founder pitch se pehle sochta hai: mujhe itna paisa chahiye, toh kitni equity lagegi? Jitna paisa chahiye aur jo valuation aap business ki maante ho, daaliye - kitna hissa dena padega, ye dikh jaata hai. ₹1.8 crore valuation pe ₹45 lakh maang rahe ho toh company ka chauthai hissa de rahe ho. Number saaf-saaf batata hai, aur yahi iska maksad hai - investor ke saamne khade hone se pehle founder ko sochna padta hai ki paisa hissa dene layak hai ya nahi.",
+      "formula": "Equity to Offer = Amount Needed ÷ Valuation × 100. ₹45 lakh chahiye aur valuation ₹1.8 crore hai toh ₹45,00,000 ÷ ₹1,80,00,000 × 100 = 25%. Valuation badhaao toh wahi paisa kam equity me aata hai; ghataao toh zyada hissa dena padta hai. Formula trade-off ko saaf kar deta hai, isliye ask andaaza nahi, decision ban jaata hai.",
+      "when": [
+        "Pitch se pehle tay kar rahe ho ki kitna raise karna hai.",
+        "Bada cheque asli me kitni equity me padta hai, ye dekhna hai.",
+        "High price pe chhota round aur low price pe bada round, dono compare kar rahe ho."
+      ],
+      "mistakes": [
+        "Pehle amount chunna aur valuation baad me, jisse plan se zyada hissa chala jaata hai.",
+        "Alag-alag deals ki equity compare karna bina unke peeche ki valuation dekhe.",
+        "Ye bhoolna ki ye sirf pehla round hai; aage ka har round isse aur dilute karta hai."
+      ]
+    },
+    "debteq": {
+      "what": "Debt-plus-equity deal me investor ka paisa do hisson me bant jaata hai: ek loan jo business ko chukana hai, aur equity jo pakka hissa kharidti hai. Shark Tank India me ye aam hai kyunki isse shark kam ownership lete hue bhi paisa wapas paata hai. Total deal, debt portion aur equity wali valuation daaliye - loan amount, equity amount aur stake dikh jaata hai. Debt cash flow se chukta hai, chahe business badhe ya na badhe; equity kabhi wapas nahi hoti.",
+      "formula": "Debt Amount = Total Deal × Debt Portion %; Equity Amount = Total Deal − Debt Amount; Equity % = Equity Amount ÷ Valuation × 100. ₹4.5 crore ke deal me 18% debt ho toh ₹81 lakh loan hai aur baaki equity. Debt pakki obligation hai, equity pakka claim - dono ko mila dena chhupa deta hai ki asli mehnga kaun hai.",
+      "when": [
+        "Term sheet me loan aur equity mila hua hai aur dono alag dekhne hain.",
+        "Tay kar rahe ho ki deal ka kitna hissa repayable debt lena hai, permanent equity nahi.",
+        "Pure-equity offer aur debt-wale offer ko compare kar rahe ho."
+      ],
+      "mistakes": [
+        "Poore deal ko equity maan lena aur dilution kam ginna.",
+        "Debt portion bhool jaana, jo cash flow se chukta hai aur working capital dabata hai.",
+        "Sirf stake dekhkar deal judge karna jabki debt hi tay karta hai business saans le sakta hai ya nahi."
+      ]
+    },
+    "royalty": {
+      "what": "Royalty deal me investor equity ke badle ya uske saath-saath aapki revenue ka ek fixed percentage har mahine leta hai, jab tak tay amount wapas na ho jaye. Sharks ko ye pasand hai kyunki paisa jaldi wapas aata hai, aur founders ko kyunki ownership bahut kam jaati hai. Investment, royalty rate aur expected annual revenue daaliye - saal ki royalty aur kitne saal me wapas hoga, dikh jaata hai. Royalty equity me sasti hai par cash flow me mehngi - ye sales pe lagti hai, profit pe nahi.",
+      "formula": "Annual Royalty = Expected Annual Revenue × Royalty Rate %; Payback Period (years) = Investment ÷ Annual Royalty. ₹1.8 crore revenue pe 18% royalty se investor ko saal ka ₹32.4 lakh milta hai, jo ₹4.5 crore investment ko ~14 saal me wapas karta hai. Sales badhein toh jaldi, slow saal me payback lamba ho jaata hai par royalty phir bhi chukni padti hai.",
+      "when": [
+        "Shark bade equity stake ke bajaye royalty offer karta hai.",
+        "Ownership bachani hai aur mahine ki revenue se dena theek hai.",
+        "Royalty-heavy aur equity-heavy offers compare kar rahe ho."
+      ],
+      "mistakes": [
+        "Sirf ownership dekhkar deal judge karna aur mahine ka cash bhool jaana.",
+        "Ye maan lena ki revenue hamesha badhegi, jisse payback sirf kaagaz pe chhota dikhta hai.",
+        "Ye bhoolna ki royalty sales pe chukti hai, loss wale mahine me bhi."
+      ]
+    },
+    "cofounder": {
+      "what": "Co-founder equity split wo sabse mushkil baat ka jawab deta hai: kisko kitna milega. Sabse insaaf wala tareeka har founder ko uske diye gaye cheezon pe score karna hai - idea, paisa, time, skills, network, risk - aur equity usi hisaab se baantna. Har founder ka score daaliye, percentage mil jaata hai. Barabar 12-12-12 se saaf teen-way split hota hai, par asli splits aksar barabar nahi hote, aur abhi numbers me kaaran likh dena aage jhagde se bachaata hai jab company ki value badh jaaye.",
+      "formula": "Founder Share % = Founder Score ÷ Total of All Scores × 100. Teen founders 12, 12, 12 pe 33.3% rakhte hain; 20, 15, 10 pe 44.4%, 33.3%, 22.2%. Har banda kya de raha hai - paisa, full-time time, idea, skills - usko score karo, taaki split mehnat dikhaye, ye nahi ki pehle kaun bola.",
+      "when": [
+        "Co-founders ke saath pehli baar cap table set kar rahe ho.",
+        "Naya co-founder aata hai aur purana split dobara karna hai.",
+        "Investor poochta hai ki founding equity aise kyun baanti gayi."
+      ],
+      "mistakes": [
+        "Jhagde se bachne ke liye barabar baant dena, phir jab ek founder zyada kaam kare toh chidh hona.",
+        "Idea ko sabse bada hissa dena aur jo business chalaayega usko chhota hissa.",
+        "Split ko chat me chhod dena, vesting ke saath signed agreement ke bajaye."
+      ]
+    },
+    "payback": {
+      "what": "CAC payback period batata hai ki customer ko jeetne me jo kharch hua, wo us customer ke profit ke kitne mahine me wapas aata hai. Ye LTV:CAC ratio ka cash-flow version hai: accha ratio bhi itna lamba payback chhupa sakta hai ki paisa profit se pehle khatam ho jaaye. Acquisition cost, per customer monthly revenue aur gross margin daaliye - kitne mahine, ye mil jaata hai. Barah mahine se kam payback se aap jaldi dobara invest kar sakte ho; teen saal matlab har naya customer us paise pe daanv hai jo der se aayega.",
+      "formula": "Payback Period (months) = CAC ÷ (Monthly Revenue per Customer × Gross Margin %). Customer jeetne me ₹5,000 lage, wo ₹1,000 mahina deta hai aur 40% margin rakhte ho toh payback ₹5,000 ÷ ₹400 = 12.5 mahine. Margin hi payback ko asli banata hai; sirf revenue pe wahi customer paanch mahine ka payback dikhata hai jo kabhi aata hi nahi.",
+      "when": [
+        "Tay kar rahe ho ki acquisition pe kitna aggressive kharch karna hai.",
+        "Paisa raise kiya hai aur jaanna hai ki kitni jaldi naye customers me badlega.",
+        "Do segments compare kar rahe ho jinki payback speed alag hai."
+      ],
+      "mistakes": [
+        "Denominator me revenue use karna gross-margin profit ke bajaye, jisse payback aadha dikhta hai.",
+        "Ye bhoolna ki lamba payback tabhi chalega jab funding ka paisa bank me pehle se ho.",
+        "Churn ignore karna - jo customer payback ke mahine se pehle chala gaya, wo cost kabhi wapas nahi karta."
+      ]
+    },
+    "aov": {
+      "what": "Average Order Value batati hai ki customer ek order me aam taur pe kitna kharch karta hai. Ek hi period ki total revenue ko orders ki ginti se divide karo. ₹1,00,000 ke 200 orders pe AOV ₹500 hai. Ye simple average lagta hai, par do cheezein chalata hai: customer jeetne pe kitna kharch kar sakte ho, aur ek chhota nudge - bundle, free-shipping threshold, upsell - kitne ka hai. AOV badhaana bina ek rupya extra ads pe kharch kiye profit badhata hai, isliye D2C brand ke liye ye sabse sasta lever hai.",
+      "formula": "AOV = Total Revenue ÷ Total Orders. Dono numbers ek hi period ke lo: ₹1,00,000 revenue 200 orders se matlab ₹500 per order. Mahine-dar-mahine compare karo, kyunki badhta AOV batata hai bundles aur upsells kaam kar rahe hain, aur girta AOV batata hai discounts basket kha rahe hain.",
+      "when": [
+        "Free-shipping ya bundle threshold set kar rahe ho aur baseline chahiye.",
+        "Upsell ya cross-sell ne basket hilaya ya nahi, ye naap rahe ho.",
+        "Channels ke AOV compare kar rahe ho, spend decide karne se pehle."
+      ],
+      "mistakes": [
+        "Periods mix karna - pichle mahine ki revenue is mahine ke orders pe.",
+        "Kuch bahut bade orders ko average ko skew karne dena, median check kiye bina.",
+        "AOV ko LTV samajh lena; ek order poori rishtedaari nahi hoti."
+      ]
+    },
+    "retention": {
+      "what": "Retention matlab kitne customers wapas aate hain; churn matlab kitne chhod dete hain. Dono milkar tay karte hain growth compound karegi ya leak karegi. Mahine ki shuruaat 1,000 customers se, aakhir bhi 1,000, aur beech me 100 naye aaye - matlab 100 purane gaye: retention 90%, churn 10%. Business har mahine customers jodta reh sakta hai aur phir bhi sikud sakta hai agar churn acquisition se zyada ho. Ye calculator dono dikhata hai, taaki leak bucket khaali hone se pehle dikh jaaye.",
+      "formula": "Retention % = (Customers at End − New Customers) ÷ Customers at Start × 100; Churn % = 100 − Retention %. 1,000 se shuru, 1,000 pe khatam, 100 naye: retained = 1,000 − 100 = 900, toh retention 90% aur churn 10%. Yahi ghatana zyadatar founders chhod dete hain - naye customers purane jaane ko chhupa dete hain, aur sirf calculation sach dikhati hai.",
+      "when": [
+        "Subscription ya repeat-purchase business healthy hai ya nahi, ye naap rahe ho.",
+        "Retention pe invest karein ya acquisition pe, ye tay kar rahe ho.",
+        "Churn badalne ka saal bhar ke growth pe asar dekhna hai."
+      ],
+      "mistakes": [
+        "Naye customers ko retention ginna, jisse gaye hue chhup jaate hain.",
+        "Churn mahine ka naapkar business ko saal ke numbers pe judge karna, ya ulta.",
+        "Chhote churn ko harmless maan lena - 5% mahina matlab saal me aadhi se zyada base gayi."
+      ]
+    },
+    "roas": {
+      "what": "Return on Ad Spend batata hai ki ads pe kharch hue har rupee pe kitne rupee revenue wapas aaye. Ads se aayi revenue ko ad spend se divide karo: ₹20,000 ads se ₹1,00,000 revenue matlab ROAS 5x. Campaign chal raha hai ya nahi, ye jaanne ka ye sabse tez tareeka hai, par revenue profit nahi hai. Patli margin wale product pe 5x ROAS bhi cost of goods, shipping aur returns ke baad paisa kha sakta hai. ROAS se campaign screen karo, phir scale karne se pehle margin check karo.",
+      "formula": "ROAS = Revenue from Ads ÷ Ad Spend. ₹1,00,000 ÷ ₹20,000 = 5x. Isko break-even test banane ke liye 1 ko gross margin se divide karo: 25% margin pe product ki cost cover karne ke liye hi ROAS 4x se upar chahiye, profit se pehle. Low-margin product pe high ROAS bhi loss ho sakta hai.",
+      "when": [
+        "Campaign scale karne layak hai ya nahi, ye check kar rahe ho.",
+        "Alag cost aur return wale channels compare kar rahe ho.",
+        "Agency ya media buyer ke liye target ROAS set kar rahe ho."
+      ],
+      "mistakes": [
+        "Revenue-based ROAS ko profit maan lena - ye cost of goods, shipping aur returns ignore karta hai.",
+        "Alag margin wale products ka ROAS aapas me compare karna jaise number ek jaisa ho.",
+        "Achhe ROAS pe scale kar dena, ye check kiye bina ki extra orders fulfil ho sakte hain."
+      ]
     }
   }
 }

@@ -535,6 +535,118 @@
         "Forgetting one-off costs - a tax bill, a big renewal - that lands inside the runway window.",
         "Treating runway as fixed; it changes the moment revenue or spend changes, so it must be recalculated monthly."
       ]
+    },
+    "ask": {
+      "what": "The Ask Calculator answers the question every founder has before a pitch: I need this much money, so how much equity will it cost me? Enter the amount you need and the valuation you believe the business is worth, and it shows the stake you would have to hand over. Ask for ₹45 lakh against a ₹1.8 crore valuation and you are offering a quarter of the company. The number is blunt, and that is the point - it forces a founder to ask whether the money is worth the slice before standing in front of an investor.",
+      "formula": "Equity to Offer = Amount Needed ÷ Valuation × 100. If you need ₹45 lakh and your valuation is ₹1.8 crore, that is ₹45,00,000 ÷ ₹1,80,00,000 × 100 = 25%. Raise the valuation and the same money costs less equity; lower it and you give away more. The formula makes the trade-off explicit, so the ask becomes a decision rather than a guess.",
+      "when": [
+        "You are fixing how much to raise before a pitch.",
+        "You want to see what a bigger cheque really costs in equity.",
+        "You are comparing a small round at a high price against a large round at a low one."
+      ],
+      "mistakes": [
+        "Choosing the amount you want first and the valuation second, which usually means giving away more than planned.",
+        "Comparing equity offered across deals without comparing the valuations behind them.",
+        "Forgetting that this equity is only the first round; every later round dilutes it further."
+      ]
+    },
+    "debteq": {
+      "what": "A debt-plus-equity deal splits the money an investor puts in into two parts: a loan the business must repay, and equity that buys a permanent stake. It is common on Shark Tank India because it lets a shark take less ownership while still getting the cash back. Enter the total deal, the debt portion and the valuation for the equity part, and you see the loan amount, the equity amount and the stake it buys. The debt is repaid from cash flow whether or not the business grows; the equity is never repaid at all.",
+      "formula": "Debt Amount = Total Deal × Debt Portion %; Equity Amount = Total Deal − Debt Amount; Equity % = Equity Amount ÷ Valuation × 100. On a ₹4.5 crore deal with 18% as debt, ₹81 lakh is a loan and the rest buys equity at the agreed valuation. The debt is a fixed obligation, the equity a permanent claim - mixing them hides which one is actually expensive.",
+      "when": [
+        "A term sheet mixes a loan with equity and you want each part separated.",
+        "You are deciding how much of a deal to take as repayable debt rather than permanent equity.",
+        "You are comparing a pure-equity offer against one with a debt component."
+      ],
+      "mistakes": [
+        "Treating the whole deal as equity and undercounting the dilution.",
+        "Forgetting the debt portion must be repaid from cash flow, which squeezes working capital.",
+        "Judging the deal on the stake alone when the debt is what decides whether the business can breathe."
+      ]
+    },
+    "royalty": {
+      "what": "In a royalty deal an investor takes a fixed percentage of your revenue every month instead of, or in addition to, equity, until a set amount is repaid. It is popular with sharks because it returns cash quickly, and with founders because it costs far less ownership. Enter the investment, the royalty rate and expected annual revenue, and the calculator shows the yearly royalty and how many years it takes to repay. A royalty is cheap in equity but expensive in cash flow - it is charged on sales, whether or not you made a profit.",
+      "formula": "Annual Royalty = Expected Annual Revenue × Royalty Rate %; Payback Period (years) = Investment ÷ Annual Royalty. On ₹1.8 crore of revenue at an 18% royalty the investor takes ₹32.4 lakh a year, repaying a ₹4.5 crore investment in about 14 years. Higher sales repay faster; a slow year stretches the payback while the royalty still has to be paid.",
+      "when": [
+        "A shark offers royalty instead of a large equity stake.",
+        "You want to keep ownership and are willing to pay from monthly revenue.",
+        "You are comparing royalty-heavy against equity-heavy offers."
+      ],
+      "mistakes": [
+        "Judging the deal on ownership alone and ignoring the monthly cash it takes out.",
+        "Assuming revenue will always grow, which shortens the payback on paper only.",
+        "Forgetting that royalty is paid on sales even in a loss-making month."
+      ]
+    },
+    "cofounder": {
+      "what": "Co-founder equity split answers the hardest conversation in an early startup: who gets how much. The fairest approach scores each founder on what they actually bring - the idea, capital, time, skills, network and risk taken - and divides the equity in proportion to those scores. Enter each founder's score and the calculator gives the percentage. An equal 12-12-12 gives a clean three-way split, but most real splits are not equal, and putting the reasons into numbers now prevents a fight later when the company is worth something.",
+      "formula": "Founder Share % = Founder Score ÷ Total of All Scores × 100. Three founders scoring 12, 12 and 12 hold 33.3% each; scores of 20, 15 and 10 give 44.4%, 33.3% and 22.2%. Score what each person is contributing - money, full-time commitment, the idea, the skills - so the split reflects work rather than who spoke first.",
+      "when": [
+        "You and your co-founders are setting up the cap table for the first time.",
+        "A new co-founder joins and the existing split must be redone.",
+        "An investor asks why the founding equity is divided the way it is."
+      ],
+      "mistakes": [
+        "Splitting equally to avoid an argument, then resenting it when one founder does most of the work.",
+        "Giving the idea the largest share and the person who will actually run the business a smaller one.",
+        "Leaving the split in chat messages instead of a signed agreement with vesting."
+      ]
+    },
+    "payback": {
+      "what": "CAC payback period is how many months of a customer's profit it takes to earn back what you spent winning them. It is the cash-flow version of the LTV:CAC ratio: a healthy ratio can still hide a payback so long that the business runs out of money before it profits. Enter the acquisition cost, the monthly revenue per customer and the gross margin, and you get the number of months. A payback under twelve months lets you reinvest quickly; three years means every new customer is a bet on money you will not see for a long time.",
+      "formula": "Payback Period (months) = CAC ÷ (Monthly Revenue per Customer × Gross Margin %). If a customer costs ₹5,000 to win, pays ₹1,000 a month and you keep 40% as margin, the payback is ₹5,000 ÷ ₹400 = 12.5 months. The margin is what makes the payback real; on revenue alone the same customer looks like a five-month payback that never arrives.",
+      "when": [
+        "You are deciding how aggressively to spend on acquisition.",
+        "You have raised money and want to know how fast it recycles into new customers.",
+        "You are comparing two customer segments with very different payback speeds."
+      ],
+      "mistakes": [
+        "Using revenue instead of gross-margin profit in the denominator, which halves the apparent payback.",
+        "Forgetting that a long payback is only survivable if the cash to fund it is already in the bank.",
+        "Ignoring churn - customers who leave before the payback month never repay the cost."
+      ]
+    },
+    "aov": {
+      "what": "Average Order Value is the typical amount a customer spends in one order. Divide total revenue by the number of orders in the same period and you have it. ₹1,00,000 across 200 orders is an AOV of ₹500. It looks like a simple average, but it drives two things: how much you can spend to acquire a customer, and how much a small nudge - a bundle, a free-shipping threshold, an upsell - is worth. Raising AOV lifts profit without spending a rupee more on ads, which makes it one of the cheapest levers a D2C brand has.",
+      "formula": "AOV = Total Revenue ÷ Total Orders. Use the same period for both numbers: ₹1,00,000 of revenue from 200 orders is ₹500 per order. Compare it month to month, because a rising AOV means bundles and upsells are working, while a falling one usually means discounts are eating the basket.",
+      "when": [
+        "You are setting a free-shipping or bundle threshold and want a baseline.",
+        "You are measuring whether an upsell or cross-sell actually moved the basket.",
+        "You are comparing AOV across channels before deciding where to spend."
+      ],
+      "mistakes": [
+        "Mixing periods - last month's revenue over this month's orders.",
+        "Letting a few very large orders skew the average without checking the median.",
+        "Confusing AOV with LTV; one order is not a customer's whole relationship."
+      ]
+    },
+    "retention": {
+      "what": "Retention is the share of customers who come back; churn is the share who leave. Together they decide whether growth compounds or leaks. If you start a month with 1,000 customers, end with 1,000 and added 100 new ones along the way, then 100 old customers left - retention is 90% and churn is 10%. A business can add customers every month and still shrink if churn is higher than acquisition. This calculator shows both, so the leak is visible before it empties the bucket.",
+      "formula": "Retention % = (Customers at End − New Customers) ÷ Customers at Start × 100; Churn % = 100 − Retention %. Start with 1,000, end with 1,000, add 100 new: retained = 1,000 − 100 = 900, so retention is 90% and churn 10%. The subtraction is what most founders miss - new customers mask old ones leaving, and only the calculation shows the truth.",
+      "when": [
+        "You are measuring whether a subscription or repeat-purchase business is healthy.",
+        "You are deciding how much to invest in retention versus acquisition.",
+        "You want to see how a churn change affects growth over a year."
+      ],
+      "mistakes": [
+        "Counting new customers as retention, which hides the ones who left.",
+        "Measuring churn monthly but judging the business on annual numbers, or the reverse.",
+        "Assuming a small churn is harmless - 5% a month is more than half the base gone in a year."
+      ]
+    },
+    "roas": {
+      "what": "Return on Ad Spend tells you how many rupees of revenue came back for every rupee spent on ads. Divide revenue from ads by the ad spend: ₹1,00,000 of revenue from ₹20,000 of ads is a ROAS of 5x. It is the fastest read on whether a campaign is working, but revenue is not profit. A 5x ROAS on a product with a thin margin can still lose money once cost of goods, shipping and returns are paid. Use ROAS to screen campaigns, then check the margin before scaling.",
+      "formula": "ROAS = Revenue from Ads ÷ Ad Spend. ₹1,00,000 ÷ ₹20,000 = 5x. To turn it into a break-even test, divide 1 by your gross margin: at a 25% margin you need a ROAS above 4x just to cover the cost of the product, before any profit. A high ROAS on a low-margin product can still be a loss.",
+      "when": [
+        "You are checking whether a campaign is worth scaling.",
+        "You are comparing channels with different costs and returns.",
+        "You are setting a target ROAS for an agency or a media buyer."
+      ],
+      "mistakes": [
+        "Treating revenue-based ROAS as profit - it ignores cost of goods, shipping and returns.",
+        "Comparing ROAS across products with different margins as if the number were comparable.",
+        "Scaling on a good ROAS without checking that the extra orders can actually be fulfilled."
+      ]
     }
   }
 }

@@ -880,6 +880,839 @@
      ]
     ]
    }
+  },
+  {
+   "num": 6,
+   "slug": "profit-margin-calculator-rupees",
+   "cat": "profit",
+   "color": "green",
+   "keyword": "profit margin calculator in rupees",
+   "title": "Profit Margin Calculator in Rupees (₹)",
+   "description": "Free profit margin calculator in rupees. Enter revenue and net profit to see your margin %, markup and profit per ₹100 of sales, instantly.",
+   "h1": "Profit Margin Calculator in Rupees - Free Calculator in ₹",
+   "calculator": {
+    "name": "Profit Margin in Rupees",
+    "inputs": [
+     {
+      "k": "rev",
+      "l": "Revenue",
+      "u": "₹"
+     },
+     {
+      "k": "prof",
+      "l": "Net Profit",
+      "u": "₹"
+     }
+    ],
+    "compute": "function(e){var r=val(e,\"rev\"),p=val(e,\"prof\");var m=r?p/r*100:0;return{rows:[{l:\"Net Profit Margin\",v:pct(m)},{l:\"Profit per ₹100 of sales\",v:inr2(m)},{l:\"Markup on Cost\",v:pct(r-p?p/(r-p)*100:0)},{l:\"Net Profit\",v:inr(p)}]}}"
+   },
+   "hook": "In Shark Tank India Season 2, a D2C brand walked in with ₹12 crore of revenue and walked out without a deal - because its margin was barely 4%. The sharks said the same thing every time: revenue is vanity, margin is sanity. A business that sells ₹1 crore and keeps ₹10 lakh is a very different animal from one that keeps ₹25 lakh on the same sales. This calculator turns your revenue and profit into the margin in rupees, so you know which animal you are.",
+   "what": [
+    "A profit margin calculator in rupees takes two numbers every founder already has - what you sold, and what you kept - and tells you the margin in a way that makes sense in India: a percentage, plus the rupees of profit on every ₹100 of sales.",
+    "Margin is profit divided by revenue. ₹1 crore of sales with ₹10 lakh of profit is a 10% margin. The same ₹1 crore with ₹25 lakh of profit is 25%. Revenue alone hides the difference; the margin exposes it.",
+    "Founders mix up margin and markup constantly. A 25% margin is a 33% markup on cost, and quoting the wrong one in a pitch is how a good business looks dishonest. This calculator shows both, so you never mix them again."
+   ],
+   "formula": {
+    "expr": "Net Profit Margin = (Net Profit ÷ Revenue) × 100",
+    "note": "Net profit is what is left after every cost - goods, salaries, rent, ads, tax. ₹10 lakh of profit on ₹1 crore of revenue is a 10% margin. Markup is a different number: profit divided by cost, not by revenue."
+   },
+   "example": {
+    "intro": "Here is the same business at different margins, all in ₹ Lakhs and Crores. Watch how the profit per ₹100 of sales changes while the revenue does not.",
+    "table": {
+     "headers": [
+      "Revenue",
+      "Net Profit",
+      "Margin",
+      "Profit per ₹100"
+     ],
+     "rows": [
+      [
+       "₹10 lakh",
+       "₹2 lakh",
+       "20%",
+       "₹20"
+      ],
+      [
+       "₹1 crore",
+       "₹10 lakh",
+       "10%",
+       "₹10"
+      ],
+      [
+       "₹1 crore",
+       "₹25 lakh",
+       "25%",
+       "₹25"
+      ],
+      [
+       "₹50 lakh",
+       "−₹5 lakh",
+       "−10%",
+       "Loss ₹10"
+      ]
+     ]
+    },
+    "outro": "The third row is the goal every founder should chase: the same ₹1 crore of sales, but 2.5 times the profit of the second row. Nothing about the revenue changed - only the margin. That is why investors ask for margin first and turnover second."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter your revenue",
+     "Type the sales for the period, in ₹ lakh or crore. The field reads '1 crore' and '50 lakh' as well as plain numbers."
+    ],
+    [
+     "Step 2 - Enter your net profit",
+     "Type what is left after all costs. A loss is fine - enter it as a negative number and the margin turns negative."
+    ],
+    [
+     "Step 3 - Read the margin",
+     "You get the margin %, the profit per ₹100 of sales, the markup on cost and the profit itself, all in ₹."
+    ]
+   ],
+   "why_india": [
+    "American margin tools report in dollars and talk about 'gross margin' in a US accounting sense that does not match how an Indian small business keeps its books. An Indian founder thinks in ₹ Lakhs, adds GST separately, and wants the margin on the number they actually bill.",
+    "In India a trader, a D2C brand and a services firm all measure margin differently - the trader on landed cost, the brand on cost of goods plus marketplace fees, the agency on billable hours. The one thing they share is that the answer has to be in rupees, not in a spreadsheet column labelled in dollars.",
+    "Indian lenders and investors ask for the margin on the last twelve months, not a single month. Keep feeding this calculator each month's revenue and profit, and you will have the number ready before anyone asks for it."
+   ],
+   "mistakes": [
+    "Confusing margin with markup. A 25% margin is a 33% markup on cost; quoting the wrong one in a pitch makes a good business look dishonest.",
+    "Calculating margin on revenue that still includes GST. Strip the tax out first or the margin is understated.",
+    "Looking at one good month. Margin swings with season, discounts and one-off costs, so judge it on a rolling twelve months."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Margin on your sales",
+      "A rough guess",
+      "Exact %, in ₹"
+     ],
+     [
+      "Margin vs markup",
+      "Mixed up",
+      "Both shown, clearly"
+     ],
+     [
+      "Profit per ₹100",
+      "Never calculated",
+      "₹ figure, instantly"
+     ]
+    ]
+   },
+   "faqs": [
+    [
+     "How do I calculate profit margin in rupees?",
+     "Divide net profit by revenue and multiply by 100. ₹10 lakh of profit on ₹1 crore of revenue is (10,00,000 ÷ 1,00,00,000) × 100 = a 10% margin."
+    ],
+    [
+     "What is the difference between margin and markup?",
+     "Margin is profit divided by revenue; markup is profit divided by cost. A 25% margin is a 33% markup. Confusing the two is the most common mistake Indian founders make in a pitch."
+    ],
+    [
+     "Is a 10% profit margin good in India?",
+     "It depends on the business. A trading firm can survive on 5-10%; a D2C brand usually needs 20%+ to fund ads and returns. Compare against your own industry, not a generic number."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>Profit margin calculator kya karta hai</h2>",
+    "<p>Yeh tool aapki revenue aur net profit leta hai aur margin % nikal deta hai - saath me har ₹100 ki sale pe kitna profit aaya, wo bhi. India me margin lakh aur crore me socha jaata hai, isi liye answer bhi ₹ me milta hai.</p>",
+    "<h2>Formula</h2>",
+    "<p>Net Profit Margin = (Net Profit ÷ Revenue) × 100. ₹1 crore ki sale pe ₹10 lakh profit matlab 10% margin. Same sale pe ₹25 lakh profit matlab 25% margin.</p>",
+    "<h2>Ek example</h2>",
+    "<p>Shark Tank India Season 2 me ek D2C brand ₹12 crore revenue ke saath aaya par margin sirf 4% thi - isi liye deal nahi mili. Revenue dikhne me bada lagta hai, margin hi asli business batati hai.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Pehle revenue daalo, phir net profit, aur turant margin %, markup aur profit per ₹100 dekh lo. Kuch bhi kahin nahi bheja jaata - ganit aapke browser me hi hota hai.</p>",
+    "<h2>India me kya alag hai</h2>",
+    "<p>India me margin GST hataakar nikalti hai, aur trader, D2C brand aur agency - sab ka tareeka alag hai. Isi liye ek ₹-wala calculator chahiye, dollar-wala nahi.</p>"
+   ],
+   "related": [
+    [
+     "/net-profit-margin",
+     "Net Profit Margin"
+    ],
+    [
+     "/gross-profit-and-margin",
+     "Gross Profit & Margin"
+    ],
+    [
+     "/markup-vs-margin",
+     "Markup vs Margin"
+    ]
+   ],
+   "cta": "Calculate your profit margin now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "date_display": "October 30, 2026"
+  },
+  {
+   "num": 7,
+   "slug": "pre-money-post-money-valuation-india",
+   "cat": "val",
+   "color": "yellow",
+   "keyword": "pre money vs post money valuation india",
+   "title": "Pre Money vs Post Money Valuation India Explained",
+   "description": "Pre money vs post money valuation explained for Indian founders. Enter the cheque and equity to see both numbers, in ₹ Crores, instantly and free.",
+   "h1": "Pre Money vs Post Money Valuation India - Free Calculator in ₹",
+   "calculator": {
+    "name": "Pre-Money vs Post-Money",
+    "inputs": [
+     {
+      "k": "amt",
+      "l": "Investment Amount",
+      "u": "₹"
+     },
+     {
+      "k": "eq",
+      "l": "Equity Offered",
+      "u": "%"
+     }
+    ],
+    "compute": "function(e){var a=val(e,\"amt\"),q=val(e,\"eq\");var post=q?a/(q/100):0;return{rows:[{l:\"Post-Money Valuation\",v:inr(post)},{l:\"Pre-Money Valuation\",v:inr(post-a)},{l:\"Founder Stake Left\",v:pct(100-q)},{l:\"Investment\",v:inr(a)}]}}"
+   },
+   "hook": "In Shark Tank India Season 3, a founder said he was valued at ₹4 crore. A shark offered ₹1 crore for 20% and corrected him on camera: the post-money valuation is ₹5 crore, not ₹4 crore. The founder had quoted the pre-money number and forgotten that the cheque gets added on top. It is the single most common valuation mistake Indian founders make on TV - and in term sheets. This calculator shows both numbers, so you never confuse them again.",
+   "what": [
+    "Pre-money and post-money are the two valuations of the same deal, separated by the investment. Post-money is what the company is worth after the cheque lands; pre-money is post-money minus the cheque. The investor's equity is always a slice of the post-money number, never the pre-money one.",
+    "Get the order wrong and the deal is mispriced. Offer ₹1 crore for 10% and the post-money is ₹10 crore; the pre-money is ₹9 crore. A founder who quotes ₹9 crore as the valuation has just handed the investor an extra ₹1 crore of value for free.",
+    "Every term sheet in India is written in pre-money, and every shark on TV speaks in post-money, which is exactly why the two get mixed up. This calculator keeps both in front of you at once, in ₹ Crores."
+   ],
+   "formula": {
+    "expr": "Post-Money = (Investment ÷ Equity) × 100;  Pre-Money = Post-Money − Investment",
+    "note": "The equity percentage is always taken on the post-money valuation. ₹1 crore for 10% gives a ₹10 crore post-money and a ₹9 crore pre-money. Quote the pre-money in the term sheet, but do the division on post-money."
+   },
+   "example": {
+    "intro": "Same company, different cheques and stakes. Watch how pre-money and post-money move together, all in ₹ Crores.",
+    "table": {
+     "headers": [
+      "Investment",
+      "Equity",
+      "Post-Money",
+      "Pre-Money"
+     ],
+     "rows": [
+      [
+       "₹1 crore",
+       "10%",
+       "₹10 crore",
+       "₹9 crore"
+      ],
+      [
+       "₹2 crore",
+       "20%",
+       "₹10 crore",
+       "₹8 crore"
+      ],
+      [
+       "₹50 lakh",
+       "5%",
+       "₹10 crore",
+       "₹9.5 crore"
+      ],
+      [
+       "₹1 crore",
+       "20%",
+       "₹5 crore",
+       "₹4 crore"
+      ]
+     ]
+    },
+    "outro": "The first three rows are all the same ₹10 crore post-money - only the cheque and the stake change. The fourth row is a different, smaller company: a ₹5 crore post-money and a ₹4 crore pre-money, which is exactly the ₹4 crore the founder in the hook quoted."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter the investment",
+     "Type the cheque in ₹ crore or lakh. Both '1 crore' and '50 lakh' work."
+    ],
+    [
+     "Step 2 - Enter the equity offered",
+     "Type the stake the investor is asking for, as a percentage."
+    ],
+    [
+     "Step 3 - Read both valuations",
+     "The calculator shows post-money, pre-money and the founder's remaining stake, all in ₹."
+    ]
+   ],
+   "why_india": [
+    "Indian term sheets are written in pre-money valuation, but Indian TV and most founders speak in post-money. The gap between the two is the cheque itself, and quoting the wrong one can cost a founder crores in a single conversation.",
+    "In India the equity is usually issued as CCPS (Compulsorily Convertible Preference Shares), and the valuation often needs a chartered accountant or a SEBI-registered merchant banker to certify it. That is a different system from the US 409A valuation, and it makes the pre-money / post-money distinction a legal one, not just a maths one.",
+    "Indian early rounds are frequently raised from family and friends without a written valuation. When a later angel asks for equity, this calculator is how you turn that informal history into a pre-money and post-money number you can defend in front of your CA."
+   ],
+   "mistakes": [
+    "Quoting the pre-money valuation as if it were the post-money, which gives the investor more equity than the deal intended.",
+    "Applying the equity percentage to the pre-money number. It is always applied to post-money.",
+    "Forgetting the ESOP pool, which is usually created before the round and sits inside the pre-money, quietly diluting founders."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Which valuation to quote",
+      "Guesswork on TV",
+      "Both shown, labelled"
+     ],
+     [
+      "Investor's real stake",
+      "Applied to the wrong base",
+      "Correctly on post-money"
+     ],
+     [
+      "Founder's stake after",
+      "Unknown",
+      "₹ and % at once"
+     ]
+    ]
+   },
+   "faqs": [
+    [
+     "What is the difference between pre-money and post-money valuation?",
+     "Post-money is the company's value after the investment; pre-money is post-money minus the investment. For ₹1 crore at 10%, post-money is ₹10 crore and pre-money is ₹9 crore."
+    ],
+    [
+     "Which valuation do Indian term sheets use?",
+     "Indian term sheets are normally written in pre-money valuation, while founders and TV pitches usually quote post-money. Always check which one a number refers to before agreeing."
+    ],
+    [
+     "Is the equity percentage calculated on pre-money or post-money?",
+     "Always on post-money. The investor's ₹1 crore is part of the ₹10 crore post-money company, so 10% is 10% of ₹10 crore, not of ₹9 crore."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>Pre-money aur post-money me farak</h2>",
+    "<p>Post-money matlab investment ke baad company ki value; pre-money matlab post-money se investment ghataakar. Investor ko equity hamesha post-money par milti hai, pre-money par nahi.</p>",
+    "<h2>Formula</h2>",
+    "<p>Post-Money = (Investment ÷ Equity) × 100, aur Pre-Money = Post-Money − Investment. ₹1 crore ke 10% par post-money ₹10 crore, pre-money ₹9 crore.</p>",
+    "<h2>Ek example</h2>",
+    "<p>Shark Tank India Season 3 me founder ne ₹4 crore valuation bola, par ₹1 crore ke 20% par post-money ₹5 crore thi. Yahi galti term sheet me bhi aam hai.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Investment aur equity daalo, dono valuation ek saath ₹ Crores me dekh lo. Kuch bhi kahin nahi bheja jaata.</p>",
+    "<h2>India me kya alag hai</h2>",
+    "<p>Indian term sheet pre-money me likha jaata hai par pitch post-money me hoti hai. Equity CCPS par issue hoti hai aur valuation CA ya merchant banker certify karta hai.</p>"
+   ],
+   "related": [
+    [
+     "/implied-valuation",
+     "Implied Valuation"
+    ],
+    [
+     "/dilution-calculator",
+     "Dilution Calculator"
+    ],
+    [
+     "/cap-table-and-esop-pool",
+     "Cap Table & ESOP"
+    ]
+   ],
+   "cta": "Calculate your pre-money and post-money valuation now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "date_display": "October 30, 2026"
+  },
+  {
+   "num": 8,
+   "slug": "ltv-cac-calculator-india",
+   "cat": "cust",
+   "color": "blue",
+   "keyword": "ltv cac calculator india",
+   "title": "LTV CAC Calculator India - For D2C & SaaS",
+   "description": "Free LTV CAC calculator for Indian D2C and SaaS founders. Enter lifetime value and acquisition cost to see your ratio and whether growth is profitable.",
+   "h1": "LTV CAC Calculator India - Free Calculator in ₹",
+   "calculator": {
+    "name": "LTV : CAC Ratio",
+    "inputs": [
+     {
+      "k": "ltv",
+      "l": "Lifetime Value (LTV)",
+      "u": "₹"
+     },
+     {
+      "k": "cac",
+      "l": "Acquisition Cost (CAC)",
+      "u": "₹"
+     }
+    ],
+    "compute": "function(e){var l=val(e,\"ltv\"),c=val(e,\"cac\");var r=c?l/c:0;var v=r>=3?\"Healthy (3:1 or better)\":r>=1?\"Watch (under 3:1)\":\"Losing money (below 1:1)\";return{rows:[{l:\"LTV : CAC\",v:num(r,2)+\" : 1\"},{l:\"Verdict\",v:v},{l:\"Lifetime Value\",v:inr(l)},{l:\"Acquisition Cost\",v:inr(c)}]}}"
+   },
+   "hook": "In Shark Tank India Season 3, a D2C brand came with a confident pitch about growth and repeat buyers. Then a shark asked the one question that ends most pitches: what is your LTV to CAC? The founder did not have the number. Every rupee spent winning a customer has to come back several times over for growth to build a business instead of burning one. This calculator gives you that number for your D2C or SaaS business in seconds, in ₹.",
+   "what": [
+    "The LTV:CAC ratio puts two numbers side by side: what a customer is worth to you over their whole life (LTV), and what it cost to win them (CAC). Divide one by the other and you get the single figure investors in Indian D2C and SaaS ask for first.",
+    "A ratio of 3:1 or better is the common rule of thumb. Below 1:1 you lose money on every customer you win; between 1 and 3 you are spending too much to grow. A D2C brand with an LTV of ₹4,500 and a CAC of ₹1,500 is at 3:1 - healthy. A quick-commerce brand with ₹800 of LTV and ₹1,200 of CAC is at 0.67:1 - it loses money on every order.",
+    "The ratio only means something when both sides are measured the same way. LTV should be built on gross-margin profit, not revenue, and CAC should include ads, salaries and agency fees - not just the ad bill. Measure one side generously and the other tightly and the ratio lies."
+   ],
+   "formula": {
+    "expr": "LTV : CAC = Lifetime Value ÷ Customer Acquisition Cost",
+    "note": "Use profit-based LTV and fully-loaded CAC. An LTV of ₹4,500 over a ₹1,500 CAC gives 3 : 1. Below 1:1 the business loses money on every customer; 3:1 and above is the range investors look for."
+   },
+   "example": {
+    "intro": "Three Indian businesses, three very different ratios, all in ₹. Watch how the verdict changes even when the LTV looks large.",
+    "table": {
+     "headers": [
+      "Business",
+      "LTV",
+      "CAC",
+      "Ratio",
+      "Verdict"
+     ],
+     "rows": [
+      [
+       "D2C brand",
+       "₹4,500",
+       "₹1,500",
+       "3.0 : 1",
+       "Healthy"
+      ],
+      [
+       "SaaS startup",
+       "₹45,000",
+       "₹18,000",
+       "2.5 : 1",
+       "Watch"
+      ],
+      [
+       "Quick-commerce",
+       "₹800",
+       "₹1,200",
+       "0.67 : 1",
+       "Losing money"
+      ]
+     ]
+    },
+    "outro": "The quick-commerce row is the trap: a real customer, real revenue, and still a loss on every single one. That is why a large LTV is not enough on its own - the ratio is what tells you whether growth is building the business or eating it."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter lifetime value",
+     "Type what one customer is worth over their whole relationship, in ₹ - use profit, not revenue."
+    ],
+    [
+     "Step 2 - Enter acquisition cost",
+     "Type the fully-loaded cost of winning one customer: ads, sales salaries, agency fees."
+    ],
+    [
+     "Step 3 - Read the ratio and verdict",
+     "The calculator shows the LTV:CAC ratio and labels it healthy, watch or losing money."
+    ]
+   ],
+   "why_india": [
+    "Indian D2C founders usually track revenue and order counts, not unit economics, because that is what the marketplace dashboard shows. The LTV:CAC ratio forces the two numbers that decide survival onto one screen.",
+    "Indian SaaS companies often bill in dollars but pay for talent and ads in rupees, so the ratio gets distorted if the two sides are converted carelessly. Keep both sides in ₹ over the same period and the number is honest.",
+    "Indian investors have become far stricter about this ratio since the funding winter - a 1.2:1 pitch that raised money in 2021 does not raise it now. Having the number ready, and honest, is the difference between a second meeting and a polite no."
+   ],
+   "mistakes": [
+    "Using revenue-based LTV against a fully-loaded CAC, which makes a loss-making business look healthy.",
+    "Leaving sales salaries and agency fees out of CAC, so the cost of winning a customer looks far lower than it is.",
+    "Using a blended CAC that hides a channel where you lose money on every single customer."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Your LTV:CAC ratio",
+      "Not calculated",
+      "One ₹ number"
+     ],
+     [
+      "Is growth profitable?",
+      "A feeling",
+      "A labelled verdict"
+     ],
+     [
+      "Investor's first question",
+      "Caught unprepared",
+      "Answered instantly"
+     ]
+    ]
+   },
+   "faqs": [
+    [
+     "What is a good LTV to CAC ratio in India?",
+     "3:1 or better is the usual rule. Below 1:1 you lose money on every customer; between 1 and 3 you are spending too much to grow. Low-margin businesses need a higher ratio than sticky ones."
+    ],
+    [
+     "How do I calculate LTV for an Indian D2C brand?",
+     "Average order value × purchases per year × customer lifespan in years × gross margin %. Use profit, not revenue, or the ratio overstates what a customer is worth."
+    ],
+    [
+     "What should CAC include?",
+     "Every cost of winning a customer: ad spend, the sales team's salaries, agency fees and introductory discounts - divided by the new customers won in the same period."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>LTV:CAC ratio kya batata hai</h2>",
+    "<p>LTV matlab ek customer poori rishtedaari me kitne ka hai; CAC matlab usko jeetne me kitna kharch hua. Ratio batata hai ki har rupee pe kitne rupee wapas aate hain.</p>",
+    "<h2>Formula</h2>",
+    "<p>LTV : CAC = Lifetime Value ÷ Acquisition Cost. ₹4,500 LTV pe ₹1,500 CAC matlab 3:1 - healthy. 1:1 se neeche har customer pe nuksaan.</p>",
+    "<h2>Ek example</h2>",
+    "<p>Shark Tank India Season 3 me ek D2C brand ke paas yeh number nahi tha, aur pitch wahin ruk gayi. Quick-commerce me ₹800 LTV aur ₹1,200 CAC matlab har order pe loss.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>LTV aur CAC daalo, ratio aur verdict turant mil jaata hai. Kuch bhi kahin nahi bheja jaata.</p>",
+    "<h2>India me kya alag hai</h2>",
+    "<p>Indian D2C founders marketplace dashboard me revenue dekhte hain, unit economics nahi. Investor ab 1.2:1 pe paisa nahi dete - ratio ready rakho.</p>"
+   ],
+   "related": [
+    [
+     "/customer-lifetime-value-ltv",
+     "Customer LTV"
+    ],
+    [
+     "/customer-acquisition-cost-cac",
+     "Customer CAC"
+    ],
+    [
+     "/ltv-cac-ratio",
+     "LTV : CAC Ratio"
+    ]
+   ],
+   "cta": "Calculate your LTV and CAC now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "date_display": "October 30, 2026"
+  },
+  {
+   "num": 9,
+   "slug": "dilution-calculator-founders",
+   "cat": "val",
+   "color": "red",
+   "keyword": "dilution calculator for founders",
+   "title": "Dilution Calculator for Founders - How Much You Lose?",
+   "description": "Free dilution calculator for founders. Enter your equity, each round and the ESOP pool to see exactly how much of your company you keep.",
+   "h1": "Dilution Calculator for Founders - Free Calculator in ₹",
+   "calculator": {
+    "name": "Founder Dilution",
+    "inputs": [
+     {
+      "k": "before",
+      "l": "Founder Equity Before",
+      "u": "%"
+     },
+     {
+      "k": "give",
+      "l": "Equity Given This Round",
+      "u": "%"
+     },
+     {
+      "k": "esop",
+      "l": "ESOP Pool",
+      "u": "%"
+     }
+    ],
+    "compute": "function(e){var b=val(e,\"before\"),g=val(e,\"give\"),s=val(e,\"esop\");var after=b*(1-g/100)*(1-s/100);return{rows:[{l:\"Founder Equity After\",v:pct(after)},{l:\"Investor Stake\",v:pct(b)},{l:\"ESOP Pool\",v:pct(s)},{l:\"Equity You Gave Up\",v:pct(b-after)}]}}"
+   },
+   "hook": "In Shark Tank India Season 1, a founder gave away 20% for ₹1 crore and felt lucky. Two years later a second round took another 20%, and an ESOP pool for senior hires took 10% more. The founder who once owned the whole company was now under 60% - and had never once sat down and multiplied it out. Dilution compounds, and each round is charged against a smaller and smaller base. This calculator shows what you keep after the round, the ESOP pool, and the rupees of company you actually gave up.",
+   "what": [
+    "Dilution is the slice of the company a founder gives away, and the slice that is left. If you own 100% today and hand an investor 10%, you keep 90%. That part is simple - the part that catches founders out is what happens across several rounds and an ESOP pool.",
+    "Dilution compounds because each round is charged against a smaller base. Lose 10% in round one and you are at 90%. Lose 20% in round two and you are at 72%, not 70%. Add a 10% ESOP pool and you are at 64.8%. A founder who started with everything can end up below two-thirds without a single round looking large.",
+    "The number that matters is not the stake alone but the stake next to the valuation. Giving 20% at a high price can cost less of the company's value than giving 5% at a low one. This calculator shows the stake after the round, the ESOP pool, and the total equity given up, so the trade-off is visible before the term sheet is signed."
+   ],
+   "formula": {
+    "expr": "Founder Equity After = Equity Before × (1 − Equity Given ÷ 100) × (1 − ESOP Pool ÷ 100)",
+    "note": "Multiply, do not subtract, across rounds. 100% after a 10% round is 90%; a further 20% round leaves 72%, not 70%. The ESOP pool dilutes founders exactly like an investor does."
+   },
+   "example": {
+    "intro": "One founder, three dilutive events, all in percentages. Watch how the multiplication - not subtraction - decides what is left.",
+    "table": {
+     "headers": [
+      "Event",
+      "Equity Given",
+      "Founder Before",
+      "Founder After"
+     ],
+     "rows": [
+      [
+       "Round 1",
+       "10%",
+       "100%",
+       "90%"
+      ],
+      [
+       "Round 2",
+       "20%",
+       "90%",
+       "72%"
+      ],
+      [
+       "ESOP pool",
+       "10%",
+       "72%",
+       "64.8%"
+      ],
+      [
+       "Founder keeps",
+       "—",
+       "—",
+       "64.8%"
+      ]
+     ]
+    },
+    "outro": "Notice the second row: a 20% round off 90% leaves 72%, not the 70% most founders calculate in their head. That 2% is a real slice of a real company. By the last row, three rounds that each looked modest have taken more than a third of the business."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter your current equity",
+     "Type the stake you hold today as a percentage - 100% if this is the first round."
+    ],
+    [
+     "Step 2 - Enter the equity given and the ESOP pool",
+     "Type the stake this round takes and any option pool created alongside it."
+    ],
+    [
+     "Step 3 - Read what you keep",
+     "The calculator shows your equity after the round, the investor stake, the ESOP pool and the total you gave up."
+    ]
+   ],
+   "why_india": [
+    "Indian founder agreements often create the ESOP pool before the round rather than after, which means the pool dilutes the founders and not the incoming investor. That ordering is a real difference from many US deals and it changes the final number.",
+    "Indian rounds frequently use CCPS (Compulsorily Convertible Preference Shares) with anti-dilution clauses, and a down round can trigger them - meaning the founder's dilution is larger than the headline percentage suggests.",
+    "Indian family businesses that bring in an outside investor rarely write down how the founding family's stake will move across future rounds. This calculator is how you show your CA and your family exactly where the stake lands."
+   ],
+   "mistakes": [
+    "Subtracting percentages across rounds instead of multiplying fractions, which understates the total dilution.",
+    "Forgetting the ESOP pool, which dilutes founders exactly like an investor does and is often created before the round.",
+    "Watching the stake and ignoring the valuation - giving 20% at a high price can cost less than 5% at a low one."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Stake after one round",
+      "Head maths",
+      "Exact %, instantly"
+     ],
+     [
+      "Stake across rounds",
+      "Rarely worked out",
+      "Multiplied correctly"
+     ],
+     [
+      "ESOP effect on founders",
+      "Overlooked",
+      "Shown separately"
+     ]
+    ]
+   },
+   "faqs": [
+    [
+     "How do I calculate founder dilution?",
+     "Multiply, do not subtract. Equity after a round = equity before × (1 − equity given). 100% after a 10% round is 90%; a further 20% round leaves 72%."
+    ],
+    [
+     "Does the ESOP pool dilute founders?",
+     "Yes. The employee option pool is carved out of the cap table and dilutes founders exactly like an investor's stake does, unless the deal says otherwise."
+    ],
+    [
+     "How much dilution is normal per round in India?",
+     "Seed rounds typically take 10-20%, Series A another 15-25%. Across three rounds a founder can end up holding 50-65% of the company, which is normal and not a failure."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>Dilution calculator kya karta hai</h2>",
+    "<p>Yeh tool batata hai ki ek round ke baad, aur ESOP pool ke baad, founder ke paas kitna hissa bachta hai - aur kitna company chala gaya.</p>",
+    "<h2>Formula</h2>",
+    "<p>Founder Equity After = Equity Before × (1 − Equity Given) × (1 − ESOP). Rounds me ghatana nahi, multiply karna hai - 90% pe 20% round se 72% bachta hai, 70% nahi.</p>",
+    "<h2>Ek example</h2>",
+    "<p>Shark Tank India Season 1 me ek founder ne 20% diya, phir dusre round me 20%, phir 10% ESOP - aur uske paas 60% se kam bach gaya. Dilution compound karti hai.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Apni current equity, is round ki equity aur ESOP pool daalo, turant dekh lo kitna bachta hai. Kuch bhi kahin nahi bheja jaata.</p>",
+    "<h2>India me kya alag hai</h2>",
+    "<p>India me ESOP pool aksar round se pehle banta hai, isi liye wo founders ko dilute karta hai. CCPS aur anti-dilution clause down round me dilution badha dete hain.</p>"
+   ],
+   "related": [
+    [
+     "/dilution-calculator",
+     "Dilution Calculator"
+    ],
+    [
+     "/cap-table-and-esop-pool",
+     "Cap Table & ESOP"
+    ],
+    [
+     "/implied-valuation",
+     "Implied Valuation"
+    ]
+   ],
+   "cta": "Calculate your founder dilution now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "date_display": "October 30, 2026"
+  },
+  {
+   "num": 10,
+   "slug": "emi-calculator-2-lakh-loan",
+   "cat": "everyday",
+   "color": "blue",
+   "keyword": "emi calculator 2 lakh loan",
+   "title": "EMI Calculator for 2 Lakh Loan - Instant",
+   "description": "Free EMI calculator for a 2 lakh loan. See your monthly EMI, total interest and total payment in ₹ for any interest rate and tenure, instantly.",
+   "h1": "EMI Calculator for 2 Lakh Loan - Free Calculator in ₹",
+   "calculator": {
+    "name": "2 Lakh Loan EMI",
+    "inputs": [
+     {
+      "k": "amt",
+      "l": "Loan Amount",
+      "u": "₹"
+     },
+     {
+      "k": "rate",
+      "l": "Annual Interest Rate",
+      "u": "%"
+     },
+     {
+      "k": "months",
+      "l": "Tenure",
+      "u": "months"
+     }
+    ],
+    "compute": "function(e){var p=val(e,\"amt\"),R=val(e,\"rate\"),n=val(e,\"months\");var r=R/1200;var emi=r>0?p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):(n?p/n:0);return{rows:[{l:\"Monthly EMI\",v:inr2(emi)},{l:\"Total Interest\",v:inr2(emi*n-p)},{l:\"Total Payment\",v:inr2(emi*n)},{l:\"Principal\",v:inr(p)}]}}"
+   },
+   "hook": "₹2 lakh is the most common loan in India - a bike, a laptop for a new business, a small stock order, a wedding, a medical bill. And the question is always the same: kitni EMI padegi? A ₹2 lakh loan at 10% for two years is about ₹9,229 a month, and you repay roughly ₹221,500 in total - about ₹21,500 of that is pure interest. The rate and the tenure decide the EMI, and one year of extra tenure can quietly add lakhs to what you pay back. This calculator shows all of it in ₹.",
+   "what": [
+    "An EMI - Equated Monthly Instalment - is a fixed amount you pay every month that covers both the interest on a loan and a part of the principal. It stays the same each month even though the split between interest and principal keeps shifting in favour of the principal as the loan runs down.",
+    "For a ₹2 lakh loan the EMI depends on two things: the annual interest rate and the tenure. At 10% over one year the EMI is about ₹17,584; stretch the same loan to two years and the EMI drops to ₹9,229, but the total interest almost doubles to about ₹21,500. A longer tenure means a smaller monthly bite and a bigger total bill.",
+    "This calculator shows the monthly EMI, the total interest, the total payment and the principal, all in ₹. Enter any amount, rate or tenure - the ₹2 lakh default is just the most common starting point - and the numbers update instantly."
+   ],
+   "formula": {
+    "expr": "EMI = P × r × (1 + r)ⁿ ÷ ((1 + r)ⁿ − 1)",
+    "note": "P is the loan amount, r is the monthly interest rate (annual rate ÷ 12 ÷ 100) and n is the tenure in months. A ₹2 lakh loan at 10% for 24 months gives an EMI of about ₹9,229."
+   },
+   "example": {
+    "intro": "The same ₹2 lakh loan at four different rates and tenures, all in ₹. Watch the EMI fall and the total interest rise as the tenure grows.",
+    "table": {
+     "headers": [
+      "Loan",
+      "Rate",
+      "Tenure",
+      "EMI",
+      "Total Interest"
+     ],
+     "rows": [
+      [
+       "₹2 lakh",
+       "10%",
+       "12 months",
+       "₹17,584",
+       "₹11,008"
+      ],
+      [
+       "₹2 lakh",
+       "10%",
+       "24 months",
+       "₹9,229",
+       "₹21,496"
+      ],
+      [
+       "₹2 lakh",
+       "12%",
+       "36 months",
+       "₹6,643",
+       "₹39,148"
+      ],
+      [
+       "₹2 lakh",
+       "14%",
+       "36 months",
+       "₹6,836",
+       "₹46,096"
+      ]
+     ]
+    },
+    "outro": "The last two rows share a tenure and differ only in the rate - and a 2% higher rate adds about ₹7,000 to what you repay on a ₹2 lakh loan. The EMI looks almost the same; the total does not. Always compare loans on the total interest, not just the monthly figure."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter the loan amount",
+     "Type ₹2 lakh, or any amount - the calculator handles any loan size."
+    ],
+    [
+     "Step 2 - Enter the rate and tenure",
+     "Type the annual interest rate and the tenure in months. Both are on your sanction letter."
+    ],
+    [
+     "Step 3 - Read the EMI and total",
+     "You get the monthly EMI, the total interest, the total payment and the principal, all in ₹."
+    ]
+   ],
+   "why_india": [
+    "Indian lenders quote an annual reducing-balance rate, but many borrowers still compare offers on the flat rate, which understates the true cost. The EMI formula here uses the reducing-balance method that banks actually charge, so the total interest is the real one.",
+    "Indian loans often carry processing fees, insurance and GST on the fee, which are not part of the EMI but do raise the effective cost. Add those to the total payment to see what the loan truly costs.",
+    "A 2 lakh loan is small enough that the rate difference between a bank, an NBFC and a fintech app can be several percentage points. On a short tenure that difference is small; on a longer one it is a real amount of money, which is why comparing the total matters."
+   ],
+   "mistakes": [
+    "Comparing loans on the flat rate instead of the reducing-balance rate - the flat rate hides a much higher true cost.",
+    "Choosing the longest tenure just because the EMI is smallest, and paying far more interest in total.",
+    "Forgetting processing fees, insurance and GST, which raise the effective cost above the quoted rate."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Monthly EMI",
+      "Ask the agent",
+      "Calculated instantly"
+     ],
+     [
+      "Total interest",
+      "Rarely worked out",
+      "Shown in ₹"
+     ],
+     [
+      "Rate vs tenure trade-off",
+      "Guesswork",
+      "Compared side by side"
+     ]
+    ]
+   },
+   "faqs": [
+    [
+     "What is the EMI for a 2 lakh loan?",
+     "It depends on the rate and tenure. At 10% for 24 months the EMI is about ₹9,229; at 10% for 12 months it is about ₹17,584. Use the calculator above for your exact rate and tenure."
+    ],
+    [
+     "How is EMI calculated?",
+     "EMI = P × r × (1 + r)ⁿ ÷ ((1 + r)ⁿ − 1), where P is the loan, r the monthly rate and n the number of months. The same formula is used by every Indian bank."
+    ],
+    [
+     "Does a longer tenure reduce the total cost?",
+     "No. A longer tenure lowers the monthly EMI but raises the total interest you pay. On a ₹2 lakh loan at 10%, moving from 12 to 24 months roughly doubles the interest."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>EMI calculator kya karta hai</h2>",
+    "<p>Yeh tool loan amount, interest rate aur tenure leta hai aur monthly EMI, total interest aur total payment ₹ me nikal deta hai - ₹2 lakh ke loan ke liye sabse aam sawaal ka jawab.</p>",
+    "<h2>Formula</h2>",
+    "<p>EMI = P × r × (1+r)ⁿ ÷ ((1+r)ⁿ − 1). ₹2 lakh, 10%, 24 mahine par EMI ₹9,229 aur total interest ₹21,496 ke aas-paas.</p>",
+    "<h2>Ek example</h2>",
+    "<p>₹2 lakh, 12% par 36 mahine ka EMI ₹6,643 hai par total interest ₹39,148 - tenure badhaane se EMI girti hai, total badhta hai.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Loan amount, rate aur months daalo, EMI aur total turant dekh lo. Kuch bhi kahin nahi bheja jaata.</p>",
+    "<h2>India me kya alag hai</h2>",
+    "<p>India me bank reducing-balance rate lagate hain par log flat rate se compare karte hain, jo asli cost chhupa deta hai. Processing fee aur GST alag se judte hain.</p>"
+   ],
+   "related": [
+    [
+     "/loan-emi-calculator",
+     "Loan EMI Calculator"
+    ],
+    [
+     "/home-loan-emi-calculator",
+     "Home Loan EMI"
+    ],
+    [
+     "/down-payment-calculator",
+     "Down Payment Calculator"
+    ]
+   ],
+   "cta": "Calculate your 2 lakh loan EMI now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "date_display": "October 30, 2026"
   }
  ]
 }

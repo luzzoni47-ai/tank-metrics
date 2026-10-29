@@ -1,7 +1,7 @@
 {
  "total": 101,
- "with_both_guides": 22,
- "remaining": 79,
+ "with_both_guides": 30,
+ "remaining": 71,
  "remaining_by_cat": {
   "dailyfun": 10,
   "agency": 10,
@@ -9,11 +9,10 @@
   "taxwealth": 10,
   "growth": 8,
   "pricing": 8,
-  "cust": 6,
   "everyday": 4,
-  "val": 4,
   "profit": 3,
   "ops": 3,
+  "cust": 2,
   "investor": 2,
   "bonus": 1
  },
@@ -67,15 +66,6 @@
    "id": "areabreakdown",
    "name": "Built-up Area vs Carpet Area",
    "cat": "realestate",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "ask",
-   "name": "Ask Calculator",
-   "cat": "val",
    "cat_size": 10,
    "has_en": false,
    "has_hi": false,
@@ -145,15 +135,6 @@
    "overlap": null
   },
   {
-   "id": "cofounder",
-   "name": "Co-founder Equity Split",
-   "cat": "val",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "compatibility",
    "name": "Compatibility Calculator",
    "cat": "dailyfun",
@@ -184,15 +165,6 @@
    "id": "daysbetween",
    "name": "Days Between Two Dates",
    "cat": "dailyfun",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "debteq",
-   "name": "Debt + Equity Deal",
-   "cat": "val",
    "cat_size": 10,
    "has_en": false,
    "has_hi": false,
@@ -388,15 +360,6 @@
    "overlap": null
   },
   {
-   "id": "royalty",
-   "name": "Royalty Deal",
-   "cat": "val",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "simpleint",
    "name": "Simple Interest",
    "cat": "everyday",
@@ -446,15 +409,6 @@
    "name": "Zodiac Sign Calculator",
    "cat": "dailyfun",
    "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "aov",
-   "name": "Average Order Value (AOV)",
-   "cat": "cust",
-   "cat_size": 9,
    "has_en": false,
    "has_hi": false,
    "overlap": null
@@ -517,33 +471,6 @@
    "id": "momyoy",
    "name": "Month-on-Month / Year-on-Year Growth",
    "cat": "growth",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "payback",
-   "name": "CAC Payback Period",
-   "cat": "cust",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "retention",
-   "name": "Repeat Rate, Retention & Churn",
-   "cat": "cust",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "roas",
-   "name": "Return on Ad Spend (ROAS)",
-   "cat": "cust",
    "cat_size": 9,
    "has_en": false,
    "has_hi": false,
