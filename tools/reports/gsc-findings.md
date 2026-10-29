@@ -77,3 +77,28 @@ then scale content.
 The sitemaps API reports `indexed: 0`; Google deprecated that field, so it is not
 a signal. Use `urlInspection` per page (`gsc.py inspect <url>`) for the real
 verdict.
+
+## Full per-page inspection (2026-10-29, all 143 sitemap URLs)
+
+Ran `gsc_triage.py` (which calls the GSC URL Inspection API for every URL). The
+"59 not indexed" is really:
+
+| State | Count | What it means | Fix |
+|---|---|---|---|
+| Submitted and indexed | 105 | fine | none |
+| URL is unknown to Google | 20 | never seen - new or orphaned | internal links + Request Indexing |
+| Discovered - currently not indexed | 17 | known, not crawled - crawl budget spent on the near-duplicate cluster | unique copy + internal links |
+| Crawled - currently not indexed | 1 | crawled and rejected as low value | dedup rewrite |
+
+So **38 pages** are the problem, not 59, and only 1 is the classic "crawled and
+rejected". The bulk (20) are simply **unknown** - Google has not been shown them,
+which is an internal-linking and sitemap-freshness job, not a content job.
+
+The 20 unknown include every page shipped after the sitemap went stale on
+2026-10-21: all four Day-1 keyword pages (`/keyword-boat-valuation-shark-tank`,
+`/keyword-burn-rate-calculator-india`, `/keyword-how-much-equity-to-give-for-1-crore`,
+`/keyword-royalty-deal-calculator-shark-tank`) plus `/about` and several
+calculators with no inbound links. That confirms the sitemap staleness was a real
+cause, now fixed by re-submitting.
+
+`gsc_triage.py` re-runs this in one command and caches the inspection for a week.

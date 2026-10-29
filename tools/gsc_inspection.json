@@ -1,0 +1,1146 @@
+[
+ {
+  "url": "https://tankmetrics.in/",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T09:53:30Z",
+  "gcanon": "https://tankmetrics.in/",
+  "ucanon": "https://tankmetrics.in/"
+ },
+ {
+  "url": "https://tankmetrics.in/blog",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T09:23:05Z",
+  "gcanon": "https://tankmetrics.in/blog",
+  "ucanon": "https://tankmetrics.in/blog"
+ },
+ {
+  "url": "https://tankmetrics.in/news",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/about",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/contact",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T14:20:33Z",
+  "gcanon": "https://tankmetrics.in/contact",
+  "ucanon": "https://tankmetrics.in/contact"
+ },
+ {
+  "url": "https://tankmetrics.in/digital-products/indian-business-financial-model",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T23:58:17Z",
+  "gcanon": "https://tankmetrics.in/digital-products/indian-business-financial-model",
+  "ucanon": "https://tankmetrics.in/digital-products/indian-business-financial-model"
+ },
+ {
+  "url": "https://tankmetrics.in/refund-policy",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-28T23:51:57Z",
+  "gcanon": "https://tankmetrics.in/refund-policy",
+  "ucanon": "https://tankmetrics.in/refund-policy"
+ },
+ {
+  "url": "https://tankmetrics.in/percentage-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T17:31:42Z",
+  "gcanon": "https://tankmetrics.in/percentage-calculator",
+  "ucanon": "https://tankmetrics.in/percentage-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/simple-interest",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T17:19:27Z",
+  "gcanon": "https://tankmetrics.in/simple-interest",
+  "ucanon": "https://tankmetrics.in/simple-interest"
+ },
+ {
+  "url": "https://tankmetrics.in/compound-interest",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-21T11:48:35Z",
+  "gcanon": "https://tankmetrics.in/compound-interest",
+  "ucanon": "https://tankmetrics.in/compound-interest"
+ },
+ {
+  "url": "https://tankmetrics.in/loan-emi-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-21T14:10:53Z",
+  "gcanon": "https://tankmetrics.in/loan-emi-calculator",
+  "ucanon": "https://tankmetrics.in/loan-emi-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/savings-goal-planner",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T15:40:15Z",
+  "gcanon": "https://tankmetrics.in/savings-goal-planner",
+  "ucanon": "https://tankmetrics.in/savings-goal-planner"
+ },
+ {
+  "url": "https://tankmetrics.in/salary-take-home-estimator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T15:35:02Z",
+  "gcanon": "https://tankmetrics.in/salary-take-home-estimator",
+  "ucanon": "https://tankmetrics.in/salary-take-home-estimator"
+ },
+ {
+  "url": "https://tankmetrics.in/bill-splitter",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T21:29:27Z",
+  "gcanon": "https://tankmetrics.in/bill-splitter",
+  "ucanon": "https://tankmetrics.in/bill-splitter"
+ },
+ {
+  "url": "https://tankmetrics.in/tip-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T00:56:27Z",
+  "gcanon": "https://tankmetrics.in/tip-calculator",
+  "ucanon": "https://tankmetrics.in/tip-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/discount-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T17:08:17Z",
+  "gcanon": "https://tankmetrics.in/discount-calculator",
+  "ucanon": "https://tankmetrics.in/discount-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/number-to-words-indian",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T13:37:31Z",
+  "gcanon": "https://tankmetrics.in/number-to-words-indian",
+  "ucanon": "https://tankmetrics.in/number-to-words-indian"
+ },
+ {
+  "url": "https://tankmetrics.in/gross-profit-and-margin",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:40:34Z",
+  "gcanon": "https://tankmetrics.in/gross-profit-and-margin",
+  "ucanon": "https://tankmetrics.in/gross-profit-and-margin"
+ },
+ {
+  "url": "https://tankmetrics.in/ebitda-and-margin",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T16:48:33Z",
+  "gcanon": "https://tankmetrics.in/ebitda-and-margin",
+  "ucanon": "https://tankmetrics.in/ebitda-and-margin"
+ },
+ {
+  "url": "https://tankmetrics.in/operating-margin",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:50:09Z",
+  "gcanon": "https://tankmetrics.in/operating-margin",
+  "ucanon": "https://tankmetrics.in/operating-margin"
+ },
+ {
+  "url": "https://tankmetrics.in/net-profit-margin",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T10:36:29Z",
+  "gcanon": "https://tankmetrics.in/net-profit-margin",
+  "ucanon": "https://tankmetrics.in/net-profit-margin"
+ },
+ {
+  "url": "https://tankmetrics.in/contribution-margin",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T09:14:42Z",
+  "gcanon": "https://tankmetrics.in/contribution-margin",
+  "ucanon": "https://tankmetrics.in/contribution-margin"
+ },
+ {
+  "url": "https://tankmetrics.in/markup-vs-margin",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/return-on-investment-roi",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:16:14Z",
+  "gcanon": "https://tankmetrics.in/return-on-investment-roi",
+  "ucanon": "https://tankmetrics.in/return-on-investment-roi"
+ },
+ {
+  "url": "https://tankmetrics.in/return-on-capital-employed",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:49:19Z",
+  "gcanon": "https://tankmetrics.in/return-on-capital-employed",
+  "ucanon": "https://tankmetrics.in/return-on-capital-employed"
+ },
+ {
+  "url": "https://tankmetrics.in/implied-valuation",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:51:22Z",
+  "gcanon": "https://tankmetrics.in/implied-valuation",
+  "ucanon": "https://tankmetrics.in/implied-valuation"
+ },
+ {
+  "url": "https://tankmetrics.in/pre-money-and-post-money-valuation",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T04:19:09Z",
+  "gcanon": "https://tankmetrics.in/pre-money-and-post-money-valuation",
+  "ucanon": "https://tankmetrics.in/pre-money-and-post-money-valuation"
+ },
+ {
+  "url": "https://tankmetrics.in/revenue-multiple",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-29T10:00:13Z",
+  "gcanon": "https://tankmetrics.in/revenue-multiple",
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/ebitda-multiple",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T04:15:42Z",
+  "gcanon": "https://tankmetrics.in/ebitda-multiple",
+  "ucanon": "https://tankmetrics.in/ebitda-multiple"
+ },
+ {
+  "url": "https://tankmetrics.in/dilution-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T18:36:12Z",
+  "gcanon": "https://tankmetrics.in/dilution-calculator",
+  "ucanon": "https://tankmetrics.in/dilution-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/ask-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T05:15:49Z",
+  "gcanon": "https://tankmetrics.in/ask-calculator",
+  "ucanon": "https://tankmetrics.in/ask-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/debt-equity-deal",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T04:20:36Z",
+  "gcanon": "https://tankmetrics.in/debt-equity-deal",
+  "ucanon": "https://tankmetrics.in/debt-equity-deal"
+ },
+ {
+  "url": "https://tankmetrics.in/royalty-deal",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-28T04:33:52Z",
+  "gcanon": "https://tankmetrics.in/royalty-deal",
+  "ucanon": "https://tankmetrics.in/royalty-deal"
+ },
+ {
+  "url": "https://tankmetrics.in/cap-table-and-esop-pool",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T16:55:15Z",
+  "gcanon": "https://tankmetrics.in/cap-table-and-esop-pool",
+  "ucanon": "https://tankmetrics.in/cap-table-and-esop-pool"
+ },
+ {
+  "url": "https://tankmetrics.in/co-founder-equity-split",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T20:03:36Z",
+  "gcanon": "https://tankmetrics.in/co-founder-equity-split",
+  "ucanon": "https://tankmetrics.in/co-founder-equity-split"
+ },
+ {
+  "url": "https://tankmetrics.in/customer-acquisition-cost-cac",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-27T02:33:42Z",
+  "gcanon": "https://tankmetrics.in/customer-acquisition-cost-cac",
+  "ucanon": "https://tankmetrics.in/customer-acquisition-cost-cac"
+ },
+ {
+  "url": "https://tankmetrics.in/customer-lifetime-value-ltv",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-27T18:50:10Z",
+  "gcanon": "https://tankmetrics.in/customer-lifetime-value-ltv",
+  "ucanon": "https://tankmetrics.in/customer-lifetime-value-ltv"
+ },
+ {
+  "url": "https://tankmetrics.in/ltv-cac-ratio",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:05:20Z",
+  "gcanon": "https://tankmetrics.in/ltv-cac-ratio",
+  "ucanon": "https://tankmetrics.in/ltv-cac-ratio"
+ },
+ {
+  "url": "https://tankmetrics.in/cac-payback-period",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/average-order-value-aov",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T09:21:14Z",
+  "gcanon": "https://tankmetrics.in/average-order-value-aov",
+  "ucanon": "https://tankmetrics.in/average-order-value-aov"
+ },
+ {
+  "url": "https://tankmetrics.in/repeat-rate-retention-and-churn",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/return-on-ad-spend-roas",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T17:33:07Z",
+  "gcanon": "https://tankmetrics.in/return-on-ad-spend-roas",
+  "ucanon": "https://tankmetrics.in/return-on-ad-spend-roas"
+ },
+ {
+  "url": "https://tankmetrics.in/cpc-cpl-cpa-and-conversion-rate",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T06:59:08Z",
+  "gcanon": "https://tankmetrics.in/cpc-cpl-cpa-and-conversion-rate",
+  "ucanon": "https://tankmetrics.in/cpc-cpl-cpa-and-conversion-rate"
+ },
+ {
+  "url": "https://tankmetrics.in/arpu-mrr-and-arr",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:18:39Z",
+  "gcanon": "https://tankmetrics.in/arpu-mrr-and-arr",
+  "ucanon": "https://tankmetrics.in/arpu-mrr-and-arr"
+ },
+ {
+  "url": "https://tankmetrics.in/run-rate",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/month-on-month-year-on-year-growth",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T00:32:13Z",
+  "gcanon": "https://tankmetrics.in/month-on-month-year-on-year-growth",
+  "ucanon": "https://tankmetrics.in/month-on-month-year-on-year-growth"
+ },
+ {
+  "url": "https://tankmetrics.in/cagr-compound-annual-growth-rate",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T18:26:05Z",
+  "gcanon": "https://tankmetrics.in/cagr-compound-annual-growth-rate",
+  "ucanon": "https://tankmetrics.in/cagr-compound-annual-growth-rate"
+ },
+ {
+  "url": "https://tankmetrics.in/burn-rate-and-runway",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T05:06:42Z",
+  "gcanon": "https://tankmetrics.in/burn-rate-and-runway",
+  "ucanon": "https://tankmetrics.in/burn-rate-and-runway"
+ },
+ {
+  "url": "https://tankmetrics.in/break-even-point",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/working-capital",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T02:20:17Z",
+  "gcanon": "https://tankmetrics.in/working-capital",
+  "ucanon": "https://tankmetrics.in/working-capital"
+ },
+ {
+  "url": "https://tankmetrics.in/cash-conversion-cycle",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/straight-line-depreciation",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-23T23:22:30Z",
+  "gcanon": "https://tankmetrics.in/straight-line-depreciation",
+  "ucanon": "https://tankmetrics.in/straight-line-depreciation"
+ },
+ {
+  "url": "https://tankmetrics.in/mrp-reverse-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-23T21:03:28Z",
+  "gcanon": "https://tankmetrics.in/mrp-reverse-calculator",
+  "ucanon": "https://tankmetrics.in/mrp-reverse-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/distributor-and-retailer-margin",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T17:49:02Z",
+  "gcanon": "https://tankmetrics.in/distributor-and-retailer-margin",
+  "ucanon": "https://tankmetrics.in/distributor-and-retailer-margin"
+ },
+ {
+  "url": "https://tankmetrics.in/gst-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T17:40:29Z",
+  "gcanon": "https://tankmetrics.in/gst-calculator",
+  "ucanon": "https://tankmetrics.in/gst-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/landed-cost-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-23T22:00:19Z",
+  "gcanon": "https://tankmetrics.in/landed-cost-calculator",
+  "ucanon": "https://tankmetrics.in/landed-cost-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/marketplace-fee-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-27T18:34:59Z",
+  "gcanon": "https://tankmetrics.in/marketplace-fee-calculator",
+  "ucanon": "https://tankmetrics.in/marketplace-fee-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/cod-and-rto-loss-calculator",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/discount-impact-on-profit",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T15:17:10Z",
+  "gcanon": "https://tankmetrics.in/discount-impact-on-profit",
+  "ucanon": "https://tankmetrics.in/discount-impact-on-profit"
+ },
+ {
+  "url": "https://tankmetrics.in/import-duty-and-customs-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-23T19:24:23Z",
+  "gcanon": "https://tankmetrics.in/import-duty-and-customs-calculator",
+  "ucanon": "https://tankmetrics.in/import-duty-and-customs-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/employee-cost-ctc-calculator",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/freelancer-hourly-rate",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/franchise-store-roi",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/moic-and-irr",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/exit-calculator",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/tam-sam-som",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T19:11:51Z",
+  "gcanon": "https://tankmetrics.in/tam-sam-som",
+  "ucanon": "https://tankmetrics.in/tam-sam-som"
+ },
+ {
+  "url": "https://tankmetrics.in/roas-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-26T22:49:54Z",
+  "gcanon": "https://tankmetrics.in/roas-calculator",
+  "ucanon": "https://tankmetrics.in/roas-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/cpm-to-cpc-converter",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-28T11:49:02Z",
+  "gcanon": "https://tankmetrics.in/cpm-to-cpc-converter",
+  "ucanon": "https://tankmetrics.in/cpm-to-cpc-converter"
+ },
+ {
+  "url": "https://tankmetrics.in/cpc-to-cpa-converter",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-26T15:12:05Z",
+  "gcanon": "https://tankmetrics.in/cpc-to-cpa-converter",
+  "ucanon": "https://tankmetrics.in/cpc-to-cpa-converter"
+ },
+ {
+  "url": "https://tankmetrics.in/break-even-ad-spend",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-26T17:06:19Z",
+  "gcanon": "https://tankmetrics.in/break-even-ad-spend",
+  "ucanon": "https://tankmetrics.in/break-even-ad-spend"
+ },
+ {
+  "url": "https://tankmetrics.in/client-acquisition-cost-cac",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/client-lifetime-value-ltv",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/agency-profit-margin",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/client-profitability",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/employee-utilization-rate",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/churn-rate",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/property-valuation-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T14:59:07Z",
+  "gcanon": "https://tankmetrics.in/property-valuation-calculator",
+  "ucanon": "https://tankmetrics.in/property-valuation-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/home-loan-emi-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T12:55:42Z",
+  "gcanon": "https://tankmetrics.in/home-loan-emi-calculator",
+  "ucanon": "https://tankmetrics.in/home-loan-emi-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/rental-yield-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T11:38:48Z",
+  "gcanon": "https://tankmetrics.in/rental-yield-calculator",
+  "ucanon": "https://tankmetrics.in/rental-yield-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/rent-vs-buy-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T21:23:29Z",
+  "gcanon": "https://tankmetrics.in/rent-vs-buy-calculator",
+  "ucanon": "https://tankmetrics.in/rent-vs-buy-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/stamp-duty-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T11:38:42Z",
+  "gcanon": "https://tankmetrics.in/stamp-duty-calculator",
+  "ucanon": "https://tankmetrics.in/stamp-duty-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/brokerage-agent-commission",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T15:01:44Z",
+  "gcanon": "https://tankmetrics.in/brokerage-agent-commission",
+  "ucanon": "https://tankmetrics.in/brokerage-agent-commission"
+ },
+ {
+  "url": "https://tankmetrics.in/property-roi-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T11:40:11Z",
+  "gcanon": "https://tankmetrics.in/property-roi-calculator",
+  "ucanon": "https://tankmetrics.in/property-roi-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/down-payment-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T11:41:15Z",
+  "gcanon": "https://tankmetrics.in/down-payment-calculator",
+  "ucanon": "https://tankmetrics.in/down-payment-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/built-up-area-vs-carpet-area",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T12:54:10Z",
+  "gcanon": "https://tankmetrics.in/built-up-area-vs-carpet-area",
+  "ucanon": "https://tankmetrics.in/built-up-area-vs-carpet-area"
+ },
+ {
+  "url": "https://tankmetrics.in/land-area-unit-converter",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T13:59:52Z",
+  "gcanon": "https://tankmetrics.in/land-area-unit-converter",
+  "ucanon": "https://tankmetrics.in/land-area-unit-converter"
+ },
+ {
+  "url": "https://tankmetrics.in/income-tax-calculator-old-vs-new-regime",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T05:59:17Z",
+  "gcanon": "https://tankmetrics.in/income-tax-calculator-old-vs-new-regime",
+  "ucanon": "https://tankmetrics.in/income-tax-calculator-old-vs-new-regime"
+ },
+ {
+  "url": "https://tankmetrics.in/hra-exemption-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T03:59:40Z",
+  "gcanon": "https://tankmetrics.in/hra-exemption-calculator",
+  "ucanon": "https://tankmetrics.in/hra-exemption-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/sip-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T05:18:46Z",
+  "gcanon": "https://tankmetrics.in/sip-calculator",
+  "ucanon": "https://tankmetrics.in/sip-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/ppf-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T10:52:04Z",
+  "gcanon": "https://tankmetrics.in/ppf-calculator",
+  "ucanon": "https://tankmetrics.in/ppf-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/fd-fixed-deposit-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T05:57:38Z",
+  "gcanon": "https://tankmetrics.in/fd-fixed-deposit-calculator",
+  "ucanon": "https://tankmetrics.in/fd-fixed-deposit-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/rd-recurring-deposit-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T05:09:47Z",
+  "gcanon": "https://tankmetrics.in/rd-recurring-deposit-calculator",
+  "ucanon": "https://tankmetrics.in/rd-recurring-deposit-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/epf-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T02:35:39Z",
+  "gcanon": "https://tankmetrics.in/epf-calculator",
+  "ucanon": "https://tankmetrics.in/epf-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/gratuity-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T05:17:46Z",
+  "gcanon": "https://tankmetrics.in/gratuity-calculator",
+  "ucanon": "https://tankmetrics.in/gratuity-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/nps-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T05:02:00Z",
+  "gcanon": "https://tankmetrics.in/nps-calculator",
+  "ucanon": "https://tankmetrics.in/nps-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/gst-calculator-tax-and-wealth-toolkit",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-25T02:51:56Z",
+  "gcanon": "https://tankmetrics.in/gst-calculator-tax-and-wealth-toolkit",
+  "ucanon": "https://tankmetrics.in/gst-calculator-tax-and-wealth-toolkit"
+ },
+ {
+  "url": "https://tankmetrics.in/age-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T21:35:59Z",
+  "gcanon": "https://tankmetrics.in/age-calculator",
+  "ucanon": "https://tankmetrics.in/age-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/love-calculator",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/numerology-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T23:34:33Z",
+  "gcanon": "https://tankmetrics.in/numerology-calculator",
+  "ucanon": "https://tankmetrics.in/numerology-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/zodiac-sign-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T23:47:03Z",
+  "gcanon": "https://tankmetrics.in/zodiac-sign-calculator",
+  "ucanon": "https://tankmetrics.in/zodiac-sign-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/rashi-moon-sign-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T20:50:35Z",
+  "gcanon": "https://tankmetrics.in/rashi-moon-sign-calculator",
+  "ucanon": "https://tankmetrics.in/rashi-moon-sign-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/baby-name-number-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T21:27:36Z",
+  "gcanon": "https://tankmetrics.in/baby-name-number-calculator",
+  "ucanon": "https://tankmetrics.in/baby-name-number-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/lucky-number-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T22:07:07Z",
+  "gcanon": "https://tankmetrics.in/lucky-number-calculator",
+  "ucanon": "https://tankmetrics.in/lucky-number-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/compatibility-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T22:52:16Z",
+  "gcanon": "https://tankmetrics.in/compatibility-calculator",
+  "ucanon": "https://tankmetrics.in/compatibility-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/days-between-two-dates",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/bmi-calculator",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T19:46:00Z",
+  "gcanon": "https://tankmetrics.in/bmi-calculator",
+  "ucanon": "https://tankmetrics.in/bmi-calculator"
+ },
+ {
+  "url": "https://tankmetrics.in/shark-tank-pitch-check",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T18:46:59Z",
+  "gcanon": "https://tankmetrics.in/shark-tank-pitch-check",
+  "ucanon": "https://tankmetrics.in/shark-tank-pitch-check"
+ },
+ {
+  "url": "https://tankmetrics.in/market-share-calculator",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/arpu-average-revenue-per-user",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/boutique-profit-margin-explained",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/break-even-point-explained",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T03:50:03Z",
+  "gcanon": "https://tankmetrics.in/break-even-point-explained",
+  "ucanon": "https://tankmetrics.in/break-even-point-explained"
+ },
+ {
+  "url": "https://tankmetrics.in/burn-rate-runway-guide",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T10:45:09Z",
+  "gcanon": "https://tankmetrics.in/burn-rate-runway-guide",
+  "ucanon": "https://tankmetrics.in/burn-rate-runway-guide"
+ },
+ {
+  "url": "https://tankmetrics.in/discount-impact-on-profit-explained",
+  "verdict": "NEUTRAL",
+  "coverage": "Crawled - currently not indexed",
+  "crawl": "2026-10-24T03:41:26Z",
+  "gcanon": "https://tankmetrics.in/discount-impact-on-profit-explained",
+  "ucanon": "https://tankmetrics.in/discount-impact-on-profit-explained"
+ },
+ {
+  "url": "https://tankmetrics.in/franchise-roi-explained",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/import-duty-explained",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/keyword-boat-valuation-shark-tank",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/keyword-burn-rate-calculator-india",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/keyword-how-much-equity-to-give-for-1-crore",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/keyword-royalty-deal-calculator-shark-tank",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/keyword-shark-tank-valuation-calculator-in-crores",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/ltv-cac-ratio-explained",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T10:48:33Z",
+  "gcanon": "https://tankmetrics.in/ltv-cac-ratio-explained",
+  "ucanon": "https://tankmetrics.in/ltv-cac-ratio-explained"
+ },
+ {
+  "url": "https://tankmetrics.in/marketplace-fees-explained",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T19:24:49Z",
+  "gcanon": "https://tankmetrics.in/marketplace-fees-explained",
+  "ucanon": "https://tankmetrics.in/marketplace-fees-explained"
+ },
+ {
+  "url": "https://tankmetrics.in/markup-vs-margin-explained",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T09:24:03Z",
+  "gcanon": "https://tankmetrics.in/markup-vs-margin-explained",
+  "ucanon": "https://tankmetrics.in/markup-vs-margin-explained"
+ },
+ {
+  "url": "https://tankmetrics.in/pharma-distributor-margin-explained",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/startup-valuation-explained",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T08:35:52Z",
+  "gcanon": "https://tankmetrics.in/startup-valuation-explained",
+  "ucanon": "https://tankmetrics.in/startup-valuation-explained"
+ },
+ {
+  "url": "https://tankmetrics.in/what-is-ebitda",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T17:13:26Z",
+  "gcanon": "https://tankmetrics.in/what-is-ebitda",
+  "ucanon": "https://tankmetrics.in/what-is-ebitda"
+ },
+ {
+  "url": "https://tankmetrics.in/amazon-festive-sale-seller-sales-3-5x-first-week",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T09:48:05Z",
+  "gcanon": "https://tankmetrics.in/amazon-festive-sale-seller-sales-3-5x-first-week",
+  "ucanon": "https://tankmetrics.in/amazon-festive-sale-seller-sales-3-5x-first-week"
+ },
+ {
+  "url": "https://tankmetrics.in/export-certification-cost-support-micro-exporters",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/festive-financing-msme-invoice-discounting-20000-crore",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-29T14:03:32Z",
+  "gcanon": "https://tankmetrics.in/festive-financing-msme-invoice-discounting-20000-crore",
+  "ucanon": "https://tankmetrics.in/festive-financing-msme-invoice-discounting-20000-crore"
+ },
+ {
+  "url": "https://tankmetrics.in/gst-council-october-2026-small-business-changes",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:48:13Z",
+  "gcanon": "https://tankmetrics.in/gst-council-october-2026-small-business-changes",
+  "ucanon": "https://tankmetrics.in/gst-council-october-2026-small-business-changes"
+ },
+ {
+  "url": "https://tankmetrics.in/gst-november-1-2026-discounts-credit-notes-refunds",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-29T13:54:54Z",
+  "gcanon": "https://tankmetrics.in/gst-november-1-2026-discounts-credit-notes-refunds",
+  "ucanon": "https://tankmetrics.in/gst-november-1-2026-discounts-credit-notes-refunds"
+ },
+ {
+  "url": "https://tankmetrics.in/gst-rule-14b-ecommerce-sellers-november-1",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T11:12:43Z",
+  "gcanon": "https://tankmetrics.in/gst-rule-14b-ecommerce-sellers-november-1",
+  "ucanon": "https://tankmetrics.in/gst-rule-14b-ecommerce-sellers-november-1"
+ },
+ {
+  "url": "https://tankmetrics.in/india-startup-funding-october-2026-flat-year",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T08:20:43Z",
+  "gcanon": "https://tankmetrics.in/india-startup-funding-october-2026-flat-year",
+  "ucanon": "https://tankmetrics.in/india-startup-funding-october-2026-flat-year"
+ },
+ {
+  "url": "https://tankmetrics.in/khosla-ventures-even-healthcare-india-bet",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T12:24:37Z",
+  "gcanon": "https://tankmetrics.in/khosla-ventures-even-healthcare-india-bet",
+  "ucanon": "https://tankmetrics.in/khosla-ventures-even-healthcare-india-bet"
+ },
+ {
+  "url": "https://tankmetrics.in/marketplace-fees-india-sellers-guide",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T08:25:16Z",
+  "gcanon": "https://tankmetrics.in/marketplace-fees-india-sellers-guide",
+  "ucanon": "https://tankmetrics.in/marketplace-fees-india-sellers-guide"
+ },
+ {
+  "url": "https://tankmetrics.in/rbi-rate-hike-october-2026-what-it-costs-your-loan",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T10:41:51Z",
+  "gcanon": "https://tankmetrics.in/rbi-rate-hike-october-2026-what-it-costs-your-loan",
+  "ucanon": "https://tankmetrics.in/rbi-rate-hike-october-2026-what-it-costs-your-loan"
+ },
+ {
+  "url": "https://tankmetrics.in/relief-scheme-exporters-extended-march-2027",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/rupee-falls-to-95-22-what-it-costs-importers-exporters",
+  "verdict": "NEUTRAL",
+  "coverage": "URL is unknown to Google",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/shark-tank-usa-polygons-foldable-spoon-deal",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T09:17:12Z",
+  "gcanon": "https://tankmetrics.in/shark-tank-usa-polygons-foldable-spoon-deal",
+  "ucanon": "https://tankmetrics.in/shark-tank-usa-polygons-foldable-spoon-deal"
+ },
+ {
+  "url": "https://tankmetrics.in/upi-mdr-deferred-after-diwali-what-shops-pay",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-24T08:20:28Z",
+  "gcanon": "https://tankmetrics.in/upi-mdr-deferred-after-diwali-what-shops-pay",
+  "ucanon": "https://tankmetrics.in/upi-mdr-deferred-after-diwali-what-shops-pay"
+ },
+ {
+  "url": "https://tankmetrics.in/privacy-policy",
+  "verdict": "NEUTRAL",
+  "coverage": "Discovered - currently not indexed",
+  "crawl": null,
+  "gcanon": null,
+  "ucanon": null
+ },
+ {
+  "url": "https://tankmetrics.in/terms-and-conditions",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-21T14:42:36Z",
+  "gcanon": "https://tankmetrics.in/terms-and-conditions",
+  "ucanon": "https://tankmetrics.in/terms-and-conditions"
+ },
+ {
+  "url": "https://tankmetrics.in/disclaimer",
+  "verdict": "PASS",
+  "coverage": "Submitted and indexed",
+  "crawl": "2026-10-21T14:47:50Z",
+  "gcanon": "https://tankmetrics.in/disclaimer",
+  "ucanon": "https://tankmetrics.in/disclaimer"
+ }
+]

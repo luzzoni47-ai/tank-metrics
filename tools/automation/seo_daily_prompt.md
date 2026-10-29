@@ -16,7 +16,7 @@ What an agent CAN do, every day, with no login:
 
 | Tool Sir named | How this run covers it |
 |---|---|
-| Google Search Console | Cannot log into the UI, but `tools/gsc.py` drives the API with a service-account key (`GSC_SA_JSON`). If the key is set, USE IT (step 1b) - it gives Google's own index verdict per page. If it is not set, substitute the sitemap + `tools/content_uniqueness.py`. Setup: `tools/automation/gsc_setup.md`. |
+| Google Search Console | Cannot log into the UI, but `tools/gsc.py` drives the API with OAuth (`~/.gsc_oauth.json`) or a service-account key. If either is set, USE IT (step 1b) - it gives Google's own index verdict per page. If it is not set, substitute the sitemap + `tools/content_uniqueness.py`. Setup: `tools/automation/gsc_setup.md`. |
 | PageSpeed Insights | Free public API, no key for a handful of calls. Measure the home page and one calculator. Report the score and the top opportunity. |
 | Screaming Frog | Replaced by `tools/seo_monitor.py --local` and `tools/automation/site_health` - the same crawl (status, title, canonical, description, noindex, dead internal links). |
 | Google Keyword Planner | Needs a Google Ads login. Substitute: `tools/keyword_radar.py` (Google autocomplete, free, no key). |
@@ -61,17 +61,27 @@ evidence - Google's own verdict, not a proxy. (`tools/gsc.py` prefers OAuth
 automatically when it is present.)
 
 ```
-python3 tools/gsc.py sites                    # property visible?
+python3 tools/gsc_triage.py                   # every page, its state, its fix
 python3 tools/gsc.py sitemaps                 # submitted vs indexed
 python3 tools/gsc.py analytics 28             # top queries + pages
-python3 tools/gsc.py inspect https://tankmetrics.in/<worst-page>
 ```
 
-Run `inspect` on the three worst pages from step 1 and on any page GSC reports
-as "Crawled - currently not indexed" or "Discovered - not indexed". The
-`coverageState` and `googleCanonical` lines are the reason, per page. Report
-them in the summary. If the key is absent, say so plainly and continue - do NOT
-claim a Search Console run. Setup is in `tools/automation/gsc_setup.md`.
+`gsc_triage.py` is the one to run first: it inspects every sitemap URL (caching
+the result for a week in `tools/gsc_inspection.json`) and buckets each page as
+indexed / not-seen / discovered / crawled / canonical, with the single action
+that fixes that state. On 2026-10-29 it read: 105 indexed, 20 not-seen, 17
+discovered, 1 crawled.
+
+Then act on the two fixable buckets:
+- **not-seen** (Google never saw the URL): add 2-3 internal links from indexed
+  pages, re-submit the sitemap, and Request Indexing in the GSC UI for the few
+  that matter most.
+- **discovered / crawled** (seen, not indexed): unique per-tool copy - the dedup
+  worklist - plus internal links.
+
+Report the bucket counts and the worst pages in the summary. If no credential is
+present, say so plainly and continue - do NOT claim a Search Console run. Setup
+is in `tools/automation/gsc_setup.md`.
 
 ### 2. Write real copy for the worst offenders (the actual indexing fix)
 
