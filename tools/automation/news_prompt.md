@@ -12,8 +12,9 @@ part that eats the clock, so do it first and keep it to a handful of searches.
 ## Read first
 1. `AGENTS.md` — build rules and gotchas. (`.openhands/` is gitignored, so no
    memory file ships in this clone.)
-2. `tools/news.json` — copy an existing entry for the exact field list.
-3. `tools/gen_news.py` — the generator that renders the pages and the pane.
+2. Nothing else. Do NOT read `tools/news.json` (91 KB) or `tools/gen_news.py`
+   (18 KB): the story shape is enforced by the adder you are about to run, and
+   reading them was most of what pushed this run past its 30-minute budget.
 
 ## Task, in order
 1. Research ONE current story with web search. The desk exists to pull in
@@ -34,82 +35,63 @@ part that eats the clock, so do it first and keep it to a handful of searches.
    US funding news counts too when it says something about India.
    Do not repeat a story already in `tools/news.json`.
 
-2. Append ONE object to `items` in `tools/news.json`. Copy an existing entry for
-   the exact field list:
-   `slug, title, dek, category, date, date_display, source_name, source_url,
-   cta, related, body_en, body_hinglish`.
-   - Write for a reader who runs a shop or is building a startup. Explain the
-     numbers in the story with arithmetic, and end with what it means for them.
-   - Use ROUND numbers in every example (10,000 / 6,000 / 60%), never odd
-     figures like 580 or 7,180.
-   - Never invent a fact, figure or quote — use only what the sources say, and
-     put the source name and URL in `source_name` / `source_url`.
+2. Write the story as a small JSON file, e.g. `/tmp/story.json`, and let the
+   adder place it. Do NOT edit `tools/news.json` by hand — it is 91 KB and easy
+   to corrupt. The file is one object with exactly these fields:
+
+   ```
+   {"slug": "<lowercase-words-joined-by-dashes>",
+    "title": "<60 chars or fewer on its own>",
+    "dek": "<150-158 characters>",
+    "category": "<e.g. Small Business>",
+    "date": "<ISO, e.g. 2026-10-26>",
+    "date_display": "<e.g. October 26, 2026>",
+    "source_name": "<publication>",
+    "source_url": "<the real article URL>",
+    "cta": {"text": "...", "href": "/<calculator-slug>", "label": "Open the ... Calculator"},
+    "related": [{"slug": "<guide-slug>", "title": "<guide title>"}],
+    "body_en": ["<p>...</p>", "<h2>...</h2>", "..."],
+    "body_hinglish": ["<p>...</p>", "<h2>...</h2>", "..."]}
+   ```
+
+   Then run:
+
+   ```
+   python3 tools/new_news_story.py --story /tmp/story.json
+   ```
+
+   It validates and refuses to add a bad story, so fix what it complains about:
    - `title` must be **60 characters or fewer on its own** (the page renders it
-     as "<title> | Tank Metrics", and anything past 60 gets truncated in the
-     search result). `dek` must be **150-158 characters**.
+     as "<title> | Tank Metrics", and anything past 60 is truncated in search).
+   - `dek` must be **150-158 characters**.
    - `body_en` and `body_hinglish` must have the same number of `<h2>`/`<h3>`
-     headings, at least 400 English words, and the Hinglish block must be roman
-     script with zero Devanagari.
-   - Point `cta` at the calculator the story is really about, and add one or two
-     `related` guides.
-   - Keep the newest story first in the list, so it shows up first on /news.
+     headings, `body_en` must be at least 400 words, and `body_hinglish` must be
+     roman script with zero Devanagari.
+   - `source_url` must be the real article URL, and `cta.href` a site path.
+   - Write for a reader who runs a shop or is building a startup. Explain the
+     numbers with arithmetic and end with what it means for them. Use ROUND
+     numbers in every example (10,000 / 6,000 / 60%), never odd figures like 580
+     or 7,180. Never invent a fact, figure or quote.
+   It keeps the newest story first automatically.
 
 3. Run `python3 tools/gen_news.py`. It refreshes the news pages, the /news
    index, the `id="newsGrid"` pane on `/blog`, the sitemap, `llms.txt` and
-   `tools/url-map.json`. Do not edit those by hand. If it reports a legacy
-   `<section class="news-strip">` it will migrate it — that is expected.
+   `tools/url-map.json`, and validates the story as it goes. Do not edit those
+   by hand. If it reports a legacy `<section class="news-strip">` it will
+   migrate it — that is expected.
 
-4. Run the pipeline and the Python tests. All must pass before continuing:
-   `python3 tools/clean_urls.py`
-   `python3 tools/test_news.py`
-   `python3 tools/test_blog.py`
-   `python3 tools/test_layout.py`
-   `python3 tools/test_blog_tabs.py`
-   `python3 tools/test_contact_form.py`
-   `python3 tools/test_interlinks.py`
-   `python3 tools/seo_monitor.py .` - must report 0 problems. This is the guard
-   that catches an over-long title or description, a missing canonical, or
-   missing og:title/og:description on the new story. Fix and re-run until clean.
-   Fix any failure and re-run. Never commit a red suite.
-   `python3 tools/sync_gsc_list.py` - regenerates `tools/gsc_submit_list.txt`
-   from the sitemap, so the new URL is included without hand-editing.
-   Do NOT run `pnpm install`, `npm install` or `next build`, and do NOT run
-   `tools/dom_smoke_tools.js`. They need a full dependency tree, they take
-   longer than this run is allowed, and none of them is needed to publish a
-   story — Vercel builds the site on its own servers.
+4. Publish it: `tools/publish_news.sh <slug>`. That one command runs the rest of
+   this runbook for you — the pipeline, the tests, the commit and push, the
+   deploy, and the IndexNow announce. Do NOT run the pipeline commands, the
+   tests, `deploy.sh` or `indexnow_submit.py` one by one; the script does all of
+   them and stops before deploying if any test fails or the story is missing
+   from the sitemap. If it reports a failure, fix it and run it again.
 
-5. Commit and push to `main` with `GITHUB_PERSONAL_ACCESS_TOKEN`
-   (plain `GITHUB_TOKEN` is read-only and returns 403). If the push is
-   rejected, `git pull --rebase origin main` first, then push again.
-
-6. Deploy to Vercel: `tools/deploy.sh /<slug>` (pass every new path). It pushes,
-   ships, waits for READY, points tankmetrics.in and www at the new deployment,
-   checks the live paths, and announces each path through IndexNow afterwards -
-   so the submit step below is already covered when you pass the slug.
-   Vercel builds the site from GitHub, so the script does NOT run a local
-   `next build`; never run one yourself either.
-   A push to `main` does NOT trigger a Vercel build: the project's stored
-   link.repoId is stale, so Vercel never matches the push. That is why the
-   deploy is explicit.
-
-7. Submit the new URL to the search engines. Google Search Console needs a
-   Google login the agent does not have, but IndexNow does not. A sweep already
-   runs a few times a day and picks up anything the sitemap gained, so this step
-   is the belt to that suspenders - it announces the page the moment it is live
-   instead of waiting for the next sweep:
-   `python3 tools/indexnow_submit.py /<slug>`
-   It should print `HTTP 200 accepted` or `202`. A 403 means the key file
-   `https://tankmetrics.in/<key>.txt` is not live yet - deploy first, then retry.
-
-8. Verify `https://tankmetrics.in/<slug>` returns 200 and contains
-   `data-lang="en"` and `data-lang="hinglish"`, and that `https://tankmetrics.in/news`
-   lists the new story first.
-   Then run `python3 tools/seo_monitor.py https://tankmetrics.in` - it must
-   report 0 problems across the whole live site.
-
-9. Check the security headers on https://tankmetrics.in/ (CSP, X-Frame-Options,
-   X-Content-Type-Options, Referrer-Policy, Permissions-Policy). If any are
-   missing, add them in `next.config.mjs` and redeploy.
+5. Verify what shipped: `https://tankmetrics.in/<slug>` returns 200 and contains
+   `data-lang="en"` and `data-lang="hinglish"`, and `https://tankmetrics.in/news`
+   lists the new story first. Then run
+   `python3 tools/seo_monitor.py https://tankmetrics.in` - it must report 0
+   problems across the whole live site.
 
 ## Guardrails
 - Never commit `.vercel/`, `node_modules/`, `tools/__pycache__/`, or any token.

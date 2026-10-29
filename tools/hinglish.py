@@ -21,21 +21,17 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = ROOT / 'public' / 'site'
 HINDI = ROOT / 'tools' / 'hindi'
 
-POSTS = [
-    'blog-what-is-ebitda.html',
-    'blog-ltv-cac-ratio-explained.html',
-    'blog-startup-valuation-explained.html',
-    'blog-burn-rate-runway-guide.html',
-    'blog-marketplace-fees-explained.html',
-    'blog-markup-vs-margin-explained.html',
-    'blog-break-even-point-explained.html',
-    'blog-discount-impact-on-profit-explained.html',
-    'blog-import-duty-explained.html',
-    'blog-pharma-distributor-margin-explained.html',
-    'blog-arpu-average-revenue-per-user.html',
-    'blog-boutique-profit-margin-explained.html',
-    'blog-franchise-roi-explained.html',
-]
+def _posts() -> list[str]:
+    """Every post that has a Hindi source, discovered rather than listed.
+
+    This used to be a hand-maintained list, so a newly published guide was
+    silently skipped by --rebuild and shipped with no Hinglish block at all.
+    Deriving it means a new post is picked up the moment its .hi.html exists.
+    """
+    return sorted(p.name.replace('.hi.html', '.html') for p in HINDI.glob('blog-*.hi.html'))
+
+
+POSTS = _posts()
 
 VIRAMA = '्'
 NUKTA = '़'

@@ -12,9 +12,16 @@ v0 icon in search results. It is 192x192 now. If you ever change the size,
 change FAVICON_PX and the `sizes=` in the <link> tags together - a declaration
 that disagrees with the file makes Google distrust the whole icon.
 """
+from __future__ import annotations
+
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+try:
+    from PIL import Image, ImageDraw, ImageFont
+
+    HAVE_PIL = True
+except ImportError:  # a fresh clone has no Pillow and no node_modules
+    HAVE_PIL = False
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "public" / "site"
@@ -139,6 +146,32 @@ MANIFEST = """{{
 def main() -> None:
     (SITE / "favicon.svg").write_text(SVG, encoding="utf-8")
     (PUB / "favicon.svg").write_text(SVG, encoding="utf-8")
+
+    if not HAVE_PIL:
+        # The rasters are committed and the brand mark has not changed, so
+        # leaving them as-is is correct. Pillow is only needed to REGENERATE
+        # them, and a fresh automation clone has neither Pillow nor
+        # node_modules - the earlier hard import killed the whole pipeline
+        # there. The manifest still has to be written, because it is derived.
+        sizes = list(PWA_SIZES)
+        entries = [
+            '    {{ "src": "/site/icon-{0}.png", "sizes": "{0}x{0}", '
+            '"type": "image/png", "purpose": "any" }},'.format(size)
+            for size in sizes
+        ]
+        entries.append(
+            '    { "src": "/site/icon-maskable-512.png", "sizes": "512x512", '
+            '"type": "image/png", "purpose": "maskable" }'
+        )
+        (SITE / "manifest.webmanifest").write_text(
+            MANIFEST.format(icons="\n".join(entries)), encoding="utf-8"
+        )
+        print(
+            "Pillow not installed - kept the committed favicon.png/.ico and "
+            "icon-*.png; wrote favicon.svg and manifest.webmanifest only"
+        )
+        return
+
     icon = mark_png(FAVICON_PX)
     for d in (SITE, PUB):
         icon.save(d / "favicon.png")
