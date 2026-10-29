@@ -116,6 +116,12 @@ MAP: dict[str, list[tuple[str, str, str]]] = {
         ("/churn-rate", "Churn Rate",
          "measure how fast users leave, which caps what ARPU can earn you"),
     ],
+    "blog-franchise-roi-explained": [
+        ("/franchise-store-roi", "Franchise / Store ROI",
+         "put your own sales, running costs and opening cost into the outlet's return"),
+        ("/return-on-investment-roi", "Return on Investment (ROI)",
+         "turn any profit and investment into a yearly percentage"),
+    ],
 }
 
 BACKLINK_MARKER = "<!-- tool-blog -->"

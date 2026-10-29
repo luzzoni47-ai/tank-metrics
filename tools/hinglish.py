@@ -34,6 +34,7 @@ POSTS = [
     'blog-pharma-distributor-margin-explained.html',
     'blog-arpu-average-revenue-per-user.html',
     'blog-boutique-profit-margin-explained.html',
+    'blog-franchise-roi-explained.html',
 ]
 
 VIRAMA = '्'

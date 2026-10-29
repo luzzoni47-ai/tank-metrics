@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T05:41:41Z",
+ "generated": "2026-10-29T05:13:43Z",
  "seed_count": 150,
  "suggestion_count": 1036,
  "keywords": [
@@ -328,6 +328,15 @@
    ]
   },
   {
+   "query": "cumulative annual growth rate cagr",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "cagr compound annual growth rate"
+   ]
+  },
+  {
    "query": "ebitda and ebitda margin difference",
    "demand": 8,
    "covered": false,
@@ -469,15 +478,6 @@
    "score": 12.88,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "cumulative annual growth rate cagr",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "cagr compound annual growth rate"
    ]
   },
   {
@@ -1659,7 +1659,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1755,6 +1755,15 @@
    "score": 8.97,
    "from": [
     "zodiac sign calculator"
+   ]
+  },
+  {
+   "query": "cagr calculator calculate compound annual growth rate online icici direct",
+   "demand": 6,
+   "covered": false,
+   "score": 8.64,
+   "from": [
+    "cagr compound annual growth rate"
    ]
   },
   {
@@ -2082,7 +2091,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2325,7 +2334,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2731,7 +2740,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3191,7 +3200,7 @@
    ]
   },
   {
-   "query": "cagr calculator calculate compound annual growth rate online icici direct",
+   "query": "cagr stands for compound annual growth rate",
    "demand": 5,
    "covered": false,
    "score": 7.2,
@@ -3517,7 +3526,7 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3613,15 +3622,6 @@
    "score": 6.9,
    "from": [
     "msme loan"
-   ]
-  },
-  {
-   "query": "net profit margin ratio",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "net profit margin"
    ]
   }
  ]
