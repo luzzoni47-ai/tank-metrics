@@ -81,9 +81,17 @@ def build_titles(calcs: list[dict]) -> dict[str, str]:
 
 
 def desc_for(c: dict) -> str:
-    d = re.sub(r"\s+", " ", c["desc"]).strip()
-    extra = " Free, instant and private — it runs in your browser, no sign-up needed."
-    out = d + extra
+    # A shared suffix on all 101 tool pages ("Free, instant and private - it runs
+    # in your browser...") made every description near-identical, so Google could
+    # not tell the pages apart: they ranked at position 7-9 and still earned zero
+    # clicks. Build each one from the tool's own one-line desc plus its own
+    # `bench` line, which is unique per calculator, and only pad when a page is
+    # genuinely short.
+    d = re.sub(r"\s+", " ", c["desc"]).strip().rstrip(".")
+    bench = re.sub(r"\s+", " ", c.get("bench", "")).strip()
+    out = f"{d}. {bench}" if bench else f"{d}."
+    if len(out) < 110:
+        out = f"{out} Free \u20b9 calculator, no sign-up."
     if len(out) > 158:
         out = out[:155].rsplit(" ", 1)[0] + "..."
     # The description is interpolated into a double-quoted attribute, and one
