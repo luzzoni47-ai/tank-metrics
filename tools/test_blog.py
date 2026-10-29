@@ -187,12 +187,15 @@ def check_card_markup(failures: list) -> None:
 
 
 def check_amounts(failures: list) -> None:
+    # The keyword-plan pages work in ₹ Crores by design - a valuation page with
+    # a ₹10,000 ceiling would be nonsense. The cap keeps the small-business
+    # guides relatable; it does not apply to crore-scale deal maths. Exempt them
+    # by reading the plan, not by guessing at the file name.
+    import json
+    plan = json.loads((ROOT / "tools" / "keyword_pages.json").read_text(encoding="utf-8"))
+    keyword_files = {f"blog-{p['slug']}.html" for p in plan["pages"]}
     for path in sorted(SITE.glob("blog*.html")):
-        # The keyword valuation pages (blog-keyword-*.html) work in ₹ Crores by
-        # design - a valuation page with a ₹10,000 ceiling would be nonsense.
-        # The cap keeps the small-business guides relatable; it does not apply
-        # to crore-scale deal maths.
-        if path.name.startswith("blog-keyword-"):
+        if path.name in keyword_files:
             continue
         body = re.sub(r"<[^>]+>", " ", path.read_text())
         for m in re.finditer(r"₹(\d[\d,]*)", body):

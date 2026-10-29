@@ -93,6 +93,20 @@ const nextConfig = {
       // Static blog posts live at the root now.
       { source: '/site/blog-:slug.html', destination: '/:slug', permanent: true },
       { source: '/calculators', destination: '/', permanent: true },
+      // The five Day-1 keyword pages first shipped as /keyword-<slug>, which
+      // matched neither the plan's URL nor the query, and Google never indexed
+      // any of them (all five read "URL is unknown to Google"). The pages now
+      // live at /<slug>; the old prefix consolidates onto them.
+      { source: '/keyword-shark-tank-valuation-calculator-in-crores',
+        destination: '/shark-tank-valuation-calculator-in-crores', permanent: true },
+      { source: '/keyword-how-much-equity-to-give-for-1-crore',
+        destination: '/how-much-equity-to-give-for-1-crore', permanent: true },
+      { source: '/keyword-boat-valuation-shark-tank',
+        destination: '/boat-valuation-shark-tank', permanent: true },
+      { source: '/keyword-burn-rate-calculator-india',
+        destination: '/burn-rate-calculator-india', permanent: true },
+      { source: '/keyword-royalty-deal-calculator-shark-tank',
+        destination: '/royalty-deal-calculator-shark-tank', permanent: true },
       // /digital-products was the product hub. It is retired: the
       // product page is now the only page that sells and delivers the
       // model, so the old URL redirects rather than competing with it.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the keyword-targeted calculator pages (blog-keyword-<slug>.html).
+"""Generate the keyword-targeted calculator pages (blog-<slug>.html).
 
 The 30-page plan (see tools/keyword_pages.json) targets queries the site has no
 page for yet - "shark tank valuation calculator in crores", "burn rate
@@ -8,8 +8,14 @@ calculator india", and so on. Each one is a real, working calculator plus a
 exactly what stopped Google indexing the rest of the site (see the daily SEO
 runbook).
 
-Why `blog-keyword-<slug>.html` and not a brand-new family: the existing blog
-pipeline already gives a page in this shape its clean URL (clean_urls.py), its
+The file is `blog-<slug>.html`, so clean_urls.py gives it the clean URL
+`/<slug>` - the exact URL the 30-page plan specifies. An earlier revision wrote
+`blog-keyword-<slug>.html`, which cleaned to `/keyword-<slug>`; that prefix
+matched neither the plan nor the query, and none of those URLs was ever indexed,
+so they now 301 to the clean form (next.config.mjs).
+
+Why the existing blog pipeline and not a brand-new family: it already gives a
+page in this shape its clean URL (clean_urls.py), its
 sitemap entry (wire_crawl_graph.py), Article + BreadcrumbList schema
 (add_blog_schema.py), the "Run the numbers" cross-links (wire_blog_tools.py),
 the PWA shell (add_pwa.py) and the language toggle. Reusing it means a new page
@@ -200,6 +206,16 @@ def content_blocks(c: dict) -> list[str]:
         out.append("<h2>Common Mistakes</h2>")
         items = "".join(f"<li>{esc(m)}</li>" for m in c["mistakes"])
         out.append(f'<ul class="plain-list">{items}</ul>')
+
+    if c.get("comparison"):
+        cm = c["comparison"]
+        out.append("<h2>Before TankMetrics vs After TankMetrics</h2>")
+        head = "".join(f"<th>{esc(h)}</th>" for h in cm["headers"])
+        rows = "".join(
+            "<tr>" + "".join(f"<td>{esc(v)}</td>" for v in r) + "</tr>"
+            for r in cm["rows"]
+        )
+        out.append(f"<table><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table>")
     return out
 
 
@@ -254,10 +270,10 @@ def card(c: dict) -> str:
 def page(c: dict) -> str:
     slug = c["slug"]
     # Point the canonical at the FILE path: clean_urls.py rewrites
-    # /site/blog-keyword-<slug>.html -> /keyword-<slug> from url-map.json, the
-    # same way it does for every other page. Naming the clean path directly
-    # would leave the canonical as the only un-rewritten URL on the page.
-    canonical = f"{BASE}/site/blog-keyword-{slug}.html"
+    # /site/blog-<slug>.html -> /<slug> from url-map.json, the same way it does
+    # for every other page. Naming the clean path directly would leave the
+    # canonical as the only un-rewritten URL on the page.
+    canonical = f"{BASE}/site/blog-{slug}.html"
     title = c["title"]
     desc = c["description"]
     en = "\n".join(content_blocks(c))
@@ -313,7 +329,12 @@ def blog_cards(pages: list[dict]) -> int:
         return 0
     cards = ""
     for c in pages:
-        href = f"/keyword-{c['slug']}"
+        href = f"/{c['slug']}"
+        # An earlier revision linked the /keyword-<slug> form; drop that stale
+        # card so the listing does not carry two links to the same page.
+        stale = f'<a class="blog-card" href="/keyword-{c["slug"]}"'
+        if stale in text:
+            text = text[:text.index(stale)] + text[text.index("</a>", text.index(stale)) + 4:]
         if f'href="{href}"' in text:
             continue
         accent = ACCENTS.get(c.get("color", "blue"), "#4285F4")
@@ -341,7 +362,7 @@ def main() -> None:
     for c in chosen:
         assert len(c["title"]) <= 65, f"{c['slug']}: title {len(c['title'])} > 65"
         assert 50 <= len(c["description"]) <= 165, f"{c['slug']}: desc {len(c['description'])}"
-        (SITE / f"blog-keyword-{c['slug']}.html").write_text(page(c), encoding="utf-8")
+        (SITE / f"blog-{c['slug']}.html").write_text(page(c), encoding="utf-8")
         written += 1
     cards = blog_cards(chosen)
     print(f"wrote {written} keyword page(s) of {len(PAGES['pages'])} in the plan; "

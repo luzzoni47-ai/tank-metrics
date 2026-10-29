@@ -1,765 +1,885 @@
 {
-  "_comment": "Keyword-targeted calculator pages. Day 1 (PHASE 1 VIRAL). Content is ₹-only, Hinglish-friendly, Shark Tank India grounded. Rendered by tools/gen_keyword_pages.py.",
-  "plan": "30 keywords over 6 days, 5 per day. See tools/keyword_pages.json 'days' for the full schedule.",
-  "days": [
-    {
-      "day": 1,
-      "phase": "VIRAL",
-      "nums": [
-        1,
-        2,
-        3,
-        4,
-        5
+ "_comment": "Keyword-targeted calculator pages. Day 1 (PHASE 1 VIRAL). Content is ₹-only, Hinglish-friendly, Shark Tank India grounded. Rendered by tools/gen_keyword_pages.py.",
+ "plan": "30 keywords over 6 days, 5 per day. See tools/keyword_pages.json 'days' for the full schedule.",
+ "days": [
+  {
+   "day": 1,
+   "phase": "VIRAL",
+   "nums": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "day": 2,
+   "phase": "FOUNDER TOOLS",
+   "nums": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "day": 3,
+   "phase": "FOUNDER TOOLS",
+   "nums": [
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "day": 4,
+   "phase": "HIGH SEARCH",
+   "nums": [
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "day": 5,
+   "phase": "HIGH SEARCH",
+   "nums": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "day": 6,
+   "phase": "FUTURE PILLARS",
+   "nums": [
+    26,
+    27,
+    28,
+    29,
+    30
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "num": 1,
+   "slug": "shark-tank-valuation-calculator-in-crores",
+   "keyword": "Shark Tank India valuation calculator in crores",
+   "cat": "val",
+   "color": "yellow",
+   "date_display": "October 29, 2026",
+   "title": "Shark Tank Valuation Calculator in Crores (₹) - Free",
+   "description": "Free Shark Tank India valuation calculator in crores. Enter any deal's amount and equity to get post-money valuation in ₹ Crores instantly.",
+   "h1": "Shark Tank India Valuation Calculator in Crores - Free Calculator in ₹",
+   "calculator": {
+    "name": "Shark Tank Deal Valuation",
+    "inputs": [
+     {
+      "k": "amt",
+      "l": "Investment Amount",
+      "u": "₹"
+     },
+     {
+      "k": "eq",
+      "l": "Equity Offered",
+      "u": "%"
+     }
+    ],
+    "compute": "function(e){var a=val(e,\"amt\"),q=val(e,\"eq\");var post=q?a/(q/100):0;return{rows:[{l:\"Post-Money Valuation\",v:inr(post)},{l:\"Pre-Money Valuation\",v:inr(post-a)},{l:\"Founder Stake Left\",v:pct(100-q)}]}}"
+   },
+   "hook": "In Shark Tank India Season 1, Skippi Ice Pops took ₹1 crore for 15% equity — that one line is a ₹6.67 crore valuation. Revamp Moto gave only 1.5% for ₹1 crore, so its valuation was about ₹66.7 crore. Same cheque, wildly different value, and it all comes from one division. This free calculator does that division in rupees and crores so you can check any Shark Tank India deal yourself.",
+   "what": [
+    "A Shark Tank India valuation calculator turns two numbers from a pitch — the amount invested and the equity given for it — into the valuation of the whole company. Investors call the answer the post-money valuation: the value of the business after the new money is in. The maths is a single division, but the number it produces is the one founders and sharks argue about for the whole episode.",
+    "The tool also shows the pre-money valuation (the value before the investment) and the stake the founder keeps. On Tank Metrics everything is shown in ₹ Lakhs and ₹ Crores, because that is how Indian founders, investors and chartered accountants actually talk. There is no dollar conversion and no US template in the way.",
+    "One more thing this calculator settles is the gap between what a founder asks for and what the sharks finally agree to. Most pitches open with a valuation claim and then settle lower once the equity is negotiated. Seeing both numbers side by side is how you learn to price a deal before you are in the room."
+   ],
+   "formula": {
+    "expr": "Valuation = (Investment ÷ Equity) × 100",
+    "note": "Investment in ₹ crore, equity as a percentage. The result is the post-money valuation."
+   },
+   "example": {
+    "intro": "Suppose your business makes ₹1.2 crore of profit a year and an investor offers ₹1 crore for 10%. Here is how the same deal reads at different stakes, in ₹ Crores.",
+    "table": {
+     "headers": [
+      "Ask",
+      "Equity",
+      "Valuation",
+      "Profit (Yearly)"
+     ],
+     "rows": [
+      [
+       "₹1 crore",
+       "10%",
+       "₹10 crore",
+       "₹1.2 crore"
+      ],
+      [
+       "₹50 lakh",
+       "5%",
+       "₹10 crore",
+       "₹1.2 crore"
+      ],
+      [
+       "₹2 crore",
+       "20%",
+       "₹10 crore",
+       "₹1.2 crore"
+      ],
+      [
+       "₹1 crore",
+       "15%",
+       "₹6.67 crore",
+       "₹1.2 crore"
       ]
+     ]
     },
-    {
-      "day": 2,
-      "phase": "FOUNDER TOOLS",
-      "nums": [
-        6,
-        7,
-        8,
-        9,
-        10
+    "outro": "Notice how the same ₹10 crore valuation comes out of three very different offers. The last row is Skippi Ice Pops' real deal: ₹1 crore for 15%, which is ₹6.67 crore. That is why sharks look at the valuation before they look at the cheque."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter the amount",
+     "Type the investment in ₹ crore or lakh. You can write 1 crore or 50 lakh and the field understands both."
+    ],
+    [
+     "Step 2 - Enter the equity",
+     "Type the equity percentage the investor is asking for. Example: 15%."
+    ],
+    [
+     "Step 3 - Read the valuation",
+     "The calculator shows post-money valuation, pre-money valuation and your remaining stake, all in ₹."
+    ]
+   ],
+   "why_india": [
+    "American valuation tools count in millions and billions; India counts in lakh and crore, and one crore is ten million. The same value reads as a very different number depending on the unit, which is exactly where founders get confused when they copy a US calculator.",
+    "Indian equity deals are usually issued as CCPS (Compulsorily Convertible Preference Shares), and a valuation often has to be certified by a chartered accountant or a SEBI-registered merchant banker. That is a different system from the US 409A valuation, so an Indian founder needs a calculator that thinks in ₹ and in Indian deal terms.",
+    "Indian founders also raise from family and friends before any angel, and those early rounds are rarely written down with a formal valuation. When a later angel asks for equity, this calculator is how you turn an informal round into a real number you can defend in front of a chartered accountant."
+   ],
+   "faqs": [
+    [
+     "How do you calculate a Shark Tank India valuation?",
+     "Use Valuation = (Investment ÷ Equity) × 100. If someone gives ₹1 crore for 10% equity, the valuation is ₹10 crore. Skippi Ice Pops gave 15% for ₹1 crore, so its valuation was ₹6.67 crore."
+    ],
+    [
+     "What is the difference between pre-money and post-money valuation?",
+     "Post-money is the value after the investment. Pre-money is post-money minus the investment. For ₹1 crore at 10%, post-money is ₹10 crore and pre-money is ₹9 crore."
+    ],
+    [
+     "Is this calculator free and does it show rupees?",
+     "Yes. The Tank Metrics Shark Tank valuation calculator is free and shows every figure in ₹ Lakhs and ₹ Crores, made for Indian founders."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>Shark Tank valuation calculator kya karta hai</h2>",
+    "<p>Yeh tool do numbers leta hai — investment amount aur uske badle mili equity — aur poori company ki valuation nikal deta hai. Yahi wahi ganit hai jo sharks pitch ke 10 second mein dimaag mein kar lete hain, lekin TV par dikhaya nahi jaata.</p>",
+    "<h2>Formula</h2>",
+    "<p>Valuation = (Investment ÷ Equity) × 100. Agar ₹1 crore ke liye 10% equity di, toh valuation ₹10 crore. Skippi ne ₹1 crore ke liye 15% diya, isi liye valuation ₹6.67 crore thi.</p>",
+    "<h2>Ek example</h2>",
+    "<p>Maano aapki company saal ka ₹1.2 crore profit kama rahi hai. Aap ₹1 crore ke liye 10% dete ho, toh post-money valuation ₹10 crore aur pre-money ₹9 crore hoti hai. Founder ke paas 90% bacha rehta hai.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Pehle amount daalo, phir equity percentage, aur turant post-money, pre-money aur apna baaki stake ₹ mein dekh lo. Kuch bhi kahin bheja nahi jaata — ganit aapke browser mein hi hota hai.</p>",
+    "<h2>India mein kya alag hai</h2>",
+    "<p>India mein valuation lakh aur crore mein hoti hai aur equity CCPS par issue hoti hai, jise CA ya merchant banker certify karta hai. US ke tools million aur 409A par chalte hain, isi liye Indian founder ko ₹-wala calculator chahiye.</p>"
+   ],
+   "related": [
+    [
+     "/implied-valuation",
+     "Implied Valuation"
+    ],
+    [
+     "/pre-money-and-post-money-valuation",
+     "Pre-Money & Post-Money Valuation"
+    ],
+    [
+     "/dilution-calculator",
+     "Dilution Calculator"
+    ]
+   ],
+   "cta": "Calculate your Shark Tank valuation now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "mistakes": [
+    "Using the pre-money valuation as the post-money valuation. The investment is added on top, so a ₹9 crore pre-money with ₹1 crore invested becomes ₹10 crore post-money.",
+    "Quoting a valuation without also quoting the equity percentage. The two only make sense together.",
+    "Assuming the sharks' first offer is final. Most deals close lower on equity than the opening ask."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Valuation from a stake",
+      "Guesswork in the room",
+      "₹10 crore from one division"
+     ],
+     [
+      "Pre-money vs post-money",
+      "Mixed up, deal mispriced",
+      "Both shown side by side"
+     ],
+     [
+      "Currency",
+      "Millions and billions",
+      "₹ Lakhs and Crores only"
+     ]
+    ]
+   }
+  },
+  {
+   "num": 2,
+   "slug": "how-much-equity-to-give-for-1-crore",
+   "keyword": "how much equity to give for 1 crore",
+   "cat": "val",
+   "color": "yellow",
+   "date_display": "October 29, 2026",
+   "title": "How Much Equity to Give for 1 Crore? Calculator",
+   "description": "How much equity to give for 1 crore? Enter your valuation and see the exact equity % for ₹1 crore, in ₹ Crores. Free for Indian founders.",
+   "h1": "How Much Equity to Give for 1 Crore? - Free Calculator in ₹",
+   "calculator": {
+    "name": "Equity for ₹1 Crore",
+    "inputs": [
+     {
+      "k": "val",
+      "l": "Your Valuation",
+      "u": "₹"
+     }
+    ],
+    "compute": "function(e){var v=val(e,\"val\");return{rows:[{l:\"Equity for ₹1 Crore\",v:pct(v?1e7/v*100:0)},{l:\"Equity for ₹50 Lakh\",v:pct(v?5e6/v*100:0)},{l:\"Equity for ₹2 Crore\",v:pct(v?2e7/v*100:0)}]}}"
+   },
+   "hook": "On Shark Tank India, Revamp Moto gave just 1.5% for ₹1 crore, because its valuation was about ₹66.7 crore. The Sass Bar gave 35% for ₹50 lakh. Same show, and the equity for a rupee is not fixed at all — it depends entirely on what your company is worth. This calculator tells you the honest number for your business.",
+   "what": [
+    "How much equity you give for ₹1 crore is decided by your valuation, not by the cheque size. If your company is worth ₹10 crore and you raise ₹1 crore, you should be giving about 10%. If it is worth ₹20 crore, the same ₹1 crore costs you only 5%. Raise the valuation and the equity for the same money falls.",
+    "Tank Metrics takes your valuation and returns the exact equity for ₹1 crore, plus what ₹50 lakh and ₹2 crore would cost you. It is the fastest way to answer a founder's real question: how much of my company am I actually selling for this money? Everything is shown in ₹ Lakhs and ₹ Crores.",
+    "There is also a practical floor to keep in mind. Investors rarely accept much below 1% for a meaningful cheque, because a tiny stake is hard to track and harder to sell later. So even a very high valuation has a minimum equity below which the deal stops making sense for the investor.",
+    "The cleanest way to hold your equity is to arrive at the negotiation with your own valuation already worked out from revenue and profit. A founder who can show the arithmetic keeps far more of the company than one who accepts the first percentage on the table."
+   ],
+   "formula": {
+    "expr": "Equity % = (1 crore ÷ Valuation in crore) × 100",
+    "note": "At a ₹20 crore valuation the equity is (1 ÷ 20) × 100 = 5%."
+   },
+   "example": {
+    "intro": "Here is what ₹1 crore costs in equity at different valuations. Every row is the same cheque; only the valuation changes.",
+    "table": {
+     "headers": [
+      "Valuation",
+      "Cheque",
+      "Equity to Give",
+      "Profit (Yearly)"
+     ],
+     "rows": [
+      [
+       "₹5 crore",
+       "₹1 crore",
+       "20%",
+       "₹60 lakh"
+      ],
+      [
+       "₹10 crore",
+       "₹1 crore",
+       "10%",
+       "₹1.2 crore"
+      ],
+      [
+       "₹20 crore",
+       "₹1 crore",
+       "5%",
+       "₹2.4 crore"
+      ],
+      [
+       "₹50 crore",
+       "₹1 crore",
+       "2%",
+       "₹6 crore"
       ]
+     ]
     },
-    {
-      "day": 3,
-      "phase": "FOUNDER TOOLS",
-      "nums": [
-        11,
-        12,
-        13,
-        14,
-        15
+    "outro": "The lesson is blunt: the stronger your valuation, the less equity the same money costs. Revamp Moto raised ₹1 crore at a ₹66.7 crore valuation and gave only 1.5%. Improving your valuation is the founder's real job, not haggling over the cheque."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter your valuation",
+     "Type your company's current valuation in ₹ crore. If you do not know it, start from a profit or revenue multiple."
+    ],
+    [
+     "Step 2 - Pick the cheque",
+     "The calculator already shows ₹1 crore, ₹50 lakh and ₹2 crore so you can compare three rounds at once."
+    ],
+    [
+     "Step 3 - Read the equity",
+     "See exactly how much equity each cheque costs you at your valuation, and how much stake you keep."
+    ]
+   ],
+   "why_india": [
+    "In India an equity round is not just a percentage. Along with the equity come a board seat, veto rights and a liquidation preference, all of which sit on top of the headline number. A plain US calculator that returns only a percentage misses every one of those Indian deal layers.",
+    "For a small Indian business, angel investors are comfortable taking 10% to 20% for a ₹1 crore seed round. Once revenue and profit grow, the same cheque becomes 5% or even 2%. That shift is normal in India, and it is the reason valuation work pays for itself.",
+    "India also taxes a transfer differently from a fresh issue. A new issue of shares is not a taxable event for the founder, but a secondary sale of existing shares is, so the structure of the round quietly changes the real cost of the equity you give away."
+   ],
+   "faqs": [
+    [
+     "How much equity should I give for ₹1 crore?",
+     "It depends on your valuation: Equity % = (1 crore ÷ valuation) × 100. At a ₹10 crore valuation it is 10%, at ₹20 crore it is 5%, and at ₹50 crore it is only 2%."
+    ],
+    [
+     "Is giving more equity ever fine?",
+     "Early on, 15-20% is normal because the investor takes real risk. But giving more than 30% for ₹1 crore is expensive for your long-term ownership."
+    ],
+    [
+     "Does giving equity take away my control?",
+     "Giving 10% does not by itself hand over control, but a board seat and veto rights can come with the deal. This calculator shows your remaining stake so you can plan."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>₹1 crore ke liye equity kitni deni chahiye</h2>",
+    "<p>Equity aapki valuation par depend karti hai, cheque par nahi. ₹10 crore valuation par ₹1 crore uthane par 10% dena chahiye; ₹20 crore par wahi ₹1 crore sirf 5% ka hota hai. Isi liye pehle valuation, phir equity.</p>",
+    "<h2>Formula</h2>",
+    "<p>Equity % = (1 crore ÷ valuation) × 100. Valuation ₹20 crore ho toh equity = (1 ÷ 20) × 100 = 5%.</p>",
+    "<h2>Ek example</h2>",
+    "<p>₹5 crore valuation par ₹1 crore ki equity 20% hai, ₹10 crore par 10%, aur ₹50 crore par sirf 2%. Same cheque, alag-alag keemat — yeh seedha valuation ka kamaal hai.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Apni valuation daalo aur turant dekh lo ki ₹1 crore, ₹50 lakh aur ₹2 crore ke liye kitni equity deni padegi. Result ₹ Lakhs aur Crores mein aata hai.</p>",
+    "<h2>India mein kya alag hai</h2>",
+    "<p>India mein equity ke saath board seat aur liquidation preference bhi aate hain, aur valuation CA se certify karani padti hai. US ke simple tools yeh layers nahi dikhate.</p>"
+   ],
+   "related": [
+    [
+     "/dilution-calculator",
+     "Dilution Calculator"
+    ],
+    [
+     "/implied-valuation",
+     "Implied Valuation"
+    ],
+    [
+     "/cap-table-and-esop-pool",
+     "Cap Table & ESOP Pool"
+    ]
+   ],
+   "cta": "Find out how much equity ₹1 crore costs you now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "mistakes": [
+    "Deciding the equity before the valuation. Do it in that order and you will almost always overpay.",
+    "Forgetting that the ESOP pool is carved out of the founder's stake, not the investor's, so your own percentage falls further than the headline suggests.",
+    "Comparing your equity to a US deal that used a completely different valuation method."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Equity for ₹1 crore",
+      "Trial and error",
+      "20% / 10% / 5% at a glance"
+     ],
+     [
+      "Dilution felt",
+      "Only after signing",
+      "Shown before you agree"
+     ],
+     [
+      "Pitch ready",
+      "A rough guess",
+      "A number you can defend"
+     ]
+    ]
+   }
+  },
+  {
+   "num": 3,
+   "slug": "boat-valuation-shark-tank",
+   "keyword": "boat valuation in shark tank",
+   "cat": "val",
+   "color": "yellow",
+   "date_display": "October 29, 2026",
+   "title": "Boat Valuation in Shark Tank India - Case Study",
+   "description": "Boat valuation in Shark Tank India explained: boAt never pitched, Aman Gupta is a shark. See boAt's ₹ Crore valuation and check any deal free.",
+   "h1": "Boat Valuation in Shark Tank India - Full Case Study - Free Calculator in ₹",
+   "calculator": {
+    "name": "Revenue Multiple Valuation",
+    "inputs": [
+     {
+      "k": "rev",
+      "l": "Annual Revenue",
+      "u": "₹"
+     },
+     {
+      "k": "mult",
+      "l": "Revenue Multiple",
+      "u": "x"
+     }
+    ],
+    "compute": "function(e){var r=val(e,\"rev\"),m=val(e,\"mult\");return{rows:[{l:\"Implied Valuation\",v:inr(r*m)},{l:\"Revenue Multiple\",v:num(m,1)+\"x\"}]}}"
+   },
+   "hook": "The biggest myth about boAt and Shark Tank India is that boAt pitched on the show. It never did. boAt's co-founder Aman Gupta is a shark — he sits on the investor side and hears other founders pitch. Yet boAt is the perfect yardstick for every deal you see on the show, because its valuation shows what a real Indian brand is worth at scale.",
+   "what": [
+    "boAt's parent company is Imagine Marketing. At its 2025 IPO filing, the company was valued at roughly ₹15,000 crore, on yearly revenue of about ₹3,000 crore. Aman Gupta and Sameer Mehta built it from 2016 into India's largest audio and wearable brand. That is a story of scale, not of a single cheque.",
+    "When a Shark Tank India founder asks for ₹10 crore, boAt at ₹15,000 crore is the other end of the scale. This calculator lets you put a revenue figure and a multiple together to see the same kind of valuation the market gives a real Indian company. The point is simple: valuation comes from revenue and profit, not from a story.",
+    "The calculator also exposes an uncomfortable truth. A brand with ₹1 crore of revenue at a 5x multiple is worth ₹5 crore, no matter how good the story is. Revenue is the input the market cannot argue with, and it is the one a founder can actually grow.",
+    "For a founder the lesson is to grow the input the multiple multiplies. A brand at ₹10 crore of revenue does not need a cleverer story to reach ₹50 crore of value at a 5x multiple; it needs five times the revenue. That is a harder but far more honest path than arguing for a higher multiple."
+   ],
+   "formula": {
+    "expr": "Valuation = Yearly Revenue × Revenue Multiple",
+    "note": "Shark Tank deals often sit at 2x to 10x revenue. At boAt's scale the multiple is lower."
+   },
+   "example": {
+    "intro": "Below is boAt's valuation next to typical Shark Tank India deals, all in ₹ Crores. Watch how the multiple behaves as revenue grows.",
+    "table": {
+     "headers": [
+      "Company",
+      "Yearly Revenue",
+      "Multiple",
+      "Valuation"
+     ],
+     "rows": [
+      [
+       "Shark Tank small brand",
+       "₹1 crore",
+       "5x",
+       "₹5 crore"
+      ],
+      [
+       "Shark Tank growing D2C",
+       "₹10 crore",
+       "4x",
+       "₹40 crore"
+      ],
+      [
+       "boAt (Imagine Marketing)",
+       "₹3,000 crore",
+       "5x",
+       "₹15,000 crore"
       ]
+     ]
     },
-    {
-      "day": 4,
-      "phase": "HIGH SEARCH",
-      "nums": [
-        16,
-        17,
-        18,
-        19,
-        20
+    "outro": "boAt's ₹15,000 crore did not come from one pitch. It came from years of revenue and scale. A brand worth ₹5 crore on the show grows toward boAt's number through the same multiple applied to a much bigger revenue. So connect your valuation to your revenue, not to your story."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter yearly revenue",
+     "Type your annual revenue in ₹ crore. Use the last twelve months of sales."
+    ],
+    [
+     "Step 2 - Enter a multiple",
+     "Pick a multiple for your category: D2C around 4x, SaaS 6x-10x, hardware and audio 2x-4x."
+    ],
+    [
+     "Step 3 - Read the valuation",
+     "The calculator shows the implied valuation in ₹, the same way a market prices a real brand."
+    ]
+   ],
+   "why_india": [
+    "In India, hardware and D2C brands usually trade at a lower revenue multiple than US brands, because margins are thinner and competition is fierce. boAt's multiple sits in single digits for exactly that reason, while a US audio brand can command a premium. Copying a US multiple overstates an Indian valuation.",
+    "An Indian valuation also has to stand up to a chartered accountant and SEBI rules, and deals are often structured as CCPS. US tools work on 409A and on dollars, which do not translate cleanly. Tank Metrics keeps everything in ₹ Crores so the number is one an Indian investor will recognise.",
+    "Indian hardware brands also carry higher working capital and import costs, which pull the multiple down further. A brand that imports components pays customs duty and IGST before it sells a single unit, so the revenue that reaches the multiple is already carrying that drag."
+   ],
+   "faqs": [
+    [
+     "Did boAt ever pitch on Shark Tank India?",
+     "No. boAt never pitched on Shark Tank India. boAt's co-founder Aman Gupta is a shark on the show, so he sits on the investor side rather than pitching his own company."
+    ],
+    [
+     "What is boAt's valuation?",
+     "boAt's parent, Imagine Marketing, was valued at roughly ₹15,000 crore around its 2025 IPO filing, with yearly revenue near ₹3,000 crore."
+    ],
+    [
+     "What is the difference between a Shark Tank deal and a brand like boAt?",
+     "It is scale. Shark Tank deals are often ₹1 crore to ₹10 crore valuations, while boAt stands at ₹15,000 crore. Valuation grows with revenue and profit."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>boAt ne Shark Tank mein pitch kiya tha?</h2>",
+    "<p>Nahi. boAt ne kabhi Shark Tank India mein pitch nahi kiya. boAt ke co-founder Aman Gupta khud shark hain, isi liye woh investor side par baithte hain, apni company pitch nahi karte.</p>",
+    "<h2>Formula</h2>",
+    "<p>Valuation = Yearly Revenue × Revenue Multiple. D2C ke liye aksar 4x, SaaS ke liye 6x-10x, aur hardware ke liye 2x-4x.</p>",
+    "<h2>Ek example</h2>",
+    "<p>₹3,000 crore revenue par 5x multiple lagta hai toh valuation ₹15,000 crore banti hai — bilkul boAt jaisi. ₹1 crore revenue par 5x lagta hai toh sirf ₹5 crore.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Apni yearly revenue daalo aur multiple chuno; calculator turant implied valuation ₹ mein dikhata hai, boAt-style.</p>",
+    "<h2>India mein kya alag hai</h2>",
+    "<p>India mein D2C aur hardware ka multiple US se kam hota hai kyunki margin patla hota hai. Isi liye boAt ka multiple single digit mein rehta hai.</p>"
+   ],
+   "related": [
+    [
+     "/revenue-multiple",
+     "Revenue Multiple"
+    ],
+    [
+     "/ebitda-multiple",
+     "EBITDA Multiple"
+    ],
+    [
+     "/implied-valuation",
+     "Implied Valuation"
+    ]
+   ],
+   "cta": "Check your valuation the way boAt is valued now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "mistakes": [
+    "Applying a US software multiple to an Indian hardware brand, which overstates the valuation badly.",
+    "Counting gross order value as revenue. Only net revenue, after returns and discounts, belongs in the formula.",
+    "Using one unusually good month as the yearly revenue figure."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "boAt's scale",
+      "Unknown",
+      "₹3,000 crore revenue, 5x, ₹15,000 crore"
+     ],
+     [
+      "Shark Tank small brand",
+      "Unknown",
+      "₹1 crore revenue, ₹5 crore value"
+     ],
+     [
+      "Compare a deal",
+      "Two tabs and a calculator",
+      "One page, all in ₹ Crores"
+     ]
+    ]
+   }
+  },
+  {
+   "num": 4,
+   "slug": "burn-rate-calculator-india",
+   "keyword": "burn rate calculator for startups india",
+   "cat": "growth",
+   "color": "blue",
+   "date_display": "October 29, 2026",
+   "title": "Burn Rate Calculator for Startups India (₹)",
+   "description": "Free burn rate calculator for Indian startups. Enter monthly income and expenses to get your net burn and runway in ₹ Lakhs, instantly.",
+   "h1": "Burn Rate Calculator for Startups India - Free Calculator in ₹",
+   "calculator": {
+    "name": "Burn Rate & Runway",
+    "inputs": [
+     {
+      "k": "inc",
+      "l": "Monthly Income",
+      "u": "₹"
+     },
+     {
+      "k": "exp",
+      "l": "Monthly Expenses",
+      "u": "₹"
+     },
+     {
+      "k": "cash",
+      "l": "Cash in Bank",
+      "u": "₹"
+     }
+    ],
+    "compute": "function(e){var i=val(e,\"inc\"),x=val(e,\"exp\"),c=val(e,\"cash\");var burn=x-i;return{rows:[{l:\"Net Burn / Month\",v:inr(burn)},{l:\"Runway\",v:burn>0?num(c/burn,1)+\" months\":\"Profitable\"}]}}"
+   },
+   "hook": "On Shark Tank India, the question founders get asked most often is not about valuation — it is \"monthly burn kitna hai?\" Sharks ask it because a great story with a broken burn is still a dead business. Skippi Ice Pops halved its burn after the show and then grew 40x. Your burn rate and your runway are the two numbers that decide how much time you really have.",
+   "what": [
+    "Burn rate is how much cash your business spends each month beyond what it earns. There are two versions: gross burn, the total spend, and net burn, the spend minus income. Net burn is the honest number, because it is what actually drains your bank account every month.",
+    "If you spend ₹5 lakh a month and earn ₹2 lakh, your net burn is ₹3 lakh. If you have ₹30 lakh in the bank, you have ten months of runway. Tank Metrics shows both the net burn and the runway in ₹ Lakhs, the way an Indian founder checks their own account, not in dollars.",
+    "Runway is the second half of the same question. Burn tells you how fast the money is leaving; runway tells you how many months that leaves you. A founder who knows both can raise the next round from a position of strength instead of from panic.",
+    "A useful habit is to write the burn and the runway down on the first of every month, before the invoices arrive. It takes two minutes and it turns a vague worry into a number you can act on. Founders who do this catch a rising burn two or three months early, which is exactly the window where a small fix is still cheap."
+   ],
+   "formula": {
+    "expr": "Net Burn = Monthly Expenses − Monthly Income",
+    "note": "Runway in months = Cash in Bank ÷ Net Burn."
+   },
+   "example": {
+    "intro": "Three Indian startups, three very different months, all measured in ₹ Lakhs.",
+    "table": {
+     "headers": [
+      "Monthly Income",
+      "Monthly Expense",
+      "Net Burn",
+      "Runway"
+     ],
+     "rows": [
+      [
+       "₹0",
+       "₹5 lakh",
+       "₹5 lakh",
+       "6 months (₹30 lakh)"
+      ],
+      [
+       "₹2 lakh",
+       "₹5 lakh",
+       "₹3 lakh",
+       "10 months (₹30 lakh)"
+      ],
+      [
+       "₹8 lakh",
+       "₹6 lakh",
+       "Profit ₹2 lakh",
+       "Infinite"
       ]
+     ]
     },
-    {
-      "day": 5,
-      "phase": "HIGH SEARCH",
-      "nums": [
-        21,
-        22,
-        23,
-        24,
-        25
+    "outro": "The last row is the goal: when income passes expenses, burn disappears and the business funds itself. Skippi did exactly this — it cut its burn in half and became sustainable, and the growth followed. Track your net burn every single month, small or large."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter monthly income",
+     "Type this month's total income in ₹ lakh. Zero is fine if you are pre-revenue."
+    ],
+    [
+     "Step 2 - Enter monthly expenses",
+     "Add salaries, rent, marketing and taxes into one monthly figure in ₹ lakh."
+    ],
+    [
+     "Step 3 - Read burn and runway",
+     "The calculator shows net burn and how many months of cash you have left, in ₹ Lakhs."
+    ]
+   ],
+   "why_india": [
+    "An Indian startup carries monthly liabilities that US burn tools ignore: GST, TDS and PF payments. Left out of the expense figure, they make the burn look smaller than it is. Adding them back gives the true picture of an Indian founder's month.",
+    "In India, a runway of more than twelve months is considered safe, because closing a funding round here takes three to six months. A US benchmark of six months is too tight for India. Tank Metrics keeps the runway and the burn in rupees, with the Indian timeline in mind.",
+    "India also has strong seasonal cash swings. The festive months bring revenue and the months after bring returns and slower sales, so a single month's burn can flatter the picture. An average of three months gives a truer runway than any one month does."
+   ],
+   "faqs": [
+    [
+     "How do you calculate burn rate?",
+     "Net Burn = Monthly Expenses − Monthly Income. If expenses are ₹5 lakh and income is ₹2 lakh, the net burn is ₹3 lakh a month."
+    ],
+    [
+     "How much runway should a startup have?",
+     "Indian startups should keep at least twelve months of runway, because a new round takes three to six months to close. Under six months is the danger zone."
+    ],
+    [
+     "What is the difference between gross burn and net burn?",
+     "Gross burn is the total spend; net burn is spend minus income. Net burn is the real number because it shows how fast your cash is falling."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>Burn rate kya hota hai</h2>",
+    "<p>Burn rate matlab aap har mahine kitna paisa jala rahe ho. Net burn = monthly kharcha minus monthly income. Yahi asli number hai jo batata hai ki jeb kitni tezi se khaali ho rahi hai.</p>",
+    "<h2>Formula</h2>",
+    "<p>Net Burn = Monthly Expenses − Monthly Income. Runway (mahine) = Cash in Bank ÷ Net Burn.</p>",
+    "<h2>Ek example</h2>",
+    "<p>Mahine ka kharcha ₹5 lakh aur income ₹2 lakh, toh net burn ₹3 lakh hai. Bank mein ₹30 lakh ho toh 10 mahine ki runway bachti hai. Income kharcha se badh jaaye toh burn khatam.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Monthly income, expense aur bank balance daalo; calculator turant net burn aur runway ₹ Lakhs mein dikhata hai.</p>",
+    "<h2>India mein kya alag hai</h2>",
+    "<p>India mein GST, TDS aur PF jaisi monthly liabilities hoti hain jo US tools count nahi karte. Isi liye Indian founder ka asli burn zyada hota hai aur 12 mahine ki runway safe maani jaati hai.</p>"
+   ],
+   "related": [
+    [
+     "/burn-rate-and-runway",
+     "Burn Rate & Runway"
+    ],
+    [
+     "/run-rate",
+     "Run Rate"
+    ],
+    [
+     "/cagr-compound-annual-growth-rate",
+     "CAGR"
+    ]
+   ],
+   "cta": "Work out your burn and runway now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "mistakes": [
+    "Counting a one-off grant or a tax refund as monthly income, which hides the real burn.",
+    "Leaving founder salaries out of the expense figure, so the burn looks smaller than it is.",
+    "Measuring the burn once and never again. It moves every month and the runway moves with it."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Monthly burn",
+      "Guesswork",
+      "₹5 lakh, ₹3 lakh or profit"
+     ],
+     [
+      "Runway left",
+      "A nagging worry",
+      "Months and rupees, right now"
+     ],
+     [
+      "Cash plan",
+      "Reactive",
+      "Decided while you still can"
+     ]
+    ]
+   }
+  },
+  {
+   "num": 5,
+   "slug": "royalty-deal-calculator-shark-tank",
+   "keyword": "shark tank royalty deal calculator",
+   "cat": "val",
+   "color": "yellow",
+   "date_display": "October 29, 2026",
+   "title": "Shark Tank Royalty Deal Calculator - Royalty vs Equity",
+   "description": "Free Shark Tank royalty deal calculator. Compare royalty plus equity against pure equity deals and find the break-even point in ₹ Crores.",
+   "h1": "Shark Tank Royalty Deal Calculator - Royalty vs Equity - Free Calculator in ₹",
+   "calculator": {
+    "name": "Royalty vs Equity",
+    "inputs": [
+     {
+      "k": "amt",
+      "l": "Investment Amount",
+      "u": "₹"
+     },
+     {
+      "k": "roy",
+      "l": "Royalty",
+      "u": "%"
+     },
+     {
+      "k": "sales",
+      "l": "Monthly Sales",
+      "u": "₹"
+     }
+    ],
+    "compute": "function(e){var a=val(e,\"amt\"),r=val(e,\"roy\"),s=val(e,\"sales\");var per=s*r/100;return{rows:[{l:\"Royalty / Month\",v:inr(per)},{l:\"Months to Recoup\",v:per>0?num(a/per,1)+\" months\":\"—\"}]}}"
+   },
+   "hook": "In Shark Tank India Season 3, Decode Age took ₹1.5 crore for 2.25% equity plus a 1% royalty until ₹1 crore was recouped. A royalty deal gives the shark downside protection and lets the founder keep more equity, but it also takes a slice of every month's sales. This calculator shows you the real break-even between a royalty deal and a plain equity deal, in ₹ Crores.",
+   "what": [
+    "A royalty deal means the investor takes a smaller equity stake plus a percentage of sales (a royalty) until a fixed amount is recouped. After that, the royalty stops and only the equity remains. It became common on Shark Tank India from Season 3 as a way to close a gap when founders and sharks disagree on valuation.",
+    "A pure equity deal takes equity only. A royalty deal saves equity up front but charges your cash flow every month. Tank Metrics puts the two side by side so you can see how many months the royalty runs and what it costs in total, all in ₹ Lakhs and ₹ Crores.",
+    "The trade is simple to state. A royalty deal buys you a smaller equity cut today and charges you a monthly slice of sales until the recoup is complete. Whether that is cheap or expensive depends entirely on how fast your sales grow from here.",
+    "One rule of thumb helps here. If the royalty would take more than about three years to recoup at your current sales, the deal is leaning toward the investor. If it recoups in under a year, the founder is giving away cash that pure equity might have cost less to part with. The right answer sits between those two ends."
+   ],
+   "formula": {
+    "expr": "Months to Recoup = Recoup Amount ÷ (Monthly Sales × Royalty %)",
+    "note": "Effective cost = equity given + total royalty paid until the recoup is complete."
+   },
+   "example": {
+    "intro": "Say your monthly sales are ₹20 lakh and you raise ₹1.5 crore. Here is how a royalty deal compares with a pure equity deal, in ₹ Crores.",
+    "table": {
+     "headers": [
+      "Deal Type",
+      "Equity",
+      "Royalty",
+      "Break-even"
+     ],
+     "rows": [
+      [
+       "Pure equity",
+       "15%",
+       "0%",
+       "₹10 crore valuation"
+      ],
+      [
+       "Royalty + equity",
+       "2.25%",
+       "1% of sales",
+       "₹1 crore recoup = ~50 months"
+      ],
+      [
+       "Royalty heavy",
+       "1%",
+       "3% of sales",
+       "₹1 crore recoup = ~17 months"
       ]
+     ]
     },
-    {
-      "day": 6,
-      "phase": "FUTURE PILLARS",
-      "nums": [
-        26,
-        27,
-        28,
-        29,
-        30
-      ]
-    }
-  ],
-  "pages": [
-    {
-      "num": 1,
-      "slug": "shark-tank-valuation-calculator-in-crores",
-      "keyword": "Shark Tank India valuation calculator in crores",
-      "cat": "val",
-      "color": "yellow",
-      "date_display": "October 29, 2026",
-      "title": "Shark Tank Valuation Calculator in Crores (₹) - Free",
-      "description": "Free Shark Tank India valuation calculator in crores. Enter any deal's amount and equity to get post-money valuation in ₹ Crores instantly.",
-      "h1": "Shark Tank India Valuation Calculator in Crores - Free Calculator in ₹",
-      "calculator": {
-        "name": "Shark Tank Deal Valuation",
-        "inputs": [
-          {
-            "k": "amt",
-            "l": "Investment Amount",
-            "u": "₹"
-          },
-          {
-            "k": "eq",
-            "l": "Equity Offered",
-            "u": "%"
-          }
-        ],
-        "compute": "function(e){var a=val(e,\"amt\"),q=val(e,\"eq\");var post=q?a/(q/100):0;return{rows:[{l:\"Post-Money Valuation\",v:inr(post)},{l:\"Pre-Money Valuation\",v:inr(post-a)},{l:\"Founder Stake Left\",v:pct(100-q)}]}}"
-      },
-      "hook": "In Shark Tank India Season 1, Skippi Ice Pops took ₹1 crore for 15% equity — that one line is a ₹6.67 crore valuation. Revamp Moto gave only 1.5% for ₹1 crore, so its valuation was about ₹66.7 crore. Same cheque, wildly different value, and it all comes from one division. This free calculator does that division in rupees and crores so you can check any Shark Tank India deal yourself.",
-      "what": [
-        "A Shark Tank India valuation calculator turns two numbers from a pitch — the amount invested and the equity given for it — into the valuation of the whole company. Investors call the answer the post-money valuation: the value of the business after the new money is in. The maths is a single division, but the number it produces is the one founders and sharks argue about for the whole episode.",
-        "The tool also shows the pre-money valuation (the value before the investment) and the stake the founder keeps. On Tank Metrics everything is shown in ₹ Lakhs and ₹ Crores, because that is how Indian founders, investors and chartered accountants actually talk. There is no dollar conversion and no US template in the way.",
-        "One more thing this calculator settles is the gap between what a founder asks for and what the sharks finally agree to. Most pitches open with a valuation claim and then settle lower once the equity is negotiated. Seeing both numbers side by side is how you learn to price a deal before you are in the room."
-      ],
-      "formula": {
-        "expr": "Valuation = (Investment ÷ Equity) × 100",
-        "note": "Investment in ₹ crore, equity as a percentage. The result is the post-money valuation."
-      },
-      "example": {
-        "intro": "Suppose your business makes ₹1.2 crore of profit a year and an investor offers ₹1 crore for 10%. Here is how the same deal reads at different stakes, in ₹ Crores.",
-        "table": {
-          "headers": [
-            "Ask",
-            "Equity",
-            "Valuation",
-            "Profit (Yearly)"
-          ],
-          "rows": [
-            [
-              "₹1 crore",
-              "10%",
-              "₹10 crore",
-              "₹1.2 crore"
-            ],
-            [
-              "₹50 lakh",
-              "5%",
-              "₹10 crore",
-              "₹1.2 crore"
-            ],
-            [
-              "₹2 crore",
-              "20%",
-              "₹10 crore",
-              "₹1.2 crore"
-            ],
-            [
-              "₹1 crore",
-              "15%",
-              "₹6.67 crore",
-              "₹1.2 crore"
-            ]
-          ]
-        },
-        "outro": "Notice how the same ₹10 crore valuation comes out of three very different offers. The last row is Skippi Ice Pops' real deal: ₹1 crore for 15%, which is ₹6.67 crore. That is why sharks look at the valuation before they look at the cheque."
-      },
-      "steps": [
-        [
-          "Step 1 - Enter the amount",
-          "Type the investment in ₹ crore or lakh. You can write 1 crore or 50 lakh and the field understands both."
-        ],
-        [
-          "Step 2 - Enter the equity",
-          "Type the equity percentage the investor is asking for. Example: 15%."
-        ],
-        [
-          "Step 3 - Read the valuation",
-          "The calculator shows post-money valuation, pre-money valuation and your remaining stake, all in ₹."
-        ]
-      ],
-      "why_india": [
-        "American valuation tools count in millions and billions; India counts in lakh and crore, and one crore is ten million. The same value reads as a very different number depending on the unit, which is exactly where founders get confused when they copy a US calculator.",
-        "Indian equity deals are usually issued as CCPS (Compulsorily Convertible Preference Shares), and a valuation often has to be certified by a chartered accountant or a SEBI-registered merchant banker. That is a different system from the US 409A valuation, so an Indian founder needs a calculator that thinks in ₹ and in Indian deal terms.",
-        "Indian founders also raise from family and friends before any angel, and those early rounds are rarely written down with a formal valuation. When a later angel asks for equity, this calculator is how you turn an informal round into a real number you can defend in front of a chartered accountant."
-      ],
-      "faqs": [
-        [
-          "How do you calculate a Shark Tank India valuation?",
-          "Use Valuation = (Investment ÷ Equity) × 100. If someone gives ₹1 crore for 10% equity, the valuation is ₹10 crore. Skippi Ice Pops gave 15% for ₹1 crore, so its valuation was ₹6.67 crore."
-        ],
-        [
-          "What is the difference between pre-money and post-money valuation?",
-          "Post-money is the value after the investment. Pre-money is post-money minus the investment. For ₹1 crore at 10%, post-money is ₹10 crore and pre-money is ₹9 crore."
-        ],
-        [
-          "Is this calculator free and does it show rupees?",
-          "Yes. The Tank Metrics Shark Tank valuation calculator is free and shows every figure in ₹ Lakhs and ₹ Crores, made for Indian founders."
-        ]
-      ],
-      "hinglish_blocks": [
-        "<h2>Shark Tank valuation calculator kya karta hai</h2>",
-        "<p>Yeh tool do numbers leta hai — investment amount aur uske badle mili equity — aur poori company ki valuation nikal deta hai. Yahi wahi ganit hai jo sharks pitch ke 10 second mein dimaag mein kar lete hain, lekin TV par dikhaya nahi jaata.</p>",
-        "<h2>Formula</h2>",
-        "<p>Valuation = (Investment ÷ Equity) × 100. Agar ₹1 crore ke liye 10% equity di, toh valuation ₹10 crore. Skippi ne ₹1 crore ke liye 15% diya, isi liye valuation ₹6.67 crore thi.</p>",
-        "<h2>Ek example</h2>",
-        "<p>Maano aapki company saal ka ₹1.2 crore profit kama rahi hai. Aap ₹1 crore ke liye 10% dete ho, toh post-money valuation ₹10 crore aur pre-money ₹9 crore hoti hai. Founder ke paas 90% bacha rehta hai.</p>",
-        "<h2>Tank Metrics par kaise use karein</h2>",
-        "<p>Pehle amount daalo, phir equity percentage, aur turant post-money, pre-money aur apna baaki stake ₹ mein dekh lo. Kuch bhi kahin bheja nahi jaata — ganit aapke browser mein hi hota hai.</p>",
-        "<h2>India mein kya alag hai</h2>",
-        "<p>India mein valuation lakh aur crore mein hoti hai aur equity CCPS par issue hoti hai, jise CA ya merchant banker certify karta hai. US ke tools million aur 409A par chalte hain, isi liye Indian founder ko ₹-wala calculator chahiye.</p>"
-      ],
-      "related": [
-        [
-          "/implied-valuation",
-          "Implied Valuation"
-        ],
-        [
-          "/pre-money-and-post-money-valuation",
-          "Pre-Money & Post-Money Valuation"
-        ],
-        [
-          "/dilution-calculator",
-          "Dilution Calculator"
-        ]
-      ],
-      "cta": "Calculate your Shark Tank valuation now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
-      "mistakes": [
-        "Using the pre-money valuation as the post-money valuation. The investment is added on top, so a ₹9 crore pre-money with ₹1 crore invested becomes ₹10 crore post-money.",
-        "Quoting a valuation without also quoting the equity percentage. The two only make sense together.",
-        "Assuming the sharks' first offer is final. Most deals close lower on equity than the opening ask."
-      ]
-    },
-    {
-      "num": 2,
-      "slug": "how-much-equity-to-give-for-1-crore",
-      "keyword": "how much equity to give for 1 crore",
-      "cat": "val",
-      "color": "yellow",
-      "date_display": "October 29, 2026",
-      "title": "How Much Equity to Give for 1 Crore? Calculator",
-      "description": "How much equity to give for 1 crore? Enter your valuation and see the exact equity % for ₹1 crore, in ₹ Crores. Free for Indian founders.",
-      "h1": "How Much Equity to Give for 1 Crore? - Free Calculator in ₹",
-      "calculator": {
-        "name": "Equity for ₹1 Crore",
-        "inputs": [
-          {
-            "k": "val",
-            "l": "Your Valuation",
-            "u": "₹"
-          }
-        ],
-        "compute": "function(e){var v=val(e,\"val\");return{rows:[{l:\"Equity for ₹1 Crore\",v:pct(v?1e7/v*100:0)},{l:\"Equity for ₹50 Lakh\",v:pct(v?5e6/v*100:0)},{l:\"Equity for ₹2 Crore\",v:pct(v?2e7/v*100:0)}]}}"
-      },
-      "hook": "On Shark Tank India, Revamp Moto gave just 1.5% for ₹1 crore, because its valuation was about ₹66.7 crore. The Sass Bar gave 35% for ₹50 lakh. Same show, and the equity for a rupee is not fixed at all — it depends entirely on what your company is worth. This calculator tells you the honest number for your business.",
-      "what": [
-        "How much equity you give for ₹1 crore is decided by your valuation, not by the cheque size. If your company is worth ₹10 crore and you raise ₹1 crore, you should be giving about 10%. If it is worth ₹20 crore, the same ₹1 crore costs you only 5%. Raise the valuation and the equity for the same money falls.",
-        "Tank Metrics takes your valuation and returns the exact equity for ₹1 crore, plus what ₹50 lakh and ₹2 crore would cost you. It is the fastest way to answer a founder's real question: how much of my company am I actually selling for this money? Everything is shown in ₹ Lakhs and ₹ Crores.",
-        "There is also a practical floor to keep in mind. Investors rarely accept much below 1% for a meaningful cheque, because a tiny stake is hard to track and harder to sell later. So even a very high valuation has a minimum equity below which the deal stops making sense for the investor.",
-        "The cleanest way to hold your equity is to arrive at the negotiation with your own valuation already worked out from revenue and profit. A founder who can show the arithmetic keeps far more of the company than one who accepts the first percentage on the table."
-      ],
-      "formula": {
-        "expr": "Equity % = (1 crore ÷ Valuation in crore) × 100",
-        "note": "At a ₹20 crore valuation the equity is (1 ÷ 20) × 100 = 5%."
-      },
-      "example": {
-        "intro": "Here is what ₹1 crore costs in equity at different valuations. Every row is the same cheque; only the valuation changes.",
-        "table": {
-          "headers": [
-            "Valuation",
-            "Cheque",
-            "Equity to Give",
-            "Profit (Yearly)"
-          ],
-          "rows": [
-            [
-              "₹5 crore",
-              "₹1 crore",
-              "20%",
-              "₹60 lakh"
-            ],
-            [
-              "₹10 crore",
-              "₹1 crore",
-              "10%",
-              "₹1.2 crore"
-            ],
-            [
-              "₹20 crore",
-              "₹1 crore",
-              "5%",
-              "₹2.4 crore"
-            ],
-            [
-              "₹50 crore",
-              "₹1 crore",
-              "2%",
-              "₹6 crore"
-            ]
-          ]
-        },
-        "outro": "The lesson is blunt: the stronger your valuation, the less equity the same money costs. Revamp Moto raised ₹1 crore at a ₹66.7 crore valuation and gave only 1.5%. Improving your valuation is the founder's real job, not haggling over the cheque."
-      },
-      "steps": [
-        [
-          "Step 1 - Enter your valuation",
-          "Type your company's current valuation in ₹ crore. If you do not know it, start from a profit or revenue multiple."
-        ],
-        [
-          "Step 2 - Pick the cheque",
-          "The calculator already shows ₹1 crore, ₹50 lakh and ₹2 crore so you can compare three rounds at once."
-        ],
-        [
-          "Step 3 - Read the equity",
-          "See exactly how much equity each cheque costs you at your valuation, and how much stake you keep."
-        ]
-      ],
-      "why_india": [
-        "In India an equity round is not just a percentage. Along with the equity come a board seat, veto rights and a liquidation preference, all of which sit on top of the headline number. A plain US calculator that returns only a percentage misses every one of those Indian deal layers.",
-        "For a small Indian business, angel investors are comfortable taking 10% to 20% for a ₹1 crore seed round. Once revenue and profit grow, the same cheque becomes 5% or even 2%. That shift is normal in India, and it is the reason valuation work pays for itself.",
-        "India also taxes a transfer differently from a fresh issue. A new issue of shares is not a taxable event for the founder, but a secondary sale of existing shares is, so the structure of the round quietly changes the real cost of the equity you give away."
-      ],
-      "faqs": [
-        [
-          "How much equity should I give for ₹1 crore?",
-          "It depends on your valuation: Equity % = (1 crore ÷ valuation) × 100. At a ₹10 crore valuation it is 10%, at ₹20 crore it is 5%, and at ₹50 crore it is only 2%."
-        ],
-        [
-          "Is giving more equity ever fine?",
-          "Early on, 15-20% is normal because the investor takes real risk. But giving more than 30% for ₹1 crore is expensive for your long-term ownership."
-        ],
-        [
-          "Does giving equity take away my control?",
-          "Giving 10% does not by itself hand over control, but a board seat and veto rights can come with the deal. This calculator shows your remaining stake so you can plan."
-        ]
-      ],
-      "hinglish_blocks": [
-        "<h2>₹1 crore ke liye equity kitni deni chahiye</h2>",
-        "<p>Equity aapki valuation par depend karti hai, cheque par nahi. ₹10 crore valuation par ₹1 crore uthane par 10% dena chahiye; ₹20 crore par wahi ₹1 crore sirf 5% ka hota hai. Isi liye pehle valuation, phir equity.</p>",
-        "<h2>Formula</h2>",
-        "<p>Equity % = (1 crore ÷ valuation) × 100. Valuation ₹20 crore ho toh equity = (1 ÷ 20) × 100 = 5%.</p>",
-        "<h2>Ek example</h2>",
-        "<p>₹5 crore valuation par ₹1 crore ki equity 20% hai, ₹10 crore par 10%, aur ₹50 crore par sirf 2%. Same cheque, alag-alag keemat — yeh seedha valuation ka kamaal hai.</p>",
-        "<h2>Tank Metrics par kaise use karein</h2>",
-        "<p>Apni valuation daalo aur turant dekh lo ki ₹1 crore, ₹50 lakh aur ₹2 crore ke liye kitni equity deni padegi. Result ₹ Lakhs aur Crores mein aata hai.</p>",
-        "<h2>India mein kya alag hai</h2>",
-        "<p>India mein equity ke saath board seat aur liquidation preference bhi aate hain, aur valuation CA se certify karani padti hai. US ke simple tools yeh layers nahi dikhate.</p>"
-      ],
-      "related": [
-        [
-          "/dilution-calculator",
-          "Dilution Calculator"
-        ],
-        [
-          "/implied-valuation",
-          "Implied Valuation"
-        ],
-        [
-          "/cap-table-and-esop-pool",
-          "Cap Table & ESOP Pool"
-        ]
-      ],
-      "cta": "Find out how much equity ₹1 crore costs you now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
-      "mistakes": [
-        "Deciding the equity before the valuation. Do it in that order and you will almost always overpay.",
-        "Forgetting that the ESOP pool is carved out of the founder's stake, not the investor's, so your own percentage falls further than the headline suggests.",
-        "Comparing your equity to a US deal that used a completely different valuation method."
-      ]
-    },
-    {
-      "num": 3,
-      "slug": "boat-valuation-shark-tank",
-      "keyword": "boat valuation in shark tank",
-      "cat": "val",
-      "color": "yellow",
-      "date_display": "October 29, 2026",
-      "title": "Boat Valuation in Shark Tank India - Case Study",
-      "description": "Boat valuation in Shark Tank India explained: boAt never pitched, Aman Gupta is a shark. See boAt's ₹ Crore valuation and check any deal free.",
-      "h1": "Boat Valuation in Shark Tank India - Full Case Study - Free Calculator in ₹",
-      "calculator": {
-        "name": "Revenue Multiple Valuation",
-        "inputs": [
-          {
-            "k": "rev",
-            "l": "Annual Revenue",
-            "u": "₹"
-          },
-          {
-            "k": "mult",
-            "l": "Revenue Multiple",
-            "u": "x"
-          }
-        ],
-        "compute": "function(e){var r=val(e,\"rev\"),m=val(e,\"mult\");return{rows:[{l:\"Implied Valuation\",v:inr(r*m)},{l:\"Revenue Multiple\",v:num(m,1)+\"x\"}]}}"
-      },
-      "hook": "The biggest myth about boAt and Shark Tank India is that boAt pitched on the show. It never did. boAt's co-founder Aman Gupta is a shark — he sits on the investor side and hears other founders pitch. Yet boAt is the perfect yardstick for every deal you see on the show, because its valuation shows what a real Indian brand is worth at scale.",
-      "what": [
-        "boAt's parent company is Imagine Marketing. At its 2025 IPO filing, the company was valued at roughly ₹15,000 crore, on yearly revenue of about ₹3,000 crore. Aman Gupta and Sameer Mehta built it from 2016 into India's largest audio and wearable brand. That is a story of scale, not of a single cheque.",
-        "When a Shark Tank India founder asks for ₹10 crore, boAt at ₹15,000 crore is the other end of the scale. This calculator lets you put a revenue figure and a multiple together to see the same kind of valuation the market gives a real Indian company. The point is simple: valuation comes from revenue and profit, not from a story.",
-        "The calculator also exposes an uncomfortable truth. A brand with ₹1 crore of revenue at a 5x multiple is worth ₹5 crore, no matter how good the story is. Revenue is the input the market cannot argue with, and it is the one a founder can actually grow.",
-        "For a founder the lesson is to grow the input the multiple multiplies. A brand at ₹10 crore of revenue does not need a cleverer story to reach ₹50 crore of value at a 5x multiple; it needs five times the revenue. That is a harder but far more honest path than arguing for a higher multiple."
-      ],
-      "formula": {
-        "expr": "Valuation = Yearly Revenue × Revenue Multiple",
-        "note": "Shark Tank deals often sit at 2x to 10x revenue. At boAt's scale the multiple is lower."
-      },
-      "example": {
-        "intro": "Below is boAt's valuation next to typical Shark Tank India deals, all in ₹ Crores. Watch how the multiple behaves as revenue grows.",
-        "table": {
-          "headers": [
-            "Company",
-            "Yearly Revenue",
-            "Multiple",
-            "Valuation"
-          ],
-          "rows": [
-            [
-              "Shark Tank small brand",
-              "₹1 crore",
-              "5x",
-              "₹5 crore"
-            ],
-            [
-              "Shark Tank growing D2C",
-              "₹10 crore",
-              "4x",
-              "₹40 crore"
-            ],
-            [
-              "boAt (Imagine Marketing)",
-              "₹3,000 crore",
-              "5x",
-              "₹15,000 crore"
-            ]
-          ]
-        },
-        "outro": "boAt's ₹15,000 crore did not come from one pitch. It came from years of revenue and scale. A brand worth ₹5 crore on the show grows toward boAt's number through the same multiple applied to a much bigger revenue. So connect your valuation to your revenue, not to your story."
-      },
-      "steps": [
-        [
-          "Step 1 - Enter yearly revenue",
-          "Type your annual revenue in ₹ crore. Use the last twelve months of sales."
-        ],
-        [
-          "Step 2 - Enter a multiple",
-          "Pick a multiple for your category: D2C around 4x, SaaS 6x-10x, hardware and audio 2x-4x."
-        ],
-        [
-          "Step 3 - Read the valuation",
-          "The calculator shows the implied valuation in ₹, the same way a market prices a real brand."
-        ]
-      ],
-      "why_india": [
-        "In India, hardware and D2C brands usually trade at a lower revenue multiple than US brands, because margins are thinner and competition is fierce. boAt's multiple sits in single digits for exactly that reason, while a US audio brand can command a premium. Copying a US multiple overstates an Indian valuation.",
-        "An Indian valuation also has to stand up to a chartered accountant and SEBI rules, and deals are often structured as CCPS. US tools work on 409A and on dollars, which do not translate cleanly. Tank Metrics keeps everything in ₹ Crores so the number is one an Indian investor will recognise.",
-        "Indian hardware brands also carry higher working capital and import costs, which pull the multiple down further. A brand that imports components pays customs duty and IGST before it sells a single unit, so the revenue that reaches the multiple is already carrying that drag."
-      ],
-      "faqs": [
-        [
-          "Did boAt ever pitch on Shark Tank India?",
-          "No. boAt never pitched on Shark Tank India. boAt's co-founder Aman Gupta is a shark on the show, so he sits on the investor side rather than pitching his own company."
-        ],
-        [
-          "What is boAt's valuation?",
-          "boAt's parent, Imagine Marketing, was valued at roughly ₹15,000 crore around its 2025 IPO filing, with yearly revenue near ₹3,000 crore."
-        ],
-        [
-          "What is the difference between a Shark Tank deal and a brand like boAt?",
-          "It is scale. Shark Tank deals are often ₹1 crore to ₹10 crore valuations, while boAt stands at ₹15,000 crore. Valuation grows with revenue and profit."
-        ]
-      ],
-      "hinglish_blocks": [
-        "<h2>boAt ne Shark Tank mein pitch kiya tha?</h2>",
-        "<p>Nahi. boAt ne kabhi Shark Tank India mein pitch nahi kiya. boAt ke co-founder Aman Gupta khud shark hain, isi liye woh investor side par baithte hain, apni company pitch nahi karte.</p>",
-        "<h2>Formula</h2>",
-        "<p>Valuation = Yearly Revenue × Revenue Multiple. D2C ke liye aksar 4x, SaaS ke liye 6x-10x, aur hardware ke liye 2x-4x.</p>",
-        "<h2>Ek example</h2>",
-        "<p>₹3,000 crore revenue par 5x multiple lagta hai toh valuation ₹15,000 crore banti hai — bilkul boAt jaisi. ₹1 crore revenue par 5x lagta hai toh sirf ₹5 crore.</p>",
-        "<h2>Tank Metrics par kaise use karein</h2>",
-        "<p>Apni yearly revenue daalo aur multiple chuno; calculator turant implied valuation ₹ mein dikhata hai, boAt-style.</p>",
-        "<h2>India mein kya alag hai</h2>",
-        "<p>India mein D2C aur hardware ka multiple US se kam hota hai kyunki margin patla hota hai. Isi liye boAt ka multiple single digit mein rehta hai.</p>"
-      ],
-      "related": [
-        [
-          "/revenue-multiple",
-          "Revenue Multiple"
-        ],
-        [
-          "/ebitda-multiple",
-          "EBITDA Multiple"
-        ],
-        [
-          "/implied-valuation",
-          "Implied Valuation"
-        ]
-      ],
-      "cta": "Check your valuation the way boAt is valued now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
-      "mistakes": [
-        "Applying a US software multiple to an Indian hardware brand, which overstates the valuation badly.",
-        "Counting gross order value as revenue. Only net revenue, after returns and discounts, belongs in the formula.",
-        "Using one unusually good month as the yearly revenue figure."
-      ]
-    },
-    {
-      "num": 4,
-      "slug": "burn-rate-calculator-india",
-      "keyword": "burn rate calculator for startups india",
-      "cat": "growth",
-      "color": "blue",
-      "date_display": "October 29, 2026",
-      "title": "Burn Rate Calculator for Startups India (₹)",
-      "description": "Free burn rate calculator for Indian startups. Enter monthly income and expenses to get your net burn and runway in ₹ Lakhs, instantly.",
-      "h1": "Burn Rate Calculator for Startups India - Free Calculator in ₹",
-      "calculator": {
-        "name": "Burn Rate & Runway",
-        "inputs": [
-          {
-            "k": "inc",
-            "l": "Monthly Income",
-            "u": "₹"
-          },
-          {
-            "k": "exp",
-            "l": "Monthly Expenses",
-            "u": "₹"
-          },
-          {
-            "k": "cash",
-            "l": "Cash in Bank",
-            "u": "₹"
-          }
-        ],
-        "compute": "function(e){var i=val(e,\"inc\"),x=val(e,\"exp\"),c=val(e,\"cash\");var burn=x-i;return{rows:[{l:\"Net Burn / Month\",v:inr(burn)},{l:\"Runway\",v:burn>0?num(c/burn,1)+\" months\":\"Profitable\"}]}}"
-      },
-      "hook": "On Shark Tank India, the question founders get asked most often is not about valuation — it is \"monthly burn kitna hai?\" Sharks ask it because a great story with a broken burn is still a dead business. Skippi Ice Pops halved its burn after the show and then grew 40x. Your burn rate and your runway are the two numbers that decide how much time you really have.",
-      "what": [
-        "Burn rate is how much cash your business spends each month beyond what it earns. There are two versions: gross burn, the total spend, and net burn, the spend minus income. Net burn is the honest number, because it is what actually drains your bank account every month.",
-        "If you spend ₹5 lakh a month and earn ₹2 lakh, your net burn is ₹3 lakh. If you have ₹30 lakh in the bank, you have ten months of runway. Tank Metrics shows both the net burn and the runway in ₹ Lakhs, the way an Indian founder checks their own account, not in dollars.",
-        "Runway is the second half of the same question. Burn tells you how fast the money is leaving; runway tells you how many months that leaves you. A founder who knows both can raise the next round from a position of strength instead of from panic.",
-        "A useful habit is to write the burn and the runway down on the first of every month, before the invoices arrive. It takes two minutes and it turns a vague worry into a number you can act on. Founders who do this catch a rising burn two or three months early, which is exactly the window where a small fix is still cheap."
-      ],
-      "formula": {
-        "expr": "Net Burn = Monthly Expenses − Monthly Income",
-        "note": "Runway in months = Cash in Bank ÷ Net Burn."
-      },
-      "example": {
-        "intro": "Three Indian startups, three very different months, all measured in ₹ Lakhs.",
-        "table": {
-          "headers": [
-            "Monthly Income",
-            "Monthly Expense",
-            "Net Burn",
-            "Runway"
-          ],
-          "rows": [
-            [
-              "₹0",
-              "₹5 lakh",
-              "₹5 lakh",
-              "6 months (₹30 lakh)"
-            ],
-            [
-              "₹2 lakh",
-              "₹5 lakh",
-              "₹3 lakh",
-              "10 months (₹30 lakh)"
-            ],
-            [
-              "₹8 lakh",
-              "₹6 lakh",
-              "Profit ₹2 lakh",
-              "Infinite"
-            ]
-          ]
-        },
-        "outro": "The last row is the goal: when income passes expenses, burn disappears and the business funds itself. Skippi did exactly this — it cut its burn in half and became sustainable, and the growth followed. Track your net burn every single month, small or large."
-      },
-      "steps": [
-        [
-          "Step 1 - Enter monthly income",
-          "Type this month's total income in ₹ lakh. Zero is fine if you are pre-revenue."
-        ],
-        [
-          "Step 2 - Enter monthly expenses",
-          "Add salaries, rent, marketing and taxes into one monthly figure in ₹ lakh."
-        ],
-        [
-          "Step 3 - Read burn and runway",
-          "The calculator shows net burn and how many months of cash you have left, in ₹ Lakhs."
-        ]
-      ],
-      "why_india": [
-        "An Indian startup carries monthly liabilities that US burn tools ignore: GST, TDS and PF payments. Left out of the expense figure, they make the burn look smaller than it is. Adding them back gives the true picture of an Indian founder's month.",
-        "In India, a runway of more than twelve months is considered safe, because closing a funding round here takes three to six months. A US benchmark of six months is too tight for India. Tank Metrics keeps the runway and the burn in rupees, with the Indian timeline in mind.",
-        "India also has strong seasonal cash swings. The festive months bring revenue and the months after bring returns and slower sales, so a single month's burn can flatter the picture. An average of three months gives a truer runway than any one month does."
-      ],
-      "faqs": [
-        [
-          "How do you calculate burn rate?",
-          "Net Burn = Monthly Expenses − Monthly Income. If expenses are ₹5 lakh and income is ₹2 lakh, the net burn is ₹3 lakh a month."
-        ],
-        [
-          "How much runway should a startup have?",
-          "Indian startups should keep at least twelve months of runway, because a new round takes three to six months to close. Under six months is the danger zone."
-        ],
-        [
-          "What is the difference between gross burn and net burn?",
-          "Gross burn is the total spend; net burn is spend minus income. Net burn is the real number because it shows how fast your cash is falling."
-        ]
-      ],
-      "hinglish_blocks": [
-        "<h2>Burn rate kya hota hai</h2>",
-        "<p>Burn rate matlab aap har mahine kitna paisa jala rahe ho. Net burn = monthly kharcha minus monthly income. Yahi asli number hai jo batata hai ki jeb kitni tezi se khaali ho rahi hai.</p>",
-        "<h2>Formula</h2>",
-        "<p>Net Burn = Monthly Expenses − Monthly Income. Runway (mahine) = Cash in Bank ÷ Net Burn.</p>",
-        "<h2>Ek example</h2>",
-        "<p>Mahine ka kharcha ₹5 lakh aur income ₹2 lakh, toh net burn ₹3 lakh hai. Bank mein ₹30 lakh ho toh 10 mahine ki runway bachti hai. Income kharcha se badh jaaye toh burn khatam.</p>",
-        "<h2>Tank Metrics par kaise use karein</h2>",
-        "<p>Monthly income, expense aur bank balance daalo; calculator turant net burn aur runway ₹ Lakhs mein dikhata hai.</p>",
-        "<h2>India mein kya alag hai</h2>",
-        "<p>India mein GST, TDS aur PF jaisi monthly liabilities hoti hain jo US tools count nahi karte. Isi liye Indian founder ka asli burn zyada hota hai aur 12 mahine ki runway safe maani jaati hai.</p>"
-      ],
-      "related": [
-        [
-          "/burn-rate-and-runway",
-          "Burn Rate & Runway"
-        ],
-        [
-          "/run-rate",
-          "Run Rate"
-        ],
-        [
-          "/cagr-compound-annual-growth-rate",
-          "CAGR"
-        ]
-      ],
-      "cta": "Work out your burn and runway now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
-      "mistakes": [
-        "Counting a one-off grant or a tax refund as monthly income, which hides the real burn.",
-        "Leaving founder salaries out of the expense figure, so the burn looks smaller than it is.",
-        "Measuring the burn once and never again. It moves every month and the runway moves with it."
-      ]
-    },
-    {
-      "num": 5,
-      "slug": "royalty-deal-calculator-shark-tank",
-      "keyword": "shark tank royalty deal calculator",
-      "cat": "val",
-      "color": "yellow",
-      "date_display": "October 29, 2026",
-      "title": "Shark Tank Royalty Deal Calculator - Royalty vs Equity",
-      "description": "Free Shark Tank royalty deal calculator. Compare royalty plus equity against pure equity deals and find the break-even point in ₹ Crores.",
-      "h1": "Shark Tank Royalty Deal Calculator - Royalty vs Equity - Free Calculator in ₹",
-      "calculator": {
-        "name": "Royalty vs Equity",
-        "inputs": [
-          {
-            "k": "amt",
-            "l": "Investment Amount",
-            "u": "₹"
-          },
-          {
-            "k": "roy",
-            "l": "Royalty",
-            "u": "%"
-          },
-          {
-            "k": "sales",
-            "l": "Monthly Sales",
-            "u": "₹"
-          }
-        ],
-        "compute": "function(e){var a=val(e,\"amt\"),r=val(e,\"roy\"),s=val(e,\"sales\");var per=s*r/100;return{rows:[{l:\"Royalty / Month\",v:inr(per)},{l:\"Months to Recoup\",v:per>0?num(a/per,1)+\" months\":\"—\"}]}}"
-      },
-      "hook": "In Shark Tank India Season 3, Decode Age took ₹1.5 crore for 2.25% equity plus a 1% royalty until ₹1 crore was recouped. A royalty deal gives the shark downside protection and lets the founder keep more equity, but it also takes a slice of every month's sales. This calculator shows you the real break-even between a royalty deal and a plain equity deal, in ₹ Crores.",
-      "what": [
-        "A royalty deal means the investor takes a smaller equity stake plus a percentage of sales (a royalty) until a fixed amount is recouped. After that, the royalty stops and only the equity remains. It became common on Shark Tank India from Season 3 as a way to close a gap when founders and sharks disagree on valuation.",
-        "A pure equity deal takes equity only. A royalty deal saves equity up front but charges your cash flow every month. Tank Metrics puts the two side by side so you can see how many months the royalty runs and what it costs in total, all in ₹ Lakhs and ₹ Crores.",
-        "The trade is simple to state. A royalty deal buys you a smaller equity cut today and charges you a monthly slice of sales until the recoup is complete. Whether that is cheap or expensive depends entirely on how fast your sales grow from here.",
-        "One rule of thumb helps here. If the royalty would take more than about three years to recoup at your current sales, the deal is leaning toward the investor. If it recoups in under a year, the founder is giving away cash that pure equity might have cost less to part with. The right answer sits between those two ends."
-      ],
-      "formula": {
-        "expr": "Months to Recoup = Recoup Amount ÷ (Monthly Sales × Royalty %)",
-        "note": "Effective cost = equity given + total royalty paid until the recoup is complete."
-      },
-      "example": {
-        "intro": "Say your monthly sales are ₹20 lakh and you raise ₹1.5 crore. Here is how a royalty deal compares with a pure equity deal, in ₹ Crores.",
-        "table": {
-          "headers": [
-            "Deal Type",
-            "Equity",
-            "Royalty",
-            "Break-even"
-          ],
-          "rows": [
-            [
-              "Pure equity",
-              "15%",
-              "0%",
-              "₹10 crore valuation"
-            ],
-            [
-              "Royalty + equity",
-              "2.25%",
-              "1% of sales",
-              "₹1 crore recoup = ~50 months"
-            ],
-            [
-              "Royalty heavy",
-              "1%",
-              "3% of sales",
-              "₹1 crore recoup = ~17 months"
-            ]
-          ]
-        },
-        "outro": "A royalty deal saves equity but charges your cash flow monthly. If sales grow, the recoup finishes faster; if they stall, the royalty runs longer and the total you pay can pass what pure equity would have cost. So run the numbers before you say yes."
-      },
-      "steps": [
-        [
-          "Step 1 - Enter the deal terms",
-          "Type the investment, the equity percentage and the royalty percentage the shark is asking."
-        ],
-        [
-          "Step 2 - Enter monthly sales",
-          "Type your current monthly sales in ₹ lakh so the calculator can size the royalty."
-        ],
-        [
-          "Step 3 - Read the break-even",
-          "See the monthly royalty and how many months it takes to recoup, in ₹."
-        ]
-      ],
-      "why_india": [
-        "Royalty deals took off in India from Season 3, when sharks felt founders were asking for too-high valuations. On the US Shark Tank, Kevin O'Leary is famous for royalty offers, but in India the recoup amount is set in rupees and the royalty runs against rupee sales.",
-        "In India a royalty payment also attracts TDS, and GST sits on the revenue itself, so the net cash flow differs from a US deal. US royalty calculators ignore these Indian layers. Tank Metrics keeps the whole comparison in ₹ Crores and in Indian tax terms.",
-        "India also treats the royalty differently for each side. It is an operating cost for the investor and revenue for the company, which is exactly why a royalty deal is usually structured with a recoup cap. That cap is the number to negotiate hardest."
-      ],
-      "faqs": [
-        [
-          "What is a Shark Tank royalty deal?",
-          "In a royalty deal the investor takes less equity but also a percentage of sales (a royalty) until the invested amount is recouped. For example, ₹1.5 crore for 2.25% equity plus 1% royalty until ₹1 crore is recouped."
-        ],
-        [
-          "Is a royalty deal good or bad for a founder?",
-          "It depends. It can save equity if sales grow fast and the royalty ends soon. If sales are slow, the royalty runs long and the total cost can exceed a pure equity deal, so calculate the break-even first."
-        ],
-        [
-          "What happens after the royalty is recouped?",
-          "Once the recoup amount is fully paid, the royalty stops and the investor keeps only the equity. That is why the recoup time matters so much."
-        ]
-      ],
-      "hinglish_blocks": [
-        "<h2>Royalty deal kya hota hai</h2>",
-        "<p>Royalty deal mein investor kam equity leta hai lekin har sale ka ek percentage (royalty) bhi leta hai, jab tak uska paisa recoup na ho jaaye. Season 3 mein Decode Age ne ₹1.5 crore liye — 2.25% equity plus 1% royalty until ₹1 crore recouped.</p>",
-        "<h2>Formula</h2>",
-        "<p>Months to Recoup = Recoup Amount ÷ (Monthly Sales × Royalty %). Total cost = equity + total royalty.</p>",
-        "<h2>Ek example</h2>",
-        "<p>Monthly sales ₹20 lakh aur 1% royalty par har mahine ₹20,000 royalty jaati hai. ₹1 crore recoup karne mein lagbhag 50 mahine lagte hain. Pure equity deal mein 15% dena padta, jo zyada mehnga ho sakta hai.</p>",
-        "<h2>Tank Metrics par kaise use karein</h2>",
-        "<p>Investment, equity aur royalty daalo, aur monthly sales likho; calculator batata hai royalty per month aur kitne mahine mein recoup hoga.</p>",
-        "<h2>India mein kya alag hai</h2>",
-        "<p>India mein royalty par TDS lagta hai aur GST revenue ko affect karta hai, isi liye net cash flow US se alag hota hai. Sahi picture ke liye Indian taxes ke saath calculate karo.</p>"
-      ],
-      "related": [
-        [
-          "/royalty-deal",
-          "Royalty Deal"
-        ],
-        [
-          "/dilution-calculator",
-          "Dilution Calculator"
-        ],
-        [
-          "/implied-valuation",
-          "Implied Valuation"
-        ]
-      ],
-      "cta": "Compare your royalty deal now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
-      "mistakes": [
-        "Agreeing to a royalty with no recoup cap, which means the payment never ends.",
-        "Comparing a royalty percentage with an equity percentage as if they were the same kind of number.",
-        "Forgetting TDS on the royalty, which quietly reduces the founder's net cash each month."
-      ]
-    }
-  ]
+    "outro": "A royalty deal saves equity but charges your cash flow monthly. If sales grow, the recoup finishes faster; if they stall, the royalty runs longer and the total you pay can pass what pure equity would have cost. So run the numbers before you say yes."
+   },
+   "steps": [
+    [
+     "Step 1 - Enter the deal terms",
+     "Type the investment, the equity percentage and the royalty percentage the shark is asking."
+    ],
+    [
+     "Step 2 - Enter monthly sales",
+     "Type your current monthly sales in ₹ lakh so the calculator can size the royalty."
+    ],
+    [
+     "Step 3 - Read the break-even",
+     "See the monthly royalty and how many months it takes to recoup, in ₹."
+    ]
+   ],
+   "why_india": [
+    "Royalty deals took off in India from Season 3, when sharks felt founders were asking for too-high valuations. On the US Shark Tank, Kevin O'Leary is famous for royalty offers, but in India the recoup amount is set in rupees and the royalty runs against rupee sales.",
+    "In India a royalty payment also attracts TDS, and GST sits on the revenue itself, so the net cash flow differs from a US deal. US royalty calculators ignore these Indian layers. Tank Metrics keeps the whole comparison in ₹ Crores and in Indian tax terms.",
+    "India also treats the royalty differently for each side. It is an operating cost for the investor and revenue for the company, which is exactly why a royalty deal is usually structured with a recoup cap. That cap is the number to negotiate hardest."
+   ],
+   "faqs": [
+    [
+     "What is a Shark Tank royalty deal?",
+     "In a royalty deal the investor takes less equity but also a percentage of sales (a royalty) until the invested amount is recouped. For example, ₹1.5 crore for 2.25% equity plus 1% royalty until ₹1 crore is recouped."
+    ],
+    [
+     "Is a royalty deal good or bad for a founder?",
+     "It depends. It can save equity if sales grow fast and the royalty ends soon. If sales are slow, the royalty runs long and the total cost can exceed a pure equity deal, so calculate the break-even first."
+    ],
+    [
+     "What happens after the royalty is recouped?",
+     "Once the recoup amount is fully paid, the royalty stops and the investor keeps only the equity. That is why the recoup time matters so much."
+    ]
+   ],
+   "hinglish_blocks": [
+    "<h2>Royalty deal kya hota hai</h2>",
+    "<p>Royalty deal mein investor kam equity leta hai lekin har sale ka ek percentage (royalty) bhi leta hai, jab tak uska paisa recoup na ho jaaye. Season 3 mein Decode Age ne ₹1.5 crore liye — 2.25% equity plus 1% royalty until ₹1 crore recouped.</p>",
+    "<h2>Formula</h2>",
+    "<p>Months to Recoup = Recoup Amount ÷ (Monthly Sales × Royalty %). Total cost = equity + total royalty.</p>",
+    "<h2>Ek example</h2>",
+    "<p>Monthly sales ₹20 lakh aur 1% royalty par har mahine ₹20,000 royalty jaati hai. ₹1 crore recoup karne mein lagbhag 50 mahine lagte hain. Pure equity deal mein 15% dena padta, jo zyada mehnga ho sakta hai.</p>",
+    "<h2>Tank Metrics par kaise use karein</h2>",
+    "<p>Investment, equity aur royalty daalo, aur monthly sales likho; calculator batata hai royalty per month aur kitne mahine mein recoup hoga.</p>",
+    "<h2>India mein kya alag hai</h2>",
+    "<p>India mein royalty par TDS lagta hai aur GST revenue ko affect karta hai, isi liye net cash flow US se alag hota hai. Sahi picture ke liye Indian taxes ke saath calculate karo.</p>"
+   ],
+   "related": [
+    [
+     "/royalty-deal",
+     "Royalty Deal"
+    ],
+    [
+     "/dilution-calculator",
+     "Dilution Calculator"
+    ],
+    [
+     "/implied-valuation",
+     "Implied Valuation"
+    ]
+   ],
+   "cta": "Compare your royalty deal now on TankMetrics.in - 100% free, made for Indian founders in ₹ Lakhs & Crores.",
+   "mistakes": [
+    "Agreeing to a royalty with no recoup cap, which means the payment never ends.",
+    "Comparing a royalty percentage with an equity percentage as if they were the same kind of number.",
+    "Forgetting TDS on the royalty, which quietly reduces the founder's net cash each month."
+   ],
+   "comparison": {
+    "headers": [
+     "What you check",
+     "Before TankMetrics",
+     "After TankMetrics"
+    ],
+    "rows": [
+     [
+      "Equity given away",
+      "15% gone",
+      "2.25% with a royalty"
+     ],
+     [
+      "Cash flow",
+      "Untouched",
+      "A monthly royalty to budget"
+     ],
+     [
+      "Recoup time",
+      "Unknown",
+      "~50 or ~17 months, shown"
+     ]
+    ]
+   }
+  }
+ ]
 }
