@@ -1,26 +1,8 @@
 {
- "generated": "2026-10-26T15:40:47Z",
+ "generated": "2026-10-29T21:12:20Z",
  "seed_count": 150,
- "suggestion_count": 1035,
+ "suggestion_count": 1036,
  "keywords": [
-  {
-   "query": "msme loan",
-   "demand": 13,
-   "covered": false,
-   "score": 23.92,
-   "from": [
-    "msme loan"
-   ]
-  },
-  {
-   "query": "average revenue per user (arpu)",
-   "demand": 12,
-   "covered": false,
-   "score": 22.08,
-   "from": [
-    "arpu mrr and arr"
-   ]
-  },
   {
    "query": "exit load calculator",
    "demand": 12,
@@ -49,30 +31,12 @@
    ]
   },
   {
-   "query": "msme loan interest rate",
-   "demand": 12,
-   "covered": false,
-   "score": 22.08,
-   "from": [
-    "msme loan"
-   ]
-  },
-  {
    "query": "reverse price calculator",
    "demand": 12,
    "covered": false,
    "score": 22.08,
    "from": [
     "mrp reverse calculator"
-   ]
-  },
-  {
-   "query": "ebitda and gross margin difference",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "ebitda and margin"
    ]
   },
   {
@@ -121,15 +85,6 @@
    ]
   },
   {
-   "query": "boutique profit margin",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "shop profit margin"
-   ]
-  },
-  {
    "query": "cagr calculator excel",
    "demand": 10,
    "covered": false,
@@ -139,12 +94,12 @@
    ]
   },
   {
-   "query": "distributor margin in pharma",
+   "query": "ebitda and gross margin difference",
    "demand": 10,
    "covered": false,
    "score": 18.4,
    "from": [
-    "distributor margin"
+    "ebitda and margin"
    ]
   },
   {
@@ -166,12 +121,30 @@
    ]
   },
   {
+   "query": "freelance hourly rate germany",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "freelancer hourly rate"
+   ]
+  },
+  {
    "query": "income tax calculator fy 2026-27",
    "demand": 10,
    "covered": false,
    "score": 18.4,
    "from": [
     "income tax calculator"
+   ]
+  },
+  {
+   "query": "marketplace price calculator",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "marketplace fee calculator"
    ]
   },
   {
@@ -184,7 +157,7 @@
    ]
   },
   {
-   "query": "msme loan scheme",
+   "query": "msme loan eligibility",
    "demand": 10,
    "covered": false,
    "score": 18.4,
@@ -229,7 +202,7 @@
    ]
   },
   {
-   "query": "ask taxman calculator",
+   "query": "ask astrology calculator",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -265,24 +238,6 @@
    ]
   },
   {
-   "query": "freelance hourly rate germany",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "freelancer hourly rate"
-   ]
-  },
-  {
-   "query": "how much customs duty calculator",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "import duty and customs calculator"
-   ]
-  },
-  {
    "query": "landed cost in odoo",
    "demand": 9,
    "covered": false,
@@ -292,16 +247,7 @@
    ]
   },
   {
-   "query": "marketplace price calculator",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "marketplace fee calculator"
-   ]
-  },
-  {
-   "query": "msme loan eligibility",
+   "query": "msme loan kya hota hai",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -346,7 +292,16 @@
    ]
   },
   {
-   "query": "ask astrology calculator",
+   "query": "small business in india with low investment",
+   "demand": 11,
+   "covered": false,
+   "score": 15.84,
+   "from": [
+    "small business tax india"
+   ]
+  },
+  {
+   "query": "ask edie calculator",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -364,15 +319,6 @@
    ]
   },
   {
-   "query": "business profit margin in islam",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "shop profit margin"
-   ]
-  },
-  {
    "query": "cagr calculator lumpsum",
    "demand": 8,
    "covered": false,
@@ -382,7 +328,7 @@
    ]
   },
   {
-   "query": "cagr cumulative annual growth rate",
+   "query": "cumulative annual growth rate cagr",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -445,15 +391,6 @@
    ]
   },
   {
-   "query": "msme loan kya hota hai",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "msme loan"
-   ]
-  },
-  {
    "query": "rental yield in mumbai",
    "demand": 8,
    "covered": false,
@@ -472,21 +409,21 @@
    ]
   },
   {
+   "query": "small business in indianapolis",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "small business tax india"
+   ]
+  },
+  {
    "query": "import duty & customs duty calculator mygts global",
    "demand": 10,
    "covered": false,
    "score": 14.4,
    "from": [
     "import duty and customs calculator"
-   ]
-  },
-  {
-   "query": "small business in india with low investment",
-   "demand": 10,
-   "covered": false,
-   "score": 14.4,
-   "from": [
-    "small business tax india"
    ]
   },
   {
@@ -508,16 +445,7 @@
    ]
   },
   {
-   "query": "amul franchise roi",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "franchise roi"
-   ]
-  },
-  {
-   "query": "ask edie calculator",
+   "query": "ask taxman calculator",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -607,7 +535,7 @@
    ]
   },
   {
-   "query": "msme loan full form",
+   "query": "msme loan for women",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -643,7 +571,7 @@
    ]
   },
   {
-   "query": "small business in indianapolis",
+   "query": "small business in india reddit",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -670,12 +598,12 @@
    ]
   },
   {
-   "query": "how much do you take home salary",
-   "demand": 8,
+   "query": "store profit margin grocery",
+   "demand": 7,
    "covered": false,
-   "score": 11.52,
+   "score": 12.88,
    "from": [
-    "salary take home estimator"
+    "shop profit margin"
    ]
   },
   {
@@ -704,6 +632,15 @@
    "score": 11.04,
    "from": [
     "burn rate"
+   ]
+  },
+  {
+   "query": "coffee shop profit margin",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "shop profit margin"
    ]
   },
   {
@@ -783,7 +720,7 @@
    ]
   },
   {
-   "query": "msme loan for women",
+   "query": "msme loan apply online",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -792,7 +729,7 @@
    ]
   },
   {
-   "query": "pre money post money safe",
+   "query": "pre money post money difference",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -873,15 +810,6 @@
    "score": 11.04,
    "from": [
     "startup valuation"
-   ]
-  },
-  {
-   "query": "store profit margin grocery",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "shop profit margin"
    ]
   },
   {
@@ -982,21 +910,21 @@
    ]
   },
   {
+   "query": "amul franchise roi",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "franchise roi"
+   ]
+  },
+  {
    "query": "cagr calculator monthly",
    "demand": 5,
    "covered": false,
    "score": 9.2,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "coffee shop profit margin",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "shop profit margin"
    ]
   },
   {
@@ -1054,24 +982,6 @@
    ]
   },
   {
-   "query": "msme loan apply online",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "msme loan"
-   ]
-  },
-  {
-   "query": "pre money post money difference",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "pre money post money"
-   ]
-  },
-  {
    "query": "share market calculator 2025",
    "demand": 5,
    "covered": false,
@@ -1081,7 +991,7 @@
    ]
   },
   {
-   "query": "small business in india reddit",
+   "query": "small business in india ideas",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -1096,6 +1006,15 @@
    "score": 9.2,
    "from": [
     "startup valuation"
+   ]
+  },
+  {
+   "query": "wine shop profit margin",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "shop profit margin"
    ]
   },
   {
@@ -1258,6 +1177,16 @@
    "score": 8.97,
    "from": [
     "customer acquisition cost cac"
+   ]
+  },
+  {
+   "query": "customer lifetime value ltv meaning",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "client lifetime value ltv",
+    "customer lifetime value ltv"
    ]
   },
   {
@@ -1495,16 +1424,6 @@
    ]
   },
   {
-   "query": "ltv meaning customer lifetime value",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "client lifetime value ltv",
-    "customer lifetime value ltv"
-   ]
-  },
-  {
    "query": "lucky number calculator",
    "demand": 13,
    "covered": true,
@@ -1547,6 +1466,15 @@
    "score": 8.97,
    "from": [
     "markup vs margin"
+   ]
+  },
+  {
+   "query": "msme loan",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "msme loan"
    ]
   },
   {
@@ -1857,6 +1785,15 @@
    ]
   },
   {
+   "query": "average revenue per user (arpu)",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "arpu mrr and arr"
+   ]
+  },
+  {
    "query": "baby name numerology calculator",
    "demand": 12,
    "covered": true,
@@ -2037,15 +1974,6 @@
    ]
   },
   {
-   "query": "ebitda and gross margin",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda and margin"
-   ]
-  },
-  {
    "query": "ebitda full form",
    "demand": 12,
    "covered": true,
@@ -2055,21 +1983,21 @@
    ]
   },
   {
+   "query": "ebitda margin and revenue",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda and margin"
+   ]
+  },
+  {
    "query": "ebitda multiple formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "ebitda multiple"
-   ]
-  },
-  {
-   "query": "employee utilisation rate",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "employee utilisation"
    ]
   },
   {
@@ -2145,7 +2073,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2241,6 +2169,15 @@
    "score": 8.28,
    "from": [
     "markup vs margin"
+   ]
+  },
+  {
+   "query": "msme loan interest rate",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "msme loan"
    ]
   },
   {
@@ -2424,7 +2361,7 @@
    ]
   },
   {
-   "query": "small business tax india",
+   "query": "small business in india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2631,15 +2568,6 @@
    ]
   },
   {
-   "query": "cpm/cac to ltv/cac",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "cpm to cpc"
-   ]
-  },
-  {
    "query": "customer acquisition cost cac definition",
    "demand": 11,
    "covered": true,
@@ -2695,6 +2623,15 @@
    ]
   },
   {
+   "query": "ebitda and gross margin",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "ebitda and margin"
+   ]
+  },
+  {
    "query": "ebitda means",
    "demand": 11,
    "covered": true,
@@ -2710,6 +2647,24 @@
    "score": 7.59,
    "from": [
     "ebitda multiple"
+   ]
+  },
+  {
+   "query": "employee utilization formula",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "employee utilisation"
+   ]
+  },
+  {
+   "query": "employee utilization rate calculator",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "employee utilization rate"
    ]
   },
   {
@@ -2767,7 +2722,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3037,15 +2992,6 @@
    ]
   },
   {
-   "query": "small business in india",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "small business tax india"
-   ]
-  },
-  {
    "query": "stamp duty calculator mumbai",
    "demand": 11,
    "covered": true,
@@ -3119,12 +3065,12 @@
    ]
   },
   {
-   "query": "ebitda and ebitda margin graph",
+   "query": "domino's franchise roi",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
-    "ebitda and margin"
+    "franchise roi"
    ]
   },
   {
@@ -3164,6 +3110,15 @@
    ]
   },
   {
+   "query": "hardware shop profit margin",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "shop profit margin"
+   ]
+  },
+  {
    "query": "landed cost odoo 19",
    "demand": 4,
    "covered": false,
@@ -3173,21 +3128,12 @@
    ]
   },
   {
-   "query": "lenskart franchise roi",
+   "query": "pre money post money safe",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
-    "franchise roi"
-   ]
-  },
-  {
-   "query": "msme loan means",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "msme loan"
+    "pre money post money"
    ]
   },
   {
@@ -3227,30 +3173,12 @@
    ]
   },
   {
-   "query": "small business in india ideas",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "small business tax india"
-   ]
-  },
-  {
    "query": "startup valuation report pdf",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
     "startup valuation"
-   ]
-  },
-  {
-   "query": "wine shop profit margin",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "shop profit margin"
    ]
   },
   {
@@ -3372,6 +3300,15 @@
    ]
   },
   {
+   "query": "boutique profit margin",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "shop profit margin"
+   ]
+  },
+  {
    "query": "break even point graph",
    "demand": 10,
    "covered": true,
@@ -3490,6 +3427,15 @@
    ]
   },
   {
+   "query": "distributor margin in pharma",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "distributor margin"
+   ]
+  },
+  {
    "query": "down payment calculator for mobile",
    "demand": 10,
    "covered": true,
@@ -3514,24 +3460,6 @@
    "score": 6.9,
    "from": [
     "ebitda multiple"
-   ]
-  },
-  {
-   "query": "employee utilization formula",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "employee utilisation"
-   ]
-  },
-  {
-   "query": "employee utilization rate calculator",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "employee utilization rate"
    ]
   },
   {
@@ -3580,7 +3508,7 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3622,6 +3550,78 @@
    "score": 6.9,
    "from": [
     "loan emi calculator"
+   ]
+  },
+  {
+   "query": "love calculator name test",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "love calculator"
+   ]
+  },
+  {
+   "query": "ltv cac ratio formula",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator in tamil",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
+   "query": "markup vs margin difference",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "markup vs margin"
+   ]
+  },
+  {
+   "query": "moic and irr formula",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "moic and irr"
+   ]
+  },
+  {
+   "query": "net profit margin ratio",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "net profit margin"
+   ]
+  },
+  {
+   "query": "nps calculator online",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "nps calculator"
+   ]
+  },
+  {
+   "query": "operating margin vs gross margin",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "operating margin"
    ]
   }
  ]
