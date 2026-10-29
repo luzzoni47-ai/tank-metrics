@@ -47,6 +47,8 @@ echo "==> wire_crawl_graph (writes the sitemap, incl. news)"
 python3 tools/wire_crawl_graph.py
 echo "==> clean_urls (the only place that decides the public URL shape)"
 python3 tools/clean_urls.py
+echo "==> gen_llms (the AI-answer file, from url-map)"
+python3 tools/gen_llms.py
 echo "==> make_favicon"
 python3 tools/make_favicon.py
 echo "==> fix_blog_meta"

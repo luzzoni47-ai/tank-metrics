@@ -46,7 +46,7 @@ python3 tools/fix_blog_meta.py
 echo "==> tests"
 for t in test_blog test_news test_layout test_blog_tabs test_contact_form \
          test_interlinks test_sitemap test_pwa test_nav test_landing \
-         test_dedup; do
+         test_dedup test_llms; do
   printf '    %-18s ' "$t"
   if python3 "tools/$t.py" >/tmp/pg_test.log 2>&1; then
     echo PASS

@@ -6,7 +6,7 @@ body with the same headings, a source line, and a CTA pointing at the
 calculator the story is really about. That last part is the point of the desk:
 a reader arrives from a headline and leaves through a tool.
 
-The generator writes the pages, the index, the sitemap entries, llms.txt and
+The generator writes the pages, the index, the sitemap entries and
 tools/url-map.json, so a new story is one JSON block plus this script.
 
 Usage:
@@ -318,18 +318,6 @@ def write_sitemap_entries(slugs: list[str]) -> None:
                  encoding="utf-8")
 
 
-def write_llms(items: list[dict]) -> None:
-    p = ROOT / "public" / "llms.txt"
-    t = p.read_text(encoding="utf-8")
-    t = re.sub(r"\n## News\n(?:- \[[^\n]*\n)*", "\n", t)
-    lines = ["", "## News",
-             f"- [News desk]({BASE}/news): funding rounds, Shark Tank deals and money "
-             "rules for Indian founders."]
-    for it in items:
-        lines.append(f"- [{it['title']}]({BASE}/{it['slug']})")
-    p.write_text(t.rstrip() + "\n" + "\n".join(lines) + "\n", encoding="utf-8")
-
-
 STRIP_RE = re.compile(r'<div class="blog-grid" id="newsGrid">.*?</div>', re.S)
 # One-time migration from the old <section class="news-strip"> wrapper.
 LEGACY_RE = re.compile(r'<section class="news-strip">.*?</section>', re.S)
@@ -412,7 +400,6 @@ def main() -> None:
         slugs.append(it["slug"])
     (SITE / "news.html").write_text(index_page(items), encoding="utf-8")
     write_sitemap_entries(slugs)
-    write_llms(items)
     write_url_map(slugs)
     write_home_strips(items)
     print(f"wrote {len(items)} news pages + /news index")
