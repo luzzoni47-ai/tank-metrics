@@ -114,6 +114,11 @@ def load_oauth() -> dict:
     path = os.environ.get("GSC_OAUTH_FILE")
     if path:
         return json.loads(Path(path).read_text(encoding="utf-8"))
+    # The home dir is wiped on a session reset, so also keep a copy inside the
+    # repo (gitignored - this file holds a live refresh token) and read it first.
+    local = ROOT / "tools" / ".gsc_oauth.json"
+    if local.exists():
+        return json.loads(local.read_text(encoding="utf-8"))
     default = Path.home() / ".gsc_oauth.json"
     if default.exists():
         return json.loads(default.read_text(encoding="utf-8"))
@@ -421,6 +426,8 @@ def cmd_analytics(token: str, days: int) -> None:
 
 def have_oauth() -> bool:
     if os.environ.get("GSC_OAUTH_JSON") or os.environ.get("GSC_OAUTH_FILE"):
+        return True
+    if (ROOT / "tools" / ".gsc_oauth.json").exists():
         return True
     return (Path.home() / ".gsc_oauth.json").exists()
 

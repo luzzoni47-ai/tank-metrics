@@ -37,3 +37,4 @@ __pycache__/
 products/
 tools/.gsc_client.json
 .gsc_oauth.json
+tools/.gsc_oauth.json
