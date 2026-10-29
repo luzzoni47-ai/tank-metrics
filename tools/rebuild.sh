@@ -33,6 +33,10 @@ echo "==> gen_keyword_pages (keyword-targeted calculator pages)"
 python3 tools/gen_keyword_pages.py
 echo "==> gen_tool_pages"
 python3 tools/gen_tool_pages.py
+echo "==> validate_guides (reject weak per-calculator copy before it ships)"
+python3 tools/validate_guides.py
+echo "==> dedup_worklist (which calculators still share the category template)"
+python3 tools/dedup_worklist.py --quiet
 echo "==> gen_news"
 python3 tools/gen_news.py
 echo "==> gen_products_page (after gen_news, so news footers get the link)"

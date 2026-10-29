@@ -216,24 +216,8 @@
    "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
    "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property."
   },
-  "savingsgoal": {
-   "what": "The Savings Goal Planner tells you how much to put aside each month to reach a target, or how long a monthly amount will take to get there. It is for a down payment, an emergency fund, a wedding or any goal with a number and a date attached.",
-   "formula": "The tool works from the target, what you already have, and what you can save each month. If you fix the monthly amount, it solves for the time; if you fix the time, it solves for the monthly amount. Where a return is included, the existing balance and each monthly contribution both earn it, which is why the total you contribute is less than the goal.",
-   "when": [
-    "You have a target amount and a date and want to know the monthly number.",
-    "You are deciding whether to save more or push the date out.",
-    "You want to see how much of the goal your savings are doing versus the returns."
-   ],
-   "mistakes": [
-    "Ignoring inflation. A goal ten years away costs more than the same goal today.",
-    "Counting on a return that is not guaranteed, especially over a short period.",
-    "Saving whatever is left at the end of the month instead of a fixed amount on payday."
-   ],
-   "intro": "Say you want ₹5,00,000, you already have ₹1,00,000, and you can put aside ₹15,000 a month.",
-   "outro": "Change the monthly amount above and the time to the goal moves with it. Even a small increase, held for years, moves the date a long way."
-  },
   "numwords": {
-   "what": "Number to Words spells a figure out in Indian English — lakh and crore rather than million and billion. It is for cheques, invoices, legal documents and any form that asks for the amount in words as well as figures.",
+   "what": "Number to Words spells a figure out the Indian way - lakh and crore rather than million and billion. It is built for cheques, invoices, legal documents, rent agreements and any form that asks for the amount in words as well as in figures. Getting this wrong is a common reason a bank or a registrar sends a document back, so the tool shows the exact wording and the Indian grouping at once.",
    "formula": "The number is split from the left into crore, lakh, thousand and the final hundreds, because that is how the Indian system groups digits. Each group is then read as a number of up to three digits and joined with its scale word. Two and a half crore is 2,50,00,000, so the tool reads the groups rather than the individual digits.",
    "when": [
     "You are filling in a cheque and need the amount in words.",
@@ -451,6 +435,22 @@
     "Reading the pre-money as the price of the whole company. It is the price before the new money, which is a smaller and less useful number on its own.",
     "Adding the cheque to the pre-money but forgetting that the founder's own stake is diluted by exactly the equity given to the new investor."
    ]
+  },
+  "savegoal": {
+   "what": "The Savings Goal Planner tells you how much to put aside each month to reach a target, or how long a monthly amount will take to get there. It is for a down payment, an emergency fund, a wedding or any goal with a number and a date attached.",
+   "formula": "The tool works from the target, what you already have, and what you can save each month. If you fix the monthly amount, it solves for the time; if you fix the time, it solves for the monthly amount. Where a return is included, the existing balance and each monthly contribution both earn it, which is why the total you contribute is less than the goal.",
+   "when": [
+    "You have a target amount and a date and want to know the monthly number.",
+    "You are deciding whether to save more or push the date out.",
+    "You want to see how much of the goal your savings are doing versus the returns."
+   ],
+   "mistakes": [
+    "Ignoring inflation. A goal ten years away costs more than the same goal today.",
+    "Counting on a return that is not guaranteed, especially over a short period.",
+    "Saving whatever is left at the end of the month instead of a fixed amount on payday."
+   ],
+   "intro": "Say you want ₹5,00,000, you already have ₹1,00,000, and you can put aside ₹15,000 a month.",
+   "outro": "Change the monthly amount above and the time to the goal moves with it. Even a small increase, held for years, moves the date a long way."
   }
  }
 }

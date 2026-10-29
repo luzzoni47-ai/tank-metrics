@@ -1,6 +1,6 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 81,
+ "pages_with_a_near_duplicate": 80,
  "worst_pairs": [
   {
    "overlap": 0.683,
@@ -13,18 +13,8 @@
    "b": "/working-capital"
   },
   {
-   "overlap": 0.682,
-   "a": "/salary-take-home-estimator",
-   "b": "/savings-goal-planner"
-  },
-  {
    "overlap": 0.681,
    "a": "/salary-take-home-estimator",
-   "b": "/simple-interest"
-  },
-  {
-   "overlap": 0.68,
-   "a": "/savings-goal-planner",
    "b": "/simple-interest"
   },
   {
@@ -51,6 +41,16 @@
    "overlap": 0.666,
    "a": "/ppf-calculator",
    "b": "/sip-calculator"
+  },
+  {
+   "overlap": 0.663,
+   "a": "/gratuity-calculator",
+   "b": "/ppf-calculator"
+  },
+  {
+   "overlap": 0.662,
+   "a": "/average-order-value-aov",
+   "b": "/repeat-rate-retention-and-churn"
   }
  ],
  "worst_pages": [
@@ -72,11 +72,7 @@
   },
   {
    "page": "/salary-take-home-estimator",
-   "closest_overlap": 0.682
-  },
-  {
-   "page": "/savings-goal-planner",
-   "closest_overlap": 0.682
+   "closest_overlap": 0.681
   },
   {
    "page": "/simple-interest",
@@ -92,6 +88,10 @@
   },
   {
    "page": "/ask-calculator",
+   "closest_overlap": 0.673
+  },
+  {
+   "page": "/dilution-calculator",
    "closest_overlap": 0.673
   }
  ],

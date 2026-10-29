@@ -1,0 +1,787 @@
+{
+ "total": 101,
+ "with_both_guides": 16,
+ "remaining": 85,
+ "remaining_by_cat": {
+  "dailyfun": 10,
+  "agency": 10,
+  "realestate": 10,
+  "taxwealth": 10,
+  "cust": 9,
+  "growth": 9,
+  "pricing": 8,
+  "val": 6,
+  "everyday": 4,
+  "profit": 3,
+  "ops": 3,
+  "investor": 2,
+  "bonus": 1
+ },
+ "next": [
+  {
+   "id": "percent",
+   "name": "Percentage Calculator",
+   "cat": "everyday",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": true,
+   "overlap": null
+  },
+  {
+   "id": "agefun",
+   "name": "Age Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "agencycac",
+   "name": "Client Acquisition Cost (CAC)",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "agencymargin",
+   "name": "Agency Profit Margin",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "agencyroas",
+   "name": "ROAS Calculator",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "areabreakdown",
+   "name": "Built-up Area vs Carpet Area",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "ask",
+   "name": "Ask Calculator",
+   "cat": "val",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "babyname",
+   "name": "Baby Name Number Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "bmi",
+   "name": "BMI Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "breakevenad",
+   "name": "Break-Even Ad Spend",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "brokerage",
+   "name": "Brokerage / Agent Commission",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "captable",
+   "name": "Cap Table & ESOP Pool",
+   "cat": "val",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "churn",
+   "name": "Churn Rate",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "clientltv",
+   "name": "Client Lifetime Value (LTV)",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "clientprofit",
+   "name": "Client Profitability",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "cofounder",
+   "name": "Co-founder Equity Split",
+   "cat": "val",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "compatibility",
+   "name": "Compatibility Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "cpcpa",
+   "name": "CPC to CPA Converter",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "cpmcpc",
+   "name": "CPM to CPC Converter",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "daysbetween",
+   "name": "Days Between Two Dates",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "debteq",
+   "name": "Debt + Equity Deal",
+   "cat": "val",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "dilution",
+   "name": "Dilution Calculator",
+   "cat": "val",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "downpayment",
+   "name": "Down Payment Calculator",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "epf",
+   "name": "EPF Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "fd",
+   "name": "FD (Fixed Deposit) Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "gratuity",
+   "name": "Gratuity Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "gst_taxwealth",
+   "name": "GST Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "homeemi",
+   "name": "Home Loan EMI Calculator",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "hra",
+   "name": "HRA Exemption Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "incometax",
+   "name": "Income Tax Calculator (Old vs New Regime)",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "landunits",
+   "name": "Land Area Unit Converter",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "lovefun",
+   "name": "Love Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "luckynumber",
+   "name": "Lucky Number Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "nps",
+   "name": "NPS Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "numerology",
+   "name": "Numerology Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "numwords",
+   "name": "Number to Words (Indian)",
+   "cat": "everyday",
+   "cat_size": 10,
+   "has_en": true,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "ppf",
+   "name": "PPF Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "propertyroi",
+   "name": "Property ROI Calculator",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "propertyvalue",
+   "name": "Property Valuation Calculator",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "rashi",
+   "name": "Rashi (Moon Sign) Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "rd",
+   "name": "RD (Recurring Deposit) Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "rentalyield",
+   "name": "Rental Yield Calculator",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "rentbuy",
+   "name": "Rent vs Buy Calculator",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "royalty",
+   "name": "Royalty Deal",
+   "cat": "val",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "simpleint",
+   "name": "Simple Interest",
+   "cat": "everyday",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "sip",
+   "name": "SIP Calculator",
+   "cat": "taxwealth",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "stampduty",
+   "name": "Stamp Duty Calculator",
+   "cat": "realestate",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "takehome",
+   "name": "Salary Take-Home Estimator",
+   "cat": "everyday",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "utilization",
+   "name": "Employee Utilization Rate",
+   "cat": "agency",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "zodiac",
+   "name": "Zodiac Sign Calculator",
+   "cat": "dailyfun",
+   "cat_size": 10,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "aov",
+   "name": "Average Order Value (AOV)",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "breakeven",
+   "name": "Break-Even Point",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "burn",
+   "name": "Burn Rate & Runway",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "cac",
+   "name": "Customer Acquisition Cost (CAC)",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "cagr",
+   "name": "CAGR (Compound Annual Growth Rate)",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "ccc",
+   "name": "Cash Conversion Cycle",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "depreciation",
+   "name": "Straight-Line Depreciation",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "funnel",
+   "name": "CPC, CPL, CPA & Conversion Rate",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "ltv",
+   "name": "Customer Lifetime Value (LTV)",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "ltvcac",
+   "name": "LTV : CAC Ratio",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "marketshare",
+   "name": "Market Share Calculator",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": true,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "momyoy",
+   "name": "Month-on-Month / Year-on-Year Growth",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "payback",
+   "name": "CAC Payback Period",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "retention",
+   "name": "Repeat Rate, Retention & Churn",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "roas",
+   "name": "Return on Ad Spend (ROAS)",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "runrate",
+   "name": "Run Rate",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "saas",
+   "name": "ARPU, MRR & ARR",
+   "cat": "cust",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "wc",
+   "name": "Working Capital",
+   "cat": "growth",
+   "cat_size": 9,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "gst",
+   "name": "GST Calculator",
+   "cat": "pricing",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": true,
+   "overlap": null
+  },
+  {
+   "id": "cm",
+   "name": "Contribution Margin",
+   "cat": "profit",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "codrto",
+   "name": "COD & RTO Loss Calculator",
+   "cat": "pricing",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "discountimpact",
+   "name": "Discount Impact on Profit",
+   "cat": "pricing",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "distmargin",
+   "name": "Distributor & Retailer Margin",
+   "cat": "pricing",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "gross",
+   "name": "Gross Profit & Margin",
+   "cat": "profit",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "importduty",
+   "name": "Import Duty & Customs Calculator",
+   "cat": "pricing",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "landed",
+   "name": "Landed Cost Calculator",
+   "cat": "pricing",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "marketplace",
+   "name": "Marketplace Fee Calculator",
+   "cat": "pricing",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "markup",
+   "name": "Markup vs Margin",
+   "cat": "profit",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "mrpreverse",
+   "name": "MRP Reverse Calculator",
+   "cat": "pricing",
+   "cat_size": 8,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "ctc",
+   "name": "Employee Cost (CTC) Calculator",
+   "cat": "ops",
+   "cat_size": 3,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "exitcalc",
+   "name": "Exit Calculator",
+   "cat": "investor",
+   "cat_size": 3,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "franchise",
+   "name": "Franchise / Store ROI",
+   "cat": "ops",
+   "cat_size": 3,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "freelance",
+   "name": "Freelancer Hourly Rate",
+   "cat": "ops",
+   "cat_size": 3,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "moicirr",
+   "name": "MOIC & IRR",
+   "cat": "investor",
+   "cat_size": 3,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  },
+  {
+   "id": "pitchscore",
+   "name": "Shark Tank Pitch Check",
+   "cat": "bonus",
+   "cat_size": 1,
+   "has_en": false,
+   "has_hi": false,
+   "overlap": null
+  }
+ ]
+}
