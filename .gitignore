@@ -35,3 +35,5 @@ __pycache__/
 # so the workbook, manual, lead magnet and previews must stay out of git or
 # anyone could pull them for free.
 products/
+tools/.gsc_client.json
+.gsc_oauth.json

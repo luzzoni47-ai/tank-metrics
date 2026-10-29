@@ -54,6 +54,27 @@ INSPECT_API = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspe
 # from /sites instead of hardcoding - a wrong string is an opaque 403/404.
 SITE = ""
 
+# The OAuth client id/secret are not secrets in the sense a refresh token is -
+# they identify the app, not the user - but they still should not be committed.
+# They live in tools/.gsc_client.json (gitignored), so a session reset that wipes
+# the home directory does not force Sir through the Google Cloud console again.
+CLIENT_FILE = ROOT / "tools" / ".gsc_client.json"
+
+
+def client_creds() -> dict:
+    """Client id/secret from env first, then the gitignored local file."""
+    cid = os.environ.get("GSC_OAUTH_CLIENT_ID")
+    secret = os.environ.get("GSC_OAUTH_CLIENT_SECRET", "")
+    if cid and secret:
+        return {"client_id": cid, "client_secret": secret}
+    if CLIENT_FILE.exists():
+        d = json.loads(CLIENT_FILE.read_text(encoding="utf-8"))
+        return {
+            "client_id": cid or d.get("client_id", ""),
+            "client_secret": secret or d.get("client_secret", ""),
+        }
+    return {"client_id": cid or "", "client_secret": secret}
+
 
 def load_key() -> dict:
     raw = os.environ.get("GSC_SA_JSON")
@@ -105,16 +126,16 @@ def load_oauth() -> dict:
 
 
 def cmd_auth_code() -> None:
-    """Print the consent URL. The client id is read from GSC_OAUTH_CLIENT_ID or
-    the 'client_id' field of an existing ~/.gsc_oauth.json."""
-    cid = os.environ.get("GSC_OAUTH_CLIENT_ID")
+    """Print the consent URL. The client id comes from client_creds() (env, then
+    the gitignored tools/.gsc_client.json)."""
+    cid = client_creds()["client_id"]
     if not cid:
         try:
             cid = load_oauth().get("client_id")
         except SystemExit:
             sys.exit(
-                "need a client id: set GSC_OAUTH_CLIENT_ID (from the OAuth "
-                "'Desktop app' client you created in Google Cloud)."
+                "need a client id: set GSC_OAUTH_CLIENT_ID or put it in "
+                "tools/.gsc_client.json (from the OAuth 'Desktop app' client)."
             )
     if not cid:
         sys.exit("the OAuth file has no client_id; set GSC_OAUTH_CLIENT_ID.")
@@ -132,8 +153,9 @@ def cmd_auth_code() -> None:
 
 
 def cmd_auth_exchange(code: str) -> None:
-    cid = os.environ.get("GSC_OAUTH_CLIENT_ID")
-    secret = os.environ.get("GSC_OAUTH_CLIENT_SECRET", "")
+    creds = client_creds()
+    cid = creds["client_id"]
+    secret = creds["client_secret"]
     if not cid:
         try:
             existing = load_oauth()
@@ -142,7 +164,7 @@ def cmd_auth_exchange(code: str) -> None:
         except SystemExit:
             pass
     if not cid:
-        sys.exit("need the client id: set GSC_OAUTH_CLIENT_ID.")
+        sys.exit("need the client id: set GSC_OAUTH_CLIENT_ID or tools/.gsc_client.json.")
     body = urllib.parse.urlencode(
         {
             "client_id": cid,
