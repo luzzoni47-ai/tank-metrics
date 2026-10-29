@@ -379,6 +379,62 @@
     "Aane wale logon ki ginti se divide karna, un logon ki nahi jo pay kar rahe hain, jab kisi ko treat kiya ja raha ho.",
     "Har share neeche round kar dena aur aakhri banda shortfall me chhod dena; upar round karo, ya ek banda thode rupees le le."
    ]
+  },
+  "ebitda": {
+   "what": "EBITDA & Margin us sawaal ka jawab deta hai jo koi bhi investor sabse pehle poochta hai: business apne asli kaam se paisa banata hai ya nahi? Tool revenue leta hai, usme se cost of goods sold aur operating expenses hataata hai, aur jo bachta hai wo dikhata hai — earnings before interest, tax, depreciation aur amortisation — aur usko revenue ke percent me bhi. Rupee ka number batata hai core kaam kitna chhodta hai; margin batata hai wo kitni efficiency se hota hai.\n\nMargin hi asli cheez hai. Do company ek hi ₹10 lakh ka EBITDA dikha sakti hain lekin haalat bilkul alag ho sakti hai: ₹50 lakh revenue par ₹10 lakh matlab 20% margin aur pricing power wala business, jabki ₹5 crore revenue par ₹10 lakh matlab sirf 2% margin aur ek kharab mahina loss me le jaayega. Kyunki interest aur tax isse bahar hain, isliye karz-free company aur karz wali company ko same basis par compare kiya ja sakta hai — isi wajah se lenders aur buyers isko use karte hain.",
+   "formula": "EBITDA = Revenue − Cost of Goods Sold − Operating Expenses. Margin = EBITDA ÷ Revenue × 100, aur tool isko rupee figure ke saath dikhata hai. Inputs hain rev, cogs aur opex. Interest, tax, depreciation aur amortisation jaan-bujhkar chhod diye jaate hain, isliye EBITDA aapki jeb me aane wala cash nahi hai — ye business chalane se mila profit hai, financing aur accounting ke faislon se pehle. 15% se upar ka margin aam taur par achha maana jaata hai; 5% se neeche kharab quarter ke liye jagah nahi bachti.",
+   "when": [
+    "Jab aap investor ko apna business dikha rahe ho aur core profitability ka saaf number chahiye.",
+    "Jab aap do business compare kar rahe ho jo alag-alag tarike se funded hain.",
+    "Jab aap khud dekhna chahte ho ki kharab mahine me bhi operation paisa bana raha hai ya nahi."
+   ],
+   "mistakes": [
+    "Revenue ko EBITDA samajh lena. ₹5 crore sales par 2% margin sirf ₹10 lakh chhodta hai, aur ek bura mahina usko kha jaata hai.",
+    "Interest aur tax ko operating cost me ghusa dena. Ye financing aur tax charges hain, trading cost nahi, isliye inko milaane se margin kam dikhta hai.",
+    "Ek hi quarter dekh kar margin par faisla karna. One-off cost aur seasonality se number hilta rehta hai, trend par bharosa karo."
+   ]
+  },
+  "impval": {
+   "what": "Implied Valuation pitch ke ek chhote se vaakya — “main ₹50 lakh lagata hoon 5% ke liye” — ko us number me badal deta hai jo wo poori company ke baare me keh raha hota hai. Investment ko equity se divide karo aur deal ki price saamne aa jaati hai. Funding baat-cheet me ye sabse tez sanity check hai: jis pal stake boli jaati hai, valuation decide ho jaati hai, chahe koi usko zubaan par na laaye.\n\nYe number utna hi accha hota hai jitna uske peeche ka stake, isliye tool dono input maangta hai. ₹50 lakh 5% ke liye matlab ₹10 crore ki company; wahi ₹50 lakh 20% ke liye matlab sirf ₹2.5 crore ki company. Founders pehla number bolte hain aur doosra bhool jaate hain, investors ulta karte hain. Implied valuation saamne hone se ghumaav ki baat khatam ho jaati hai aur baat asli assumption — stake — par aa jaati hai.",
+   "formula": "Implied Valuation = Investment Amount ÷ (Equity Offered ÷ 100). Amount (amt) aur equity percentage (eq) daalo; tool equity ko 100 se divide karke fraction banata hai aur investment ko usse divide karta hai. ₹10,00,000 for 10% ka matlab ₹1,00,00,000. Ganit ek hi division hai, isliye tool ki value maths me nahi, amount aur stake ko saath likhne ki aadat me hai.",
+   "when": [
+    "Jab investor ya acquirer stake bata de aur aapko reply se pehle uski implied price jaanni ho.",
+    "Jab aap khud investor ho aur dekhna chahte ho ki maanga gaya stake amount ke hisaab se theek hai ya nahi.",
+    "Jab aap term-sheet summary bana rahe ho aur har offer ke peeche ki valuation ek line me chahiye."
+   ],
+   "mistakes": [
+    "Valuation ko stake ke bina padhna. ₹50 lakh for 5% aur ₹50 lakh for 20% do bilkul alag company hain.",
+    "Implied valuation ko final maan lena. Ye offer jo dikha raha hai wahi hai, company ki asli keemat nahi; bahas aksar stake par hoti hai, price par nahi.",
+    "Ye bhoolna ki paisa aksar post-money basis par aata hai, isliye implied price me naya cheque shamil hota hai aur founder ka stake dilute hota hai."
+   ]
+  },
+  "opmargin": {
+   "what": "Operating Margin batata hai ki business apne trading se paisa bana raha hai ya nahi — us paise ki lagat aur tax se pehle jo usne udhaar liya. Revenue aur operating profit daalo, aur tool dikhata hai ki sales ke har rupee ka kitna hissa bacha. Core operation chalta hai ya nahi, iska ye sabse saaf single reading hai, kyunki financing aur one-off items isse bahar rehte hain.\n\nFarq ye hai ki “operating profit” kya chhodta hai. Loan ka interest is baat ki lagat hai ki business funded kaise hua, na ki wo kya bechta hai; tax company ki poori position par depend karta hai; ek baar wali asset sale trading nahi hai. Ye sab hata do to margin akela engine dikhata hai. Isliye ye EBITDA ke saath rehta hai, uski jagah nahi: EBITDA me depreciation aur amortisation wapas jod diye jaate hain, isliye asset-light business me dono saath chalte hain aur factory wale business me alag ho jaate hain.",
+   "formula": "Operating Margin = Operating Profit ÷ Revenue × 100. Revenue (rev) top line hai; Operating Profit (ebit) wo hai jo cost of goods sold aur operating expenses ke baad bachta hai, lekin interest aur tax se pehle. ₹45,000 revenue par ₹18,000 operating profit matlab 40% margin. 10% se upar aam taur par healthy core maana jaata hai; negative margin matlab operation khud paisa gawa raha hai aur koi financing isko theek nahi kar sakti.",
+   "when": [
+    "Jab mahina busy tha par bank me kuch nahi bacha, aur aap jaanna chahte ho problem operation me hai ya financing me.",
+    "Jab aap apne business ko competitor se compare kar rahe ho aur wo ek number chahiye jo funding ko ignore kare.",
+    "Jab aap buyer ya lender ke liye tayyaar ho rahe ho aur core business ko alag dikhana chahte ho."
+   ],
+   "mistakes": [
+    "Operating profit ki jagah net profit daal dena. Interest aur tax operating cost nahi hain, isliye margin kam dikhta hai.",
+    "Do company ka margin bina ye dekhe compare karna ki unme operating kya ginta hai. Ek marketing ko operating me rakhti hai, doosri one-off maanti hai.",
+    "Ek quarter ko trend maan lena. One-off cost aur seasonality se margin hilta rehta hai; direction par bharosa karo."
+   ]
+  },
+  "prepost": {
+   "what": "Pre-Money & Post-Money Valuation term sheet ko waise hi leta hai jaise wo likha hota hai — naye paise se pehle company ki price, aur wo cheque khud — aur do numbers nikalta hai jo tay karte hain founder ke paas kya bachta hai. Pre-money matlab company naye paise ke bahar rehte hue kitne ki maani gayi; post-money matlab wahi value plus investment. Dono ke beech ka gap sirf ganit nahi hai: wo utna stake hai jo naya paisa kharidta hai.\n\nRound band hone ke baad isi stake par bahas hoti hai. Agar pre-money ₹9 crore hai aur investor ₹1 crore lagata hai, to post-money ₹10 crore hua aur cheque ne 10% liya — poori company ka dasva hissa, purani company ka nahi. Jo founder sirf pre-money padhta hai wo maan leta hai ki naya investor ka hissa kahin aur se aayega, aur phir hairan hota hai jab kam uske apne percentage me hota hai. Tool dono valuations aur diya gaya equity ek hi line me dikhata hai taaki ye hairani na ho.",
+   "formula": "Post-Money Valuation = Pre-Money Valuation + Investment Amount. Equity Given = Investment Amount ÷ Post-Money Valuation × 100. Pre-money (pre) aur investment (amt) daalo; tool dono jodkar post-money banata hai, phir investment ko us post-money se divide karke stake dikhata hai. ₹9 crore pre-money plus ₹1 crore cheque matlab ₹10 crore post-money aur 10% diya gaya. Stake hamesha post-money ke hisaab se naapa jaata hai, pre-money ke nahi.",
+   "when": [
+    "Jab term sheet me pre-money figure ho aur aapko post-money aur diya gaya stake chahiye.",
+    "Jab aap soch rahe ho ki kam pre-money par zyada paisa uthana theek hai ya nahi, aur dekhna chahte ho kitna zyada company chala jaayega.",
+    "Jab aap simple cap table bana rahe ho aur stakes me todne se pehle post-money chahiye."
+   ],
+   "mistakes": [
+    "Stake ko pre-money ke hisaab se naapna. Pre-money ka 10% company ka 10% nahi hota; investment khud post-money base ka hissa hai.",
+    "Pre-money ko poori company ki price samajh lena. Ye naye paise se pehle ki price hai, jo akele kam aur kam-kaam ki baat hai.",
+    "Cheque ko pre-money me jod dena lekin ye bhoolna ki founder ka apna stake bilkul usi equity se dilute hota hai jo naye investor ko mili."
+   ]
   }
  }
 }

@@ -395,6 +395,62 @@
     "Dividing by the number of people who came rather than the number who are paying, when someone is being treated.",
     "Rounding every share down and leaving the last person with the shortfall; round up, or let one person take the odd rupees."
    ]
+  },
+  "ebitda": {
+   "what": "EBITDA & Margin answers the question an investor asks before any other: does this business make money from the thing it actually does? The tool takes revenue, strips out the cost of the goods sold and the operating expenses that keep the lights on, and shows what is left — earnings before interest, tax, depreciation and amortisation — together with that figure as a percentage of revenue. The rupee number says how much the core operation throws off; the margin says how efficiently it does it.\n\nThe margin is the part that travels. Two firms can report the same ₹10 lakh of EBITDA and be in completely different health: ₹10 lakh on ₹50 lakh of revenue is a 20% margin and a business with pricing power, while ₹10 lakh on ₹5 crore of revenue is a 2% margin and a business one bad month from a loss. Because it stops before interest and tax, EBITDA also lets you compare a debt-free company with a heavily borrowed one on the same footing — which is exactly why lenders and buyers reach for it.",
+   "formula": "EBITDA = Revenue − Cost of Goods Sold − Operating Expenses. The margin is EBITDA ÷ Revenue × 100, and the tool shows it beside the rupee figure. Revenue is the top line (rev), Cost of Goods Sold is cogs and Operating Expenses is opex. Interest, tax, depreciation and amortisation are deliberately left out, so EBITDA is not the cash you keep — it is the profit from running the business, before financing and accounting decisions. A margin above 15% is usually treated as attractive; below 5% there is little room for a bad quarter.",
+   "when": [
+    "You are showing a business to an investor and want one clean number for core profitability.",
+    "You are comparing two companies that are funded in completely different ways.",
+    "You want to check for yourself whether the operation still earns in a bad month, before interest and tax flatter or hide it."
+   ],
+   "mistakes": [
+    "Treating revenue as EBITDA. ₹5 crore of sales at a 2% margin leaves only ₹10 lakh, and one weak month can erase it.",
+    "Feeding interest and tax into the operating costs. They are financing and tax charges, not trading costs, and including them understates the margin.",
+    "Judging the margin from a single quarter. One-off costs and seasonality move it around; the trend is what to trust."
+   ]
+  },
+  "impval": {
+   "what": "Implied Valuation turns one short line in a pitch — “I am putting in ₹50 lakh for 5%” — into the number it actually implies about the whole company. Divide the investment by the equity offered and you have the price the deal is putting on the business. It is the fastest sanity check in a funding conversation: the moment a stake is named, the valuation is decided, whether or not anyone says it out loud.\n\nThe figure is only as good as the stake behind it, which is why the tool asks for both inputs. ₹50 lakh for 5% implies a ₹10 crore company; the same ₹50 lakh for 20% implies only a ₹2.5 crore company. Founders quote the first number and forget the second, and investors do the reverse. Having the implied valuation in front of you ends the roundabout talk and moves the discussion to the assumption underneath — the stake itself.",
+   "formula": "Implied Valuation = Investment Amount ÷ (Equity Offered ÷ 100). Type the amount (amt) and the equity percentage (eq); the tool divides the equity by 100 to make it a fraction, then divides the investment by that fraction. ₹10,00,000 for 10% implies ₹1,00,00,000. The arithmetic is a single division, so the value is not the maths but the discipline of stating the amount and the stake together.",
+   "when": [
+    "An investor or acquirer names a stake and you want the price it implies before you reply.",
+    "You are the investor and want to check whether the slice you are asking for is fair for the money.",
+    "You are writing a term-sheet summary and need the valuation behind each offer on one line."
+   ],
+   "mistakes": [
+    "Reading the valuation without the stake. ₹50 lakh for 5% and ₹50 lakh for 20% are two very different companies.",
+    "Treating the implied valuation as agreed. It is what the offer implies, not what the company is worth; the argument is usually about the stake, not the price.",
+    "Forgetting that money normally goes in on a post-money basis, so the implied price already includes the new cheque and the founder's own stake is diluted by it."
+   ]
+  },
+  "opmargin": {
+   "what": "Operating Margin answers whether the business makes money from trading, before the cost of the money it borrowed and the tax it owes. Revenue goes in, operating profit — what is left after the day-to-day costs of running the business — goes in, and the tool shows what share of each rupee of sales survives. It is the cleanest single read on whether the core operation works, because financing and one-off items stay out of it.\n\nWhat matters is what “operating profit” leaves out. Interest on a loan is a cost of how the business is funded, not of what it sells; a tax charge depends on the whole company's position; a one-time asset sale is not trading. Strip those away and the margin shows the engine on its own. That is why it sits beside EBITDA rather than replacing it: EBITDA adds depreciation and amortisation back, so the two move together for an asset-light business and part ways for a factory.",
+   "formula": "Operating Margin = Operating Profit ÷ Revenue × 100. Revenue (rev) is the top line; Operating Profit (ebit) is what remains after the cost of goods sold and the operating expenses, but before interest and tax. ₹18,000 of operating profit on ₹45,000 of revenue is a 40% margin. Above 10% usually signals a healthy core; a negative margin means the operation itself is losing money and no amount of financing will fix it.",
+   "when": [
+    "A busy month left little in the bank and you want to know whether the problem is the operation or the financing.",
+    "You are comparing your business with a competitor and want the one figure that ignores how each is funded.",
+    "You are preparing for a buyer or a lender and want to show the core business standing on its own."
+   ],
+   "mistakes": [
+    "Putting net profit in the operating-profit field. Interest and tax are not operating costs, so using net profit understates the margin.",
+    "Comparing the margin across two companies without checking what each counts as operating. One may treat marketing as operating expense and another as a one-off.",
+    "Reading a single quarter as the trend. One-off costs and seasonality move the margin; trust the direction over several periods."
+   ]
+  },
+  "prepost": {
+   "what": "Pre-Money & Post-Money Valuation takes the term sheet as it is actually written — a price for the company before the cheque, and the cheque itself — and works out the two numbers that decide what a founder keeps. The pre-money is what the company was agreed to be worth with the new money still outside it; the post-money is that value plus the investment. The gap between them is not arithmetic decoration: it is the stake the new money buys.\n\nThe stake is the figure that gets argued about after the round closes. If the pre-money is ₹9 crore and the investor puts in ₹1 crore, the post-money is ₹10 crore and the cheque bought 10% — a tenth of the company, not a tenth of the old company. Founders who read only the pre-money assume the new investor's slice comes out of somewhere else, and are surprised when their own percentage is the one that falls. The tool shows both valuations and the equity given away on the same line so that surprise cannot happen.",
+   "formula": "Post-Money Valuation = Pre-Money Valuation + Investment Amount. Equity Given = Investment Amount ÷ Post-Money Valuation × 100. Type the pre-money (pre) and the investment (amt); the tool adds them for the post-money, then divides the investment by that post-money figure to show the stake. A ₹9 crore pre-money plus a ₹1 crore cheque is a ₹10 crore post-money and 10% given away. The post-money, not the pre-money, is the base the stake is measured against.",
+   "when": [
+    "A term sheet quotes a pre-money figure and you want the post-money and the stake it hands over.",
+    "You are deciding whether to raise at a lower pre-money for more money, and want to see how much more of the company that costs.",
+    "You are building a simple cap table and need the post-money before you can split it into stakes."
+   ],
+   "mistakes": [
+    "Measuring the stake against the pre-money. 10% of the pre-money is not 10% of the company; the investment itself is part of the post-money base.",
+    "Reading the pre-money as the price of the whole company. It is the price before the new money, which is a smaller and less useful number on its own.",
+    "Adding the cheque to the pre-money but forgetting that the founder's own stake is diluted by exactly the equity given to the new investor."
+   ]
   }
  }
 }

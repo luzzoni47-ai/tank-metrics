@@ -1,22 +1,7 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 85,
+ "pages_with_a_near_duplicate": 81,
  "worst_pairs": [
-  {
-   "overlap": 0.691,
-   "a": "/implied-valuation",
-   "b": "/pre-money-and-post-money-valuation"
-  },
-  {
-   "overlap": 0.684,
-   "a": "/ebitda-and-margin",
-   "b": "/operating-margin"
-  },
-  {
-   "overlap": 0.684,
-   "a": "/contribution-margin",
-   "b": "/operating-margin"
-  },
   {
    "overlap": 0.683,
    "a": "/nps-calculator",
@@ -61,29 +46,24 @@
    "overlap": 0.67,
    "a": "/burn-rate-and-runway",
    "b": "/run-rate"
+  },
+  {
+   "overlap": 0.669,
+   "a": "/gratuity-calculator",
+   "b": "/nps-calculator"
+  },
+  {
+   "overlap": 0.666,
+   "a": "/ppf-calculator",
+   "b": "/sip-calculator"
+  },
+  {
+   "overlap": 0.666,
+   "a": "/churn-rate",
+   "b": "/employee-utilization-rate"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/implied-valuation",
-   "closest_overlap": 0.691
-  },
-  {
-   "page": "/pre-money-and-post-money-valuation",
-   "closest_overlap": 0.691
-  },
-  {
-   "page": "/ebitda-and-margin",
-   "closest_overlap": 0.684
-  },
-  {
-   "page": "/operating-margin",
-   "closest_overlap": 0.684
-  },
-  {
-   "page": "/contribution-margin",
-   "closest_overlap": 0.684
-  },
   {
    "page": "/nps-calculator",
    "closest_overlap": 0.683
@@ -111,7 +91,27 @@
   {
    "page": "/simple-interest",
    "closest_overlap": 0.681
+  },
+  {
+   "page": "/rashi-moon-sign-calculator",
+   "closest_overlap": 0.677
+  },
+  {
+   "page": "/zodiac-sign-calculator",
+   "closest_overlap": 0.677
+  },
+  {
+   "page": "/ask-calculator",
+   "closest_overlap": 0.673
+  },
+  {
+   "page": "/dilution-calculator",
+   "closest_overlap": 0.673
+  },
+  {
+   "page": "/fd-fixed-deposit-calculator",
+   "closest_overlap": 0.671
   }
  ],
- "median_overlap": 0.658
+ "median_overlap": 0.657
 }
