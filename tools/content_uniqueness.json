@@ -1,41 +1,11 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 74,
+ "pages_with_a_near_duplicate": 58,
  "worst_pairs": [
-  {
-   "overlap": 0.683,
-   "a": "/nps-calculator",
-   "b": "/sip-calculator"
-  },
-  {
-   "overlap": 0.683,
-   "a": "/month-on-month-year-on-year-growth",
-   "b": "/working-capital"
-  },
-  {
-   "overlap": 0.681,
-   "a": "/salary-take-home-estimator",
-   "b": "/simple-interest"
-  },
   {
    "overlap": 0.677,
    "a": "/rashi-moon-sign-calculator",
    "b": "/zodiac-sign-calculator"
-  },
-  {
-   "overlap": 0.671,
-   "a": "/fd-fixed-deposit-calculator",
-   "b": "/rd-recurring-deposit-calculator"
-  },
-  {
-   "overlap": 0.669,
-   "a": "/gratuity-calculator",
-   "b": "/nps-calculator"
-  },
-  {
-   "overlap": 0.666,
-   "a": "/ppf-calculator",
-   "b": "/sip-calculator"
   },
   {
    "overlap": 0.663,
@@ -43,41 +13,47 @@
    "b": "/ppf-calculator"
   },
   {
-   "overlap": 0.662,
-   "a": "/average-order-value-aov",
-   "b": "/repeat-rate-retention-and-churn"
+   "overlap": 0.66,
+   "a": "/employee-utilization-rate",
+   "b": "/roas-calculator"
   },
   {
-   "overlap": 0.662,
-   "a": "/gratuity-calculator",
-   "b": "/sip-calculator"
+   "overlap": 0.66,
+   "a": "/contribution-margin",
+   "b": "/markup-vs-margin"
+  },
+  {
+   "overlap": 0.659,
+   "a": "/cod-and-rto-loss-calculator",
+   "b": "/marketplace-fee-calculator"
+  },
+  {
+   "overlap": 0.659,
+   "a": "/age-calculator",
+   "b": "/lucky-number-calculator"
+  },
+  {
+   "overlap": 0.657,
+   "a": "/lucky-number-calculator",
+   "b": "/numerology-calculator"
+  },
+  {
+   "overlap": 0.656,
+   "a": "/rent-vs-buy-calculator",
+   "b": "/rental-yield-calculator"
+  },
+  {
+   "overlap": 0.654,
+   "a": "/churn-rate",
+   "b": "/employee-utilization-rate"
+  },
+  {
+   "overlap": 0.654,
+   "a": "/distributor-and-retailer-margin",
+   "b": "/mrp-reverse-calculator"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/nps-calculator",
-   "closest_overlap": 0.683
-  },
-  {
-   "page": "/sip-calculator",
-   "closest_overlap": 0.683
-  },
-  {
-   "page": "/month-on-month-year-on-year-growth",
-   "closest_overlap": 0.683
-  },
-  {
-   "page": "/working-capital",
-   "closest_overlap": 0.683
-  },
-  {
-   "page": "/salary-take-home-estimator",
-   "closest_overlap": 0.681
-  },
-  {
-   "page": "/simple-interest",
-   "closest_overlap": 0.681
-  },
   {
    "page": "/rashi-moon-sign-calculator",
    "closest_overlap": 0.677
@@ -87,13 +63,37 @@
    "closest_overlap": 0.677
   },
   {
-   "page": "/fd-fixed-deposit-calculator",
-   "closest_overlap": 0.671
+   "page": "/gratuity-calculator",
+   "closest_overlap": 0.663
   },
   {
-   "page": "/rd-recurring-deposit-calculator",
-   "closest_overlap": 0.671
+   "page": "/ppf-calculator",
+   "closest_overlap": 0.663
+  },
+  {
+   "page": "/employee-utilization-rate",
+   "closest_overlap": 0.66
+  },
+  {
+   "page": "/roas-calculator",
+   "closest_overlap": 0.66
+  },
+  {
+   "page": "/contribution-margin",
+   "closest_overlap": 0.66
+  },
+  {
+   "page": "/markup-vs-margin",
+   "closest_overlap": 0.66
+  },
+  {
+   "page": "/cod-and-rto-loss-calculator",
+   "closest_overlap": 0.659
+  },
+  {
+   "page": "/marketplace-fee-calculator",
+   "closest_overlap": 0.659
   }
  ],
- "median_overlap": 0.653
+ "median_overlap": 0.648
 }

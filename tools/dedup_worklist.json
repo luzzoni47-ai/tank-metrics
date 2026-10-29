@@ -1,17 +1,17 @@
 {
  "total": 101,
- "with_both_guides": 30,
- "remaining": 71,
+ "with_both_guides": 38,
+ "remaining": 63,
  "remaining_by_cat": {
   "dailyfun": 10,
   "agency": 10,
   "realestate": 10,
-  "taxwealth": 10,
-  "growth": 8,
   "pricing": 8,
-  "everyday": 4,
+  "taxwealth": 6,
+  "growth": 6,
   "profit": 3,
   "ops": 3,
+  "everyday": 2,
   "cust": 2,
   "investor": 2,
   "bonus": 1
@@ -189,15 +189,6 @@
    "overlap": null
   },
   {
-   "id": "fd",
-   "name": "FD (Fixed Deposit) Calculator",
-   "cat": "taxwealth",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "gratuity",
    "name": "Gratuity Calculator",
    "cat": "taxwealth",
@@ -270,15 +261,6 @@
    "overlap": null
   },
   {
-   "id": "nps",
-   "name": "NPS Calculator",
-   "cat": "taxwealth",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "numerology",
    "name": "Numerology Calculator",
    "cat": "dailyfun",
@@ -333,15 +315,6 @@
    "overlap": null
   },
   {
-   "id": "rd",
-   "name": "RD (Recurring Deposit) Calculator",
-   "cat": "taxwealth",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "rentalyield",
    "name": "Rental Yield Calculator",
    "cat": "realestate",
@@ -360,36 +333,9 @@
    "overlap": null
   },
   {
-   "id": "simpleint",
-   "name": "Simple Interest",
-   "cat": "everyday",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "sip",
-   "name": "SIP Calculator",
-   "cat": "taxwealth",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "stampduty",
    "name": "Stamp Duty Calculator",
    "cat": "realestate",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "takehome",
-   "name": "Salary Take-Home Estimator",
-   "cat": "everyday",
    "cat_size": 10,
    "has_en": false,
    "has_hi": false,
@@ -468,15 +414,6 @@
    "overlap": null
   },
   {
-   "id": "momyoy",
-   "name": "Month-on-Month / Year-on-Year Growth",
-   "cat": "growth",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "runrate",
    "name": "Run Rate",
    "cat": "growth",
@@ -489,15 +426,6 @@
    "id": "saas",
    "name": "ARPU, MRR & ARR",
    "cat": "cust",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "wc",
-   "name": "Working Capital",
-   "cat": "growth",
    "cat_size": 9,
    "has_en": false,
    "has_hi": false,

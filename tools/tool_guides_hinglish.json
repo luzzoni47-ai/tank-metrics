@@ -631,6 +631,118 @@
         "Alag margin wale products ka ROAS aapas me compare karna jaise number ek jaisa ho.",
         "Achhe ROAS pe scale kar dena, ye check kiye bina ki extra orders fulfil ho sakte hain."
       ]
+    },
+    "nps": {
+      "what": "NPS yaani National Pension Scheme, sarkar ka PFRDA ke through chalaya gaya retirement account hai. Aap har saal paisa daalte ho, wo aapke chune equity aur debt funds me invest hota hai, aur 60 saal se pehle nikal nahi sakte. Return fixed nahi hai - funds par depend karta hai. Calculator aapki monthly contribution, umar aur maan liye gaye return se 60 par corpus project karta hai, taaki pata chale ki aaj ki saving se wahi retirement milega ya nahi.",
+      "formula": "Corpus = Monthly Contribution x [((1 + r)^n - 1) / r] x (1 + r), jahan r monthly rate (annual / 12) aur n 60 tak ke mahine. Iske upar employer ka basic ka 14% (Section 80CCD(2)) aur 80CCD(1B) ke tahat extra 50,000 rupaye ki deduction judti hai.",
+      "when": [
+        "Aap salaried ho aur jaanna chahte ho ki 80CCD(1B) ki extra 50,000 rupaye deduction ki asli value kitni hai.",
+        "NPS aur PPF me choose kar rahe ho aur dono ka corpus saath dekhna chahte ho.",
+        "Aap dekhna chahte ho ki 10 saal late start karne par kya hota hai - jawab usually brutal hota hai."
+      ],
+      "mistakes": [
+        "Calculator ka return guaranteed maan lena. NPS equity funds upar-neeche hote hain; 10% planning number hai, promise nahi.",
+        "Ye bhoolna ki 60 par corpus ka 40% annuity kharidna padta hai. Withdraw karne wala lump sum dikhaye corpus se kam hai.",
+        "NPS ko sirf tax par ELSS se compare karna. NPS paisa 60 tak lock karta hai; ELSS 3 saal me khulta hai."
+      ]
+    },
+    "sip": {
+      "what": "SIP matlab har mahine ek fixed amount mutual fund me daalna. Calculator ka poora point compounding hai: 10,000 rupaye mahina 20 saal 12% par 24 lakh ka contribution nahi, lagbhag 99 lakh banta hai, aur usme se teen-chauthai wo growth hai jo aapne kabhi jama hi nahi ki. Calculator aapka paisa aur growth alag dikhata hai, aur yahi number logon ko SIP shuru karwata hai.",
+      "formula": "Future Value = P x [((1 + i)^n - 1) / i] x (1 + i), jahan P monthly amount, i monthly rate (annual / 12 / 100) aur n instalments. Contribution = P x n; Growth = Future Value - Contribution.",
+      "when": [
+        "Aap SIP 5,000 rupaye badhane ka soch rahe ho aur 20 saal ka farak dekhna chahte ho.",
+        "Aapko jaanna hai ki jo afford kar sakte ho usse goal kitne saal me pura hoga.",
+        "10% aur 12% fund me choose kar rahe ho aur dekhna chahte ho ki risk ke layak gap hai ya nahi."
+      ],
+      "mistakes": [
+        "Fund ke pichhle saal ke return ko assumption bana lena. SIP long-run average par plan hoti hai, pichhle saal ke best par nahi.",
+        "Girte market me SIP band kar dena - aur yahi waqt hai jab har rupee par sabse zyada units milte hain.",
+        "Expense ratio ignore karna. 1% zyada ratio 20 saal ke corpus ka lagbhag dasva hissa kha jata hai."
+      ]
+    },
+    "takehome": {
+      "what": "Take-home wo hai jo employer TDS, employee ka PF share aur professional tax kaatne ke baad bank me aata hai. CTC aur take-home ka gap zyada logon ki expectation se bada hota hai - 12 lakh CTC par monthly credit aksar 1,00,000 se zyada 80,000 ke aas-paas hota hai, kyunki employer ka PF aur gratuity CTC number ke andar hote hain par aapke haath me nahi aate. Calculator ye ghatav line by line karta hai.",
+      "formula": "Take-home = Gross Salary - Employee PF (basic ka 12%) - Professional Tax - TDS. Gross = CTC - Employer PF - Gratuity - doosre retirals. Phir 75,000 rupaye standard deduction ke baad taxable gross par TDS nikalta hai.",
+      "when": [
+        "Offer letter saamne hai aur do CTC ko monthly in-hand par compare karna hai.",
+        "Negotiation chal rahi hai aur 1 lakh CTC badhne par haath me kitna aayega ye jaanna hai.",
+        "Aap check karna chahte ho ki is saal purana ya naya tax regime zyada deta hai."
+      ],
+      "mistakes": [
+        "Bade variable bonus wali CTC ko bina bonus wali se compare karna. Bonus monthly cash nahi hai.",
+        "Ye bhoolna ki employer PF CTC ke andar hai. Wo aapka paisa hai, par is mahine account me nahi.",
+        "Employer ka deducted TDS ko final tax maan lena. Wo estimate hai, aur March ka true-up asli hota hai."
+      ]
+    },
+    "simpleint": {
+      "what": "Simple interest sirf mool amount par lagta hai, kamaye gaye interest par kabhi nahi. 1,00,000 rupaye 10% par 3 saal me 30,000 kamata hai - flat, har saal, usi 1,00,000 par. Usi terms par compound interest 33,100 kamata hai. Teen saal me 3,100 ka farak chhota hai aur tees saal me bahut bada, isliye kaun sa lagta hai ye jaanna rate se zyada zaroori hai.",
+      "formula": "Interest = Principal x Rate x Time / 100. Total = Principal + Interest. Saal se kam ke liye Time = mahine / 12.",
+      "when": [
+        "Koi lender flat rate bolta hai aur aapko reducing-balance loan se compare karne ke liye simple-interest number chahiye.",
+        "Aap kisi dost ya rishtedaar ko udhaar de rahe ho aur rupees me saaf number chahiye.",
+        "Aap aisi FD ya bond coupon check kar rahe ho jo simple interest deti hai."
+      ],
+      "mistakes": [
+        "Flat rate ko loan ki asli cost maan lena. Reducing balance par flat 10% lagbhag 18% ke barabar hota hai.",
+        "Lambi period par simple aur compound mix kar dena. 10 saal me farak chhota nahi hota.",
+        "Threshold se upar interest par TDS bhoolna, jo actually milne wali raqam kam kar deta hai."
+      ]
+    },
+    "fd": {
+      "what": "Fixed deposit ek fixed rate, fixed term ke liye deti hai, aur nateeje ko asli badalne wala decision sirf ek hai - interest reinvest ho raha hai ya nahi. 1,00,000 rupaye 7% par 5 saal me simple terms me 35,000 deta hai, par 40,255 agar interest quarterly compound ho - aur banks default me quarterly compound karte hain. Calculator dono dikhata hai, saath me post-tax figure, kyunki 40,000 rupaye saalana interest se upar TDS hi 7% FD ko 30% slab wale ke liye lagbhag 4.9% bana deta hai.",
+      "formula": "Maturity = P x (1 + r / n)^(n x t), jahan r annual rate, n saal me compounds (quarterly ke liye 4) aur t saal. Interest = Maturity - P.",
+      "when": [
+        "Aap lump sum park kar rahe ho aur advertised rate nahi, post-tax maturity chahiye.",
+        "Bank FD ko us small-finance bank FD se compare kar rahe ho jo 0.5-1% zyada deta hai.",
+        "3 saal aur 5 saal ki FD me choose kar rahe ho aur rupee ka farak chahiye."
+      ],
+      "mistakes": [
+        "FD rate ko equity fund ke return se compare karna. FD contractual hai; fund nahi.",
+        "TDS ignore karna. 30% slab wale ke liye FD ka asli return lagbhag rate minus 30% hota hai.",
+        "FD beech me todna bina penalty dekhe - aksar rate ka 0.5-1% lagta hai."
+      ]
+    },
+    "rd": {
+      "what": "Recurring deposit har mahine ek hi rate par commitment hai, aur bank har instalment par us din se interest deta hai. 5,000 rupaye mahina 5 saal 7% par lagbhag 3.6 lakh banta hai, jisme 3 lakh aapka hi paisa hai. Ye deposits ka SIP jaisa hai, aur calculator ka kaam interest ko contributions se alag dikhana hai taaki return imaandaar lage.",
+      "formula": "Maturity = sum of P x (1 + r / 4)^(bache quarters), har monthly instalment par. Interest = Maturity - (P x mahine).",
+      "when": [
+        "Aapko fixed-return monthly habit chahiye aur commit karne se pehle maturity jaanna hai.",
+        "3 saal ke goal ke liye RD ko debt mutual fund se compare kar rahe ho.",
+        "Aap dekhna chahte ho ki aakhri instalment pehli se kitna kamati hai - farak logon ko chauka deta hai."
+      ],
+      "mistakes": [
+        "Advertised rate poore balance par lagne ki ummeed rakhna. Har instalment sirf utne hi time kamata hai jitna wo andar hai.",
+        "Instalment miss karke penalty na maan lena. Bank lagata hai, aur rate reset ho sakta hai.",
+        "10 saal ke goal ke liye RD use karna. Itne horizon par equity compounding usually jeet jati hai."
+      ]
+    },
+    "wc": {
+      "what": "Working capital wo paisa hai jo business ke rozana kaam me bandha hota hai: shelf par stock, plus jo customers aapko dena hai, minus jo aap suppliers ko dena hai. Business profitable ho sakta hai aur phir bhi cash khatam ho jaye, kyunki profit accounting ka number hai aur working capital cash ka. Calculator teen lines ko ek figure aur ek cycle length me badal deta hai, taaki dikhe ki aapka paisa kitne din ghoom kar wapas aata hai.",
+      "formula": "Working Capital = Current Assets - Current Liabilities. Cash Conversion Cycle = Days Inventory + Days Receivable - Days Payable.",
+      "when": [
+        "Aap profitable ho par bank account baar-baar zero hota hai aur dekhna hai paisa kahan baitha hai.",
+        "Customer 60 din ki terms maangta hai aur aapko uska cost price karna hai.",
+        "Aap working-capital limit ke liye apply kar rahe ho aur bank jo number poochega wo chahiye."
+      ],
+      "mistakes": [
+        "Sirf stock ginna aur receivables bhoolna. Slow-paying customers slow stock se zyada cash bandhte hain.",
+        "Negative working capital ko hamesha kharab maanna. Prepaid plans wale subscription business ke liye ye healthy hai.",
+        "Cycle length ignore karna. 50 lakh 90 din ke liye bandha aur wahi raqam 15 din ke liye - do alag business hain."
+      ]
+    },
+    "momyoy": {
+      "what": "Month-on-month is mahine ko pichhle mahine se compare karta hai. Year-on-year is mahine ko pichhle saal ke usi mahine se. Lagbhag har Indian business ke liye YoY imaandaar number hai, kyunki Diwali, monsoon aur school calendar demand ko itna hilate hain ki MoM zyada tar festival naapta hai, business nahi. Calculator dono deta hai, aur dono ka gap hi seasonality hai.",
+      "formula": "MoM % = (This Month - Last Month) / Last Month x 100. YoY % = (This Month - Same Month Last Year) / Same Month Last Year x 100.",
+      "when": [
+        "Ek mahina kharab lagta hai aur jaanna hai ki seasonality hai ya asli decline.",
+        "Investor ko present karna hai aur festive distortion ke bina growth dikhani hai.",
+        "Agle quarter ka target set kar rahe ho aur seasonal baseline chahiye."
+      ],
+      "mistakes": [
+        "Festive mahine ki MoM growth ko trend bata dena. October hamesha September se upar hota hai.",
+        "31 din ke mahine ko 28 din wale se bina days normalise kiye compare karna.",
+        "Ek saal se chhote business par YoY lagana - compare karne ke liye kuch hai hi nahi."
+      ]
     }
   }
 }
