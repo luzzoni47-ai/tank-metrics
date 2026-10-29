@@ -47,9 +47,12 @@ def slugify(name: str) -> str:
 def title_for(c: dict, extra: str = "") -> str:
     """Build a title that stays inside the ~60 chars Google shows.
 
-    The suffix is dropped in steps rather than truncated, so the tool name is
-    never cut mid-word.
+    A `seo_title` on the calc wins outright: Search Console showed pages that
+    rank on page 1 for a query whose exact words are missing from the title, and
+    that is a CTR fix no amount of content depth replaces.
     """
+    if c.get("seo_title"):
+        return c["seo_title"]
     name = c["name"] + extra
     for suffix in (" — Free Online Calculator | Tank Metrics",
                    " — Free Calculator | Tank Metrics",
@@ -86,7 +89,9 @@ def desc_for(c: dict) -> str:
     # not tell the pages apart: they ranked at position 7-9 and still earned zero
     # clicks. Build each one from the tool's own one-line desc plus its own
     # `bench` line, which is unique per calculator, and only pad when a page is
-    # genuinely short.
+    # genuinely short. An explicit `seo_desc` wins, for the CTR fixes GSC found.
+    if c.get("seo_desc"):
+        return html.escape(re.sub(r"\s+", " ", c["seo_desc"]).strip(), quote=True)
     d = re.sub(r"\s+", " ", c["desc"]).strip().rstrip(".")
     bench = re.sub(r"\s+", " ", c.get("bench", "")).strip()
     out = f"{d}. {bench}" if bench else f"{d}."

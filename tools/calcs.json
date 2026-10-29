@@ -454,7 +454,9 @@
      "u": "₹"
     }
    ],
-   "compute": "function(e){var t=val(e,\"ebit\"),a=val(e,\"ce\"),n=a?t/a*100:0;return{rows:[{l:\"ROCE\",v:pct(n),cls:n>=15?\"good\":n>=5?\"warn\":\"bad\"}]}}"
+   "compute": "function(e){var t=val(e,\"ebit\"),a=val(e,\"ce\"),n=a?t/a*100:0;return{rows:[{l:\"ROCE\",v:pct(n),cls:n>=15?\"good\":n>=5?\"warn\":\"bad\"}]}}",
+   "seo_title": "Return on Capital Employed (ROCE) Calculator India",
+   "seo_desc": "ROCE calculator in ₹: how efficiently a business uses every rupee of capital, equity plus debt. Free, instant, and shown against Indian benchmarks."
   },
   {
    "id": "impval",
@@ -474,7 +476,9 @@
      "u": "%"
     }
    ],
-   "compute": "function(e){var t=val(e,\"amt\"),a=val(e,\"eq\");return{rows:[{l:\"Implied Valuation\",v:inr(a?t/(a/100):0)}]}}"
+   "compute": "function(e){var t=val(e,\"amt\"),a=val(e,\"eq\");return{rows:[{l:\"Implied Valuation\",v:inr(a?t/(a/100):0)}]}}",
+   "seo_title": "Implied Valuation Calculator - What Is This Company Worth?",
+   "seo_desc": "Someone says 50 lakh for 5%. See what that implies the whole company is worth. Free implied valuation calculator in ₹ lakh and crore."
   },
   {
    "id": "prepost",
@@ -1656,7 +1660,9 @@
      "u": "₹"
     }
    ],
-   "compute": "function(e){return{rows:[{l:\"Estimated Property Value\",v:inr2(val(e,\"area\")*val(e,\"rate\"))}]}}"
+   "compute": "function(e){return{rows:[{l:\"Estimated Property Value\",v:inr2(val(e,\"area\")*val(e,\"rate\"))}]}}",
+   "seo_title": "Property Valuation Calculator India - Free & Instant",
+   "seo_desc": "Free property valuation calculator for India. Estimate a house or flat's worth from rent, area and rate per sq ft - in ₹ lakh and crore, no sign-up."
   },
   {
    "id": "homeemi",
@@ -2046,7 +2052,9 @@
      "u": "years"
     }
    ],
-   "compute": "function(e){var t=val(e,\"employee\")+val(e,\"employer\"),a=val(e,\"rate\")/1200,n=12*val(e,\"years\"),r=a?t*((Math.pow(1+a,n)-1)/a):t*n;return{rows:[{l:\"Total Contributions\",v:inr2(t*n)},{l:\"Estimated EPF Balance\",v:inr2(r)}]}}"
+   "compute": "function(e){var t=val(e,\"employee\")+val(e,\"employer\"),a=val(e,\"rate\")/1200,n=12*val(e,\"years\"),r=a?t*((Math.pow(1+a,n)-1)/a):t*n;return{rows:[{l:\"Total Contributions\",v:inr2(t*n)},{l:\"Estimated EPF Balance\",v:inr2(r)}]}}",
+   "seo_title": "EPF Calculator India - PF Balance & Interest (Free)",
+   "seo_desc": "EPF calculator: estimate your PF balance from employee and employer contributions plus interest. Free PF calculator in ₹, with a year-by-year table."
   },
   {
    "id": "gratuity",
