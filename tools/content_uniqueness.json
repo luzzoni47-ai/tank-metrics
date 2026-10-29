@@ -1,6 +1,6 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 80,
+ "pages_with_a_near_duplicate": 74,
  "worst_pairs": [
   {
    "overlap": 0.683,
@@ -21,11 +21,6 @@
    "overlap": 0.677,
    "a": "/rashi-moon-sign-calculator",
    "b": "/zodiac-sign-calculator"
-  },
-  {
-   "overlap": 0.673,
-   "a": "/ask-calculator",
-   "b": "/dilution-calculator"
   },
   {
    "overlap": 0.671,
@@ -51,6 +46,11 @@
    "overlap": 0.662,
    "a": "/average-order-value-aov",
    "b": "/repeat-rate-retention-and-churn"
+  },
+  {
+   "overlap": 0.662,
+   "a": "/gratuity-calculator",
+   "b": "/sip-calculator"
   }
  ],
  "worst_pages": [
@@ -87,13 +87,13 @@
    "closest_overlap": 0.677
   },
   {
-   "page": "/ask-calculator",
-   "closest_overlap": 0.673
+   "page": "/fd-fixed-deposit-calculator",
+   "closest_overlap": 0.671
   },
   {
-   "page": "/dilution-calculator",
-   "closest_overlap": 0.673
+   "page": "/rd-recurring-deposit-calculator",
+   "closest_overlap": 0.671
   }
  ],
- "median_overlap": 0.654
+ "median_overlap": 0.653
 }

@@ -1,456 +1,540 @@
 {
- "_comment": "Long-form guide copy for the tool pages, keyed by calculator id. 'what' is 2 paragraphs, 'formula' is how the maths works, 'mistakes' is a list of common errors. gen_tool_pages.py renders these under the calculator card.",
- "cats": {
-  "everyday": {
-   "what": "{name} answers one of the small questions that come up every week — a percentage off a bill, a share of a total, a simple interest figure. It exists so you do not have to reach for a calculator app, a notebook and a formula you half-remember. {desc} Everything runs inside your browser, so no figure you type is sent anywhere.",
-   "formula": "Every one of these tools is one arithmetic rule applied to the numbers you type. A percentage is the part divided by the whole, multiplied by 100. Simple interest is principal x rate x time. Compound interest adds the interest back to the principal at each period, so the base grows. The calculator applies the rule and shows you the result, the intermediate steps and, where it matters, the total you will actually pay or receive.",
-   "when": [
-    "You are checking a shop bill or an online discount before you pay.",
-    "You are working out a share of a total — a partner's cut, a deposit, a commission.",
-    "You want a quick sanity check before you commit to a number on a form."
-   ],
-   "mistakes": [
-    "Adding percentages together. A 10% rise followed by a 10% fall is not back to where you started — it is 99% of it.",
-    "Using simple interest for anything longer than a year. Banks compound, so a simple-interest answer will understate what you owe.",
-    "Rounding too early. Keep the full figure and round only the answer you write down."
-   ]
+  "_comment": "Long-form guide copy for the tool pages, keyed by calculator id. 'what' is 2 paragraphs, 'formula' is how the maths works, 'mistakes' is a list of common errors. gen_tool_pages.py renders these under the calculator card.",
+  "cats": {
+    "everyday": {
+      "what": "{name} answers one of the small questions that come up every week — a percentage off a bill, a share of a total, a simple interest figure. It exists so you do not have to reach for a calculator app, a notebook and a formula you half-remember. {desc} Everything runs inside your browser, so no figure you type is sent anywhere.",
+      "formula": "Every one of these tools is one arithmetic rule applied to the numbers you type. A percentage is the part divided by the whole, multiplied by 100. Simple interest is principal x rate x time. Compound interest adds the interest back to the principal at each period, so the base grows. The calculator applies the rule and shows you the result, the intermediate steps and, where it matters, the total you will actually pay or receive.",
+      "when": [
+        "You are checking a shop bill or an online discount before you pay.",
+        "You are working out a share of a total — a partner's cut, a deposit, a commission.",
+        "You want a quick sanity check before you commit to a number on a form."
+      ],
+      "mistakes": [
+        "Adding percentages together. A 10% rise followed by a 10% fall is not back to where you started — it is 99% of it.",
+        "Using simple interest for anything longer than a year. Banks compound, so a simple-interest answer will understate what you owe.",
+        "Rounding too early. Keep the full figure and round only the answer you write down."
+      ]
+    },
+    "profit": {
+      "what": "{name} shows what a business actually keeps, not what it collects. Revenue is the easy number and the least useful one on its own. {desc} This tool puts the costs back in, so you can see the margin that funds the next order, the next hire and the next bad month.",
+      "formula": "Profit is revenue minus every cost that went into earning it. Margin is that profit divided by revenue, shown as a percentage. A 20% margin means twenty paise of every rupee of sales stays with you; the rest is eaten by goods, ads, salaries, fees and tax. Change one cost and the margin moves, which is why the tool lets you vary each line separately rather than only the total.",
+      "when": [
+        "You are setting a price and want to know if the margin survives your real costs.",
+        "A month looked busy but the bank balance did not move, and you want to find out why.",
+        "You are comparing two products or two clients to decide where to put your effort."
+      ],
+      "mistakes": [
+        "Counting revenue as profit. A crore of sales at a 2% margin is twenty lakh of profit — and one bad month can wipe it out.",
+        "Forgetting the costs that arrive late: GST, marketplace fees, returns, payment-gateway charges.",
+        "Setting a price by copying a competitor whose costs you cannot see."
+      ]
+    },
+    "val": {
+      "what": "{name} works through the arithmetic of a funding round or a company valuation. {desc} These are the numbers founders and investors argue about, and most of the arguments come down to one of the figures this tool calculates.",
+      "formula": "Valuation is a price agreed for the whole company. Pre-money is that price before new money goes in; post-money is after. When an investor puts in an amount for a stake, the post-money is the investment divided by the stake, and the pre-money is post-money minus the investment. Revenue multiples, EBITDA multiples and implied values are different ways of arriving at the same price from the company's own numbers.",
+      "when": [
+        "You are preparing for a fundraise and want to know what your numbers imply.",
+        "You have a term sheet and want to check the stake it actually gives away.",
+        "You are comparing your valuation against what similar companies raised at."
+      ],
+      "mistakes": [
+        "Reading a valuation without the stake. A high valuation that costs half the company is worse than a lower one that costs a tenth.",
+        "Comparing a revenue multiple for a fast grower with one for a slow, profitable business.",
+        "Forgetting that a post-money valuation includes the new money, so the founder's percentage falls."
+      ]
+    },
+    "cust": {
+      "what": "{name} measures the economics of a single customer. {desc} These numbers decide whether growth makes money or burns it, and they are the first thing a serious investor checks.",
+      "formula": "The cost to acquire a customer (CAC) is everything you spend on sales and marketing divided by the customers it won. Lifetime value (LTV) is what one customer brings in over the whole relationship — average order value, times how often they buy, times how many years they stay, times your gross margin. Divide LTV by CAC and you have the ratio. Around 3:1 is the common rule of thumb; below 1:1 you lose money on every customer you win.",
+      "when": [
+        "You are about to increase your ad budget and want to know if it will pay back.",
+        "A channel is winning customers cheaply and you want to know if that will last.",
+        "You are preparing a pitch and need the unit-economics slide."
+      ],
+      "mistakes": [
+        "Using revenue for LTV instead of gross margin. The customer brings in sales, not profit.",
+        "Counting only ad spend as CAC and leaving out salaries, tools and agency fees.",
+        "Assuming a customer stays for years when your data shows most leave after a few months."
+      ]
+    },
+    "growth": {
+      "what": "{name} tracks the two things that kill young businesses: running out of cash, and growing faster than the cash can follow. {desc} Growth is a headline; cash is the oxygen.",
+      "formula": "Burn is the cash a business spends each month beyond what it earns. Runway is the cash you hold divided by that monthly burn — the number of months before the money is gone. Run rate takes one period's revenue and scales it to a year, which is useful for comparison but assumes the period repeats. Break-even is the sales level at which contribution covers your fixed costs, so profit is zero and every extra sale is profit.",
+      "when": [
+        "You want to know how many months you have before you must raise or cut.",
+        "You are deciding between hiring now and waiting a quarter.",
+        "A month was unusually strong and you want to compare it fairly with the rest of the year."
+      ],
+      "mistakes": [
+        "Measuring runway from revenue instead of cash in the bank.",
+        "Treating run rate as a forecast. It is a snapshot, not a promise.",
+        "Cutting the spending that wins customers first. That shortens runway now and shrinks the business later."
+      ]
+    },
+    "pricing": {
+      "what": "{name} works backwards from what you can charge to what you keep. {desc} Pricing is the fastest lever a small business has — a one-rupee change per unit drops straight to profit — and the one most owners set by guesswork.",
+      "formula": "Start with the price the customer pays, then subtract everything between that price and your bank account: marketplace commission, shipping, packaging, payment fees, returns and discounts. What is left is your contribution. Subtract the cost of the goods and you have the profit on one unit. The tool shows each subtraction so you can see which one is doing the damage.",
+      "when": [
+        "You are launching a product and need a price that leaves a real margin.",
+        "A marketplace raised its commission and you want to know how much price must move.",
+        "You are about to run a discount and want to see what it does to profit."
+      ],
+      "mistakes": [
+        "Setting a price from cost plus a markup, without checking what the market will pay.",
+        "Ignoring returns. In some categories, a fifth of orders come back and the shipping is yours to pay twice.",
+        "Discounting the price without checking the extra volume needed to stand still."
+      ]
+    },
+    "ops": {
+      "what": "{name} prices the things a small team spends on people. {desc} The salary you agree is not the cost of the hire, and the invoice you pay is not the cost of the freelancer.",
+      "formula": "The full cost of an employee is the salary plus provident fund, insurance, equipment, software and the time spent managing them. For a freelancer, it is the rate times the hours, plus the hours lost to briefing and revision. Utilisation — the share of paid hours that are actually billable — is what decides whether a team makes money.",
+      "when": [
+        "You are about to make a first hire and want the real monthly commitment.",
+        "You are comparing a freelancer against a full-time salary.",
+        "You want to know how many billable hours your team must sell to cover its own cost."
+      ],
+      "mistakes": [
+        "Budgeting for the salary only. The full cost is often 1.2 to 1.4 times the number you agreed.",
+        "Assuming a freelancer bills every hour you pay for.",
+        "Hiring ahead of the revenue that will pay for the hire."
+      ]
+    },
+    "investor": {
+      "what": "{name} looks at an investment from the investor's side. {desc} Founders spend a lot of time on valuation and very little on the return the money has to earn, which is the number that actually closes a round.",
+      "formula": "Return on investment is the gain divided by what was put in, shown as a percentage. A multiple is the final value divided by the amount invested — 3x means you got three rupees back for every one. The annualised return converts that multiple into a yearly rate, which is the only fair way to compare a three-year exit with a ten-year one.",
+      "when": [
+        "You are comparing two investments held for different lengths of time.",
+        "You are modelling what an investor needs to see for your round to make sense to them.",
+        "You are checking whether a fund's quoted return is as good as it sounds."
+      ],
+      "mistakes": [
+        "Comparing multiples without the holding period. 3x in three years beats 3x in ten.",
+        "Ignoring dilution. Your multiple is on the stake you still own, not the whole company.",
+        "Treating a paper valuation as cash. It is only a return when someone buys."
+      ]
+    },
+    "bonus": {
+      "what": "{name} puts a pitch through the same checks an investor would run. {desc} It is a rehearsal, not a verdict — the point is to find the weak number before the meeting does.",
+      "formula": "Each figure in the pitch is scored against a range that investors treat as normal: growth against what similar companies do, margin against the category, runway against the time a raise takes, and the ask against what the traction justifies. The tool combines the scores and names the lines that pull the total down.",
+      "when": [
+        "You have a deck and want a second opinion before you send it.",
+        "You are practising the pitch and want to know which slide will draw questions.",
+        "You are deciding whether you are ready to raise or should wait a quarter."
+      ],
+      "mistakes": [
+        "Reading a low score as a rejection. It is a list of things to fix or explain.",
+        "Tuning the inputs until the score looks good, which defeats the purpose.",
+        "Ignoring the weakest line because the total is high."
+      ]
+    },
+    "agency": {
+      "what": "{name} covers the economics of running client work. {desc} Agencies fail on two things: too much unbilled time, and clients who leave faster than new ones arrive.",
+      "formula": "Profit is the fees you bill minus the cost of delivering the work, which is mostly people's time. Utilisation is billable hours divided by available hours. Churn is the clients lost divided by the clients you started with, and a churn rate doubles as a rough measure of how long a client stays. The tool shows each of these so you can see which one is leaking.",
+      "when": [
+        "You are pricing a retainer and want to know the margin before you quote.",
+        "A month felt full but the profit was thin.",
+        "You want to know how many clients you must win just to replace the ones leaving."
+      ],
+      "mistakes": [
+        "Quoting a retainer from a monthly cost without allowing for unbilled revision rounds.",
+        "Treating a client as permanent. At 3% monthly churn, half are gone in under two years.",
+        "Counting total hours worked instead of billable ones."
+      ]
+    },
+    "realestate": {
+      "what": "{name} runs the numbers on a property purchase or a rental. {desc} Property is the largest purchase most families make, and the costs that surprise people are the ones paid on the day of registration.",
+      "formula": "The cost of buying is the price plus stamp duty, registration and any brokerage. Rental yield is the annual rent divided by what the property cost, shown as a percentage. Return on a sale is the sale price minus the purchase price and costs, divided by the money you put in. A loan changes the picture: the EMI includes interest, so early payments barely reduce the principal.",
+      "when": [
+        "You are comparing two properties and want to see which one earns more.",
+        "You want to know the cash you need on the day of registration, not just the price.",
+        "You are deciding between buying and continuing to rent."
+      ],
+      "mistakes": [
+        "Forgetting stamp duty and registration, which together can add 6% to 8% to the price.",
+        "Comparing gross rent with the EMI. Rent is before maintenance, tax and vacancy.",
+        "Assuming prices only rise, and leaving no room for a slow year."
+      ]
+    },
+    "taxwealth": {
+      "what": "{name} estimates tax and long-term saving figures. {desc} The rules change, and they treat different kinds of income differently, so these tools show the arithmetic rather than a fixed answer.",
+      "formula": "Income tax is worked out slab by slab: the rate applies only to the part of your income that falls in each band, not to the whole amount. Deductions reduce the income the slabs apply to. For savings, the future value is the amount you put in plus the interest or returns it earns, with the returns compounding if they are reinvested. The tool shows the total you contribute and the total it grows to, so you can see the split.",
+      "when": [
+        "You are choosing between the old and new tax regimes.",
+        "You want to know what a monthly saving becomes over ten or twenty years.",
+        "You are checking a payslip or a Form 16 against the rules."
+      ],
+      "mistakes": [
+        "Assuming a higher slab taxes all your income at that rate. It does not.",
+        "Comparing a tax-free option with a taxed one without adjusting for the tax.",
+        "Treating a projected return as guaranteed."
+      ]
+    },
+    "dailyfun": {
+      "what": "{name} is one of the lighter tools on the site. {desc} It is here for the fun of it — a quick answer to a question that has no bearing on your money.",
+      "formula": "These tools follow their own published rule — a name-based pairing, a date arithmetic, a number spelled out in words. There is no financial formula involved and nothing is stored.",
+      "when": [
+        "You are curious and want a quick answer.",
+        "You want to settle a friendly argument.",
+        "You are sharing something with friends."
+      ],
+      "mistakes": [
+        "Making a real decision on the strength of a fun result.",
+        "Reading a fun score as advice of any kind."
+      ]
+    }
   },
-  "profit": {
-   "what": "{name} shows what a business actually keeps, not what it collects. Revenue is the easy number and the least useful one on its own. {desc} This tool puts the costs back in, so you can see the margin that funds the next order, the next hire and the next bad month.",
-   "formula": "Profit is revenue minus every cost that went into earning it. Margin is that profit divided by revenue, shown as a percentage. A 20% margin means twenty paise of every rupee of sales stays with you; the rest is eaten by goods, ads, salaries, fees and tax. Change one cost and the margin moves, which is why the tool lets you vary each line separately rather than only the total.",
-   "when": [
-    "You are setting a price and want to know if the margin survives your real costs.",
-    "A month looked busy but the bank balance did not move, and you want to find out why.",
-    "You are comparing two products or two clients to decide where to put your effort."
-   ],
-   "mistakes": [
-    "Counting revenue as profit. A crore of sales at a 2% margin is twenty lakh of profit — and one bad month can wipe it out.",
-    "Forgetting the costs that arrive late: GST, marketplace fees, returns, payment-gateway charges.",
-    "Setting a price by copying a competitor whose costs you cannot see."
-   ]
-  },
-  "val": {
-   "what": "{name} works through the arithmetic of a funding round or a company valuation. {desc} These are the numbers founders and investors argue about, and most of the arguments come down to one of the figures this tool calculates.",
-   "formula": "Valuation is a price agreed for the whole company. Pre-money is that price before new money goes in; post-money is after. When an investor puts in an amount for a stake, the post-money is the investment divided by the stake, and the pre-money is post-money minus the investment. Revenue multiples, EBITDA multiples and implied values are different ways of arriving at the same price from the company's own numbers.",
-   "when": [
-    "You are preparing for a fundraise and want to know what your numbers imply.",
-    "You have a term sheet and want to check the stake it actually gives away.",
-    "You are comparing your valuation against what similar companies raised at."
-   ],
-   "mistakes": [
-    "Reading a valuation without the stake. A high valuation that costs half the company is worse than a lower one that costs a tenth.",
-    "Comparing a revenue multiple for a fast grower with one for a slow, profitable business.",
-    "Forgetting that a post-money valuation includes the new money, so the founder's percentage falls."
-   ]
-  },
-  "cust": {
-   "what": "{name} measures the economics of a single customer. {desc} These numbers decide whether growth makes money or burns it, and they are the first thing a serious investor checks.",
-   "formula": "The cost to acquire a customer (CAC) is everything you spend on sales and marketing divided by the customers it won. Lifetime value (LTV) is what one customer brings in over the whole relationship — average order value, times how often they buy, times how many years they stay, times your gross margin. Divide LTV by CAC and you have the ratio. Around 3:1 is the common rule of thumb; below 1:1 you lose money on every customer you win.",
-   "when": [
-    "You are about to increase your ad budget and want to know if it will pay back.",
-    "A channel is winning customers cheaply and you want to know if that will last.",
-    "You are preparing a pitch and need the unit-economics slide."
-   ],
-   "mistakes": [
-    "Using revenue for LTV instead of gross margin. The customer brings in sales, not profit.",
-    "Counting only ad spend as CAC and leaving out salaries, tools and agency fees.",
-    "Assuming a customer stays for years when your data shows most leave after a few months."
-   ]
-  },
-  "growth": {
-   "what": "{name} tracks the two things that kill young businesses: running out of cash, and growing faster than the cash can follow. {desc} Growth is a headline; cash is the oxygen.",
-   "formula": "Burn is the cash a business spends each month beyond what it earns. Runway is the cash you hold divided by that monthly burn — the number of months before the money is gone. Run rate takes one period's revenue and scales it to a year, which is useful for comparison but assumes the period repeats. Break-even is the sales level at which contribution covers your fixed costs, so profit is zero and every extra sale is profit.",
-   "when": [
-    "You want to know how many months you have before you must raise or cut.",
-    "You are deciding between hiring now and waiting a quarter.",
-    "A month was unusually strong and you want to compare it fairly with the rest of the year."
-   ],
-   "mistakes": [
-    "Measuring runway from revenue instead of cash in the bank.",
-    "Treating run rate as a forecast. It is a snapshot, not a promise.",
-    "Cutting the spending that wins customers first. That shortens runway now and shrinks the business later."
-   ]
-  },
-  "pricing": {
-   "what": "{name} works backwards from what you can charge to what you keep. {desc} Pricing is the fastest lever a small business has — a one-rupee change per unit drops straight to profit — and the one most owners set by guesswork.",
-   "formula": "Start with the price the customer pays, then subtract everything between that price and your bank account: marketplace commission, shipping, packaging, payment fees, returns and discounts. What is left is your contribution. Subtract the cost of the goods and you have the profit on one unit. The tool shows each subtraction so you can see which one is doing the damage.",
-   "when": [
-    "You are launching a product and need a price that leaves a real margin.",
-    "A marketplace raised its commission and you want to know how much price must move.",
-    "You are about to run a discount and want to see what it does to profit."
-   ],
-   "mistakes": [
-    "Setting a price from cost plus a markup, without checking what the market will pay.",
-    "Ignoring returns. In some categories, a fifth of orders come back and the shipping is yours to pay twice.",
-    "Discounting the price without checking the extra volume needed to stand still."
-   ]
-  },
-  "ops": {
-   "what": "{name} prices the things a small team spends on people. {desc} The salary you agree is not the cost of the hire, and the invoice you pay is not the cost of the freelancer.",
-   "formula": "The full cost of an employee is the salary plus provident fund, insurance, equipment, software and the time spent managing them. For a freelancer, it is the rate times the hours, plus the hours lost to briefing and revision. Utilisation — the share of paid hours that are actually billable — is what decides whether a team makes money.",
-   "when": [
-    "You are about to make a first hire and want the real monthly commitment.",
-    "You are comparing a freelancer against a full-time salary.",
-    "You want to know how many billable hours your team must sell to cover its own cost."
-   ],
-   "mistakes": [
-    "Budgeting for the salary only. The full cost is often 1.2 to 1.4 times the number you agreed.",
-    "Assuming a freelancer bills every hour you pay for.",
-    "Hiring ahead of the revenue that will pay for the hire."
-   ]
-  },
-  "investor": {
-   "what": "{name} looks at an investment from the investor's side. {desc} Founders spend a lot of time on valuation and very little on the return the money has to earn, which is the number that actually closes a round.",
-   "formula": "Return on investment is the gain divided by what was put in, shown as a percentage. A multiple is the final value divided by the amount invested — 3x means you got three rupees back for every one. The annualised return converts that multiple into a yearly rate, which is the only fair way to compare a three-year exit with a ten-year one.",
-   "when": [
-    "You are comparing two investments held for different lengths of time.",
-    "You are modelling what an investor needs to see for your round to make sense to them.",
-    "You are checking whether a fund's quoted return is as good as it sounds."
-   ],
-   "mistakes": [
-    "Comparing multiples without the holding period. 3x in three years beats 3x in ten.",
-    "Ignoring dilution. Your multiple is on the stake you still own, not the whole company.",
-    "Treating a paper valuation as cash. It is only a return when someone buys."
-   ]
-  },
-  "bonus": {
-   "what": "{name} puts a pitch through the same checks an investor would run. {desc} It is a rehearsal, not a verdict — the point is to find the weak number before the meeting does.",
-   "formula": "Each figure in the pitch is scored against a range that investors treat as normal: growth against what similar companies do, margin against the category, runway against the time a raise takes, and the ask against what the traction justifies. The tool combines the scores and names the lines that pull the total down.",
-   "when": [
-    "You have a deck and want a second opinion before you send it.",
-    "You are practising the pitch and want to know which slide will draw questions.",
-    "You are deciding whether you are ready to raise or should wait a quarter."
-   ],
-   "mistakes": [
-    "Reading a low score as a rejection. It is a list of things to fix or explain.",
-    "Tuning the inputs until the score looks good, which defeats the purpose.",
-    "Ignoring the weakest line because the total is high."
-   ]
-  },
-  "agency": {
-   "what": "{name} covers the economics of running client work. {desc} Agencies fail on two things: too much unbilled time, and clients who leave faster than new ones arrive.",
-   "formula": "Profit is the fees you bill minus the cost of delivering the work, which is mostly people's time. Utilisation is billable hours divided by available hours. Churn is the clients lost divided by the clients you started with, and a churn rate doubles as a rough measure of how long a client stays. The tool shows each of these so you can see which one is leaking.",
-   "when": [
-    "You are pricing a retainer and want to know the margin before you quote.",
-    "A month felt full but the profit was thin.",
-    "You want to know how many clients you must win just to replace the ones leaving."
-   ],
-   "mistakes": [
-    "Quoting a retainer from a monthly cost without allowing for unbilled revision rounds.",
-    "Treating a client as permanent. At 3% monthly churn, half are gone in under two years.",
-    "Counting total hours worked instead of billable ones."
-   ]
-  },
-  "realestate": {
-   "what": "{name} runs the numbers on a property purchase or a rental. {desc} Property is the largest purchase most families make, and the costs that surprise people are the ones paid on the day of registration.",
-   "formula": "The cost of buying is the price plus stamp duty, registration and any brokerage. Rental yield is the annual rent divided by what the property cost, shown as a percentage. Return on a sale is the sale price minus the purchase price and costs, divided by the money you put in. A loan changes the picture: the EMI includes interest, so early payments barely reduce the principal.",
-   "when": [
-    "You are comparing two properties and want to see which one earns more.",
-    "You want to know the cash you need on the day of registration, not just the price.",
-    "You are deciding between buying and continuing to rent."
-   ],
-   "mistakes": [
-    "Forgetting stamp duty and registration, which together can add 6% to 8% to the price.",
-    "Comparing gross rent with the EMI. Rent is before maintenance, tax and vacancy.",
-    "Assuming prices only rise, and leaving no room for a slow year."
-   ]
-  },
-  "taxwealth": {
-   "what": "{name} estimates tax and long-term saving figures. {desc} The rules change, and they treat different kinds of income differently, so these tools show the arithmetic rather than a fixed answer.",
-   "formula": "Income tax is worked out slab by slab: the rate applies only to the part of your income that falls in each band, not to the whole amount. Deductions reduce the income the slabs apply to. For savings, the future value is the amount you put in plus the interest or returns it earns, with the returns compounding if they are reinvested. The tool shows the total you contribute and the total it grows to, so you can see the split.",
-   "when": [
-    "You are choosing between the old and new tax regimes.",
-    "You want to know what a monthly saving becomes over ten or twenty years.",
-    "You are checking a payslip or a Form 16 against the rules."
-   ],
-   "mistakes": [
-    "Assuming a higher slab taxes all your income at that rate. It does not.",
-    "Comparing a tax-free option with a taxed one without adjusting for the tax.",
-    "Treating a projected return as guaranteed."
-   ]
-  },
-  "dailyfun": {
-   "what": "{name} is one of the lighter tools on the site. {desc} It is here for the fun of it — a quick answer to a question that has no bearing on your money.",
-   "formula": "These tools follow their own published rule — a name-based pairing, a date arithmetic, a number spelled out in words. There is no financial formula involved and nothing is stored.",
-   "when": [
-    "You are curious and want a quick answer.",
-    "You want to settle a friendly argument.",
-    "You are sharing something with friends."
-   ],
-   "mistakes": [
-    "Making a real decision on the strength of a fun result.",
-    "Reading a fun score as advice of any kind."
-   ]
+  "calcs": {
+    "tam": {
+      "what": "TAM / SAM / SOM sizes a market before you commit money to it. TAM is everyone who could ever buy this kind of product. SAM is the slice you can actually reach — the cities you ship to, the customers your price suits. SOM is the slice you can realistically win in the next few years with the team and budget you have. Investors ask for all three because a huge TAM with a tiny SOM tells them the market exists but you have no route into it.",
+      "formula": "SAM is TAM times the share of it you can serve, as a percentage. SOM is SAM times the share of that you expect to win, also as a percentage. The tool multiplies through and shows both. The important part is the assumption behind each percentage: if you claim 40% of a reachable market, you are claiming to be the biggest player in it, which needs a reason.",
+      "when": [
+        "You are writing the market slide for a pitch and want numbers that survive a question.",
+        "You are deciding which customer segment to build for first.",
+        "You want to check whether the market you are aiming at is big enough to matter."
+      ],
+      "mistakes": [
+        "Quoting the whole TAM as your opportunity. It is the least useful of the three numbers on its own.",
+        "Claiming a SOM that would make you the market leader without a plan to get there.",
+        "Sizing the market in rupees when your customers buy in units, which hides how few buyers there are."
+      ],
+      "intro": "Take a market you could sell into. Here is how the three layers stack up.",
+      "outro": "The SOM is the number to defend. Anyone can claim a large TAM; the SOM is where you say how you actually get in."
+    },
+    "emi": {
+      "what": "The Loan EMI Calculator shows what a loan really costs per month and over its whole life. The EMI is the fixed amount you pay every month; it contains both interest and a repayment of the amount borrowed. Early payments are almost all interest, which is why a loan feels like it is not shrinking for the first few years.",
+      "formula": "The EMI is calculated so that every payment, compounded at the monthly rate over the full term, exactly clears the loan. The monthly rate is the annual rate divided by twelve, and the term is the number of months. Total interest is the EMI multiplied by the number of months, minus the amount borrowed. A longer term lowers the EMI but raises the total interest, which is the trade the calculator lets you test.",
+      "when": [
+        "You are comparing two loan offers with different rates or terms.",
+        "You want to know the monthly payment before you commit to a property.",
+        "You are deciding whether a longer term is worth the extra interest."
+      ],
+      "mistakes": [
+        "Choosing the offer with the lowest EMI without checking the total interest.",
+        "Forgetting the processing fee and insurance, which are added to the cost of borrowing.",
+        "Assuming the rate is fixed for the whole term when it is linked to a benchmark that moves."
+      ],
+      "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
+      "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property."
+    },
+    "numwords": {
+      "what": "Number to Words spells a figure out the Indian way - lakh and crore rather than million and billion. It is built for cheques, invoices, legal documents, rent agreements and any form that asks for the amount in words as well as in figures. Getting this wrong is a common reason a bank or a registrar sends a document back, so the tool shows the exact wording and the Indian grouping at once.",
+      "formula": "The number is split from the left into crore, lakh, thousand and the final hundreds, because that is how the Indian system groups digits. Each group is then read as a number of up to three digits and joined with its scale word. Two and a half crore is 2,50,00,000, so the tool reads the groups rather than the individual digits.",
+      "when": [
+        "You are filling in a cheque and need the amount in words.",
+        "You are drafting an invoice or an agreement that requires both forms.",
+        "You want to check that a figure written in words matches the digits."
+      ],
+      "mistakes": [
+        "Mixing the Indian and international systems in one document.",
+        "Writing the words differently from the figures, which is the kind of mismatch a bank will query.",
+        "Dropping the 'only' at the end, which is the convention on cheques."
+      ],
+      "intro": "Type a figure and the tool writes it the way an Indian cheque expects.",
+      "outro": "Always check the words against the digits before you sign. A mismatch is what causes a payment to be held up."
+    },
+    "marketshare": {
+      "what": "The Market Share Calculator answers one question in plain numbers: out of everything sold in your market, how much is yours? Enter the total units sold in the market and the units you sold. That is it. You get your share as a percentage, plus how many units everyone else sold.",
+      "formula": "Your market share is your units divided by the total units, times 100. If 10,000 units were sold in the market and 6,000 of them were yours, your share is 6,000 / 10,000 = 60%. There is no compounding and no hidden step — it is one division. The tool also shows the other side: 4,000 units, or 40%, went to everyone else.",
+      "when": [
+        "You want to know how big you are in your own market, not in revenue terms.",
+        "You are checking whether a claim like 'we are the market leader' is actually true.",
+        "You are setting a target and want a starting share to grow from."
+      ],
+      "mistakes": [
+        "Mixing units with rupees. Count units against units, or money against money, never one of each.",
+        "Using a market figure that is bigger than the market you actually compete in, which flatters the share.",
+        "Reading a big share as automatically good — a 60% share of a tiny market is still a tiny business."
+      ],
+      "intro": "Suppose 10,000 units were sold in your market and 6,000 of them were yours. Here is your share.",
+      "outro": "6,000 out of 10,000 is 60%. Change either number above and the share updates as you type — the arithmetic stays that simple."
+    },
+    "revmul": {
+      "what": "The Revenue Multiple divides what a company is being valued at by its yearly revenue. If a business earns ₹1 crore a year and someone offers ₹5 crore for it, the multiple is 5x. It is the quickest sanity check in a valuation because revenue is the hardest number to argue about: it is on the invoices, not on an assumption sheet. It says nothing about profit, so it is only meaningful next to a margin figure.",
+      "formula": "Revenue Multiple = Valuation ÷ Annual Revenue. The tool takes the valuation you enter and divides it by the yearly revenue, then shows the answer as a number of times. A 3x multiple means the buyer is paying three rupees for every one rupee of yearly sales. Change either figure and the multiple moves, which is the point: the same ₹5 crore price is cheap at 2x and expensive at 12x.",
+      "when": [
+        "A founder has an offer or a term sheet and wants to know whether the price is in a normal range.",
+        "You are comparing two companies in the same line of business and revenue is the only figure you have for both.",
+        "You are setting your own asking price and want to work backwards from a multiple buyers in your category actually pay."
+      ],
+      "mistakes": [
+        "Using the wrong revenue. A buyer means the last twelve months, or the next twelve, and the two can differ by 40% in a growing business — the multiple swings with it.",
+        "Reading a high multiple as good news. A 10x revenue price on a business with 5% margins is worse than a 3x price on one with 30% margins.",
+        "Mixing recurring and one-off revenue. Subscription revenue earns a far higher multiple than project revenue, so a blended figure misleads both sides."
+      ]
+    },
+    "ebitdamul": {
+      "what": "The EBITDA Multiple divides a valuation by EBITDA — earnings before interest, tax, depreciation and amortisation. It is the multiple most small-business deals are actually priced on, because it ignores how the current owner financed the business and how the accountant spread the cost of equipment. Two identical shops with different loans and different depreciation policies show the same EBITDA, so the multiple compares like with like.",
+      "formula": "EBITDA Multiple = Valuation ÷ EBITDA. The tool divides the valuation you enter by the EBITDA figure and shows the result in times. A 6x multiple means the buyer pays six rupees for every one rupee of yearly operating profit. Because EBITDA is a profit measure and revenue is not, this multiple is always lower than the revenue multiple for the same deal.",
+      "when": [
+        "You are selling or buying a business and want a price that a lender or an investor will recognise as normal.",
+        "You are comparing an offer against the 4-8x range most small business deals fall in.",
+        "You want to check what EBITDA the business must reach for the asking price to be reasonable."
+      ],
+      "mistakes": [
+        "Adding back costs that are real. A one-off saving the owner made by not paying himself is not a permanent add-back, and buyers discount it.",
+        "Comparing an EBITDA multiple to a revenue multiple. They measure different things; a 6x EBITDA price is not 'cheaper' than a 3x revenue price without the margin between them.",
+        "Using a stale EBITDA. One good year lifts the multiple's denominator and makes an average business look cheap."
+      ]
+    },
+    "compint": {
+      "what": "Compound Interest works out what an amount grows to when the interest is added back and earns interest itself. ₹10,000 at 8% for five years is not ₹14,000; it is more, because each year's interest joins the balance. The tool also takes how many times a year the interest compounds, which is the part most people miss: the same rate paid monthly ends higher than the same rate paid once a year.",
+      "formula": "Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Rate is the yearly percentage, Times is how often interest is added in a year (1, 4 or 12), and Years is the term. The tool subtracts the principal from the total to show the interest earned on its own. Raising the Times figure raises the total for the same headline rate.",
+      "when": [
+        "You are comparing a fixed deposit that compounds quarterly with one that compounds monthly.",
+        "You are projecting what a monthly SIP or a lump sum grows to over several years.",
+        "You want to see how much of a long loan's total cost is interest rather than principal."
+      ],
+      "mistakes": [
+        "Using simple interest for a multi-year figure. Banks compound, so a simple-interest answer always understates what you will owe or earn.",
+        "Ignoring how often it compounds. 8% paid monthly is not the same as 8% paid yearly, and the gap widens with the term.",
+        "Forgetting that the rate is annual. Entering a monthly rate in the yearly field multiplies the answer by twelve times over."
+      ]
+    },
+    "simpledisc": {
+      "what": "The Discount Calculator works out what a percentage off actually takes off a price. Enter the original price and the discount, and it shows two things: the rupees you save and the price you finally pay. That is the number that decides whether a sale is worth acting on — not the percentage, which is the part shops advertise because it sounds bigger than it is.",
+      "formula": "The saving is the original price multiplied by the discount, divided by 100: `price` × `disc` ÷ 100. The final price is the original minus that saving: `price` − saving. At ₹2,000 with a 25% discount the saving is ₹500 and the final price is ₹1,500. Two discounts applied one after another are not added together — 30% then 20% leaves you paying 0.7 × 0.8 = 0.56 of the price, which is 44% off, not 50%.",
+      "when": [
+        "A marketplace or shop shows a flat percentage off and you want the rupee amount before you decide.",
+        "You are comparing two sale prices where the discounts and the original prices are both different.",
+        "A coupon stacks on top of an existing sale and you want to know the real final price."
+      ],
+      "mistakes": [
+        "Adding two discounts together. A 30% discount followed by a 20% one is 44% off the original, not 50%, because the second discount applies to the already-reduced price.",
+        "Reading the discount as a share of the final price. The percentage is taken off the original marked price; once the price has dropped, the same rupees are a larger percentage of what is left.",
+        "Comparing discount percentages across different prices. 40% off ₹2,000 saves ₹800, which is more than 50% off ₹1,000 at ₹500."
+      ],
+      "intro": "Take a ₹2,000 jacket with 25% off in a sale. Here is what the discount takes off.",
+      "outro": "The percentage is the shop's number; the ₹500 saving and the ₹1,500 final price are yours. Change either figure above and both move together."
+    },
+    "tip": {
+      "what": "The Tip Calculator works out how much to leave and what the bill comes to once it is added. Give it the bill and a percentage, and it returns the tip amount and the total you hand over. That total is the figure that matters when you are paying cash, splitting with friends, or checking a bill against what you expected.",
+      "formula": "The tip amount is the bill multiplied by the tip percentage, divided by 100: `bill` × `tip` ÷ 100. The total is the bill plus the tip amount: `bill` + tip amount. On a ₹1,000 bill at 10%, the tip is ₹100 and you pay ₹1,100. If you want to tip on the pre-tax bill, enter the pre-tax figure — the percentage is applied to whatever number is in the bill field.",
+      "when": [
+        "You are at a restaurant and want to leave a fair, round amount without doing the arithmetic in your head.",
+        "The bill already carries a service charge and you want to see what an extra tip would add.",
+        "You are splitting a bill and need each person's share of the bill plus tip."
+      ],
+      "mistakes": [
+        "Tipping on the total instead of the bill. If the number you enter already includes the tip, applying the percentage again charges it twice.",
+        "Leaving a second tip when a service charge is already printed. The service charge is the tip; check the bill before you add more.",
+        "Splitting the bill and then tipping on each share. Work out the tip on the whole bill once, then divide the total, or the rounding on each share inflates it."
+      ],
+      "intro": "Take a ₹1,000 bill and a 10% tip. Here is what you leave and what you pay.",
+      "outro": "The tip is ₹100 on a ₹1,000 bill, so the total is ₹1,100. Change the bill or the percentage above and both the tip and the total follow."
+    },
+    "netmargin": {
+      "what": "The Net Profit Margin Calculator turns two figures — revenue and net profit — into the one percentage that says how much of every rupee of sales the business actually keeps. Net profit is the last line: after the cost of goods, after salaries and rent, after interest on any loan, and after tax. So this is the smallest and the most honest of the margin figures.",
+      "formula": "Net margin is net profit divided by revenue, multiplied by 100: `np` ÷ `rev` × 100. If a business earns ₹4,50,000 of revenue and keeps ₹1,80,000 after every cost and tax, the net margin is 1,80,000 ÷ 4,50,000 = 40%. Net profit is what remains after cost of goods, operating expenses, interest and tax; subtract any one of those later and the percentage rises.",
+      "when": [
+        "You want to know how much of each rupee of sales the business keeps after everything is paid.",
+        "You are comparing your margin with others selling the same kind of product or service.",
+        "You are preparing accounts or a pitch and need the bottom-line percentage investors will ask for."
+      ],
+      "mistakes": [
+        "Comparing the margin against a business in another industry. A grocery chain at 3% can be healthy while a software company at 3% is in trouble; the fair comparison is within the same trade.",
+        "Using profit before tax and calling it net. Net means after tax and after interest, which is why it is lower than the operating margin on the same revenue.",
+        "Reading a high percentage on a small revenue as a strong business. 40% of ₹4,50,000 is ₹1,80,000 — a large margin on a tiny turnover is still a small profit."
+      ],
+      "intro": "Take a business with ₹4,50,000 of revenue that keeps ₹1,80,000 after every cost and tax. Here is the net margin.",
+      "outro": "40% is a strong net margin for most trades. If your figure is much lower, the leak is below the gross line — look at overheads, interest and tax before you look at price."
+    },
+    "roce": {
+      "what": "Return on Capital Employed answers a question ROI cannot: how hard is every rupee inside this business working, whether it came from you or from a lender? Capital employed is shareholders' equity plus long-term debt, so ROCE puts a debt-free shop and a heavily borrowed one on the same ruler. Two businesses can post the same ROI and very different ROCE, and the gap is almost always the borrowing.\n\nReach for it when you are weighing an acquisition, a new machine or a second outlet against the money already tied up in the first one. It is a before-interest number: the tool divides operating profit by capital employed and stops there, because how the capital was financed is exactly the thing you are trying to see past.",
+      "formula": "ROCE is operating profit (EBIT) divided by capital employed, times 100. In this tool 'Operating Profit' is the ebit field and 'Capital Employed' is the ce field. Capital employed is total assets minus current liabilities, which is the same as shareholders' equity plus long-term debt. Rs 4,50,000 of operating profit on Rs 18,00,000 of capital employed gives 25%. Because the numerator is struck before interest and tax, ROCE does not move when the debt does, and that is what makes two differently financed companies comparable.",
+      "when": [
+        "You are comparing two companies with different debt levels and want a like-for-like return.",
+        "You are deciding whether a new machine or outlet earns more than the capital already sitting in the business.",
+        "An investor asks how well the company uses the whole balance sheet, not just the founders' money."
+      ],
+      "mistakes": [
+        "Putting profit after interest in the numerator. ROCE takes EBIT on purpose so the debt neither flatters nor punishes the number; net profit belongs in ROE, not here.",
+        "Tinkering with capital employed - subtracting short-term creditors twice, or dropping cash entirely - so the ratio jumps while nothing real has changed.",
+        "Cheering a high ROCE on a business with almost no capital employed. A services firm that rents everything can show 200% and still own nothing worth buying."
+      ]
+    },
+    "roi": {
+      "what": "Return on Investment is the bluntest of the return measures: what did I get back compared with what I put in? The tool takes net profit - after every cost, including interest and tax - and divides it by the investment cost. Rs 1,00,000 of profit on Rs 10,00,000 spent is 10%. Nothing here is annualised and nothing is adjusted for risk, so two projects showing the same ROI are only comparable if they took the same time to pay back.\n\nUse it as the first filter on any spend that has a number attached: an ad campaign, a machine, a course, a shop fit-out. It is deliberately simple, and that simplicity is the weakness - it will not tell you whether the 10% took six months or six years. Bring in payback or CAGR when the timing is what you are actually deciding.",
+      "formula": "ROI is net profit divided by investment cost, times 100. Here 'Net Profit' is the profit field and 'Investment Cost' is the inv field. Net profit is what survives goods, salaries, ads, fees, interest and tax - not revenue, and not gross margin. Rs 10,00,000 put in for Rs 1,00,000 of net profit is a 10% ROI. The tool does not divide by the number of years, so a 10% ROI over one year and a 10% ROI over five years read identically on this page.",
+      "when": [
+        "You are judging one ad campaign, machine or course before you release the money.",
+        "You want a single number to rank several small spends that all take about the same time.",
+        "Someone quotes an ROI figure and you want to reproduce it from their profit and their cost."
+      ],
+      "mistakes": [
+        "Feeding gross profit or revenue into the numerator, which turns a 10% ROI into something that reads like 40%.",
+        "Leaving out the costs that arrive after the sale - GST, marketplace commission, returns, gateway fees - so the profit is the optimistic version.",
+        "Treating a 10% ROI over six months as equal to a 10% ROI over five years; the tool does not annualise, so you have to."
+      ]
+    },
+    "split": {
+      "what": "Bill Splitter divides one shared amount by the number of people paying it, and nothing else. It is the tool for the last two minutes at a table: the total is on the bill, four of you are paying, each owes a quarter. The arithmetic is a single division, so the value is not in the maths - it is in having the per-head figure before anyone starts rounding in their head and the numbers stop agreeing.\n\nIt handles the plain case on purpose. It does not decide who ordered the paneer, it does not add a tip, and it does not re-split a bill that already carries a service charge. That is a feature: an equal split is the only split that ends an argument, and every uneven arrangement is easier to settle once the equal share is on the table.",
+      "formula": "Each person pays the total bill divided by the number of people. In this tool 'Total Bill' is the total field and 'Number of People' is the people field. Rs 1,000 across 4 people is Rs 250 each. When the total does not divide evenly - Rs 1,000 across 3 - the tool shows Rs 333.33, and the honest fix is for one person to absorb the odd paise or for everyone to round up and leave the difference in the tip.",
+      "when": [
+        "A group dinner or a trip ends and the bill has to be settled on the spot.",
+        "Roommates split a shared utility or grocery bill evenly each month.",
+        "Co-founders or a small team split a shared subscription or a taxi fare."
+      ],
+      "mistakes": [
+        "Splitting the pre-tax subtotal and forgetting the GST and service charge already printed on the bill.",
+        "Dividing by the number of people who came rather than the number who are paying, when someone is being treated.",
+        "Rounding every share down and leaving the last person with the shortfall; round up, or let one person take the odd rupees."
+      ]
+    },
+    "ebitda": {
+      "what": "EBITDA & Margin answers the question an investor asks before any other: does this business make money from the thing it actually does? The tool takes revenue, strips out the cost of the goods sold and the operating expenses that keep the lights on, and shows what is left — earnings before interest, tax, depreciation and amortisation — together with that figure as a percentage of revenue. The rupee number says how much the core operation throws off; the margin says how efficiently it does it.\n\nThe margin is the part that travels. Two firms can report the same ₹10 lakh of EBITDA and be in completely different health: ₹10 lakh on ₹50 lakh of revenue is a 20% margin and a business with pricing power, while ₹10 lakh on ₹5 crore of revenue is a 2% margin and a business one bad month from a loss. Because it stops before interest and tax, EBITDA also lets you compare a debt-free company with a heavily borrowed one on the same footing — which is exactly why lenders and buyers reach for it.",
+      "formula": "EBITDA = Revenue − Cost of Goods Sold − Operating Expenses. The margin is EBITDA ÷ Revenue × 100, and the tool shows it beside the rupee figure. Revenue is the top line (rev), Cost of Goods Sold is cogs and Operating Expenses is opex. Interest, tax, depreciation and amortisation are deliberately left out, so EBITDA is not the cash you keep — it is the profit from running the business, before financing and accounting decisions. A margin above 15% is usually treated as attractive; below 5% there is little room for a bad quarter.",
+      "when": [
+        "You are showing a business to an investor and want one clean number for core profitability.",
+        "You are comparing two companies that are funded in completely different ways.",
+        "You want to check for yourself whether the operation still earns in a bad month, before interest and tax flatter or hide it."
+      ],
+      "mistakes": [
+        "Treating revenue as EBITDA. ₹5 crore of sales at a 2% margin leaves only ₹10 lakh, and one weak month can erase it.",
+        "Feeding interest and tax into the operating costs. They are financing and tax charges, not trading costs, and including them understates the margin.",
+        "Judging the margin from a single quarter. One-off costs and seasonality move it around; the trend is what to trust."
+      ]
+    },
+    "impval": {
+      "what": "Implied Valuation turns one short line in a pitch — “I am putting in ₹50 lakh for 5%” — into the number it actually implies about the whole company. Divide the investment by the equity offered and you have the price the deal is putting on the business. It is the fastest sanity check in a funding conversation: the moment a stake is named, the valuation is decided, whether or not anyone says it out loud.\n\nThe figure is only as good as the stake behind it, which is why the tool asks for both inputs. ₹50 lakh for 5% implies a ₹10 crore company; the same ₹50 lakh for 20% implies only a ₹2.5 crore company. Founders quote the first number and forget the second, and investors do the reverse. Having the implied valuation in front of you ends the roundabout talk and moves the discussion to the assumption underneath — the stake itself.",
+      "formula": "Implied Valuation = Investment Amount ÷ (Equity Offered ÷ 100). Type the amount (amt) and the equity percentage (eq); the tool divides the equity by 100 to make it a fraction, then divides the investment by that fraction. ₹10,00,000 for 10% implies ₹1,00,00,000. The arithmetic is a single division, so the value is not the maths but the discipline of stating the amount and the stake together.",
+      "when": [
+        "An investor or acquirer names a stake and you want the price it implies before you reply.",
+        "You are the investor and want to check whether the slice you are asking for is fair for the money.",
+        "You are writing a term-sheet summary and need the valuation behind each offer on one line."
+      ],
+      "mistakes": [
+        "Reading the valuation without the stake. ₹50 lakh for 5% and ₹50 lakh for 20% are two very different companies.",
+        "Treating the implied valuation as agreed. It is what the offer implies, not what the company is worth; the argument is usually about the stake, not the price.",
+        "Forgetting that money normally goes in on a post-money basis, so the implied price already includes the new cheque and the founder's own stake is diluted by it."
+      ]
+    },
+    "opmargin": {
+      "what": "Operating Margin answers whether the business makes money from trading, before the cost of the money it borrowed and the tax it owes. Revenue goes in, operating profit — what is left after the day-to-day costs of running the business — goes in, and the tool shows what share of each rupee of sales survives. It is the cleanest single read on whether the core operation works, because financing and one-off items stay out of it.\n\nWhat matters is what “operating profit” leaves out. Interest on a loan is a cost of how the business is funded, not of what it sells; a tax charge depends on the whole company's position; a one-time asset sale is not trading. Strip those away and the margin shows the engine on its own. That is why it sits beside EBITDA rather than replacing it: EBITDA adds depreciation and amortisation back, so the two move together for an asset-light business and part ways for a factory.",
+      "formula": "Operating Margin = Operating Profit ÷ Revenue × 100. Revenue (rev) is the top line; Operating Profit (ebit) is what remains after the cost of goods sold and the operating expenses, but before interest and tax. ₹18,000 of operating profit on ₹45,000 of revenue is a 40% margin. Above 10% usually signals a healthy core; a negative margin means the operation itself is losing money and no amount of financing will fix it.",
+      "when": [
+        "A busy month left little in the bank and you want to know whether the problem is the operation or the financing.",
+        "You are comparing your business with a competitor and want the one figure that ignores how each is funded.",
+        "You are preparing for a buyer or a lender and want to show the core business standing on its own."
+      ],
+      "mistakes": [
+        "Putting net profit in the operating-profit field. Interest and tax are not operating costs, so using net profit understates the margin.",
+        "Comparing the margin across two companies without checking what each counts as operating. One may treat marketing as operating expense and another as a one-off.",
+        "Reading a single quarter as the trend. One-off costs and seasonality move the margin; trust the direction over several periods."
+      ]
+    },
+    "prepost": {
+      "what": "Pre-Money & Post-Money Valuation takes the term sheet as it is actually written — a price for the company before the cheque, and the cheque itself — and works out the two numbers that decide what a founder keeps. The pre-money is what the company was agreed to be worth with the new money still outside it; the post-money is that value plus the investment. The gap between them is not arithmetic decoration: it is the stake the new money buys.\n\nThe stake is the figure that gets argued about after the round closes. If the pre-money is ₹9 crore and the investor puts in ₹1 crore, the post-money is ₹10 crore and the cheque bought 10% — a tenth of the company, not a tenth of the old company. Founders who read only the pre-money assume the new investor's slice comes out of somewhere else, and are surprised when their own percentage is the one that falls. The tool shows both valuations and the equity given away on the same line so that surprise cannot happen.",
+      "formula": "Post-Money Valuation = Pre-Money Valuation + Investment Amount. Equity Given = Investment Amount ÷ Post-Money Valuation × 100. Type the pre-money (pre) and the investment (amt); the tool adds them for the post-money, then divides the investment by that post-money figure to show the stake. A ₹9 crore pre-money plus a ₹1 crore cheque is a ₹10 crore post-money and 10% given away. The post-money, not the pre-money, is the base the stake is measured against.",
+      "when": [
+        "A term sheet quotes a pre-money figure and you want the post-money and the stake it hands over.",
+        "You are deciding whether to raise at a lower pre-money for more money, and want to see how much more of the company that costs.",
+        "You are building a simple cap table and need the post-money before you can split it into stakes."
+      ],
+      "mistakes": [
+        "Measuring the stake against the pre-money. 10% of the pre-money is not 10% of the company; the investment itself is part of the post-money base.",
+        "Reading the pre-money as the price of the whole company. It is the price before the new money, which is a smaller and less useful number on its own.",
+        "Adding the cheque to the pre-money but forgetting that the founder's own stake is diluted by exactly the equity given to the new investor."
+      ]
+    },
+    "savegoal": {
+      "what": "The Savings Goal Planner tells you how much to put aside each month to reach a target, or how long a monthly amount will take to get there. It is for a down payment, an emergency fund, a wedding or any goal with a number and a date attached.",
+      "formula": "The tool works from the target, what you already have, and what you can save each month. If you fix the monthly amount, it solves for the time; if you fix the time, it solves for the monthly amount. Where a return is included, the existing balance and each monthly contribution both earn it, which is why the total you contribute is less than the goal.",
+      "when": [
+        "You have a target amount and a date and want to know the monthly number.",
+        "You are deciding whether to save more or push the date out.",
+        "You want to see how much of the goal your savings are doing versus the returns."
+      ],
+      "mistakes": [
+        "Ignoring inflation. A goal ten years away costs more than the same goal today.",
+        "Counting on a return that is not guaranteed, especially over a short period.",
+        "Saving whatever is left at the end of the month instead of a fixed amount on payday."
+      ],
+      "intro": "Say you want ₹5,00,000, you already have ₹1,00,000, and you can put aside ₹15,000 a month.",
+      "outro": "Change the monthly amount above and the time to the goal moves with it. Even a small increase, held for years, moves the date a long way."
+    },
+    "cac": {
+      "what": "Customer Acquisition Cost is the rupee figure behind one question: what did it cost to win a single customer? Add up everything you spent on ads, sales salaries, agency fees and discounts in a period, divide by the number of new customers that spend brought in, and you have your CAC. It is the first number a founder should know, because it decides whether growth adds cash or burns it. Spend ₹1,00,000 to win 200 customers and each one cost ₹500 - cheap or expensive only next to what that customer is worth.",
+      "formula": "CAC = Total Sales and Marketing Spend ÷ New Customers Won. Count the whole cost of winning a customer - ad spend, the sales team, agency fees, introductory discounts - over a fixed period, then divide by the new customers added in that same period. ₹1,00,000 of spend that brings 200 new customers is a CAC of ₹500. If you leave out salaries or discounts, the number flatters you and the real cost stays hidden.",
+      "when": [
+        "You are about to scale ad spend and want the cost per customer before you commit the budget.",
+        "An investor asks whether your growth is efficient, and you need one number to answer.",
+        "You are comparing two channels - a cheap-looking one with a high CAC often loses to a costlier one with a low CAC."
+      ],
+      "mistakes": [
+        "Counting only ad spend and leaving out sales salaries, agency fees and tooling, so the CAC looks far lower than it is.",
+        "Dividing this month's spend by last month's customers, which mixes two periods and gives a number that means nothing.",
+        "Comparing CAC to revenue instead of to gross profit - you repay the cost of a customer out of profit, not turnover."
+      ]
+    },
+    "ltv": {
+      "what": "Customer Lifetime Value is what one customer is worth to you across the whole relationship, not just the first sale. It takes the average order value, how often a customer buys in a year, how many years they stay, and your gross margin, and turns them into a single rupee figure. If a customer spends ₹1,000 four times a year for three years at a 50% margin, that customer is worth ₹6,000 of profit. LTV is the ceiling on what you can sensibly pay to win them - pay more and every new customer makes you poorer.",
+      "formula": "LTV = Average Order Value × Purchases per Year × Customer Lifespan (years) × Gross Margin %. Margin matters: a customer who spends ₹12,000 but leaves you a 10% margin is worth ₹1,200, not ₹12,000. ₹1,000 × 4 × 3 × 50% = ₹6,000. The margin is what turns revenue into the profit that actually repays acquisition.",
+      "when": [
+        "You are deciding how much you can afford to spend on ads per customer.",
+        "An investor asks for your unit economics and wants LTV next to CAC.",
+        "You are choosing between a high-margin niche and a high-volume one."
+      ],
+      "mistakes": [
+        "Using revenue instead of profit - LTV must be built on gross margin or it overstates what a customer is worth.",
+        "Assuming customers stay for years because a few loyal ones do; the average lifespan is usually much shorter.",
+        "Counting only the first purchase and calling it lifetime value."
+      ]
+    },
+    "ltvcac": {
+      "what": "The LTV:CAC ratio puts the two unit-economics numbers side by side and answers the only question that matters for scaling: for every rupee spent winning a customer, how many rupees of profit come back? Divide lifetime value by acquisition cost. A ratio of 3:1 or better is the common rule of thumb - below 1:1 you lose money on every customer, and between 1 and 3 you are spending too much to grow. An LTV of ₹4,50,000 against a CAC of ₹1,80,000 is a ratio of 2.5:1, workable but not yet comfortable.",
+      "formula": "LTV : CAC = Customer Lifetime Value ÷ Customer Acquisition Cost. Both sides must be measured over the same period and on the same basis - profit to profit. ₹4,50,000 of LTV over a ₹1,80,000 CAC gives 2.5 : 1. Below 1:1 the business loses money on every sale; 3:1 and above is the range investors look for.",
+      "when": [
+        "You are preparing a fundraise and want the unit-economics slide right.",
+        "You are about to increase ad spend and want to know whether it still pays.",
+        "You are deciding whether to fix margin or fix acquisition cost first."
+      ],
+      "mistakes": [
+        "Comparing revenue-based LTV to a fully-loaded CAC - the ratio then looks healthy while the business loses money.",
+        "Using a blended CAC that hides a channel where you lose money on every customer.",
+        "Treating 3:1 as a law; a low-margin business needs a higher ratio, a sticky one can live with less."
+      ]
+    },
+    "dilution": {
+      "what": "Dilution is the slice of the company a founder gives up in a deal, and the slice that is left. If you own 100% today and hand an investor 10%, you keep 90% - but the number that matters is what that 10% buys. Dilution compounds: a 10% round, then a 20% round, then an ESOP pool, and a founder who started at 100% can end up below half. This calculator shows the ownership after a single round, so the cost of a deal is visible before it is signed, not after.",
+      "formula": "Founder Equity After = Founder Equity Before − Equity Offered. 100% − 10% = 90%. Across several rounds, multiply the fractions rather than subtracting the percentages: 90% after round one, then a further 20% off leaves 72%, not 70%. The multiplication is why dilution surprises founders - each round is charged against a smaller base.",
+      "when": [
+        "You have a term sheet and want to see your ownership after the stake.",
+        "You are planning two rounds and want to know where you land.",
+        "You are setting an ESOP pool and need to see its effect on founders."
+      ],
+      "mistakes": [
+        "Subtracting percentages across rounds instead of multiplying fractions, which understates the loss.",
+        "Forgetting the ESOP pool, which dilutes founders exactly like an investor does.",
+        "Looking at the stake alone without the valuation - giving 20% at a high price can cost less than 5% at a low one."
+      ]
+    },
+    "captable": {
+      "what": "A cap table is the running list of who owns what: founders, investors, and the employee option pool. This tool takes the ESOP pool and the investor stake and shows what the founders keep. Set aside an 18% option pool and 18% for investors and the founders hold 64%. The cap table is where dilution stops being a feeling and becomes a number, and it is the first document a serious investor asks to see - a messy one reads as a founder who has not done the work.",
+      "formula": "Founders' Share = 100% − ESOP Pool − Investor Equity (and any other reserved stake). 100% − 18% − 18% = 64%. Every row on the cap table is a percentage of the same whole, so the rows must add to 100; if they do not, something is double-counted or missing.",
+      "when": [
+        "You are preparing a data room for a fundraise.",
+        "You are sizing an ESOP pool before hiring senior staff.",
+        "You want to check a term sheet against your current table."
+      ],
+      "mistakes": [
+        "Sizing the ESOP pool after the round instead of before, so founders absorb more dilution than planned.",
+        "Leaving out convertible notes or SAFEs, which convert later and dilute the table unexpectedly.",
+        "Letting the percentages not add to 100, which hides a missing holder."
+      ]
+    },
+    "burn": {
+      "what": "Burn rate is how fast a business spends its cash each month; runway is how many months are left before the money runs out. Put ₹10,00,000 in the bank against a ₹1,00,000 monthly burn and you have ten months. Both numbers are estimates of a future you can still change, which is the point: a founder who knows the runway in March can cut costs in March, and one who finds out in December cannot. Runway is the single number that decides how long you have to make the plan work.",
+      "formula": "Runway (months) = Cash in Bank ÷ Net Monthly Burn. Net burn is monthly expenses minus monthly income - if the business already earns more than it spends, there is no burn and the runway is unlimited. ₹10,00,000 ÷ ₹1,00,000 = 10 months. Recalculate every month, because both the cash and the burn move.",
+      "when": [
+        "You are planning how long a fundraise has to close.",
+        "You are deciding whether to hire now or wait.",
+        "You are reporting to investors and need the cash position in one line."
+      ],
+      "mistakes": [
+        "Using gross burn (expenses) instead of net burn (expenses minus income), which understates the runway.",
+        "Forgetting one-off costs - a tax bill, a big renewal - that lands inside the runway window.",
+        "Treating runway as fixed; it changes the moment revenue or spend changes, so it must be recalculated monthly."
+      ]
+    }
   }
- },
- "calcs": {
-  "tam": {
-   "what": "TAM / SAM / SOM sizes a market before you commit money to it. TAM is everyone who could ever buy this kind of product. SAM is the slice you can actually reach — the cities you ship to, the customers your price suits. SOM is the slice you can realistically win in the next few years with the team and budget you have. Investors ask for all three because a huge TAM with a tiny SOM tells them the market exists but you have no route into it.",
-   "formula": "SAM is TAM times the share of it you can serve, as a percentage. SOM is SAM times the share of that you expect to win, also as a percentage. The tool multiplies through and shows both. The important part is the assumption behind each percentage: if you claim 40% of a reachable market, you are claiming to be the biggest player in it, which needs a reason.",
-   "when": [
-    "You are writing the market slide for a pitch and want numbers that survive a question.",
-    "You are deciding which customer segment to build for first.",
-    "You want to check whether the market you are aiming at is big enough to matter."
-   ],
-   "mistakes": [
-    "Quoting the whole TAM as your opportunity. It is the least useful of the three numbers on its own.",
-    "Claiming a SOM that would make you the market leader without a plan to get there.",
-    "Sizing the market in rupees when your customers buy in units, which hides how few buyers there are."
-   ],
-   "intro": "Take a market you could sell into. Here is how the three layers stack up.",
-   "outro": "The SOM is the number to defend. Anyone can claim a large TAM; the SOM is where you say how you actually get in."
-  },
-  "emi": {
-   "what": "The Loan EMI Calculator shows what a loan really costs per month and over its whole life. The EMI is the fixed amount you pay every month; it contains both interest and a repayment of the amount borrowed. Early payments are almost all interest, which is why a loan feels like it is not shrinking for the first few years.",
-   "formula": "The EMI is calculated so that every payment, compounded at the monthly rate over the full term, exactly clears the loan. The monthly rate is the annual rate divided by twelve, and the term is the number of months. Total interest is the EMI multiplied by the number of months, minus the amount borrowed. A longer term lowers the EMI but raises the total interest, which is the trade the calculator lets you test.",
-   "when": [
-    "You are comparing two loan offers with different rates or terms.",
-    "You want to know the monthly payment before you commit to a property.",
-    "You are deciding whether a longer term is worth the extra interest."
-   ],
-   "mistakes": [
-    "Choosing the offer with the lowest EMI without checking the total interest.",
-    "Forgetting the processing fee and insurance, which are added to the cost of borrowing.",
-    "Assuming the rate is fixed for the whole term when it is linked to a benchmark that moves."
-   ],
-   "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
-   "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property."
-  },
-  "numwords": {
-   "what": "Number to Words spells a figure out the Indian way - lakh and crore rather than million and billion. It is built for cheques, invoices, legal documents, rent agreements and any form that asks for the amount in words as well as in figures. Getting this wrong is a common reason a bank or a registrar sends a document back, so the tool shows the exact wording and the Indian grouping at once.",
-   "formula": "The number is split from the left into crore, lakh, thousand and the final hundreds, because that is how the Indian system groups digits. Each group is then read as a number of up to three digits and joined with its scale word. Two and a half crore is 2,50,00,000, so the tool reads the groups rather than the individual digits.",
-   "when": [
-    "You are filling in a cheque and need the amount in words.",
-    "You are drafting an invoice or an agreement that requires both forms.",
-    "You want to check that a figure written in words matches the digits."
-   ],
-   "mistakes": [
-    "Mixing the Indian and international systems in one document.",
-    "Writing the words differently from the figures, which is the kind of mismatch a bank will query.",
-    "Dropping the 'only' at the end, which is the convention on cheques."
-   ],
-   "intro": "Type a figure and the tool writes it the way an Indian cheque expects.",
-   "outro": "Always check the words against the digits before you sign. A mismatch is what causes a payment to be held up."
-  },
-  "marketshare": {
-   "what": "The Market Share Calculator answers one question in plain numbers: out of everything sold in your market, how much is yours? Enter the total units sold in the market and the units you sold. That is it. You get your share as a percentage, plus how many units everyone else sold.",
-   "formula": "Your market share is your units divided by the total units, times 100. If 10,000 units were sold in the market and 6,000 of them were yours, your share is 6,000 / 10,000 = 60%. There is no compounding and no hidden step — it is one division. The tool also shows the other side: 4,000 units, or 40%, went to everyone else.",
-   "when": [
-    "You want to know how big you are in your own market, not in revenue terms.",
-    "You are checking whether a claim like 'we are the market leader' is actually true.",
-    "You are setting a target and want a starting share to grow from."
-   ],
-   "mistakes": [
-    "Mixing units with rupees. Count units against units, or money against money, never one of each.",
-    "Using a market figure that is bigger than the market you actually compete in, which flatters the share.",
-    "Reading a big share as automatically good — a 60% share of a tiny market is still a tiny business."
-   ],
-   "intro": "Suppose 10,000 units were sold in your market and 6,000 of them were yours. Here is your share.",
-   "outro": "6,000 out of 10,000 is 60%. Change either number above and the share updates as you type — the arithmetic stays that simple."
-  },
-  "revmul": {
-   "what": "The Revenue Multiple divides what a company is being valued at by its yearly revenue. If a business earns ₹1 crore a year and someone offers ₹5 crore for it, the multiple is 5x. It is the quickest sanity check in a valuation because revenue is the hardest number to argue about: it is on the invoices, not on an assumption sheet. It says nothing about profit, so it is only meaningful next to a margin figure.",
-   "formula": "Revenue Multiple = Valuation ÷ Annual Revenue. The tool takes the valuation you enter and divides it by the yearly revenue, then shows the answer as a number of times. A 3x multiple means the buyer is paying three rupees for every one rupee of yearly sales. Change either figure and the multiple moves, which is the point: the same ₹5 crore price is cheap at 2x and expensive at 12x.",
-   "when": [
-    "A founder has an offer or a term sheet and wants to know whether the price is in a normal range.",
-    "You are comparing two companies in the same line of business and revenue is the only figure you have for both.",
-    "You are setting your own asking price and want to work backwards from a multiple buyers in your category actually pay."
-   ],
-   "mistakes": [
-    "Using the wrong revenue. A buyer means the last twelve months, or the next twelve, and the two can differ by 40% in a growing business — the multiple swings with it.",
-    "Reading a high multiple as good news. A 10x revenue price on a business with 5% margins is worse than a 3x price on one with 30% margins.",
-    "Mixing recurring and one-off revenue. Subscription revenue earns a far higher multiple than project revenue, so a blended figure misleads both sides."
-   ]
-  },
-  "ebitdamul": {
-   "what": "The EBITDA Multiple divides a valuation by EBITDA — earnings before interest, tax, depreciation and amortisation. It is the multiple most small-business deals are actually priced on, because it ignores how the current owner financed the business and how the accountant spread the cost of equipment. Two identical shops with different loans and different depreciation policies show the same EBITDA, so the multiple compares like with like.",
-   "formula": "EBITDA Multiple = Valuation ÷ EBITDA. The tool divides the valuation you enter by the EBITDA figure and shows the result in times. A 6x multiple means the buyer pays six rupees for every one rupee of yearly operating profit. Because EBITDA is a profit measure and revenue is not, this multiple is always lower than the revenue multiple for the same deal.",
-   "when": [
-    "You are selling or buying a business and want a price that a lender or an investor will recognise as normal.",
-    "You are comparing an offer against the 4-8x range most small business deals fall in.",
-    "You want to check what EBITDA the business must reach for the asking price to be reasonable."
-   ],
-   "mistakes": [
-    "Adding back costs that are real. A one-off saving the owner made by not paying himself is not a permanent add-back, and buyers discount it.",
-    "Comparing an EBITDA multiple to a revenue multiple. They measure different things; a 6x EBITDA price is not 'cheaper' than a 3x revenue price without the margin between them.",
-    "Using a stale EBITDA. One good year lifts the multiple's denominator and makes an average business look cheap."
-   ]
-  },
-  "compint": {
-   "what": "Compound Interest works out what an amount grows to when the interest is added back and earns interest itself. ₹10,000 at 8% for five years is not ₹14,000; it is more, because each year's interest joins the balance. The tool also takes how many times a year the interest compounds, which is the part most people miss: the same rate paid monthly ends higher than the same rate paid once a year.",
-   "formula": "Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Rate is the yearly percentage, Times is how often interest is added in a year (1, 4 or 12), and Years is the term. The tool subtracts the principal from the total to show the interest earned on its own. Raising the Times figure raises the total for the same headline rate.",
-   "when": [
-    "You are comparing a fixed deposit that compounds quarterly with one that compounds monthly.",
-    "You are projecting what a monthly SIP or a lump sum grows to over several years.",
-    "You want to see how much of a long loan's total cost is interest rather than principal."
-   ],
-   "mistakes": [
-    "Using simple interest for a multi-year figure. Banks compound, so a simple-interest answer always understates what you will owe or earn.",
-    "Ignoring how often it compounds. 8% paid monthly is not the same as 8% paid yearly, and the gap widens with the term.",
-    "Forgetting that the rate is annual. Entering a monthly rate in the yearly field multiplies the answer by twelve times over."
-   ]
-  },
-  "simpledisc": {
-   "what": "The Discount Calculator works out what a percentage off actually takes off a price. Enter the original price and the discount, and it shows two things: the rupees you save and the price you finally pay. That is the number that decides whether a sale is worth acting on — not the percentage, which is the part shops advertise because it sounds bigger than it is.",
-   "formula": "The saving is the original price multiplied by the discount, divided by 100: `price` × `disc` ÷ 100. The final price is the original minus that saving: `price` − saving. At ₹2,000 with a 25% discount the saving is ₹500 and the final price is ₹1,500. Two discounts applied one after another are not added together — 30% then 20% leaves you paying 0.7 × 0.8 = 0.56 of the price, which is 44% off, not 50%.",
-   "when": [
-    "A marketplace or shop shows a flat percentage off and you want the rupee amount before you decide.",
-    "You are comparing two sale prices where the discounts and the original prices are both different.",
-    "A coupon stacks on top of an existing sale and you want to know the real final price."
-   ],
-   "mistakes": [
-    "Adding two discounts together. A 30% discount followed by a 20% one is 44% off the original, not 50%, because the second discount applies to the already-reduced price.",
-    "Reading the discount as a share of the final price. The percentage is taken off the original marked price; once the price has dropped, the same rupees are a larger percentage of what is left.",
-    "Comparing discount percentages across different prices. 40% off ₹2,000 saves ₹800, which is more than 50% off ₹1,000 at ₹500."
-   ],
-   "intro": "Take a ₹2,000 jacket with 25% off in a sale. Here is what the discount takes off.",
-   "outro": "The percentage is the shop's number; the ₹500 saving and the ₹1,500 final price are yours. Change either figure above and both move together."
-  },
-  "tip": {
-   "what": "The Tip Calculator works out how much to leave and what the bill comes to once it is added. Give it the bill and a percentage, and it returns the tip amount and the total you hand over. That total is the figure that matters when you are paying cash, splitting with friends, or checking a bill against what you expected.",
-   "formula": "The tip amount is the bill multiplied by the tip percentage, divided by 100: `bill` × `tip` ÷ 100. The total is the bill plus the tip amount: `bill` + tip amount. On a ₹1,000 bill at 10%, the tip is ₹100 and you pay ₹1,100. If you want to tip on the pre-tax bill, enter the pre-tax figure — the percentage is applied to whatever number is in the bill field.",
-   "when": [
-    "You are at a restaurant and want to leave a fair, round amount without doing the arithmetic in your head.",
-    "The bill already carries a service charge and you want to see what an extra tip would add.",
-    "You are splitting a bill and need each person's share of the bill plus tip."
-   ],
-   "mistakes": [
-    "Tipping on the total instead of the bill. If the number you enter already includes the tip, applying the percentage again charges it twice.",
-    "Leaving a second tip when a service charge is already printed. The service charge is the tip; check the bill before you add more.",
-    "Splitting the bill and then tipping on each share. Work out the tip on the whole bill once, then divide the total, or the rounding on each share inflates it."
-   ],
-   "intro": "Take a ₹1,000 bill and a 10% tip. Here is what you leave and what you pay.",
-   "outro": "The tip is ₹100 on a ₹1,000 bill, so the total is ₹1,100. Change the bill or the percentage above and both the tip and the total follow."
-  },
-  "netmargin": {
-   "what": "The Net Profit Margin Calculator turns two figures — revenue and net profit — into the one percentage that says how much of every rupee of sales the business actually keeps. Net profit is the last line: after the cost of goods, after salaries and rent, after interest on any loan, and after tax. So this is the smallest and the most honest of the margin figures.",
-   "formula": "Net margin is net profit divided by revenue, multiplied by 100: `np` ÷ `rev` × 100. If a business earns ₹4,50,000 of revenue and keeps ₹1,80,000 after every cost and tax, the net margin is 1,80,000 ÷ 4,50,000 = 40%. Net profit is what remains after cost of goods, operating expenses, interest and tax; subtract any one of those later and the percentage rises.",
-   "when": [
-    "You want to know how much of each rupee of sales the business keeps after everything is paid.",
-    "You are comparing your margin with others selling the same kind of product or service.",
-    "You are preparing accounts or a pitch and need the bottom-line percentage investors will ask for."
-   ],
-   "mistakes": [
-    "Comparing the margin against a business in another industry. A grocery chain at 3% can be healthy while a software company at 3% is in trouble; the fair comparison is within the same trade.",
-    "Using profit before tax and calling it net. Net means after tax and after interest, which is why it is lower than the operating margin on the same revenue.",
-    "Reading a high percentage on a small revenue as a strong business. 40% of ₹4,50,000 is ₹1,80,000 — a large margin on a tiny turnover is still a small profit."
-   ],
-   "intro": "Take a business with ₹4,50,000 of revenue that keeps ₹1,80,000 after every cost and tax. Here is the net margin.",
-   "outro": "40% is a strong net margin for most trades. If your figure is much lower, the leak is below the gross line — look at overheads, interest and tax before you look at price."
-  },
-  "roce": {
-   "what": "Return on Capital Employed answers a question ROI cannot: how hard is every rupee inside this business working, whether it came from you or from a lender? Capital employed is shareholders' equity plus long-term debt, so ROCE puts a debt-free shop and a heavily borrowed one on the same ruler. Two businesses can post the same ROI and very different ROCE, and the gap is almost always the borrowing.\n\nReach for it when you are weighing an acquisition, a new machine or a second outlet against the money already tied up in the first one. It is a before-interest number: the tool divides operating profit by capital employed and stops there, because how the capital was financed is exactly the thing you are trying to see past.",
-   "formula": "ROCE is operating profit (EBIT) divided by capital employed, times 100. In this tool 'Operating Profit' is the ebit field and 'Capital Employed' is the ce field. Capital employed is total assets minus current liabilities, which is the same as shareholders' equity plus long-term debt. Rs 4,50,000 of operating profit on Rs 18,00,000 of capital employed gives 25%. Because the numerator is struck before interest and tax, ROCE does not move when the debt does, and that is what makes two differently financed companies comparable.",
-   "when": [
-    "You are comparing two companies with different debt levels and want a like-for-like return.",
-    "You are deciding whether a new machine or outlet earns more than the capital already sitting in the business.",
-    "An investor asks how well the company uses the whole balance sheet, not just the founders' money."
-   ],
-   "mistakes": [
-    "Putting profit after interest in the numerator. ROCE takes EBIT on purpose so the debt neither flatters nor punishes the number; net profit belongs in ROE, not here.",
-    "Tinkering with capital employed - subtracting short-term creditors twice, or dropping cash entirely - so the ratio jumps while nothing real has changed.",
-    "Cheering a high ROCE on a business with almost no capital employed. A services firm that rents everything can show 200% and still own nothing worth buying."
-   ]
-  },
-  "roi": {
-   "what": "Return on Investment is the bluntest of the return measures: what did I get back compared with what I put in? The tool takes net profit - after every cost, including interest and tax - and divides it by the investment cost. Rs 1,00,000 of profit on Rs 10,00,000 spent is 10%. Nothing here is annualised and nothing is adjusted for risk, so two projects showing the same ROI are only comparable if they took the same time to pay back.\n\nUse it as the first filter on any spend that has a number attached: an ad campaign, a machine, a course, a shop fit-out. It is deliberately simple, and that simplicity is the weakness - it will not tell you whether the 10% took six months or six years. Bring in payback or CAGR when the timing is what you are actually deciding.",
-   "formula": "ROI is net profit divided by investment cost, times 100. Here 'Net Profit' is the profit field and 'Investment Cost' is the inv field. Net profit is what survives goods, salaries, ads, fees, interest and tax - not revenue, and not gross margin. Rs 10,00,000 put in for Rs 1,00,000 of net profit is a 10% ROI. The tool does not divide by the number of years, so a 10% ROI over one year and a 10% ROI over five years read identically on this page.",
-   "when": [
-    "You are judging one ad campaign, machine or course before you release the money.",
-    "You want a single number to rank several small spends that all take about the same time.",
-    "Someone quotes an ROI figure and you want to reproduce it from their profit and their cost."
-   ],
-   "mistakes": [
-    "Feeding gross profit or revenue into the numerator, which turns a 10% ROI into something that reads like 40%.",
-    "Leaving out the costs that arrive after the sale - GST, marketplace commission, returns, gateway fees - so the profit is the optimistic version.",
-    "Treating a 10% ROI over six months as equal to a 10% ROI over five years; the tool does not annualise, so you have to."
-   ]
-  },
-  "split": {
-   "what": "Bill Splitter divides one shared amount by the number of people paying it, and nothing else. It is the tool for the last two minutes at a table: the total is on the bill, four of you are paying, each owes a quarter. The arithmetic is a single division, so the value is not in the maths - it is in having the per-head figure before anyone starts rounding in their head and the numbers stop agreeing.\n\nIt handles the plain case on purpose. It does not decide who ordered the paneer, it does not add a tip, and it does not re-split a bill that already carries a service charge. That is a feature: an equal split is the only split that ends an argument, and every uneven arrangement is easier to settle once the equal share is on the table.",
-   "formula": "Each person pays the total bill divided by the number of people. In this tool 'Total Bill' is the total field and 'Number of People' is the people field. Rs 1,000 across 4 people is Rs 250 each. When the total does not divide evenly - Rs 1,000 across 3 - the tool shows Rs 333.33, and the honest fix is for one person to absorb the odd paise or for everyone to round up and leave the difference in the tip.",
-   "when": [
-    "A group dinner or a trip ends and the bill has to be settled on the spot.",
-    "Roommates split a shared utility or grocery bill evenly each month.",
-    "Co-founders or a small team split a shared subscription or a taxi fare."
-   ],
-   "mistakes": [
-    "Splitting the pre-tax subtotal and forgetting the GST and service charge already printed on the bill.",
-    "Dividing by the number of people who came rather than the number who are paying, when someone is being treated.",
-    "Rounding every share down and leaving the last person with the shortfall; round up, or let one person take the odd rupees."
-   ]
-  },
-  "ebitda": {
-   "what": "EBITDA & Margin answers the question an investor asks before any other: does this business make money from the thing it actually does? The tool takes revenue, strips out the cost of the goods sold and the operating expenses that keep the lights on, and shows what is left — earnings before interest, tax, depreciation and amortisation — together with that figure as a percentage of revenue. The rupee number says how much the core operation throws off; the margin says how efficiently it does it.\n\nThe margin is the part that travels. Two firms can report the same ₹10 lakh of EBITDA and be in completely different health: ₹10 lakh on ₹50 lakh of revenue is a 20% margin and a business with pricing power, while ₹10 lakh on ₹5 crore of revenue is a 2% margin and a business one bad month from a loss. Because it stops before interest and tax, EBITDA also lets you compare a debt-free company with a heavily borrowed one on the same footing — which is exactly why lenders and buyers reach for it.",
-   "formula": "EBITDA = Revenue − Cost of Goods Sold − Operating Expenses. The margin is EBITDA ÷ Revenue × 100, and the tool shows it beside the rupee figure. Revenue is the top line (rev), Cost of Goods Sold is cogs and Operating Expenses is opex. Interest, tax, depreciation and amortisation are deliberately left out, so EBITDA is not the cash you keep — it is the profit from running the business, before financing and accounting decisions. A margin above 15% is usually treated as attractive; below 5% there is little room for a bad quarter.",
-   "when": [
-    "You are showing a business to an investor and want one clean number for core profitability.",
-    "You are comparing two companies that are funded in completely different ways.",
-    "You want to check for yourself whether the operation still earns in a bad month, before interest and tax flatter or hide it."
-   ],
-   "mistakes": [
-    "Treating revenue as EBITDA. ₹5 crore of sales at a 2% margin leaves only ₹10 lakh, and one weak month can erase it.",
-    "Feeding interest and tax into the operating costs. They are financing and tax charges, not trading costs, and including them understates the margin.",
-    "Judging the margin from a single quarter. One-off costs and seasonality move it around; the trend is what to trust."
-   ]
-  },
-  "impval": {
-   "what": "Implied Valuation turns one short line in a pitch — “I am putting in ₹50 lakh for 5%” — into the number it actually implies about the whole company. Divide the investment by the equity offered and you have the price the deal is putting on the business. It is the fastest sanity check in a funding conversation: the moment a stake is named, the valuation is decided, whether or not anyone says it out loud.\n\nThe figure is only as good as the stake behind it, which is why the tool asks for both inputs. ₹50 lakh for 5% implies a ₹10 crore company; the same ₹50 lakh for 20% implies only a ₹2.5 crore company. Founders quote the first number and forget the second, and investors do the reverse. Having the implied valuation in front of you ends the roundabout talk and moves the discussion to the assumption underneath — the stake itself.",
-   "formula": "Implied Valuation = Investment Amount ÷ (Equity Offered ÷ 100). Type the amount (amt) and the equity percentage (eq); the tool divides the equity by 100 to make it a fraction, then divides the investment by that fraction. ₹10,00,000 for 10% implies ₹1,00,00,000. The arithmetic is a single division, so the value is not the maths but the discipline of stating the amount and the stake together.",
-   "when": [
-    "An investor or acquirer names a stake and you want the price it implies before you reply.",
-    "You are the investor and want to check whether the slice you are asking for is fair for the money.",
-    "You are writing a term-sheet summary and need the valuation behind each offer on one line."
-   ],
-   "mistakes": [
-    "Reading the valuation without the stake. ₹50 lakh for 5% and ₹50 lakh for 20% are two very different companies.",
-    "Treating the implied valuation as agreed. It is what the offer implies, not what the company is worth; the argument is usually about the stake, not the price.",
-    "Forgetting that money normally goes in on a post-money basis, so the implied price already includes the new cheque and the founder's own stake is diluted by it."
-   ]
-  },
-  "opmargin": {
-   "what": "Operating Margin answers whether the business makes money from trading, before the cost of the money it borrowed and the tax it owes. Revenue goes in, operating profit — what is left after the day-to-day costs of running the business — goes in, and the tool shows what share of each rupee of sales survives. It is the cleanest single read on whether the core operation works, because financing and one-off items stay out of it.\n\nWhat matters is what “operating profit” leaves out. Interest on a loan is a cost of how the business is funded, not of what it sells; a tax charge depends on the whole company's position; a one-time asset sale is not trading. Strip those away and the margin shows the engine on its own. That is why it sits beside EBITDA rather than replacing it: EBITDA adds depreciation and amortisation back, so the two move together for an asset-light business and part ways for a factory.",
-   "formula": "Operating Margin = Operating Profit ÷ Revenue × 100. Revenue (rev) is the top line; Operating Profit (ebit) is what remains after the cost of goods sold and the operating expenses, but before interest and tax. ₹18,000 of operating profit on ₹45,000 of revenue is a 40% margin. Above 10% usually signals a healthy core; a negative margin means the operation itself is losing money and no amount of financing will fix it.",
-   "when": [
-    "A busy month left little in the bank and you want to know whether the problem is the operation or the financing.",
-    "You are comparing your business with a competitor and want the one figure that ignores how each is funded.",
-    "You are preparing for a buyer or a lender and want to show the core business standing on its own."
-   ],
-   "mistakes": [
-    "Putting net profit in the operating-profit field. Interest and tax are not operating costs, so using net profit understates the margin.",
-    "Comparing the margin across two companies without checking what each counts as operating. One may treat marketing as operating expense and another as a one-off.",
-    "Reading a single quarter as the trend. One-off costs and seasonality move the margin; trust the direction over several periods."
-   ]
-  },
-  "prepost": {
-   "what": "Pre-Money & Post-Money Valuation takes the term sheet as it is actually written — a price for the company before the cheque, and the cheque itself — and works out the two numbers that decide what a founder keeps. The pre-money is what the company was agreed to be worth with the new money still outside it; the post-money is that value plus the investment. The gap between them is not arithmetic decoration: it is the stake the new money buys.\n\nThe stake is the figure that gets argued about after the round closes. If the pre-money is ₹9 crore and the investor puts in ₹1 crore, the post-money is ₹10 crore and the cheque bought 10% — a tenth of the company, not a tenth of the old company. Founders who read only the pre-money assume the new investor's slice comes out of somewhere else, and are surprised when their own percentage is the one that falls. The tool shows both valuations and the equity given away on the same line so that surprise cannot happen.",
-   "formula": "Post-Money Valuation = Pre-Money Valuation + Investment Amount. Equity Given = Investment Amount ÷ Post-Money Valuation × 100. Type the pre-money (pre) and the investment (amt); the tool adds them for the post-money, then divides the investment by that post-money figure to show the stake. A ₹9 crore pre-money plus a ₹1 crore cheque is a ₹10 crore post-money and 10% given away. The post-money, not the pre-money, is the base the stake is measured against.",
-   "when": [
-    "A term sheet quotes a pre-money figure and you want the post-money and the stake it hands over.",
-    "You are deciding whether to raise at a lower pre-money for more money, and want to see how much more of the company that costs.",
-    "You are building a simple cap table and need the post-money before you can split it into stakes."
-   ],
-   "mistakes": [
-    "Measuring the stake against the pre-money. 10% of the pre-money is not 10% of the company; the investment itself is part of the post-money base.",
-    "Reading the pre-money as the price of the whole company. It is the price before the new money, which is a smaller and less useful number on its own.",
-    "Adding the cheque to the pre-money but forgetting that the founder's own stake is diluted by exactly the equity given to the new investor."
-   ]
-  },
-  "savegoal": {
-   "what": "The Savings Goal Planner tells you how much to put aside each month to reach a target, or how long a monthly amount will take to get there. It is for a down payment, an emergency fund, a wedding or any goal with a number and a date attached.",
-   "formula": "The tool works from the target, what you already have, and what you can save each month. If you fix the monthly amount, it solves for the time; if you fix the time, it solves for the monthly amount. Where a return is included, the existing balance and each monthly contribution both earn it, which is why the total you contribute is less than the goal.",
-   "when": [
-    "You have a target amount and a date and want to know the monthly number.",
-    "You are deciding whether to save more or push the date out.",
-    "You want to see how much of the goal your savings are doing versus the returns."
-   ],
-   "mistakes": [
-    "Ignoring inflation. A goal ten years away costs more than the same goal today.",
-    "Counting on a return that is not guaranteed, especially over a short period.",
-    "Saving whatever is left at the end of the month instead of a fixed amount on payday."
-   ],
-   "intro": "Say you want ₹5,00,000, you already have ₹1,00,000, and you can put aside ₹15,000 a month.",
-   "outro": "Change the monthly amount above and the time to the goal moves with it. Even a small increase, held for years, moves the date a long way."
-  }
- }
 }

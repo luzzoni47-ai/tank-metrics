@@ -1,17 +1,17 @@
 {
  "total": 101,
- "with_both_guides": 16,
- "remaining": 85,
+ "with_both_guides": 22,
+ "remaining": 79,
  "remaining_by_cat": {
   "dailyfun": 10,
   "agency": 10,
   "realestate": 10,
   "taxwealth": 10,
-  "cust": 9,
-  "growth": 9,
+  "growth": 8,
   "pricing": 8,
-  "val": 6,
+  "cust": 6,
   "everyday": 4,
+  "val": 4,
   "profit": 3,
   "ops": 3,
   "investor": 2,
@@ -118,15 +118,6 @@
    "overlap": null
   },
   {
-   "id": "captable",
-   "name": "Cap Table & ESOP Pool",
-   "cat": "val",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "churn",
    "name": "Churn Rate",
    "cat": "agency",
@@ -201,15 +192,6 @@
   {
    "id": "debteq",
    "name": "Debt + Equity Deal",
-   "cat": "val",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "dilution",
-   "name": "Dilution Calculator",
    "cat": "val",
    "cat_size": 10,
    "has_en": false,
@@ -487,24 +469,6 @@
    "overlap": null
   },
   {
-   "id": "burn",
-   "name": "Burn Rate & Runway",
-   "cat": "growth",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "cac",
-   "name": "Customer Acquisition Cost (CAC)",
-   "cat": "cust",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "cagr",
    "name": "CAGR (Compound Annual Growth Rate)",
    "cat": "growth",
@@ -534,24 +498,6 @@
   {
    "id": "funnel",
    "name": "CPC, CPL, CPA & Conversion Rate",
-   "cat": "cust",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "ltv",
-   "name": "Customer Lifetime Value (LTV)",
-   "cat": "cust",
-   "cat_size": 9,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "ltvcac",
-   "name": "LTV : CAC Ratio",
    "cat": "cust",
    "cat_size": 9,
    "has_en": false,
