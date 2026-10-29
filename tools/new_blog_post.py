@@ -90,7 +90,15 @@ def _shell_bottom(reference: str) -> str:
 
 
 def _hero(top: str, hero: str) -> str:
-    return re.sub(r"<p>.*?</p>", f"<p>{html_mod.escape(hero)}</p>", top, count=1, flags=re.S)
+    # The hero sentence belongs to the .page-hero block. Matching the first <p>
+    # in the shell instead hits the topbar brand tagline, which is shared by
+    # every page and must not change.
+    marker = '<div class="page-hero">'
+    start = top.index(marker)
+    end = top.index("</div>", top.index("</p>", start)) + len("</div>")
+    block = top[start:end]
+    block = re.sub(r"<p>.*?</p>", f"<p>{html_mod.escape(hero)}</p>", block, count=1, flags=re.S)
+    return top[:start] + block + top[end:]
 
 
 def _meta(top: str, cat: str, date: str) -> str:

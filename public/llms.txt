@@ -124,6 +124,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Burn Rate and Runway Explained](https://tankmetrics.in/burn-rate-runway-guide)
 - [Customer Acquisition Cost (CAC) Calculator India](https://tankmetrics.in/cac-calculator-india)
 - [Cap Table Calculator for Indian Startups](https://tankmetrics.in/cap-table-calculator-india)
+- [Coffee Shop Profit Margin: What You Keep](https://tankmetrics.in/coffee-shop-profit-margin)
 - [COGS Calculator India - Cost of Goods Sold](https://tankmetrics.in/cogs-calculator-india)
 - [Dilution Calculator for Founders - How Much You Lose?](https://tankmetrics.in/dilution-calculator-founders)
 - [Why a 10% Discount Cuts Profit by 25%](https://tankmetrics.in/discount-impact-on-profit-explained)
