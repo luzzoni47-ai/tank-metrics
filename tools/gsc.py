@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
-"""Talk to the Google Search Console API with a service-account key.
+"""Talk to the Google Search Console API with OAuth or a service-account key.
 
 Google's own client library is not installed in this container, and pulling it
 in needs a lockfile change, so this signs the OAuth JWT itself with the
 `openssl` binary that is already here. No third-party dependency.
 
-The key is read from, in order:
-  1. $GSC_SA_JSON  - the raw JSON of the service-account key
-  2. $GSC_SA_FILE  - a path to that JSON
-  3. ~/.gsc_service_account.json
+Credentials, in order:
+  1. Service account - $GSC_SA_JSON, $GSC_SA_FILE, ~/.gsc_service_account.json
+  2. OAuth user token - $GSC_OAUTH_JSON, $GSC_OAUTH_FILE, ~/.gsc_oauth.json
 
-The service account's email must be added as a user in Search Console
-(Settings -> Users and permissions -> Add user, permission "Full"), otherwise
-every call comes back 403.
+Path 1 signs a JWT with `openssl`; path 2 exchanges a refresh token, so it also
+needs no third-party library. Use path 2 when the organisation enforces
+`iam.disableServiceAccountKeyCreation` and a service-account key cannot be
+created - that is a common secure-by-default policy, not a misconfiguration.
+
+Whichever identity is used must be added as a user on the property in Search
+Console (Settings -> Users and permissions -> Add user, permission "Full"),
+otherwise every call comes back 403.
 
     python3 tools/gsc.py sites                 # which properties can I see
     python3 tools/gsc.py sitemaps               # what is submitted
@@ -20,6 +24,8 @@ every call comes back 403.
     python3 tools/gsc.py submit-urls            # ask Google to crawl each page
     python3 tools/gsc.py inspect <url>          # index status of one page
     python3 tools/gsc.py analytics [days]       # top queries + pages
+    python3 tools/gsc.py auth-code             # print the OAuth consent URL
+    python3 tools/gsc.py auth-exchange <code>  # trade the code for a token
 """
 from __future__ import annotations
 
@@ -60,10 +66,126 @@ def load_key() -> dict:
     if default.exists():
         return json.loads(default.read_text(encoding="utf-8"))
     sys.exit(
-        "no service-account key found.\n"
-        "Set GSC_SA_JSON (the JSON itself) or GSC_SA_FILE (a path to it), or save "
-        f"it as {default}."
+        "no credentials found.\n"
+        "OAuth (use this if service-account keys are blocked by policy): run\n"
+        "  python3 tools/gsc.py auth-code   # then auth-exchange <code>\n"
+        "Service account: set GSC_SA_JSON (the JSON itself) or GSC_SA_FILE (a "
+        f"path to it), or save it as {default}."
     )
+
+
+OAUTH_TOKEN_URI = "https://oauth2.googleapis.com/token"
+OAUTH_AUTH_URI = "https://accounts.google.com/o/oauth2/v2/auth"
+# Google's OAuth flow only redirects to a registered URI. The loopback form
+# ("http://localhost") needs no client secret and no web server: the user opens
+# the consent URL, Google redirects to localhost with ?code=..., and the address
+# bar still shows that code even though nothing is listening. That is why this
+# works on a headless box with no browser.
+OAUTH_REDIRECT = "http://localhost"
+
+
+def load_oauth() -> dict:
+    raw = os.environ.get("GSC_OAUTH_JSON")
+    if raw:
+        return json.loads(raw)
+    path = os.environ.get("GSC_OAUTH_FILE")
+    if path:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    default = Path.home() / ".gsc_oauth.json"
+    if default.exists():
+        return json.loads(default.read_text(encoding="utf-8"))
+    sys.exit(
+        "no OAuth token found.\n"
+        "Set GSC_OAUTH_JSON (the JSON itself) or GSC_OAUTH_FILE (a path to it), or "
+        f"save it as {default}.\n"
+        "Run `gsc.py auth-code` then `gsc.py auth-exchange <code>` to create it."
+    )
+
+
+def cmd_auth_code() -> None:
+    """Print the consent URL. The client id is read from GSC_OAUTH_CLIENT_ID or
+    the 'client_id' field of an existing ~/.gsc_oauth.json."""
+    cid = os.environ.get("GSC_OAUTH_CLIENT_ID")
+    if not cid:
+        try:
+            cid = load_oauth().get("client_id")
+        except SystemExit:
+            sys.exit(
+                "need a client id: set GSC_OAUTH_CLIENT_ID (from the OAuth "
+                "'Desktop app' client you created in Google Cloud)."
+            )
+    if not cid:
+        sys.exit("the OAuth file has no client_id; set GSC_OAUTH_CLIENT_ID.")
+    params = urllib.parse.urlencode(
+        {
+            "client_id": cid,
+            "redirect_uri": OAUTH_REDIRECT,
+            "response_type": "code",
+            "scope": SCOPES,
+            "access_type": "offline",   # ask for a refresh token
+            "prompt": "consent",        # force the refresh token on re-runs
+        }
+    )
+    print(f"{OAUTH_AUTH_URI}?{params}")
+
+
+def cmd_auth_exchange(code: str) -> None:
+    cid = os.environ.get("GSC_OAUTH_CLIENT_ID")
+    secret = os.environ.get("GSC_OAUTH_CLIENT_SECRET", "")
+    if not cid:
+        try:
+            existing = load_oauth()
+            cid = cid or existing.get("client_id")
+            secret = secret or existing.get("client_secret", "")
+        except SystemExit:
+            pass
+    if not cid:
+        sys.exit("need the client id: set GSC_OAUTH_CLIENT_ID.")
+    body = urllib.parse.urlencode(
+        {
+            "client_id": cid,
+            "client_secret": secret,
+            "code": code,
+            "grant_type": "authorization_code",
+            "redirect_uri": OAUTH_REDIRECT,
+        }
+    ).encode()
+    req = urllib.request.Request(OAUTH_TOKEN_URI, data=body)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = json.load(r)
+    except urllib.error.HTTPError as e:
+        sys.exit(f"code exchange failed ({e.code}): {e.read().decode()[:400]}")
+    if "refresh_token" not in data:
+        sys.exit("no refresh_token in the response; re-run auth-code (it forces consent).")
+    out = {
+        "client_id": cid,
+        "client_secret": secret,
+        "refresh_token": data["refresh_token"],
+    }
+    dest = Path.home() / ".gsc_oauth.json"
+    dest.write_text(json.dumps(out, indent=2), encoding="utf-8")
+    dest.chmod(0o600)
+    print(f"wrote {dest} (mode 600). Delete it if you ever revoke access.")
+
+
+def access_token_oauth() -> str:
+    """Trade the stored refresh token for an access token."""
+    cred = load_oauth()
+    body = urllib.parse.urlencode(
+        {
+            "client_id": cred.get("client_id", os.environ.get("GSC_OAUTH_CLIENT_ID", "")),
+            "client_secret": cred.get("client_secret", os.environ.get("GSC_OAUTH_CLIENT_SECRET", "")),
+            "refresh_token": cred["refresh_token"],
+            "grant_type": "refresh_token",
+        }
+    ).encode()
+    req = urllib.request.Request(OAUTH_TOKEN_URI, data=body)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)["access_token"]
+    except urllib.error.HTTPError as e:
+        sys.exit(f"OAuth token exchange failed ({e.code}): {e.read().decode()[:400]}")
 
 
 def b64(data: bytes) -> str:
@@ -273,11 +395,26 @@ def cmd_analytics(token: str, days: int) -> None:
         print(f"  {r['clicks']:>4} clicks  {r['impressions']:>6} imp  {r['keys'][0]}")
 
 
+def have_oauth() -> bool:
+    if os.environ.get("GSC_OAUTH_JSON") or os.environ.get("GSC_OAUTH_FILE"):
+        return True
+    return (Path.home() / ".gsc_oauth.json").exists()
+
+
 def main() -> None:
     if len(sys.argv) < 2:
         sys.exit(__doc__)
-    token = access_token(load_key())
     cmd = sys.argv[1]
+    if cmd == "auth-code":
+        cmd_auth_code()
+        return
+    if cmd == "auth-exchange":
+        if len(sys.argv) < 3:
+            sys.exit("usage: gsc.py auth-exchange <code>")
+        cmd_auth_exchange(sys.argv[2])
+        return
+    # Prefer OAuth when it is set up: it survives the key-creation policy.
+    token = access_token_oauth() if have_oauth() else access_token(load_key())
     if cmd == "sites":
         cmd_sites(token)
     elif cmd == "sitemaps":

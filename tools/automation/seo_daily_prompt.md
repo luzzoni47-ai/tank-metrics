@@ -55,8 +55,10 @@ must drive this number down. It is the single most important metric here.
 
 ### 1b. Search Console, when the key is present
 
-If `GSC_SA_JSON` (or `~/.gsc_service_account.json`) exists, this is the run's
-best evidence - Google's own verdict, not a proxy:
+If OAuth is set up (`~/.gsc_oauth.json` or `GSC_OAUTH_JSON`) or a service-account
+key exists (`GSC_SA_JSON` / `~/.gsc_service_account.json`), this is the run's best
+evidence - Google's own verdict, not a proxy. (`tools/gsc.py` prefers OAuth
+automatically when it is present.)
 
 ```
 python3 tools/gsc.py sites                    # property visible?
