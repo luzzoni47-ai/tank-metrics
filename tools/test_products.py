@@ -76,8 +76,13 @@ def check_product_page() -> None:
             continue
         for node in (block if isinstance(block, list) else [block]):
             types.add(node.get("@type"))
-    if not {"Product", "BreadcrumbList"} <= types:
+    if not {"BreadcrumbList"} <= types:
         FAILURES.append(f"JSON-LD types are {sorted(types)}")
+    # Product markup claims the page sells at a price; it must only be present
+    # once checkout is live (see test_landing.py).
+    m_pay = re.search(r"""var PAYMENT_URL = ['"]([^'"]*)['"]""", text)
+    if "Product" in types and not (m_pay and m_pay.group(1)):
+        FAILURES.append("a Product schema is shipped while checkout is not live")
     # The breadcrumb must not point at the retired hub.
     for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>',
                          text, re.S):

@@ -1031,17 +1031,29 @@ LP_JS = """
 
 
 def build_page() -> str:
-    product_schema = {
-        "@context": "https://schema.org", "@type": "Product",
-        "name": PRODUCT,
-        "description": DESC,
-        "url": CANON,
-        "brand": {"@type": "Brand", "name": "Tank Metrics"},
-        "offers": {
-            "@type": "Offer", "price": "4999", "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock", "url": CANON,
-        },
-    }
+    # The Product/Offer markup tells Google the page sells something. With no
+    # payment link the buttons open a prefilled email, so claiming InStock at a
+    # price is false - and that false claim is what earned the "Product snippets"
+    # and "Merchant listings" structured-data warnings. Google also requires
+    # `image` on Product and `seller` on Offer for a merchant listing, so the old
+    # block was invalid as well as untrue. Ship it only once checkout is real.
+    if PAYMENT_URL:
+        product_schema = {
+            "@context": "https://schema.org", "@type": "Product",
+            "name": PRODUCT,
+            "description": DESC,
+            "url": CANON,
+            "image": [f"{BASE}/og-image.png"],
+            "brand": {"@type": "Brand", "name": "Tank Metrics"},
+            "offers": {
+                "@type": "Offer", "price": "4999", "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock", "url": PAYMENT_URL,
+                "itemCondition": "https://schema.org/NewCondition",
+                "seller": {"@type": "Organization", "name": "Tank Metrics"},
+            },
+        }
+    else:
+        product_schema = None
     crumb = {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
@@ -1059,7 +1071,7 @@ def build_page() -> str:
             for q, a in FAQ
         ],
     }
-    blocks = [product_schema, crumb, faq_schema]
+    blocks = [b for b in (product_schema, crumb, faq_schema) if b]
     if VIDEO_PRESENT:
         blocks.append({
             "@context": "https://schema.org", "@type": "VideoObject",

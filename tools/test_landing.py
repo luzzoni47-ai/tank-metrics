@@ -232,11 +232,34 @@ def check_head_and_schema() -> None:
             continue
         for node in (block if isinstance(block, list) else [block]):
             types.add(node.get("@type"))
-    for needed in ("Product", "BreadcrumbList", "FAQPage"):
+    for needed in ("BreadcrumbList", "FAQPage"):
         if needed not in types:
             FAILURES.append(f"JSON-LD has no {needed} block (found {sorted(types)})")
     if "VideoObject" in types and not (SITE / "video" / "walkthrough.mp4").exists():
         FAILURES.append("a VideoObject is declared but the video file is missing")
+
+    # A Product/Offer block claims the page sells something at a price. That is
+    # only true once a payment link exists; before then the buttons open a
+    # prefilled email, and an InStock claim earns the Search Console "Product
+    # snippets" and "Merchant listings" structured-data warnings. When it does
+    # ship, Google requires `image` on the Product and `seller` on the Offer, so
+    # check both rather than letting an invalid block out.
+    schema_text = "".join(m.group(1) for m in re.finditer(
+        r'<script type="application/ld\+json">(.*?)</script>', page, re.S))
+    m_pay = re.search(r"""var PAYMENT_URL = ['"]([^'"]*)['"]""", page)
+    has_payment = bool(m_pay and m_pay.group(1))
+    if has_payment:
+        if "Product" not in types:
+            FAILURES.append("checkout is live but there is no Product JSON-LD")
+        if '"image"' not in schema_text:
+            FAILURES.append("the Product schema has no image (required by Google)")
+        if '"seller"' not in schema_text:
+            FAILURES.append("the Offer has no seller (required for a merchant listing)")
+    else:
+        if "Product" in types:
+            FAILURES.append(
+                "a Product schema is shipped while checkout is not live - that "
+                "claims the product is for sale when it is not")
 
     # A Product offer must not invent a rating.
     for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>',
