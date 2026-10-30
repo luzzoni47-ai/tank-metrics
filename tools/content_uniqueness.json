@@ -1,27 +1,7 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 58,
+ "pages_with_a_near_duplicate": 52,
  "worst_pairs": [
-  {
-   "overlap": 0.677,
-   "a": "/rashi-moon-sign-calculator",
-   "b": "/zodiac-sign-calculator"
-  },
-  {
-   "overlap": 0.663,
-   "a": "/gratuity-calculator",
-   "b": "/ppf-calculator"
-  },
-  {
-   "overlap": 0.66,
-   "a": "/employee-utilization-rate",
-   "b": "/roas-calculator"
-  },
-  {
-   "overlap": 0.66,
-   "a": "/contribution-margin",
-   "b": "/markup-vs-margin"
-  },
   {
    "overlap": 0.659,
    "a": "/cod-and-rto-loss-calculator",
@@ -44,48 +24,46 @@
   },
   {
    "overlap": 0.654,
-   "a": "/churn-rate",
-   "b": "/employee-utilization-rate"
-  },
-  {
-   "overlap": 0.654,
    "a": "/distributor-and-retailer-margin",
    "b": "/mrp-reverse-calculator"
+  },
+  {
+   "overlap": 0.653,
+   "a": "/exit-calculator",
+   "b": "/moic-and-irr"
+  },
+  {
+   "overlap": 0.651,
+   "a": "/down-payment-calculator",
+   "b": "/property-roi-calculator"
+  },
+  {
+   "overlap": 0.651,
+   "a": "/built-up-area-vs-carpet-area",
+   "b": "/down-payment-calculator"
+  },
+  {
+   "overlap": 0.65,
+   "a": "/cpc-to-cpa-converter",
+   "b": "/cpm-to-cpc-converter"
+  },
+  {
+   "overlap": 0.649,
+   "a": "/hra-exemption-calculator",
+   "b": "/ppf-calculator"
+  },
+  {
+   "overlap": 0.649,
+   "a": "/client-lifetime-value-ltv",
+   "b": "/client-profitability"
+  },
+  {
+   "overlap": 0.649,
+   "a": "/brokerage-agent-commission",
+   "b": "/down-payment-calculator"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/rashi-moon-sign-calculator",
-   "closest_overlap": 0.677
-  },
-  {
-   "page": "/zodiac-sign-calculator",
-   "closest_overlap": 0.677
-  },
-  {
-   "page": "/gratuity-calculator",
-   "closest_overlap": 0.663
-  },
-  {
-   "page": "/ppf-calculator",
-   "closest_overlap": 0.663
-  },
-  {
-   "page": "/employee-utilization-rate",
-   "closest_overlap": 0.66
-  },
-  {
-   "page": "/roas-calculator",
-   "closest_overlap": 0.66
-  },
-  {
-   "page": "/contribution-margin",
-   "closest_overlap": 0.66
-  },
-  {
-   "page": "/markup-vs-margin",
-   "closest_overlap": 0.66
-  },
   {
    "page": "/cod-and-rto-loss-calculator",
    "closest_overlap": 0.659
@@ -93,7 +71,47 @@
   {
    "page": "/marketplace-fee-calculator",
    "closest_overlap": 0.659
+  },
+  {
+   "page": "/age-calculator",
+   "closest_overlap": 0.659
+  },
+  {
+   "page": "/lucky-number-calculator",
+   "closest_overlap": 0.659
+  },
+  {
+   "page": "/numerology-calculator",
+   "closest_overlap": 0.657
+  },
+  {
+   "page": "/rent-vs-buy-calculator",
+   "closest_overlap": 0.656
+  },
+  {
+   "page": "/rental-yield-calculator",
+   "closest_overlap": 0.656
+  },
+  {
+   "page": "/distributor-and-retailer-margin",
+   "closest_overlap": 0.654
+  },
+  {
+   "page": "/mrp-reverse-calculator",
+   "closest_overlap": 0.654
+  },
+  {
+   "page": "/exit-calculator",
+   "closest_overlap": 0.653
+  },
+  {
+   "page": "/moic-and-irr",
+   "closest_overlap": 0.653
+  },
+  {
+   "page": "/down-payment-calculator",
+   "closest_overlap": 0.651
   }
  ],
- "median_overlap": 0.648
+ "median_overlap": 0.643
 }

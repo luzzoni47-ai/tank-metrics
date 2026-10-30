@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T01:31:24Z",
+ "generated": "2026-10-30T03:17:19Z",
  "seed_count": 150,
  "suggestion_count": 1036,
  "keywords": [
@@ -139,6 +139,15 @@
    ]
   },
   {
+   "query": "msme loan eligibility",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "msme loan"
+   ]
+  },
+  {
    "query": "property valuation certificate",
    "demand": 10,
    "covered": false,
@@ -211,7 +220,7 @@
    ]
   },
   {
-   "query": "msme loan eligibility",
+   "query": "msme loan kya hota hai",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -355,15 +364,6 @@
    ]
   },
   {
-   "query": "msme loan kya hota hai",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "msme loan"
-   ]
-  },
-  {
    "query": "rental yield in mumbai",
    "demand": 8,
    "covered": false,
@@ -487,6 +487,15 @@
    "score": 12.88,
    "from": [
     "marketplace fee calculator"
+   ]
+  },
+  {
+   "query": "msme loan for women",
+   "demand": 7,
+   "covered": false,
+   "score": 12.88,
+   "from": [
+    "msme loan"
    ]
   },
   {
@@ -657,7 +666,7 @@
    ]
   },
   {
-   "query": "msme loan for women",
+   "query": "msme loan apply online",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -907,15 +916,6 @@
    "score": 9.2,
    "from": [
     "income tax calculator"
-   ]
-  },
-  {
-   "query": "msme loan apply online",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "msme loan"
    ]
   },
   {
@@ -2605,7 +2605,7 @@
    ]
   },
   {
-   "query": "epf calculator with existing balance",
+   "query": "epf calculator with current balance",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3409,7 +3409,7 @@
    ]
   },
   {
-   "query": "epf calculator with current balance",
+   "query": "epf calculator on salary",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3553,15 +3553,6 @@
    ]
   },
   {
-   "query": "msme loan scheme",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "msme loan"
-   ]
-  },
-  {
    "query": "net profit margin ratio",
    "demand": 10,
    "covered": true,
@@ -3622,6 +3613,15 @@
    "score": 6.9,
    "from": [
     "property roi calculator"
+   ]
+  },
+  {
+   "query": "rental yield calculator bangalore",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "rental yield calculator"
    ]
   }
  ]

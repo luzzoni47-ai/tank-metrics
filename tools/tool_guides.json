@@ -759,6 +759,90 @@
         "Comparing a 31-day month with a 28-day month without normalising for days.",
         "Using YoY on a business that is less than a year old - there is nothing to compare against yet."
       ]
+    },
+    "rashi": {
+      "what": "Rashi is the moon sign, and in Vedic astrology it is the sign that matters most - far more than the Western sun sign you probably already know. The moon moves through the twelve rashis in about two and a half days each, so two people born a week apart can sit in different rashis. This tool estimates the rashi from your birth date alone, which is the honest limit of a date-only calculation: the moon crosses a rashi boundary roughly every 54 hours, so a date near a boundary can fall either side. The page names the rashi in the traditional order, Mesha through Meena, and says plainly what the estimate can and cannot settle.",
+      "formula": "The moon covers the whole zodiac in about 27.3 days, so it spends roughly 2.25 days in each rashi. This tool takes the day of the month from the date you enter, maps it in order onto the twelve rashis - Mesha, Vrishabha, Mithuna, Karka, Simha, Kanya, Tula, Vrishchika, Dhanu, Makara, Kumbha, Meena - and returns the one for that day. The day of the month stands in for the moon's position. A precise rashi needs the birth time, because the moon crosses a rashi boundary about every 54 hours and the crossing drifts through the month.",
+      "when": [
+        "You want a quick moon sign and you remember only your birth date, not the time.",
+        "You are reading a panchang or a rashi forecast and want to know which rashi it is written for.",
+        "You are comparing your rashi with a friend's and neither of you has a birth record to hand."
+      ],
+      "mistakes": [
+        "Treating the date-only rashi as final. Within a day of a boundary the real rashi needs your birth time.",
+        "Confusing rashi with the Western sun sign. They use the same twelve ideas in different languages and different dates.",
+        "Using a rashi estimate to time a muhurat, a wedding or a property purchase. Those need a full kundli from a jyotish."
+      ]
+    },
+    "zodiac": {
+      "what": "Your Western zodiac sign is fixed by your birth date and the sun's position on that date, which is why it is the one sign you can look up from a date alone. The twelve signs run on the same calendar every year - Aries starts around 21 March, Cancer around 21 June - with a shift of about a day between leap years. This tool returns the sign for the date you enter and names the exact range it used, so a birthday on a cusp is settled rather than guessed.",
+      "formula": "Each sign owns a fixed band of the calendar: Capricorn runs 22 December to 19 January, Aquarius 20 January to 18 February, Pisces 19 February to 20 March, Aries 21 March to 19 April, Taurus 20 April to 20 May, Gemini 21 May to 20 June, Cancer 21 June to 22 July, Leo 23 July to 22 August, Virgo 23 August to 22 September, Libra 23 September to 22 October, Scorpio 23 October to 21 November, Sagittarius 22 November to 21 December. The tool compares your month and day against these boundaries and returns the sign whose band contains the date.",
+      "when": [
+        "You need your sun sign for a horoscope and have only the date.",
+        "A birthday sits on a cusp and you want to know which sign the date alone points to.",
+        "You are filling a profile that asks for a zodiac sign and do not want to look up a chart."
+      ],
+      "mistakes": [
+        "Reading a cusp birthday as certain. Within a day of a boundary the sign depends on the birth time, not the date.",
+        "Using the Western sign for a Vedic question. Rashi uses the moon, not the sun, and needs the birth time.",
+        "Assuming the date ranges never move. A leap year pushes the boundaries by about a day."
+      ]
+    },
+    "gratuity": {
+      "what": "Gratuity is the lump sum an employer pays when you leave a job after five years or more of continuous service. It is built on your last drawn basic salary plus dearness allowance, not on your full monthly CTC, and that is the single fact most people get wrong when they estimate it. This calculator works out the statutory figure under the Payment of Gratuity Act from the salary and completed years you enter, so the number is in front of you before an offer letter or a settlement does it for you.",
+      "formula": "Gratuity = last drawn basic + DA, multiplied by 15, divided by 26, multiplied by completed years. The 15/26 is the statutory rate: fifteen days of salary for each completed year, where a month is treated as 26 working days. So a basic plus DA of 50,000 with 10 completed years gives 50,000 x 15 / 26 x 10 = 2,88,461. Employers outside the Act use the same 15/26 in practice, but the salary base and the rounding of part-years can differ.",
+      "when": [
+        "You are resigning or retiring and want the figure before HR sends the settlement.",
+        "You are comparing two offers and want to see what the gratuity is worth at the end of each.",
+        "You are checking a final settlement letter against the statutory formula."
+      ],
+      "mistakes": [
+        "Using full CTC as the salary. Gratuity is built on basic plus DA only, so a CTC-based estimate comes out far too high.",
+        "Counting part-years as full years. Only completed years count, unless the fifth year carries 240 days or more of service.",
+        "Expecting gratuity before five years. Below five years of continuous service the statutory entitlement does not arise."
+      ]
+    },
+    "utilization": {
+      "what": "Utilization rate is the share of your team's paid hours that actually goes to billable client work, and for an agency it is the number the whole payroll hangs on. If you bill 1,200 hours against the 1,600 hours your team was paid to be available, utilization is 75%, and the other 25% - internal meetings, admin, pitching, training - is real cost you carry but can never invoice. This calculator divides billable hours by the available hours you paid for and returns that percentage, so you can see how much of the payroll is actually earning.",
+      "formula": "Utilization rate = billable hours / available hours x 100. Available hours is what you paid the team for: number of people x hours per week x weeks in the period. Bill 1,200 hours out of 1,600 available and the rate is 1,200 / 1,600 x 100 = 75%. The tool returns that percentage and nothing else. Track it per person and per month rather than once a year, because one person pinned at 95% every month is a resignation waiting to happen, not a star performer.",
+      "when": [
+        "You are pricing a retainer and need to know how many billable hours it must cover to pay for the team behind it.",
+        "A month felt full but the profit was thin and you want to see how much of the payroll was actually invoiced.",
+        "You are deciding whether to hire, because current utilization shows whether the existing team has spare capacity."
+      ],
+      "mistakes": [
+        "Counting every hour worked as billable. Internal meetings, admin and pitching are hours you paid for but cannot invoice.",
+        "Chasing 100% utilization. Somewhere near 70-80% is healthy; a team pinned at 95% burns out and churns.",
+        "Taking available hours from a 40-hour week when your team actually works 45. The denominator is what you paid for, not what the calendar says."
+      ]
+    },
+    "agencyroas": {
+      "what": "ROAS is how much revenue every rupee of ad spend brought back, and it is the fastest read on whether a campaign is paying for itself. Spend Rs 1,00,000 on ads, book Rs 4,00,000 of revenue, and ROAS is 4x. What catches people out is reading 4x as profit: ROAS uses revenue, not margin, so a 4x ROAS on a product with a 20% margin is not four rupees of profit, it is eighty paise. This calculator divides ad revenue by ad spend and returns the multiple, so two channels can be compared on the same footing.",
+      "formula": "ROAS = ad revenue / ad spend, written as a multiple such as 3x. Spend 1,00,000 and book 4,00,000 and ROAS is 4,00,000 / 1,00,000 = 4x. The tool returns that multiple alone, on purpose, because revenue is the number you can measure cleanly. To turn ROAS into a break-even test, divide 1 by your contribution margin: at a 25% margin the break-even ROAS is 1 / 0.25 = 4x, so anything below 4x loses money even while it looks profitable.",
+      "when": [
+        "You are comparing two ad channels and want one number that puts them on the same scale.",
+        "A campaign is running and you want to know the spend it needs to at least break even.",
+        "You are setting a target ROAS before launch and want it grounded in your real margin."
+      ],
+      "mistakes": [
+        "Reading ROAS as profit. It is revenue divided by spend, so a 4x ROAS on a thin-margin product can still lose money.",
+        "Comparing ROAS across products with different margins. Break-even ROAS is 1 divided by margin, so a 20% margin needs 5x and a 50% margin needs 2x.",
+        "Leaving out the costs outside ad spend: returns, shipping, marketplace fees and payment-gateway charges."
+      ]
+    },
+    "cm": {
+      "what": "Contribution margin is what is left from each sale after the variable cost of making it, and it is the number that tells you whether a product can pay for the business at all. Sell at Rs 500 with Rs 300 of variable cost and the contribution is Rs 200, a 40% margin. That Rs 200 is what covers rent, salaries, ads and every other fixed cost; only once the fixed costs are covered does any of it become profit. This calculator takes your selling price and variable cost per unit and returns the contribution per unit and as a percentage, so you can see how many units it takes to break even.",
+      "formula": "Contribution margin per unit = selling price - variable cost per unit. As a percentage, divide that by the selling price: (selling price - variable cost) / selling price x 100. At a price of 500 and a variable cost of 300 the contribution is 500 - 300 = 200, which is 200 / 500 x 100 = 40%. Fixed costs do not enter this calculation at all; they are what the contribution has to cover, and the break-even point is fixed costs divided by the contribution per unit.",
+      "when": [
+        "You are deciding whether a product is worth selling at all, before you look at fixed costs.",
+        "You are setting a discount and want to know how far the price can fall before the contribution disappears.",
+        "You are choosing between two products to push and want to compare them on what each sale contributes, not on revenue."
+      ],
+      "mistakes": [
+        "Folding fixed costs into the variable cost. Rent and salaries are fixed; only materials, packaging and per-order fees are variable.",
+        "Confusing contribution margin with net margin. Contribution ignores fixed costs, so it is always the larger number.",
+        "Discounting by the contribution percentage rather than the price. A 20% cut on a 40% contribution margin removes half the contribution, not a fifth of it."
+      ]
     }
   }
 }

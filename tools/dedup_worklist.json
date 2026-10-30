@@ -1,18 +1,18 @@
 {
  "total": 101,
- "with_both_guides": 38,
- "remaining": 63,
+ "with_both_guides": 44,
+ "remaining": 57,
  "remaining_by_cat": {
-  "dailyfun": 10,
-  "agency": 10,
   "realestate": 10,
+  "dailyfun": 8,
+  "agency": 8,
   "pricing": 8,
-  "taxwealth": 6,
   "growth": 6,
-  "profit": 3,
+  "taxwealth": 5,
   "ops": 3,
   "everyday": 2,
   "cust": 2,
+  "profit": 2,
   "investor": 2,
   "bonus": 1
  },
@@ -47,15 +47,6 @@
   {
    "id": "agencymargin",
    "name": "Agency Profit Margin",
-   "cat": "agency",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "agencyroas",
-   "name": "ROAS Calculator",
    "cat": "agency",
    "cat_size": 10,
    "has_en": false,
@@ -189,15 +180,6 @@
    "overlap": null
   },
   {
-   "id": "gratuity",
-   "name": "Gratuity Calculator",
-   "cat": "taxwealth",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "gst_taxwealth",
    "name": "GST Calculator",
    "cat": "taxwealth",
@@ -306,15 +288,6 @@
    "overlap": null
   },
   {
-   "id": "rashi",
-   "name": "Rashi (Moon Sign) Calculator",
-   "cat": "dailyfun",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "rentalyield",
    "name": "Rental Yield Calculator",
    "cat": "realestate",
@@ -336,24 +309,6 @@
    "id": "stampduty",
    "name": "Stamp Duty Calculator",
    "cat": "realestate",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "utilization",
-   "name": "Employee Utilization Rate",
-   "cat": "agency",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "zodiac",
-   "name": "Zodiac Sign Calculator",
-   "cat": "dailyfun",
    "cat_size": 10,
    "has_en": false,
    "has_hi": false,
@@ -438,15 +393,6 @@
    "cat_size": 8,
    "has_en": false,
    "has_hi": true,
-   "overlap": null
-  },
-  {
-   "id": "cm",
-   "name": "Contribution Margin",
-   "cat": "profit",
-   "cat_size": 8,
-   "has_en": false,
-   "has_hi": false,
    "overlap": null
   },
   {

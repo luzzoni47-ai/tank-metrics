@@ -743,6 +743,90 @@
         "31 din ke mahine ko 28 din wale se bina days normalise kiye compare karna.",
         "Ek saal se chhote business par YoY lagana - compare karne ke liye kuch hai hi nahi."
       ]
+    },
+    "rashi": {
+      "what": "Rashi matlab moon sign, aur Vedic astrology me yahi sign sabse zyada matter karta hai - Western sun sign se kaafi zyada. Chaand har rashi me lagbhag dhai din rehta hai, isliye ek hafte ke gap me paida do logon ki rashi alag ho sakti hai. Ye tool sirf aapki birth date se rashi ka andaaza lagata hai, aur date-only ganit ki imaandaar limit yahi hai: chaand har 54 ghante me rashi boundary cross karta hai, isliye boundary ke paas ki date dono taraf ja sakti hai. Page rashi ko traditional order me batata hai, Mesha se Meena tak, aur saaf likhta hai ki ye estimate kya tay kar sakta hai aur kya nahi.",
+      "formula": "Chaand poora zodiac lagbhag 27.3 din me tay karta hai, yaani har rashi me takreeban 2.25 din. Ye tool aapki date se din nikaalta hai, usse baari-baari barah rashis par map karta hai - Mesha, Vrishabha, Mithuna, Karka, Simha, Kanya, Tula, Vrishchika, Dhanu, Makara, Kumbha, Meena - aur us din wali rashi dikhata hai. Yahan mahine ki tareekh chaand ki position ka stand-in hai. Sahi rashi ke liye birth time chahiye, kyunki chaand lagbhag har 54 ghante me rashi boundary cross karta hai.",
+      "when": [
+        "Jaldi rashi chahiye aur sirf birth date yaad hai, time nahi.",
+        "Panchang ya rashi forecast padh rahe ho aur jaanna hai ki wo kis rashi ke liye likha hai.",
+        "Dost ke saath rashi compare kar rahe ho aur kisi ke paas birth record nahi hai."
+      ],
+      "mistakes": [
+        "Date-only rashi ko final maan lena. Boundary ke ek din andar asli rashi ke liye birth time chahiye.",
+        "Rashi aur Western sun sign ko ek samajhna. Dono me barah naam hain, par bhasha aur dates alag.",
+        "Rashi estimate se muhurat, shaadi ya property timing tay karna. Uske liye jyotish se poori kundli chahiye."
+      ]
+    },
+    "zodiac": {
+      "what": "Western zodiac sign aapki birth date aur us din sooraj ki position se tay hota hai, isliye yahi ek sign hai jo sirf date se nikal jaata hai. Barah signs ka calendar har saal same chalta hai - Aries lagbhag 21 March, Cancer lagbhag 21 June - leap year me ek din ka farq aata hai. Ye tool aapki date ka sign dikhata hai aur wahi exact range bhi likhta hai jo usne use ki, taki cusp wala birthday guess na ho, settle ho jaye.",
+      "formula": "Har sign ka calendar me ek fixed band hai: Capricorn 22 December se 19 January, Aquarius 20 January se 18 February, Pisces 19 February se 20 March, Aries 21 March se 19 April, Taurus 20 April se 20 May, Gemini 21 May se 20 June, Cancer 21 June se 22 July, Leo 23 July se 22 August, Virgo 23 August se 22 September, Libra 23 September se 22 October, Scorpio 23 October se 21 November, aur Sagittarius 22 November se 21 December. Tool aapke month aur day ko in boundaries se compare karta hai aur wahi sign deta hai jiske band me date aati hai.",
+      "when": [
+        "Horoscope ke liye sun sign chahiye aur sirf date hai.",
+        "Birthday cusp par hai aur jaanna hai ki date akeli kis sign ki taraf ishara karti hai.",
+        "Koi profile zodiac sign maang raha hai aur chart lookup nahi karna."
+      ],
+      "mistakes": [
+        "Cusp wale birthday ko pakka maan lena. Boundary ke ek din andar sign birth time par depend karta hai.",
+        "Vedic sawaal ke liye Western sign use karna. Rashi chaand se chalti hai, sooraj se nahi.",
+        "Ye maan lena ki date ranges kabhi nahi hilti. Leap year boundaries ko lagbhag ek din khiska deta hai."
+      ]
+    },
+    "gratuity": {
+      "what": "Gratuity wo lump sum hai jo employer tab deta hai jab aap paanch saal ya zyada ki continuous service ke baad job chhodte ho. Ye last drawn basic salary plus dearness allowance par banti hai, aapki poori monthly CTC par nahi - aur yahi ek baat log sabse zyada galat samajhte hain. Ye calculator Payment of Gratuity Act ke hisaab se statutory figure nikaalta hai, aapki salary aur completed years se, taki offer letter ya settlement se pehle number saamne ho.",
+      "formula": "Gratuity = last drawn basic + DA, guna 15, bhag 26, guna completed years. 15/26 statutory rate hai: har completed saal ke liye pandrah din ki salary, jahan mahina 26 working days ka maana jaata hai. To 50,000 basic plus DA aur 10 completed years par: 50,000 x 15 / 26 x 10 = 2,88,461. Act ke bahar wale employers bhi practically yahi 15/26 lagate hain, par salary base aur part-year ki rounding alag ho sakti hai.",
+      "when": [
+        "Resign ya retire kar rahe ho aur HR ke settlement se pehle figure chahiye.",
+        "Do offers compare kar rahe ho aur dono ke end me gratuity kitni hogi, dekhna hai.",
+        "Final settlement letter ko statutory formula se check kar rahe ho."
+      ],
+      "mistakes": [
+        "Poori CTC ko salary maan lena. Gratuity sirf basic plus DA par banti hai, isliye CTC-based estimate kaafi zyada aa jaata hai.",
+        "Part-years ko poore saal ginna. Sirf completed years ginte hain, jab tak paanchve saal me 240 din ya zyada service na ho.",
+        "Paanch saal se pehle gratuity ki ummeed rakhna. Paanch saal se kam continuous service par statutory haq banta hi nahi."
+      ]
+    },
+    "utilization": {
+      "what": "Utilization rate batata hai ki aapki team ke paid ghanton me se kitne ghante asli billable client kaam me gaye. Agar team ko 1,600 ghante ke liye pay kiya aur 1,200 ghante bill hue, to utilization 75% hai - baaki 25% internal meetings, admin, pitching aur training me gaya, jo aapki cost hai par invoice nahi hoti. Ye calculator billable ghante ko available ghanton se divide karke percentage deta hai, taki dikhe ki payroll ka kitna hissa asli me kam raha hai.",
+      "formula": "Utilization rate = billable ghante / available ghante x 100. Available ghante wo hain jin ke liye aapne team ko pay kiya: logon ki sankhya x hafte ke ghante x hafte. 1,600 available me se 1,200 bill ho to rate = 1,200 / 1,600 x 100 = 75%. Tool yahi percentage deta hai. Isko har vyakti aur har mahine track karo, saal me ek baar nahi, kyunki koi ek banda lagataar 95% par ho to wo resign karne wala hai, star nahi.",
+      "when": [
+        "Jab aap retainer ka price set kar rahe ho aur jaanna chahte ho ki team ko cover karne ke liye kitne billable ghante chahiye.",
+        "Jab mahina bhara laga par profit patla nikla, aur dekhna hai ki payroll ka kitna hissa invoice hua.",
+        "Jab hire karne ka soch rahe ho, kyunki current utilization batata hai ki team me spare capacity hai ya nahi."
+      ],
+      "mistakes": [
+        "Har kaam ke ghante ko billable maan lena. Internal meetings, admin aur pitching wo ghante hain jin ke liye pay kiya par bill nahi hua.",
+        "100% utilization ke peeche bhagna. 70-80% ke aas paas theek hai; 95% par tikayi team burnout hokar chhod deti hai.",
+        "Available ghante 40-ghante hafte se nikalna jab team asli me 45 ghante kaam karti hai. Denominator wahi hai jiska aapne pay kiya."
+      ]
+    },
+    "agencyroas": {
+      "what": "ROAS batata hai ki ad spend ke har rupee ne kitna revenue wapas laaya, aur yahi sabse tez tarika hai ye dekhne ka ki campaign khud ka kharcha nikal raha hai ya nahi. Rs 1,00,000 ads par lagaye aur Rs 4,00,000 revenue aaya to ROAS 4x hai. Yahan log galti karte hain 4x ko profit samajh kar: ROAS revenue leta hai, margin nahi, to 20% margin wale product par 4x ROAS char rupaye ka profit nahi, assi paise ka hai. Ye calculator ad revenue ko ad spend se divide karke multiple deta hai.",
+      "formula": "ROAS = ad revenue / ad spend, 3x jaise multiple me. 1,00,000 lagaye aur 4,00,000 revenue aaya to ROAS = 4,00,000 / 1,00,000 = 4x. Tool bas yahi multiple deta hai, jaan-boojh kar: revenue wo number hai jo saaf measure hota hai. ROAS ko break-even test banane ke liye 1 ko apne contribution margin se divide karo - 25% margin par break-even ROAS = 1 / 0.25 = 4x, to 4x se neeche sab kuch paisa khota hai, chahe munaafa lage.",
+      "when": [
+        "Jab do ad channels compare kar rahe ho aur dono ko ek hi scale par dekhna hai.",
+        "Jab campaign chal rahi ho aur jaanna hai ki kam se kam break-even ke liye kitna spend chahiye.",
+        "Jab launch se pehle target ROAS set kar rahe ho aur usko apne asli margin par tikaana chahte ho."
+      ],
+      "mistakes": [
+        "ROAS ko profit padhna. Ye revenue / spend hai, to patle margin wale product par 4x ROAS bhi nuksaan de sakta hai.",
+        "Alag margin wale products ka ROAS aapas me compare karna. Break-even ROAS = 1 / margin, to 20% margin ko 5x chahiye aur 50% ko 2x.",
+        "Ad spend ke bahar ki costs chhod dena - returns, shipping, marketplace fees, payment-gateway charges."
+      ]
+    },
+    "cm": {
+      "what": "Contribution margin batata hai ki har sale se variable cost nikalne ke baad kya bachta hai, aur yahi number batata hai ki product business ka kharcha utha sakta hai ya nahi. Rs 500 me becho aur variable cost Rs 300 ho to contribution Rs 200, yaani 40% margin. Yahi Rs 200 rent, salary, ads aur baaki fixed costs cover karta hai; fixed costs cover hone ke baad hi profit banta hai. Ye calculator selling price aur variable cost se per-unit contribution aur percentage deta hai.",
+      "formula": "Contribution margin per unit = selling price - variable cost per unit. Percentage me: (selling price - variable cost) / selling price x 100. Price 500 aur variable cost 300 par contribution 500 - 300 = 200, jo 200 / 500 x 100 = 40% hai. Fixed costs is calculation me nahi aate; wo wahi hain jinko contribution cover karta hai, aur break-even = fixed costs / per-unit contribution.",
+      "when": [
+        "Jab decide kar rahe ho ki product bechna worth hai ya nahi, fixed costs dekhne se pehle.",
+        "Jab discount set kar rahe ho aur jaanna hai ki price kitna gir sakta hai contribution khatam hone se pehle.",
+        "Jab do products me se ek push karna hai aur revenue par nahi, har sale ke contribution par compare karna hai."
+      ],
+      "mistakes": [
+        "Fixed costs ko variable cost me mila dena. Rent aur salary fixed hain; sirf material, packaging aur per-order fees variable hain.",
+        "Contribution margin ko net margin samajhna. Contribution fixed costs ignore karta hai, isliye hamesha bada number hota hai.",
+        "Discount contribution percentage par dena, price par nahi. 40% contribution margin par 20% price cut aadha contribution kha jaata hai, panchva hissa nahi."
+      ]
     }
   }
 }
