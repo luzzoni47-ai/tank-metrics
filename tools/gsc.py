@@ -24,6 +24,7 @@ otherwise every call comes back 403.
     python3 tools/gsc.py submit-urls            # ask Google to crawl each page
     python3 tools/gsc.py inspect <url>          # index status of one page
     python3 tools/gsc.py analytics [days]       # top queries + pages
+    python3 tools/gsc.py questions [days] [n]   # question-type queries (regex filter)
     python3 tools/gsc.py auth-code             # print the OAuth consent URL
     python3 tools/gsc.py auth-exchange <code>  # trade the code for a token
 """
@@ -32,6 +33,7 @@ from __future__ import annotations
 import base64
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -400,6 +402,99 @@ def cmd_inspect(token: str, url: str) -> None:
     print(f"  canonical (user):   {idx.get('userCanonical')}")
 
 
+def question_re() -> re.Pattern:
+    """Sir's Search Console filter, as one compiled pattern.
+
+    In the GSC UI this is Performance -> Queries -> Add filter -> Custom
+    (regex), pasted as-is. Same expression here so the tool and the UI agree on
+    what counts as a question query.
+
+        (?i).*(what|why|how|when|where|who|which|can|does|do|is|are|will|should|
+        best way|how much|how many|meaning|definition|calculate|formula).*
+
+    The alternation is ordered longest-first in the original, which matters for
+    a human reading it but not for a regex engine; kept in the same order so the
+    two can be diffed by eye.
+    """
+    return re.compile(
+        r"(?i).*(what|why|how|when|where|who|which|can|does|do|is|are|will|"
+        r"should|best way|how much|how many|meaning|definition|calculate|"
+        r"formula).*"
+    )
+
+
+def fetch_queries(token: str, days: int, limit: int = 25000) -> list[dict]:
+    """Every query row in the window, paged.
+
+    The API caps a single response at 25000 rows and the default page is 25,
+    which is the same ceiling the UI shows. A question filter is only useful
+    over the whole set - a query that earns 3 impressions is exactly the kind of
+    long tail worth writing a page for - so page until the rows run out.
+    """
+    site = resolve_site(token)
+    end = time.strftime("%Y-%m-%d")
+    start = time.strftime("%Y-%m-%d", time.localtime(time.time() - days * 86400))
+    url = f"{API}/sites/{urllib.parse.quote(site, safe='')}/searchAnalytics/query"
+
+    rows: list[dict] = []
+    offset = 0
+    while len(rows) < limit:
+        data = call(url, token, method="POST", payload={
+            "startDate": start, "endDate": end,
+            "dimensions": ["query"], "rowLimit": 25000, "startRow": offset,
+        })
+        page = data.get("rows", [])
+        if not page:
+            break
+        rows.extend(page)
+        if len(page) < 25000:
+            break
+        offset += len(page)
+    return rows
+
+
+def cmd_questions(token: str, days: int, args: list[str]) -> None:
+    """The question-type queries, i.e. Sir's GSC regex filter.
+
+    Question queries are the ones a calculator page or a short explainer can
+    answer, so they are the best guide for what to write next. Prints the total
+    window first so the share of question traffic is visible, then the questions
+    ranked by impressions, then the ones already earning clicks.
+    """
+    rx = question_re()
+    rows = fetch_queries(token, days)
+    if not rows:
+        print("  (no data yet - the property may be too new)")
+        return
+
+    total_imp = sum(r["impressions"] for r in rows)
+    total_clicks = sum(r["clicks"] for r in rows)
+    qs = [r for r in rows if rx.match(r["keys"][0])]
+    q_imp = sum(r["impressions"] for r in qs)
+    q_clicks = sum(r["clicks"] for r in qs)
+
+    print(f"queries {days}d: {len(rows)} total, {len(qs)} question-type "
+          f"({len(qs) * 100 // max(len(rows), 1)}% of queries)")
+    print(f"  impressions: {total_imp} total, {q_imp} question "
+          f"({q_imp * 100 // max(total_imp, 1)}%)")
+    print(f"  clicks:      {total_clicks} total, {q_clicks} question")
+
+    top = int(args[0]) if args else 60
+    qs.sort(key=lambda r: -r["impressions"])
+    print(f"\ntop {min(top, len(qs))} question queries by impressions")
+    for r in qs[:top]:
+        pos = r.get("position", 0)
+        print(f"  {r['clicks']:>3} clicks {r['impressions']:>5} imp  "
+              f"pos {pos:>5.1f}  {r['keys'][0]}")
+
+    clicked = [r for r in qs if r["clicks"] > 0]
+    if clicked:
+        print(f"\nquestion queries already earning clicks ({len(clicked)})")
+        for r in sorted(clicked, key=lambda r: -r["clicks"]):
+            print(f"  {r['clicks']:>3} clicks {r['impressions']:>5} imp  "
+                  f"pos {r.get('position', 0):>5.1f}  {r['keys'][0]}")
+
+
 def cmd_analytics(token: str, days: int) -> None:
     site = resolve_site(token)
     end = time.strftime("%Y-%m-%d")
@@ -458,6 +553,10 @@ def main() -> None:
         cmd_inspect(token, sys.argv[2])
     elif cmd == "analytics":
         cmd_analytics(token, int(sys.argv[2]) if len(sys.argv) > 2 else 28)
+    elif cmd == "questions":
+        # gsc.py questions [days] [top]
+        days = int(sys.argv[2]) if len(sys.argv) > 2 else 28
+        cmd_questions(token, days, sys.argv[3:])
     else:
         sys.exit(__doc__)
 
