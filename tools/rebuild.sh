@@ -59,6 +59,8 @@ echo "==> fix_static_seo"
 python3 tools/fix_static_seo.py
 echo "==> add_pwa"
 python3 tools/add_pwa.py
+echo "==> add_pagination (phone pager on the listing pages)"
+python3 tools/add_pagination.py
 echo "==> gen_updates"
 python3 tools/gen_updates.py
 

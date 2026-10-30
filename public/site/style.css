@@ -219,3 +219,48 @@ html.nav-open,html.nav-open body{overflow:hidden}
   .main-prose .page-hero{margin-bottom:14px}
   .about-page{padding-top:10px;padding-bottom:20px}
 }
+
+/* Phone-only pager for the listing grids (/blog Guides, /blog News, /news).
+   pagination.js adds the <nav> and the number buttons and toggles
+   `.page-hidden` on the cards outside the current page. Each button carries its
+   colour in a `--pg` custom property set from the logo palette, so the numbers
+   run green, blue, red, yellow, slate. Hidden above 760px: the desktop page
+   keeps the full list and no pager. */
+.page-nav{display:none}
+.page-hidden{display:none!important}
+@media (max-width:760px){
+  .page-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:9px;
+    margin:22px 0 6px;
+  }
+  .page-num{
+    width:38px;
+    height:38px;
+    padding:0;
+    border:1.5px solid var(--line);
+    border-radius:11px;
+    background:#fff;
+    color:var(--pg,#4285f4);
+    font:600 14px/1 Poppins,system-ui,sans-serif;
+    cursor:pointer;
+    transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease,color .15s ease;
+  }
+  .page-num:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px rgba(32,33,36,.14);
+  }
+  .page-num:focus-visible{
+    outline:2px solid var(--pg,#4285f4);
+    outline-offset:2px;
+  }
+  .page-num.active{
+    background:var(--pg,#4285f4);
+    border-color:var(--pg,#4285f4);
+    color:#fff;
+    transform:translateY(-2px) scale(1.06);
+    box-shadow:0 8px 20px rgba(32,33,36,.2);
+  }
+}
