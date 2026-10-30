@@ -519,6 +519,37 @@ def cmd_analytics(token: str, days: int) -> None:
         print(f"  {r['clicks']:>4} clicks  {r['impressions']:>6} imp  {r['keys'][0]}")
 
 
+def cmd_pages(token: str, days: int, limit: int = 40) -> None:
+    """Per-page clicks, impressions, CTR and average position.
+
+    The query report hides the shape of the problem: a page can rank on page 1
+    and still earn no clicks, and that is a title/description fix, not a
+    content or authority fix. Ranking without clicking is the cheapest traffic
+    on the site, so this view exists to find those pages.
+    """
+    site = resolve_site(token)
+    end = time.strftime("%Y-%m-%d")
+    start = time.strftime("%Y-%m-%d", time.localtime(time.time() - days * 86400))
+    payload = {
+        "startDate": start, "endDate": end,
+        "dimensions": ["page"], "rowLimit": limit,
+    }
+    data = call(
+        f"{API}/sites/{urllib.parse.quote(site, safe='')}/searchAnalytics/query",
+        token, method="POST", payload=payload)
+    rows = data.get("rows", [])
+    print(f"page performance {start} .. {end}")
+    if not rows:
+        print("  (no data yet - the property may be too new)")
+        return
+    print(f"  {'clicks':>6} {'imp':>7} {'ctr':>7} {'pos':>6}  page")
+    # Sort by impressions, so the pages with the most to gain surface first.
+    for r in sorted(rows, key=lambda x: -x["impressions"]):
+        url = r["keys"][0].replace(f"https://{site.split(':')[-1]}", "")
+        print(f"  {r['clicks']:>6} {r['impressions']:>7} "
+              f"{r.get('ctr', 0) * 100:>6.1f}% {r.get('position', 0):>6.1f}  {url}")
+
+
 def have_oauth() -> bool:
     if os.environ.get("GSC_OAUTH_JSON") or os.environ.get("GSC_OAUTH_FILE"):
         return True
@@ -553,6 +584,8 @@ def main() -> None:
         cmd_inspect(token, sys.argv[2])
     elif cmd == "analytics":
         cmd_analytics(token, int(sys.argv[2]) if len(sys.argv) > 2 else 28)
+    elif cmd == "pages":
+        cmd_pages(token, int(sys.argv[2]) if len(sys.argv) > 2 else 28)
     elif cmd == "questions":
         # gsc.py questions [days] [top]
         days = int(sys.argv[2]) if len(sys.argv) > 2 else 28
