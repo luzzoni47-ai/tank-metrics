@@ -124,6 +124,25 @@ for p in (ROOT / "public" / "site" / "tools").glob("*.html"):
         bad.append(p.name)
 expect("no built page shows a template placeholder", bad == [])
 
+print("\nevery calculator has a guide of its own")
+# 48 of the 101 pages once fell back to a shared per-CATEGORY text, which is
+# what made them near-duplicates and left them unindexed. A new calculator
+# added without a guide would silently reintroduce that. Require full coverage.
+missing_en = sorted(IDS - set(EN["calcs"]))
+missing_hi = sorted(IDS - set(HI["calcs"]))
+expect(f"all {len(IDS)} calculators have an English guide", missing_en == [])
+expect(f"all {len(IDS)} calculators have a Hinglish guide", missing_hi == [])
+if missing_en:
+    print(f"       missing EN: {missing_en}")
+if missing_hi:
+    print(f"       missing HI: {missing_hi}")
+
+# And prove the guard fires: drop a guide and confirm the check would catch it.
+g = deep_copy(EN)
+del g["calcs"]["emi"]
+expect("a calculator without a guide is caught",
+       sorted(IDS - set(g["calcs"])) == ["emi"])
+
 print()
 if failures:
     print(f"FAILED: {len(failures)} check(s)")

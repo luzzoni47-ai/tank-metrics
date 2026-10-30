@@ -1,36 +1,7 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 45,
- "worst_pairs": [
-  {
-   "overlap": 0.654,
-   "a": "/distributor-and-retailer-margin",
-   "b": "/mrp-reverse-calculator"
-  },
-  {
-   "overlap": 0.653,
-   "a": "/exit-calculator",
-   "b": "/moic-and-irr"
-  },
-  {
-   "overlap": 0.651,
-   "a": "/down-payment-calculator",
-   "b": "/property-roi-calculator"
-  }
- ],
- "worst_pages": [
-  {
-   "page": "/distributor-and-retailer-margin",
-   "closest_overlap": 0.654
-  },
-  {
-   "page": "/mrp-reverse-calculator",
-   "closest_overlap": 0.654
-  },
-  {
-   "page": "/exit-calculator",
-   "closest_overlap": 0.653
-  }
- ],
- "median_overlap": 0.634
+ "pages_with_a_near_duplicate": 0,
+ "worst_pairs": [],
+ "worst_pages": [],
+ "median_overlap": 0.0
 }

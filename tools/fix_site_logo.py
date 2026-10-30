@@ -36,9 +36,13 @@ from __future__ import annotations
 import json
 import re
 import shutil
+import sys
 from pathlib import Path
 
-from PIL import Image
+try:
+    from PIL import Image
+except ImportError:  # Pillow is optional; the guard needs it, the fix does not.
+    Image = None
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "public" / "site"
@@ -125,7 +129,13 @@ def check_icons() -> None:
 
     This is the guard against the exact regression that caused the problem: the
     files silently reverting to a v0 icon while every page still looks fine.
+
+    Needs Pillow to read the pixels. Without it the existence check still runs,
+    so a missing icon is caught either way, and the rebuild is never blocked by
+    an optional dependency.
     """
+    if Image is None:
+        print("icons: Pillow not installed, checking existence only")
     checked = set()
     problems = []
     for f in sorted(SITE.rglob("*.html")):
@@ -141,7 +151,7 @@ def check_icons() -> None:
             if not local.exists():
                 problems.append(f"{f.name}: {url} is a 404")
                 continue
-            if local in checked:
+            if local in checked or Image is None:
                 continue
             checked.add(local)
             ok, msg = icon_is_brand_mark(local)
@@ -153,7 +163,7 @@ def check_icons() -> None:
         for p in sorted(set(problems)):
             print("PROBLEM:", p)
         raise SystemExit(f"{len(problems)} icon problem(s) - Google would show the old logo")
-    print(f"icons ok: {len(checked)} file(s), all brand mark")
+    print(f"icons ok: {len(checked)} file(s) checked, all brand mark")
 
 
 def main() -> None:

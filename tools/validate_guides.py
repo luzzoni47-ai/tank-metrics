@@ -117,6 +117,15 @@ def validate(ids: set[str] | None = None) -> tuple[list[str], int, int]:
             continue
         problems += check_guide(cid, g, cat_of.get(cid, ""), hguides, hinglish=True)
 
+    # Every calculator needs a guide of its own. Without one gen_tool_pages.py
+    # falls back to a shared per-CATEGORY text, and 48 pages doing that is what
+    # made them near-duplicates and left them out of the index. A new
+    # calculator added without copy must fail here rather than ship quietly.
+    for cid in sorted({c["id"] for c in calcs} - set(guides["calcs"])):
+        problems.append(f"{cid}: no English guide - the page would fall back to the category template")
+    for cid in sorted({c["id"] for c in calcs} - set(hguides["calcs"])):
+        problems.append(f"{cid}: no Hinglish guide - the page would fall back to the category template")
+
     have_en = len(guides["calcs"])
     have_hi = len(hguides["calcs"])
     return problems, have_en, have_hi
