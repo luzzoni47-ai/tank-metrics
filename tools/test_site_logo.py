@@ -119,6 +119,19 @@ def check_organization_logo() -> None:
         fail(f"Organization.logo {url}: only {brand} brand pixels")
     print(f"Organization.logo: {url} ({brand} brand pixels)")
 
+    # E-E-A-T: a money site should say who it is and who it serves. These are
+    # the fields Google reads to decide the site is a real entity, and they are
+    # cheap to lose in a regeneration.
+    if not org.get("email"):
+        fail("Organization has no email - the contact page publishes one")
+    if (org.get("areaServed") or {}).get("name") != "India":
+        fail("Organization.areaServed is not India")
+    site = next((n for n in graph if n.get("@type") == "WebSite"), None)
+    if site is None:
+        fail("index.html: no WebSite node")
+    elif "potentialAction" not in site:
+        fail("WebSite has no SearchAction (sitelinks searchbox)")
+
     # The publisher reference is what ties the calculators to the org.
     ws = next((n for n in graph if n.get("@type") == "WebSite"), None)
     if ws is not None and "publisher" not in ws:

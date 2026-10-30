@@ -60,7 +60,13 @@ GRAPH_RE = re.compile(
 
 
 def organization() -> dict:
-    """The Organization node, with the logo Google needs to drop the v0 cache."""
+    """The Organization node, with the logo Google needs to drop the v0 cache.
+
+    The contact point and area served are the E-E-A-T signals a money site is
+    judged on: who is behind this, and who is it for. Both are real (the email
+    is the one the contact page already publishes) - do not add `sameAs` or a
+    `foundingDate` that nobody can verify.
+    """
     return {
         "@type": "Organization",
         "@id": ORG_ID,
@@ -74,6 +80,15 @@ def organization() -> dict:
             "height": 512,
         },
         "image": {"@id": ORG_ID + "/logo"},
+        "email": "hello@tankmetrics.in",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "hello@tankmetrics.in",
+            "availableLanguage": ["en", "hi"],
+        },
+        "areaServed": {"@type": "Country", "name": "India"},
+        "knowsLanguage": ["en-IN", "hi-IN"],
     }
 
 
@@ -97,6 +112,18 @@ def patch_home_graph() -> None:
     for node in graph:
         if node.get("@type") in ("WebSite", "SoftwareApplication"):
             node.setdefault("publisher", {"@id": ORG_ID})
+        if node.get("@type") == "WebSite":
+            # Sitelinks searchbox: Google may show a search box under the
+            # result. The site already ships an on-page tool search, so this
+            # describes something real rather than inventing a feature.
+            node.setdefault("potentialAction", {
+                "@type": "SearchAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": f"{BASE}/?q={{search_term_string}}",
+                },
+                "query-input": "required name=search_term_string",
+            })
 
     data["@graph"] = graph
     block = ('<script type="application/ld+json">'
