@@ -73,6 +73,9 @@ LEDGER_PATH = "tools/outreach/authority/ledger.json"
 # ------------------------------------------------------------------- plumbing
 
 def get_secret(name: str) -> str:
+    """A custom secret from the run environment or the automation secret store."""
+    if os.environ.get(name):
+        return os.environ[name].strip()
     url = os.environ.get("AGENT_SERVER_URL", "").rstrip("/")
     key = os.environ.get("SESSION_API_KEY") or os.environ.get("OH_SESSION_API_KEYS_0", "")
     if url:
@@ -113,6 +116,15 @@ def kv_available() -> bool:
     return bool(_KV_TOKEN and _KV_BASE)
 
 
+def _unwrap(v):
+    """The KV API wraps every value in {"value": ...}; peel it off."""
+    seen = 0
+    while isinstance(v, dict) and set(v) == {"value"} and seen < 5:
+        v = v["value"]
+        seen += 1
+    return v
+
+
 def kv_get(key: str):
     if not kv_available():
         return None
@@ -121,7 +133,7 @@ def kv_get(key: str):
             f"{_KV_BASE}/v1/kv/{key}",
             headers={"Authorization": f"Bearer {_KV_TOKEN}"})
         with urllib.request.urlopen(req, timeout=20) as r:
-            return json.loads(r.read())["value"]
+            return _unwrap(json.loads(r.read()))
     except Exception:
         return None
 
@@ -455,12 +467,14 @@ def main() -> None:
     cites = citations()
     print(f"  packets this run: {len(made)} | citations: {len(cites)}")
 
+    committed, commit_err = [], ""
     if not DRY and made:
         try:
             token = get_secret("GITHUB_TOKEN")
             for path, content in made:
-                commit_file(path, content,
-                            f"Authority packet: {path.split('/')[-1]}", token)
+                if commit_file(path, content,
+                               f"Authority packet: {path.split('/')[-1]}", token):
+                    committed.append(path)
             ledger = {
                 "updated": time.strftime("%Y-%m-%dT%H:%M"),
                 "prepared_total": len(prepared),
@@ -469,9 +483,11 @@ def main() -> None:
                 "dead": [p["name"] for p in dead],
                 "citations": cites,
             }
-            commit_file(LEDGER_PATH, json.dumps(ledger, indent=1) + "\n",
-                        "Authority ledger", token)
+            if commit_file(LEDGER_PATH, json.dumps(ledger, indent=1) + "\n",
+                           "Authority ledger", token):
+                committed.append(LEDGER_PATH)
         except Exception as e:
+            commit_err = str(e)
             print(f"  github error: {e}")
 
     if not DRY:
@@ -480,6 +496,17 @@ def main() -> None:
             "prepared_day": day,
             "prepared_today": prepared_today + len(made),
             "updated": time.strftime("%Y-%m-%dT%H:%M"),
+        })
+        kv_set("authority_summary", {
+            "updated": time.strftime("%Y-%m-%dT%H:%M"),
+            "prospects": len(PROSPECTS),
+            "usable": len(live),
+            "dead": len(dead),
+            "packets_this_run": len(made),
+            "prepared_total": len(prepared),
+            "committed": committed,
+            "commit_error": commit_err,
+            "citations": len(cites),
         })
 
     report = [

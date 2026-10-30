@@ -52,6 +52,8 @@ STOP = {
 # ------------------------------------------------------------------- plumbing
 
 def get_secret(name: str) -> str:
+    if os.environ.get(name):
+        return os.environ[name].strip()
     url = os.environ.get("AGENT_SERVER_URL", "").rstrip("/")
     key = os.environ.get("SESSION_API_KEY") or os.environ.get("OH_SESSION_API_KEYS_0", "")
     if url:
@@ -92,6 +94,15 @@ def kv_available() -> bool:
     return bool(_KV_TOKEN and _KV_BASE)
 
 
+def _unwrap(v):
+    """The KV API wraps every value in {"value": ...}; peel it off."""
+    seen = 0
+    while isinstance(v, dict) and set(v) == {"value"} and seen < 5:
+        v = v["value"]
+        seen += 1
+    return v
+
+
 def load_state() -> dict:
     if not kv_available():
         return {}
@@ -100,7 +111,7 @@ def load_state() -> dict:
             f"{_KV_BASE}/v1/kv/{_STATE_KEY}",
             headers={"Authorization": f"Bearer {_KV_TOKEN}"})
         with urllib.request.urlopen(req, timeout=20) as r:
-            v = json.loads(r.read().decode())
+            v = _unwrap(json.loads(r.read().decode()))
         return v if isinstance(v, dict) else {}
     except Exception:
         return {}
@@ -110,15 +121,32 @@ def save_state(state: dict) -> None:
     if DRY or not kv_available():
         return
     try:
+        # PUT the payload as-is: the API adds the {"value": ...} envelope itself.
         req = urllib.request.Request(
             f"{_KV_BASE}/v1/kv/{_STATE_KEY}",
-            data=json.dumps({"value": state}).encode(),
+            data=json.dumps(state).encode(),
             method="PUT",
             headers={"Authorization": f"Bearer {_KV_TOKEN}",
                      "Content-Type": "application/json"})
         urllib.request.urlopen(req, timeout=20).read()
     except Exception as e:
         print(f"kv save error: {e}")
+
+
+def save_summary(summary: dict) -> None:
+    """Persist a run summary so a cloud run is inspectable without stdout."""
+    if DRY or not kv_available():
+        return
+    try:
+        req = urllib.request.Request(
+            f"{_KV_BASE}/v1/kv/top1_summary",
+            data=json.dumps(summary).encode(),
+            method="PUT",
+            headers={"Authorization": f"Bearer {_KV_TOKEN}",
+                     "Content-Type": "application/json"})
+        urllib.request.urlopen(req, timeout=20).read()
+    except Exception as e:
+        print(f"kv summary error: {e}")
 
 
 # ------------------------------------------------------------------ gsc access
@@ -312,11 +340,23 @@ def main() -> None:
 
     body = render(buckets, moved, len(queries), len(pages))
     print(body)
+    issue = "not attempted"
     if not DRY:
         try:
-            print("  github:", upsert_issue(body, get_secret("GITHUB_TOKEN")))
+            issue = upsert_issue(body, get_secret("GITHUB_TOKEN"))
+            print("  github:", issue)
         except Exception as e:
+            issue = f"error: {e}"
             print(f"  github error: {e}")
+        save_summary({
+            "updated": time.strftime("%Y-%m-%dT%H:%M"),
+            "site": site,
+            "queries": len(queries),
+            "pages": len(pages),
+            "buckets": {k: len(v) for k, v in buckets.items()},
+            "moved": len(moved),
+            "github": issue,
+        })
 
 
 if __name__ == "__main__":
