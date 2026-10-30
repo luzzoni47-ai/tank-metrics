@@ -827,6 +827,104 @@
         "Contribution margin ko net margin samajhna. Contribution fixed costs ignore karta hai, isliye hamesha bada number hota hai.",
         "Discount contribution percentage par dena, price par nahi. 40% contribution margin par 20% price cut aadha contribution kha jaata hai, panchva hissa nahi."
       ]
+    },
+    "codrto": {
+      "what": "COD & RTO Loss Calculator cash-on-delivery ke un orders ka nuksaan rupaye me dikhata hai jo wapas aa jaate hain. RTO — return to origin — wo parcel hai jise courier customer tak le gaya, deliver nahi kar paya aur wapas aapke paas le aaya; forward freight, return freight aur aksar packaging aap bharte ho, aur sale hui hi nahi. Tool aapke COD volume aur RTO rate se nikaalta hai ki kitne parcel bounce hue aur unse mahine me kitna paisa gaya. Ye tab kholo jab category kagaz par profitable lagti hai par bank balance mana kar deta hai.",
+      "formula": "RTO orders = total COD orders x RTO rate / 100. Total loss = RTO orders x loss per RTO order. Loss per RTO order matlab ek bounce ki poori cost — forward freight plus return freight plus packaging plus re-attempt charge — sirf wahi courier bill nahi jo pehle dikhta hai. Tool dono ko multiply karta hai taki volume ke saath loss kitna badhta hai ye dikhe.",
+      "when": [
+        "Jab aapka COD share zyada ho aur cut karne se pehle jaanna ho ki returns kitna kha rahe hain.",
+        "Jab aap soch rahe ho ki prepaid discount de kar customers ko COD se hataana chahiye ya nahi.",
+        "Jab aap freight rate negotiate kar rahe ho aur courier ko dikhana ho ki RTO aapko kitna mehnga pad raha hai."
+      ],
+      "mistakes": [
+        "Sirf return freight ginna aur forward leg bhool jaana, jo aap har haal me bharte ho.",
+        "RTO ko saare orders ka percent maanna, sirf COD orders ka nahi, jisse aankda kam dikhta hai.",
+        "Ye na dekhna ki wapas aaya parcel ek doosri sale bhi maarta hai, kyunki stock ek hafte market se bahar rehta hai."
+      ]
+    },
+    "marketplace": {
+      "what": "Marketplace Fee Calculator dikhata hai ki Amazon, Flipkart ya Meesho par order ke baad platform apna hissa kaatne ke baad aapke account me asli kitna aata hai. Commission headline charge hai, par aksar wo akela nahi hota: shipping, closing fee, payment-gateway charge aur koi fixed other fees bhi usi order se nikalte hain. Tool in sab ko selling price se ghata kar wo amount dikhata hai jo aapko milta hai. Yahi number tay karta hai ki product ko us price par list karna theek hai ya nahi.",
+      "formula": "Total fees = selling price x commission rate / 100 + shipping fee + other fees. You receive = selling price minus total fees. Commission selling price par lagta hai, aapki cost par nahi, isliye 1,000 rupaye ke item par 15% commission 150 rupaye hai — chahe aapne use 300 me banaya ho ya 800 me. Apni asli shipping aur other fees daalo, andaaza nahi.",
+      "when": [
+        "Jab aap marketplace ke liye product price kar rahe ho aur gross price nahi, net payout chahiye.",
+        "Jab aap ek hi product do marketplaces ke alag fee table par compare kar rahe ho.",
+        "Jab commission slab badla ho aur aap dekhna chahte ho ki price ka kitna hissa chala gaya."
+      ],
+      "mistakes": [
+        "Sirf commission rate dekhna aur shipping aur closing fee bhool jaana, jo cut ko dugna kar sakte hain.",
+        "Ye maan lena ki fee aapki cost par lagti hai. Ye selling price par lagti hai, isliye patla-margin item loss me ja sakta hai.",
+        "Commission par GST bhool jaana, jo platform apni fee par leta hai."
+      ]
+    },
+    "agefun": {
+      "what": "Age Calculator date of birth se exact age years aur months me nikaalta hai — us tarah se ginta hai jaise form ya application ginti hai, birthday card ki tarah nahi. Ye sawaal nipatata hai ki aaj ki date par aapne diye gaye saal poore kiye hain ya nahi — wahi figure jo school admission cut-off, sarkari form, pension ya age-limited account ki eligibility tay karta hai. Kyunki ye aaj ki date par chalta hai, ye aaj ki umar deta hai, isliye ek hi janm-tithi birthday se pehle aur baad me alag jawab deti hai.",
+      "formula": "Age in years = aaj ka saal minus birth year, aur ek kam tab jab is saal ka birthday abhi aaya na ho. Age in months = 12 x years + pichhle birthday ke baad ke poore mahine. Calculator din, mahina aur saal — teenon compare karta hai, isliye February ya month-end ka birthday bhi sahi handle hota hai, har mahine ko 30 din maan kar nahi.",
+      "when": [
+        "Jab aap koi form bhar rahe ho jisme poore saal poochhe gaye hain aur exact figure chahiye.",
+        "Jab aap school, exam ya kisi scheme ka age cut-off kisi fixed date par check kar rahe ho.",
+        "Jab aapko kisi document ya application ke liye years aur months me exact umar chahiye."
+      ],
+      "mistakes": [
+        "Saal ghata kar ye bhool jaana ki is saal birthday aaya ya nahi, jisse umar zyada dikhti hai.",
+        "Agle birthday tak round up karna jab form poore saal maangta hai.",
+        "Cut-off date ke liye mota-moti birth-year-plus-thoda use karna, jahan ek din eligibility tay karta hai."
+      ]
+    },
+    "luckynumber": {
+      "what": "Yahan lucky number aapki poori date of birth se banta hai, ek single digit me. Din, mahina aur saal ke saare digits jodo — 15-06-1995 ka matlab 1+5+0+6+1+9+9+5 = 36 — phir 36 ke digits jodo, 3+6 = 9, aur yeh karte raho jab tak 1 se 9 ke beech ek digit bache. Wahi aakhri digit tool aapka lucky number kehta hai. Yeh ek hi date ko hamesha ek hi tarah padhta hai, isliye ye ek fix personal number hai, roz ka draw nahi.",
+      "formula": "Tool date of birth se hyphen hata deta hai, saare aath digits jod deta hai, aur agar total nau se bada ho to us total ke digits phir se jod deta hai. 1995-06-15 ka sum 36 banta hai, aur 3+6 se 9. Jaise hi ek single digit 1-9 bachta hai, loop ruk jaata hai — isliye har date nau me se kisi ek number par aati hai.",
+      "when": [
+        "Jab aap profile bhar rahe ho aur birth date se match karne wala number chahiye.",
+        "Jab koi apna lucky number bataye aur aap dekhna chahe ki woh kis date se aaya.",
+        "Jab aap jaanna chahe ki ek hi din janme do logon ka number same hota hai ya nahi."
+      ],
+      "mistakes": [
+        "Date ko jaisa likha hai waise hi jod dena, hyphens ko bhi count karna — unki koi value nahi hoti.",
+        "36 jaise do-digit total par ruk jaana, usko 9 tak reduce na karna.",
+        "Is number ko bhavishyavani maan lena. Yeh aapki date ka fix reduction hai, aaj ka prediction nahi."
+      ]
+    },
+    "numerology": {
+      "what": "Numerology Calculator aapke naam ke letters aur date of birth ko milakar ek digit banata hai. Har letter ko alphabet me uski position ka number bana diya jaata hai — A ka 1, J ka 10, S ka 19 — sab jod diye jaate hain, total ke digits phir jode jaate hain jab tak ek digit bache, aur date of birth bhi isi tarah reduce karke mila di jaati hai. Number naam ki spelling par depend karta hai, isliye 'Aarav' aur 'Aarav ' alag aa sakte hain.",
+      "formula": "Naam me se letters aur digits ke alawa sab hata do. Bacha har character ka character code jodo, date of birth ke digits jodo, aur running total ko ek digit tak reduce karo, jab tak 1-9 me se ek number bache. Kyunki character code use hota hai, capital letter aur small letter ek hi number nahi dete.",
+      "when": [
+        "Jab aap naam ki spelling ya baby name chunne ke liye name-based number dekhna chahte ho.",
+        "Jab naam aur date dono ho aur aap ek combined number chahte ho, do alag nahi.",
+        "Jab aap ek hi naam ki do spellings ka farak dekhna chahte ho."
+      ],
+      "mistakes": [
+        "'Aarav' aur 'aarav' ka same jawab expect karna — tool character code padhta hai, isliye case badalne se number badalta hai.",
+        "Middle name chhod dena aur phir sochna ki number kyun badal gaya.",
+        "Result ko insaan ke baare me advice samajhna, jabki ye sirf unke hi naam se banaya gaya number hai."
+      ]
+    },
+    "rentbuy": {
+      "what": "Rent vs Buy ek tay saal ke rent ko usi ghar ko khareedne ki cost se milata hai, loan ke bina. Rent side simple hai: monthly rent ko 12 se, phir compare karne wale saalon se guna karo. Buy side me home price plus ek baar ka upfront cost aata hai — stamp duty, registration, brokerage, shifting ka kharcha, jo wapas nahi aata. Tool home loan model nahi karta, isliye yeh chhota sawaal dekhta hai ki cash dene par kaunsi side chhoti padti hai.",
+      "formula": "Total rent = monthly rent x 12 x years compared. Buy cost before loan = home price + upfront buy costs. Tool dono dikhata hai aur jo chhota ho usko lower cost kehta hai. EMI aur interest jaan-boojh kar chhod diye jaate hain, isliye buy figure day-one ka cash hai, poora holding cost nahi.",
+      "when": [
+        "Jab aap rent par ho aur cash se khareedne ka break-even dekhna chahte ho.",
+        "Jab aapko purchase ka one-time cost chahiye, loan se alag.",
+        "Jab aap kisi ko samjha rahe ho ki kam rent bhi paanch saal me haar sakta hai."
+      ],
+      "mistakes": [
+        "Buy figure ko poora ownership cost samajhna — loan interest usme nahi hai.",
+        "Paanch saal ka rent total ek ghar ki price se compare karna jise aap bees saal rakhoge.",
+        "Bhool jaana ki stamp duty aur registration upfront number me hain, price me nahi."
+      ]
+    },
+    "rentalyield": {
+      "what": "Rental Yield Calculator property ke rent ko uski cost ka annual percentage bana deta hai. Monthly rent ko 12 se guna karke saal ka rent nikalo, usko purchase price se divide karo aur 100 se guna karo. 50,00,000 ka ghar 20,000 monthly rent par saal ka 2,40,000 kamata hai, matlab gross yield 4.8%. Yeh percentage hi kaam ki cheez hai: do alag price wali properties ko ek hi scale par laata hai, aur property ko FD ya bond se compare karne deta hai.",
+      "formula": "Annual rent = monthly rent x 12. Gross rental yield = annual rent / property price x 100. Tool base me purchase price leta hai, isliye rent same rehne par bhi price badhne se yield girta hai. Yeh gross yield hai: maintenance, property tax aur khaali pade hafte isme se nahi ghate, isliye asli net yield hamesha kam hota hai.",
+      "when": [
+        "Jab aap do flats, alag price par, ek hi scale se compare kar rahe ho.",
+        "Jab aap dekhna chahte ho ki itne paise par rental FD se better hai ya nahi.",
+        "Jab aap dekhna chahte ho ki rent thoda kam hone par yield kitna badalta hai."
+      ],
+      "mistakes": [
+        "Gross yield ko apna final return samajhna — maintenance aur vacancy pehle ghate hain.",
+        "Rent ko property price ke bajaye loan amount se divide karna.",
+        "Furnished flat ka yield bare shell se compare karna, price adjust kiye bina."
+      ]
     }
   }
 }

@@ -843,6 +843,104 @@
         "Confusing contribution margin with net margin. Contribution ignores fixed costs, so it is always the larger number.",
         "Discounting by the contribution percentage rather than the price. A 20% cut on a 40% contribution margin removes half the contribution, not a fifth of it."
       ]
+    },
+    "codrto": {
+      "what": "The COD & RTO Loss Calculator puts a rupee figure on the cash-on-delivery orders that come back. RTO — return to origin — is the parcel a courier carries to the customer, fails to deliver, and brings back to you; you pay the forward freight, the return freight and often the packaging, and you never make the sale. The tool turns your COD volume and RTO rate into the number of parcels that bounce and the money those bounces take out of the month. Open it when a category looks profitable on paper but the bank balance disagrees, because RTO is the cost that never appears in a margin sheet until it is added by hand.",
+      "formula": "RTO orders = total COD orders x RTO rate / 100. Total loss = RTO orders x loss per RTO order. Loss per RTO order is the all-in cost of one bounce — forward freight plus return freight plus packaging plus any re-attempt charge — not just the courier bill you see first. The tool multiplies the two so you can watch the loss scale with volume.",
+      "when": [
+        "Your COD share is high and you want to know what the returns cost before you cut it.",
+        "You are deciding whether a prepaid discount is worth moving customers off COD.",
+        "You are negotiating freight rates and want to show the courier what RTO is costing you."
+      ],
+      "mistakes": [
+        "Counting only the return freight and forgetting the forward leg, which you pay either way.",
+        "Treating RTO as a share of all orders rather than of COD orders, which understates it.",
+        "Ignoring the second sale a returned parcel kills, since the stock sits out of the market for a week."
+      ]
+    },
+    "marketplace": {
+      "what": "The Marketplace Fee Calculator shows what a seller actually banks from an order on Amazon, Flipkart or Meesho after the platform takes its cut. The commission is the headline charge, but it is rarely the only one: shipping, closing fees, payment-gateway charges and any fixed other fees come out of the same order. The tool subtracts all of them from the selling price and shows the amount that lands in your account. It is the number that decides whether a product is worth listing at a price the platform's own fee table can eat alive.",
+      "formula": "Total fees = selling price x commission rate / 100 + shipping fee + other fees. You receive = selling price minus total fees. Commission is charged on the selling price, not on your cost, so a 15% commission on a 1,000 rupee item is 150 rupees whether you made the product for 300 or for 800. Enter your real shipping and other fees, not a guess, or the answer flatters you.",
+      "when": [
+        "You are pricing a product for a marketplace and want the net payout, not the gross price.",
+        "You are comparing the same product across two marketplaces with different fee tables.",
+        "A commission slab changed and you want to see how much of the price you just lost."
+      ],
+      "mistakes": [
+        "Using the commission rate alone and forgetting shipping and closing fees, which can double the cut.",
+        "Assuming the fee applies to your cost. It applies to the selling price, so a thin-margin item can lose money.",
+        "Forgetting GST on the commission, which the platform charges on its own fee."
+      ]
+    },
+    "agefun": {
+      "what": "The Age Calculator turns a date of birth into an exact age in years and months, counting the way a form or an application counts rather than the way a birthday card does. It settles whether you have completed a given number of years on today's date — the figure that decides eligibility for a school admission cut-off, a government form, a pension or an age-limited account. Because it works off today's date, it gives the age as of the day you open it, so the same birth date answers differently before and after the birthday.",
+      "formula": "Age in years = today's year minus the birth year, less one if this year's birthday has not yet arrived. Age in months = 12 x years + the whole months since the last birthday. The calculator compares the day, month and year of the birth date with today's date, so it handles a February birthday and a month-end birthday correctly instead of assuming every month is thirty days.",
+      "when": [
+        "You are filling a form that asks for completed years and want the exact figure, not a rounded one.",
+        "You are checking an age cut-off for a school, exam or scheme on a fixed date.",
+        "You want the exact age in years and months for a document or an application."
+      ],
+      "mistakes": [
+        "Subtracting the years and ignoring whether this year's birthday has passed, which overstates the age.",
+        "Rounding up to the next birthday when the form wants completed years.",
+        "Using a rough birth-year-plus-a-bit figure for a cut-off date, where a single day decides eligibility."
+      ]
+    },
+    "luckynumber": {
+      "what": "Your lucky number here is the single digit your full date of birth reduces to. Add every digit of the day, the month and the year — 15-06-1995 becomes 1+5+0+6+1+9+9+5 = 36 — then add the digits of that total, 3+6 = 9, and repeat until one digit from 1 to 9 is left. That final digit is what the tool calls your lucky number. It reads the same date the same way every time, so it is a fixed personal label rather than a daily draw, and it changes only if you were born on a different day.",
+      "formula": "The tool strips the hyphens from the date of birth, adds all eight digits together, and if the total is more than nine it adds the digits of that total again. 1995-06-15 sums to 36, and 3+6 reduces to 9. The loop stops the moment a single digit 1-9 remains, which is why every date lands on one of nine numbers and none on a zero.",
+      "when": [
+        "You are filling in a profile and want the number that matches your birth date.",
+        "A friend quotes their lucky number and you want to check which date it came from.",
+        "You are curious whether two people born the same day share a number."
+      ],
+      "mistakes": [
+        "Adding the digits of the date exactly as written, hyphens and all, instead of the eight digits alone.",
+        "Stopping at a two-digit total like 36 instead of reducing it to 9.",
+        "Treating the number as a forecast. It is a fixed reduction of your date, not a prediction for the day."
+      ]
+    },
+    "numerology": {
+      "what": "The Numerology Calculator blends two inputs into one digit: the letters of your name and your date of birth. Each letter is turned into a number from its position in the alphabet — A is 1, J is 10, S is 19 — the values are added, the digits of the total are added again until a single digit is left, and the birth date is reduced the same way and folded in. The result depends on how the name is spelled, so 'Aarav' and 'Aarav ' can differ, and on the birth date underneath it.",
+      "formula": "Take the name with everything except letters and digits removed. Add the character code of each remaining character, add the digits of the date of birth, then reduce the running total to one digit by summing its digits until a single 1-9 remains. Because a character code is used, an uppercase letter and a lowercase one do not give the same number.",
+      "when": [
+        "You want the name-based number for a name-spelling or baby-name choice.",
+        "You have a name and a date and want one combined number, not two separate ones.",
+        "You are comparing how two spellings of the same name land differently."
+      ],
+      "mistakes": [
+        "Expecting the same answer for 'Aarav' and 'aarav' — the tool reads character codes, so the case changes the result.",
+        "Leaving a middle name out and wondering why the number moved.",
+        "Reading the output as advice about the person rather than as a made-up number drawn from their own name."
+      ]
+    },
+    "rentbuy": {
+      "what": "Rent vs Buy weighs the rent you would pay over a set number of years against what buying the same home costs before any loan. The rent side is the monthly rent multiplied by twelve and then by the years you are comparing. The buy side is the home price plus the one-time upfront costs — stamp duty, registration, brokerage, the moving-in expenses that never come back. The tool does not model a home loan, so it answers the narrower question of which side is smaller when you are paying cash or setting the loan aside for the moment.",
+      "formula": "Total rent = monthly rent x 12 x years compared. Buy cost before loan = home price + upfront buy costs. The tool shows both and names the smaller one as the lower cost. It deliberately leaves out the EMI and the interest, so the buy figure is the cash you commit on day one and not the total you pay over the holding period.",
+      "when": [
+        "You are renting and want to see the break-even against buying with cash.",
+        "You want the one-time cost of a purchase, separate from the loan.",
+        "You are explaining to someone why a lower rent can still lose over five years."
+      ],
+      "mistakes": [
+        "Reading the buy figure as the full cost of owning — the loan interest is not in it.",
+        "Comparing a five-year rent total with a buy price for a home you would hold for twenty years.",
+        "Forgetting that stamp duty and registration sit inside the upfront number, not in the price."
+      ]
+    },
+    "rentalyield": {
+      "what": "Rental Yield Calculator turns the rent a property earns into an annual percentage of what it cost. Multiply the monthly rent by twelve to get the yearly rent, divide that by the purchase price and multiply by 100. A home bought for 50,00,000 that rents for 20,000 a month earns 2,40,000 a year, which is a gross yield of 4.8%. The percentage is the point: it puts two properties of different prices on one scale, and it lets you compare property with a fixed deposit or a bond on the same footing.",
+      "formula": "Annual rent = monthly rent x 12. Gross rental yield = annual rent / property price x 100. The tool uses the purchase price as the base, so the yield falls as the price rises even if the rent holds. This is a gross yield: it does not subtract maintenance, property tax, or the weeks the flat sits empty, so the true net yield is always lower.",
+      "when": [
+        "You are comparing two flats at different prices and want a common yardstick.",
+        "You are checking whether a rental beats a fixed deposit on the same money.",
+        "You want to see how a small drop in rent moves the yield."
+      ],
+      "mistakes": [
+        "Reading the gross yield as the return you keep — maintenance and vacancy come out of it first.",
+        "Dividing the rent by the loan amount instead of the property price.",
+        "Comparing a yield on a fully furnished flat with one on a bare shell without adjusting the price."
+      ]
     }
   }
 }

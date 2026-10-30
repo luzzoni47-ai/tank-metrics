@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T03:36:08Z",
+ "generated": "2026-10-30T05:44:11Z",
  "seed_count": 150,
  "suggestion_count": 1036,
  "keywords": [
@@ -13,7 +13,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc",
+   "query": "fd calculator sbi",
    "demand": 12,
    "covered": false,
    "score": 22.08,
@@ -37,6 +37,15 @@
    "score": 22.08,
    "from": [
     "mrp reverse calculator"
+   ]
+  },
+  {
+   "query": "fd calculator hdfc",
+   "demand": 11,
+   "covered": false,
+   "score": 20.24,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -82,15 +91,6 @@
    "score": 18.4,
    "from": [
     "ebitda and margin"
-   ]
-  },
-  {
-   "query": "fd calculator post office",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -193,7 +193,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator post office",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -328,7 +328,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator axis bank",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -463,7 +463,7 @@
    ]
   },
   {
-   "query": "fd calculator monthly payout",
+   "query": "fd calculator icici",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -553,15 +553,6 @@
    ]
   },
   {
-   "query": "store profit margin grocery",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "shop profit margin"
-   ]
-  },
-  {
    "query": "return on advertising spend roas formula",
    "demand": 8,
    "covered": false,
@@ -626,6 +617,15 @@
    "from": [
     "employee utilisation",
     "employee utilization rate"
+   ]
+  },
+  {
+   "query": "fd calculator monthly payout",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -865,15 +865,6 @@
    ]
   },
   {
-   "query": "ebitda share price",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "ebitda"
-   ]
-  },
-  {
    "query": "employee productivity rate epr",
    "demand": 5,
    "covered": false,
@@ -889,15 +880,6 @@
    "score": 9.2,
    "from": [
     "exit calculator"
-   ]
-  },
-  {
-   "query": "fd calculator indusind bank",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -2370,7 +2352,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator app",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2611,15 +2593,6 @@
    "score": 7.59,
    "from": [
     "epf calculator"
-   ]
-  },
-  {
-   "query": "fd calculator monthly interest",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -3029,7 +3002,7 @@
    ]
   },
   {
-   "query": "ebitda kya hota hai",
+   "query": "ebitda share price",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3047,7 +3020,7 @@
    ]
   },
   {
-   "query": "fd calculator pnb",
+   "query": "fd calculator indusind bank",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3210,7 +3183,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator by year",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3427,6 +3400,15 @@
    ]
   },
   {
+   "query": "fd calculator monthly interest",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "gas agency profit margin india",
    "demand": 10,
    "covered": true,
@@ -3622,6 +3604,24 @@
    "score": 6.9,
    "from": [
     "rental yield calculator"
+   ]
+  },
+  {
+   "query": "rental yield meaning",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "rental yield"
+   ]
+  },
+  {
+   "query": "return on investment roi calculator",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "return on investment roi"
    ]
   }
  ]

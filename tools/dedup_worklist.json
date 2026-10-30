@@ -1,13 +1,13 @@
 {
  "total": 101,
- "with_both_guides": 44,
- "remaining": 57,
+ "with_both_guides": 51,
+ "remaining": 50,
  "remaining_by_cat": {
-  "realestate": 10,
-  "dailyfun": 8,
   "agency": 8,
-  "pricing": 8,
+  "realestate": 8,
   "growth": 6,
+  "pricing": 6,
+  "dailyfun": 5,
   "taxwealth": 5,
   "ops": 3,
   "everyday": 2,
@@ -24,15 +24,6 @@
    "cat_size": 10,
    "has_en": false,
    "has_hi": true,
-   "overlap": null
-  },
-  {
-   "id": "agefun",
-   "name": "Age Calculator",
-   "cat": "dailyfun",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
    "overlap": null
   },
   {
@@ -234,24 +225,6 @@
    "overlap": null
   },
   {
-   "id": "luckynumber",
-   "name": "Lucky Number Calculator",
-   "cat": "dailyfun",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "numerology",
-   "name": "Numerology Calculator",
-   "cat": "dailyfun",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "numwords",
    "name": "Number to Words (Indian)",
    "cat": "everyday",
@@ -281,24 +254,6 @@
   {
    "id": "propertyvalue",
    "name": "Property Valuation Calculator",
-   "cat": "realestate",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "rentalyield",
-   "name": "Rental Yield Calculator",
-   "cat": "realestate",
-   "cat_size": 10,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "rentbuy",
-   "name": "Rent vs Buy Calculator",
    "cat": "realestate",
    "cat_size": 10,
    "has_en": false,
@@ -396,15 +351,6 @@
    "overlap": null
   },
   {
-   "id": "codrto",
-   "name": "COD & RTO Loss Calculator",
-   "cat": "pricing",
-   "cat_size": 8,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
    "id": "discountimpact",
    "name": "Discount Impact on Profit",
    "cat": "pricing",
@@ -443,15 +389,6 @@
   {
    "id": "landed",
    "name": "Landed Cost Calculator",
-   "cat": "pricing",
-   "cat_size": 8,
-   "has_en": false,
-   "has_hi": false,
-   "overlap": null
-  },
-  {
-   "id": "marketplace",
-   "name": "Marketplace Fee Calculator",
    "cat": "pricing",
    "cat_size": 8,
    "has_en": false,

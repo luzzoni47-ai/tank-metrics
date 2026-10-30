@@ -1,27 +1,7 @@
 {
  "pages_measured": 101,
- "pages_with_a_near_duplicate": 52,
+ "pages_with_a_near_duplicate": 45,
  "worst_pairs": [
-  {
-   "overlap": 0.659,
-   "a": "/cod-and-rto-loss-calculator",
-   "b": "/marketplace-fee-calculator"
-  },
-  {
-   "overlap": 0.659,
-   "a": "/age-calculator",
-   "b": "/lucky-number-calculator"
-  },
-  {
-   "overlap": 0.657,
-   "a": "/lucky-number-calculator",
-   "b": "/numerology-calculator"
-  },
-  {
-   "overlap": 0.656,
-   "a": "/rent-vs-buy-calculator",
-   "b": "/rental-yield-calculator"
-  },
   {
    "overlap": 0.654,
    "a": "/distributor-and-retailer-margin",
@@ -44,6 +24,11 @@
   },
   {
    "overlap": 0.65,
+   "a": "/import-duty-and-customs-calculator",
+   "b": "/landed-cost-calculator"
+  },
+  {
+   "overlap": 0.65,
    "a": "/cpc-to-cpa-converter",
    "b": "/cpm-to-cpc-converter"
   },
@@ -61,37 +46,24 @@
    "overlap": 0.649,
    "a": "/brokerage-agent-commission",
    "b": "/down-payment-calculator"
+  },
+  {
+   "overlap": 0.644,
+   "a": "/cagr-compound-annual-growth-rate",
+   "b": "/run-rate"
+  },
+  {
+   "overlap": 0.643,
+   "a": "/built-up-area-vs-carpet-area",
+   "b": "/land-area-unit-converter"
+  },
+  {
+   "overlap": 0.641,
+   "a": "/down-payment-calculator",
+   "b": "/land-area-unit-converter"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/cod-and-rto-loss-calculator",
-   "closest_overlap": 0.659
-  },
-  {
-   "page": "/marketplace-fee-calculator",
-   "closest_overlap": 0.659
-  },
-  {
-   "page": "/age-calculator",
-   "closest_overlap": 0.659
-  },
-  {
-   "page": "/lucky-number-calculator",
-   "closest_overlap": 0.659
-  },
-  {
-   "page": "/numerology-calculator",
-   "closest_overlap": 0.657
-  },
-  {
-   "page": "/rent-vs-buy-calculator",
-   "closest_overlap": 0.656
-  },
-  {
-   "page": "/rental-yield-calculator",
-   "closest_overlap": 0.656
-  },
   {
    "page": "/distributor-and-retailer-margin",
    "closest_overlap": 0.654
@@ -111,7 +83,35 @@
   {
    "page": "/down-payment-calculator",
    "closest_overlap": 0.651
+  },
+  {
+   "page": "/property-roi-calculator",
+   "closest_overlap": 0.651
+  },
+  {
+   "page": "/built-up-area-vs-carpet-area",
+   "closest_overlap": 0.651
+  },
+  {
+   "page": "/import-duty-and-customs-calculator",
+   "closest_overlap": 0.65
+  },
+  {
+   "page": "/landed-cost-calculator",
+   "closest_overlap": 0.65
+  },
+  {
+   "page": "/cpc-to-cpa-converter",
+   "closest_overlap": 0.65
+  },
+  {
+   "page": "/cpm-to-cpc-converter",
+   "closest_overlap": 0.65
+  },
+  {
+   "page": "/hra-exemption-calculator",
+   "closest_overlap": 0.649
   }
  ],
- "median_overlap": 0.643
+ "median_overlap": 0.634
 }
