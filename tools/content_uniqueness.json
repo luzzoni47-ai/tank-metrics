@@ -16,51 +16,6 @@
    "overlap": 0.651,
    "a": "/down-payment-calculator",
    "b": "/property-roi-calculator"
-  },
-  {
-   "overlap": 0.651,
-   "a": "/built-up-area-vs-carpet-area",
-   "b": "/down-payment-calculator"
-  },
-  {
-   "overlap": 0.65,
-   "a": "/import-duty-and-customs-calculator",
-   "b": "/landed-cost-calculator"
-  },
-  {
-   "overlap": 0.65,
-   "a": "/cpc-to-cpa-converter",
-   "b": "/cpm-to-cpc-converter"
-  },
-  {
-   "overlap": 0.649,
-   "a": "/hra-exemption-calculator",
-   "b": "/ppf-calculator"
-  },
-  {
-   "overlap": 0.649,
-   "a": "/client-lifetime-value-ltv",
-   "b": "/client-profitability"
-  },
-  {
-   "overlap": 0.649,
-   "a": "/brokerage-agent-commission",
-   "b": "/down-payment-calculator"
-  },
-  {
-   "overlap": 0.644,
-   "a": "/cagr-compound-annual-growth-rate",
-   "b": "/run-rate"
-  },
-  {
-   "overlap": 0.643,
-   "a": "/built-up-area-vs-carpet-area",
-   "b": "/land-area-unit-converter"
-  },
-  {
-   "overlap": 0.641,
-   "a": "/down-payment-calculator",
-   "b": "/land-area-unit-converter"
   }
  ],
  "worst_pages": [
@@ -75,42 +30,6 @@
   {
    "page": "/exit-calculator",
    "closest_overlap": 0.653
-  },
-  {
-   "page": "/moic-and-irr",
-   "closest_overlap": 0.653
-  },
-  {
-   "page": "/down-payment-calculator",
-   "closest_overlap": 0.651
-  },
-  {
-   "page": "/property-roi-calculator",
-   "closest_overlap": 0.651
-  },
-  {
-   "page": "/built-up-area-vs-carpet-area",
-   "closest_overlap": 0.651
-  },
-  {
-   "page": "/import-duty-and-customs-calculator",
-   "closest_overlap": 0.65
-  },
-  {
-   "page": "/landed-cost-calculator",
-   "closest_overlap": 0.65
-  },
-  {
-   "page": "/cpc-to-cpa-converter",
-   "closest_overlap": 0.65
-  },
-  {
-   "page": "/cpm-to-cpc-converter",
-   "closest_overlap": 0.65
-  },
-  {
-   "page": "/hra-exemption-calculator",
-   "closest_overlap": 0.649
   }
  ],
  "median_overlap": 0.634
