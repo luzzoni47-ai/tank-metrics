@@ -28,8 +28,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SITEMAP = ROOT / "public" / "sitemap.xml"
 KEY_FILE = ROOT / "tools" / "indexnow_key.txt"
 ENDPOINT = "https://api.indexnow.org/indexnow"
-HOST = "tankmetrics.in"
-BASE = f"https://{HOST}"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import HOST, BASE  # noqa: E402
 MAX_PER_REQUEST = 10000
 
 

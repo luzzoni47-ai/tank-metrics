@@ -1,0 +1,9 @@
+{
+  "_comment": "Copy to .openhands/site.json in a new site's repo. Every tool that imports tools/siteconfig.py follows these values. The file is gitignored on purpose: the IndexNow key is a credential and a repo should not have to publish its own host.",
+
+  "host": "example.in",
+  "repo": "owner/repo-name",
+  "brand": "Example Brand",
+  "indexnow_key": "paste-32-char-key-here",
+  "bing_user_agent": "ExampleBing/1.0"
+}

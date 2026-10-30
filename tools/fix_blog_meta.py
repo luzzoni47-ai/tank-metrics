@@ -19,11 +19,13 @@ appended.
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 BRAND = "Tank Metrics"
 TITLE_MAX = 60
 DESC_MIN, DESC_MAX = 150, 158

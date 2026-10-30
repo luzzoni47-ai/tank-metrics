@@ -22,12 +22,14 @@ import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from html import escape
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
 NEWS = json.loads((Path(__file__).resolve().parent / "news.json").read_text(encoding="utf-8"))
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 TITLE = "Tank Metrics — Startups, Shark Tank and Money in Rupees"
 DESC = ("Shark Tank India deals, startup valuation and the money maths behind Indian "
         "businesses, explained in plain English and Hinglish.")

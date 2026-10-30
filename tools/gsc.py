@@ -43,7 +43,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-HOST = "tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import HOST  # noqa: E402
 SITEMAP_PATH = "/sitemap.xml"
 SCOPES = "https://www.googleapis.com/auth/webmasters"
 TOKEN_URI = "https://oauth2.googleapis.com/token"

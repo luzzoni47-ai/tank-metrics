@@ -47,7 +47,8 @@ except ImportError:  # Pillow is optional; the guard needs it, the fix does not.
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "public" / "site"
 PUB = ROOT / "public"
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 
 # The four Google colours the brand mark is built from. An icon made of these is
 # the brand mark; an icon that is nearly all black is the v0 square.

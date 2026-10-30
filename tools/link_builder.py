@@ -42,11 +42,13 @@ import os
 import re
 import urllib.error
 import urllib.request
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTREACH = ROOT / "tools" / "outreach"
-HOST = "tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import HOST  # noqa: E402
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 

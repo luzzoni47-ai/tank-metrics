@@ -27,7 +27,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 REPORTS = Path(__file__).resolve().parent / "reports"
-DEFAULT_BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE as DEFAULT_BASE  # noqa: E402
 URL_MAP = Path(__file__).resolve().parent / "url-map.json"
 PUBLIC = Path(__file__).resolve().parent.parent / "public"
 UA = "TankMetrics-SEO-Monitor/1.0"

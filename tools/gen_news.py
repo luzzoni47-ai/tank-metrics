@@ -18,12 +18,14 @@ import html
 import json
 import re
 from datetime import date
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
 NEWS = json.loads((Path(__file__).parent / "news.json").read_text(encoding="utf-8"))
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 
 TOP_NAV = (
     '<nav class="toplinks"><a href="/">Home</a> '

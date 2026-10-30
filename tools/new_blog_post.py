@@ -37,7 +37,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
 HINDI = ROOT / "tools" / "hindi"
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 BRAND = "Tank Metrics"
 TITLE_MAX = 60
 DESC_MIN, DESC_MAX = 150, 158

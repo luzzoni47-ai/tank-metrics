@@ -17,11 +17,13 @@ from __future__ import annotations
 import json
 import re
 from datetime import datetime
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 MARKER = "<!-- blog-schema -->"
 
 TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.S | re.I)

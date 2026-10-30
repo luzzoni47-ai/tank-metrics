@@ -27,13 +27,15 @@ from __future__ import annotations
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
 URL_MAP = ROOT / "tools" / "url-map.json"
 OUT = PUBLIC / "llms.txt"
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S | re.I)
 H1_RE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.S | re.I)

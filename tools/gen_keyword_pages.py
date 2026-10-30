@@ -43,7 +43,8 @@ from gen_tool_pages import ACCENTS, DATA, field_html  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
 PAGES = json.loads((Path(__file__).parent / "keyword_pages.json").read_text(encoding="utf-8"))
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 CTA = "Try Free on TankMetrics.in"
 
 CATNAMES = {x["id"]: x["name"] for x in DATA["cats"]}

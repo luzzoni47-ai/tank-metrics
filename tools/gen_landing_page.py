@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import html
 import json
+import sys
 from pathlib import Path
 
 from landing_style import LP_CSS
@@ -34,7 +35,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
 OUT_DIR = SITE / "digital-products"
 OUT = OUT_DIR / "indian-business-financial-model.html"
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 
 # The clean public path. clean_urls.py owns the mapping; this is the same value.
 CLEAN = "/digital-products/indian-business-financial-model"

@@ -43,9 +43,8 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-HOST = "tankmetrics.in"
-SITE = f"https://{HOST}/"
-SITEMAP = ROOT / "public" / "sitemap.xml"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import HOST, SITE, UA, SITEMAP  # noqa: E402
 STATE = ROOT / ".openhands" / "bing_submitted.json"
 API = "https://ssl.bing.com/webmaster/api.svc/json"
 UA = "TankMetrics-Bing/1.0 (+https://tankmetrics.in)"

@@ -29,7 +29,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "public" / "site"
 PUB = ROOT / "public"
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 
 # The brand mark's four colours, straight from the logo.
 BRAND = {(66, 133, 244), (234, 67, 53), (242, 166, 0), (52, 168, 83)}

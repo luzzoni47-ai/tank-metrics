@@ -50,7 +50,8 @@ ROOT = Path(__file__).resolve().parent.parent
 REPORTS = ROOT / "tools" / "reports"
 STATE_FILE = Path("/tmp/tank_metrics_brand_state.json")
 
-HOST = "tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import HOST  # noqa: E402
 UA = "Mozilla/5.0 (compatible; TankMetricsBrandMonitor/1.0; +https://tankmetrics.in)"
 
 # The phrases worth watching. The quoted forms ask the engine for the exact

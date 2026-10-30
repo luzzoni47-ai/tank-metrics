@@ -12,6 +12,7 @@ Nothing here changes what visitors already see on the home page.
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -22,7 +23,8 @@ GUIDES = json.loads((Path(__file__).parent / "tool_guides.json").read_text(encod
 HGUIDES = json.loads(
     (Path(__file__).parent / "tool_guides_hinglish.json").read_text(encoding="utf-8"))
 EXAMPLES = json.loads((Path(__file__).parent / "tool_examples.json").read_text(encoding="utf-8"))
-BASE = "https://tankmetrics.in"
+sys.path.insert(0, str(ROOT / "tools"))
+from siteconfig import BASE  # noqa: E402
 
 ACCENTS = {
     "blue": "#4285F4", "green": "#34A853",
