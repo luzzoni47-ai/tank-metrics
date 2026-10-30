@@ -20,6 +20,7 @@ repository is public.
     python3 tools/bing.py quota
     python3 tools/bing.py feed             # hand Bing the sitemap (no quota cost)
     python3 tools/bing.py submit           # up to 100 fresh URLs
+    python3 tools/bing.py indexnow         # all fresh URLs, no 100/day cap
     python3 tools/bing.py submit --dry-run
     python3 tools/bing.py stats 28         # top queries, last 28 days
     python3 tools/bing.py pages 28         # per-page impressions and clicks
@@ -42,7 +43,8 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://tankmetrics.in/"
+HOST = "tankmetrics.in"
+SITE = f"https://{HOST}/"
 SITEMAP = ROOT / "public" / "sitemap.xml"
 STATE = ROOT / ".openhands" / "bing_submitted.json"
 API = "https://ssl.bing.com/webmaster/api.svc/json"
@@ -321,6 +323,50 @@ def cmd_links() -> None:
         print(f"    {l.get('Url')}: {l.get('Count', 0)}")
 
 
+INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
+INDEXNOW_KEY = "91ac4c920695a74eec34342ceb18acbf"
+
+
+def cmd_indexnow() -> None:
+    """Push every fresh URL through IndexNow, which has no 100/day cap.
+
+    This is the escape hatch from the SubmitUrl quota: IndexNow reaches Bing,
+    Yandex, Seznam and Naver in one POST and answers 200/202 on acceptance, so a
+    176-URL sitemap clears in a single call instead of two days. It shares the
+    same submitted-URL record as `submit`, so the two never fight: whichever runs
+    first marks the URL, and the other then sees nothing to do.
+    """
+    st = load_state()
+    cutoff = (date.today() - timedelta(days=RESUBMIT_DAYS)).isoformat()
+    urls = sitemap_urls()
+    todo = [u for u in urls if st.get(u, "") < cutoff]
+
+    print(f"  sitemap: {len(urls)} urls | never/old: {len(todo)}")
+    if not todo:
+        print("  nothing to submit")
+        return
+    if DRY:
+        print(f"    would send {len(todo)} urls to IndexNow")
+        return
+
+    body = {"host": HOST, "key": INDEXNOW_KEY,
+            "keyLocation": f"https://{HOST}/{INDEXNOW_KEY}.txt", "urlList": todo}
+    req = urllib.request.Request(
+        INDEXNOW_ENDPOINT, data=json.dumps(body).encode(),
+        headers={"Content-Type": "application/json; charset=utf-8", "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=90) as r:
+            code = r.status
+    except urllib.error.HTTPError as e:
+        sys.exit(f"  IndexNow failed: HTTP {e.code} {e.read().decode()[:200]}")
+
+    today = date.today().isoformat()
+    for u in todo:
+        st[u] = today
+    save_state(st)
+    print(f"  IndexNow accepted {len(todo)} url(s) (HTTP {code})")
+
+
 def cmd_blocked() -> None:
     rows = call("GetBlockedUrls", params={"siteUrl": SITE}) or []
     if not rows:
@@ -378,6 +424,8 @@ def main() -> None:
         cmd_feed()
     elif cmd == "submit":
         cmd_submit()
+    elif cmd == "indexnow":
+        cmd_indexnow()
     elif cmd == "stats":
         cmd_stats(int(args[1]) if len(args) > 1 else 28)
     elif cmd == "pages":

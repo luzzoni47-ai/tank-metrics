@@ -72,11 +72,14 @@ def main() -> dict:
 
     if DRY:
         report["feed"] = "dry run"
-        report["submit"] = "dry run"
+        report["indexnow"] = "dry run"
     else:
         # The feed costs no quota and is what makes Bing crawl on its own, so it
         # goes first and is redone every run - it is idempotent.
         report["feed"] = run("feed").replace("\n", " | ")
+        # IndexNow carries every fresh URL with no 100/day cap, so it is the
+        # primary push and `submit` (the capped API) is only a backstop.
+        report["indexnow"] = run("indexnow").replace("\n", " | ")
         report["submit"] = run("submit").replace("\n", " | ")
 
     # Query data only exists once Bing has served impressions, so an empty

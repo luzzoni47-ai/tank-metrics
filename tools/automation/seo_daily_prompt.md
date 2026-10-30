@@ -92,14 +92,17 @@ login, so it is the one search channel this run can both PUSH to and READ from.
 ```
 python3 tools/bing.py report       # verification, crawler, feeds, index, links
 python3 tools/bing.py feed         # register the sitemap (costs no quota)
-python3 tools/bing.py submit       # spend the day's 100-URL quota
+python3 tools/bing.py indexnow     # every fresh URL, no 100/day cap
+python3 tools/bing.py submit       # the capped API, as a backstop
 ```
 
-The API allows **100 submitted URLs per day**, so `tools/bing.py` keeps the
-record of what has already gone (KV store in automation, `.openhands/bing_submitted.json`
-locally) and each run picks up where the last stopped. Without that record every
-run would re-send the same first 100 URLs and the tail of the sitemap would
-never be announced.
+**Two channels, different limits.** `SubmitUrlbatch` is capped at **100 URLs a
+day** while the sitemap is 176 and grows, so `indexnow` is the primary push - one
+POST reaches Bing, Yandex, Seznam and Naver with no daily cap. `submit` is the
+backstop. Both share one record of what has gone (KV `bing_submitted` in
+automation, `.openhands/bing_submitted.json` locally), so whichever runs first
+marks the URL and the other then sees nothing to do; without that record every
+run would re-send the same first 100 URLs and the tail would never be announced.
 
 Re-run `feed` after a big rebuild; it costs nothing and is what makes Bing crawl
 on its own. `bing.py crawl` and `bing.py url <url>` are the closest thing here to

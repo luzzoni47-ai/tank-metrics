@@ -57,6 +57,8 @@ echo "==> fix_blog_meta"
 python3 tools/fix_blog_meta.py
 echo "==> add_blog_schema (Article + BreadcrumbList on guides, incl. keyword pages)"
 python3 tools/add_blog_schema.py
+echo "==> gen_feed (RSS of news + guides, after the schema so dates exist)"
+python3 tools/gen_feed.py
 echo "==> fix_static_seo"
 python3 tools/fix_static_seo.py
 echo "==> add_pwa"
