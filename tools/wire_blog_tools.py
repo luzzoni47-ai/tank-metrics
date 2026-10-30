@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-reverse-pricing-explained": [
+        ("/mrp-reverse-calculator", "MRP Reverse",
+         "work back from your selling price to the cost the item has to come in at"),
+        ("/markup-vs-margin", "Markup vs Margin",
+         "see why the same rupee figure is two different percentages"),
+    ],
     "blog-grocery-store-profit-margin": [
         ("/break-even-point", "Break-Even Point",
          "find the baskets a month that cover the shop's rent and fixed costs"),

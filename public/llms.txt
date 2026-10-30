@@ -151,6 +151,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Pre Money vs Post Money Valuation India Explained](https://tankmetrics.in/pre-money-post-money-valuation-india)
 - [Profit Margin Calculator in Rupees (₹)](https://tankmetrics.in/profit-margin-calculator-rupees)
 - [Revenue Multiple Calculator India](https://tankmetrics.in/revenue-multiple-calculator-india)
+- [Reverse Pricing: Find Your Cost Ceiling First](https://tankmetrics.in/reverse-pricing-explained)
 - [Shark Tank Royalty Deal Calculator - Royalty vs Equity](https://tankmetrics.in/royalty-deal-calculator-shark-tank)
 - [Runway Calculator for Startups India - Months Left](https://tankmetrics.in/runway-calculator-startups-india)
 - [Shark Tank India Deal Calculator - Check Any Deal](https://tankmetrics.in/shark-tank-india-deal-calculator)
