@@ -259,7 +259,217 @@ def slugify(s: str) -> str:
 
 # ------------------------------------------------------------------- packets
 
+# Every venue asks a different question, so every venue gets a different packet.
+# One generic blob for all of them is the thing that gets a submission flagged:
+# Show HN wants a plain technical sentence and no marketing, Product Hunt wants
+# a tagline and a maker comment, a directory wants categories. A packet that is
+# byte-identical across three venues is also, obviously, not written for any of
+# them. Keys are prospect names; anything not listed falls back to `generic`.
+VENUE = {
+    "AlternativeTo": {
+        "fields": [("Name", "Tank Metrics"), ("URL", BASE),
+                   ("Alternative to", "Excel templates, manual GST and EMI calculation"),
+                   ("License", "Free"), ("Platforms", "Web (works on mobile)"),
+                   ("Categories", "Business & Commerce, Finance, Calculators")],
+        "blurb": ("Tank Metrics is a free web app with 100+ calculators for Indian small "
+                  "businesses - GST, loan EMI, profit margin, break-even, payroll and "
+                  "valuation. It is a lighter alternative to keeping the same sums in a "
+                  "spreadsheet: no sign-up, no install, and each page shows the formula "
+                  "it uses."),
+        "note": "AlternativeTo asks what this replaces and under what licence - both answered above.",
+    },
+    "Product Hunt": {
+        "fields": [("Name", "Tank Metrics"), ("URL", BASE),
+                   ("Tagline", "100+ free calculators for Indian small businesses"),
+                   ("Topics", "Fintech, Productivity, Calculators, Small Business"),
+                   ("Pricing", "Free")],
+        "blurb": ("Every number an Indian small business runs on, in one free place. GST "
+                  "with and without tax, loan EMI and total interest, profit and operating "
+                  "margin, break-even, CAC and LTV, burn rate and runway, valuation "
+                  "multiples, payroll. No account, works on a phone, formula shown on "
+                  "every page."),
+        "maker": ("I kept rebuilding the same GST and EMI sums in a spreadsheet for every "
+                  "project, so I put them in one place where the formula is visible and "
+                  "the answer can be checked by hand. Free, no sign-up. Happy to hear "
+                  "which calculator is missing."),
+        "note": "Product Hunt wants a tagline, topics and a first maker comment - all three above.",
+    },
+    "Hacker News Show HN": {
+        "fields": [("Title", "Show HN: 100+ free calculators for Indian business maths"),
+                   ("URL", BASE)],
+        "blurb": ("I built a set of calculators for the Indian business sums that are "
+                  "annoying to get right: GST with and without tax, EMI on a "
+                  "reducing-balance vs flat-rate loan, break-even, CAC/LTV, burn and "
+                  "runway, valuation multiples. Static pages, no account, no tracking "
+                  "beyond basic analytics."),
+        "maker": ("Two things that bit me while building this and are worth knowing: the "
+                  "rate a lender quotes is often a flat rate, not reducing balance, so the "
+                  "effective rate is much higher than it looks; and GST has to be backed "
+                  "out of an inclusive price differently from the way it is added to an "
+                  "exclusive one. Both are handled explicitly. Source is on GitHub. "
+                  "Feedback on anything that is wrong for a specific Indian context is "
+                  "welcome."),
+        "note": ("Show HN is technical and allergic to marketing. Keep the title plain, "
+                 "say what it is and how it is built, and do not use the tagline."),
+    },
+    "BetaList": {
+        "fields": [("Name", "Tank Metrics"), ("URL", BASE),
+                   ("Tagline", "Free calculators for Indian business, in rupees"),
+                   ("Description", "100+ free calculators for Indian founders and small businesses")],
+        "blurb": ("A free collection of 100+ calculators for Indian small businesses and "
+                  "founders: GST, EMI, margin, break-even, payroll, valuation. No "
+                  "sign-up, works on a phone, formula shown on each page."),
+        "note": "BetaList is for new products - the launch framing, not the directory fields.",
+    },
+    "Indie Hackers": {
+        "fields": [("Product", "Tank Metrics"), ("URL", BASE),
+                   ("One-liner", "Free Indian business calculators, built solo")],
+        "blurb": ("100+ calculators for Indian business maths - GST, EMI, margin, "
+                  "break-even, CAC/LTV, runway, valuation. Built and run solo, free, no "
+                  "account."),
+        "maker": ("Built this solo after rebuilding the same GST and EMI sheets for every "
+                  "project. Free and no sign-up on purpose - the whole value is that you "
+                  "can check the formula by hand. Would like to hear what to add next."),
+        "note": "Indie Hackers rewards the build story - keep the maker note, it is the point.",
+    },
+    "Crunchbase": {
+        "fields": [("Organization", "Tank Metrics"), ("Website", BASE),
+                   ("Short description", "Free financial calculators for Indian businesses")],
+        "blurb": ("Tank Metrics publishes free financial calculators for Indian small "
+                  "businesses and founders, covering GST, loan EMI, margins, break-even, "
+                  "payroll and startup valuation."),
+        "note": ("Crunchbase wants a factual company description only. Do not claim "
+                 "funding, employees or investors that do not exist."),
+    },
+    "Startup India": {
+        "fields": [("Entity", "Tank Metrics"), ("Website", BASE),
+                   ("Sector", "Financial services / Software"), ("Stage", "Early")],
+        "blurb": ("Tank Metrics provides free financial calculators for Indian small "
+                  "businesses - GST, EMI, margin, break-even, payroll and startup "
+                  "valuation - in rupees, with no sign-up."),
+        "note": ("Startup India is a government registry. Fill only fields that are true; "
+                 "leave DPIIT recognition and funding blank if not held."),
+    },
+    "IndiaMART": {
+        "fields": [("Business name", "Tank Metrics"), ("Website", BASE),
+                   ("Category", "Business services / Financial software")],
+        "blurb": ("Free online calculators for Indian businesses: GST, loan EMI, profit "
+                  "margin, break-even and payroll, with the formula shown on each page."),
+        "note": "IndiaMART is a business directory - use the plain business framing.",
+    },
+    "SaaSworthy": {
+        "fields": [("Product", "Tank Metrics"), ("URL", BASE),
+                   ("Category", "Financial software, Calculators"),
+                   ("Free trial", "Free, no sign-up")],
+        "blurb": ("100+ free financial calculators for Indian businesses and startups, "
+                  "covering GST, EMI, margins, break-even, CAC/LTV, runway and valuation."),
+        "note": "Software directory - answer the pricing and category fields exactly.",
+    },
+    "Capterra India": {
+        "fields": [("Vendor", "Tank Metrics"), ("Product", "Tank Metrics"), ("URL", BASE),
+                   ("Category", "Financial software"), ("Pricing", "Free")],
+        "blurb": ("A free suite of 100+ financial calculators for Indian small businesses "
+                  "and founders, covering GST, loan EMI, margin, break-even, payroll and "
+                  "valuation multiples."),
+        "note": "Capterra is a vendor listing - use the vendor/product framing.",
+    },
+    "GetApp": {
+        "fields": [("Product", "Tank Metrics"), ("URL", BASE),
+                   ("Category", "Financial software"), ("Pricing", "Free")],
+        "blurb": ("Free financial calculators for Indian businesses: GST, EMI, margin, "
+                  "break-even, payroll and startup valuation, each showing its formula."),
+        "note": "GetApp mirrors Capterra's fields - keep the two descriptions distinct.",
+    },
+    "PitchWall": {
+        "fields": [("Name", "Tank Metrics"), ("URL", BASE),
+                   ("Tagline", "100+ free calculators for Indian businesses")],
+        "blurb": ("Free calculators for Indian business maths - GST, EMI, margin, "
+                  "break-even, payroll and valuation. No sign-up."),
+        "note": "Launch wall - one line only, no long description field.",
+    },
+    "Launching Next": {
+        "fields": [("Name", "Tank Metrics"), ("URL", BASE),
+                   ("Tagline", "Free Indian business calculators")],
+        "blurb": ("100+ free calculators for Indian small businesses: GST, loan EMI, "
+                  "profit margin, break-even, payroll and startup valuation."),
+        "note": "Startup listing - short description only.",
+    },
+    "Awesome lists": {
+        "fields": [("Proposed entry",
+                    "- [Tank Metrics](https://tankmetrics.in) - free calculators for "
+                    "Indian business maths (GST, EMI, margin, break-even, payroll).")],
+        "blurb": ("A pull request that adds one line to a relevant section of an existing "
+                  "awesome list. Read that list's CONTRIBUTING first, and only open the PR "
+                  "if the list genuinely has a section the tool belongs in."),
+        "note": ("An awesome list is a curated repo, not a form. The deliverable is a PR "
+                 "with one honest line, and a maintainer can simply decline it."),
+    },
+    "Wikipedia external links": {
+        "fields": [("Note", "Only edit if a real article genuinely cites the tool as a source.")],
+        "blurb": ("This is a monitor, not a submission. Wikipedia external links are for "
+                  "sources an article relies on. Adding a link to promote the site is "
+                  "against policy and gets reverted - leave this alone unless a real "
+                  "article cites Tank Metrics."),
+        "note": "Deliberately a no-op. Do not submit anything here.",
+    },
+    "Dev.to": {
+        "fields": [("Title", "How Indian GST and EMI maths actually work, with the formulas"),
+                   ("Canonical URL", f"{BASE}/gst-calculator")],
+        "blurb": ("A technical write-up of the two sums people most often get wrong in "
+                  "India: backing GST out of an inclusive price rather than adding it, and "
+                  "the gap between a flat-rate and a reducing-balance loan quote. Each "
+                  "formula worked through with real numbers, then checkable against a "
+                  "calculator."),
+        "note": ("Dev.to is a writing platform - the deliverable is a real article, and the "
+                 "link goes in the canonical field rather than the body."),
+    },
+    "Hashnode": {
+        "fields": [("Title", "The Indian business sums that are easy to get wrong"),
+                   ("Canonical URL", f"{BASE}/break-even-point-explained")],
+        "blurb": ("A written piece on break-even, GST-inclusive pricing and loan rates in "
+                  "an Indian context, with the formulas and worked numbers, aimed at small "
+                  "business owners rather than analysts."),
+        "note": "Hashnode is a blog - write the article, link once at the end.",
+    },
+    "Medium": {
+        "fields": [("Title", "What a Shark Tank deal actually values your company at"),
+                   ("Canonical URL", f"{BASE}/shark-tank-valuation-calculator-in-crores")],
+        "blurb": ("A plain-language piece on how an investment amount and an equity stake "
+                  "produce a valuation, using Shark Tank India deals as the worked example, "
+                  "and why the number changes between pre-money and post-money."),
+        "note": ("Medium links are nofollow - the value here is referral readers, not "
+                 "PageRank. Write for the reader."),
+    },
+}
+
+
 def listing_packet(p: dict) -> str:
+    v = VENUE.get(p["name"])
+    if v:
+        fields = "\n".join(f"    {k:<14} {val}" for k, val in v["fields"])
+        extra = ""
+        if v.get("maker"):
+            extra = f"\nFirst comment (post this yourself, right after the listing):\n\n    {v['maker']}\n"
+        return f"""# {p['name']} - submission content
+
+- prospect: {p['url']}
+- kind: {p['kind']}
+- why this is legitimate: {p['note']}
+
+Copy the fields below into the form. Nothing here needs a payment.
+
+{fields}
+
+Description:
+
+    {v['blurb']}
+{extra}
+- how to submit: {v['note']}
+
+---
+AGENT-PREPARED - review and submit it yourself from your own account.
+"""
+
     return f"""# {p['name']} - submission content
 
 - prospect: {p['url']}
@@ -270,26 +480,18 @@ Copy the fields below into the form. Nothing here needs a payment.
 
     Name:        Tank Metrics
     URL:         {BASE}
-    Tagline:     Free Indian business calculators - GST, EMI, margin, payroll and 100 more
     Category:    Business Tools / Finance / Calculators
-    Tags:        calculator, gst, emi, finance, small business, india, free tool
     Language:    English and Hinglish
 
-Short description:
+Description:
 
     Tank Metrics is a free set of 100+ calculators for Indian small businesses
-    and founders. GST, loan EMI, profit margin, break-even, payroll, valuation
-    multiples and more. No sign-up, runs in the browser, and every page shows
-    the formula it uses.
+    and founders: GST, loan EMI, profit margin, break-even, payroll, CAC and
+    LTV, burn rate and runway, and valuation multiples. No sign-up, works on a
+    phone, and every page shows the formula it uses.
 
-Long description:
-
-    Tank Metrics covers the numbers an Indian small business actually runs on:
-    GST with and without tax, loan EMI and total interest, profit and operating
-    margin, break-even, CAC and LTV, burn rate and runway, valuation multiples
-    and payroll. Each calculator is one page, works on a phone, needs no
-    account, and states the formula so the answer can be checked by hand.
-    It is free.
+Read this venue's own guidelines before submitting, and trim the description to
+whatever length it actually allows.
 
 ---
 AGENT-PREPARED - review and submit it yourself from your own account.
