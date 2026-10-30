@@ -187,10 +187,42 @@ def icon_stats_bytes(buf):
     return brand, dark
 
 
+def check_site_verification() -> None:
+    """Every served page must carry the Google and Bing verification tags.
+
+    A verification tag is the only way these engines will talk to us at all, and
+    it is invisible to visitors, so nothing else in the suite would notice if a
+    regeneration dropped it. Bing's tag in particular feeds DuckDuckGo, Yahoo,
+    Ecosia, Qwant, Swisscows and ChatGPT search, so losing it costs far more
+    than the one line it takes.
+    """
+    want = ('google-site-verification', 'msvalidate.01')
+    missing, dupes = [], []
+    for f in sorted(SITE.rglob("*.html")):
+        t = f.read_text(encoding="utf-8")
+        rel = str(f.relative_to(SITE))
+        for name in want:
+            n = t.count(f'name="{name}"')
+            if n == 0:
+                missing.append(f"{rel} ({name})")
+            elif n > 1:
+                dupes.append(f"{rel} ({name} x{n})")
+    for m in missing[:6]:
+        fail(f"verification tag missing: {m}")
+    if len(missing) > 6:
+        fail(f"...and {len(missing) - 6} more missing verification tags")
+    for d in dupes[:6]:
+        fail(f"duplicate verification tag: {d}")
+    if not missing and not dupes:
+        total = len(list(SITE.rglob("*.html")))
+        print(f"verification tags: {total} pages carry both Google and Bing")
+
+
 def main() -> int:
     check_icons()
     check_organization_logo()
     check_no_v0_reference()
+    check_site_verification()
     if "--live" in sys.argv:
         check_live()
     if fails:

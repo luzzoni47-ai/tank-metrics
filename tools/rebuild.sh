@@ -63,6 +63,8 @@ echo "==> add_pwa"
 python3 tools/add_pwa.py
 echo "==> add_pagination (phone pager on the listing pages)"
 python3 tools/add_pagination.py
+echo "==> add_site_verification (Google + Bing tags on every page)"
+python3 tools/add_site_verification.py
 echo "==> gen_updates"
 python3 tools/gen_updates.py
 
