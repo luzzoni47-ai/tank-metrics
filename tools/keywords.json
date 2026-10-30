@@ -13,7 +13,7 @@
    ]
   },
   {
-   "query": "fd calculator sbi",
+   "query": "fd calculator hdfc",
    "demand": 12,
    "covered": false,
    "score": 22.08,
@@ -37,15 +37,6 @@
    "score": 22.08,
    "from": [
     "mrp reverse calculator"
-   ]
-  },
-  {
-   "query": "fd calculator hdfc",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -91,6 +82,15 @@
    "score": 18.4,
    "from": [
     "ebitda and margin"
+   ]
+  },
+  {
+   "query": "fd calculator post office",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -193,7 +193,7 @@
    ]
   },
   {
-   "query": "fd calculator post office",
+   "query": "fd calculator axis bank",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -328,7 +328,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator icici",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -463,7 +463,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator monthly payout",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -626,15 +626,6 @@
    "from": [
     "employee utilisation",
     "employee utilization rate"
-   ]
-  },
-  {
-   "query": "fd calculator monthly payout",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -898,6 +889,15 @@
    "score": 9.2,
    "from": [
     "exit calculator"
+   ]
+  },
+  {
+   "query": "fd calculator indusind bank",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -2614,6 +2614,15 @@
    ]
   },
   {
+   "query": "fd calculator monthly interest",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "fd fixed deposit rates",
    "demand": 11,
    "covered": true,
@@ -3038,7 +3047,7 @@
    ]
   },
   {
-   "query": "fd calculator indusind bank",
+   "query": "fd calculator pnb",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3415,15 +3424,6 @@
    "score": 6.9,
    "from": [
     "epf calculator"
-   ]
-  },
-  {
-   "query": "fd calculator monthly interest",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "fd calculator"
    ]
   },
   {
