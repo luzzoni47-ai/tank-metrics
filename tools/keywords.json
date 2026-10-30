@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T21:12:20Z",
+ "generated": "2026-10-30T01:31:24Z",
  "seed_count": 150,
  "suggestion_count": 1036,
  "keywords": [
@@ -76,15 +76,6 @@
    ]
   },
   {
-   "query": "startup valuation methods",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "startup valuation"
-   ]
-  },
-  {
    "query": "cagr calculator excel",
    "demand": 10,
    "covered": false,
@@ -100,15 +91,6 @@
    "score": 18.4,
    "from": [
     "ebitda and margin"
-   ]
-  },
-  {
-   "query": "fd calculator monthly interest",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -157,30 +139,12 @@
    ]
   },
   {
-   "query": "msme loan eligibility",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "msme loan"
-   ]
-  },
-  {
    "query": "property valuation certificate",
    "demand": 10,
    "covered": false,
    "score": 18.4,
    "from": [
     "property valuation"
-   ]
-  },
-  {
-   "query": "startup valuation services",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "startup valuation"
    ]
   },
   {
@@ -247,7 +211,7 @@
    ]
   },
   {
-   "query": "msme loan kya hota hai",
+   "query": "msme loan eligibility",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -391,6 +355,15 @@
    ]
   },
   {
+   "query": "msme loan kya hota hai",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "msme loan"
+   ]
+  },
+  {
    "query": "rental yield in mumbai",
    "demand": 8,
    "covered": false,
@@ -433,15 +406,6 @@
    "score": 12.96,
    "from": [
     "customer acquisition cost"
-   ]
-  },
-  {
-   "query": "is recurring deposit a good investment",
-   "demand": 9,
-   "covered": false,
-   "score": 12.96,
-   "from": [
-    "rd recurring deposit calculator"
    ]
   },
   {
@@ -508,15 +472,6 @@
    ]
   },
   {
-   "query": "gross profit margin and cogs",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "gross profit and margin"
-   ]
-  },
-  {
    "query": "income tax calculator ay 2025-26",
    "demand": 7,
    "covered": false,
@@ -532,15 +487,6 @@
    "score": 12.88,
    "from": [
     "marketplace fee calculator"
-   ]
-  },
-  {
-   "query": "msme loan for women",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "msme loan"
    ]
   },
   {
@@ -635,15 +581,6 @@
    ]
   },
   {
-   "query": "coffee shop profit margin",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "shop profit margin"
-   ]
-  },
-  {
    "query": "cpm to cpc calculator",
    "demand": 16,
    "covered": true,
@@ -720,7 +657,7 @@
    ]
   },
   {
-   "query": "msme loan apply online",
+   "query": "msme loan for women",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -919,15 +856,6 @@
    ]
   },
   {
-   "query": "cagr calculator monthly",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "cagr calculator"
-   ]
-  },
-  {
    "query": "distributor margin calculation excel",
    "demand": 5,
    "covered": false,
@@ -979,6 +907,15 @@
    "score": 9.2,
    "from": [
     "income tax calculator"
+   ]
+  },
+  {
+   "query": "msme loan apply online",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "msme loan"
    ]
   },
   {
@@ -3001,6 +2938,15 @@
    ]
   },
   {
+   "query": "startup valuation methods",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "startup valuation"
+   ]
+  },
+  {
    "query": "tip calculator python cs50",
    "demand": 11,
    "covered": true,
@@ -3472,6 +3418,15 @@
    ]
   },
   {
+   "query": "fd calculator monthly interest",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "gas agency profit margin india",
    "demand": 10,
    "covered": true,
@@ -3598,6 +3553,15 @@
    ]
   },
   {
+   "query": "msme loan scheme",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "msme loan"
+   ]
+  },
+  {
    "query": "net profit margin ratio",
    "demand": 10,
    "covered": true,
@@ -3622,6 +3586,42 @@
    "score": 6.9,
    "from": [
     "operating margin"
+   ]
+  },
+  {
+   "query": "percentage calculator money",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "percentage calculator"
+   ]
+  },
+  {
+   "query": "ppf calculator monthly",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "ppf calculator"
+   ]
+  },
+  {
+   "query": "pre money post money calculator",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "pre money post money"
+   ]
+  },
+  {
+   "query": "property roi calculator malaysia",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "property roi calculator"
    ]
   }
  ]
