@@ -52,11 +52,30 @@ TW_TITLE = re.compile(r'<meta name="twitter:title" content="[^"]*">')
 TW_DESC = re.compile(r'<meta name="twitter:description" content="[^"]*">')
 
 
+def _bare_shell(body: str) -> bool:
+    """True when the post carries only the shared shell above the English block.
+
+    Some posts add page-specific blocks between <body> and the article: an
+    inline calculator card, a "related calculators" list and a FAQ, each an
+    <h2>, plus a page-specific FAQPage/WebApplication ld+json in the head.
+    `_shell_top()` copies that whole region verbatim, so stamping a new guide
+    from such a post would inherit its card and FAQ. A plain guide has no <h2>
+    above the article, which is what tells the two apart.
+    """
+    start = body.index("<body>")
+    stop = body.index('<div class="post-lang" data-lang="en"')
+    return "<h2" not in body[start:stop]
+
+
 def _reference_post() -> str:
-    """Any existing post, used as the shell template."""
+    """A plain guide's shell, used as the template for a new post."""
+    posts = []
     for p in sorted(SITE.glob("blog-*.html")):
         body = p.read_text(encoding="utf-8")
         if 'class="post-lang" data-lang="en"' in body and 'class="lang-toggle"' in body:
+            posts.append(body)
+    for body in posts:
+        if _bare_shell(body):
             return body
     raise SystemExit("no existing blog post to copy the shell from")
 
