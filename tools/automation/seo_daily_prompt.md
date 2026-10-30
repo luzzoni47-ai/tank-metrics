@@ -83,6 +83,33 @@ Report the bucket counts and the worst pages in the summary. If no credential is
 present, say so plainly and continue - do NOT claim a Search Console run. Setup
 is in `tools/automation/gsc_setup.md`.
 
+### 1c. Bing, when `BING_API_KEY` is present
+
+Bing is the second index, and the one behind DuckDuckGo, Yahoo, Ecosia, Qwant,
+Swisscows, Copilot and ChatGPT search. Unlike Search Console it needs no Google
+login, so it is the one search channel this run can both PUSH to and READ from.
+
+```
+python3 tools/bing.py report       # verification, crawler, feeds, index, links
+python3 tools/bing.py feed         # register the sitemap (costs no quota)
+python3 tools/bing.py submit       # spend the day's 100-URL quota
+```
+
+The API allows **100 submitted URLs per day**, so `tools/bing.py` keeps the
+record of what has already gone (KV store in automation, `.openhands/bing_submitted.json`
+locally) and each run picks up where the last stopped. Without that record every
+run would re-send the same first 100 URLs and the tail of the sitemap would
+never be announced.
+
+Re-run `feed` after a big rebuild; it costs nothing and is what makes Bing crawl
+on its own. `bing.py crawl` and `bing.py url <url>` are the closest thing here to
+Search Console's Inspect URL - on a brand-new property both read "never", which
+is expected, not a fault. `bing.py keywords "gst calculator"` returns Bing's own
+impression estimate per query with no AdWords login.
+
+If `BING_API_KEY` is not set, say so plainly and skip this step - do NOT claim a
+Bing run.
+
 ### 2. Write real copy for the worst offenders (the actual indexing fix)
 
 `gen_tool_pages.py` falls back to a shared per-CATEGORY template for any
