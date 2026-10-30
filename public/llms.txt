@@ -139,6 +139,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [How Much Equity Should I Give to Investor? Guide](https://tankmetrics.in/how-much-equity-to-give-investor)
 - [How to Calculate Valuation of Startup in India](https://tankmetrics.in/how-to-calculate-startup-valuation-india)
 - [What Import Duty Really Adds to Your Order](https://tankmetrics.in/import-duty-explained)
+- [Landed Cost Meaning: What You Really Pay](https://tankmetrics.in/landed-cost-meaning)
 - [Lenskart Valuation Calculator - Peyush Bansal Story](https://tankmetrics.in/lenskart-valuation-calculator)
 - [LTV CAC Calculator India - For D2C & SaaS](https://tankmetrics.in/ltv-cac-calculator-india)
 - [LTV:CAC Ratio Explained: The 3:1 Rule](https://tankmetrics.in/ltv-cac-ratio-explained)

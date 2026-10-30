@@ -38,6 +38,12 @@ MAP: dict[str, list[tuple[str, str, str]]] = {
         ("/gross-profit-and-margin", "Gross Profit & Margin",
          "get the margin on a single cup from its price and cost"),
     ],
+    "blog-landed-cost-meaning": [
+        ("/landed-cost-calculator", "Landed Cost",
+         "roll product, freight, insurance and duty into one true cost per unit"),
+        ("/import-duty-and-customs-calculator", "Import Duty & Customs",
+         "add customs duty and IGST to your own order value"),
+    ],
     "blog-import-duty-explained": [
         ("/import-duty-and-customs-calculator", "Import Duty & Customs",
          "add customs duty and IGST to your own order value"),
