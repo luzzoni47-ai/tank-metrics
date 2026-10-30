@@ -133,6 +133,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Equity Dilution Calculator India - Cap Table](https://tankmetrics.in/equity-dilution-calculator-india)
 - [Founder Salary Calculator for Indian Startups](https://tankmetrics.in/founder-salary-calculator-india)
 - [Franchise ROI: What a Store Really Earns](https://tankmetrics.in/franchise-roi-explained)
+- [Grocery Store Profit Margin: What You Keep](https://tankmetrics.in/grocery-store-profit-margin)
 - [Gross vs Net Margin Calculator India](https://tankmetrics.in/gross-vs-net-margin-calculator)
 - [Input Tax Credit: Why You Get GST Back](https://tankmetrics.in/gst-input-tax-credit-explained)
 - [How Much Equity to Give for 1 Crore? Calculator](https://tankmetrics.in/how-much-equity-to-give-for-1-crore)
