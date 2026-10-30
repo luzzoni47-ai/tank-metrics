@@ -51,6 +51,8 @@ echo "==> gen_llms (the AI-answer file, from url-map)"
 python3 tools/gen_llms.py
 echo "==> make_favicon"
 python3 tools/make_favicon.py
+echo "==> fix_site_logo (Organization.logo + root apple-touch-icon + icon guard)"
+python3 tools/fix_site_logo.py
 echo "==> fix_blog_meta"
 python3 tools/fix_blog_meta.py
 echo "==> add_blog_schema (Article + BreadcrumbList on guides, incl. keyword pages)"
