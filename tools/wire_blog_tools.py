@@ -257,6 +257,21 @@ def main() -> None:
         for url, _name, _why in rows:
             by_tool.setdefault(url, []).append((slug, title))
         if MARKER in text:
+            # The marker only proves a section exists, not that it names the
+            # right calculators. The scaffolder used to stamp the reference
+            # post's section into every new page, so a post could ship with
+            # another post's links. Rebuild the section when its links differ
+            # from the ones this post should carry.
+            m = re.search(
+                re.escape(MARKER)
+                + r'\s*<section class="related-tools blog-tools">.*?</section>',
+                text,
+                re.S,
+            )
+            if m and re.findall(r'href="([^"]+)"', m.group(0)) != [u for u, _n, _w in rows]:
+                text = text[: m.start()] + blog_section(rows) + text[m.end() :]
+                page.write_text(text, encoding="utf-8")
+                changed_posts += 1
             continue
         anchor = '<footer class="site-footer">'
         idx = text.find(anchor)

@@ -101,11 +101,25 @@ def _shell_top(reference: str) -> str:
 
 
 def _shell_bottom(reference: str) -> str:
-    """From after the Hinglish block to </html> — footer and the toggle script."""
+    """From after the Hinglish block to </html> — footer and the toggle script.
+
+    The reference post's own "Run the numbers" section lives in this region and
+    names the calculators for *that* post. Copying it verbatim would stamp the
+    wrong links onto the new page, and wire_blog_tools.py would then leave them
+    alone because the section marker is already present. Drop the section here
+    so the wirer writes the correct one.
+    """
     marker = '<div class="post-lang" data-lang="hinglish"'
     start = reference.index(marker)
     end = reference.index("</div>", reference.index("</div>", start) + len("</div>"))
-    return reference[end + len("</div>") :]
+    bottom = reference[end + len("</div>") :]
+    return re.sub(
+        r'<!-- blog-tools -->\s*<section class="related-tools blog-tools">.*?</section>',
+        "",
+        bottom,
+        count=1,
+        flags=re.S,
+    )
 
 
 def _hero(top: str, hero: str) -> str:
