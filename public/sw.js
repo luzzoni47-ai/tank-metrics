@@ -29,6 +29,7 @@ const SHELL_URLS = [
   "/site/icon-512.png",
   "/site/favicon.svg",
   "/site/pwa.js",
+  "/site/pagination.js",
 ];
 
 // Pulling 124 pages in one addAll means a single 404 aborts the whole install
