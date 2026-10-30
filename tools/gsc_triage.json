@@ -267,7 +267,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T09:14:42Z",
-   "overlap": 0.66,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -279,7 +279,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": 0.66,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -639,7 +639,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-23T21:03:28Z",
-   "overlap": null,
+   "overlap": 0.654,
    "canonical_ok": true
   },
   {
@@ -651,7 +651,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T17:49:02Z",
-   "overlap": null,
+   "overlap": 0.654,
    "canonical_ok": true
   },
   {
@@ -771,7 +771,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": null,
+   "overlap": 0.653,
    "canonical_ok": true
   },
   {
@@ -783,7 +783,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": null,
+   "overlap": 0.653,
    "canonical_ok": true
   },
   {
@@ -807,7 +807,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-26T22:49:54Z",
-   "overlap": 0.66,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -903,7 +903,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": 0.66,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -951,7 +951,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T11:38:48Z",
-   "overlap": null,
+   "overlap": 0.656,
    "canonical_ok": true
   },
   {
@@ -963,7 +963,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T21:23:29Z",
-   "overlap": null,
+   "overlap": 0.656,
    "canonical_ok": true
   },
   {
@@ -1011,7 +1011,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T11:41:15Z",
-   "overlap": null,
+   "overlap": 0.651,
    "canonical_ok": true
   },
   {
@@ -1083,7 +1083,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T10:52:04Z",
-   "overlap": 0.663,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1131,7 +1131,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T05:17:46Z",
-   "overlap": 0.663,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1191,7 +1191,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T23:34:33Z",
-   "overlap": null,
+   "overlap": 0.657,
    "canonical_ok": true
   },
   {
@@ -1203,7 +1203,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T23:47:03Z",
-   "overlap": 0.677,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1215,7 +1215,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T20:50:35Z",
-   "overlap": 0.677,
+   "overlap": null,
    "canonical_ok": true
   },
   {
