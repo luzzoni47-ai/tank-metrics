@@ -123,6 +123,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Burn Rate Calculator for Startups India (₹)](https://tankmetrics.in/burn-rate-calculator-india)
 - [Burn Rate and Runway Explained](https://tankmetrics.in/burn-rate-runway-guide)
 - [Customer Acquisition Cost (CAC) Calculator India](https://tankmetrics.in/cac-calculator-india)
+- [CAGR: Compound Annual Growth Rate Explained](https://tankmetrics.in/cagr-explained)
 - [Cap Table Calculator for Indian Startups](https://tankmetrics.in/cap-table-calculator-india)
 - [Coffee Shop Profit Margin: What You Keep](https://tankmetrics.in/coffee-shop-profit-margin)
 - [COGS Calculator India - Cost of Goods Sold](https://tankmetrics.in/cogs-calculator-india)

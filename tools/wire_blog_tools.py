@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-cagr-explained": [
+        ("/cagr-compound-annual-growth-rate", "CAGR",
+         "get the one steady yearly rate from your own start and end figures"),
+        ("/month-on-month-year-on-year-growth", "Month-on-Month / Year-on-Year Growth",
+         "see how one month compares with the last, before you smooth it into a yearly rate"),
+    ],
     "blog-reverse-pricing-explained": [
         ("/mrp-reverse-calculator", "MRP Reverse",
          "work back from your selling price to the cost the item has to come in at"),

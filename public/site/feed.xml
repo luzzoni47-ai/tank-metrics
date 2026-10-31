@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sat, 31 Oct 2026 01:44:31 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 03:46:41 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Customer Acquisition Cost (CAC) Calculator India - Free Calculator in ₹</title>
@@ -102,6 +102,14 @@
     <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Break even calculator in rupees. Enter price, variable cost and fixed costs to get your break-even units and revenue in ₹. Free, instant and simple.</description>
+  </item>
+  <item>
+    <title>CAGR: Compound Annual Growth Rate Explained</title>
+    <link>https://tankmetrics.in/cagr-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/cagr-explained</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>CAGR is the steady yearly growth rate hiding behind any two figures you already have. Work it out with a clean ₹4,000 to ₹9,000 example for your business.</description>
   </item>
   <item>
     <title>COGS Calculator India - Free Cost of Goods Sold Calculator in ₹</title>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Sugar Cosmetics valuation in Shark Tank India terms, with Vineeta Singh and Kaushik Mukherjee now on the shark side. Free ₹ Crore deal calculator inside.</description>
-  </item>
-  <item>
-    <title>Nvidia Backs Simplismart at a $100 Million Valuation</title>
-    <link>https://tankmetrics.in/news/nvidia-backs-simplismart-100-million-valuation</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/nvidia-backs-simplismart-100-million-valuation</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Funding</category>
-    <description>Nvidia joined a $14 million round for Bengaluru&#x27;s Simplismart at a reported $100 million valuation. We split the two numbers apart for Indian founders.</description>
   </item>
 </channel>
 </rss>
