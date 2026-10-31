@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T05:44:11Z",
+ "generated": "2026-10-31T01:31:44Z",
  "seed_count": 150,
  "suggestion_count": 1036,
  "keywords": [
@@ -28,15 +28,6 @@
    "score": 22.08,
    "from": [
     "income tax calculator"
-   ]
-  },
-  {
-   "query": "reverse price calculator",
-   "demand": 12,
-   "covered": false,
-   "score": 22.08,
-   "from": [
-    "mrp reverse calculator"
    ]
   },
   {
@@ -121,30 +112,12 @@
    ]
   },
   {
-   "query": "marketplace price calculator",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "marketplace fee calculator"
-   ]
-  },
-  {
    "query": "mcdonald's franchise roi",
    "demand": 10,
    "covered": false,
    "score": 18.4,
    "from": [
     "franchise roi"
-   ]
-  },
-  {
-   "query": "msme loan eligibility",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "msme loan"
    ]
   },
   {
@@ -220,7 +193,7 @@
    ]
   },
   {
-   "query": "msme loan kya hota hai",
+   "query": "msme loan eligibility",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -364,6 +337,15 @@
    ]
   },
   {
+   "query": "msme loan kya hota hai",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "msme loan"
+   ]
+  },
+  {
    "query": "rental yield in mumbai",
    "demand": 8,
    "covered": false,
@@ -478,24 +460,6 @@
    "score": 12.88,
    "from": [
     "income tax calculator"
-   ]
-  },
-  {
-   "query": "market price calculator",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "marketplace fee calculator"
-   ]
-  },
-  {
-   "query": "msme loan for women",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "msme loan"
    ]
   },
   {
@@ -648,16 +612,7 @@
    ]
   },
   {
-   "query": "market price calculator car",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "marketplace fee calculator"
-   ]
-  },
-  {
-   "query": "msme loan apply online",
+   "query": "msme loan for women",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -898,6 +853,15 @@
    "score": 9.2,
    "from": [
     "income tax calculator"
+   ]
+  },
+  {
+   "query": "msme loan apply online",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "msme loan"
    ]
   },
   {
@@ -1560,7 +1524,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1992,7 +1956,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2217,6 +2181,15 @@
    ]
   },
   {
+   "query": "reverse price calculator",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "mrp reverse calculator"
+   ]
+  },
+  {
    "query": "roas calculator online",
    "demand": 12,
    "covered": true,
@@ -2235,7 +2208,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2352,7 +2325,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator by year",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2587,7 +2560,7 @@
    ]
   },
   {
-   "query": "epf calculator with current balance",
+   "query": "epf calculator with existing balance",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2641,7 +2614,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3002,7 +2975,7 @@
    ]
   },
   {
-   "query": "ebitda share price",
+   "query": "ebitda kya hota hai",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3183,7 +3156,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator app",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3391,7 +3364,7 @@
    ]
   },
   {
-   "query": "epf calculator on salary",
+   "query": "epf calculator with current balance",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3445,7 +3418,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator cgst sgst",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3517,6 +3490,15 @@
    ]
   },
   {
+   "query": "marketplace price calculator",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "marketplace fee calculator"
+   ]
+  },
+  {
    "query": "markup vs margin difference",
    "demand": 10,
    "covered": true,
@@ -3532,6 +3514,15 @@
    "score": 6.9,
    "from": [
     "moic and irr"
+   ]
+  },
+  {
+   "query": "msme loan scheme",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "msme loan"
    ]
   },
   {
@@ -3622,6 +3613,15 @@
    "score": 6.9,
    "from": [
     "return on investment roi"
+   ]
+  },
+  {
+   "query": "revenue multiple meaning",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "revenue multiple"
    ]
   }
  ]

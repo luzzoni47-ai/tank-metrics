@@ -2,6 +2,55 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "quick-commerce-franchise-dark-stores-small-cities-2026",
+   "title": "Quick Commerce's Next Bet: Franchise Stores in Small Cities",
+   "dek": "CBRE says India's dark stores will grow from 7,800 to over 12,000 by 2030, and franchise-led outlets will carry the push into tier-II and tier-III cities.",
+   "category": "Small Business",
+   "date": "2026-10-31",
+   "date_display": "October 31, 2026",
+   "source_name": "The Tribune",
+   "source_url": "https://www.tribuneindia.com/news/business/franchise-led-models-to-drive-indias-quick-commerce-expansion-into-tier-ii-iii-cities-by-2030-cbre",
+   "cta": {
+    "text": "A dark store only pays back if the orders per day clear the rent. Work out your store's return on capital before you put the money in.",
+    "href": "/franchise-store-roi",
+    "label": "Open the Franchise Store ROI Calculator"
+   },
+   "related": [
+    {
+     "slug": "franchise-roi-explained",
+     "title": "Franchise ROI: What a Store Really Earns"
+    },
+    {
+     "slug": "break-even-point-explained",
+     "title": "How to Calculate Your Break-Even Point"
+    }
+   ],
+   "body_en": [
+    "<p>India's quick-commerce map is being redrawn, and not by the big platforms alone. A new CBRE report, <em>India's Quick Commerce Scale-up</em>, puts the country at about 7,800 dark stores in 2026 &mdash; the small neighbourhood warehouses that stock groceries for ten-minute delivery &mdash; spread over more than 100 cities and roughly 27 million square feet. By 2030 the report expects the network to pass 12,000 stores and the space behind it to reach about 75 million square feet.</p>",
+    "<p>What matters for a small business is who pays for the next few thousand of them. The answer, the report suggests, is increasingly a local franchisee rather than the platform itself.</p>",
+    "<h2>Where the next stores will stand</h2>",
+    "<p>Today 65% to 70% of dark stores sit in the top eight metros. Growth is shifting to cities such as Jaipur, Lucknow, Surat, Coimbatore and Nagpur, where CBRE says real estate is cheaper and overheads are lower. Because metro rents are high and good sites are scarce, the report expects platforms to lean on franchise-led, outsourced and shared models instead of owning every store. A franchise-led dark store lets a platform enter a tier-II city without funding the whole build itself.</p>",
+    "<h2>The arithmetic of one store</h2>",
+    "<p>The economics explain why. Say a dark store does an average order of &#8377;500 and 1,000 orders a day. That is &#8377;5,00,000 of sales a day, or about &#8377;1.5 crore a month. If the platform keeps roughly a quarter of that as its fee, the store still has to pay rent, staff and delivery riders out of the rest. CBRE says platforms are only now nearing contribution-margin breakeven &mdash; the point where a store covers its own running costs. A UBS report says Blinkit and Swiggy Instamart have raised their capital spending per dark store to about &#8377;2.5 crore, up from roughly &#8377;1 crore two years ago.</p>",
+    "<h2>What it means for you</h2>",
+    "<h2>The catch in the model</h2>",
+    "<p>Growth is not the same as easy money. CBRE warns that high rents, limited suitable property and zoning rules will make it harder to find good sites as operators move past the metros. A dark store needs ground-floor access, room for riders to move, loading space and enough power for cold-chain equipment, and those requirements shrink the list of usable buildings. The report also expects more outsourcing of warehousing, store operations and last-mile delivery to third-party logistics firms, and even the use of existing neighbourhood kirana stores as small warehouses. That matters if you are the one signing the lease: the site that works for ten-minute delivery is a specific, and often pricier, kind of space.</p>",
+    "<p>If you own a shop, a basement or ground-floor space in a growing city, you are now a candidate site. If you are an investor, a franchise-led store is a way into a fast-growing category without building a brand from scratch. Either way the decision is arithmetic, not excitement. Work out the capital you put in, the rent and fees you collect or pay, and how many orders a day the site must handle to break even. A store that needs 1,000 orders a day to cover its costs is a very different bet from one that needs 400. Run those numbers before you sign, and let the payback period, not the headline growth number, decide.</p>"
+   ],
+   "body_hinglish": [
+    "<p>India ka quick-commerce naksha dobara ban raha hai, aur sirf bade platforms se nahi. CBRE ki nayi report, <em>India's Quick Commerce Scale-up</em>, kehti hai ki 2026 mein desh mein kareeb 7,800 dark stores hain &mdash; chhote mohalle ke godown jo das minute ki delivery ke liye grocery rakhte hain &mdash; jo 100 se zyada shehron aur takreeban 27 million square feet mein phaile hue hain. 2030 tak report 12,000 se zyada stores aur kareeb 75 million square feet jagah ki ummeed karti hai.</p>",
+    "<p>Ek chhote business ke liye asli sawaal yeh hai ki agle kuch hazaar stores ka kharcha kaun uthta hai. Report kehti hai ki jawab dheere-dheere ek local franchisee hai, platform khud nahi.</p>",
+    "<h2>Agle stores kahan khulenge</h2>",
+    "<p>Aaj 65% se 70% dark stores top aath metros mein hain. Growth ab Jaipur, Lucknow, Surat, Coimbatore aur Nagpur jaise shehron ki taraf badh rahi hai, jahan CBRE ke mutabik real estate sasti aur kharcha kam hai. Metro mein rent zyada aur achhi jagah kam hai, isliye report kehti hai ki platforms franchise-led, outsourced aur shared models par zor denge, har store khud nahi banayenge. Franchise-led dark store se platform tier-II shehar mein aa sakta hai bina pura kharcha khud uthaye.</p>",
+    "<h2>Ek store ka hisaab</h2>",
+    "<p>Iski wajah economics hai. Maan lijiye ek dark store ka average order &#8377;500 hai aur roz 1,000 order aate hain. Yeh &#8377;5,00,000 ki rozana bikri hai, ya kareeb &#8377;1.5 crore mahine ki. Agar platform apni fees ke roop mein iska kareeb chauthai rakhta hai, to baaki paise se store ko rent, staff aur delivery riders dena hote hain. CBRE kehti hai ki platforms ab contribution-margin breakeven ke kareeb pahunch rahe hain &mdash; woh point jahan store apna chalane ka kharcha nikaal leta hai. UBS ki ek report kehti hai ki Blinkit aur Swiggy Instamart ne per dark store capital kharcha kareeb &#8377;2.5 crore kar diya hai, jo do saal pehle kareeb &#8377;1 crore tha.</p>",
+    "<h2>Aapke liye iska matlab</h2>",
+    "<h2>Model mein ek catch hai</h2>",
+    "<p>Growth ka matlab aasan paisa nahi hai. CBRE chetavni deti hai ki zyada rent, achhi jagah ki kami aur zoning ke niyam metros ke baahar achhi site dhoondhna mushkil bana denge. Dark store ko ground-floor access, riders ke chalne ki jagah, loading space aur cold-chain equipment ke liye kaafi power chahiye, aur in shartein se kaam ki buildings ki list chhoti ho jaati hai. Report yeh bhi kehti hai ki warehousing, store operations aur last-mile delivery ka kaam dheere-dheere third-party logistics companies ko diya jayega, aur maujooda mohalle ke kirana stores bhi chhote warehouse ki tarah use honge. Yeh aapke liye maayne rakhta hai agar lease aap sign kar rahe hain: das minute ki delivery ke liye kaam karne wali jagah ek khaas, aur aksar mehngi, tarah ki jagah hoti hai.</p>",
+    "<p>Agar aapke paas kisi badhte shehar mein dukaan, basement ya ground-floor jagah hai, to aap ab ek sambhavit site hain. Agar aap investor hain, to franchise-led store ek tez badhti category mein ghusne ka raasta hai bina naya brand banaye. Dono soorat mein faisla hisaab ka hai, josh ka nahi. Apna lagaya capital, jo rent aur fees aap lete ya dete hain, aur yeh ki site ko break-even ke liye roz kitne order chahiye &mdash; yeh sab nikaaliye. Jo store ko apna kharcha nikaalne ke liye roz 1,000 order chahiye, woh 400 order wale store se bilkul alag daanv hai. Sign karne se pehle yeh numbers chala lijiye, aur faisla payback period par chhodiye, headline growth number par nahi.</p>"
+   ]
+  },
+  {
    "slug": "sarvam-87-percent-indic-ai-funding-2026",
    "title": "Sarvam Took 87% of India's Language AI Funding in 2026",
    "dek": "Tracxn says India's Indic AI startups raised $399 million in 2026, and one company, Sarvam, took 87% of it. Here is what that gap means for a founder.",

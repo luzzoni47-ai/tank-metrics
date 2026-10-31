@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 30 Oct 2026 18:01:55 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 01:42:16 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Customer Acquisition Cost (CAC) Calculator India - Free Calculator in ₹</title>
@@ -86,6 +86,14 @@
     <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Valuation multiple for a D2C brand in India. Enter your revenue and the multiple an investor offers to get the valuation in ₹ Crores. Free and instant.</description>
+  </item>
+  <item>
+    <title>Quick Commerce&#x27;s Next Bet: Franchise Stores in Small Cities</title>
+    <link>https://tankmetrics.in/news/quick-commerce-franchise-dark-stores-small-cities-2026</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/quick-commerce-franchise-dark-stores-small-cities-2026</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>CBRE says India&#x27;s dark stores will grow from 7,800 to over 12,000 by 2030, and franchise-led outlets will carry the push into tier-II and tier-III cities.</description>
   </item>
   <item>
     <title>Break Even Calculator in Rupees (₹) - Free Calculator for Indian Founders</title>
@@ -238,14 +246,6 @@
     <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
     <category>Funding</category>
     <description>Nvidia joined a $14 million round for Bengaluru&#x27;s Simplismart at a reported $100 million valuation. We split the two numbers apart for Indian founders.</description>
-  </item>
-  <item>
-    <title>MSME Festive Invoice Discounting Jumped 33% in 2026</title>
-    <link>https://tankmetrics.in/news/festive-financing-msme-invoice-discounting-20000-crore</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/festive-financing-msme-invoice-discounting-20000-crore</guid>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Small Business</category>
-    <description>Small sellers turned unpaid festive invoices into cash far more often this year, up 33% on 2025. Here is the arithmetic for a shop that waits to be paid.</description>
   </item>
 </channel>
 </rss>
