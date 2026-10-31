@@ -156,11 +156,21 @@ def cmd_sites() -> None:
 
 
 def cmd_quota() -> None:
+    """Print the submission allowance.
+
+    The API returns DailyQuota and MonthlyQuota as *allowances*, not as usage -
+    GetUrlSubmissionQuota carries no "used" field at all. The old code printed
+    MonthlyQuota under the label "used", so a fresh 100/100 account read as
+    "quota exhausted" and sent the reader chasing a problem that did not exist.
+    Say what the API actually says.
+    """
     q = call("GetUrlSubmissionQuota", params={"siteUrl": SITE})
     if q is None:
         print("  quota: (no answer)")
         return
-    print(f"  daily quota: {q.get('DailyQuota')}  used: {q.get('MonthlyQuota')}")
+    print(f"  daily allowance:   {q.get('DailyQuota')} urls")
+    print(f"  monthly allowance: {q.get('MonthlyQuota')} urls")
+    print("  (these are limits, not usage - the API reports no used count)")
 
 
 def cmd_submit() -> None:
@@ -287,9 +297,20 @@ def cmd_issues() -> None:
 
 
 def cmd_url(url: str) -> None:
-    """The indexing verdict for one page - the closest thing to Inspect URL here."""
-    info = call("GetUrlInfo", params={"siteUrl": SITE, "url": url}) or {}
-    traffic = call("GetUrlTrafficInfo", params={"siteUrl": SITE, "url": url}) or {}
+    """The indexing verdict for one page - the closest thing to Inspect URL here.
+
+    Bing answers 500 on GetUrlInfo often enough that an unguarded call turns the
+    daily report into a traceback, so each half is fetched defensively.
+    """
+    try:
+        info = call("GetUrlInfo", params={"siteUrl": SITE, "url": url}) or {}
+    except urllib.error.HTTPError as e:
+        print(f"  {url}: Bing returned HTTP {e.code} for GetUrlInfo - try again")
+        return
+    try:
+        traffic = call("GetUrlTrafficInfo", params={"siteUrl": SITE, "url": url}) or {}
+    except urllib.error.HTTPError:
+        traffic = {}
     print(f"  url:        {info.get('Url', url)}")
     print(f"  http:       {info.get('HttpStatus', 0)}")
     print(f"  discovered: {_ms_date(info.get('DiscoveryDate'))}")
@@ -375,6 +396,34 @@ def cmd_blocked() -> None:
         print(f"    {r.get('Url') if isinstance(r, dict) else r}")
 
 
+def _crawl_verdict() -> str:
+    """Say what an empty crawl table MEANS, because it is not always a fault.
+
+    A site that Bing has never crawled produces the same empty tables whether
+    the cause is a robots block, a broken sitemap, or simply a young domain with
+    no inbound links - and Bing leans far harder on links than Google does. The
+    daily run should name the cause instead of leaving the reader to guess.
+    """
+    try:
+        rows = call("GetCrawlStats", params={"siteUrl": SITE}) or []
+    except urllib.error.HTTPError:
+        return ""
+    if rows:
+        return ""
+    try:
+        links = (call("GetLinkCounts", params={"siteUrl": SITE}) or {}).get("TotalPages", 0)
+    except urllib.error.HTTPError:
+        links = 0
+    if links == 0:
+        return ("  WHY: Bing has no inbound-link signal for this site (0 pages linked\n"
+                "       in). Bing weights links much more heavily than Google does, so\n"
+                "       a young domain with no citations can sit undiscovered for weeks\n"
+                "       even with a clean robots.txt and a verified sitemap. The fix is\n"
+                "       off-site: real citations, not more submissions.")
+    return ("  WHY: links exist, so this is Bing being slow rather than a block. Give\n"
+            "       it time and keep the sitemap fresh.")
+
+
 def cmd_report() -> None:
     """The whole Bing picture in one call - what the daily run prints.
 
@@ -388,6 +437,9 @@ def cmd_report() -> None:
 
     print("-- crawler")
     cmd_crawl()
+    verdict = _crawl_verdict()
+    if verdict:
+        print(verdict)
 
     print("-- sitemap feeds")
     feeds = call("GetFeeds", params={"siteUrl": SITE}) or []
