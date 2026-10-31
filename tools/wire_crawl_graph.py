@@ -8,6 +8,7 @@ Two jobs:
    nothing new.
 2. Rebuild public/sitemap.xml so every tool page is listed.
 """
+import hashlib
 import html
 import json
 import re
@@ -94,6 +95,51 @@ def link_cards() -> bool:
     return new in t
 
 
+LASTMOD_LEDGER = Path(__file__).resolve().parent / "lastmod.json"
+
+
+def page_path(loc: str) -> Path | None:
+    """The file a sitemap loc points at. Locs are written in /site/ form here
+    (clean_urls.py strips the prefix later), so that prefix is dropped."""
+    tail = loc.split("tankmetrics.in", 1)[-1].split("#", 1)[0]
+    if tail in ("", "/"):
+        return SITE / "index.html"
+    rel = tail.lstrip("/")
+    if rel.startswith("site/"):
+        rel = rel[len("site/"):]
+    return SITE / rel
+
+
+def published_date(path: Path) -> str | None:
+    m = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})',
+                  path.read_text(encoding="utf-8", errors="ignore"))
+    return m.group(1) if m else None
+
+
+def lastmod_for(loc: str, ledger: dict) -> str:
+    """The lastmod for one URL.
+
+    Stamping date.today() on every URL made all 178 lastmods identical and
+    moved them daily, so a page that had not changed reported that it had -
+    Google discounts a lastmod that always says "today". This advances a URL's
+    date only when its file hash actually changes; an unchanged page keeps the
+    date it had.
+    """
+    path = page_path(loc)
+    if path is None or not path.is_file():
+        return date.today().isoformat()
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    prev = ledger.get(loc)
+    if prev and prev.get("hash") == digest and prev.get("lastmod"):
+        return prev["lastmod"]
+    stamp = date.today().isoformat()
+    if prev is None:
+        # First sighting: a dated post keeps its real publication date.
+        stamp = published_date(path) or stamp
+    ledger[loc] = {"hash": digest, "lastmod": stamp}
+    return stamp
+
+
 def write_sitemap() -> int:
     pages = [
         (f"{BASE}/", "daily", "1.0"),
@@ -120,12 +166,30 @@ def write_sitemap() -> int:
     for extra in ("privacy-policy", "terms-and-conditions", "disclaimer"):
         pages.append((f"{BASE}/site/{extra}.html", "yearly", "0.3"))
 
+    # The ledger is committed, so it survives the fresh checkout that resets
+    # file mtimes; it, not the clock, is what makes lastmod mean anything.
+    ledger: dict = {}
+    if LASTMOD_LEDGER.is_file():
+        ledger = json.loads(LASTMOD_LEDGER.read_text(encoding="utf-8"))
+
     seen, urls = set(), []
-    stamp = date.today().isoformat()
     for loc, cf, pr in pages:
         if loc in seen:
             continue
         seen.add(loc)
+        path = page_path(loc)
+        digest = hashlib.sha256(path.read_bytes()).hexdigest() if path and path.is_file() else ""
+        prev = ledger.get(loc)
+        if prev and prev.get("hash") == digest and prev.get("lastmod"):
+            stamp = prev["lastmod"]
+        else:
+            today = date.today().isoformat()
+            stamp = today
+            if prev is None and path is not None:
+                # A dated post keeps its real publication date, but a post
+                # scheduled ahead of today must not claim a future lastmod.
+                stamp = min(published_date(path) or today, today)
+            ledger[loc] = {"hash": digest, "lastmod": stamp}
         urls.append(
             f"  <url><loc>{loc}</loc><lastmod>{stamp}</lastmod>"
             f"<changefreq>{cf}</changefreq><priority>{pr}</priority></url>"
@@ -136,6 +200,8 @@ def write_sitemap() -> int:
         + "\n".join(urls) + "\n</urlset>\n"
     )
     (ROOT / "public" / "sitemap.xml").write_text(xml, encoding="utf-8")
+    LASTMOD_LEDGER.write_text(
+        json.dumps(ledger, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     return len(urls)
 
 
