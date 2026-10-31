@@ -6,13 +6,10 @@ Queries: "tank metrics", "tankmetrics", tankmetrics.in.
 - Our own pages or accounts showing: 1
 - Someone writing about us (our own pages, new): 0
 - Someone else linking to us (a real citation): 0
-- Namesakes - not us: 1
+- Namesakes - not us: 0
 
 ## Our own pages and accounts in search
 
 - [Shark Tank India Calculator | Pitch & Valuation (@tankmetrics.in ...](https://www.instagram.com/tankmetrics.in/) - Bing - our own Instagram account
 
-## Namesakes (not us)
-
-- [MPG Tracker & Gas Fuel Economy - Aplicaciones en Google Play](https://play.google.com/store/apps/details?id=com.tankmetrics.app&amp;hl=es)
-  - DuckDuckGo, found by "tank metrics"
+Nothing new to report since the last run.

@@ -53,6 +53,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 _KV_TOKEN = os.environ.get("AUTOMATION_KV_TOKEN", "")
 _KV_BASE = os.environ.get("AUTOMATION_API_URL", "").rstrip("/")
 _STATE_KEY = "link_builder_prepared"
+_STATE_FILE = ROOT / ".openhands" / "link_builder_prepared.json"
 
 # One line each: why the site is a legitimate place to earn a link. "submit" is
 # a free tool/product listing it accepts; "resource" is a page that lists tools
@@ -114,6 +115,39 @@ def kv_set(key: str, value) -> None:
         headers={"Authorization": f"Bearer {_KV_TOKEN}",
                  "Content-Type": "application/json"})
     urllib.request.urlopen(req, timeout=20).read()
+
+
+def load_prepared() -> set[str]:
+    """Names of prospects already prepared, from the KV store.
+
+    The automation runs in a fresh container, so without a durable record the
+    daily run would pick the same first prospects every day and the tail of the
+    list would never be reached. The KV store is the real home; the local file
+    is only the development fallback, the same arrangement `tools/bing.py` uses.
+    """
+    if kv_available():
+        try:
+            return set(kv_get(_STATE_KEY) or [])
+        except Exception as e:
+            print(f"  KV read failed, using local file: {e}")
+    if _STATE_FILE.exists():
+        try:
+            return set(json.loads(_STATE_FILE.read_text(encoding="utf-8")))
+        except Exception:
+            return set()
+    return set()
+
+
+def save_prepared(names: set[str]) -> None:
+    if kv_available():
+        try:
+            kv_set(_STATE_KEY, sorted(names))
+            return
+        except Exception as e:
+            print(f"  KV write failed, using local file: {e}")
+    _STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    _STATE_FILE.write_text(
+        json.dumps(sorted(names), indent=2), encoding="utf-8")
 
 
 def reachable(url: str) -> str:
@@ -247,9 +281,7 @@ def main() -> int:
             print(f"  {reachable(p['url']).upper():7} {p['name']:40} {p['url']}")
         return 0
 
-    prepared = set()
-    if kv_available():
-        prepared = set(kv_get(_STATE_KEY) or [])
+    prepared = load_prepared()
     print(f"prepared in earlier runs: {len(prepared)}")
 
     todo = [p for p in PROSPECTS if p["name"] not in prepared][:args.top]
@@ -280,7 +312,7 @@ def main() -> int:
             written.append(f"email-{safe}.md")
 
     if written:
-        kv_set(_STATE_KEY, sorted(prepared | {p["name"] for p in todo}))
+        save_prepared(prepared | {p["name"] for p in todo})
     print(f"files written: {len(written)}")
     for w in written:
         print(f"  tools/outreach/{w}")
