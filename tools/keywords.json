@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-01T01:31:32Z",
+ "generated": "2026-11-01T04:35:25Z",
  "seed_count": 150,
- "suggestion_count": 1037,
+ "suggestion_count": 1038,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -211,6 +211,15 @@
    ]
   },
   {
+   "query": "rental yield in mumbai",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "rental yield"
+   ]
+  },
+  {
    "query": "salary estimator after taxes",
    "demand": 9,
    "covered": false,
@@ -346,7 +355,7 @@
    ]
   },
   {
-   "query": "rental yield in mumbai",
+   "query": "rental yield in bangalore",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -472,12 +481,21 @@
    ]
   },
   {
-   "query": "rental yield in bangalore",
+   "query": "rental yield in dubai",
    "demand": 7,
    "covered": false,
    "score": 12.88,
    "from": [
     "rental yield"
+   ]
+  },
+  {
+   "query": "runway incursion",
+   "demand": 7,
+   "covered": false,
+   "score": 12.88,
+   "from": [
+    "runway"
    ]
   },
   {
@@ -649,22 +667,13 @@
    ]
   },
   {
-   "query": "rental yield calculator",
+   "query": "rental yield calculator india",
    "demand": 16,
    "covered": true,
    "score": 11.04,
    "from": [
     "rental yield",
     "rental yield calculator"
-   ]
-  },
-  {
-   "query": "rental yield in dubai",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "rental yield"
    ]
   },
   {
@@ -683,15 +692,6 @@
    "score": 11.04,
    "from": [
     "roi calculator"
-   ]
-  },
-  {
-   "query": "runway incursion",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -760,16 +760,6 @@
    "from": [
     "property valuation",
     "property valuation calculator"
-   ]
-  },
-  {
-   "query": "rental yield calculator india",
-   "demand": 15,
-   "covered": true,
-   "score": 10.35,
-   "from": [
-    "rental yield",
-    "rental yield calculator"
    ]
   },
   {
@@ -871,6 +861,15 @@
    "score": 9.2,
    "from": [
     "msme loan"
+   ]
+  },
+  {
+   "query": "rental yield in delhi",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "rental yield"
    ]
   },
   {
@@ -1235,7 +1234,7 @@
    ]
   },
   {
-   "query": "home loan emi calculator sbi",
+   "query": "home loan emi calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1313,15 +1312,6 @@
    "score": 8.97,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "lucky number calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "lucky number calculator"
    ]
   },
   {
@@ -1485,6 +1475,15 @@
    "score": 8.97,
    "from": [
     "rent vs buy calculator"
+   ]
+  },
+  {
+   "query": "rental yield",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "rental yield"
    ]
   },
   {
@@ -1965,7 +1964,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1974,7 +1973,7 @@
    ]
   },
   {
-   "query": "home loan emi calculator hdfc",
+   "query": "home loan emi calculator sbi",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2025,6 +2024,15 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator by name",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -2163,7 +2171,16 @@
    ]
   },
   {
-   "query": "rental yield",
+   "query": "rental yield calculator formula",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "rental yield calculator"
+   ]
+  },
+  {
+   "query": "rental yield formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2623,12 +2640,21 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
    "from": [
     "gst calculator"
+   ]
+  },
+  {
+   "query": "home loan emi calculator hdfc",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "home loan emi calculator"
    ]
   },
   {
@@ -2686,7 +2712,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator in tamil",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2785,7 +2811,7 @@
    ]
   },
   {
-   "query": "rental yield calculator formula",
+   "query": "rental yield calculator bangalore",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2794,7 +2820,7 @@
    ]
   },
   {
-   "query": "rental yield formula",
+   "query": "rental yield meaning",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3047,7 +3073,7 @@
    ]
   },
   {
-   "query": "rental yield in delhi",
+   "query": "rental yield in gurgaon",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3135,6 +3161,15 @@
    "score": 7.02,
    "from": [
     "income tax calculator old vs new regime"
+   ]
+  },
+  {
+   "query": "lucky number calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -3418,21 +3453,12 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
    "from": [
     "gst calculator"
-   ]
-  },
-  {
-   "query": "home loan emi calculator icici",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "home loan emi calculator"
    ]
   },
   {
@@ -3490,7 +3516,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator numerology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3595,33 +3621,6 @@
    "score": 6.9,
    "from": [
     "property roi calculator"
-   ]
-  },
-  {
-   "query": "rental yield calculator bangalore",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "rental yield calculator"
-   ]
-  },
-  {
-   "query": "rental yield meaning",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "rental yield"
-   ]
-  },
-  {
-   "query": "return on investment roi calculator",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "return on investment roi"
    ]
   }
  ]

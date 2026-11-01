@@ -21,7 +21,7 @@
  },
  "/amazon-festive-sale-seller-sales-3-5x-first-week": {
   "hash": "c1cb4313e027d79ec636a17e7f4af4c9045728a7642ac398f2f6f96f145f9066",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-21"
  },
  "/arpu-average-revenue-per-user": {
   "hash": "96a0ddb8e59e4bcdd8a60a80a03240eb780e738ebdf2be60528a11f2149f6582",
@@ -48,7 +48,7 @@
   "lastmod": "2026-10-30"
  },
  "/blog": {
-  "hash": "26a354222efabd4beee42743297ad91572472595c48b3e8e8376e4f04e83c014",
+  "hash": "69466efd467b05dc0323a8f69aaad8ed49358092c944cc5f82f4bd0e35fe853a",
   "lastmod": "2026-11-01"
  },
  "/bmi-calculator": {
@@ -124,8 +124,8 @@
   "lastmod": "2026-10-30"
  },
  "/cash-conversion-cycle": {
-  "hash": "1e40a79bbdf09d7d8671d8e3d207ab1bab92ec417f39e70037b0e0067be2e7af",
-  "lastmod": "2026-10-30"
+  "hash": "6cfd7c39efb2d071ce25693c8e6dff9affb033058c539d0b9c18bd375728b300",
+  "lastmod": "2026-11-01"
  },
  "/churn-rate": {
   "hash": "0474f26a311880694867f8f35fcc01bec0de2168e03d00539089df6a2d1d92bc",
@@ -281,7 +281,7 @@
  },
  "/export-certification-cost-support-micro-exporters": {
   "hash": "5e3104143434b6e95dd494b0fb74fec39721bf19f1682c20719462d8d0c0ce39",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-23"
  },
  "/fd-fixed-deposit-calculator": {
   "hash": "2ca940ff219fdefe3743e54205a3061b6f324fe7f82be8344b9d3052ffa5020e",
@@ -289,7 +289,7 @@
  },
  "/festive-financing-msme-invoice-discounting-20000-crore": {
   "hash": "bccc70b7fd49def53311f1ada79d0a1794f6e10162244662e428e1e1a1804698",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-29"
  },
  "/founder-salary-calculator-india": {
   "hash": "c5bbd14ab3633a959ae13766a80708928db239ed53f42648951f5bea978dc26e",
@@ -333,7 +333,7 @@
  },
  "/gst-council-october-2026-small-business-changes": {
   "hash": "5e0f7888091bcb4c53e3f22cf5562379227c2eeefd2069e96dcc2ecfb77023ec",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-21"
  },
  "/gst-input-tax-credit-explained": {
   "hash": "ef46ccacfb394c1a290debd8d21034ed896821a22771e6f4d4dfd8971a49d6a7",
@@ -341,15 +341,15 @@
  },
  "/gst-inverted-duty-refund-input-services-november-2026": {
   "hash": "2a2189a91c964e20f8f29bac75854b59ce231769c82ffc3d208ee5e37fafdc45",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-29"
  },
  "/gst-november-1-2026-discounts-credit-notes-refunds": {
   "hash": "c249e3f572e6bfdd7c310d7a360fb9a0a48c7c8255c111bf10915a40230e5637",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-28"
  },
  "/gst-rule-14b-ecommerce-sellers-november-1": {
   "hash": "a41a6819c1d81535c315b064638a031533a40dd9e3190dd51b507c8a350656ec",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-23"
  },
  "/home-loan-emi-calculator": {
   "hash": "71b56e92195b74e546f2d932f95d4f60d155a336959c831785c85f1951b3f9e2",
@@ -389,11 +389,11 @@
  },
  "/india-startup-funding-october-2026-flat-year": {
   "hash": "f48ff078b32a9d5d60350ff43cf85f09a564b1bb77b97fa4e95882e51a1b6ce6",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-21"
  },
  "/khosla-ventures-even-healthcare-india-bet": {
   "hash": "84ce04e201607a8111dcd305da8af64731d5213f9e5f09fcba2b4bb0fc070471",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-21"
  },
  "/land-area-unit-converter": {
   "hash": "75d5b7269058a9800d78cbc98e3c8a23161c5babe3839a55435cb339ed12b2a5",
@@ -449,7 +449,7 @@
  },
  "/marketplace-fees-india-sellers-guide": {
   "hash": "855ebdc5f44443a873658b8a867a025899e0dbe75062eae55a0a0c392e757a68",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-21"
  },
  "/markup-vs-margin": {
   "hash": "5e4a1173616383612885e708d39c95fc4f4bd6ef802465169c33bf76510c6dda",
@@ -480,7 +480,7 @@
   "lastmod": "2026-10-30"
  },
  "/news": {
-  "hash": "f4a8d4b96fc2b6dd2c5d08b3100d69069846cff82fe39aa84e6337758a67d83e",
+  "hash": "947768f2b711ba2d7b29d5c6efe32962029412f424b8c9f11e901ee07bbdeb68",
   "lastmod": "2026-11-01"
  },
  "/nps-calculator": {
@@ -497,7 +497,7 @@
  },
  "/nvidia-backs-simplismart-100-million-valuation": {
   "hash": "e91904c79391ba6e6b7a901503ac9cb1613d59b772b7e217f065e5e904983181",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-29"
  },
  "/operating-margin": {
   "hash": "98c3ae52cef4ec841b2992c45ce82a0c0547a1174c2e1a1370a86903a75d5f31",
@@ -549,7 +549,7 @@
  },
  "/rbi-rate-hike-october-2026-what-it-costs-your-loan": {
   "hash": "94344cf501c5b0934685adc80c92ececb36234e53de47666fd895bcfcfc812f7",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-21"
  },
  "/rd-recurring-deposit-calculator": {
   "hash": "c77fb130dc26b6cd0378398abc24588b7471012d0116c370ff22574e748aa755",
@@ -561,7 +561,7 @@
  },
  "/relief-scheme-exporters-extended-march-2027": {
   "hash": "0235a59d0e6749d488430e34338294722c51b030ab200924d406eed0f6fec2a5",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-26"
  },
  "/rent-vs-buy-calculator": {
   "hash": "36edb5e262e9156a29375a3ab7e6a939800c761f618ebec09dadf90b7596d6eb",
@@ -621,7 +621,7 @@
  },
  "/rupee-falls-to-95-22-what-it-costs-importers-exporters": {
   "hash": "3d16fed256f4aab3d6816115e6adc7722b6f187b995ac4ab22cf1827dbadc9a0",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-26"
  },
  "/salary-take-home-estimator": {
   "hash": "7ebfdc3703b0d06eaf55a391679a3f4e7f787dc2e50d99b3812a8d9ddd49f4d0",
@@ -629,11 +629,15 @@
  },
  "/sarvam-87-percent-indic-ai-funding-2026": {
   "hash": "6b87fd4031ced2371d95f4defe4ac05768e405cb9801837c5f6dd557c9417d53",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-28"
  },
  "/savings-goal-planner": {
   "hash": "9bede9595609bd48f5bd853b594e1763f90fb0802abe1fc977ecccb6764d4059",
   "lastmod": "2026-10-30"
+ },
+ "/sebi-sme-ipo-overhaul-market-cap-profit-rule-2026": {
+  "hash": "c5ff9073b9a851e6d010aaa3de19a160977c7a53e41a4b3579a82bd4e01a6a54",
+  "lastmod": "2026-11-01"
  },
  "/shark-tank-india-deal-calculator": {
   "hash": "1ce9b760977cd85c146ce186a0ee74ef9da99bf09798950e81e14f80ddc7dfe1",
@@ -649,7 +653,7 @@
  },
  "/shark-tank-usa-polygons-foldable-spoon-deal": {
   "hash": "877b655dc7e5e7fe51454bf6389b984947f8d8ef574606835ca1d5018cc35808",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-21"
  },
  "/shark-tank-valuation-calculator-in-crores": {
   "hash": "3426d7e0433bf811a3f025ad0510296adf6ebaafe90bcf7b7885ade663a48eb0",
@@ -697,7 +701,7 @@
  },
  "/upi-mdr-deferred-after-diwali-what-shops-pay": {
   "hash": "5cf5df0e0b4288a2613b791f6bcdc0e46dcd1a32d93694764a3e588e71028ad1",
-  "lastmod": "2026-10-30"
+  "lastmod": "2026-10-21"
  },
  "/valuation-multiple-d2c-brand-india": {
   "hash": "cfbcc1be1a3181ea60768d736feddd67241bdad462c340cbce73237431d4431c",
@@ -707,9 +711,13 @@
   "hash": "33534b1e8a0f94d5f47b9836f5ed55bbf8fa5a7d59d5c2973e63a0124318f343",
   "lastmod": "2026-10-30"
  },
+ "/why-profitable-shop-runs-out-of-cash": {
+  "hash": "aa86d9444b6c55c80803e85ee51c7ef17fdd52ee6a6e0ff2a775b724d8d227ad",
+  "lastmod": "2026-11-01"
+ },
  "/working-capital": {
-  "hash": "8ca667ba154f3b1dd02910fde2227629ce7ab38032df12fc5603b5d88b163da2",
-  "lastmod": "2026-10-30"
+  "hash": "904890248125449ed3ad7dc8ce1d00efaf5c9f8862fd55fbf976f26f9642e998",
+  "lastmod": "2026-11-01"
  },
  "/zodiac-sign-calculator": {
   "hash": "1f9759bd80b2c615d7369007c37708e5ae521c29c5cc92b42c3817e8bf7a18ce",
