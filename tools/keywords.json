@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T04:35:25Z",
+ "generated": "2026-11-01T05:43:18Z",
  "seed_count": 150,
  "suggestion_count": 1038,
  "keywords": [
@@ -1315,6 +1315,15 @@
    ]
   },
   {
+   "query": "lucky number calculator",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "market share calculator",
    "demand": 13,
    "covered": true,
@@ -1964,7 +1973,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2024,15 +2033,6 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "lucky number calculator by name",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "lucky number calculator"
    ]
   },
   {
@@ -2712,7 +2712,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator by name",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3164,15 +3164,6 @@
    ]
   },
   {
-   "query": "lucky number calculator by date of birth",
-   "demand": 13,
-   "covered": true,
-   "score": 7.02,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3453,7 +3444,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator cgst sgst",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3516,7 +3507,7 @@
    ]
   },
   {
-   "query": "lucky number calculator numerology",
+   "query": "lucky number calculator in tamil",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3621,6 +3612,15 @@
    "score": 6.9,
    "from": [
     "property roi calculator"
+   ]
+  },
+  {
+   "query": "rental yield calculator",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "rental yield calculator"
    ]
   }
  ]
