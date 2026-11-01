@@ -2,6 +2,57 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "cotton-import-duty-exemption-extended-december-2026",
+   "title": "Cotton Import Duty Waived Till Dec 31: What Mills Save",
+   "dek": "India extended the zero-duty window on imported cotton to December 31, 2026. Here is what the 11% duty waiver saves a textile unit on a Rs 1 crore order.",
+   "category": "Small Business",
+   "date": "2026-10-31",
+   "date_display": "October 31, 2026",
+   "source_name": "BW Businessworld",
+   "source_url": "https://www.businessworld.in/article/cotton-imports-escape-11-duty-for-two-more-months-631393",
+   "cta": {
+    "text": "Duty is only one line on an import bill. Add freight, insurance and the cess to see the real cost of a consignment before you place the order.",
+    "href": "/import-duty-and-customs-calculator",
+    "label": "Open the Import Duty Calculator"
+   },
+   "related": [
+    {
+     "slug": "import-duty-explained",
+     "title": "What Import Duty Really Adds to Your Order"
+    },
+    {
+     "slug": "landed-cost-meaning",
+     "title": "Landed Cost Meaning: What You Really Pay"
+    }
+   ],
+   "body_en": [
+    "<p>Cotton is the one input a spinning mill, a fabric unit or a garment exporter cannot substitute. On 30 October 2026 the Department of Revenue extended the exemption on imported cotton by two months, so the zero-duty window now runs to 31 December 2026 instead of closing on 31 October.</p>",
+    "<h2>What the notification changed</h2>",
+    "<p>Notification No. 35/2026-Customs amends Notification No. 19/2026-Customs, which had first waived the levies from 1 June to 31 October 2026. The amendment simply moves the end date to 31 December and leaves the rest of the concession untouched. Imported cotton under tariff heading 5201 of the Customs Tariff Act, 1975 continues to be free of basic customs duty and the entire Agriculture Infrastructure and Development Cess.</p>",
+    "<h2>The 11% you are not paying</h2>",
+    "<p>Before the exemption, imported cotton carried an effective duty burden of about 11%. That was built from 5% basic customs duty, 5% Agriculture Infrastructure and Development Cess and the applicable Social Welfare Surcharge on top. Run that on a ₹1,00,00,000 consignment. Basic customs duty comes to ₹5,00,000 and AIDC to ₹5,00,000. The Social Welfare Surcharge is charged on the basic customs duty, so it adds ₹50,000. The total lands near ₹10,50,000, which is the part of the bill the exemption removes. On the same consignment the buyer now pays roughly ₹1,00,00,000 plus freight and insurance instead of about ₹1,10,50,000.</p>",
+    "<h2>Why the window was kept open</h2>",
+    "<p>The extension comes because domestic supply is short. Industry estimates put India's cotton output for the 2026-27 season below 29 million bales, while consumption is projected at more than 34 million bales. Domestic prices have stayed above ₹9,000 per 100 kg, against a minimum support price of ₹8,717 for the new season. When local cotton is both scarce and expensive, imports are the release valve. India's cotton imports rose 63% year on year to USD 1.1 billion in the first six months of this financial year.</p>",
+    "<h2>What it means for a small unit</h2>",
+    "<p>For a spinning mill, a fabric maker or a garment exporter, the exemption is working capital, not just a cost line. The duty was paid at the port, before the cotton was spun, sold or paid for. On a ₹1,00,00,000 import the waiver frees roughly ₹10,50,000 that would otherwise sit in customs. If your unit runs on a thin 6% net margin, that freed cash is worth about as much as ₹1,75,00,000 of extra sales would have earned, and you get it now rather than at the end of the season. Small and medium textile units, which have the least room to absorb a jump in input costs, are the ones the concession is aimed at.</p>",
+    "<h2>What to check before you order</h2>",
+    "<p>Two things decide whether you actually save. First, the exemption is on the duty, not on the price, so if the overseas seller raises the quote once your duty falls, your landed cost does not move. Second, only cotton under tariff heading 5201 is covered, so confirm the classification with your customs broker before the consignment ships. The window closes on 31 December 2026 and the notification does not promise a further extension, so a shipment that clears after that date pays the full 11% again.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Cotton wo ek input hai jiske bina spinning mill, fabric unit ya garment exporter nahi chal sakta. 30 October 2026 ko Department of Revenue ne imported cotton par exemption do mahine badha di, to ab zero-duty window 31 October ki jagah 31 December 2026 tak chalegi.</p>",
+    "<h2>Notification mein kya badla</h2>",
+    "<p>Notification No. 35/2026-Customs, Notification No. 19/2026-Customs ko amend karta hai, jisne pehli baar 1 June se 31 October 2026 tak levies waive ki thi. Amendment sirf end date ko 31 December karta hai, baaki concession waisi hi rehti hai. Customs Tariff Act, 1975 ke tariff heading 5201 ke andar aane wala imported cotton basic customs duty aur poore Agriculture Infrastructure and Development Cess se free rehta hai.</p>",
+    "<h2>Wo 11% jo tum nahi de rahe</h2>",
+    "<p>Exemption se pehle imported cotton par lagbhag 11% ka effective duty burden tha. Ye 5% basic customs duty, 5% Agriculture Infrastructure and Development Cess aur uske upar lagne wale Social Welfare Surcharge se banta tha. Ise ₹1,00,00,000 ki consignment par chalao. Basic customs duty ₹5,00,000 aur AIDC ₹5,00,000 banta hai. Social Welfare Surcharge basic customs duty par lagta hai, to wo ₹50,000 jodta hai. Total lagbhag ₹10,50,000 aata hai, aur yahi hissa exemption hata deti hai. Usi consignment par ab buyer lagbhag ₹1,00,00,000 aur freight-insurance deta hai, pehle lagbhag ₹1,10,50,000 deta tha.</p>",
+    "<h2>Window kyun khula rakha</h2>",
+    "<p>Extension isliye hua kyunki domestic supply kam hai. Industry ke estimate ke hisaab se 2026-27 season mein India ka cotton output 29 million bales se neeche hai, jabki consumption 34 million bales se zyada ka anumaan hai. Domestic price ₹9,000 per 100 kg se upar bani hui hai, jabki naye season ka minimum support price ₹8,717 hai. Jab local cotton mehnga bhi ho aur kam bhi, to import hi release valve ban jata hai. Is financial year ke pehle chah mahine mein India ka cotton import 63% badha aur USD 1.1 billion tak pahuncha.</p>",
+    "<h2>Chhoti unit ke liye iska matlab</h2>",
+    "<p>Spinning mill, fabric maker ya garment exporter ke liye ye exemption sirf cost line nahi, working capital hai. Duty port par hi deni padti thi, us se pehle ki cotton spin ho, bike ya uski payment aaye. ₹1,00,00,000 ke import par waiver lagbhag ₹10,50,000 free karta hai jo warna customs mein atka rehta. Agar tumhari unit 6% net margin par chalti hai, to ye free cash utna hi hai jitna ₹1,75,00,000 ki extra sales kama laati, aur ye ab milta hai, season ke end mein nahi. Chhoti aur medium textile units, jinme input cost ke jhatke ko sehne ki sabse kam gunjaish hoti hai, inhe hi ye concession dhyan mein rakh kar laayi gayi hai.</p>",
+    "<h2>Order dene se pehle kya check karo</h2>",
+    "<p>Do cheezein decide karti hain ki bachat tumhe milegi ya nahi. Pehla, exemption duty par hai, price par nahi, to agar overseas seller duty kam hone par apna quote badha deta hai, to tumhara landed cost wahi rehta hai. Doosra, sirf tariff heading 5201 ka cotton cover hota hai, to consignment ship hone se pehle apne customs broker se classification confirm karo. Window 31 December 2026 ko band hoti hai aur notification aage extension ka vaada nahi karti, to us date ke baad clear hone wali shipment phir se poora 11% deti hai.</p>"
+   ]
+  },
+  {
    "slug": "quick-commerce-franchise-dark-stores-small-cities-2026",
    "title": "Quick Commerce's Next Bet: Franchise Stores in Small Cities",
    "dek": "CBRE says India's dark stores will grow from 7,800 to over 12,000 by 2030, and franchise-led outlets will carry the push into tier-II and tier-III cities.",

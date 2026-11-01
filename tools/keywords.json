@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-31T06:22:57Z",
+ "generated": "2026-11-01T01:31:32Z",
  "seed_count": 150,
- "suggestion_count": 1036,
+ "suggestion_count": 1037,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -355,6 +355,15 @@
    ]
   },
   {
+   "query": "runway 34",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "runway"
+   ]
+  },
+  {
    "query": "share market calculator nifty 50",
    "demand": 8,
    "covered": false,
@@ -469,15 +478,6 @@
    "score": 12.88,
    "from": [
     "rental yield"
-   ]
-  },
-  {
-   "query": "runway 34",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -683,6 +683,15 @@
    "score": 11.04,
    "from": [
     "roi calculator"
+   ]
+  },
+  {
+   "query": "runway incursion",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "runway"
    ]
   },
   {
@@ -1226,7 +1235,7 @@
    ]
   },
   {
-   "query": "home loan emi calculator",
+   "query": "home loan emi calculator sbi",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1524,7 +1533,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1965,7 +1974,7 @@
    ]
   },
   {
-   "query": "home loan emi calculator sbi",
+   "query": "home loan emi calculator hdfc",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2208,7 +2217,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2325,7 +2334,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2620,15 +2629,6 @@
    "score": 7.59,
    "from": [
     "gst calculator"
-   ]
-  },
-  {
-   "query": "home loan emi calculator hdfc",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "home loan emi calculator"
    ]
   },
   {
@@ -3156,7 +3156,7 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "age calculator by year",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3427,6 +3427,15 @@
    ]
   },
   {
+   "query": "home loan emi calculator icici",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "home loan emi calculator"
+   ]
+  },
+  {
    "query": "hra exemption calculator online",
    "demand": 10,
    "covered": true,
@@ -3613,15 +3622,6 @@
    "score": 6.9,
    "from": [
     "return on investment roi"
-   ]
-  },
-  {
-   "query": "revenue multiple meaning",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "revenue multiple"
    ]
   }
  ]
