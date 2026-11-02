@@ -48,8 +48,8 @@
   "lastmod": "2026-10-30"
  },
  "/blog": {
-  "hash": "69466efd467b05dc0323a8f69aaad8ed49358092c944cc5f82f4bd0e35fe853a",
-  "lastmod": "2026-11-01"
+  "hash": "7c38f67b1bf620b92f83bef238c95a27e64d4628931e792922cc4f114a0fb73d",
+  "lastmod": "2026-11-02"
  },
  "/bmi-calculator": {
   "hash": "d27730d397adb9b056b102bfc1bc8b5a5f9ac1d59435cf657bcd969cc043be1f",
@@ -264,8 +264,12 @@
   "lastmod": "2026-10-30"
  },
  "/employee-utilization-rate": {
-  "hash": "e2e036abc1767814480d4d1c1154ab6c86f6dc27cdd9d5acfd057cf094c4e815",
-  "lastmod": "2026-10-30"
+  "hash": "e486b6503d45d8d6d1b946918639c614d840356bbae719efc6b943f2028da81a",
+  "lastmod": "2026-11-02"
+ },
+ "/employee-utilization-rate-explained": {
+  "hash": "016969742df4939c15d889f12ae35e3dcbecc73ffaafa991211b3b1f1d96636b",
+  "lastmod": "2026-11-02"
  },
  "/epf-calculator": {
   "hash": "5442769a732b5c48679dcee4ef5e08fe6c0cfa902668eb7b50a5ef2667f9519a",
@@ -304,8 +308,8 @@
   "lastmod": "2026-10-30"
  },
  "/freelancer-hourly-rate": {
-  "hash": "6bbdc40114f781c437fd3279aef7c0a72a6dc7ef3799af27d9437e5a27515630",
-  "lastmod": "2026-10-30"
+  "hash": "a7fb9469f1b660522ceffab143ce5e0ebaf1a66245e11d9ce9571682cb9de8b7",
+  "lastmod": "2026-11-02"
  },
  "/gratuity-calculator": {
   "hash": "e2e6649fc5471a745082a737c7e841c21c019bf7c23abb30fa44bff6669f7df0",

@@ -131,6 +131,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Why a 10% Discount Cuts Profit by 25%](https://tankmetrics.in/discount-impact-on-profit-explained)
 - [EBITDA Calculator for Startups India](https://tankmetrics.in/ebitda-calculator-startups-india)
 - [EMI Calculator for 2 Lakh Loan - Instant](https://tankmetrics.in/emi-calculator-2-lakh-loan)
+- [Employee Utilization Rate Explained Simply](https://tankmetrics.in/employee-utilization-rate-explained)
 - [Equity Dilution Calculator India - Cap Table](https://tankmetrics.in/equity-dilution-calculator-india)
 - [Founder Salary Calculator for Indian Startups](https://tankmetrics.in/founder-salary-calculator-india)
 - [Franchise ROI: What a Store Really Earns](https://tankmetrics.in/franchise-roi-explained)

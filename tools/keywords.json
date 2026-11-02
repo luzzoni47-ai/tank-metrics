@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-01T05:43:18Z",
+ "generated": "2026-11-02T03:41:13Z",
  "seed_count": 150,
- "suggestion_count": 1038,
+ "suggestion_count": 1036,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -211,12 +211,12 @@
    ]
   },
   {
-   "query": "rental yield in mumbai",
+   "query": "runway 34",
    "demand": 9,
    "covered": false,
    "score": 16.56,
    "from": [
-    "rental yield"
+    "runway"
    ]
   },
   {
@@ -355,21 +355,12 @@
    ]
   },
   {
-   "query": "rental yield in bangalore",
+   "query": "rental yield in mumbai",
    "demand": 8,
    "covered": false,
    "score": 14.72,
    "from": [
     "rental yield"
-   ]
-  },
-  {
-   "query": "runway 34",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -481,21 +472,12 @@
    ]
   },
   {
-   "query": "rental yield in dubai",
+   "query": "rental yield in bangalore",
    "demand": 7,
    "covered": false,
    "score": 12.88,
    "from": [
     "rental yield"
-   ]
-  },
-  {
-   "query": "runway incursion",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -667,13 +649,22 @@
    ]
   },
   {
-   "query": "rental yield calculator india",
+   "query": "rental yield calculator",
    "demand": 16,
    "covered": true,
    "score": 11.04,
    "from": [
     "rental yield",
     "rental yield calculator"
+   ]
+  },
+  {
+   "query": "rental yield in dubai",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "rental yield"
    ]
   },
   {
@@ -760,6 +751,16 @@
    "from": [
     "property valuation",
     "property valuation calculator"
+   ]
+  },
+  {
+   "query": "rental yield calculator india",
+   "demand": 15,
+   "covered": true,
+   "score": 10.35,
+   "from": [
+    "rental yield",
+    "rental yield calculator"
    ]
   },
   {
@@ -861,15 +862,6 @@
    "score": 9.2,
    "from": [
     "msme loan"
-   ]
-  },
-  {
-   "query": "rental yield in delhi",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "rental yield"
    ]
   },
   {
@@ -1108,7 +1100,7 @@
    ]
   },
   {
-   "query": "down payment calculator",
+   "query": "down payment calculator car",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1487,15 +1479,6 @@
    ]
   },
   {
-   "query": "rental yield",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "rental yield"
-   ]
-  },
-  {
    "query": "return on capital employed formula",
    "demand": 13,
    "covered": true,
@@ -1541,7 +1524,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1628,15 +1611,6 @@
    "score": 8.97,
    "from": [
     "working capital"
-   ]
-  },
-  {
-   "query": "zodiac sign calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "zodiac sign calculator"
    ]
   },
   {
@@ -1865,7 +1839,7 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator bike",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1973,7 +1947,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2171,16 +2145,7 @@
    ]
   },
   {
-   "query": "rental yield calculator formula",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "rental yield calculator"
-   ]
-  },
-  {
-   "query": "rental yield formula",
+   "query": "rental yield",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2234,7 +2199,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2351,7 +2316,16 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "zodiac sign calculator",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "zodiac sign calculator"
+   ]
+  },
+  {
+   "query": "age calculator by year",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2532,7 +2506,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator for mobile",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2811,7 +2785,7 @@
    ]
   },
   {
-   "query": "rental yield calculator bangalore",
+   "query": "rental yield calculator formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2820,7 +2794,7 @@
    ]
   },
   {
-   "query": "rental yield meaning",
+   "query": "rental yield formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3073,7 +3047,7 @@
    ]
   },
   {
-   "query": "rental yield in gurgaon",
+   "query": "rental yield in delhi",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3182,7 +3156,16 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "zodiac sign calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "zodiac sign calculator"
+   ]
+  },
+  {
+   "query": "age calculator online",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3363,7 +3346,7 @@
    ]
   },
   {
-   "query": "down payment calculator for mobile",
+   "query": "down payment calculator india",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3444,7 +3427,7 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3615,12 +3598,30 @@
    ]
   },
   {
-   "query": "rental yield calculator",
+   "query": "rental yield calculator bangalore",
    "demand": 10,
    "covered": true,
    "score": 6.9,
    "from": [
     "rental yield calculator"
+   ]
+  },
+  {
+   "query": "rental yield meaning",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "rental yield"
+   ]
+  },
+  {
+   "query": "return on investment roi calculator",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "return on investment roi"
    ]
   }
  ]

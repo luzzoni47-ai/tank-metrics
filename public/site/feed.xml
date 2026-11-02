@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sun, 01 Nov 2026 05:44:21 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 03:53:45 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Customer Acquisition Cost (CAC) Calculator India - Free Calculator in ₹</title>
@@ -22,6 +22,14 @@
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>EBITDA calculator for startups India: enter revenue and operating expenses to get EBITDA, the margin and a valuation in ₹ Crores. Free for Indian founders.</description>
+  </item>
+  <item>
+    <title>Employee Utilization Rate Explained Simply</title>
+    <link>https://tankmetrics.in/employee-utilization-rate-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/employee-utilization-rate-explained</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>How employee utilization rate is calculated, what a healthy range looks like for a small services team, and why 100% billable is a warning, not a goal.</description>
   </item>
   <item>
     <title>Founder Salary Calculator for Indian Startups - Free Calculator in ₹</title>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Pre money vs post money valuation explained for Indian founders. Enter the cheque and equity to see both numbers, in ₹ Crores, instantly and free.</description>
-  </item>
-  <item>
-    <title>Profit Margin Calculator in Rupees - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/profit-margin-calculator-rupees</link>
-    <guid isPermaLink="true">https://tankmetrics.in/profit-margin-calculator-rupees</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Free profit margin calculator in rupees. Enter revenue and net profit to see your margin %, markup and profit per ₹100 of sales, instantly.</description>
   </item>
 </channel>
 </rss>
