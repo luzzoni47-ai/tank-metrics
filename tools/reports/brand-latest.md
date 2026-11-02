@@ -1,4 +1,4 @@
-# Brand mentions - 2026-11-01
+# Brand mentions - 2026-11-02
 
 Sources checked: Hacker News, Bing, Google News, DuckDuckGo.
 Queries: "tank metrics", "tankmetrics", tankmetrics.in.
@@ -6,7 +6,7 @@ Queries: "tank metrics", "tankmetrics", tankmetrics.in.
 - Our own pages or accounts showing: 1
 - Someone writing about us (our own pages, new): 1
 - Someone else linking to us (a real citation): 0
-- Namesakes - not us: 8
+- Namesakes - not us: 7
 
 ## Our own pages and accounts in search
 
@@ -21,8 +21,6 @@ Queries: "tank metrics", "tankmetrics", tankmetrics.in.
 
 - [tankmetrics.com](http://tankmetrics.com/)
   - DuckDuckGo, found by tankmetrics.in - a different site on the .com
-- [MPG Tracker & Gas Fuel Economy APK for Android Download](https://apkpure.com/mpg-tracker-gas-fuel-economy/com.tankmetrics.app)
-  - DuckDuckGo, found by tankmetrics.in
 - [Download TankMetrics: Fuel, Mileage Log 1.0.14 Android APK File](https://apkpure.com/tankmetrics-fuel-mileage-log/com.tankmetrics.app/download/1.0.14)
   - DuckDuckGo, found by tankmetrics.in
 - [Download TankMetrics: Fuel, Mileage Log 1.0.22 Android APK File](https://apkpure.com/tankmetrics-fuel-mileage-log/com.tankmetrics.app/download/1.0.22)
