@@ -32,6 +32,14 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-hsn-code-for-online-sellers": [
+        ("/gst-calculator", "GST Calculator",
+         "split any price into the base amount and the CGST and SGST on it"),
+        ("/marketplace-fee-calculator", "Marketplace Fee Calculator",
+         "see what a platform commission leaves you after the sale"),
+        ("/import-duty-and-customs-calculator", "Import Duty & Customs",
+         "add the customs duty and IGST the same code drives at the border"),
+    ],
     "blog-roas-explained": [
         ("/return-on-ad-spend-roas", "Return on Ad Spend (ROAS)",
          "put your own revenue and ad spend into the ratio this post explains"),

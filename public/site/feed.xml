@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Tue, 03 Nov 2026 03:50:07 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 03 Nov 2026 03:52:14 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>HSN Code for Online Sellers</title>
+    <link>https://tankmetrics.in/hsn-code-for-online-sellers</link>
+    <guid isPermaLink="true">https://tankmetrics.in/hsn-code-for-online-sellers</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>HSN codes explained for online sellers: what the eight digits mean, how the code sets your GST slab, and how to classify your own products the right way.</description>
+  </item>
   <item>
     <title>Return on Ad Spend (ROAS) Explained</title>
     <link>https://tankmetrics.in/roas-explained</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>How to calculate valuation of startup in India, step by step, using revenue and profit multiples plus early-stage methods. Free calculator in ₹ Crores.</description>
-  </item>
-  <item>
-    <title>Landed Cost Meaning: What You Really Pay</title>
-    <link>https://tankmetrics.in/landed-cost-meaning</link>
-    <guid isPermaLink="true">https://tankmetrics.in/landed-cost-meaning</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Landed cost is the real cost of imported goods: product, freight, insurance and customs duty added up, then divided by the number of units you ordered.</description>
   </item>
 </channel>
 </rss>

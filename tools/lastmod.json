@@ -328,8 +328,8 @@
   "lastmod": "2026-10-30"
  },
  "/gst-calculator": {
-  "hash": "6fd1315aaa574514798475dd025bcd5e8b62c4b19a86a1198675ca3db5513079",
-  "lastmod": "2026-10-30"
+  "hash": "44c33bb5babbf9795a20bb7f34b6af36bf8929805acc30c10c7830ee58c7baf0",
+  "lastmod": "2026-11-03"
  },
  "/gst-calculator-tax-and-wealth-toolkit": {
   "hash": "7b2d538d35afc31ecb5b5b6e8d0b4480cf4d175b751f99ea93427d984c29df9a",
@@ -375,13 +375,17 @@
   "hash": "316913f622dc6d51694eed79f48eddd16bf1e7e4b4bfb16aed8b844b0657268d",
   "lastmod": "2026-10-30"
  },
+ "/hsn-code-for-online-sellers": {
+  "hash": "68dece5e7e76a5a6622f704621417fc0b0d1df311b5a3541be9775b9b6e0c207",
+  "lastmod": "2026-11-03"
+ },
  "/implied-valuation": {
   "hash": "8f6b69af0f70472da7a64ba5c079b6329f4b6622e133417a487224003cd766f9",
   "lastmod": "2026-10-30"
  },
  "/import-duty-and-customs-calculator": {
-  "hash": "f9c34d1d85ec401a50da89682ab5ac6ac78177bf0c0efe531e4b628bcd86dbd3",
-  "lastmod": "2026-10-30"
+  "hash": "2680386e221ee64c6c26ba5d5903bd1bff75cdbeee1f776626a5a8037fc8d9bf",
+  "lastmod": "2026-11-03"
  },
  "/import-duty-explained": {
   "hash": "cd2d07446c237907141e8c3584c6cea56b482caf2d3121edce125cda35fc763a",
@@ -444,8 +448,8 @@
   "lastmod": "2026-10-30"
  },
  "/marketplace-fee-calculator": {
-  "hash": "d755602a96fde0f80efb52f75e52ad4dfbf96d8612227adbaa1ab8411259e8bf",
-  "lastmod": "2026-10-30"
+  "hash": "d3bcfc9fc03de4b5314d46f08c5a9c30e67b81172deac1688965beef97af4010",
+  "lastmod": "2026-11-03"
  },
  "/marketplace-fees-explained": {
   "hash": "6a4cb70971bb65f6d38edc948ddda4758ab4f7a961764c4a2a891d61e7008fa9",
