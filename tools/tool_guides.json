@@ -747,17 +747,17 @@
    ]
   },
   "fd": {
-   "what": "A fixed deposit pays a fixed rate for a fixed term, and the only decision that really changes the outcome is whether the interest is reinvested. 1,00,000 rupees at 7% for 5 years pays 35,000 in simple terms, but 40,255 if the interest compounds quarterly - and banks compound quarterly by default. The calculator shows both, plus the post-tax figure, because TDS on interest above 40,000 a year is what turns a 7% FD into about 4.9% for a taxpayer in the 30% slab.",
-   "formula": "Maturity = P x (1 + r / n)^(n x t), where r is the annual rate, n the compounds per year (4 for quarterly) and t the years. Interest = Maturity - P.",
+   "what": "A fixed deposit is the one product where the advertised rate is almost never the rate you earn, and this calculator exists to show the gap. Three things move the number: whether the interest compounds, how often, and what the tax takes. ₹1,00,000 at 7% for five years pays ₹35,000 if the bank paid simple interest, ₹41,478 if it compounds quarterly — which is what most banks actually do — and roughly ₹29,000 of that interest survives if you are in the 30% slab and the interest crosses the TDS threshold.\n\nThe decision the tool settles is whether to lock a lump sum for longer, and the answer turns on the post-tax maturity, not the headline rate. A 5-year FD at 7% and a 3-year FD at 7% look identical on the rate board; over five years the longer one wins only if you actually reinvest the 3-year at maturity, and the calculator shows the compounded figure so you can weigh that against the reinvestment risk. It also keeps the ₹40,000-a-year interest mark in view, because crossing it changes the effective return by about 30% for a high-slab taxpayer.",
+   "formula": "Maturity = principal × (1 + (rate ÷ 100) ÷ frequency)^(frequency × years), and Interest Earned = Maturity − principal. With principal = 1,00,000, rate = 7, frequency = 4 and years = 5, the maturity is 1,00,000 × (1 + 0.07 ÷ 4)^(4 × 5) = ₹1,41,478, so the interest is ₹41,478 — about ₹6,478 more than the ₹35,000 a flat 7% a year would pay, because each quarter's interest starts earning too.",
    "when": [
-    "You are parking a lump sum and want the post-tax maturity, not the advertised rate.",
-    "You are comparing a bank FD with a small-finance bank FD that pays 0.5-1% more.",
-    "You are deciding between a 3-year and a 5-year FD and want the rupee difference."
+    "You have a lump sum to park and want the maturity you will actually receive after tax, not the rate the board shows.",
+    "You are weighing a longer tenure against a shorter one and need the compounded difference rather than the headline rate.",
+    "You are comparing a bank FD with a small-finance bank FD that pays 0.5-1% more, and want to see whether the extra rate survives the tax."
    ],
    "mistakes": [
-    "Comparing an FD rate against an equity fund's return. The FD is contractual; the fund is not.",
-    "Ignoring TDS. For anyone in the 30% slab, an FD's real return is roughly the rate minus 30%.",
-    "Breaking an FD early without checking the penalty - typically 0.5-1% of the rate."
+    "Reading the advertised rate as the return. If the interest compounds quarterly the maturity is higher than simple interest, and if it crosses ₹40,000 a year TDS cuts the return for anyone in the 30% slab.",
+    "Setting compounds per year to 1 when the bank compounds quarterly. A 7% FD with frequency = 1 understates the maturity by thousands of rupees over five years.",
+    "Breaking the FD early to chase a rate without checking the penalty, typically 0.5-1% off the rate, which usually costs more than the difference being chased."
    ]
   },
   "franchise": {
@@ -901,17 +901,17 @@
    ]
   },
   "impval": {
-   "what": "An implied valuation is the value of a whole company worked backwards from one small deal. When someone says \"50 lakh for 5%\", they have just told you what they think the company is worth: 50 lakh is 5% of the company, so the company is worth 10 crore. Nobody wrote that number down - it is implied by the deal. That is the whole idea, and it is the fastest way to sanity-check any offer, because the person making it usually does not realise they have revealed their number.",
-   "formula": "Implied Valuation = Investment ÷ Equity % × 100. \"50 lakh for 5%\" is 50,00,000 ÷ 5 × 100 = ₹10 crore. Reversing it gives the implied equity: Investment ÷ Valuation × 100. The formula is the same one behind pre-money and post-money valuation - implied valuation is simply what you get when you run it backwards from the offer instead of forwards from the cap table.",
+   "what": "An implied valuation is the price of a whole company read backwards out of a single line of an offer. When someone says \"₹50,00,000 for 5%\", the stake and the cheque together already fix a value: if ₹50,00,000 buys 5%, the company has been priced at ₹10 crore. Nobody negotiated that ₹10 crore and no valuer signed it, yet it is exactly what the offer says the company is worth — which is why this tool is the fastest way to see what a term sheet really proposes.\n\nThe reason to run it is that the cheque size hides the stake, and the stake is what sets the implied price. The same ₹15,00,000 implies ₹5 crore at 3% and ₹10 crore at 1.5%; the founder keeps twice as much of the company in the second case for the identical amount of money. Run every offer through it before reacting to the amount, and a \"generous\" cheque that asks for a third of the business stops looking generous.",
+   "formula": "Implied Valuation = amt ÷ (eq ÷ 100). The cheque goes in as amt in ₹ and the stake as eq in per cent, so ₹50,00,000 at eq = 5 gives 50,00,000 ÷ 0.05 = ₹10 crore. Read it backwards to test a claim: an investor who values the company at ₹10 crore but offers ₹25,00,000 is buying 25,00,000 ÷ 10,00,00,000 = 2.5%, not the larger stake the round might suggest. Implied equity = amt ÷ Implied Valuation × 100.",
    "when": [
-    "Someone quotes a price and a stake together - \"2 crore for 10%\" - and you want the company value behind it.",
-    "You are comparing two offers on different stakes and need one number to compare them on.",
-    "An investor tells you your company is worth X and you want to test what that implies for the cheque they are offering."
+    "An offer arrives as an amount and a stake — \"₹20,00,000 for 4%\" — and you want the company price buried inside that pair.",
+    "You are comparing two offers that quote different cheques against different stakes and need a single scale to judge them on.",
+    "An investor states a company valuation and you want to check what stake the cheque they are actually writing would buy at that price."
    ],
    "mistakes": [
-    "Treating the implied number as post-money when the investor meant pre-money. The difference is the cheque itself, and it is a real amount of equity.",
-    "Running the maths on a deal that includes a royalty or a loan - those are not equity, so the implied valuation is meaningless until the equity part is separated out.",
-    "Quoting an implied valuation as if a valuer certified it. It is a reading of an offer, not a registered valuation, and a CA or merchant banker is still needed for anything official."
+    "Reading the implied number as the company's value rather than the price this one offer implies. A different stake in the same business implies a different valuation.",
+    "Feeding a convertible note, loan or royalty cheque into eq as though it were equity. The implied valuation is only meaningful once the equity part is separated from the debt.",
+    "Quoting an implied valuation as if a valuer certified it. It is a reading of an offer, and anything official still needs a CA or merchant banker."
    ]
   },
   "incometax": {
@@ -1229,17 +1229,17 @@
    ]
   },
   "prepost": {
-   "what": "Pre-Money & Post-Money Valuation takes the term sheet as it is actually written — a price for the company before the cheque, and the cheque itself — and works out the two numbers that decide what a founder keeps. The pre-money is what the company was agreed to be worth with the new money still outside it; the post-money is that value plus the investment. The gap between them is not arithmetic decoration: it is the stake the new money buys.\n\nThe stake is the figure that gets argued about after the round closes. If the pre-money is ₹9 crore and the investor puts in ₹1 crore, the post-money is ₹10 crore and the cheque bought 10% — a tenth of the company, not a tenth of the old company. Founders who read only the pre-money assume the new investor's slice comes out of somewhere else, and are surprised when their own percentage is the one that falls. The tool shows both valuations and the equity given away on the same line so that surprise cannot happen.",
-   "formula": "Post-Money Valuation = Pre-Money Valuation + Investment Amount. Equity Given = Investment Amount ÷ Post-Money Valuation × 100. Type the pre-money (pre) and the investment (amt); the tool adds them for the post-money, then divides the investment by that post-money figure to show the stake. A ₹9 crore pre-money plus a ₹1 crore cheque is a ₹10 crore post-money and 10% given away. The post-money, not the pre-money, is the base the stake is measured against.",
+   "what": "Pre-money and post-money are the two prices a term sheet carries, and the only reason to care about the difference is that the stake an investor receives is measured against the second one. The pre-money is the value the company was agreed at with the new cheque still outside it; the post-money is that figure plus the cheque. If the pre-money is ₹9 crore and the investment is ₹1 crore, the company is priced at ₹10 crore after the round and the investor's ₹1 crore has bought a tenth of it.\n\nThe calculator settles the dilution question founders get wrong: the new investor's percentage comes out of the founder's holding, not from a spare slice of the company. Enter pre = 9,00,00,000 and amt = 1,00,00,000 and the tool returns a ₹10 crore post-money and 10% given away. That 10% is the exact reduction in what the existing shareholders own, which is why a round at a lower pre-money for more money can cost a founder far more than the cheque brings in.",
+   "formula": "Post-Money Valuation = pre + amt, and Equity Given = amt ÷ Post-Money Valuation × 100. The pre-money goes in as pre and the cheque as amt, both in ₹. With pre = 9,00,00,000 and amt = 1,00,00,000 the post-money is ₹10 crore and the equity given is 1,00,00,000 ÷ 10,00,00,000 × 100 = 10%. The stake is always measured against the post-money, because that is the company the investor is joining.",
    "when": [
-    "A term sheet quotes a pre-money figure and you want the post-money and the stake it hands over.",
-    "You are deciding whether to raise at a lower pre-money for more money, and want to see how much more of the company that costs.",
-    "You are building a simple cap table and need the post-money before you can split it into stakes."
+    "A term sheet quotes a pre-money figure and you need the post-money and the stake it hands over before you sign.",
+    "You are choosing between a lower pre-money for a larger cheque and a higher pre-money for a smaller one, and want the dilution of each.",
+    "You are drawing a simple cap table and need the post-money value before you can divide it into shareholder stakes."
    ],
    "mistakes": [
-    "Measuring the stake against the pre-money. 10% of the pre-money is not 10% of the company; the investment itself is part of the post-money base.",
-    "Reading the pre-money as the price of the whole company. It is the price before the new money, which is a smaller and less useful number on its own.",
-    "Adding the cheque to the pre-money but forgetting that the founder's own stake is diluted by exactly the equity given to the new investor."
+    "Measuring the equity given against the pre-money. 10% of the pre-money is not 10% of the company — the investment is part of the base the stake is divided by.",
+    "Reading the pre-money as the price of the whole company. It is the price before the new money, and it is always the smaller of the two numbers on the sheet.",
+    "Adding the cheque to the pre-money but not reducing the founder's own holding by the equity given. The two move together, and only the post-money shows it."
    ]
   },
   "propertyroi": {

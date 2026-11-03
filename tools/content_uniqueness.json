@@ -1,7 +1,99 @@
 {
- "pages_measured": 180,
+ "pages_measured": 101,
  "pages_with_a_near_duplicate": 0,
- "worst_pairs": [],
- "worst_pages": [],
- "median_overlap": 0.0
+ "worst_pairs": [
+  {
+   "overlap": 0.189,
+   "a": "/gst-calculator-tax-and-wealth-toolkit",
+   "b": "/gst-calculator"
+  },
+  {
+   "overlap": 0.168,
+   "a": "/implied-valuation",
+   "b": "/pre-money-and-post-money-valuation"
+  },
+  {
+   "overlap": 0.166,
+   "a": "/age-calculator",
+   "b": "/lucky-number-calculator"
+  },
+  {
+   "overlap": 0.154,
+   "a": "/break-even-point",
+   "b": "/gross-profit-and-margin"
+  },
+  {
+   "overlap": 0.147,
+   "a": "/client-acquisition-cost-cac",
+   "b": "/customer-acquisition-cost-cac"
+  },
+  {
+   "overlap": 0.147,
+   "a": "/compound-interest",
+   "b": "/simple-interest"
+  },
+  {
+   "overlap": 0.146,
+   "a": "/age-calculator",
+   "b": "/zodiac-sign-calculator"
+  },
+  {
+   "overlap": 0.145,
+   "a": "/lucky-number-calculator",
+   "b": "/zodiac-sign-calculator"
+  },
+  {
+   "overlap": 0.145,
+   "a": "/rashi-moon-sign-calculator",
+   "b": "/zodiac-sign-calculator"
+  },
+  {
+   "overlap": 0.145,
+   "a": "/compatibility-calculator",
+   "b": "/love-calculator"
+  }
+ ],
+ "worst_pages": [
+  {
+   "page": "/gst-calculator-tax-and-wealth-toolkit",
+   "closest_overlap": 0.189
+  },
+  {
+   "page": "/gst-calculator",
+   "closest_overlap": 0.189
+  },
+  {
+   "page": "/implied-valuation",
+   "closest_overlap": 0.168
+  },
+  {
+   "page": "/pre-money-and-post-money-valuation",
+   "closest_overlap": 0.168
+  },
+  {
+   "page": "/age-calculator",
+   "closest_overlap": 0.166
+  },
+  {
+   "page": "/lucky-number-calculator",
+   "closest_overlap": 0.166
+  },
+  {
+   "page": "/break-even-point",
+   "closest_overlap": 0.154
+  },
+  {
+   "page": "/gross-profit-and-margin",
+   "closest_overlap": 0.154
+  },
+  {
+   "page": "/client-acquisition-cost-cac",
+   "closest_overlap": 0.147
+  },
+  {
+   "page": "/customer-acquisition-cost-cac",
+   "closest_overlap": 0.147
+  }
+ ],
+ "median_overlap": 0.114
 }

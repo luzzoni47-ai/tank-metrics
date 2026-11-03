@@ -10,8 +10,10 @@
         "v": "₹81,000.00"
       }
     ],
-    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+    "intro": "Percentage Calculator, worked end to end. The calculator takes Percentage, Of this number; the example below runs one realistic set of those numbers through it.",
+    "outro": "Percentage Calculator settles it with Percentage of a number = Number × Percentage ÷ 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Percentage Calculator ka poora hisaab. Tool leta hai Percentage aur Of this number; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Percentage Calculator ka formula: Number ka percentage = Number × Percentage ÷ 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "simpleint": {
     "inputs": {
@@ -29,8 +31,10 @@
         "v": "₹1,50,000.00"
       }
     ],
-    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+    "intro": "Simple Interest, worked end to end. The calculator takes Amount (Principal), Interest Rate, Time; the example below runs one realistic set of those numbers through it.",
+    "outro": "Simple Interest settles it with Interest = Principal x Rate x Time / 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Simple Interest ka poora hisaab. Tool leta hai Amount (Principal) aur Interest Rate aur Time; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Simple Interest ka formula: Interest = Principal x Rate x Time / 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "compint": {
     "inputs": {
@@ -49,8 +53,10 @@
         "v": "₹1,61,051.00"
       }
     ],
-    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+    "intro": "Compound Interest, worked end to end. The calculator takes Amount (Principal), Interest Rate, Time, Times compounded per year; the example below runs one realistic set of those numbers through it.",
+    "outro": "Compound Interest settles it with Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Change any field above and the answer updates with it.",
+    "hi_intro": "Compound Interest ka poora hisaab. Tool leta hai Amount (Principal) aur Interest Rate aur Time aur Times compounded per year; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Compound Interest ka formula: Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "emi": {
     "inputs": {
@@ -73,7 +79,9 @@
       }
     ],
     "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
-    "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property."
+    "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property.",
+    "hi_intro": "Loan EMI Calculator ka poora hisaab. Tool leta hai Loan Amount aur Interest Rate aur Loan Tenure; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Loan EMI Calculator ka formula: EMI ka formula hai: P x r x (1+r)^n ÷ ((1+r)^n - 1), jahan P loan amount hai, r monthly interest rate (saalana rate ÷ 12 ÷ 100), aur n kitne mahine. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "savegoal": {
     "inputs": {
@@ -87,8 +95,10 @@
         "v": "90.0 months"
       }
     ],
-    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+    "intro": "Say you want ₹5,00,000, you already have ₹1,00,000, and you can put aside ₹15,000 a month.",
+    "outro": "Change the monthly amount above and the time to the goal moves with it. Even a small increase, held for years, moves the date a long way.",
+    "hi_intro": "Savings Goal Planner ka poora hisaab. Tool leta hai Savings Goal aur Already Saved aur Saved Each Month; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Savings Goal Planner ka formula: Mahine = (Goal minus ab tak bachaya) ÷ har mahine bachaya jaane wala amount. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "takehome": {
     "inputs": {
@@ -105,8 +115,10 @@
         "v": "₹-9,99,00,000"
       }
     ],
-    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+    "intro": "Salary Take-Home Estimator, worked end to end. The calculator takes Annual CTC, Estimated Deductions; the example below runs one realistic set of those numbers through it.",
+    "outro": "Salary Take-Home Estimator settles it with Take-home = Gross Salary - Employee PF (12% of basic) - Professional Tax - TDS. Change any field above and the answer updates with it.",
+    "hi_intro": "Salary Take-Home Estimator ka poora hisaab. Tool leta hai Annual CTC aur Estimated Deductions; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Salary Take-Home Estimator ka formula: Take-home = Gross Salary - Employee PF (basic ka 12%) - Professional Tax - TDS. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "split": {
     "inputs": {
@@ -119,8 +131,10 @@
         "v": "₹250.00"
       }
     ],
-    "intro": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "outro": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser."
+    "intro": "Bill Splitter, worked end to end. The calculator takes Total Bill, Number of People; the example below runs one realistic set of those numbers through it.",
+    "outro": "Bill Splitter settles it with Each person pays the total bill divided by the number of people. Change any field above and the answer updates with it.",
+    "hi_intro": "Bill Splitter ka poora hisaab. Tool leta hai Total Bill aur Number of People; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Bill Splitter ka formula: Har banda deta hai total bill / number of people. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "tip": {
     "inputs": {
@@ -138,7 +152,9 @@
       }
     ],
     "intro": "Take a ₹1,000 bill and a 10% tip. Here is what you leave and what you pay.",
-    "outro": "The tip is ₹100 on a ₹1,000 bill, so the total is ₹1,100. Change the bill or the percentage above and both the tip and the total follow."
+    "outro": "The tip is ₹100 on a ₹1,000 bill, so the total is ₹1,100. Change the bill or the percentage above and both the tip and the total follow.",
+    "hi_intro": "Tip Calculator ka poora hisaab. Tool leta hai Bill Amount aur Tip; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Tip Calculator ka formula: Tip amount = bill × tip percentage ÷ 100 (`bill` × `tip` ÷ 100). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "simpledisc": {
     "inputs": {
@@ -156,7 +172,9 @@
       }
     ],
     "intro": "Take a ₹2,000 jacket with 25% off in a sale. Here is what the discount takes off.",
-    "outro": "The percentage is the shop's number; the ₹500 saving and the ₹1,500 final price are yours. Change either figure above and both move together."
+    "outro": "The percentage is the shop's number; the ₹500 saving and the ₹1,500 final price are yours. Change either figure above and both move together.",
+    "hi_intro": "Discount Calculator ka poora hisaab. Tool leta hai Original Price aur Discount; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Discount Calculator ka formula: Bachat = original price × discount ÷ 100 (`price` × `disc` ÷ 100). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "numwords": {
     "inputs": {
@@ -169,7 +187,9 @@
       }
     ],
     "intro": "Type a figure and the tool writes it the way an Indian cheque expects.",
-    "outro": "Always check the words against the digits before you sign. A mismatch is what causes a payment to be held up."
+    "outro": "Always check the words against the digits before you sign. A mismatch is what causes a payment to be held up.",
+    "hi_intro": "Number to Words (Indian) ka poora hisaab. Tool leta hai Number; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Number to Words (Indian) ka formula: Indian grouping right se teen digit ke blocks mein hoti hai - pehle hazaar, phir lakh, phir crore. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "gross": {
     "inputs": {
@@ -186,8 +206,10 @@
         "v": "60.0%"
       }
     ],
-    "intro": "Take a business with a year of trading behind it. Here is what Gross Profit & Margin reports for those figures.",
-    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+    "intro": "Gross Profit & Margin, worked end to end. The calculator takes Total Revenue, Cost of Goods Sold; the example below runs one realistic set of those numbers through it.",
+    "outro": "Gross Profit & Margin settles it with Gross Profit = Revenue − Cost of Goods Sold. Change any field above and the answer updates with it.",
+    "hi_intro": "Gross Profit & Margin ka poora hisaab. Tool leta hai Total Revenue aur Cost of Goods Sold; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Gross Profit & Margin ka formula: Gross Profit = Revenue − Cost of Goods Sold. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ebitda": {
     "inputs": {
@@ -205,8 +227,10 @@
         "v": "38.9%"
       }
     ],
-    "intro": "Take a business with a year of trading behind it. Here is what EBITDA & Margin reports for those figures.",
-    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+    "intro": "EBITDA & Margin, worked end to end. The calculator takes Revenue, Cost of Goods Sold, Operating Expenses; the example below runs one realistic set of those numbers through it.",
+    "outro": "EBITDA & Margin settles it with EBITDA = Revenue − Cost of Goods Sold − Operating Expenses. Change any field above and the answer updates with it.",
+    "hi_intro": "EBITDA & Margin ka poora hisaab. Tool leta hai Revenue aur Cost of Goods Sold aur Operating Expenses; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "EBITDA & Margin ka formula: EBITDA = Revenue − Cost of Goods Sold − Operating Expenses. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "opmargin": {
     "inputs": {
@@ -219,8 +243,10 @@
         "v": "40.0%"
       }
     ],
-    "intro": "Take a business with a year of trading behind it. Here is what Operating Margin reports for those figures.",
-    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+    "intro": "Operating Margin, worked end to end. The calculator takes Revenue, Operating Profit; the example below runs one realistic set of those numbers through it.",
+    "outro": "Operating Margin settles it with Operating Margin = Operating Profit ÷ Revenue × 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Operating Margin ka poora hisaab. Tool leta hai Revenue aur Operating Profit; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Operating Margin ka formula: Operating Margin = Operating Profit ÷ Revenue × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "netmargin": {
     "inputs": {
@@ -234,7 +260,9 @@
       }
     ],
     "intro": "Take a business with ₹4,50,000 of revenue that keeps ₹1,80,000 after every cost and tax. Here is the net margin.",
-    "outro": "40% is a strong net margin for most trades. If your figure is much lower, the leak is below the gross line — look at overheads, interest and tax before you look at price."
+    "outro": "40% is a strong net margin for most trades. If your figure is much lower, the leak is below the gross line — look at overheads, interest and tax before you look at price.",
+    "hi_intro": "Net Profit Margin ka poora hisaab. Tool leta hai Revenue aur Net Profit; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Net Profit Margin ka formula: Net margin = net profit ÷ revenue × 100 (`np` ÷ `rev` × 100). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "cm": {
     "inputs": {
@@ -251,8 +279,10 @@
         "v": "60.0%"
       }
     ],
-    "intro": "Take a business with a year of trading behind it. Here is what Contribution Margin reports for those figures.",
-    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+    "intro": "Contribution Margin, worked end to end. The calculator takes Selling Price / Unit, Variable Cost / Unit; the example below runs one realistic set of those numbers through it.",
+    "outro": "Contribution Margin settles it with Contribution margin per unit = selling price - variable cost per unit. Change any field above and the answer updates with it.",
+    "hi_intro": "Contribution Margin ka poora hisaab. Tool leta hai Selling Price / Unit aur Variable Cost / Unit; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Contribution Margin ka formula: Contribution margin per unit = selling price - variable cost per unit. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "markup": {
     "inputs": {
@@ -269,8 +299,10 @@
         "v": "-150.0%"
       }
     ],
-    "intro": "Take a business with a year of trading behind it. Here is what Markup vs Margin reports for those figures.",
-    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+    "intro": "Markup vs Margin, worked end to end. The calculator takes Cost Price, Selling Price; the example below runs one realistic set of those numbers through it.",
+    "outro": "Markup vs Margin settles it with Markup % = (Selling Price − Cost Price) ÷ Cost Price × 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Markup vs Margin ka poora hisaab. Tool leta hai Cost Price aur Selling Price; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Markup vs Margin ka formula: Markup % = (Selling Price − Cost Price) ÷ Cost Price × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "roi": {
     "inputs": {
@@ -283,8 +315,10 @@
         "v": "10.0%"
       }
     ],
-    "intro": "Take a business with a year of trading behind it. Here is what Return on Investment (ROI) reports for those figures.",
-    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+    "intro": "Return on Investment (ROI), worked end to end. The calculator takes Net Profit, Investment Cost; the example below runs one realistic set of those numbers through it.",
+    "outro": "Return on Investment (ROI) settles it with ROI is net profit divided by investment cost, times 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Return on Investment (ROI) ka poora hisaab. Tool leta hai Net Profit aur Investment Cost; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Return on Investment (ROI) ka formula: ROI = net profit / investment cost x 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "roce": {
     "inputs": {
@@ -297,8 +331,10 @@
         "v": "250.0%"
       }
     ],
-    "intro": "Take a business with a year of trading behind it. Here is what Return on Capital Employed reports for those figures.",
-    "outro": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment."
+    "intro": "Return on Capital Employed, worked end to end. The calculator takes Operating Profit, Capital Employed; the example below runs one realistic set of those numbers through it.",
+    "outro": "Return on Capital Employed settles it with ROCE is operating profit (EBIT) divided by capital employed, times 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Return on Capital Employed ka poora hisaab. Tool leta hai Operating Profit aur Capital Employed; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Return on Capital Employed ka formula: ROCE = operating profit (EBIT) / capital employed x 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "impval": {
     "inputs": {
@@ -311,8 +347,10 @@
         "v": "₹1,00,00,000"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Implied Valuation works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Implied Valuation, worked end to end. The calculator takes Investment Amount, Equity Offered; the example below runs one realistic set of those numbers through it.",
+    "outro": "Implied Valuation settles it with Implied Valuation = amt ÷ (eq ÷ 100). Change any field above and the answer updates with it.",
+    "hi_intro": "Implied Valuation ka poora hisaab. Tool leta hai Investment Amount aur Equity Offered; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Implied Valuation ka formula: Implied Valuation = amt ÷ (eq ÷ 100). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "prepost": {
     "inputs": {
@@ -329,8 +367,10 @@
         "v": "10.0%"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Pre-Money & Post-Money Valuation works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Pre-Money & Post-Money Valuation, worked end to end. The calculator takes Pre-Money Valuation, Investment Amount; the example below runs one realistic set of those numbers through it.",
+    "outro": "Pre-Money & Post-Money Valuation settles it with Post-Money Valuation = pre + amt, and Equity Given = amt ÷ Post-Money Valuation × 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Pre-Money & Post-Money Valuation ka poora hisaab. Tool leta hai Pre-Money Valuation aur Investment Amount; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Pre-Money & Post-Money Valuation ka formula: Post-Money Valuation = pre + amt, aur Equity Given = amt ÷ Post-Money Valuation × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "revmul": {
     "inputs": {
@@ -343,8 +383,10 @@
         "v": "2.50x"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Revenue Multiple works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Revenue Multiple, worked end to end. The calculator takes Valuation, Annual Revenue; the example below runs one realistic set of those numbers through it.",
+    "outro": "Revenue Multiple settles it with Revenue Multiple = Valuation ÷ Annual Revenue. Change any field above and the answer updates with it.",
+    "hi_intro": "Revenue Multiple ka poora hisaab. Tool leta hai Valuation aur Annual Revenue; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Revenue Multiple ka formula: Revenue Multiple = Valuation ÷ Annual Revenue. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ebitdamul": {
     "inputs": {
@@ -357,8 +399,10 @@
         "v": "2.50x"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once EBITDA Multiple works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "EBITDA Multiple, worked end to end. The calculator takes Valuation, EBITDA; the example below runs one realistic set of those numbers through it.",
+    "outro": "EBITDA Multiple settles it with EBITDA Multiple = Valuation ÷ EBITDA. Change any field above and the answer updates with it.",
+    "hi_intro": "EBITDA Multiple ka poora hisaab. Tool leta hai Valuation aur EBITDA; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "EBITDA Multiple ka formula: EBITDA Multiple = Valuation ÷ EBITDA. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "dilution": {
     "inputs": {
@@ -371,8 +415,10 @@
         "v": "90.0%"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Dilution Calculator works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Dilution Calculator, worked end to end. The calculator takes Founder Equity (Before), Equity Offered in This Deal; the example below runs one realistic set of those numbers through it.",
+    "outro": "Dilution Calculator settles it with Founder Equity After = Founder Equity Before − Equity Offered. Change any field above and the answer updates with it.",
+    "hi_intro": "Dilution Calculator ka poora hisaab. Tool leta hai Founder Equity (Before) aur Equity Offered in This Deal; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Dilution Calculator ka formula: Founder Equity After = Founder Equity Before − Equity Offered. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ask": {
     "inputs": {
@@ -385,8 +431,10 @@
         "v": "250.0%"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Ask Calculator works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Ask Calculator, worked end to end. The calculator takes Amount Needed, Your Believed Valuation; the example below runs one realistic set of those numbers through it.",
+    "outro": "Ask Calculator settles it with Equity to Offer = Amount Needed ÷ Valuation × 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Ask Calculator ka poora hisaab. Tool leta hai Amount Needed aur Your Believed Valuation; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Ask Calculator ka formula: Equity to Offer = Amount Needed ÷ Valuation × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "debteq": {
     "inputs": {
@@ -408,8 +456,10 @@
         "v": "205.0%"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Debt + Equity Deal works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Debt + Equity Deal, worked end to end. The calculator takes Total Deal Amount, Debt Portion, Valuation (for equity part); the example below runs one realistic set of those numbers through it.",
+    "outro": "Debt + Equity Deal settles it with Debt Amount = Total Deal × Debt Portion %; Equity Amount = Total Deal − Debt Amount; Equity % = Equity Amount ÷ Valuation × 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Debt + Equity Deal ka poora hisaab. Tool leta hai Total Deal Amount aur Debt Portion aur Valuation (for equity part); neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Debt + Equity Deal ka formula: Debt Amount = Total Deal × Debt Portion %; Equity Amount = Total Deal − Debt Amount; Equity % = Equity Amount ÷ Valuation × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "royalty": {
     "inputs": {
@@ -427,8 +477,10 @@
         "v": "13.9 years"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Royalty Deal works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Royalty Deal, worked end to end. The calculator takes Investment Amount, Royalty Rate, Expected Annual Revenue; the example below runs one realistic set of those numbers through it.",
+    "outro": "Royalty Deal settles it with Annual Royalty = Expected Annual Revenue × Royalty Rate %; Payback Period (years) = Investment ÷ Annual Royalty. Change any field above and the answer updates with it.",
+    "hi_intro": "Royalty Deal ka poora hisaab. Tool leta hai Investment Amount aur Royalty Rate aur Expected Annual Revenue; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Royalty Deal ka formula: Annual Royalty = Expected Annual Revenue × Royalty Rate %; Payback Period (years) = Investment ÷ Annual Royalty. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "captable": {
     "inputs": {
@@ -441,8 +493,10 @@
         "v": "64.0%"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Cap Table & ESOP Pool works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Cap Table & ESOP Pool, worked end to end. The calculator takes ESOP Pool, Investor Equity; the example below runs one realistic set of those numbers through it.",
+    "outro": "Cap Table & ESOP Pool settles it with Founders' Share = 100% − ESOP Pool − Investor Equity (and any other reserved stake). Change any field above and the answer updates with it.",
+    "hi_intro": "Cap Table & ESOP Pool ka poora hisaab. Tool leta hai ESOP Pool aur Investor Equity; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Cap Table & ESOP Pool ka formula: Founders' Share = 100% − ESOP Pool − Investor Equity (aur koi bhi reserved hissa). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "cofounder": {
     "inputs": {
@@ -464,8 +518,10 @@
         "v": "33.3%"
       }
     ],
-    "intro": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once Co-founder Equity Split works it through.",
-    "outro": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have."
+    "intro": "Co-founder Equity Split, worked end to end. The calculator takes Founder A Score, Founder B Score, Founder C Score (optional); the example below runs one realistic set of those numbers through it.",
+    "outro": "Co-founder Equity Split settles it with Founder Share % = Founder Score ÷ Total of All Scores × 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Co-founder Equity Split ka poora hisaab. Tool leta hai Founder A Score aur Founder B Score aur Founder C Score (optional); neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Co-founder Equity Split ka formula: Founder Share % = Founder Score ÷ Total of All Scores × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "cac": {
     "inputs": {
@@ -478,8 +534,10 @@
         "v": "₹500.00"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what Customer Acquisition Cost (CAC) says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "Customer Acquisition Cost (CAC), worked end to end. The calculator takes Total Sales + Marketing Spend, New Customers; the example below runs one realistic set of those numbers through it.",
+    "outro": "Customer Acquisition Cost (CAC) settles it with CAC = Total Sales and Marketing Spend ÷ New Customers Won. Change any field above and the answer updates with it.",
+    "hi_intro": "Customer Acquisition Cost (CAC) ka poora hisaab. Tool leta hai Total Sales + Marketing Spend aur New Customers; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Customer Acquisition Cost (CAC) ka formula: CAC = Total Sales aur Marketing Kharch ÷ Naye Customers. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ltv": {
     "inputs": {
@@ -494,8 +552,10 @@
         "v": "₹6,000.00"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what Customer Lifetime Value (LTV) says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "Customer Lifetime Value (LTV), worked end to end. The calculator takes Average Order Value, Purchases per Year, Customer Lifespan, Gross Margin; the example below runs one realistic set of those numbers through it.",
+    "outro": "Customer Lifetime Value (LTV) settles it with LTV = Average Order Value × Purchases per Year × Customer Lifespan (years) × Gross Margin %. Change any field above and the answer updates with it.",
+    "hi_intro": "Customer Lifetime Value (LTV) ka poora hisaab. Tool leta hai Average Order Value aur Purchases per Year aur Customer Lifespan aur Gross Margin; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Customer Lifetime Value (LTV) ka formula: LTV = Average Order Value × Saal me Purchases × Customer Lifespan (saal) × Gross Margin %. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ltvcac": {
     "inputs": {
@@ -508,8 +568,10 @@
         "v": "2.50 : 1"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what LTV : CAC Ratio says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "LTV : CAC Ratio, worked end to end. The calculator takes LTV, CAC; the example below runs one realistic set of those numbers through it.",
+    "outro": "LTV : CAC Ratio settles it with LTV : CAC = Customer Lifetime Value ÷ Customer Acquisition Cost. Change any field above and the answer updates with it.",
+    "hi_intro": "LTV : CAC Ratio ka poora hisaab. Tool leta hai LTV aur CAC; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "LTV : CAC Ratio ka formula: LTV : CAC = Customer Lifetime Value ÷ Customer Acquisition Cost. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "payback": {
     "inputs": {
@@ -523,8 +585,10 @@
         "v": "1,04,166.7 months"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what CAC Payback Period says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "CAC Payback Period, worked end to end. The calculator takes CAC, Avg Monthly Revenue / Customer, Gross Margin; the example below runs one realistic set of those numbers through it.",
+    "outro": "CAC Payback Period settles it with Payback Period (months) = CAC ÷ (Monthly Revenue per Customer × Gross Margin %). Change any field above and the answer updates with it.",
+    "hi_intro": "CAC Payback Period ka poora hisaab. Tool leta hai CAC aur Avg Monthly Revenue / Customer aur Gross Margin; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "CAC Payback Period ka formula: Payback Period (months) = CAC ÷ (Monthly Revenue per Customer × Gross Margin %). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "aov": {
     "inputs": {
@@ -537,8 +601,10 @@
         "v": "₹500.00"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what Average Order Value (AOV) says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "Average Order Value (AOV), worked end to end. The calculator takes Total Revenue, Total Orders; the example below runs one realistic set of those numbers through it.",
+    "outro": "Average Order Value (AOV) settles it with AOV = Total Revenue ÷ Total Orders. Change any field above and the answer updates with it.",
+    "hi_intro": "Average Order Value (AOV) ka poora hisaab. Tool leta hai Total Revenue aur Total Orders; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Average Order Value (AOV) ka formula: AOV = Total Revenue ÷ Total Orders. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "retention": {
     "inputs": {
@@ -556,8 +622,10 @@
         "v": "100.0%"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what Repeat Rate, Retention & Churn says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "Repeat Rate, Retention & Churn, worked end to end. The calculator takes Customers (Start), Customers (End), New Customers Added; the example below runs one realistic set of those numbers through it.",
+    "outro": "Repeat Rate, Retention & Churn settles it with Retention % = (Customers at End − New Customers) ÷ Customers at Start × 100; Churn % = 100 − Retention %. Change any field above and the answer updates with it.",
+    "hi_intro": "Repeat Rate, Retention & Churn ka poora hisaab. Tool leta hai Customers (Start) aur Customers (End) aur New Customers Added; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Repeat Rate, Retention & Churn ka formula: Retention % = (Customers at End − New Customers) ÷ Customers at Start × 100; Churn % = 100 − Retention %. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "roas": {
     "inputs": {
@@ -570,8 +638,10 @@
         "v": "5.00x"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what Return on Ad Spend (ROAS) says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "Return on Ad Spend (ROAS), worked end to end. The calculator takes Revenue from Ads, Ad Spend; the example below runs one realistic set of those numbers through it.",
+    "outro": "Return on Ad Spend (ROAS) settles it with ROAS = Revenue from Ads ÷ Ad Spend. Change any field above and the answer updates with it.",
+    "hi_intro": "Return on Ad Spend (ROAS) ka poora hisaab. Tool leta hai Revenue from Ads aur Ad Spend; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Return on Ad Spend (ROAS) ka formula: ROAS = Revenue from Ads ÷ Ad Spend. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "funnel": {
     "inputs": {
@@ -598,8 +668,10 @@
         "v": "100.0%"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what CPC, CPL, CPA & Conversion Rate says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "CPC, CPL, CPA & Conversion Rate, worked end to end. The calculator takes Ad Spend, Clicks, Leads, Conversions; the example below runs one realistic set of those numbers through it.",
+    "outro": "CPC, CPL, CPA & Conversion Rate settles it with CPC = Ad Spend ÷ Clicks. Change any field above and the answer updates with it.",
+    "hi_intro": "CPC, CPL, CPA & Conversion Rate ka poora hisaab. Tool leta hai Ad Spend aur Clicks aur Leads aur Conversions; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "CPC, CPL, CPA & Conversion Rate ka formula: CPC = Ad Spend ÷ Clicks. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "saas": {
     "inputs": {
@@ -620,8 +692,10 @@
         "v": "₹12,00,000"
       }
     ],
-    "intro": "Consider a small online business spending on ads. Here is what ARPU, MRR & ARR says about the customers that spend brings in.",
-    "outro": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it."
+    "intro": "ARPU, MRR & ARR, worked end to end. The calculator takes Total Monthly Revenue, Active Users; the example below runs one realistic set of those numbers through it.",
+    "outro": "ARPU, MRR & ARR settles it with MRR = Total Monthly Revenue from subscriptions. Change any field above and the answer updates with it.",
+    "hi_intro": "ARPU, MRR & ARR ka poora hisaab. Tool leta hai Total Monthly Revenue aur Active Users; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "ARPU, MRR & ARR ka formula: MRR = subscriptions se total monthly revenue. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "runrate": {
     "inputs": {
@@ -633,8 +707,10 @@
         "v": "₹12,00,000"
       }
     ],
-    "intro": "Picture a business six months into trading. Here is what Run Rate shows about where it is heading.",
-    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+    "intro": "Run Rate, worked end to end. The calculator takes Last Month's Revenue; the example below runs one realistic set of those numbers through it.",
+    "outro": "Run Rate settles it with Annual Run Rate = Last Month's Revenue × 12. Change any field above and the answer updates with it.",
+    "hi_intro": "Run Rate ka poora hisaab. Tool leta hai Last Month's Revenue; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Run Rate ka formula: Annual Run Rate = Last Month's Revenue × 12. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "momyoy": {
     "inputs": {
@@ -647,8 +723,10 @@
         "v": "-60.0%"
       }
     ],
-    "intro": "Picture a business six months into trading. Here is what Month-on-Month / Year-on-Year Growth shows about where it is heading.",
-    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+    "intro": "Month-on-Month / Year-on-Year Growth, worked end to end. The calculator takes Previous Value, Current Value; the example below runs one realistic set of those numbers through it.",
+    "outro": "Month-on-Month / Year-on-Year Growth settles it with MoM % = (This Month - Last Month) / Last Month x 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Month-on-Month / Year-on-Year Growth ka poora hisaab. Tool leta hai Previous Value aur Current Value; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Month-on-Month / Year-on-Year Growth ka formula: MoM % = (This Month - Last Month) / Last Month x 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "cagr": {
     "inputs": {
@@ -662,8 +740,10 @@
         "v": "-87.8%"
       }
     ],
-    "intro": "Picture a business six months into trading. Here is what CAGR (Compound Annual Growth Rate) shows about where it is heading.",
-    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+    "intro": "CAGR (Compound Annual Growth Rate), worked end to end. The calculator takes Starting Value, Ending Value, Number of Years; the example below runs one realistic set of those numbers through it.",
+    "outro": "CAGR (Compound Annual Growth Rate) settles it with CAGR = (Ending Value ÷ Starting Value)^(1 ÷ Years) − 1. Change any field above and the answer updates with it.",
+    "hi_intro": "CAGR (Compound Annual Growth Rate) ka poora hisaab. Tool leta hai Starting Value aur Ending Value aur Number of Years; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "CAGR (Compound Annual Growth Rate) ka formula: CAGR = (Ending Value ÷ Starting Value)^(1 ÷ Years) − 1. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "burn": {
     "inputs": {
@@ -676,8 +756,10 @@
         "v": "10.0 months"
       }
     ],
-    "intro": "Picture a business six months into trading. Here is what Burn Rate & Runway shows about where it is heading.",
-    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+    "intro": "Burn Rate & Runway, worked end to end. The calculator takes Cash in Bank, Monthly Burn; the example below runs one realistic set of those numbers through it.",
+    "outro": "Burn Rate & Runway settles it with Runway (months) = Cash in Bank ÷ Net Monthly Burn. Change any field above and the answer updates with it.",
+    "hi_intro": "Burn Rate & Runway ka poora hisaab. Tool leta hai Cash in Bank aur Monthly Burn; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Burn Rate & Runway ka formula: Runway (mahine) = Cash in Bank ÷ Net Monthly Burn. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "breakeven": {
     "inputs": {
@@ -695,8 +777,10 @@
         "v": "₹2,50,000"
       }
     ],
-    "intro": "Picture a business six months into trading. Here is what Break-Even Point shows about where it is heading.",
-    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+    "intro": "Break-Even Point, worked end to end. The calculator takes Fixed Costs (per month), Selling Price / Unit, Variable Cost / Unit; the example below runs one realistic set of those numbers through it.",
+    "outro": "Break-Even Point settles it with Break-Even Units = Fixed Costs ÷ (Selling Price − Variable Cost). Change any field above and the answer updates with it.",
+    "hi_intro": "Break-Even Point ka poora hisaab. Tool leta hai Fixed Costs (per month) aur Selling Price / Unit aur Variable Cost / Unit; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Break-Even Point ka formula: Break-Even Units = Fixed Costs ÷ (Selling Price − Variable Cost). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "wc": {
     "inputs": {
@@ -709,8 +793,10 @@
         "v": "₹2,70,000"
       }
     ],
-    "intro": "Picture a business six months into trading. Here is what Working Capital shows about where it is heading.",
-    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+    "intro": "Working Capital, worked end to end. The calculator takes Current Assets, Current Liabilities; the example below runs one realistic set of those numbers through it.",
+    "outro": "Working Capital settles it with Working Capital = Current Assets - Current Liabilities. Change any field above and the answer updates with it.",
+    "hi_intro": "Working Capital ka poora hisaab. Tool leta hai Current Assets aur Current Liabilities; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Working Capital ka formula: Working Capital = Current Assets - Current Liabilities. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ccc": {
     "inputs": {
@@ -739,8 +825,10 @@
         "v": "3,90,55,000 days"
       }
     ],
-    "intro": "Picture a business six months into trading. Here is what Cash Conversion Cycle shows about where it is heading.",
-    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+    "intro": "Cash Conversion Cycle, worked end to end. The calculator takes Inventory, COGS (yearly), Receivables, Revenue (yearly), Payables, Purchases (yearly); the example below runs one realistic set of those numbers through it.",
+    "outro": "Cash Conversion Cycle settles it with CCC = Days Inventory + Days Receivables − Days Payables. Change any field above and the answer updates with it.",
+    "hi_intro": "Cash Conversion Cycle ka poora hisaab. Tool leta hai Inventory aur COGS (yearly) aur Receivables aur Revenue (yearly) aur Payables aur Purchases (yearly); neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Cash Conversion Cycle ka formula: CCC = Days Inventory + Days Receivables − Days Payables. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "depreciation": {
     "inputs": {
@@ -754,8 +842,10 @@
         "v": "₹22,500.00"
       }
     ],
-    "intro": "Picture a business six months into trading. Here is what Straight-Line Depreciation shows about where it is heading.",
-    "outro": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch."
+    "intro": "Straight-Line Depreciation, worked end to end. The calculator takes Asset Cost, Salvage Value, Useful Life; the example below runs one realistic set of those numbers through it.",
+    "outro": "Straight-Line Depreciation settles it with Yearly Depreciation = (Asset Cost − Salvage Value) ÷ Useful Life. Change any field above and the answer updates with it.",
+    "hi_intro": "Straight-Line Depreciation ka poora hisaab. Tool leta hai Asset Cost aur Salvage Value aur Useful Life; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Straight-Line Depreciation ka formula: Yearly Depreciation = (Asset Cost − Salvage Value) ÷ Useful Life. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "mrpreverse": {
     "inputs": {
@@ -773,8 +863,10 @@
         "v": "₹720.00"
       }
     ],
-    "intro": "Take one product with one price. Here is what MRP Reverse Calculator shows once every cost is counted.",
-    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+    "intro": "MRP Reverse Calculator, worked end to end. The calculator takes MRP, Retailer Margin, Distributor Margin; the example below runs one realistic set of those numbers through it.",
+    "outro": "MRP Reverse Calculator settles it with Landing Price = MRP × (1 − Retailer Margin %) × (1 − Distributor Margin %). Change any field above and the answer updates with it.",
+    "hi_intro": "MRP Reverse Calculator ka poora hisaab. Tool leta hai MRP aur Retailer Margin aur Distributor Margin; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "MRP Reverse Calculator ka formula: Landing Price = MRP × (1 − Retailer Margin %) × (1 − Distributor Margin %). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "distmargin": {
     "inputs": {
@@ -792,8 +884,10 @@
         "v": "40.0%"
       }
     ],
-    "intro": "Take one product with one price. Here is what Distributor & Retailer Margin shows once every cost is counted.",
-    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+    "intro": "Distributor & Retailer Margin, worked end to end. The calculator takes Manufacturer Price, Distributor Price, MRP; the example below runs one realistic set of those numbers through it.",
+    "outro": "Distributor & Retailer Margin settles it with Distributor Margin % = (MRP − Distributor Price) ÷ MRP × 100, and Retailer Margin % = (Distributor Price − Manufacturer Price) ÷ Distributor Price × 100, depending on which stage is being measured. Change any field above and the answer updates with it.",
+    "hi_intro": "Distributor & Retailer Margin ka poora hisaab. Tool leta hai Manufacturer Price aur Distributor Price aur MRP; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Distributor & Retailer Margin ka formula: Distributor Margin % = (MRP − Distributor Price) ÷ MRP × 100, aur Retailer Margin % = (Distributor Price − Manufacturer Price) ÷ Distributor Price × 100, jis stage ko measure kar rahe ho uske hisaab se. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "gst": {
     "inputs": {
@@ -818,8 +912,10 @@
         "v": "₹1,525.42"
       }
     ],
-    "intro": "Take one product with one price. Here is what GST Calculator shows once every cost is counted.",
-    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+    "intro": "GST Calculator, worked end to end. The calculator takes Amount, GST Rate; the example below runs one realistic set of those numbers through it.",
+    "outro": "GST Calculator settles it with GST Amount = Base Price × GST Rate ÷ 100, and the final price is Base + GST. Change any field above and the answer updates with it.",
+    "hi_intro": "GST Calculator ka poora hisaab. Tool leta hai Amount aur GST Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "GST Calculator ka formula: GST Amount = Base Price × GST Rate ÷ 100, aur final price Base + GST hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "landed": {
     "inputs": {
@@ -834,8 +930,10 @@
         "v": "₹700.00"
       }
     ],
-    "intro": "Take one product with one price. Here is what Landed Cost Calculator shows once every cost is counted.",
-    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+    "intro": "Landed Cost Calculator, worked end to end. The calculator takes Manufacturing Cost, Packaging Cost, Shipping Cost, Other Costs; the example below runs one realistic set of those numbers through it.",
+    "outro": "Landed Cost Calculator settles it with Landed Cost per Unit = (Manufacturing + Packaging + Shipping + Other Costs) ÷ Units. Change any field above and the answer updates with it.",
+    "hi_intro": "Landed Cost Calculator ka poora hisaab. Tool leta hai Manufacturing Cost aur Packaging Cost aur Shipping Cost aur Other Costs; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Landed Cost Calculator ka formula: Landed Cost per Unit = (Manufacturing + Packaging + Shipping + Other Costs) ÷ Units. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "marketplace": {
     "inputs": {
@@ -854,8 +952,10 @@
         "v": "₹8,000.00"
       }
     ],
-    "intro": "Take one product with one price. Here is what Marketplace Fee Calculator shows once every cost is counted.",
-    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+    "intro": "Marketplace Fee Calculator, worked end to end. The calculator takes Selling Price, Commission Rate, Shipping Fee, Other Fees; the example below runs one realistic set of those numbers through it.",
+    "outro": "Marketplace Fee Calculator settles it with Total fees = selling price x commission rate / 100 + shipping fee + other fees. Change any field above and the answer updates with it.",
+    "hi_intro": "Marketplace Fee Calculator ka poora hisaab. Tool leta hai Selling Price aur Commission Rate aur Shipping Fee aur Other Fees; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Marketplace Fee Calculator ka formula: Total fees = selling price x commission rate / 100 + shipping fee + other fees. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "codrto": {
     "inputs": {
@@ -873,8 +973,10 @@
         "v": "₹40,000"
       }
     ],
-    "intro": "Take one product with one price. Here is what COD & RTO Loss Calculator shows once every cost is counted.",
-    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+    "intro": "COD & RTO Loss Calculator, worked end to end. The calculator takes Total COD Orders, RTO Rate, Loss per RTO Order; the example below runs one realistic set of those numbers through it.",
+    "outro": "COD & RTO Loss Calculator settles it with RTO orders = total COD orders x RTO rate / 100. Change any field above and the answer updates with it.",
+    "hi_intro": "COD & RTO Loss Calculator ka poora hisaab. Tool leta hai Total COD Orders aur RTO Rate aur Loss per RTO Order; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "COD & RTO Loss Calculator ka formula: RTO orders = total COD orders x RTO rate / 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "discountimpact": {
     "inputs": {
@@ -900,8 +1002,10 @@
         "v": "33.3%"
       }
     ],
-    "intro": "Take one product with one price. Here is what Discount Impact on Profit shows once every cost is counted.",
-    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+    "intro": "Discount Impact on Profit, worked end to end. The calculator takes Selling Price, Cost Price, Discount; the example below runs one realistic set of those numbers through it.",
+    "outro": "Discount Impact on Profit settles it with New Price = Selling Price × (1 − Discount %). Change any field above and the answer updates with it.",
+    "hi_intro": "Discount Impact on Profit ka poora hisaab. Tool leta hai Selling Price aur Cost Price aur Discount; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Discount Impact on Profit ka formula: New Price = Selling Price × (1 − Discount %). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "importduty": {
     "inputs": {
@@ -923,8 +1027,10 @@
         "v": "₹1,41,600.00"
       }
     ],
-    "intro": "Take one product with one price. Here is what Import Duty & Customs Calculator shows once every cost is counted.",
-    "outro": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked."
+    "intro": "Import Duty & Customs Calculator, worked end to end. The calculator takes Product Value, Customs Duty, IGST; the example below runs one realistic set of those numbers through it.",
+    "outro": "Import Duty & Customs Calculator settles it with Customs Duty = Product Value × Duty Rate. Change any field above and the answer updates with it.",
+    "hi_intro": "Import Duty & Customs Calculator ka poora hisaab. Tool leta hai Product Value aur Customs Duty aur IGST; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Import Duty & Customs Calculator ka formula: Customs Duty = Product Value × Duty Rate. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ctc": {
     "inputs": {
@@ -942,8 +1048,10 @@
         "v": "₹1,14,24,000"
       }
     ],
-    "intro": "Consider one hire or one freelancer. Here is what Employee Cost (CTC) Calculator says that really costs.",
-    "outro": "The salary is never the whole cost of a hire. Budget for the full figure, not the number you agreed in the interview."
+    "intro": "Employee Cost (CTC) Calculator, worked end to end. The calculator takes Gross Monthly Salary, Employer PF Contribution, Other Monthly Benefits; the example below runs one realistic set of those numbers through it.",
+    "outro": "Employee Cost (CTC) Calculator settles it with Employer Cost = Gross Monthly Salary + Employer PF + Other Monthly Benefits, and the yearly figure is twelve times that. Change any field above and the answer updates with it.",
+    "hi_intro": "Employee Cost (CTC) Calculator ka poora hisaab. Tool leta hai Gross Monthly Salary aur Employer PF Contribution aur Other Monthly Benefits; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Employee Cost (CTC) Calculator ka formula: Employer Cost = Gross Monthly Salary + Employer PF + Other Monthly Benefits, aur saalana figure uska barah guna. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "freelance": {
     "inputs": {
@@ -957,8 +1065,10 @@
         "v": "₹5,000.00"
       }
     ],
-    "intro": "Consider one hire or one freelancer. Here is what Freelancer Hourly Rate says that really costs.",
-    "outro": "The salary is never the whole cost of a hire. Budget for the full figure, not the number you agreed in the interview."
+    "intro": "Freelancer Hourly Rate, worked end to end. The calculator takes Target Monthly Income, Working Hours / Week, Weeks / Month; the example below runs one realistic set of those numbers through it.",
+    "outro": "Freelancer Hourly Rate settles it with Hourly Rate = Target Monthly Income ÷ Billable Hours per Month. Change any field above and the answer updates with it.",
+    "hi_intro": "Freelancer Hourly Rate ka poora hisaab. Tool leta hai Target Monthly Income aur Working Hours / Week aur Weeks / Month; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Freelancer Hourly Rate ka formula: Hourly Rate = Target Monthly Income ÷ Billable Hours per Month. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "franchise": {
     "inputs": {
@@ -971,8 +1081,10 @@
         "v": "18,750.0 months"
       }
     ],
-    "intro": "Consider one hire or one freelancer. Here is what Franchise / Store ROI says that really costs.",
-    "outro": "The salary is never the whole cost of a hire. Budget for the full figure, not the number you agreed in the interview."
+    "intro": "Franchise / Store ROI, worked end to end. The calculator takes Starting Investment, Monthly Profit; the example below runs one realistic set of those numbers through it.",
+    "outro": "Franchise / Store ROI settles it with Payback Period in months = Starting Investment ÷ Monthly Profit. Change any field above and the answer updates with it.",
+    "hi_intro": "Franchise / Store ROI ka poora hisaab. Tool leta hai Starting Investment aur Monthly Profit; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Franchise / Store ROI ka formula: Payback Period mahino mein = Starting Investment ÷ Monthly Profit. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "moicirr": {
     "inputs": {
@@ -990,8 +1102,10 @@
         "v": "-16.7%"
       }
     ],
-    "intro": "Take an investment held for a few years. Here is what MOIC & IRR reports at the end.",
-    "outro": "Compare the multiple against the years it took. A 3x return over ten years is a very different outcome from a 3x return over three."
+    "intro": "MOIC & IRR, worked end to end. The calculator takes Investment Amount, Exit Amount, Years Held; the example below runs one realistic set of those numbers through it.",
+    "outro": "MOIC & IRR settles it with MOIC = Exit Amount ÷ Investment Amount. Change any field above and the answer updates with it.",
+    "hi_intro": "MOIC & IRR ka poora hisaab. Tool leta hai Investment Amount aur Exit Amount aur Years Held; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "MOIC & IRR ka formula: MOIC = Exit Amount ÷ Investment Amount. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "exitcalc": {
     "inputs": {
@@ -1004,8 +1118,10 @@
         "v": "₹81,000"
       }
     ],
-    "intro": "Take an investment held for a few years. Here is what Exit Calculator reports at the end.",
-    "outro": "Compare the multiple against the years it took. A 3x return over ten years is a very different outcome from a 3x return over three."
+    "intro": "Exit Calculator, worked end to end. The calculator takes Your Equity, Exit Valuation; the example below runs one realistic set of those numbers through it.",
+    "outro": "Exit Calculator settles it with Payout = Exit Valuation × Your Equity %. Change any field above and the answer updates with it.",
+    "hi_intro": "Exit Calculator ka poora hisaab. Tool leta hai Your Equity aur Exit Valuation; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Exit Calculator ka formula: Payout = Exit Valuation × Your Equity %. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "tam": {
     "inputs": {
@@ -1024,7 +1140,9 @@
       }
     ],
     "intro": "Take a market you could sell into. Here is how the three layers stack up.",
-    "outro": "The SOM is the number to defend. Anyone can claim a large TAM; the SOM is where you say how you actually get in."
+    "outro": "The SOM is the number to defend. Anyone can claim a large TAM; the SOM is where you say how you actually get in.",
+    "hi_intro": "TAM / SAM / SOM ka poora hisaab. Tool leta hai TAM (Total Market) aur SAM aur SOM; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "TAM / SAM / SOM ka formula: TAM nikalne ka sabse saaf tarika bottom-up hai: kitne possible customers hain, guna ek customer saal me kitna kharch karta hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "agencyroas": {
     "inputs": {
@@ -1037,8 +1155,10 @@
         "v": "2.50x"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what ROAS Calculator shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "ROAS Calculator, worked end to end. The calculator takes Ad Revenue, Ad Spend; the example below runs one realistic set of those numbers through it.",
+    "outro": "ROAS Calculator settles it with ROAS = ad revenue / ad spend, written as a multiple such as 3x. Change any field above and the answer updates with it.",
+    "hi_intro": "ROAS Calculator ka poora hisaab. Tool leta hai Ad Revenue aur Ad Spend; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "ROAS Calculator ka formula: ROAS = ad revenue / ad spend, 3x jaise multiple me. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "cpmcpc": {
     "inputs": {
@@ -1056,8 +1176,10 @@
         "v": "₹450.00"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what CPM to CPC Converter shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "CPM to CPC Converter, worked end to end. The calculator takes CPM, Impressions, Clicks; the example below runs one realistic set of those numbers through it.",
+    "outro": "CPM to CPC Converter settles it with CPC = (CPM ÷ 1000) × Impressions ÷ Clicks, which simplifies to CPM ÷ (CTR% × 10). Change any field above and the answer updates with it.",
+    "hi_intro": "CPM to CPC Converter ka poora hisaab. Tool leta hai CPM aur Impressions aur Clicks; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "CPM to CPC Converter ka formula: CPC = (CPM ÷ 1000) × Impressions ÷ Clicks, ya seedha CPM ÷ (CTR% × 10). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "cpcpa": {
     "inputs": {
@@ -1070,8 +1192,10 @@
         "v": "₹25,00,000.00"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what CPC to CPA Converter shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "CPC to CPA Converter, worked end to end. The calculator takes Cost Per Click, Conversion Rate; the example below runs one realistic set of those numbers through it.",
+    "outro": "CPC to CPA Converter settles it with CPA = CPC ÷ Conversion Rate. Change any field above and the answer updates with it.",
+    "hi_intro": "CPC to CPA Converter ka poora hisaab. Tool leta hai Cost Per Click aur Conversion Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "CPC to CPA Converter ka formula: CPA = CPC ÷ Conversion Rate. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "breakevenad": {
     "inputs": {
@@ -1085,8 +1209,10 @@
         "v": "₹32,40,000.00"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what Break-Even Ad Spend shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "Break-Even Ad Spend, worked end to end. The calculator takes Revenue Per Sale, Product Cost Per Sale, Expected Conversions; the example below runs one realistic set of those numbers through it.",
+    "outro": "Break-Even Ad Spend settles it with Contribution per Sale = Revenue per Sale − Product Cost per Sale. Change any field above and the answer updates with it.",
+    "hi_intro": "Break-Even Ad Spend ka poora hisaab. Tool leta hai Revenue Per Sale aur Product Cost Per Sale aur Expected Conversions; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Break-Even Ad Spend ka formula: Contribution per Sale = Revenue per Sale − Product Cost per Sale. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "agencycac": {
     "inputs": {
@@ -1100,8 +1226,10 @@
         "v": "₹52,500.00"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what Client Acquisition Cost (CAC) shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "Client Acquisition Cost (CAC), worked end to end. The calculator takes Marketing Spend, Sales Cost, New Clients; the example below runs one realistic set of those numbers through it.",
+    "outro": "Client Acquisition Cost (CAC) settles it with CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Change any field above and the answer updates with it.",
+    "hi_intro": "Client Acquisition Cost (CAC) ka poora hisaab. Tool leta hai Marketing Spend aur Sales Cost aur New Clients; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Client Acquisition Cost (CAC) ka formula: CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "clientltv": {
     "inputs": {
@@ -1114,8 +1242,10 @@
         "v": "₹576.00"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what Client Lifetime Value (LTV) shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "Client Lifetime Value (LTV), worked end to end. The calculator takes Monthly Client Revenue, Average Lifetime; the example below runs one realistic set of those numbers through it.",
+    "outro": "Client Lifetime Value (LTV) settles it with LTV = Monthly Revenue × Average Lifetime in months. Change any field above and the answer updates with it.",
+    "hi_intro": "Client Lifetime Value (LTV) ka poora hisaab. Tool leta hai Monthly Client Revenue aur Average Lifetime; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Client Lifetime Value (LTV) ka formula: LTV = Monthly Revenue × Average Lifetime in months. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "agencymargin": {
     "inputs": {
@@ -1132,8 +1262,10 @@
         "v": "60.0%"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what Agency Profit Margin shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "Agency Profit Margin, worked end to end. The calculator takes Agency Revenue, Total Costs; the example below runs one realistic set of those numbers through it.",
+    "outro": "Agency Profit Margin settles it with Profit Margin % = (Revenue − Total Costs) ÷ Revenue × 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Agency Profit Margin ka poora hisaab. Tool leta hai Agency Revenue aur Total Costs; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Agency Profit Margin ka formula: Profit Margin % = (Revenue − Total Costs) ÷ Revenue × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "clientprofit": {
     "inputs": {
@@ -1151,8 +1283,10 @@
         "v": "38.9%"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what Client Profitability shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "Client Profitability, worked end to end. The calculator takes Client Fee, Delivery Cost, Allocated Overhead; the example below runs one realistic set of those numbers through it.",
+    "outro": "Client Profitability settles it with Client Profit = Fee − Delivery Cost − Allocated Overhead. Change any field above and the answer updates with it.",
+    "hi_intro": "Client Profitability ka poora hisaab. Tool leta hai Client Fee aur Delivery Cost aur Allocated Overhead; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Client Profitability ka formula: Client Profit = Fee − Delivery Cost − Allocated Overhead. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "utilization": {
     "inputs": {
@@ -1165,8 +1299,10 @@
         "v": "100.0%"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what Employee Utilization Rate shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "Employee Utilization Rate, worked end to end. The calculator takes Billable Hours, Available Hours; the example below runs one realistic set of those numbers through it.",
+    "outro": "Employee Utilization Rate settles it with Utilization rate = billable hours / available hours x 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Employee Utilization Rate ka poora hisaab. Tool leta hai Billable Hours aur Available Hours; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Employee Utilization Rate ka formula: Utilization rate = billable ghante / available ghante x 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "churn": {
     "inputs": {
@@ -1179,8 +1315,10 @@
         "v": "100.0%"
       }
     ],
-    "intro": "Take an agency running a campaign for a client. Here is what Churn Rate shows.",
-    "outro": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin."
+    "intro": "Churn Rate, worked end to end. The calculator takes Clients Lost, Clients at Start; the example below runs one realistic set of those numbers through it.",
+    "outro": "Churn Rate settles it with Churn Rate % = Clients Lost ÷ Clients at Start × 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Churn Rate ka poora hisaab. Tool leta hai Clients Lost aur Clients at Start; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Churn Rate ka formula: Churn Rate % = Clients Lost ÷ Clients at Start × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "propertyvalue": {
     "inputs": {
@@ -1193,8 +1331,10 @@
         "v": "₹50,00,000.00"
       }
     ],
-    "intro": "Take one property. Here is what Property Valuation Calculator works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Property Valuation Calculator, worked end to end. The calculator takes Area, Price Per Sq. Ft.; the example below runs one realistic set of those numbers through it.",
+    "outro": "Property Valuation Calculator settles it with Property Value = Area (sq ft) × Price per Sq Ft. Change any field above and the answer updates with it.",
+    "hi_intro": "Property Valuation Calculator ka poora hisaab. Tool leta hai Area aur Price Per Sq. Ft.; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Property Valuation Calculator ka formula: Property Value = Area (sq ft) × Price per Sq Ft. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "homeemi": {
     "inputs": {
@@ -1212,8 +1352,10 @@
         "v": "₹60,22,368.50"
       }
     ],
-    "intro": "Take one property. Here is what Home Loan EMI Calculator works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Home Loan EMI Calculator, worked end to end. The calculator takes Loan Amount, Annual Interest Rate, Loan Tenure; the example below runs one realistic set of those numbers through it.",
+    "outro": "Home Loan EMI Calculator settles it with EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the loan amount, r the monthly interest rate (annual rate ÷ 12 ÷ 100) and n the number of months. Change any field above and the answer updates with it.",
+    "hi_intro": "Home Loan EMI Calculator ka poora hisaab. Tool leta hai Loan Amount aur Annual Interest Rate aur Loan Tenure; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Home Loan EMI Calculator ka formula: EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P loan amount hai, r monthly interest rate (saalana rate ÷ 12 ÷ 100) aur n mahine. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "rentalyield": {
     "inputs": {
@@ -1230,8 +1372,10 @@
         "v": "4.8%"
       }
     ],
-    "intro": "Take one property. Here is what Rental Yield Calculator works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Rental Yield Calculator, worked end to end. The calculator takes Monthly Rent, Property Price; the example below runs one realistic set of those numbers through it.",
+    "outro": "Rental Yield Calculator settles it with Annual rent = monthly rent x 12. Change any field above and the answer updates with it.",
+    "hi_intro": "Rental Yield Calculator ka poora hisaab. Tool leta hai Monthly Rent aur Property Price; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Rental Yield Calculator ka formula: Annual rent = monthly rent x 12. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "rentbuy": {
     "inputs": {
@@ -1254,8 +1398,10 @@
         "v": "Rent"
       }
     ],
-    "intro": "Take one property. Here is what Rent vs Buy Calculator works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Rent vs Buy Calculator, worked end to end. The calculator takes Monthly Rent, Years Comparing, Home Price, Upfront Buy Costs; the example below runs one realistic set of those numbers through it.",
+    "outro": "Rent vs Buy Calculator settles it with Total rent = monthly rent x 12 x years compared. Change any field above and the answer updates with it.",
+    "hi_intro": "Rent vs Buy Calculator ka poora hisaab. Tool leta hai Monthly Rent aur Years Comparing aur Home Price aur Upfront Buy Costs; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Rent vs Buy Calculator ka formula: Total rent = monthly rent x 12 x years compared. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "stampduty": {
     "inputs": {
@@ -1277,8 +1423,10 @@
         "v": "₹3,50,000.00"
       }
     ],
-    "intro": "Take one property. Here is what Stamp Duty Calculator works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Stamp Duty Calculator, worked end to end. The calculator takes Property Value, Stamp Duty Rate, Registration Rate; the example below runs one realistic set of those numbers through it.",
+    "outro": "Stamp Duty Calculator settles it with Stamp Duty = Property Value × Stamp Duty Rate, and Registration = Property Value × Registration Rate. Change any field above and the answer updates with it.",
+    "hi_intro": "Stamp Duty Calculator ka poora hisaab. Tool leta hai Property Value aur Stamp Duty Rate aur Registration Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Stamp Duty Calculator ka formula: Stamp duty = Property Value × Stamp Duty Rate, aur Registration = Property Value × Registration Rate. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "brokerage": {
     "inputs": {
@@ -1291,8 +1439,10 @@
         "v": "₹81,000.00"
       }
     ],
-    "intro": "Take one property. Here is what Brokerage / Agent Commission works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Brokerage / Agent Commission, worked end to end. The calculator takes Transaction Amount, Commission Rate; the example below runs one realistic set of those numbers through it.",
+    "outro": "Brokerage / Agent Commission settles it with Brokerage = Transaction Amount × Commission Rate. Change any field above and the answer updates with it.",
+    "hi_intro": "Brokerage / Agent Commission ka poora hisaab. Tool leta hai Transaction Amount aur Commission Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Brokerage / Agent Commission ka formula: Brokerage = Transaction Amount × Commission Rate. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "propertyroi": {
     "inputs": {
@@ -1311,8 +1461,10 @@
         "v": "22.0%"
       }
     ],
-    "intro": "Take one property. Here is what Property ROI Calculator works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Property ROI Calculator, worked end to end. The calculator takes Purchase Price, Current / Sale Value, Annual Rent, Holding Period; the example below runs one realistic set of those numbers through it.",
+    "outro": "Property ROI Calculator settles it with Total gain = (Sale Value − Purchase Price) + Rent collected over the holding period. Change any field above and the answer updates with it.",
+    "hi_intro": "Property ROI Calculator ka poora hisaab. Tool leta hai Purchase Price aur Current / Sale Value aur Annual Rent aur Holding Period; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Property ROI Calculator ka formula: Total gain = (Sale Value − Purchase Price) + holding period ka kul kiraya. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "downpayment": {
     "inputs": {
@@ -1329,8 +1481,10 @@
         "v": "₹10,00,000.00"
       }
     ],
-    "intro": "Take one property. Here is what Down Payment Calculator works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Down Payment Calculator, worked end to end. The calculator takes Property Price, Loan-to-Value; the example below runs one realistic set of those numbers through it.",
+    "outro": "Down Payment Calculator settles it with Down Payment = Property Price × (1 − Loan-to-Value %). Change any field above and the answer updates with it.",
+    "hi_intro": "Down Payment Calculator ka poora hisaab. Tool leta hai Property Price aur Loan-to-Value; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Down Payment Calculator ka formula: Down Payment = Property Price × (1 − Loan-to-Value %). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "areabreakdown": {
     "inputs": {
@@ -1347,8 +1501,10 @@
         "v": "2.16 sq ft"
       }
     ],
-    "intro": "Take one property. Here is what Built-up Area vs Carpet Area works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Built-up Area vs Carpet Area, worked end to end. The calculator takes Built-up Area, Loading; the example below runs one realistic set of those numbers through it.",
+    "outro": "Built-up Area vs Carpet Area settles it with Carpet Area = Built-up Area ÷ (1 + Loading %). Change any field above and the answer updates with it.",
+    "hi_intro": "Built-up Area vs Carpet Area ka poora hisaab. Tool leta hai Built-up Area aur Loading; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Built-up Area vs Carpet Area ka formula: Carpet Area = Built-up Area ÷ (1 + Loading %). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "landunits": {
     "inputs": {
@@ -1372,8 +1528,10 @@
         "v": "0.0004 bigha"
       }
     ],
-    "intro": "Take one property. Here is what Land Area Unit Converter works out for it.",
-    "outro": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality."
+    "intro": "Land Area Unit Converter, worked end to end. The calculator takes Area; the example below runs one realistic set of those numbers through it.",
+    "outro": "Land Area Unit Converter settles it with 1 square yard = 9 square feet. Change any field above and the answer updates with it.",
+    "hi_intro": "Land Area Unit Converter ka poora hisaab. Tool leta hai Area; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Land Area Unit Converter ka formula: 1 square yard = 9 square feet. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "incometax": {
     "inputs": {
@@ -1394,8 +1552,10 @@
         "v": "New Regime"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what Income Tax Calculator (Old vs New Regime) projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "Income Tax Calculator (Old vs New Regime), worked end to end. The calculator takes Annual Taxable Income, Old Regime Deductions; the example below runs one realistic set of those numbers through it.",
+    "outro": "Income Tax Calculator (Old vs New Regime) settles it with Old regime: tax on (Income − Deductions) using the old slabs. Change any field above and the answer updates with it.",
+    "hi_intro": "Income Tax Calculator (Old vs New Regime) ka poora hisaab. Tool leta hai Annual Taxable Income aur Old Regime Deductions; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Income Tax Calculator (Old vs New Regime) ka formula: Old regime: (Income − Deductions) par purane slabs se tax. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "hra": {
     "inputs": {
@@ -1410,8 +1570,10 @@
         "v": "₹600.00"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what HRA Exemption Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "HRA Exemption Calculator, worked end to end. The calculator takes HRA Received, Annual Rent, Basic Salary, Metro Exemption Rate; the example below runs one realistic set of those numbers through it.",
+    "outro": "HRA Exemption Calculator settles it with Exemption = the least of: (1) HRA received, (2) Rent paid − 10% of basic salary, (3) 50% of basic salary in a metro or 40% elsewhere. Change any field above and the answer updates with it.",
+    "hi_intro": "HRA Exemption Calculator ka poora hisaab. Tool leta hai HRA Received aur Annual Rent aur Basic Salary aur Metro Exemption Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "HRA Exemption Calculator ka formula: Exemption = inme sabse kam: (1) HRA received, (2) Rent paid − 10% of basic salary, (3) metro mein basic ka 50% ya warna 40%. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "sip": {
     "inputs": {
@@ -1433,8 +1595,10 @@
         "v": "₹11,23,390.76"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what SIP Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "SIP Calculator, worked end to end. The calculator takes Monthly Investment, Expected Annual Return, Investment Period; the example below runs one realistic set of those numbers through it.",
+    "outro": "SIP Calculator settles it with Future Value = P x [((1 + i)^n - 1) / i] x (1 + i), where P is the monthly amount, i is the monthly rate (annual / 12 / 100) and n is the number of instalments. Change any field above and the answer updates with it.",
+    "hi_intro": "SIP Calculator ka poora hisaab. Tool leta hai Monthly Investment aur Expected Annual Return aur Investment Period; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "SIP Calculator ka formula: Future Value = P x [((1 + i)^n - 1) / i] x (1 + i), jahan P monthly amount, i monthly rate (annual / 12 / 100) aur n instalments. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ppf": {
     "inputs": {
@@ -1452,8 +1616,10 @@
         "v": "₹25,12,902.20"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what PPF Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "PPF Calculator, worked end to end. The calculator takes Yearly Contribution, Annual Interest Rate, Tenure; the example below runs one realistic set of those numbers through it.",
+    "outro": "PPF Calculator settles it with The balance grows at the PPF rate compounded annually on each year's contribution, and the maturity value is the sum at the end of 15 years. Change any field above and the answer updates with it.",
+    "hi_intro": "PPF Calculator ka poora hisaab. Tool leta hai Yearly Contribution aur Annual Interest Rate aur Tenure; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "PPF Calculator ka formula: Balance PPF rate par saalana compound hota hai har saal ki contribution par, aur maturity value 15 saal ke ant mein kul hoti hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "fd": {
     "inputs": {
@@ -1472,8 +1638,10 @@
         "v": "₹40,255.17"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what FD (Fixed Deposit) Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "FD (Fixed Deposit) Calculator, worked end to end. The calculator takes Deposit Amount, Annual Interest Rate, Tenure, Compounds Per Year; the example below runs one realistic set of those numbers through it.",
+    "outro": "FD (Fixed Deposit) Calculator settles it with Maturity = principal × (1 + (rate ÷ 100) ÷ frequency)^(frequency × years), and Interest Earned = Maturity − principal. Change any field above and the answer updates with it.",
+    "hi_intro": "FD (Fixed Deposit) Calculator ka poora hisaab. Tool leta hai Deposit Amount aur Annual Interest Rate aur Tenure aur Compounds Per Year; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "FD (Fixed Deposit) Calculator ka formula: Maturity = principal × (1 + (rate ÷ 100) ÷ frequency)^(frequency × years), aur Interest Earned = Maturity − principal. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "rd": {
     "inputs": {
@@ -1495,8 +1663,10 @@
         "v": "₹9,154.19"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what RD (Recurring Deposit) Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "RD (Recurring Deposit) Calculator, worked end to end. The calculator takes Monthly Deposit, Annual Interest Rate, Tenure; the example below runs one realistic set of those numbers through it.",
+    "outro": "RD (Recurring Deposit) Calculator settles it with Maturity = sum of P x (1 + r / 4)^(quarters remaining), over each monthly instalment. Change any field above and the answer updates with it.",
+    "hi_intro": "RD (Recurring Deposit) Calculator ka poora hisaab. Tool leta hai Monthly Deposit aur Annual Interest Rate aur Tenure; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "RD (Recurring Deposit) Calculator ka formula: Maturity = sum of P x (1 + r / 4)^(bache quarters), har monthly instalment par. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "epf": {
     "inputs": {
@@ -1515,8 +1685,10 @@
         "v": "₹58,90,204.16"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what EPF Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "EPF Calculator, worked end to end. The calculator takes Employee Monthly PF, Employer Monthly PF, Annual Interest Rate, Years; the example below runs one realistic set of those numbers through it.",
+    "outro": "EPF Calculator settles it with Yearly addition = (Employee Monthly PF + Employer Monthly PF) × 12, and the balance grows at the EPF rate compounded annually. Change any field above and the answer updates with it.",
+    "hi_intro": "EPF Calculator ka poora hisaab. Tool leta hai Employee Monthly PF aur Employer Monthly PF aur Annual Interest Rate aur Years; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "EPF Calculator ka formula: Saalana jama = (Employee Monthly PF + Employer Monthly PF) × 12, aur balance EPF rate par saalana compound hota hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "gratuity": {
     "inputs": {
@@ -1529,8 +1701,10 @@
         "v": "₹2,88,461.54"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what Gratuity Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "Gratuity Calculator, worked end to end. The calculator takes Last Drawn Basic + DA, Completed Years; the example below runs one realistic set of those numbers through it.",
+    "outro": "Gratuity Calculator settles it with Gratuity = last drawn basic + DA, multiplied by 15, divided by 26, multiplied by completed years. Change any field above and the answer updates with it.",
+    "hi_intro": "Gratuity Calculator ka poora hisaab. Tool leta hai Last Drawn Basic + DA aur Completed Years; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Gratuity Calculator ka formula: Gratuity = last drawn basic + DA, guna 15, bhag 26, guna completed years. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "nps": {
     "inputs": {
@@ -1548,8 +1722,10 @@
         "v": "₹38,28,484.55"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what NPS Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "NPS Calculator, worked end to end. The calculator takes Monthly Contribution, Expected Annual Return, Years to Retirement; the example below runs one realistic set of those numbers through it.",
+    "outro": "NPS Calculator settles it with Corpus = Monthly Contribution x [((1 + r)^n - 1) / r] x (1 + r), where r is the monthly rate (annual / 12) and n is months to 60. Change any field above and the answer updates with it.",
+    "hi_intro": "NPS Calculator ka poora hisaab. Tool leta hai Monthly Contribution aur Expected Annual Return aur Years to Retirement; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "NPS Calculator ka formula: Corpus = Monthly Contribution x [((1 + r)^n - 1) / r] x (1 + r), jahan r monthly rate (annual / 12) aur n 60 tak ke mahine. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "gst_taxwealth": {
     "inputs": {
@@ -1591,8 +1767,10 @@
         "v": "₹1,525.42"
       }
     ],
-    "intro": "Take one investment or one salary. Here is what GST Calculator projects.",
-    "outro": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional."
+    "intro": "GST Calculator, worked end to end. The calculator takes Base Amount, Discount, GST Rate; the example below runs one realistic set of those numbers through it.",
+    "outro": "GST Calculator settles it with Discounted Base = Base Amount × (1 − Discount %). Change any field above and the answer updates with it.",
+    "hi_intro": "GST Calculator ka poora hisaab. Tool leta hai Base Amount aur Discount aur GST Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "GST Calculator ka formula: Discounted Base = Base Amount × (1 − Discount %). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "agefun": {
     "inputs": {
@@ -1604,8 +1782,10 @@
         "v": "31 years, 4 months"
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Age Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Age Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
+    "outro": "Age Calculator settles it with Age in years = today's year minus the birth year, less one if this year's birthday has not yet arrived. Change any field above and the answer updates with it.",
+    "hi_intro": "Age Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Age Calculator ka formula: Age in years = aaj ka saal minus birth year, aur ek kam tab jab is saal ka birthday abhi aaya na ho. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "lovefun": {
     "inputs": {
@@ -1618,8 +1798,10 @@
         "v": "38%"
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Love Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Love Calculator, worked end to end. The calculator takes Your Name, Their Name; the example below runs one realistic set of those numbers through it.",
+    "outro": "Love Calculator settles it with The score comes from counting how often the letters of the two names appear in the phrase 'loves', weighting the totals, and reducing the result to a percentage. Change any field above and the answer updates with it.",
+    "hi_intro": "Love Calculator ka poora hisaab. Tool leta hai Your Name aur Their Name; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Love Calculator ka formula: Score isse aata hai ki do naamon ke letters 'loves' phrase mein kitni baar aate hain, totals ko weight diya jaata hai, aur result percentage mein ghata diya jaata hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "numerology": {
     "inputs": {
@@ -1632,8 +1814,10 @@
         "v": 3
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Numerology Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Numerology Calculator, worked end to end. The calculator takes Name, Date of Birth; the example below runs one realistic set of those numbers through it.",
+    "outro": "Numerology Calculator settles it with Take the name with everything except letters and digits removed. Change any field above and the answer updates with it.",
+    "hi_intro": "Numerology Calculator ka poora hisaab. Tool leta hai Name aur Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Numerology Calculator ka formula: Naam me se letters aur digits ke alawa sab hata do. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "zodiac": {
     "inputs": {
@@ -1645,8 +1829,10 @@
         "v": "Gemini"
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Zodiac Sign Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Zodiac Sign Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
+    "outro": "Zodiac Sign Calculator settles it with Each sign owns a fixed band of the calendar: Capricorn runs 22 December to 19 January, Aquarius 20 January to 18 February, Pisces 19 February to 20 March, Aries 21 March to 19 April, Taurus 20 April to 20 May, Gemini 21 May to 20 June, Cancer 21 June to 22 July, Leo 23 July to 22 August, Virgo 23 August to 22 September, Libra 23 September to 22 October, Scorpio 23 October to 21 November, Sagittarius 22 November to 21 December. Change any field above and the answer updates with it.",
+    "hi_intro": "Zodiac Sign Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Zodiac Sign Calculator ka formula: Har sign ka calendar me ek fixed band hai: Capricorn 22 December se 19 January, Aquarius 20 January se 18 February, Pisces 19 February se 20 March, Aries 21 March se 19 April, Taurus 20 April se 20 May, Gemini 21 May se 20 June, Cancer 21 June se 22 July, Leo 23 July se 22 August, Virgo 23 August se 22 September, Libra 23 September se 22 October, Scorpio 23 October se 21 November, aur Sagittarius 22 November se 21 December. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "rashi": {
     "inputs": {
@@ -1658,8 +1844,10 @@
         "v": "Karka"
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Rashi (Moon Sign) Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Rashi (Moon Sign) Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
+    "outro": "Rashi (Moon Sign) Calculator settles it with The moon covers the whole zodiac in about 27.3 days, so it spends roughly 2.25 days in each rashi. Change any field above and the answer updates with it.",
+    "hi_intro": "Rashi (Moon Sign) Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Rashi (Moon Sign) Calculator ka formula: Chaand poora zodiac lagbhag 27.3 din me tay karta hai, yaani har rashi me takreeban 2.25 din. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "babyname": {
     "inputs": {
@@ -1671,8 +1859,10 @@
         "v": 7
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Baby Name Number Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Baby Name Number Calculator, worked end to end. The calculator takes Baby Name; the example below runs one realistic set of those numbers through it.",
+    "outro": "Baby Name Number Calculator settles it with Each letter is given a value from 1 to 9 in the Chaldean or Pythagorean system, the values are added, and the digits are reduced until a single digit from 1 to 9 remains - unless the total is 11, 22 or 33, which are kept as they are. Change any field above and the answer updates with it.",
+    "hi_intro": "Baby Name Number Calculator ka poora hisaab. Tool leta hai Baby Name; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Baby Name Number Calculator ka formula: Har letter ko Chaldean ya Pythagorean system mein 1 se 9 ka value milta hai, values jodi jaati hain, aur digits ghataakar 1 se 9 ka single digit banaya jaata hai - jab tak total 11, 22 ya 33 na ho, jinhe waise hi rakha jaata hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "luckynumber": {
     "inputs": {
@@ -1684,8 +1874,10 @@
         "v": 9
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Lucky Number Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Lucky Number Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
+    "outro": "Lucky Number Calculator settles it with The tool strips the hyphens from the date of birth, adds all eight digits together, and if the total is more than nine it adds the digits of that total again. Change any field above and the answer updates with it.",
+    "hi_intro": "Lucky Number Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Lucky Number Calculator ka formula: Tool date of birth se hyphen hata deta hai, saare aath digits jod deta hai, aur agar total nau se bada ho to us total ke digits phir se jod deta hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "compatibility": {
     "inputs": {
@@ -1698,8 +1890,10 @@
         "v": "95%"
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Compatibility Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Compatibility Calculator, worked end to end. The calculator takes First Name, Second Name; the example below runs one realistic set of those numbers through it.",
+    "outro": "Compatibility Calculator settles it with The two names are matched letter by letter, common letters are counted and weighted, and the total is reduced to a percentage out of 100. Change any field above and the answer updates with it.",
+    "hi_intro": "Compatibility Calculator ka poora hisaab. Tool leta hai First Name aur Second Name; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Compatibility Calculator ka formula: Dono naam letter-dar-letter match hote hain, common letters gine aur weight kiye jaate hain, aur total 100 mein se percentage bana diya jaata hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "daysbetween": {
     "inputs": {
@@ -1712,8 +1906,10 @@
         "v": "203 days"
       }
     ],
-    "intro": "Enter a normal set of details. Here is what Days Between Two Dates returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "Days Between Two Dates, worked end to end. The calculator takes Start Date, End Date; the example below runs one realistic set of those numbers through it.",
+    "outro": "Days Between Two Dates settles it with Days = End Date − Start Date, counted as calendar days. Change any field above and the answer updates with it.",
+    "hi_intro": "Days Between Two Dates ka poora hisaab. Tool leta hai Start Date aur End Date; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Days Between Two Dates ka formula: Days = End Date − Start Date, calendar din mein. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "bmi": {
     "inputs": {
@@ -1730,8 +1926,10 @@
         "v": "Healthy range"
       }
     ],
-    "intro": "Enter a normal set of details. Here is what BMI Calculator returns.",
-    "outro": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it."
+    "intro": "BMI Calculator, worked end to end. The calculator takes Weight, Height; the example below runs one realistic set of those numbers through it.",
+    "outro": "BMI Calculator settles it with BMI = Weight in kilograms ÷ (Height in metres)². Change any field above and the answer updates with it.",
+    "hi_intro": "BMI Calculator ka poora hisaab. Tool leta hai Weight aur Height; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "BMI Calculator ka formula: BMI = Weight kilogram mein ÷ (Height metres mein)². Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "pitchscore": {
     "inputs": {
@@ -1752,8 +1950,10 @@
         "v": "1.6:1"
       }
     ],
-    "intro": "Put a real pitch into the check. Here is how the numbers score.",
-    "outro": "Treat the score as a list of questions, not a verdict. Each weak number is something an investor will ask about, so have an answer ready."
+    "intro": "Shark Tank Pitch Check, worked end to end. The calculator takes Your Believed Valuation, Annual Revenue, LTV, CAC, Cash Runway, Gross Margin; the example below runs one realistic set of those numbers through it.",
+    "outro": "Shark Tank Pitch Check settles it with There is no single formula - the check looks at ratios. Change any field above and the answer updates with it.",
+    "hi_intro": "Shark Tank Pitch Check ka poora hisaab. Tool leta hai Your Believed Valuation aur Annual Revenue aur LTV aur CAC aur Cash Runway aur Gross Margin; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Shark Tank Pitch Check ka formula: Koi ek formula nahi hai - check ratios dekhta hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "marketshare": {
     "inputs": {
@@ -1779,6 +1979,8 @@
       }
     ],
     "intro": "Suppose 10,000 units were sold in your market and 6,000 of them were yours. Here is your share.",
-    "outro": "6,000 out of 10,000 is 60%. Change either number above and the share updates as you type — the arithmetic stays that simple."
+    "outro": "6,000 out of 10,000 is 60%. Change either number above and the share updates as you type — the arithmetic stays that simple.",
+    "hi_intro": "Market Share Calculator ka poora hisaab. Tool leta hai Total market (units sold) aur Your units sold; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Market Share Calculator ka formula: Market Share % = (Your Units Sold ÷ Total Market Units) × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
   }
 }

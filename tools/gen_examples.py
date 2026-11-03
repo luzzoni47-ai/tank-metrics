@@ -27,42 +27,82 @@ OUT = ROOT / "tools" / "tool_examples.json"
 # navigation (TAM/SAM/SOM is not an investment-return tool, for instance).
 GUIDES = json.loads((ROOT / "tools" / "tool_guides.json").read_text(encoding="utf-8"))
 
-# How to introduce the example, per category. {name} is the calculator name.
-INTRO = {
-    "everyday": "Say you want a quick answer without opening a spreadsheet. Here is the same calculation the tool does above, with one set of numbers.",
-    "profit": "Take a business with a year of trading behind it. Here is what {name} reports for those figures.",
-    "val": "Imagine a founder and an investor talking numbers. Here is what this deal looks like once {name} works it through.",
-    "cust": "Consider a small online business spending on ads. Here is what {name} says about the customers that spend brings in.",
-    "growth": "Picture a business six months into trading. Here is what {name} shows about where it is heading.",
-    "pricing": "Take one product with one price. Here is what {name} shows once every cost is counted.",
-    "ops": "Consider one hire or one freelancer. Here is what {name} says that really costs.",
-    "investor": "Take an investment held for a few years. Here is what {name} reports at the end.",
-    "bonus": "Put a real pitch into the check. Here is how the numbers score.",
-    "agency": "Take an agency running a campaign for a client. Here is what {name} shows.",
-    "realestate": "Take one property. Here is what {name} works out for it.",
-    "taxwealth": "Take one investment or one salary. Here is what {name} projects.",
-    "dailyfun": "Enter a normal set of details. Here is what {name} returns.",
-}
+# The worked-example framing is built per calculator, from that calculator's own
+# inputs, description and formula. A shared per-category sentence repeated the
+# same prose on every sibling page, which is the near-duplicate text Google drops.
+# A guide may still override the framing with its own intro/outro.
 
-# What the result means, per category. {first} is the first result label.
-OUTRO = {
-    "everyday": "Change any input above and the answer updates as you type. Nothing is sent anywhere — the arithmetic happens in your browser.",
-    "profit": "The margin is the number to watch. A high revenue with a thin margin leaves little room for a bad month, a discount war or a late payment.",
-    "val": "Read the valuation together with the stake, never on its own. A big valuation with a big stake given away can leave a founder with less than a smaller deal would have.",
-    "cust": "These are the numbers investors ask about first. If the cost of winning a customer is close to what that customer is worth, growth burns cash instead of creating it.",
-    "growth": "Growth figures are only useful next to a cash figure. A business can grow quickly and still run out of money, which is what the runway number is there to catch.",
-    "pricing": "The selling price is a decision, not a fact. Work backwards from the margin you need rather than adding costs on top of a price you already picked.",
-    "ops": "The salary is never the whole cost of a hire. Budget for the full figure, not the number you agreed in the interview.",
-    "investor": "Compare the multiple against the years it took. A 3x return over ten years is a very different outcome from a 3x return over three.",
-    "bonus": "Treat the score as a list of questions, not a verdict. Each weak number is something an investor will ask about, so have an answer ready.",
-    "agency": "Agency economics turn on utilisation and churn. A full team on low-value work and a steady leak of clients will undo a healthy-looking margin.",
-    "realestate": "Property numbers move with the local market, so treat this as a starting point and check the rate for your own city and locality.",
-    "taxwealth": "These are estimates, not guarantees. Rates change, returns vary, and tax treatment depends on your own situation — confirm anything large with a professional.",
-    "dailyfun": "This one is for fun. Enjoy the answer, and do not make any real decision on the strength of it.",
-}
+# Hinglish ("hi") copy is generated here too so gen_tool_pages.py has something
+# to render under the Hinglish tab. guides["hi"] holds the twin guide text.
+HI_GUIDES = json.loads((ROOT / "tools" / "tool_guides_hinglish.json").read_text(encoding="utf-8"))
 
-# Categories whose example numbers need a different, non-rupee framing.
-SKIP_AMOUNT_CATEGORIES = {"dailyfun"}
+HI_JOIN = " aur "
+
+
+def _input_labels(c: dict, join: str = ", ") -> str:
+    labels = [i["l"] for i in c["inputs"]]
+    if not labels:
+        return "the fields"
+    if len(labels) == 1:
+        return labels[0]
+    return join.join(labels[:-1]) + join + labels[-1]
+
+
+def _lead_sentence(text: str) -> str:
+    """First sentence of a formula, trimmed — the specific hook for this tool."""
+    text = (text or "").strip()
+    if not text:
+        return ""
+    return text.split(". ")[0].rstrip(". ").strip()
+
+
+def intro_for(c: dict, guides: dict) -> str:
+    g = guides["calcs"].get(c["id"], {})
+    if g.get("intro"):
+        return g["intro"]
+    return (
+        f"{c['name']}, worked end to end. The calculator takes "
+        f"{_input_labels(c)}; the example below runs one realistic set of those "
+        f"numbers through it."
+    )
+
+
+def outro_for(c: dict, guides: dict) -> str:
+    g = guides["calcs"].get(c["id"], {})
+    if g.get("outro"):
+        return g["outro"]
+    lead = _lead_sentence(g.get("formula"))
+    if lead:
+        return (
+            f"{c['name']} settles it with {lead}. Change any field above and the "
+            f"answer updates with it."
+        )
+    return (
+        f"{c['name']} recomputes as you type. Change any field above and the "
+        f"answer updates with it."
+    )
+
+
+def hi_intro_for(c: dict) -> str:
+    hg = HI_GUIDES["calcs"].get(c["id"], {})
+    return (
+        f"{c['name']} ka poora hisaab. Tool leta hai {_input_labels(c, HI_JOIN)}; "
+        f"neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai."
+    )
+
+
+def hi_outro_for(c: dict) -> str:
+    hg = HI_GUIDES["calcs"].get(c["id"], {})
+    lead = _lead_sentence(hg.get("formula"))
+    if lead:
+        return (
+            f"{c['name']} ka formula: {lead}. Koi bhi field badlo aur jawab turant "
+            f"badal jaata hai."
+        )
+    return (
+        f"{c['name']} type karte hi update ho jaata hai. Koi bhi field badlo aur "
+        f"jawab turant badal jaata hai."
+    )
 
 
 def main() -> None:
@@ -82,12 +122,13 @@ def main() -> None:
             label = labels[key]["l"]
             unit = labels[key].get("u", "")
             shown_inputs[label] = f"{val} {unit}".strip()
-        g = GUIDES["calcs"].get(cid, {})
         out[cid] = {
             "inputs": shown_inputs,
             "rows": [{"l": r["l"], "v": r["v"]} for r in rows],
-            "intro": g.get("intro") or INTRO.get(c["cat"], INTRO["everyday"]).replace("{name}", c["name"]),
-            "outro": g.get("outro") or OUTRO.get(c["cat"], OUTRO["everyday"]),
+            "intro": intro_for(c, GUIDES),
+            "outro": outro_for(c, GUIDES),
+            "hi_intro": hi_intro_for(c),
+            "hi_outro": hi_outro_for(c),
         }
 
     OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

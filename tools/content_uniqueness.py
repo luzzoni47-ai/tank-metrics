@@ -1,31 +1,34 @@
 #!/usr/bin/env python3
 """Measure duplicate content across the calculator pages - the real indexing blocker.
 
-Only 5 of 125 pages were indexed. The site is technically clean (every sitemap
-URL answers 200, has a title, a canonical, a description, no noindex, and
-IndexNow announces every change), so none of the usual blockers explain it.
+The site is technically clean (every sitemap URL answers 200, has a title, a
+canonical, a description, no noindex, and IndexNow announces every change), so
+none of the usual blockers explain a low indexed count. Near-duplicate body copy
+does: Google indexes one page of a near-duplicate cluster and drops the rest.
 
-Two facts do:
+This tool measures that overlap so the number is visible and can be driven down
+as real per-calculator copy replaces shared text. It runs against the BUILT
+files, so it sees exactly what a crawler sees.
 
-  1. IndexNow does not reach Google. Google never adopted the protocol; a ping
-     goes to Bing, Yandex, Seznam and Naver. The daily IndexNow sweep is real
-     and worth keeping, but it cannot be the reason Google indexes a page.
-  2. 97 of the 101 calculators have no guide of their own. `gen_tool_pages.py`
-     falls back to a shared per-CATEGORY template, so every calculator in a
-     category renders the same "What this calculator is for", "How the maths
-     works", "Common mistakes" and worked-example prose. On the live site two
-     pages in the same category share 60-73% of their 5-word phrases.
+What counts as "content" here:
 
-Google does not index near-duplicate pages; it picks one and leaves the rest
-out. That is why five pages got in and the other hundred did not.
+  * The page shell (topbar, footer, inline calculator script) is identical on
+    every page by design, so it is stripped before measuring.
+  * The site-wide chrome blocks (call-to-action, related tools, sources, prev/
+    next nav) are also identical by construction, so they are stripped too.
+  * The hidden Hinglish block is a translation of the same page, not original
+    content, so it is stripped - leaving it in flatters the score.
+  * What remains is the English prose a reader actually gets: the intro, the
+    worked example, the guide and the FAQ.
 
-This tool measures the overlap so the number is visible and can be driven down
-as real per-calculator copy replaces the shared template. It runs against the
-BUILT files through tools/url-map.json, so it sees exactly what a crawler sees.
+The metric is the Jaccard overlap of 5-word shingles between every pair of
+pages, reported as the median of each page's closest match. Drive that median
+down each run.
 
     python3 tools/content_uniqueness.py              # report
     python3 tools/content_uniqueness.py --top 15     # worst pairs
     python3 tools/content_uniqueness.py --live       # measure the live site
+    python3 tools/content_uniqueness.py --baseline HEAD   # before/after vs a git ref
 """
 from __future__ import annotations
 
@@ -33,6 +36,7 @@ import argparse
 import itertools
 import json
 import re
+import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -41,26 +45,38 @@ ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
 URL_MAP = ROOT / "tools" / "url-map.json"
 
-# 5-word shingles. Long enough that boilerplate nav and a shared sentence about
-# rounding both count, short enough to catch a paragraph copied between pages.
+# 5-word shingles. Long enough that a shared sentence about rounding counts,
+# short enough to catch a paragraph copied between pages.
 SHINGLE = 5
 # A pair above this is close enough that Google will likely index only one of
 # them. Reported as a blocker, not a warning.
 DUPLICATE = 0.50
 
 STRIP = re.compile(r"<(script|style|nav|footer|header|aside)[^>]*>.*?</\1>", re.S | re.I)
+# The Hinglish tab is the same page translated. Left in, it pads every page with
+# a second copy of its own wording and hides overlap.
+HINGLISH = re.compile(
+    r'<div class="post-lang" data-lang="hinglish".*?(?=<h2>Frequently asked questions</h2>)',
+    re.S | re.I,
+)
+# Blocks that are byte-identical on all pages by construction. They are site
+# furniture, not per-page content, so they are not what this metric tracks.
+CHROME = re.compile(
+    r'<div class="cta-inline".*?</div>|'
+    r'<section class="related-tools".*?</section>|'
+    r'<section class="tool-sources".*?</section>|'
+    r'<nav class="tool-nav".*?</nav>',
+    re.S | re.I,
+)
 TAGS = re.compile(r"<[^>]+>")
 WS = re.compile(r"\s+")
 
 
 def guide_text(html: str) -> str:
-    """The prose a crawler reads, minus the shell.
-
-    The page shell (topbar, footer, inline calculator logic) is identical on
-    every page by design and would swamp the measurement. What matters for
-    duplicate-content is the guide copy under the calculator.
-    """
-    h = STRIP.sub(" ", html)
+    """The English prose a crawler reads, minus the shell, the translation and chrome."""
+    h = HINGLISH.sub(" ", html)
+    h = CHROME.sub(" ", h)
+    h = STRIP.sub(" ", h)
     # The guide lives in the .page-wrap block, after the calculator card.
     m = re.search(r'<div class="page-wrap"[^>]*>(.*)$', h, re.S | re.I)
     body = m.group(1) if m else h
@@ -115,18 +131,39 @@ def live_pages() -> list[tuple[str, str]]:
     return out
 
 
+def baseline_pages(ref: str) -> list[tuple[str, str]]:
+    """The built calculator pages as they were at a git ref (the honest 'before')."""
+    try:
+        files = subprocess.check_output(
+            ["git", "ls-files", "public/site/tools/*.html"], cwd=ROOT
+        ).decode().split()
+        pages = []
+        for f in files:
+            html = subprocess.check_output(
+                ["git", "show", f"{ref}:{f}"], cwd=ROOT, stderr=subprocess.DEVNULL
+            ).decode("utf-8", "replace")
+            pages.append((f"/{Path(f).stem}", html))
+        return pages
+    except (subprocess.CalledProcessError, FileNotFoundError) as e:
+        print(f"baseline unavailable: {e}", file=sys.stderr)
+        return []
+
+
 def report(pages: list[tuple[str, str]], top: int) -> dict:
     texts = [(path, guide_text(html)) for path, html in pages]
     texts = [(p, t) for p, t in texts if len(t.split()) > 50]
     sh = {p: shingles(t) for p, t in texts}
     pairs = []
     for (p1, _), (p2, _) in itertools.combinations(texts, 2):
-        j = jaccard(sh[p1], sh[p2])
-        if j >= 0.30:
-            pairs.append((j, p1, p2))
+        pairs.append((jaccard(sh[p1], sh[p2]), p1, p2))
     pairs.sort(reverse=True)
 
     # For each page, its worst match: how close is it to the most similar page?
+    # Computed over EVERY pair, not just the ones over the duplicate threshold.
+    # The old version only kept pairs >= 0.30, so on a site where nothing is
+    # that close every page's worst match was 0 and the median read 0% - a
+    # metric that can never fall and hides the real distribution. The threshold
+    # now only decides what counts as a *blocker*, not what gets measured.
     worst: dict[str, float] = {}
     for j, p1, p2 in pairs:
         worst[p1] = max(worst.get(p1, 0), j)
@@ -136,11 +173,12 @@ def report(pages: list[tuple[str, str]], top: int) -> dict:
         ((p, j) for p, j in worst.items() if j >= DUPLICATE),
         key=lambda x: -x[1],
     )
+    ranked = sorted(worst.items(), key=lambda x: -x[1])
     return {
         "pages_measured": len(texts),
         "pages_with_a_near_duplicate": len(dup),
         "worst_pairs": [{"overlap": round(j, 3), "a": p1, "b": p2} for j, p1, p2 in pairs[:top]],
-        "worst_pages": [{"page": p, "closest_overlap": round(j, 3)} for p, j in dup[:top]],
+        "worst_pages": [{"page": p, "closest_overlap": round(j, 3)} for p, j in ranked[:top]],
         "median_overlap": round(
             sorted(worst.values())[len(worst) // 2], 3) if worst else 0.0,
     }
@@ -150,6 +188,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--top", type=int, default=10)
     ap.add_argument("--live", action="store_true", help="measure the live site, not the build")
+    ap.add_argument("--baseline", metavar="REF", default="",
+                    help="also measure the built pages at a git ref (e.g. HEAD) for before/after")
     args = ap.parse_args()
 
     pages = live_pages() if args.live else local_pages()
@@ -163,6 +203,20 @@ def main() -> int:
           f"{data['pages_with_a_near_duplicate']}")
     print(f"median closest-overlap: {data['median_overlap']:.0%}")
     print()
+
+    if args.baseline:
+        base_pages = baseline_pages(args.baseline)
+        base = report(base_pages, args.top) if base_pages else None
+        if base:
+            b, a = base["median_overlap"], data["median_overlap"]
+            print(f"vs {args.baseline} (English body only):")
+            print(f"  median overlap  {b:.0%} -> {a:.0%}   ({'DOWN' if a < b else 'no change' if a == b else 'UP'})")
+            print(f"  worst page      {max(x['closest_overlap'] for x in base['worst_pages']):.0%}"
+                  f" -> {max(x['closest_overlap'] for x in data['worst_pages']):.0%}")
+            print(f"  near-duplicates {base['pages_with_a_near_duplicate']}"
+                  f" -> {data['pages_with_a_near_duplicate']}")
+            print()
+
     print("worst pairs:")
     for row in data["worst_pairs"]:
         print(f"  {row['overlap']:.0%}  {row['a']}  <>  {row['b']}")

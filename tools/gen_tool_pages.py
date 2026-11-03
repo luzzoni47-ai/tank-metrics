@@ -107,18 +107,45 @@ def desc_for(c: dict) -> str:
     return html.escape(out, quote=True)
 
 
+def how_inputs(c: dict) -> str:
+    """Name this calculator's own inputs so the intro paragraph is page-specific."""
+    labels = [i["l"] for i in c["inputs"]]
+    if not labels:
+        return "your numbers"
+    if len(labels) == 1:
+        return labels[0]
+    return ", ".join(labels[:-1]) + " and " + labels[-1]
+
+
 def faqs(c: dict) -> list[tuple[str, str]]:
-    """Three honest, useful questions per tool — the base of FAQPage schema."""
+    """Honest, useful questions per tool — the base of FAQPage schema.
+
+    Every answer names this calculator's own inputs, so no two pages share the
+    same FAQ text. An identical FAQ on all 101 pages was the largest block of
+    repeated prose and the main reason the pages read as near-duplicates.
+    """
     name = c["name"]
     d = re.sub(r"\s+", " ", c["desc"]).strip()
     cat = next((x["name"] for x in DATA["cats"] if x["id"] == c["cat"]), "")
+    labels = [i["l"] for i in c["inputs"]]
+    if not labels:
+        entered = "the fields shown above"
+    elif len(labels) == 1:
+        entered = labels[0]
+    else:
+        entered = ", ".join(labels[:-1]) + " and " + labels[-1]
     q = [
         (f"What does the {name} do?",
          f"{d} It is one of the {cat} tools in the free Tank Metrics collection."),
-        (f"Is the {name} free to use?",
-         "Yes. Every Tank Metrics calculator is free, needs no account and shows no paywall."),
+        (f"What do I enter into the {name}?",
+         f"The {name} takes {entered}. Fill those in and the result appears as "
+         f"you type."),
         (f"Is my data saved when I use the {name}?",
-         "No. The calculation runs entirely in your browser, so the numbers you type are never sent to a server."),
+         f"No. {name} runs entirely in your browser, so {entered} never leave "
+         f"the page."),
+        (f"Is the {name} free to use?",
+         "Yes. Every Tank Metrics calculator is free, needs no account and "
+         "shows no paywall."),
     ]
     if c["bench"]:
         b = re.sub(r"\s+", " ", c["bench"]).strip()
@@ -215,15 +242,21 @@ def example_html_hinglish(c: dict) -> str:
     results = "".join(
         f'<li><strong>{r["l"]}:</strong> {r["v"]}</li>' for r in ex["rows"]
     )
+    hi_intro = ex.get("hi_intro") or (
+        "Maano aapko bina spreadsheet kholne ke jaldi jawab chahiye. Yahi wahi "
+        "ganit hai jo upar wala tool karta hai, ek set numbers ke saath."
+    )
+    hi_outro = ex.get("hi_outro") or (
+        "Upar koi bhi input badlo aur jawab type karte hi update ho jaata hai. "
+        "Kuch bhi kahin nahi bheja jaata — ganit aapke browser me hi hota hai."
+    )
     return (
         f'<h2>Ek worked example</h2>'
-        f'<p>Maano aapko bina spreadsheet kholne ke jaldi jawab chahiye. Yahi wahi '
-        f'ganit hai jo upar wala tool karta hai, ek set numbers ke saath.</p>'
+        f'<p>{hi_intro}</p>'
         f'<div class="worked"><div class="worked-col"><h3>Aap kya daalte ho</h3>'
         f'<ul>{inputs}</ul></div><div class="worked-col"><h3>Aapko kya milta hai</h3>'
         f'<ul>{results}</ul></div></div>'
-        f'<p>Upar koi bhi input badlo aur jawab type karte hi update ho jaata hai. '
-        f'Kuch bhi kahin nahi bheja jaata — ganit aapke browser me hi hota hai.</p>'
+        f'<p>{hi_outro}</p>'
     )
 
 
@@ -432,7 +465,7 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
 <div class="tool-meta">{LANG_TOGGLE}</div>
 <div class="post-lang" data-lang="en">
 <h2>How this calculator works</h2>
-<p>{c['desc']} Enter your numbers above and the result appears instantly — nothing is stored or sent anywhere.</p>
+<p>{c['desc']} Enter {how_inputs(c)} above and the {c['name']} result appears instantly — nothing is stored or sent anywhere.</p>
 {f'<p><strong>Good to know:</strong> {c["bench"]}</p>' if c['bench'] else ''}
 {example_html(c)}
 {guide_html(c)}

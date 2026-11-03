@@ -745,17 +745,17 @@
    ]
   },
   "fd": {
-   "what": "Fixed deposit ek fixed rate, fixed term ke liye deti hai, aur nateeje ko asli badalne wala decision sirf ek hai - interest reinvest ho raha hai ya nahi. 1,00,000 rupaye 7% par 5 saal me simple terms me 35,000 deta hai, par 40,255 agar interest quarterly compound ho - aur banks default me quarterly compound karte hain. Calculator dono dikhata hai, saath me post-tax figure, kyunki 40,000 rupaye saalana interest se upar TDS hi 7% FD ko 30% slab wale ke liye lagbhag 4.9% bana deta hai.",
-   "formula": "Maturity = P x (1 + r / n)^(n x t), jahan r annual rate, n saal me compounds (quarterly ke liye 4) aur t saal. Interest = Maturity - P.",
+   "what": "Fixed deposit hi wo product hai jahan advertised rate lagbhag kabhi aapka asli return nahi hota, aur FD calculator yahi farak dikhata hai. Teen cheezein number badalti hain: interest compound hota hai ya nahi, kitni baar hota hai, aur tax kitna kaat leta hai. ₹1,00,000 7% par paanch saal me simple interest par ₹35,000 deta hai, quarterly compound par ₹41,478 - jo zyada banks karte hain - aur 30% slab me TDS limit cross hone par is interest ka lagbhag ₹29,000 bachta hai.\n\nYe tool jo decision tay karta hai wo ye hai ki lump sum zyada samay ke liye lock karna hai ya nahi, aur jawab headline rate par nahi, post-tax maturity par tika hai. 5 saal ki FD 7% par aur 3 saal ki FD 7% par board par ek jaisi lagti hain; paanch saal me lambi tabhi jeetti hai jab aap 3 saal wali ko maturity par reinvest karo, aur calculator compounded figure dikhata hai taaki is reinvestment risk se compare kar sako. Ye ₹40,000 saalana interest ka mark bhi saamne rakhta hai, kyunki usse cross karte hi high-slab taxpayer ka asli return lagbhag 30% gir jaata hai.",
+   "formula": "Maturity = principal × (1 + (rate ÷ 100) ÷ frequency)^(frequency × years), aur Interest Earned = Maturity − principal. principal = 1,00,000, rate = 7, frequency = 4, years = 5 par 1,00,000 × (1 + 0.07 ÷ 4)^(4 × 5) = ₹1,41,478, matlab interest ₹41,478 - flat 7% saalana ke ₹35,000 se lagbhag ₹6,478 zyada, kyunki har quarter ka interest khud kamane lagta hai.",
    "when": [
-    "Aap lump sum park kar rahe ho aur advertised rate nahi, post-tax maturity chahiye.",
-    "Bank FD ko us small-finance bank FD se compare kar rahe ho jo 0.5-1% zyada deta hai.",
-    "3 saal aur 5 saal ki FD me choose kar rahe ho aur rupee ka farak chahiye."
+    "Lump sum park karna hai aur board ke rate ke bajaye tax ke baad ki asli maturity chahiye.",
+    "Lambi aur chhoti tenure compare kar rahe ho aur headline rate nahi, compounded farak chahiye.",
+    "Bank FD ko us small-finance bank FD se compare kar rahe ho jo 0.5-1% zyada deta hai, aur dekhna hai ki extra rate tax ke baad bachta hai ya nahi."
    ],
    "mistakes": [
-    "FD rate ko equity fund ke return se compare karna. FD contractual hai; fund nahi.",
-    "TDS ignore karna. 30% slab wale ke liye FD ka asli return lagbhag rate minus 30% hota hai.",
-    "FD beech me todna bina penalty dekhe - aksar rate ka 0.5-1% lagta hai."
+    "Advertised rate ko return maan lena. Quarterly compound par maturity simple interest se zyada hoti hai, aur ₹40,000 saalana cross hone par TDS 30% slab wale ka return kaat deta hai.",
+    "Compounds per year 1 daal dena jab bank quarterly compound karta hai. 7% FD me frequency = 1 paanch saal me maturity ko hazaron rupaye kam dikhata hai.",
+    "Rate ke peeche FD beech me todna aur penalty na dekhna, aksar rate ka 0.5-1% - jo chase kiye ja rahe farak se zyada mehnga padta hai."
    ]
   },
   "franchise": {
@@ -899,17 +899,17 @@
    ]
   },
   "impval": {
-   "what": "Implied valuation matlab ek chhote deal se poori company ki value ulti nikaalna. Jab koi kehta hai \"50 lakh for 5%\", wo actually bata deta hai ki uske hisaab se company kitne ki hai: 50 lakh company ka 5% hai, matlab company ₹10 crore ki hai. Ye number kisi ne likha nahi hota - deal se implied hai. Yahi poori baat hai, aur kisi bhi offer ko turant check karne ka ye sabse tez tareeka hai, kyunki jaan-boojh kar offer dene wala aksar ye nahi samajhta ki usne apna number bata diya.",
-   "formula": "Implied Valuation = Investment ÷ Equity % × 100. \"50 lakh for 5%\" matlab 50,00,000 ÷ 5 × 100 = ₹10 crore. Ulta karne par implied equity milti hai: Investment ÷ Valuation × 100. Yahi formula pre-money aur post-money ke peeche bhi hai - implied valuation bas offer se ulta chalane par milti hai.",
+   "what": "Implied valuation matlab ek offer ki ek line se poori company ki price ulti nikaalna. Jab koi kehta hai \"₹50,00,000 for 5%\", to stake aur cheque dono milkar value tay kar dete hain: agar ₹50,00,000 se 5% milta hai, to company ₹10 crore ki maani gayi. Ye ₹10 crore kisi ne negotiate nahi kiya aur kisi valuer ne sign nahi kiya, phir bhi offer yahi keh raha hai - isliye term sheet ka asli matlab dekhne ka ye sabse tez tareeka hai.\n\nIse chalane ki asli wajah ye hai ki cheque ka size stake ko chhupa deta hai, aur implied price stake se hi tay hota hai. Wahi ₹15,00,000 3% par ₹5 crore imply karta hai aur 1.5% par ₹10 crore; dono me founder ka hissa dugna rehta hai, paisa ek hi hai. Har offer ko amount dekhkar react karne se pehle is tool se guzaro - jo \"generous\" cheque company ka teesra hissa maangta hai, wo generous nahi lagta.",
+   "formula": "Implied Valuation = amt ÷ (eq ÷ 100). Cheque amt me ₹ me jaata hai aur stake eq me percent me, isliye ₹50,00,000 aur eq = 5 par 50,00,000 ÷ 0.05 = ₹10 crore. Claim check karne ke liye ulta padho: investor company ki value ₹10 crore bolta hai par ₹25,00,000 deta hai, to wo 25,00,000 ÷ 10,00,00,000 = 2.5% kharid raha hai. Implied equity = amt ÷ Implied Valuation × 100.",
    "when": [
-    "Koi price aur stake saath me bolta hai - \"2 crore for 10%\" - aur aap uske peeche ki company value jaanna chahte ho.",
-    "Do offers alag-alag stake par compare kar rahe ho aur ek number chahiye.",
-    "Investor bolta hai company ki value X hai aur aap check karna chahte ho ki uske cheque ke liye iska matlab kya hai."
+    "Offer amount aur stake ke roop me aata hai - \"₹20,00,000 for 4%\" - aur aap uske andar chhupi company price jaanna chahte ho.",
+    "Do offers alag cheque aur alag stake par compare kar rahe ho aur unhe ek hi scale par judge karna hai.",
+    "Investor company ki value batata hai aur aap check karna chahte ho ki wo jo cheque likh raha hai us se us price par kitna stake milta hai."
    ],
    "mistakes": [
-    "Implied number ko post-money maan lena jab investor pre-money bol raha ho. Farak cheque ka hai, aur wo asli equity hai.",
-    "Aise deal par ganit chalana jisme royalty ya loan hai - wo equity nahi hai, isliye equity alag kiye bina implied valuation ka koi matlab nahi.",
-    "Implied valuation ko certified valuation bata dena. Ye offer ka reading hai, registered valuation nahi - official kaam ke liye CA ya merchant banker chahiye."
+    "Implied number ko company ki value maan lena, jabki ye sirf is ek offer ki price hai. Usi business me alag stake alag valuation imply karta hai.",
+    "Convertible note, loan ya royalty cheque ko eq me equity ki tarah daal dena. Equity ko debt se alag karne ke baad hi implied valuation ka matlab banta hai.",
+    "Implied valuation ko certified valuation bata dena. Ye offer ka reading hai, aur official kaam ke liye CA ya merchant banker chahiye."
    ]
   },
   "incometax": {
@@ -1221,17 +1221,17 @@
    ]
   },
   "prepost": {
-   "what": "Pre-Money & Post-Money Valuation term sheet ko waise hi leta hai jaise wo likha hota hai — naye paise se pehle company ki price, aur wo cheque khud — aur do numbers nikalta hai jo tay karte hain founder ke paas kya bachta hai. Pre-money matlab company naye paise ke bahar rehte hue kitne ki maani gayi; post-money matlab wahi value plus investment. Dono ke beech ka gap sirf ganit nahi hai: wo utna stake hai jo naya paisa kharidta hai.\n\nRound band hone ke baad isi stake par bahas hoti hai. Agar pre-money ₹9 crore hai aur investor ₹1 crore lagata hai, to post-money ₹10 crore hua aur cheque ne 10% liya — poori company ka dasva hissa, purani company ka nahi. Jo founder sirf pre-money padhta hai wo maan leta hai ki naya investor ka hissa kahin aur se aayega, aur phir hairan hota hai jab kam uske apne percentage me hota hai. Tool dono valuations aur diya gaya equity ek hi line me dikhata hai taaki ye hairani na ho.",
-   "formula": "Post-Money Valuation = Pre-Money Valuation + Investment Amount. Equity Given = Investment Amount ÷ Post-Money Valuation × 100. Pre-money (pre) aur investment (amt) daalo; tool dono jodkar post-money banata hai, phir investment ko us post-money se divide karke stake dikhata hai. ₹9 crore pre-money plus ₹1 crore cheque matlab ₹10 crore post-money aur 10% diya gaya. Stake hamesha post-money ke hisaab se naapa jaata hai, pre-money ke nahi.",
+   "what": "Pre-money aur post-money ek term sheet ki do prices hain, aur inke farak ki asli wajah ye hai ki investor ka stake doosri price par naapa jaata hai. Pre-money matlab wo value jis par company naye cheque ke bahar rehte hue tay hui; post-money matlab wahi figure plus cheque. Agar pre-money ₹9 crore hai aur investment ₹1 crore, to round ke baad company ₹10 crore ki hui aur investor ke ₹1 crore ne usme dasva hissa kharida.\n\nCalculator wo dilution sawaal saaf karta hai jo founders galat samajhte hain: naya investor ka percentage founder ke hisse se nikalta hai, company ke kisi khaali tukde se nahi. pre = 9,00,00,000 aur amt = 1,00,00,000 daalo, tool ₹10 crore post-money aur 10% diya gaya equity dikhata hai. Yahi 10% purane shareholders ke hisse me ghatta hai, isliye kam pre-money par zyada paisa uthana founder ko cheque se kaafi zyada mehnga pad sakta hai.",
+   "formula": "Post-Money Valuation = pre + amt, aur Equity Given = amt ÷ Post-Money Valuation × 100. Pre-money pre me jaata hai aur cheque amt me, dono ₹ me. pre = 9,00,00,000 aur amt = 1,00,00,000 par post-money ₹10 crore hota hai aur equity given = 1,00,00,000 ÷ 10,00,00,000 × 100 = 10%. Stake hamesha post-money par naapa jaata hai, kyunki investor usi company me shaamil ho raha hai.",
    "when": [
-    "Jab term sheet me pre-money figure ho aur aapko post-money aur diya gaya stake chahiye.",
-    "Jab aap soch rahe ho ki kam pre-money par zyada paisa uthana theek hai ya nahi, aur dekhna chahte ho kitna zyada company chala jaayega.",
-    "Jab aap simple cap table bana rahe ho aur stakes me todne se pehle post-money chahiye."
+    "Term sheet me pre-money figure ho aur sign karne se pehle post-money aur diya gaya stake chahiye.",
+    "Kam pre-money par bada cheque aur zyada pre-money par chhota cheque - dono ka dilution dekhna hai.",
+    "Simple cap table bana rahe ho aur shareholders me baantne se pehle post-money value chahiye."
    ],
    "mistakes": [
-    "Stake ko pre-money ke hisaab se naapna. Pre-money ka 10% company ka 10% nahi hota; investment khud post-money base ka hissa hai.",
-    "Pre-money ko poori company ki price samajh lena. Ye naye paise se pehle ki price hai, jo akele kam aur kam-kaam ki baat hai.",
-    "Cheque ko pre-money me jod dena lekin ye bhoolna ki founder ka apna stake bilkul usi equity se dilute hota hai jo naye investor ko mili."
+    "Equity given ko pre-money par naapna. Pre-money ka 10% company ka 10% nahi hota - investment bhi us base ka hissa hai jisse stake divide hota hai.",
+    "Pre-money ko poori company ki price samajhna. Ye naye paise se pehle ki price hai, aur sheet par hamesha chhota number hota hai.",
+    "Cheque ko pre-money me jod dena par founder ka apna hissa diye gaye equity se kam karna bhool jana. Dono saath chalte hain, aur sirf post-money ise dikhata hai."
    ]
   },
   "propertyroi": {
