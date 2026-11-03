@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-roas-explained": [
+        ("/return-on-ad-spend-roas", "Return on Ad Spend (ROAS)",
+         "put your own revenue and ad spend into the ratio this post explains"),
+        ("/break-even-ad-spend", "Break-Even Ad Spend",
+         "find the ad spend your profit can carry before the campaign loses money"),
+    ],
     "blog-employee-utilization-rate-explained": [
         ("/employee-utilization-rate", "Employee Utilization Rate",
          "put your own billable and available hours into the ratio this post explains"),

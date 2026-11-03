@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Tue, 03 Nov 2026 01:37:59 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 03 Nov 2026 03:50:07 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Return on Ad Spend (ROAS) Explained</title>
+    <link>https://tankmetrics.in/roas-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/roas-explained</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>ROAS explained for small businesses: the formula, a worked example, how ROAS differs from ROI, and the break-even ROAS your ads must clear to make a profit.</description>
+  </item>
   <item>
     <title>Startup Funding Fell 60% in October: What Changed</title>
     <link>https://tankmetrics.in/news/startup-funding-october-2026-drops-60-percent</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Landed cost is the real cost of imported goods: product, freight, insurance and customs duty added up, then divided by the number of units you ordered.</description>
-  </item>
-  <item>
-    <title>LTV CAC Calculator India - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/ltv-cac-calculator-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/ltv-cac-calculator-india</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Free LTV CAC calculator for Indian D2C and SaaS founders. Enter lifetime value and acquisition cost to see your ratio and whether growth is profitable.</description>
   </item>
 </channel>
 </rss>

@@ -48,7 +48,7 @@
   "lastmod": "2026-10-30"
  },
  "/blog": {
-  "hash": "637306b9542ce5ae9f7b0b1caacb5cb05fc3fb9c8bcf1cf1e5ff87c0d78f8b42",
+  "hash": "1e9c94325cf829ad6e37af028e90d703e06ee6f6e14ad862c4ac31ff0ee8d6b9",
   "lastmod": "2026-11-03"
  },
  "/bmi-calculator": {
@@ -64,8 +64,8 @@
   "lastmod": "2026-10-30"
  },
  "/break-even-ad-spend": {
-  "hash": "f879f9af31c113333c53e73a32f1fdf6fa54b6568ee1dd9d69852148ba12c19f",
-  "lastmod": "2026-10-30"
+  "hash": "574164e7f5a4eb0d14ab0925d4f2b97f259b0842cb9116f4a15258952978f0f8",
+  "lastmod": "2026-11-03"
  },
  "/break-even-calculator-rupees": {
   "hash": "f3889d86b9e41c2eb1b881be65134e9f65be8314ffb4df401961273daca7a23d",
@@ -580,8 +580,8 @@
   "lastmod": "2026-10-30"
  },
  "/return-on-ad-spend-roas": {
-  "hash": "407e551416353520f5b5513b8aac6c877fda38797395f1e872282294688abbe2",
-  "lastmod": "2026-10-30"
+  "hash": "c37307740b0fb17c77e2a68c147ba576db39c3f1b41f03bf661336105ce86eeb",
+  "lastmod": "2026-11-03"
  },
  "/return-on-capital-employed": {
   "hash": "723356c3ea1eef44f52f05e5d04b40aef1afd2b65d2472892c9afeb7167d1de3",
@@ -606,6 +606,10 @@
  "/roas-calculator": {
   "hash": "7e565a3b38f4722387a03a56a260b4f622cb073729667912583b760abb119126",
   "lastmod": "2026-10-30"
+ },
+ "/roas-explained": {
+  "hash": "91e04bdf8aa3e17ba341f5afdb1c969c6ac07af474546f83441a5942c9d8962a",
+  "lastmod": "2026-11-03"
  },
  "/royalty-deal": {
   "hash": "a93d66998afb6a076135a5ad6d86dff7c5469f04088ece825743c81ddc6bacf6",
