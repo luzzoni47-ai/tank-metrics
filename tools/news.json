@@ -2,6 +2,71 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "startup-funding-october-2026-drops-60-percent",
+   "title": "Startup Funding Fell 60% in October: What Changed",
+   "dek": "Indian startups raised $678 million in October 2026, down 47.5% from September and 60.8% from a year earlier. Here is what that drop really tells a founder.",
+   "category": "Startups",
+   "date": "2026-11-02",
+   "date_display": "November 2, 2026",
+   "source_name": "Entrackr",
+   "source_url": "https://entrackr.com/monthly-funding-report-monthly-funding-report/indian-startup-funding-nosedives-475-to-678-mn-in-october-12775014",
+   "cta": {
+    "text": "A funding winter is a runway problem. Enter your cash and monthly burn to see how many months the money buys.",
+    "href": "/burn-rate-and-runway",
+    "label": "Open the Burn Rate Calculator"
+   },
+   "related": [
+    {
+     "slug": "burn-rate-runway-guide",
+     "title": "Burn Rate and Runway"
+    },
+    {
+     "slug": "startup-valuation-explained",
+     "title": "How Startup Valuation Actually Works"
+    }
+   ],
+   "body_en": [
+    "<p>Indian startups raised <strong>$678 million across 99 deals</strong> in October 2026, according to Entrackr's monthly funding report published on November 2. That is down 47.5% from September's $1.29 billion and down 60.8% from the $1.73 billion raised in October 2025.</p>",
+    "<p>The headline number sounds like a market that has gone cold. The detail underneath is more useful for a founder, because it shows exactly which part of the market moved and which did not.</p>",
+    "<h2>What the October numbers actually say</h2>",
+    "<p>The fall came from the absence of large rounds. No startup raised $100 million or more during the month. Only two companies, Tessolve and Even Healthcare, crossed the $50 million mark. Entrackr counted three mega deals in October, a 58% decline from the seven in the same month last year.</p>",
+    "<p>Deal count tells a calmer story. The month still recorded 99 deals, and the weekly data shows early and growth stage cheques kept getting written. Boldfit, DailyObjects, RapidCanvas and Nat Habit raised growth rounds, while Auxo AI, Cent, Mesa and Matiks raised early ones. The money did not disappear. The very large cheques did.</p>",
+    "<p>Read the two figures together and the month looks different. If the number of deals barely moved while the total fell by half, then the average cheque fell sharply. That is a change in size, not a change in appetite.</p>",
+    "<h2>The arithmetic of a 47.5% drop</h2>",
+    "<p>Percentages hide the actual sums, so run the division. Suppose a market raises $1,290 million in one month and $678 million the next. The fall is about $612 million, and 612 divided by 1,290 is roughly 47%, which matches the reported 47.5%.</p>",
+    "<p>Now picture where that money would have come from. In a normal month, two or three $100 million rounds can carry more than half the total on their own. Take those out and the same 99 small and mid-sized deals produce a number that looks like a collapse.</p>",
+    "<p>This is why a monthly total is a poor guide on its own. A single large round can double a month; its absence can halve one. The count of deals and the median cheque are steadier measures of whether the market is open to you.</p>",
+    "<h2>Why the year looks different from the month</h2>",
+    "<p>Zoom out and the picture softens. Through mid-October, Indian startups had raised about $10.9 billion across 1,253 rounds in 2026, up slightly on the same period last year. The year is roughly flat even though this one month fell hard.</p>",
+    "<p>Both things are true at once. Capital is still flowing, but it is concentrated in fewer, larger cheques to companies investors already believe in. October was a month when none of those flagship rounds closed, so the total dropped.</p>",
+    "<h2>What it means for a founder raising now</h2>",
+    "<p><strong>Plan a longer runway.</strong> When fewer large rounds close, the whole process slows. Assume the round takes longer than you think and check how many months your cash actually buys. A burn rate calculator turns that worry into a number you can act on.</p>",
+    "<p><strong>Lead with evidence, not the idea.</strong> Investors writing fewer, larger cheques are buying proof: revenue, retention and a believable path to the next round. Put those first.</p>",
+    "<p><strong>Watch the median, not the total.</strong> A month with no $100 million round says almost nothing about whether a $2 crore seed round will close. Judge your odds by the deals near your stage.</p>",
+    "<p>One month of low funding is not a verdict on the year, and a headline drop is not the same as a closed door. The founders who do well in months like this are the ones who sized their runway to survive the wait.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Entrackr ki November 2 ki monthly funding report ke mutabik, Indian startups ne October 2026 me <strong>$678 million 99 deals me</strong> raise kiye. Yeh September ke $1.29 billion se 47.5% kam hai, aur October 2025 ke $1.73 billion se 60.8% kam hai.</p>",
+    "<p>Headline number dekh kar lagega ki market thanda ho gaya hai. Lekin neeche ka detail ek founder ke liye zyada kaam ka hai, kyunki woh batata hai market ka kaunsa hissa hila aur kaunsa nahi.</p>",
+    "<h2>October ke numbers asal me kya kehte hain</h2>",
+    "<p>Giraavat badi rounds na hone se aayi. Mahine me kisi startup ne $100 million ya usse zyada raise nahi kiya. Sirf do company, Tessolve aur Even Healthcare, $50 million se upar gayi. Entrackr ne October me teen mega deals gine, jo pichhle saal ke saat se 58% kam hai.</p>",
+    "<p>Deal count thanda picture deta hai. Mahine me ab bhi 99 deals hue, aur weekly data dikhata hai ki early aur growth stage ke cheque aate rahe. Boldfit, DailyObjects, RapidCanvas aur Nat Habit ne growth rounds raise kiye, jabki Auxo AI, Cent, Mesa aur Matiks ne early rounds. Paisa gaayab nahi hua. Sirf bahut badi cheques gaayab hui.</p>",
+    "<p>Dono figures saath padho to mahina alag lagta hai. Agar deals ki ginti lagbhag wahi rahi par total aadha ho gaya, to average cheque tez gira. Yeh size ka badlav hai, bhookh ka nahi.</p>",
+    "<h2>47.5% giraavat ka hisaab</h2>",
+    "<p>Percentage asli sums chhupa deta hai, isliye division karo. Maan lo market ek mahine me $1,290 million raise karta hai aur agle me $678 million. Giraavat lagbhag $612 million hai, aur 612 ko 1,290 se divide karo to takriban 47% aata hai, jo reported 47.5% se milta hai.</p>",
+    "<p>Ab socho yeh paisa kahan se aata. Normal mahine me do-teen $100 million rounds akele aadhe se zyada total utha sakte hain. Unhe hatao to wahi 99 chhote aur mid-size deals ek aisi ginti banate hain jo collapse jaisi lagti hai.</p>",
+    "<p>Isliye sirf monthly total par bharosa karna galat hai. Ek badi round mahine ko double kar sakti hai; uski gairhazri use aadha kar sakti hai. Deals ki ginti aur median cheque zyada bharosemand measures hain ki market aapke liye khula hai ya nahi.</p>",
+    "<h2>Saal mahine se alag kyun lagta hai</h2>",
+    "<p>Door se dekho to picture naram pad jata hai. Mid-October tak, Indian startups ne 2026 me 1,253 rounds me lagbhag $10.9 billion raise kiye, jo pichhle saal ke same period se thoda upar hai. Saal lagbhag flat hai, chahe yeh ek mahina tez gira ho.</p>",
+    "<p>Dono baatein ek saath sach hain. Capital ab bhi aa raha hai, par woh kam, badi cheques me un companies par kendrit hai jinhe investors pehle se maante hain. October aisa mahina tha jab aisi koi flagship round band nahi hui, isliye total gir gaya.</p>",
+    "<h2>Ab raise karne wale founder ke liye iska matlab</h2>",
+    "<p><strong>Lamba runway plan karo.</strong> Jab badi rounds kam band hoti hain, poora process dheema hota hai. Maan lo round me zyada waqt lagega aur check karo aapka cash asal me kitne mahine chalega. Burn rate calculator us chinta ko ek number bana deta hai jispar aap kaam kar sakte ho.</p>",
+    "<p><strong>Evidence le kar aao, idea nahi.</strong> Jo investors kam, badi cheques likh rahe hain woh proof kharid rahe hain: revenue, retention aur agle round ka bharosemand raasta. Inhe pehle rakho.</p>",
+    "<p><strong>Total nahi, median dekho.</strong> Jis mahine me koi $100 million round nahi hui usse yeh pata nahi chalta ki aapka $2 crore ka seed round band hoga ya nahi. Apne stage ke deals se apni sambhavna aankho.</p>",
+    "<p>Ek mahine ki kam funding saal ka faisla nahi hai, aur headline giraavat band darwaze ke barabar nahi. Aise mahino me woh founders jeette hain jo apna runway itna bada rakhte hain ki intezaar nikal jaye.</p>"
+   ]
+  },
+  {
    "slug": "sebi-sme-ipo-overhaul-market-cap-profit-rule-2026",
    "title": "SEBI's SME IPO Plan: ₹3 Crore Profit Bar",
    "dek": "SEBI wants SME IPOs judged by market value rather than paid-up capital, with a ₹3 crore average profit bar. Here is what the plan means for a founder.",

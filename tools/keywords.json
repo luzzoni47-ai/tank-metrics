@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T05:32:14Z",
+ "generated": "2026-11-03T01:31:15Z",
  "seed_count": 150,
  "suggestion_count": 1036,
  "keywords": [
@@ -85,6 +85,15 @@
    ]
   },
   {
+   "query": "fd calculator post office",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "fd fixed deposit rates sbi",
    "demand": 10,
    "covered": false,
@@ -166,7 +175,7 @@
    ]
   },
   {
-   "query": "fd calculator post office",
+   "query": "fd calculator axis bank",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -208,15 +217,6 @@
    "score": 16.56,
    "from": [
     "property valuation"
-   ]
-  },
-  {
-   "query": "runway 34",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -310,7 +310,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator icici",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -361,6 +361,15 @@
    "score": 14.72,
    "from": [
     "rental yield"
+   ]
+  },
+  {
+   "query": "runway 34",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "runway"
    ]
   },
   {
@@ -454,7 +463,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator monthly payout",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -581,15 +590,6 @@
    "from": [
     "employee utilisation",
     "employee utilization rate"
-   ]
-  },
-  {
-   "query": "fd calculator monthly payout",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -835,6 +835,15 @@
    "score": 9.2,
    "from": [
     "exit calculator"
+   ]
+  },
+  {
+   "query": "fd calculator indusind bank",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -1190,7 +1199,7 @@
    ]
   },
   {
-   "query": "gratuity calculator india",
+   "query": "gratuity calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1304,15 +1313,6 @@
    "score": 8.97,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "lucky number calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "lucky number calculator"
    ]
   },
   {
@@ -1524,7 +1524,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1611,6 +1611,15 @@
    "score": 8.97,
    "from": [
     "working capital"
+   ]
+  },
+  {
+   "query": "zodiac sign calculator",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "zodiac sign calculator"
    ]
   },
   {
@@ -1929,7 +1938,7 @@
    ]
   },
   {
-   "query": "gratuity calculator online",
+   "query": "gratuity calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1947,7 +1956,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2007,6 +2016,15 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator by name",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -2199,7 +2217,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2313,15 +2331,6 @@
    "score": 8.28,
    "from": [
     "working capital loan"
-   ]
-  },
-  {
-   "query": "zodiac sign calculator",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "zodiac sign calculator"
    ]
   },
   {
@@ -2587,7 +2596,7 @@
    ]
   },
   {
-   "query": "gratuity calculator formula",
+   "query": "gratuity calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2614,7 +2623,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2686,7 +2695,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator in tamil",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2993,7 +3002,7 @@
    ]
   },
   {
-   "query": "fd calculator indusind bank",
+   "query": "fd calculator pnb",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3138,6 +3147,15 @@
    ]
   },
   {
+   "query": "lucky number calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3153,15 +3171,6 @@
    "score": 7.02,
    "from": [
     "runway"
-   ]
-  },
-  {
-   "query": "zodiac sign calculator by date of birth",
-   "demand": 13,
-   "covered": true,
-   "score": 7.02,
-   "from": [
-    "zodiac sign calculator"
    ]
   },
   {
@@ -3382,15 +3391,6 @@
    ]
   },
   {
-   "query": "fd calculator monthly interest",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "fd calculator"
-   ]
-  },
-  {
    "query": "gas agency profit margin india",
    "demand": 10,
    "covered": true,
@@ -3400,7 +3400,7 @@
    ]
   },
   {
-   "query": "gratuity calculator for private employees",
+   "query": "gratuity calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3490,7 +3490,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator numerology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
