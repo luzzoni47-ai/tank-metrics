@@ -66,7 +66,21 @@ descriptions <= 155. Calc **ids are not slugs** — look the id up in
 `tools/calcs.json`. Do at most 3 per run; do not retitle a page sitting at
 position > 30 (that is a ranking gap, retitling does nothing).
 
-### 4. Rebuild, test, publish
+### 4. Watch for anyone writing about the brand
+
+```
+python3 tools/brand_monitor.py
+```
+
+Sir's standing ask: if anyone writes "Tank Metrics" or "tankmetrics" anywhere, he
+wants to see it. This scans Hacker News, Bing, Google News and DuckDuckGo - all
+free, none needing a login - and writes `tools/reports/brand-latest.md`. Read the
+report before reporting it: the classifier splits hits into **about us**,
+**others linking to us**, and **namesakes** (tankmetrics.com, BattleMetrics and a
+fuel-logging Chrome extension are NOT us). Never tell Sir a namesake is a mention.
+If only namesakes were found, say plainly that nobody wrote about the brand.
+
+### 5. Rebuild, test, publish
 
 ```
 python3 tools/gen_tool_pages.py
@@ -78,12 +92,13 @@ tools/deploy.sh -m "Daily links + CTR run <date>: <n> pages linked, <n> titles f
 Run the full offline suite (`python3 tools/test_*.py`) before deploying; it
 takes ~10 seconds. `test_clean_urls.py` needs a running server — skip it.
 
-### 5. Report
+### 6. Report
 
 ```
 Links + CTR run <date>
   newest pages linked: <guide-slug>, <news-slug> (from N indexed pages)
   CTR titles fixed: <calc ids>
+  brand mentions: N about us, M citing us, K namesakes (tools/reports/brand-latest.md)
   dead internal links: 0 (test_interlinks passed)
 ```
 
