@@ -222,46 +222,66 @@ html.nav-open,html.nav-open body{overflow:hidden}
 
 /* Numbered pager for the listing grids (/blog Guides, /blog News, /news).
    pagination.js adds the <nav> and the number buttons and toggles
-   `.page-hidden` on the cards outside the current page. Each button carries its
-   colour in a `--pg` custom property set from the logo palette, so the numbers
-   run green, blue, red, yellow, slate. Shown on every width: 10 cards a page
-   on a phone and on a PC. */
+   `.page-hidden` on the cards outside the current page. Each button is a CIRCLE
+   whose ring spins, and the ring carries the logo's four colours in order -
+   green, blue, red, yellow - then starts again at green. Shown on every width:
+   10 cards a page on a phone and on a PC. */
 .page-hidden{display:none!important}
 .page-nav{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:9px;
-  margin:22px 0 6px;
+  gap:11px;
+  margin:24px 0 6px;
 }
 .page-num{
-  width:38px;
-  height:38px;
+  position:relative;
+  width:42px;
+  height:42px;
   padding:0;
-  border:1.5px solid var(--line);
-  border-radius:11px;
-  background:#fff;
-  color:var(--pg,#4285f4);
+  border:0;
+  border-radius:50%;
+  background:transparent;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   font:600 14px/1 Poppins,system-ui,sans-serif;
+  color:var(--ink,#202124);
   cursor:pointer;
-  transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease,color .15s ease;
+  transition:transform .15s ease;
 }
-.page-num:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 16px rgba(32,33,36,.14);
+/* The turning ring: the four brand colours as a conic gradient, spun forever. */
+.page-num::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  background:conic-gradient(from 0deg,
+    #34a853 0 25%, #4285f4 25% 50%, #ea4335 50% 75%, #f2a600 75% 100%);
+  animation:pg-spin 3.6s linear infinite;
 }
-.page-num:focus-visible{
-  outline:2px solid var(--pg,#4285f4);
-  outline-offset:2px;
+/* The white face, sitting inside the ring, holding the number still. */
+.page-num::after{
+  content:"";
+  position:absolute;
+  inset:3px;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 1px 4px rgba(32,33,36,.14);
+  transition:background-color .15s ease;
 }
-.page-num.active{
-  background:var(--pg,#4285f4);
-  border-color:var(--pg,#4285f4);
-  color:#fff;
-  transform:translateY(-2px) scale(1.06);
-  box-shadow:0 8px 20px rgba(32,33,36,.2);
+.page-num > span{position:relative;z-index:1}
+.page-num:hover{transform:translateY(-2px)}
+.page-num:focus-visible{outline:2px solid var(--pg,#4285f4);outline-offset:3px}
+/* Active page: the face fills with that page's colour and the number goes white. */
+.page-num.active{transform:scale(1.08)}
+.page-num.active::after{background:var(--pg,#4285f4)}
+.page-num.active{color:#fff}
+@keyframes pg-spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){
+  .page-num::before{animation:none}
 }
 @media (max-width:760px){
-  .page-nav{gap:7px;margin:18px 0 4px}
-  .page-num{width:34px;height:34px;font-size:13px;border-radius:10px}
+  .page-nav{gap:8px;margin:18px 0 4px}
+  .page-num{width:36px;height:36px;font-size:13px}
 }

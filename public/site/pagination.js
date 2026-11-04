@@ -18,9 +18,10 @@
 
   var PAGE_SIZE = 10;
   var GRIDS = [".blog-grid", "#newsGrid", "#guidesGrid"];
-  // The logo palette, in order: green, blue, red, yellow, then a neutral slate
-  // so a run of five pages never repeats a colour.
-  var COLORS = ["#34a853", "#4285f4", "#ea4335", "#f2a600", "#7b8794"];
+  // The logo's four colours, in order: green, blue, red, yellow - then it
+  // starts again at green. The ring on each number spins, so the numbers read
+  // as one turning wheel in the brand colours.
+  var COLORS = ["#34a853", "#4285f4", "#ea4335", "#f2a600"];
   var built = [];
 
   function pager(grid) {
@@ -54,7 +55,9 @@
         var b = document.createElement("button");
         b.type = "button";
         b.className = "page-num";
-        b.textContent = String(n + 1);
+        var label = document.createElement("span");
+        label.textContent = String(n + 1);
+        b.appendChild(label);
         b.style.setProperty("--pg", COLORS[n % COLORS.length]);
         b.setAttribute("aria-label", "Page " + (n + 1) + " of " + pages);
         b.addEventListener("click", function () { show(n, true); });

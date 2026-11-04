@@ -140,11 +140,13 @@ def main() -> int:
                 fails.append(
                     f"{src}: {init['nums']} numbers for {init['cards']} cards"
                 )
-            # The palette, in order, from the logo.
-            want = ["#34a853", "#4285f4", "#ea4335", "#f2a600", "#7b8794"]
-            for i, c in enumerate(init["colors"][:5]):
-                if c != want[i]:
-                    fails.append(f"{src}: page {i+1} colour is {c!r}, expected {want[i]!r}")
+            # The palette, in order, from the logo, cycling green/blue/red/yellow.
+            want = ["#34a853", "#4285f4", "#ea4335", "#f2a600"]
+            for i, c in enumerate(init["colors"]):
+                if c != want[i % 4]:
+                    fails.append(
+                        f"{src}: page {i+1} colour is {c!r}, expected {want[i % 4]!r}"
+                    )
             # --- tap 2, then back to 1 ---
             if "after_page2" in r:
                 p2 = r["after_page2"]
