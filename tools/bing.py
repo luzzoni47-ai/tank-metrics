@@ -90,10 +90,14 @@ def kv_set(value) -> None:
 
 
 def key() -> str:
-    k = os.environ.get("BING_API_KEY", "").strip()
-    if not k:
-        sys.exit("Set BING_API_KEY first (Bing Webmaster Tools -> Settings -> API Access).")
-    return k
+    # The owner's own name for the secret is `Bing_apy_key`; accept it as well
+    # as the canonical BING_API_KEY so neither the tool nor the automation has
+    # to be told twice.
+    for name in ("BING_API_KEY", "Bing_apy_key"):
+        k = os.environ.get(name, "").strip()
+        if k:
+            return k
+    sys.exit("Set BING_API_KEY first (Bing Webmaster Tools -> Settings -> API Access).")
 
 
 def call(method: str, *, params: dict | None = None, body: dict | None = None):
