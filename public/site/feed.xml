@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Tue, 03 Nov 2026 06:32:31 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 03:52:21 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Revenue Per Employee: What It Tells You</title>
+    <link>https://tankmetrics.in/revenue-per-employee-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/revenue-per-employee-explained</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Revenue per employee shows how much revenue each person carries, how to work it out, and when a falling figure warns that your team is growing too fast.</description>
+  </item>
   <item>
     <title>HSN Code for Online Sellers</title>
     <link>https://tankmetrics.in/hsn-code-for-online-sellers</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>A grocery store runs on a thin 20% margin. See a ₹100 sale worked through, the monthly fixed costs, and the break-even sales a kirana must hit every day.</description>
-  </item>
-  <item>
-    <title>How to Calculate Valuation of Startup in India - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/how-to-calculate-startup-valuation-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/how-to-calculate-startup-valuation-india</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>How to calculate valuation of startup in India, step by step, using revenue and profit multiples plus early-stage methods. Free calculator in ₹ Crores.</description>
   </item>
 </channel>
 </rss>

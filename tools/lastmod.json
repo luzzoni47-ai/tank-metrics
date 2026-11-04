@@ -48,8 +48,8 @@
   "lastmod": "2026-11-03"
  },
  "/blog": {
-  "hash": "e5c29aeffef0d089d9649667acc4b8c853c15fd66454fe808cc7ee2be5083f72",
-  "lastmod": "2026-11-03"
+  "hash": "81df5d0084f04d3371b3706e93eafd8a1a6ccac3167bb98acedb4cf18857b411",
+  "lastmod": "2026-11-04"
  },
  "/bmi-calculator": {
   "hash": "6e8cee3cb1ff8a8905d0305345ee55d27686cfa1e04f314649d3dd721c2ee0d4",
@@ -260,12 +260,12 @@
   "lastmod": "2026-10-30"
  },
  "/employee-cost-ctc-calculator": {
-  "hash": "c331c0c78ead2fe5327dcdaefe08e709e24f0fec46593c31e7c48d4691ace069",
-  "lastmod": "2026-11-03"
+  "hash": "3eea5b58197850d7b56cd6308e874328ceddc16fe412dd208f0994ac0704d543",
+  "lastmod": "2026-11-04"
  },
  "/employee-utilization-rate": {
-  "hash": "e318c901bcea8e1ce667ebfe64fa28abe5cebd7c5ff2ac10ee5db9435024d78a",
-  "lastmod": "2026-11-03"
+  "hash": "f8e1b33e7739a71285053fd641778f73025a4600b57b00d951e185af85fe9b60",
+  "lastmod": "2026-11-04"
  },
  "/employee-utilization-rate-explained": {
   "hash": "016969742df4939c15d889f12ae35e3dcbecc73ffaafa991211b3b1f1d96636b",
@@ -602,6 +602,10 @@
  "/revenue-multiple-calculator-india": {
   "hash": "98cb588a20ced1b4431d1f204e5859e39b41737c360040ad001ee36c544fb640",
   "lastmod": "2026-10-30"
+ },
+ "/revenue-per-employee-explained": {
+  "hash": "42b1082d129967bab0630f6d1b1eac428ce2b880e5595eaf0a19f1bc2309179e",
+  "lastmod": "2026-11-04"
  },
  "/reverse-pricing-explained": {
   "hash": "3ce472f99e4b714d443c63eb58283025206784a0d1072f0290cbca0ebf01ae7a",

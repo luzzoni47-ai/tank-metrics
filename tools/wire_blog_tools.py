@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-revenue-per-employee-explained": [
+        ("/employee-cost-ctc-calculator", "Employee Cost (CTC)",
+         "see what each person on the team really costs the business"),
+        ("/employee-utilization-rate", "Employee Utilization Rate",
+         "measure how much of each person's time is billable output"),
+    ],
     "blog-hsn-code-for-online-sellers": [
         ("/gst-calculator", "GST Calculator",
          "split any price into the base amount and the CGST and SGST on it"),

@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-03T06:30:54Z",
+ "generated": "2026-11-04T03:42:40Z",
  "seed_count": 150,
- "suggestion_count": 1035,
+ "suggestion_count": 1036,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -73,15 +73,6 @@
    "score": 18.4,
    "from": [
     "ebitda and margin"
-   ]
-  },
-  {
-   "query": "fd calculator post office",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -166,7 +157,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator post office",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -301,7 +292,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator axis bank",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -454,7 +445,7 @@
    ]
   },
   {
-   "query": "fd calculator monthly payout",
+   "query": "fd calculator icici",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -581,6 +572,15 @@
    "from": [
     "employee utilisation",
     "employee utilization rate"
+   ]
+  },
+  {
+   "query": "fd calculator monthly payout",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -826,15 +826,6 @@
    "score": 9.2,
    "from": [
     "exit calculator"
-   ]
-  },
-  {
-   "query": "fd calculator indusind bank",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -1893,7 +1884,7 @@
    ]
   },
   {
-   "query": "epf calculator online",
+   "query": "epf calculator with existing balance",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1956,7 +1947,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2560,7 +2551,7 @@
    ]
   },
   {
-   "query": "epf calculator with existing balance",
+   "query": "epf calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2776,7 +2767,7 @@
    ]
   },
   {
-   "query": "ppf calculator monthly",
+   "query": "ppf calculator sbi",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2999,6 +2990,15 @@
    "score": 7.36,
    "from": [
     "employee utilization rate"
+   ]
+  },
+  {
+   "query": "fd calculator indusind bank",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -3373,6 +3373,15 @@
    ]
   },
   {
+   "query": "fd calculator monthly interest",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "gas agency profit margin india",
    "demand": 10,
    "covered": true,
@@ -3553,7 +3562,7 @@
    ]
   },
   {
-   "query": "ppf calculator post office monthly",
+   "query": "ppf calculator monthly",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3613,15 +3622,6 @@
    "score": 6.9,
    "from": [
     "revenue multiple"
-   ]
-  },
-  {
-   "query": "roi calculator online",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "roi calculator"
    ]
   }
  ]
