@@ -1,8 +1,12 @@
-# Tank Metrics — tankmetrics.in
+# Tank Metrics — [tankmetrics.in](https://tankmetrics.in)
 
 Free business and money calculators for India. 101 calculators and 123 pages,
 served as static HTML from `public/site/` through a thin Next.js shell that owns
 the routing, the security headers and the 404 page.
+
+Live site: **<https://tankmetrics.in>** — the canonical host. The `.vercel.app`
+deployments are the same build and each page carries a canonical tag pointing
+here; they exist for previews only.
 
 ## Layout
 
