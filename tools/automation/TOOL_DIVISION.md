@@ -8,16 +8,21 @@ task.
 
 ## The automations (Asia/Kolkata)
 
-| Automation | Schedule | Kind |
-|---|---|---|
-| Top-1 position push | hourly | script |
-| site authority | every 6h | script |
-| index submit | 3,9,15,21 | script |
-| weekly site health | Mon 6am | script |
-| daily guide | 9am | LLM |
-| daily news | 7am | LLM |
-| daily SEO (measure + fix) | 11am | LLM |
-| daily links + CTR | 8:30am | LLM |
+The platform allows **20 sandboxes per day**. Before 2026-11-04 the schedules
+added up to ~37/day (the Top-1 job alone ran hourly = 24), so most runs were
+skipped with `daily_sandbox_limit` and the failing ones could never finish. The
+budget now sits at ~17/day.
+
+| Automation | Schedule | Kind | Runs/day |
+|---|---|---|---|
+| Top-1 position push | every 6h (:30) | script | 4 |
+| site authority | every 6h (:00) | script | 4 |
+| index submit (+ Bing) | 3,9,15,21 | script | 4 |
+| weekly site health | Mon 6am | script | ~0.14 |
+| daily guide | 9am | LLM | 1 |
+| daily news | 7am | LLM | 1 |
+| daily SEO (measure + fix) | 11am | LLM | 1 |
+| daily links + CTR | 8:30am | LLM | 1 |
 
 ## The pages (186 in the sitemap)
 

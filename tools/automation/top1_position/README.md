@@ -1,14 +1,15 @@
-# Top-1 position push (hourly)
+# Top-1 position push (6-hourly)
 
 Brings the pages that already rank into position 1, and keeps an eye on AEO
 (answer-engine) coverage. Registered as the automation
-**"Tank Metrics Top-1 position push (hourly)"**, cron `0 * * * *`, Asia/Kolkata.
+**"Tank Metrics Top-1 position push (6-hourly)"**, cron `30 */6 * * *`,
+Asia/Kolkata.
 
-Why hourly: Search Console position data lags about a day, so the loop mostly
-re-reads the same numbers; hourly is cheap because the script is deterministic
-(no LLM, ~30 HTTP calls) and it means a move is noticed the hour it appears in
-the API rather than the next day. If quota ever becomes a concern, change the
-cron to `0 */6 * * *`.
+Why not hourly: the platform allows 20 sandboxes/day and an hourly job alone
+demanded 24, so most runs were skipped with `daily_sandbox_limit` and the other
+automations starved. Search Console position data lags about a day anyway, so
+four reads a day lose nothing. The cron is staggered to `:30` so it does not
+collide with the site-authority job on `:00`.
 
 ## What it does each run
 
