@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Add the phone pager script to the listing pages.
+"""Add the pager script to the listing pages.
 
-Sir asked for the Guides and News listings to show 10 cards at a time on a
-phone, with a numbered pager underneath. The behaviour lives in
+Sir asked for the Guides and News listings to show 10 cards at a time on a phone
+and on a PC, with a numbered pager underneath. The behaviour lives in
 ``public/site/pagination.js``; this tool only wires that file into the pages.
 
 A tool rather than a hand edit because ``gen_news.py`` rewrites ``news.html``

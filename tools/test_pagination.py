@@ -1,11 +1,11 @@
-"""Guards the phone pager on the listing pages.
+"""Guards the numbered pager on the listing pages.
 
-Sir asked for /blog and /news to show 10 cards at a time on a phone, with a
-numbered pager underneath in the logo's colours. The behaviour is one script
-(pagination.js) toggling `.page-hidden`, so the things that can silently break
-are: the script not being wired into a page, the first page not being sliced to
-10, a tap on "2" not revealing the next 10, the desktop view losing cards, and
-the pager buttons not carrying the palette.
+Sir asked for /blog and /news to show 10 cards at a time on a phone AND on a PC,
+with a numbered pager underneath in the logo's colours. The behaviour is one
+script (pagination.js) toggling `.page-hidden`, so the things that can silently
+break are: the script not being wired into a page, the first page not being
+sliced to 10, a tap on "2" not revealing the next 10, the pager missing on
+desktop, and the pager buttons not carrying the palette.
 
 Chromium is driven at a 390px viewport (phone) and at 1200px (desktop). Each
 check is measured from the rendered DOM, not from the source, because the pager
@@ -159,14 +159,18 @@ def main() -> int:
                 if b1.get("visible") != 10 or b1.get("active") != 0:
                     fails.append(f"{src}: tapping 1 did not return to the first page")
 
-            # --- desktop: every card, no pager ---
+            # --- desktop: same 10 cards, same pager (Sir's ask: 10 on PC too) ---
             d = run(src, 1200, port)["initial"]
             print(f"{src} @1200: {json.dumps(d)}")
-            if d["pager"]:
-                fails.append(f"{src}: pager is showing on a desktop")
-            if d["visible"] != d["cards"]:
+            if not d["pager"]:
+                fails.append(f"{src}: no pager on a desktop")
+            if d["visible"] != 10:
                 fails.append(
-                    f"{src}: desktop hides cards ({d['visible']} of {d['cards']} visible)"
+                    f"{src}: desktop page shows {d['visible']} cards, expected 10"
+                )
+            if d["nums"] != -(-d["cards"] // 10):
+                fails.append(
+                    f"{src}: {d['nums']} numbers for {d['cards']} cards on desktop"
                 )
     finally:
         server.terminate()
@@ -175,7 +179,7 @@ def main() -> int:
         for f in fails:
             print("FAIL:", f)
         return 1
-    print("ALL PASS: 10 cards per phone page, pager works, desktop untouched")
+    print("ALL PASS: 10 cards per page on phone and desktop, pager works, palette correct")
     return 0
 
 

@@ -1,12 +1,13 @@
-/* Phone-only pagination for the listing grids (/blog Guides, /blog News, /news).
+/* Numbered pagination for the listing grids (/blog Guides, /blog News, /news).
  *
- * Sir's ask: on a phone the guides grid is one long scroll of every card. Show
- * 10 at a time and put a numbered pager under them, in the logo's own colours.
+ * Sir's ask: show 10 cards at a time on both a phone and a PC, and put a
+ * numbered pager (1 2 3 4 ...) under them in the logo's own colours. The
+ * numbers run green, blue, red, yellow, slate, so a click always moves.
  *
  * This is progressive enhancement, not a filter. Every card stays in the DOM and
  * only the visible slice is toggled with a class, so:
- *   - with JS off, or on a desktop, the full list still renders and every link
- *     stays crawlable (Google reads the DOM, not the layout);
+ *   - with JS off the full list still renders and every link stays crawlable
+ *     (Google reads the DOM, not the layout);
  *   - the tabs in blog.html keep working, because nothing is added or removed
  *     from the grid, only hidden.
  *
@@ -21,10 +22,6 @@
   // so a run of five pages never repeats a colour.
   var COLORS = ["#34a853", "#4285f4", "#ea4335", "#f2a600", "#7b8794"];
   var built = [];
-
-  function isPhone() {
-    return window.matchMedia("(max-width:760px)").matches;
-  }
 
   function pager(grid) {
     var cards = [].filter.call(grid.children, function (el) {
@@ -68,26 +65,11 @@
 
     grid.parentNode.insertBefore(nav, grid.nextSibling);
     grid.classList.add("paged");
-    built.push({ grid: grid, cards: cards, nav: nav, show: show });
+    built.push({ grid: grid, cards: cards, nav: nav });
     show(0, false);
   }
 
-  function clear() {
-    // Leaving phone width must show every card again, and tear the pager down
-    // completely. Without the teardown a rotate back to portrait would find
-    // `dataset.paged` still set, skip the rebuild, and leave all 45 cards
-    // visible with no pager.
-    built.forEach(function (item) {
-      item.cards.forEach(function (c) { c.classList.remove("page-hidden"); });
-      item.grid.classList.remove("paged");
-      delete item.grid.dataset.paged;
-      if (item.nav.parentNode) item.nav.parentNode.removeChild(item.nav);
-    });
-    built = [];
-  }
-
   function build() {
-    if (!isPhone()) { clear(); return; }
     GRIDS.forEach(function (sel) {
       [].forEach.call(document.querySelectorAll(sel), function (grid) {
         if (grid.dataset.paged) return;
@@ -104,5 +86,9 @@
   } else {
     build();
   }
+  // No resize teardown: the page size is the same on every width now, so a
+  // rotate or a window drag must not rebuild the pager or lose the current page.
+  // build() is idempotent (grid.dataset.paged guard), so calling it again on a
+  // resize that revealed new cards is safe.
   window.addEventListener("resize", build);
 })();
