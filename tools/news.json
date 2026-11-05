@@ -2,6 +2,67 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "eloelo-80-million-series-c-500-million-valuation",
+   "title": "EloElo Raises $80M at $500M: The Valuation Math",
+   "dek": "Bengaluru's Story TV maker raised $80 million from NBCUniversal and Hornbill at a $500 million valuation. Here is the arithmetic a founder should read.",
+   "category": "Startups",
+   "date": "2026-11-04",
+   "date_display": "November 4, 2026",
+   "source_name": "The Next Web",
+   "source_url": "https://thenextweb.com/news/eloelo-80m-series-c-nbcuniversal-hornbill-story-tv-microdramas",
+   "cta": {
+    "text": "A valuation is a multiple applied to revenue. Enter your numbers to see what a buyer would pay for your business.",
+    "href": "/revenue-multiple",
+    "label": "Open the Revenue Multiple Calculator"
+   },
+   "related": [
+    {
+     "slug": "revenue-multiple-calculator-india",
+     "title": "Revenue Multiple Calculator"
+    },
+    {
+     "slug": "startup-valuation-explained",
+     "title": "How Startup Valuation Actually Works"
+    }
+   ],
+   "body_en": [
+    "<p>Bengaluru's EloElo Group raised <strong>$80 million in a Series C round</strong> on November 4, 2026, co-led by Hornbill Capital and NBCUniversal. The round values the company behind the microdrama app Story TV at <strong>$500 million</strong> and takes its total funding to $130 million.</p>",
+    "<p>For a founder, or for anyone who runs a shop, the interesting part is not the headline sum. It is the arithmetic underneath it: how much of the company the founders gave away, and what the buyer is really paying for.</p>",
+    "<h2>The round in plain numbers</h2>",
+    "<p>EloElo is five years old. Founder Saurabh Pandey, a former Flipkart executive, started it in 2020. Story TV now carries more than 5,000 microdramas in six languages and adds a new one every three hours, the company says. Users spend about 95 minutes a day inside the app. Across its four apps the group counts more than 40 million monthly active users and 300 million installs.</p>",
+    "<p>The company began charging users in May 2024. It reported revenue of Rs 69.5 crore for the year to March 2025. Its previous round was a $13.5 million Series B in April 2025. The cheque it just signed is roughly six times the one it signed a year and a half earlier, which is the clearest sign of how fast investors think it can grow.</p>",
+    "<h2>What a $500 million valuation actually means</h2>",
+    "<p>Start with the dilution. If a company is worth $500 million after the money lands, and the new investors put in $80 million, they own about 16% of the business. Do the division: 80 divided by 500 is 0.16, or 16%. The founders and earlier backers keep the other 84%. That is a healthy place to be, because the company sold a slice rather than the whole shop.</p>",
+    "<p>Now look at what the buyer paid for. Divide the valuation by revenue and you get a revenue multiple. On reported revenue of about Rs 69.5 crore, which is roughly $8 million at recent rates, a $500 million valuation works out to about 60 times revenue. That is a growth price, not a value price. The investors are paying for what the company will earn, not for what it earns today.</p>",
+    "<p>Turn the same number around and it tells the founders what they now have to deliver. If the target were a more ordinary multiple of 10 times revenue, the company would need about $50 million of annual revenue to justify the price. Closing that gap is what the new money is meant to do.</p>",
+    "<h2>Why NBCUniversal is the part to watch</h2>",
+    "<p>Hornbill Capital is an Indian investor. NBCUniversal is the American studio behind the Peacock streaming service. Its money buys more than cash: it buys a route into the United States, which is exactly where EloElo says it will spend the round. The company also cited Omdia's forecast that microdramas will generate $14 billion worldwide by the end of 2026, and Redseer's estimate that 40 million Indians paid for a microdrama at least once in the year to March 2026.</p>",
+    "<p>The cash has three jobs: more original shows in Indian languages, a launch of the microdramas outside India, and more work on Dolphin AI, the group's AI production suite. With 240 staff, the company also wants to grow its AI and machine learning research team.</p>",
+    "<h2>What it means for a small business owner</h2>",
+    "<p>The lesson is not that everyone should chase a venture round. It is that the same three numbers decide the fate of a small firm and a funded one: what you earn, what you keep, and what someone will pay for the future you promise.</p>",
+    "<p>If a shop earns Rs 50 lakh a year and you want to sell it, the buyer will apply a multiple to that number, exactly the way EloElo's investors applied one to its revenue. If one founder puts in Rs 10 lakh and a partner puts in Rs 5 lakh, they own two-thirds and one-third, the same ownership logic that decides who keeps what after a large round.</p>",
+    "<p>So when you read an $80 million headline, translate it before you admire it. Work out the slice that was sold, the multiple that was paid, and the revenue the company now has to reach. Those three sums are the whole story, and they are the same three sums you run for your own business.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Bengaluru ki EloElo Group ne 4 November 2026 ko <strong>$80 million ka Series C round</strong> raise kiya hai, jise Hornbill Capital aur NBCUniversal ne co-lead kiya. Ye round microdrama app Story TV banane wali company ko <strong>$500 million</strong> ki valuation deta hai, aur total funding $130 million ho jati hai.</p>",
+    "<p>Ek founder, ya kisi bhi shop owner ke liye, asli baat headline wala bada number nahi hai. Asli baat uske neeche ka hisaab hai: founders ne company ka kitna hissa de diya, aur kharidaar asal mein kis cheez ke liye paisa de raha hai.</p>",
+    "<h2>Round ke simple numbers</h2>",
+    "<p>EloElo paanch saal purani hai. Founder Saurabh Pandey, jo pehle Flipkart mein the, ne ise 2020 mein shuru kiya. Story TV ab chhe languages mein 5,000 se zyada microdramas rakhti hai aur har teen ghante mein ek naya add karti hai, company kehti hai. Log app par rozana kareeb 95 minute bitate hain. Apne chaar apps mila kar group 40 million se zyada monthly active users aur 300 million installs batata hai.</p>",
+    "<p>Company ne May 2024 mein users se paisa lena shuru kiya. March 2025 tak ke saal mein isne Rs 69.5 crore revenue report kiya. Iska pichhla round April 2025 mein $13.5 million ka Series B tha. Ab jo cheque sign hua hai wo dedh saal pehle wale se kareeb chhe guna bada hai, jo dikhata hai ki investors ise kitni tezi se badhte dekh rahe hain.</p>",
+    "<h2>$500 million valuation ka asli matlab</h2>",
+    "<p>Pehle dilution dekho. Agar paisa aane ke baad company ki value $500 million hai, aur naye investors $80 million daal rahe hain, to unka hissa kareeb 16% banta hai. Division karo: 80 ko 500 se divide karo to 0.16, yaani 16%. Founders aur purane backers baaki 84% rakhte hain. Ye achhi jagah hai, kyunki company ne ek slice becha hai, poori dukaan nahi.</p>",
+    "<p>Ab dekho kharidaar kis cheez ka paisa de raha hai. Valuation ko revenue se divide karo to revenue multiple milta hai. Rs 69.5 crore revenue par, jo aaj ke rate par kareeb $8 million hai, $500 million valuation kareeb 60 guna revenue banta hai. Ye growth ka price hai, value ka nahi. Investors aage ki kamai ke liye paisa de rahe hain, aaj ki kamai ke liye nahi.</p>",
+    "<p>Usi number ko ulta ghuma kar dekho to founders ko pata chalta hai ki ab kya dena hai. Agar target 10 guna revenue ka normal multiple hota, to price justify karne ke liye company ko kareeb $50 million saalana revenue chahiye. Yahi gap bharne ke liye naya paisa aaya hai.</p>",
+    "<h2>NBCUniversal kyun sabse zaroori hissa hai</h2>",
+    "<p>Hornbill Capital ek Indian investor hai. NBCUniversal wo American studio hai jiske paas Peacock streaming service hai. Iska paisa sirf cash nahi deta: ye United States ka raasta kholta hai, aur EloElo kehti hai ki round ka paisa wahin lagega. Company ne Omdia ka forecast bhi quote kiya ki 2026 ke end tak microdramas duniya bhar mein $14 billion kamayenge, aur Redseer ka estimate ki March 2026 tak ke saal mein 40 million Indians ne kam se kam ek baar microdrama ke liye paisa diya.</p>",
+    "<p>Is cash ke teen kaam hain: Indian languages mein zyada original shows, India ke bahar microdramas ka launch, aur Dolphin AI par zyada kaam, jo group ka AI production suite hai. 240 staff ke saath company apni AI aur machine learning research team badhana chahti hai.</p>",
+    "<h2>Chhote business owner ke liye iska matlab</h2>",
+    "<p>Sabak ye nahi hai ki sabko venture round ke peeche bhaagna chahiye. Sabak ye hai ki chhoti firm aur funded company, dono ka future teen numbers se tay hota hai: aap kitna kamate ho, kitna rakhte ho, aur koi aapke promise kiye future ke liye kitna dega.</p>",
+    "<p>Agar ek shop saal mein Rs 50 lakh kamati hai aur aap use bechna chahte ho, to kharidaar us number par multiple lagayega, bilkul waise hi jaise EloElo ke investors ne uske revenue par lagaya. Agar ek founder Rs 10 lakh daalta hai aur partner Rs 5 lakh, to unke paas do-tihai aur ek-tihai hissa hota hai, wahi ownership ka hisaab jo bade round ke baad tay karta hai ki kis ko kya bachta hai.</p>",
+    "<p>To jab aap $80 million ka headline padho, tareef karne se pehle usko translate karo. Kitna hissa becha gaya, kitna multiple diya gaya, aur ab company ko kitna revenue chahiye — ye teen hisaab hi poori kahani hain, aur yahi teen hisaab aap apne business ke liye lagate ho.</p>"
+   ]
+  },
+  {
    "slug": "startup-funding-october-2026-drops-60-percent",
    "title": "Startup Funding Fell 60% in October: What Changed",
    "dek": "Indian startups raised $678 million in October 2026, down 47.5% from September and 60.8% from a year earlier. Here is what that drop really tells a founder.",

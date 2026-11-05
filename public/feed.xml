@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Wed, 04 Nov 2026 03:54:11 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 01:35:08 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>EloElo Raises $80M at $500M: The Valuation Math</title>
+    <link>https://tankmetrics.in/news/eloelo-80-million-series-c-500-million-valuation</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/eloelo-80-million-series-c-500-million-valuation</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Startups</category>
+    <description>Bengaluru&#x27;s Story TV maker raised $80 million from NBCUniversal and Hornbill at a $500 million valuation. Here is the arithmetic a founder should read.</description>
+  </item>
   <item>
     <title>Revenue Per Employee: What It Tells You</title>
     <link>https://tankmetrics.in/revenue-per-employee-explained</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Equity dilution calculator India for founders: see your stake after an investor round and an ESOP pool on a simple cap table. Free, instant, in ₹ Crores.</description>
-  </item>
-  <item>
-    <title>Grocery Store Profit Margin: What You Keep</title>
-    <link>https://tankmetrics.in/grocery-store-profit-margin</link>
-    <guid isPermaLink="true">https://tankmetrics.in/grocery-store-profit-margin</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>A grocery store runs on a thin 20% margin. See a ₹100 sale worked through, the monthly fixed costs, and the break-even sales a kirana must hit every day.</description>
   </item>
 </channel>
 </rss>
