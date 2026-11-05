@@ -829,31 +829,31 @@
    ]
   },
   "gst": {
-   "what": "GST calculator wahi do kaam karta hai jo aapko hamesha chahiye: price par GST jodkar final bill nikalna, aur aisi amount se GST nikaalna jisme woh pehle se shaamil hai. Doosri direction hi logon ko phasati hai, kyunki GST-inclusive price ke andar base chhota hota hai jitna woh dikhta hai. India mein rate state ke andar bikri par CGST aur SGST mein bat jaata hai, ya state ke bahar bikri par ek IGST - par total wahi rehta hai.",
-   "formula": "GST Amount = Base Price × GST Rate ÷ 100, aur final price Base + GST hai. ₹1,000 base par 18% GST = ₹180 aur ₹1,180 ka bill. Ulta: agar bill 18% GST ke saath ₹1,180 hai, toh base 1,180 ÷ 1.18 = ₹1,000 aur tax ₹180 hai. Ulta direction division use karti hai, subtraction nahi - ₹1,180 se 18% ghatao toh ₹967.60 aata hai, jo galat hai.",
+   "what": "GST Calculator ek hi decision settle karta hai jo lagbhag har invoice par aata hai: saamne jo figure hai woh tax se pehle ka hai ya baad ka? Amount aur rate daaliye aur tool dono readings ek saath deta hai — tax-exclusive price par jodne wali GST, aur tax-inclusive price ke andar chhupi hui base — taaki aap andaza na lagayein ki supplier ne kis taraf quote kiya.\n\nJo reading logon ko phasati hai woh inclusive wali hai, kyunki GST ke saath batayi gayi price apne headline se chhoti base chhupati hai. ₹1,000 par 18% ka tax ₹180 hai aur bill ₹1,180; ulta karke wahi ₹1,180 bill ₹1,000 ki base rakhta hai, ₹1,000 minus 18% nahi. India mein rate aapke state ke andar bikri par CGST aur SGST ke roop mein lagta hai, ya state ke bahar ek IGST — par total tax dono tarah same rehta hai, sirf invoice par split badalta hai.",
+   "formula": "GST Amount = Base Price × GST Rate ÷ 100, aur final price Base Price + GST Amount hai. ₹1,000 base par 18% ka ₹180 tax aur ₹1,180 ka bill. Doosri taraf padhne ke liye ghatao mat, divide karo: 18% inclusive ₹1,180 ki base 1,180 ÷ 1.18 = ₹1,000 aur tax ₹180 hai. ₹1,180 se seedha 18% ghatao toh ₹967.60 aata hai, jo galat hai.",
    "when": [
-    "Invoice bana rahe ho aur GST amount aur total chahiye.",
-    "Price inclusive batayi gayi hai aur base aur tax alag karne hain.",
-    "GST-inclusive price ko GST-exclusive se compare karna hai."
+    "Supplier ne ek hi figure quote kiya ho aur samajh na aa raha ho ki GST usme shaamil hai ya nahi.",
+    "Invoice bana rahe ho aur tax line aur gross total alag-alag dikhane hain.",
+    "Do quotes compare kar rahe ho jisme ek tax-inclusive hai aur doosra nahi."
    ],
    "mistakes": [
-    "Inclusive price se GST rate ghata dena, (1 + rate) se divide karne ki jagah. Isse base hamesha kam aata hai.",
-    "Ye bhool jaana ki supply se pehle discount dene par GST discounted price par lagti hai, par baad mein dene par poori price par.",
-    "GST ko apna paisa samajh lena. Woh sarkar ke liye rakha jaata hai aur dena padta hai."
+    "Inclusive price se GST rate ghata dena, (1 + rate) se divide karne ki jagah. Subtraction base ko hamesha kam aur tax ko zyada dikhata hai.",
+    "Aisi price par GST jod dena jisme woh pehle se shaamil hai, jisse customer se tax do baar liya jaata hai.",
+    "Jo GST aap collect karte ho use apna paisa samajh lena. Woh sarkaar ke liye hota hai aur return mein dena padta hai."
    ]
   },
   "gst_taxwealth": {
-   "what": "Yeh GST calculator thoda messy asli case sambhalta hai: pehle discount lagta hai, phir bache hue par GST lagti hai, aur tax aapke liye CGST aur SGST mein bat jaati hai. Order maayne rakhta hai. 10% discount ke baad 18% GST ka jawab gross par pehle 18% GST aur baad mein 10% discount se alag hota hai, aur galat order ka matlab invoice aapki books se match nahi karega.",
-   "formula": "Discounted Base = Base Amount × (1 − Discount %). GST = Discounted Base × GST Rate. Total = Discounted Base + GST, jisme intra-state sale par CGST aur SGST dono rate ke aadhe-aadhe. ₹10,000 base, 10% discount aur 18% GST: base ₹9,000 ho jaata hai, GST ₹1,620 jo ₹810 CGST aur ₹810 SGST mein bat jaati hai, aur invoice total ₹10,620.",
+   "what": "Yeh GST Calculator us messy invoice ke liye hai jisme discount ho: pehle trade discount base se ghata jaata hai, phir bache hue par GST lagti hai, aur tax aapke liye CGST aur SGST mein bat jaati hai. Order hi poora point hai. ₹10,000 base par 10% discount aur 18% GST se ₹9,000 taxable value aur ₹1,620 tax aata hai; pehle GST lagakar baad mein discount do toh tax zyada nikalta hai aur invoice aapki books se match nahi karta.\n\nYeh us seller ke liye bana hai jise working dikhani hoti hai: discounted value, total GST, intra-state invoice par jaane wale do barabar halves, aur final payable amount. Yeh reverse direction bhi chalata hai — GST-inclusive figure se base wapas nikaalna — toh ek hi page par sale raise karna aur payment reconcile karna dono cover ho jaate hain.",
+   "formula": "Discounted Base = Base Amount × (1 − Discount %). GST = Discounted Base × GST Rate ÷ 100. Total = Discounted Base + GST, jisme intra-state sale par CGST aur SGST dono GST ke aadhe-aadhe. ₹10,000 base, 10% discount aur 18% GST se taxable value ₹9,000, GST ₹1,620 jo ₹810 CGST aur ₹810 SGST mein bat jaati hai, aur invoice total ₹10,620. Inclusive figure ulta nikaalne ke liye Base = Amount ÷ (1 + Rate ÷ 100).",
    "when": [
-    "Trade discount ke saath invoice issue kar rahe ho aur uspar GST.",
-    "Intra-state sale ke liye CGST aur SGST split chahiye.",
-    "GST-inclusive amount se base reverse nikaalna hai."
+    "Aisi invoice issue kar rahe ho jisme trade discount dikhaya gaya ho aur GST discounted value par lagti ho.",
+    "Apne hi state ke andar ki sale ke liye CGST aur SGST ke halves chahiye.",
+    "GST-inclusive lump sum mila ho aur use base aur tax mein baantna ho."
    ],
    "mistakes": [
-    "Pre-discount amount par GST lagana. Invoice par dikhaye gaye discount par GST discounted value par lagti hai.",
-    "Inter-state sale mein tax barabar baant dena - wahan poore rate par IGST hona chahiye, CGST plus SGST nahi.",
-    "CGST aur SGST alag-alag round karke total ko invoice se ek-do rupee hilne dena."
+    "Pre-discount base par GST lagana. Invoice par discount taxable value ko kam karta hai, tax lagne se pehle.",
+    "Inter-state sale mein tax aadha-aadha kar dena. Wahan poore rate par ek IGST hona chahiye, CGST plus SGST nahi.",
+    "CGST aur SGST alag-alag round karke invoice total ko uske hisson ke sum se ek rupya hila dena."
    ]
   },
   "homeemi": {

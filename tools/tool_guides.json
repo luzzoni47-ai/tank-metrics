@@ -831,31 +831,31 @@
    ]
   },
   "gst": {
-   "what": "A GST calculator does the two things you need constantly: adds GST to a price to get the final bill, and pulls GST out of an amount that already includes it. The second direction is the one that catches people, because a price quoted as inclusive of GST hides a smaller base than it looks. In India the rate is split into CGST and SGST for sales inside a state, or a single IGST for sales across states, but the total is the same.",
-   "formula": "GST Amount = Base Price × GST Rate ÷ 100, and the final price is Base + GST. A ₹1,000 base at 18% has ₹180 of GST and a ₹1,180 bill. Reverse it: if a bill is ₹1,180 inclusive of 18% GST, the base is 1,180 ÷ 1.18 = ₹1,000 and the tax is ₹180. The reverse direction uses division, not subtraction - subtracting 18% from ₹1,180 gives ₹967.60, which is wrong.",
+   "what": "A GST Calculator settles one decision that shows up on almost every sales invoice: is the figure in front of me before tax or after it? Type an amount and a rate and the tool answers both readings at once — the tax to add to a tax-exclusive price, and the base sitting inside a tax-inclusive one — so you stop guessing which way a supplier quoted you.\n\nThe reading that catches people is the inclusive one, because a price that already contains GST hides a smaller base than its headline suggests. On ₹1,000 at 18% the tax is ₹180 and the bill is ₹1,180; turn it around and that same ₹1,180 bill carries a ₹1,000 base, not ₹1,000 minus 18%. In India the rate is collected as CGST plus SGST for a sale within your state or as a single IGST across states, but the total tax is the same either way — only the split printed on the invoice changes.",
+   "formula": "GST Amount = Base Price × GST Rate ÷ 100, and the final price is Base Price + GST Amount. A ₹1,000 base at 18% gives ₹180 of tax and a ₹1,180 bill. To read a price the other way, divide rather than subtract: an inclusive ₹1,180 at 18% has a base of 1,180 ÷ 1.18 = ₹1,000 and tax of ₹180. Subtracting 18% from ₹1,180 instead gives ₹967.60, which is the mistake the reverse direction exists to prevent.",
    "when": [
-    "You are raising an invoice and need the GST amount and the total.",
-    "A price is quoted as inclusive and you need the base and the tax separated.",
-    "You are comparing a GST-inclusive price with a GST-exclusive one."
+    "A supplier has quoted a single figure and you cannot tell whether GST is already inside it.",
+    "You are raising an invoice and need the tax line and the gross total shown separately.",
+    "You are comparing two quotes where one is tax-inclusive and the other is not."
    ],
    "mistakes": [
-    "Subtracting the GST rate from an inclusive price instead of dividing by (1 + rate). It always understates the base.",
-    "Forgetting that GST is charged on the discounted price when a discount is given before supply, but on the full price when it is given afterwards.",
-    "Treating GST collected as your money. It is held for the government and has to be paid."
+    "Taking the GST rate off an inclusive price instead of dividing by (1 + rate). Subtraction always understates the base and overstates the tax.",
+    "Adding GST to a price that already includes it, so the customer is charged the tax twice.",
+    "Treating the GST you collect as your own money. It is held for the government and paid on in your return."
    ]
   },
   "gst_taxwealth": {
-   "what": "This GST calculator handles the slightly messier real-world case: a discount is applied first, then GST is charged on what remains, and the tax is split into CGST and SGST for you. The order matters. A 10% discount followed by 18% GST gives a different answer from 18% GST followed by a 10% discount on the gross, and getting it the wrong way round means your invoice does not match your books.",
-   "formula": "Discounted Base = Base Amount × (1 − Discount %). GST = Discounted Base × GST Rate. Total = Discounted Base + GST, with CGST and SGST each at half the rate for an intra-state sale. A ₹10,000 base with 10% discount and 18% GST: the base becomes ₹9,000, GST is ₹1,620 split as ₹810 CGST and ₹810 SGST, and the invoice total is ₹10,620.",
+   "what": "This GST Calculator handles the messier invoice that has a discount in it: a trade discount comes off the base first, GST is then charged on what remains, and the tax is split into CGST and SGST for you. The order is the whole point. A 10% discount and 18% GST on a ₹10,000 base give a ₹9,000 taxable value and ₹1,620 of tax; apply GST first and the discount afterwards and the tax comes out higher, and the invoice stops matching your books.\n\nIt is built for the seller who has to show the working: the discounted value, the total GST, the two equal halves that go on an intra-state invoice, and the final amount payable. It also runs the reverse direction, pulling the base back out of a GST-inclusive figure you were paid, so one page covers both the sale you are raising and the payment you are reconciling.",
+   "formula": "Discounted Base = Base Amount × (1 − Discount %). GST = Discounted Base × GST Rate ÷ 100. Total = Discounted Base + GST, with CGST and SGST each at half of the GST for an intra-state sale. A ₹10,000 base with a 10% discount and 18% GST becomes a ₹9,000 taxable value, ₹1,620 of GST split as ₹810 CGST and ₹810 SGST, and a ₹10,620 invoice total. To reverse a GST-inclusive figure, Base = Amount ÷ (1 + Rate ÷ 100).",
    "when": [
-    "You are issuing an invoice with a trade discount and GST on top.",
-    "You need the CGST and SGST split for an intra-state sale.",
-    "You are reverse-calculating the base from a GST-inclusive amount you were paid."
+    "You are issuing an invoice where a trade discount is shown and GST sits on the discounted value.",
+    "You need the CGST and SGST halves for a sale inside your own state.",
+    "You were paid a lump sum inclusive of GST and need to split it into base and tax."
    ],
    "mistakes": [
-    "Charging GST on the pre-discount amount. For a discount shown on the invoice, GST applies to the discounted value.",
-    "Splitting the tax evenly when the sale is inter-state - that should be IGST at the full rate, not CGST plus SGST.",
-    "Rounding CGST and SGST separately and letting the total drift by a rupee or two from the invoice."
+    "Charging GST on the pre-discount base. On an invoice the discount reduces the taxable value before the tax is applied.",
+    "Halving the tax on an inter-state sale. That should be a single IGST at the full rate, not CGST plus SGST.",
+    "Rounding CGST and SGST apart and letting the invoice total drift a rupee away from the sum of its parts."
    ]
   },
   "homeemi": {

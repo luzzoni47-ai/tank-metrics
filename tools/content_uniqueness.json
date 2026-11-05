@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.189,
-   "a": "/gst-calculator-tax-and-wealth-toolkit",
-   "b": "/gst-calculator"
-  },
-  {
    "overlap": 0.168,
    "a": "/implied-valuation",
    "b": "/pre-money-and-post-money-valuation"
@@ -21,6 +16,11 @@
    "overlap": 0.154,
    "a": "/break-even-point",
    "b": "/gross-profit-and-margin"
+  },
+  {
+   "overlap": 0.15,
+   "a": "/gst-calculator-tax-and-wealth-toolkit",
+   "b": "/gst-calculator"
   },
   {
    "overlap": 0.147,
@@ -51,17 +51,19 @@
    "overlap": 0.145,
    "a": "/compatibility-calculator",
    "b": "/love-calculator"
+  },
+  {
+   "overlap": 0.145,
+   "a": "/ebitda-multiple",
+   "b": "/revenue-multiple"
+  },
+  {
+   "overlap": 0.141,
+   "a": "/ppf-calculator",
+   "b": "/rd-recurring-deposit-calculator"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/gst-calculator-tax-and-wealth-toolkit",
-   "closest_overlap": 0.189
-  },
-  {
-   "page": "/gst-calculator",
-   "closest_overlap": 0.189
-  },
   {
    "page": "/implied-valuation",
    "closest_overlap": 0.168
@@ -87,11 +89,27 @@
    "closest_overlap": 0.154
   },
   {
+   "page": "/gst-calculator-tax-and-wealth-toolkit",
+   "closest_overlap": 0.15
+  },
+  {
+   "page": "/gst-calculator",
+   "closest_overlap": 0.15
+  },
+  {
    "page": "/client-acquisition-cost-cac",
    "closest_overlap": 0.147
   },
   {
    "page": "/customer-acquisition-cost-cac",
+   "closest_overlap": 0.147
+  },
+  {
+   "page": "/compound-interest",
+   "closest_overlap": 0.147
+  },
+  {
+   "page": "/simple-interest",
    "closest_overlap": 0.147
   }
  ],
