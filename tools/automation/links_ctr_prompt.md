@@ -59,12 +59,27 @@ add an explicit entry at the top of its mapping dict: `"blog-<slug>": ["<calc-sl
 ### 3. Fix the worst CTR titles
 
 From `gsc.py pages`, take the pages at position <= 10 with the most impressions
-and 0 clicks. For each, set/repair the `seo_title` field in `tools/calcs.json`
-(`gen_tool_pages.py`'s `title_for()` already prefers it) so the title uses the
-words of the query it ranks for. Titles <= 60 chars including " | Tank Metrics",
-descriptions <= 155. Calc **ids are not slugs** — look the id up in
-`tools/calcs.json`. Do at most 3 per run; do not retitle a page sitting at
-position > 30 (that is a ranking gap, retitling does nothing).
+and 0 clicks. Then read the exact queries that page ranks for:
+
+```
+python3 tools/gsc.py page-queries <path> 28
+```
+
+For each page, set/repair its title so it uses the words of the query it ranks
+for. Titles <= 60 chars including " | Tank Metrics", descriptions <= 155. Do at
+most 3 per run; do not retitle a page sitting at position > 30 (that is a
+ranking gap, retitling does nothing).
+
+There are two title sources, and the biggest opportunities are usually the
+second:
+
+- **calculator pages** — the `seo_title` field in `tools/calcs.json`
+  (`gen_tool_pages.py`'s `title_for()` already prefers it). Calc **ids are not
+  slugs** — look the id up in `tools/calcs.json`.
+- **keyword-targeted pages** — the `title` field in `tools/keyword_pages.json`,
+  rendered by `gen_keyword_pages.py`. Keep the page's `h1` in step with the new
+  title, then update the matching card's `<h2>`/`<p>` in `public/site/blog.html`
+  so the listing does not advertise the old wording.
 
 ### 4. Watch for anyone writing about the brand
 
@@ -84,10 +99,17 @@ If only namesakes were found, say plainly that nobody wrote about the brand.
 
 ```
 python3 tools/gen_tool_pages.py
+python3 tools/lastmod_stamp.py       # MUST follow wire_crawl_graph: it writes 1970-01-01 placeholders
 python3 tools/test_interlinks.py
 python3 tools/test_dedup.py
 tools/deploy.sh -m "Daily links + CTR run <date>: <n> pages linked, <n> titles fixed"
 ```
+
+`wire_crawl_graph.py` (step 2) rewrites the whole sitemap with a `1970-01-01`
+placeholder lastmod, and `lastmod_stamp.py` is the only thing that turns those
+into honest dates. Skip it and every URL ships dated 1970, which makes Google
+discount the entire sitemap — the one indexing lever this repo owns. It is a
+no-op when nothing changed, so always run it.
 
 Run the full offline suite (`python3 tools/test_*.py`) before deploying; it
 takes ~10 seconds. `test_clean_urls.py` needs a running server — skip it.

@@ -38,6 +38,15 @@ fi
 # Generate first, so the derived files are part of the commit rather than left
 # behind as a dirty tree that the GitHub build never sees.
 echo "==> refreshing generated files"
+# wire_crawl_graph.py writes the sitemap with a 1970-01-01 placeholder lastmod
+# and only lastmod_stamp.py replaces it. A 1970 date on every URL makes Google
+# discount the whole sitemap, so stamp here and hard-stop if any survive.
+python3 tools/lastmod_stamp.py
+if grep -q '1970-01-01' public/sitemap.xml 2>/dev/null; then
+  echo "public/sitemap.xml still holds 1970-01-01 placeholders; refusing to ship." >&2
+  echo "Run: python3 tools/lastmod_stamp.py" >&2
+  exit 1
+fi
 python3 tools/gen_updates.py
 
 if [ -n "$(git status --porcelain)" ]; then

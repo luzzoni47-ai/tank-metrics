@@ -103,6 +103,7 @@ skip it - it is a nice-to-have, not a blocker. Report the score in the summary.
 ### 4. Publish and report
 
 ```
+python3 tools/lastmod_stamp.py    # stamp any page this run rewrote (honest lastmod)
 tools/deploy.sh -m "SEO run <date>: real copy for <ids>, median overlap X% -> Y%"
 ```
 
