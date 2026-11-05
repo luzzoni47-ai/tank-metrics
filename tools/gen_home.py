@@ -423,7 +423,7 @@ def assemble() -> str:
 def main() -> None:
     page = assemble()
     (SITE / "index.html").write_text(page, encoding="utf-8")
-    cards = len(re.findall(r'<a class="cat" href="/', page))
+    cards = len(re.findall(r'<a class="cat-link" href="/', page))
     print(f"home page rebuilt from the design: {len(page)} bytes, "
           f"{cards} toolkit cards linked, catalogue kept")
 
