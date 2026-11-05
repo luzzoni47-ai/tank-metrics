@@ -29,6 +29,8 @@ find tools -name "__pycache__" -type d -prune -exec rm -rf {} + 2>/dev/null || t
 # block and wire_blog_tools.py adds the "Run the numbers" section to every
 # blog-*.html; running the keyword generator after them would overwrite those
 # sections on the keyword pages, because it rewrites the whole file.
+echo "==> gen_home (Sir's home page design)"
+python3 tools/gen_home.py
 echo "==> gen_keyword_pages (keyword-targeted calculator pages)"
 python3 tools/gen_keyword_pages.py
 echo "==> gen_tool_pages"

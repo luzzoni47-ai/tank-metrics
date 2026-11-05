@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tank Metrics — India's #1 Money Tool · 100 Free Calculators</title>
+<meta name="description" content="India's #1 money tool. 100 free calculators for valuation, equity, margins, EMI, GST and more.">
+<meta name="theme-color" content="#4285F4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ================= FAST RESET ================= */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#4285F4;--red:#EA4335;--yellow:#FBBC05;--green:#34A853;
+  --blue-l:#6BA6FF;--red-l:#FF6B5B;--yellow-l:#FFD54F;--green-l:#5BC47A;
+  --saffron:#FF9933;--india-green:#138808;--navy:#06038D;
+  --ink:#080B12;--ink-2:#1A2233;--muted:#5B6474;--muted-2:#8A94A6;
+  --line:#EAEDF3;--line-2:#DFE4EE;--soft:#F6F8FC;
+  --white:#fff;
+  --shadow-m:0 14px 40px -14px rgba(8,11,18,.18);
+  --shadow-l:0 32px 80px -28px rgba(8,11,18,.28);
+  --r:24px;--r-sm:16px;
+  --ease:cubic-bezier(.2,.7,.3,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --spring:cubic-bezier(.34,1.56,.64,1);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  background:var(--white);color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.6;overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:-.03em;line-height:1.12;font-weight:800}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input{font-family:inherit}
+::selection{background:rgba(66,133,244,.25)}
+
+
+/* ================= TRICOLOR BAR ================= */
+.tricolor{
+  height:5px;width:100%;position:relative;overflow:hidden;
+  background:linear-gradient(90deg,var(--saffron) 0 33.2%,#F4F6FA 33.2% 66.4%,var(--india-green) 66.4% 100%);
+}
+.tricolor::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent);
+  animation:shine 3.5s linear infinite;
+}
+.tricolor::after{
+  content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:7px;height:7px;border-radius:50%;background:var(--navy);
+  box-shadow:0 0 0 1.5px #fff,0 0 12px rgba(6,3,141,.8);
+  animation:chakra 2.5s ease-in-out infinite;
+}
+@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+@keyframes chakra{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.4)}}
+
+
+/* ================= NAV ================= */
+.nav{
+  position:sticky;top:0;z-index:200;
+  background:rgba(255,255,255,.92);
+  border-bottom:1px solid transparent;
+  transition:border-color .2s,box-shadow .2s;
+}
+.nav.scrolled{border-bottom-color:var(--line);box-shadow:0 4px 20px -10px rgba(8,11,18,.08)}
+.nav-inner{
+  max-width:1280px;margin:0 auto;padding:0 28px;height:70px;
+  display:flex;align-items:center;gap:36px;
+}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-mark{
+  width:42px;height:42px;border-radius:13px;position:relative;
+  background:conic-gradient(from 210deg,
+    var(--blue) 0 90deg,var(--red) 90deg 180deg,
+    var(--yellow) 180deg 270deg,var(--green) 270deg 360deg);
+  display:grid;place-items:center;overflow:hidden;
+  box-shadow:0 8px 22px -10px rgba(66,133,244,.55);
+  animation:spin 22s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.logo:hover .logo-mark{animation-play-state:paused}
+.logo-mark::before{
+  content:'';position:absolute;inset:3px;border-radius:10px;
+  background:linear-gradient(140deg,#fff,#F4F6FA);
+}
+.logo-mark span{
+  position:relative;z-index:2;font-size:20px;font-weight:800;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  animation:spin 22s linear infinite reverse;
+}
+.logo-mark i{
+  position:absolute;top:5px;right:5px;width:7px;height:7px;border-radius:50%;
+  background:var(--saffron);z-index:3;
+  box-shadow:0 0 0 2px #fff,0 0 10px rgba(255,153,51,.9);
+  animation:dotPulse 2s ease-in-out infinite;
+}
+@keyframes dotPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.4)}}
+.logo-text{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18.5px;letter-spacing:-.03em}
+.logo-text em{font-style:normal;
+  background:linear-gradient(96deg,var(--blue),var(--red) 40%,var(--green));
+  background-size:200% auto;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shimmer 4s linear infinite;
+}
+@keyframes shimmer{0%{background-position:0% 0}100%{background-position:200% 0}}
+.nav-links{display:flex;align-items:center;gap:2px;margin-left:auto}
+.nav-links a{
+  padding:10px 15px;border-radius:10px;font-size:14.5px;font-weight:500;
+  color:var(--ink-2);transition:.2s var(--ease);position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;left:15px;right:15px;bottom:6px;height:2px;
+  background:linear-gradient(90deg,var(--blue),var(--saffron),var(--green));
+  transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease-out);
+  border-radius:2px;
+}
+.nav-links a:hover{color:var(--blue);background:var(--soft)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{
+  margin-left:12px;padding:10px 20px !important;border-radius:999px !important;
+  color:#fff !important;font-weight:600 !important;font-size:14px !important;
+  background:linear-gradient(100deg,var(--blue),var(--saffron)) !important;
+  background-size:200% 100% !important;
+  box-shadow:0 8px 22px -10px rgba(66,133,244,.6);
+  transition:.3s var(--ease) !important;
+}
+.nav-cta::after{display:none !important}
+.nav-cta:hover{transform:translateY(-1px) scale(1.03);background-position:100% 0 !important}
+
+
+/* ================= HERO ================= */
+.hero{
+  position:relative;padding:100px 28px 80px;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:center;min-height:92vh;
+}
+.hero .aurora{position:absolute;inset:0;pointer-events:none;z-index:0}
+.hero .aurora b{
+  position:absolute;border-radius:50%;filter:blur(50px);opacity:.55;
+}
+.hero .aurora b:nth-child(1){width:520px;height:520px;background:radial-gradient(circle,rgba(66,133,244,.7),transparent 70%);top:-15%;left:-8%;animation:drift1 20s ease-in-out infinite}
+.hero .aurora b:nth-child(2){width:480px;height:480px;background:radial-gradient(circle,rgba(255,153,51,.65),transparent 70%);top:-10%;right:-6%;animation:drift2 24s ease-in-out infinite}
+.hero .aurora b:nth-child(3){width:540px;height:540px;background:radial-gradient(circle,rgba(52,168,83,.55),transparent 70%);bottom:-20%;left:25%;animation:drift3 22s ease-in-out infinite}
+@keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(60px,-40px) scale(1.12)}}
+@keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-50px,50px) scale(1.08)}}
+@keyframes drift3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,30px) scale(1.15)}}
+
+
+.hero::after{
+  content:'';position:absolute;inset:0;pointer-events:none;opacity:.35;z-index:1;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:76px 76px;
+  mask-image:radial-gradient(circle at 50% 30%,#000 0%,transparent 55%);
+  -webkit-mask-image:radial-gradient(circle at 50% 30%,#000 0%,transparent 55%);
+}
+
+
+.chakra-deco{
+  position:absolute;top:50%;left:50%;width:900px;height:900px;border-radius:50%;
+  pointer-events:none;transform:translate(-50%,-50%);opacity:.05;z-index:1;
+  animation:spin 90s linear infinite;
+}
+.chakra-deco svg{width:100%;height:100%}
+.chakra-deco svg circle,.chakra-deco svg line{stroke:var(--navy);fill:none}
+
+
+.hero-inner{position:relative;z-index:3;max-width:980px;margin:0 auto;text-align:center}
+
+
+.badge{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:9px 18px 9px 11px;border-radius:999px;
+  background:#fff;font-size:13px;font-weight:600;color:var(--ink-2);
+  margin-bottom:30px;position:relative;
+  box-shadow:0 8px 24px -12px rgba(8,11,18,.14);
+  animation:badgeIn .8s var(--ease-out) both;
+}
+@keyframes badgeIn{from{opacity:0;transform:translateY(-16px) scale(.85)}to{opacity:1;transform:none}}
+.badge::before{
+  content:'';position:absolute;inset:-2px;border-radius:inherit;padding:2px;
+  background:conic-gradient(from 0deg,var(--saffron),var(--yellow),var(--green),var(--blue),var(--red),var(--saffron));
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+  animation:spin 4s linear infinite;
+}
+.badge .flag{
+  display:flex;width:24px;height:17px;border-radius:4px;overflow:hidden;
+  box-shadow:0 0 0 1px rgba(8,11,18,.1);flex-direction:column;
+}
+.badge .flag i{flex:1}
+.badge .flag i:nth-child(1){background:var(--saffron)}
+.badge .flag i:nth-child(2){background:#fff;position:relative}
+.badge .flag i:nth-child(2)::after{
+  content:'';position:absolute;inset:0;margin:auto;width:5px;height:5px;
+  border-radius:50%;border:1px solid var(--navy);
+}
+.badge .flag i:nth-child(3){background:var(--india-green)}
+.badge .dot{
+  width:7px;height:7px;border-radius:50%;background:var(--green);
+  animation:dotPulse 2s ease-in-out infinite;
+  box-shadow:0 0 0 3px rgba(52,168,83,.2);
+}
+
+
+h1.hero-title{font-size:clamp(2.7rem,6.5vw,4.8rem);line-height:1.02;letter-spacing:-.045em;margin-bottom:24px}
+.hero-title .word{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .04em}
+.hero-title .word>span{display:inline-block;animation:wordIn 1s var(--spring) both}
+@keyframes wordIn{from{transform:translateY(115%) rotate(5deg);opacity:0}to{transform:translateY(0) rotate(0);opacity:1}}
+.grad{
+  background:linear-gradient(96deg,var(--blue) 0%,var(--blue) 20%,var(--red) 30%,var(--red) 44%,var(--yellow) 54%,var(--saffron) 64%,var(--green) 80%,var(--india-green) 100%);
+  background-size:300% auto;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shimmer 3.5s linear infinite;
+}
+.hero-sub{
+  font-size:clamp(16px,1.8vw,18px);color:var(--muted);max-width:680px;
+  margin:0 auto 40px;line-height:1.65;
+  animation:fadeUp .9s .2s var(--ease-out) both;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.hero-sub b{color:var(--ink);font-weight:600}
+.hero-sub .hl{
+  color:var(--india-green);font-weight:700;
+  border-bottom:2px solid rgba(19,136,8,.25);
+}
+
+
+/* Search */
+.search-wrap{max-width:680px;margin:0 auto 24px;animation:fadeUp .9s .3s var(--ease-out) both}
+.search{
+  display:flex;align-items:center;gap:12px;background:#fff;
+  border:1px solid var(--line-2);border-radius:999px;
+  padding:8px 8px 8px 22px;
+  box-shadow:0 16px 50px -20px rgba(8,11,18,.2);
+  transition:.25s var(--ease);position:relative;
+}
+.search::before{
+  content:'';position:absolute;inset:-2px;border-radius:inherit;padding:2px;
+  background:linear-gradient(100deg,var(--blue),var(--red) 30%,var(--yellow) 55%,var(--green) 85%);
+  background-size:300% 100%;
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+  opacity:0;transition:.25s;animation:shimmer 3s linear infinite;
+}
+.search:focus-within{border-color:transparent;box-shadow:0 22px 60px -20px rgba(66,133,244,.35),0 0 0 4px rgba(66,133,244,.08)}
+.search:focus-within::before{opacity:1}
+.search svg{flex-shrink:0;color:var(--muted-2);transition:.3s}
+.search:focus-within svg{color:var(--blue);transform:scale(1.1)}
+.search input{flex:1;border:0;outline:0;background:transparent;font-size:16px;color:var(--ink);padding:12px 0;min-width:0}
+.search input::placeholder{color:var(--muted-2)}
+.search .kbd{
+  font-size:11px;font-weight:700;color:var(--muted-2);border:1px solid var(--line-2);
+  border-radius:6px;padding:3px 8px;background:var(--soft);margin-right:4px;flex-shrink:0;
+}
+.search button{
+  flex-shrink:0;width:48px;height:48px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue),var(--blue-l));
+  display:grid;place-items:center;color:#fff;
+  box-shadow:0 10px 24px -8px rgba(66,133,244,.8);
+  transition:.3s var(--spring);position:relative;overflow:hidden;
+}
+.search button::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--saffron),var(--red));
+  opacity:0;transition:.3s;border-radius:inherit;
+}
+.search button:hover{transform:scale(1.1) rotate(-10deg)}
+.search button:hover::before{opacity:1}
+.search button svg{position:relative;z-index:1;transition:.3s}
+.search button:hover svg{transform:rotate(10deg)}
+
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:48px;animation:fadeUp .9s .4s var(--ease-out) both}
+.chip{
+  font-size:13px;font-weight:500;color:var(--ink-2);padding:8px 15px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;transition:.3s var(--spring);cursor:pointer;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.chip:hover{color:var(--blue);border-color:var(--blue);background:#F5F9FF;transform:translateY(-3px) scale(1.05);box-shadow:0 12px 24px -8px rgba(66,133,244,.4)}
+.chip i{width:6px;height:6px;border-radius:50%;display:block;transition:.3s var(--spring)}
+.chip:hover i{transform:scale(1.8)}
+
+
+/* Stats */
+.stats{
+  display:flex;flex-wrap:wrap;justify-content:center;
+  max-width:820px;margin:0 auto;padding:36px 0 0;
+  border-top:1px solid var(--line);
+  animation:fadeUp .9s .5s var(--ease-out) both;
+}
+.stat{flex:1 1 160px;padding:8px 20px;text-align:center;position:relative;transition:.3s}
+.stat:hover{transform:translateY(-3px)}
+.stat+.stat::before{
+  content:'';position:absolute;left:0;top:15%;height:70%;width:1px;
+  background:linear-gradient(180deg,transparent,var(--line-2),transparent);
+}
+.stat b{
+  display:block;font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:clamp(1.7rem,3.2vw,2.2rem);font-weight:800;letter-spacing:-.04em;line-height:1;
+  margin-bottom:8px;transition:.3s;
+}
+.stat:hover b{transform:scale(1.08)}
+.stat span{font-size:11.5px;color:var(--muted-2);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.stat:nth-child(1) b{background:linear-gradient(135deg,var(--blue),var(--blue-l));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-child(2) b{background:linear-gradient(135deg,var(--red),var(--red-l));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-child(3) b{background:linear-gradient(135deg,var(--saffron),var(--yellow-l));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-child(4) b{background:linear-gradient(135deg,var(--green),var(--green-l));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+
+/* Marquee */
+.marquee{
+  margin-top:0;padding:20px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,#fff,var(--soft));
+  overflow:hidden;position:relative;z-index:3;
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.marquee-track{display:flex;gap:10px;width:max-content;animation:scrollX 55s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes scrollX{to{transform:translateX(-50%)}}
+.mq{
+  display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+  font-size:13.5px;font-weight:500;color:var(--ink-2);
+  padding:10px 18px;border-radius:999px;background:#fff;border:1px solid var(--line);
+  transition:.3s var(--spring);
+}
+.mq:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 10px 24px -8px rgba(8,11,18,.15)}
+.mq i{width:7px;height:7px;border-radius:50%;display:block;animation:dotPulse 2s ease-in-out infinite}
+
+
+/* ================= SECTIONS ================= */
+.section{padding:100px 28px;position:relative}
+.container{max-width:1200px;margin:0 auto}
+.sec-head{max-width:700px;margin-bottom:56px}
+.sec-head.center{margin:0 auto 56px;text-align:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:18px;padding:8px 16px;border-radius:999px;
+  background:rgba(66,133,244,.07);border:1px solid rgba(66,133,244,.14);
+  position:relative;overflow:hidden;
+}
+.eyebrow::before{
+  content:'';width:6px;height:6px;border-radius:50%;
+  background:linear-gradient(135deg,var(--saffron),var(--green));
+  animation:dotPulse 2s ease-in-out infinite;
+}
+.eyebrow::after{
+  content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(66,133,244,.18),transparent);
+  animation:sweep 3s linear infinite;
+}
+@keyframes sweep{0%{left:-100%}100%{left:100%}}
+h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.04em;margin-bottom:18px}
+.sec-sub{font-size:16.5px;color:var(--muted);line-height:1.65}
+
+
+/* ================================================ */
+/* ============ 2-COLUMN GRID LAYOUTS ============= */
+/* ================================================ */
+
+
+/* Categories — always 2 columns on desktop & tablet */
+.cat-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:24px;
+  align-items:stretch;
+}
+
+
+/* Live tools — 2 columns on desktop & tablet */
+.live-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:24px;
+  align-items:stretch;
+}
+
+
+/* Why features — 2 columns on desktop & tablet */
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:22px;
+  align-items:stretch;
+}
+
+
+/* Category Card */
+.cat{
+  position:relative;background:#fff;border:1px solid var(--line-2);
+  border-radius:var(--r);padding:30px 32px;
+  display:flex;flex-direction:column;gap:16px;
+  transition:.45s var(--ease);overflow:hidden;
+  min-height:210px;
+}
+.cat::after{
+  content:'';position:absolute;left:0;right:0;top:0;height:4px;
+  background:linear-gradient(90deg,var(--accent,var(--blue)),var(--accent-2,var(--blue-l)));
+  border-radius:var(--r) var(--r) 0 0;
+  opacity:.85;transition:.4s var(--ease);
+}
+.cat:hover::after{opacity:1;height:5px;box-shadow:0 2px 16px var(--accent-glow,var(--blue))}
+.cat::before{
+  content:'';position:absolute;inset:0;border-radius:inherit;opacity:0;
+  transition:.45s var(--ease);
+  background:radial-gradient(620px 320px at 100% 0%,var(--tint,rgba(66,133,244,.12)),transparent 70%);
+  pointer-events:none;
+}
+.cat:hover{
+  border-color:transparent;transform:translateY(-8px) scale(1.015);
+  box-shadow:0 40px 90px -32px rgba(8,11,18,.32),0 0 0 1px var(--border,var(--line-2));
+}
+.cat:hover::before{opacity:1}
+.cat-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;position:relative;z-index:1}
+.cat-ico{
+  width:62px;height:62px;border-radius:18px;display:grid;place-items:center;
+  font-size:27px;flex-shrink:0;transition:.55s var(--spring);
+  box-shadow:0 8px 22px -10px rgba(8,11,18,.15);
+  animation:float 4s ease-in-out infinite;
+}
+.cat:nth-child(2n) .cat-ico{animation-delay:-1s}
+.cat:nth-child(3n) .cat-ico{animation-delay:-2s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.cat:hover .cat-ico{transform:scale(1.15) rotate(-10deg);animation:none}
+.cat-count{
+  font-size:11.5px;font-weight:700;color:var(--muted-2);background:var(--soft);
+  padding:6px 12px;border-radius:999px;border:1px solid var(--line);
+  white-space:nowrap;transition:.3s var(--ease);
+}
+.cat:hover .cat-count{
+  background:var(--accent,var(--blue));color:#fff;border-color:transparent;
+  transform:scale(1.1);box-shadow:0 4px 14px -4px var(--accent-glow,var(--blue));
+}
+.cat h3{font-size:19px;font-weight:700;letter-spacing:-.025em;position:relative;z-index:1;line-height:1.25}
+.cat p{font-size:13.5px;color:var(--muted);line-height:1.6;position:relative;z-index:1}
+.cat-arrow{
+  margin-top:auto;display:flex;align-items:center;gap:7px;
+  font-size:13px;font-weight:600;color:var(--accent,var(--blue));position:relative;z-index:1;
+  opacity:0;transform:translateX(-10px);transition:.35s var(--ease);
+}
+.cat:hover .cat-arrow{opacity:1;transform:none}
+.cat-arrow svg{transition:.3s}
+.cat:hover .cat-arrow svg{transform:translateX(4px)}
+
+
+.c-blue{background:linear-gradient(135deg,rgba(66,133,244,.18),rgba(66,133,244,.05));color:var(--blue)}
+.c-red{background:linear-gradient(135deg,rgba(234,67,53,.18),rgba(234,67,53,.05));color:var(--red)}
+.c-yellow{background:linear-gradient(135deg,rgba(251,188,5,.24),rgba(251,188,5,.08));color:#B98700}
+.c-green{background:linear-gradient(135deg,rgba(52,168,83,.18),rgba(52,168,83,.05));color:var(--green)}
+.c-saffron{background:linear-gradient(135deg,rgba(255,153,51,.22),rgba(255,153,51,.05));color:#D97700}
+.c-navy{background:linear-gradient(135deg,rgba(6,3,141,.14),rgba(6,3,141,.03));color:var(--navy)}
+
+
+.no-results{display:none;text-align:center;padding:60px 20px;color:var(--muted)}
+.no-results b{display:block;font-size:17px;color:var(--ink);margin-bottom:6px}
+
+
+/* ================= LIVE TOOLS SECTION ================= */
+.live-section{
+  background:
+    radial-gradient(900px 460px at 15% 0%,rgba(66,133,244,.06),transparent 60%),
+    radial-gradient(900px 460px at 85% 0%,rgba(255,153,51,.06),transparent 60%),
+    linear-gradient(180deg,#fff,var(--soft) 50%,#fff);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+
+
+/* Tool Card */
+.tool{
+  background:#fff;border:1px solid var(--line-2);border-radius:var(--r);
+  padding:30px;box-shadow:0 6px 22px -10px rgba(8,11,18,.1);
+  transition:.4s var(--ease);position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.tool::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--accent,var(--blue)),var(--accent-glow,var(--blue-l)));
+  box-shadow:0 2px 14px var(--accent-glow,rgba(66,133,244,.5));
+}
+.tool:hover{transform:translateY(-6px);box-shadow:0 36px 80px -30px rgba(8,11,18,.25);border-color:transparent}
+.tool-head{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.tool-ico{
+  width:50px;height:50px;border-radius:14px;display:grid;place-items:center;
+  font-size:20px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;
+  transition:.5s var(--spring);box-shadow:0 6px 16px -8px rgba(8,11,18,.15);
+  flex-shrink:0;
+}
+.tool:hover .tool-ico{transform:scale(1.15) rotate(-8deg)}
+.tool-head h3{font-size:16px;font-weight:700;letter-spacing:-.02em}
+.tool-head p{font-size:12.5px;color:var(--muted-2);margin-top:2px;line-height:1.4}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:7px;letter-spacing:.02em}
+.field input{
+  width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid var(--line);
+  background:var(--soft);font-size:15px;font-weight:600;color:var(--ink);outline:0;
+  transition:.25s var(--ease);
+}
+.field input:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(66,133,244,.12)}
+.tool-out{
+  margin-top:auto;padding:18px 20px;border-radius:14px;
+  background:linear-gradient(135deg,rgba(66,133,244,.07),rgba(52,168,83,.07));
+  border:1px solid rgba(66,133,244,.14);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  transition:.3s var(--ease);
+}
+.tool:hover .tool-out{
+  background:linear-gradient(135deg,var(--accent,rgba(66,133,244,.1)),rgba(52,168,83,.09));
+  border-color:var(--accent-glow,rgba(66,133,244,.2));
+}
+.tool-out span{font-size:12.5px;font-weight:600;color:var(--muted)}
+.tool-out strong{
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:800;
+  letter-spacing:-.04em;color:var(--ink);transition:.3s;
+}
+
+
+/* ================= WHY ================= */
+.feat{
+  padding:34px 30px;border-radius:var(--r);background:#fff;
+  border:1px solid var(--line-2);transition:.45s var(--ease);
+  position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.feat::before{
+  content:'';position:absolute;inset:0;border-radius:inherit;opacity:0;transition:.45s;
+  background:linear-gradient(135deg,var(--feat-glow,rgba(66,133,244,.08)),transparent 60%);
+}
+.feat:hover{transform:translateY(-8px);box-shadow:0 36px 84px -32px rgba(8,11,18,.24);border-color:transparent}
+.feat:hover::before{opacity:1}
+.feat-ico{
+  width:56px;height:56px;border-radius:16px;display:grid;place-items:center;
+  margin-bottom:22px;font-size:24px;position:relative;z-index:1;
+  transition:.5s var(--spring);box-shadow:0 6px 18px -8px rgba(8,11,18,.15);
+}
+.feat:hover .feat-ico{transform:scale(1.15) rotate(-10deg)}
+.feat h3{font-size:18px;font-weight:700;margin-bottom:12px;letter-spacing:-.02em;position:relative;z-index:1}
+.feat p{font-size:14px;color:var(--muted);line-height:1.65;position:relative;z-index:1}
+
+
+/* ================= CTA ================= */
+.cta-wrap{padding:100px 28px}
+.cta{
+  position:relative;max-width:1200px;margin:0 auto;border-radius:40px;
+  overflow:hidden;background:#070A12;padding:88px 44px;
+  text-align:center;color:#fff;
+  box-shadow:0 60px 130px -55px rgba(7,10,18,.7);
+}
+.cta::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(680px 380px at 8% -6%,rgba(66,133,244,.4),transparent 62%),
+    radial-gradient(600px 340px at 92% -4%,rgba(234,67,53,.28),transparent 62%),
+    radial-gradient(680px 380px at 50% 116%,rgba(19,136,8,.34),transparent 66%),
+    radial-gradient(500px 280px at 78% 104%,rgba(255,153,51,.28),transparent 62%);
+  animation:glow 7s ease-in-out infinite alternate;
+}
+@keyframes glow{0%{opacity:.85;transform:scale(1)}100%{opacity:1;transform:scale(1.08)}}
+.cta::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--saffron) 0 33.3%,#fff 33.3% 66.6%,var(--india-green) 66.6% 100%);
+  background-size:200% 100%;animation:shimmer 3s linear infinite;
+}
+.cta-inner{position:relative;z-index:2}
+.cta h2{font-size:clamp(2.1rem,4.4vw,3.4rem);margin-bottom:18px;letter-spacing:-.045em;line-height:1.1}
+.cta h2 .hl{
+  background:linear-gradient(96deg,var(--saffron),var(--yellow) 40%,var(--green));
+  background-size:200% auto;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shimmer 4s linear infinite;
+}
+.cta p{color:rgba(255,255,255,.72);font-size:16.5px;max-width:560px;margin:0 auto 40px;line-height:1.65}
+.cta-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:999px;
+  font-size:15px;font-weight:600;transition:.35s var(--spring);position:relative;overflow:hidden;
+}
+.btn-primary{background:#fff;color:var(--ink);box-shadow:0 16px 40px -14px rgba(255,255,255,.5)}
+.btn-primary::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(100deg,var(--saffron),var(--yellow));
+  transform:translateX(-101%);transition:.4s var(--ease);
+}
+.btn-primary:hover{transform:translateY(-3px) scale(1.03)}
+.btn-primary:hover::before{transform:translateX(0)}
+.btn-primary span,.btn-primary svg{position:relative;z-index:1}
+.btn-primary:hover span,.btn-primary:hover svg{color:#fff}
+.btn-primary:hover svg{transform:translateX(4px)}
+.btn-primary svg{transition:.3s}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.22);color:#fff;background:rgba(255,255,255,.05)}
+.btn-ghost:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.4);transform:translateY(-3px) scale(1.03)}
+
+
+/* ================= FOOTER ================= */
+footer{background:var(--soft);border-top:1px solid var(--line);padding:72px 28px 36px;position:relative;overflow:hidden}
+footer::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--saffron) 0 33.3%,#fff 33.3% 66.6%,var(--india-green) 66.6% 100%);
+  background-size:200% 100%;animation:shimmer 4s linear infinite;
+}
+.foot-grid{
+  max-width:1200px;margin:0 auto;display:grid;
+  grid-template-columns:1.8fr 1fr 1fr 1fr;gap:56px;padding-bottom:56px;
+  border-bottom:1px solid var(--line);
+}
+.foot-brand p{font-size:14px;color:var(--muted);line-height:1.7;margin-top:18px;max-width:320px}
+.foot-col h4{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);margin-bottom:18px}
+.foot-col a{display:block;font-size:14px;color:var(--ink-2);padding:7px 0;transition:.25s var(--spring)}
+.foot-col a:hover{color:var(--blue);transform:translateX(5px)}
+.foot-bottom{
+  max-width:1200px;margin:0 auto;padding-top:28px;
+  display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;
+  font-size:13px;color:var(--muted-2);
+}
+.foot-bottom .made{display:flex;align-items:center;gap:8px;font-weight:500}
+.foot-bottom .flag-mini{
+  display:flex;width:20px;height:14px;border-radius:3px;overflow:hidden;
+  box-shadow:0 0 0 1px rgba(8,11,18,.1);flex-direction:column;
+}
+.foot-bottom .flag-mini i{flex:1}
+.foot-bottom .flag-mini i:nth-child(1){background:var(--saffron)}
+.foot-bottom .flag-mini i:nth-child(2){background:#fff;position:relative}
+.foot-bottom .flag-mini i:nth-child(2)::after{
+  content:'';position:absolute;inset:0;margin:auto;width:3.5px;height:3.5px;
+  border-radius:50%;border:.75px solid var(--navy);
+}
+.foot-bottom .flag-mini i:nth-child(3){background:var(--india-green)}
+
+
+/* ================= REVEAL ================= */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out)}
+.reveal.in{opacity:1;transform:none}
+.reveal-stagger>*{opacity:0;transform:translateY(24px) scale(.97);transition:opacity .8s var(--ease-out),transform .8s var(--spring)}
+.reveal-stagger.in>*{opacity:1;transform:none}
+
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .nav-links a:not(.nav-cta){display:none}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .hero{padding:72px 20px 60px;min-height:auto}
+  .section{padding:72px 20px}
+  .cta{padding:64px 28px}
+  .chakra-deco{width:600px;height:600px}
+  .aurora b{filter:blur(40px);opacity:.45}
+}
+
+
+/* ---- TABLET: keep 2-column with slightly reduced gaps ---- */
+@media(max-width:1024px) and (min-width:769px){
+  .cat-grid,.live-grid,.why-grid{gap:18px}
+  .cat{padding:26px 24px;min-height:200px}
+  .cat-ico{width:56px;height:56px;font-size:24px}
+  .cat h3{font-size:17.5px}
+  .tool{padding:26px}
+  .tool-out strong{font-size:22px}
+}
+
+
+/* ---- MOBILE: graceful single-column fallback ---- */
+@media(max-width:768px){
+  .cat-grid,
+  .live-grid,
+  .why-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+  .cat{min-height:auto;padding:26px 24px}
+  .tool{padding:26px}
+}
+
+
+@media(max-width:560px){
+  .nav-inner{height:64px;gap:12px;padding:0 18px}
+  .logo-text{font-size:17px}
+  .logo-mark{width:38px;height:38px}
+  .search{padding:7px 7px 7px 18px}
+  .search .kbd{display:none}
+  .search input{font-size:15px;padding:11px 0}
+  .search button{width:44px;height:44px}
+  .stats{gap:18px 0}
+  .stat{flex:1 1 42%;padding:8px 12px}
+  .stat:nth-child(3)::before{display:none}
+  .foot-grid{grid-template-columns:1fr;gap:32px}
+  .cta-btns .btn{width:100%;justify-content:center}
+  .cta-wrap{padding:64px 16px}
+  .cta{padding:52px 22px}
+  .cat{padding:22px 20px}
+  .cat h3{font-size:17px}
+  .cat-ico{width:54px;height:54px;font-size:24px}
+  .chakra-deco{width:400px;height:400px;opacity:.04}
+  .feat{padding:28px 24px}
+  .tool{padding:22px 20px}
+  .tool-head h3{font-size:15px}
+  .tool-out strong{font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal,.reveal-stagger>*{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+
+<div class="tricolor"></div>
+
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark"><i></i><span>₹</span></div>
+      <div class="logo-text">Tank<em>Metrics</em></div>
+    </a>
+    <nav class="nav-links">
+      <a href="#tools">Calculators</a>
+      <a href="#categories">Toolkits</a>
+      <a href="#why">Why Us</a>
+      <a href="#">Blog</a>
+      <a href="#tools" class="nav-cta">Explore Tools →</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="hero" id="hero">
+  <div class="aurora" aria-hidden="true"><b></b><b></b><b></b></div>
+
+
+  <div class="chakra-deco" aria-hidden="true">
+    <svg viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="95" stroke-width=".8"/>
+      <circle cx="100" cy="100" r="80" stroke-width=".8"/>
+      <circle cx="100" cy="100" r="12" stroke-width="1.2"/>
+      <g stroke-width=".6">
+        <line x1="100" y1="5" x2="100" y2="195"/>
+        <line x1="5" y1="100" x2="195" y2="100"/>
+        <line x1="32" y1="32" x2="168" y2="168"/>
+        <line x1="168" y1="32" x2="32" y2="168"/>
+        <line x1="60" y1="10" x2="140" y2="190"/>
+        <line x1="10" y1="60" x2="190" y2="140"/>
+        <line x1="140" y1="10" x2="60" y2="190"/>
+        <line x1="190" y1="60" x2="10" y2="140"/>
+        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(15 100 100)"/>
+        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(30 100 100)"/>
+        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(60 100 100)"/>
+        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(75 100 100)"/>
+        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(105 100 100)"/>
+        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(120 100 100)"/>
+        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(150 100 100)"/>
+        <line x1="100" y1="10" x2="100" y2="190" transform="rotate(165 100 100)"/>
+      </g>
+    </svg>
+  </div>
+
+
+  <div class="hero-inner">
+    <div class="badge">
+      <span class="flag"><i></i><i></i><i></i></span>
+      India's #1 Money Tool
+      <span class="dot"></span>
+    </div>
+
+
+    <h1 class="hero-title">
+      <span class="word"><span style="animation-delay:.05s">Know</span></span>
+      <span class="word"><span style="animation-delay:.15s">Your</span></span>
+      <span class="word"><span class="grad" style="animation-delay:.25s">Numbers.</span></span>
+      <br>
+      <span class="word"><span style="animation-delay:.4s">Make</span></span>
+      <span class="word"><span style="animation-delay:.5s">Smarter</span></span>
+      <span class="word"><span style="animation-delay:.6s">Moves.</span></span>
+    </h1>
+
+
+    <p class="hero-sub">
+      From the numbers you see on <b>Shark Tank India</b> — valuation, equity, margins and deals —
+      to everyday tools like EMI and savings. Enter your numbers, get clear answers <span class="hl">in seconds</span>.
+    </p>
+
+
+    <div class="search-wrap">
+      <div class="search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search 100 tools — EMI, valuation, GST, runway…" autocomplete="off">
+        <span class="kbd">/</span>
+        <button aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="chips">
+      <span class="chip"><i style="background:var(--blue)"></i>Implied Valuation</span>
+      <span class="chip"><i style="background:var(--red)"></i>EMI Calculator</span>
+      <span class="chip"><i style="background:var(--green)"></i>GST</span>
+      <span class="chip"><i style="background:var(--yellow)"></i>LTV : CAC</span>
+      <span class="chip"><i style="background:var(--saffron)"></i>Runway</span>
+      <span class="chip"><i style="background:var(--navy)"></i>Dilution</span>
+    </div>
+
+
+    <div class="stats">
+      <div class="stat"><b data-count="100">0</b><span>Free Calculators</span></div>
+      <div class="stat"><b data-count="14">0</b><span>Toolkits</span></div>
+      <div class="stat"><b data-count="0">0</b><span>Sign-ups</span></div>
+      <div class="stat"><b data-count="0" data-prefix="₹">0</b><span>Forever Free</span></div>
+    </div>
+  </div>
+
+
+  <div class="marquee">
+    <div class="marquee-track" id="mqTrack">
+      <span class="mq"><i style="background:var(--blue)"></i>Implied Valuation</span>
+      <span class="mq"><i style="background:var(--red)"></i>Gross Margin</span>
+      <span class="mq"><i style="background:var(--yellow)"></i>Burn Rate &amp; Runway</span>
+      <span class="mq"><i style="background:var(--green)"></i>LTV : CAC Ratio</span>
+      <span class="mq"><i style="background:var(--saffron)"></i>GST Calculator</span>
+      <span class="mq"><i style="background:var(--blue)"></i>Dilution</span>
+      <span class="mq"><i style="background:var(--red)"></i>Break-Even Point</span>
+      <span class="mq"><i style="background:var(--green)"></i>ROAS</span>
+      <span class="mq"><i style="background:var(--navy)"></i>Cap Table &amp; ESOP</span>
+      <span class="mq"><i style="background:var(--saffron)"></i>SIP &amp; PPF</span>
+      <span class="mq"><i style="background:var(--blue)"></i>Revenue Multiple</span>
+      <span class="mq"><i style="background:var(--yellow)"></i>CAGR</span>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="categories">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">14 Toolkits · 100 Calculators</div>
+      <h2>Every number your business needs</h2>
+      <p class="sec-sub">Organised the way founders actually think — from pricing a product to pitching a shark.</p>
+    </div>
+
+
+    <div class="cat-grid reveal-stagger" id="catGrid">
+
+
+      <a class="cat" style="--accent:var(--blue);--accent-2:var(--blue-l);--accent-glow:rgba(66,133,244,.5);--tint:rgba(66,133,244,.14);--border:rgba(66,133,244,.4)" data-name="everyday money basics percentage interest emi savings salary bill tip discount">
+        <div class="cat-top">
+          <div class="cat-ico c-blue">💸</div>
+          <div class="cat-count">10 tools</div>
+        </div>
+        <div>
+          <h3>Everyday Money Basics</h3>
+          <p>Percentage, interest, EMI, savings goals, salary &amp; bill splitting.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--green);--accent-2:var(--green-l);--accent-glow:rgba(52,168,83,.5);--tint:rgba(52,168,83,.14);--border:rgba(52,168,83,.4)" data-name="profit margins gross ebitda operating net contribution markup roi roce">
+        <div class="cat-top">
+          <div class="cat-ico c-green">📈</div>
+          <div class="cat-count">8 tools</div>
+        </div>
+        <div>
+          <h3>Profit &amp; Margins</h3>
+          <p>Gross, EBITDA, operating and net margins — plus ROI and ROCE.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--red);--accent-2:var(--red-l);--accent-glow:rgba(234,67,53,.5);--tint:rgba(234,67,53,.14);--border:rgba(234,67,53,.4)" data-name="valuation deals implied pre-money post-money multiple dilution ask royalty cap table esop equity shark tank">
+        <div class="cat-top">
+          <div class="cat-ico c-red">🦈</div>
+          <div class="cat-count">10 tools</div>
+        </div>
+        <div>
+          <h3>Valuation &amp; Deals</h3>
+          <p>Implied valuation, dilution, debt + equity splits and royalty deals.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--yellow);--accent-2:var(--yellow-l);--accent-glow:rgba(251,188,5,.5);--tint:rgba(251,188,5,.2);--border:rgba(251,188,5,.5)" data-name="customers unit economics cac ltv aov retention churn roas cpc cpl cpa arpu mrr arr">
+        <div class="cat-top">
+          <div class="cat-ico c-yellow">🎯</div>
+          <div class="cat-count">9 tools</div>
+        </div>
+        <div>
+          <h3>Customers &amp; Unit Economics</h3>
+          <p>CAC, LTV, payback, retention, churn and every funnel cost.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--blue);--accent-2:var(--blue-l);--accent-glow:rgba(66,133,244,.5);--tint:rgba(66,133,244,.14);--border:rgba(66,133,244,.4)" data-name="growth cash run rate cagr burn runway break-even working capital depreciation">
+        <div class="cat-top">
+          <div class="cat-ico c-blue">🚀</div>
+          <div class="cat-count">8 tools</div>
+        </div>
+        <div>
+          <h3>Growth &amp; Cash</h3>
+          <p>Run rate, CAGR, burn, runway, break-even and cash cycles.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--saffron);--accent-2:var(--yellow-l);--accent-glow:rgba(255,153,51,.5);--tint:rgba(255,153,51,.2);--border:rgba(255,153,51,.5)" data-name="pricing selling mrp distributor retailer gst landed cost marketplace cod rto discount duty customs">
+        <div class="cat-top">
+          <div class="cat-ico c-saffron">🏷️</div>
+          <div class="cat-count">8 tools</div>
+        </div>
+        <div>
+          <h3>Pricing &amp; Selling</h3>
+          <p>MRP reverse, GST, landed cost, marketplace fees and RTO losses.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--navy);--accent-2:#2F2FB8;--accent-glow:rgba(6,3,141,.4);--tint:rgba(6,3,141,.1);--border:rgba(6,3,141,.3)" data-name="team ctc employee freelancer hourly rate franchise store roi salary">
+        <div class="cat-top">
+          <div class="cat-ico c-navy">👥</div>
+          <div class="cat-count">3 tools</div>
+        </div>
+        <div>
+          <h3>Running a Small Team</h3>
+          <p>Employee CTC, freelancer rates and store payback periods.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--green);--accent-2:var(--green-l);--accent-glow:rgba(52,168,83,.5);--tint:rgba(52,168,83,.14);--border:rgba(52,168,83,.4)" data-name="investor view moic irr exit tam sam som">
+        <div class="cat-top">
+          <div class="cat-ico c-green">🏦</div>
+          <div class="cat-count">3 tools</div>
+        </div>
+        <div>
+          <h3>Investor View</h3>
+          <p>MOIC, IRR, exit payouts and TAM / SAM / SOM sizing.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--red);--accent-2:var(--red-l);--accent-glow:rgba(234,67,53,.5);--tint:rgba(234,67,53,.14);--border:rgba(234,67,53,.4)" data-name="pitch check shark tank valuation revenue ltv cac runway margin">
+        <div class="cat-top">
+          <div class="cat-ico c-red">🎤</div>
+          <div class="cat-count">1 tool</div>
+        </div>
+        <div>
+          <h3>Pitch Check</h3>
+          <p>See exactly which numbers the Sharks are likely to question.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--blue);--accent-2:var(--blue-l);--accent-glow:rgba(66,133,244,.5);--tint:rgba(66,133,244,.14);--border:rgba(66,133,244,.4)" data-name="ad agency roas cpm cpc cpa break-even ad spend client cac ltv margin utilization churn">
+        <div class="cat-top">
+          <div class="cat-ico c-blue">📣</div>
+          <div class="cat-count">10 tools</div>
+        </div>
+        <div>
+          <h3>Ad Agency Toolkit</h3>
+          <p>ROAS, CPM→CPC, client CAC, LTV, margins and utilization.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--yellow);--accent-2:var(--yellow-l);--accent-glow:rgba(251,188,5,.5);--tint:rgba(251,188,5,.2);--border:rgba(251,188,5,.5)" data-name="real estate property valuation home loan emi rental yield rent vs buy stamp duty brokerage roi down payment carpet area">
+        <div class="cat-top">
+          <div class="cat-ico c-yellow">🏠</div>
+          <div class="cat-count">10 tools</div>
+        </div>
+        <div>
+          <h3>Real Estate Toolkit</h3>
+          <p>Property value, home loan EMI, rental yield, stamp duty and more.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--green);--accent-2:var(--green-l);--accent-glow:rgba(52,168,83,.5);--tint:rgba(52,168,83,.14);--border:rgba(52,168,83,.4)" data-name="tax wealth income tax hra sip ppf fd rd epf gratuity nps gst">
+        <div class="cat-top">
+          <div class="cat-ico c-green">🧾</div>
+          <div class="cat-count">10 tools</div>
+        </div>
+        <div>
+          <h3>Tax &amp; Wealth Toolkit</h3>
+          <p>Old vs new regime, HRA, SIP, PPF, FD, EPF, NPS and gratuity.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--saffron);--accent-2:var(--yellow-l);--accent-glow:rgba(255,153,51,.5);--tint:rgba(255,153,51,.2);--border:rgba(255,153,51,.5)" data-name="daily fun age love numerology zodiac rashi baby name lucky number compatibility bmi days between">
+        <div class="cat-top">
+          <div class="cat-ico c-saffron">🎲</div>
+          <div class="cat-count">10 tools</div>
+        </div>
+        <div>
+          <h3>Daily Fun Toolkit</h3>
+          <p>Age, love, numerology, zodiac, BMI and date difference tools.</p>
+        </div>
+        <div class="cat-arrow">Open toolkit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+      <a class="cat" style="--accent:var(--navy);--accent-2:#2F2FB8;--accent-glow:rgba(6,3,141,.4);--tint:rgba(6,3,141,.1);--border:rgba(6,3,141,.3)" data-name="all tools everything 100 calculators">
+        <div class="cat-top">
+          <div class="cat-ico c-navy">⚡</div>
+          <div class="cat-count">100 tools</div>
+        </div>
+        <div>
+          <h3>See All Calculators</h3>
+          <p>Every single tool in one place — search, filter and jump right in.</p>
+        </div>
+        <div class="cat-arrow">Browse all
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </a>
+
+
+    </div>
+
+
+    <div class="no-results" id="noResults">
+      <b>No tools matched that search</b>
+      Try "EMI", "valuation", "GST" or "margin".
+    </div>
+  </div>
+</section>
+
+
+<section class="section live-section" id="tools">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Try it right here</div>
+      <h2>Answers in seconds. No sign-up.</h2>
+      <p class="sec-sub">Every calculation runs entirely in your browser — nothing you type is ever sent anywhere.</p>
+    </div>
+
+
+    <div class="live-grid reveal-stagger">
+
+
+      <div class="tool" style="--accent:var(--blue);--accent-glow:rgba(66,133,244,.5)">
+        <div class="tool-head">
+          <div class="tool-ico c-blue">%</div>
+          <div>
+            <h3>Percentage Calculator</h3>
+            <p>What is X% of a number</p>
+          </div>
+        </div>
+        <div class="field">
+          <label>Percentage</label>
+          <input type="number" id="pctA" value="18" placeholder="0">
+        </div>
+        <div class="field">
+          <label>Of this number (₹)</label>
+          <input type="number" id="pctB" value="250000" placeholder="0">
+        </div>
+        <div class="tool-out">
+          <span>Result</span>
+          <strong id="pctOut">₹45,000</strong>
+        </div>
+      </div>
+
+
+      <div class="tool" style="--accent:var(--red);--accent-glow:rgba(234,67,53,.5)">
+        <div class="tool-head">
+          <div class="tool-ico c-red">🦈</div>
+          <div>
+            <h3>Implied Valuation</h3>
+            <p>"50 lakh for 5%" — what's it worth?</p>
+          </div>
+        </div>
+        <div class="field">
+          <label>Investment Amount (₹)</label>
+          <input type="number" id="valA" value="5000000" placeholder="0">
+        </div>
+        <div class="field">
+          <label>Equity Offered (%)</label>
+          <input type="number" id="valB" value="5" placeholder="0">
+        </div>
+        <div class="tool-out">
+          <span>Company Worth</span>
+          <strong id="valOut">₹10,00,00,000</strong>
+        </div>
+      </div>
+
+
+      <div class="tool" style="--accent:var(--green);--accent-glow:rgba(52,168,83,.5)">
+        <div class="tool-head">
+          <div class="tool-ico c-green">🧮</div>
+          <div>
+            <h3>Bill Splitter</h3>
+            <p>Split evenly between friends</p>
+          </div>
+        </div>
+        <div class="field">
+          <label>Total Bill (₹)</label>
+          <input type="number" id="billA" value="3600" placeholder="0">
+        </div>
+        <div class="field">
+          <label>Number of People</label>
+          <input type="number" id="billB" value="6" placeholder="0">
+        </div>
+        <div class="tool-out">
+          <span>Each Person Pays</span>
+          <strong id="billOut">₹600</strong>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="why">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Built different</div>
+      <h2>Made for how India does business</h2>
+      <p class="sec-sub">Lakh and crore. GST slabs. EPF and gratuity. Shark Tank deal structures. This is not a Silicon Valley template.</p>
+    </div>
+
+
+    <div class="why-grid reveal-stagger">
+      <div class="feat" style="--feat-glow:rgba(66,133,244,.1)">
+        <div class="feat-ico c-blue">🔒</div>
+        <h3>Nothing leaves your browser</h3>
+        <p>Every calculation happens on your device. We never see, store or sell a single number you type.</p>
+      </div>
+      <div class="feat" style="--feat-glow:rgba(255,153,51,.12)">
+        <div class="feat-ico c-saffron">🇮🇳</div>
+        <h3>Indian numbers first</h3>
+        <p>Lakh–Crore formatting, 5/12/18/28% GST slabs, EPF and gratuity rules — not converted from dollars.</p>
+      </div>
+      <div class="feat" style="--feat-glow:rgba(52,168,83,.1)">
+        <div class="feat-ico c-green">💡</div>
+        <h3>We explain the math</h3>
+        <p>Every tool shows the formula and a plain-English benchmark, so you learn while you calculate.</p>
+      </div>
+      <div class="feat" style="--feat-glow:rgba(251,188,5,.12)">
+        <div class="feat-ico c-yellow">⚡</div>
+        <h3>Free forever, zero sign-up</h3>
+        <p>No account, no trial, no paywall. Open a tool, get your answer, move on with your day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-wrap">
+  <div class="cta reveal">
+    <div class="cta-inner">
+      <h2>First-time founders guess.<br>Funded founders <span class="hl">calculate.</span></h2>
+      <p>Start with one number — your valuation, your margin, your runway — and see what it tells you.</p>
+      <div class="cta-btns">
+        <a href="#tools" class="btn btn-primary">
+          <span>Explore Calculators</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#categories" class="btn btn-ghost">Read the Blog</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a href="#" class="logo">
+        <div class="logo-mark"><i></i><span>₹</span></div>
+        <div class="logo-text">Tank<em>Metrics</em></div>
+      </a>
+      <p>100 free business calculators for entrepreneurs, students and small business owners. Everything is calculated right in your browser — nothing you type is ever sent anywhere.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Digital Products</a>
+    </div>
+    <div class="foot-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Disclaimer</a>
+      <a href="#">Refund Policy</a>
+    </div>
+    <div class="foot-col">
+      <h4>Popular</h4>
+      <a href="#">Valuation &amp; Deals</a>
+      <a href="#">Unit Economics</a>
+      <a href="#">Everyday Money</a>
+      <a href="#">Indian Business Financial Model</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div>© 2026 Tank Metrics. Built for learning and quick estimates — for big decisions, check with a qualified accountant.</div>
+    <div class="made">
+      Made with <span style="color:var(--red)">♥</span> in Bangalore, India
+      <span class="flag-mini"><i></i><i></i><i></i></span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+/* Nav scroll */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>30),{passive:true});
+
+
+/* Counters */
+function animateCount(el){
+  const target=+el.dataset.count, prefix=el.dataset.prefix||'';
+  const start=performance.now(), dur=1500;
+  function step(now){
+    const p=Math.min((now-start)/dur,1);
+    const eased=1-Math.pow(1-p,3);
+    el.textContent=prefix+Math.round(target*eased);
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+const counterObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){animateCount(e.target);counterObs.unobserve(e.target);}
+  });
+},{threshold:.5});
+document.querySelectorAll('.stat b[data-count]').forEach(el=>counterObs.observe(el));
+
+
+/* Calculators */
+const inr=n=>'₹'+Number(n||0).toLocaleString('en-IN',{maximumFractionDigits:0});
+const num=el=>parseFloat(el.value)||0;
+
+
+const pctA=document.getElementById('pctA'),pctB=document.getElementById('pctB'),pctOut=document.getElementById('pctOut');
+function calcPct(){pctOut.textContent=inr(num(pctA)*num(pctB)/100);}
+[pctA,pctB].forEach(i=>i.addEventListener('input',calcPct));calcPct();
+
+
+const valA=document.getElementById('valA'),valB=document.getElementById('valB'),valOut=document.getElementById('valOut');
+function calcVal(){const eq=num(valB);valOut.textContent=eq>0?inr(num(valA)/(eq/100)):'—';}
+[valA,valB].forEach(i=>i.addEventListener('input',calcVal));calcVal();
+
+
+const billA=document.getElementById('billA'),billB=document.getElementById('billB'),billOut=document.getElementById('billOut');
+function calcBill(){const p=num(billB);billOut.textContent=p>0?inr(num(billA)/p):'—';}
+[billA,billB].forEach(i=>i.addEventListener('input',calcBill));calcBill();
+
+
+/* Search */
+const searchInput=document.getElementById('searchInput');
+const cats=Array.from(document.querySelectorAll('.cat'));
+const noResults=document.getElementById('noResults');
+
+
+function filterCats(){
+  const q=searchInput.value.toLowerCase().trim();
+  let visible=0;
+  cats.forEach(c=>{
+    const hay=(c.dataset.name+' '+c.textContent).toLowerCase();
+    const match=!q||hay.includes(q);
+    c.style.display=match?'':'none';
+    if(match) visible++;
+  });
+  noResults.style.display=(visible===0)?'block':'none';
+}
+searchInput.addEventListener('input',filterCats);
+
+
+document.addEventListener('keydown',e=>{
+  if(e.key==='/'&&document.activeElement!==searchInput){e.preventDefault();searchInput.focus();}
+});
+
+
+document.querySelectorAll('.chip').forEach(chip=>{
+  chip.addEventListener('click',()=>{
+    searchInput.value=chip.textContent.trim();
+    filterCats();
+    document.getElementById('categories').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+
+
+/* Marquee duplicate */
+const track=document.getElementById('mqTrack');
+track.innerHTML+=track.innerHTML;
+
+
+/* Scroll reveal */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('in');io.unobserve(entry.target);}
+  });
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal,.reveal-stagger').forEach(el=>io.observe(el));
+
+
+document.querySelectorAll('.reveal-stagger').forEach(parent=>{
+  Array.from(parent.children).forEach((child,i)=>{
+    child.style.transitionDelay=(i*70)+'ms';
+  });
+});
+</script>
+</body>
+</html>
