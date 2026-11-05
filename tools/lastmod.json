@@ -1,11 +1,15 @@
 {
  "/": {
-  "hash": "4d0347cb1f0f2469fcf7862597406fe931bf2b0b8c4bb27fcd8a434872a132f1",
-  "lastmod": "2026-10-31"
+  "hash": "e4409d57c6a594a5d36a7520a173c71162e3b0656c7ac2c65dfdc31f755268d4",
+  "lastmod": "2026-11-05"
  },
  "/about": {
   "hash": "c0899a0faa5de6c9f6836063d6f3c9632dbdd6056bdee2d736d177ab9a874c0c",
   "lastmod": "2026-10-30"
+ },
+ "/ad-agency-toolkit": {
+  "hash": "9f7b6b7ea03cd9a65465a37d2884a8726568b8629fd9500749315620db63e8be",
+  "lastmod": "2026-11-05"
  },
  "/age-calculator": {
   "hash": "5bcf7827f37018853845c0e59f5429363bec383d72418fe61d5d7c3748c06f90",
@@ -199,6 +203,14 @@
   "hash": "64f8a78809a7727442240534868ab5e9fbfc135d42bb5230881d5f65bdbc1354",
   "lastmod": "2026-11-03"
  },
+ "/customers-and-unit-economics": {
+  "hash": "18a39bac45bbef892565170b2eeb27b43d0510418541d441dbaa975206503418",
+  "lastmod": "2026-11-05"
+ },
+ "/daily-fun-toolkit": {
+  "hash": "5c5f126d7f72a549598c8397f29feb6777fdb875ff0d38566dc79a6cf1c102f7",
+  "lastmod": "2026-11-05"
+ },
  "/days-between-two-dates": {
   "hash": "2da4cd221e7e99045610807f64907ed6b049108297f1db75c38cbb0aa2cf3ef0",
   "lastmod": "2026-11-03"
@@ -283,6 +295,10 @@
   "hash": "2deb2f160c8c0d23a866819d386603c3d2375ef978412877cf93e4b96df54bee",
   "lastmod": "2026-10-30"
  },
+ "/everyday-money-basics": {
+  "hash": "fd14d16b4cbf73d3720a2b524c63790585d545bc7aece190a62ff8f273048ed4",
+  "lastmod": "2026-11-05"
+ },
  "/exit-calculator": {
   "hash": "fae89ce2ece86abd1c9bec707b121683f9095aff37974add50b00c6a7838d571",
   "lastmod": "2026-11-03"
@@ -330,6 +346,10 @@
  "/gross-vs-net-margin-calculator": {
   "hash": "79a1894c0220415caa2364d7cdc6b2672f6694c1bac6fb2ae5a5e6a76165b20a",
   "lastmod": "2026-10-30"
+ },
+ "/growth-and-cash": {
+  "hash": "f6570a01a00c7dd0f83c7ae7d2e749b48748e891fd50d97fdd4ed5d8bdf526e4",
+  "lastmod": "2026-11-05"
  },
  "/gst-calculator": {
   "hash": "0b533f14f16fdcb9d036e3922458f3cf3d83d6e7420f1aabefeeea82e5ca0192",
@@ -402,6 +422,10 @@
  "/india-startup-funding-october-2026-flat-year": {
   "hash": "f48ff078b32a9d5d60350ff43cf85f09a564b1bb77b97fa4e95882e51a1b6ce6",
   "lastmod": "2026-10-21"
+ },
+ "/investor-view": {
+  "hash": "f425a45d6ac4159ec4170a10451fd77997038c73f2a0e470e6daecf7079d32f3",
+  "lastmod": "2026-11-05"
  },
  "/khosla-ventures-even-healthcare-india-bet": {
   "hash": "84ce04e201607a8111dcd305da8af64731d5213f9e5f09fcba2b4bb0fc070471",
@@ -523,6 +547,10 @@
   "hash": "b0da2784a3033936b84cc9db3c33c19ea0a58b6c67d40a3fc172330789b190bc",
   "lastmod": "2026-10-30"
  },
+ "/pitch-check": {
+  "hash": "38cb7ca168c586d671ef131019792df4a73ed13048d1c1341688dff936137271",
+  "lastmod": "2026-11-05"
+ },
  "/ppf-calculator": {
   "hash": "0682b3048b01b93f52c0e525ba0e8122e73392222bbc768c6d5618363a651406",
   "lastmod": "2026-11-03"
@@ -535,9 +563,17 @@
   "hash": "6c30c44aa4f4f3bcea2e8bde28dac97049e46f91225b825074645ee8fa17d793",
   "lastmod": "2026-10-30"
  },
+ "/pricing-and-selling": {
+  "hash": "dc5931b090836e57e08a1f66d427399a19589215ba33cc0f84830f0b768b5de5",
+  "lastmod": "2026-11-05"
+ },
  "/privacy-policy": {
   "hash": "1c378d76293f1764bee4d6648d80a25b99701acaa7db9175f9fa5b56f79eea40",
   "lastmod": "2026-10-30"
+ },
+ "/profit-and-margins": {
+  "hash": "cf365398248dbffbaa8a2f6baec1409cbc48890af7024f4c34f024d00f7247a7",
+  "lastmod": "2026-11-05"
  },
  "/profit-margin-calculator-rupees": {
   "hash": "99b4ca22f25d6205ce06625ed2e5a18f21ccd500f4b4d26362d6b2758d0bae05",
@@ -566,6 +602,10 @@
  "/rd-recurring-deposit-calculator": {
   "hash": "b0bf97500e6e19e222413ae2c27e11d9295822151f3e6a58c21cb361fc998cc4",
   "lastmod": "2026-11-03"
+ },
+ "/real-estate-toolkit": {
+  "hash": "eae4d56693a79004e0a9ed283efd116c198e0217eabbb49372ec0f7ec3ace65a",
+  "lastmod": "2026-11-05"
  },
  "/refund-policy": {
   "hash": "9c546d91681a046c05912fef97be87d42261ec78c3154247811873bdde9e5549",
@@ -634,6 +674,10 @@
  "/run-rate": {
   "hash": "94bd181f8103591c26796359c81e84f6414f465fbddc2226311abebaad681bb8",
   "lastmod": "2026-11-03"
+ },
+ "/running-a-small-team": {
+  "hash": "75b41475b1a7b3de4e4fb987a508d4af16be1b32588cef8b772462ee919b0656",
+  "lastmod": "2026-11-05"
  },
  "/runway-calculator-startups-india": {
   "hash": "f5e73f48241eadff73c393eecd187611192b9c1ac46ff70bfd7313997461df4d",
@@ -715,6 +759,10 @@
   "hash": "84353b6563df77310b462ed0167e838e9d718b6d89a28e59e85c366c305d6da0",
   "lastmod": "2026-11-03"
  },
+ "/tax-and-wealth-toolkit": {
+  "hash": "1872de099d9f21229882076100beb5d01671d511e0a7c260b8613406fae62a99",
+  "lastmod": "2026-11-05"
+ },
  "/terms-and-conditions": {
   "hash": "96a275f7119d7e6b6190fc708a4c0ef227ba022babf2ae7c17b9c35988fd648e",
   "lastmod": "2026-10-30"
@@ -726,6 +774,10 @@
  "/upi-mdr-deferred-after-diwali-what-shops-pay": {
   "hash": "5cf5df0e0b4288a2613b791f6bcdc0e46dcd1a32d93694764a3e588e71028ad1",
   "lastmod": "2026-10-21"
+ },
+ "/valuation-and-deals": {
+  "hash": "abd0fbb7318ac0cadec4a1087f2de2cfe83ebfd05eb952b8aee45c5c5449c93e",
+  "lastmod": "2026-11-05"
  },
  "/valuation-multiple-d2c-brand-india": {
   "hash": "cfbcc1be1a3181ea60768d736feddd67241bdad462c340cbce73237431d4431c",

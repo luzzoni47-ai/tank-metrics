@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Wire the new tool pages into the site's crawl graph.
+"""Wire the new tool and category pages into the site's crawl graph.
 
-Two jobs:
+Three jobs:
 1. Turn each entry in the home page's hidden SEO catalogue into a real link to
    its tool page, so crawlers can walk from the home page to all 100 tools.
    The catalogue is replaced by renderAll() for JS clients, so visitors see
    nothing new.
-2. Rebuild public/sitemap.xml so every tool page is listed.
+2. Point every category heading on the home page at that category's own page,
+   so a visitor who taps "Ad Agency Toolkit" lands on a page listing its tools
+   instead of nowhere. The catalogue headings are linked for crawlers too.
+3. Rebuild public/sitemap.xml so every tool and category page is listed.
 """
 import html
 import json
@@ -18,7 +21,10 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "public" / "site"
 DATA = json.loads((Path(__file__).parent / "calcs.json").read_text(encoding="utf-8"))
 sys.path.insert(0, str(ROOT / "tools"))
+from gen_category_pages import slug_for as cat_slug  # noqa: E402
 from siteconfig import BASE  # noqa: E402
+
+CATS = DATA["cats"]
 
 
 def slugify(name: str) -> str:
@@ -42,6 +48,52 @@ def build_slugs() -> dict[str, str]:
 
 
 SLUGS = build_slugs()
+
+
+def link_categories() -> int:
+    """Point every category heading at that category's own page.
+
+    Two places render a category heading. The JS card grid draws one per block
+    at runtime, and the hidden SEO catalogue carries one per section for
+    crawlers. Both must link, or the category page has no crawl path and a
+    visitor who taps a toolkit lands nowhere. Idempotent: the anchor is only
+    inserted when the plain heading is still there.
+    """
+    p = SITE / "index.html"
+    t = p.read_text(encoding="utf-8")
+    slugs_js = "var CATSLUGS=" + json.dumps(
+        {c["id"]: cat_slug(c) for c in CATS}, separators=(",", ":")) \
+        + ";function CAT_SLUG(e){return CATSLUGS[e.id]||''}"
+    if "var CATSLUGS={" not in t:
+        marker = "function cardHTML("
+        if marker not in t:
+            return 0
+        t = t.replace(marker, slugs_js + marker, 1)
+
+    edits = 0
+    old_js = "<h2>'+e.name+'</h2>"
+    new_js = '<h2><a class="cat-link" href="/\'+CAT_SLUG(e)+\'">\'+e.name+\'</a></h2>'
+    if old_js in t:
+        t = t.replace(old_js, new_js)
+        edits += 1
+
+    # The crawler-visible catalogue heading, e.g.
+    #   <section class="seo-cat" id="seo-agency"><h2>Ad Agency Toolkit (10 ...)</h2>
+    for cat in CATS:
+        needle = f'<section class="seo-cat" id="seo-{cat["id"]}"><h2>'
+        if needle not in t:
+            continue
+        start = t.index(needle) + len(needle)
+        end = t.index("</h2>", start)
+        if "<a " in t[start:end]:
+            continue
+        label = t[start:end]
+        href = f'/site/{cat_slug(cat)}.html'
+        t = t[:start] + f'<a href="{href}">{label}</a>' + t[end:]
+        edits += 1
+
+    p.write_text(t, encoding="utf-8")
+    return edits
 
 
 def link_catalogue() -> int:
@@ -111,6 +163,10 @@ def write_sitemap() -> int:
     ]
     for c in DATA["calcs"]:
         pages.append((f"{BASE}/site/tools/{SLUGS[c['id']]}.html", "monthly", "0.7"))
+    # Category pages. They carry the 2-up tool cards and are the only page that
+    # lists a whole toolkit, so they deserve a higher priority than one tool.
+    for cat in CATS:
+        pages.append((f"{BASE}/site/{cat_slug(cat)}.html", "weekly", "0.8"))
     for b in sorted(SITE.glob("blog-*.html")):
         pages.append((f"{BASE}/site/{b.name}", "monthly", "0.7"))
     # News pages belong in the sitemap too. They were missing until 2026-10-23,
@@ -148,9 +204,11 @@ def write_sitemap() -> int:
 
 
 if __name__ == "__main__":
+    cats = link_categories()
     linked = link_catalogue()
     cards = link_cards()
     n = write_sitemap()
+    print(f"category headings linked: {cats}")
     print(f"catalogue entries linked: {linked}/100")
     print(f"JS card links wired: {cards}")
     print(f"sitemap urls written: {n}")

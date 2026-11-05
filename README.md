@@ -1,6 +1,6 @@
 # Tank Metrics — [tankmetrics.in](https://tankmetrics.in)
 
-Free business and money calculators for India. 101 calculators and 123 pages,
+Free business and money calculators for India. 101 calculators and 200 pages,
 served as static HTML from `public/site/` through a thin Next.js shell that owns
 the routing, the security headers and the 404 page.
 
@@ -10,13 +10,17 @@ here; they exist for previews only.
 
 ## Layout
 
-- `public/site/*.html` — the site of record: home, guides, blog, legal, tools.
+- `public/site/*.html` — the site of record: home, guides, blog, legal, tools,
+  and one page per toolkit (`/ad-agency-toolkit`, `/valuation-and-deals`, …).
 - `public/site/tools/*.html` — one page per calculator.
 - `app/` — Next.js App Router. It serves no content of its own; the rewrites in
   `next.config.mjs` send every real path to a static file. It exists for the
   routing table, the security headers and `app/not-found.tsx`.
 - `tools/` — every generator and test. These own the HTML; do not hand-edit
   generated pages.
+
+The site has three levels: the home page lists 13 toolkits, each toolkit page
+lists its own calculators two-up, and each calculator has its own page.
 
 ## Build and deploy
 
@@ -32,6 +36,7 @@ rebuild `.next/` before the change is visible locally.
 
 ```bash
 python3 tools/gen_tool_pages.py    # tool pages from tools/calcs.json
+python3 tools/gen_category_pages.py # one page per toolkit
 python3 tools/gen_news.py          # /blog and /news listings
 python3 tools/clean_urls.py        # the clean-URL table + sitemap
 python3 tools/make_favicon.py      # favicon.svg/.png/.ico, PWA icons, manifest

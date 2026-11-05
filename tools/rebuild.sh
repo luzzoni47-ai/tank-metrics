@@ -33,6 +33,8 @@ echo "==> gen_keyword_pages (keyword-targeted calculator pages)"
 python3 tools/gen_keyword_pages.py
 echo "==> gen_tool_pages"
 python3 tools/gen_tool_pages.py
+echo "==> gen_category_pages (one page per toolkit)"
+python3 tools/gen_category_pages.py
 echo "==> validate_guides (reject weak per-calculator copy before it ships)"
 python3 tools/validate_guides.py
 echo "==> dedup_worklist (which calculators still share the category template)"
