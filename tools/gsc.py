@@ -551,6 +551,38 @@ def cmd_pages(token: str, days: int, limit: int = 40) -> None:
               f"{r.get('ctr', 0) * 100:>6.1f}% {r.get('position', 0):>6.1f}  {url}")
 
 
+def cmd_page_queries(token: str, page: str, days: int, limit: int = 25) -> None:
+    """The queries one page ranks for, best first.
+
+    A page at position 1-10 with 0 clicks needs its title to use the words of
+    the query it already ranks for. `pages` shows the page; this shows the
+    words, so the retitle is a fact, not a guess.
+    """
+    site = resolve_site(token)
+    host = site.split(":")[-1]
+    url = page if page.startswith("http") else f"https://{host}{page}"
+    end = time.strftime("%Y-%m-%d")
+    start = time.strftime("%Y-%m-%d", time.localtime(time.time() - days * 86400))
+    payload = {
+        "startDate": start, "endDate": end,
+        "dimensions": ["query"], "rowLimit": limit,
+        "dimensionFilterGroups": [{
+            "filters": [{"dimension": "page", "operator": "equals", "expression": url}],
+        }],
+    }
+    data = call(
+        f"{API}/sites/{urllib.parse.quote(site, safe='')}/searchAnalytics/query",
+        token, method="POST", payload=payload)
+    rows = data.get("rows", [])
+    print(f"queries for {url}  {start} .. {end}")
+    if not rows:
+        print("  (no queries in this window - the page may not be indexed yet)")
+        return
+    for r in sorted(rows, key=lambda x: -x["impressions"]):
+        print(f"  {r['clicks']:>4} clicks  {r['impressions']:>6} imp  "
+              f"{r.get('position', 0):>5.1f} pos  {r['keys'][0]}")
+
+
 def have_oauth() -> bool:
     if os.environ.get("GSC_OAUTH_JSON") or os.environ.get("GSC_OAUTH_FILE"):
         return True
@@ -587,6 +619,12 @@ def main() -> None:
         cmd_analytics(token, int(sys.argv[2]) if len(sys.argv) > 2 else 28)
     elif cmd == "pages":
         cmd_pages(token, int(sys.argv[2]) if len(sys.argv) > 2 else 28)
+    elif cmd == "page-queries":
+        # gsc.py page-queries <path> [days]
+        if len(sys.argv) < 3:
+            sys.exit("usage: gsc.py page-queries </path> [days]")
+        cmd_page_queries(token, sys.argv[2],
+                         int(sys.argv[3]) if len(sys.argv) > 3 else 28)
     elif cmd == "questions":
         # gsc.py questions [days] [top]
         days = int(sys.argv[2]) if len(sys.argv) > 2 else 28

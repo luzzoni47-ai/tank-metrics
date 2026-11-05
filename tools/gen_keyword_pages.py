@@ -325,8 +325,8 @@ def blog_cards(pages: list[dict]) -> int:
     if not listing.exists():
         return 0
     text = listing.read_text(encoding="utf-8")
-    marker = '</div></div><div id="paneNews"'
-    if marker not in text:
+    grid = '<div class="blog-grid">'
+    if 'id="paneGuides"' not in text or grid not in text:
         return 0
     cards = ""
     for c in pages:
@@ -349,7 +349,8 @@ def blog_cards(pages: list[dict]) -> int:
         )
     if not cards:
         return 0
-    listing.write_text(text.replace(marker, cards + marker, 1), encoding="utf-8")
+    at = text.index(grid, text.index('id="paneGuides"')) + len(grid)
+    listing.write_text(text[:at] + cards + text[at:], encoding="utf-8")
     return len(pages)
 
 

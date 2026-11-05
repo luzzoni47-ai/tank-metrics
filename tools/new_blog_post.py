@@ -179,14 +179,14 @@ def _card(slug: str, cat: str, title: str, desc: str, accent: str) -> str:
 
 
 def add_card(slug: str, card: str) -> bool:
-    """Insert the card at the end of the Guides grid. Idempotent."""
+    """Insert the card at the top of the Guides grid, newest first. Idempotent."""
     page = SITE / "blog.html"
     body = page.read_text(encoding="utf-8")
     if f'href="/{slug}"' in body:
         return False
-    start = body.index('id="paneGuides"')
-    end = body.index("</div></div>", start)
-    body = body[:end] + card + body[end:]
+    grid = body.index('<div class="blog-grid">', body.index('id="paneGuides"'))
+    at = grid + len('<div class="blog-grid">')
+    body = body[:at] + card + body[at:]
     page.write_text(body, encoding="utf-8")
     return True
 

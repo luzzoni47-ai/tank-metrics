@@ -59,6 +59,8 @@ echo "==> add_blog_schema (Article + BreadcrumbList on guides, incl. keyword pag
 python3 tools/add_blog_schema.py
 echo "==> gen_feed (RSS of news + guides, after the schema so dates exist)"
 python3 tools/gen_feed.py
+echo "==> sort_blog_cards (newest-first Guides grid, restore any missing card)"
+python3 tools/sort_blog_cards.py
 echo "==> fix_static_seo"
 python3 tools/fix_static_seo.py
 echo "==> add_pwa"
