@@ -43,7 +43,7 @@ TAG_RE = re.compile(r"<[^>]+>")
 
 # The pages that are not calculators, guides or news, with their section order.
 MAIN = [
-    ("/", "Home - all 101 calculators"),
+    ("/", "Home - all {n} calculators"),
     ("/blog", "Blog - plain-English money guides"),
     ("/news", "News desk - funding, Shark Tank and tax rules"),
     ("/about", "About"),
@@ -85,7 +85,8 @@ def build() -> str:
     lines = [
         "# Tank Metrics",
         "",
-        "> 101 free, instant business and money calculators for entrepreneurs, "
+        f"> {len(calcs['calcs'])} free, instant business and money calculators for "
+        "entrepreneurs, "
         "students and small business owners in India. Every tool runs in the "
         "browser, in rupees and crores, with no sign-up. The site also publishes "
         "plain-English guides and a news desk on Indian funding, Shark Tank deals "
@@ -94,7 +95,8 @@ def build() -> str:
         "## Main pages",
     ]
     for path, label in MAIN:
-        lines.append(f"- [{label}]({BASE}{path})")
+        lines.append(
+            f"- [{label.format(n=len(calcs['calcs']))}]({BASE}{path})")
 
     lines += ["", "## Calculators (all free, all in \u20b9)",
               "Every page below is a working calculator with a worked example, "

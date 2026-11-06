@@ -51,6 +51,23 @@ NESTED_PAGES = {
         "/digital-products/indian-business-financial-model",
 }
 
+# Calculators that were published and then retired. Google has the URL, so it
+# cannot simply 404: each one keeps a permanent redirect to the page that now
+# answers the same question. `tools/retired-urls.json` is written for
+# next.config.mjs to turn into redirects, so the routing table and this file
+# cannot drift.
+#
+#  - the two duplicates fold into the surviving copy of the same tool;
+#  - the three that only repeated mental arithmetic fold into the nearest tool
+#    that does the same job with a real calculation behind it.
+RETIRED: dict[str, str] = {
+    "/gst-calculator-tax-and-wealth-toolkit": "/gst-calculator",
+    "/roas-calculator": "/return-on-ad-spend-roas",
+    "/tip-calculator": "/",
+    "/bill-splitter": "/",
+    "/discount-calculator": "/discount-impact-on-profit",
+}
+
 
 def build_map() -> dict[str, str]:
     """clean path -> backing static file, for every public page."""
@@ -134,11 +151,21 @@ def main() -> None:
     clashes = check_no_shadowing(m)
     if clashes:
         raise SystemExit(f"clean paths would shadow real files: {clashes}")
+    live = set(m)
+    bad = sorted(t for t in RETIRED.values() if t != "/" and t not in live)
+    if bad:
+        raise SystemExit(f"a retired URL redirects to a page that does not exist: {bad}")
+    stale = sorted(t for t in RETIRED if t in live)
+    if stale:
+        raise SystemExit(f"a retired URL is still being generated: {stale}")
+    (Path(__file__).parent / "retired-urls.json").write_text(
+        json.dumps(dict(sorted(RETIRED.items())), indent=2) + "\n", encoding="utf-8")
     (Path(__file__).parent / "url-map.json").write_text(
         json.dumps(m, indent=2) + "\n", encoding="utf-8")
     files, edits = rewrite_html(m)
     urls = rewrite_sitemap(m)
     print(f"url-map entries: {len(m)}")
+    print(f"retired urls redirected: {len(RETIRED)}")
     print(f"html files rewritten: {files} ({edits} link/url edits)")
     print(f"sitemap urls: {urls}")
     print("sample:", ", ".join(list(m)[:3]))

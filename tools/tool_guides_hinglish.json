@@ -226,20 +226,6 @@
     "Tools aur software kaatna jab asli problem ye hai ki kaam ka price kam hai."
    ]
   },
-  "agencyroas": {
-   "what": "ROAS batata hai ki ad spend ke har rupee ne kitna revenue wapas laaya, aur yahi sabse tez tarika hai ye dekhne ka ki campaign khud ka kharcha nikal raha hai ya nahi. Rs 1,00,000 ads par lagaye aur Rs 4,00,000 revenue aaya to ROAS 4x hai. Yahan log galti karte hain 4x ko profit samajh kar: ROAS revenue leta hai, margin nahi, to 20% margin wale product par 4x ROAS char rupaye ka profit nahi, assi paise ka hai. Ye calculator ad revenue ko ad spend se divide karke multiple deta hai.",
-   "formula": "ROAS = ad revenue / ad spend, 3x jaise multiple me. 1,00,000 lagaye aur 4,00,000 revenue aaya to ROAS = 4,00,000 / 1,00,000 = 4x. Tool bas yahi multiple deta hai, jaan-boojh kar: revenue wo number hai jo saaf measure hota hai. ROAS ko break-even test banane ke liye 1 ko apne contribution margin se divide karo - 25% margin par break-even ROAS = 1 / 0.25 = 4x, to 4x se neeche sab kuch paisa khota hai, chahe munaafa lage.",
-   "when": [
-    "Jab do ad channels compare kar rahe ho aur dono ko ek hi scale par dekhna hai.",
-    "Jab campaign chal rahi ho aur jaanna hai ki kam se kam break-even ke liye kitna spend chahiye.",
-    "Jab launch se pehle target ROAS set kar rahe ho aur usko apne asli margin par tikaana chahte ho."
-   ],
-   "mistakes": [
-    "ROAS ko profit padhna. Ye revenue / spend hai, to patle margin wale product par 4x ROAS bhi nuksaan de sakta hai.",
-    "Alag margin wale products ka ROAS aapas me compare karna. Break-even ROAS = 1 / margin, to 20% margin ko 5x chahiye aur 50% ko 2x.",
-    "Ad spend ke bahar ki costs chhod dena - returns, shipping, marketplace fees, payment-gateway charges."
-   ]
-  },
   "aov": {
    "what": "Average Order Value batati hai ki customer ek order me aam taur pe kitna kharch karta hai. Ek hi period ki total revenue ko orders ki ginti se divide karo. ₹1,00,000 ke 200 orders pe AOV ₹500 hai. Ye simple average lagta hai, par do cheezein chalata hai: customer jeetne pe kitna kharch kar sakte ho, aur ek chhota nudge - bundle, free-shipping threshold, upsell - kitne ka hai. AOV badhaana bina ek rupya extra ads pe kharch kiye profit badhata hai, isliye D2C brand ke liye ye sabse sasta lever hai.",
    "formula": "AOV = Total Revenue ÷ Total Orders. Dono numbers ek hi period ke lo: ₹1,00,000 revenue 200 orders se matlab ₹500 per order. Mahine-dar-mahine compare karo, kyunki badhta AOV batata hai bundles aur upsells kaam kar rahe hain, aur girta AOV batata hai discounts basket kha rahe hain.",
@@ -842,20 +828,6 @@
     "Jo GST aap collect karte ho use apna paisa samajh lena. Woh sarkaar ke liye hota hai aur return mein dena padta hai."
    ]
   },
-  "gst_taxwealth": {
-   "what": "Yeh GST Calculator us messy invoice ke liye hai jisme discount ho: pehle trade discount base se ghata jaata hai, phir bache hue par GST lagti hai, aur tax aapke liye CGST aur SGST mein bat jaati hai. Order hi poora point hai. ₹10,000 base par 10% discount aur 18% GST se ₹9,000 taxable value aur ₹1,620 tax aata hai; pehle GST lagakar baad mein discount do toh tax zyada nikalta hai aur invoice aapki books se match nahi karta.\n\nYeh us seller ke liye bana hai jise working dikhani hoti hai: discounted value, total GST, intra-state invoice par jaane wale do barabar halves, aur final payable amount. Yeh reverse direction bhi chalata hai — GST-inclusive figure se base wapas nikaalna — toh ek hi page par sale raise karna aur payment reconcile karna dono cover ho jaate hain.",
-   "formula": "Discounted Base = Base Amount × (1 − Discount %). GST = Discounted Base × GST Rate ÷ 100. Total = Discounted Base + GST, jisme intra-state sale par CGST aur SGST dono GST ke aadhe-aadhe. ₹10,000 base, 10% discount aur 18% GST se taxable value ₹9,000, GST ₹1,620 jo ₹810 CGST aur ₹810 SGST mein bat jaati hai, aur invoice total ₹10,620. Inclusive figure ulta nikaalne ke liye Base = Amount ÷ (1 + Rate ÷ 100).",
-   "when": [
-    "Aisi invoice issue kar rahe ho jisme trade discount dikhaya gaya ho aur GST discounted value par lagti ho.",
-    "Apne hi state ke andar ki sale ke liye CGST aur SGST ke halves chahiye.",
-    "GST-inclusive lump sum mila ho aur use base aur tax mein baantna ho."
-   ],
-   "mistakes": [
-    "Pre-discount base par GST lagana. Invoice par discount taxable value ko kam karta hai, tax lagne se pehle.",
-    "Inter-state sale mein tax aadha-aadha kar dena. Wahan poore rate par ek IGST hona chahiye, CGST plus SGST nahi.",
-    "CGST aur SGST alag-alag round karke invoice total ko uske hisson ke sum se ek rupya hila dena."
-   ]
-  },
   "homeemi": {
    "what": "Home loan EMI calculator housing loan ki fixed monthly payment dikhata hai, aur usse zyada zaroori - loan aapko kul kitne ka padta hai. EMI ke do hisse hote hain - byaaj aur principal - aur shuru ke saalon mein lagbhag poora byaaj hi hota hai. Isliye 8.5% par 20 saal ka loan borrow ki gayi rakam se kaafi zyada padta hai, aur isliye shuru ke saalon mein chhoti prepayment baad mein utni hi rakam dene se kaafi zyada bachaati hai.",
    "formula": "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P loan amount hai, r monthly interest rate (saalana rate ÷ 12 ÷ 100) aur n mahine. ₹50 lakh loan 8.5% par 20 saal: EMI takreeban ₹43,391, aur poori term mein kul takreeban ₹1.04 crore - lagbhag dugna. Wahi loan 30 saal par EMI takreeban ₹38,446 kar deta hai par kul cost takreeban ₹1.38 crore.",
@@ -1444,20 +1416,6 @@
     "Target ko bina emergency fund banaye poori saving usi me daal dena."
    ]
   },
-  "simpledisc": {
-   "what": "Discount Calculator batata hai ki kisi price par diya gaya percentage off asli me kitna paisa bachata hai. Original price aur discount daalo, aur tool do cheezein dikhata hai: kitne rupaye bache aur final kitna dena padega. Yahi number decide karta hai ki sale sach me faydemand hai ya nahi — sirf percentage nahi, kyunki dukaan wahi dikhati hai jo bada lagta hai.",
-   "formula": "Bachat = original price × discount ÷ 100 (`price` × `disc` ÷ 100). Final price = original minus bachat (`price` − saving). ₹2,000 par 25% discount me bachat ₹500 aur final price ₹1,500 hota hai. Do discount ek ke baad ek lagte hain to unhe jodte nahi — 30% phir 20% me aap price ka 0.7 × 0.8 = 0.56 dete ho, matlab 44% off, 50% nahi.",
-   "when": [
-    "Marketplace ya dukaan flat percentage off dikhaye aur aap decide karne se pehle rupaye me amount jaanna chahein.",
-    "Do sale prices compare kar rahe ho jahan discount aur original price dono alag hain.",
-    "Coupon kisi chalti sale ke upar lage aur aapko asli final price jaanna ho."
-   ],
-   "mistakes": [
-    "Do discounts ko jod dena. 30% discount ke baad 20% matlab 44% off, 50% nahi, kyunki doosra discount pehle se kam hue price par lagta hai.",
-    "Discount ko final price ka hissa maan lena. Percentage original marked price se ghata jaata hai; price girne ke baad wahi rupaye bacha hua price ka bada percentage ban jaate hain.",
-    "Alag alag prices par sirf discount percentage compare karna. ₹2,000 par 40% se ₹800 bachte hain, jo ₹1,000 par 50% ke ₹500 se zyada hai."
-   ]
-  },
   "simpleint": {
    "what": "Simple interest sirf mool amount par lagta hai, kamaye gaye interest par kabhi nahi. 1,00,000 rupaye 10% par 3 saal me 30,000 kamata hai - flat, har saal, usi 1,00,000 par. Usi terms par compound interest 33,100 kamata hai. Teen saal me 3,100 ka farak chhota hai aur tees saal me bahut bada, isliye kaun sa lagta hai ye jaanna rate se zyada zaroori hai.",
    "formula": "Interest = Principal x Rate x Time / 100. Total = Principal + Interest. Saal se kam ke liye Time = mahine / 12.",
@@ -1484,20 +1442,6 @@
     "Fund ke pichhle saal ke return ko assumption bana lena. SIP long-run average par plan hoti hai, pichhle saal ke best par nahi.",
     "Girte market me SIP band kar dena - aur yahi waqt hai jab har rupee par sabse zyada units milte hain.",
     "Expense ratio ignore karna. 1% zyada ratio 20 saal ke corpus ka lagbhag dasva hissa kha jata hai."
-   ]
-  },
-  "split": {
-   "what": "Bill Splitter ek shared amount ko paid karne wale logon ki ginti se divide karta hai, aur bas itna hi. Ye table ke aakhri do minute ka tool hai: bill par total likha hai, chaar log pay kar rahe hain, har ek ko chauthai dena hai. Ganit sirf ek division hai, isliye asli fayda maths me nahi - fayda ye hai ki per-head number pehle hi pata ho, isse pehle ki koi apne mann me rounding kar ke numbers alag-alag kar de.\n\nYe jaan-boojhkar simple case ke liye hai. Ye tay nahi karta ki paneer kisne order kiya, tip nahi jodta, aur service charge wale bill ko dobara split nahi karta. Yahi iski khoobi hai: barabar ka split hi wo split hai jo jhagda khatam karta hai, aur har uneven hisaab baad me aasani se set ho jaata hai jab equal share saamne aa jaata hai.",
-   "formula": "Har banda deta hai total bill / number of people. Is tool me 'Total Bill' total field hai aur 'Number of People' people field. Rs 1,000 aur 4 log = Rs 250 per head. Jab total barabar na bante - Rs 1,000 aur 3 log - tool Rs 333.33 dikhata hai, aur saaf tareeka ye hai ki ek banda thode paise kha le ya sab thoda upar round karke difference tip me chhod dein.",
-   "when": [
-    "Jab group dinner ya trip khatam ho aur bill wahin settle karna ho.",
-    "Jab roommates har mahine ka shared bijli ya grocery ka bill barabar baantte hain.",
-    "Jab co-founders ya chhoti team shared subscription ya taxi fare baantti hai."
-   ],
-   "mistakes": [
-    "Pre-tax subtotal split karke bill par chhapa GST aur service charge bhool jaana.",
-    "Aane wale logon ki ginti se divide karna, un logon ki nahi jo pay kar rahe hain, jab kisi ko treat kiya ja raha ho.",
-    "Har share neeche round kar dena aur aakhri banda shortfall me chhod dena; upar round karo, ya ek banda thode rupees le le."
    ]
   },
   "stampduty": {
@@ -1542,20 +1486,6 @@
     "SAM ko ignore karke sirf TAM bolna, jab investor SAM aur SOM ke baare me poochta hai."
    ]
   },
-  "tip": {
-   "what": "Tip Calculator batata hai kitna tip chhodna hai aur bill tip jodne ke baad kitna banta hai. Bill aur percentage daalo, tool tip amount aur total — jo aap actually dete ho — dono deta hai. Cash de rahe ho, doston me split kar rahe ho, ya bill apni expectation se check kar rahe ho, tab yahi total kaam aata hai.",
-   "formula": "Tip amount = bill × tip percentage ÷ 100 (`bill` × `tip` ÷ 100). Total = bill + tip amount (`bill` + tip). ₹1,000 ke bill par 10% me tip ₹100 aur aap ₹1,100 dete ho. Pre-tax bill par tip dena ho to pre-tax figure daalo — percentage usi number par lagta hai jo bill field me hai.",
-   "when": [
-    "Restaurant me ho aur bina dimaag me ganit kiye ek theek, round amount chhodna ho.",
-    "Bill par service charge pehle se ho aur aap dekhna chahein ki extra tip kitna jodega.",
-    "Bill split kar rahe ho aur har bande ka bill plus tip ka hissa chahiye."
-   ],
-   "mistakes": [
-    "Total par tip dena, bill par nahi. Agar daala hua number pehle se tip shaamil hai, to percentage dobara lagane se tip double ho jaata hai.",
-    "Service charge pehle se ho aur upar se phir tip chhod dena. Service charge hi tip hai; aur dene se pehle bill check karo.",
-    "Bill split karke har hisse par alag tip dena. Poora tip ek baar nikalo, phir total baanto, warna har hisse ka rounding tip badha deta hai."
-   ]
-  },
   "utilization": {
    "what": "Utilization rate batata hai ki aapki team ke paid ghanton me se kitne ghante asli billable client kaam me gaye. Agar team ko 1,600 ghante ke liye pay kiya aur 1,200 ghante bill hue, to utilization 75% hai - baaki 25% internal meetings, admin, pitching aur training me gaya, jo aapki cost hai par invoice nahi hoti. Ye calculator billable ghante ko available ghanton se divide karke percentage deta hai, taki dikhe ki payroll ka kitna hissa asli me kam raha hai.",
    "formula": "Utilization rate = billable ghante / available ghante x 100. Available ghante wo hain jin ke liye aapne team ko pay kiya: logon ki sankhya x hafte ke ghante x hafte. 1,600 available me se 1,200 bill ho to rate = 1,200 / 1,600 x 100 = 75%. Tool yahi percentage deta hai. Isko har vyakti aur har mahine track karo, saal me ek baar nahi, kyunki koi ek banda lagataar 95% par ho to wo resign karne wala hai, star nahi.",
@@ -1596,6 +1526,62 @@
     "Cusp wale birthday ko pakka maan lena. Boundary ke ek din andar sign birth time par depend karta hai.",
     "Vedic sawaal ke liye Western sign use karna. Rashi chaand se chalti hai, sooraj se nahi.",
     "Ye maan lena ki date ranges kabhi nahi hilti. Leap year boundaries ko lagbhag ek din khiska deta hai."
+   ]
+  },
+  "dscr": {
+   "what": "DSCR, yaani debt service coverage ratio, us ek sawaal ka jawab deta hai jo bank term loan sanction karne se pehle poochti hai: kya ye business apne normal operations se itna kama raha hai ki loan samay par chuka sake? Net operating income matlab interest aur tax se pehle ka profit; total debt service matlab us saal me dene wala poora principal aur interest. Pehle ko doosre se divide karo, aur wahi number milta hai jo credit officer file par likhta hai. 1.25 ya usse zyada aam taur par comfortable maana jaata hai, kyunki iska matlab hai ki operations instalments cover kar lete hain aur kharab mahinon ke liye thoda bach bhi jaata hai. 1.0 se neeche business bank ko reserves ya naye loan se pay kar raha hai, aur loan application wahin atak jaati hai.",
+   "formula": "DSCR = Net Operating Income / Total Debt Service, dono usi saal ke. Ek business jo 18,00,000 operating income kamata hai aur jise 12,00,000 principal aur interest dena hai, uska DSCR 1.5x hai, jo zyadatar banks ke 1.25 se aaram se upar hai. Wahi 18,00,000 agar 20,00,000 ke repayment ke saamne ho to 0.9x banta hai, aur loan earnings se service hi nahi ho raha. Ise teen saal ka dekho, ek ka nahi: ek strong saal us business ko achha dikha deta hai jo asli me sikud raha hai.",
+   "when": [
+    "Jab bank ya NBFC ne term loan process karne se pehle DSCR maanga ho.",
+    "Jab aap decide kar rahe ho ki business ek aur EMI safely le sakta hai ya nahi.",
+    "Jab aap do saal compare kar rahe ho ye dekhne ke liye ki cover patla ho raha hai ya nahi."
+   ],
+   "mistakes": [
+    "Net profit use karna, net operating income ke bajaye. Interest aur tax wapas jodte hain kyunki loan unse pehle ke profit se chukta hai.",
+    "Jis saal balloon ya bullet repayment due ho us saal usse debt service me chhod dena. Wahi saal ratio gir jaata hai.",
+    "Ek achhe saal ko trend maan lena. Banks isi wajah se pichhle teen saal ka average lete hain."
+   ]
+  },
+  "wacc": {
+   "what": "WACC har us rupaye ki mili-juli cost hai jo company use karti hai, chahe wo shareholders se aaya ho ya lender se. Equity free nahi hoti: jo log paisa lagate hain wo return expect karte hain, aur wo expectation business ke liye asli cost hai. Debt do tarah se sasti hai, kyunki interest tax se pehle diate hai aur tax wala hissa uska ek hissa effectively subsidise kar deta hai. WACC in dono costs ko is hisaab se weight karta hai ki capital structure me har ek kitna hai, aur wahi ek discount rate nikalta hai jisse discounted cash flow valuation shuru hoti hai. Agar koi project WACC ko beat nahi kar paata, to wo accounting profit dikhane ke baad bhi value kha raha hai.",
+   "formula": "WACC = (E / V) x Cost of Equity + (D / V) x Cost of Debt x (1 - Tax Rate), jahan V equity plus debt hai. 90,00,000 equity par 18% aur 30,00,000 debt par 12%, 25% tax rate ke saath, weights 75% aur 25% bante hain, aur WACC = 0.75 x 18 + 0.25 x 12 x 0.75 = 15.75%. Tax shield note karo: debt ki asli cost 9% hai, 12% nahi, aur isi wajah se debt blended rate ko neeche kheenchti hai.",
+   "when": [
+    "Jab aap DCF bana rahe ho aur future cash flows ko aaj tak laane ke liye discount rate chahiye.",
+    "Jab aap soch rahe ho ki project ko debt se fund karein ya nayi equity se.",
+    "Jab aap check karna chahte ho ki bataya gaya project return us capital ki cost ko clear karta hai ya nahi jo wo kha raha hai."
+   ],
+   "mistakes": [
+    "Equity ki book value use karna market value ke bajaye. Shareholder ki cost is par hai ki stake ki value kitni hai, ye nahi ki wo kis rate par issue hui thi.",
+    "Debt ka tax shield bhool jaana, jo cost of capital ko badha deta hai aur har valuation ko kam kar deta hai.",
+    "Cost of equity ko risk-free rate maan lena. Usme equity premium hota hai, kisi wajah se."
+   ]
+  },
+  "invturn": {
+   "what": "Inventory turnover ginta hai ki ek saal me business apna poora stock kitni baar bech kar badalta hai. Ye sabse saaf ishara hai ki cash kaam kar raha hai ya pada hua hai: shelf par pada stock kuch kamata nahi, wo paisa band kar deta hai jo aap kharch kar chuke ho, aur bechne se pehle kharab ya season se bahar ho sakta hai. Zyada turnover matlab goods tez chalte hain aur cash jaldi wapas aata hai; kam turnover matlab warehouse wo paisa pakde hue hai jo business kahin aur use kar sakta tha. 365 ko ratio se divide karke wo number milta hai jo samajhna aasan hai: ek unit bechne se pehle average kitne din wait karti hai.",
+   "formula": "Inventory Turnover = Cost of Goods Sold / Average Inventory. Average inventory matlab opening aur closing stock jod kar aadha karo, taki ek hi stock-take tasveer bigaad na de. Ek business jiska yearly COGS 48,00,000 hai aur average stock 8,00,000, wo apna inventory saal me 6 baar ghumata hai, yaani 365 / 6 = takriban 61 din me bech jaata hai. Ise apne supplier ki credit terms se compare karo: agar aapko pay karne ke 30 din milte hain aur bechne me 61 lagte hain, to wo gap aap khud fund kar rahe ho.",
+   "when": [
+    "Jab aap jaanna chahte ho ki jitni sale hoti hai uske hisaab se stock zyada hai ya nahi.",
+    "Jab aap supplier credit terms par baat kar rahe ho aur jaanna chahte ho ki goods asli me kitne din me chalte hain.",
+    "Jab aap ek tez line ko ek slow line se compare kar rahe ho ye tay karne ke liye ki kya stock karna hai."
+   ],
+   "mistakes": [
+    "Sales use karna, cost of goods sold ke bajaye. Sales par markup hota hai, isliye ratio zyada aata hai aur stock asli se tez dikhta hai.",
+    "Ek closing stock figure ko average maan lena. Seasonal peak ya clearance sale ek snapshot ko galat bana deta hai.",
+    "Under-stocking se zyada ratio ke peeche bhaagna, aur phir stock-outs me sale khona. Turnover ek zariya hai, lakshya nahi."
+   ]
+  },
+  "revperemp": {
+   "what": "Revenue per employee business ki saalana kamai ko team ke logon ki sankhya se divide karta hai, aur iska ek mota read milta hai ki team kitni productive hai aur headcount kaam se aage nikal gaya hai ya nahi. Ye ek bhadda tool hai, lekin sabse tez sanity check bhi yahi hai: agar team badhne ke saath revenue per head gir raha hai, to naye hires abhi apna kharcha nahi kama rahe. Ye number sirf milte-julte comparison ke saamne matlab rakhta hai, kyunki software firm aur trading business ka figure kabhi ek nahi hoga. Imaandaari se, kai saalon me dekha jaaye to ye dikhata hai ki growth logon se kharidi ja rahi hai ya customers se kamai ja rahi hai.",
+   "formula": "Revenue per Employee = Yearly Revenue / Number of Employees. Ek business jiska turnover 1,20,00,000 hai aur 12 log hain, wo per head 10,00,000 kamata hai. Wahi revenue 20 logon ke saath per head 6,00,000 hai, jo theek ho sakta hai agar extra aath log aisi cheez bana rahe hain jo agle saal paisa degi, aur warning ho sakti hai agar nahi. Ratio ko saal-dar-saal track karo, kisi ek industry benchmark ke saamne nahi, kyunki aapke business ke andar ka trend hi asli signal hai.",
+   "when": [
+    "Jab aap headcount badhane wale ho aur dekhna chahte ho ki har naye hire ko kitna revenue uthana hoga.",
+    "Jab revenue badh raha hai par profit nahi, aur aapko shak hai ki team kaam se tez badh gayi hai.",
+    "Jab aap apni productivity ko usi line ke kisi doosre business se compare kar rahe ho."
+   ],
+   "mistakes": [
+    "Alag industries ko compare karna. Ek distribution business software wale se hamesha patla dikhega.",
+    "Sirf full-time staff ginna aur bade contractor bench ko chhod dena, jo asli team ko kam dikhata hai.",
+    "Ratio badhane ke liye headcount kaatna jab wo log agle saal ka revenue bana rahe the."
    ]
   }
  }

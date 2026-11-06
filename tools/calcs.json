@@ -215,69 +215,6 @@
       "compute": "function(e){var t=val(e,\"ctc\")*(1-val(e,\"ded\")/100);return{rows:[{l:\"Estimated Yearly In-Hand\",v:inr(t)},{l:\"Estimated Monthly In-Hand\",v:inr(t/12)}]}}"
     },
     {
-      "id": "split",
-      "cat": "everyday",
-      "name": "Bill Splitter",
-      "desc": "Split any bill evenly between friends, roommates or co-founders. Enter the total and the number of people, get each share instantly in rupees. Free, no signup.",
-      "bench": "For uneven shares, just adjust after — this gives the fair equal split.",
-      "inputs": [
-        {
-          "k": "total",
-          "l": "Total Bill",
-          "u": "₹"
-        },
-        {
-          "k": "people",
-          "l": "Number of People",
-          "u": ""
-        }
-      ],
-      "compute": "function(e){var t=val(e,\"total\"),a=val(e,\"people\");return{rows:[{l:\"Each Person Pays\",v:a?inr2(t/a):\"—\"}]}}",
-      "seo_title": "Bill Splitter - Split a Bill in Rupees | Tank Metrics"
-    },
-    {
-      "id": "tip",
-      "cat": "everyday",
-      "name": "Tip Calculator",
-      "desc": "Work out how much tip to leave and the final bill total.",
-      "bench": "10% is common for casual dining; 15-20% for good table service.",
-      "inputs": [
-        {
-          "k": "bill",
-          "l": "Bill Amount",
-          "u": "₹"
-        },
-        {
-          "k": "tip",
-          "l": "Tip",
-          "u": "%",
-          "ph": "10"
-        }
-      ],
-      "compute": "function(e){var t=val(e,\"bill\"),a=t*val(e,\"tip\")/100;return{rows:[{l:\"Tip Amount\",v:inr2(a)},{l:\"Total to Pay\",v:inr2(t+a)}]}}"
-    },
-    {
-      "id": "simpledisc",
-      "cat": "everyday",
-      "name": "Discount Calculator",
-      "desc": "Enter the price and the discount, get the final amount you actually pay in rupees. Check whether a sale price is really a deal. Free and instant, no signup.",
-      "bench": "A quick way to check if a \"sale\" price is actually a good deal.",
-      "inputs": [
-        {
-          "k": "price",
-          "l": "Original Price",
-          "u": "₹"
-        },
-        {
-          "k": "disc",
-          "l": "Discount",
-          "u": "%"
-        }
-      ],
-      "compute": "function(e){var t=val(e,\"price\"),a=t*val(e,\"disc\")/100;return{rows:[{l:\"You Save\",v:inr2(a)},{l:\"Final Price\",v:inr2(t-a)}]}}",
-      "seo_title": "Discount Calculator - Final Price in Rupees | Tank Metrics"
-    },
-    {
       "id": "numwords",
       "cat": "everyday",
       "name": "Number to Words (Indian)",
@@ -681,6 +618,28 @@
         }
       ],
       "compute": "function(e){var t=val(e,\"a\"),a=val(e,\"b\"),n=val(e,\"c\"),r=t+a+n;return{rows:[{l:\"Founder A\",v:r?pct(t/r*100):\"—\"},{l:\"Founder B\",v:r?pct(a/r*100):\"—\"},{l:\"Founder C\",v:r?pct(n/r*100):\"—\"}]}}"
+    },
+    {
+      "id": "dscr",
+      "cat": "val",
+      "name": "Debt Service Coverage Ratio (DSCR)",
+      "desc": "Check whether a business earns enough to cover its loan repayments. Lenders ask for this number before they sanction a term loan.",
+      "bench": "1.25x is the usual floor a bank wants; below 1.0x the loan is not being paid out of earnings.",
+      "inputs": [
+        {
+          "k": "noi",
+          "l": "Net Operating Income (yearly)",
+          "u": "₹"
+        },
+        {
+          "k": "debt",
+          "l": "Total Debt Service (yearly)",
+          "u": "₹"
+        }
+      ],
+      "compute": "function(e){var t=val(e,\"noi\"),a=val(e,\"debt\"),n=a?t/a:0;return{rows:[{l:\"DSCR\",v:num(n,2)+\"x\",cls:n>=1.25?\"good\":n>=1?\"warn\":\"bad\"}]}}",
+      "seo_title": "DSCR Calculator India - Debt Service Coverage Ratio",
+      "seo_desc": "Work out the debt service coverage ratio a bank looks at before it sanctions a term loan. Free ₹ calculator, no sign-up."
     },
     {
       "id": "cac",
@@ -1362,6 +1321,28 @@
       "compute": "function(e){var t=val(e,\"inv\"),a=val(e,\"mprofit\"),n=a?t/a:0;return{rows:[{l:\"Payback Period\",v:num(n,1)+\" months\",cls:n<=18?\"good\":n<=30?\"warn\":\"bad\"}]}}"
     },
     {
+      "id": "revperemp",
+      "cat": "ops",
+      "name": "Revenue per Employee",
+      "desc": "Divide your yearly revenue by the number of people on the team to see how much each person brings in, and whether the team is the right size.",
+      "bench": "Compare against your own sector; a services firm usually wants a higher figure than a product one.",
+      "inputs": [
+        {
+          "k": "revenue",
+          "l": "Yearly Revenue",
+          "u": "₹"
+        },
+        {
+          "k": "emp",
+          "l": "Number of Employees",
+          "u": ""
+        }
+      ],
+      "compute": "function(e){var t=val(e,\"revenue\"),a=val(e,\"emp\");return{rows:[{l:\"Revenue per Employee\",v:a?inr(t/a):\"—\"}]}}",
+      "seo_title": "Revenue per Employee Calculator",
+      "seo_desc": "Work out revenue per employee in ₹: divide yearly revenue by the size of the team and see whether headcount is pulling its weight. Free, no sign-up."
+    },
+    {
       "id": "moicirr",
       "cat": "investor",
       "name": "MOIC & IRR",
@@ -1432,24 +1413,41 @@
       "compute": "function(e){var t=val(e,\"tam\")*val(e,\"sampct\")/100,a=t*val(e,\"sompct\")/100;return{rows:[{l:\"SAM\",v:inr(t)},{l:\"SOM\",v:inr(a)}]}}"
     },
     {
-      "id": "agencyroas",
-      "cat": "agency",
-      "name": "ROAS Calculator",
-      "desc": "Measure how much revenue your advertising generates for every rupee spent.",
-      "bench": "ROAS above 3x is often a healthy starting point, but compare it with your margins.",
+      "id": "wacc",
+      "cat": "investor",
+      "name": "WACC Calculator",
+      "desc": "Work out the blended cost of the money a company uses: the return equity holders expect and the interest on debt, weighted by how much of each is in the mix.",
+      "bench": "A WACC of 12-15% is typical for a small Indian business; a DCF discount rate is built from it.",
       "inputs": [
         {
-          "k": "revenue",
-          "l": "Ad Revenue",
+          "k": "eq",
+          "l": "Equity Value",
           "u": "₹"
         },
         {
-          "k": "spend",
-          "l": "Ad Spend",
+          "k": "debt",
+          "l": "Debt Value",
           "u": "₹"
+        },
+        {
+          "k": "re",
+          "l": "Cost of Equity",
+          "u": "%"
+        },
+        {
+          "k": "rd",
+          "l": "Cost of Debt",
+          "u": "%"
+        },
+        {
+          "k": "tax",
+          "l": "Tax Rate",
+          "u": "%"
         }
       ],
-      "compute": "function(e){var t=val(e,\"revenue\"),a=val(e,\"spend\");return{rows:[{l:\"ROAS\",v:a?num(t/a,2)+\"x\":\"—\"}]}}"
+      "compute": "function(e){var E=val(e,\"eq\"),D=val(e,\"debt\"),re=val(e,\"re\"),rd=val(e,\"rd\"),t=val(e,\"tax\"),T=E+D,w=T?E/T:0,x=T?D/T:0,n=w*re+x*rd*(1-t/100);return{rows:[{l:\"WACC\",v:pct(n)},{l:\"Equity Weight\",v:pct(w*100)},{l:\"Debt Weight\",v:pct(x*100)}]}}",
+      "seo_title": "WACC Calculator - Weighted Average Cost of Capital",
+      "seo_desc": "Work out the weighted average cost of capital from equity, debt, their costs and the tax rate. The discount rate a DCF starts from. Free ₹ calculator."
     },
     {
       "id": "cpmcpc",
@@ -2112,34 +2110,6 @@
       "compute": "function(e){var t=val(e,\"monthly\"),a=val(e,\"rate\")/1200,n=12*val(e,\"years\"),r=a?t*((Math.pow(1+a,n)-1)/a)*(1+a):t*n;return{rows:[{l:\"Invested Amount\",v:inr2(t*n)},{l:\"Estimated Corpus\",v:inr2(r)}]}}"
     },
     {
-      "id": "gst_taxwealth",
-      "cat": "taxwealth",
-      "name": "GST Calculator",
-      "desc": "Calculate GST after discount, split it into CGST and SGST, and reverse-calculate tax from an inclusive amount.",
-      "bench": "Common GST slabs are 5%, 12%, 18% and 28%. For interstate sales, use the total GST as IGST.",
-      "inputs": [
-        {
-          "k": "amt",
-          "l": "Base Amount",
-          "u": "₹",
-          "ph": "100000"
-        },
-        {
-          "k": "discount",
-          "l": "Discount",
-          "u": "%",
-          "ph": "0"
-        },
-        {
-          "k": "rate",
-          "l": "GST Rate",
-          "u": "%",
-          "ph": "18"
-        }
-      ],
-      "compute": "function(e){var t=val(e,\"amt\"),a=Math.max(0,val(e,\"discount\")),n=val(e,\"rate\"),r=t*a/100,o=Math.max(0,t-r),i=o*n/100,l=o+i,s=n?t/(1+n/100):t,u=Math.max(0,t-s);return{rows:[{l:\"Discount Amount\",v:inr2(r)},{l:\"Taxable Amount After Discount\",v:inr2(o)},{l:\"Total GST\",v:inr2(i)},{l:\"CGST (half of GST)\",v:inr2(i/2)},{l:\"SGST (half of GST)\",v:inr2(i/2)},{l:\"Final Invoice Total\",v:inr2(l)},{l:\"Reverse: Base From Inclusive Amount\",v:inr2(s)},{l:\"Reverse: GST Inside Inclusive Amount\",v:inr2(u)}]}}"
-    },
-    {
       "id": "agefun",
       "cat": "dailyfun",
       "name": "Age Calculator",
@@ -2373,6 +2343,28 @@
         }
       ],
       "compute": "function(e){var m=val(e,\"market\"),s=val(e,\"sold\");if(m<=0)return{rows:[{l:\"Your market share\",v:\"\\u2014\"}],tip:\"Enter a total market bigger than zero.\"};var share=s/m*100;return{rows:[{l:\"Your market share\",v:pct(share)},{l:\"Total market\",v:num(m,0)+\" units\"},{l:\"You sold\",v:num(s,0)+\" units\"},{l:\"Others sold\",v:num(Math.max(m-s,0),0)+\" units\"}],tip:share>=10?\"You are a real player in this market.\":\"Small share \\u2014 focus on one niche before chasing the whole market.\"}}"
+    },
+    {
+      "id": "invturn",
+      "cat": "growth",
+      "name": "Inventory Turnover Ratio",
+      "desc": "See how many times a year you sell through your stock. A low number means cash is sitting on the shelf instead of working for the business.",
+      "bench": "Higher is better; a ratio below 4 for a product business usually means slow-moving stock.",
+      "inputs": [
+        {
+          "k": "cogs",
+          "l": "Cost of Goods Sold (yearly)",
+          "u": "₹"
+        },
+        {
+          "k": "inv",
+          "l": "Average Inventory",
+          "u": "₹"
+        }
+      ],
+      "compute": "function(e){var t=val(e,\"cogs\"),a=val(e,\"inv\"),n=a?t/a:0,d=n?365/n:0;return{rows:[{l:\"Inventory Turnover\",v:num(n,2)+\"x\",cls:n>=4?\"good\":n>=2?\"warn\":\"bad\"},{l:\"Days to Sell Stock\",v:num(d,0)+\" days\"}]}}",
+      "seo_title": "Inventory Turnover Ratio Calculator",
+      "seo_desc": "Work out inventory turnover and the days it takes to sell your stock. A low ratio means cash is parked in the warehouse. Free ₹ calculator."
     }
   ],
   "helpers": "ONES=[\"\",\"One\",\"Two\",\"Three\",\"Four\",\"Five\",\"Six\",\"Seven\",\"Eight\",\"Nine\",\"Ten\",\"Eleven\",\"Twelve\",\"Thirteen\",\"Fourteen\",\"Fifteen\",\"Sixteen\",\"Seventeen\",\"Eighteen\",\"Nineteen\"];\nTENS=[\"\",\"\",\"Twenty\",\"Thirty\",\"Forty\",\"Fifty\",\"Sixty\",\"Seventy\",\"Eighty\",\"Ninety\"];\nfunction fmtIN(e,t){if(null==e||isNaN(e)||!isFinite(e))return\"—\";t=void 0===t?2:t;var a=e<0,n=(e=Math.abs(e)).toFixed(t).split(\".\"),r=n[0],o=r.slice(-3),i=r.slice(0,-3);\"\"!==i&&(i=i.replace(/\\B(?=(\\d{2})+(?!\\d))/g,\",\")+\",\");var l=i+o;return t>0&&(l+=\".\"+n[1]),(a?\"-\":\"\")+l}\nfunction parseAmount(v){if(null==v)return NaN;if(typeof v===\"number\")return v;var s=String(v).trim().toLowerCase().replace(/[,\\s_\\u20b9$]/g,\"\");s=s.replace(/^(?:rs\\.?|inr)+/,\"\").replace(/(?:rupees?|only|rs\\.?)$/,\"\");if(!s)return NaN;var U={k:1e3,thousand:1e3,thousands:1e3,thousnd:1e3,hazar:1e3,hazaar:1e3,hajar:1e3,hajars:1e3,hazar:1e3,hazr:1e3,m:1e6,mn:1e6,mil:1e6,million:1e6,millions:1e6,milion:1e6,milions:1e6,milian:1e6,milians:1e6,millian:1e6,millon:1e6,milyon:1e6,milon:1e6,b:1e9,bn:1e9,billion:1e9,billions:1e9,bilion:1e9,bilian:1e9,arab:1e9,arabs:1e9,cr:1e7,crore:1e7,crores:1e7,cror:1e7,crors:1e7,crod:1e7,croar:1e7,kror:1e7,krors:1e7,krod:1e7,krore:1e7,krores:1e7,karod:1e7,karods:1e7,karor:1e7,karors:1e7,kroar:1e7,corer:1e7,lakh:1e5,lakhs:1e5,lac:1e5,lacs:1e5,lekh:1e5,lekhs:1e5,lack:1e5,lacks:1e5,lak:1e5,laks:1e5,laakh:1e5,lakhh:1e5};var SQ={};for(var uk in U){SQ[uk.replace(/[aeiouy]/g,\"\").replace(/(.)\\1+/g,\"$1\")]=U[uk];}var re=/(-?\\d*\\.?\\d+)([a-z]*)/g,m,total=0,seen=false,ok=true,used=\"\";while((m=re.exec(s))!==null){var n=parseFloat(m[1]),u=m[2];if(isNaN(n)){ok=false;break;}if(u===\"\"){total+=n;}else if(U[u]!==undefined){total+=n*U[u];}else{if(u.length<3){ok=false;break;}var q=u.replace(/[aeiouy]/g,\"\").replace(/(.)\\1+/g,\"$1\");if(SQ[q]!==undefined){total+=n*SQ[q];}else{ok=false;break;}}used+=m[0];seen=true;}if(ok&&seen&&used===s)return total;if(/[a-z]/.test(s))return NaN;var f=parseFloat(s);return isNaN(f)?NaN:f}function val(e,t){var a=parseAmount(e[t]);return isNaN(a)?0:a}\nfunction inr(e){return\"₹\"+fmtIN(e,0)}\nfunction inr2(e){return\"₹\"+fmtIN(e,2)}\nfunction pct(e){return isNaN(e)||!isFinite(e)?\"—\":fmtIN(e,1)+\"%\"}\nfunction num(e,t){return fmtIN(e,void 0===t?2:t)}\nfunction twoDigits(e){return e<20?ONES[e]:(TENS[Math.floor(e/10)]+\" \"+ONES[e%10]).trim()}\nfunction threeDigits(e){var t=\"\";return e>=100&&(t+=ONES[Math.floor(e/100)]+\" Hundred \",e%=100),e>0&&(t+=twoDigits(e)),t.trim()}\nfunction numberToWordsIndian(e){if(0===(e=Math.round(e)))return\"Zero\";if(e<0)return\"Minus \"+numberToWordsIndian(-e);var t=Math.floor(e/1e7);e%=1e7;var a=Math.floor(e/1e5);e%=1e5;var n=Math.floor(e/1e3),r=e%=1e3,o=[];return t&&o.push(threeDigits(t)+\" Crore\"),a&&o.push(threeDigits(a)+\" Lakh\"),n&&o.push(threeDigits(n)+\" Thousand\"),r&&o.push(threeDigits(r)),o.join(\" \").trim()}"

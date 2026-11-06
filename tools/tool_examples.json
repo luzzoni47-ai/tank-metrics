@@ -120,62 +120,6 @@
     "hi_intro": "Salary Take-Home Estimator ka poora hisaab. Tool leta hai Annual CTC aur Estimated Deductions; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
     "hi_outro": "Salary Take-Home Estimator ka formula: Take-home = Gross Salary - Employee PF (basic ka 12%) - Professional Tax - TDS. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
-  "split": {
-    "inputs": {
-      "Total Bill": "1000 ₹",
-      "Number of People": "4"
-    },
-    "rows": [
-      {
-        "l": "Each Person Pays",
-        "v": "₹250.00"
-      }
-    ],
-    "intro": "Bill Splitter, worked end to end. The calculator takes Total Bill, Number of People; the example below runs one realistic set of those numbers through it.",
-    "outro": "Bill Splitter settles it with Each person pays the total bill divided by the number of people. Change any field above and the answer updates with it.",
-    "hi_intro": "Bill Splitter ka poora hisaab. Tool leta hai Total Bill aur Number of People; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Bill Splitter ka formula: Har banda deta hai total bill / number of people. Koi bhi field badlo aur jawab turant badal jaata hai."
-  },
-  "tip": {
-    "inputs": {
-      "Bill Amount": "1000 ₹",
-      "Tip": "10 %"
-    },
-    "rows": [
-      {
-        "l": "Tip Amount",
-        "v": "₹100.00"
-      },
-      {
-        "l": "Total to Pay",
-        "v": "₹1,100.00"
-      }
-    ],
-    "intro": "Take a ₹1,000 bill and a 10% tip. Here is what you leave and what you pay.",
-    "outro": "The tip is ₹100 on a ₹1,000 bill, so the total is ₹1,100. Change the bill or the percentage above and both the tip and the total follow.",
-    "hi_intro": "Tip Calculator ka poora hisaab. Tool leta hai Bill Amount aur Tip; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Tip Calculator ka formula: Tip amount = bill × tip percentage ÷ 100 (`bill` × `tip` ÷ 100). Koi bhi field badlo aur jawab turant badal jaata hai."
-  },
-  "simpledisc": {
-    "inputs": {
-      "Original Price": "1000 ₹",
-      "Discount": "20 %"
-    },
-    "rows": [
-      {
-        "l": "You Save",
-        "v": "₹200.00"
-      },
-      {
-        "l": "Final Price",
-        "v": "₹800.00"
-      }
-    ],
-    "intro": "Take a ₹2,000 jacket with 25% off in a sale. Here is what the discount takes off.",
-    "outro": "The percentage is the shop's number; the ₹500 saving and the ₹1,500 final price are yours. Change either figure above and both move together.",
-    "hi_intro": "Discount Calculator ka poora hisaab. Tool leta hai Original Price aur Discount; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Discount Calculator ka formula: Bachat = original price × discount ÷ 100 (`price` × `disc` ÷ 100). Koi bhi field badlo aur jawab turant badal jaata hai."
-  },
   "numwords": {
     "inputs": {
       "Number": "100000"
@@ -522,6 +466,22 @@
     "outro": "Co-founder Equity Split settles it with Founder Share % = Founder Score ÷ Total of All Scores × 100. Change any field above and the answer updates with it.",
     "hi_intro": "Co-founder Equity Split ka poora hisaab. Tool leta hai Founder A Score aur Founder B Score aur Founder C Score (optional); neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
     "hi_outro": "Co-founder Equity Split ka formula: Founder Share % = Founder Score ÷ Total of All Scores × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
+  },
+  "dscr": {
+    "inputs": {
+      "Net Operating Income (yearly)": "1800000 ₹",
+      "Total Debt Service (yearly)": "1200000 ₹"
+    },
+    "rows": [
+      {
+        "l": "DSCR",
+        "v": "1.50x"
+      }
+    ],
+    "intro": "Debt Service Coverage Ratio (DSCR), worked end to end. The calculator takes Net Operating Income (yearly), Total Debt Service (yearly); the example below runs one realistic set of those numbers through it.",
+    "outro": "Debt Service Coverage Ratio (DSCR) settles it with DSCR = Net Operating Income / Total Debt Service, both for the same year. Change any field above and the answer updates with it.",
+    "hi_intro": "Debt Service Coverage Ratio (DSCR) ka poora hisaab. Tool leta hai Net Operating Income (yearly) aur Total Debt Service (yearly); neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Debt Service Coverage Ratio (DSCR) ka formula: DSCR = Net Operating Income / Total Debt Service, dono usi saal ke. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "cac": {
     "inputs": {
@@ -913,9 +873,9 @@
       }
     ],
     "intro": "GST Calculator, worked end to end. The calculator takes Amount, GST Rate; the example below runs one realistic set of those numbers through it.",
-    "outro": "GST Calculator settles it with GST Amount = Base Price × GST Rate ÷ 100, and the final price is Base + GST. Change any field above and the answer updates with it.",
+    "outro": "GST Calculator settles it with GST Amount = Base Price × GST Rate ÷ 100, and the final price is Base Price + GST Amount. Change any field above and the answer updates with it.",
     "hi_intro": "GST Calculator ka poora hisaab. Tool leta hai Amount aur GST Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "GST Calculator ka formula: GST Amount = Base Price × GST Rate ÷ 100, aur final price Base + GST hai. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "GST Calculator ka formula: GST Amount = Base Price × GST Rate ÷ 100, aur final price Base Price + GST Amount hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "landed": {
     "inputs": {
@@ -1086,6 +1046,22 @@
     "hi_intro": "Franchise / Store ROI ka poora hisaab. Tool leta hai Starting Investment aur Monthly Profit; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
     "hi_outro": "Franchise / Store ROI ka formula: Payback Period mahino mein = Starting Investment ÷ Monthly Profit. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
+  "revperemp": {
+    "inputs": {
+      "Yearly Revenue": "12000000 ₹",
+      "Number of Employees": "12"
+    },
+    "rows": [
+      {
+        "l": "Revenue per Employee",
+        "v": "₹10,00,000"
+      }
+    ],
+    "intro": "Revenue per Employee, worked end to end. The calculator takes Yearly Revenue, Number of Employees; the example below runs one realistic set of those numbers through it.",
+    "outro": "Revenue per Employee settles it with Revenue per Employee = Yearly Revenue / Number of Employees. Change any field above and the answer updates with it.",
+    "hi_intro": "Revenue per Employee ka poora hisaab. Tool leta hai Yearly Revenue aur Number of Employees; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Revenue per Employee ka formula: Revenue per Employee = Yearly Revenue / Number of Employees. Koi bhi field badlo aur jawab turant badal jaata hai."
+  },
   "moicirr": {
     "inputs": {
       "Investment Amount": "450000 ₹",
@@ -1144,21 +1120,32 @@
     "hi_intro": "TAM / SAM / SOM ka poora hisaab. Tool leta hai TAM (Total Market) aur SAM aur SOM; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
     "hi_outro": "TAM / SAM / SOM ka formula: TAM nikalne ka sabse saaf tarika bottom-up hai: kitne possible customers hain, guna ek customer saal me kitna kharch karta hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
-  "agencyroas": {
+  "wacc": {
     "inputs": {
-      "Ad Revenue": "450000 ₹",
-      "Ad Spend": "180000 ₹"
+      "Equity Value": "9000000 ₹",
+      "Debt Value": "3000000 ₹",
+      "Cost of Equity": "18 %",
+      "Cost of Debt": "12 %",
+      "Tax Rate": "25 %"
     },
     "rows": [
       {
-        "l": "ROAS",
-        "v": "2.50x"
+        "l": "WACC",
+        "v": "15.8%"
+      },
+      {
+        "l": "Equity Weight",
+        "v": "75.0%"
+      },
+      {
+        "l": "Debt Weight",
+        "v": "25.0%"
       }
     ],
-    "intro": "ROAS Calculator, worked end to end. The calculator takes Ad Revenue, Ad Spend; the example below runs one realistic set of those numbers through it.",
-    "outro": "ROAS Calculator settles it with ROAS = ad revenue / ad spend, written as a multiple such as 3x. Change any field above and the answer updates with it.",
-    "hi_intro": "ROAS Calculator ka poora hisaab. Tool leta hai Ad Revenue aur Ad Spend; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "ROAS Calculator ka formula: ROAS = ad revenue / ad spend, 3x jaise multiple me. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "intro": "WACC Calculator, worked end to end. The calculator takes Equity Value, Debt Value, Cost of Equity, Cost of Debt, Tax Rate; the example below runs one realistic set of those numbers through it.",
+    "outro": "WACC Calculator settles it with WACC = (E / V) x Cost of Equity + (D / V) x Cost of Debt x (1 - Tax Rate), where V is equity plus debt. Change any field above and the answer updates with it.",
+    "hi_intro": "WACC Calculator ka poora hisaab. Tool leta hai Equity Value aur Debt Value aur Cost of Equity aur Cost of Debt aur Tax Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "WACC Calculator ka formula: WACC = (E / V) x Cost of Equity + (D / V) x Cost of Debt x (1 - Tax Rate), jahan V equity plus debt hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "cpmcpc": {
     "inputs": {
@@ -1727,51 +1714,6 @@
     "hi_intro": "NPS Calculator ka poora hisaab. Tool leta hai Monthly Contribution aur Expected Annual Return aur Years to Retirement; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
     "hi_outro": "NPS Calculator ka formula: Corpus = Monthly Contribution x [((1 + r)^n - 1) / r] x (1 + r), jahan r monthly rate (annual / 12) aur n 60 tak ke mahine. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
-  "gst_taxwealth": {
-    "inputs": {
-      "Base Amount": "10000 ₹",
-      "Discount": "10 %",
-      "GST Rate": "18 %"
-    },
-    "rows": [
-      {
-        "l": "Discount Amount",
-        "v": "₹1,000.00"
-      },
-      {
-        "l": "Taxable Amount After Discount",
-        "v": "₹9,000.00"
-      },
-      {
-        "l": "Total GST",
-        "v": "₹1,620.00"
-      },
-      {
-        "l": "CGST (half of GST)",
-        "v": "₹810.00"
-      },
-      {
-        "l": "SGST (half of GST)",
-        "v": "₹810.00"
-      },
-      {
-        "l": "Final Invoice Total",
-        "v": "₹10,620.00"
-      },
-      {
-        "l": "Reverse: Base From Inclusive Amount",
-        "v": "₹8,474.58"
-      },
-      {
-        "l": "Reverse: GST Inside Inclusive Amount",
-        "v": "₹1,525.42"
-      }
-    ],
-    "intro": "GST Calculator, worked end to end. The calculator takes Base Amount, Discount, GST Rate; the example below runs one realistic set of those numbers through it.",
-    "outro": "GST Calculator settles it with Discounted Base = Base Amount × (1 − Discount %). Change any field above and the answer updates with it.",
-    "hi_intro": "GST Calculator ka poora hisaab. Tool leta hai Base Amount aur Discount aur GST Rate; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "GST Calculator ka formula: Discounted Base = Base Amount × (1 − Discount %). Koi bhi field badlo aur jawab turant badal jaata hai."
-  },
   "agefun": {
     "inputs": {
       "Date of Birth": "1995-06-15"
@@ -1982,5 +1924,25 @@
     "outro": "6,000 out of 10,000 is 60%. Change either number above and the share updates as you type — the arithmetic stays that simple.",
     "hi_intro": "Market Share Calculator ka poora hisaab. Tool leta hai Total market (units sold) aur Your units sold; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
     "hi_outro": "Market Share Calculator ka formula: Market Share % = (Your Units Sold ÷ Total Market Units) × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
+  },
+  "invturn": {
+    "inputs": {
+      "Cost of Goods Sold (yearly)": "4800000 ₹",
+      "Average Inventory": "800000 ₹"
+    },
+    "rows": [
+      {
+        "l": "Inventory Turnover",
+        "v": "6.00x"
+      },
+      {
+        "l": "Days to Sell Stock",
+        "v": "61 days"
+      }
+    ],
+    "intro": "Inventory Turnover Ratio, worked end to end. The calculator takes Cost of Goods Sold (yearly), Average Inventory; the example below runs one realistic set of those numbers through it.",
+    "outro": "Inventory Turnover Ratio settles it with Inventory Turnover = Cost of Goods Sold / Average Inventory. Change any field above and the answer updates with it.",
+    "hi_intro": "Inventory Turnover Ratio ka poora hisaab. Tool leta hai Cost of Goods Sold (yearly) aur Average Inventory; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
+    "hi_outro": "Inventory Turnover Ratio ka formula: Inventory Turnover = Cost of Goods Sold / Average Inventory. Koi bhi field badlo aur jawab turant badal jaata hai."
   }
 }

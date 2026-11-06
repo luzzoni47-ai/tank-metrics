@@ -1,9 +1,9 @@
 # Tank Metrics
 
-> 101 free, instant business and money calculators for entrepreneurs, students and small business owners in India. Every tool runs in the browser, in rupees and crores, with no sign-up. The site also publishes plain-English guides and a news desk on Indian funding, Shark Tank deals and money rules.
+> 100 free, instant business and money calculators for entrepreneurs, students and small business owners in India. Every tool runs in the browser, in rupees and crores, with no sign-up. The site also publishes plain-English guides and a news desk on Indian funding, Shark Tank deals and money rules.
 
 ## Main pages
-- [Home - all 101 calculators](https://tankmetrics.in/)
+- [Home - all 100 calculators](https://tankmetrics.in/)
 - [Blog - plain-English money guides](https://tankmetrics.in/blog)
 - [News desk - funding, Shark Tank and tax rules](https://tankmetrics.in/news)
 - [About](https://tankmetrics.in/about)
@@ -17,7 +17,6 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Ask Calculator - Equity for Your Ask](https://tankmetrics.in/ask-calculator)
 - [Average Order Value (AOV) — Free Calculator](https://tankmetrics.in/average-order-value-aov)
 - [Baby Name Number Calculator — Free Calculator](https://tankmetrics.in/baby-name-number-calculator)
-- [Bill Splitter - Split a Bill in Rupees](https://tankmetrics.in/bill-splitter)
 - [BMI Calculator — Free Online Calculator](https://tankmetrics.in/bmi-calculator)
 - [Break-Even Ad Spend — Free Online Calculator](https://tankmetrics.in/break-even-ad-spend)
 - [Break-Even Point — Free Online Calculator](https://tankmetrics.in/break-even-point)
@@ -44,8 +43,8 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Customer Lifetime Value (LTV) Calculator](https://tankmetrics.in/customer-lifetime-value-ltv)
 - [Days Between Two Dates — Free Calculator](https://tankmetrics.in/days-between-two-dates)
 - [Debt + Equity Deal — Free Online Calculator](https://tankmetrics.in/debt-equity-deal)
+- [DSCR Calculator India - Debt Service Coverage Ratio](https://tankmetrics.in/debt-service-coverage-ratio-dscr)
 - [Equity Dilution Calculator India - Free Tool](https://tankmetrics.in/dilution-calculator)
-- [Discount Calculator - Final Price in Rupees](https://tankmetrics.in/discount-calculator)
 - [Discount Impact on Profit — Free Calculator](https://tankmetrics.in/discount-impact-on-profit)
 - [Distributor & Retailer Margin Calculator](https://tankmetrics.in/distributor-and-retailer-margin)
 - [Down Payment Calculator — Free Calculator](https://tankmetrics.in/down-payment-calculator)
@@ -60,13 +59,13 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Freelancer Hourly Rate — Free Calculator](https://tankmetrics.in/freelancer-hourly-rate)
 - [Gratuity Calculator — Free Online Calculator](https://tankmetrics.in/gratuity-calculator)
 - [Gross Profit & Margin Calculator in Rupees](https://tankmetrics.in/gross-profit-and-margin)
-- [GST Calculator (Pricing & Selling)](https://tankmetrics.in/gst-calculator)
-- [GST Calculator (Tax & Wealth Toolkit)](https://tankmetrics.in/gst-calculator-tax-and-wealth-toolkit)
+- [GST Calculator — Free Online Calculator](https://tankmetrics.in/gst-calculator)
 - [Home Loan EMI Calculator — Free Calculator](https://tankmetrics.in/home-loan-emi-calculator)
 - [HRA Exemption Calculator — Free Calculator](https://tankmetrics.in/hra-exemption-calculator)
 - [Implied Valuation Calculator - What Is This Company Worth?](https://tankmetrics.in/implied-valuation)
 - [Import Duty & Customs Calculator](https://tankmetrics.in/import-duty-and-customs-calculator)
 - [Income Tax Calculator (Old vs New Regime)](https://tankmetrics.in/income-tax-calculator-old-vs-new-regime)
+- [Inventory Turnover Ratio Calculator](https://tankmetrics.in/inventory-turnover-ratio)
 - [Land Area Unit Converter — Free Calculator](https://tankmetrics.in/land-area-unit-converter)
 - [Landed Cost Calculator — Free Calculator](https://tankmetrics.in/landed-cost-calculator)
 - [Loan EMI Calculator — Free Online Calculator](https://tankmetrics.in/loan-emi-calculator)
@@ -98,7 +97,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Return on Capital Employed (ROCE) Calculator India](https://tankmetrics.in/return-on-capital-employed)
 - [Return on Investment (ROI) — Free Calculator](https://tankmetrics.in/return-on-investment-roi)
 - [Revenue Multiple — Free Online Calculator](https://tankmetrics.in/revenue-multiple)
-- [ROAS Calculator — Free Online Calculator](https://tankmetrics.in/roas-calculator)
+- [Revenue per Employee Calculator](https://tankmetrics.in/revenue-per-employee)
 - [Royalty Deal — Free Online Calculator](https://tankmetrics.in/royalty-deal)
 - [Run Rate — Free Online Calculator](https://tankmetrics.in/run-rate)
 - [Salary Take-Home Estimator — Free Calculator](https://tankmetrics.in/salary-take-home-estimator)
@@ -109,7 +108,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Stamp Duty Calculator — Free Calculator](https://tankmetrics.in/stamp-duty-calculator)
 - [Straight-Line Depreciation — Free Calculator](https://tankmetrics.in/straight-line-depreciation)
 - [TAM / SAM / SOM — Free Online Calculator](https://tankmetrics.in/tam-sam-som)
-- [Tip Calculator — Free Online Calculator](https://tankmetrics.in/tip-calculator)
+- [WACC Calculator - Weighted Average Cost of Capital](https://tankmetrics.in/wacc-calculator)
 - [Working Capital — Free Online Calculator](https://tankmetrics.in/working-capital)
 - [Zodiac Sign Calculator — Free Calculator](https://tankmetrics.in/zodiac-sign-calculator)
 

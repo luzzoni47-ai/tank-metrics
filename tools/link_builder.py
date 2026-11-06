@@ -215,7 +215,7 @@ multiples. No sign-up, no paywall, and each page shows the formula it uses.
 I thought it might fit {p['name']}: {p['note'].lower()}
 
 Two pages that could be useful to your readers:
-  - https://{HOST}/gst-calculator-tax-and-wealth-toolkit
+  - https://{HOST}/gst-calculator
   - https://{HOST}/loan-emi-calculator
 
 If it is a fit, a link would be welcome. If not, no problem — and tell me if you
@@ -261,7 +261,7 @@ Two more that catch people out:
     cannot average the rate and apply it once.
 
 If you just want the number, I keep a free one at
-https://{HOST}/gst-calculator-tax-and-wealth-toolkit — it does both directions and
+https://{HOST}/gst-calculator — it does both directions and
 shows the split.
 
 ---

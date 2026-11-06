@@ -131,6 +131,10 @@ def main() -> int:
 
     out.append(text[pos:])
     SITEMAP.write_text("".join(out), encoding="utf-8")
+    # A retired URL keeps its ledger row forever otherwise, and the file grows a
+    # line for every page the site ever published.
+    for gone in [c for c in ledger if c not in files]:
+        del ledger[gone]
     LEDGER.write_text(
         json.dumps(ledger, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 

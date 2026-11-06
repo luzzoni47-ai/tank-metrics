@@ -15,11 +15,12 @@ Four things the design does NOT carry, and this adds back:
    from the page that passed Search Console, so the crawl surface is unchanged;
    only the fonts and the stylesheet are swapped.
 
-2. **The crawler-visible catalogue.** The old page carried all 101 tools with
-   their descriptions in the HTML (`.seo-cat`), which is what a crawler that
-   runs no JS sees. The design has 13 toolkit cards and three demos, so the
-   tool names would have vanished from the home page. `tools/home_catalogue.html`
-   is that block, kept hidden behind the design.
+2. **The crawler-visible catalogue.** The old page carried every tool with its
+   description in the HTML (`.seo-cat`), which is what a crawler that runs no JS
+   sees. The design has 13 toolkit cards and three demos, so the tool names
+   would have vanished from the home page. `build_catalogue()` writes that block
+   from `calcs.json`, hidden behind the design, so it cannot list a calculator
+   the site no longer has.
 
 3. **The site footer.** The design's footer has placeholder `#` links. The
    footer every other page carries holds the product column and the full Legal
@@ -53,13 +54,103 @@ TOOLS = ROOT / "tools"
 
 TEMPLATE = TOOLS / "home_template.html"
 HEAD = TOOLS / "home_head.html"
-CATALOGUE = TOOLS / "home_catalogue.html"
 FOOTER = TOOLS / "home_footer.html"
 
 DATA = json.loads((TOOLS / "calcs.json").read_text(encoding="utf-8"))
 
 sys.path.insert(0, str(TOOLS))
-from gen_category_pages import slug_for as cat_slug  # noqa: E402
+from gen_category_pages import slug_for as cat_slug, tools_of  # noqa: E402
+from gen_tool_pages import build_slugs as tool_slugs  # noqa: E402
+
+SLUGS = tool_slugs(DATA["calcs"])
+
+# The toolkit card is part of the design: its colour pair, icon and one-line
+# lead were drawn by hand. Only the count is derived, so a category that gains
+# or loses a tool cannot leave a wrong number on the page.
+CARD = {
+    "everyday": ("c-blue", "\U0001f4b8",
+                 "--accent:var(--blue);--accent-2:var(--blue-l);--accent-glow:rgba(66,133,244,.5);--tint:rgba(66,133,244,.14);--border:rgba(66,133,244,.4)",
+                 "Percentage, interest, EMI, savings goals, salary &amp; bill splitting.",
+                 "everyday money basics percentage interest emi savings salary"),
+    "profit": ("c-green", "\U0001f4c8",
+               "--accent:var(--green);--accent-2:var(--green-l);--accent-glow:rgba(52,168,83,.5);--tint:rgba(52,168,83,.14);--border:rgba(52,168,83,.4)",
+               "Gross, EBITDA, operating and net margins \u2014 plus ROI and ROCE.",
+               "profit margins gross ebitda operating net contribution markup roi roce"),
+    "val": ("c-red", "\U0001f988",
+            "--accent:var(--red);--accent-2:var(--red-l);--accent-glow:rgba(234,67,53,.5);--tint:rgba(234,67,53,.14);--border:rgba(234,67,53,.4)",
+            "Implied valuation, dilution, debt + equity splits and royalty deals.",
+            "valuation deals implied pre-money post-money multiple dilution ask royalty cap table esop equity shark tank dscr"),
+    "cust": ("c-yellow", "\U0001f3af",
+             "--accent:var(--yellow);--accent-2:var(--yellow-l);--accent-glow:rgba(251,188,5,.5);--tint:rgba(251,188,5,.2);--border:rgba(251,188,5,.5)",
+             "CAC, LTV, payback, retention, churn and every funnel cost.",
+             "customers unit economics cac ltv aov retention churn roas cpc cpl cpa arpu mrr arr"),
+    "growth": ("c-blue", "\U0001f680",
+               "--accent:var(--blue);--accent-2:var(--blue-l);--accent-glow:rgba(66,133,244,.5);--tint:rgba(66,133,244,.14);--border:rgba(66,133,244,.4)",
+               "Run rate, CAGR, burn, runway, break-even and cash cycles.",
+               "growth cash run rate cagr burn runway break-even working capital depreciation inventory turnover"),
+    "pricing": ("c-saffron", "\U0001f3f7\ufe0f",
+                "--accent:var(--saffron);--accent-2:var(--yellow-l);--accent-glow:rgba(255,153,51,.5);--tint:rgba(255,153,51,.2);--border:rgba(255,153,51,.5)",
+                "MRP reverse, GST, landed cost, marketplace fees and RTO losses.",
+                "pricing selling mrp distributor retailer gst landed cost marketplace cod rto discount duty customs"),
+    "ops": ("c-navy", "\U0001f465",
+            "--accent:var(--navy);--accent-2:#2F2FB8;--accent-glow:rgba(6,3,141,.4);--tint:rgba(6,3,141,.1);--border:rgba(6,3,141,.3)",
+            "Employee CTC, freelancer rates, store payback and revenue per head.",
+            "team ctc employee freelancer hourly rate franchise store roi salary revenue per employee"),
+    "investor": ("c-green", "\U0001f3e6",
+                 "--accent:var(--green);--accent-2:var(--green-l);--accent-glow:rgba(52,168,83,.5);--tint:rgba(52,168,83,.14);--border:rgba(52,168,83,.4)",
+                 "MOIC, IRR, exit payouts, TAM / SAM / SOM sizing and WACC.",
+                 "investor view moic irr exit tam sam som wacc cost of capital"),
+    "bonus": ("c-red", "\U0001f3a4",
+              "--accent:var(--red);--accent-2:var(--red-l);--accent-glow:rgba(234,67,53,.5);--tint:rgba(234,67,53,.14);--border:rgba(234,67,53,.4)",
+              "See exactly which numbers the Sharks are likely to question.",
+              "pitch check shark tank valuation revenue ltv cac runway margin"),
+    "agency": ("c-blue", "\U0001f4e3",
+               "--accent:var(--blue);--accent-2:var(--blue-l);--accent-glow:rgba(66,133,244,.5);--tint:rgba(66,133,244,.14);--border:rgba(66,133,244,.4)",
+               "ROAS, CPM\u2192CPC, client CAC, LTV, margins and utilization.",
+               "ad agency roas cpm cpc cpa break-even ad spend client cac ltv margin utilization churn"),
+    "realestate": ("c-yellow", "\U0001f3e0",
+                   "--accent:var(--yellow);--accent-2:var(--yellow-l);--accent-glow:rgba(251,188,5,.5);--tint:rgba(251,188,5,.2);--border:rgba(251,188,5,.5)",
+                   "Property value, home loan EMI, rental yield, stamp duty and more.",
+                   "real estate property valuation home loan emi rental yield rent vs buy stamp duty brokerage roi down payment carpet area"),
+    "taxwealth": ("c-green", "\U0001f9fe",
+                  "--accent:var(--green);--accent-2:var(--green-l);--accent-glow:rgba(52,168,83,.5);--tint:rgba(52,168,83,.14);--border:rgba(52,168,83,.4)",
+                  "Old vs new regime, HRA, SIP, PPF, FD, EPF, NPS and gratuity.",
+                  "tax wealth income tax hra sip ppf fd rd epf gratuity nps gst"),
+    "dailyfun": ("c-saffron", "\U0001f3b2",
+                 "--accent:var(--saffron);--accent-2:var(--yellow-l);--accent-glow:rgba(255,153,51,.5);--tint:rgba(255,153,51,.2);--border:rgba(255,153,51,.5)",
+                 "Age, love, numerology, zodiac, BMI and date difference tools.",
+                 "daily fun age love numerology zodiac rashi baby name lucky number compatibility bmi days between"),
+}
+
+SEE_ALL = ("c-navy", "\u26a1",
+           "--accent:var(--navy);--accent-2:#2F2FB8;--accent-glow:rgba(6,3,141,.4);--tint:rgba(6,3,141,.1);--border:rgba(6,3,141,.3)",
+           "Every single tool in one place \u2014 search, filter and jump right in.",
+           "all tools everything calculators")
+
+CARD_ARROW = (
+    'Open toolkit\n          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" '
+    'stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">'
+    '<path d="M5 12h14M13 6l6 6-6 6"/></svg>')
+
+# Nine catalogue entries were written shorter than the tool page's own
+# description, and the home page has been indexed with that wording. Keep it.
+SHORT_DESC = {
+    "gross-profit-and-margin": "See how much money is left after covering the direct cost of what you sold.",
+    "ebitda-and-margin": "Your core operating profit, before interest, tax, depreciation and amortization.",
+    "contribution-margin": "How much each unit you sell contributes towards covering your fixed costs.",
+    "dilution-calculator": "Find out how much ownership a founder keeps after giving away equity in a deal.",
+    "ask-calculator": "If you know how much money you need, see how much equity that means at your valuation.",
+    "customer-lifetime-value-ltv": "The total profit one customer is expected to bring over their whole relationship with you.",
+    "distributor-and-retailer-margin": "From your manufacturer price, distributor price and MRP, see each stage's margin %.",
+    "property-roi-calculator": "Estimate your property return from rental income and change in value.",
+    "epf-calculator": "Estimate EPF accumulation from employee contribution, employer contribution, and interest.",
+}
+
+CATALOGUE_INTRO = (
+    "Tank Metrics has {n} instant calculators across {c} categories \u2014 startup "
+    "valuation, EBITDA and margins, LTV:CAC and unit economics, burn rate and "
+    "runway, EMI and loans, pricing, tax, real estate and everyday money. Every "
+    "tool runs in your browser: no sign-up, no data leaves your device.")
 
 FONT_LINK = (
     '<link href="https://fonts.googleapis.com/css2'
@@ -208,41 +299,89 @@ def design_body() -> str:
     return re.sub(r"<script>.*?</script>", "", body, flags=re.S)
 
 
-def tag_cards(body: str) -> str:
-    """Give every toolkit card a real link and the old `#cat_<id>` anchor.
+def card_html(cid: str, count: int) -> str:
+    ico, icon, style, lead, data_name = CARD[cid]
+    cat = next(c for c in DATA["cats"] if c["id"] == cid)
+    word = "tool" if count == 1 else "tools"
+    return (
+        f'\n      <div class="cat" id="cat_{cid}" style="{style}" data-name="{data_name}">\n'
+        f'        <div class="cat-top">\n'
+        f'          <div class="cat-ico {ico}">{icon}</div>\n'
+        f'          <div class="cat-count">{count} {word}</div>\n'
+        f'        </div>\n'
+        f'        <div>\n'
+        f'          <h3><a class="cat-link" href="/{cat_slug(cat)}">'
+        f'{html.escape(cat["name"], quote=False)}</a></h3>\n'
+        f'          <p>{lead}</p>\n'
+        f'        </div>\n'
+        f'        <div class="cat-arrow">{CARD_ARROW}\n        </div>\n'
+        f'      </div>\n')
 
-    The card becomes a `<div>` holding `<h3><a class="cat-link" href=...>`, and
-    the anchor is stretched over the card with `::after`, so the whole card is
-    still clickable without nesting anchors. `wire_crawl_graph.py` and
-    `test_category_pages.py` both expect a `.cat-link` on the home page, and the
-    `#cat_<id>` ids matter because the footer on every page links to them.
+
+def build_grid(body: str) -> str:
+    """Write the toolkit grid from calcs.json instead of freezing it.
+
+    The design's 13 cards carried hand-typed tool counts ("10 tools") and a
+    `data-name` search string. Both go stale the moment a category gains or
+    loses a calculator, and a frozen grid is how the home page came to advertise
+    a toolkit that no longer had any tools in it. The colour, icon and lead line
+    stay hand-drawn; the count and the link are derived.
     """
-    matches = list(re.finditer(r'<a class="cat"([^>]*)>(.*?)</a>', body, re.S))
-    if not matches:
-        return body
-    out, last = [], 0
-    for m in matches:
-        card = m.group(0)
-        attrs, inner = m.group(1), m.group(2)
-        name_m = re.search(r"<h3>(.*?)</h3>", inner, re.S)
-        out.append(body[last:m.start()])
-        if not name_m:
-            out.append(card)
-            last = m.end()
-            continue
-        # The template writes `&amp;`, calcs.json writes `&`, so unescape before
-        # matching or every toolkit with an ampersand silently stays unlinked.
-        label = html.unescape(re.sub(r"<[^>]+>", "", name_m.group(1))).strip()
-        cat = next((c for c in DATA["cats"] if c["name"] == label), None)
-        if cat:
-            anchor = f' id="cat_{cat["id"]}"'
-            href = f'/{cat_slug(cat)}'
-        else:
-            anchor, href = "", "#tools"
-        heading = (f'<h3><a class="cat-link" href="{href}">{name_m.group(1)}</a></h3>')
-        out.append(f'<div class="cat"{anchor}{attrs}>{inner.replace(name_m.group(0), heading, 1)}</div>')
-        last = m.end()
-    out.append(body[last:])
+    start = body.index('<div class="cat-grid reveal-stagger" id="catGrid">')
+    start = body.index(">", start) + 1
+    end = body.index('<div class="no-results"', start)
+    counts = {c["id"]: len(tools_of(c)) for c in DATA["cats"]}
+    cards = "".join(card_html(c["id"], counts[c["id"]]) for c in DATA["cats"])
+    ico, icon, style, lead, data_name = SEE_ALL
+    cards += (
+        f'\n      <div class="cat" style="{style}" data-name="{data_name}">\n'
+        f'        <div class="cat-top">\n'
+        f'          <div class="cat-ico {ico}">{icon}</div>\n'
+        f'          <div class="cat-count">{len(DATA["calcs"])} tools</div>\n'
+        f'        </div>\n'
+        f'        <div>\n'
+        f'          <h3><a class="cat-link" href="#tools">See All Calculators</a></h3>\n'
+        f'          <p>{lead}</p>\n'
+        f'        </div>\n'
+        f'        <div class="cat-arrow">Browse all\n          '
+        f'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+        f'stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">'
+        f'<path d="M5 12h14M13 6l6 6-6 6"/></svg>\n        </div>\n      </div>\n'
+        f'\n\n    </div>\n\n\n    ')
+    return body[:start] + cards + body[end:]
+
+
+def build_catalogue() -> str:
+    """The crawler-visible list of every calculator, built from calcs.json.
+
+    A crawler that runs no JS sees only this block, so it has to name every tool
+    and link it. Links are written in the raw `/site/...` form on purpose:
+    `clean_urls.py` is the single place that turns those into public URLs, and
+    `wire_crawl_graph.py` skips a heading that is already a link.
+    """
+    cats = {c["id"]: c for c in DATA["cats"]}
+    out = [
+        '<div id="content"><div class="seo-catalogue" id="seoCatalogue">'
+        f'<h2>All {len(DATA["calcs"])} free business &amp; money calculators</h2>'
+        f'<p>{CATALOGUE_INTRO.format(n=len(DATA["calcs"]), c=len(DATA["cats"]))}</p>'
+    ]
+    for cat in DATA["cats"]:
+        tools = tools_of(cat)
+        word = "calculator" if len(tools) == 1 else "calculators"
+        items = []
+        for c in tools:
+            slug = SLUGS[c["id"]]
+            desc = SHORT_DESC.get(slug, c["desc"])
+            items.append(
+                f'<li><h3><a href="/site/tools/{slug}.html">'
+                f'{html.escape(c["name"], quote=False)}</a></h3>'
+                f'<p>{html.escape(desc, quote=False)}</p></li>')
+        out.append(
+            f'<section class="seo-cat" id="seo-{cat["id"]}">'
+            f'<h2><a href="/site/{cat_slug(cat)}.html">'
+            f'{html.escape(cat["name"], quote=False)} ({len(tools)} {word})</a></h2>'
+            f'<ul>{"".join(items)}</ul></section>')
+    out.append("</div></div>")
     return "".join(out)
 
 
@@ -250,14 +389,16 @@ def fix_counts(body: str) -> str:
     """Make the toolkit count honest.
 
     The design was drawn with 14 toolkits; the site has 13. The calculator
-    count stays at 100 to match the wording on the other 199 pages - the
-    catalogue itself lists all 101 - but the toolkit number is on screen as a
-    hero stat, so it is read off `calcs.json` rather than typed in.
+    count stays at 100 to match the wording on the other pages, but both numbers
+    are read off `calcs.json` rather than typed in, so they cannot drift.
     """
-    n = len(DATA["cats"])
+    cats, calcs = len(DATA["cats"]), len(DATA["calcs"])
     body = re.sub(r'<b data-count="\d+">0</b><span>Toolkits</span>',
-                  f'<b data-count="{n}">0</b><span>Toolkits</span>', body)
-    body = re.sub(r'\d+ Toolkits · ', f'{n} Toolkits · ', body)
+                  f'<b data-count="{cats}">0</b><span>Toolkits</span>', body)
+    body = re.sub(r'<b data-count="\d+">0</b><span>Free Calculators</span>',
+                  f'<b data-count="{calcs}">0</b><span>Free Calculators</span>', body)
+    body = re.sub(r'\d+ Toolkits · \d+ Calculators',
+                  f'{cats} Toolkits · {calcs} Calculators', body)
     return body
 
 
@@ -269,7 +410,7 @@ def wire(body: str) -> str:
     body = body.replace('<a href="#">Blog</a>', '<a href="/blog">Blog</a>', 1)
     body = body.replace('<a href="#categories" class="btn btn-ghost">Read the Blog</a>',
                         '<a href="/blog" class="btn btn-ghost">Read the Blog</a>', 1)
-    body = tag_cards(body)
+    body = build_grid(body)
     body = tag_demo_cards(body)
     # The menu button nav.js needs, so a phone visitor can reach the drawer.
     body = body.replace("</nav>", "</nav>\n    " + MENU_BTN, 1)
@@ -414,7 +555,7 @@ def assemble() -> str:
 
     body = re.sub(r"<footer>.*?</footer>", FOOTER.read_text(encoding="utf-8"),
                   body, count=1, flags=re.S)
-    body = body.rstrip() + "\n" + CATALOGUE.read_text(encoding="utf-8") + "\n"
+    body = body.rstrip() + "\n" + build_catalogue() + "\n"
 
     return ('<!DOCTYPE html><html lang="en"><head>' + head + "</head><body>"
             + body + scripts() + "</body></html>\n")
@@ -424,8 +565,9 @@ def main() -> None:
     page = assemble()
     (SITE / "index.html").write_text(page, encoding="utf-8")
     cards = len(re.findall(r'<a class="cat-link" href="/', page))
+    tools = len(re.findall(r'<section class="seo-cat" id="seo-', page))
     print(f"home page rebuilt from the design: {len(page)} bytes, "
-          f"{cards} toolkit cards linked, catalogue kept")
+          f"{cards} toolkit cards linked, {tools} catalogue sections")
 
 
 if __name__ == "__main__":

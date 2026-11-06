@@ -226,20 +226,6 @@
     "Cutting tools and software when the real problem is that the work is priced too low."
    ]
   },
-  "agencyroas": {
-   "what": "ROAS is how much revenue every rupee of ad spend brought back, and it is the fastest read on whether a campaign is paying for itself. Spend Rs 1,00,000 on ads, book Rs 4,00,000 of revenue, and ROAS is 4x. What catches people out is reading 4x as profit: ROAS uses revenue, not margin, so a 4x ROAS on a product with a 20% margin is not four rupees of profit, it is eighty paise. This calculator divides ad revenue by ad spend and returns the multiple, so two channels can be compared on the same footing.",
-   "formula": "ROAS = ad revenue / ad spend, written as a multiple such as 3x. Spend 1,00,000 and book 4,00,000 and ROAS is 4,00,000 / 1,00,000 = 4x. The tool returns that multiple alone, on purpose, because revenue is the number you can measure cleanly. To turn ROAS into a break-even test, divide 1 by your contribution margin: at a 25% margin the break-even ROAS is 1 / 0.25 = 4x, so anything below 4x loses money even while it looks profitable.",
-   "when": [
-    "You are comparing two ad channels and want one number that puts them on the same scale.",
-    "A campaign is running and you want to know the spend it needs to at least break even.",
-    "You are setting a target ROAS before launch and want it grounded in your real margin."
-   ],
-   "mistakes": [
-    "Reading ROAS as profit. It is revenue divided by spend, so a 4x ROAS on a thin-margin product can still lose money.",
-    "Comparing ROAS across products with different margins. Break-even ROAS is 1 divided by margin, so a 20% margin needs 5x and a 50% margin needs 2x.",
-    "Leaving out the costs outside ad spend: returns, shipping, marketplace fees and payment-gateway charges."
-   ]
-  },
   "aov": {
    "what": "Average Order Value is the typical amount a customer spends in one order. Divide total revenue by the number of orders in the same period and you have it. ₹1,00,000 across 200 orders is an AOV of ₹500. It looks like a simple average, but it drives two things: how much you can spend to acquire a customer, and how much a small nudge - a bundle, a free-shipping threshold, an upsell - is worth. Raising AOV lifts profit without spending a rupee more on ads, which makes it one of the cheapest levers a D2C brand has.",
    "formula": "AOV = Total Revenue ÷ Total Orders. Use the same period for both numbers: ₹1,00,000 of revenue from 200 orders is ₹500 per order. Compare it month to month, because a rising AOV means bundles and upsells are working, while a falling one usually means discounts are eating the basket.",
@@ -844,20 +830,6 @@
     "Treating the GST you collect as your own money. It is held for the government and paid on in your return."
    ]
   },
-  "gst_taxwealth": {
-   "what": "This GST Calculator handles the messier invoice that has a discount in it: a trade discount comes off the base first, GST is then charged on what remains, and the tax is split into CGST and SGST for you. The order is the whole point. A 10% discount and 18% GST on a ₹10,000 base give a ₹9,000 taxable value and ₹1,620 of tax; apply GST first and the discount afterwards and the tax comes out higher, and the invoice stops matching your books.\n\nIt is built for the seller who has to show the working: the discounted value, the total GST, the two equal halves that go on an intra-state invoice, and the final amount payable. It also runs the reverse direction, pulling the base back out of a GST-inclusive figure you were paid, so one page covers both the sale you are raising and the payment you are reconciling.",
-   "formula": "Discounted Base = Base Amount × (1 − Discount %). GST = Discounted Base × GST Rate ÷ 100. Total = Discounted Base + GST, with CGST and SGST each at half of the GST for an intra-state sale. A ₹10,000 base with a 10% discount and 18% GST becomes a ₹9,000 taxable value, ₹1,620 of GST split as ₹810 CGST and ₹810 SGST, and a ₹10,620 invoice total. To reverse a GST-inclusive figure, Base = Amount ÷ (1 + Rate ÷ 100).",
-   "when": [
-    "You are issuing an invoice where a trade discount is shown and GST sits on the discounted value.",
-    "You need the CGST and SGST halves for a sale inside your own state.",
-    "You were paid a lump sum inclusive of GST and need to split it into base and tax."
-   ],
-   "mistakes": [
-    "Charging GST on the pre-discount base. On an invoice the discount reduces the taxable value before the tax is applied.",
-    "Halving the tax on an inter-state sale. That should be a single IGST at the full rate, not CGST plus SGST.",
-    "Rounding CGST and SGST apart and letting the invoice total drift a rupee away from the sum of its parts."
-   ]
-  },
   "homeemi": {
    "what": "A home loan EMI calculator shows the fixed monthly payment on a housing loan and, just as importantly, what the loan costs you in total. An EMI has two parts - interest and principal - and in the early years almost all of it is interest. That is why a 20-year loan at 8.5% costs far more than the amount borrowed, and why a small prepayment in the first few years saves far more than the same amount paid later.",
    "formula": "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the loan amount, r the monthly interest rate (annual rate ÷ 12 ÷ 100) and n the number of months. A ₹50 lakh loan at 8.5% for 20 years is an EMI of about ₹43,391, and the total paid over the term is about ₹1.04 crore - roughly double the loan. The same loan over 30 years drops the EMI to about ₹38,446 but raises the total cost to about ₹1.38 crore.",
@@ -1454,22 +1426,6 @@
    "intro": "Say you want ₹5,00,000, you already have ₹1,00,000, and you can put aside ₹15,000 a month.",
    "outro": "Change the monthly amount above and the time to the goal moves with it. Even a small increase, held for years, moves the date a long way."
   },
-  "simpledisc": {
-   "what": "The Discount Calculator works out what a percentage off actually takes off a price. Enter the original price and the discount, and it shows two things: the rupees you save and the price you finally pay. That is the number that decides whether a sale is worth acting on — not the percentage, which is the part shops advertise because it sounds bigger than it is.",
-   "formula": "The saving is the original price multiplied by the discount, divided by 100: `price` × `disc` ÷ 100. The final price is the original minus that saving: `price` − saving. At ₹2,000 with a 25% discount the saving is ₹500 and the final price is ₹1,500. Two discounts applied one after another are not added together — 30% then 20% leaves you paying 0.7 × 0.8 = 0.56 of the price, which is 44% off, not 50%.",
-   "when": [
-    "A marketplace or shop shows a flat percentage off and you want the rupee amount before you decide.",
-    "You are comparing two sale prices where the discounts and the original prices are both different.",
-    "A coupon stacks on top of an existing sale and you want to know the real final price."
-   ],
-   "mistakes": [
-    "Adding two discounts together. A 30% discount followed by a 20% one is 44% off the original, not 50%, because the second discount applies to the already-reduced price.",
-    "Reading the discount as a share of the final price. The percentage is taken off the original marked price; once the price has dropped, the same rupees are a larger percentage of what is left.",
-    "Comparing discount percentages across different prices. 40% off ₹2,000 saves ₹800, which is more than 50% off ₹1,000 at ₹500."
-   ],
-   "intro": "Take a ₹2,000 jacket with 25% off in a sale. Here is what the discount takes off.",
-   "outro": "The percentage is the shop's number; the ₹500 saving and the ₹1,500 final price are yours. Change either figure above and both move together."
-  },
   "simpleint": {
    "what": "Simple interest is charged only on the original amount, never on the interest already earned. 1,00,000 rupees at 10% for 3 years earns 30,000 - flat, every year, on the same 1,00,000. Compound interest on the same terms earns 33,100. The 3,100 rupee gap is small over three years and enormous over thirty, which is why knowing which one applies matters more than the rate itself.",
    "formula": "Interest = Principal x Rate x Time / 100. Total = Principal + Interest. For a part-year, Time is months / 12.",
@@ -1496,20 +1452,6 @@
     "Using the fund's last-year return as the assumption. SIPs are planned on a long-run average, not last year's best.",
     "Stopping the SIP in a falling market, which is exactly when you buy the most units per rupee.",
     "Ignoring the expense ratio. A 1% higher ratio costs roughly a tenth of a 20-year corpus."
-   ]
-  },
-  "split": {
-   "what": "Bill Splitter divides one shared amount by the number of people paying it, and nothing else. It is the tool for the last two minutes at a table: the total is on the bill, four of you are paying, each owes a quarter. The arithmetic is a single division, so the value is not in the maths - it is in having the per-head figure before anyone starts rounding in their head and the numbers stop agreeing.\n\nIt handles the plain case on purpose. It does not decide who ordered the paneer, it does not add a tip, and it does not re-split a bill that already carries a service charge. That is a feature: an equal split is the only split that ends an argument, and every uneven arrangement is easier to settle once the equal share is on the table.",
-   "formula": "Each person pays the total bill divided by the number of people. In this tool 'Total Bill' is the total field and 'Number of People' is the people field. Rs 1,000 across 4 people is Rs 250 each. When the total does not divide evenly - Rs 1,000 across 3 - the tool shows Rs 333.33, and the honest fix is for one person to absorb the odd paise or for everyone to round up and leave the difference in the tip.",
-   "when": [
-    "A group dinner or a trip ends and the bill has to be settled on the spot.",
-    "Roommates split a shared utility or grocery bill evenly each month.",
-    "Co-founders or a small team split a shared subscription or a taxi fare."
-   ],
-   "mistakes": [
-    "Splitting the pre-tax subtotal and forgetting the GST and service charge already printed on the bill.",
-    "Dividing by the number of people who came rather than the number who are paying, when someone is being treated.",
-    "Rounding every share down and leaving the last person with the shortfall; round up, or let one person take the odd rupees."
    ]
   },
   "stampduty": {
@@ -1556,22 +1498,6 @@
    "intro": "Take a market you could sell into. Here is how the three layers stack up.",
    "outro": "The SOM is the number to defend. Anyone can claim a large TAM; the SOM is where you say how you actually get in."
   },
-  "tip": {
-   "what": "The Tip Calculator works out how much to leave and what the bill comes to once it is added. Give it the bill and a percentage, and it returns the tip amount and the total you hand over. That total is the figure that matters when you are paying cash, splitting with friends, or checking a bill against what you expected.",
-   "formula": "The tip amount is the bill multiplied by the tip percentage, divided by 100: `bill` × `tip` ÷ 100. The total is the bill plus the tip amount: `bill` + tip amount. On a ₹1,000 bill at 10%, the tip is ₹100 and you pay ₹1,100. If you want to tip on the pre-tax bill, enter the pre-tax figure — the percentage is applied to whatever number is in the bill field.",
-   "when": [
-    "You are at a restaurant and want to leave a fair, round amount without doing the arithmetic in your head.",
-    "The bill already carries a service charge and you want to see what an extra tip would add.",
-    "You are splitting a bill and need each person's share of the bill plus tip."
-   ],
-   "mistakes": [
-    "Tipping on the total instead of the bill. If the number you enter already includes the tip, applying the percentage again charges it twice.",
-    "Leaving a second tip when a service charge is already printed. The service charge is the tip; check the bill before you add more.",
-    "Splitting the bill and then tipping on each share. Work out the tip on the whole bill once, then divide the total, or the rounding on each share inflates it."
-   ],
-   "intro": "Take a ₹1,000 bill and a 10% tip. Here is what you leave and what you pay.",
-   "outro": "The tip is ₹100 on a ₹1,000 bill, so the total is ₹1,100. Change the bill or the percentage above and both the tip and the total follow."
-  },
   "utilization": {
    "what": "Utilization rate is the share of your team's paid hours that actually goes to billable client work, and for an agency it is the number the whole payroll hangs on. If you bill 1,200 hours against the 1,600 hours your team was paid to be available, utilization is 75%, and the other 25% - internal meetings, admin, pitching, training - is real cost you carry but can never invoice. This calculator divides billable hours by the available hours you paid for and returns that percentage, so you can see how much of the payroll is actually earning.",
    "formula": "Utilization rate = billable hours / available hours x 100. Available hours is what you paid the team for: number of people x hours per week x weeks in the period. Bill 1,200 hours out of 1,600 available and the rate is 1,200 / 1,600 x 100 = 75%. The tool returns that percentage and nothing else. Track it per person and per month rather than once a year, because one person pinned at 95% every month is a resignation waiting to happen, not a star performer.",
@@ -1612,6 +1538,62 @@
     "Reading a cusp birthday as certain. Within a day of a boundary the sign depends on the birth time, not the date.",
     "Using the Western sign for a Vedic question. Rashi uses the moon, not the sun, and needs the birth time.",
     "Assuming the date ranges never move. A leap year pushes the boundaries by about a day."
+   ]
+  },
+  "dscr": {
+   "what": "DSCR, the debt service coverage ratio, answers the one question a lender asks before it sanctions a term loan: does this business earn enough, from its normal operations, to pay the loan back on schedule? Net operating income is the profit before interest and tax; total debt service is every rupee of principal and interest due in the same year. Divide the first by the second and you have the number the credit officer writes on the file. A ratio of 1.25 or better is the usual comfort level, because it means operations cover the instalments with a quarter left over for the bad months. Below 1.0 the business is paying the bank out of reserves or fresh borrowing, which is the point at which a loan application stalls.",
+   "formula": "DSCR = Net Operating Income / Total Debt Service, both for the same year. A business earning 18,00,000 of operating income against 12,00,000 of principal and interest due has a DSCR of 1.5x, comfortably above the 1.25 most banks want. The same 18,00,000 against 20,00,000 of repayments gives 0.9x, and the loan is not being serviced from earnings at all. Run it across three years, not one: a single strong year flatters a business that is actually shrinking.",
+   "when": [
+    "A bank or NBFC has asked for a DSCR before it processes your term loan.",
+    "You are deciding whether the business can safely take on another EMI.",
+    "You are comparing two years and want to see whether the cover is thinning."
+   ],
+   "mistakes": [
+    "Using net profit instead of net operating income. Interest and tax are added back because the loan is paid from profit before them.",
+    "Leaving a balloon or bullet repayment out of the debt service in the year it falls due. That is the year the ratio collapses.",
+    "Reading one good year as the trend. Lenders average the last three for exactly this reason."
+   ]
+  },
+  "wacc": {
+   "what": "WACC is the blended cost of every rupee a company uses, whether it came from shareholders or from a lender. Equity is not free: the people who put it in expect a return, and that expectation is a real cost to the business. Debt is cheaper twice over, because interest is paid before tax and the tax man effectively subsidises part of it. WACC weights the two costs by how much of the capital structure each one is, and produces the single discount rate a discounted cash flow valuation starts from. If a project cannot beat the WACC, it is destroying value even when it shows an accounting profit.",
+   "formula": "WACC = (E / V) x Cost of Equity + (D / V) x Cost of Debt x (1 - Tax Rate), where V is equity plus debt. On 90,00,000 of equity at 18% and 30,00,000 of debt at 12% with a 25% tax rate, the weights are 75% and 25%, and WACC = 0.75 x 18 + 0.25 x 12 x 0.75 = 15.75%. Note the tax shield: the debt's real cost is 9%, not 12%, which is why debt pulls the blended rate down.",
+   "when": [
+    "You are building a DCF and need the discount rate to bring future cash flows back to today.",
+    "You are weighing whether to fund a project with debt or fresh equity.",
+    "You want to check whether a quoted project return actually clears the cost of the capital it consumes."
+   ],
+   "mistakes": [
+    "Using book value of equity instead of market value. The shareholder's cost is based on what the stake is worth, not what it was issued at.",
+    "Forgetting the tax shield on debt, which overstates the cost of capital and understates every valuation.",
+    "Treating cost of equity as the risk-free rate. It carries an equity premium for a reason."
+   ]
+  },
+  "invturn": {
+   "what": "Inventory turnover counts how many times in a year a business sells through its entire stock and replaces it. It is the clearest single read on whether cash is working or sitting still: stock on a shelf earns nothing, ties up money you have already spent, and can go out of date or out of season before it sells. A high turnover means the goods move fast and cash comes back quickly; a low one means the warehouse is holding money the business could be using elsewhere. Dividing 365 by the ratio converts it into the more intuitive number: the average days a unit waits before it is sold.",
+   "formula": "Inventory Turnover = Cost of Goods Sold / Average Inventory. Average inventory is the opening and closing stock added together and halved, so one stock-take does not distort the picture. A business with 48,00,000 of yearly COGS and 8,00,000 of average stock turns its inventory 6 times a year, which is 365 / 6 = about 61 days to sell through. Compare that against the terms your supplier gives you: if you get 30 days to pay and take 61 to sell, you are funding the gap yourself.",
+   "when": [
+    "You want to know whether stock levels are too high for the sales they generate.",
+    "You are negotiating supplier credit terms and need to know how long the goods really take to move.",
+    "You are comparing a fast line against a slow one to decide what to keep stocking."
+   ],
+   "mistakes": [
+    "Using sales instead of cost of goods sold. Sales are marked up, so the ratio comes out too high and the stock looks faster than it is.",
+    "Taking one closing stock figure as the average. A seasonal peak or a clearance sale makes a single snapshot misleading.",
+    "Chasing a high ratio by under-stocking, then losing sales to stock-outs. Turnover is a means, not the goal."
+   ]
+  },
+  "revperemp": {
+   "what": "Revenue per employee divides what the business earns in a year by the number of people it employs, giving a rough read on how productive the team is and whether headcount has outrun the work. It is a blunt instrument, but it is the fastest sanity check there is: if revenue per head is falling while the team grows, the new hires are not yet paying for themselves. The number is only meaningful against a like-for-like comparison, because a software firm and a trading business will never share a figure. Used honestly, over several years, it shows whether growth is being bought with people faster than it is being earned from customers.",
+   "formula": "Revenue per Employee = Yearly Revenue / Number of Employees. A business turning over 1,20,00,000 with 12 people earns 10,00,000 per head. The same revenue with 20 people is 6,00,000 per head, which may be fine if the extra eight are building something that pays next year, and may be a warning if they are not. Track the ratio year on year rather than against a single industry benchmark, because the trend inside your own business is the signal that matters.",
+   "when": [
+    "You are about to add headcount and want to see the revenue each new hire has to carry.",
+    "Revenue is growing but profit is not, and you suspect the team has grown faster than the work.",
+    "You are comparing your productivity against another business in the same line."
+   ],
+   "mistakes": [
+    "Comparing across industries. A distribution business will always look thinner than a software one.",
+    "Counting only full-time staff while ignoring a large contractor bench, which understates the real team.",
+    "Cutting headcount to lift the ratio when the people were building next year's revenue."
    ]
   }
  }

@@ -42,7 +42,6 @@ OVERRIDES: dict[str, dict[str, str]] = {
     "hra": {"hra": "20000", "rent": "20000", "salary": "60000", "metro": "1"},
     "takehome": {"ctc": "1200000", "ded": "100000"},
     "gst": {"amt": "10000", "rate": "18"},
-    "gst_taxwealth": {"amt": "10000", "discount": "10", "rate": "18"},
     # ₹10,000 of market, ₹6,000 sold — 60%, checkable in your head.
     "marketplace": {"sp": "10000", "comm": "10", "ship": "500", "other": "500"},
     "landed": {"mfg": "500", "pack": "50", "ship": "100", "other": "50"},
@@ -64,9 +63,6 @@ OVERRIDES: dict[str, dict[str, str]] = {
     "prepost": {"pre": "9000000", "amt": "1000000"},
     "dilution": {"before": "100", "offered": "10"},
     "bmi": {"weight": "70", "height": "175"},
-    "split": {"total": "1000", "people": "4"},
-    "tip": {"bill": "1000", "tip": "10"},
-    "simpledisc": {"price": "1000", "disc": "20"},
     "savegoal": {"goal": "1000000", "have": "100000", "monthly": "10000"},
     # 1 crore market, 10% reachable, 10% winnable — round at every step.
     "tam": {"tam": "10000000", "sampct": "10", "sompct": "10"},
@@ -91,6 +87,12 @@ OVERRIDES: dict[str, dict[str, str]] = {
     "rashi": {"dob": "1995-06-15"},
     "luckynumber": {"dob": "1995-06-15"},
     "daysbetween": {"start": "2026-04-01", "end": "2026-10-21"},
+    # The generic rules read "yearly" as a number of years and "yearly
+    # revenue" as 5, so the yearly-figure tools carry their own example.
+    "dscr": {"noi": "1800000", "debt": "1200000"},
+    "wacc": {"eq": "9000000", "debt": "3000000", "re": "18", "rd": "12", "tax": "25"},
+    "invturn": {"cogs": "4800000", "inv": "800000"},
+    "revperemp": {"revenue": "12000000", "emp": "12"},
 }
 
 

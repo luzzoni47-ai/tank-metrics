@@ -1,23 +1,23 @@
 {
  "/": {
-  "hash": "352f22c9abd341f0653090775b07b2db2e76ed6390b696bdc252224bbbe7b31b",
-  "lastmod": "2026-11-05"
+  "hash": "5cb7d71f7ecf7fb281063a61552c751ba6af3bab64db42dde9d74faf1fad6d5d",
+  "lastmod": "2026-11-06"
  },
  "/about": {
   "hash": "c0899a0faa5de6c9f6836063d6f3c9632dbdd6056bdee2d736d177ab9a874c0c",
   "lastmod": "2026-10-30"
  },
  "/ad-agency-toolkit": {
-  "hash": "9f7b6b7ea03cd9a65465a37d2884a8726568b8629fd9500749315620db63e8be",
-  "lastmod": "2026-11-05"
+  "hash": "d402e0822d0dafe3fb1531af4654948881bfd2d49de662e5b3ba0ae12814d34d",
+  "lastmod": "2026-11-06"
  },
  "/age-calculator": {
-  "hash": "5bcf7827f37018853845c0e59f5429363bec383d72418fe61d5d7c3748c06f90",
-  "lastmod": "2026-11-03"
+  "hash": "d3fe86bd5f934c520ba4059f271fa2362f1309e9cb20661830f00c4ac7f436db",
+  "lastmod": "2026-11-06"
  },
  "/agency-profit-margin": {
-  "hash": "3e1b01ddceb50dba95ff080c8fdf0f691a3344e9de6344e0721eaf03eb7f71c3",
-  "lastmod": "2026-11-03"
+  "hash": "2bdf580f68c763f3158d626bf949d237969861b740088d1b060793f0b8a02ac5",
+  "lastmod": "2026-11-06"
  },
  "/aman-gupta-net-worth-calculator": {
   "hash": "0e41610b5b138de1ee28fd2ff98fb62ef1e55812f1f1d4dab8d7c25cd9514b86",
@@ -47,10 +47,6 @@
   "hash": "325ac9c03031a13c511a5d481710b976be7c4f9d3bb0846c4203b1005070d609",
   "lastmod": "2026-11-03"
  },
- "/bill-splitter": {
-  "hash": "ef8ec4cab8caae8f4abc256b99b9d097f7dfd8381be138915d67f45c580e295b",
-  "lastmod": "2026-11-03"
- },
  "/blog": {
   "hash": "1c7d531f69f8224b1e9201043b063fea0e0d211dc813f663c9ac74bf2b9359ce",
   "lastmod": "2026-11-05"
@@ -68,8 +64,8 @@
   "lastmod": "2026-10-30"
  },
  "/break-even-ad-spend": {
-  "hash": "b0c97936ca200dc9df9424c27feb21a228dced5d795dc8f3831229a8d02efb0c",
-  "lastmod": "2026-11-03"
+  "hash": "daff992ec1f8ea02e1b40809178827cd5299346a3cdcc5f6a3eb8029cbc6ccc1",
+  "lastmod": "2026-11-06"
  },
  "/break-even-calculator-rupees": {
   "hash": "f3889d86b9e41c2eb1b881be65134e9f65be8314ffb4df401961273daca7a23d",
@@ -132,24 +128,24 @@
   "lastmod": "2026-11-03"
  },
  "/churn-rate": {
-  "hash": "97309967acd900cf7725d37f920281031f9f5c727ff8804076463a007a10e362",
-  "lastmod": "2026-11-03"
+  "hash": "d38d5688f8c98ec189f07572549d1041c0e275749b572cee0f40b591892414af",
+  "lastmod": "2026-11-06"
  },
  "/client-acquisition-cost-cac": {
-  "hash": "95cb953706ddcf22d0a3dbf434f2d0fefd9f825cb7c804f1c8e3e87189b2b73d",
-  "lastmod": "2026-11-03"
+  "hash": "cad70ed6044fafd1c58e02e74e9506361d8157e66e0cf96777b9c261cce24aa7",
+  "lastmod": "2026-11-06"
  },
  "/client-lifetime-value-ltv": {
-  "hash": "5ae12f6b3cdc2f856956a125543178332146de9566aef036566a4d19bd24ae6f",
-  "lastmod": "2026-11-03"
+  "hash": "90c0d046bd7d6428aaa2fec83c3130052f513214420421984ef1051769b1ff78",
+  "lastmod": "2026-11-06"
  },
  "/client-profitability": {
-  "hash": "14a0cc155f22880b637e78f4107cd284e779407543e9456436cc75246e7380ed",
-  "lastmod": "2026-11-03"
+  "hash": "bf0f322562973ab03b117c4f9185783f738edf7def443192d8595d97323fe87c",
+  "lastmod": "2026-11-06"
  },
  "/co-founder-equity-split": {
-  "hash": "5831f2d08dbaf9644c6d66f205e1cfb63f022953cad78c0f9285e2d33c3bc236",
-  "lastmod": "2026-11-03"
+  "hash": "c04246bfa9895c1e130e231011292dd3a9ae093d5d35dd04459b134be9cf11e1",
+  "lastmod": "2026-11-06"
  },
  "/cod-and-rto-loss-calculator": {
   "hash": "2837dab28238a221c304a9ae8c4e3df3bcec73afa5a95d4ad9e091bdd01633e6",
@@ -168,8 +164,8 @@
   "lastmod": "2026-11-03"
  },
  "/compound-interest": {
-  "hash": "5a5b1d4a81a1f171d03b00c5facb4355cfe0ec939d93200730d7c55d34fed7ab",
-  "lastmod": "2026-11-03"
+  "hash": "0f01d00dd8977d4e8fd9f0b9c025ddce227dc7dc467b16082f939f7ffa73476a",
+  "lastmod": "2026-11-06"
  },
  "/contact": {
   "hash": "0140d0695d3367e497a642c309afe99cd8aa6723fc1e7b0156c216e2d64ef099",
@@ -188,16 +184,16 @@
   "lastmod": "2026-11-03"
  },
  "/cpc-to-cpa-converter": {
-  "hash": "59547c0b4f1a70e32f24c669c44cd26de33e088b51016ebda9f09e9e65a1fd13",
-  "lastmod": "2026-11-03"
+  "hash": "8c761f5e7d9b7be18a6eb171bc4324f5f341cc94a26b4d84012061501251e42b",
+  "lastmod": "2026-11-06"
  },
  "/cpm-to-cpc-converter": {
-  "hash": "172e7d53d76addce30457a55158e3beca4ad786b6b435d71236de6d15bb4d97f",
-  "lastmod": "2026-11-03"
+  "hash": "96d3aec98e119e47a177c27bd8dd94ca97878cbf22e961a6be1c2739e2486f73",
+  "lastmod": "2026-11-06"
  },
  "/customer-acquisition-cost-cac": {
-  "hash": "983d93e634023288dbf03a5b49104efd34051495b4ec1228259b0184f5cf81de",
-  "lastmod": "2026-11-03"
+  "hash": "9998f3bdb303654c61e941844992167f7b79630e962ac9f5ab14048c60bb6a4b",
+  "lastmod": "2026-11-06"
  },
  "/customer-lifetime-value-ltv": {
   "hash": "64f8a78809a7727442240534868ab5e9fbfc135d42bb5230881d5f65bdbc1354",
@@ -219,6 +215,10 @@
   "hash": "708826906c1606fd9be1d3815cbfffc1f233164fdffcc0a45ade8f60d13de4e3",
   "lastmod": "2026-11-03"
  },
+ "/debt-service-coverage-ratio-dscr": {
+  "hash": "4756aba26d2c8307a0c7025fa2b78df286b7fedc64a301fd80f14f4bbae38906",
+  "lastmod": "2026-11-06"
+ },
  "/digital-products/indian-business-financial-model": {
   "hash": "65ee629f02018128035d2e22255a234cdbb5dff45246d09a7ac3070a591f473b",
   "lastmod": "2026-10-30"
@@ -234,10 +234,6 @@
  "/disclaimer": {
   "hash": "788f0a95eb546b64f8db817b8d4e1c77f73a094d172b4a23694e5562d894595e",
   "lastmod": "2026-10-30"
- },
- "/discount-calculator": {
-  "hash": "ef91b8998864f15f58274da4fb1717aaac61b532a3469c84614da718cbc1d0ab",
-  "lastmod": "2026-11-03"
  },
  "/discount-impact-on-profit": {
   "hash": "bfd50c7468cbb00d397312ce4011b77d7ec36482e729f7d56315a5e0654863f4",
@@ -276,12 +272,12 @@
   "lastmod": "2026-10-30"
  },
  "/employee-cost-ctc-calculator": {
-  "hash": "3eea5b58197850d7b56cd6308e874328ceddc16fe412dd208f0994ac0704d543",
-  "lastmod": "2026-11-04"
+  "hash": "e3a95e47b6456b12421a35876db2acd419cf006e8f58bd25df009b865d5b0bff",
+  "lastmod": "2026-11-06"
  },
  "/employee-utilization-rate": {
-  "hash": "f8e1b33e7739a71285053fd641778f73025a4600b57b00d951e185af85fe9b60",
-  "lastmod": "2026-11-04"
+  "hash": "836635ac8d4c2d572d0ce250b42c29c6079e9701d999eba0d2ee1e641636b499",
+  "lastmod": "2026-11-06"
  },
  "/employee-utilization-rate-explained": {
   "hash": "016969742df4939c15d889f12ae35e3dcbecc73ffaafa991211b3b1f1d96636b",
@@ -296,12 +292,12 @@
   "lastmod": "2026-10-30"
  },
  "/everyday-money-basics": {
-  "hash": "fd14d16b4cbf73d3720a2b524c63790585d545bc7aece190a62ff8f273048ed4",
-  "lastmod": "2026-11-05"
+  "hash": "267a1a6295cae219f56d27ff36be6f3ea1ba50683fbb76605fbfa1eda96a1342",
+  "lastmod": "2026-11-06"
  },
  "/exit-calculator": {
-  "hash": "fae89ce2ece86abd1c9bec707b121683f9095aff37974add50b00c6a7838d571",
-  "lastmod": "2026-11-03"
+  "hash": "9cc94fd8209d8bccf5eb3cb7a5e1138be896735b00961d726dc309d466e1b881",
+  "lastmod": "2026-11-06"
  },
  "/export-certification-cost-support-micro-exporters": {
   "hash": "5e3104143434b6e95dd494b0fb74fec39721bf19f1682c20719462d8d0c0ce39",
@@ -324,12 +320,12 @@
   "lastmod": "2026-10-30"
  },
  "/franchise-store-roi": {
-  "hash": "04567f248958f3f4f0e78a431e271d59430d98bd53ecc23d0cfe2649922dbb32",
-  "lastmod": "2026-11-03"
+  "hash": "15c938f01fc682d723c3d54f2b12064be469a863b8db55b97d664de39a81bf60",
+  "lastmod": "2026-11-06"
  },
  "/freelancer-hourly-rate": {
-  "hash": "e5e1904fc5ae452a2b1d1efe0dcb5da613c83bffc6f35cc65c19900173c9ac82",
-  "lastmod": "2026-11-03"
+  "hash": "8d85d2747fad89cc383305b2992d278fbf03a4197253c6ce2f90137396391313",
+  "lastmod": "2026-11-06"
  },
  "/gratuity-calculator": {
   "hash": "17c05f62ab1ebcb7fe1f8396d1878499e5b3c8775f898d38b4c1a31529339c38",
@@ -348,24 +344,20 @@
   "lastmod": "2026-10-30"
  },
  "/growth-and-cash": {
-  "hash": "f6570a01a00c7dd0f83c7ae7d2e749b48748e891fd50d97fdd4ed5d8bdf526e4",
-  "lastmod": "2026-11-05"
+  "hash": "ce00faa6f4f92dc6f98b3c2c8dd96bf2f137961afb7c5f82aaf7f482e396923d",
+  "lastmod": "2026-11-06"
  },
  "/gst-calculator": {
-  "hash": "0b533f14f16fdcb9d036e3922458f3cf3d83d6e7420f1aabefeeea82e5ca0192",
-  "lastmod": "2026-11-05"
- },
- "/gst-calculator-tax-and-wealth-toolkit": {
-  "hash": "f6df6b96199b98b1c8da120b9325e2c127765e13330463f5ebcdd6bee4fd9f67",
-  "lastmod": "2026-11-05"
+  "hash": "914c9e0b0b5e8ee68c79c1f065e5b65c629b3573f3b17672546d13ed5f391dc2",
+  "lastmod": "2026-11-06"
  },
  "/gst-council-october-2026-small-business-changes": {
   "hash": "5e0f7888091bcb4c53e3f22cf5562379227c2eeefd2069e96dcc2ecfb77023ec",
   "lastmod": "2026-10-21"
  },
  "/gst-input-tax-credit-explained": {
-  "hash": "ef46ccacfb394c1a290debd8d21034ed896821a22771e6f4d4dfd8971a49d6a7",
-  "lastmod": "2026-10-30"
+  "hash": "ac75aad9746395f1474c433218f5fbdd695cb2cd1d88ebc9f02ab8985539a204",
+  "lastmod": "2026-10-29"
  },
  "/gst-inverted-duty-refund-input-services-november-2026": {
   "hash": "2a2189a91c964e20f8f29bac75854b59ce231769c82ffc3d208ee5e37fafdc45",
@@ -423,9 +415,13 @@
   "hash": "f48ff078b32a9d5d60350ff43cf85f09a564b1bb77b97fa4e95882e51a1b6ce6",
   "lastmod": "2026-10-21"
  },
+ "/inventory-turnover-ratio": {
+  "hash": "db33ff2b0dc80002a21eaeb0cfcf23d46b929d4b12fb030c4a0b55318e91b584",
+  "lastmod": "2026-11-06"
+ },
  "/investor-view": {
-  "hash": "f425a45d6ac4159ec4170a10451fd77997038c73f2a0e470e6daecf7079d32f3",
-  "lastmod": "2026-11-05"
+  "hash": "6d1ffcd63b981514cddf7cbf3fb13f9c24c7e0d4da160059e157b96e9326600e",
+  "lastmod": "2026-11-06"
  },
  "/khosla-ventures-even-healthcare-india-bet": {
   "hash": "84ce04e201607a8111dcd305da8af64731d5213f9e5f09fcba2b4bb0fc070471",
@@ -448,8 +444,8 @@
   "lastmod": "2026-10-30"
  },
  "/loan-emi-calculator": {
-  "hash": "19e1e259ef7d2ad24e85f33f38e601547b432845dad52ebd98b040238251933e",
-  "lastmod": "2026-11-03"
+  "hash": "0312a16b88235ac4d03be9adaacd95f12b4c5c576ca2b42102b29508c698be9e",
+  "lastmod": "2026-11-06"
  },
  "/love-calculator": {
   "hash": "07a79bbf408c4ebfedd285c43be6d1f2f3e234fef4407dce3bec5eb0e5aa02aa",
@@ -472,8 +468,8 @@
   "lastmod": "2026-11-03"
  },
  "/market-share-calculator": {
-  "hash": "5229a9b4ce8a5891fb42a03617670bd3b99b70f8861d479815b0f34a0474d8e3",
-  "lastmod": "2026-11-03"
+  "hash": "f9355897c13084164787830a6d7bc245cdda950b3fa33f481c78fdb32871c714",
+  "lastmod": "2026-11-06"
  },
  "/marketplace-fee-calculator": {
   "hash": "6b920133f41e91422cebf2a14b716cb7a7c30d02fc91e8912e08c27fa2eb4db0",
@@ -496,8 +492,8 @@
   "lastmod": "2026-10-30"
  },
  "/moic-and-irr": {
-  "hash": "a604741ead2e54e7378ec0e284abb2a87cd6a68a4c53ccd25aae640eff70c4c2",
-  "lastmod": "2026-11-03"
+  "hash": "ed51ee234d5323117b40ceb782e3b2e4f7ab7aa3164a4eeda50750af346c90bd",
+  "lastmod": "2026-11-06"
  },
  "/month-on-month-year-on-year-growth": {
   "hash": "e3a98e4cbe040c28f937b0fda56bdc9180e8a9db49e49601d2c9c98c21e644ab",
@@ -520,12 +516,12 @@
   "lastmod": "2026-11-05"
  },
  "/nps-calculator": {
-  "hash": "b37c2f3959b605b890930eb016421f8e7026f6aabe5b05cc5af378f43cc1c566",
-  "lastmod": "2026-11-03"
+  "hash": "64a29f3154dbd096330fa449684052b005f42419e3681d9facf3677f029d1a26",
+  "lastmod": "2026-11-06"
  },
  "/number-to-words-indian": {
-  "hash": "bbefca4db49ed8cb83d7545fbdacff4b2740e8b515f3e8a9d45942232b5f393d",
-  "lastmod": "2026-11-03"
+  "hash": "3c45a39defe43312172546185108b7785737416c8f96377bcee28e947f9a9695",
+  "lastmod": "2026-11-06"
  },
  "/numerology-calculator": {
   "hash": "a9d0496d1d5b06d3be997af5862d2443170c19736339f4067c69c1dd0706fe7f",
@@ -540,8 +536,8 @@
   "lastmod": "2026-11-03"
  },
  "/percentage-calculator": {
-  "hash": "1001046f0e95eef9c30396228d80f54ec72922fc870452c662fa562ade71f488",
-  "lastmod": "2026-11-05"
+  "hash": "db7c9051bef874c7fa5c1c4f571a9655c06b323779d3656e08949a96b7a6c420",
+  "lastmod": "2026-11-06"
  },
  "/pharma-distributor-margin-explained": {
   "hash": "b0da2784a3033936b84cc9db3c33c19ea0a58b6c67d40a3fc172330789b190bc",
@@ -644,8 +640,12 @@
   "lastmod": "2026-11-03"
  },
  "/revenue-multiple-calculator-india": {
-  "hash": "98cb588a20ced1b4431d1f204e5859e39b41737c360040ad001ee36c544fb640",
-  "lastmod": "2026-10-30"
+  "hash": "4999e51e9473b2cd604dbe9685c9029b44e2846593379230a90b2da941796f41",
+  "lastmod": "2026-11-02"
+ },
+ "/revenue-per-employee": {
+  "hash": "99913d06e6d3cd60ee1a8a2b85745b0df03056b9264f47c9d6ac6f7f00ef576f",
+  "lastmod": "2026-11-06"
  },
  "/revenue-per-employee-explained": {
   "hash": "42b1082d129967bab0630f6d1b1eac428ce2b880e5595eaf0a19f1bc2309179e",
@@ -654,10 +654,6 @@
  "/reverse-pricing-explained": {
   "hash": "3ce472f99e4b714d443c63eb58283025206784a0d1072f0290cbca0ebf01ae7a",
   "lastmod": "2026-10-30"
- },
- "/roas-calculator": {
-  "hash": "57a18539ef3cf69ccd13761a7f9e46419436e0861c6292e7e3b56b8301d016c0",
-  "lastmod": "2026-11-03"
  },
  "/roas-explained": {
   "hash": "91e04bdf8aa3e17ba341f5afdb1c969c6ac07af474546f83441a5942c9d8962a",
@@ -676,8 +672,8 @@
   "lastmod": "2026-11-03"
  },
  "/running-a-small-team": {
-  "hash": "75b41475b1a7b3de4e4fb987a508d4af16be1b32588cef8b772462ee919b0656",
-  "lastmod": "2026-11-05"
+  "hash": "2dab5f08dbe63aa1bdfde1068eb14d7c466daad59d8a628afafb9f9a544932c1",
+  "lastmod": "2026-11-06"
  },
  "/runway-calculator-startups-india": {
   "hash": "f5e73f48241eadff73c393eecd187611192b9c1ac46ff70bfd7313997461df4d",
@@ -688,16 +684,16 @@
   "lastmod": "2026-10-26"
  },
  "/salary-take-home-estimator": {
-  "hash": "7a2104a50a350d8f32abb8939a45f191e24f63c9bd1f38ba867903c05f7d4374",
-  "lastmod": "2026-11-03"
+  "hash": "be119198899d863cde7cf044649fa09afa232e7a0fd4c4c95e64a5eb6957ce2c",
+  "lastmod": "2026-11-06"
  },
  "/sarvam-87-percent-indic-ai-funding-2026": {
   "hash": "6b87fd4031ced2371d95f4defe4ac05768e405cb9801837c5f6dd557c9417d53",
   "lastmod": "2026-10-28"
  },
  "/savings-goal-planner": {
-  "hash": "a5f287e3f1fc23e8f4e2019199bd1b33cf6dfb1be3359a66c81c1a66b82148a0",
-  "lastmod": "2026-11-03"
+  "hash": "7e0c4dfa0675dd71fc1a46be23f077dcdd59fa02d7525bf82aeea32d774595dd",
+  "lastmod": "2026-11-06"
  },
  "/sebi-sme-ipo-overhaul-market-cap-profit-rule-2026": {
   "hash": "c5ff9073b9a851e6d010aaa3de19a160977c7a53e41a4b3579a82bd4e01a6a54",
@@ -712,8 +708,8 @@
   "lastmod": "2026-10-30"
  },
  "/shark-tank-pitch-check": {
-  "hash": "d92d52c450682f8bff3d73a783e284276636c23e0f66812248c99ecc0adbbe6e",
-  "lastmod": "2026-11-05"
+  "hash": "12643752a26bbe965ae1b6421e136602b64b2fcf4ce9511e21d7c2cc422792f8",
+  "lastmod": "2026-11-06"
  },
  "/shark-tank-usa-polygons-foldable-spoon-deal": {
   "hash": "877b655dc7e5e7fe51454bf6389b984947f8d8ef574606835ca1d5018cc35808",
@@ -724,8 +720,8 @@
   "lastmod": "2026-10-30"
  },
  "/simple-interest": {
-  "hash": "3be5854845564605a9890008b1dfa88bfe3b64860eeddbc4d2517edc3d1e5dbf",
-  "lastmod": "2026-11-03"
+  "hash": "ae1e50ca47472f2be8fb65c9cbe5caa27bb977064aaaa8075a153784b706e25e",
+  "lastmod": "2026-11-06"
  },
  "/sip-calculator": {
   "hash": "5ceb7ef5e694a9a04df6de15082dea68eae37003f64a20a90160eec1935e1155",
@@ -756,32 +752,32 @@
   "lastmod": "2026-10-30"
  },
  "/tam-sam-som": {
-  "hash": "84353b6563df77310b462ed0167e838e9d718b6d89a28e59e85c366c305d6da0",
-  "lastmod": "2026-11-03"
+  "hash": "e6102de71a24dc84988fc2a5575ec463a72e248b5c569c8199563461e5788437",
+  "lastmod": "2026-11-06"
  },
  "/tax-and-wealth-toolkit": {
-  "hash": "1872de099d9f21229882076100beb5d01671d511e0a7c260b8613406fae62a99",
-  "lastmod": "2026-11-05"
+  "hash": "187c96746b61b902e75aafd34dc3dac1d92e2c8446e97cd5ffbdb0e9bc337736",
+  "lastmod": "2026-11-06"
  },
  "/terms-and-conditions": {
   "hash": "96a275f7119d7e6b6190fc708a4c0ef227ba022babf2ae7c17b9c35988fd648e",
   "lastmod": "2026-10-30"
- },
- "/tip-calculator": {
-  "hash": "83a275ffeff3f8c1a67548866773a66af3ba15114a35b716226f819319ddec7d",
-  "lastmod": "2026-11-03"
  },
  "/upi-mdr-deferred-after-diwali-what-shops-pay": {
   "hash": "5cf5df0e0b4288a2613b791f6bcdc0e46dcd1a32d93694764a3e588e71028ad1",
   "lastmod": "2026-10-21"
  },
  "/valuation-and-deals": {
-  "hash": "abd0fbb7318ac0cadec4a1087f2de2cfe83ebfd05eb952b8aee45c5c5449c93e",
-  "lastmod": "2026-11-05"
+  "hash": "82ec4f5545d505c1f3a7c991e4bd522c112b9ee44880911057b61aac48fd8c3e",
+  "lastmod": "2026-11-06"
  },
  "/valuation-multiple-d2c-brand-india": {
   "hash": "cfbcc1be1a3181ea60768d736feddd67241bdad462c340cbce73237431d4431c",
   "lastmod": "2026-10-30"
+ },
+ "/wacc-calculator": {
+  "hash": "bf020bfaa0e8d87d5af45ca699ac95c3742569a01fc26fce0aad510b4c22307e",
+  "lastmod": "2026-11-06"
  },
  "/what-is-ebitda": {
   "hash": "33534b1e8a0f94d5f47b9836f5ed55bbf8fa5a7d59d5c2973e63a0124318f343",
@@ -798,717 +794,5 @@
  "/zodiac-sign-calculator": {
   "hash": "801c35d7a779724198de2de3c3a51cc6fc4bf65634b9c222a20065193574fba9",
   "lastmod": "2026-11-03"
- },
- "https://tankmetrics.in/": {
-  "hash": "4d0347cb1f0f2469fcf7862597406fe931bf2b0b8c4bb27fcd8a434872a132f1",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/about.html": {
-  "hash": "c0899a0faa5de6c9f6836063d6f3c9632dbdd6056bdee2d736d177ab9a874c0c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-aman-gupta-net-worth-calculator.html": {
-  "hash": "580225dde85136836b3627e85eb1ff5ed428dc8c8a53c968523458d750a180d1",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-arpu-average-revenue-per-user.html": {
-  "hash": "96a0ddb8e59e4bcdd8a60a80a03240eb780e738ebdf2be60528a11f2149f6582",
-  "lastmod": "2026-10-27"
- },
- "https://tankmetrics.in/site/blog-boat-valuation-shark-tank.html": {
-  "hash": "4440c6ccc237363b04ef2683758f5421558f2b88462e6d2ad4b37f40dce5cb27",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-boutique-profit-margin-explained.html": {
-  "hash": "762bad81cf5fb9ee8a78f12f9548989075ea276c05781be9b1f3285b7a1b7917",
-  "lastmod": "2026-10-28"
- },
- "https://tankmetrics.in/site/blog-break-even-calculator-rupees.html": {
-  "hash": "f3889d86b9e41c2eb1b881be65134e9f65be8314ffb4df401961273daca7a23d",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-break-even-point-explained.html": {
-  "hash": "af6688f42cd8bcf093d24a692fc288db849ab94adf745571d9e95367b6085794",
-  "lastmod": "2026-10-22"
- },
- "https://tankmetrics.in/site/blog-burn-rate-calculator-india.html": {
-  "hash": "5e4a4a3d8ecb8e463a48448724a5e50374b9abf89f0d98b9efab9369440b54a9",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-burn-rate-runway-guide.html": {
-  "hash": "ae838a1230bbe635617fd525a6701e81bfb4e00ae65c6e9513a6fae58dc4cc26",
-  "lastmod": "2026-09-30"
- },
- "https://tankmetrics.in/site/blog-cac-calculator-india.html": {
-  "hash": "573d284abb2d6b4b61a91a122fbb69f4bc389dd3bd100e3c82c7f69b3996f5e2",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-cagr-explained.html": {
-  "hash": "e699d57b2c969016198e8d10b313059cc49e09bd8969a6f846a114e9cd489fce",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-cap-table-calculator-india.html": {
-  "hash": "25cb293d4b13fb2bc6948edaff55d657db8cdf34244e69676ddbbf935cbde918",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-coffee-shop-profit-margin.html": {
-  "hash": "bce4aaf59e353949655162d7cf72d96019e5f1ffc3e1f63b21348221fec763a0",
-  "lastmod": "2026-10-29"
- },
- "https://tankmetrics.in/site/blog-cogs-calculator-india.html": {
-  "hash": "f26b442c5fbf075da5c26876eee872b9de98986b62a0cc35e80dbebb83461135",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-dilution-calculator-founders.html": {
-  "hash": "59ac9a0180ea1db091ec4be1237a8b6f027929c62f5fdc17c9b6a6f89076a016",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-discount-impact-on-profit-explained.html": {
-  "hash": "c1a64a9a584674334d8c2be25060b4fbed17be2a07285f2921fe1d599c013944",
-  "lastmod": "2026-10-23"
- },
- "https://tankmetrics.in/site/blog-ebitda-calculator-startups-india.html": {
-  "hash": "e20921926f7f9dc6a6b55915709ea9702b3c96e6b9b60baad21a952504020063",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-emi-calculator-2-lakh-loan.html": {
-  "hash": "6880dc1cda1929b06c03ba556804f885a8d6e41c55fc8d84296196ed5a82d054",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-equity-dilution-calculator-india.html": {
-  "hash": "2deb2f160c8c0d23a866819d386603c3d2375ef978412877cf93e4b96df54bee",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-founder-salary-calculator-india.html": {
-  "hash": "c5bbd14ab3633a959ae13766a80708928db239ed53f42648951f5bea978dc26e",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-franchise-roi-explained.html": {
-  "hash": "6865bc11bb7b8fca0c47b693cee91c37f078c98f5f57b8bb2aea70fc468394f4",
-  "lastmod": "2026-10-29"
- },
- "https://tankmetrics.in/site/blog-grocery-store-profit-margin.html": {
-  "hash": "c9ed5ea2467cd6a5f9d0f56b27aebefc163b8bbe9e6e839a1a4592b5b79828e9",
-  "lastmod": "2026-10-30"
- },
- "https://tankmetrics.in/site/blog-gross-vs-net-margin-calculator.html": {
-  "hash": "79a1894c0220415caa2364d7cdc6b2672f6694c1bac6fb2ae5a5e6a76165b20a",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-gst-input-tax-credit-explained.html": {
-  "hash": "ef46ccacfb394c1a290debd8d21034ed896821a22771e6f4d4dfd8971a49d6a7",
-  "lastmod": "2026-10-29"
- },
- "https://tankmetrics.in/site/blog-how-much-equity-to-give-for-1-crore.html": {
-  "hash": "c0effcee5b9195c33fbe02c2eab76a4425e80da089983c88b2501b7476af1ee3",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-how-much-equity-to-give-investor.html": {
-  "hash": "9ae5b2d1b6404fe46aa4d891c389cd21817a2b0bf19e1d579e8cdd5fc0834f9b",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-how-to-calculate-startup-valuation-india.html": {
-  "hash": "502bd465699c8bf886cf373b89bb1fe42672083325f8dabd199c9bf905ff11cc",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-import-duty-explained.html": {
-  "hash": "cd2d07446c237907141e8c3584c6cea56b482caf2d3121edce125cda35fc763a",
-  "lastmod": "2026-10-26"
- },
- "https://tankmetrics.in/site/blog-landed-cost-meaning.html": {
-  "hash": "007ee9120bb5c79dfdc0d423eed965e5c9f7dcf48d65d8592c62d915e7ef8883",
-  "lastmod": "2026-10-30"
- },
- "https://tankmetrics.in/site/blog-lenskart-valuation-calculator.html": {
-  "hash": "ef98c8f14577dd78d972e5101988a8214e714296bd208568150d301926556752",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-ltv-cac-calculator-india.html": {
-  "hash": "052c1efa3adc40529716ff171ac485b52cf44a84956eb1f86d160969db91096c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-ltv-cac-ratio-explained.html": {
-  "hash": "f5cfa9bf69772bcc5400cd6ee01dd5f9b5ba1f767dc99b2de578c9a7b996d7a6",
-  "lastmod": "2026-09-22"
- },
- "https://tankmetrics.in/site/blog-marketplace-fees-explained.html": {
-  "hash": "6a4cb70971bb65f6d38edc948ddda4758ab4f7a961764c4a2a891d61e7008fa9",
-  "lastmod": "2026-10-21"
- },
- "https://tankmetrics.in/site/blog-markup-vs-margin-explained.html": {
-  "hash": "9b38e454a07d7ac3a30260572c210ebdb039fd58a34808d2a172e6b11911c1bd",
-  "lastmod": "2026-10-21"
- },
- "https://tankmetrics.in/site/blog-monthly-burn-calculator.html": {
-  "hash": "057be6c6c04068b0641bd87ca1b3da2288b3eeec91a5df4c364105e36d8999c1",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-pharma-distributor-margin-explained.html": {
-  "hash": "b0da2784a3033936b84cc9db3c33c19ea0a58b6c67d40a3fc172330789b190bc",
-  "lastmod": "2026-10-27"
- },
- "https://tankmetrics.in/site/blog-pre-money-post-money-valuation-india.html": {
-  "hash": "6c30c44aa4f4f3bcea2e8bde28dac97049e46f91225b825074645ee8fa17d793",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-profit-margin-calculator-rupees.html": {
-  "hash": "99b4ca22f25d6205ce06625ed2e5a18f21ccd500f4b4d26362d6b2758d0bae05",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-revenue-multiple-calculator-india.html": {
-  "hash": "98cb588a20ced1b4431d1f204e5859e39b41737c360040ad001ee36c544fb640",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-reverse-pricing-explained.html": {
-  "hash": "3ce472f99e4b714d443c63eb58283025206784a0d1072f0290cbca0ebf01ae7a",
-  "lastmod": "2026-10-30"
- },
- "https://tankmetrics.in/site/blog-royalty-deal-calculator-shark-tank.html": {
-  "hash": "4691146c78a7629ca0046227d786541e21adfbe3f293197f0186987ed7a0fcf4",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-runway-calculator-startups-india.html": {
-  "hash": "f5e73f48241eadff73c393eecd187611192b9c1ac46ff70bfd7313997461df4d",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-shark-tank-india-deal-calculator.html": {
-  "hash": "1ce9b760977cd85c146ce186a0ee74ef9da99bf09798950e81e14f80ddc7dfe1",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-shark-tank-india-pitches-valuation-list.html": {
-  "hash": "202ad37cf0a7f2ba4eaa0861f7db42fb7813a79076c154763f21c0c99fae6b46",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-shark-tank-valuation-calculator-in-crores.html": {
-  "hash": "3426d7e0433bf811a3f025ad0510296adf6ebaafe90bcf7b7885ade663a48eb0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-startup-valuation-calculator-india.html": {
-  "hash": "2dc92c8ec891e41f7ca4f1672444d956a4a408ab449eaeadaa4f3bf72123bf04",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-startup-valuation-explained.html": {
-  "hash": "c8e10aeec21d79a1ee015fc9845ad2db01202d3398ea3c42ac81152c7821da51",
-  "lastmod": "2026-09-26"
- },
- "https://tankmetrics.in/site/blog-sugar-valuation-shark-tank.html": {
-  "hash": "2624b9bab3cc0922068c7ee79de12ff7e33b3564e03f016ecdfcc0fb7e1c66b0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-valuation-multiple-d2c-brand-india.html": {
-  "hash": "cfbcc1be1a3181ea60768d736feddd67241bdad462c340cbce73237431d4431c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/blog-what-is-ebitda.html": {
-  "hash": "33534b1e8a0f94d5f47b9836f5ed55bbf8fa5a7d59d5c2973e63a0124318f343",
-  "lastmod": "2026-09-18"
- },
- "https://tankmetrics.in/site/blog.html": {
-  "hash": "fd48e5f5bf6d28d06e2d69a37a4aa4813453ff64b65a18cd3d404e9d968761c3",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/contact.html": {
-  "hash": "0140d0695d3367e497a642c309afe99cd8aa6723fc1e7b0156c216e2d64ef099",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/digital-products/indian-business-financial-model.html": {
-  "hash": "65ee629f02018128035d2e22255a234cdbb5dff45246d09a7ac3070a591f473b",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/disclaimer.html": {
-  "hash": "788f0a95eb546b64f8db817b8d4e1c77f73a094d172b4a23694e5562d894595e",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-amazon-festive-sale-seller-sales-3-5x-first-week.html": {
-  "hash": "c1cb4313e027d79ec636a17e7f4af4c9045728a7642ac398f2f6f96f145f9066",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-export-certification-cost-support-micro-exporters.html": {
-  "hash": "5e3104143434b6e95dd494b0fb74fec39721bf19f1682c20719462d8d0c0ce39",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-festive-financing-msme-invoice-discounting-20000-crore.html": {
-  "hash": "bccc70b7fd49def53311f1ada79d0a1794f6e10162244662e428e1e1a1804698",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-gst-council-october-2026-small-business-changes.html": {
-  "hash": "5e0f7888091bcb4c53e3f22cf5562379227c2eeefd2069e96dcc2ecfb77023ec",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-gst-inverted-duty-refund-input-services-november-2026.html": {
-  "hash": "2a2189a91c964e20f8f29bac75854b59ce231769c82ffc3d208ee5e37fafdc45",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-gst-november-1-2026-discounts-credit-notes-refunds.html": {
-  "hash": "c249e3f572e6bfdd7c310d7a360fb9a0a48c7c8255c111bf10915a40230e5637",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-gst-rule-14b-ecommerce-sellers-november-1.html": {
-  "hash": "a41a6819c1d81535c315b064638a031533a40dd9e3190dd51b507c8a350656ec",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-india-startup-funding-october-2026-flat-year.html": {
-  "hash": "f48ff078b32a9d5d60350ff43cf85f09a564b1bb77b97fa4e95882e51a1b6ce6",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-khosla-ventures-even-healthcare-india-bet.html": {
-  "hash": "84ce04e201607a8111dcd305da8af64731d5213f9e5f09fcba2b4bb0fc070471",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-marketplace-fees-india-sellers-guide.html": {
-  "hash": "855ebdc5f44443a873658b8a867a025899e0dbe75062eae55a0a0c392e757a68",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-nvidia-backs-simplismart-100-million-valuation.html": {
-  "hash": "e91904c79391ba6e6b7a901503ac9cb1613d59b772b7e217f065e5e904983181",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-quick-commerce-franchise-dark-stores-small-cities-2026.html": {
-  "hash": "07cb8999f197a7cbe74f41f59ba6791aa6b3f97b90a856b193e9405322e7134a",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-rbi-rate-hike-october-2026-what-it-costs-your-loan.html": {
-  "hash": "94344cf501c5b0934685adc80c92ececb36234e53de47666fd895bcfcfc812f7",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-relief-scheme-exporters-extended-march-2027.html": {
-  "hash": "0235a59d0e6749d488430e34338294722c51b030ab200924d406eed0f6fec2a5",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-rupee-falls-to-95-22-what-it-costs-importers-exporters.html": {
-  "hash": "3d16fed256f4aab3d6816115e6adc7722b6f187b995ac4ab22cf1827dbadc9a0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-sarvam-87-percent-indic-ai-funding-2026.html": {
-  "hash": "6b87fd4031ced2371d95f4defe4ac05768e405cb9801837c5f6dd557c9417d53",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-shark-tank-usa-polygons-foldable-spoon-deal.html": {
-  "hash": "877b655dc7e5e7fe51454bf6389b984947f8d8ef574606835ca1d5018cc35808",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news-upi-mdr-deferred-after-diwali-what-shops-pay.html": {
-  "hash": "5cf5df0e0b4288a2613b791f6bcdc0e46dcd1a32d93694764a3e588e71028ad1",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/news.html": {
-  "hash": "9cade45181ad7655965ffbb723d58e286cb0e52d095856051c52b26ebfbd08c9",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/privacy-policy.html": {
-  "hash": "1c378d76293f1764bee4d6648d80a25b99701acaa7db9175f9fa5b56f79eea40",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/refund-policy.html": {
-  "hash": "9c546d91681a046c05912fef97be87d42261ec78c3154247811873bdde9e5549",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/terms-and-conditions.html": {
-  "hash": "96a275f7119d7e6b6190fc708a4c0ef227ba022babf2ae7c17b9c35988fd648e",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/age-calculator.html": {
-  "hash": "3437d27a5bbbdf00526fdf3db9374cfa6584b1c02f4b4b889195050044c1a264",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/agency-profit-margin.html": {
-  "hash": "fe904d40c3f5cc81f9fa6a1fda4bc452a4ef7fd691539b9b4851f2ab5652c382",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/arpu-mrr-and-arr.html": {
-  "hash": "07b4469a145a4bf5fbb880f5b1c7ceb733eb1c4cab6ff5c230d7a0c4b19e0510",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/ask-calculator.html": {
-  "hash": "24f3d94e4feda8b9a18c000c19e34ef5047ef97a4155139e3c9b6a22facdbfa7",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/average-order-value-aov.html": {
-  "hash": "f4ad445002eaa1ef8fbb25fca9deb44d773e85f163050cccc6723a2879bdadcb",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/baby-name-number-calculator.html": {
-  "hash": "0460aec4f843100d2a8ef8262066b75a23321ff5112cb976546878acb1f3ee59",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/bill-splitter.html": {
-  "hash": "5f356a530963724a5dd8bd632a066880b278f004c36c7e1a0a988e81e42f8414",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/bmi-calculator.html": {
-  "hash": "d27730d397adb9b056b102bfc1bc8b5a5f9ac1d59435cf657bcd969cc043be1f",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/break-even-ad-spend.html": {
-  "hash": "f879f9af31c113333c53e73a32f1fdf6fa54b6568ee1dd9d69852148ba12c19f",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/break-even-point.html": {
-  "hash": "0c3a488c64a20f495c07fd84ee662b08ce4e28efa8d6b83806d2930df90bb6d7",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/brokerage-agent-commission.html": {
-  "hash": "f6afa3a85ec2d0c8b54f1335e758b73e46c755a25c24220f5fc1bdb3ad693e6d",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/built-up-area-vs-carpet-area.html": {
-  "hash": "f7bd0f4d0a12d814002632acdfea06e855b7e4ee1dd82ee6009573a228a69887",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/burn-rate-and-runway.html": {
-  "hash": "2324f1bea3583cabb263732404bf478647b81d433a521a1b3bc14628cb92b765",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/cac-payback-period.html": {
-  "hash": "38495f00f701db8082db39a08c90ed82af3fcbcb7071f98d0aac64b19aa8ae3b",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/cagr-compound-annual-growth-rate.html": {
-  "hash": "4b4e4d0e34c6252bafd7b82a605fa82accf734c698632ce510cc96c6dad5cef7",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/cap-table-and-esop-pool.html": {
-  "hash": "cf58a24a46e4e01cbb3abdb19274b2776d7b88da11125546a223efbc710f0740",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/cash-conversion-cycle.html": {
-  "hash": "1e40a79bbdf09d7d8671d8e3d207ab1bab92ec417f39e70037b0e0067be2e7af",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/churn-rate.html": {
-  "hash": "0474f26a311880694867f8f35fcc01bec0de2168e03d00539089df6a2d1d92bc",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/client-acquisition-cost-cac.html": {
-  "hash": "a37a2b346c5146314929e6571b4c4edfad93b3420647dcaf7f4b4de361ccce10",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/client-lifetime-value-ltv.html": {
-  "hash": "c8fe0974a3c14115771fda5154df35f3023a4ccc7cad557a2c3eff6537a240a5",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/client-profitability.html": {
-  "hash": "248ed36afb84051a29e0660a58dd3c253a21ecc40aa5ab4f30ff2cb46dcdffd2",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/co-founder-equity-split.html": {
-  "hash": "be0f0a57011c418bb2f4d21274ed57f5ce1eb5a842744d8905ce6c0a1345b35c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/cod-and-rto-loss-calculator.html": {
-  "hash": "f8570021d328bb8777a4676ce75fca521dcbf0d26a520a3c310da3f3c21f12fc",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/compatibility-calculator.html": {
-  "hash": "742c4571935c063e3bda541e2894b6dd0f2564c7307b1d081dd914428eb6b2bf",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/compound-interest.html": {
-  "hash": "8f71d9b78d26db94a62ea11a766e2b268e7baed316ca11e12c6f93c6509712f1",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/contribution-margin.html": {
-  "hash": "9948e96ec76cd30dfb7950b160dcfa25f00f7b00351c56e5c4a4024ff4eac1e2",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/cpc-cpl-cpa-and-conversion-rate.html": {
-  "hash": "de28a36f706bcfd36ec056bc55984978b1017af725d8bd48255bd700f14f810c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/cpc-to-cpa-converter.html": {
-  "hash": "a93f77391a5789d496bfebb1068e18e20e67d7f42f795b04b7ef7057c87d5551",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/cpm-to-cpc-converter.html": {
-  "hash": "7d4aea08c29c96e8347284b06281aa3a858dbed32a21cafc406ba13902c16f21",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/customer-acquisition-cost-cac.html": {
-  "hash": "e036f836be21b31b851b76565ebfd18e844a337ca87001919dabf0770c1e7802",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/customer-lifetime-value-ltv.html": {
-  "hash": "46bf923dfbfe9c11a42b8030324d0845a5d845060a55cf825a69044dcb68bfa5",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/days-between-two-dates.html": {
-  "hash": "91356ea4efb757a8f824f8f0acd3e4bba479cdca1ad35a36983a087ad32de6ce",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/debt-equity-deal.html": {
-  "hash": "28fbc317472ed6f4678656d905fcf374e0c7a6d9990240ad2f1d4ec15b8179a0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/dilution-calculator.html": {
-  "hash": "29bf5c55380fa9c3f8a69e08a0476f8fb47b05be3c3b3b07dd3adb8bb7c53fbf",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/discount-calculator.html": {
-  "hash": "1af1e51695dc90f4919976265670c851a6813283f70de2b64603fcbebc6d5ab0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/discount-impact-on-profit.html": {
-  "hash": "7cef8f59e45f2c2ea81b8f13470c249775338fc29c8b7b6209b5cc6dba25a95d",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/distributor-and-retailer-margin.html": {
-  "hash": "146ec436d356c4612007c58b5fafd68546027db11b65f241ff394910740d6362",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/down-payment-calculator.html": {
-  "hash": "bc969df1eb68e6dbf32aeda66d0e158e6f2679be7f3a15a97a30bd9f9cf3f83d",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/ebitda-and-margin.html": {
-  "hash": "ff222145aa8a3dc540f8295af815a9918966fc29dc262ee3b51ef45e1be978ad",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/ebitda-multiple.html": {
-  "hash": "95c93c7e64510a9432c7edd6fed8f025dea356592a50fc336131907e98653681",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/employee-cost-ctc-calculator.html": {
-  "hash": "f6c85223a8442c5992b9b462a3e98e53bf6e421f6bd77c73ac94fb965740206d",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/employee-utilization-rate.html": {
-  "hash": "e2e036abc1767814480d4d1c1154ab6c86f6dc27cdd9d5acfd057cf094c4e815",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/epf-calculator.html": {
-  "hash": "5442769a732b5c48679dcee4ef5e08fe6c0cfa902668eb7b50a5ef2667f9519a",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/exit-calculator.html": {
-  "hash": "39f7ae2ccf2eaeb0cd8fffe8c95f2d96834210e578c6fa1aaa2ebe54051d3a4b",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/fd-fixed-deposit-calculator.html": {
-  "hash": "2ca940ff219fdefe3743e54205a3061b6f324fe7f82be8344b9d3052ffa5020e",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/franchise-store-roi.html": {
-  "hash": "ff85d6bddd6541cf568e5ab30504803b839c72af902ca51ecf5994203716a0a0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/freelancer-hourly-rate.html": {
-  "hash": "6bbdc40114f781c437fd3279aef7c0a72a6dc7ef3799af27d9437e5a27515630",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/gratuity-calculator.html": {
-  "hash": "e2e6649fc5471a745082a737c7e841c21c019bf7c23abb30fa44bff6669f7df0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/gross-profit-and-margin.html": {
-  "hash": "ee2024147938d740a939f46a1506a537b1911ced483f8373714968bb0ffd9af0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/gst-calculator-tax-and-wealth-toolkit.html": {
-  "hash": "7b2d538d35afc31ecb5b5b6e8d0b4480cf4d175b751f99ea93427d984c29df9a",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/gst-calculator.html": {
-  "hash": "6fd1315aaa574514798475dd025bcd5e8b62c4b19a86a1198675ca3db5513079",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/home-loan-emi-calculator.html": {
-  "hash": "71b56e92195b74e546f2d932f95d4f60d155a336959c831785c85f1951b3f9e2",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/hra-exemption-calculator.html": {
-  "hash": "316913f622dc6d51694eed79f48eddd16bf1e7e4b4bfb16aed8b844b0657268d",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/implied-valuation.html": {
-  "hash": "8f6b69af0f70472da7a64ba5c079b6329f4b6622e133417a487224003cd766f9",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/import-duty-and-customs-calculator.html": {
-  "hash": "f9c34d1d85ec401a50da89682ab5ac6ac78177bf0c0efe531e4b628bcd86dbd3",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/income-tax-calculator-old-vs-new-regime.html": {
-  "hash": "03734dc9227839782db7b7af4b70b38504026b8f27a6152400f3806c885cd2b3",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/land-area-unit-converter.html": {
-  "hash": "75d5b7269058a9800d78cbc98e3c8a23161c5babe3839a55435cb339ed12b2a5",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/landed-cost-calculator.html": {
-  "hash": "2b33640ab71821f9c7309a6a05ece7e6f76bb7f25a5f77071503dd54e5ac82d9",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/loan-emi-calculator.html": {
-  "hash": "426da3215198d1eb2e3ecce424913bfc313cd81b781a28536bfbc7d7df8f54aa",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/love-calculator.html": {
-  "hash": "473b959ca16bbbeb507569d56ab3c0ca9ba81c9b437c8d910e0628d280beb75c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/ltv-cac-ratio.html": {
-  "hash": "8f39e1364f2a8da5717cdb72344528a46d5de39a0dab7e8659bbc647279f5805",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/lucky-number-calculator.html": {
-  "hash": "759358813ded8745b6a45fe80bf63cbe45497d6d4ac91345efd035b5c0bfdd24",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/market-share-calculator.html": {
-  "hash": "454c593db012cfb1facddadd2fa5f0784a908c972d1db114025e7498fc9c48ab",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/marketplace-fee-calculator.html": {
-  "hash": "d755602a96fde0f80efb52f75e52ad4dfbf96d8612227adbaa1ab8411259e8bf",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/markup-vs-margin.html": {
-  "hash": "5e4a1173616383612885e708d39c95fc4f4bd6ef802465169c33bf76510c6dda",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/moic-and-irr.html": {
-  "hash": "544dbaaed618ab4f35b5f5247a6235b8ea04cff72991b1a27b667f2b112b2e5c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/month-on-month-year-on-year-growth.html": {
-  "hash": "ff643c196de4241ffb67a567472bb3f2bf8a90dc330e274a5057946f8d076652",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/mrp-reverse-calculator.html": {
-  "hash": "fdfdc99dee3e51db525b45a6bad8c22cb6130d8fc7ee09f8a661485503d185f5",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/net-profit-margin.html": {
-  "hash": "48a9a01aa76f0e1f0a12fbf66b453efcfee44db5b84eef9ed5a4d23164014de4",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/nps-calculator.html": {
-  "hash": "d5ddab2125471bc655978a0ee974f368515d83c89abb2f0554f98046d143b203",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/number-to-words-indian.html": {
-  "hash": "70b87f144b6fe06bcf85bc6dced88140ae14123d823ebc8a6ad43cf76d5be927",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/numerology-calculator.html": {
-  "hash": "0b317b2ed08bbcee1b43192f49d92c270f26ffffd926beedbb5c5658e79b2b53",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/operating-margin.html": {
-  "hash": "98c3ae52cef4ec841b2992c45ce82a0c0547a1174c2e1a1370a86903a75d5f31",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/percentage-calculator.html": {
-  "hash": "e60051a5a9e7db81bd920f4c22add9ce2f05e0a6debb2da9c2b469e9b4f4655a",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/ppf-calculator.html": {
-  "hash": "e5dbe6ed3f0690f191c4978f6480b964c029af14904a71233e37ce538c924089",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/pre-money-and-post-money-valuation.html": {
-  "hash": "c676825d45ebac613d4cd1a0edee75b0314d145c0f205a564d30c3f3bf22e7d4",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/property-roi-calculator.html": {
-  "hash": "dadf44beb8bf68c0e7a5668b27fb9d7d4fdc9e1dd34dace61005d8beb1ac3aae",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/property-valuation-calculator.html": {
-  "hash": "a1eede0e5b313feb64cb9ad6405565d45c2eac9d592dfc394b17a85f2b898b8c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/rashi-moon-sign-calculator.html": {
-  "hash": "5c9e528a97a96e3cf0cc0ca0be2b2a458f8e63fb4ca23e8b5efc8ed8dbc34955",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/rd-recurring-deposit-calculator.html": {
-  "hash": "c77fb130dc26b6cd0378398abc24588b7471012d0116c370ff22574e748aa755",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/rent-vs-buy-calculator.html": {
-  "hash": "36edb5e262e9156a29375a3ab7e6a939800c761f618ebec09dadf90b7596d6eb",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/rental-yield-calculator.html": {
-  "hash": "59f0e06e45fe2f038bacdf959ff6fa0838aca39935528bd4ad72704f1e8c0b2e",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/repeat-rate-retention-and-churn.html": {
-  "hash": "1ff203191cddee14f923a651bcdba47e3ee7109771dca59c9243e503a59517f7",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/return-on-ad-spend-roas.html": {
-  "hash": "407e551416353520f5b5513b8aac6c877fda38797395f1e872282294688abbe2",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/return-on-capital-employed.html": {
-  "hash": "723356c3ea1eef44f52f05e5d04b40aef1afd2b65d2472892c9afeb7167d1de3",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/return-on-investment-roi.html": {
-  "hash": "370cadf03a0cd86c8b5ad74c32bd7d19d4918045da80e411f312bd95acaeb722",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/revenue-multiple.html": {
-  "hash": "85a5f8764a3af2bb33f1ca5a36a8f92e05a5773286927006d72d22558ffa5932",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/roas-calculator.html": {
-  "hash": "7e565a3b38f4722387a03a56a260b4f622cb073729667912583b760abb119126",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/royalty-deal.html": {
-  "hash": "a93d66998afb6a076135a5ad6d86dff7c5469f04088ece825743c81ddc6bacf6",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/run-rate.html": {
-  "hash": "55f069e059742477b21fe7d4b500f55702dbc53288dd9d5c05d9c67e1271263c",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/salary-take-home-estimator.html": {
-  "hash": "7ebfdc3703b0d06eaf55a391679a3f4e7f787dc2e50d99b3812a8d9ddd49f4d0",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/savings-goal-planner.html": {
-  "hash": "9bede9595609bd48f5bd853b594e1763f90fb0802abe1fc977ecccb6764d4059",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/shark-tank-pitch-check.html": {
-  "hash": "6eac742d3dc4961d66850bbe79656b1f8d7b04f88d4f9d07670bbfa5f182b2ba",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/simple-interest.html": {
-  "hash": "cc184014c882e391f66fdafb84c863da2e75c55e75e875530bf5f22696add5a7",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/sip-calculator.html": {
-  "hash": "c697eb008b2f32f78c77ea6234496dc398b945e9bed21bed2688d6526cbd6f0b",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/stamp-duty-calculator.html": {
-  "hash": "6f213cbc3c1f89ceadda4e2120cca6621bf8ef06191726dab5d86d39a2fe8627",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/straight-line-depreciation.html": {
-  "hash": "49a18dd5eb011611144d75633bec93eb3302ebef205aa77e4095fc24065ceacb",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/tam-sam-som.html": {
-  "hash": "985604bbd20b53c3fd878ba18e22af4eba1db1f3e5977acbc3afc4c9e74655cd",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/tip-calculator.html": {
-  "hash": "3cb170d49537f0a97acdb60b117c51ebb5b6f0fb5d083103d6ac65adddcf651a",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/working-capital.html": {
-  "hash": "8ca667ba154f3b1dd02910fde2227629ce7ab38032df12fc5603b5d88b163da2",
-  "lastmod": "2026-10-31"
- },
- "https://tankmetrics.in/site/tools/zodiac-sign-calculator.html": {
-  "hash": "1f9759bd80b2c615d7369007c37708e5ae521c29c5cc92b42c3817e8bf7a18ce",
-  "lastmod": "2026-10-31"
  }
 }

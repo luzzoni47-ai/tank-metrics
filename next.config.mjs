@@ -18,6 +18,15 @@ const htmlRedirects = Object.entries(urlMap).map(([clean, file]) => ({
   permanent: true,
 }))
 
+// Calculators that were published and then retired (see tools/clean_urls.py).
+// Their clean URL and its .html twin both redirect to the surviving page, so a
+// URL Google has already indexed consolidates instead of 404ing.
+const retired = JSON.parse(readFileSync(join(here, 'tools/retired-urls.json'), 'utf8'))
+const retiredRedirects = Object.entries(retired).flatMap(([from, to]) => [
+  { source: from, destination: to, permanent: true },
+  { source: `/site/tools${from}.html`, destination: to, permanent: true },
+])
+
 /** The static pages under /site are the site of record, so they win over the
  * unused App Router blog scaffold that also declares /blog. */
 /** Content Security Policy.
@@ -79,6 +88,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      ...retiredRedirects,
       ...htmlRedirects,
       // /site/index.html is served directly as well as /, which is the same
       // page twice. The canonical tag already points home, but a redirect is
