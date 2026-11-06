@@ -73,6 +73,8 @@ echo "==> add_pagination (phone pager on the listing pages)"
 python3 tools/add_pagination.py
 echo "==> add_site_verification (Google + Bing tags on every page)"
 python3 tools/add_site_verification.py
+echo "==> fix_site_fonts (home page typography on every page)"
+python3 tools/fix_site_fonts.py
 # Must be last of the page writers. wire_crawl_graph wrote the sitemap with a
 # placeholder lastmod because every step after it rewrites the pages; this is
 # the step that hashes the shipped files and puts the real date in.

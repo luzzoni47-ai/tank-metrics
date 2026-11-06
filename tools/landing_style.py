@@ -6,9 +6,10 @@ than 600 lines of CSS.
 
 Everything is scoped under `.lp` (landing page). The site's global style.css
 styles bare `h2`, `.card`, `.grid` and `.btn-primary`, so an unscoped rule here
-would quietly restyle the 127 pages that share that file. The scope also lets
-this page use Poppins throughout while the rest of the site keeps Gloock
-headings, which is what the product's own brand asks for.
+would quietly restyle the 127 pages that share that file. The page uses the
+same two families as the rest of the site (Plus Jakarta Sans for headings,
+Inter for text), because Sir asked the whole site to share the home page's
+typography; only the colour tokens stay the product's own.
 
 Colour tokens are the brand palette, not the site palette: the product has its
 own navy/blue/green/yellow/red and a dark hero, and it must not inherit the
@@ -27,13 +28,13 @@ LP_CSS = """
   --lp-shadow-lg:0 2px 4px rgba(11,16,32,.05),0 24px 56px rgba(11,16,32,.12);
   --lp-wrap:1160px;
   background:var(--lp-bg); color:var(--lp-ink);
-  font-family:Poppins,sans-serif; -webkit-font-smoothing:antialiased;
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
 .lp *{box-sizing:border-box}
 .lp h1,.lp h2,.lp h3,.lp h4,.lp p,.lp ul,.lp ol,.lp li,.lp figure{margin:0;padding:0}
 .lp ul,.lp ol{list-style:none}
-.lp h1,.lp h2,.lp h3,.lp h4{font-family:Poppins,sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+.lp h1,.lp h2,.lp h3,.lp h4{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1.15}
 .lp a{color:inherit;text-decoration:none}
 .lp img,.lp svg{display:block;max-width:100%}
 .lp .wrap{max-width:var(--lp-wrap);margin:0 auto;padding:0 22px}
@@ -57,7 +58,7 @@ LP_CSS = """
 /* ---------- buttons ---------- */
 .lp .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  font-family:Poppins,sans-serif;font-weight:600;font-size:15px;
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:600;font-size:15px;
   padding:15px 28px;border-radius:999px;border:1.5px solid transparent;
   cursor:pointer;transition:transform .18s cubic-bezier(.34,1.56,.64,1),
   box-shadow .18s ease,background .18s ease,border-color .18s ease;
@@ -249,7 +250,7 @@ LP_CSS = """
 .lp .demo-head p{font-size:12.5px;color:var(--lp-muted);margin-top:3px}
 .lp .tabs{display:flex;flex-wrap:wrap;gap:7px}
 .lp .tab{
-  font-family:Poppins,sans-serif;font-size:12.5px;font-weight:600;cursor:pointer;
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:12.5px;font-weight:600;cursor:pointer;
   padding:9px 15px;border-radius:999px;border:1px solid var(--lp-line);
   background:#fff;color:var(--lp-ink-2);
   transition:all .16s ease;
@@ -448,7 +449,7 @@ LP_CSS = """
   box-shadow:0 0 0 3px rgba(22,120,253,.16);
 }
 .lp .licence-form button{
-  flex:0 0 auto;padding:14px 26px;font-family:Poppins,sans-serif;
+  flex:0 0 auto;padding:14px 26px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
   font-weight:600;font-size:15px;color:#fff;background:var(--lp-navy);
   border:0;border-radius:999px;cursor:pointer;transition:background .18s ease;
 }

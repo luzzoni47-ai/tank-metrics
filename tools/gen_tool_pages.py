@@ -450,7 +450,7 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
 <link rel="canonical" href="{BASE}/site/tools/{slug}.html">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <meta name="theme-color" content="#FF9933">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/site/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/site/style.css">
 <meta property="og:type" content="website"><meta property="og:title" content="{titles[c['id']]}"><meta property="og:description" content="{desc_for(c)}"><meta property="og:url" content="{BASE}/site/tools/{slug}.html"><meta property="og:image" content="{BASE}/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Tank Metrics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{titles[c['id']]}"><meta name="twitter:description" content="{desc_for(c)}"><meta name="twitter:image" content="{BASE}/og-image.png">
 <script type="application/ld+json">{json.dumps(faq_ld, ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(app_ld, ensure_ascii=False)}</script>
