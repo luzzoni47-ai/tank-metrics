@@ -361,6 +361,33 @@ var c=document.getElementById('categories');if(c)c.scrollIntoView({behavior:'smo
 
 var track=document.getElementById('mqTrack');if(track)track.innerHTML+=track.innerHTML;
 
+/* The facts band: one fact at a time, cross-fading on its own, pausable. */
+var FACTS=[
+ {i:'\u20b9',t:'A <b>1%</b> cut in price usually needs about <span class="hl">1% more units</span> to hold profit \u2014 but a discount to your <b>gross margin</b> can need far more.'},
+ {i:'\U0001F4CA',t:'Investors read <b>LTV : CAC</b> first. Below <span class="hl">3\u00d7</span> is fragile, above <b>3\u00d7</b> is healthy.'},
+ {i:'\u23f3',t:'<b>Runway</b> under <span class="hl">6 months</span> is a red flag in any pitch deck.'},
+ {i:'\U0001F3E6',t:'A <b>\u20b950 lakh for 5%</b> offer is really a <span class="hl">\u20b910 crore</span> valuation. Always convert the ask.'},
+ {i:'\U0001F9FE',t:'<b>Working capital</b> is not profit. A profitable shop can still run out of cash \u2014 that is the cash conversion cycle.'},
+ {i:'\U0001F4C8',t:'<b>CAGR</b> smooths the ups and downs. <span class="hl">2\u00d7 in 3 years</span> is about <b>26% a year</b>.'},
+ {i:'\U0001F3EA',t:'GST has <b>5/12/18/28%</b> slabs. Getting the slab wrong on a marketplace listing can wipe out your margin.'}
+];
+(function(){var stage=document.getElementById('factsStage');if(!stage||!FACTS.length)return;
+var dots=document.getElementById('factsDots'),n=FACTS.length,idx=0,timer=null;
+FACTS.forEach(function(f,k){var d=document.createElement('div');d.className='fact';
+d.innerHTML='<span class="fact-ico">'+f.i+'</span><p>'+f.t+'</p>';stage.appendChild(d);
+if(dots){var b=document.createElement('button');b.type='button';
+b.setAttribute('aria-label','Fact '+(k+1));b.addEventListener('click',function(){show(k,true)});dots.appendChild(b);}});
+var items=stage.querySelectorAll('.fact'),dbtn=dots?dots.querySelectorAll('button'):[];
+function show(k,manual){idx=(k+n)%n;
+items.forEach(function(el,j){el.classList.toggle('on',j===idx)});
+for(var j=0;j<dbtn.length;j++)dbtn[j].classList.toggle('on',j===idx);
+if(manual)restart();}
+function restart(){if(timer)clearInterval(timer);timer=setInterval(function(){show(idx+1)},5200);}
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+show(0);if(!reduce)restart();
+stage.addEventListener('mouseenter',function(){if(timer)clearInterval(timer);timer=null});
+stage.addEventListener('mouseleave',function(){if(!reduce)restart()});})();
+
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){
 if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},
 {threshold:.1,rootMargin:'0px 0px -40px 0px'});

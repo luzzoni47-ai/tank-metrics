@@ -323,6 +323,23 @@ h1.hero-title{font-size:clamp(2.7rem,6.5vw,4.8rem);line-height:1.02;letter-spaci
 .mq i{width:7px;height:7px;border-radius:50%;display:block;animation:dotPulse 2s ease-in-out infinite}
 
 
+/* Facts band: one Indian business fact at a time, cross-fading on its own. */
+.facts{position:relative;padding:34px 0;background:linear-gradient(180deg,var(--soft),#fff);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+.facts-wrap{max-width:900px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:26px}
+.facts-badge{flex:0 0 auto;display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);background:rgba(6,3,141,.06);border:1px solid rgba(6,3,141,.14)}
+.facts-badge i{width:7px;height:7px;border-radius:50%;background:var(--saffron);animation:dotPulse 2s ease-in-out infinite}
+.facts-stage{position:relative;flex:1;min-height:56px}
+.fact{position:absolute;inset:0;display:flex;align-items:center;gap:14px;opacity:0;transform:translateY(10px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out);pointer-events:none}
+.fact.on{opacity:1;transform:none;pointer-events:auto}
+.fact-ico{flex:0 0 auto;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:19px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 18px -10px rgba(8,11,18,.25)}
+.fact p{margin:0;font-size:15.5px;line-height:1.5;color:var(--ink-2)}
+.fact p b{color:var(--ink);font-weight:700}
+.fact p .hl{font-weight:700;background:linear-gradient(96deg,var(--saffron),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+.facts-dots{display:flex;gap:7px;justify-content:center;margin-top:20px}
+.facts-dots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:var(--line-2);cursor:pointer;transition:.3s var(--ease)}
+.facts-dots button.on{width:22px;border-radius:999px;background:linear-gradient(90deg,var(--saffron),var(--green))}
+
+
 /* ================= SECTIONS ================= */
 .section{padding:100px 28px;position:relative}
 .container{max-width:1200px;margin:0 auto}
@@ -689,6 +706,9 @@ footer::before{
   .tool{padding:22px 20px}
   .tool-head h3{font-size:15px}
   .tool-out strong{font-size:21px}
+  .facts-wrap{gap:16px}
+  .facts-badge{display:none}
+  .fact p{font-size:14.5px}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -854,6 +874,11 @@ html[data-theme="dark"] .badge .flag i:nth-child(2),
 html[data-theme="dark"] .foot-bottom .flag-mini i:nth-child(2){background:#141821}
 html[data-theme="dark"] .logo-mark::before{background:linear-gradient(140deg,#1A2130,#141821)}
 html[data-theme="dark"] .marquee{background:linear-gradient(180deg,#141821,var(--soft))}
+html[data-theme="dark"] .facts{background:linear-gradient(180deg,var(--soft),var(--white))}
+html[data-theme="dark"] .facts-badge{background:rgba(107,166,255,.1);border-color:rgba(107,166,255,.22);color:#9CC0FF}
+html[data-theme="dark"] .fact-ico{background:#141821;border-color:var(--line-2)}
+html[data-theme="dark"] .facts-dots button{background:var(--line-2)}
+html[data-theme="dark"] .facts-dots button.on{background:linear-gradient(90deg,var(--saffron),var(--green-l))}
 html[data-theme="dark"] .cat-count,
 html[data-theme="dark"] .search .kbd,
 html[data-theme="dark"] .field input{background:var(--soft);border-color:var(--line)}
@@ -1010,6 +1035,15 @@ html[data-theme="dark"] .hero-shark-video{opacity:.35}
       <span class="mq"><i style="background:var(--yellow)"></i>CAGR</span>
     </div>
   </div>
+</section>
+
+
+<section class="facts" id="facts" aria-label="Indian business facts">
+  <div class="facts-wrap">
+    <span class="facts-badge"><i></i>Did you know</span>
+    <div class="facts-stage" id="factsStage"></div>
+  </div>
+  <div class="facts-dots" id="factsDots"></div>
 </section>
 
 
@@ -1425,6 +1459,33 @@ if(!searchInput)return;searchInput.value=chip.textContent.trim();filterCats();
 var c=document.getElementById('categories');if(c)c.scrollIntoView({behavior:'smooth',block:'start'});});});
 
 var track=document.getElementById('mqTrack');if(track)track.innerHTML+=track.innerHTML;
+
+/* The facts band: one fact at a time, cross-fading on its own, pausable. */
+var FACTS=[
+ {i:'₹',t:'A <b>1%</b> cut in price usually needs about <span class="hl">1% more units</span> to hold profit — but a discount to your <b>gross margin</b> can need far more.'},
+ {i:'📊',t:'Investors read <b>LTV : CAC</b> first. Below <span class="hl">3×</span> is fragile, above <b>3×</b> is healthy.'},
+ {i:'⏳',t:'<b>Runway</b> under <span class="hl">6 months</span> is a red flag in any pitch deck.'},
+ {i:'🏦',t:'A <b>₹50 lakh for 5%</b> offer is really a <span class="hl">₹10 crore</span> valuation. Always convert the ask.'},
+ {i:'🧾',t:'<b>Working capital</b> is not profit. A profitable shop can still run out of cash — that is the cash conversion cycle.'},
+ {i:'📈',t:'<b>CAGR</b> smooths the ups and downs. <span class="hl">2× in 3 years</span> is about <b>26% a year</b>.'},
+ {i:'🏪',t:'GST has <b>5/12/18/28%</b> slabs. Getting the slab wrong on a marketplace listing can wipe out your margin.'}
+];
+(function(){var stage=document.getElementById('factsStage');if(!stage||!FACTS.length)return;
+var dots=document.getElementById('factsDots'),n=FACTS.length,idx=0,timer=null;
+FACTS.forEach(function(f,k){var d=document.createElement('div');d.className='fact';
+d.innerHTML='<span class="fact-ico">'+f.i+'</span><p>'+f.t+'</p>';stage.appendChild(d);
+if(dots){var b=document.createElement('button');b.type='button';
+b.setAttribute('aria-label','Fact '+(k+1));b.addEventListener('click',function(){show(k,true)});dots.appendChild(b);}});
+var items=stage.querySelectorAll('.fact'),dbtn=dots?dots.querySelectorAll('button'):[];
+function show(k,manual){idx=(k+n)%n;
+items.forEach(function(el,j){el.classList.toggle('on',j===idx)});
+for(var j=0;j<dbtn.length;j++)dbtn[j].classList.toggle('on',j===idx);
+if(manual)restart();}
+function restart(){if(timer)clearInterval(timer);timer=setInterval(function(){show(idx+1)},5200);}
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+show(0);if(!reduce)restart();
+stage.addEventListener('mouseenter',function(){if(timer)clearInterval(timer);timer=null});
+stage.addEventListener('mouseleave',function(){if(!reduce)restart()});})();
 
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){
 if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},

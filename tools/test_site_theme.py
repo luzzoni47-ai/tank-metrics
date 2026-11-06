@@ -195,6 +195,37 @@ def check_home_page_goes_dark() -> None:
     )
 
 
+def check_facts_band() -> None:
+    """The facts band rotates on its own and stays reachable without JS.
+
+    The band is decoration with a point: it teaches one Indian business fact at
+    a time. Two things have to hold. It must not ship an empty stage - the
+    facts are injected by script, so a broken generator leaves a blank stripe
+    where a claim used to be. And the dark rules must cover it, or the band is
+    a white slab in dark mode.
+    """
+    from design import HOME_DARK_CSS  # noqa: E402
+
+    gen = read(ROOT / "tools" / "gen_home.py")
+    check("FACTS=" in gen, "gen_home.py carries the fact list")
+    check("factsStage" in gen, "the facts band is populated by script")
+
+    home = read(SITE / "index.html")
+    check('class="facts"' in home, "the built home page has the facts band")
+    check("factsStage" in home and "factsDots" in home, "the facts band has a stage and dots")
+    check(
+        "prefers-reduced-motion" in gen and "reduce" in gen,
+        "the facts band stops rotating for reduced-motion visitors",
+    )
+
+    for cls in (".facts", ".fact-ico"):
+        check(
+            f'html[data-theme="dark"] {cls}' in HOME_DARK_CSS
+            or f'html[data-theme="dark"] {cls},' in HOME_DARK_CSS,
+            f"home dark block covers the facts band ({cls})",
+        )
+
+
 def main() -> int:
     sys.path.insert(0, str(ROOT / "tools"))
     check_assets()
@@ -204,6 +235,7 @@ def main() -> int:
     check_style_dark_tokens()
     check_dark_mode_actually_wins()
     check_home_page_goes_dark()
+    check_facts_band()
 
     failed = [m for ok, m in results if not ok]
     for ok, message in results:
