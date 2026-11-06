@@ -297,17 +297,17 @@
    ]
   },
   "breakeven": {
-   "what": "A break-even point is the exact sales volume at which a business stops losing money and starts making it. Below it every sale still leaves you short of your fixed costs; at it the rent, salaries and bills are covered; above it each extra unit contributes. It is the first number a lender or an investor actually wants, because it tells them how much room there is between the business's current sales and disaster.",
-   "formula": "Break-Even Units = Fixed Costs ÷ (Selling Price − Variable Cost). Fixed costs of ₹2,00,000 a month, a product selling at ₹500 with ₹300 of variable cost, leaves ₹200 contribution per unit, so break-even is 1,000 units. In rupees that is 1,000 × ₹500 = ₹5,00,000 of revenue a month. Raise the price or cut the variable cost and the break-even falls - that is the whole lever.",
+   "what": "Break-Even Point answers one question before you spend a rupee: how much must this business sell before it stops losing money? You give the tool three numbers — the fixed costs you pay whether you sell anything or not, the selling price of one unit, and the variable cost of making or buying that unit — and it returns the units and the revenue at which profit is exactly zero. Everything above that line is profit; everything below it is a loss you are funding from your own pocket.\n\nThe number it produces is not a target, it is a floor. A Pune cafe paying ₹1,80,000 a month in rent, salaries and utilities, selling a ₹250 thali whose ingredients and packaging cost ₹150, has ₹100 of contribution per plate and must serve 1,800 plates a month just to stand still — about 60 a day. Read it that way and the question stops being abstract: is 60 a day realistic on a Tuesday in monsoon?",
+   "formula": "Contribution per unit is Selling Price minus Variable Cost, so ₹250 − ₹150 = ₹100. Break-Even Units is Fixed Costs ÷ Contribution: ₹1,80,000 ÷ ₹100 = 1,800 units. Break-Even Revenue is those units at the selling price, 1,800 × ₹250 = ₹4,50,000 a month. The tool calls the three inputs fixed, sp and vc and shows Break-Even Units and Break-Even Revenue. Every lever lives in the denominator: cut variable cost by ₹20 and break-even falls to 1,500 units, raise the price ₹20 and it falls to the same place, but each move costs you something with customers.",
    "when": [
-    "You are setting a monthly sales target and want the floor, not the aspiration.",
-    "You are deciding whether to take on fixed costs like a shop or a hire.",
-    "A lender or investor has asked how much you need to sell to stop losing money."
+    "You are about to sign a lease, hire, or take a loan and need the sales floor those fixed costs demand.",
+    "An investor or lender asks how much you must sell before the business stops bleeding.",
+    "You are choosing between two price-and-cost combinations and want to see which one reaches break-even sooner."
    ],
    "mistakes": [
-    "Leaving some fixed costs out of the calculation, which makes break-even look far closer than it is.",
-    "Using gross revenue instead of contribution - what matters is what each unit leaves after its own variable cost.",
-    "Treating break-even as a profit target. At break-even you make nothing; it is the point where the losses stop."
+    "Leaving fixed costs out. Rent, salaries, software subscriptions and loan interest are owed whether you sell one unit or none; a partial list flatters the break-even badly.",
+    "Using total revenue where contribution belongs. Break-even turns on what each unit leaves after its own variable cost, not on the size of the sale.",
+    "Treating break-even as the goal. At break-even you have made nothing; it is the gate you pass through before any profit exists."
    ]
   },
   "breakevenad": {
@@ -803,17 +803,17 @@
    ]
   },
   "gross": {
-   "what": "Gross profit is what is left of your sales after you pay for the thing you sold, and gross margin is that number as a percentage. It is the first profit line and the most honest one, because nothing is hidden in it. A shop that sells a product for ₹1,000 that cost ₹600 has ₹400 of gross profit and a 40% gross margin. That ₹400 is not your profit yet - rent, salaries and marketing still have to come out of it - but if the 40% is not there in the first place, no amount of clever cost-cutting later will fix it. Gross margin tells you whether the business can work at all.",
-   "formula": "Gross Profit = Revenue − Cost of Goods Sold. Gross Margin % = (Gross Profit ÷ Revenue) × 100. Revenue of ₹10 lakh with COGS of ₹6 lakh gives ₹4 lakh of gross profit and a 40% margin. What counts as healthy depends on the business: physical products often run 40% to 60%, food 60% to 70%, and software 70% or more. A D2C brand selling at 25% gross margin is usually in trouble, because the ad spend alone can eat all of it.",
+   "what": "Gross Profit & Margin answers the question a busy month hides: on the things you actually sold, did you make money or just move stock? You enter total revenue and the direct cost of the goods sold — what you paid your supplier, plus freight and packaging if they came with the order — and the tool returns the rupees left and that figure as a percentage of sales. It is the first profit line in any P&L, and the one a discount or a costlier supplier moves fastest.\n\nTake a D2C brand that billed ₹10,00,000 in a month and paid ₹6,00,000 for the products it shipped. Gross profit is ₹4,00,000 and the gross margin is 40%. That 40% is not money in the bank — ads, salaries, rent and tax all still have to come out of it — but it decides how much room those expenses have. A brand running at 40% can afford to be wrong about a lot of things; one at 12% cannot afford to be wrong about anything.",
+   "formula": "Gross Profit = Revenue − Cost of Goods Sold, so ₹10,00,000 − ₹6,00,000 = ₹4,00,000. Gross Margin = Gross Profit ÷ Revenue × 100 = ₹4,00,000 ÷ ₹10,00,000 = 40%. The tool takes rev and cogs and returns Gross Profit in rupees and Gross Margin as a percentage. The margin is the useful half, because it travels: ₹4,00,000 means little until you compare it with the ₹10,00,000 that produced it. Nudge either input and the percentage tells you which way the business is really moving.",
    "when": [
-    "You are pricing a product and want to see what margin the price actually leaves.",
-    "You are comparing two products and want to know which one is worth pushing.",
-    "You are preparing numbers for an investor and need the first profit line right."
+    "You are setting a price and need to know whether the margin survives your real cost of goods.",
+    "A month was busy but the bank balance barely moved, and you want to see whether the gap is in the goods or further down the P&L.",
+    "You are comparing two products or two suppliers and deciding where your next rupee of effort goes."
    ],
    "mistakes": [
-    "Calling gross profit your profit. Rent, salaries, marketing and tax still have to come out of it.",
-    "Leaving delivery, packaging and payment gateway fees out of COGS. For a D2C brand those are a real part of what the sale costs.",
-    "Comparing your margin with a software company's. The same percentage means very different things in different businesses."
+    "Reading gross profit as profit. Rent, salaries, ads and tax have not been paid yet; gross margin is the pool they all drink from.",
+    "Leaving delivery, packaging and payment-gateway fees out of cost of goods sold. For an online seller those are direct costs of the sale, and ignoring them flatters the margin.",
+    "Comparing your margin with a business that is not like yours. 40% is respectable for a physical product, thin for software and generous for nothing in particular until you name the industry."
    ]
   },
   "gst": {

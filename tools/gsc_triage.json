@@ -165,7 +165,7 @@
   {
    "url": "https://tankmetrics.in/bill-splitter",
    "slug": "/bill-splitter",
-   "type": "calculator",
+   "type": "static",
    "bucket": "indexed",
    "coverage": "Submitted and indexed",
    "cause": "Indexed.",
@@ -177,7 +177,7 @@
   {
    "url": "https://tankmetrics.in/tip-calculator",
    "slug": "/tip-calculator",
-   "type": "calculator",
+   "type": "static",
    "bucket": "indexed",
    "coverage": "Submitted and indexed",
    "cause": "Indexed.",
@@ -189,7 +189,7 @@
   {
    "url": "https://tankmetrics.in/discount-calculator",
    "slug": "/discount-calculator",
-   "type": "calculator",
+   "type": "static",
    "bucket": "indexed",
    "coverage": "Submitted and indexed",
    "cause": "Indexed.",
@@ -219,7 +219,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:40:34Z",
-   "overlap": 0.154,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -315,7 +315,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:51:22Z",
-   "overlap": 0.168,
+   "overlap": 0.158,
    "canonical_ok": true
   },
   {
@@ -327,7 +327,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T04:19:09Z",
-   "overlap": 0.168,
+   "overlap": 0.158,
    "canonical_ok": true
   },
   {
@@ -591,7 +591,7 @@
    "cause": "Google has never seen this URL - it is new, or nothing indexed links to it.",
    "action": "Add 2-3 internal links from already-indexed pages, re-submit the sitemap, and Request Indexing for it in the GSC UI.",
    "last_crawl": null,
-   "overlap": 0.154,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -663,7 +663,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T17:40:29Z",
-   "overlap": 0.15,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -801,7 +801,7 @@
   {
    "url": "https://tankmetrics.in/roas-calculator",
    "slug": "/roas-calculator",
-   "type": "calculator",
+   "type": "static",
    "bucket": "indexed",
    "coverage": "Submitted and indexed",
    "cause": "Indexed.",
@@ -1149,13 +1149,13 @@
   {
    "url": "https://tankmetrics.in/gst-calculator-tax-and-wealth-toolkit",
    "slug": "/gst-calculator-tax-and-wealth-toolkit",
-   "type": "calculator",
+   "type": "static",
    "bucket": "indexed",
    "coverage": "Submitted and indexed",
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T02:51:56Z",
-   "overlap": 0.15,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1179,7 +1179,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": null,
+   "overlap": 0.145,
    "canonical_ok": true
   },
   {
@@ -1203,7 +1203,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T23:47:03Z",
-   "overlap": null,
+   "overlap": 0.146,
    "canonical_ok": true
   },
   {
@@ -1215,7 +1215,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T20:50:35Z",
-   "overlap": null,
+   "overlap": 0.145,
    "canonical_ok": true
   },
   {
@@ -1251,7 +1251,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T22:52:16Z",
-   "overlap": null,
+   "overlap": 0.145,
    "canonical_ok": true
   },
   {
