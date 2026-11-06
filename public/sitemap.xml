@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tankmetrics.in/</loc><lastmod>2026-10-31</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tankmetrics.in/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://tankmetrics.in/blog</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tankmetrics.in/news</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://tankmetrics.in/about</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://tankmetrics.in/contact</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://tankmetrics.in/digital-products/indian-business-financial-model</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tankmetrics.in/refund-policy</loc><lastmod>2026-10-30</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://tankmetrics.in/percentage-calculator</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/simple-interest</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/compound-interest</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/loan-emi-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/savings-goal-planner</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/salary-take-home-estimator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/bill-splitter</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/tip-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/discount-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/number-to-words-indian</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/percentage-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/simple-interest</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/compound-interest</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/loan-emi-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/savings-goal-planner</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/salary-take-home-estimator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/number-to-words-indian</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/gross-profit-and-margin</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/ebitda-and-margin</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/operating-margin</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -34,8 +31,9 @@
   <url><loc>https://tankmetrics.in/debt-equity-deal</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/royalty-deal</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/cap-table-and-esop-pool</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/co-founder-equity-split</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/customer-acquisition-cost-cac</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/co-founder-equity-split</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/debt-service-coverage-ratio-dscr</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/customer-acquisition-cost-cac</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/customer-lifetime-value-ltv</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/ltv-cac-ratio</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/cac-payback-period</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -54,28 +52,29 @@
   <url><loc>https://tankmetrics.in/straight-line-depreciation</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/mrp-reverse-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/distributor-and-retailer-margin</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/gst-calculator</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/gst-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/landed-cost-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/marketplace-fee-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/cod-and-rto-loss-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/discount-impact-on-profit</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/import-duty-and-customs-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/employee-cost-ctc-calculator</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/freelancer-hourly-rate</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/franchise-store-roi</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/moic-and-irr</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/exit-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/tam-sam-som</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/roas-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/cpm-to-cpc-converter</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/cpc-to-cpa-converter</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/break-even-ad-spend</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/client-acquisition-cost-cac</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/client-lifetime-value-ltv</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/agency-profit-margin</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/client-profitability</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/employee-utilization-rate</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/churn-rate</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/employee-cost-ctc-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/freelancer-hourly-rate</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/franchise-store-roi</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/revenue-per-employee</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/moic-and-irr</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/exit-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/tam-sam-som</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/wacc-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/cpm-to-cpc-converter</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/cpc-to-cpa-converter</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/break-even-ad-spend</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/client-acquisition-cost-cac</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/client-lifetime-value-ltv</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/agency-profit-margin</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/client-profitability</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/employee-utilization-rate</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/churn-rate</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/property-valuation-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/home-loan-emi-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/rental-yield-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -94,9 +93,8 @@
   <url><loc>https://tankmetrics.in/rd-recurring-deposit-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/epf-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/gratuity-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/nps-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/gst-calculator-tax-and-wealth-toolkit</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/age-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/nps-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/age-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/love-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/numerology-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/zodiac-sign-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -106,8 +104,22 @@
   <url><loc>https://tankmetrics.in/compatibility-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/days-between-two-dates</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/bmi-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/shark-tank-pitch-check</loc><lastmod>2026-11-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/market-share-calculator</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/shark-tank-pitch-check</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/market-share-calculator</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/inventory-turnover-ratio</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/everyday-money-basics</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/profit-and-margins</loc><lastmod>2026-11-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/valuation-and-deals</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/customers-and-unit-economics</loc><lastmod>2026-11-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/growth-and-cash</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/pricing-and-selling</loc><lastmod>2026-11-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/running-a-small-team</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/investor-view</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/pitch-check</loc><lastmod>2026-11-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/ad-agency-toolkit</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/real-estate-toolkit</loc><lastmod>2026-11-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/tax-and-wealth-toolkit</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tankmetrics.in/daily-fun-toolkit</loc><lastmod>2026-11-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tankmetrics.in/aman-gupta-net-worth-calculator</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/arpu-average-revenue-per-user</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/boat-valuation-shark-tank</loc><lastmod>2026-10-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -131,7 +143,7 @@
   <url><loc>https://tankmetrics.in/franchise-roi-explained</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/grocery-store-profit-margin</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/gross-vs-net-margin-calculator</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/gst-input-tax-credit-explained</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/gst-input-tax-credit-explained</loc><lastmod>2026-10-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/how-much-equity-to-give-for-1-crore</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/how-much-equity-to-give-investor</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/how-to-calculate-startup-valuation-india</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -147,7 +159,7 @@
   <url><loc>https://tankmetrics.in/pharma-distributor-margin-explained</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/pre-money-post-money-valuation-india</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/profit-margin-calculator-rupees</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tankmetrics.in/revenue-multiple-calculator-india</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tankmetrics.in/revenue-multiple-calculator-india</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/revenue-per-employee-explained</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/reverse-pricing-explained</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tankmetrics.in/roas-explained</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
