@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 06 Nov 2026 02:48:15 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 01:40:34 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>EloElo Raises $80M at $500M: The Valuation Math</title>
@@ -22,6 +22,14 @@
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Revenue per employee shows how much revenue each person carries, how to work it out, and when a falling figure warns that your team is growing too fast.</description>
+  </item>
+  <item>
+    <title>GIVA&#x27;s $100 Million Bet: 400 Stores to 1,000</title>
+    <link>https://tankmetrics.in/news/giva-100-million-multiples-pe-1000-stores-2026</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/giva-100-million-multiples-pe-1000-stores-2026</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Funding</category>
+    <description>GIVA raised over $100 million from Multiples PE. Revenue hit about Rs 865 crore in FY26 and it plans 1,000 stores. Here is the maths for a shop owner.</description>
   </item>
   <item>
     <title>HSN Code for Online Sellers</title>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Free EMI calculator for a 2 lakh loan. See your monthly EMI, total interest and total payment in ₹ for any interest rate and tenure, instantly.</description>
-  </item>
-  <item>
-    <title>Equity Dilution Calculator India - Cap Table in ₹</title>
-    <link>https://tankmetrics.in/equity-dilution-calculator-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/equity-dilution-calculator-india</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Equity dilution calculator India for founders: see your stake after an investor round and an ESOP pool on a simple cap table. Free, instant, in ₹ Crores.</description>
   </item>
 </channel>
 </rss>
