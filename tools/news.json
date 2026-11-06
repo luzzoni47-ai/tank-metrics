@@ -2,6 +2,63 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "giva-100-million-multiples-pe-1000-stores-2026",
+   "title": "GIVA's $100 Million Bet: 400 Stores to 1,000",
+   "dek": "GIVA raised over $100 million from Multiples PE. Revenue hit about Rs 865 crore in FY26 and it plans 1,000 stores. Here is the maths for a shop owner.",
+   "category": "Funding",
+   "date": "2026-11-03",
+   "date_display": "November 3, 2026",
+   "source_name": "The Hindu BusinessLine",
+   "source_url": "https://www.thehindubusinessline.com/companies/giva-raises-over-100-million-led-by-multiples-pe/article71662253.ece",
+   "cta": {
+    "text": "A store is a business inside a business. Check the rent, the stock and the monthly sales one counter must clear before it pays you back.",
+    "href": "/franchise-store-roi",
+    "label": "Open the Franchise / Store ROI Calculator"
+   },
+   "related": [
+    {
+     "slug": "valuation-multiple-d2c-brand-india",
+     "title": "Valuation Multiple for D2C Brand in India"
+    },
+    {
+     "slug": "how-to-calculate-startup-valuation-india",
+     "title": "How to Calculate Valuation of a Startup in India"
+    }
+   ],
+   "body_en": [
+    "<p>GIVA, the Bengaluru fine-jewellery brand, has raised more than $100 million in a round led by Multiples Alternate Asset Management, with Epiq Capital and Edelweiss Discovery Fund joining in. The company calls it the largest investment in an Indian new-age jewellery brand, and the deal, once the secondary sale by some early investors is counted, comes to about Rs 975 crore.</p>",
+    "<h2>What the money is for</h2>",
+    "<p>The fresh capital goes into three things: more stores, its own manufacturing, and the leadership team. GIVA runs more than 400 stores across India and Sri Lanka, and sells through its website, e-commerce and quick-commerce apps. It now wants to cross 1,000 stores in three to five years, with about 160 new stores in the current financial year.</p>",
+    "<h2>The growth numbers, in plain terms</h2>",
+    "<p>GIVA was founded in 2019 as an online silver jewellery seller. It has since added gold and lab-grown diamonds under the brand Heer by GIVA. Over the last three years the company says it grew at a compound annual growth rate of over 70%. It closed FY26 with revenue of about Rs 865 crore, up from about Rs 520 crore in FY25.</p>",
+    "<p>To see what 70% a year means, start with Rs 100 of sales. The next year they become about Rs 170, the year after about Rs 290, and by the third year about Rs 490. In three years the business is nearly five times its starting size, and none of that is extra money in the bank; it is extra turnover that has to be funded with stock, rent and staff.</p>",
+    "<h2>The store maths</h2>",
+    "<p>Take the two numbers the company has given and divide them. About Rs 865 crore of revenue spread over 400 stores is a little over Rs 2 crore per store in a year, or roughly Rs 18 lakh a month. A shop selling Rs 18 lakh a month is a solid shop, but it is not a windfall. Jewellery carries design, making and metal costs before any profit appears, and a big share of those stores opened during the year, so the average flatters the older shops.</p>",
+    "<p>Now run the plan forward. If revenue reaches the Rs 1,250 crore the company is targeting for FY27, and the store count reaches about 560 (the 400 it has, plus the 160 planned), the average is about Rs 2 crore per store, or roughly Rs 19 lakh a month. The two averages sit close together, and that is the point: the plan leans on more stores rather than on each store selling much more.</p>",
+    "<h2>What it means if you run a shop</h2>",
+    "<p>Three lessons. First, the physical store still decides the game. GIVA began online and now puts most of its growth into counters. Second, expansion is expensive. Opening a store means rent, stock and staff before the first sale, and GIVA is still loss-making on profit after tax and expects to turn profitable only by FY28. That is how long a retail build can take to pay back. Third, the mix matters. GIVA's 9-karat gold line, launched about four months ago, already brings in over 20% of that segment's revenue. A new category can move a shop's numbers faster than a discount on the old one.</p>",
+    "<h2>What it means if you are building a brand</h2>",
+    "<p>Investors paid for growth, not for size on its own. Over $100 million went to a company growing above 70% a year, and one that had already cut its negative EBITDA margin from double digits to single digits. If you are raising money, that is the pattern to copy: fix the unit economics first, then scale the store count.</p>",
+    "<p>For a small business the takeaway is simpler. The number of stores you can run profitably, and the monthly sales each one must clear to cover rent and salaries, is what decides whether you grow or stall. Work that number out before you sign the next lease, not after.</p>"
+   ],
+   "body_hinglish": [
+    "<p>GIVA, Bengaluru ki fine-jewellery brand, ne $100 million se zyada funding uthayi hai. Round ko Multiples Alternate Asset Management ne lead kiya, aur Epiq Capital aur Edelweiss Discovery Fund bhi shaamil hue. Company ise Indian new-age jewellery brand ki sabse badi investment kehti hai, aur kuch early investors ke secondary sale ko milaakar deal lagbhag Rs 975 crore ki banti hai.</p>",
+    "<h2>Paisa kis cheez ke liye hai</h2>",
+    "<p>Naya capital teen cheezon mein jaayega: zyada stores, apni manufacturing, aur leadership team. GIVA ke India aur Sri Lanka mein 400 se zyada stores hain, aur woh apni website, e-commerce aur quick-commerce apps par bhi bechti hai. Ab company teen se paanch saal mein 1,000 stores cross karna chahti hai, jisme is financial year mein lagbhag 160 naye stores shamil hain.</p>",
+    "<h2>Growth ke numbers, aasan bhasha mein</h2>",
+    "<p>GIVA 2019 mein ek online silver jewellery seller ke roop mein shuru hui thi. Uske baad gold aur lab-grown diamonds bhi jode, Heer by GIVA naam se. Pichhle teen saal mein company ka CAGR 70% se zyada raha. FY26 usne lagbhag Rs 865 crore revenue par band kiya, jo FY25 ke lagbhag Rs 520 crore se zyada hai.</p>",
+    "<p>70% saalana ka matlab samjhiye, Rs 100 ki sale se shuru karke. Agle saal woh lagbhag Rs 170, uske agle saal Rs 290, aur teesre saal lagbhag Rs 490 ban jaati hai. Teen saal mein business apne shuruaati size ka lagbhag paanch guna ho jaata hai, aur yeh bank mein pada extra paisa nahi hai; yeh extra turnover hai jise stock, rent aur staff se fund karna padta hai.</p>",
+    "<h2>Store ka ganit</h2>",
+    "<p>Company ke diye do numbers ko divide kijiye. Lagbhag Rs 865 crore revenue, 400 stores par, matlab ek store ke hisaab se saal ka Rs 2 crore se thoda zyada, yaani mahine ka lagbhag Rs 18 lakh. Mahine ka Rs 18 lakh bechne wali dukaan theek chalti hai, par yeh khazana nahi hai. Jewellery mein design, making aur metal ki lagat profit se pehle hi nikal jaati hai, aur bahut se stores is saal hi khule hain, isliye average purane stores ko thoda bada dikhata hai.</p>",
+    "<p>Ab plan ko aage badhaiye. Agar revenue FY27 mein company ke target wale Rs 1,250 crore tak pahunchti hai, aur stores ki ginti lagbhag 560 (400 jo hain, plus 160 naye) ho jaati hai, to average per store lagbhag Rs 2 crore, yaani mahine ka lagbhag Rs 19 lakh banta hai. Dono average mein zyada farak nahi hai, aur yahi baat hai: plan zyada stores par tika hai, is par nahi ki har store kaafi zyada beche.</p>",
+    "<h2>Dukaan chalaane wale ke liye matlab</h2>",
+    "<p>Teen seekh. Pehla, physical store hi khel tay karta hai. GIVA online se shuru hui thi, par ab apni growth ka bada hissa counters mein daal rahi hai. Doosra, expansion mehnga hai. Store kholne ka matlab rent, stock aur staff, aur woh pehli sale se pehle. GIVA abhi profit after tax par loss-making hai aur FY28 tak profitable hone ki ummeed rakhti hai; itna lamba ho sakta hai retail build ka payback. Teesra, mix maayne rakhta hai. GIVA ki 9-karat gold line, jo lagbhag chaar mahine pehle shuru hui, us segment ki 20% se zyada revenue de rahi hai. Naya category purane par discount se zyada tez number badal sakta hai.</p>",
+    "<h2>Brand bana rahe logon ke liye matlab</h2>",
+    "<p>Investors ne growth ke liye paisa diya, sirf size ke liye nahi. $100 million se zyada us company ko mila jo saal ka 70% se zyada badh rahi thi, aur jisne apna negative EBITDA margin double digits se single digits par la diya tha. Agar aap raise kar rahe hain, pattern yahi hai: pehle unit economics theek kijiye, phir store count badhaiye.</p>",
+    "<p>Chhote business ke liye seekh aasan hai. Jitne stores aap profitably chala sakte hain, aur har store ko rent aur salary cover karne ke liye mahine ki kitni sale chahiye, wahi number tay karta hai ki aap badhenge ya rukenge. Agla lease sign karne se pehle yeh number nikaal lijiye, baad mein nahi.</p>"
+   ]
+  },
+  {
    "slug": "eloelo-80-million-series-c-500-million-valuation",
    "title": "EloElo Raises $80M at $500M: The Valuation Math",
    "dek": "Bengaluru's Story TV maker raised $80 million from NBCUniversal and Hornbill at a $500 million valuation. Here is the arithmetic a founder should read.",
