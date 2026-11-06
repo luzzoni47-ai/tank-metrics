@@ -85,14 +85,27 @@ function payload(values: unknown[]) {
   }
 }
 
+/**
+ * Read one calculator's tally.
+ *
+ * `redis` unwraps each *command*, not each value, so a single MGET comes back
+ * as one result that is itself an array. Reading it as the flat list made every
+ * calculator report zero while the writes landed correctly - the tally was in
+ * Redis the whole time and no page could see it.
+ */
+async function readTally(tool: string) {
+  const results = await redis([['MGET', ...tallyKeys(tool)]])
+  const values = results[0]
+  return payload(Array.isArray(values) ? values : [])
+}
+
 export async function GET(request: Request) {
   const tool = new URL(request.url).searchParams.get('tool') || ''
   if (!TOOL_ID.test(tool)) {
     return Response.json({ error: 'bad tool id' }, { status: 400 })
   }
   try {
-    const values = await redis([['MGET', ...tallyKeys(tool)]])
-    return Response.json(payload(values), {
+    return Response.json(await readTally(tool), {
       headers: { 'cache-control': 'no-store' },
     })
   } catch {
@@ -136,9 +149,8 @@ export async function POST(request: Request) {
       return Response.json({ error: 'too many' }, { status: 429 })
     }
     if (commands.length) await redis(commands)
-    const values = await redis([['MGET', ...tallyKeys(tool)]])
     return Response.json(
-      { ...payload(values), changed: editing, rereview: !editing && Boolean(prev) },
+      { ...(await readTally(tool)), changed: editing, rereview: !editing && Boolean(prev) },
       { headers: { 'cache-control': 'no-store' } },
     )
   } catch {
