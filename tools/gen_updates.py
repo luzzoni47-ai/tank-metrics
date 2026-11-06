@@ -33,6 +33,8 @@ SHELL_ASSETS = (
     "public/site/style.css",
     "public/site/pagination.js",
     "public/site/pwa.js",
+    "public/site/theme.js",
+    "public/site/rating.js",
     "public/site/manifest.webmanifest",
 )
 

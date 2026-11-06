@@ -356,9 +356,15 @@ def check_banner_design() -> list:
     # the new look is present.
     if "#111827" in css:
         failures.append("style.css still carries the old dark banner rule")
-    if css.count(".pwa-banner{") != 2:
+    # The dark theme adds a third rule for the banner, so the count is
+    # base + mobile + dark. Asserting a bare count here once failed on a
+    # correct build when dark mode arrived; check the dark rule is scoped
+    # instead of counting.
+    if css.count(".pwa-banner{") != 3:
         failures.append(
-            f"expected 2 .pwa-banner rules (base + mobile), found {css.count('.pwa-banner{')}")
+            f"expected 3 .pwa-banner rules (base + mobile + dark), found {css.count('.pwa-banner{')}")
+    if 'html[data-theme="dark"] .pwa-banner{' not in css:
+        failures.append("style.css lost the dark banner rule")
 
     js = (SITE / "pwa.js").read_text(encoding="utf-8")
     if 'className = "pwa-mark"' not in js:

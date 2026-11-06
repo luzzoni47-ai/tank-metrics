@@ -17,7 +17,7 @@
  *  - Never touch a non-GET, a cross-origin request, or the Apps Script
  *    endpoint (the contact form must always reach the network).
  */
-const VERSION = "tm-dcc8a180ee";
+const VERSION = "tm-75377dab50";
 const SHELL = VERSION + "-shell";
 const PAGES = VERSION + "-pages";
 const ASSETS = VERSION + "-assets";

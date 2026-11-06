@@ -19,12 +19,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SW = ROOT / "public" / "sw.js"
-SHELL_ASSETS = (
-    "public/site/style.css",
-    "public/site/pagination.js",
-    "public/site/pwa.js",
-    "public/site/manifest.webmanifest",
-)
+
+# Read the list from the generator rather than repeating it. A copy here once
+# drifted from the real one and the test failed on a correct build.
+sys.path.insert(0, str(ROOT / "tools"))
+from gen_updates import SHELL_ASSETS  # noqa: E402
 
 
 def expected_version() -> str:
