@@ -329,6 +329,7 @@ html[data-theme="dark"] .tcard,
 html[data-theme="dark"] .founder-card{background:#141821;border-color:var(--line)}
 html[data-theme="dark"] .card .readout,
 html[data-theme="dark"] .worked,
+html[data-theme="dark"] .worked-col,
 html[data-theme="dark"] .benchmark{background:#11151C;border-color:var(--line)}
 html[data-theme="dark"] .page-hero{
   background:linear-gradient(135deg,#1A2130,#141821 45%,#152018);border-color:var(--line)}
@@ -336,6 +337,17 @@ html[data-theme="dark"] .site-footer{background:#0B0E13;border-color:var(--line)
 html[data-theme="dark"] .field input,
 html[data-theme="dark"] .field select,
 html[data-theme="dark"] .sb-search{background:#11151C;border-color:var(--line);color:var(--ink)}
+html[data-theme="dark"] .legal-page,
+html[data-theme="dark"] .seo-cat li,
+html[data-theme="dark"] .clear-btn,
+html[data-theme="dark"] .lang-toggle,
+html[data-theme="dark"] .blog-tabs,
+html[data-theme="dark"] .calculator-focus-close,
+html[data-theme="dark"] .sidebar-close{background:#141821;border-color:var(--line);color:var(--ink)}
+html[data-theme="dark"] .btn-secondary{background:#141821;border-color:var(--india-green);color:var(--green-l)}
+html[data-theme="dark"] .brand-mark::after,
+html[data-theme="dark"] .page-num::after,
+html[data-theme="dark"] .footer-flag .w{background:#141821}
 html[data-theme="dark"] img{filter:brightness(.92)}
 html[data-theme="dark"] .hero-shark-video{opacity:.35}
 
@@ -354,6 +366,62 @@ html[data-theme="dark"] .theme-btn{background:#1D2331;border-color:var(--line)}
 .scroll-progress i{display:block;height:100%;width:0;
   background:linear-gradient(90deg,var(--blue),var(--saffron),var(--green));
   transition:width .1s linear}
+"""
+
+
+# ---------------------------------------------------------------------------
+# Dark mode for the home page.
+#
+# The home page is the one page whose sheet is not `style.css`: `gen_home.py`
+# inlines its own CSS so the design's rules cannot be overridden by the shared
+# sheet. That means the dark block above, which only ever lands in style.css,
+# never reached the home page, and the home page stayed white while every inner
+# page went dark.
+#
+# The class names are the home page's own (`.nav`, `.cat`, `.tool`, `.feat`),
+# not the shared sheet's, so the rules are written against those. Tokens are
+# redefined first and the handful of literal `#fff` surfaces follow.
+# ---------------------------------------------------------------------------
+HOME_DARK_CSS = """
+html[data-theme="dark"]{
+  --ink:#EEF1F7;--ink-2:#DDE3EE;--muted:#A3ACBE;--muted-2:#8B94A7;
+  --line:#262B36;--line-2:#2F3542;--soft:#171A21;--white:#0E1116;
+  --shadow-m:0 14px 40px -14px rgba(0,0,0,.6);
+  --shadow-l:0 32px 80px -28px rgba(0,0,0,.7);
+  --blue-l:#6BA6FF;--red-l:#FF7A6B;--yellow-l:#FFD54F;--green-l:#5BC47A;
+  color-scheme:dark;
+}
+html[data-theme="dark"] body{background:var(--white);color:var(--ink)}
+html[data-theme="dark"] .nav{background:rgba(14,17,22,.92)}
+html[data-theme="dark"] .badge,
+html[data-theme="dark"] .search,
+html[data-theme="dark"] .chip,
+html[data-theme="dark"] .mq,
+html[data-theme="dark"] .cat,
+html[data-theme="dark"] .tool,
+html[data-theme="dark"] .feat,
+html[data-theme="dark"] .field input:focus{background:#141821;border-color:var(--line-2)}
+html[data-theme="dark"] .badge .flag i:nth-child(2),
+html[data-theme="dark"] .foot-bottom .flag-mini i:nth-child(2){background:#141821}
+html[data-theme="dark"] .logo-mark::before{background:linear-gradient(140deg,#1A2130,#141821)}
+html[data-theme="dark"] .marquee{background:linear-gradient(180deg,#141821,var(--soft))}
+html[data-theme="dark"] .cat-count,
+html[data-theme="dark"] .search .kbd,
+html[data-theme="dark"] .field input{background:var(--soft);border-color:var(--line)}
+html[data-theme="dark"] .nav-links a:hover{background:var(--soft)}
+html[data-theme="dark"] .nav-drawer{background:#141821;border-color:var(--line)}
+html[data-theme="dark"] .nav-drawer-mark::after,
+html[data-theme="dark"] .pwa-banner .pwa-mark::after{background:#141821}
+html[data-theme="dark"] .footer-flag .w{background:#141821}
+html[data-theme="dark"] .card.calculator-focused{background:#141821;border-color:var(--line-2)}
+html[data-theme="dark"] .tricolor::before{background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent)}
+html[data-theme="dark"] .cta::after{background:linear-gradient(90deg,var(--saffron) 0 33.3%,#141821 33.3% 66.6%,var(--india-green) 66.6% 100%)}
+html[data-theme="dark"] footer::before{background:linear-gradient(90deg,var(--saffron) 0 33.3%,#141821 33.3% 66.6%,var(--india-green) 66.6% 100%)}
+html[data-theme="dark"] .btn-primary{background:#EEF1F7;color:#0E1116}
+html[data-theme="dark"] .theme-btn{background:var(--soft);border-color:var(--line);color:var(--ink)}
+html[data-theme="dark"] .scroll-progress{background:linear-gradient(90deg,var(--blue-l),var(--saffron),var(--green-l))}
+html[data-theme="dark"] img{filter:brightness(.92)}
+html[data-theme="dark"] .hero-shark-video{opacity:.35}
 """
 
 

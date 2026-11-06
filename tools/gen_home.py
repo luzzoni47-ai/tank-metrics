@@ -61,7 +61,14 @@ DATA = json.loads((TOOLS / "calcs.json").read_text(encoding="utf-8"))
 sys.path.insert(0, str(TOOLS))
 from gen_category_pages import slug_for as cat_slug, tools_of  # noqa: E402
 from gen_tool_pages import build_slugs as tool_slugs  # noqa: E402
-from design import FONT_LINK, MENU_BTN, SHARED_CSS, VIDEO, design_css  # noqa: E402
+from design import (  # noqa: E402
+    FONT_LINK,
+    HOME_DARK_CSS,
+    MENU_BTN,
+    SHARED_CSS,
+    VIDEO,
+    design_css,
+)
 
 SLUGS = tool_slugs(DATA["calcs"])
 
@@ -406,7 +413,7 @@ def assemble() -> str:
     cut = head.index('<link rel="stylesheet" href="/site/style.css">')
     tail_at = head.index('<script async src="https://www.googletagmanager.com')
     head = (head[:cut]
-            + "<style>" + design_css() + SHARED_CSS + "</style>"
+            + "<style>" + design_css() + SHARED_CSS + HOME_DARK_CSS + "</style>"
             + head[tail_at:])
 
     body = wire(design_body())

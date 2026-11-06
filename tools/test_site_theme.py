@@ -104,12 +104,95 @@ def check_api_guards() -> None:
 
 def check_style_dark_tokens() -> None:
     """Dark mode redefines tokens, not colours on individual rules."""
-    from design import DARK_CSS, RATING_CSS  # noqa: E402
+    from design import DARK_CSS, HOME_DARK_CSS, RATING_CSS  # noqa: E402
 
     check("--bg:" in DARK_CSS and "--ink:" in DARK_CSS, "dark block redefines the base tokens")
     check("prefers-reduced-motion" in RATING_CSS, "rating card respects reduced motion")
     check("prefers-reduced-motion" in DARK_CSS or "prefers-reduced-motion" in RATING_CSS,
           "the card stops moving when asked")
+
+
+def check_dark_mode_actually_wins() -> None:
+    """The dark palette must not be outranked by a stray light rule.
+
+    A stub `:root[data-theme=dark]{--bg:#FFFFFF}` once sat at the top of
+    style.css. `:root[data-theme=dark]` has a higher specificity than
+    `html[data-theme="dark"]`, so it won on every page: the switch flipped,
+    `theme.js` reported dark, and the page stayed white. Nothing caught it
+    because the dark block was present and well-formed - it was simply losing.
+
+    So assert the two things that make the palette reachable: no other rule
+    claims the dark attribute, and the dark block is not beaten by a
+    same-or-higher specificity selector declaring a light background.
+    """
+    css = read(SITE / "style.css")
+
+    # Any selector keyed on the dark attribute that is not the generated one.
+    dark_selectors = re.findall(r'([^{}]+)\{[^{}]*\}', css)
+    foreign = [
+        s.strip().replace("\n", " ")
+        for s in dark_selectors
+        if "data-theme" in s
+        and 'html[data-theme="dark"]' not in s
+        and "prefers-color-scheme" not in s
+    ]
+    check(not foreign, f"only the generated dark block targets the attribute ({foreign[:3]})")
+
+    # The stub's exact shape: a :root[data-theme] rule that would win.
+    check(
+        not re.search(r":root\[data-theme", css),
+        "no :root[data-theme] rule can outrank the dark palette",
+    )
+
+    # And the dark block really does repaint the page background.
+    check(
+        re.search(r'html\[data-theme="dark"\]\s*body\s*\{[^}]*background:\s*var\(--bg\)', css)
+        is not None,
+        "the dark block repaints the body background",
+    )
+
+
+def check_home_page_goes_dark() -> None:
+    """The home page inlines its own CSS, so it needs its own dark rules.
+
+    `gen_home.py` does not link `style.css`; it inlines the design sheet so the
+    shared rules cannot override the home design. That also means the dark block
+    in `style.css` never reached the home page, and the home page - the most
+    visited one - stayed white in dark mode while every inner page went dark.
+
+    The home page's class names (`.nav`, `.cat`, `.tool`, `.feat`) are not the
+    shared sheet's, so its dark block has to be written separately. This asserts
+    the block exists, is wired into the generator, and covers the home page's
+    own white surfaces.
+    """
+    from design import HOME_DARK_CSS  # noqa: E402
+
+    check(bool(HOME_DARK_CSS.strip()), "the home page has its own dark block")
+    check(
+        "--white:" in HOME_DARK_CSS,
+        "the home dark block redefines --white, which is the home page's background token",
+    )
+    for cls in (".nav", ".cat", ".tool", ".feat", ".badge", ".search", ".chip"):
+        check(
+            f'html[data-theme="dark"] {cls}' in HOME_DARK_CSS
+            or f'html[data-theme="dark"] {cls},' in HOME_DARK_CSS
+            or f'html[data-theme="dark"] {cls}{{' in HOME_DARK_CSS,
+            f"home dark block covers {cls}",
+        )
+
+    gen = read(ROOT / "tools" / "gen_home.py")
+    check("HOME_DARK_CSS" in gen, "gen_home.py inlines the home dark block")
+
+    home = read(SITE / "index.html")
+    check(
+        'html[data-theme="dark"]' in home,
+        "the built home page carries dark rules",
+    )
+    check(
+        'html[data-theme="dark"] .cat' in home
+        or 'html[data-theme="dark"] .tool' in home,
+        "the built home page darkens its own cards",
+    )
 
 
 def main() -> int:
@@ -119,6 +202,8 @@ def main() -> int:
     check_no_invented_rating()
     check_api_guards()
     check_style_dark_tokens()
+    check_dark_mode_actually_wins()
+    check_home_page_goes_dark()
 
     failed = [m for ok, m in results if not ok]
     for ok, message in results:
