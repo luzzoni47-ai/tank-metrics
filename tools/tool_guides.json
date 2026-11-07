@@ -185,17 +185,17 @@
  },
  "calcs": {
   "agefun": {
-   "what": "The Age Calculator turns a date of birth into an exact age in years and months, counting the way a form or an application counts rather than the way a birthday card does. It settles whether you have completed a given number of years on today's date — the figure that decides eligibility for a school admission cut-off, a government form, a pension or an age-limited account. Because it works off today's date, it gives the age as of the day you open it, so the same birth date answers differently before and after the birthday.",
-   "formula": "Age in years = today's year minus the birth year, less one if this year's birthday has not yet arrived. Age in months = 12 x years + the whole months since the last birthday. The calculator compares the day, month and year of the birth date with today's date, so it handles a February birthday and a month-end birthday correctly instead of assuming every month is thirty days.",
+   "what": "The Age Calculator settles the question a form asks, not the one a birthday card asks: as of a given date, how many completed years has this person lived? You give it one date of birth and it answers in whole years and whole months, counting the way a school admission register, a government application or a pension rule counts. That makes it the tool for a cut-off — a class-entry date, an exam age limit, a scheme that opens at eighteen or closes at sixty — where the day of the month, not just the year, decides who qualifies.\n\nIt is deliberately not a \"how old am I\" novelty. Because the answer is tied to today's date, the same birth date reads differently before and after the birthday, and a month-end birthday is counted from the real calendar rather than assumed to be thirty days. When you need the age on a date that is not today — the closing date of an application, the first day of a school year — open the tool on that date instead of trusting a figure you noted last month.",
+   "formula": "The calculator compares the birth date with today one part at a time: year, then month, then day. Whole years = today's year − birth year, and if today's month is earlier than the birth month, subtract one; if the months are equal but today's day is earlier than the birth day, subtract one as well. The remaining whole months = today's month − birth month, plus twelve if that went negative, minus one when today's day is before the birth day. A 15 June 1995 birth read on 21 October 2026 gives 31 years and 4 months, because the June birthday has passed and July to October is four whole months.",
    "when": [
-    "You are filling a form that asks for completed years and want the exact figure, not a rounded one.",
-    "You are checking an age cut-off for a school, exam or scheme on a fixed date.",
-    "You want the exact age in years and months for a document or an application."
+    "You are filling a school, exam, pension or government form that asks for age in completed years, and that exact figure decides eligibility.",
+    "You are checking whether someone clears an age cut-off on a fixed date — a class-entry date, a scheme's upper limit, a retirement rule.",
+    "You need the precise age in years and months for a document, a visa form or an application, not a rounded-up guess."
    ],
    "mistakes": [
-    "Subtracting the years and ignoring whether this year's birthday has passed, which overstates the age.",
-    "Rounding up to the next birthday when the form wants completed years.",
-    "Using a rough birth-year-plus-a-bit figure for a cut-off date, where a single day decides eligibility."
+    "Subtracting the two years and stopping there. That overstates the age by a full year for anyone whose birthday has not yet arrived this year.",
+    "Rounding up to the next birthday. A form that asks for completed years wants the age already reached, so rounding up can disqualify an application that was actually eligible.",
+    "Working from an \"about 31\" figure for a cut-off when a single day on either side of the deadline flips the answer."
    ]
   },
   "agencycac": {
@@ -971,17 +971,17 @@
    ]
   },
   "luckynumber": {
-   "what": "Your lucky number here is the single digit your full date of birth reduces to. Add every digit of the day, the month and the year — 15-06-1995 becomes 1+5+0+6+1+9+9+5 = 36 — then add the digits of that total, 3+6 = 9, and repeat until one digit from 1 to 9 is left. That final digit is what the tool calls your lucky number. It reads the same date the same way every time, so it is a fixed personal label rather than a daily draw, and it changes only if you were born on a different day.",
-   "formula": "The tool strips the hyphens from the date of birth, adds all eight digits together, and if the total is more than nine it adds the digits of that total again. 1995-06-15 sums to 36, and 3+6 reduces to 9. The loop stops the moment a single digit 1-9 remains, which is why every date lands on one of nine numbers and none on a zero.",
+   "what": "The Lucky Number Calculator reduces a full date of birth to the one digit between 1 and 9 that numerology calls the root, birth or life-path number. It adds every digit of the day, the month and the year, then keeps adding the digits of the running total until a single digit is left. A 15 June 1995 birth becomes 1+5+0+6+1+9+9+5 = 36, and 3+6 = 9, so the number is 9. The point is not a forecast — it is the fixed label a birth date carries, which is why the same date always returns the same digit.\n\nReach for it when a profile, a numerology reading or a name-selection exercise asks for the birth number behind a person, and when you want to work back to which date someone's quoted number came from. Because every date collapses into one of nine digits and none lands on zero, two people share a number far more often than the nine choices suggest: any given digit fits about one birth date in nine.",
+   "formula": "Strip the hyphens from the date of birth and add the eight digits. If the total is more than nine, add the digits of that total and repeat until a single digit 1-9 remains. 1995-06-15 gives 1+5+0+6+1+9+9+5 = 36, then 3+6 = 9. The month and day are written as two digits each, so June (06) contributes 0+6 and the fifteenth contributes 1+5; a single-digit month or day is padded with a leading zero that adds nothing. The result is never zero, because the loop stops only when one digit is left.",
    "when": [
-    "You are filling in a profile and want the number that matches your birth date.",
-    "A friend quotes their lucky number and you want to check which date it came from.",
-    "You are curious whether two people born the same day share a number."
+    "A profile, reading or name-selection exercise asks for the birth number behind a person's date of birth.",
+    "Someone quotes a lucky number and you want to work back to which birth date produces it.",
+    "You want to compare two people born on different days and see whether their dates reduce to the same digit."
    ],
    "mistakes": [
-    "Adding the digits of the date exactly as written, hyphens and all, instead of the eight digits alone.",
-    "Stopping at a two-digit total like 36 instead of reducing it to 9.",
-    "Treating the number as a forecast. It is a fixed reduction of your date, not a prediction for the day."
+    "Adding the digits of the date exactly as printed, hyphens and all, instead of the eight digits the tool uses.",
+    "Stopping at the two-digit total. 36 is not the answer; it has to be reduced again to 9.",
+    "Reading the digit as a prediction for the day. It is a fixed reduction of the birth date and does not change from one day to the next."
    ]
   },
   "marketplace": {

@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.166,
-   "a": "/age-calculator",
-   "b": "/lucky-number-calculator"
-  },
-  {
    "overlap": 0.158,
    "a": "/implied-valuation",
    "b": "/pre-money-and-post-money-valuation"
@@ -21,16 +16,6 @@
    "overlap": 0.147,
    "a": "/compound-interest",
    "b": "/simple-interest"
-  },
-  {
-   "overlap": 0.146,
-   "a": "/age-calculator",
-   "b": "/zodiac-sign-calculator"
-  },
-  {
-   "overlap": 0.145,
-   "a": "/lucky-number-calculator",
-   "b": "/zodiac-sign-calculator"
   },
   {
    "overlap": 0.145,
@@ -53,25 +38,32 @@
    "b": "/rd-recurring-deposit-calculator"
   },
   {
-   "overlap": 0.139,
-   "a": "/lucky-number-calculator",
-   "b": "/rashi-moon-sign-calculator"
+   "overlap": 0.137,
+   "a": "/break-even-point",
+   "b": "/gross-profit-and-margin"
   },
   {
-   "overlap": 0.139,
-   "a": "/age-calculator",
-   "b": "/rashi-moon-sign-calculator"
+   "overlap": 0.131,
+   "a": "/co-founder-equity-split",
+   "b": "/debt-equity-deal"
+  },
+  {
+   "overlap": 0.13,
+   "a": "/break-even-point",
+   "b": "/percentage-calculator"
+  },
+  {
+   "overlap": 0.128,
+   "a": "/debt-equity-deal",
+   "b": "/royalty-deal"
+  },
+  {
+   "overlap": 0.127,
+   "a": "/baby-name-number-calculator",
+   "b": "/compatibility-calculator"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/age-calculator",
-   "closest_overlap": 0.166
-  },
-  {
-   "page": "/lucky-number-calculator",
-   "closest_overlap": 0.166
-  },
   {
    "page": "/implied-valuation",
    "closest_overlap": 0.158
@@ -97,11 +89,11 @@
    "closest_overlap": 0.147
   },
   {
-   "page": "/zodiac-sign-calculator",
-   "closest_overlap": 0.146
+   "page": "/rashi-moon-sign-calculator",
+   "closest_overlap": 0.145
   },
   {
-   "page": "/rashi-moon-sign-calculator",
+   "page": "/zodiac-sign-calculator",
    "closest_overlap": 0.145
   },
   {
@@ -110,6 +102,14 @@
   },
   {
    "page": "/love-calculator",
+   "closest_overlap": 0.145
+  },
+  {
+   "page": "/ebitda-multiple",
+   "closest_overlap": 0.145
+  },
+  {
+   "page": "/revenue-multiple",
    "closest_overlap": 0.145
   }
  ],

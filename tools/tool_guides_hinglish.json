@@ -185,17 +185,17 @@
  },
  "calcs": {
   "agefun": {
-   "what": "Age Calculator date of birth se exact age years aur months me nikaalta hai — us tarah se ginta hai jaise form ya application ginti hai, birthday card ki tarah nahi. Ye sawaal nipatata hai ki aaj ki date par aapne diye gaye saal poore kiye hain ya nahi — wahi figure jo school admission cut-off, sarkari form, pension ya age-limited account ki eligibility tay karta hai. Kyunki ye aaj ki date par chalta hai, ye aaj ki umar deta hai, isliye ek hi janm-tithi birthday se pehle aur baad me alag jawab deti hai.",
-   "formula": "Age in years = aaj ka saal minus birth year, aur ek kam tab jab is saal ka birthday abhi aaya na ho. Age in months = 12 x years + pichhle birthday ke baad ke poore mahine. Calculator din, mahina aur saal — teenon compare karta hai, isliye February ya month-end ka birthday bhi sahi handle hota hai, har mahine ko 30 din maan kar nahi.",
+   "what": "Age Calculator wo sawaal nipta deta hai jo birthday card par nahi, form par aata hai: kisi fixed date tak is insaan ne kitne poore saal poore kiye hain? Aap ek date of birth daalte ho aur tool saal aur mahine me jawab deta hai, poore mahine usi tarah gin kar jaise school admission register, sarkari application ya pension rule ginta hai. Yahi wajah hai ki ye cut-off ke liye sahi tool hai — class-entry date, exam ki age limit, ya koi scheme jo athara par khulti hai ya saath par band hoti hai — jahan saal ke saath mahine ki taareekh bhi tay karti hai ki kaun qualify karta hai.\n\nYe jaan-boojh kar \"main kitna bada hoon\" wala shauk nahi hai. Kyunki jawab aaj ki date se bandha hai, wahi date of birth birthday se pehle aur baad me alag figure deti hai, aur month-end birthday asli calendar se gina jaata hai, ye maan kar nahi ki har mahina tees din ka hai. Agar aapko aaj ke alawa kisi date — application ki closing date, school saal ke shuruaat — par umar chahiye, to tool usi din dekho, pichhle mahine likha figure par bharosa na karo.",
+   "formula": "Tool birth date ke teen hisse aaj se ek-ek karke milata hai: pehle saal, phir mahina, phir din. Poore saal = aaj ka saal − birth year, aur agar aaj ka mahina birth month se pehle hai to ek kam; agar mahine barabar hain par aaj ki taareekh birth day se pehle hai to bhi ek kam. Bache hue poore mahine = aaj ka mahina − birth month, plus barah agar ye negative ho gaya, aur ek kam jab aaj ki taareekh birth day se pehle ho. 15 June 1995 ki date 21 October 2026 ko 31 saal aur 4 mahine deti hai, kyunki June ka birthday nikal gaya aur July se October chaar poore mahine hain.",
    "when": [
-    "Jab aap koi form bhar rahe ho jisme poore saal poochhe gaye hain aur exact figure chahiye.",
-    "Jab aap school, exam ya kisi scheme ka age cut-off kisi fixed date par check kar rahe ho.",
-    "Jab aapko kisi document ya application ke liye years aur months me exact umar chahiye."
+    "Aap school, exam, pension ya sarkari form bhar rahe ho jo poore saal me umar maangta hai aur yahi figure eligibility tay karta hai.",
+    "Aap check kar rahe ho ki koi fixed date par age cut-off clear karta hai — class-entry date, scheme ki upper limit, retirement rule.",
+    "Aapko kisi document, visa form ya application ke liye saal aur mahine me sahi umar chahiye, andaaza nahi."
    ],
    "mistakes": [
-    "Saal ghata kar ye bhool jaana ki is saal birthday aaya ya nahi, jisse umar zyada dikhti hai.",
-    "Agle birthday tak round up karna jab form poore saal maangta hai.",
-    "Cut-off date ke liye mota-moti birth-year-plus-thoda use karna, jahan ek din eligibility tay karta hai."
+    "Dono saal ghatakar wahi rok dena. Isse us har vyakti ki umar ek poora saal zyada dikhti hai jiska birthday is saal abhi aaya nahi.",
+    "Agle birthday tak round up kar dena. Jo form poore saal maangta hai use ab tak ki umar chahiye, isliye round up karne se eligible application bhi reject ho sakti hai.",
+    "Cut-off ke liye \"1995 me paida, matlab lagbhag 31\" jaisa andaaza lagana, jabki deadline se ek din aage-peeche jawab palat deta hai."
    ]
   },
   "agencycac": {
@@ -969,17 +969,17 @@
    ]
   },
   "luckynumber": {
-   "what": "Yahan lucky number aapki poori date of birth se banta hai, ek single digit me. Din, mahina aur saal ke saare digits jodo — 15-06-1995 ka matlab 1+5+0+6+1+9+9+5 = 36 — phir 36 ke digits jodo, 3+6 = 9, aur yeh karte raho jab tak 1 se 9 ke beech ek digit bache. Wahi aakhri digit tool aapka lucky number kehta hai. Yeh ek hi date ko hamesha ek hi tarah padhta hai, isliye ye ek fix personal number hai, roz ka draw nahi.",
-   "formula": "Tool date of birth se hyphen hata deta hai, saare aath digits jod deta hai, aur agar total nau se bada ho to us total ke digits phir se jod deta hai. 1995-06-15 ka sum 36 banta hai, aur 3+6 se 9. Jaise hi ek single digit 1-9 bachta hai, loop ruk jaata hai — isliye har date nau me se kisi ek number par aati hai.",
+   "what": "Lucky Number Calculator poore date of birth ko 1 se 9 ke beech us ek digit tak le aata hai jise numerology root, birth ya life-path number kehti hai. Ye din, mahine aur saal ke har digit ko jodta hai, phir total ke digits ko baar-baar jodta hai jab tak ek digit na bache. 15 June 1995 ki date 1+5+0+6+1+9+9+5 = 36 banti hai, aur 3+6 = 9, to number 9 hai. Baat bhavishyavani ki nahi — ye us fixed label ki hai jo date of birth apne saath rakhti hai, isliye wahi date hamesha wahi digit deti hai.\n\nYahi number tab chahiye jab koi profile, numerology reading ya naam-chunav ka exercise kisi ke birth number maangta hai, aur jab aap jaan na chahte ho ki kisi ka bataya hua number kis date se bana. Kyunki har date nau digit me se ek par aati hai aur koi zero par nahi, do logon ka number milna nau choice ke hisaab se zyada aam hai — kisi bhi digit ke liye takriban nau me se ek date.",
+   "formula": "Date of birth se hyphen hata kar aath digits jodo. Agar total nau se zyada ho to us total ke digits phir jodo aur tab tak dohrai jab tak 1-9 ka ek digit na bache. 1995-06-15 se 1+5+0+6+1+9+9+5 = 36, phir 3+6 = 9. Mahine aur din do digits me likhe jaate hain, isliye June (06) se 0+6 aur pandrah se 1+5 aata hai; ek digit wala mahina ya din aage zero lagakar likha jaata hai jo kuch nahi jodta. Result ka koi digit zero nahi hota, kyunki loop tab hi rukta hai jab ek digit bacha ho.",
    "when": [
-    "Jab aap profile bhar rahe ho aur birth date se match karne wala number chahiye.",
-    "Jab koi apna lucky number bataye aur aap dekhna chahe ki woh kis date se aaya.",
-    "Jab aap jaanna chahe ki ek hi din janme do logon ka number same hota hai ya nahi."
+    "Koi profile, reading ya naam-chunav ka exercise kisi ki date of birth ka birth number maangta hai.",
+    "Koi apna lucky number batata hai aur aap jaanna chahte ho ki kaun si date of birth us number par aati hai.",
+    "Aap do alag-alag dinon me paida logon ki tulna karke dekhna chahte ho ki unki dates ek hi digit par aati hain ya nahi."
    ],
    "mistakes": [
-    "Date ko jaisa likha hai waise hi jod dena, hyphens ko bhi count karna — unki koi value nahi hoti.",
-    "36 jaise do-digit total par ruk jaana, usko 9 tak reduce na karna.",
-    "Is number ko bhavishyavani maan lena. Yeh aapki date ka fix reduction hai, aaj ka prediction nahi."
+    "Date ke digits waise hi jod dena jaise likhe hain, hyphen ke saath, un aath digits ke bajaye jo tool use karta hai.",
+    "Do digit ke total par ruk jaana. 36 jawab nahi hai; use phir se ghata kar 9 karna padta hai.",
+    "Digit ko us din ki bhavishyavani maan lena. Ye date of birth ka fixed reduction hai aur ek din se doosre din badalta nahi."
    ]
   },
   "marketplace": {
