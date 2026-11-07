@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-06T01:32:36Z",
- "seed_count": 150,
- "suggestion_count": 1041,
+ "generated": "2026-11-07T01:32:52Z",
+ "seed_count": 149,
+ "suggestion_count": 1050,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -31,6 +31,15 @@
    ]
   },
   {
+   "query": "reverse price calculator",
+   "demand": 12,
+   "covered": false,
+   "score": 22.08,
+   "from": [
+    "mrp reverse calculator"
+   ]
+  },
+  {
    "query": "fd calculator hdfc",
    "demand": 11,
    "covered": false,
@@ -49,7 +58,7 @@
    ]
   },
   {
-   "query": "cagr calculator excel",
+   "query": "cagr calculator finology",
    "demand": 10,
    "covered": false,
    "score": 18.4,
@@ -100,6 +109,15 @@
    "score": 18.4,
    "from": [
     "landed cost"
+   ]
+  },
+  {
+   "query": "marketplace price calculator",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "marketplace fee calculator"
    ]
   },
   {
@@ -166,7 +184,7 @@
    ]
   },
   {
-   "query": "cagr calculator finology",
+   "query": "cagr calculator excel",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -217,6 +235,24 @@
    "score": 16.56,
    "from": [
     "property valuation"
+   ]
+  },
+  {
+   "query": "rental yield in mumbai",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "rental yield"
+   ]
+  },
+  {
+   "query": "roas calculator dropshipping",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "roas calculator"
    ]
   },
   {
@@ -355,15 +391,6 @@
    ]
   },
   {
-   "query": "rental yield in mumbai",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "rental yield"
-   ]
-  },
-  {
    "query": "share market calculator nifty 50",
    "demand": 8,
    "covered": false,
@@ -481,6 +508,15 @@
    ]
   },
   {
+   "query": "market price calculator",
+   "demand": 7,
+   "covered": false,
+   "score": 12.88,
+   "from": [
+    "marketplace fee calculator"
+   ]
+  },
+  {
    "query": "marketplace fees roblox",
    "demand": 7,
    "covered": false,
@@ -541,6 +577,25 @@
    "score": 11.52,
    "from": [
     "customer acquisition cost"
+   ]
+  },
+  {
+   "query": "burn rate and runway",
+   "demand": 16,
+   "covered": true,
+   "score": 11.04,
+   "from": [
+    "burn rate",
+    "burn rate and runway"
+   ]
+  },
+  {
+   "query": "burn rate in sre",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "burn rate"
    ]
   },
   {
@@ -608,6 +663,15 @@
    "from": [
     "hra exemption",
     "hra exemption calculator"
+   ]
+  },
+  {
+   "query": "market price calculator car",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "marketplace fee calculator"
    ]
   },
   {
@@ -701,6 +765,15 @@
    "score": 11.04,
    "from": [
     "startup valuation"
+   ]
+  },
+  {
+   "query": "target roas calculator",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "roas calculator"
    ]
   },
   {
@@ -801,12 +874,30 @@
    ]
   },
   {
+   "query": "break even roas calculator dropshipping",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "roas calculator"
+   ]
+  },
+  {
    "query": "distributor margin calculation excel",
    "demand": 5,
    "covered": false,
    "score": 9.2,
    "from": [
     "distributor margin"
+   ]
+  },
+  {
+   "query": "ebitda share price",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "ebitda"
    ]
   },
   {
@@ -873,7 +964,7 @@
    ]
   },
   {
-   "query": "property valuation west bengal",
+   "query": "property valuation bangalore",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -969,15 +1060,6 @@
    "score": 8.97,
    "from": [
     "burn rate"
-   ]
-  },
-  {
-   "query": "burn rate and runway",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "burn rate and runway"
    ]
   },
   {
@@ -1099,15 +1181,6 @@
    ]
   },
   {
-   "query": "discount calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "discount calculator"
-   ]
-  },
-  {
    "query": "distributor margin",
    "demand": 13,
    "covered": true,
@@ -1117,7 +1190,7 @@
    ]
   },
   {
-   "query": "down payment calculator",
+   "query": "down payment calculator car",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1276,6 +1349,15 @@
    "score": 8.97,
    "from": [
     "income tax calculator"
+   ]
+  },
+  {
+   "query": "inventory turnover ratio",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "inventory turnover ratio"
    ]
   },
   {
@@ -1523,6 +1605,15 @@
    ]
   },
   {
+   "query": "revenue per employee",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "revenue per employee"
+   ]
+  },
+  {
    "query": "roas calculator",
    "demand": 13,
    "covered": true,
@@ -1613,12 +1704,12 @@
    ]
   },
   {
-   "query": "tip calculator",
+   "query": "wacc calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
    "from": [
-    "tip calculator"
+    "wacc calculator"
    ]
   },
   {
@@ -1838,15 +1929,6 @@
    ]
   },
   {
-   "query": "discount calculator rupees",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "discount calculator"
-   ]
-  },
-  {
    "query": "distributor margin calculator",
    "demand": 12,
    "covered": true,
@@ -1856,7 +1938,7 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator bike",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1988,6 +2070,15 @@
    "score": 8.28,
    "from": [
     "implied valuation"
+   ]
+  },
+  {
+   "query": "inventory turnover ratio formula",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "inventory turnover ratio"
    ]
   },
   {
@@ -2189,12 +2280,12 @@
    ]
   },
   {
-   "query": "reverse price calculator",
+   "query": "revenue per employee formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
-    "mrp reverse calculator"
+    "revenue per employee"
    ]
   },
   {
@@ -2297,21 +2388,21 @@
    ]
   },
   {
-   "query": "tip calculator formula",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "tip calculator"
-   ]
-  },
-  {
    "query": "ups store franchise roi",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "franchise store roi"
+   ]
+  },
+  {
+   "query": "wacc calculator nepse",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "wacc calculator"
    ]
   },
   {
@@ -2486,15 +2577,6 @@
    ]
   },
   {
-   "query": "discount calculator formula",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "discount calculator"
-   ]
-  },
-  {
    "query": "distributor margin formula",
    "demand": 11,
    "covered": true,
@@ -2504,7 +2586,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator for mobile",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2657,6 +2739,15 @@
    ]
   },
   {
+   "query": "inventory turnover ratio meaning",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "inventory turnover ratio"
+   ]
+  },
+  {
    "query": "landed cost calculator india",
    "demand": 11,
    "covered": true,
@@ -2729,6 +2820,15 @@
    ]
   },
   {
+   "query": "moic and irr formula",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "moic and irr"
+   ]
+  },
+  {
    "query": "money goal planner",
    "demand": 11,
    "covered": true,
@@ -2792,7 +2892,7 @@
    ]
   },
   {
-   "query": "ppf calculator monthly",
+   "query": "ppf calculator sbi",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2843,6 +2943,15 @@
    "score": 7.59,
    "from": [
     "revenue multiple"
+   ]
+  },
+  {
+   "query": "revenue per employee ranking",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "revenue per employee"
    ]
   },
   {
@@ -2918,15 +3027,6 @@
    ]
   },
   {
-   "query": "tip calculator google",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "tip calculator"
-   ]
-  },
-  {
    "query": "travel agency profit margin",
    "demand": 11,
    "covered": true,
@@ -2936,12 +3036,12 @@
    ]
   },
   {
-   "query": "working capital loan interest rate",
+   "query": "wacc calculator nepal",
    "demand": 11,
    "covered": true,
    "score": 7.59,
    "from": [
-    "working capital loan"
+    "wacc calculator"
    ]
   },
   {
@@ -2979,15 +3079,6 @@
    "score": 7.36,
    "from": [
     "ask calculator"
-   ]
-  },
-  {
-   "query": "burn rate in sre",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "burn rate"
    ]
   },
   {
@@ -3072,7 +3163,7 @@
    ]
   },
   {
-   "query": "property valuation bangalore",
+   "query": "property valuation west bengal",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3087,15 +3178,6 @@
    "score": 7.36,
    "from": [
     "rental yield"
-   ]
-  },
-  {
-   "query": "roi calculator real estate",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "roi calculator"
    ]
   },
   {
@@ -3190,15 +3272,6 @@
    ]
   },
   {
-   "query": "age calculator app",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "age calculator"
-   ]
-  },
-  {
    "query": "arr vs recurring revenue",
    "demand": 10,
    "covered": true,
@@ -3214,15 +3287,6 @@
    "score": 6.9,
    "from": [
     "ask calculator"
-   ]
-  },
-  {
-   "query": "bill splitter calculator",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "bill splitter"
    ]
   },
   {
@@ -3307,6 +3371,15 @@
    ]
   },
   {
+   "query": "compound interest calculator india",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "compound interest"
+   ]
+  },
+  {
    "query": "contribution margin ratio",
    "demand": 10,
    "covered": true,
@@ -3344,15 +3417,6 @@
    ]
   },
   {
-   "query": "discount calculator india",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "discount calculator"
-   ]
-  },
-  {
    "query": "distributor margin in pharma",
    "demand": 10,
    "covered": true,
@@ -3362,7 +3426,7 @@
    ]
   },
   {
-   "query": "down payment calculator for mobile",
+   "query": "down payment calculator india",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3380,7 +3444,7 @@
    ]
   },
   {
-   "query": "ebitda multiple meaning",
+   "query": "ebitda multiple by industry",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3470,6 +3534,15 @@
    ]
   },
   {
+   "query": "inventory turnover ratio in days",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "inventory turnover ratio"
+   ]
+  },
+  {
    "query": "loan emi calculator monthly",
    "demand": 10,
    "covered": true,
@@ -3506,30 +3579,12 @@
    ]
   },
   {
-   "query": "marketplace price calculator",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "marketplace fee calculator"
-   ]
-  },
-  {
    "query": "markup vs margin difference",
    "demand": 10,
    "covered": true,
    "score": 6.9,
    "from": [
     "markup vs margin"
-   ]
-  },
-  {
-   "query": "moic and irr formula",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "moic and irr"
    ]
   },
   {
@@ -3566,60 +3621,6 @@
    "score": 6.9,
    "from": [
     "percentage calculator"
-   ]
-  },
-  {
-   "query": "ppf calculator post office monthly",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "ppf calculator"
-   ]
-  },
-  {
-   "query": "pre money post money calculator",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "pre money post money"
-   ]
-  },
-  {
-   "query": "property roi calculator malaysia",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "property roi calculator"
-   ]
-  },
-  {
-   "query": "rental yield calculator bangalore",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "rental yield calculator"
-   ]
-  },
-  {
-   "query": "rental yield in india",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "rental yield"
-   ]
-  },
-  {
-   "query": "return on investment roi calculator",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "return on investment roi"
    ]
   }
  ]

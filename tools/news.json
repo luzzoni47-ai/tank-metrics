@@ -2,6 +2,57 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "peppermint-robotics-100-crore-cleaning-robots-2026",
+   "title": "Peppermint Robotics Raises ₹100 Crore for Cleaning Robots",
+   "dek": "Pune-based Peppermint Robotics has raised ₹100 crore in a pre-Series B round to build more cleaning robots in India and sell them across nine countries.",
+   "category": "Funding",
+   "date": "2026-11-04",
+   "date_display": "November 4, 2026",
+   "source_name": "The Hindu BusinessLine",
+   "source_url": "https://www.thehindubusinessline.com/companies/cleaning-robot-maker-peppermint-robotics-bags-100-cr-in-series-b-led-by-pi-ventures-and-crane-venture/article71665263.ece",
+   "cta": {
+    "text": "A robot replaces wages with a fixed price. Check how many months a machine must run before it earns back what you paid for it.",
+    "href": "/return-on-investment-roi",
+    "label": "Open the Return on Investment (ROI) Calculator"
+   },
+   "related": [
+    {
+     "slug": "break-even-point-explained",
+     "title": "How to Calculate Your Break-Even Point"
+    },
+    {
+     "slug": "startup-valuation-explained",
+     "title": "Startup Valuation: Pre-Money vs Post-Money"
+    }
+   ],
+   "body_en": [
+    "<p>Peppermint Robotics, a Pune-based maker of autonomous cleaning robots, has raised ₹100 crore in a pre-Series B round. The money is led by pi Ventures and Crane Venture Partners, with Asiana Fund also participating, and it comes as a mix of fresh capital and secondary share sales.</p>",
+    "<h2>What the round actually buys</h2>",
+    "<p>The company says the ₹100 crore, about $10.5 million, will go into four things: expanding the business worldwide, adding engineering staff, developing new products, and capex. That last word matters. Peppermint builds physical machines, not software, so every extra robot it sells needs a factory line, tooling and inventory behind it. The company plans to double its production to 3,000 robots a year by FY28. It already sells in nine countries, with the United States its biggest market.</p>",
+    "<h2>Why a hardware round is news in a slow market</h2>",
+    "<p>Indian startup funding fell about 47.5 per cent month on month to $678 million in October 2026, according to Entrackr. Hardware startups feel that squeeze more than app makers. A prototype is cheap; getting it certified, tooled and into pilot production is not, and the bills arrive long before the first steady order. Peppermint's last raise was ₹34 crore in April 2025. Its revenue doubled last year and grew about six-fold between FY24 and FY26, which is the traction that lets a hardware company raise again in a cautious market.</p>",
+    "<h2>The arithmetic of one robot</h2>",
+    "<p>Suppose a facility buys a cleaning robot for ₹25 lakh. A paid cleaner costs about ₹2 lakh a year once you count salary and statutory dues. If one robot replaces three cleaners, it saves ₹6 lakh a year. Divide the ₹25 lakh price by the ₹6 lakh saving and the machine pays for itself in a little over four years. Anything the robot saves after that is profit, minus power, spares and servicing. If the price were ₹20 lakh, payback drops to about three and a half years.</p>",
+    "<h2>What it means for a small business</h2>",
+    "<p>Peppermint mostly sells to facility management companies, the firms that already run cleaning for offices, hospitals, malls and warehouses. If you run one of those, or a factory or a hotel, you are the end buyer. The question is not whether a robot cleans well. It is whether your contract is long enough to sit through a four-year payback. A three-year contract makes a ₹25 lakh machine hard to justify. A five-year contract, with a fixed rate, turns it into a straightforward cost saving.</p>",
+    "<h2>The number to watch</h2>",
+    "<p>Watch the payback period, not the headline funding figure. When a company doubles production, unit costs usually fall, and a cheaper robot shortens payback for everyone. If Peppermint's next machines land near ₹15 lakh, the same ₹6 lakh a year saving pays back the machine in about two and a half years, and that is the point where a small facility can buy one without a long contract. Until then, run the arithmetic on your own wage bill before you sign.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Peppermint Robotics, Pune ki ek company jo autonomous cleaning robots banati hai, ne ₹100 crore ka pre-Series B round uthaya hai. Paisa pi Ventures aur Crane Venture Partners ne lead kiya, aur Asiana Fund bhi shaamil hai. Round mein fresh capital aur secondary share sale dono hain.</p>",
+    "<h2>Yeh round kya kharidta hai</h2>",
+    "<p>Company kehti hai ki ₹100 crore, yani lagbhag $10.5 million, chaar cheezon mein jayega: duniya bhar mein business badhana, engineering team badhana, naye products banana, aur capex. Yeh aakhri shabd zaroori hai. Peppermint asli machine banati hai, software nahi, isliye har extra robot ke liye factory line, tooling aur inventory chahiye. Company FY28 tak production double karke saal mein 3,000 robots karna chahti hai. Abhi nau deshon mein bikri hoti hai, aur America sabse bada market hai.</p>",
+    "<h2>Sust market mein hardware round kyun khabar hai</h2>",
+    "<p>Entrackr ke hisaab se, October 2026 mein Indian startup funding mahine-dar-mahine lagbhag 47.5 per cent gir kar $678 million rah gayi. App banane walon se hardware startups ko zyada dard hota hai. Prototype sasta hota hai; use certify, tool aur pilot production tak le jaana mehnga hai, aur kharcha pehle aata hai, pakka order baad mein. Peppermint ka pichla round April 2025 mein ₹34 crore tha. Iska revenue pichle saal double hua aur FY24 se FY26 ke beech lagbhag chhah guna badha, yahi traction sambhal ke sambhal ke paisa uthane deti hai.</p>",
+    "<h2>Ek robot ka hisaab</h2>",
+    "<p>Maan lo ek facility ₹25 lakh ka cleaning robot kharidti hai. Ek paid cleaner ka kharcha salary aur statutory dues milakar saal ka lagbhag ₹2 lakh hota hai. Agar ek robot teen cleaners ki jagah leta hai, to saal ke ₹6 lakh bachte hain. ₹25 lakh ki keemat ko ₹6 lakh ki bachat se baanto, aur machine char saal se thoda zyada mein apni keemat vasool kar leti hai. Uske baad jo bachta hai woh profit hai, power, spares aur servicing hataakar. Agar price ₹20 lakh hoti, payback sava teen saal ke aas-paas aata.</p>",
+    "<h2>Chhote business ke liye iska matlab</h2>",
+    "<p>Peppermint zyadatar facility management companies ko bechti hai — woh firms jo office, hospital, mall aur warehouse ki safai pehle se chalati hain. Agar aap aisi company chalate hain, ya factory ya hotel, to aap aakhir mein kharidar hain. Sawaal yeh nahi ki robot achha saaf karta hai ya nahi. Sawaal yeh hai ki aapka contract itna lamba hai ya nahi ki char saal ka payback jhel sake. Teen saal ka contract ₹25 lakh ki machine ke liye mushkil hai. Paanch saal ka contract, fixed rate ke saath, seedhi cost saving ban jaata hai.</p>",
+    "<h2>Kis number par nazar rakhein</h2>",
+    "<p>Headline funding figure par nahi, payback period par nazar rakhiye. Jab company production double karti hai, unit cost aksar girti hai, aur sasta robot sabke liye payback chhota karta hai. Agar Peppermint ki agli machines ₹15 lakh ke aas-paas aayein, to wahi ₹6 lakh saal ki bachat machine ko dhai saal ke aas-paas vasool kar degi — tab chhoti facility bina lambe contract ke kharid sakti hai. Tab tak, contract sign karne se pehle apni wage bill par khud hisaab lagaiye.</p>"
+   ]
+  },
+  {
    "slug": "giva-100-million-multiples-pe-1000-stores-2026",
    "title": "GIVA's $100 Million Bet: 400 Stores to 1,000",
    "dek": "GIVA raised over $100 million from Multiples PE. Revenue hit about Rs 865 crore in FY26 and it plans 1,000 stores. Here is the maths for a shop owner.",

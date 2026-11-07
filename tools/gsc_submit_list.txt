@@ -1,5 +1,6 @@
 https://tankmetrics.in/
 https://tankmetrics.in/about
+https://tankmetrics.in/ad-agency-toolkit
 https://tankmetrics.in/age-calculator
 https://tankmetrics.in/agency-profit-margin
 https://tankmetrics.in/aman-gupta-net-worth-calculator
@@ -48,8 +49,11 @@ https://tankmetrics.in/cpc-to-cpa-converter
 https://tankmetrics.in/cpm-to-cpc-converter
 https://tankmetrics.in/customer-acquisition-cost-cac
 https://tankmetrics.in/customer-lifetime-value-ltv
+https://tankmetrics.in/customers-and-unit-economics
+https://tankmetrics.in/daily-fun-toolkit
 https://tankmetrics.in/days-between-two-dates
 https://tankmetrics.in/debt-equity-deal
+https://tankmetrics.in/debt-service-coverage-ratio-dscr
 https://tankmetrics.in/digital-products/indian-business-financial-model
 https://tankmetrics.in/dilution-calculator
 https://tankmetrics.in/dilution-calculator-founders
@@ -69,6 +73,7 @@ https://tankmetrics.in/employee-utilization-rate
 https://tankmetrics.in/employee-utilization-rate-explained
 https://tankmetrics.in/epf-calculator
 https://tankmetrics.in/equity-dilution-calculator-india
+https://tankmetrics.in/everyday-money-basics
 https://tankmetrics.in/exit-calculator
 https://tankmetrics.in/export-certification-cost-support-micro-exporters
 https://tankmetrics.in/fd-fixed-deposit-calculator
@@ -82,6 +87,7 @@ https://tankmetrics.in/gratuity-calculator
 https://tankmetrics.in/grocery-store-profit-margin
 https://tankmetrics.in/gross-profit-and-margin
 https://tankmetrics.in/gross-vs-net-margin-calculator
+https://tankmetrics.in/growth-and-cash
 https://tankmetrics.in/gst-calculator
 https://tankmetrics.in/gst-calculator-tax-and-wealth-toolkit
 https://tankmetrics.in/gst-council-october-2026-small-business-changes
@@ -100,6 +106,8 @@ https://tankmetrics.in/import-duty-and-customs-calculator
 https://tankmetrics.in/import-duty-explained
 https://tankmetrics.in/income-tax-calculator-old-vs-new-regime
 https://tankmetrics.in/india-startup-funding-october-2026-flat-year
+https://tankmetrics.in/inventory-turnover-ratio
+https://tankmetrics.in/investor-view
 https://tankmetrics.in/khosla-ventures-even-healthcare-india-bet
 https://tankmetrics.in/land-area-unit-converter
 https://tankmetrics.in/landed-cost-calculator
@@ -128,12 +136,16 @@ https://tankmetrics.in/number-to-words-indian
 https://tankmetrics.in/numerology-calculator
 https://tankmetrics.in/nvidia-backs-simplismart-100-million-valuation
 https://tankmetrics.in/operating-margin
+https://tankmetrics.in/peppermint-robotics-100-crore-cleaning-robots-2026
 https://tankmetrics.in/percentage-calculator
 https://tankmetrics.in/pharma-distributor-margin-explained
+https://tankmetrics.in/pitch-check
 https://tankmetrics.in/ppf-calculator
 https://tankmetrics.in/pre-money-and-post-money-valuation
 https://tankmetrics.in/pre-money-post-money-valuation-india
+https://tankmetrics.in/pricing-and-selling
 https://tankmetrics.in/privacy-policy
+https://tankmetrics.in/profit-and-margins
 https://tankmetrics.in/profit-margin-calculator-rupees
 https://tankmetrics.in/property-roi-calculator
 https://tankmetrics.in/property-valuation-calculator
@@ -141,6 +153,7 @@ https://tankmetrics.in/quick-commerce-franchise-dark-stores-small-cities-2026
 https://tankmetrics.in/rashi-moon-sign-calculator
 https://tankmetrics.in/rbi-rate-hike-october-2026-what-it-costs-your-loan
 https://tankmetrics.in/rd-recurring-deposit-calculator
+https://tankmetrics.in/real-estate-toolkit
 https://tankmetrics.in/refund-policy
 https://tankmetrics.in/relief-scheme-exporters-extended-march-2027
 https://tankmetrics.in/rent-vs-buy-calculator
@@ -151,6 +164,7 @@ https://tankmetrics.in/return-on-capital-employed
 https://tankmetrics.in/return-on-investment-roi
 https://tankmetrics.in/revenue-multiple
 https://tankmetrics.in/revenue-multiple-calculator-india
+https://tankmetrics.in/revenue-per-employee
 https://tankmetrics.in/revenue-per-employee-explained
 https://tankmetrics.in/reverse-pricing-explained
 https://tankmetrics.in/roas-calculator
@@ -158,6 +172,7 @@ https://tankmetrics.in/roas-explained
 https://tankmetrics.in/royalty-deal
 https://tankmetrics.in/royalty-deal-calculator-shark-tank
 https://tankmetrics.in/run-rate
+https://tankmetrics.in/running-a-small-team
 https://tankmetrics.in/runway-calculator-startups-india
 https://tankmetrics.in/rupee-falls-to-95-22-what-it-costs-importers-exporters
 https://tankmetrics.in/salary-take-home-estimator
@@ -178,10 +193,13 @@ https://tankmetrics.in/startup-valuation-explained
 https://tankmetrics.in/straight-line-depreciation
 https://tankmetrics.in/sugar-valuation-shark-tank
 https://tankmetrics.in/tam-sam-som
+https://tankmetrics.in/tax-and-wealth-toolkit
 https://tankmetrics.in/terms-and-conditions
 https://tankmetrics.in/tip-calculator
 https://tankmetrics.in/upi-mdr-deferred-after-diwali-what-shops-pay
+https://tankmetrics.in/valuation-and-deals
 https://tankmetrics.in/valuation-multiple-d2c-brand-india
+https://tankmetrics.in/wacc-calculator
 https://tankmetrics.in/what-is-ebitda
 https://tankmetrics.in/why-profitable-shop-runs-out-of-cash
 https://tankmetrics.in/working-capital

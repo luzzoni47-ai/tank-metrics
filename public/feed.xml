@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 06 Nov 2026 07:13:13 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 01:43:13 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Peppermint Robotics Raises ₹100 Crore for Cleaning Robots</title>
+    <link>https://tankmetrics.in/news/peppermint-robotics-100-crore-cleaning-robots-2026</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/peppermint-robotics-100-crore-cleaning-robots-2026</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Funding</category>
+    <description>Pune-based Peppermint Robotics has raised ₹100 crore in a pre-Series B round to build more cleaning robots in India and sell them across nine countries.</description>
+  </item>
   <item>
     <title>EloElo Raises $80M at $500M: The Valuation Math</title>
     <link>https://tankmetrics.in/news/eloelo-80-million-series-c-500-million-valuation</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Free dilution calculator for founders. Enter your equity, each round and the ESOP pool to see exactly how much of your company you keep.</description>
-  </item>
-  <item>
-    <title>EMI Calculator for 2 Lakh Loan - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/emi-calculator-2-lakh-loan</link>
-    <guid isPermaLink="true">https://tankmetrics.in/emi-calculator-2-lakh-loan</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Free EMI calculator for a 2 lakh loan. See your monthly EMI, total interest and total payment in ₹ for any interest rate and tenure, instantly.</description>
   </item>
 </channel>
 </rss>

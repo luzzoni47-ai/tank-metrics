@@ -48,8 +48,8 @@
   "lastmod": "2026-11-06"
  },
  "/blog": {
-  "hash": "f08ea4d74caa18c5174a1b73e901b37e170fd6df31d4cc92375e041c78120164",
-  "lastmod": "2026-11-06"
+  "hash": "4076b4261ac0d47af666b59c1c75d5f60327247f06e55e9787e36747790a663d",
+  "lastmod": "2026-11-07"
  },
  "/bmi-calculator": {
   "hash": "7c96fe9875c3b987c93f2650ac680695f2b8460fbf21eb1ad361ac53bc7c884b",
@@ -516,8 +516,8 @@
   "lastmod": "2026-11-06"
  },
  "/news": {
-  "hash": "a37bcc49ea241decad90b3c805397283ceea26ebfca5ad026b9e7fd215dfcf36",
-  "lastmod": "2026-11-06"
+  "hash": "ad19f99a9829678a67e244ae02d566904b158e21dc476b15a05cbfd65cc42dd5",
+  "lastmod": "2026-11-07"
  },
  "/nps-calculator": {
   "hash": "d62b1e3917da11de2aa632524b59df0fae99d8c2c55ab099e73a696a0302701a",
@@ -538,6 +538,10 @@
  "/operating-margin": {
   "hash": "130b4bbb43b94df378020dc039c4f73561c045a29eaeeb78141de17f6c6159e6",
   "lastmod": "2026-11-06"
+ },
+ "/peppermint-robotics-100-crore-cleaning-robots-2026": {
+  "hash": "6465db306cbaae4cd8d9fe7f71bf7c11b4a7e1bb6a953eee41f72bcaedbf4bcb",
+  "lastmod": "2026-11-04"
  },
  "/percentage-calculator": {
   "hash": "c4c096fc8931ef18a837646d66fa913cd24ddde9823142f8b1760135c0d4a54c",
