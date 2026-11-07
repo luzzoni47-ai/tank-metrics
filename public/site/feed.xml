@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sat, 07 Nov 2026 01:46:18 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 03:46:22 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>MSME Loan Eligibility: What Banks Check</title>
+    <link>https://tankmetrics.in/msme-loan-eligibility</link>
+    <guid isPermaLink="true">https://tankmetrics.in/msme-loan-eligibility</guid>
+    <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>MSME loan eligibility explained: the DSCR and working capital numbers banks check before sanctioning a loan, with worked examples and rejection mistakes.</description>
+  </item>
   <item>
     <title>Peppermint Robotics Raises ₹100 Crore for Cleaning Robots</title>
     <link>https://tankmetrics.in/news/peppermint-robotics-100-crore-cleaning-robots-2026</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Aman Gupta net worth and boAt net worth in rupees, explained as a stake value example in ₹ Crores. Free, instant calculator for Indian founders and fans.</description>
-  </item>
-  <item>
-    <title>Dilution Calculator for Founders - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/dilution-calculator-founders</link>
-    <guid isPermaLink="true">https://tankmetrics.in/dilution-calculator-founders</guid>
-    <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Free dilution calculator for founders. Enter your equity, each round and the ESOP pool to see exactly how much of your company you keep.</description>
   </item>
 </channel>
 </rss>

@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-msme-loan-eligibility": [
+        ("/debt-service-coverage-ratio-dscr", "Debt Service Coverage Ratio (DSCR)",
+         "check whether your earnings cover the loan instalment a bank is judging you on"),
+        ("/working-capital", "Working Capital",
+         "see how much cash your stock and unpaid invoices leave you to run on"),
+    ],
     "blog-revenue-per-employee-explained": [
         ("/employee-cost-ctc-calculator", "Employee Cost (CTC)",
          "see what each person on the team really costs the business"),

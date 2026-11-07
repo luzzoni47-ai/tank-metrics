@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T01:32:52Z",
+ "generated": "2026-11-07T03:31:56Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -1190,7 +1190,7 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1938,7 +1938,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator car",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2046,7 +2046,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2586,7 +2586,7 @@
    ]
   },
   {
-   "query": "down payment calculator for mobile",
+   "query": "down payment calculator bike",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2694,7 +2694,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3272,6 +3272,15 @@
    ]
   },
   {
+   "query": "age calculator app",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "age calculator"
+   ]
+  },
+  {
    "query": "arr vs recurring revenue",
    "demand": 10,
    "covered": true,
@@ -3426,7 +3435,7 @@
    ]
   },
   {
-   "query": "down payment calculator india",
+   "query": "down payment calculator for mobile",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3507,7 +3516,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator cgst sgst",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3612,15 +3621,6 @@
    "score": 6.9,
    "from": [
     "operating margin"
-   ]
-  },
-  {
-   "query": "percentage calculator money",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "percentage calculator"
    ]
   }
  ]

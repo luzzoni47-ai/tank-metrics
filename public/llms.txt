@@ -149,6 +149,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Marketplace Fees Explained for Sellers](https://tankmetrics.in/marketplace-fees-explained)
 - [Markup vs Margin: Why ₹8,000 Earns 50%](https://tankmetrics.in/markup-vs-margin-explained)
 - [Monthly Burn Calculator for Founders](https://tankmetrics.in/monthly-burn-calculator)
+- [MSME Loan Eligibility: What Banks Check](https://tankmetrics.in/msme-loan-eligibility)
 - [Distributor Margin in Pharma Explained](https://tankmetrics.in/pharma-distributor-margin-explained)
 - [Pre Money vs Post Money Valuation India Explained](https://tankmetrics.in/pre-money-post-money-valuation-india)
 - [Profit Margin Calculator in Rupees (₹)](https://tankmetrics.in/profit-margin-calculator-rupees)
