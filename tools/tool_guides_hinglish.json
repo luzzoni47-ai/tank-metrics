@@ -199,17 +199,17 @@
    ]
   },
   "agencycac": {
-   "what": "Client acquisition cost matlab aapki agency ek client jeetne par kitna kharch karti hai, aur yahi number tay karta hai ki marketing par kitna kharch kar sakte ho. Yeh sirf ad spend nahi hai - isme salesperson ki cost, woh pitches jo kahin nahi pahunchi, aur leads dhoondhne-follow karne ke tools bhi shaamil hain. Jo agency ek quarter mein 10 clients jeetne ke liye ₹5 lakh kharch karti hai, uska CAC ₹50,000 hai, aur agar woh clients apni life mein ₹2 lakh ke hain toh maths chalta hai.",
-   "formula": "CAC = (Marketing Spend + Sales Cost) ÷ New Clients. ₹4,00,000 marketing aur ₹1,00,000 sales cost se 10 clients: CAC ₹50,000. Client lifetime value se compare karo: agar LTV ₹2,00,000 hai toh ratio 4:1, jo healthy hai. 3:1 se neeche agency grow karne par zyada kharch kar rahi hai, aur har naya client cash position ko pehle kharab karta hai.",
+   "what": "Client acquisition cost matlab aapki agency ek retainer client jeetne par kitna kharch karti hai, aur yahi number tay karta hai ki business development par kitna kharch ho sakta hai. Yeh product company ke customer CAC se alag hai, kyunki agency ek rishta bechti hai: client ki cost mein sales salary, woh proposals aur pitches jo kahin nahi pahunche, aur leads dhoondhne-follow karne ke tools bhi shaamil hote hain - sirf advertising nahi. Marketing Spend, Sales Cost aur New Clients daalo, aur tool ek figure deta hai: har signed client ko jeetne mein kitna laga.\n\nMarketing budget badhane se pehle ise chalao, baad mein nahi. Jo agency marketing par ₹4,00,000 aur sales par ₹2,00,000 kharch karke 12 clients sign karti hai, uska client CAC ₹50,000 hai. Agar ek typical retainer apni life mein ₹2,00,000 ka hai, toh client har ek rupaye par chaar rupaye deta hai - healthy. Wahi ₹6,00,000 sirf 4 clients jeeta toh CAC ₹1,50,000 ho jaata hai aur har naya client cash position ko pehle kharab karta hai, aise hi agency loss mein grow karti hai.",
+   "formula": "Client CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Numerator mein business jeetne ki poori cost rakho - Marketing Spend (marketing) aur Sales Cost (sales), dono ₹ mein - aur denominator mein actually signed clients (clients). Marketing ₹4,00,000 aur sales ₹2,00,000 se numerator ₹6,00,000 banta hai; 12 naye clients par woh ₹6,00,000 ÷ 12 = ₹50,000 per client. Client ki lifetime value ko is figure se divide karo aur ratio milega; service agency aam taur par kam se kam 3:1 chahti hai, toh ₹50,000 CAC ke saamne ₹1,50,000 ya zyada LTV honi chahiye.",
    "when": [
-    "Marketing budget set kar rahe ho aur jaanna hai client kitne ka pad sakta hai.",
-    "Paid channels ko referrals aur outbound se compare kar rahe ho.",
-    "Check kar rahe ho ki growth actually profitable hai ya nahi."
+    "Agle quarter ka marketing aur sales budget set kar rahe ho aur ek client par kitna kharch ho sakta hai woh ceiling chahiye.",
+    "Paid ads, referrals aur outbound compare kar rahe ho aur ek cost-per-client figure chahiye.",
+    "Growth tez hai par cash tight hai, aur check karna hai ki har naya client apni cost wapas deta hai ya nahi."
    ],
    "mistakes": [
-    "Sirf ad spend ginna aur sales salary aur tools bahar chhod dena.",
-    "Sab leads par divide karna, actually jeete clients par nahi.",
-    "CAC ko ek mahine ki fee se compare karna, client ke poori life value se nahi."
+    "Sirf ad spend ginna aur sales salary, proposal time aur CRM subscription numerator se bahar chhod dena.",
+    "Leads ya bheje proposals par divide karna, actually signed clients par nahi - isse number accha dikhta hai.",
+    "Client CAC ko ek mahine ki retainer fee se compare karna, poori lifetime value se nahi, jisse accha channel mehenga lagta hai."
    ]
   },
   "agencymargin": {
@@ -927,17 +927,17 @@
    ]
   },
   "lovefun": {
-   "what": "Love calculator ek mazaak hai - do naam lete hain, unhe letter-based formula se chalata hai, aur compatibility percentage deta hai. Yeh psychology, astrology ya koi bhi claim wali cheez nahi hai, aur ise rishte ke baare mein salah nahi samajhna chahiye. Yeh sirf isliye hai kyunki logon ko maza aata hai, aur calculator site par kuch aise tools hone chahiye jo sirf entertainment hain. Tank Metrics ise jaan-boojh kar entertainment likhta hai.",
-   "formula": "Score isse aata hai ki do naamon ke letters 'loves' phrase mein kitni baar aate hain, totals ko weight diya jaata hai, aur result percentage mein ghata diya jaata hai. Isme koi science nahi hai - wahi do naam hamesha wahi number dete hain, aur yahi iski ekmaatra consistency hai. Output ko party trick samjho, prediction nahi.",
+   "what": "Love Calculator do naamon ko ek compatibility percentage mein badal deta hai, aur bas itna hi. Yeh ek name-scoring toy hai: Your Name aur Their Name leta hai, sirf letters rakhta hai, aur un par ek fixed arithmetic rule chalata hai, isliye wahi pair hamesha wahi number deta hai. Yeh astrology, psychology ya kisi tarah ki prediction nahi hai, aur site ise entertainment likhti hai kyunki woh sach mein wahi hai. Isme asli rishte ki koi reading nahi hai.\n\nYeh money-calculator site par isliye hai ki baaki sab Tank Metrics tools aise rules hain jinhe check kar sakte ho, aur yeh dikhata hai ki ek banaya hua rule kaisa lagta hai. Score poori tarah do naamon ki spelling se tay hota hai - \"Rahul\" aur \"Priya\" 38% dete hain - isliye spelling badlo toh jawab badal jaata hai, aur naam dobara type karne se number upar nahi jaata. Ise party trick samjho aur asli sawaal un tools ke liye rakho jo kuch real compute karte hain.",
+   "formula": "Calculator dono naam jodta hai, lowercase karta hai aur jo letter nahi hai use hata deta hai, phir string par ek-ek character chalta hai. Har character ke liye letter ka character code us character ki position se multiply hota hai (pehle letter ke liye 1, dusre ke liye 2, aur aage bhi), product running total mein jud jaata hai, aur total ka modulo 101 liya jaata hai. Wahi remainder percentage hota hai. \"RahulPriya\" 38 par aata hai, isliye Love Calculator 38% deta hai. Kyunki rule sirf letters aur unke order par nirbhar hai, wahi do naam har baar wahi score dete hain, aur ek letter badalne se doosra score aata hai.",
    "when": [
-    "Group chat ke liye halka-phulka jawab chahiye.",
-    "Jaanna hai ki wahi do naam dobara kitna score karte hain.",
-    "Kuch quick aur harmless share karna hai."
+    "Group chat ya couple ke inside joke ke liye ek quick, harmless number chahiye.",
+    "Jaanna hai ki wahi do naam dobara try karne par wahi score dete hain (denge).",
+    "Kisi ko dikhana hai ki name-based score ek toy hai - ek spelling badlo aur number hilta dekho."
    ],
    "mistakes": [
-    "Result ko seriously lena. Yeh entertainment hai aur bas wahi.",
-    "Kam score se kuch matlab nikaalna. Iska koi aadhaar nahi hai.",
-    "Iska use asli rishte ke baare mein koi faisla karne ke liye karna."
+    "Percentage ko rishte ka verdict samajhna. Yeh entertainment hai aur iske peeche koi evidence nahi.",
+    "High score ka koi matlab maan lena. Number spelling se fix hota hai, logon se nahi.",
+    "Naam alag tarah se daal kar score badhane ki koshish, jab sirf letters badalne se hi number badalta hai."
    ]
   },
   "ltv": {

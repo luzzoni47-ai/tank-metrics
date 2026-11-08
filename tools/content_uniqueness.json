@@ -9,11 +9,6 @@
   },
   {
    "overlap": 0.147,
-   "a": "/client-acquisition-cost-cac",
-   "b": "/customer-acquisition-cost-cac"
-  },
-  {
-   "overlap": 0.147,
    "a": "/compound-interest",
    "b": "/simple-interest"
   },
@@ -24,11 +19,6 @@
   },
   {
    "overlap": 0.145,
-   "a": "/compatibility-calculator",
-   "b": "/love-calculator"
-  },
-  {
-   "overlap": 0.145,
    "a": "/ebitda-multiple",
    "b": "/revenue-multiple"
   },
@@ -36,6 +26,11 @@
    "overlap": 0.141,
    "a": "/ppf-calculator",
    "b": "/rd-recurring-deposit-calculator"
+  },
+  {
+   "overlap": 0.14,
+   "a": "/cash-conversion-cycle",
+   "b": "/working-capital"
   },
   {
    "overlap": 0.137,
@@ -61,6 +56,11 @@
    "overlap": 0.127,
    "a": "/baby-name-number-calculator",
    "b": "/compatibility-calculator"
+  },
+  {
+   "overlap": 0.127,
+   "a": "/gross-profit-and-margin",
+   "b": "/percentage-calculator"
   }
  ],
  "worst_pages": [
@@ -71,14 +71,6 @@
   {
    "page": "/pre-money-and-post-money-valuation",
    "closest_overlap": 0.158
-  },
-  {
-   "page": "/client-acquisition-cost-cac",
-   "closest_overlap": 0.147
-  },
-  {
-   "page": "/customer-acquisition-cost-cac",
-   "closest_overlap": 0.147
   },
   {
    "page": "/compound-interest",
@@ -97,20 +89,28 @@
    "closest_overlap": 0.145
   },
   {
-   "page": "/compatibility-calculator",
-   "closest_overlap": 0.145
-  },
-  {
-   "page": "/love-calculator",
-   "closest_overlap": 0.145
-  },
-  {
    "page": "/ebitda-multiple",
    "closest_overlap": 0.145
   },
   {
    "page": "/revenue-multiple",
    "closest_overlap": 0.145
+  },
+  {
+   "page": "/ppf-calculator",
+   "closest_overlap": 0.141
+  },
+  {
+   "page": "/rd-recurring-deposit-calculator",
+   "closest_overlap": 0.141
+  },
+  {
+   "page": "/cash-conversion-cycle",
+   "closest_overlap": 0.14
+  },
+  {
+   "page": "/working-capital",
+   "closest_overlap": 0.14
   }
  ],
  "median_overlap": 0.112

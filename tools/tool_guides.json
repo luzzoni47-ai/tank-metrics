@@ -199,17 +199,17 @@
    ]
   },
   "agencycac": {
-   "what": "Client acquisition cost is what your agency spends to win one client, and it is the number that decides how much you can afford to spend on marketing. It is not just ad spend - it includes the salesperson's cost, the pitches that went nowhere, and the tools used to find and follow up leads. An agency spending ₹5 lakh a quarter to win 10 clients has a CAC of ₹50,000, and if those clients are worth ₹2 lakh over their life, the maths works.",
-   "formula": "CAC = (Marketing Spend + Sales Cost) ÷ New Clients. ₹4,00,000 of marketing and ₹1,00,000 of sales cost to win 10 clients is a CAC of ₹50,000. Compare it with client lifetime value: if LTV is ₹2,00,000, the ratio is 4 to 1, which is healthy. Below 3 to 1 the agency is spending too much to grow, and every new client makes the cash position worse before it gets better.",
+   "what": "Client acquisition cost is the rupee cost of winning one retainer client, and for an agency it is the number that decides how much business development the firm can afford. It is not the same as a product company's customer CAC, because an agency sells a relationship: the cost of a client includes the sales salary, the proposals and pitches that went nowhere, and the software used to find and follow up leads — not just advertising. Enter Marketing Spend, Sales Cost and New Clients, and the tool returns one figure: what each signed client cost you to win.\n\nRun it before you raise the marketing budget, not after. An agency that spends ₹4,00,000 on marketing and ₹2,00,000 on sales to sign 12 clients has a client CAC of ₹50,000. If a typical retainer is worth ₹2,00,000 over its life, that client returns four rupees for every one spent winning it — healthy. If the same ₹6,00,000 won only 4 clients, the CAC is ₹1,50,000 and each new client makes the cash position worse before it improves, which is how an agency grows itself into a loss.",
+   "formula": "Client CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Put the whole cost of winning business in the numerator — Marketing Spend (marketing) and Sales Cost (sales), both in ₹ — and the number of clients actually signed in the denominator (clients). With marketing ₹4,00,000 and sales ₹2,00,000 the numerator is ₹6,00,000; across 12 new clients that is ₹6,00,000 ÷ 12 = ₹50,000 a client. Divide the client's lifetime value by this figure to get the ratio; a service agency generally wants at least 3 to 1, so a CAC of ₹50,000 should sit against an LTV of ₹1,50,000 or more.",
    "when": [
-    "You are setting a marketing budget and want to know what a client can cost you.",
-    "You are comparing paid channels against referrals and outbound.",
-    "You are checking whether growth is actually profitable."
+    "You are setting next quarter's marketing and sales budget and need the ceiling on what one client may cost.",
+    "You are comparing paid ads, referrals and outbound and want a single cost-per-client figure to judge them on.",
+    "Growth is fast but cash is tight, and you need to check whether each new client pays back what it cost to win."
    ],
    "mistakes": [
-    "Counting only ad spend and leaving the sales salary and tools out.",
-    "Dividing by all leads instead of clients actually won.",
-    "Comparing CAC with one month's fee instead of the client's full lifetime value."
+    "Counting only ad spend and leaving the sales salary, the proposal time and the CRM subscription out of the numerator.",
+    "Dividing by leads or proposals sent rather than clients actually signed, which flatters the number.",
+    "Comparing client CAC with a single month's retainer fee instead of the client's full lifetime value, so a good channel looks expensive."
    ]
   },
   "agencymargin": {
@@ -929,17 +929,17 @@
    ]
   },
   "lovefun": {
-   "what": "A love calculator is a bit of fun - it takes two names, runs them through a letter-based formula and returns a compatibility percentage. It is not psychology, astrology or anything else with a claim behind it, and it should not be read as advice about a relationship. It exists because people enjoy it, and a calculator site should have a few tools that are just entertainment. Tank Metrics labels it as entertainment on purpose.",
-   "formula": "The score comes from counting how often the letters of the two names appear in the phrase 'loves', weighting the totals, and reducing the result to a percentage. There is no science in it - the same two names always give the same number, which is the only consistency it has. Treat the output as a party trick, not a prediction.",
+   "what": "The Love Calculator turns two names into a compatibility percentage and nothing more. It is a name-scoring toy: it takes Your Name and Their Name, keeps only the letters, and runs a fixed arithmetic rule over them so the same pair always returns the same number. It is not astrology, psychology or any kind of prediction, and the site labels it entertainment because that is exactly what it is. There is no reading of a real relationship in it.\n\nThe reason it lives on a money-calculator site is honesty by contrast: every other Tank Metrics tool is a rule you can check, and this one shows what a made-up rule looks like. The score is fully determined by the spelling of the two names — \"Rahul\" and \"Priya\" score 38% — so changing a spelling changes the answer, and no amount of typing a name twice can push the number up. Use it as a party trick and keep the real questions for the tools that compute something real.",
+   "formula": "The calculator joins the two names, lowercases them and strips everything that is not a letter, then walks the string one character at a time. For each character it multiplies the letter's character code by that character's position (1 for the first letter, 2 for the second, and so on), adds the product to a running total, and takes the total modulo 101. The remainder is the percentage. \"RahulPriya\" reduces to 38, so the Love Calculator returns 38%. Because the rule depends only on the letters and their order, the same two names give the same score every time, and a single changed letter gives a different one.",
    "when": [
-    "You want a light-hearted answer for a group chat.",
-    "You are curious what the same two names score more than once.",
-    "You want something quick and harmless to share."
+    "You want a quick, harmless number for a group chat or a couple's inside joke.",
+    "You are curious whether the same two names still score the same on a second try (they will).",
+    "You want to show someone why a name-based score is a toy, by changing one spelling and watching the number move."
    ],
    "mistakes": [
-    "Taking the result seriously. It is entertainment and nothing more.",
-    "Reading anything into a low score. There is no basis for it.",
-    "Using it to make any decision about a real relationship."
+    "Reading the percentage as a verdict on a relationship. It is entertainment and carries no evidence.",
+    "Assuming a high score means anything. The number is fixed by the spelling, not by the people.",
+    "Trying to raise the score by entering a name differently, when the only thing that changes it is a different set of letters."
    ]
   },
   "ltv": {
