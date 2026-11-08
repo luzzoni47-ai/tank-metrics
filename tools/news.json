@@ -2,6 +2,53 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "india-eu-trade-deal-signing-december-2026-duties",
+   "title": "India-EU Trade Deal: What Duty-Free Europe Means",
+   "dek": "The India-EU trade deal is set to be signed on December 16. Here is the duty arithmetic for a small exporter, and why the saving can stay on paper instead.",
+   "category": "Small Business",
+   "date": "2026-11-08",
+   "date_display": "November 8, 2026",
+   "source_name": "Firstpost",
+   "source_url": "https://www.firstpost.com/business/india-eu-trade-deal-119-billion-by-2035-indian-exporters-europe-14058339.html",
+   "cta": {
+    "text": "A duty cut only helps if you price the full delivered cost. Add freight, insurance and duty to see what your buyer really pays.",
+    "href": "/landed-cost-calculator",
+    "label": "Open the Landed Cost Calculator"
+   },
+   "related": [
+    {
+     "slug": "import-duty-explained",
+     "title": "What Import Duty Really Adds to Your Order"
+    },
+    {
+     "slug": "landed-cost-meaning",
+     "title": "Landed Cost Meaning: What You Really Pay"
+    }
+   ],
+   "body_en": [
+    "<p>India and the European Union have finished the legal checks on their free trade agreement and are preparing to sign it in Brussels on December 16, 2026. Talks closed on January 27, 2026, after nearly two decades. Once the deal is signed and ratified, it is expected to enter into force in 2027. For a shop, a workshop or a small factory that sells abroad, this is the biggest change to its export arithmetic in years.</p>",
+    "<h2>What the deal changes</h2>",
+    "<p>Under the agreement, more than 99% of India's exports to the EU by value get preferential entry. The EU removes or cuts duties on 96.6% of its goods exports to India. Indian goods worth about $33.5 billion sit in labour-intensive lines that today pay European import duty of 4% to 26% - textiles, leather, footwear, gems and jewellery, marine products, spices, tea and coffee. Those duties are scheduled to fall to zero, mostly on day one.</p>",
+    "<h2>The arithmetic on one consignment</h2>",
+    "<p>Take a Tiruppur t-shirt maker shipping a batch worth 10,00,000 rupees to a buyer in Germany. European duty on apparel can run to 12%. At 12%, the buyer pays 1,20,000 rupees in duty at the border. Remove the duty and that 1,20,000 can be split: part as a lower price to win the order, part as extra margin. If the maker keeps 60% as margin and passes 40% as a price cut, it holds 72,000 rupees more per consignment and still looks cheaper to the buyer. On 20 such consignments a year, that is 14,40,000 rupees - the cost of a second sewing line.</p>",
+    "<h2>Why the saving can stay on paper</h2>",
+    "<p>Duty-free entry is not automatic. A study by the Global Trade Research Initiative in June 2026 found that only 20% to 30% of India's eligible exports actually claim the tariff benefits its trade deals allow, against 60% to 70% for partner countries. The reason is paperwork: proving where a product was made, meeting rules of origin, and completing the certification. For a small exporter the cost of proving origin can eat the duty saved. Europe also applies carbon and quality standards, so a lower tariff is not the only gate.</p>",
+    "<h2>What it means for your business</h2>",
+    "<p>Start with the countries where the deal already works. The India-UK agreement came into force in July 2026 and the India-New Zealand deal on October 20, 2026. Learn the origin and certification steps there, where the process is live, then repeat them for the EU when it opens. Price the full delivered cost, not just your ex-factory rate, because the buyer compares the total landed cost. If you cannot certify origin cheaply, the duty cut does not reach you. The signing is a date on the calendar; the money is in the paperwork you prepare before it.</p>"
+   ],
+   "body_hinglish": [
+    "<p>India aur European Union ne apne free trade agreement ki legal checking poori kar li hai aur 16 December 2026 ko Brussels mein sign karne ki taiyari hai. Baat-cheet 27 January 2026 ko khatam hui thi, karib do dashak ke baad. Deal sign aur ratify hone ke baad 2027 mein lagu hone ki umeed hai. Jo dukaan, workshop ya chhoti factory bahar bechti hai, uske export ke hisaab mein yeh saalon ka sabse bada badlav hai.</p>",
+    "<h2>Deal kya badalti hai</h2>",
+    "<p>Is samjhautay ke tahat, India ke EU ko hone wale export ka 99% se zyada hissa (value ke hisaab se) tarjeehi entry paayega. EU apne 96.6% goods exports par duty kam ya khatam karega. India ka karib $33.5 billion ka maal aise labour-intensive lines mein hai jo aaj 4% se 26% European import duty deta hai - textiles, leather, footwear, gems aur jewellery, marine products, masale, chai aur coffee. In duties ke zero hone ki yojana hai, zyadatar pehle din se.</p>",
+    "<h2>Ek consignment ka hisaab</h2>",
+    "<p>Maan lijiye Tiruppur ka ek t-shirt maker Germany ke buyer ko 10,00,000 rupaye ka batch bhejta hai. Apparel par European duty 12% tak ho sakti hai. 12% par buyer border par 1,20,000 rupaye duty deta hai. Duty hatne par woh 1,20,000 baant sakte hain: thoda kam price dekar order jeetne ke liye, thoda extra margin ke liye. Agar maker 60% margin rakhe aur 40% price cut de, toh har consignment par 72,000 rupaye zyada bachta hai aur buyer ko sasta bhi lagta hai. Saal ke 20 aise consignments par yeh 14,40,000 rupaye hai - ek doosri sewing line ka kharcha.</p>",
+    "<h2>Bachat kaagaz par kyun reh sakti hai</h2>",
+    "<p>Duty-free entry apne aap nahi milti. Global Trade Research Initiative ki June 2026 study ne paaya ki India ke sirf 20% se 30% eligible exports hi apne trade deals ke tariff faayde claim karte hain, jabki partner countries ke liye yeh 60% se 70% hai. Wajah kaagaz ka kaam hai: yeh sabit karna ki product kahan bana, rules of origin pura karna, aur certification. Chhote exporter ke liye origin sabit karne ka kharcha bachayi gayi duty ko kha sakta hai. Europe carbon aur quality standards bhi lagata hai, isliye kam tariff hi ekmaatra gate nahi hai.</p>",
+    "<h2>Aapke business ke liye iska matlab</h2>",
+    "<p>Un deshon se shuru karein jahan deal pehle se chalti hai. India-UK agreement July 2026 mein lagu hui aur India-New Zealand deal 20 October 2026 ko. Origin aur certification ke steps wahin seekhein, jahan process chalu hai, phir EU ke liye dohrayein jab woh khule. Poori delivered cost ka price banayein, sirf ex-factory rate nahi, kyunki buyer total landed cost dekhta hai. Agar origin saste mein certify nahi ho pata, toh duty cut aap tak nahi pahunchti. Signing calendar ki ek tareekh hai; paisa us kaagaz mein hai jo aap usse pehle taiyar karte hain.</p>"
+   ]
+  },
+  {
    "slug": "peppermint-robotics-100-crore-cleaning-robots-2026",
    "title": "Peppermint Robotics Raises ₹100 Crore for Cleaning Robots",
    "dek": "Pune-based Peppermint Robotics has raised ₹100 crore in a pre-Series B round to build more cleaning robots in India and sell them across nine countries.",

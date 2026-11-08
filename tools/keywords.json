@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T03:31:56Z",
+ "generated": "2026-11-08T01:31:55Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -148,6 +148,15 @@
    ]
   },
   {
+   "query": "runway 34",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "runway"
+   ]
+  },
+  {
    "query": "startup valuation model",
    "demand": 10,
    "covered": false,
@@ -220,15 +229,6 @@
    ]
   },
   {
-   "query": "msme loan eligibility",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "msme loan"
-   ]
-  },
-  {
    "query": "property valuation report",
    "demand": 9,
    "covered": false,
@@ -253,15 +253,6 @@
    "score": 16.56,
    "from": [
     "roas calculator"
-   ]
-  },
-  {
-   "query": "runway 34",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -1947,21 +1938,21 @@
    ]
   },
   {
-   "query": "ebitda full form",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda"
-   ]
-  },
-  {
    "query": "ebitda margin and revenue",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "ebitda and margin"
+   ]
+  },
+  {
+   "query": "ebitda means",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda"
    ]
   },
   {
@@ -2046,7 +2037,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2604,7 +2595,7 @@
    ]
   },
   {
-   "query": "ebitda means",
+   "query": "ebitda full form",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3621,6 +3612,15 @@
    "score": 6.9,
    "from": [
     "operating margin"
+   ]
+  },
+  {
+   "query": "percentage calculator money",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "percentage calculator"
    ]
   }
  ]
