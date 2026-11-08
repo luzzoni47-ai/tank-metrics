@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sun, 08 Nov 2026 01:40:26 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 08 Nov 2026 03:39:36 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>India-EU Trade Deal: What Duty-Free Europe Means</title>
@@ -14,6 +14,14 @@
     <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>The India-EU trade deal is set to be signed on December 16. Here is the duty arithmetic for a small exporter, and why the saving can stay on paper instead.</description>
+  </item>
+  <item>
+    <title>What Is the Cash Conversion Cycle?</title>
+    <link>https://tankmetrics.in/cash-conversion-cycle-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/cash-conversion-cycle-explained</guid>
+    <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>The cash conversion cycle is the days your money is tied up in stock and unpaid customer invoices. See a small worked example and two ways to shorten it.</description>
   </item>
   <item>
     <title>MSME Loan Eligibility: What Banks Check</title>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Monthly burn calculator for founders. Enter expenses and revenue to see gross burn, net burn and months of cash left, in ₹. Free and instant.</description>
-  </item>
-  <item>
-    <title>Runway Calculator for Startups India - Free Months-Left Calculator in ₹</title>
-    <link>https://tankmetrics.in/runway-calculator-startups-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/runway-calculator-startups-india</guid>
-    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Free runway calculator for startups in India. Enter your cash and monthly burn to see how many months are left, in ₹ Lakhs. Instant and no signup.</description>
   </item>
 </channel>
 </rss>

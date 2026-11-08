@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-cash-conversion-cycle-explained": [
+        ("/cash-conversion-cycle", "Cash Conversion Cycle",
+         "measure the days your money stays locked up, from stock to payment"),
+        ("/working-capital", "Working Capital",
+         "see how much cash your stock and unpaid invoices are holding up"),
+    ],
     "blog-msme-loan-eligibility": [
         ("/debt-service-coverage-ratio-dscr", "Debt Service Coverage Ratio (DSCR)",
          "check whether your earnings cover the loan instalment a bank is judging you on"),
