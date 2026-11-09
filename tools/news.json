@@ -2,6 +2,65 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "croffle-guys-14-crore-v3-ventures-100-crore-valuation",
+   "title": "Croffle Guys Raises ₹14 Crore at ₹100 Crore Valuation",
+   "dek": "The Croffle Guys raised Rs 14 crore at a Rs 100 crore valuation. Its eight outlets make about Rs 3 crore each. Here is the store maths for a shop owner.",
+   "category": "Small Business",
+   "date": "2026-11-09",
+   "date_display": "November 9, 2026",
+   "source_name": "Indian Startup Times",
+   "source_url": "https://www.indianstartuptimes.com/news/the-croffle-guys-raises-rs-14-crore-led-by-v3-ventures-at-rs-100-crore-valuation",
+   "cta": {
+    "text": "A food chain is a stack of single stores. Check what one outlet must ring up each month to cover rent, staff and ingredients and still pay you back.",
+    "href": "/franchise-store-roi",
+    "label": "Open the Franchise / Store ROI Calculator"
+   },
+   "related": [
+    {
+     "slug": "franchise-roi-explained",
+     "title": "Franchise ROI: What a Store Really Earns"
+    },
+    {
+     "slug": "shark-tank-india-deal-calculator",
+     "title": "Shark Tank India Deal Calculator - Check Any Deal"
+    }
+   ],
+   "body_en": [
+    "<p>The Croffle Guys, a Mumbai quick-service restaurant brand, has raised Rs 14 crore from V3 Ventures, the fund backed by Verlinvest, with N.A.N Partners, the family office of Navin Agarwal, joining the round. The deal values the company at Rs 100 crore after the money comes in.</p>",
+    "<h2>What the money buys</h2>",
+    "<p>The brand sells croffles, a cross between a croissant and a waffle, in sweet and savoury versions. It opened its first outlet in 2025 and now runs eight. The new capital goes into more stores: the plan is to add more than 40 outlets, mostly in Mumbai and Delhi, with a smaller presence in Pune.</p>",
+    "<h2>The arithmetic behind the Rs 100 crore valuation</h2>",
+    "<p>Work out the investor's slice first. Rs 14 crore into a company valued at Rs 100 crore after the round means the new investors own about 14% (14 divided by 100). The founders keep the rest, so the round takes a little over one-seventh of the company.</p>",
+    "<p>Now look at what the valuation is being compared with. The Croffle Guys says it is running at an annualised revenue of Rs 24 crore. Divide the valuation by that: Rs 100 crore over Rs 24 crore is about 4. So investors are paying about four rupees for every rupee of yearly sales.</p>",
+    "<p>Spread the same revenue across the outlets. Rs 24 crore over eight stores is Rs 3 crore per store a year, or about Rs 25 lakh a month. That is the number that matters to anyone running a food outlet: what one counter has to ring up.</p>",
+    "<h2>From 8 outlets to 50</h2>",
+    "<p>The company wants annual revenue of Rs 100 crore within 10 to 12 months. It also says monthly revenue is about Rs 2 crore today, and it wants that at Rs 8 crore. To get there it plans more than 40 new outlets on top of the eight it has, which is roughly 50 in total.</p>",
+    "<p>Run the plan forward. Rs 100 crore of revenue over about 50 outlets is Rs 2 crore per outlet, lower than the Rs 3 crore the current eight average. So the growth leans on opening more doors, not on each store selling far more. That is a warning and an opportunity at once: a new store in a busy market can work, but each one has to clear its own rent and wages.</p>",
+    "<h2>The Shark Tank connection</h2>",
+    "<p>The Croffle Guys first came to notice on Shark Tank India, where it took a Rs 2.5 crore deal at a Rs 50 crore valuation. This round is at Rs 100 crore, twice that mark. In less than a year the brand went from two outlets to eight and doubled the value the market puts on it.</p>",
+    "<h2>What it means if you run a shop or a cloud kitchen</h2>",
+    "<p>Three things. First, investors pay for a repeatable store, not for one good outlet. Four times yearly sales is a price set on the belief that the next 40 stores will look like the last eight. Second, know your per-store number. If a store rings up Rs 25 lakh a month, work out your ingredient cost, rent and staff and see what is left. Third, growth eats cash. Every new outlet needs fitting, stock and staff before it earns a rupee, which is exactly why the company raised money instead of growing from profit alone.</p>",
+    "<p>For a small business the lesson is simple. The number of outlets you can run profitably, and the monthly sales each one must clear, decides whether you grow or stall. Work that number out before you sign the next lease.</p>"
+   ],
+   "body_hinglish": [
+    "<p>The Croffle Guys, Mumbai ka ek quick-service restaurant brand, ne Rs 14 crore raise kiye hain. Round ko V3 Ventures ne lead kiya, jo Verlinvest ke support se chalta hai, aur N.A.N Partners, Navin Agarwal ka family office, bhi shaamil hua. Deal company ko paisa aane ke baad Rs 100 crore ki valuation deti hai.</p>",
+    "<h2>Paisa kis cheez ke liye hai</h2>",
+    "<p>Brand croffles bechta hai, jo croissant aur waffle ka mila-jula version hai, sweet aur savoury dono mein. Pehla outlet 2025 mein khula aur ab aath chal rahe hain. Naya capital zyada stores mein jaayega: plan hai 40 se zyada outlets jodna, zyadatar Mumbai aur Delhi mein, thoda Pune mein.</p>",
+    "<h2>Rs 100 crore valuation ka ganit</h2>",
+    "<p>Pehle investor ka hissa nikaalo. Rs 100 crore ki valuation wali company mein Rs 14 crore daalne par naye investors ke paas lagbhag 14% aa jaata hai (14 ko 100 se divide karo). Founders ke paas baaki rehta hai, matlab round company ka kuch zyada saathwa hissa le leta hai.</p>",
+    "<p>Ab dekho valuation kis cheez se compare ho rahi hai. Croffle Guys kehta hai uski annualised revenue Rs 24 crore hai. Valuation ko isse divide karo: Rs 100 crore over Rs 24 crore lagbhag 4 banta hai. Yani investors har ek rupee ki saalana sale par lagbhag chaar rupee de rahe hain.</p>",
+    "<p>Wahi revenue outlets par bant do. Rs 24 crore aath stores par Rs 3 crore per store saalana hai, ya lagbhag Rs 25 lakh mahina. Yahi number har food outlet chalane wale ke liye maayne rakhta hai: ek counter ko kitna kamaana hai.</p>",
+    "<h2>8 outlets se 50 tak</h2>",
+    "<p>Company 10 se 12 mahine mein Rs 100 crore saalana revenue chahti hai. Woh yeh bhi kehti hai ki aaj mahine ki revenue lagbhag Rs 2 crore hai, aur usse Rs 8 crore karna hai. Wahan pahunchne ke liye woh apne aath ke upar 40 se zyada naye outlets chahti hai, matlab kul lagbhag 50.</p>",
+    "<p>Plan aage chalao. Lagbhag 50 outlets par Rs 100 crore revenue Rs 2 crore per outlet banta hai, jo abhi ke Rs 3 crore se kam hai. Matlab growth zyada darwaze kholne par tiki hai, har store ke zyada bechne par nahi. Yeh ek warning bhi hai aur mauka bhi: busy market mein naya store chal sakta hai, par har ek ko apna rent aur salary khud nikaalni padti hai.</p>",
+    "<h2>Shark Tank ka connection</h2>",
+    "<p>The Croffle Guys pehle Shark Tank India par charcha mein aaya, jahan usne Rs 50 crore valuation par Rs 2.5 crore ka deal liya. Yeh round Rs 100 crore par hai, yaani us mark se dugna. Ek saal se kam mein brand do outlets se aath pahuncha aur market ki lagayi value dugni ho gayi.</p>",
+    "<h2>Agar aap shop ya cloud kitchen chalate hain to iska matlab</h2>",
+    "<p>Teen baatein. Pehla, investors ek repeatable store ke liye paisa dete hain, ek accha outlet ke liye nahi. Saalana sale ka chaar guna daam is bharose par hai ki agle 40 stores pichhle aath jaise honge. Doosra, apna per-store number jaano. Agar ek store mahine mein Rs 25 lakh karta hai, to ingredient cost, rent aur staff nikaal kar dekho kya bachta hai. Teesra, growth cash khaati hai. Har naya outlet fit karne, stock aur staff ke liye ek rupee kamane se pehle paisa maangta hai, isiliye company ne sirf profit se badhne ke bajaye paisa uthaya.</p>",
+    "<p>Chhoti business ke liye sabak simple hai. Kitne outlets profitably chala sakte ho, aur har ek ko mahine mein kitni sale chahiye, yahi tay karta hai aap badhoge ya ruk jaoge. Agla lease sign karne se pehle yahi number nikaalo.</p>"
+   ]
+  },
+  {
    "slug": "india-eu-trade-deal-signing-december-2026-duties",
    "title": "India-EU Trade Deal: What Duty-Free Europe Means",
    "dek": "The India-EU trade deal is set to be signed on December 16. Here is the duty arithmetic for a small exporter, and why the saving can stay on paper instead.",

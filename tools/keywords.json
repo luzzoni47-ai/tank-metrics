@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T03:38:02Z",
+ "generated": "2026-11-09T01:33:16Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -1776,7 +1776,7 @@
    ]
   },
   {
-   "query": "bmi calculator for men",
+   "query": "bmi calculator for women",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1938,21 +1938,21 @@
    ]
   },
   {
+   "query": "ebitda full form",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda"
+   ]
+  },
+  {
    "query": "ebitda margin and revenue",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "ebitda and margin"
-   ]
-  },
-  {
-   "query": "ebitda means",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda"
    ]
   },
   {
@@ -2064,7 +2064,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio formula",
+   "query": "inventory turnover ratio meaning",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2442,7 +2442,7 @@
    ]
   },
   {
-   "query": "bmi calculator for women",
+   "query": "bmi calculator for men",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2595,7 +2595,7 @@
    ]
   },
   {
-   "query": "ebitda full form",
+   "query": "ebitda means",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2685,7 +2685,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2730,7 +2730,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio in days",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3199,6 +3199,15 @@
    ]
   },
   {
+   "query": "debt service coverage ratio formula in excel",
+   "demand": 5,
+   "covered": false,
+   "score": 7.2,
+   "from": [
+    "debt service coverage ratio dscr"
+   ]
+  },
+  {
    "query": "fintech customer life time value ltv dataset",
    "demand": 5,
    "covered": false,
@@ -3507,7 +3516,7 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3531,15 +3540,6 @@
    "score": 6.9,
    "from": [
     "implied valuation"
-   ]
-  },
-  {
-   "query": "inventory turnover ratio in days",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "inventory turnover ratio"
    ]
   },
   {

@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sun, 08 Nov 2026 05:37:58 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 01:39:57 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Croffle Guys Raises ₹14 Crore at ₹100 Crore Valuation</title>
+    <link>https://tankmetrics.in/news/croffle-guys-14-crore-v3-ventures-100-crore-valuation</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/croffle-guys-14-crore-v3-ventures-100-crore-valuation</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>The Croffle Guys raised Rs 14 crore at a Rs 100 crore valuation. Its eight outlets make about Rs 3 crore each. Here is the store maths for a shop owner.</description>
+  </item>
   <item>
     <title>India-EU Trade Deal: What Duty-Free Europe Means</title>
     <link>https://tankmetrics.in/news/india-eu-trade-deal-signing-december-2026-duties</link>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Gross margin vs net margin calculator for India. Enter revenue, COGS and expenses to see both margins side by side in ₹. Free and built for founders.</description>
-  </item>
-  <item>
-    <title>Monthly Burn Calculator for Founders - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/monthly-burn-calculator</link>
-    <guid isPermaLink="true">https://tankmetrics.in/monthly-burn-calculator</guid>
-    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Monthly burn calculator for founders. Enter expenses and revenue to see gross burn, net burn and months of cash left, in ₹. Free and instant.</description>
   </item>
 </channel>
 </rss>
