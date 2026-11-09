@@ -1,6 +1,6 @@
-# SEO check (live) - 2026-11-08
+# SEO check (live) - 2026-11-09
 
-Pages checked: **203**
+Pages checked: **206**
 All 200: **yes**
 Problems: **0**
 
