@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Mon, 09 Nov 2026 01:43:58 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 03:58:12 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Croffle Guys Raises ₹14 Crore at ₹100 Crore Valuation</title>
@@ -14,6 +14,14 @@
     <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>The Croffle Guys raised Rs 14 crore at a Rs 100 crore valuation. Its eight outlets make about Rs 3 crore each. Here is the store maths for a shop owner.</description>
+  </item>
+  <item>
+    <title>Inventory Turnover Ratio: What It Tells You</title>
+    <link>https://tankmetrics.in/inventory-turnover-ratio-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/inventory-turnover-ratio-explained</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Inventory turnover ratio explained: how many times a year your stock sells through, the formula, a worked example, and how slow stock quietly traps your cash.</description>
   </item>
   <item>
     <title>India-EU Trade Deal: What Duty-Free Europe Means</title>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>COGS calculator for India. Enter opening stock, purchases and closing stock to get cost of goods sold and your COGS ratio in ₹. Free and instant.</description>
-  </item>
-  <item>
-    <title>Gross vs Net Margin Calculator India - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/gross-vs-net-margin-calculator</link>
-    <guid isPermaLink="true">https://tankmetrics.in/gross-vs-net-margin-calculator</guid>
-    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Gross margin vs net margin calculator for India. Enter revenue, COGS and expenses to see both margins side by side in ₹. Free and built for founders.</description>
   </item>
 </channel>
 </rss>
