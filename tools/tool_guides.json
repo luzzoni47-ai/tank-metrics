@@ -873,17 +873,18 @@
    ]
   },
   "impval": {
-   "what": "An implied valuation is the price of a whole company read backwards out of a single line of an offer. When someone says \"₹50,00,000 for 5%\", the stake and the cheque together already fix a value: if ₹50,00,000 buys 5%, the company has been priced at ₹10 crore. Nobody negotiated that ₹10 crore and no valuer signed it, yet it is exactly what the offer says the company is worth — which is why this tool is the fastest way to see what a term sheet really proposes.\n\nThe reason to run it is that the cheque size hides the stake, and the stake is what sets the implied price. The same ₹15,00,000 implies ₹5 crore at 3% and ₹10 crore at 1.5%; the founder keeps twice as much of the company in the second case for the identical amount of money. Run every offer through it before reacting to the amount, and a \"generous\" cheque that asks for a third of the business stops looking generous.",
-   "formula": "Implied Valuation = amt ÷ (eq ÷ 100). The cheque goes in as amt in ₹ and the stake as eq in per cent, so ₹50,00,000 at eq = 5 gives 50,00,000 ÷ 0.05 = ₹10 crore. Read it backwards to test a claim: an investor who values the company at ₹10 crore but offers ₹25,00,000 is buying 25,00,000 ÷ 10,00,00,000 = 2.5%, not the larger stake the round might suggest. Implied equity = amt ÷ Implied Valuation × 100.",
+   "what": "Implied valuation answers the one question a founder faces the moment an offer lands: what price do this cheque and this stake, taken together, put on the whole company? An investor who offers ₹25,00,000 for 4% has, without naming a figure, priced the business at ₹6.25 crore. The tool turns that pair into the single number the conversation is really about, so the offer can be judged on price instead of on the size of the cheque.\n\nA founder needs it because the cheque is the number people react to and the stake is the number that actually matters. The same ₹30,00,000 implies ₹30 crore at 1% and ₹6 crore at 5% — five times the company for the identical money. Read every offer this way before replying and a round that looks like a vote of confidence can turn out to be a cheap stake in a company priced low, or an expensive stake in one priced high. It is the fastest sanity check in a fundraising conversation, and it needs no model, no cap table and no valuer.",
+   "formula": "Implied Valuation = amt ÷ (eq ÷ 100), with the cheque in ₹ as amt and the stake in per cent as eq. ₹25,00,000 at eq = 4 gives 25,00,000 ÷ 0.04 = ₹6,25,00,000. Read it the other way to test a claim: if an investor says the company is worth ₹10 crore and writes ₹25,00,000, the stake that cheque buys is amt ÷ Implied Valuation × 100 = 25,00,000 ÷ 10,00,00,000 × 100 = 2.5%, not the 5% a casual reading assumes. Implied equity = amt ÷ Implied Valuation × 100.",
    "when": [
-    "An offer arrives as an amount and a stake — \"₹20,00,000 for 4%\" — and you want the company price buried inside that pair.",
-    "You are comparing two offers that quote different cheques against different stakes and need a single scale to judge them on.",
-    "An investor states a company valuation and you want to check what stake the cheque they are actually writing would buy at that price."
+    "An offer arrives as an amount and a stake — “₹20,00,000 for 4%” — and you want the whole-company price hidden inside that pair before you react to the cheque.",
+    "Two offers quote different cheques against different stakes and you need one scale to rank them on.",
+    "An investor states a company valuation in passing and you want to check what stake the cheque they are actually writing would buy at that price.",
+    "You are drafting a term sheet and want to see how the same cheque reads at 5%, 10% and 20% before you name a stake."
    ],
    "mistakes": [
-    "Reading the implied number as the company's value rather than the price this one offer implies. A different stake in the same business implies a different valuation.",
-    "Feeding a convertible note, loan or royalty cheque into eq as though it were equity. The implied valuation is only meaningful once the equity part is separated from the debt.",
-    "Quoting an implied valuation as if a valuer certified it. It is a reading of an offer, and anything official still needs a CA or merchant banker."
+    "Treating the implied number as the company’s value rather than the price this one offer implies — a different stake in the same business implies a different valuation.",
+    "Feeding a convertible note, loan or royalty cheque into eq as though it were equity; the implied valuation only means something once the equity part is separated from the debt.",
+    "Quoting an implied valuation as if a valuer had certified it — it is a reading of an offer, and anything official still needs a CA or a merchant banker."
    ]
   },
   "incometax": {
@@ -1201,17 +1202,18 @@
    ]
   },
   "prepost": {
-   "what": "Pre-money and post-money are the two prices a term sheet carries, and the only reason to care about the difference is that the stake an investor receives is measured against the second one. The pre-money is the value the company was agreed at with the new cheque still outside it; the post-money is that figure plus the cheque. If the pre-money is ₹9 crore and the investment is ₹1 crore, the company is priced at ₹10 crore after the round and the investor's ₹1 crore has bought a tenth of it.\n\nThe calculator settles the dilution question founders get wrong: the new investor's percentage comes out of the founder's holding, not from a spare slice of the company. Enter pre = 9,00,00,000 and amt = 1,00,00,000 and the tool returns a ₹10 crore post-money and 10% given away. That 10% is the exact reduction in what the existing shareholders own, which is why a round at a lower pre-money for more money can cost a founder far more than the cheque brings in.",
-   "formula": "Post-Money Valuation = pre + amt, and Equity Given = amt ÷ Post-Money Valuation × 100. The pre-money goes in as pre and the cheque as amt, both in ₹. With pre = 9,00,00,000 and amt = 1,00,00,000 the post-money is ₹10 crore and the equity given is 1,00,00,000 ÷ 10,00,00,000 × 100 = 10%. The stake is always measured against the post-money, because that is the company the investor is joining.",
+   "what": "Pre-money and post-money are the two prices a term sheet carries, and the only reason the difference matters is that the investor’s stake is measured against the second one. The pre-money is the value agreed for the company with the new cheque still outside it; the post-money is that figure plus the cheque. A ₹8 crore pre-money with a ₹2 crore investment prices the company at ₹10 crore once the round closes, and the ₹2 crore has bought a fifth of it.\n\nThe tool settles the dilution question founders most often get wrong: the new investor’s percentage comes out of the founders’ holding, not from a spare slice of the company. Enter pre = 8,00,00,000 and amt = 2,00,00,000 and it returns a ₹10 crore post-money and 20% given away — and that 20% is the exact reduction in what the existing shareholders own. It is why a round at a lower pre-money for more money can cost a founder far more than the cheque brings in, and why the pre-money, not the headline valuation, is the number to negotiate.",
+   "formula": "Post-Money Valuation = pre + amt, and Equity Given = amt ÷ Post-Money Valuation × 100. Pre-money goes in as pre and the cheque as amt, both in ₹. With pre = 8,00,00,000 and amt = 2,00,00,000 the post-money is ₹10 crore and the equity given is 2,00,00,000 ÷ 10,00,00,000 × 100 = 20%. The stake is always measured against the post-money, because that is the company the investor is joining; measuring it against the pre-money overstates the stake every time.",
    "when": [
     "A term sheet quotes a pre-money figure and you need the post-money and the stake it hands over before you sign.",
-    "You are choosing between a lower pre-money for a larger cheque and a higher pre-money for a smaller one, and want the dilution of each.",
-    "You are drawing a simple cap table and need the post-money value before you can divide it into shareholder stakes."
+    "You are choosing between a lower pre-money for a larger cheque and a higher pre-money for a smaller one, and want the dilution of each side by side.",
+    "You are drawing a simple cap table and need the post-money value before you can divide it into shareholder stakes.",
+    "An investor describes the round by the post-money only and you want to back out the pre-money they must have agreed."
    ],
    "mistakes": [
-    "Measuring the equity given against the pre-money. 10% of the pre-money is not 10% of the company — the investment is part of the base the stake is divided by.",
-    "Reading the pre-money as the price of the whole company. It is the price before the new money, and it is always the smaller of the two numbers on the sheet.",
-    "Adding the cheque to the pre-money but not reducing the founder's own holding by the equity given. The two move together, and only the post-money shows it."
+    "Measuring the equity given against the pre-money — 20% of the pre-money is not 20% of the company, because the investment is part of the base the stake is divided by.",
+    "Reading the pre-money as the price of the whole company — it is the price before the new money, and it is always the smaller of the two numbers on the sheet.",
+    "Adding the cheque to the pre-money but forgetting to reduce the founders’ own holding by the equity given; the two move together, and only the post-money shows it."
    ]
   },
   "propertyroi": {

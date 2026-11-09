@@ -3,7 +3,7 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.158,
+   "overlap": 0.148,
    "a": "/implied-valuation",
    "b": "/pre-money-and-post-money-valuation"
   },
@@ -28,7 +28,7 @@
    "b": "/rd-recurring-deposit-calculator"
   },
   {
-   "overlap": 0.14,
+   "overlap": 0.138,
    "a": "/cash-conversion-cycle",
    "b": "/working-capital"
   },
@@ -66,11 +66,11 @@
  "worst_pages": [
   {
    "page": "/implied-valuation",
-   "closest_overlap": 0.158
+   "closest_overlap": 0.148
   },
   {
    "page": "/pre-money-and-post-money-valuation",
-   "closest_overlap": 0.158
+   "closest_overlap": 0.148
   },
   {
    "page": "/compound-interest",
@@ -106,11 +106,11 @@
   },
   {
    "page": "/cash-conversion-cycle",
-   "closest_overlap": 0.14
+   "closest_overlap": 0.138
   },
   {
    "page": "/working-capital",
-   "closest_overlap": 0.14
+   "closest_overlap": 0.138
   }
  ],
  "median_overlap": 0.112
