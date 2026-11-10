@@ -2,6 +2,57 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "razorpay-sebi-ipo-approval-49000-crore-valuation-2026",
+   "title": "Razorpay Gets SEBI Nod for IPO at Rs 49,000 Crore",
+   "dek": "Razorpay has SEBI approval to list at a reported Rs 49,000 crore valuation. Here is how a payments company gets priced, and what that means for a small shop.",
+   "category": "Startups",
+   "date": "2026-11-10",
+   "date_display": "November 10, 2026",
+   "source_name": "Entrackr",
+   "source_url": "https://entrackr.com/news/razorpay-receives-sebi-approval-for-ipo-12780674",
+   "cta": {
+    "text": "An IPO price is a multiple applied to revenue. Enter your own revenue and the multiple a buyer might pay to see what your business is worth today.",
+    "href": "/implied-valuation",
+    "label": "Open the Implied Valuation Calculator"
+   },
+   "related": [
+    {
+     "slug": "how-to-calculate-startup-valuation-india",
+     "title": "How to Calculate Valuation of a Startup in India"
+    },
+    {
+     "slug": "revenue-multiple-calculator-india",
+     "title": "Revenue Multiple Calculator"
+    }
+   ],
+   "body_en": [
+    "<p>Razorpay, the Bengaluru payments company, has received approval from market regulator SEBI for its initial public offering. The company filed its draft papers through the confidential route in June 2026, and reports say it is now cleared to list as early as the first quarter of calendar 2027. This is the same company many Indian shops use to collect online payments, so its price tag is a useful way to understand how investors value a business.</p>",
+    "<h2>What Razorpay Just Got</h2>",
+    "<p>SEBI approval is the green light that lets a company move from private to public. Razorpay filed a confidential draft red herring prospectus in June 2026, which lets a company submit its papers for review without making sensitive numbers public straight away. Reports put the planned issue at roughly ₹5,500 crore to ₹6,500 crore, at an expected valuation of about $5 billion, or near ₹49,000 crore. The company was founded in 2014 by Harshil Mathur and Shashank Kumar, and it moved its parent company from the United States back to India in 2025, a step that came with a reported tax bill of about $150 million.</p>",
+    "<h2>The Numbers Behind the ₹49,000 Crore Tag</h2>",
+    "<p>To understand the tag, look at revenue. Razorpay's consolidated revenue rose 65% to ₹3,783 crore in financial year 2025. Divide the reported valuation of ₹49,000 crore by that revenue and you get a multiple of about 13 times. That is the whole trick of a valuation: it is not a fixed sum of money in a bank. It is a revenue figure multiplied by a number that reflects how fast the business is growing and how confident investors feel about the future. A growing company earns a higher multiple; a flat one earns a lower multiple.</p>",
+    "<h2>How a Valuation Multiple Works</h2>",
+    "<p>Take a simple example. A shop rings up ₹1 crore of sales a year. If a buyer agrees to a multiple of 2 times revenue, the business is valued at ₹2 crore. At 3 times, the same ₹1 crore of sales is valued at ₹3 crore. The sales did not change; only the multiple did. This is why two shops with the same turnover can be worth very different amounts. The buyer is paying for the sales today and the growth expected tomorrow. You can apply the same arithmetic to any small business: pick a fair multiple, multiply it by your annual revenue, and you get a rough value.</p>",
+    "<h2>Why the Price Is Not the Cash</h2>",
+    "<p>A ₹49,000 crore valuation does not mean ₹49,000 crore sitting in the company's account. It is what the market thinks the whole company is worth. The money raised in the IPO is only the size of the issue, which is far smaller. The rest is the value of shares already held by founders and early investors, which they can sell on the exchange after listing. For a small business owner, the lesson is the same: your turnover is not your wealth. Your wealth is what a buyer would pay for the business, and that depends on the multiple they apply to your profit or sales.</p>",
+    "<h2>What It Means for a Small Business</h2>",
+    "<p>Three takeaways. First, valuation is arithmetic you can do yourself: revenue times a multiple. Second, growth is what earns the higher multiple, so a business that is speeding up is worth more per rupee of sales than one that is standing still. Third, a public listing is a way for early backers to turn paper value into cash, which is why investors chase it. If you run a shop or are building a startup, know your annual revenue, know your profit margin, and know the multiple your sector commands. Those three numbers tell you what your business is really worth.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Razorpay, Bengaluru ki payments company, ko SEBI se IPO ke liye approval mil gaya hai. Company ne June 2026 me confidential route se draft papers file kiye the, aur reports ke mutabik ye ab 2027 ki pehli quarter me list kar sakti hai. Yahi company bahut si Indian dukaano ke online payments leti hai, isliye iska price tag ye samajhne ka achha tarika hai ki investors ek business ko kaise value karte hain.</p>",
+    "<h2>Razorpay Ko Kya Mila</h2>",
+    "<p>SEBI approval wo green light hai jo company ko private se public banne deta hai. Razorpay ne June 2026 me confidential draft red herring prospectus file kiya, jisme company sensitive numbers turant public kiye bina papers review ke liye de sakti hai. Reports ke mutabik planned issue lagbhag ₹5,500 crore se ₹6,500 crore ka hai, aur expected valuation kareeb $5 billion, yaani ₹49,000 crore ke aas paas. Company 2014 me Harshil Mathur aur Shashank Kumar ne shuru ki thi, aur 2025 me apni parent company ko America se wapas India shift kiya, jis par lagbhag $150 million ka tax bill bataya gaya.</p>",
+    "<h2>₹49,000 Crore Ke Tag Ke Peeche Ke Numbers</h2>",
+    "<p>Tag samajhne ke liye revenue dekhiye. Razorpay ka consolidated revenue financial year 2025 me 65% badhkar ₹3,783 crore ho gaya. Reported valuation ₹49,000 crore ko is revenue se divide kijiye, to multiple lagbhag 13 guna aata hai. Yahi valuation ka poora khel hai: ye bank me pada koi fixed paisa nahi hai. Ye ek revenue figure ko us number se multiply karna hai jo batata hai business kitni tezi se badh raha hai aur investors ko future par kitna bharosa hai. Badhti company ko zyada multiple milta hai; flat company ko kam.</p>",
+    "<h2>Valuation Multiple Kaise Kaam Karta Hai</h2>",
+    "<p>Ek aasan example lijiye. Ek dukaan saal me ₹1 crore ki sales karti hai. Agar kharidaar 2 guna revenue ka multiple maane, to business ki value ₹2 crore hogi. 3 guna par wahi ₹1 crore sales ₹3 crore ki value ki ho jaati hai. Sales nahi badli; sirf multiple badla. Isi liye ek jaisi turnover wali do dukaanein bahut alag value ki ho sakti hain. Kharidaar aaj ki sales aur kal ki expected growth ke liye paisa deta hai. Yahi ganit aap kisi bhi chhote business par laga sakte hain: ek fair multiple chuniye, apne saal ke revenue se multiply kijiye, aur rough value mil jayegi.</p>",
+    "<h2>Price Cash Nahi Hota</h2>",
+    "<p>₹49,000 crore ki valuation ka matlab ye nahi ki company ke account me ₹49,000 crore pada hai. Ye wo hai jo market sochta hai ki poori company ki value kitni hai. IPO me jo paisa uthta hai wo sirf issue ka size hai, jo kaafi chhota hota hai. Baaki founders aur early investors ke paas already maujood shares ki value hai, jise wo listing ke baad exchange par bech sakte hain. Chhote business owner ke liye seekh wahi hai: aapki turnover aapki daulat nahi hai. Aapki daulat wo hai jo ek kharidaar business ke liye dega, aur wo ispar depend karta hai ki wo aapke profit ya sales par kitna multiple lagata hai.</p>",
+    "<h2>Chhote Business Ke Liye Iska Matlab</h2>",
+    "<p>Teen baatein. Pehli, valuation wo ganit hai jo aap khud kar sakte hain: revenue guna multiple. Doosri, growth hi zyada multiple dilati hai, isliye tezi se badhta business har rupee sales par zyada value ka hota hai. Teesri, public listing early backers ke liye paper value ko cash me badalne ka tarika hai, isi liye investors iske peeche bhagte hain. Agar aap dukaan chalate hain ya startup bana rahe hain, to apna saal ka revenue janiye, apna profit margin janiye, aur apne sector ka multiple janiye. Ye teen numbers batate hain ki aapka business sach me kitne ka hai.</p>"
+   ]
+  },
+  {
    "slug": "croffle-guys-14-crore-v3-ventures-100-crore-valuation",
    "title": "Croffle Guys Raises ₹14 Crore at ₹100 Crore Valuation",
    "dek": "The Croffle Guys raised Rs 14 crore at a Rs 100 crore valuation. Its eight outlets make about Rs 3 crore each. Here is the store maths for a shop owner.",

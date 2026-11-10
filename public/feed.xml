@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Mon, 09 Nov 2026 05:42:05 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 01:41:43 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Razorpay Gets SEBI Nod for IPO at Rs 49,000 Crore</title>
+    <link>https://tankmetrics.in/news/razorpay-sebi-ipo-approval-49000-crore-valuation-2026</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/razorpay-sebi-ipo-approval-49000-crore-valuation-2026</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Startups</category>
+    <description>Razorpay has SEBI approval to list at a reported Rs 49,000 crore valuation. Here is how a payments company gets priced, and what that means for a small shop.</description>
+  </item>
   <item>
     <title>Croffle Guys Raises ₹14 Crore at ₹100 Crore Valuation</title>
     <link>https://tankmetrics.in/news/croffle-guys-14-crore-v3-ventures-100-crore-valuation</link>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>CAGR is the steady yearly growth rate hiding behind any two figures you already have. Work it out with a clean ₹4,000 to ₹9,000 example for your business.</description>
-  </item>
-  <item>
-    <title>COGS Calculator India - Free Cost of Goods Sold Calculator in ₹</title>
-    <link>https://tankmetrics.in/cogs-calculator-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/cogs-calculator-india</guid>
-    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>COGS calculator for India. Enter opening stock, purchases and closing stock to get cost of goods sold and your COGS ratio in ₹. Free and instant.</description>
   </item>
 </channel>
 </rss>
