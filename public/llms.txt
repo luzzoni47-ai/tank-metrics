@@ -133,6 +133,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [EMI Calculator for 2 Lakh Loan - Instant](https://tankmetrics.in/emi-calculator-2-lakh-loan)
 - [Employee Utilization Rate Explained Simply](https://tankmetrics.in/employee-utilization-rate-explained)
 - [Equity Dilution Calculator India - Cap Table](https://tankmetrics.in/equity-dilution-calculator-india)
+- [FMCG Distributor Margin: Who Earns What](https://tankmetrics.in/fmcg-distributor-margin-explained)
 - [Founder Salary Calculator for Indian Startups](https://tankmetrics.in/founder-salary-calculator-india)
 - [Franchise ROI: What a Store Really Earns](https://tankmetrics.in/franchise-roi-explained)
 - [Grocery Store Profit Margin: What You Keep](https://tankmetrics.in/grocery-store-profit-margin)

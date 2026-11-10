@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-fmcg-distributor-margin-explained": [
+        ("/distributor-and-retailer-margin", "Distributor & Retailer Margin",
+         "split an MRP into the company, distributor and retailer prices"),
+        ("/markup-vs-margin", "Markup vs Margin",
+         "see why the same rupee margin is two different percentages"),
+    ],
     "blog-inventory-turnover-ratio-explained": [
         ("/inventory-turnover-ratio", "Inventory Turnover Ratio",
          "put your own cost of goods sold and average stock into the ratio this post explains"),

@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Tue, 10 Nov 2026 01:45:18 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 03:45:21 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Razorpay Gets SEBI Nod for IPO at Rs 49,000 Crore</title>
@@ -14,6 +14,14 @@
     <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
     <category>Startups</category>
     <description>Razorpay has SEBI approval to list at a reported Rs 49,000 crore valuation. Here is how a payments company gets priced, and what that means for a small shop.</description>
+  </item>
+  <item>
+    <title>FMCG Distributor Margin: Who Earns What</title>
+    <link>https://tankmetrics.in/fmcg-distributor-margin-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/fmcg-distributor-margin-explained</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>FMCG distributor margin explained: how the company price, your margin and the retailer&#x27;s share fit inside one MRP, with a ₹100 pack worked through in full.</description>
   </item>
   <item>
     <title>Croffle Guys Raises ₹14 Crore at ₹100 Crore Valuation</title>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Break even calculator in rupees. Enter price, variable cost and fixed costs to get your break-even units and revenue in ₹. Free, instant and simple.</description>
-  </item>
-  <item>
-    <title>CAGR: Compound Annual Growth Rate Explained</title>
-    <link>https://tankmetrics.in/cagr-explained</link>
-    <guid isPermaLink="true">https://tankmetrics.in/cagr-explained</guid>
-    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>CAGR is the steady yearly growth rate hiding behind any two figures you already have. Work it out with a clean ₹4,000 to ₹9,000 example for your business.</description>
   </item>
 </channel>
 </rss>
