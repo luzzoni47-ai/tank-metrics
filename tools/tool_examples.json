@@ -151,9 +151,9 @@
       }
     ],
     "intro": "Gross Profit & Margin, worked end to end. The calculator takes Total Revenue, Cost of Goods Sold; the example below runs one realistic set of those numbers through it.",
-    "outro": "Gross Profit & Margin settles it with Gross Profit = Revenue − Cost of Goods Sold. Change any field above and the answer updates with it.",
+    "outro": "Gross Profit & Margin settles it with Gross Profit = Revenue − Cost of Goods Sold, so ₹10,00,000 − ₹6,00,000 = ₹4,00,000. Change any field above and the answer updates with it.",
     "hi_intro": "Gross Profit & Margin ka poora hisaab. Tool leta hai Total Revenue aur Cost of Goods Sold; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Gross Profit & Margin ka formula: Gross Profit = Revenue − Cost of Goods Sold. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Gross Profit & Margin ka formula: Gross Profit = Revenue − Cost of Goods Sold, yaani ₹10,00,000 − ₹6,00,000 = ₹4,00,000. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ebitda": {
     "inputs": {
@@ -291,10 +291,10 @@
         "v": "₹1,00,00,000"
       }
     ],
-    "intro": "Implied Valuation, worked end to end. The calculator takes Investment Amount, Equity Offered; the example below runs one realistic set of those numbers through it.",
-    "outro": "Implied Valuation settles it with Implied Valuation = amt ÷ (eq ÷ 100). Change any field above and the answer updates with it.",
-    "hi_intro": "Implied Valuation ka poora hisaab. Tool leta hai Investment Amount aur Equity Offered; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Implied Valuation ka formula: Implied Valuation = amt ÷ (eq ÷ 100). Koi bhi field badlo aur jawab turant badal jaata hai."
+    "intro": "Say a founder is offered ₹10,00,000 for 10% of the business. The two numbers look small next to each other; implied valuation turns them into the one figure the round is really about — the price they put on the whole company.",
+    "outro": "At ₹10,00,000 for 10%, the cheque implies a ₹1,00,00,000 company. Offer the same ₹10,00,000 for 5% instead and the implied price doubles; change either field above and the whole-company value moves with it.",
+    "hi_intro": "Maano ek founder ko business ke 10% ke liye ₹10,00,000 ka offer milta hai. Do chhote numbers lagte hain, par implied valuation inhi ko ek price bana deta hai — poori company ki value jo round ka asli sawaal hai.",
+    "hi_outro": "₹10,00,000 me 10% ka matlab ₹1,00,00,000 ki company. Wahi cheque 5% ke liye do to implied price dugna ho jaata hai; upar koi bhi field badlo aur poori company ki value saath badalti hai."
   },
   "prepost": {
     "inputs": {
@@ -311,10 +311,10 @@
         "v": "10.0%"
       }
     ],
-    "intro": "Pre-Money & Post-Money Valuation, worked end to end. The calculator takes Pre-Money Valuation, Investment Amount; the example below runs one realistic set of those numbers through it.",
-    "outro": "Pre-Money & Post-Money Valuation settles it with Post-Money Valuation = pre + amt, and Equity Given = amt ÷ Post-Money Valuation × 100. Change any field above and the answer updates with it.",
-    "hi_intro": "Pre-Money & Post-Money Valuation ka poora hisaab. Tool leta hai Pre-Money Valuation aur Investment Amount; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Pre-Money & Post-Money Valuation ka formula: Post-Money Valuation = pre + amt, aur Equity Given = amt ÷ Post-Money Valuation × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "intro": "A term sheet names a ₹90,00,000 pre-money and a ₹10,00,000 cheque. Neither number on its own says what the investor ends up owning; the post-money does, and it is the sum of the two.",
+    "outro": "The ₹10,00,000 cheque on a ₹90,00,000 pre-money makes a ₹1,00,00,000 company and hands over 10%. Raise the cheque without moving the pre-money and the stake grows; change either field above to see the split.",
+    "hi_intro": "Term sheet me ₹90,00,000 pre-money aur ₹10,00,000 ka cheque likha hai. Ye do numbers akele nahi batate investor ka hissa kitna hoga; post-money batata hai, aur wo dono ka jod hai.",
+    "hi_outro": "₹90,00,000 pre-money par ₹10,00,000 ka cheque ₹1,00,00,000 ki company banata hai aur 10% deta hai. Pre-money badle bina cheque badhao to stake badh jaata hai; upar koi bhi field badlo aur hissa dekho."
   },
   "revmul": {
     "inputs": {
@@ -738,9 +738,9 @@
       }
     ],
     "intro": "Break-Even Point, worked end to end. The calculator takes Fixed Costs (per month), Selling Price / Unit, Variable Cost / Unit; the example below runs one realistic set of those numbers through it.",
-    "outro": "Break-Even Point settles it with Break-Even Units = Fixed Costs ÷ (Selling Price − Variable Cost). Change any field above and the answer updates with it.",
+    "outro": "Break-Even Point settles it with Contribution per unit is Selling Price minus Variable Cost, so ₹250 − ₹150 = ₹100. Change any field above and the answer updates with it.",
     "hi_intro": "Break-Even Point ka poora hisaab. Tool leta hai Fixed Costs (per month) aur Selling Price / Unit aur Variable Cost / Unit; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Break-Even Point ka formula: Break-Even Units = Fixed Costs ÷ (Selling Price − Variable Cost). Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Break-Even Point ka formula: Contribution per unit = Selling Price − Variable Cost, yaani ₹250 − ₹150 = ₹100. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "wc": {
     "inputs": {
@@ -1214,9 +1214,9 @@
       }
     ],
     "intro": "Client Acquisition Cost (CAC), worked end to end. The calculator takes Marketing Spend, Sales Cost, New Clients; the example below runs one realistic set of those numbers through it.",
-    "outro": "Client Acquisition Cost (CAC) settles it with CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Change any field above and the answer updates with it.",
+    "outro": "Client Acquisition Cost (CAC) settles it with Client CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Change any field above and the answer updates with it.",
     "hi_intro": "Client Acquisition Cost (CAC) ka poora hisaab. Tool leta hai Marketing Spend aur Sales Cost aur New Clients; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Client Acquisition Cost (CAC) ka formula: CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Client Acquisition Cost (CAC) ka formula: Client CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "clientltv": {
     "inputs": {
@@ -1725,9 +1725,9 @@
       }
     ],
     "intro": "Age Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
-    "outro": "Age Calculator settles it with Age in years = today's year minus the birth year, less one if this year's birthday has not yet arrived. Change any field above and the answer updates with it.",
+    "outro": "Age Calculator settles it with The calculator compares the birth date with today one part at a time: year, then month, then day. Change any field above and the answer updates with it.",
     "hi_intro": "Age Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Age Calculator ka formula: Age in years = aaj ka saal minus birth year, aur ek kam tab jab is saal ka birthday abhi aaya na ho. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Age Calculator ka formula: Tool birth date ke teen hisse aaj se ek-ek karke milata hai: pehle saal, phir mahina, phir din. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "lovefun": {
     "inputs": {
@@ -1741,9 +1741,9 @@
       }
     ],
     "intro": "Love Calculator, worked end to end. The calculator takes Your Name, Their Name; the example below runs one realistic set of those numbers through it.",
-    "outro": "Love Calculator settles it with The score comes from counting how often the letters of the two names appear in the phrase 'loves', weighting the totals, and reducing the result to a percentage. Change any field above and the answer updates with it.",
+    "outro": "Love Calculator settles it with The calculator joins the two names, lowercases them and strips everything that is not a letter, then walks the string one character at a time. Change any field above and the answer updates with it.",
     "hi_intro": "Love Calculator ka poora hisaab. Tool leta hai Your Name aur Their Name; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Love Calculator ka formula: Score isse aata hai ki do naamon ke letters 'loves' phrase mein kitni baar aate hain, totals ko weight diya jaata hai, aur result percentage mein ghata diya jaata hai. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Love Calculator ka formula: Calculator dono naam jodta hai, lowercase karta hai aur jo letter nahi hai use hata deta hai, phir string par ek-ek character chalta hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "numerology": {
     "inputs": {
@@ -1817,9 +1817,9 @@
       }
     ],
     "intro": "Lucky Number Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
-    "outro": "Lucky Number Calculator settles it with The tool strips the hyphens from the date of birth, adds all eight digits together, and if the total is more than nine it adds the digits of that total again. Change any field above and the answer updates with it.",
+    "outro": "Lucky Number Calculator settles it with Strip the hyphens from the date of birth and add the eight digits. Change any field above and the answer updates with it.",
     "hi_intro": "Lucky Number Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Lucky Number Calculator ka formula: Tool date of birth se hyphen hata deta hai, saare aath digits jod deta hai, aur agar total nau se bada ho to us total ke digits phir se jod deta hai. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Lucky Number Calculator ka formula: Date of birth se hyphen hata kar aath digits jodo. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "compatibility": {
     "inputs": {

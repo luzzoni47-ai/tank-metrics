@@ -883,7 +883,9 @@
     "Implied number ko company ki value maan lena, jabki ye sirf is ek offer ki price hai — usi business me alag stake alag valuation imply karta hai.",
     "Convertible note, loan ya royalty cheque ko eq me equity ki tarah daal dena; equity ko debt se alag karne ke baad hi implied valuation ka matlab banta hai.",
     "Implied valuation ko certified valuation bata dena — ye offer ka reading hai, aur official kaam ke liye CA ya merchant banker chahiye."
-   ]
+   ],
+   "hi_intro": "Maano ek founder ko business ke 10% ke liye ₹10,00,000 ka offer milta hai. Do chhote numbers lagte hain, par implied valuation inhi ko ek price bana deta hai — poori company ki value jo round ka asli sawaal hai.",
+   "hi_outro": "₹10,00,000 me 10% ka matlab ₹1,00,00,000 ki company. Wahi cheque 5% ke liye do to implied price dugna ho jaata hai; upar koi bhi field badlo aur poori company ki value saath badalti hai."
   },
   "incometax": {
    "what": "Old vs new regime calculator batata hai ki is saal India ke do income tax systems mein se kaunsa aapse kam leta hai - aur jawab lagbhag har salary ke saath badalta hai. New regime slab rates kam deta hai par zyadatar deductions chheen leta hai. Old regime ke rates zyada hain par 80C, 80D, HRA aur home loan interest tax se pehle ghata sakte ho. Isliye comparison rates ka nahi hai - ye dekhna hai ki aapke deductions rate cut ko beat karte hain ya nahi. Jiske paas investments nahi, woh lagbhag hamesha new regime mein better hai; jiske paas bada home loan aur poora 80C hai, woh aksar old regime mein.",
@@ -1206,7 +1208,9 @@
     "Equity given ko pre-money par naapna — pre-money ka 20% company ka 20% nahi hota, kyunki investment bhi us base ka hissa hai jisse stake divide hota hai.",
     "Pre-money ko poori company ki price samajhna — ye naye paise se pehle ki price hai, aur sheet par hamesha chhota number hota hai.",
     "Cheque ko pre-money me jod dena par founder ka apna hissa diye gaye equity se kam karna bhool jana; dono saath chalte hain, aur sirf post-money ise dikhata hai."
-   ]
+   ],
+   "hi_intro": "Term sheet me ₹90,00,000 pre-money aur ₹10,00,000 ka cheque likha hai. Ye do numbers akele nahi batate investor ka hissa kitna hoga; post-money batata hai, aur wo dono ka jod hai.",
+   "hi_outro": "₹90,00,000 pre-money par ₹10,00,000 ka cheque ₹1,00,00,000 ki company banata hai aur 10% deta hai. Pre-money badle bina cheque badhao to stake badh jaata hai; upar koi bhi field badlo aur hissa dekho."
   },
   "propertyroi": {
    "what": "Property ROI calculator us sawaal ka jawab deta hai jo doosra ghar kharidne wala aksar galat nikalta hai: is flat ne mujhe actually kitna kamaya? Do alag return hote hain aur dono confuse karna aasan hai. Ek cash hai - jo kiraya aapne liya. Doosra kagaz par - flat ki value kitni badhi. Sirf appreciation dekhkar property badi investment lagti hai, par cash mein kuch nahi mila ho sakta - aur tenant jaane ya EMI rukne par yahi maayne rakhta hai. Yeh calculator dono ek saath dikhata hai, un saalon ke hisaab se jitne aapne rakha.",

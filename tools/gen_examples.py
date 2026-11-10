@@ -85,6 +85,8 @@ def outro_for(c: dict, guides: dict) -> str:
 
 def hi_intro_for(c: dict) -> str:
     hg = HI_GUIDES["calcs"].get(c["id"], {})
+    if hg.get("hi_intro"):
+        return hg["hi_intro"]
     return (
         f"{c['name']} ka poora hisaab. Tool leta hai {_input_labels(c, HI_JOIN)}; "
         f"neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai."
@@ -93,6 +95,8 @@ def hi_intro_for(c: dict) -> str:
 
 def hi_outro_for(c: dict) -> str:
     hg = HI_GUIDES["calcs"].get(c["id"], {})
+    if hg.get("hi_outro"):
+        return hg["hi_outro"]
     lead = _lead_sentence(hg.get("formula"))
     if lead:
         return (

@@ -120,13 +120,15 @@ def how_inputs(c: dict) -> str:
 def faqs(c: dict) -> list[tuple[str, str]]:
     """Honest, useful questions per tool — the base of FAQPage schema.
 
-    Every answer names this calculator's own inputs, so no two pages share the
-    same FAQ text. An identical FAQ on all 101 pages was the largest block of
-    repeated prose and the main reason the pages read as near-duplicates.
+    Every answer is anchored to THIS calculator: its own description, its own
+    input labels, the result labels its COMPUTE actually returns (from the
+    worked example), and its own benchmark line. A generic FAQ repeated on all
+    100 pages was the single largest block of shared prose and the main reason
+    the pages read as near-duplicates, so the shared sentences are gone: only
+    the tool's name, inputs and outputs differ, and they differ on every page.
     """
     name = c["name"]
     d = re.sub(r"\s+", " ", c["desc"]).strip()
-    cat = next((x["name"] for x in DATA["cats"] if x["id"] == c["cat"]), "")
     labels = [i["l"] for i in c["inputs"]]
     if not labels:
         entered = "the fields shown above"
@@ -134,22 +136,26 @@ def faqs(c: dict) -> list[tuple[str, str]]:
         entered = labels[0]
     else:
         entered = ", ".join(labels[:-1]) + " and " + labels[-1]
+    outs = [r["l"] for r in EXAMPLES.get(c["id"], {}).get("rows", [])] or ["the result"]
+    outs_txt = " and ".join([", ".join(outs[:-1]), outs[-1]]) if len(outs) > 1 else outs[0]
+    first_out = outs[0]
+    bench = re.sub(r"\s+", " ", c["bench"] or "").strip()
     q = [
-        (f"What does the {name} do?",
-         f"{d} It is one of the {cat} tools in the free Tank Metrics collection."),
-        (f"What do I enter into the {name}?",
-         f"The {name} takes {entered}. Fill those in and the result appears as "
-         f"you type."),
-        (f"Is my data saved when I use the {name}?",
-         f"No. {name} runs entirely in your browser, so {entered} never leave "
-         f"the page."),
-        (f"Is the {name} free to use?",
-         "Yes. Every Tank Metrics calculator is free, needs no account and "
-         "shows no paywall."),
+        (f"What does the {name} work out?",
+         f"{d} From {entered}, it returns {outs_txt}."),
+        (f"What do I need to enter for the {name}?",
+         f"Only {entered}. Type them in and {first_out.lower()} updates as you "
+         f"type — there is nothing else to fill."),
+        (f"How is {first_out.lower()} calculated?",
+         f"{bench} That is the arithmetic the {name} runs on {entered}." if bench
+         else f"The {name} applies its own formula to {entered} each time a "
+              f"value changes."),
+        (f"Is anything I type into the {name} saved?",
+         f"No. {entered} are used only in the browser tab and are never sent "
+         f"to a server."),
+        (f"What does the {name} cost?",
+         f"Nothing. The {name} is free to use, with no sign-up and no paywall."),
     ]
-    if c["bench"]:
-        b = re.sub(r"\s+", " ", c["bench"]).strip()
-        q.append((f"Any tip for getting the {name} right?", b))
     return q
 
 

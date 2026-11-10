@@ -3,115 +3,61 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.148,
-   "a": "/implied-valuation",
-   "b": "/pre-money-and-post-money-valuation"
-  },
-  {
-   "overlap": 0.147,
+   "overlap": 0.145,
    "a": "/compound-interest",
    "b": "/simple-interest"
   },
   {
-   "overlap": 0.145,
+   "overlap": 0.136,
+   "a": "/home-loan-emi-calculator",
+   "b": "/loan-emi-calculator"
+  },
+  {
+   "overlap": 0.135,
    "a": "/rashi-moon-sign-calculator",
    "b": "/zodiac-sign-calculator"
   },
   {
-   "overlap": 0.145,
-   "a": "/ebitda-multiple",
-   "b": "/revenue-multiple"
-  },
-  {
-   "overlap": 0.141,
-   "a": "/ppf-calculator",
-   "b": "/rd-recurring-deposit-calculator"
-  },
-  {
-   "overlap": 0.138,
-   "a": "/cash-conversion-cycle",
-   "b": "/working-capital"
-  },
-  {
-   "overlap": 0.137,
+   "overlap": 0.13,
    "a": "/break-even-point",
    "b": "/gross-profit-and-margin"
   },
   {
-   "overlap": 0.131,
-   "a": "/co-founder-equity-split",
-   "b": "/debt-equity-deal"
-  },
-  {
    "overlap": 0.13,
-   "a": "/break-even-point",
-   "b": "/percentage-calculator"
+   "a": "/ppf-calculator",
+   "b": "/rd-recurring-deposit-calculator"
   },
   {
-   "overlap": 0.128,
-   "a": "/debt-equity-deal",
-   "b": "/royalty-deal"
-  },
-  {
-   "overlap": 0.127,
-   "a": "/baby-name-number-calculator",
-   "b": "/compatibility-calculator"
-  },
-  {
-   "overlap": 0.127,
-   "a": "/gross-profit-and-margin",
-   "b": "/percentage-calculator"
+   "overlap": 0.126,
+   "a": "/ebitda-multiple",
+   "b": "/revenue-multiple"
   }
  ],
  "worst_pages": [
   {
-   "page": "/implied-valuation",
-   "closest_overlap": 0.148
-  },
-  {
-   "page": "/pre-money-and-post-money-valuation",
-   "closest_overlap": 0.148
-  },
-  {
    "page": "/compound-interest",
-   "closest_overlap": 0.147
+   "closest_overlap": 0.145
   },
   {
    "page": "/simple-interest",
-   "closest_overlap": 0.147
+   "closest_overlap": 0.145
+  },
+  {
+   "page": "/home-loan-emi-calculator",
+   "closest_overlap": 0.136
+  },
+  {
+   "page": "/loan-emi-calculator",
+   "closest_overlap": 0.136
   },
   {
    "page": "/rashi-moon-sign-calculator",
-   "closest_overlap": 0.145
+   "closest_overlap": 0.135
   },
   {
    "page": "/zodiac-sign-calculator",
-   "closest_overlap": 0.145
-  },
-  {
-   "page": "/ebitda-multiple",
-   "closest_overlap": 0.145
-  },
-  {
-   "page": "/revenue-multiple",
-   "closest_overlap": 0.145
-  },
-  {
-   "page": "/ppf-calculator",
-   "closest_overlap": 0.141
-  },
-  {
-   "page": "/rd-recurring-deposit-calculator",
-   "closest_overlap": 0.141
-  },
-  {
-   "page": "/cash-conversion-cycle",
-   "closest_overlap": 0.138
-  },
-  {
-   "page": "/working-capital",
-   "closest_overlap": 0.138
+   "closest_overlap": 0.135
   }
  ],
- "median_overlap": 0.112
+ "median_overlap": 0.098
 }

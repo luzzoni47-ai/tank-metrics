@@ -885,7 +885,9 @@
     "Treating the implied number as the company’s value rather than the price this one offer implies — a different stake in the same business implies a different valuation.",
     "Feeding a convertible note, loan or royalty cheque into eq as though it were equity; the implied valuation only means something once the equity part is separated from the debt.",
     "Quoting an implied valuation as if a valuer had certified it — it is a reading of an offer, and anything official still needs a CA or a merchant banker."
-   ]
+   ],
+   "intro": "Say a founder is offered ₹10,00,000 for 10% of the business. The two numbers look small next to each other; implied valuation turns them into the one figure the round is really about — the price they put on the whole company.",
+   "outro": "At ₹10,00,000 for 10%, the cheque implies a ₹1,00,00,000 company. Offer the same ₹10,00,000 for 5% instead and the implied price doubles; change either field above and the whole-company value moves with it."
   },
   "incometax": {
    "what": "An old vs new regime calculator tells you which of India's two income tax systems takes less from you this year, and the answer changes with almost every salary. The new regime gives lower slab rates but throws away most deductions. The old regime has higher rates but lets you subtract 80C, 80D, HRA and home loan interest before tax is worked out. So the comparison is not really about rates at all - it is about whether your deductions are large enough to beat the rate cut. Someone with no investments is almost always better off in the new regime; someone carrying a big home loan and full 80C is often better off in the old one.",
@@ -1214,7 +1216,9 @@
     "Measuring the equity given against the pre-money — 20% of the pre-money is not 20% of the company, because the investment is part of the base the stake is divided by.",
     "Reading the pre-money as the price of the whole company — it is the price before the new money, and it is always the smaller of the two numbers on the sheet.",
     "Adding the cheque to the pre-money but forgetting to reduce the founders’ own holding by the equity given; the two move together, and only the post-money shows it."
-   ]
+   ],
+   "intro": "A term sheet names a ₹90,00,000 pre-money and a ₹10,00,000 cheque. Neither number on its own says what the investor ends up owning; the post-money does, and it is the sum of the two.",
+   "outro": "The ₹10,00,000 cheque on a ₹90,00,000 pre-money makes a ₹1,00,00,000 company and hands over 10%. Raise the cheque without moving the pre-money and the stake grows; change either field above to see the split."
   },
   "propertyroi": {
    "what": "A property ROI calculator answers the question every second-home buyer gets wrong: what did this flat actually earn me? There are two separate returns and they are easy to confuse. One is cash - the rent you collected. The other is on paper - how much the flat's value went up. A property can look like a great investment on appreciation alone and still have paid you almost nothing in cash, which matters on the day the tenant leaves or the EMI does not wait. This calculator shows both together, over the years you actually held it.",
