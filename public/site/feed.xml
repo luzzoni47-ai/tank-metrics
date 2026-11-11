@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Wed, 11 Nov 2026 01:37:17 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 03:58:01 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Startup Funding Up 69%: Five Deals Took 83%</title>
@@ -14,6 +14,14 @@
     <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
     <category>Funding</category>
     <description>Indian startups raised $290.55 million in the week to November 7, 2026, up 69% on the week. But five rounds took 83% of it. Here is what that maths means.</description>
+  </item>
+  <item>
+    <title>EBITDA vs Gross Margin: The Real Difference</title>
+    <link>https://tankmetrics.in/ebitda-vs-gross-margin</link>
+    <guid isPermaLink="true">https://tankmetrics.in/ebitda-vs-gross-margin</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Gross margin stops at the cost of goods, while EBITDA also pays the rent and the salaries. See both worked through one small business and when to use each.</description>
   </item>
   <item>
     <title>Razorpay Gets SEBI Nod for IPO at Rs 49,000 Crore</title>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>India extended the zero-duty window on imported cotton to December 31, 2026. Here is what the 11% duty waiver saves a textile unit on a Rs 1 crore order.</description>
-  </item>
-  <item>
-    <title>Quick Commerce&#x27;s Next Bet: Franchise Stores in Small Cities</title>
-    <link>https://tankmetrics.in/news/quick-commerce-franchise-dark-stores-small-cities-2026</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/quick-commerce-franchise-dark-stores-small-cities-2026</guid>
-    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-    <category>Small Business</category>
-    <description>CBRE says India&#x27;s dark stores will grow from 7,800 to over 12,000 by 2030, and franchise-led outlets will carry the push into tier-II and tier-III cities.</description>
   </item>
 </channel>
 </rss>

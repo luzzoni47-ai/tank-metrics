@@ -130,6 +130,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Dilution Calculator for Founders - How Much You Lose?](https://tankmetrics.in/dilution-calculator-founders)
 - [Why a 10% Discount Cuts Profit by 25%](https://tankmetrics.in/discount-impact-on-profit-explained)
 - [EBITDA Calculator for Startups India](https://tankmetrics.in/ebitda-calculator-startups-india)
+- [EBITDA vs Gross Margin: The Real Difference](https://tankmetrics.in/ebitda-vs-gross-margin)
 - [EMI Calculator for 2 Lakh Loan - Instant](https://tankmetrics.in/emi-calculator-2-lakh-loan)
 - [Employee Utilization Rate Explained Simply](https://tankmetrics.in/employee-utilization-rate-explained)
 - [Equity Dilution Calculator India - Cap Table](https://tankmetrics.in/equity-dilution-calculator-india)

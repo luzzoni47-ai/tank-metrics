@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-ebitda-vs-gross-margin": [
+        ("/ebitda-and-margin", "EBITDA & Margin",
+         "enter your revenue, cost of goods and operating expenses to get the margin this post explains"),
+        ("/gross-profit-and-margin", "Gross Profit & Margin",
+         "get the margin on a single sale from its price and cost"),
+    ],
     "blog-fmcg-distributor-margin-explained": [
         ("/distributor-and-retailer-margin", "Distributor & Retailer Margin",
          "split an MRP into the company, distributor and retailer prices"),
