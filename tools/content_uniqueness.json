@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.145,
-   "a": "/compound-interest",
-   "b": "/simple-interest"
-  },
-  {
    "overlap": 0.136,
    "a": "/home-loan-emi-calculator",
    "b": "/loan-emi-calculator"
@@ -19,29 +14,56 @@
   },
   {
    "overlap": 0.13,
-   "a": "/break-even-point",
-   "b": "/gross-profit-and-margin"
-  },
-  {
-   "overlap": 0.13,
    "a": "/ppf-calculator",
    "b": "/rd-recurring-deposit-calculator"
+  },
+  {
+   "overlap": 0.129,
+   "a": "/break-even-point",
+   "b": "/gross-profit-and-margin"
   },
   {
    "overlap": 0.126,
    "a": "/ebitda-multiple",
    "b": "/revenue-multiple"
+  },
+  {
+   "overlap": 0.122,
+   "a": "/break-even-point",
+   "b": "/percentage-calculator"
+  },
+  {
+   "overlap": 0.12,
+   "a": "/lucky-number-calculator",
+   "b": "/numerology-calculator"
+  },
+  {
+   "overlap": 0.119,
+   "a": "/cash-conversion-cycle",
+   "b": "/working-capital"
+  },
+  {
+   "overlap": 0.118,
+   "a": "/gross-profit-and-margin",
+   "b": "/percentage-calculator"
+  },
+  {
+   "overlap": 0.118,
+   "a": "/client-acquisition-cost-cac",
+   "b": "/customer-acquisition-cost-cac"
+  },
+  {
+   "overlap": 0.116,
+   "a": "/lucky-number-calculator",
+   "b": "/zodiac-sign-calculator"
+  },
+  {
+   "overlap": 0.114,
+   "a": "/break-even-point",
+   "b": "/contribution-margin"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/compound-interest",
-   "closest_overlap": 0.145
-  },
-  {
-   "page": "/simple-interest",
-   "closest_overlap": 0.145
-  },
   {
    "page": "/home-loan-emi-calculator",
    "closest_overlap": 0.136
@@ -57,7 +79,39 @@
   {
    "page": "/zodiac-sign-calculator",
    "closest_overlap": 0.135
+  },
+  {
+   "page": "/ppf-calculator",
+   "closest_overlap": 0.13
+  },
+  {
+   "page": "/rd-recurring-deposit-calculator",
+   "closest_overlap": 0.13
+  },
+  {
+   "page": "/break-even-point",
+   "closest_overlap": 0.129
+  },
+  {
+   "page": "/gross-profit-and-margin",
+   "closest_overlap": 0.129
+  },
+  {
+   "page": "/ebitda-multiple",
+   "closest_overlap": 0.126
+  },
+  {
+   "page": "/revenue-multiple",
+   "closest_overlap": 0.126
+  },
+  {
+   "page": "/percentage-calculator",
+   "closest_overlap": 0.122
+  },
+  {
+   "page": "/lucky-number-calculator",
+   "closest_overlap": 0.12
   }
  ],
- "median_overlap": 0.098
+ "median_overlap": 0.097
 }

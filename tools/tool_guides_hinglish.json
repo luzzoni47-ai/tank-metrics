@@ -507,17 +507,17 @@
    ]
   },
   "compint": {
-   "what": "Compound Interest batata hai ki koi amount kitna badhta hai jab byaaj wapas principal me jud jaata hai aur khud byaaj kamata hai. ₹10,000, 8% par paanch saal me ₹14,000 nahi hota; usse zyada hota hai, kyunki har saal ka byaaj balance me jud jaata hai. Tool ye bhi leta hai ki saal me kitni baar byaaj judta hai, aur yahi baat log miss karte hain: wahi rate mahine-mahine dene par saal me ek baar dene se zyada par pahunchta hai.",
-   "formula": "Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Rate saalana percentage hai, Times batata hai saal me kitni baar byaaj judta hai (1, 4 ya 12), aur Years term hai. Tool total se principal ghata kar sirf interest dikhata hai. Same headline rate par Times badhane se total badhta hai.",
-   "when": [
-    "Jab aap quarterly compound hone wali FD ko monthly compound hone wali FD se compare kar rahe ho.",
-    "Jab aap project kar rahe ho ki monthly SIP ya lump sum kuch saalon me kitna banega.",
-    "Jab aap dekhna chahte ho ki lambe loan ki kul cost me kitna hissa byaaj hai, principal nahi."
-   ],
+   "what": "Compound Interest ye sawaal nipta deta hai ki ek lump sum actually kitna ban jaata hai jab uska interest hi aage interest kamane lagta hai. Principal, rate, saal, aur — sabse zaroori field — saal me kitni baar interest wapas jama hota hai (n) daal do. ₹10,000 par 8% aur paanch saal me n = 1 par ₹14,693.28 milta hai; wahi 8% par n = 12 kar do to ₹14,898.46. Rate bilkul nahi badla, sirf compounding ki frequency badli. Yahi is page ka poora decision hai: “8% of ₹10,000 kitna hai” nahi, balki “₹10,000 is frequency par reinvest hone ke baad kitna banta hai”.\n\nYe Simple Interest ka compound jodidaar hai, aur dono rakhne ka poora point inke beech ka gap hai. Ek saal me dono lagbhag rupee-rupee barabar rehte hain; tees saal me usi principal aur usi rate par ye figure simple se teen guna se bhi zyada ho sakta hai. Isliye ye lambi horizon ka tool hai — FD roll ho kar kitni banti hai, chhoda hua lump sum kitna banta hai, aur multi-year loan ki asli cost kya hai jab bina chukaya interest khud interest kamane lagta hai. Agar term chhoti hai aur kuch reinvest nahi hota, to Simple Interest hi imaandar tool hai; jaise hi interest andar chhod rahe ho, ye.",
+   "formula": "p = Amount (Principal), r = Interest Rate (per cent per year), t = Time (years) aur n = Times compounded per year lete hue balance = p × (1 + r ÷ 100 ÷ n) ^ (n × t). Interest Earned line is total me se p ghata kar aati hai. n hi wo field hai jo curve ka shape badalta hai, sirf scale nahi: n = 1 par saal me ek baar, n = 4 par quarterly, n = 12 par monthly. p = 10,000, r = 8, t = 5 aur n = 1 par total 10,000 × 1.08^5 = ₹14,693.28, yaani Interest Earned ₹4,693.28; wahi numbers n = 12 par ₹14,898.46 dete hain. n khaali ya 0 chhodne par use 1 maana jaata hai, yaani annual compounding.",
    "mistakes": [
-    "Multi-year figure ke liye simple interest lagana. Bank compound karte hain, isliye simple interest ka jawab hamesha kam dikhata hai ki aap kitna denge ya kamayenge.",
-    "Ye bhoolna ki byaaj kitni baar judta hai. 8% mahine-mahine dene ka matlab 8% saal me ek baar dene se alag hai, aur term badhne par gap badhta hai.",
-    "Ye bhoolna ki rate saalana hai. Yearly field me monthly rate daalne se jawab barah guna ho jaata hai."
+    "“Times compounded per year” field ko decoration samajh kar monthly-compounding deposit par bhi 1 chhod dena. Paanch saal aur 8% par ye chupchaap lagbhag ₹205 kam kar deta hai, aur saal badhne ke saath understatement badhta jaata hai.",
+    "Interest Rate field me monthly rate (jaise 0.67%) daalna aur saath me n = 12 set karna. Rate annual hai; formula ke andar ka ÷ n khud use period rate bana deta hai, isliye dono karne se double-count hota hai aur total zyada dikhta hai.",
+    "Term dekhe bina compound total ko simple-interest quote se compare karna. Ek saal par dono me kuch rupaye ka farak hota hai aur comparison barabar lagta hai; bees saal me wahi numbers poore original principal se bhi zyada alag ho jaate hain."
+   ],
+   "when": [
+    "Do FD ke beech choose kar rahe ho jo same rate quote karte hain par alag frequency par compound karte hain, aur dekhna hai quarterly annual ko rupaye me sach me haraata hai ya nahi.",
+    "Ek lump sum lambi horizon ke liye chhod rahe ho — bachche ki education corpus, retirement ka amount — aur simple-interest ke bajaye rolled-up figure chahiye.",
+    "Multi-year loan ya credit-card balance ki asli cost nikal rahe ho jahan bina chukaya interest khud interest kamata hai, aur headline rate asli repayment se kam dikhata hai."
    ]
   },
   "cpcpa": {
@@ -1423,17 +1423,17 @@
    ]
   },
   "simpleint": {
-   "what": "Simple interest sirf mool amount par lagta hai, kamaye gaye interest par kabhi nahi. 1,00,000 rupaye 10% par 3 saal me 30,000 kamata hai - flat, har saal, usi 1,00,000 par. Usi terms par compound interest 33,100 kamata hai. Teen saal me 3,100 ka farak chhota hai aur tees saal me bahut bada, isliye kaun sa lagta hai ye jaanna rate se zyada zaroori hai.",
-   "formula": "Interest = Principal x Rate x Time / 100. Total = Principal + Interest. Saal se kam ke liye Time = mahine / 12.",
-   "when": [
-    "Koi lender flat rate bolta hai aur aapko reducing-balance loan se compare karne ke liye simple-interest number chahiye.",
-    "Aap kisi dost ya rishtedaar ko udhaar de rahe ho aur rupees me saaf number chahiye.",
-    "Aap aisi FD ya bond coupon check kar rahe ho jo simple interest deti hai."
-   ],
+   "what": "Simple Interest us paise ki cost nipta deta hai jo kabhi reinvest nahi hota: interest sirf original Amount (Principal) par lagta hai, har saal, aur jo interest chuka diya gaya wo sum me kabhi wapas nahi aata. ₹10,000 par 8% aur teen saal me har saal ₹800, total ₹2,400 — wahi ₹800, chahe pehla saal ho ya teesra. Tool jaan-boojh kar linear hai, aur yahi uski answer hai: flat-rate loan, bond coupon, ya fixed annual charge wala udhaar.\n\nIs page ka decision ye hai ki quote kaunse type ka interest hai. Bahut se Indian lender flat rate advertise karte hain — “10% per annum” — aur flat rate matlab poore term ke liye poore principal par simple interest, reducing-balance rate nahi. Teen saal ka flat 10% us paise par lagbhag 17-18% saalana padta hai jise aap waqai abhi bhi owe karte ho, aur ye dekhne ka tareeka hai ki pehle flat figure is tool me daalo aur uski tulna kisi reducing-balance loan se karo. Jahan kuch compound nahi hota, ye exact figure hai; jahan balance repay karte-karte girta hai, ye nahi, aur wahi gap asli baat hai.",
+   "formula": "p = Amount (Principal), r = Interest Rate (per cent per year) aur t = Time (years) lete hue Interest Earned = p × r × t ÷ 100, aur Total Amount = p + Interest Earned. Kuch bhi power par nahi uthaya jaata aur kuch reinvest nahi hota, isliye t double karne par interest bilkul double ho jaata hai. p = 10,000, r = 8 aur t = 3 par interest 10,000 × 8 × 3 ÷ 100 = ₹2,400 aur total ₹12,400. Saal se kam ke liye Time ko saal ka fraction daalo — chhe mahine 0.5 — aur wahi multiplication chalta rehta hai.",
    "mistakes": [
-    "Flat rate ko loan ki asli cost maan lena. Reducing balance par flat 10% lagbhag 18% ke barabar hota hai.",
-    "Lambi period par simple aur compound mix kar dena. 10 saal me farak chhota nahi hota.",
-    "Threshold se upar interest par TDS bhoolna, jo actually milne wali raqam kam kar deta hai."
+    "Lender ke “flat 10%” ko 10% annual cost samajh lena. Flat interest poore term ke liye poore principal par lagta hai, isliye teen saal ke loan par ye us balance par lagbhag 17-18% saalana ban jaata hai jise aap waqai abhi bhi owe karte ho.",
+    "Is total ko kisi compounding wali cheez ke liye use karna. FD, RD aur zyadatar savings account interest wapas jodte hain, isliye simple-interest figure maturity value kam dikhata hai — ₹1,00,000 par 10% aur teen saal me ₹3,100 kam, aur lambe term me bahut zyada.",
+    "Time field me mahine daal dena. Field saal me hai, isliye chhe mahine 0.5 likhna hoga; 6 type karne se interest chupchaap baarah guna ho jaata hai."
+   ],
+   "when": [
+    "Koi lender ya chit fund flat rate quote karta hai aur aap same headline rate wale reducing-balance loan se tulna karne ke liye plain interest figure chahte ho.",
+    "Aap kisi dost ya rishtedaar ko round sum udhaar de rahe ho aur chhoti tay period ke liye rupees chahiye, compounding schedule nahi.",
+    "Aap kisi bond coupon ya short-term note ko check kar rahe ho jo face value par term ke liye simple interest deta hai."
    ]
   },
   "sip": {
