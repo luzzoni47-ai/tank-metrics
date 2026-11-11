@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T03:33:37Z",
+ "generated": "2026-11-11T01:32:56Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -316,15 +316,6 @@
    "score": 14.72,
    "from": [
     "cagr compound annual growth rate"
-   ]
-  },
-  {
-   "query": "distributor margin in fmcg",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "distributor margin"
    ]
   },
   {
@@ -2037,7 +2028,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2064,7 +2055,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2415,7 +2406,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2685,7 +2676,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2730,7 +2721,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio in days",
+   "query": "inventory turnover ratio meaning",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3263,7 +3254,7 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "age calculator by year",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3531,6 +3522,15 @@
    "score": 6.9,
    "from": [
     "implied valuation"
+   ]
+  },
+  {
+   "query": "inventory turnover ratio in days",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "inventory turnover ratio"
    ]
   },
   {

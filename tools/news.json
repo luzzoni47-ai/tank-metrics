@@ -2,6 +2,61 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "india-startup-funding-rebound-november-2026-five-rounds-83-percent",
+   "title": "Startup Funding Up 69%: Five Deals Took 83%",
+   "dek": "Indian startups raised $290.55 million in the week to November 7, 2026, up 69% on the week. But five rounds took 83% of it. Here is what that maths means.",
+   "category": "Funding",
+   "date": "2026-11-11",
+   "date_display": "November 11, 2026",
+   "source_name": "Indian Startup News",
+   "source_url": "https://indianstartupnews.com/funding/indian-startups-raised-over-290-million-from-november-2-to-november-7-2026-giva-tops-the-list-12798052",
+   "cta": {
+    "text": "A funding round is a valuation. Enter your own revenue and the multiple a buyer might pay to see what your business is worth today.",
+    "href": "/implied-valuation",
+    "label": "Open the Implied Valuation Calculator"
+   },
+   "related": [
+    {
+     "slug": "how-to-calculate-startup-valuation-india",
+     "title": "How to Calculate Valuation of a Startup in India"
+    },
+    {
+     "slug": "revenue-multiple-calculator-india",
+     "title": "Revenue Multiple Calculator India"
+    }
+   ],
+   "body_en": [
+    "<p>India's startup funding rebounded hard in the first week of November. Between November 2 and November 7, 2026, 22 Indian startups raised a combined $290.55 million (about ₹2,500 crore), up 69% from $171.73 million the week before, according to Indian Startup News. After two soft weeks — $211.42 million, then $171.73 million — the market snapped back in a single week.</p>",
+    "<p>But the headline number hides the real story. Most of that money went to a handful of companies. The top five rounds took about $241.37 million between them, roughly 83% of everything raised that week. The top three alone — GIVA's $100 million, EloElo's $80 million and Braid's $38 million — added up to $218 million, about 75% of the total.</p>",
+    "<h2>Who took the money</h2>",
+    "<p>GIVA, the Bengaluru jewellery brand, raised $100 million from Multiples Alternate Asset Management. On its own that is nearly 34% of the week's capital, and the company plans to push past 425 stores with 160 new outlets in FY27, mostly in Tier II and III cities. EloElo, which runs the micro-drama app Story TV, raised $80 million in a Series C co-led by Hornbill Capital and NBCUniversal. Braid, a Dutch telecom connectivity startup, raised $38 million in its first outside round.</p>",
+    "<p>Twenty-two companies were funded across fifteen sectors, from foodtech and fintech to robotics, spacetech and biotech. So far in 2026, Indian startups have raised $11.89 billion across 868 rounds. The week's $290.55 million is a small slice of that year, but the pattern repeats: a few large cheques, then a long tail of small ones.</p>",
+    "<h2>The maths of a concentrated week</h2>",
+    "<p>Say a week's total funding is ₹2,500 crore. If the top five startups take 83%, that is about ₹2,000 crore for five companies. The other seventeen share the remaining ₹500 crore — about ₹30 crore each on average. One ₹900 crore round and a dozen ₹30 crore rounds give the same headline figure, but they mean very different things to a founder deciding whether to raise.</p>",
+    "<p>That is why “funding is up 69%” and “most startups still struggle to raise” can both be true at once. A rising total says capital is available. Concentration says it is going to a small set of names that already look safe to an investor.</p>",
+    "<h2>What it means for a small business or startup</h2>",
+    "<p>A funding headline is a market signal, not a personal forecast. If you run a shop, the useful question is not whether venture money is up. It is whether your own numbers can stand on their own. Revenue, gross margin and how fast cash comes back are what decide your price, your loan eligibility and your bargaining power with a buyer.</p>",
+    "<p>If you are building a startup, treat a big round at another company as a valuation marker. Investors price a business by applying a multiple to its revenue. When one company raises at a rich multiple, that number becomes the reference for everyone else in the same sector — for better or worse.</p>",
+    "<h2>Check your own number</h2>",
+    "<p>You do not need a term sheet to know what your business is worth. Take your annual revenue and multiply it by a sensible multiple for your sector. Then run the same maths on the cash you burn each month to see how many months of runway you have left. Both take a minute, and both tell you more than any weekly funding total.</p>"
+   ],
+   "body_hinglish": [
+    "<p>November ke pehle hafte India ki startup funding ne zabardast wapasi ki. 2 se 7 November, 2026 ke beech 22 Indian startups ne milakar $290.55 million (lagbhag ₹2,500 crore) uthaye, jo pichhle hafte ke $171.73 million se 69% zyada hai — Indian Startup News ke mutabik. Do kamzor hafton ke baad — pehle $211.42 million, phir $171.73 million — market ek hi hafte mein wapas uchhal gaya.</p>",
+    "<p>Lekin bada number asli kahani chhupata hai. Zyadatar paisa gine-chune companies ke paas gaya. Top paanch rounds ne milakar kareeb $241.37 million liye, yaani us hafte ke kul paise ka takriban 83%. Sirf top teen — GIVA ka $100 million, EloElo ka $80 million aur Braid ka $38 million — milakar $218 million bane, kul ka kareeb 75%.</p>",
+    "<h2>Paisa kisko mila</h2>",
+    "<p>GIVA, Bengaluru ka jewellery brand, ne Multiples Alternate Asset Management se $100 million uthaye. Akela yahi hafte ki poonji ka kareeb 34% hai, aur company 425 se zyada stores ke paar jaakar FY27 mein 160 naye outlets kholna chahti hai, zyadatar Tier II aur III shehron mein. EloElo, jo micro-drama app Story TV chalati hai, ne Hornbill Capital aur NBCUniversal ke saath Series C mein $80 million uthaye. Braid, ek Dutch telecom connectivity startup, ne apne pehle bahri round mein $38 million uthaye.</p>",
+    "<p>Pandrah sectors mein 22 companies ko funding mili — foodtech aur fintech se lekar robotics, spacetech aur biotech tak. 2026 mein ab tak Indian startups ne 868 rounds mein $11.89 billion uthaye hain. Hafte ka $290.55 million saal ka chhota hissa hai, par pattern wahi hai: kuch bade cheques, phir chhoti rounds ki lambi line.</p>",
+    "<h2>Ek concentrated hafte ka ganit</h2>",
+    "<p>Maan lijiye ek hafte ki kul funding ₹2,500 crore hai. Agar top paanch startups 83% le lete hain, to paanch companies ke liye kareeb ₹2,000 crore bachta hai. Baaki satrah ₹500 crore baantte hain — average kareeb ₹30 crore har ek. Ek ₹900 crore ka round aur ek dozen ₹30 crore ke rounds ka headline ek hi hota hai, par founder ke liye matlab bilkul alag.</p>",
+    "<p>Isliye “funding 69% badhi” aur “zyadatar startups ko phir bhi paisa nahi milta” — dono ek saath sach ho sakte hain. Badhta total batata hai ki paisa available hai. Concentration batata hai ki woh kuch aise naam hai jo investor ko pehle se safe lagte hain.</p>",
+    "<h2>Chhote business ya startup ke liye iska matlab</h2>",
+    "<p>Funding ka headline ek market signal hai, aapki personal bhavishyavani nahi. Agar aap dukaan chalate hain, to asli sawal yeh nahi ki venture paisa badha ya ghata. Asli sawal yeh hai ki aapke apne numbers khud khade ho sakte hain ya nahi. Revenue, gross margin aur cash kitni jaldi wapas aata hai — yahi aapki price, loan eligibility aur buyer ke saath sauda taay karte hain.</p>",
+    "<p>Agar aap startup bana rahe hain, to kisi doosri company ka bada round valuation ka marker samjhiye. Investor revenue par multiple lagakar business ki keemat taay karte hain. Jab ek company mehnga multiple paati hai, wahi number us sector ke sabhi logon ke liye reference ban jata hai.</p>",
+    "<h2>Apna number khud check kijiye</h2>",
+    "<p>Business ki keemat jaanne ke liye term sheet ki zarurat nahi. Apna saalana revenue lijiye aur apne sector ke samajhdari wale multiple se guna kijiye. Phir wahi ganit har mahine ke burn par lagaiye aur dekhiye kitne mahine ka runway bacha hai. Dono ek minute ka kaam hai, aur kisi bhi hafte ke funding total se zyada batate hain.</p>"
+   ]
+  },
+  {
    "slug": "razorpay-sebi-ipo-approval-49000-crore-valuation-2026",
    "title": "Razorpay Gets SEBI Nod for IPO at Rs 49,000 Crore",
    "dek": "Razorpay has SEBI approval to list at a reported Rs 49,000 crore valuation. Here is how a payments company gets priced, and what that means for a small shop.",
