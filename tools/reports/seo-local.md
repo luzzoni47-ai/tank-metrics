@@ -1,6 +1,6 @@
-# SEO check (local) - 2026-11-11
+# SEO check (local) - 2026-11-12
 
-Pages checked: **210**
+Pages checked: **211**
 All 200: **yes**
 Problems: **0**
 

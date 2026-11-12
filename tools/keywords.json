@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T03:51:45Z",
+ "generated": "2026-11-12T01:32:08Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -64,15 +64,6 @@
    "score": 18.4,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "ebitda and gross margin difference",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "ebitda and margin"
    ]
   },
   {
@@ -145,15 +136,6 @@
    "score": 18.4,
    "from": [
     "property valuation"
-   ]
-  },
-  {
-   "query": "runway 34",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -256,6 +238,15 @@
    ]
   },
   {
+   "query": "runway 34",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "runway"
+   ]
+  },
+  {
    "query": "salary estimator after taxes",
    "demand": 9,
    "covered": false,
@@ -316,15 +307,6 @@
    "score": 14.72,
    "from": [
     "cagr compound annual growth rate"
-   ]
-  },
-  {
-   "query": "ebitda and ebitda margin difference",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "ebitda and margin"
    ]
   },
   {
@@ -672,15 +654,6 @@
    "score": 11.04,
    "from": [
     "msme loan"
-   ]
-  },
-  {
-   "query": "pre money post money difference",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "pre money post money"
    ]
   },
   {
@@ -1388,15 +1361,6 @@
    ]
   },
   {
-   "query": "lucky number calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "market share calculator",
    "demand": 13,
    "covered": true,
@@ -1713,21 +1677,21 @@
    ]
   },
   {
-   "query": "gross margin and net margin difference",
-   "demand": 6,
-   "covered": false,
-   "score": 8.64,
-   "from": [
-    "gross margin"
-   ]
-  },
-  {
    "query": "landed cost management in oracle fusion",
    "demand": 6,
    "covered": false,
    "score": 8.64,
    "from": [
     "landed cost"
+   ]
+  },
+  {
+   "query": "age calculator by year",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "age calculator"
    ]
   },
   {
@@ -2028,7 +1992,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2097,6 +2061,15 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator in tamil",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -2406,7 +2379,7 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "age calculator app",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2676,7 +2649,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2766,7 +2739,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator by name",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3236,6 +3209,15 @@
    ]
   },
   {
+   "query": "lucky number calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3254,7 +3236,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator by dob",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3426,6 +3408,15 @@
    ]
   },
   {
+   "query": "ebitda and gross margin difference",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "ebitda and margin"
+   ]
+  },
+  {
    "query": "ebitda formula",
    "demand": 10,
    "covered": true,
@@ -3561,7 +3552,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator numerology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3621,6 +3612,15 @@
    "score": 6.9,
    "from": [
     "ppf calculator"
+   ]
+  },
+  {
+   "query": "pre money post money calculator",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "pre money post money"
    ]
   }
  ]

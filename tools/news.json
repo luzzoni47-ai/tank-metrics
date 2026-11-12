@@ -2,6 +2,65 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "gst-e-invoicing-reverse-charge-self-invoice-january-2027",
+   "title": "GST E-Invoicing Widens to Reverse-Charge Bills in 2027",
+   "dek": "From January 1, 2027, firms above ₹5 crore turnover must raise an e-invoice for reverse-charge self-invoices and imported services. Here is the maths.",
+   "category": "Tax Rules",
+   "date": "2026-11-12",
+   "date_display": "November 12, 2026",
+   "source_name": "TaxGuru",
+   "source_url": "https://taxguru.in/goods-and-service-tax/gst-invoicing-rcm-invoices-1-january-2027.html",
+   "cta": {
+    "text": "A reverse-charge bill is a base price plus GST you pay yourself. Work out that split, or pull the base price out of a GST-inclusive bill, before you raise the self-invoice.",
+    "href": "/gst-calculator",
+    "label": "Open the GST Calculator"
+   },
+   "related": [
+    {
+     "slug": "gst-input-tax-credit-explained",
+     "title": "GST Input Tax Credit Explained"
+    },
+    {
+     "slug": "hsn-code-for-online-sellers",
+     "title": "HSN Code for Online Sellers"
+    }
+   ],
+   "body_en": [
+    "<p>From January 1, 2027, businesses with a turnover above ₹5 crore must raise an electronic invoice for two more kinds of bills. Notification No. 04/2026–Central Tax, dated 26 October 2026, widens e-invoicing to self-invoices for supplies bought from unregistered sellers where the buyer pays GST under reverse charge, and to invoices for the import of services. Imports of goods stay outside the net.</p>",
+    "<p>E-invoicing already covered business-to-business sales and exports. This change closes the last big gap: purchases that never came with a proper tax invoice from the seller.</p>",
+    "<h2>What a self-invoice is, and why you need one</h2>",
+    "<p>When you buy from a registered seller, they hand you a tax invoice and charge GST. When you buy from someone who is not registered, there is no tax invoice to collect. The law makes you raise the bill yourself, called a self-invoice, and pay the GST to the government under reverse charge. The tax moves from the seller to you.</p>",
+    "<p>Say a growing shop pays an unregistered job worker ₹1,00,000 for a service taxed at 18%. The shop raises a self-invoice, adds ₹18,000 as GST under reverse charge, and pays that ₹18,000 with its return. If the shop is fully taxable, it can claim the same ₹18,000 as input tax credit. The two cancel out, so the cash cost is nil — as long as the paperwork is correct.</p>",
+    "<h2>The 30-day clock</h2>",
+    "<p>Two 30-day periods matter. Rule 47A gives you 30 days from the date you receive the supply to issue the self-invoice. Separately, the GST portal will not accept an e-invoice that is more than 30 days old where your turnover is ₹10 crore or more.</p>",
+    "<p>Put the two together and a simple habit follows: raise the self-invoice in the month you receive the goods or service. A bill dated months ago cannot be fixed at the portal later.</p>",
+    "<h2>What it means for your business</h2>",
+    "<p>Start with a list. Look at your purchases for the last three months and mark every vendor who is not registered under GST. Those are the bills that will need an e-invoice from January.</p>",
+    "<p>Next, check your billing software. Most accounting tools can raise a self-invoice, but not all can send it to the invoice registration portal and bring back an invoice reference number. If yours cannot, you have a few weeks to sort it out, not a few days.</p>",
+    "<p>For a startup that pays for foreign software, the same rule now bites. A subscription from an overseas vendor is an import of services, so the GST is paid by you under reverse charge. From January, that entry needs an e-invoice too.</p>",
+    "<h2>The upside, and one caution</h2>",
+    "<p>One caution on the threshold. The rule covers turnover exceeding ₹5 crore in any financial year from 2017-18 onwards. It is tested on your PAN across all GSTINs, not one state alone. A business that crossed the line in an earlier year stays covered even if this year is slower.</p>",
+    "<p>The upside is real. An e-invoice carries a reference number that both sides can see, so a buyer cannot quietly dispute a bill. For a supplier, that shortens the argument that delays payment. For a growing shop or startup, the rule is mostly about routine, not tax.</p>"
+   ],
+   "body_hinglish": [
+    "<p>1 January 2027 se, jin businesses ka turnover ₹5 crore se upar hai, unhe do naye tarah ke bills par electronic invoice banani hogi. Notification No. 04/2026–Central Tax, 26 October 2026 ki tareekh ki, e-invoicing ko un self-invoices tak badhati hai jo unregistered sellers se kharide gaye supplies par banti hain aur jahan buyer reverse charge mein GST bharta hai, aur services ke import ke invoices tak. Goods ke import is daayre se bahar rahenge.</p>",
+    "<p>E-invoicing pehle se business-to-business bikri aur exports par lagti thi. Yeh badlav aakhri bada gap bhar deta hai: woh kharid jinke saath seller ka sahi tax invoice kabhi nahi aata.</p>",
+    "<h2>Self-invoice kya hai, aur kyun zaruri hai</h2>",
+    "<p>Jab aap registered seller se kharidte hain, woh aapko tax invoice deta hai aur GST lagata hai. Jab aap kisi unregistered vyakti se kharidte hain, to dene ke liye koi tax invoice nahi hota. Kanoon aapko khud bill banane ka kehta hai, jise self-invoice kehte hain, aur reverse charge mein GST sarkar ko bharna hota hai. Tax seller se aap par aa jata hai.</p>",
+    "<p>Maan lijiye ek badhti dukaan ek unregistered job worker ko 18% tax wali service ke liye ₹1,00,000 deti hai. Dukaan self-invoice banati hai, reverse charge mein ₹18,000 GST jodti hai, aur wahi ₹18,000 apne return ke saath bharti hai. Agar dukaan poori tarah taxable hai, to wahi ₹18,000 input tax credit ke roop mein claim kar sakti hai. Dono kat jaate hain, to cash kharcha nil — bas kaagaz sahi ho.</p>",
+    "<h2>30 din ki ghadi</h2>",
+    "<p>Do 30-din ki samay-seemaayein maayne rakhti hain. Rule 47A aapko supply milne ki tareekh se 30 din deta hai self-invoice banane ke liye. Alag se, GST portal 30 din se purana e-invoice accept nahi karega jahan aapka turnover ₹10 crore ya usse zyada hai.</p>",
+    "<p>Dono ko jodkar ek aasan aadat banti hai: jis mahine mein goods ya service milti hai, usi mahine self-invoice bana lijiye. Mahine purana bill portal par baad mein theek nahi ho sakta.</p>",
+    "<h2>Aapke business ke liye iska matlab</h2>",
+    "<p>Ek list se shuru kijiye. Pichhle teen mahine ki apni kharid dekhiye aur har woh vendor mark kijiye jo GST mein registered nahi hai. Wahi bills hain jinko January se e-invoice chahiye hoga.</p>",
+    "<p>Phir apna billing software check kijiye. Zyadatar accounting tools self-invoice bana sakte hain, par sab invoice registration portal par bhejkar invoice reference number wapas nahi la sakte. Agar aapka nahi la sakta, to ise theek karne ke liye aapke paas kuch hafte hain, kuch din nahi.</p>",
+    "<p>Jo startup videshi software ke paise deta hai, uske liye wahi rule ab lagta hai. Overseas vendor se subscription services ka import hai, to GST aap reverse charge mein bharte hain. January se us entry ko bhi e-invoice chahiye.</p>",
+    "<h2>Faayda, aur ek savdhani</h2>",
+    "<p>Threshold par ek savdhani. Rule 2017-18 se kisi bhi financial year mein ₹5 crore se upar turnover ko cover karta hai. Yeh aapke PAN par sab GSTIN milakar test hota hai, sirf ek state par nahi. Jis business ne pehle kisi saal line cross ki, woh is saal dheema hone par bhi covered rehta hai.</p>",
+    "<p>Faayda asli hai. E-invoice par ek reference number hota hai jo dono taraf dekh sakte hain, to buyer chupke se bill par sawal nahi utha sakta. Supplier ke liye, yeh payment rokne ke bahane ko chhota kar deta hai. Badhti dukaan ya startup ke liye, yeh rule zyadatar routine ka hai, tax ka nahi.</p>"
+   ]
+  },
+  {
    "slug": "india-startup-funding-rebound-november-2026-five-rounds-83-percent",
    "title": "Startup Funding Up 69%: Five Deals Took 83%",
    "dek": "Indian startups raised $290.55 million in the week to November 7, 2026, up 69% on the week. But five rounds took 83% of it. Here is what that maths means.",
