@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T01:32:08Z",
+ "generated": "2026-11-12T03:39:22Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -865,15 +865,6 @@
    ]
   },
   {
-   "query": "exit charge calculator",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "exit calculator"
-   ]
-  },
-  {
    "query": "fd calculator monthly payout",
    "demand": 5,
    "covered": false,
@@ -1358,6 +1349,15 @@
    "score": 8.97,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -1992,7 +1992,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2019,7 +2019,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio formula",
+   "query": "inventory turnover ratio meaning",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2061,15 +2061,6 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "lucky number calculator in tamil",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "lucky number calculator"
    ]
   },
   {
@@ -2649,7 +2640,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2694,7 +2685,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio in days",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2739,7 +2730,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator in tamil",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3209,15 +3200,6 @@
    ]
   },
   {
-   "query": "lucky number calculator by date of birth",
-   "demand": 13,
-   "covered": true,
-   "score": 7.02,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3489,7 +3471,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator cgst sgst",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3513,15 +3495,6 @@
    "score": 6.9,
    "from": [
     "implied valuation"
-   ]
-  },
-  {
-   "query": "inventory turnover ratio in days",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "inventory turnover ratio"
    ]
   },
   {
@@ -3552,7 +3525,7 @@
    ]
   },
   {
-   "query": "lucky number calculator numerology",
+   "query": "lucky number calculator by name",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3621,6 +3594,33 @@
    "score": 6.9,
    "from": [
     "pre money post money"
+   ]
+  },
+  {
+   "query": "property roi calculator malaysia",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "property roi calculator"
+   ]
+  },
+  {
+   "query": "rental yield calculator bangalore",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "rental yield calculator"
+   ]
+  },
+  {
+   "query": "rental yield in india",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "rental yield"
    ]
   }
  ]

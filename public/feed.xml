@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Thu, 12 Nov 2026 01:40:10 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 04:02:50 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>GST E-Invoicing Widens to Reverse-Charge Bills in 2027</title>
@@ -14,6 +14,14 @@
     <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
     <category>Tax Rules</category>
     <description>From January 1, 2027, firms above ₹5 crore turnover must raise an e-invoice for reverse-charge self-invoices and imported services. Here is the maths.</description>
+  </item>
+  <item>
+    <title>CTC vs In-Hand Salary: What You Really Get</title>
+    <link>https://tankmetrics.in/ctc-vs-in-hand-salary</link>
+    <guid isPermaLink="true">https://tankmetrics.in/ctc-vs-in-hand-salary</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>CTC vs in-hand salary explained for Indian founders: what the employer really pays, what is deducted from gross pay, and what lands in the bank each month.</description>
   </item>
   <item>
     <title>Startup Funding Up 69%: Five Deals Took 83%</title>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Valuation multiple for a D2C brand in India. Enter your revenue and the multiple an investor offers to get the valuation in ₹ Crores. Free and instant.</description>
-  </item>
-  <item>
-    <title>Why a Profitable Shop Still Runs Out of Cash</title>
-    <link>https://tankmetrics.in/why-profitable-shop-runs-out-of-cash</link>
-    <guid isPermaLink="true">https://tankmetrics.in/why-profitable-shop-runs-out-of-cash</guid>
-    <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Why a profitable shop still runs out of cash even as sales grow: the working-capital gap explained, with a worked example and three ways to close it fast.</description>
   </item>
 </channel>
 </rss>

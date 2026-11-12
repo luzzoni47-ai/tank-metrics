@@ -216,6 +216,12 @@ MAP: dict[str, list[tuple[str, str, str]]] = {
         ("/return-on-investment-roi", "Return on Investment (ROI)",
          "turn any profit and investment into a yearly percentage"),
     ],
+    "blog-ctc-vs-in-hand-salary": [
+        ("/employee-cost-ctc-calculator", "Employee Cost (CTC)",
+         "add employer PF and benefits to a gross salary to see the real monthly cost"),
+        ("/salary-take-home-estimator", "Salary Take-Home Estimator",
+         "turn an annual CTC into the monthly in-hand pay after deductions"),
+    ],
 }
 
 BACKLINK_MARKER = "<!-- tool-blog -->"
