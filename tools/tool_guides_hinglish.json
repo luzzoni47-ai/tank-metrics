@@ -689,17 +689,17 @@
    ]
   },
   "emi": {
-   "what": "Loan EMI Calculator ek loan ki fixed monthly payment nikalta hai — amount, interest rate aur tenure ke hisaab se. Work out the fixed monthly payment for a loan, based on amount, rate and duration. Yahi number aapki monthly budget tay karta hai, isliye isse pehle jaanna zaroori hai ki aap kya commit kar rahe ho.",
-   "formula": "EMI ka formula hai: P x r x (1+r)^n ÷ ((1+r)^n - 1), jahan P loan amount hai, r monthly interest rate (saalana rate ÷ 12 ÷ 100), aur n kitne mahine. Kyunki EMI me byaaj aur principal dono hote hain, shuru ke mahinon me zyadatar hissa byaaj jaata hai. Isliye tenure badhane se EMI kam hoti hai lekin kul byaaj kaafi zyada ho jaata hai.",
+   "what": "Loan EMI Calculator general-purpose tool hai: ye kisi bhi instalment loan ka number nikalta hai — car loan, personal loan, business loan, education loan ya gold loan — home loan ke liye alag page hai. Aap Loan Amount, Interest Rate aur Loan Tenure (mahine) daalte ho, aur teen cheezein milti hain: fixed monthly EMI, poori loan life ka total, aur usme chhipa byaaj. Aakhri figure log skip kar dete hain, aur wahi sabse zaroori hai. ₹10,00,000 par 8% aur paanch saal: EMI ₹20,276 aur kul byaaj ₹2,16,584. Wahi loan bees saal kar do to EMI girti hai ₹8,364 tak, par byaaj ₹10,07,456 ho jaata hai — borrow ki gayi rakam se bhi zyada.\n\nIs page ka decision EMI aur uske badle kharide gaye byaaj ka trade hai. Chhoti EMI free nahi hoti; woh lambi tenure aur bade byaaj ke saath kharidi jaati hai, aur calculator us daam ko rupees mein dikhata hai. Ye flat-rate quote padhne ka tool bhi hai: kaafi Indian lenders flat rate advertise karte hain, aur teen saal ka flat 10% asal mein bache hue balance par 10% saalana se kaafi mehnga padta hai. Flat figure pehle is tool mein daalo, phir usi amount aur tenure ke reducing-balance offer se compare karo.",
+   "formula": "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P Loan Amount hai, r monthly rate (Interest Rate ÷ 12 ÷ 100) aur n Loan Tenure mahine mein. Total Amount Paid = EMI × n, aur Total Interest = total − P. P = 10,00,000, r = 8%, n = 60 par EMI ₹20,276, total ₹12,16,584 aur byaaj ₹2,16,584. n = 240 kar do to EMI ₹8,364 par byaaj ₹10,07,456. Rate saalana hai aur tenure mahine mein, isliye paanch saal ka loan 60 daala jaata hai.",
    "when": [
-    "Jab aap home, car ya personal loan lene se pehle monthly commitment jaanna chahte ho.",
-    "Jab aap dekhan chahte ho ki tenure badhane se EMI kitni girti hai aur kul byaaj kitna badhta hai.",
-    "Jab aap do banks ke offers compare kar rahe ho."
+    "Koi bhi instalment loan le rahe ho jo home loan nahi hai — car, two-wheeler, personal, business, education ya gold — aur sign karne se pehle monthly figure chahiye.",
+    "Lender flat rate quote kar raha hai aur asli instalment aur total byaaj reducing-balance offer se compare karna hai.",
+    "Tenure chun rahe ho aur dekhna hai ki har extra saal ki kam EMI rupees mein kitna extra byaaj karati hai."
    ],
    "mistakes": [
-    "Sirf EMI dekhna aur kul byaaj na dekhna. Lambi tenure sasti lagti hai, hoti nahi.",
-    "Ye bhool jaana ki floating rate hone par EMI ya tenure aage badal sakti hai.",
-    "Budget me sirf EMI rakhna, processing fee aur insurance ke liye jagah na chhodna."
+    "Sirf EMI dekh kar offers compare karna. Paanch saal ka ₹10,00,000 loan 8% par ₹2,16,584 byaaj leta hai; wahi bees saal par ₹10,07,456 — lagbhag paanch guna — monthly bachat chhoti lagti hai.",
+    "Flat rate ko reducing-balance rate samajhna. Flat 10% teen saal ke liye poore principal par poore term tak lagta hai, isliye bache hue balance par yeh takreeban 17-18% saalana banta hai.",
+    "Tenure saalon mein daalna. Loan Tenure field mahine mein hai, isliye teen saal ka loan 36 hai, aur 3 type karne se teen mahine ka loan price ho jaata hai."
    ]
   },
   "epf": {
@@ -829,17 +829,17 @@
    ]
   },
   "homeemi": {
-   "what": "Home loan EMI calculator housing loan ki fixed monthly payment dikhata hai, aur usse zyada zaroori - loan aapko kul kitne ka padta hai. EMI ke do hisse hote hain - byaaj aur principal - aur shuru ke saalon mein lagbhag poora byaaj hi hota hai. Isliye 8.5% par 20 saal ka loan borrow ki gayi rakam se kaafi zyada padta hai, aur isliye shuru ke saalon mein chhoti prepayment baad mein utni hi rakam dene se kaafi zyada bachaati hai.",
-   "formula": "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P loan amount hai, r monthly interest rate (saalana rate ÷ 12 ÷ 100) aur n mahine. ₹50 lakh loan 8.5% par 20 saal: EMI takreeban ₹43,391, aur poori term mein kul takreeban ₹1.04 crore - lagbhag dugna. Wahi loan 30 saal par EMI takreeban ₹38,446 kar deta hai par kul cost takreeban ₹1.38 crore.",
+   "what": "Home Loan EMI Calculator housing loan ka number nikalta hai, aur housing loan baaki kisi bhi instalment loan se alag janwar hai: zyadatar families ki sabse badi udhaar, bees se tees saal lambi, aur aapke sir ke upar ki chhat par secured. Aap Loan Amount, Annual Interest Rate aur Loan Tenure (saal) daalte ho, aur tool fixed monthly EMI aur total repayment deta hai. ₹30,00,000 par 8% aur 20 saal: EMI ₹25,093 aur total repayment ₹60,22,368 — borrow ki gayi rakam ka lagbhag dugna wapas jaata hai, aur us dugne ka zyada hissa monthly figure mein dikhta hi nahi.\n\nHome loan ko apna calculation banane wali cheez tenure hai. Wahi ₹30,00,000 loan 20 saal se 30 saal kar do to EMI sirf ₹22,013 reh jaati hai — takreeban ₹3,000 mahina — par total repayment ₹60,22,368 se ₹79,24,657 ho jaata hai, lagbhag ₹19 lakh zyada. Lenders lambi tenure ko comfort bolte hain, aur woh bhaari daam par milti hai, isliye ye page dono numbers saath dikhata hai. Doosra home-loan-specific decision prepayment hai: pehle paanch saalon mein EMI ka zyada hissa byaaj hota hai, isliye tab diya gaya lump sum term aur total ko saal pandrah ki usi rakam se kaafi zyada kam karta hai. EMI se bahar ke kharch — agreement par stamp duty aur registration, processing fee aur insurance — jodo to ghar ki asli cost aur badh jaati hai.",
+   "formula": "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P Loan Amount hai, r monthly rate (Annual Interest Rate ÷ 12 ÷ 100) aur n term mahine mein (Loan Tenure saal × 12). Total Repayment = EMI × n. ₹30,00,000 par 8% aur 20 saal: r = 0.00667, n = 240, EMI ₹25,093 aur total ₹60,22,368. 30 saal par n = 360, EMI ₹22,013 aur total ₹79,24,657. Rate saalana hai aur tenure saal mein, isliye 20 saal ka loan 20 daala jaata hai, 240 nahi.",
    "when": [
-    "Do banks ke offers alag rates aur tenure par compare kar rahe ho.",
-    "Jaanna hai ki lambi tenure aapko kul byaaj mein kitna padti hai.",
-    "Faisla karna hai ki extra paisa prepay karna hai ya invest."
+    "Ghar dhoond rahe ho aur offer dene se pehle jaanna hai ki monthly EMI income mein fits hai ya nahi, bank sanction ke baad nahi.",
+    "20 saal aur 30 saal ki tenure ke beech chun rahe ho aur monthly bachat ko extra lakhon ke byaaj se compare karna hai.",
+    "Ab lump sum prepay karna hai ya invest, ye decide kar rahe ho — aur dekhna hai ki shuru ki EMI ka kitna hissa byaaj hai jo prepayment kaategi."
    ],
    "mistakes": [
-    "Sabse kam EMI ke liye sabse lambi tenure chunna. Monthly bachat chhoti hoti hai aur extra byaaj bada.",
-    "Ye ignore karna ki floating rate par EMI ya tenure badal sakti hai, aur total fix nahi hai.",
-    "Processing fees, insurance aur loan agreement ki stamp duty bhool jaana, jo EMI mein nahi aate."
+    "Kam EMI ke liye 30 saal ki tenure chunna. ₹30,00,000 par 8% se yeh mahine ka takreeban ₹3,000 bachaati hai par loan life mein lagbhag ₹19 lakh byaaj jod deti hai.",
+    "Sirf EMI ka budget banana. Stamp duty, registration, processing fee aur home-loan insurance EMI se bahar hote hain aur tool ke total repayment mein nahi aate.",
+    "Prepayment late karna, jaldi nahi. Pehle paanch saalon mein har EMI ka zyada hissa byaaj hai, isliye tab ka prepayment saal pandrah ki usi rakam se kaafi zyada future byaaj hataata hai."
    ]
   },
   "hra": {

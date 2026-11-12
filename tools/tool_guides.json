@@ -689,20 +689,20 @@
    ]
   },
   "emi": {
-   "what": "The Loan EMI Calculator shows what a loan really costs per month and over its whole life. The EMI is the fixed amount you pay every month; it contains both interest and a repayment of the amount borrowed. Early payments are almost all interest, which is why a loan feels like it is not shrinking for the first few years.",
-   "formula": "The EMI is calculated so that every payment, compounded at the monthly rate over the full term, exactly clears the loan. The monthly rate is the annual rate divided by twelve, and the term is the number of months. Total interest is the EMI multiplied by the number of months, minus the amount borrowed. A longer term lowers the EMI but raises the total interest, which is the trade the calculator lets you test.",
+   "what": "The Loan EMI Calculator is the general-purpose one: it prices any instalment loan — a car loan, a personal loan, a business loan, an education loan or a gold loan — not a home loan specifically. You enter the amount borrowed, the annual rate and the term in months, and it returns three things: the fixed monthly EMI, the total you repay over the life of the loan, and the interest buried inside that total. The last figure is the one people skip, and it is the one that matters. ₹10,00,000 at 8% over five years is an EMI of ₹20,276 and total interest of ₹2,16,584. Stretch the identical loan to twenty years and the EMI falls to ₹8,364 — but the interest climbs to ₹10,07,456, more than the amount borrowed in the first place.\n\nThe decision this page settles is the trade between the EMI you can comfortably pay and the interest that trade quietly buys. A smaller EMI is never free; it is bought with a longer term and a larger interest bill, and the calculator makes that price visible in rupees rather than in a vague feeling that a longer loan is safer. It is also the tool for reading a flat-rate quote: many Indian lenders advertise a flat rate, and a flat 10% over three years costs far more than 10% a year on the balance you still owe. Put the flat figure through this tool first, then set it against a reducing-balance offer on the same amount and term.",
+   "formula": "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the Loan Amount, r the monthly rate (the Interest Rate ÷ 12 ÷ 100) and n the Loan Tenure in months. Total Amount Paid = EMI × n, and Total Interest is that total minus P. With P = 10,00,000, r = 8% and n = 60, the EMI is ₹20,276, the total is ₹12,16,584 and the interest is ₹2,16,584. Raise n to 240 and the EMI drops to ₹8,364 while the interest rises to ₹10,07,456. The rate is annual and the tenure is in months, so a five-year loan is entered as 60.",
    "when": [
-    "You are comparing two loan offers with different rates or terms.",
-    "You want to know the monthly payment before you commit to a property.",
-    "You are deciding whether a longer term is worth the extra interest."
+    "You are taking any instalment loan that is not a home loan — car, two-wheeler, personal, business, education or gold — and want the monthly figure before you sign.",
+    "A lender quotes a flat rate and you want the true instalment and total interest to set against a reducing-balance offer.",
+    "You are choosing a term and need to see, in rupees, exactly what each extra year of lower EMI costs you in total interest."
    ],
    "mistakes": [
-    "Choosing the offer with the lowest EMI without checking the total interest.",
-    "Forgetting the processing fee and insurance, which are added to the cost of borrowing.",
-    "Assuming the rate is fixed for the whole term when it is linked to a benchmark that moves."
+    "Comparing offers on the EMI alone. A five-year ₹10,00,000 loan at 8% costs ₹2,16,584 in interest; the same loan over twenty years costs ₹10,07,456 — nearly five times as much — for a monthly saving that feels small.",
+    "Reading a flat rate as a reducing-balance rate. A flat 10% over three years is charged on the full principal for the whole term, so it works out to roughly 17-18% a year on the balance you actually still owe.",
+    "Entering the term in years. The Loan Tenure field is in months, so a three-year loan is 36, and typing 3 quietly prices a three-month loan instead."
    ],
-   "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
-   "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property."
+   "intro": "A ₹10,00,000 loan at 8% for five years — a typical car or personal loan, not a mortgage. Here is the instalment the lender will quote.",
+   "outro": "The EMI is ₹20,276 and the interest over the five years is ₹2,16,584 — about a fifth of the loan. Push the same loan out to twenty years and the EMI halves to ₹8,364, but the interest crosses ₹10,00,000. That gap is why the term is entered in months and the total is watched, not just the instalment."
   },
   "epf": {
    "what": "An EPF calculator adds up the money that quietly builds in your Employees' Provident Fund account every month and shows what it becomes by the time you retire. Two people pay into it - you and your employer - and both contributions earn interest, which is where the surprise comes from. The employee share is 12% of basic salary, the employer puts in a matching amount, and the balance compounds year after year. A person who joins at 25 and retires at 58 has paid in for 33 years, and in the last ten of those the interest alone earns more than the first twenty years of contributions.",
@@ -831,17 +831,17 @@
    ]
   },
   "homeemi": {
-   "what": "A home loan EMI calculator shows the fixed monthly payment on a housing loan and, just as importantly, what the loan costs you in total. An EMI has two parts - interest and principal - and in the early years almost all of it is interest. That is why a 20-year loan at 8.5% costs far more than the amount borrowed, and why a small prepayment in the first few years saves far more than the same amount paid later.",
-   "formula": "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the loan amount, r the monthly interest rate (annual rate ÷ 12 ÷ 100) and n the number of months. A ₹50 lakh loan at 8.5% for 20 years is an EMI of about ₹43,391, and the total paid over the term is about ₹1.04 crore - roughly double the loan. The same loan over 30 years drops the EMI to about ₹38,446 but raises the total cost to about ₹1.38 crore.",
+   "what": "The Home Loan EMI Calculator prices a housing loan, and a housing loan is a different animal from any other instalment loan: it is the largest borrowing most families ever take, it runs for twenty to thirty years, and it is secured against the roof over your head. You enter the Loan Amount, the Annual Interest Rate and the Loan Tenure in years, and the tool returns the fixed monthly EMI and the total repayment. On ₹30,00,000 at 8% over 20 years the EMI is ₹25,093 and the total repayment is ₹60,22,368 — you pay back roughly double what you borrowed, and almost none of that doubling is visible in the monthly figure.\n\nWhat makes a home loan its own calculation is the tenure. Stretch that same ₹30,00,000 loan from 20 years to 30 and the EMI drops only to ₹22,013 — about ₹3,000 a month — while the total repayment climbs from ₹60,22,368 to ₹79,24,657, nearly ₹19 lakh more. Lenders price the longer tenure as comfort, and it is bought at a heavy price, which is why this page exists to show the two numbers side by side. The other home-loan-specific decision it serves is prepayment: in the first five years most of the EMI is interest, so a lump sum paid then cuts the term and the total far more than the same money paid in year fifteen. Add the costs the EMI does not include — stamp duty and registration on the agreement, processing fees and insurance — and the real cost of the house is higher again.",
+   "formula": "EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the Loan Amount, r the monthly rate (Annual Interest Rate ÷ 12 ÷ 100) and n the term in months (Loan Tenure in years × 12). Total Repayment = EMI × n. For ₹30,00,000 at 8% over 20 years: r = 0.00667, n = 240, the EMI is ₹25,093 and the total is ₹60,22,368. Over 30 years the same loan gives n = 360, an EMI of ₹22,013 and a total of ₹79,24,657. The rate is annual and the tenure is in years, so a 20-year loan is entered as 20, not 240.",
    "when": [
-    "You are comparing loan offers from two banks at different rates and tenures.",
-    "You want to know how much a longer tenure costs you in total interest.",
-    "You are deciding whether to prepay or invest the extra money."
+    "You are house-hunting and need to know whether the monthly EMI fits your income before you make an offer, not after the bank sanctions it.",
+    "You are choosing between a 20-year and a 30-year tenure and want to see the monthly saving against the extra lakhs of total interest.",
+    "You are deciding whether to prepay a lump sum now or invest it, and want to see how much of the early EMI is interest that a prepayment would cut."
    ],
    "mistakes": [
-    "Choosing the longest tenure for the lowest EMI. The monthly saving is small and the extra interest is large.",
-    "Ignoring that a floating rate means the EMI or the tenure can change, and the total is not fixed.",
-    "Forgetting processing fees, insurance and the stamp duty on the loan agreement, which are not in the EMI."
+    "Choosing the 30-year tenure for the lower EMI. On ₹30,00,000 at 8% it saves about ₹3,000 a month but adds nearly ₹19 lakh of interest over the life of the loan.",
+    "Budgeting only for the EMI. Stamp duty, registration, processing fees and home-loan insurance are paid outside the EMI and are not in the total repayment the tool shows.",
+    "Prepaying late instead of early. In the first five years most of each EMI is interest, so a prepayment then removes far more future interest than the same amount paid in year fifteen."
    ]
   },
   "hra": {

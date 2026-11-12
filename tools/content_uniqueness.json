@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.136,
-   "a": "/home-loan-emi-calculator",
-   "b": "/loan-emi-calculator"
-  },
-  {
    "overlap": 0.135,
    "a": "/rashi-moon-sign-calculator",
    "b": "/zodiac-sign-calculator"
@@ -61,17 +56,14 @@
    "overlap": 0.114,
    "a": "/break-even-point",
    "b": "/contribution-margin"
+  },
+  {
+   "overlap": 0.114,
+   "a": "/co-founder-equity-split",
+   "b": "/debt-equity-deal"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/home-loan-emi-calculator",
-   "closest_overlap": 0.136
-  },
-  {
-   "page": "/loan-emi-calculator",
-   "closest_overlap": 0.136
-  },
   {
    "page": "/rashi-moon-sign-calculator",
    "closest_overlap": 0.135
@@ -111,6 +103,14 @@
   {
    "page": "/lucky-number-calculator",
    "closest_overlap": 0.12
+  },
+  {
+   "page": "/numerology-calculator",
+   "closest_overlap": 0.12
+  },
+  {
+   "page": "/cash-conversion-cycle",
+   "closest_overlap": 0.119
   }
  ],
  "median_overlap": 0.097

@@ -78,10 +78,10 @@
         "v": "₹30,22,368.50"
       }
     ],
-    "intro": "Take a home loan of ₹30,00,000 at 8.5% over 20 years. Here is what the bank works out.",
-    "outro": "Notice that the total interest is close to the amount borrowed. On a long loan, the interest is not a small add-on — it is nearly a second property.",
+    "intro": "A ₹10,00,000 loan at 8% for five years — a typical car or personal loan, not a mortgage. Here is the instalment the lender will quote.",
+    "outro": "The EMI is ₹20,276 and the interest over the five years is ₹2,16,584 — about a fifth of the loan. Push the same loan out to twenty years and the EMI halves to ₹8,364, but the interest crosses ₹10,00,000. That gap is why the term is entered in months and the total is watched, not just the instalment.",
     "hi_intro": "Loan EMI Calculator ka poora hisaab. Tool leta hai Loan Amount aur Interest Rate aur Loan Tenure; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Loan EMI Calculator ka formula: EMI ka formula hai: P x r x (1+r)^n ÷ ((1+r)^n - 1), jahan P loan amount hai, r monthly interest rate (saalana rate ÷ 12 ÷ 100), aur n kitne mahine. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Loan EMI Calculator ka formula: EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P Loan Amount hai, r monthly rate (Interest Rate ÷ 12 ÷ 100) aur n Loan Tenure mahine mein. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "savegoal": {
     "inputs": {
@@ -1340,9 +1340,9 @@
       }
     ],
     "intro": "Home Loan EMI Calculator, worked end to end. The calculator takes Loan Amount, Annual Interest Rate, Loan Tenure; the example below runs one realistic set of those numbers through it.",
-    "outro": "Home Loan EMI Calculator settles it with EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the loan amount, r the monthly interest rate (annual rate ÷ 12 ÷ 100) and n the number of months. Change any field above and the answer updates with it.",
+    "outro": "Home Loan EMI Calculator settles it with EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the Loan Amount, r the monthly rate (Annual Interest Rate ÷ 12 ÷ 100) and n the term in months (Loan Tenure in years × 12). Change any field above and the answer updates with it.",
     "hi_intro": "Home Loan EMI Calculator ka poora hisaab. Tool leta hai Loan Amount aur Annual Interest Rate aur Loan Tenure; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Home Loan EMI Calculator ka formula: EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P loan amount hai, r monthly interest rate (saalana rate ÷ 12 ÷ 100) aur n mahine. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Home Loan EMI Calculator ka formula: EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P Loan Amount hai, r monthly rate (Annual Interest Rate ÷ 12 ÷ 100) aur n term mahine mein (Loan Tenure saal × 12). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "rentalyield": {
     "inputs": {
