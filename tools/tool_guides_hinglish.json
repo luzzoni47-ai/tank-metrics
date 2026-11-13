@@ -1241,17 +1241,17 @@
    ]
   },
   "rashi": {
-   "what": "Rashi matlab moon sign, aur Vedic astrology me yahi sign sabse zyada matter karta hai - Western sun sign se kaafi zyada. Chaand har rashi me lagbhag dhai din rehta hai, isliye ek hafte ke gap me paida do logon ki rashi alag ho sakti hai. Ye tool sirf aapki birth date se rashi ka andaaza lagata hai, aur date-only ganit ki imaandaar limit yahi hai: chaand har 54 ghante me rashi boundary cross karta hai, isliye boundary ke paas ki date dono taraf ja sakti hai. Page rashi ko traditional order me batata hai, Mesha se Meena tak, aur saaf likhta hai ki ye estimate kya tay kar sakta hai aur kya nahi.",
-   "formula": "Chaand poora zodiac lagbhag 27.3 din me tay karta hai, yaani har rashi me takreeban 2.25 din. Ye tool aapki date se din nikaalta hai, usse baari-baari barah rashis par map karta hai - Mesha, Vrishabha, Mithuna, Karka, Simha, Kanya, Tula, Vrishchika, Dhanu, Makara, Kumbha, Meena - aur us din wali rashi dikhata hai. Yahan mahine ki tareekh chaand ki position ka stand-in hai. Sahi rashi ke liye birth time chahiye, kyunki chaand lagbhag har 54 ghante me rashi boundary cross karta hai.",
-   "when": [
-    "Jaldi rashi chahiye aur sirf birth date yaad hai, time nahi.",
-    "Panchang ya rashi forecast padh rahe ho aur jaanna hai ki wo kis rashi ke liye likha hai.",
-    "Dost ke saath rashi compare kar rahe ho aur kisi ke paas birth record nahi hai."
-   ],
+   "what": "Rashi calculator ek hi sawaal tay karta hai: jab sirf birth date pata ho, to daily rashi forecast, panchang ya matching table kis moon sign ke liye likha gaya hai? Rashi wahi sign hai jo janm ke waqt chaand me tha, aur Vedic practice daily forecast isi se padhti hai, isliye ye tay karta hai ki barah forecast columns me kaunsa aapka hai. Tool Date of Birth leta hai aur approximate rashi deta hai, traditional order Mesha se Meena tak.\n\n\"Approximate\" hi imaandaar baat hai, aur yahi is tool ko kundli se alag karta hai. Chaand har rashi me takreeban dhai din rehta hai, yaani lagbhag har 54 ghante me boundary cross karta hai; boundary ke ek din andar ki date dono taraf ja sakti hai, aur use sirf birth time settle karta hai. Tool mahine ki tareekh padhta hai, isliye rashi ke beech me sahi hai aur kinare par saaf taur par unsure - ise sahi forecast column chunne ke liye use karo, muhurat tay karne ke liye nahi.",
+   "formula": "Chaand poora zodiac lagbhag 27.3 din me tay karta hai, yaani har rashi me takreeban 2.25 din. Tool aapki date se din (input dob) leta hai aur usse baari-baari Mesha, Vrishabha, Mithuna, Karka, Simha, Kanya, Tula, Vrishchika, Dhanu, Makara, Kumbha, Meena par map karta hai, aur us din ki rashi Approximate Rashi ke roop me deta hai. Yahan mahine ki tareekh chaand ki asli longitude ka stand-in hai, isliye jawab rashi ke beech me sahi rehta hai aur boundary ke paas ek rashi idhar-udhar ho sakta hai. Sahi rashi ke liye birth time aur place chahiye.",
    "mistakes": [
-    "Date-only rashi ko final maan lena. Boundary ke ek din andar asli rashi ke liye birth time chahiye.",
-    "Rashi aur Western sun sign ko ek samajhna. Dono me barah naam hain, par bhasha aur dates alag.",
-    "Rashi estimate se muhurat, shaadi ya property timing tay karna. Uske liye jyotish se poori kundli chahiye."
+    "Date-only rashi ko final maan lena. Boundary ke lagbhag ek din andar asli rashi ke liye birth time chahiye, aur estimate padosi rashi bata sakta hai.",
+    "Rashi aur Western sun sign ko ek samajhna. Dono me barah naam hain, par bhasha aur dates alag hain; Western sign sooraj se aata hai, chaand se nahi.",
+    "Date-only rashi se muhurat, shaadi ki date ya property kharid tay karna. Uske liye jyotish se poori kundli chahiye, day-of-month estimate nahi."
+   ],
+   "when": [
+    "Aap daily rashi forecast ya panchang padh rahe ho aur jaanna hai ki barah columns me aapka kaunsa hai.",
+    "Birth date yaad hai par time nahi, aur sabse kareeb moon sign chahiye.",
+    "Dost ya partner ke saath rashi match kar rahe ho aur kisi ke paas birth record nahi hai."
    ]
   },
   "rd": {
@@ -1521,17 +1521,17 @@
    ]
   },
   "zodiac": {
-   "what": "Western zodiac sign aapki birth date aur us din sooraj ki position se tay hota hai, isliye yahi ek sign hai jo sirf date se nikal jaata hai. Barah signs ka calendar har saal same chalta hai - Aries lagbhag 21 March, Cancer lagbhag 21 June - leap year me ek din ka farq aata hai. Ye tool aapki date ka sign dikhata hai aur wahi exact range bhi likhta hai jo usne use ki, taki cusp wala birthday guess na ho, settle ho jaye.",
-   "formula": "Har sign ka calendar me ek fixed band hai: Capricorn 22 December se 19 January, Aquarius 20 January se 18 February, Pisces 19 February se 20 March, Aries 21 March se 19 April, Taurus 20 April se 20 May, Gemini 21 May se 20 June, Cancer 21 June se 22 July, Leo 23 July se 22 August, Virgo 23 August se 22 September, Libra 23 September se 22 October, Scorpio 23 October se 21 November, aur Sagittarius 22 November se 21 December. Tool aapke month aur day ko in boundaries se compare karta hai aur wahi sign deta hai jiske band me date aati hai.",
-   "when": [
-    "Horoscope ke liye sun sign chahiye aur sirf date hai.",
-    "Birthday cusp par hai aur jaanna hai ki date akeli kis sign ki taraf ishara karti hai.",
-    "Koi profile zodiac sign maang raha hai aur chart lookup nahi karna."
-   ],
+   "what": "Zodiac calculator wahi ek astrology sawaal tay karta hai jo birth date se theek-theek nikalta hai: wo date kis Western sun sign me aati hai. Moon sign se alag, sun sign calendar se fix hota hai - sooraj har saal lagbhag 21 March se 19 April tak Aries me rehta hai - isliye akeli date kaafi hai. Tool Date of Birth leta hai aur wahi sign deta hai jiske band me wo month aur day aati hai, jo horoscope column, dating profile ya zodiac sign poochne wale form ko chahiye hota hai.\n\nIska asli kaam cusp hai. 20 March ya 21 June ka birthday boundary ke paas hota hai jahan sign palat jaata hai, aur log sach me nahi jaante ki wo kis taraf hain. Tool wahi exact date range likhta hai jo usne use ki, taki cusp wala birthday published boundaries par settle ho, guess na ho. Ek cheez ye nahi kar sakta: boundary jo khiskti hai. Leap year me ranges lagbhag ek din khisak jaati hain, isliye line par baithi date non-leap year ki table se alag padh sakti hai.",
+   "formula": "Har sign ka calendar me ek fixed band hai. Capricorn 22 December se 19 January, Aquarius 20 January se 18 February, Pisces 19 February se 20 March, Aries 21 March se 19 April, Taurus 20 April se 20 May, Gemini 21 May se 20 June, Cancer 21 June se 22 July, Leo 23 July se 22 August, Virgo 23 August se 22 September, Libra 23 September se 22 October, Scorpio 23 October se 21 November, Sagittarius 22 November se 21 December, aur Capricorn saal 22 December se band karta hai. Tool dob se month aur day padhta hai, in boundaries se order me compare karta hai, aur sign ko Zodiac Sign ke roop me deta hai.",
    "mistakes": [
-    "Cusp wale birthday ko pakka maan lena. Boundary ke ek din andar sign birth time par depend karta hai.",
-    "Vedic sawaal ke liye Western sign use karna. Rashi chaand se chalti hai, sooraj se nahi.",
-    "Ye maan lena ki date ranges kabhi nahi hilti. Leap year boundaries ko lagbhag ek din khiska deta hai."
+    "Cusp wale birthday ko pakka maan lena. Boundary date par sign birth time par depend karta hai, aur doosre saal ki table ek din alag ho sakti hai.",
+    "Vedic sawaal ke liye Western sun sign use karna. Rashi chaand se aati hai aur birth time maangti hai; sun sign nahi.",
+    "Ye maan lena ki date ranges kabhi nahi hilti. Leap year boundaries ko lagbhag ek din khiska deta hai, isliye 20 March ek saal Pisces aur doosre me Aries padh sakta hai."
+   ],
+   "when": [
+    "Horoscope ya app sun sign maang raha hai aur sirf date hai.",
+    "Birthday cusp par hai aur jaanna hai ki date akeli kis sign ki taraf ishara karti hai.",
+    "Koi profile ya quiz zodiac sign maang raha hai aur chart lookup nahi karna."
    ]
   },
   "dscr": {

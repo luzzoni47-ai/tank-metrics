@@ -1249,17 +1249,17 @@
    ]
   },
   "rashi": {
-   "what": "Rashi is the moon sign, and in Vedic astrology it is the sign that matters most - far more than the Western sun sign you probably already know. The moon moves through the twelve rashis in about two and a half days each, so two people born a week apart can sit in different rashis. This tool estimates the rashi from your birth date alone, which is the honest limit of a date-only calculation: the moon crosses a rashi boundary roughly every 54 hours, so a date near a boundary can fall either side. The page names the rashi in the traditional order, Mesha through Meena, and says plainly what the estimate can and cannot settle.",
-   "formula": "The moon covers the whole zodiac in about 27.3 days, so it spends roughly 2.25 days in each rashi. This tool takes the day of the month from the date you enter, maps it in order onto the twelve rashis - Mesha, Vrishabha, Mithuna, Karka, Simha, Kanya, Tula, Vrishchika, Dhanu, Makara, Kumbha, Meena - and returns the one for that day. The day of the month stands in for the moon's position. A precise rashi needs the birth time, because the moon crosses a rashi boundary about every 54 hours and the crossing drifts through the month.",
-   "when": [
-    "You want a quick moon sign and you remember only your birth date, not the time.",
-    "You are reading a panchang or a rashi forecast and want to know which rashi it is written for.",
-    "You are comparing your rashi with a friend's and neither of you has a birth record to hand."
-   ],
+   "what": "The Rashi calculator settles one narrow question: when you know only a birth date, which Vedic moon sign is a daily rashi forecast, a panchang or a matching table written for? Rashi is the sign the moon occupied at birth, and it is the sign Vedic practice reads for daily forecasts, so it decides which of the twelve forecast columns belongs to the person. The tool takes Date of Birth and returns the approximate rashi, named in the traditional order Mesha through Meena.\n\nThe word \"approximate\" is the honest part, and it is what separates this tool from a kundli. The moon stays in each rashi for about two and a half days, so it crosses a boundary roughly every 54 hours; a birth date within a day of one of those crossings can fall on either side, and only the birth time settles it. The tool reads the day of the month, so it is right in the middle of a rashi and explicitly unsure at the edge - use it to pick the right forecast column, not to time a muhurat.",
+   "formula": "The moon completes the zodiac in about 27.3 days, so it spends roughly 2.25 days in each of the twelve rashis. The tool reads the day of the month from the date you enter (its input is dob) and maps it in order onto Mesha, Vrishabha, Mithuna, Karka, Simha, Kanya, Tula, Vrishchika, Dhanu, Makara, Kumbha, Meena, returning the rashi for that day as Approximate Rashi. The day of the month stands in for the moon's actual longitude, which is why the answer holds in the middle of a rashi and can be off by one near a boundary. A precise rashi needs the birth time and place.",
    "mistakes": [
-    "Treating the date-only rashi as final. Within a day of a boundary the real rashi needs your birth time.",
-    "Confusing rashi with the Western sun sign. They use the same twelve ideas in different languages and different dates.",
-    "Using a rashi estimate to time a muhurat, a wedding or a property purchase. Those need a full kundli from a jyotish."
+    "Treating the date-only rashi as final. Within about a day of a boundary the real rashi needs the birth time, and the estimate can name the neighbouring rashi.",
+    "Confusing rashi with the Western sun sign. They draw on the same twelve names in different languages and sit on different dates; the Western sign comes from the sun, not the moon.",
+    "Using a date-only rashi to fix a muhurat, a wedding date or a property purchase. Those need a full kundli from a jyotish, not a day-of-month estimate."
+   ],
+   "when": [
+    "You are reading a daily rashi forecast or a panchang and want to know which of the twelve columns is yours.",
+    "You remember your birth date but not the time, and want the closest moon sign you can get.",
+    "You are matching rashi with a friend or partner and neither of you has a birth record handy."
    ]
   },
   "rd": {
@@ -1533,17 +1533,17 @@
    ]
   },
   "zodiac": {
-   "what": "Your Western zodiac sign is fixed by your birth date and the sun's position on that date, which is why it is the one sign you can look up from a date alone. The twelve signs run on the same calendar every year - Aries starts around 21 March, Cancer around 21 June - with a shift of about a day between leap years. This tool returns the sign for the date you enter and names the exact range it used, so a birthday on a cusp is settled rather than guessed.",
-   "formula": "Each sign owns a fixed band of the calendar: Capricorn runs 22 December to 19 January, Aquarius 20 January to 18 February, Pisces 19 February to 20 March, Aries 21 March to 19 April, Taurus 20 April to 20 May, Gemini 21 May to 20 June, Cancer 21 June to 22 July, Leo 23 July to 22 August, Virgo 23 August to 22 September, Libra 23 September to 22 October, Scorpio 23 October to 21 November, Sagittarius 22 November to 21 December. The tool compares your month and day against these boundaries and returns the sign whose band contains the date.",
-   "when": [
-    "You need your sun sign for a horoscope and have only the date.",
-    "A birthday sits on a cusp and you want to know which sign the date alone points to.",
-    "You are filling a profile that asks for a zodiac sign and do not want to look up a chart."
-   ],
+   "what": "The Zodiac calculator settles the one astrology question a birth date answers exactly: which Western sun sign that date falls in. Unlike a moon sign, the sun sign is fixed by the calendar - the sun is in Aries from about 21 March to 19 April every year - so a date alone is enough. The tool takes Date of Birth and returns the sign whose band contains that month and day, which is what a horoscope column, a dating profile or a form asking for \"zodiac sign\" wants.\n\nIts real job is the cusp. A birthday on 20 March or 21 June sits close to a boundary where the sign flips, and people genuinely do not know which side they are on. The tool names the exact date range it used, so a cusp birthday is settled against the published boundaries rather than guessed. The one thing it cannot do is handle a boundary that moves: the ranges shift by about a day across a leap year, so a date sitting right on the line can differ from a table printed in a non-leap year.",
+   "formula": "Each sign owns a fixed band of the calendar. Capricorn runs 22 December to 19 January, Aquarius 20 January to 18 February, Pisces 19 February to 20 March, Aries 21 March to 19 April, Taurus 20 April to 20 May, Gemini 21 May to 20 June, Cancer 21 June to 22 July, Leo 23 July to 22 August, Virgo 23 August to 22 September, Libra 23 September to 22 October, Scorpio 23 October to 21 November, Sagittarius 22 November to 21 December, and Capricorn closes the year from 22 December. The tool reads the month and day from dob, tests them against these boundaries in order, and returns the matching sign as Zodiac Sign.",
    "mistakes": [
-    "Reading a cusp birthday as certain. Within a day of a boundary the sign depends on the birth time, not the date.",
-    "Using the Western sign for a Vedic question. Rashi uses the moon, not the sun, and needs the birth time.",
-    "Assuming the date ranges never move. A leap year pushes the boundaries by about a day."
+    "Reading a cusp birthday as certain. On the boundary date the sign depends on the birth time, and a table printed in another year can differ by a day.",
+    "Using the Western sun sign for a Vedic question. Rashi comes from the moon and needs the birth time; the sun sign does not.",
+    "Assuming the date ranges never move. A leap year pushes the boundaries by about a day, so 20 March reads as Pisces in one year and can tip to Aries in another."
+   ],
+   "when": [
+    "A horoscope or an app asks for your sun sign and you only have the date.",
+    "Your birthday sits on a cusp and you want the sign the date alone points to.",
+    "You are filling a profile or a quiz that wants a zodiac sign and you do not want to look up a chart."
    ]
   },
   "dscr": {

@@ -3,9 +3,9 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.135,
-   "a": "/rashi-moon-sign-calculator",
-   "b": "/zodiac-sign-calculator"
+   "overlap": 0.132,
+   "a": "/break-even-point",
+   "b": "/gross-profit-and-margin"
   },
   {
    "overlap": 0.13,
@@ -13,17 +13,12 @@
    "b": "/rd-recurring-deposit-calculator"
   },
   {
-   "overlap": 0.129,
-   "a": "/break-even-point",
-   "b": "/gross-profit-and-margin"
-  },
-  {
    "overlap": 0.126,
    "a": "/ebitda-multiple",
    "b": "/revenue-multiple"
   },
   {
-   "overlap": 0.122,
+   "overlap": 0.121,
    "a": "/break-even-point",
    "b": "/percentage-calculator"
   },
@@ -39,18 +34,13 @@
   },
   {
    "overlap": 0.118,
-   "a": "/gross-profit-and-margin",
-   "b": "/percentage-calculator"
-  },
-  {
-   "overlap": 0.118,
    "a": "/client-acquisition-cost-cac",
    "b": "/customer-acquisition-cost-cac"
   },
   {
-   "overlap": 0.116,
-   "a": "/lucky-number-calculator",
-   "b": "/zodiac-sign-calculator"
+   "overlap": 0.118,
+   "a": "/gross-profit-and-margin",
+   "b": "/percentage-calculator"
   },
   {
    "overlap": 0.114,
@@ -61,16 +51,26 @@
    "overlap": 0.114,
    "a": "/co-founder-equity-split",
    "b": "/debt-equity-deal"
+  },
+  {
+   "overlap": 0.113,
+   "a": "/age-calculator",
+   "b": "/lucky-number-calculator"
+  },
+  {
+   "overlap": 0.113,
+   "a": "/implied-valuation",
+   "b": "/pre-money-and-post-money-valuation"
   }
  ],
  "worst_pages": [
   {
-   "page": "/rashi-moon-sign-calculator",
-   "closest_overlap": 0.135
+   "page": "/break-even-point",
+   "closest_overlap": 0.132
   },
   {
-   "page": "/zodiac-sign-calculator",
-   "closest_overlap": 0.135
+   "page": "/gross-profit-and-margin",
+   "closest_overlap": 0.132
   },
   {
    "page": "/ppf-calculator",
@@ -79,14 +79,6 @@
   {
    "page": "/rd-recurring-deposit-calculator",
    "closest_overlap": 0.13
-  },
-  {
-   "page": "/break-even-point",
-   "closest_overlap": 0.129
-  },
-  {
-   "page": "/gross-profit-and-margin",
-   "closest_overlap": 0.129
   },
   {
    "page": "/ebitda-multiple",
@@ -98,7 +90,7 @@
   },
   {
    "page": "/percentage-calculator",
-   "closest_overlap": 0.122
+   "closest_overlap": 0.121
   },
   {
    "page": "/lucky-number-calculator",
@@ -111,6 +103,14 @@
   {
    "page": "/cash-conversion-cycle",
    "closest_overlap": 0.119
+  },
+  {
+   "page": "/working-capital",
+   "closest_overlap": 0.119
+  },
+  {
+   "page": "/client-acquisition-cost-cac",
+   "closest_overlap": 0.118
   }
  ],
  "median_overlap": 0.097
