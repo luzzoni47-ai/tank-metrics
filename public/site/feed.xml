@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Thu, 12 Nov 2026 05:44:38 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 01:36:38 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Inflation Hits 6.09%: What It Costs a Small Shop</title>
+    <link>https://tankmetrics.in/news/retail-inflation-october-2026-6-09-percent-small-shop-margins</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/retail-inflation-october-2026-6-09-percent-small-shop-margins</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>India&#x27;s retail inflation hit 6.09% in October, past the RBI&#x27;s 6% limit, as food prices jumped 8.94%. Here is exactly what that does to a small shop&#x27;s margin.</description>
+  </item>
   <item>
     <title>GST E-Invoicing Widens to Reverse-Charge Bills in 2027</title>
     <link>https://tankmetrics.in/news/gst-e-invoicing-reverse-charge-self-invoice-january-2027</link>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Shark Tank India all pitches valuation list for Season 1 to 3. Enter any deal&amp;#x27;s amount and equity and see the valuation in ₹ Crores. Free and instant.</description>
-  </item>
-  <item>
-    <title>Valuation Multiple for a D2C Brand in India - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/valuation-multiple-d2c-brand-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/valuation-multiple-d2c-brand-india</guid>
-    <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Valuation multiple for a D2C brand in India. Enter your revenue and the multiple an investor offers to get the valuation in ₹ Crores. Free and instant.</description>
   </item>
 </channel>
 </rss>

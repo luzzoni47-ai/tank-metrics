@@ -48,8 +48,8 @@
   "lastmod": "2026-11-12"
  },
  "/blog": {
-  "hash": "730b4ad4b1a5ea32c17b9a35402b70d945d7af02fa8c6ae977fd2545c9c623eb",
-  "lastmod": "2026-11-12"
+  "hash": "7510e297ef9aaaf84a16c8b10a3c344fa624f2aed51659e13a00d2f684e2ac9d",
+  "lastmod": "2026-11-13"
  },
  "/bmi-calculator": {
   "hash": "d36c6c7d33ffb694d28a421adda2cbe146a8e2c22800ab6d004daa70ace606ea",
@@ -556,8 +556,8 @@
   "lastmod": "2026-11-12"
  },
  "/news": {
-  "hash": "695181cbd0fbb1fa10a5da7cce2430c11690920185112e26375e33b9f2038a18",
-  "lastmod": "2026-11-12"
+  "hash": "9d844a86732e7583ee17d555c2770ada5cb072eef13c455e85316e0cc9a0cc7b",
+  "lastmod": "2026-11-13"
  },
  "/nps-calculator": {
   "hash": "5bce39126f4a3a79dc92e848310f5678c05e7ee154cdc9952ccc4504b6c60529",
@@ -673,6 +673,10 @@
  },
  "/repeat-rate-retention-and-churn": {
   "hash": "1e8fbc675edd3514423ad0aa571397964afb09dfab9cb1c30c0cc67bcec1ed72",
+  "lastmod": "2026-11-12"
+ },
+ "/retail-inflation-october-2026-6-09-percent-small-shop-margins": {
+  "hash": "12c79b32c2f5d4dee59c439dc9f4b8aad95f9706cd02dc8d6eadad44481c1329",
   "lastmod": "2026-11-12"
  },
  "/return-on-ad-spend-roas": {

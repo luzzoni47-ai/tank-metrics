@@ -2,6 +2,65 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "retail-inflation-october-2026-6-09-percent-small-shop-margins",
+   "title": "Inflation Hits 6.09%: What It Costs a Small Shop",
+   "dek": "India's retail inflation hit 6.09% in October, past the RBI's 6% limit, as food prices jumped 8.94%. Here is exactly what that does to a small shop's margin.",
+   "category": "Small Business",
+   "date": "2026-11-12",
+   "date_display": "November 12, 2026",
+   "source_name": "Mint",
+   "source_url": "https://www.livemint.com/economy/cpi-retail-inflation-october-india-rbi-target-food-price-inflation-11794467724485.html",
+   "cta": {
+    "text": "When your buying price rises, your margin quietly shrinks unless you reprice. See the gap between markup and margin before you reset your selling price.",
+    "href": "/markup-vs-margin",
+    "label": "Open the Markup vs Margin Calculator"
+   },
+   "related": [
+    {
+     "slug": "markup-vs-margin-explained",
+     "title": "Markup vs Margin Explained"
+    },
+    {
+     "slug": "break-even-point-explained",
+     "title": "Break-Even Point Explained"
+    }
+   ],
+   "body_en": [
+    "<p>India's retail inflation rose to 6.09% in October 2026, up from 5.54% in September, data from the Ministry of Statistics and Programme Implementation showed on November 12. That pushed headline inflation past the Reserve Bank of India's upper tolerance limit of 6% for the first time in two years, and food did most of the pushing: food inflation climbed to 8.94% from 7.74%.</p>",
+    "<h2>What 6.09% means in rupees</h2>",
+    "<p>Inflation is a year-on-year number. It compares this October with last October. So a basket of everyday goods that cost ₹10,000 a year ago costs about ₹10,600 now. Food is worse, because it is nearly 40% of that basket: a ₹10,000 food basket from last October now costs roughly ₹10,900.</p>",
+    "<p>The pain is not spread evenly. Rural inflation was 6.63% and urban inflation was 5.41%. The reason is simple. Food is a bigger share of a rural household's spending, so the same onion and garlic price spike bites harder in a village than in a city.</p>",
+    "<h2>Why food prices are the problem</h2>",
+    "<p>Onion, garlic and ginger prices climbed sharply through October. Potatoes went the other way and fell, which is why the average is 8.94% and not higher. The RBI targets 4% inflation, with a band of 2% to 6%. One month above 6% is not a formal failure, but inflation has now stayed above the 4% target for five months in a row.</p>",
+    "<p>The RBI already raised its repo rate to 5.50% in October, the first hike in nearly four years. After the October print, economists said another 25 to 50 basis points could come in December. A higher repo rate makes every loan, from a shop's working-capital line to a home loan, cost more.</p>",
+    "<h2>What it means for a small shop</h2>",
+    "<p>Here is the arithmetic that matters. Suppose you buy stock at ₹100 and sell it at ₹120. Your profit is ₹20, a margin of about 17% on the selling price.</p>",
+    "<p>Now your supplier's price rises 10%, to ₹110, because of the same inflation. If you keep your price at ₹120 to stay competitive, your profit falls to ₹10. Your margin is now about 8%, less than half of what it was. You sold the same item but kept far less.</p>",
+    "<p>To hold your old ₹20 profit you would have to raise the price to ₹130. That is the squeeze every shop feels in an inflationary month. Either you absorb the cost and earn less, or you pass it on and risk losing the customer.</p>",
+    "<p>Two practical steps. First, check your selling prices against your latest buying prices, because the gap has probably narrowed without you noticing. Second, if you carry stock, remember that inventory bought at old prices is now worth more, which is a small cushion on your books.</p>",
+    "<h2>What to watch next month</h2>",
+    "<p>The next data point is the November inflation print, due on December 14, and the RBI's policy meeting after it. Economists expect inflation to stay above 6% for a while, so the odds of one more rate hike are high. For a shop owner that means two things to plan for: costlier credit and customers who are more careful with money. Keep your prices honest but current, and do not let a rise in buying cost sit unnoticed in your margin.</p>",
+    "<p>The wider signal is that money will stay tight. If the RBI hikes again in December, borrowing costs rise for everyone. A shop that fixes its margins now will be in a better place to ride that out.</p>"
+   ],
+   "body_hinglish": [
+    "<p>India ki retail inflation October 2026 me 6.09% ho gayi, jo September ke 5.54% se upar hai. Ministry of Statistics and Programme Implementation ne 12 November ko yeh data jaari kiya. Isse headline inflation Reserve Bank of India ki 6% upper tolerance limit ke paar chala gaya, do saal me pehli baar. Sabse zyada dabaav food ki taraf se aaya: food inflation 7.74% se badhkar 8.94% ho gaya.</p>",
+    "<h2>6.09% ka matlab rupaye me kya hai</h2>",
+    "<p>Inflation saal-dar-saal ka number hai. Yeh is October ki tulna pichle October se karta hai. Toh jo saamaan ka basket ek saal pehle ₹10,000 ka tha, ab lagbhag ₹10,600 ka hai. Food ki haalat zyada kharab hai, kyunki basket ka karib 40% food hai: pichle October ka ₹10,000 ka food basket ab takriban ₹10,900 ka hai.</p>",
+    "<p>Takleef sab jagah barabar nahi hai. Rural inflation 6.63% rahi aur urban inflation 5.41%. Wajah seedhi hai. Gaon ke ghar ke kharch me food ka hissa zyada hota hai, isliye pyaz aur lehsun ka wahi price spike shehar ke mukable gaon me zyada chubhta hai.</p>",
+    "<h2>Food prices hi asli problem kyun hain</h2>",
+    "<p>October me pyaz, lehsun aur adrak ke daam tezi se badhe. Aloo ulta sasta hua, isi wajah se average 8.94% hai aur isse zyada nahi. RBI ka target 4% inflation hai, 2% se 6% ke band ke saath. Ek mahina 6% ke upar hona formal failure nahi hai, lekin inflation ab paanch mahine se lagatar 4% target ke upar hai.</p>",
+    "<p>RBI ne October me hi repo rate 5.50% kar diya tha, jo karib chaar saal me pehli badhotri thi. October ke aankde ke baad economists ne kaha ki December me 25 se 50 basis points ki ek aur badhotri aa sakti hai. Repo rate badhne se har loan mehnga ho jata hai, chahe dukaan ka working-capital loan ho ya home loan.</p>",
+    "<h2>Ek chhoti dukaan ke liye iska matlab</h2>",
+    "<p>Yahan asli ganit hai. Maan lijiye aap stock ₹100 me kharidte hain aur ₹120 me bechte hain. Aapka profit ₹20 hai, yani selling price par takriban 17% margin.</p>",
+    "<p>Ab usi inflation ki wajah se supplier ka daam 10% badhkar ₹110 ho jata hai. Agar aap competitive rehne ke liye apna daam ₹120 hi rakhte hain, toh profit ₹10 reh jata hai. Margin ab takriban 8% hai, pehle se aadhe se bhi kam. Saamaan wahi becha, lekin kamai bahut kam reh gayi.</p>",
+    "<p>Apna purana ₹20 profit banaye rakhne ke liye aapko daam ₹130 tak badhana padega. Yahi wo dabaav hai jo har dukaan mehsoos karti hai. Ya toh aap cost khud jhel lein aur kam kamaayen, ya customer ko pass karein aur usse khone ka risk lein.</p>",
+    "<p>Do kaam ke kadam. Pehla, apne selling prices ko latest buying prices se milaayein, kyunki gap shayad aapko pata chale bina hi kam ho gaya hai. Doosra, agar stock rakhte hain toh yaad rakhein ki purane daam par kharida inventory ab zyada value ka hai, jo aapki books par ek chhota cushion hai.</p>",
+    "<h2>Agle mahine kya dekhna hai</h2>",
+    "<p>Agla data point November ki inflation hai, jo 14 December ko aayegi, aur uske baad RBI ki policy meeting. Economists ka manna hai ki inflation kuch samay tak 6% ke upar rahegi, isliye ek aur rate hike ki sambhavna zyada hai. Dukaan maalik ke liye iska matlab do cheezein hain: mehnga credit aur paisa sambhal kar kharch karne wale customer. Apne prices imandar rakhein lekin updated bhi, aur buying cost badhne ko apne margin me chupchaap mat pade rehne dein.</p>",
+    "<p>Bada signal yeh hai ki paisa tight rahega. Agar RBI December me phir badhotri karta hai, toh sabke liye udhaar mehnga ho jayega. Jo dukaan ab apne margins theek kar legi, wo is daur se behtar tareeke se nikalegi.</p>"
+   ]
+  },
+  {
    "slug": "gst-e-invoicing-reverse-charge-self-invoice-january-2027",
    "title": "GST E-Invoicing Widens to Reverse-Charge Bills in 2027",
    "dek": "From January 1, 2027, firms above ₹5 crore turnover must raise an e-invoice for reverse-charge self-invoices and imported services. Here is the maths.",
