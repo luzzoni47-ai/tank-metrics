@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 13 Nov 2026 01:36:38 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 03:43:19 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Hardware Shop Profit Margin: What You Keep</title>
+    <link>https://tankmetrics.in/hardware-shop-profit-margin</link>
+    <guid isPermaLink="true">https://tankmetrics.in/hardware-shop-profit-margin</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Hardware shop profit margin explained: a ₹500 sale worked through, the fixed costs it must cover, and the dead stock and contractor credit that cut it.</description>
+  </item>
   <item>
     <title>Inflation Hits 6.09%: What It Costs a Small Shop</title>
     <link>https://tankmetrics.in/news/retail-inflation-october-2026-6-09-percent-small-shop-margins</link>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Peyush Bansal Lenskart valuation calculator. Turn revenue and a multiple into a valuation in ₹ Crores, the way the Lenskart founder values a business.</description>
-  </item>
-  <item>
-    <title>Shark Tank India All Pitches Valuation List (Season 1-3) - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/shark-tank-india-pitches-valuation-list</link>
-    <guid isPermaLink="true">https://tankmetrics.in/shark-tank-india-pitches-valuation-list</guid>
-    <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Shark Tank India all pitches valuation list for Season 1 to 3. Enter any deal&amp;#x27;s amount and equity and see the valuation in ₹ Crores. Free and instant.</description>
   </item>
 </channel>
 </rss>
