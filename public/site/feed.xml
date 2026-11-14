@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 13 Nov 2026 05:41:28 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 01:35:36 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>GST Penalties as Charges: What It Saves Your Shop</title>
+    <link>https://tankmetrics.in/news/gst-penalties-as-charges-small-business-deduction-2026</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/gst-penalties-as-charges-small-business-deduction-2026</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Tax Rules</category>
+    <description>GST penalties settled on time may be treated as charges, not penalties, so a shop can deduct them from taxable profit. Here is the maths for a small business.</description>
+  </item>
   <item>
     <title>Hardware Shop Profit Margin: What You Keep</title>
     <link>https://tankmetrics.in/hardware-shop-profit-margin</link>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>How much equity should you give an investor? Enter your valuation and the cheque to see the exact equity % in ₹ Crores. Free for Indian founders.</description>
-  </item>
-  <item>
-    <title>Lenskart Valuation Calculator - Peyush Bansal Story in ₹</title>
-    <link>https://tankmetrics.in/lenskart-valuation-calculator</link>
-    <guid isPermaLink="true">https://tankmetrics.in/lenskart-valuation-calculator</guid>
-    <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Peyush Bansal Lenskart valuation calculator. Turn revenue and a multiple into a valuation in ₹ Crores, the way the Lenskart founder values a business.</description>
   </item>
 </channel>
 </rss>

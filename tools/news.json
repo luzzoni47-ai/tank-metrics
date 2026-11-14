@@ -2,6 +2,71 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "gst-penalties-as-charges-small-business-deduction-2026",
+   "title": "GST Penalties as Charges: What It Saves Your Shop",
+   "dek": "GST penalties settled on time may be treated as charges, not penalties, so a shop can deduct them from taxable profit. Here is the maths for a small business.",
+   "category": "Tax Rules",
+   "date": "2026-11-14",
+   "date_display": "November 14, 2026",
+   "source_name": "KNN India",
+   "source_url": "https://knnindia.co.in/news/newsdetails/economy/gst-penalties-may-be-treated-as-charges-offering-tax-relief-to-businesses",
+   "cta": {
+    "text": "Work out the tax on any bill, or pull the base price out of a GST-inclusive amount.",
+    "href": "/gst-calculator",
+    "label": "Open the GST Calculator"
+   },
+   "related": [
+    {
+     "slug": "gst-input-tax-credit-explained",
+     "title": "Input Tax Credit: Why You Get GST Back"
+    },
+    {
+     "slug": "marketplace-fees-explained",
+     "title": "Marketplace Fees Explained for Sellers"
+    }
+   ],
+   "body_en": [
+    "<p>A small mistake on a GST return usually ends in a penalty notice. Under the rules as they stand, that penalty is a wall: you pay it, and you cannot claim it as a business expense while working out your income tax. The government is now proposing to change that. A penalty settled within the time allowed could be reclassified as a charge rather than a penalty, which would let a small business treat it as a normal cost.</p>",
+    "<p>The proposal follows the 57th GST Council meeting on 8 October 2026 and is expected in Parliament's Winter Session. It is still a proposal, so nothing changes until Parliament and the state legislatures approve it. But it is worth understanding now, because the arithmetic is simple and the difference to a small shop is real.</p>",
+    "<h2>What is actually changing</h2>",
+    "<p>Under India's income tax framework, a penalty for breaking a law is generally not allowed as a deduction. You cannot reduce your taxable profit by the amount of the fine. That rule is meant to stop businesses from treating punishment as just another cost of doing business.</p>",
+    "<p>The new framework would draw a line. If you settle the tax and the interest within the time allowed, the amount may be treated as a charge, not a penalty. A charge is a cost, and a cost is deductible. The government has also proposed lowering the maximum general penalty under Section 125 of the CGST Act from Rs 25,000 to Rs 10,000, and removing the Rs 10,000 minimum-penalty condition in non-fraud cases.</p>",
+    "<h2>The arithmetic for a shop</h2>",
+    "<p>Take a shop with an annual profit before tax of Rs 10,00,000 and a tax rate of 25%. Its income tax is 25% of 10,00,000, which is Rs 2,50,000.</p>",
+    "<p>Now suppose the shop makes a filing mistake and is asked to pay a penalty of Rs 20,000. Today it pays the Rs 20,000 and still pays income tax on the full Rs 10,00,000, so the tax bill stays at Rs 2,50,000. The Rs 20,000 comes straight out of profit.</p>",
+    "<p>If the penalty is reclassified as a charge, the shop deducts the Rs 20,000 first. Taxable profit falls to Rs 9,80,000. At 25%, income tax falls to Rs 2,45,000. The saving is Rs 5,000, which is 25% of the Rs 20,000, exactly the tax rate.</p>",
+    "<p>Run the same maths on a larger case. A penalty of Rs 1,00,000 at a 30% rate saves Rs 30,000 in tax. On a penalty of Rs 10,000 at 25%, the saving is Rs 2,500. The saving is always your tax rate multiplied by the penalty amount, nothing more.</p>",
+    "<h2>Why the bank also cares</h2>",
+    "<p>There is a second effect that has nothing to do with tax. Banks read your profit and loss statement before lending. A line called \"penalty\" tells a credit officer that you have had compliance trouble. A line called \"charge\" does not carry the same signal. For a shop applying for a working-capital limit, a cleaner-looking statement can matter as much as the tax saved.</p>",
+    "<h2>The catch you must not miss</h2>",
+    "<p>The relief is tied to settling on time. If you fail to pay the tax and interest within the period allowed, you do not get the reduced rate, and the reclassification does not apply. So the benefit goes to the business that pays promptly, not the one that drags a dispute out for years.</p>",
+    "<p>It is also worth saying plainly: a charge is still money spent. Reclassifying a penalty does not reduce the amount you owe, it only changes how it is treated. The tax saving is real but it is a fraction of what you paid. Avoiding the mistake entirely is still far cheaper than fixing it.</p>",
+    "<h2>What it means for your business</h2>",
+    "<p>If the change passes, keep clean records of every penalty you pay and the date you settle it. Note the tax and interest you paid alongside the penalty amount, because the relief depends on that. When you file your income tax return, the amount may move from a non-deductible line to a deductible one, and your tax will fall by your rate times that amount.</p>",
+    "<p>Until Parliament approves it, treat penalties as non-deductible and plan on paying the full amount. If you want to see how GST sits on your own bills while you wait, the GST calculator on this site adds the tax to a price or pulls the base price out of a GST-inclusive amount.</p>"
+   ],
+   "body_hinglish": [
+    "<p>GST return mein chhoti galti par aksar penalty notice aa jaata hai. Abhi ke niyam kehta hai ki yeh penalty ek deewar hai: aap ise bharte ho, aur income tax nikaalte waqt ise business expense nahi maan sakte. Ab sarkar ise badalne ka proposal la rahi hai. Jo penalty tay samay mein settle ho jaaye, use penalty ki jagah charge maana ja sakta hai, aur tab chhota business ise aam kharch ki tarah dikha sakta hai.</p>",
+    "<p>Yeh proposal 8 October 2026 ki 57th GST Council meeting ke baad aaya hai aur Parliament ke Winter Session mein aane ki umeed hai. Yeh abhi sirf proposal hai, isliye jab tak Parliament aur rajya vidhan sabha approve nahi karti, kuch nahi badalta. Lekin ise abhi samajhna faayde ka hai, kyunki hisaab simple hai aur chhoti dukaan ke liye farak asli hai.</p>",
+    "<h2>Asal mein kya badal raha hai</h2>",
+    "<p>India ke income tax framework mein, kanoon todne par lagi penalty aam taur par deduction nahi milti. Aap apni taxable profit ko fine ke amount se kam nahi kar sakte. Yeh niyam isliye hai ki business saza ko bhi kharche ki tarah na dikhaye.</p>",
+    "<p>Naya framework ek line khinchta hai. Agar aap tax aur interest tay samay mein settle kar dete ho, to us amount ko charge maana ja sakta hai, penalty nahi. Charge ek kharch hai, aur kharch deduct ho jaata hai. Sarkar ne CGST Act ki Section 125 ke tehat maximum general penalty ko Rs 25,000 se ghata kar Rs 10,000 karne ka bhi proposal rakha hai, aur non-fraud cases mein Rs 10,000 minimum-penalty ki shart hatane ka.</p>",
+    "<h2>Dukaan ka hisaab</h2>",
+    "<p>Maan lijiye ek dukaan ka saalana profit tax se pehle Rs 10,00,000 hai aur tax rate 25%. Iska income tax 10,00,000 ka 25%, yaani Rs 2,50,000 banega.</p>",
+    "<p>Ab maan lijiye dukaan se filing galti hoti hai aur Rs 20,000 ki penalty lagti hai. Aaj woh Rs 20,000 bharti hai aur poore Rs 10,00,000 par income tax bhi bharti hai, to tax bill Rs 2,50,000 hi rehta hai. Rs 20,000 seedha profit se jaata hai.</p>",
+    "<p>Agar penalty ko charge maan liya jaaye, to dukaan pehle Rs 20,000 deduct karti hai. Taxable profit ghat kar Rs 9,80,000 ho jaata hai. 25% par income tax Rs 2,45,000 reh jaata hai. Bachat Rs 5,000 hai, jo Rs 20,000 ka 25% hai, yaani aapka tax rate.</p>",
+    "<p>Bade case par bhi yahi hisaab lagaiye. Rs 1,00,000 ki penalty par 30% rate se Rs 30,000 ki tax bachat hoti hai. Rs 10,000 ki penalty par 25% se bachat Rs 2,500 hoti hai. Bachat hamesha aapka tax rate guna penalty amount hoti hai, isse zyada kuch nahi.</p>",
+    "<h2>Bank ko bhi isse farak padta hai</h2>",
+    "<p>Ek doosra asar hai jiska tax se koi lena-dena nahi. Bank loan dene se pehle aapka profit and loss statement padhti hai. \"Penalty\" likhi line credit officer ko batati hai ki aapki compliance mein dikkat rahi hai. \"Charge\" likhi line yeh signal nahi deti. Working-capital limit ke liye apply karne wali dukaan ke liye, saaf statement tax bachat jitna hi maayne rakhta hai.</p>",
+    "<h2>Woh catch jo miss nahi karna</h2>",
+    "<p>Relief samay par settle karne se judi hai. Agar aap tax aur interest tay samay mein nahi bharte, to aapko ghati hui rate nahi milti, aur reclassification lagu nahi hoti. To faayda us business ko milta hai jo jaldi bharta hai, usko nahi jo vivad saalon tak kheenchta hai.</p>",
+    "<p>Yeh bhi saaf kehna zaroori hai: charge bhi paisa hi hai. Penalty ko charge maan lene se jo aapko dena hai woh kam nahi hota, sirf uska treatment badalta hai. Tax bachat asli hai lekin jo aapne bhara uska ek chhota hissa hai. Galti se bachna abhi bhi usko theek karne se sasta hai.</p>",
+    "<h2>Aapke business ke liye iska matlab</h2>",
+    "<p>Agar change pass ho jaata hai, to har penalty ka saaf record rakhiye aur settle karne ki tareekh note kijiye. Penalty ke saath bhara tax aur interest bhi note kijiye, kyunki relief usi par depend karta hai. Income tax return file karte waqt amount non-deductible line se deductible line mein ja sakta hai, aur aapka tax rate guna amount ke barabar girega.</p>",
+    "<p>Jab tak Parliament approve nahi karta, penalty ko non-deductible maaniye aur poora amount bharne ki yojana banaiye. Apne bill par GST kaise baithta hai yeh dekhne ke liye, is site ka GST calculator price par tax jodta hai ya GST-inclusive amount se base price nikaalta hai.</p>"
+   ]
+  },
+  {
    "slug": "retail-inflation-october-2026-6-09-percent-small-shop-margins",
    "title": "Inflation Hits 6.09%: What It Costs a Small Shop",
    "dek": "India's retail inflation hit 6.09% in October, past the RBI's 6% limit, as food prices jumped 8.94%. Here is exactly what that does to a small shop's margin.",

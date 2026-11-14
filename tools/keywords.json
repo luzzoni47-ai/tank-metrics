@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T03:32:38Z",
+ "generated": "2026-11-14T01:32:20Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -13,7 +13,7 @@
    ]
   },
   {
-   "query": "fd calculator sbi",
+   "query": "fd calculator hdfc",
    "demand": 12,
    "covered": false,
    "score": 22.08,
@@ -40,15 +40,6 @@
    ]
   },
   {
-   "query": "fd calculator hdfc",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "fd calculator"
-   ]
-  },
-  {
    "query": "highest rate of recurring deposit",
    "demand": 11,
    "covered": false,
@@ -64,6 +55,15 @@
    "score": 18.4,
    "from": [
     "cagr calculator"
+   ]
+  },
+  {
+   "query": "fd calculator post office",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -184,7 +184,7 @@
    ]
   },
   {
-   "query": "fd calculator post office",
+   "query": "fd calculator axis bank",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -319,7 +319,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator hdfc bank",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -454,7 +454,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc bank",
+   "query": "fd calculator icici",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -602,7 +602,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator monthly payout",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -862,15 +862,6 @@
    "score": 9.2,
    "from": [
     "employee utilization rate"
-   ]
-  },
-  {
-   "query": "fd calculator monthly payout",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -1983,7 +1974,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2361,7 +2352,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2388,7 +2379,7 @@
    ]
   },
   {
-   "query": "bmi calculator female",
+   "query": "bmi calculator women",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2586,6 +2577,15 @@
    ]
   },
   {
+   "query": "fd calculator monthly interest",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "fd fixed deposit rates",
    "demand": 11,
    "covered": true,
@@ -2631,7 +2631,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3055,21 +3055,21 @@
    ]
   },
   {
+   "query": "fd calculator pnb",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "freelance hourly rate netherlands",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
     "freelancer hourly rate"
-   ]
-  },
-  {
-   "query": "hardware shop profit margin",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "shop profit margin"
    ]
   },
   {
@@ -3209,7 +3209,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator by year",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3417,15 +3417,6 @@
    ]
   },
   {
-   "query": "fd calculator monthly interest",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "fd calculator"
-   ]
-  },
-  {
    "query": "gas agency profit margin india",
    "demand": 10,
    "covered": true,
@@ -3462,7 +3453,7 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3621,6 +3612,15 @@
    "score": 6.9,
    "from": [
     "rental yield"
+   ]
+  },
+  {
+   "query": "return on investment roi calculator",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "return on investment roi"
    ]
   }
  ]
