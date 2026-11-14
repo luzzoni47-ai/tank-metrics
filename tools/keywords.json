@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T01:32:20Z",
+ "generated": "2026-11-14T03:34:05Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -13,7 +13,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc",
+   "query": "fd calculator sbi",
    "demand": 12,
    "covered": false,
    "score": 22.08,
@@ -40,6 +40,15 @@
    ]
   },
   {
+   "query": "fd calculator hdfc",
+   "demand": 11,
+   "covered": false,
+   "score": 20.24,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "highest rate of recurring deposit",
    "demand": 11,
    "covered": false,
@@ -55,15 +64,6 @@
    "score": 18.4,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "fd calculator post office",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -184,7 +184,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator post office",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -319,7 +319,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc bank",
+   "query": "fd calculator axis bank",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -454,7 +454,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator hdfc bank",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -602,7 +602,7 @@
    ]
   },
   {
-   "query": "fd calculator monthly payout",
+   "query": "fd calculator icici",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -791,15 +791,6 @@
    ]
   },
   {
-   "query": "stamp duty and registration charges calculator",
-   "demand": 7,
-   "covered": false,
-   "score": 10.08,
-   "from": [
-    "stamp duty"
-   ]
-  },
-  {
    "query": "customer acquisition cost cac meaning",
    "demand": 14,
    "covered": true,
@@ -862,6 +853,15 @@
    "score": 9.2,
    "from": [
     "employee utilization rate"
+   ]
+  },
+  {
+   "query": "fd calculator monthly payout",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -1785,15 +1785,6 @@
    ]
   },
   {
-   "query": "cash conversion cycle formula",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "cash conversion cycle"
-   ]
-  },
-  {
    "query": "churn rate meaning",
    "demand": 12,
    "covered": true,
@@ -2577,15 +2568,6 @@
    ]
   },
   {
-   "query": "fd calculator monthly interest",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "fd calculator"
-   ]
-  },
-  {
    "query": "fd fixed deposit rates",
    "demand": 11,
    "covered": true,
@@ -3055,15 +3037,6 @@
    ]
   },
   {
-   "query": "fd calculator pnb",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "fd calculator"
-   ]
-  },
-  {
    "query": "freelance hourly rate netherlands",
    "demand": 4,
    "covered": false,
@@ -3417,6 +3390,15 @@
    ]
   },
   {
+   "query": "fd calculator monthly interest",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "gas agency profit margin india",
    "demand": 10,
    "covered": true,
@@ -3621,6 +3603,24 @@
    "score": 6.9,
    "from": [
     "return on investment roi"
+   ]
+  },
+  {
+   "query": "revenue multiple meaning",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "revenue multiple"
+   ]
+  },
+  {
+   "query": "revenue per employee in google",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "revenue per employee"
    ]
   }
  ]
