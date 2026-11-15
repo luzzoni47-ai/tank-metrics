@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sun, 15 Nov 2026 01:37:27 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 03:59:00 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Rental Yield Explained: What Your Flat Earns</title>
+    <link>https://tankmetrics.in/rental-yield-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/rental-yield-explained</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Rental yield explained: yearly rent as a percent of the flat&#x27;s price, a ₹9,000 rent worked through, gross vs net yield, and why brokers quote the higher one.</description>
+  </item>
   <item>
     <title>Startup Funding Fell 88% in a Week: What It Signals</title>
     <link>https://tankmetrics.in/news/india-startup-funding-fell-88-percent-november-2026</link>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Shark Tank India deal calculator: enter any deal&amp;#x27;s amount and equity to get post-money, pre-money valuation and founder stake left in ₹ Crores. Free in ₹.</description>
-  </item>
-  <item>
-    <title>SEBI&#x27;s SME IPO Plan: ₹3 Crore Profit Bar</title>
-    <link>https://tankmetrics.in/news/sebi-sme-ipo-overhaul-market-cap-profit-rule-2026</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/sebi-sme-ipo-overhaul-market-cap-profit-rule-2026</guid>
-    <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Funding</category>
-    <description>SEBI wants SME IPOs judged by market value rather than paid-up capital, with a ₹3 crore average profit bar. Here is what the plan means for a founder.</description>
   </item>
 </channel>
 </rss>

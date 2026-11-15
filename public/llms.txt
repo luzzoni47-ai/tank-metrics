@@ -159,6 +159,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Distributor Margin in Pharma Explained](https://tankmetrics.in/pharma-distributor-margin-explained)
 - [Pre Money vs Post Money Valuation India Explained](https://tankmetrics.in/pre-money-post-money-valuation-india)
 - [Profit Margin Calculator in Rupees (₹)](https://tankmetrics.in/profit-margin-calculator-rupees)
+- [Rental Yield Explained: What Your Flat Earns](https://tankmetrics.in/rental-yield-explained)
 - [Revenue Multiple Calculator India](https://tankmetrics.in/revenue-multiple-calculator-india)
 - [Revenue Per Employee: What It Tells You](https://tankmetrics.in/revenue-per-employee-explained)
 - [Reverse Pricing: Find Your Cost Ceiling First](https://tankmetrics.in/reverse-pricing-explained)

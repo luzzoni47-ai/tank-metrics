@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-rental-yield-explained": [
+        ("/rental-yield-calculator", "Rental Yield Calculator",
+         "turn any flat's monthly rent and price into the yearly yield this post explains"),
+        ("/property-roi-calculator", "Property ROI Calculator",
+         "add price growth and rent over a holding period to see the total return"),
+    ],
     "blog-wine-shop-profit-margin": [
         ("/break-even-point", "Break-Even Point",
          "find the bottles a month that cover the shop's rent and fixed costs"),

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T01:32:09Z",
+ "generated": "2026-11-15T03:34:10Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -1307,7 +1307,7 @@
    ]
   },
   {
-   "query": "loan emi calculator",
+   "query": "loan emi calculator sbi",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1331,6 +1331,15 @@
    "score": 8.97,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -1956,7 +1965,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2001,7 +2010,7 @@
    ]
   },
   {
-   "query": "loan emi calculator sbi",
+   "query": "loan emi calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2025,15 +2034,6 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "lucky number calculator in tamil",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "lucky number calculator"
    ]
   },
   {
@@ -2613,7 +2613,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2685,7 +2685,7 @@
    ]
   },
   {
-   "query": "loan emi calculator online",
+   "query": "loan emi calculator monthly",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2703,7 +2703,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator in tamil",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3164,15 +3164,6 @@
    ]
   },
   {
-   "query": "lucky number calculator by date of birth",
-   "demand": 13,
-   "covered": true,
-   "score": 7.02,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3191,7 +3182,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator app",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3444,7 +3435,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator online",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3480,7 +3471,7 @@
    ]
   },
   {
-   "query": "loan emi calculator monthly",
+   "query": "loan emi calculator home",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3507,7 +3498,7 @@
    ]
   },
   {
-   "query": "lucky number calculator numerology",
+   "query": "lucky number calculator by name",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3621,6 +3612,15 @@
    "score": 6.9,
    "from": [
     "revenue multiple"
+   ]
+  },
+  {
+   "query": "revenue per employee in google",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "revenue per employee"
    ]
   }
  ]
