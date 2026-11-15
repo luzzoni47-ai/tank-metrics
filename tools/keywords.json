@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T03:34:05Z",
+ "generated": "2026-11-15T01:32:09Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -139,6 +139,15 @@
    ]
   },
   {
+   "query": "runway 34",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "runway"
+   ]
+  },
+  {
    "query": "startup valuation model",
    "demand": 10,
    "covered": false,
@@ -235,15 +244,6 @@
    "score": 16.56,
    "from": [
     "roas calculator"
-   ]
-  },
-  {
-   "query": "runway 34",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -928,15 +928,6 @@
    ]
   },
   {
-   "query": "wine shop profit margin",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "shop profit margin"
-   ]
-  },
-  {
    "query": "age calculator",
    "demand": 13,
    "covered": true,
@@ -1343,15 +1334,6 @@
    ]
   },
   {
-   "query": "lucky number calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "market share calculator",
    "demand": 13,
    "covered": true,
@@ -1569,7 +1551,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1785,6 +1767,15 @@
    ]
   },
   {
+   "query": "cash conversion cycle formula",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "cash conversion cycle"
+   ]
+  },
+  {
    "query": "churn rate meaning",
    "demand": 12,
    "covered": true,
@@ -1866,21 +1857,21 @@
    ]
   },
   {
-   "query": "ebitda full form",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda"
-   ]
-  },
-  {
    "query": "ebitda margin and revenue",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "ebitda and margin"
+   ]
+  },
+  {
+   "query": "ebitda means",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda"
    ]
   },
   {
@@ -2034,6 +2025,15 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator in tamil",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -2226,7 +2226,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2370,7 +2370,7 @@
    ]
   },
   {
-   "query": "bmi calculator women",
+   "query": "bmi calculator for women",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2523,7 +2523,7 @@
    ]
   },
   {
-   "query": "ebitda means",
+   "query": "ebitda full form",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2703,7 +2703,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator by name",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3164,6 +3164,15 @@
    ]
   },
   {
+   "query": "lucky number calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3498,7 +3507,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator numerology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3612,15 +3621,6 @@
    "score": 6.9,
    "from": [
     "revenue multiple"
-   ]
-  },
-  {
-   "query": "revenue per employee in google",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "revenue per employee"
    ]
   }
  ]

@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sat, 14 Nov 2026 03:57:20 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 01:37:27 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Startup Funding Fell 88% in a Week: What It Signals</title>
+    <link>https://tankmetrics.in/news/india-startup-funding-fell-88-percent-november-2026</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/india-startup-funding-fell-88-percent-november-2026</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Funding</category>
+    <description>Indian startups raised just $31.3 million in the week to November 14, down nearly 88% from $258.1 million a week earlier. What that swing means for founders.</description>
+  </item>
   <item>
     <title>GST Penalties as Charges: What It Saves Your Shop</title>
     <link>https://tankmetrics.in/news/gst-penalties-as-charges-small-business-deduction-2026</link>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
     <category>Funding</category>
     <description>SEBI wants SME IPOs judged by market value rather than paid-up capital, with a ₹3 crore average profit bar. Here is what the plan means for a founder.</description>
-  </item>
-  <item>
-    <title>Cap Table Calculator for Indian Startups - Free in ₹</title>
-    <link>https://tankmetrics.in/cap-table-calculator-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/cap-table-calculator-india</guid>
-    <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Cap table calculator for Indian startups. Enter founder stake, investor equity and ESOP pool to see who owns what after a round, in ₹ Lakhs and Crores.</description>
   </item>
 </channel>
 </rss>

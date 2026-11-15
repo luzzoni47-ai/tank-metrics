@@ -2,6 +2,57 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "india-startup-funding-fell-88-percent-november-2026",
+   "title": "Startup Funding Fell 88% in a Week: What It Signals",
+   "dek": "Indian startups raised just $31.3 million in the week to November 14, down nearly 88% from $258.1 million a week earlier. What that swing means for founders.",
+   "category": "Funding",
+   "date": "2026-11-14",
+   "date_display": "November 14, 2026",
+   "source_name": "Entrackr",
+   "source_url": "https://entrackr.com/report/funding-and-acquisitions-in-indian-startups-this-week-nov-09-nov-14-12808553",
+   "cta": {
+    "text": "See how many months your cash lasts at your current monthly burn.",
+    "href": "/burn-rate-and-runway",
+    "label": "Open the Burn Rate & Runway Calculator"
+   },
+   "related": [
+    {
+     "slug": "burn-rate-runway-guide",
+     "title": "Burn Rate and Runway"
+    }
+   ],
+   "body_en": [
+    "<p>Indian startups raised $31.3 million in the week to November 14, 2026, according to data compiled by Entrackr. Twelve startups closed deals that week: two growth-stage rounds and ten early-stage rounds, five of which did not disclose an amount. The week before, 28 startups had raised $258.1 million.</p>",
+    "<h2>The numbers behind the 88% fall</h2>",
+    "<p>Funding fell nearly 88% week on week. Put the two weeks side by side and the drop is easy to see: $258.1 million became $31.3 million, a fall of about $227 million. If a normal week is $250 million, then a $31 million week is roughly one-eighth of normal.</p>",
+    "<p>It helps to look at what the big week was made of. Most of the $258.1 million sat in three growth-stage rounds. One round alone, a $100 million cheque, was nearly 40% of that week. Take the top three rounds out and the two weeks are much closer than the headline suggests. So this is not a market that shut down. It is a market where a handful of large rounds can swing the weekly total by a large margin.</p>",
+    "<p>The early-stage numbers tell the same story from the other side. Early-stage startups raised $9.3 million across five deals this week. Five of the week's twelve rounds did not even disclose an amount. When founders stop announcing round sizes, it usually means the cheque was small or the round was a bridge, not a priced round.</p>",
+    "<h2>Why a single slow week is not a verdict</h2>",
+    "<p>Weekly funding numbers move a lot. A week with one $100 million round looks strong; the next week, with the same number of deals but smaller cheques, looks weak. Read one week on its own and you will draw the wrong conclusion. Read eight weeks together and you see the real trend.</p>",
+    "<p>What the swing does show is concentration. Capital is pooling into fewer, larger rounds, and the rest of the market is left with smaller cheques and more of them undisclosed. For a founder who is not yet raising a large round, the practical effect is that the average cheque you are offered is smaller than it was a year ago, even in weeks when the headline total looks healthy.</p>",
+    "<h2>Where the money stayed active</h2>",
+    "<p>Entrackr's own data also points to which parts of the market stayed active. E-commerce led the week with three deals, healthtech followed with two. Seed rounds led with five, and two pre-seed rounds closed. The money did not vanish; it moved toward a smaller number of clearer bets.</p>",
+    "<h2>What this means for a founder</h2>",
+    "<p>The lesson is about planning, not panic. When weekly totals swing this much, do not plan your next 12 months around the last headline number. Plan around your own cash. If you spend Rs 10 lakh a month and you hold Rs 60 lakh, you have six months of runway, whether the market is up or down. The market decides how hard your next raise is; your cash decides how long you have to try.</p>",
+    "<p>So use the calm weeks to extend the runway. Cut the spend that does not move revenue, and push the revenue that does. A shop or a small startup that can cover its monthly cost from its own sales does not need the funding cycle to turn in its favour. If you want to see where you stand, work out your monthly burn and divide the cash you hold by it. That one number is more useful this week than any funding headline.</p>"
+   ],
+   "body_hinglish": [
+    "<p>14 November 2026 ko khatam huye hafte mein Indian startups ne $31.3 million jama kiye, Entrackr ke data ke mutabik. Us hafte 12 startups ne deal close ki: do growth-stage round aur das early-stage round, jismein paanch ne amount disclose nahi kiya. Isse pehle wale hafte 28 startups ne $258.1 million jama kiye the.</p>",
+    "<h2>88% girawat ke peeche ke numbers</h2>",
+    "<p>Funding hafte-dar-hafte lagbhag 88% giri. Dono hafte saath rakho to girawat saaf dikhti hai: $258.1 million se $31.3 million, yani kareeb $227 million ki kami. Agar ek normal hafta $250 million ka hai, to $31 million ka hafta normal ka lagbhag aathwa hissa hai.</p>",
+    "<p>Yeh samajhna zaroori hai ki bade hafte mein kya tha. $258.1 million ka zyada hissa teen growth-stage rounds mein tha. Sirf ek round, $100 million ka cheque, us hafte ka lagbhag 40% tha. Top teen rounds hata do to dono hafte headline se kaafi kareeb aa jate hain. Yani market band nahi hua. Yeh aisa market hai jahan kuch bade rounds hafte ka total bahut upar-neeche kar dete hain.</p>",
+    "<p>Early-stage numbers bhi doosri taraf se yahi kehte hain. Is hafte early-stage startups ne paanch deals mein $9.3 million jama kiye. Haftay ke barah rounds mein se paanch ne amount hi disclose nahi kiya. Jab founders round ka size batana band kar dete hain, iska matlab aksar chhota cheque ya bridge round hota hai, priced round nahi.</p>",
+    "<h2>Ek slow hafta faisla nahi hota</h2>",
+    "<p>Weekly funding numbers bahut upar-neeche hote hain. Jis hafte ek $100 million ka round ho, woh mazboot dikhta hai; agle hafte, same deals lekin chhote cheques ke saath, kamzor dikhta hai. Sirf ek hafta padho to galat nateeja nikalta hai. Aath hafte saath padho to asli trend dikhta hai.</p>",
+    "<p>Yeh girawat concentration dikhati hai. Capital kam, bade rounds mein jama ho raha hai, aur baaki market ke paas chhote cheques aur zyada undisclosed rounds bachte hain. Jo founder bada round nahi utha raha, uske liye asli asar yeh hai ki average cheque pichle saal se chhota hai, chahe headline total theek lage.</p>",
+    "<h2>Paisa kahan active raha</h2>",
+    "<p>Entrackr ka data yeh bhi dikhata hai ki market ke kaun se hisse active rahe. E-commerce teen deals ke saath aage raha, uske baad healthtech do ke saath. Seed rounds paanch ke saath aage rahe, aur do pre-seed rounds band huye. Paisa gaayab nahi hua; woh kam, saaf bets ki taraf gaya.</p>",
+    "<h2>Founder ke liye iska matlab</h2>",
+    "<p>Sabak planning ka hai, panic ka nahi. Jab weekly totals itne upar-neeche hote hain, apne agle 12 mahine aakhri headline ke hisaab se mat plan karo. Apne cash ke hisaab se plan karo. Agar aap mahine ke Rs 10 lakh kharch karte ho aur Rs 60 lakh cash hai, to aapke paas chhe mahine ki runway hai, chahe market upar ho ya neeche. Market tay karta hai agli raise kitni mushkil hai; aapka cash tay karta hai aapko kitna time mila hai.</p>",
+    "<p>To shaant hafton ka use runway badhane ke liye karo. Woh kharch kaato jo revenue nahi laata, aur woh revenue badhao jo laata hai. Jo dukaan ya chhota startup apni sale se monthly cost nikal leta hai, use funding cycle ke palatne ki zarurat nahi. Apni position dekhni hai to monthly burn nikaalo aur usse apna cash divide karo. Yeh ek number is hafte kisi bhi funding headline se zyada kaam ka hai.</p>"
+   ]
+  },
+  {
    "slug": "gst-penalties-as-charges-small-business-deduction-2026",
    "title": "GST Penalties as Charges: What It Saves Your Shop",
    "dek": "GST penalties settled on time may be treated as charges, not penalties, so a shop can deduct them from taxable profit. Here is the maths for a small business.",
