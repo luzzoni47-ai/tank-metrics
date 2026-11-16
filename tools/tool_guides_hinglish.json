@@ -297,17 +297,18 @@
    ]
   },
   "breakeven": {
-   "what": "Break-Even Point wo sales level batata hai jahan se pehle business paisa kha raha hai aur jahan ke baad kamane lagta hai. Tool ko teen numbers do — fixed costs jo har mahine dene hi padte hain, ek unit ka selling price, aur usi unit ka variable cost — aur ye bata deta hai kitni units aur kitni revenue par profit exactly zero hai. Is line ke upar sab profit hai, is line ke neeche jo bhi bikta hai wo aapki jeb se loss bhara ja raha hai.\n\nYe number target nahi, floor hai. Ek Pune cafe ka rent, salary aur bijli milakar ₹1,80,000 mahina hai, aur wo ₹250 ka thali bechta hai jiska material aur packing ₹150 padta hai — yaani ₹100 contribution per plate. Break-even ke liye 1,800 plates mahina chahiye, roz lagbhag 60. Ye line padhne ke baad sawal abstract nahi rehta: monsoon ke Tuesday ko 60 plates bik sakte hain ya nahi?",
-   "formula": "Contribution per unit = Selling Price − Variable Cost, yaani ₹250 − ₹150 = ₹100. Break-Even Units = Fixed Costs ÷ Contribution = ₹1,80,000 ÷ ₹100 = 1,800 units. Break-Even Revenue = 1,800 × ₹250 = ₹4,50,000 mahina. Tool ke inputs fixed, sp aur vc hain, aur output Break-Even Units aur Break-Even Revenue. Har lever denominator mein hai: variable cost ₹20 ghatane par break-even 1,500 units par aa jaata hai, price ₹20 badhane par bhi wahi hota hai — bas dono ka apna customer cost hai.",
+   "what": "Break-Even Point wo sawaal solve karta hai jo har naye product ko pehle clear karna padta hai: mahine mein kitni units bikni chahiye taaki nuksaan band ho? Tool ko teen numbers do — fixed costs jo ek unit bhi na bike to bhi dene padte hain (rent, salary, software, machine ki EMI), ek unit ka selling price, aur usi ek unit ka variable cost. Jawab mein aata hai wo units, aur un units ki revenue, jahan profit exactly zero hai. Is line ke neeche jo bhi bikta hai wo aapki jeb se loss hai; is line ke upar sab profit hai.\n\nMargin calculator se ye tool alag isliye hai ki ye percentage ki jagah quantity mein kaam karta hai. Gross margin batata hai ₹1,000 ki sale se ₹400 bache; break-even batata hai ki poore business ke liye mahine mein 250 aisi sales kam se kam chahiye. Yahi floor kisi bhi idea ka imaandaar test hai: agar plan ko mahine ke 4,000 units chahiye aur market mein 900 bikte hain, to ye pricing ki dikkat nahi, ye galat plan hai — marketing se arithmetic theek nahi hoti. Kyunki ye ek hi contribution per unit par bana hai, ye ek product, ek price maanta hai; ek dukaan jisme pachaas alag margins ke saaman hain, wo asli mein mix ka sawaal pooch rahi hai.",
+   "formula": "Contribution per unit = selling price − variable cost, yaani sp − vc. Break-Even Units = fixed costs ÷ contribution = fixed ÷ (sp − vc). Break-Even Revenue = units × sp. Tool ke inputs fixed, sp aur vc hain, aur output Break-Even Units aur Break-Even Revenue. fixed ₹1,00,000, sp ₹1,000 aur vc ₹600 par contribution ₹400 hai, break-even 1,00,000 ÷ 400 = 250 units, aur break-even revenue 250 × ₹1,000 = ₹2,50,000. Har lever denominator mein hai: vc se ₹100 ghatane par break-even 200 units ho jaata hai; price mein ₹100 badhane par bhi wahi 200 — par ek ke liye supplier se baat karni hai, doosre ke liye customer ko manana hai.",
    "when": [
-    "Lease, hiring ya loan sign karne se pehle, aur dekhna hai ki wo fixed cost kitni sales maangti hai.",
-    "Investor ya lender poochta hai ki ghata band karne ke liye kitna bechna padega.",
-    "Do price aur cost ke options mein se chunna hai ki kaunsa pehle break-even karega."
+    "Lease ya hiring sign karne se pehle, ye dekhna hai ki wo fixed cost mahine ki kitni sales maangti hai.",
+    "Investor ya lender poochta hai ki paisa jalna band karne ke liye kitna bechna padega, aur aapko kahani ki jagah ek number chahiye.",
+    "Do price aur cost ke options mein se chunna hai ki kaunsa kam units mein floor tak pahunchta hai."
    ],
    "mistakes": [
-    "Kuch fixed costs chhod dena. Rent, salary, subscriptions aur loan interest tab bhi dena padta hai jab ek unit bhi na bike; adhoori list break-even ko jhoothi tasalli deti hai.",
-    "Contribution ki jagah total revenue use karna. Break-even har unit apni variable cost ke baad kitna chhodti hai, uspar tika hai.",
-    "Break-even ko hi goal samajhna. Break-even par kuch nahi kamaya; wo sirf wo darwaza hai jahan se profit shuru hota hai."
+    "Variable cost per unit ki jagah total daal dena. Agar vc mein poore mahine ka material bill hai, to break-even sau guna chhota aa jaata hai aur plan aasaan lagta hai.",
+    "Periods mix karna. fixed mahine ka hai, to units aur revenue bhi mahine ke hain; saal ki sales se compare karo to har business break-even ke paar lagta hai.",
+    "Revenue break-even ko cash break-even samajhna. GST, deposit ya loan ki principal repayment contribution se bahar hain, to break-even ke baad bhi cash ki kami reh sakti hai.",
+    "Kai products ko average kar dena. ₹400 contribution wale flagship aur ₹40 wale accessory ka average plan nahi banta — jis product par daanv laga rahe ho, wahi chalao."
    ]
   },
   "breakevenad": {
@@ -801,17 +802,18 @@
    ]
   },
   "gross": {
-   "what": "Gross Profit & Margin wo sawal khulta hai jo busy mahine chhupa deta hai: jo maal actually bika, uspar paisa bana ya sirf stock move hua? Aap total revenue aur sold goods ki direct cost daalte ho — supplier ko diya amount, aur agar order ke saath aaye to freight aur packaging — aur tool batata hai kitne rupees bache aur wo sale ka kitna percent hain. Ye P&L ki pehli profit line hai, aur discount ya mehnga supplier sabse pehle isi ko hilata hai.\n\nEk D2C brand ne mahine mein ₹10,00,000 ka bill kiya aur bheje gaye products par ₹6,00,000 diye. Gross profit ₹4,00,000 aur gross margin 40%. Ye 40% bank mein pada paisa nahi hai — ads, salary, kiraya aur tax sab isme se nikalna hai — lekin ye tay karta hai ki un kharcon ke paas kitni jagah hai. 40% par chal raha brand bahut cheezon mein galti afford kar sakta hai; 12% par chal raha brand kisi cheez mein nahi.",
-   "formula": "Gross Profit = Revenue − Cost of Goods Sold, yaani ₹10,00,000 − ₹6,00,000 = ₹4,00,000. Gross Margin = Gross Profit ÷ Revenue × 100 = ₹4,00,000 ÷ ₹10,00,000 = 40%. Tool rev aur cogs leta hai aur Gross Profit rupees mein aur Gross Margin percentage mein deta hai. Percentage zyada kaam ka hai kyunki wo travel karta hai: ₹4,00,000 tab tak kuch nahi kehta jab tak usse banane wale ₹10,00,000 se compare na karo. Koi bhi input badlo aur percentage batata hai business kis taraf ja raha hai.",
+   "what": "Gross Profit & Margin profit se chhota sawaal poochta hai, aur trading mahine ke beech mein zyada kaam ka hai: jo saaman humne bech diya, us par paisa bana ya sirf stock aage badha? Aap total revenue aur cost of goods sold daalte ho — supplier ka bill, plus freight, packing aur woh payment-gateway fee jo sirf sale hone par lagti hai — aur tool do cheezein deta hai: bache hue rupees, aur sales ke percentage mein wahi figure. Ye kisi bhi profit-and-loss ka pehla line hai, aur wahi number jise discount ya mehenga supplier sabse pehle hilata hai.\n\nDono output dekhne ki wajah ye hai ki wo alag sawaalon ke jawab hain. Rupees batate hain ki mahine mein kuch bana ya nahi; percentage batata hai ki business apne overheads jhel sakta hai ya nahi. ₹4,50,000 gross profit strong lagta hai — jab tak dikh na jaye ki wo ₹7,50,000 ki sales ka 60% hai, aur us 60% ke andar ads, salary, rent aur tax sabko aana hai. Gross margin wahi jagah hai jahan markup chhupta hai: ₹600 mein kharida, ₹1,000 mein becha samaan ₹400 margin rakhta hai, jo selling price ka 40% hai par cost ka 67% — aur ye do percentage bilkul galat waqt par mix ho jaate hain.",
+   "formula": "Gross Profit = rev − cogs. Gross Margin = (rev − cogs) ÷ rev × 100. Tool rev aur cogs leta hai, aur Gross Profit rupees mein aur Gross Margin percentage mein deta hai. rev ₹4,50,000 aur cogs ₹1,80,000 par gross profit ₹2,70,000 hai aur margin 2,70,000 ÷ 4,50,000 = 60%. Target margin se price nikalna ho to cost ko (1 − margin) se divide karo: ₹600 ki item par 40% margin ke liye 600 ÷ 0.6 = ₹1,000 chahiye. Dhyan rahe denominator revenue hai, cost nahi — cost se divide kiya to markup nikalta hai, margin nahi.",
    "when": [
-    "Price set kar rahe ho aur dekhna hai ki margin aapki asli goods cost ke baad bachta hai ya nahi.",
-    "Mahina busy tha par bank balance hilaa nahi, aur jaanna hai gap goods mein hai ya P&L mein neeche.",
-    "Do products ya do suppliers compare kar rahe ho aur agla rupee kahan lagana hai wo tay kar rahe ho."
+    "Naya product price kar rahe ho aur dekhna hai ki asli landed cost par margin bachta hai ya nahi.",
+    "Mahina busy tha par bank balance hila nahi, aur dekhna hai leak maal mein hai ya profit-and-loss ke neeche.",
+    "Do suppliers ya do products compare kar rahe ho, aur decide karna hai agli mehnat kahan lagani hai."
    ],
    "mistakes": [
-    "Gross profit ko profit samajh lena. Kiraya, salary, ads aur tax abhi diye nahi gaye; gross margin wahi pool hai jisse sab peete hain.",
-    "Delivery, packaging aur payment-gateway fees ko cost of goods sold se bahar rakhna. Online seller ke liye ye sale ki direct cost hain, aur ignore karne se margin asli se zyada dikhta hai.",
-    "Apne margin ko aise business se compare karna jo aapke jaisa nahi hai. 40% physical product ke liye theek hai, software ke liye patla, aur industry ka naam liye bina kuch bhi nahi."
+    "Gross profit ko profit samajhna. Rent, salary, ads aur tax abhi isme se nahi gaye; gross margin ek pool hai jisme se sab peete hain, wo paisa nahi jo aap rakhte ho.",
+    "Sale ki apni direct cost cogs se bahar rakhna. Delivery, packing aur payment-gateway fee sale na hone par nahi lagti, isliye wo cogs mein aati hain — nikalne se margin do-teen point zyada dikhta hai.",
+    "Margin ko markup samajhna. 40% margin 67% markup hai; supplier ya marketplace ko galat wala bata diya to price per unit sau rupaye hilmil jaata hai.",
+    "Apne percentage ko dusre business se compare karna. 60% software ke liye normal hai, kirana ke liye badhiya aur petrol pump ke liye namumkin; number apni industry ke saath hi matlab rakhta hai."
    ]
   },
   "gst": {
