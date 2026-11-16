@@ -2,6 +2,67 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "a2b-bodhi-tree-180-million-majority-stake-food-chain",
+   "title": "A2B Sells Majority Stake to Bodhi Tree for $180M",
+   "dek": "A 50-year-old Chennai food chain sold a majority stake for $180 million. Here is the arithmetic behind the valuation, and what a small shop can take from it.",
+   "category": "Funding",
+   "date": "2026-11-16",
+   "date_display": "November 16, 2026",
+   "source_name": "Business Standard",
+   "source_url": "https://www.business-standard.com/companies/news/adyar-ananda-bhavan-sells-majority-stake-to-bodhi-tree-for-180-million-126111201795_1.html",
+   "cta": {
+    "text": "Put a revenue figure and a multiple side by side to see what a business is worth.",
+    "href": "/revenue-multiple",
+    "label": "Open the Revenue Multiple Calculator"
+   },
+   "related": [
+    {
+     "slug": "how-to-calculate-startup-valuation-india",
+     "title": "How to Calculate Valuation of Startup in India"
+    },
+    {
+     "slug": "franchise-roi-explained",
+     "title": "Franchise ROI: What a Store Really Earns"
+    }
+   ],
+   "body_en": [
+    "<p>Chennai-based Adyar Ananda Bhavan, the vegetarian restaurant and sweets chain everyone calls A2B, has sold a majority stake to Bodhi Tree Systems for $180 million, or more than ₹1,600 crore, according to Business Standard. An industry source put the valuation of A2B at about $350 million. The 50-year-old brand runs roughly 160 outlets in India and about 32 overseas, and employs more than 15,000 people.</p>",
+    "<h2>The deal in one line</h2>",
+    "<p>Bodhi Tree Systems is an investment platform set up in 2021 by James Murdoch, through his firm Lupa Systems, and Uday Shankar, a former Star India and Disney executive. This is its third big bet, after a 36% stake in ALLEN Career Institute for $600 million in 2022 and an investment in JioStar in 2023. As part of the deal, Uday Shankar will chair the new A2B board.</p>",
+    "<p>A2B said the money will go into modernising its kitchens and factories, building digital systems, and growing both its restaurants and its packaged sweets and snacks in India and abroad. The company named western India and Europe as new markets, and said the aim is to make it fit for the public markets — a possible listing.</p>",
+    "<h2>What $180 million buys: the stake math</h2>",
+    "<p>The buyer paid $180 million for a company valued at about $350 million. Divide the first number by the second: 180 ÷ 350 = 0.51. So the cheque bought just over half the business — a majority stake, not the whole thing. The founders keep a large minority, and both co-founders, K T Srinivasa Raja and K T Venkatesan, will stay on to guide the company.</p>",
+    "<p>Turn the dollar figure into rupees and the scale is clearer. At roughly ₹88 to the dollar, $180 million is about ₹1,600 crore, and the $350 million valuation is about ₹3,100 crore.</p>",
+    "<h2>Value per outlet: the number a chain owner should watch</h2>",
+    "<p>One useful way to read a restaurant deal is value per outlet. Take the valuation of $350 million and divide it by the outlets: A2B has about 160 in India plus 32 abroad, so call it 190. Then 350 ÷ 190 = about 1.8. That is close to $1.8 million, or roughly ₹16 crore, of value attached to each outlet.</p>",
+    "<p>That number is not a price tag you can copy for your own shop. A2B also sells packaged food through shops and online, and it has had 50 years to build a name. But it is a benchmark: it shows what the market pays when a food business has scale, a brand people trust, and a second income line beyond the dining table.</p>",
+    "<h2>Why a regional brand is worth this much</h2>",
+    "<p>Notice what the buyer is paying for. Not a new idea, but a known one. A2B is a household name in Tamil Nadu and Karnataka, with outlets in Singapore, the United States, Australia, Malaysia and the UK. That mix — a strong home base plus an overseas footprint — is exactly what a large investor wants, because it means the brand can grow without building demand from zero.</p>",
+    "<p>The buyer is also betting on the packaged business. Sweets and snacks sold in shops and online do not need a customer to walk in. They can be made in one factory and sold in many cities, which lifts the profit on every rupee of fixed cost.</p>",
+    "<h2>What it means for a small food business</h2>",
+    "<p>For a shop owner, the lesson is not the size of the cheque. It is what makes a food business sellable. Two things stand out here: a brand people ask for by name, and a product that can travel. A single restaurant that depends on one location is hard to value, because the buyer inherits the rent, the staff and the risk of that one street.</p>",
+    "<p>Run the arithmetic on your own numbers. Say your shop takes ₹10,000 a day and opens 300 days a year. That is ₹30 lakh of revenue. If a buyer pays three times revenue, the business is worth about ₹90 lakh. Raise the daily sale to ₹20,000 and the same multiple gives you ₹1.8 crore — the multiple stays the same, the base doubles. That is why growth in revenue matters more than a clever one-off discount: it moves the number everything else is calculated from.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Chennai ki Adyar Ananda Bhavan, jise sab A2B kehte hain, ne apni majority stake Bodhi Tree Systems ko $180 million, yani ₹1,600 crore se zyada, mein bech di hai, Business Standard ke mutabik. Ek industry source ne A2B ki valuation kareeb $350 million batayi. 50 saal purana yeh brand India mein takreeban 160 outlets aur videsh mein kareeb 32 outlets chalata hai, aur 15,000 se zyada logon ko kaam deta hai.</p>",
+    "<h2>Deal ek line mein</h2>",
+    "<p>Bodhi Tree Systems ek investment platform hai jo 2021 mein James Murdoch ne, apni firm Lupa Systems ke through, aur Uday Shankar ne, jo Star India aur Disney ke purane executive hain, shuru kiya. Yeh unka teesra bada daav hai, 2022 mein ALLEN Career Institute mein $600 million ke 36% stake aur 2023 mein JioStar ke nivesh ke baad. Deal ke hisse ke roop mein, Uday Shankar naye A2B board ke chairperson honge.</p>",
+    "<p>A2B ne kaha ki paisa uske kitchens aur factories ko modern banane, digital systems khade karne, aur India aur videsh dono mein restaurants aur packaged sweets aur snacks badhane mein lagega. Company ne western India aur Europe ko naye markets bataya, aur kaha ki maqsad ise public markets ke liye fit banana hai — yani ek sambhavit listing.</p>",
+    "<h2>$180 million kya kharidta hai: stake ka ganit</h2>",
+    "<p>Khareedar ne $180 million diye us company ke liye jiski valuation kareeb $350 million hai. Pehli sankhya ko doosri se baanto: 180 ÷ 350 = 0.51. Yani cheque ne business ka aadhe se thoda zyada hissa kharida — majority stake, poori company nahi. Founders ke paas bada minority hissa rehta hai, aur dono co-founders, K T Srinivasa Raja aur K T Venkatesan, company ko guide karne ke liye rahenge.</p>",
+    "<p>Dollar ko rupee mein badlo to scale saaf dikhta hai. Kareeb ₹88 per dollar par, $180 million takreeban ₹1,600 crore hai, aur $350 million ki valuation kareeb ₹3,100 crore.</p>",
+    "<h2>Har outlet ki value: jo number har chain owner ko dekhna chahiye</h2>",
+    "<p>Restaurant deal ko padhne ka ek kaam ka tareeka hai value per outlet. $350 million ki valuation lo aur outlets se baanto: A2B ke paas India mein kareeb 160 aur videsh mein 32 hain, yani maan lo 190. Phir 350 ÷ 190 = kareeb 1.8. Yani har outlet par kareeb $1.8 million, ya takreeban ₹16 crore, ki value bandhi hai.</p>",
+    "<p>Yeh number aisi price tag nahi hai jo aap apni dukaan ke liye copy kar sakein. A2B packaged food dukaanon aur online bhi bechta hai, aur usne naam banane mein 50 saal lagaye hain. Lekin yeh ek benchmark hai: yeh dikhata hai ki market kitna deta hai jab food business mein scale ho, logon ka bharosa ho, aur khaane ke alawa ek doosri kamai ki line ho.</p>",
+    "<h2>Ek regional brand itne ka kyun hai</h2>",
+    "<p>Dekhiye khareedar kis cheez ke liye paisa de raha hai. Kisi naye idea ke liye nahi, balki ek jaane-pahchane brand ke liye. A2B Tamil Nadu aur Karnataka mein ghar-ghar ka naam hai, aur Singapore, America, Australia, Malaysia aur UK mein iske outlets hain. Yeh mel — mazboot ghar ka base aur videsh mein maujudgi — ek bade investor ko yahi chahiye, kyunki iska matlab hai brand bina zero se demand banaye badh sakta hai.</p>",
+    "<p>Khareedar packaged business par bhi daav laga raha hai. Dukaanon aur online bikne wali sweets aur snacks ke liye zaroori nahi ki customer andar aaye. Woh ek factory mein ban sakti hain aur kayi shehron mein bik sakti hain, jo har rupee fixed cost par profit badha deti hai.</p>",
+    "<h2>Ek chhote food business ke liye iska matlab</h2>",
+    "<p>Dukaan owner ke liye sabak cheque ke size ka nahi hai. Yeh hai ki food business bechne layak kis cheez se banta hai. Yahan do baatein dikhti hain: ek aisa brand jise log naam se maangte hain, aur ek product jo safar kar sake. Ek hi restaurant jo ek jagah par tika hai uski value karna mushkil hai, kyunki khareedar ko rent, staff aur us ek street ka risk virasat mein milta hai.</p>",
+    "<p>Apne numbers par khud ganit karo. Maan lo aapki dukaan ₹10,000 roz leti hai aur saal mein 300 din khulti hai. Yeh ₹30 lakh ka revenue hai. Agar khareedar teen guna revenue deta hai, to business ki value kareeb ₹90 lakh hai. Rozana sale ₹20,000 kar do to wahi multiple ₹1.8 crore deta hai — multiple wahi rehta hai, base double ho jata hai. Isiliye revenue ki growth ek chhutke discount se zyada maayne rakhti hai: yeh wahi number badalti hai jisse baaki sab calculate hota hai.</p>"
+   ]
+  },
+  {
    "slug": "india-startup-funding-fell-88-percent-november-2026",
    "title": "Startup Funding Fell 88% in a Week: What It Signals",
    "dek": "Indian startups raised just $31.3 million in the week to November 14, down nearly 88% from $258.1 million a week earlier. What that swing means for founders.",

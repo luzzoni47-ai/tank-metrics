@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sun, 15 Nov 2026 03:59:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 01:35:16 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>A2B Sells Majority Stake to Bodhi Tree for $180M</title>
+    <link>https://tankmetrics.in/news/a2b-bodhi-tree-180-million-majority-stake-food-chain</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/a2b-bodhi-tree-180-million-majority-stake-food-chain</guid>
+    <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Funding</category>
+    <description>A 50-year-old Chennai food chain sold a majority stake for $180 million. Here is the arithmetic behind the valuation, and what a small shop can take from it.</description>
+  </item>
   <item>
     <title>Rental Yield Explained: What Your Flat Earns</title>
     <link>https://tankmetrics.in/rental-yield-explained</link>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Revenue multiple calculator India: enter annual revenue and the multiple to get the valuation in ₹ Crores instantly. Free, and made for Indian founders in ₹.</description>
-  </item>
-  <item>
-    <title>Shark Tank India Deal Calculator - Check Any Deal in ₹</title>
-    <link>https://tankmetrics.in/shark-tank-india-deal-calculator</link>
-    <guid isPermaLink="true">https://tankmetrics.in/shark-tank-india-deal-calculator</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Shark Tank India deal calculator: enter any deal&amp;#x27;s amount and equity to get post-money, pre-money valuation and founder stake left in ₹ Crores. Free in ₹.</description>
   </item>
 </channel>
 </rss>
