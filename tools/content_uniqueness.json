@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.13,
-   "a": "/ppf-calculator",
-   "b": "/rd-recurring-deposit-calculator"
-  },
-  {
    "overlap": 0.126,
    "a": "/ebitda-multiple",
    "b": "/revenue-multiple"
@@ -61,17 +56,14 @@
    "overlap": 0.109,
    "a": "/debt-equity-deal",
    "b": "/royalty-deal"
+  },
+  {
+   "overlap": 0.108,
+   "a": "/nps-calculator",
+   "b": "/sip-calculator"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/ppf-calculator",
-   "closest_overlap": 0.13
-  },
-  {
-   "page": "/rd-recurring-deposit-calculator",
-   "closest_overlap": 0.13
-  },
   {
    "page": "/ebitda-multiple",
    "closest_overlap": 0.126
@@ -111,6 +103,14 @@
   {
    "page": "/debt-equity-deal",
    "closest_overlap": 0.114
+  },
+  {
+   "page": "/age-calculator",
+   "closest_overlap": 0.113
+  },
+  {
+   "page": "/implied-valuation",
+   "closest_overlap": 0.113
   }
  ],
  "median_overlap": 0.097

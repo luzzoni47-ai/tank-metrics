@@ -1184,17 +1184,17 @@
    ]
   },
   "ppf": {
-   "what": "PPF calculator dikhata hai ki aapki saalana Public Provident Fund contributions 15 saal ke lock-in mein kya banti hain, aur jawab zyadatar logon ki expectation se zyada hota hai kyunki PPF tax-free compound hota hai. Aap har saal ek fixed amount daalte ho, balance par interest milta hai jo poora exempt hai, aur maturity amount bhi tax-free - isse yeh India ke un gine-chune EEE instruments mein se ek banta hai. Keemat sabr hai: paisa 15 saal ke liye lock hai, aur yahi poora trade hai.",
-   "formula": "Balance PPF rate par saalana compound hota hai har saal ki contribution par, aur maturity value 15 saal ke ant mein kul hoti hai. ₹1.5 lakh saalana 7.1% par 15 saal: maturity takreeban ₹40.7 lakh, jisme takreeban ₹22.5 lakh aapki khud ki contribution hai aur baaki tax-free interest. Financial year mein jaldi daalne se us paise par poore saal ka interest milta hai, isliye April March se behtar hai.",
+   "what": "PPF Calculator ek hi 15-saal ka sawaal hal karta hai: agar main har saal Public Provident Fund mein same amount daalta rahoon, to lock-in khatam hone par account mein kitna hota hai? PPF India ke un gine-chune instruments mein se ek hai jo teenon stages par exempt hai - contribution (Section 80C ke tehat), saalana interest, aur maturity amount - isliye ye maturity figure wahi paisa hai jo aap actually rakhte ho, baad mein tax ka koi kata nahi. Aap Yearly Contribution, Annual Interest Rate aur Tenure daalte ho; ye Total Contribution aur Estimated Maturity deta hai.\n\nPPF ko same rate ke FD se alag rate nahi, tax aur discipline banata hai. 7.1% ka FD har saal apne interest par aapke slab ke hisaab se tax deta hai, isliye 30% taxpayer ke paas 5% ke aas-paas bachta hai; PPF ke 7.1% ko koi nahi chhoota. Calculator ye gap seedha dikhata hai: same Yearly Contribution aur same rate par chalao aur maturity ko ek taxed deposit ki post-tax value se compare karo. Account par ₹1.5 lakh saalana ceiling hai aur 15-saal ka term jo paanch saal ke blocks mein badhaya ja sakta hai, isliye Tenure ek input hai, fixed 15 nahi.",
+   "formula": "Har saal ki contribution PPF rate par utne saal compound hoti hai jitne wo account mein rehti hai, isliye maturity ek ordinary annuity ka future value hai, seedha multiplication nahi. Tool a = rate / 100 aur n = years set karta hai, phir Estimated Maturity = Yearly Contribution x ((1 + a)^n - 1) / a, aur Total Contribution = Yearly Contribution x n. ₹1,00,000 saalana, 7% aur 15 saal par a = 0.07 aur n = 15, to (1.07^15 - 1) / 0.07 = 25.129; maturity = ₹25,12,900 aur Total Contribution = ₹15,00,000. Calculator har saal ki deposit saal ke ant mein credit karta hai; asli account mein April ki contribution poore saal ka interest kamaati hai, jo tool model nahi karta, isliye figure ko conservative maano.",
    "when": [
-    "PPF aur equity SIP ke beech choose kar rahe ho long-term goal ke liye.",
-    "Aapki current saalana contribution maturity par kya banti hai ye jaanna hai.",
-    "80C deduction ke liye PPF use kar rahe ho aur poora picture dekhna hai, sirf tax saving nahi."
+    "Section 80C ke ₹1.5 lakh kahan lagayein ye decide kar rahe ho, aur PPF ki tax-free maturity ko same rate ke FD ya debt fund ki taxed maturity ke saath dekhna chahte ho.",
+    "Kuch saal se PPF mein daal rahe ho aur jaanna chahte ho ki current Yearly Contribution 15-saal ki maturity tak kya banta hai, extend karne se pehle.",
+    "15 saal door ke goal ke liye PPF ko equity SIP se compare kar rahe ho, aur PPF taraf ka guaranteed, tax-free floor jaanna chahte ho."
    ],
    "mistakes": [
-    "March ki jagah April mein deposit karna. Us contribution par poore saal ka interest chala jaata hai.",
-    "PPF ke 7.1% ko equity fund ke long-run return se compare karna bina ye ginne ki PPF ka return guaranteed aur tax-free hai.",
-    "₹1.5 lakh saalana cap bhool jaana, jise ek account mein badhaya nahi ja sakta."
+    "Jo interest expect kar rahe ho wo daalna, current PPF rate nahi. Rate har quarter government reset karti hai, isliye maturity bhi badalti hai - calculator utna hi sahi hai jitna Annual Interest Rate mein type kiya.",
+    "Estimated Maturity ko interest earned samajhna. Us figure mein aapki khud ki Total Contribution bhi hai; gain = Estimated Maturity minus Total Contribution, aur yahi FD ke post-tax interest se compare karne wala number hai.",
+    "15 saal ka figure year 15 par kharch karne layak maan lena bina extension plan kiye. PPF 15 saal par mature hota hai par paanch saal ke blocks mein extend ho sakta hai, aur Tenure input se wahi lamba run test hota hai."
    ]
   },
   "prepost": {
@@ -1257,17 +1257,17 @@
    ]
   },
   "rd": {
-   "what": "Recurring deposit har mahine ek hi rate par commitment hai, aur bank har instalment par us din se interest deta hai. 5,000 rupaye mahina 5 saal 7% par lagbhag 3.6 lakh banta hai, jisme 3 lakh aapka hi paisa hai. Ye deposits ka SIP jaisa hai, aur calculator ka kaam interest ko contributions se alag dikhana hai taaki return imaandaar lage.",
-   "formula": "Maturity = sum of P x (1 + r / 4)^(bache quarters), har monthly instalment par. Interest = Maturity - (P x mahine).",
+   "what": "RD Calculator batata hai ki ek fixed monthly deposit maturity tak kya banta hai. Aap har mahine same date par same amount daalte ho, bank har instalment par uske aane ke din se interest jodta hai, aur ant mein aapko poora deposited paisa plus har instalment ka kamaya interest milta hai. Tool Monthly Deposit, Annual Interest Rate aur Tenure (months) leta hai, aur Total Deposits, Maturity Amount aur Interest Earned teen alag figures deta hai - taaki aapko return dikhe, sirf ek headline maturity nahi.\n\nRD deposit-side par SIP ka twin hai: same monthly discipline, ulta risk. Rate kholne ke din fix ho jaata hai, isliye Maturity Amount pehle se pata hota hai, par wahi certainty ceiling bhi hai - RD lamba horizon par ek accha equity fund nahi haraayega. Calculator ka asli kaam Interest Earned ko Total Deposits ke saath dikhana hai: ₹5,000 mahina 24 mahine par ₹1,29,154 ki maturity mein sirf ₹9,154 interest hai, aur yahi sahi measure hai ki bank aapko kitna de raha hai. Yahi split ek advertised 7% a year chhupa deta hai.",
+   "formula": "Har monthly instalment utne mahine interest kamata hai jitne wo account mein rehta hai, isliye pehli deposit sabse lamba compound karti hai aur aakhri sirf ek mahina. Tool a = rate / 1200 (monthly rate) aur n = months set karta hai, aur Maturity Amount = Monthly Deposit x ((1 + a)^n - 1) / a x (1 + a); Total Deposits = Monthly Deposit x n; Interest Earned = Maturity Amount - Total Deposits. ₹5,000 mahina, 7% aur 24 mahine par a = 0.005833 aur n = 24, factor 25.83, to Maturity Amount = ₹1,29,154, Total Deposits = ₹1,20,000 aur Interest Earned = ₹9,154. Ant mein (1 + a) ka matlab hai calculator har instalment ko uske mahine ke shuru mein credit karta hai, isliye figure banks ke quote ke generous end par baithta hai.",
    "when": [
-    "Aapko fixed-return monthly habit chahiye aur commit karne se pehle maturity jaanna hai.",
-    "3 saal ke goal ke liye RD ko debt mutual fund se compare kar rahe ho.",
-    "Aap dekhna chahte ho ki aakhri instalment pehli se kitna kamati hai - farak logon ko chauka deta hai."
+    "RD kholne wale ho aur commit karne se pehle exact maturity aur interest jaanna chahte ho, bank app ka approximately figure nahi.",
+    "Do-teen saal door ke goal ke liye RD ko debt mutual fund ya short-term FD se compare kar rahe ho, aur guaranteed number ko fund ke indicative number se tolna chahte ho.",
+    "Dekhna chahte ho ki Tenure badhane par interest kaise badalta hai - same Monthly Deposit 24 ke bajaye 36 mahine - taaki extra lock-in ka faayda judge kar sako."
    ],
    "mistakes": [
-    "Advertised rate poore balance par lagne ki ummeed rakhna. Har instalment sirf utne hi time kamata hai jitna wo andar hai.",
-    "Instalment miss karke penalty na maan lena. Bank lagata hai, aur rate reset ho sakta hai.",
-    "10 saal ke goal ke liye RD use karna. Itne horizon par equity compounding usually jeet jati hai."
+    "Annual Interest Rate ko poore balance par poore term ke liye apply hone ka maan lena. Sirf shuruaati instalments poora Tenure kamate hain; aakhri wale ek mahina, isliye Interest Earned Maturity Amount ka chhota hissa hai.",
+    "RD ke Maturity Amount ko lump-sum FD se compare karna, jabki RD poora balance sirf ant mein lock karta hai. RD average par kaafi kam capital bandhta hai, isliye uska effective yield raw interest figure se zyada hai.",
+    "RD ko das saal ke goal ke liye plan karna. Rate fixed aur modest hai, isliye lambe horizon par compounding equity certainty jo chhodti hai usse zyada return de deti hai; calculator ko short-term goal ke liye use karo, retirement ke liye nahi."
    ]
   },
   "rentalyield": {

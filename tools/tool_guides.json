@@ -1192,17 +1192,17 @@
    ]
   },
   "ppf": {
-   "what": "A PPF calculator shows what your yearly Public Provident Fund contributions become over the 15-year lock-in, and the answer is more than most people expect because PPF compounds tax-free. You put in a fixed amount each year, the balance earns interest that is fully exempt, and the maturity amount is tax-free too - which makes it one of the very few EEE instruments in India. The cost is patience: the money is locked for 15 years, and that is the whole trade.",
-   "formula": "The balance grows at the PPF rate compounded annually on each year's contribution, and the maturity value is the sum at the end of 15 years. ₹1.5 lakh a year at 7.1% for 15 years matures at roughly ₹40.7 lakh, of which about ₹22.5 lakh is your own contributions and the rest is tax-free interest. Contributing early in the financial year earns interest on that money for the whole year, so April beats March.",
+   "what": "The PPF Calculator answers a single 15-year question: if you commit the same amount every year to a Public Provident Fund account, what does the account hold when the lock-in ends? PPF is one of the very few instruments in India that is exempt at all three stages - the contribution (under Section 80C), the yearly interest, and the maturity amount - so the maturity figure this tool returns is money you actually keep, with nothing trimmed for tax afterwards. You enter Yearly Contribution, Annual Interest Rate and Tenure; it returns Total Contribution and Estimated Maturity.\n\nWhat separates PPF from a fixed deposit at the same rate is not the rate, it is the tax and the discipline. A 7.1% FD is taxed every year on its interest at your slab, so a 30% taxpayer keeps closer to 5%; PPF's 7.1% is never touched. This calculator lets you see that gap directly: run the same Yearly Contribution at the same rate and put the maturity next to a taxed deposit's post-tax value. The account also carries a ₹1.5 lakh yearly ceiling and a 15-year term that can be extended in five-year blocks, which is why Tenure is an input rather than a fixed 15.",
+   "formula": "Each year's contribution compounds at the PPF rate for every year it stays in the account, so the maturity is the future value of an ordinary annuity, not a simple multiplication. The tool sets a = rate / 100 and n = years, then Estimated Maturity = Yearly Contribution x ((1 + a)^n - 1) / a, and Total Contribution = Yearly Contribution x n. At ₹1,00,000 a year, 7% and 15 years, a = 0.07 and n = 15, so (1.07^15 - 1) / 0.07 = 25.129; maturity = ₹25,12,900 and Total Contribution = ₹15,00,000. The tool credits each year's deposit at the end of the year; in the real account an April contribution earns interest for the whole year, which the model does not capture, so treat its figure as the conservative end of the range.",
    "when": [
-    "You are deciding between PPF and an equity SIP for a long-term goal.",
-    "You want to know what your current yearly contribution becomes at maturity.",
-    "You are using PPF for the 80C deduction and want to see the full picture, not just the tax saving."
+    "You are deciding where the ₹1.5 lakh of your Section 80C limit should go, and want the tax-free maturity of PPF beside the taxed maturity of an FD or a debt fund at the same rate.",
+    "You have been contributing to a PPF account for some years and want to see what the current Yearly Contribution grows to by the 15-year maturity date, before you decide whether to extend.",
+    "You are weighing PPF against an equity SIP for a goal 15 years out, and want the guaranteed, tax-free floor the PPF side of that comparison provides."
    ],
    "mistakes": [
-    "Depositing in March instead of April. You lose a full year's interest on that contribution.",
-    "Comparing the 7.1% PPF rate with an equity fund's long-run return without accounting for the fact that PPF's return is guaranteed and tax-free.",
-    "Forgetting the ₹1.5 lakh yearly cap, which cannot be exceeded in a single account."
+    "Entering the interest you hope for rather than the current PPF rate. The rate is reset by the government every quarter, so the maturity moves when it does - the answer is only as good as the rate typed into Annual Interest Rate.",
+    "Reading Estimated Maturity as interest earned. That figure includes your own Total Contribution; the gain is Estimated Maturity minus Total Contribution, and that is the number to compare against an FD's post-tax interest.",
+    "Treating the 15-year figure as spendable at year 15 without planning the extension. PPF matures after 15 years but extends in five-year blocks, and the Tenure input is how you test that longer run."
    ]
   },
   "prepost": {
@@ -1265,17 +1265,17 @@
    ]
   },
   "rd": {
-   "what": "A recurring deposit is a monthly commitment to the same rate, with the bank paying interest on each instalment from the day it lands. 5,000 rupees a month for 5 years at 7% grows to about 3.6 lakh, of which 3 lakh is your own money. It is the deposit equivalent of a SIP, and the calculator's job is to show the interest separately from the contributions so the return is honest.",
-   "formula": "Maturity = sum of P x (1 + r / 4)^(quarters remaining), over each monthly instalment. Interest = Maturity - (P x months).",
+   "what": "The RD Calculator answers what a fixed monthly deposit becomes by maturity. You commit the same amount on the same date every month, the bank adds interest to each instalment from the day it lands, and at the end you get back every rupee you deposited plus the interest each instalment earned. The tool takes Monthly Deposit, Annual Interest Rate and Tenure in months, and returns Total Deposits, Maturity Amount and Interest Earned as three separate figures - so you see the return, not just a headline maturity.\n\nAn RD is the deposit-side twin of a SIP: the same monthly discipline, the opposite risk. The rate is fixed the day you open it, so the Maturity Amount is knowable in advance, but that certainty is also the ceiling - an RD will not outgrow a good equity fund over a long horizon. Where this calculator earns its keep is in showing Interest Earned next to Total Deposits: at ₹5,000 a month for 24 months, only ₹9,154 of the ₹1,29,154 maturity is interest, which is the honest measure of what the bank is paying you. That split is exactly what an advertised 7% a year hides.",
+   "formula": "Each monthly instalment earns interest for the months it remains in the account, so the first deposit compounds the longest and the last one for a single month. The tool sets a = rate / 1200 (the monthly rate) and n = months, and Maturity Amount = Monthly Deposit x ((1 + a)^n - 1) / a x (1 + a); Total Deposits = Monthly Deposit x n; Interest Earned = Maturity Amount - Total Deposits. At ₹5,000 a month, 7% and 24 months, a = 0.005833 and n = 24, giving a factor of 25.83, so Maturity Amount = ₹1,29,154, Total Deposits = ₹1,20,000 and Interest Earned = ₹9,154. The (1 + a) at the end is the tool crediting each instalment at the start of its month, which is why its figure sits at the generous end of what banks quote.",
    "when": [
-    "You want a fixed-return monthly habit and want to know the maturity before committing.",
-    "You are comparing an RD with a debt mutual fund for a 3-year goal.",
-    "You want to see what the last instalment earns versus the first - the difference surprises people."
+    "You are about to open an RD and want the exact maturity and interest before you commit, rather than the approximately figure a bank app shows.",
+    "You are comparing an RD with a debt mutual fund or a short-term FD for a goal two or three years out, and want the guaranteed number to weigh against the fund's indicative one.",
+    "You want to see how the interest changes when you stretch the Tenure - the same Monthly Deposit over 36 months rather than 24 - to judge whether the extra lock-in is worth it."
    ],
    "mistakes": [
-    "Expecting the advertised rate to apply to the whole balance. Each instalment earns only for the time it is in.",
-    "Missing an instalment and assuming no penalty. Banks charge it, and it can reset the rate.",
-    "Using an RD for a 10-year goal. Compounding equity usually wins over that horizon."
+    "Assuming the Annual Interest Rate applies to the whole balance for the whole term. Only the earliest instalments earn for the full Tenure; the last ones earn for a month, which is why Interest Earned is a small slice of the Maturity Amount.",
+    "Comparing the RD's Maturity Amount with a lump-sum FD's, when the RD only locks the full balance near the end. The RD ties up far less capital on average, so its effective yield is higher than the raw interest figure suggests.",
+    "Planning an RD for a ten-year goal. The rate is fixed and modest, so over a long horizon the compounding equity gives up in certainty it more than recovers in return; size a short-term goal with this tool, not a retirement one."
    ]
   },
   "rentalyield": {
