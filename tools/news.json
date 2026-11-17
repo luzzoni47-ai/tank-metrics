@@ -2,6 +2,67 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "india-deep-tech-funding-914-million-growth-gap-2026",
+   "title": "India Deep Tech Raised $914M: The Growth Gap",
+   "dek": "India's deep tech startups raised $914 million in 2025, yet they took only 1.6% of the world's capital. Here is what that funding gap means for a founder.",
+   "category": "Startup",
+   "date": "2026-11-17",
+   "date_display": "November 17, 2026",
+   "source_name": "The Hindu BusinessLine",
+   "source_url": "https://www.thehindubusinessline.com/economy/indias-deep-tech-startups-raise-914-million-but-face-growth-stage-funding-gap/article71706952.ece",
+   "cta": {
+    "text": "Work out what a round does to your ownership: enter a pre-money value and the amount raised, and see your post-money valuation and dilution.",
+    "href": "/pre-money-and-post-money-valuation",
+    "label": "Open the Pre-Money & Post-Money Valuation Calculator"
+   },
+   "related": [
+    {
+     "slug": "how-to-calculate-startup-valuation-india",
+     "title": "How to Calculate Valuation of Startup in India"
+    },
+    {
+     "slug": "burn-rate-runway-guide",
+     "title": "Burn Rate and Runway"
+    }
+   ],
+   "body_en": [
+    "<h2>What the report found</h2>",
+    "<p>Indian deep tech startups raised $914 million across 257 funding rounds in 2025, according to the second edition of Speciale Invest's report, India's Deep Tech Revolution: From the Lab to Growth and Exits. That is 34 times the level of 2016. The study uses Tracxn data through 31 August 2026 and covers 8,293 privately held companies worldwide, of which 482 are in India.</p>",
+    "<p>The headline number looks strong until you compare it with the rest of the world. India accounted for 12.8% of global deep tech funding rounds in 2025 but received only 1.6% of the capital invested. Indian founders are winning a fair share of the deals and a small share of the money in each deal.</p>",
+    "<h2>The arithmetic of the gap</h2>",
+    "<p>The report puts numbers on how funding thins as a company matures. For every 100 seed rounds in India, there were 23 Series A or B rounds, against 105 globally. For every 100 Indian seed rounds, there was just one late-stage or private-equity round, against 26 worldwide. A company that survives the early years in India has a far smaller chance of finding money to scale.</p>",
+    "<p>Round sizes tell the same story. Between January and August 2026, Indian deep tech Series A and B rounds averaged $11.5 million, against $55.5 million globally. The average Indian deep tech seed round was $1.33 million, against $5.78 million worldwide. Put simply, a peer in the United States starts with roughly four times the seed cheque, and by Series A that lead has widened to nearly five times.</p>",
+    "<p>Take a round example. Say you raise a seed round of $1 million. A comparable founder abroad raises about $6 million. If both burn $100,000 a month, your money lasts about 10 months and theirs lasts about 60 months. You have five more chances to fix the product before you need the next cheque; they can wait and grow into a better valuation. That is the gap in one line.</p>",
+    "<h2>Why the gap matters to a founder</h2>",
+    "<p>Short runway changes the decisions you make. When you have 10 months of cash, you cut the pilot that is not converting, you hire later, and you say yes to a smaller cheque at a lower valuation to survive. When the next round is scarce, the first cheque sets the price and the terms for years.</p>",
+    "<p>Vishesh Rajaram, managing partner at Speciale Invest, said large companies and public-sector buyers can help turn trials into commercial orders by agreeing upfront on what a pilot must prove and when they will make a purchase decision. A first order lets a startup plan production and commit to suppliers. In plain terms, one paying customer is worth more than one more demo.</p>",
+    "<h2>Where the government money fits</h2>",
+    "<p>The report points to the government's ₹1 lakh crore Research, Development and Innovation Fund as a possible source of growth capital. The Technology Development Board allocated ₹2,192 crore to 22 projects in the fund's first round. It also recommends faster funding decisions, shared testing facilities and more domestic funds joining Series B and C rounds.</p>",
+    "<p>Space and life sciences are better placed to scale, the report says, because they can use ISRO-linked testing infrastructure and India's pharmaceutical manufacturing base. Semiconductor startups still depend on overseas fabrication, and battery firms rely on imported cells and materials.</p>",
+    "<h2>What it means for you</h2>",
+    "<p>If you are building a startup, plan for the round after this one to be harder to raise, not easier. Size your seed round against 10 to 12 months of real expenses, not 24, and treat a signed order as the milestone that unlocks the next round. If you run a small business and supply larger companies, the same shortage of patient capital is a chance: you can be the steady supplier that a funded startup leans on while it waits for its own money.</p>",
+    "<p>The number to hold on to is the ratio. India takes 12.8% of the world's deep tech deals and 1.6% of its capital. Closing that gap is not only a job for investors; it is a job for customers who pay on time and for founders who reach revenue early.</p>"
+   ],
+   "body_hinglish": [
+    "<h2>Report kya kehta hai</h2>",
+    "<p>Indian deep tech startups ne 2025 mein 257 funding rounds mein $914 million raise kiye, Speciale Invest ki doosri report, India's Deep Tech Revolution: From the Lab to Growth and Exits ke mutabik. Yeh 2016 ke level se 34 guna zyada hai. Report 31 August 2026 tak ka Tracxn data use karti hai aur duniya bhar ki 8,293 private companies cover karti hai, jinme 482 India ki hain.</p>",
+    "<p>Yeh bada number tab tak accha lagta hai jab tak aap duniya se compare na karein. 2025 mein India ke paas global deep tech funding rounds ka 12.8% tha, lekin invested capital ka sirf 1.6% mila. Matlab Indian founders deals ka theek hissa jeet rahe hain, par har deal mein paisa kam mil raha hai.</p>",
+    "<h2>Gap ka hisaab</h2>",
+    "<p>Report batati hai ki company badhne ke saath funding kaise patli hoti hai. India mein har 100 seed rounds par 23 Series A ya B rounds the, jabki duniya mein 105. India mein har 100 seed rounds par sirf ek late-stage ya private-equity round tha, jabki duniya mein 26. Jo company shuru ke saal paar kar leti hai, uske paas India mein scale karne ka mauka kaafi kam hota hai.</p>",
+    "<p>Round ka size bhi yahi kahani kehta hai. January se August 2026 ke beech, Indian deep tech Series A aur B rounds ka average $11.5 million tha, jabki duniya mein $55.5 million. Indian deep tech seed round ka average $1.33 million tha, jabki duniya mein $5.78 million. Seed par aapke paas ek chauthai ke aas paas paisa hota hai, aur Series A tak yeh gap paanch guna tak pahunch jaata hai.</p>",
+    "<p>Ek round ka example lein. Maan lijiye aap $1 million ka seed round uthate hain. Bahar ka ek founder lagbhag $6 million uthata hai. Agar dono mahine ka $100,000 kharch karein, to aapka paisa lagbhag 10 mahine chalega aur unka lagbhag 60 mahine. Aapke paas product theek karne ke paanch mauke hain; woh ruk kar behtar valuation tak badh sakte hain. Yahi gap hai, ek line mein.</p>",
+    "<h2>Founder ke liye kyun matter karta hai</h2>",
+    "<p>Kam runway aapke faisle badal deta hai. Jab 10 mahine ka cash ho, to aap woh pilot band kar dete hain jo convert nahi ho raha, hiring late karte hain, aur kam valuation par chhota cheque maan lete hain. Agla round mushkil ho to pehla cheque hi saalon ka price aur terms set kar deta hai.</p>",
+    "<p>Speciale Invest ke managing partner Vishesh Rajaram ne kaha ki badi companies aur public-sector buyers pilot ko commercial order mein badalne mein madad kar sakte hain, agar shuru mein hi tay ho jaaye ki pilot kya sabit karega aur purchase decision kab aayega. Pehla order startup ko production plan karne aur suppliers se commit karne deta hai. Seedhi baat, ek paying customer ek aur demo se zyada keemti hai.</p>",
+    "<h2>Sarkar ka paisa kahan fit hota hai</h2>",
+    "<p>Report sarkar ke ₹1 lakh crore Research, Development and Innovation Fund ko growth capital ke srot ke roop mein batati hai. Technology Development Board ne fund ke pehle round mein 22 projects ko ₹2,192 crore diye. Report tez funding decisions, shared testing facilities aur Series B aur C rounds mein zyada domestic funds ki salaah deti hai.</p>",
+    "<p>Report kehti hai ki space aur life sciences scale hone ke liye behtar jagah par hain, kyunki woh ISRO se judi testing infrastructure aur India ke pharmaceutical manufacturing base ka use kar sakte hain. Semiconductor startups abhi bhi overseas fabrication par nirbhar hain, aur battery firms imported cells aur materials par.</p>",
+    "<h2>Aapke liye iska matlab</h2>",
+    "<p>Agar aap startup bana rahe hain, to maan kar chalein ki agla round isse zyada mushkil hoga, aasan nahi. Apna seed round 10 se 12 mahine ke asli kharch par set karein, 24 par nahi, aur signed order ko us milestone ki tarah dekhein jo agla round kholta hai. Agar aap chhota business chalate hain aur badi companies ko supply karte hain, to patient capital ki yahi kami ek mauka hai: aap woh bharosemand supplier ban sakte hain jispar ek funded startup apne paise ka intezaar karte waqt tike.</p>",
+    "<p>Yaad rakhne wala number ratio hai. Duniya ke deep tech deals ka 12.8% India leta hai, aur capital ka 1.6%. Yeh gap sirf investors ka kaam nahi hai; yeh un customers ka bhi kaam hai jo time par pay karte hain, aur un founders ka jo jaldi revenue tak pahunchte hain.</p>"
+   ]
+  },
+  {
    "slug": "a2b-bodhi-tree-180-million-majority-stake-food-chain",
    "title": "A2B Sells Majority Stake to Bodhi Tree for $180M",
    "dek": "A 50-year-old Chennai food chain sold a majority stake for $180 million. Here is the arithmetic behind the valuation, and what a small shop can take from it.",

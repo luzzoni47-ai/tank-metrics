@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Mon, 16 Nov 2026 05:44:24 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 01:36:28 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>India Deep Tech Raised $914M: The Growth Gap</title>
+    <link>https://tankmetrics.in/news/india-deep-tech-funding-914-million-growth-gap-2026</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/india-deep-tech-funding-914-million-growth-gap-2026</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Startup</category>
+    <description>India&#x27;s deep tech startups raised $914 million in 2025, yet they took only 1.6% of the world&#x27;s capital. Here is what that funding gap means for a founder.</description>
+  </item>
   <item>
     <title>A2B Sells Majority Stake to Bodhi Tree for $180M</title>
     <link>https://tankmetrics.in/news/a2b-bodhi-tree-180-million-majority-stake-food-chain</link>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Founder salary calculator startup India: enter the take-home you need and your annual profit to see what the company can afford and how salary is taxed.</description>
-  </item>
-  <item>
-    <title>Revenue Multiple Calculator India - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/revenue-multiple-calculator-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/revenue-multiple-calculator-india</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Revenue multiple calculator India: enter annual revenue and the multiple to get the valuation in ₹ Crores instantly. Free, and made for Indian founders in ₹.</description>
   </item>
 </channel>
 </rss>
