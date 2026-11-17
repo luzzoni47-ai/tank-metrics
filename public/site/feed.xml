@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Tue, 17 Nov 2026 01:36:28 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 03:46:04 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>India Deep Tech Raised $914M: The Growth Gap</title>
@@ -14,6 +14,14 @@
     <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
     <category>Startup</category>
     <description>India&#x27;s deep tech startups raised $914 million in 2025, yet they took only 1.6% of the world&#x27;s capital. Here is what that funding gap means for a founder.</description>
+  </item>
+  <item>
+    <title>How to Set Your Freelancer Hourly Rate</title>
+    <link>https://tankmetrics.in/freelancer-hourly-rate-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/freelancer-hourly-rate-explained</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Freelancers undercharge by dividing target income by every working hour. See the one-line formula, a worked example, and the costs a real rate must cover.</description>
   </item>
   <item>
     <title>A2B Sells Majority Stake to Bodhi Tree for $180M</title>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>How employee utilization rate is calculated, what a healthy range looks like for a small services team, and why 100% billable is a warning, not a goal.</description>
-  </item>
-  <item>
-    <title>Founder Salary Calculator for Indian Startups - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/founder-salary-calculator-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/founder-salary-calculator-india</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Founder salary calculator startup India: enter the take-home you need and your annual profit to see what the company can afford and how salary is taxed.</description>
   </item>
 </channel>
 </rss>

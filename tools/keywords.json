@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T01:33:14Z",
+ "generated": "2026-11-17T03:32:26Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -3182,7 +3182,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator by year",
    "demand": 10,
    "covered": true,
    "score": 6.9,
