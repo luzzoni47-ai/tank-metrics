@@ -16,51 +16,6 @@
    "overlap": 0.118,
    "a": "/client-acquisition-cost-cac",
    "b": "/customer-acquisition-cost-cac"
-  },
-  {
-   "overlap": 0.114,
-   "a": "/co-founder-equity-split",
-   "b": "/debt-equity-deal"
-  },
-  {
-   "overlap": 0.113,
-   "a": "/age-calculator",
-   "b": "/lucky-number-calculator"
-  },
-  {
-   "overlap": 0.113,
-   "a": "/implied-valuation",
-   "b": "/pre-money-and-post-money-valuation"
-  },
-  {
-   "overlap": 0.111,
-   "a": "/compatibility-calculator",
-   "b": "/love-calculator"
-  },
-  {
-   "overlap": 0.111,
-   "a": "/break-even-point",
-   "b": "/gross-profit-and-margin"
-  },
-  {
-   "overlap": 0.11,
-   "a": "/rashi-moon-sign-calculator",
-   "b": "/zodiac-sign-calculator"
-  },
-  {
-   "overlap": 0.109,
-   "a": "/debt-equity-deal",
-   "b": "/royalty-deal"
-  },
-  {
-   "overlap": 0.108,
-   "a": "/nps-calculator",
-   "b": "/sip-calculator"
-  },
-  {
-   "overlap": 0.107,
-   "a": "/gross-profit-and-margin",
-   "b": "/percentage-calculator"
   }
  ],
  "worst_pages": [
@@ -75,42 +30,6 @@
   {
    "page": "/cash-conversion-cycle",
    "closest_overlap": 0.119
-  },
-  {
-   "page": "/working-capital",
-   "closest_overlap": 0.119
-  },
-  {
-   "page": "/client-acquisition-cost-cac",
-   "closest_overlap": 0.118
-  },
-  {
-   "page": "/customer-acquisition-cost-cac",
-   "closest_overlap": 0.118
-  },
-  {
-   "page": "/co-founder-equity-split",
-   "closest_overlap": 0.114
-  },
-  {
-   "page": "/debt-equity-deal",
-   "closest_overlap": 0.114
-  },
-  {
-   "page": "/age-calculator",
-   "closest_overlap": 0.113
-  },
-  {
-   "page": "/implied-valuation",
-   "closest_overlap": 0.113
-  },
-  {
-   "page": "/pre-money-and-post-money-valuation",
-   "closest_overlap": 0.113
-  },
-  {
-   "page": "/compatibility-calculator",
-   "closest_overlap": 0.111
   }
  ],
  "median_overlap": 0.095

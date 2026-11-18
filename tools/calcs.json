@@ -467,6 +467,7 @@
       "cat": "val",
       "name": "EBITDA Multiple",
       "desc": "See how many times the EBITDA a company is being valued at.",
+      "seo_desc": "Work out the EBITDA multiple a valuation implies, and what a 4x to 8x range means for a small business deal in India. Get your number in a few seconds.",
       "bench": "Most small business deals fall between 4-8x EBITDA.",
       "inputs": [
         {
