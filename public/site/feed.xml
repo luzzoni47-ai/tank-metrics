@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Tue, 17 Nov 2026 05:38:22 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 01:37:31 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Festive Sales Up 29%: Smaller Baskets, More Orders</title>
+    <link>https://tankmetrics.in/news/festive-sales-2026-smaller-baskets-more-orders</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/festive-sales-2026-smaller-baskets-more-orders</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>Festive retail is set to hit Rs 1.55 lakh crore, up 29%, but the average basket fell 1.5%. Here is what more, smaller orders mean for a small shop&#x27;s margins.</description>
+  </item>
   <item>
     <title>India Deep Tech Raised $914M: The Growth Gap</title>
     <link>https://tankmetrics.in/news/india-deep-tech-funding-914-million-growth-gap-2026</link>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>EBITDA calculator for startups India: enter revenue and operating expenses to get EBITDA, the margin and a valuation in ₹ Crores. Free for Indian founders.</description>
-  </item>
-  <item>
-    <title>Employee Utilization Rate Explained Simply</title>
-    <link>https://tankmetrics.in/employee-utilization-rate-explained</link>
-    <guid isPermaLink="true">https://tankmetrics.in/employee-utilization-rate-explained</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>How employee utilization rate is calculated, what a healthy range looks like for a small services team, and why 100% billable is a warning, not a goal.</description>
   </item>
 </channel>
 </rss>

@@ -2,6 +2,67 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "festive-sales-2026-smaller-baskets-more-orders",
+   "title": "Festive Sales Up 29%: Smaller Baskets, More Orders",
+   "dek": "Festive retail is set to hit Rs 1.55 lakh crore, up 29%, but the average basket fell 1.5%. Here is what more, smaller orders mean for a small shop's margins.",
+   "category": "Small Business",
+   "date": "2026-11-18",
+   "date_display": "November 18, 2026",
+   "source_name": "Indian Retailer",
+   "source_url": "https://www.indianretailer.com/article/retail-business/future-retail/more-orders-smaller-baskets-how-indias-festive-shopping",
+   "cta": {
+    "text": "Work out what each order is really worth: enter your revenue and order count, and see your average order value, then test what a smaller basket does to it.",
+    "href": "/average-order-value-aov",
+    "label": "Open the Average Order Value Calculator"
+   },
+   "related": [
+    {
+     "slug": "grocery-store-profit-margin",
+     "title": "Grocery Store Profit Margin: What You Keep"
+    },
+    {
+     "slug": "why-profitable-shop-runs-out-of-cash",
+     "title": "Why a Profitable Shop Still Runs Out of Cash"
+    }
+   ],
+   "body_en": [
+    "<p>India's festive retail season is set to earn more than last year, but each shopper is spending it differently. The festive market is expected to reach Rs 1.50 lakh crore to Rs 1.55 lakh crore in 2026, a rise of 25% to 29% over the Rs 1.20 lakh crore booked in 2025, according to Datum Intelligence's Festive Barometer Study 2026.</p>",
+    "<p>The headline is strong. The detail matters more for a shop owner. Around 20 million more shoppers are expected, people are buying more often, and the average basket value is set to fall 1.5%. Growth is coming from the number of orders, not the size of each one.</p>",
+    "<h2>Why the basket is getting smaller</h2>",
+    "<p>A smaller basket is not a weaker shopper. It is a shopper who spreads the same budget across more trips and more categories. About 72% of households plan to spend more this season, and 48% expect to spend more than 10% extra, but the median planned festive spend is a modest Rs 12,500.</p>",
+    "<p>Payment habits explain part of it too. Just over half of consumers, 51%, now say easy instalment options are a reason they buy, up seven points from last year. People are willing to spend, but they want each payment to be small.</p>",
+    "<p>The mix is shifting as well. Grocery spending is projected to grow 41% this season, while mobile phone sales are expected to grow just 6%. Quick commerce is set to take 16% of festive spending, up from 12%. Everyday essentials, not just big-ticket gifts, are driving the season.</p>",
+    "<h2>The arithmetic for a shop</h2>",
+    "<p>Take a shop that sold Rs 10,00,000 in the festive month last year from 2,000 orders. That is an average order value of Rs 500. This year the shop is busier, so orders rise 20% to 2,400, but the average basket falls 1.5% to about Rs 493. Revenue comes to roughly Rs 11,83,000, up about 18%.</p>",
+    "<p>So far, so good. Now look at what each order costs to serve. Packing, a bag, a delivery run or a card fee can be Rs 20 an order. At 2,000 orders that is Rs 40,000. At 2,400 orders it is Rs 48,000, even though each basket is smaller. The extra 400 orders add Rs 8,000 of cost.</p>",
+    "<p>Say the gross margin on a Rs 500 basket is 20%, or Rs 100. The same 20% on a Rs 493 basket is about Rs 99. The shop earns Rs 1 less on every order, but serves 400 more of them. The real question is whether the extra orders cover the extra cost of serving them.</p>",
+    "<h2>What it means for you</h2>",
+    "<p>First, watch your average order value as a number you manage, not just a number you report. If it drifts down while your cost per order stays flat, your profit per order drifts down with it. Raise it where you can: bundle two fast-moving items, set a small free-delivery threshold, or nudge a shopper to add one more item at the counter.</p>",
+    "<p>Second, count your orders, not just your revenue. A shop that grows revenue 18% on 20% more orders is working harder for each rupee. That is fine if the margin holds, but it means more packing, more trips and more staff time for the same profit. Price that effort in.</p>",
+    "<p>Third, stock for frequency. If grocery is growing 41% and phones only 6%, the fast-moving everyday items are where the repeated trips land. Keep those in stock, because an out-of-stock item sends a shopper to the next shop for the rest of the season.</p>",
+    "<h2>The bottom line</h2>",
+    "<p>The season is still a good one. The money is there. The change is that it now arrives in more, smaller pieces, so a shop that tracks its average order value and its cost per order will keep more of it than a shop that only watches the total.</p>"
+   ],
+   "body_hinglish": [
+    "<p>India ka festive retail season pichhle saal se zyada kamaane wala hai, lekin har grahak paisa alag tarah se kharch kar raha hai. Datum Intelligence ki Festive Barometer Study 2026 ke mutabik festive market 2026 mein Rs 1.50 lakh crore se Rs 1.55 lakh crore tak pahunchne ki umeed hai, jo 2025 ke Rs 1.20 lakh crore se 25% se 29% zyada hai.</p>",
+    "<p>Headline mazboot hai. Chhoti detail dukaan maalik ke liye zyada maayne rakhti hai. Lagbhag 2 crore (20 million) zyada grahak aane ki umeed hai, log zyada baar kharid rahe hain, aur average basket value 1.5% girne wali hai. Growth order ki sankhya se aa rahi hai, har order ke size se nahi.</p>",
+    "<h2>Basket chhota kyun ho raha hai</h2>",
+    "<p>Chhota basket kamzor grahak nahi hai. Yeh woh grahak hai jo same budget ko zyada trips aur zyada categories mein baant raha hai. Karib 72% ghar is season zyada kharch karne ka plan rakhte hain, aur 48% 10% se zyada kharch ki umeed rakhte hain, lekin median planned festive kharch sirf Rs 12,500 hai.</p>",
+    "<p>Payment ki aadat bhi iska ek hissa hai. Aadhe se zyada grahak, 51%, ab kehte hain ki aasaan instalment options unke kharidne ki wajah hain, jo pichhle saal se saat point zyada hai. Log kharch karne ko taiyaar hain, lekin har payment chhoti chahiye.</p>",
+    "<p>Mix bhi badal raha hai. Grocery spending is season 41% badhne ka anumaan hai, jabki mobile phone sales sirf 6% badhne ki umeed hai. Quick commerce festive spending ka 16% le raha hai, jo pehle 12% tha. Rozmarra ki cheezein, sirf badi gifts nahi, season ko chal rahi hain.</p>",
+    "<h2>Dukaan ke liye hisaab</h2>",
+    "<p>Maan lijiye ek dukaan ne pichhle saal festive mahine mein 2,000 orders se Rs 10,00,000 becha. Uska average order value Rs 500 banta hai. Is saal dukaan vyast hai, isliye orders 20% badhkar 2,400 ho jaate hain, lekin average basket 1.5% girkar lagbhag Rs 493 ho jaata hai. Revenue karib Rs 11,83,000 banta hai, jo karib 18% zyada hai.</p>",
+    "<p>Abhi tak sab theek hai. Ab dekhiye har order ko serve karne ka kharch. Packing, ek bag, ek delivery ya card fee Rs 20 per order ho sakti hai. 2,000 orders par yeh Rs 40,000 hai. 2,400 orders par yeh Rs 48,000 hai, chahe har basket chhota ho. Extra 400 orders Rs 8,000 ka kharch jodte hain.</p>",
+    "<p>Maan lijiye Rs 500 ke basket par gross margin 20% hai, yani Rs 100. Usi 20% par Rs 493 ke basket se karib Rs 99 milte hain. Dukaan har order par Rs 1 kam kamaati hai, lekin 400 zyada orders serve karti hai. Asli sawaal yeh hai ki extra orders unhe serve karne ka extra kharch cover karte hain ya nahi.</p>",
+    "<h2>Aapke liye iska matlab</h2>",
+    "<p>Pehla, apne average order value ko ek aise number ki tarah dekhiye jise aap manage karte hain, sirf report nahi karte. Agar yeh girta hai aur aapka cost per order wahi rehta hai, to aapka profit per order bhi girti hai. Jahan ho sake ise badhaiye: do fast-moving items ka bundle banaiye, ek chhota free-delivery threshold rakhiye, ya counter par grahak ko ek aur item jodne ke liye prerit kijiye.</p>",
+    "<p>Doosra, apne orders giniye, sirf revenue nahi. Jo dukaan 20% zyada orders par 18% revenue badhaati hai, woh har rupaye ke liye zyada mehnat kar rahi hai. Yeh theek hai agar margin bana rahe, lekin iska matlab hai zyada packing, zyada trips aur zyada staff time same profit ke liye. Is mehnat ko price mein jodiye.</p>",
+    "<p>Teesra, frequency ke liye stock rakhiye. Agar grocery 41% badh raha hai aur phones sirf 6%, to rozmarra ki fast-moving cheezein wahi hain jahan baar-baar trips aati hain. Unhe stock mein rakhiye, kyunki ek out-of-stock item grahak ko baaki season ke liye agle shop par bhej deta hai.</p>",
+    "<h2>Asli baat</h2>",
+    "<p>Season abhi bhi achha hai. Paisa hai. Farak sirf yeh hai ki ab woh zyada, chhote tukdon mein aata hai, isliye jo dukaan apni average order value aur cost per order track karti hai, woh total ko dekhne wali dukaan se zyada bachaati hai.</p>"
+   ]
+  },
+  {
    "slug": "india-deep-tech-funding-914-million-growth-gap-2026",
    "title": "India Deep Tech Raised $914M: The Growth Gap",
    "dek": "India's deep tech startups raised $914 million in 2025, yet they took only 1.6% of the world's capital. Here is what that funding gap means for a founder.",

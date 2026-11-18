@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T03:32:26Z",
+ "generated": "2026-11-18T01:32:31Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -1704,7 +1704,7 @@
    ]
   },
   {
-   "query": "bmi calculator for men",
+   "query": "bmi calculator for women",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1866,21 +1866,21 @@
    ]
   },
   {
-   "query": "ebitda full form",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda"
-   ]
-  },
-  {
    "query": "ebitda margin and revenue",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "ebitda and margin"
+   ]
+  },
+  {
+   "query": "ebitda means",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda"
    ]
   },
   {
@@ -1965,7 +1965,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2343,7 +2343,7 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "age calculator by year",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2370,7 +2370,7 @@
    ]
   },
   {
-   "query": "bmi calculator for women",
+   "query": "bmi calculator for men",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2523,7 +2523,7 @@
    ]
   },
   {
-   "query": "ebitda means",
+   "query": "ebitda full form",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2613,7 +2613,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3182,7 +3182,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator app",
    "demand": 10,
    "covered": true,
    "score": 6.9,
