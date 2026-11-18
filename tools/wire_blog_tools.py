@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-contribution-margin-explained": [
+        ("/contribution-margin", "Contribution Margin",
+         "put your own selling price and variable cost into the margin this post explains"),
+        ("/break-even-point", "Break-Even Point",
+         "divide your fixed costs by the contribution per unit to find the sales that cover them"),
+    ],
     "blog-freelancer-hourly-rate-explained": [
         ("/freelancer-hourly-rate", "Freelancer Hourly Rate",
          "turn your target income and billable hours into the rate you must charge"),

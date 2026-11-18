@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Wed, 18 Nov 2026 01:37:31 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 04:00:49 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Festive Sales Up 29%: Smaller Baskets, More Orders</title>
@@ -14,6 +14,14 @@
     <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>Festive retail is set to hit Rs 1.55 lakh crore, up 29%, but the average basket fell 1.5%. Here is what more, smaller orders mean for a small shop&#x27;s margins.</description>
+  </item>
+  <item>
+    <title>Contribution Margin: What Each Sale Adds</title>
+    <link>https://tankmetrics.in/contribution-margin-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/contribution-margin-explained</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Contribution margin is selling price minus variable cost. See the formula, a ₹500 worked example, and why the ratio matters more than the rupees you keep.</description>
   </item>
   <item>
     <title>India Deep Tech Raised $914M: The Growth Gap</title>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Customer acquisition cost calculator India: enter marketing spend and new customers to get CAC and the LTV to CAC ratio in ₹. Free for Indian founders.</description>
-  </item>
-  <item>
-    <title>EBITDA Calculator for Startups India - Free Calculator in ₹</title>
-    <link>https://tankmetrics.in/ebitda-calculator-startups-india</link>
-    <guid isPermaLink="true">https://tankmetrics.in/ebitda-calculator-startups-india</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>EBITDA calculator for startups India: enter revenue and operating expenses to get EBITDA, the margin and a valuation in ₹ Crores. Free for Indian founders.</description>
   </item>
 </channel>
 </rss>

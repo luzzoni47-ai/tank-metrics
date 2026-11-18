@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T01:32:31Z",
+ "generated": "2026-11-18T03:32:06Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -1118,7 +1118,7 @@
    ]
   },
   {
-   "query": "down payment calculator",
+   "query": "down payment calculator car",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1704,7 +1704,7 @@
    ]
   },
   {
-   "query": "bmi calculator for women",
+   "query": "bmi calculator for men",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1857,12 +1857,21 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator bike",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "down payment calculator"
+   ]
+  },
+  {
+   "query": "ebitda full form",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda"
    ]
   },
   {
@@ -1872,15 +1881,6 @@
    "score": 8.28,
    "from": [
     "ebitda and margin"
-   ]
-  },
-  {
-   "query": "ebitda means",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda"
    ]
   },
   {
@@ -1992,7 +1992,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio formula",
+   "query": "inventory turnover ratio meaning",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2370,7 +2370,7 @@
    ]
   },
   {
-   "query": "bmi calculator for men",
+   "query": "bmi calculator for women",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2505,7 +2505,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator for mobile",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2523,7 +2523,7 @@
    ]
   },
   {
-   "query": "ebitda full form",
+   "query": "ebitda means",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2658,7 +2658,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio in days",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3345,7 +3345,7 @@
    ]
   },
   {
-   "query": "down payment calculator for mobile",
+   "query": "down payment calculator india",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3459,15 +3459,6 @@
    "score": 6.9,
    "from": [
     "implied valuation"
-   ]
-  },
-  {
-   "query": "inventory turnover ratio in days",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "inventory turnover ratio"
    ]
   },
   {
@@ -3621,6 +3612,15 @@
    "score": 6.9,
    "from": [
     "revenue per employee"
+   ]
+  },
+  {
+   "query": "roi calculator online",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "roi calculator"
    ]
   }
  ]
