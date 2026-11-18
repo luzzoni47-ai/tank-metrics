@@ -676,17 +676,17 @@
    ]
   },
   "ebitdamul": {
-   "what": "EBITDA Multiple valuation ko EBITDA se divide karta hai — earnings before interest, tax, depreciation aur amortisation. Chhote business deals me zyadatar price isi multiple par tay hota hai, kyunki ye ignore karta hai ki current owner ne business ko kaise finance kiya aur accountant ne equipment ki cost kaise phailayi. Do same dukaan, alag loan aur alag depreciation policy ke saath, ek hi EBITDA dikhati hain, isliye multiple like-to-like compare karta hai.",
-   "formula": "EBITDA Multiple = Valuation ÷ EBITDA. Tool aapki valuation ko EBITDA se divide karke times me dikhata hai. 6x ka matlab hai buyer saalana operating profit ke har ek rupaye par chhah rupaye de raha hai. Kyunki EBITDA profit ka measure hai aur revenue nahi, isliye same deal par ye multiple revenue multiple se hamesha kam hota hai.",
-   "when": [
-    "Jab aap business bech ya kharid rahe ho aur aisa price chahiye jo lender ya investor ko normal lage.",
-    "Jab aap kisi offer ko 4-8x range se compare kar rahe ho jisme zyadatar chhote business deals aate hain.",
-    "Jab aap dekhna chahte ho ki asking price sahi lagne ke liye business ko kitna EBITDA chahiye."
-   ],
+   "what": "EBITDA Multiple us sawaal ka jawab deta hai jo business owner tab poochta hai jab buyer offer rakhta hai: business jo profit financing aur accounting decisions se pehle kamata hai, uske har ek rupaye ke badle buyer kitne rupaye de raha hai? Table par rakhi price ko Valuation aur operating profit ko EBITDA daalo, aur tool ek number lauta deta hai jise aap 4-8x band ke saath rakh sakte ho jisme zyadatar chhote Indian deals hote hain. Yahi pricing ki bhasha lenders, brokers aur acquirers share karte hain, isliye is tarah likha price sab turant samajh jaate hain.\n\nEBITDA - earnings before interest, tax, depreciation aur amortisation - ko denominator banaya jaata hai kyunki ye teen cheezein hata deta hai jo buyer waise bhi badlega. Current owner ka loan aur uska interest purani capital structure ka hai; tax is par depend karta hai ki deal kaise structure hogi; depreciation accountant ka asset phailane ka tarika hai jise buyer closing par re-value karega. Do same dukaan, alag financing aur alag depreciation ke saath, ek hi EBITDA dikhati hain, isliye multiple unhe sirf operating business par compare karta hai - jo hi asli cheez hai jiske liye buyer paisa de raha hai.",
+   "formula": "Tool aapki daali do rupee figures leta hai, Valuation aur EBITDA, aur Valuation ko EBITDA se divide karke times me lauta deta hai. Calculator ke apne variables me ye val divided by ebitda hai, isliye 4,50,000 ki valuation aur 1,80,000 ke EBITDA par jawab 2.50x aata hai. Isse constant profit par payback years ki tarah padho: 6x par buyer ko wahi EBITDA ke chhah saal lagte hain price wapas paane me. Kyunki EBITDA revenue se neeche hota hai - operating costs ke baad jo bachta hai - same deal par EBITDA multiple revenue multiple se hamesha bada hota hai. 25% margin wali business jo 6x EBITDA par hai, wahi price 1.5x revenue ke barabar hoti hai.",
    "mistakes": [
-    "Aisi costs add back karna jo asli hain. Owner ne khud ko salary na dekar jo one-off bachat ki, wo permanent add-back nahi hoti, aur buyers usse discount karte hain.",
-    "EBITDA multiple ko revenue multiple se compare karna. Dono alag cheez naapte hain; 6x EBITDA price, 3x revenue price se 'sasta' nahi hai bina margin dekhe.",
-    "Purana EBITDA use karna. Ek achha saal multiple ke denominator ko badha deta hai aur average business sasta dikhta hai."
+    "Add-backs ko permanent maan lena. Jis EBITDA se aap divide kar rahe ho wo normalised figure hai, aur owner jo salary lena band kar chuka hai ya one-off gain book kiya hai, usne ise badha diya hai. Buyer us salary ko asli cost maan kar wapas jodega aur EBITDA chhota kar dega, jisse multiple upar chala jaata hai - to headline 5x chupke se 7x ban jaata hai jab numbers saaf hote hain.",
+    "EBITDA multiple ko revenue multiple se compare karna. Ye price ki alag-alag currency hain: 5x EBITDA deal, 8x revenue deal se 'sasti' nahi hai bina margin dekhe. Kuch bhi tay karne se pehle dono ko ek hi basis par lao.",
+    "Ek strong saal ko EBITDA maan lena. Ek exceptional saal denominator badha deta hai aur multiple gira deta hai, isliye ordinary business sasta dikhta hai. Pichhle barah mahine ya do-teen saal ka average lo - jo figure buyer asli me maanega - warna jo multiple milega wo deal par lagne wala nahi hai."
+   ],
+   "when": [
+    "Jab aap business bech rahe ho aur aisa asking price chahte ho jo lender ya broker aapke size aur sector ke liye normal maane.",
+    "Jab buyer ne price bata diya ho aur counter karne se pehle usse 4-8x band se compare karna ho jisme zyadatar chhote Indian deals aate hain.",
+    "Jab aap ulta hisaab karna chahte ho: buyers jo multiple dete hain wo pata hai aur dekhna hai ki price justify karne ke liye business ko kitna EBITDA dikhana padega."
    ]
   },
   "emi": {
@@ -1313,17 +1313,17 @@
    ]
   },
   "revmul": {
-   "what": "Revenue Multiple batata hai ki company ki valuation uski saalana revenue ka kitna guna hai. Agar business ₹1 crore kamata hai aur koi ₹5 crore de raha hai, to multiple 5x hai. Ye valuation ka sabse tez sanity check hai kyunki revenue par bahas nahi hoti — wo invoice par likha hota hai, kisi assumption sheet par nahi. Profit ke baare me ye kuch nahi batata, isliye isse margin ke saath hi padho.",
-   "formula": "Revenue Multiple = Valuation ÷ Annual Revenue. Tool aapki daali valuation ko saalana revenue se divide karta hai aur jawab times me dikhata hai. 3x ka matlab hai buyer har ek rupaye ki saalana bikri par teen rupaye de raha hai. Koi bhi figure badlo to multiple badal jaata hai — yahi baat hai: wahi ₹5 crore ka price 2x par sasta hai aur 12x par mehenga.",
-   "when": [
-    "Jab founder ke paas offer ya term sheet ho aur wo jaanna chahe ki price normal range me hai ya nahi.",
-    "Jab aap ek hi business ke do companies compare kar rahe ho aur dono ka sirf revenue figure available ho.",
-    "Jab aap apna asking price tay kar rahe ho aur chahte ho ki category me buyers jo multiple dete hain usse peeche chalo."
-   ],
+   "what": "Revenue Multiple kisi bhi valuation ka sabse tez sawaal hai: business saal me jitni sales karta hai, uske har ek rupaye ke badle buyer kitne rupaye de raha hai? Isme sirf do figures chahiye, price aur saalana revenue, aur dono me koi accounting judgement nahi hota - isliye broker isi multiple ko sabse pehle batata hai aur founder ise ek minute me khud check kar leta hai. Jab business early ho, profitable na ho, ya itni tez badh raha ho ki profit jaan-boojh kar growth par kharch ho raha ho, to revenue hi ek aisa figure hota hai jispe dono taraf bharosa karti hain, aur yahi multiple bacha hua ek price language hota hai.\n\nYe ek yardstick hai, verdict nahi. Revenue ye nahi batata ki sales profitable hain, recurring hain ya one-off, isliye ye number sirf margin ke saath hi matlab rakhta hai. Do business dono 3x revenue par chal sakti hain, phir bhi ek price ke laayak hai aur doosri nahi, kyunki pehli har rupaye ka 30% profit me badalti hai aur doosri 5%. Multiple se price ko ek range me rakho, phir margin aur growth se tay karo ki business us range me kahan deserve karti hai.",
+   "formula": "Tool aapki daali valuation ko daale hue saalana revenue se divide karta hai aur jawab times me dikhata hai. Calculator ke variables me ye val divided by rev hai: 4,50,000 ki valuation 1,80,000 ke saalana revenue par 2.50x deti hai. 3x ka matlab hai buyer saalana bikri ke har rupaye par teen rupaye de raha hai. Profitable business ke liye ye do multiples me se hamesha chhota hota hai - revenue EBITDA se bada hota hai, isliye usse divide karne par multiple chhota aata hai - aur revenue aur EBITDA multiples ka gap hi profit margin hota hai. Dono ko saath rakho aur margin khud nikal aata hai.",
    "mistakes": [
-    "Galat revenue lena. Buyer ka matlab hota hai pichhle barah mahine ya agle barah, aur badhti business me dono me 40% ka farak ho sakta hai — multiple uske saath hilta hai.",
-    "High multiple ko achhi khabar maan lena. 5% margin wali business par 10x revenue ka price, 30% margin wali par 3x se kharab hai.",
-    "Recurring aur one-off revenue mila dena. Subscription revenue ko project revenue se kaafi zyada multiple milta hai, isliye blended figure dono taraf ko galat batata hai."
+    "Recurring aur one-off revenue mila dena. Subscription ya retainer revenue ko one-off project ya product sales se kaafi zyada multiple milta hai, isliye blended figure recurring part ki value badha deta hai aur baaki ki ghatta deta hai. Kisi bhi hisse par multiple lagane se pehle dono alag karo.",
+    "High multiple ko achhi khabar maan lena. 5% margin wali business par 10x revenue ka price, 30% margin wali par 3x se kharab hai; multiple utna hi achha jitna uske peeche margin hai.",
+    "Galat barah mahine chunna. Buyer ka matlab pichhle barah mahine ya agle barah hota hai, aur tez badhti business me dono me ek-tihai ka farak ho sakta hai. Multiple usi ke saath hilta hai jo aap chunte ho, isliye do offers compare karne se pehle period fix karo."
+   ],
+   "when": [
+    "Jab aapke paas offer ya term sheet ho aur ek number me jaanna ho ki price aapke sector ki normal range me hai ya nahi.",
+    "Jab aap do companies compare kar rahe ho aur dono ka sirf revenue figure available ho - early-stage ya unprofitable businesses me aam baat hai.",
+    "Jab aap apna asking price tay kar rahe ho aur chahte ho ki category me buyers jo multiple asli me dete hain usse peeche chalo."
    ]
   },
   "roas": {

@@ -676,17 +676,17 @@
    ]
   },
   "ebitdamul": {
-   "what": "The EBITDA Multiple divides a valuation by EBITDA — earnings before interest, tax, depreciation and amortisation. It is the multiple most small-business deals are actually priced on, because it ignores how the current owner financed the business and how the accountant spread the cost of equipment. Two identical shops with different loans and different depreciation policies show the same EBITDA, so the multiple compares like with like.",
-   "formula": "EBITDA Multiple = Valuation ÷ EBITDA. The tool divides the valuation you enter by the EBITDA figure and shows the result in times. A 6x multiple means the buyer pays six rupees for every one rupee of yearly operating profit. Because EBITDA is a profit measure and revenue is not, this multiple is always lower than the revenue multiple for the same deal.",
-   "when": [
-    "You are selling or buying a business and want a price that a lender or an investor will recognise as normal.",
-    "You are comparing an offer against the 4-8x range most small business deals fall in.",
-    "You want to check what EBITDA the business must reach for the asking price to be reasonable."
-   ],
+   "what": "The EBITDA Multiple answers the one question a business owner asks when a buyer puts an offer on the table: for every rupee of operating profit the business throws off before financing and accounting decisions, how many rupees is the buyer paying? Enter the price as Valuation and the operating profit as EBITDA, and the tool returns a single number you can hold against the 4-8x band most small Indian deals actually trade in. It is the pricing language lenders, brokers and acquirers share, so a price expressed this way is understood by all of them the moment they hear it.\n\nEBITDA - earnings before interest, tax, depreciation and amortisation - is used as the denominator precisely because it strips out three things a buyer will change anyway. The current owner's loan and its interest belong to the old capital structure; tax depends on how the deal is structured; depreciation is an accountant's spread of an asset the buyer will re-value at closing. Two identical shops financed differently and depreciating equipment differently show the same EBITDA, so the multiple compares them on the operating business alone - the only part a buyer is really paying for.",
+   "formula": "The tool takes the two rupee figures you type, Valuation and EBITDA, and returns Valuation divided by EBITDA, shown in times. In the calculator's own variables that is val divided by ebitda, so a 4,50,000 valuation against 1,80,000 of EBITDA reads 2.50x. Read the answer as the payback in years at constant profit: at 6x, the buyer needs six years of that same EBITDA to recover the price. Because EBITDA sits below revenue - it is what is left after operating costs - the EBITDA multiple is always the larger of the two multiples for the same deal. A business priced at 6x EBITDA is the same price as 1.5x revenue when margins are 25%.",
    "mistakes": [
-    "Adding back costs that are real. A one-off saving the owner made by not paying himself is not a permanent add-back, and buyers discount it.",
-    "Comparing an EBITDA multiple to a revenue multiple. They measure different things; a 6x EBITDA price is not 'cheaper' than a 3x revenue price without the margin between them.",
-    "Using a stale EBITDA. One good year lifts the multiple's denominator and makes an average business look cheap."
+    "Treating add-backs as permanent. The EBITDA you divide by is a normalised figure, and an owner who has stopped taking a salary, or booked a one-off gain, has inflated it. A buyer re-adds that salary as a real cost and shrinks EBITDA, which pushes the multiple up - so a headline 5x quietly becomes 7x once the numbers are cleaned.",
+    "Comparing an EBITDA multiple against a revenue multiple. They are different currencies of price: a 5x EBITDA deal is not 'cheaper' than an 8x revenue deal without the margin between them. Convert both to the same basis before deciding anything.",
+    "Using a single strong year as the EBITDA. One exceptional year lifts the denominator and drops the multiple, so an ordinary business looks cheaper than it is. Use the last twelve months, or a two-to-three-year average - the figure a buyer will actually accept - or the multiple you get is not the one the deal will be priced on."
+   ],
+   "when": [
+    "You are selling a business and want an asking price a lender or broker will recognise as normal for your size and sector.",
+    "A buyer has named a price and you want to test it against the 4-8x band most small Indian deals fall in before you counter.",
+    "You are working backwards: you know the multiple buyers pay and want to see what EBITDA the business must show to justify the price on the table."
    ]
   },
   "emi": {
@@ -1321,17 +1321,17 @@
    ]
   },
   "revmul": {
-   "what": "The Revenue Multiple divides what a company is being valued at by its yearly revenue. If a business earns ₹1 crore a year and someone offers ₹5 crore for it, the multiple is 5x. It is the quickest sanity check in a valuation because revenue is the hardest number to argue about: it is on the invoices, not on an assumption sheet. It says nothing about profit, so it is only meaningful next to a margin figure.",
-   "formula": "Revenue Multiple = Valuation ÷ Annual Revenue. The tool takes the valuation you enter and divides it by the yearly revenue, then shows the answer as a number of times. A 3x multiple means the buyer is paying three rupees for every one rupee of yearly sales. Change either figure and the multiple moves, which is the point: the same ₹5 crore price is cheap at 2x and expensive at 12x.",
-   "when": [
-    "A founder has an offer or a term sheet and wants to know whether the price is in a normal range.",
-    "You are comparing two companies in the same line of business and revenue is the only figure you have for both.",
-    "You are setting your own asking price and want to work backwards from a multiple buyers in your category actually pay."
-   ],
+   "what": "The Revenue Multiple answers the fastest question in any valuation: for every rupee of sales the business rings up in a year, how many rupees is the buyer offering? It needs only two figures, the price and the annual revenue, and neither is an accounting judgement call - which is why it is the first multiple a broker quotes and the one a founder can sanity-check in a minute. When a business is early, unprofitable, or growing fast enough that profit is deliberately spent on growth, revenue is often the only figure both sides trust, and this multiple is the only price language left.\n\nIt is a yardstick, not a verdict. Revenue says nothing about whether the sales are profitable, recurring or one-off, so the number is only meaningful next to a margin. Two businesses can both trade at 3x revenue while one is worth the price and the other is not, because the first converts 30% of each rupee to profit and the second converts 5%. Use the multiple to place the price in a range, then use margin and growth to decide where in that range the business deserves to sit.",
+   "formula": "The tool divides the valuation you enter by the annual revenue you enter and shows the result in times. In the calculator's variables that is val divided by rev: a 4,50,000 valuation over 1,80,000 of annual revenue gives 2.50x. A 3x multiple means the buyer pays three rupees for every rupee of yearly sales. It is always the smaller of the two multiples for a profitable business - revenue is bigger than EBITDA, so dividing by it gives a smaller multiple - and the gap between the revenue and EBITDA multiples is exactly the profit margin. Hold the two side by side and the margin falls out.",
    "mistakes": [
-    "Using the wrong revenue. A buyer means the last twelve months, or the next twelve, and the two can differ by 40% in a growing business — the multiple swings with it.",
-    "Reading a high multiple as good news. A 10x revenue price on a business with 5% margins is worse than a 3x price on one with 30% margins.",
-    "Mixing recurring and one-off revenue. Subscription revenue earns a far higher multiple than project revenue, so a blended figure misleads both sides."
+    "Mixing recurring and one-off revenue. Subscription or retainer revenue earns a far higher multiple than one-off project or product sales, so a blended figure overstates the value of the recurring part and understates the rest. Split the two before you apply a multiple to either.",
+    "Reading a high multiple as good news. A 10x revenue price on a business keeping 5% of each rupee is worse than a 3x price on one keeping 30%; the multiple is only as good as the margin behind it.",
+    "Choosing the wrong twelve months. A buyer means the last twelve months or the next twelve, and in a fast-growing business those can differ by a third. The multiple swings with whichever you pick, so fix the period before you compare two offers."
+   ],
+   "when": [
+    "You have an offer or a term sheet and want to know, in one number, whether the price is in the normal range for your sector.",
+    "You are comparing two companies and revenue is the only figure you have for both - common for early-stage or unprofitable businesses.",
+    "You are setting your own asking price and want to work back from the multiple buyers in your category actually pay."
    ]
   },
   "roas": {

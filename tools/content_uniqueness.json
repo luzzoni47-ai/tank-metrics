@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.126,
-   "a": "/ebitda-multiple",
-   "b": "/revenue-multiple"
-  },
-  {
    "overlap": 0.12,
    "a": "/lucky-number-calculator",
    "b": "/numerology-calculator"
@@ -39,13 +34,13 @@
   },
   {
    "overlap": 0.111,
-   "a": "/break-even-point",
-   "b": "/gross-profit-and-margin"
+   "a": "/compatibility-calculator",
+   "b": "/love-calculator"
   },
   {
    "overlap": 0.111,
-   "a": "/compatibility-calculator",
-   "b": "/love-calculator"
+   "a": "/break-even-point",
+   "b": "/gross-profit-and-margin"
   },
   {
    "overlap": 0.11,
@@ -61,17 +56,14 @@
    "overlap": 0.108,
    "a": "/nps-calculator",
    "b": "/sip-calculator"
+  },
+  {
+   "overlap": 0.107,
+   "a": "/gross-profit-and-margin",
+   "b": "/percentage-calculator"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/ebitda-multiple",
-   "closest_overlap": 0.126
-  },
-  {
-   "page": "/revenue-multiple",
-   "closest_overlap": 0.126
-  },
   {
    "page": "/lucky-number-calculator",
    "closest_overlap": 0.12
@@ -111,7 +103,15 @@
   {
    "page": "/implied-valuation",
    "closest_overlap": 0.113
+  },
+  {
+   "page": "/pre-money-and-post-money-valuation",
+   "closest_overlap": 0.113
+  },
+  {
+   "page": "/compatibility-calculator",
+   "closest_overlap": 0.111
   }
  ],
- "median_overlap": 0.097
+ "median_overlap": 0.095
 }
