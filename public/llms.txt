@@ -134,6 +134,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [EBITDA Calculator for Startups India](https://tankmetrics.in/ebitda-calculator-startups-india)
 - [EBITDA vs Gross Margin: The Real Difference](https://tankmetrics.in/ebitda-vs-gross-margin)
 - [EMI Calculator for 2 Lakh Loan - Instant](https://tankmetrics.in/emi-calculator-2-lakh-loan)
+- [Employee Productivity Rate: The Formula](https://tankmetrics.in/employee-productivity-rate-explained)
 - [Employee Utilization Rate Explained Simply](https://tankmetrics.in/employee-utilization-rate-explained)
 - [Equity Dilution Calculator India - Cap Table](https://tankmetrics.in/equity-dilution-calculator-india)
 - [FMCG Distributor Margin: Who Earns What](https://tankmetrics.in/fmcg-distributor-margin-explained)

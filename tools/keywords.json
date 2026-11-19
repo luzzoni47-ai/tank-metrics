@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T01:32:16Z",
+ "generated": "2026-11-19T03:32:50Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -13,7 +13,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc",
+   "query": "fd calculator sbi",
    "demand": 12,
    "covered": false,
    "score": 22.08,
@@ -40,6 +40,15 @@
    ]
   },
   {
+   "query": "fd calculator hdfc",
+   "demand": 11,
+   "covered": false,
+   "score": 20.24,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "highest rate of recurring deposit",
    "demand": 11,
    "covered": false,
@@ -55,15 +64,6 @@
    "score": 18.4,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "fd calculator post office",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -193,7 +193,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator post office",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -319,7 +319,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc bank",
+   "query": "fd calculator axis bank",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -454,7 +454,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator hdfc bank",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -602,7 +602,7 @@
    ]
   },
   {
-   "query": "fd calculator monthly payout",
+   "query": "fd calculator icici",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -853,6 +853,15 @@
    "score": 9.2,
    "from": [
     "employee utilization rate"
+   ]
+  },
+  {
+   "query": "fd calculator monthly payout",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -1857,21 +1866,21 @@
    ]
   },
   {
-   "query": "ebitda full form",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda"
-   ]
-  },
-  {
    "query": "ebitda margin and revenue",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "ebitda and margin"
+   ]
+  },
+  {
+   "query": "ebitda means",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda"
    ]
   },
   {
@@ -1983,7 +1992,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio formula",
+   "query": "inventory turnover ratio meaning",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2334,7 +2343,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2514,7 +2523,7 @@
    ]
   },
   {
-   "query": "ebitda means",
+   "query": "ebitda full form",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2556,15 +2565,6 @@
    "score": 7.59,
    "from": [
     "epf calculator"
-   ]
-  },
-  {
-   "query": "fd calculator monthly interest",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -2658,7 +2658,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio in days",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3037,15 +3037,6 @@
    ]
   },
   {
-   "query": "fd calculator pnb",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "fd calculator"
-   ]
-  },
-  {
    "query": "freelance hourly rate netherlands",
    "demand": 4,
    "covered": false,
@@ -3191,7 +3182,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator by year",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3399,6 +3390,15 @@
    ]
   },
   {
+   "query": "fd calculator monthly interest",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "gas agency profit margin india",
    "demand": 10,
    "covered": true,
@@ -3459,15 +3459,6 @@
    "score": 6.9,
    "from": [
     "implied valuation"
-   ]
-  },
-  {
-   "query": "inventory turnover ratio in days",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "inventory turnover ratio"
    ]
   },
   {
@@ -3621,6 +3612,15 @@
    "score": 6.9,
    "from": [
     "revenue per employee"
+   ]
+  },
+  {
+   "query": "roi calculator online",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "roi calculator"
    ]
   }
  ]

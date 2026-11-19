@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Thu, 19 Nov 2026 01:35:12 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 03:39:17 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Mudra Guarantee Extended to 2031: Fee Cut to 0.75%</title>
@@ -14,6 +14,14 @@
     <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>A Rs 5,000 crore fund backs collateral-free Mudra loans up to Rs 20 lakh until 2031, and the guarantee fee fell from 1% to 0.75%. Here is what a shop saves.</description>
+  </item>
+  <item>
+    <title>Employee Productivity Rate: The Formula</title>
+    <link>https://tankmetrics.in/employee-productivity-rate-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/employee-productivity-rate-explained</guid>
+    <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Employee productivity rate explained: the formula, a worked example from a small Indian workshop, and how to compare output per employee fairly every month.</description>
   </item>
   <item>
     <title>Festive Sales Up 29%: Smaller Baskets, More Orders</title>
@@ -238,14 +246,6 @@
     <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>ROAS explained for small businesses: the formula, a worked example, how ROAS differs from ROI, and the break-even ROAS your ads must clear to make a profit.</description>
-  </item>
-  <item>
-    <title>Startup Funding Fell 60% in October: What Changed</title>
-    <link>https://tankmetrics.in/news/startup-funding-october-2026-drops-60-percent</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/startup-funding-october-2026-drops-60-percent</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Startups</category>
-    <description>Indian startups raised $678 million in October 2026, down 47.5% from September and 60.8% from a year earlier. Here is what that drop really tells a founder.</description>
   </item>
 </channel>
 </rss>
