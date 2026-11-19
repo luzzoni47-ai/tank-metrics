@@ -974,18 +974,20 @@
    ]
   },
   "luckynumber": {
-   "what": "Lucky Number Calculator poore date of birth ko 1 se 9 ke beech us ek digit tak le aata hai jise numerology root, birth ya life-path number kehti hai. Ye din, mahine aur saal ke har digit ko jodta hai, phir total ke digits ko baar-baar jodta hai jab tak ek digit na bache. 15 June 1995 ki date 1+5+0+6+1+9+9+5 = 36 banti hai, aur 3+6 = 9, to number 9 hai. Baat bhavishyavani ki nahi — ye us fixed label ki hai jo date of birth apne saath rakhti hai, isliye wahi date hamesha wahi digit deti hai.\n\nYahi number tab chahiye jab koi profile, numerology reading ya naam-chunav ka exercise kisi ke birth number maangta hai, aur jab aap jaan na chahte ho ki kisi ka bataya hua number kis date se bana. Kyunki har date nau digit me se ek par aati hai aur koi zero par nahi, do logon ka number milna nau choice ke hisaab se zyada aam hai — kisi bhi digit ke liye takriban nau me se ek date.",
-   "formula": "Date of birth se hyphen hata kar aath digits jodo. Agar total nau se zyada ho to us total ke digits phir jodo aur tab tak dohrai jab tak 1-9 ka ek digit na bache. 1995-06-15 se 1+5+0+6+1+9+9+5 = 36, phir 3+6 = 9. Mahine aur din do digits me likhe jaate hain, isliye June (06) se 0+6 aur pandrah se 1+5 aata hai; ek digit wala mahina ya din aage zero lagakar likha jaata hai jo kuch nahi jodta. Result ka koi digit zero nahi hota, kyunki loop tab hi rukta hai jab ek digit bacha ho.",
+   "what": "Lucky Number Calculator sirf ek input leta hai, Date of Birth, aur 1 se 9 ke beech ek digit deta hai. Ye date ko aath digits (YYYYMMDD) me likhta hai, sabko jodta hai, aur us total ke digits tab tak jodta rehta hai jab tak ek digit na bache. 15 June 1995 se 1+9+9+5+0+6+1+5 = 36, phir 3+6 = 9.\n\nIs page ki asli baat ye hai ki digits jodne se kisi number ka nau se bhaag dene par bacha remainder kabhi nahi badalta. Isliye jawab seedha date mod 9 hota hai, aur remainder 0 ho to 9 dikhaya jaata hai. Har raasta wahi digit deta hai: din, mahina aur saal alag-alag reduce karke jodo ya aathon digits ek saath. Isi wajah se number nau saal ke cycle me dohrata hai, to 15 June 1995, 15 June 2004 aur 15 June 2013 teeno 9 hain.",
+   "formula": "Date of Birth se hyphen hata kar YYYYMMDD ke aath digits jodo. Jab tak total nau se zyada ho, use uske apne digits ke sum se badal do. 1995-06-15 se 1+9+9+5+0+6+1+5 = 36, phir 3+6 = 9. Loop sirf ek digit par rukta hai, isliye 11 ya 22 yahan master number ke roop me nahi rehte. Digit sum nau se bhaag dene par remainder nahi badalta, to jawab YYYYMMDD mod 9 ke barabar hota hai, aur remainder 0 par 9. Asli date ka total kabhi zero nahi hota, isliye answer hamesha 1-9.",
    "when": [
-    "Koi profile, reading ya naam-chunav ka exercise kisi ki date of birth ka birth number maangta hai.",
-    "Koi apna lucky number batata hai aur aap jaanna chahte ho ki kaun si date of birth us number par aati hai.",
-    "Aap do alag-alag dinon me paida logon ki tulna karke dekhna chahte ho ki unki dates ek hi digit par aati hain ya nahi."
+    "Koi profile ya numerology reading date of birth ka birth number maangti hai aur aapko bina haath se reduce kiye digit chahiye.",
+    "Koi number batata hai aur aap dekhna chahte ho ki kaunsi dates usse bana sakti hain - nau din ya nau saal ke farak wali dates ek hi digit deti hain.",
+    "Aap do logon ki dates compare kar rahe ho aur dekhna chahte ho ki wo ek hi digit par aati hain ya nahi."
    ],
    "mistakes": [
-    "Date ke digits waise hi jod dena jaise likhe hain, hyphen ke saath, un aath digits ke bajaye jo tool use karta hai.",
-    "Do digit ke total par ruk jaana. 36 jawab nahi hai; use phir se ghata kar 9 karna padta hai.",
-    "Digit ko us din ki bhavishyavani maan lena. Ye date of birth ka fixed reduction hai aur ek din se doosre din badalta nahi."
-   ]
+    "Do digit ke total par ruk jaana. 36 answer nahi hai; tool use phir 9 tak reduce karta hai, aur 11, 22 ya 33 ko master number nahi maanta.",
+    "Ye maanna ki order matter karta hai. Din, mahina aur saal alag-alag reduce karke jodne par bhi wahi digit aata hai, kyunki digit sum modulo 9 par same rehta hai.",
+    "Digit ko roz ka forecast samajhna. Ye birth date se fix hota hai aur ek din se doosre din nahi badalta."
+   ],
+   "hi_intro": "Sirf date of birth daalni hai, to jawab type karte hi fix ho jaata hai: 15 June 1995 pehle 36 banti hai aur phir 9.",
+   "hi_outro": "Nau saal baad bhi wahi din 9 hi deta hai - 2004-06-15 aur 2013-06-15 dono 9 par aate hain, kyunki nau saal ka step digit total ko nau ke multiple se badalta hai. Date of Birth badlo aur digit bhi badal jaata hai."
   },
   "marketplace": {
    "what": "Marketplace Fee Calculator dikhata hai ki Amazon, Flipkart ya Meesho par order ke baad platform apna hissa kaatne ke baad aapke account me asli kitna aata hai. Commission headline charge hai, par aksar wo akela nahi hota: shipping, closing fee, payment-gateway charge aur koi fixed other fees bhi usi order se nikalte hain. Tool in sab ko selling price se ghata kar wo amount dikhata hai jo aapko milta hai. Yahi number tay karta hai ki product ko us price par list karna theek hai ya nahi.",
@@ -1100,18 +1102,20 @@
    ]
   },
   "numerology": {
-   "what": "Numerology Calculator aapke naam ke letters aur date of birth ko milakar ek digit banata hai. Har letter ko alphabet me uski position ka number bana diya jaata hai — A ka 1, J ka 10, S ka 19 — sab jod diye jaate hain, total ke digits phir jode jaate hain jab tak ek digit bache, aur date of birth bhi isi tarah reduce karke mila di jaati hai. Number naam ki spelling par depend karta hai, isliye 'Aarav' aur 'Aarav ' alag aa sakte hain.",
-   "formula": "Naam me se letters aur digits ke alawa sab hata do. Bacha har character ka character code jodo, date of birth ke digits jodo, aur running total ko ek digit tak reduce karo, jab tak 1-9 me se ek number bache. Kyunki character code use hota hai, capital letter aur small letter ek hi number nahi dete.",
+   "what": "Numerology Calculator do fields, Name aur Date of Birth, ko milakar 1 se 9 ke beech ek digit banata hai. Ye wo alphabet-position wala sum nahi hai jo zyadatar numerology sites use karti hain: ye tool naam ke har letter ka character code jodta hai, to A ka 65 aur a ka 97 ginta hai, phir date of birth ka digit total jodta hai aur sab kuch ek digit tak reduce karta hai. Sirf \"Aarav\" ka sum 491 banta hai aur 5 rehta hai; 14 August 2019 milao to total 516 hota hai aur 3 aata hai.\n\nKyunki letter ka case badalne par uske code me 32 ka farak aata hai, ek hi naam teen alag jawab de sakta hai: \"Aarav\" 5 hai, \"ARAAV\" 3 hai aur \"aarav\" 1 hai. Space, hyphen aur baaki punctuation ginti se pehle hata diye jaate hain, isliye \"Aarav \" aur \"Aarav\" bilkul same hain. Number sirf letters, unke case aur field me maujood digits par depend karta hai, aur kisi aur cheez par nahi.",
+   "formula": "Name me se letters aur digits ke alawa sab hata do, phir bache har character ka character code jodo (A = 65, a = 97, digit 2 = 50). Date of Birth ke aath digits ka digit sum jodo, phir running total ko uske apne digits ke sum se tab tak badal do jab tak 1 se 9 ka ek digit na bache. \"Aarav\" ka 65+97+114+97+118 = 491, phir 4+9+1 = 14, phir 1+4 = 5. 2019-08-14 (2+0+1+9+0+8+1+4 = 25) jodo to total 516 banta hai, jo 12 aur phir 3 hota hai.",
    "when": [
-    "Jab aap naam ki spelling ya baby name chunne ke liye name-based number dekhna chahte ho.",
-    "Jab naam aur date dono ho aur aap ek combined number chahte ho, do alag nahi.",
-    "Jab aap ek hi naam ki do spellings ka farak dekhna chahte ho."
+    "Aapke paas naam aur date of birth dono hain aur aapko do alag readings ke bajaye ek combined digit chahiye.",
+    "Aap ek hi naam ki spellings ya capitalisation compare kar rahe ho aur dekhna chahte ho ki wo kitna alag aate hain.",
+    "Koi numerology number batata hai aur aap check karna chahte ho ki wo is character-code method se aaya hai ya alphabet-position method se - dono kabhi match nahi karte."
    ],
    "mistakes": [
-    "'Aarav' aur 'aarav' ka same jawab expect karna — tool character code padhta hai, isliye case badalne se number badalta hai.",
-    "Middle name chhod dena aur phir sochna ki number kyun badal gaya.",
-    "Result ko insaan ke baare me advice samajhna, jabki ye sirf unke hi naam se banaya gaya number hai."
-   ]
+    "Ye maanna ki ye classical reading se match karta hai. Alphabet-position numerology \"Aarav\" ko alag number deti hai, kyunki ye tool position ke bajaye character code jodta hai, to dono methods kabhi match nahi karte.",
+    "Ye umeed karna ki aage ka space ya hyphen farak layega. Wo ginti se pehle hat jaate hain, isliye \"Aarav \", \"Aar-av\" aur \"Aarav\" teeno 5 hain.",
+    "Naam me case mila dena. Surname capital me aur pehla naam small me likhne par har letter ka total 32 badal jaata hai, isliye \"Aarav\" (5) aur \"ARAAV\" (3) alag ho jaate hain."
+   ],
+   "hi_intro": "Sirf naam hi kaafi hai: \"Aarav\" ka sum 491 banta hai aur 5 rehta hai. Date of birth milao to wahi field doosre digit par chala jaata hai.",
+   "hi_outro": "14 August 2019 jodne par total 516 hota hai aur jawab 3 aata hai. Naam small letters me likho to ye 1 par gir jaata hai - har letter par 32 ka farak, isliye naam ka case bhi jawab ka hissa hai."
   },
   "numwords": {
    "what": "Number to words number ko Indian tareeke se shabdon mein likhta hai - lakh aur crore, million aur billion nahi. Yeh cheque, invoice, legal document, rent agreement aur har aise form ke liye bana hai jisme amount shabdon mein maangta hai. Cheque par amount shabdon mein likhna isliye zaroori hai ki agar figure mein koi badlav ho toh shabd wala version maanya hota hai, aur banks isi ko dekhte hain. Indian numbering system har teen digit par comma lagata hai, isliye yahan million-billion wala conversion seedha kaam nahi karta.",

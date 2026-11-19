@@ -32,9 +32,9 @@
       }
     ],
     "intro": "Simple Interest, worked end to end. The calculator takes Amount (Principal), Interest Rate, Time; the example below runs one realistic set of those numbers through it.",
-    "outro": "Simple Interest settles it with Interest = Principal x Rate x Time / 100. Change any field above and the answer updates with it.",
+    "outro": "Simple Interest settles it with With p the Amount (Principal), r the Interest Rate in per cent per year and t the Time in years, Interest Earned = p × r × t ÷ 100, and Total Amount = p + Interest Earned. Change any field above and the answer updates with it.",
     "hi_intro": "Simple Interest ka poora hisaab. Tool leta hai Amount (Principal) aur Interest Rate aur Time; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Simple Interest ka formula: Interest = Principal x Rate x Time / 100. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Simple Interest ka formula: p = Amount (Principal), r = Interest Rate (per cent per year) aur t = Time (years) lete hue Interest Earned = p × r × t ÷ 100, aur Total Amount = p + Interest Earned. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "compint": {
     "inputs": {
@@ -54,9 +54,9 @@
       }
     ],
     "intro": "Compound Interest, worked end to end. The calculator takes Amount (Principal), Interest Rate, Time, Times compounded per year; the example below runs one realistic set of those numbers through it.",
-    "outro": "Compound Interest settles it with Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Change any field above and the answer updates with it.",
+    "outro": "Compound Interest settles it with With p the Amount (Principal), r the Interest Rate in per cent per year, t the Time in years and n the Times compounded per year, the balance is p × (1 + r ÷ 100 ÷ n) ^ (n × t). Change any field above and the answer updates with it.",
     "hi_intro": "Compound Interest ka poora hisaab. Tool leta hai Amount (Principal) aur Interest Rate aur Time aur Times compounded per year; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Compound Interest ka formula: Total = Principal × (1 + Rate ÷ Times ÷ 100) ^ (Times × Years). Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Compound Interest ka formula: p = Amount (Principal), r = Interest Rate (per cent per year), t = Time (years) aur n = Times compounded per year lete hue balance = p × (1 + r ÷ 100 ÷ n) ^ (n × t). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "emi": {
     "inputs": {
@@ -151,9 +151,9 @@
       }
     ],
     "intro": "Gross Profit & Margin, worked end to end. The calculator takes Total Revenue, Cost of Goods Sold; the example below runs one realistic set of those numbers through it.",
-    "outro": "Gross Profit & Margin settles it with Gross Profit = Revenue − Cost of Goods Sold, so ₹10,00,000 − ₹6,00,000 = ₹4,00,000. Change any field above and the answer updates with it.",
+    "outro": "Gross Profit & Margin settles it with Gross Profit = rev − cogs. Change any field above and the answer updates with it.",
     "hi_intro": "Gross Profit & Margin ka poora hisaab. Tool leta hai Total Revenue aur Cost of Goods Sold; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Gross Profit & Margin ka formula: Gross Profit = Revenue − Cost of Goods Sold, yaani ₹10,00,000 − ₹6,00,000 = ₹4,00,000. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Gross Profit & Margin ka formula: Gross Profit = rev − cogs. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ebitda": {
     "inputs": {
@@ -328,9 +328,9 @@
       }
     ],
     "intro": "Revenue Multiple, worked end to end. The calculator takes Valuation, Annual Revenue; the example below runs one realistic set of those numbers through it.",
-    "outro": "Revenue Multiple settles it with Revenue Multiple = Valuation ÷ Annual Revenue. Change any field above and the answer updates with it.",
+    "outro": "Revenue Multiple settles it with The tool divides the valuation you enter by the annual revenue you enter and shows the result in times. Change any field above and the answer updates with it.",
     "hi_intro": "Revenue Multiple ka poora hisaab. Tool leta hai Valuation aur Annual Revenue; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Revenue Multiple ka formula: Revenue Multiple = Valuation ÷ Annual Revenue. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Revenue Multiple ka formula: Tool aapki daali valuation ko daale hue saalana revenue se divide karta hai aur jawab times me dikhata hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ebitdamul": {
     "inputs": {
@@ -344,9 +344,9 @@
       }
     ],
     "intro": "EBITDA Multiple, worked end to end. The calculator takes Valuation, EBITDA; the example below runs one realistic set of those numbers through it.",
-    "outro": "EBITDA Multiple settles it with EBITDA Multiple = Valuation ÷ EBITDA. Change any field above and the answer updates with it.",
+    "outro": "EBITDA Multiple settles it with The tool takes the two rupee figures you type, Valuation and EBITDA, and returns Valuation divided by EBITDA, shown in times. Change any field above and the answer updates with it.",
     "hi_intro": "EBITDA Multiple ka poora hisaab. Tool leta hai Valuation aur EBITDA; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "EBITDA Multiple ka formula: EBITDA Multiple = Valuation ÷ EBITDA. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "EBITDA Multiple ka formula: Tool aapki daali do rupee figures leta hai, Valuation aur EBITDA, aur Valuation ko EBITDA se divide karke times me lauta deta hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "dilution": {
     "inputs": {
@@ -738,9 +738,9 @@
       }
     ],
     "intro": "Break-Even Point, worked end to end. The calculator takes Fixed Costs (per month), Selling Price / Unit, Variable Cost / Unit; the example below runs one realistic set of those numbers through it.",
-    "outro": "Break-Even Point settles it with Contribution per unit is Selling Price minus Variable Cost, so ₹250 − ₹150 = ₹100. Change any field above and the answer updates with it.",
+    "outro": "Break-Even Point settles it with Contribution per unit is the selling price minus the variable cost of that unit: sp − vc. Change any field above and the answer updates with it.",
     "hi_intro": "Break-Even Point ka poora hisaab. Tool leta hai Fixed Costs (per month) aur Selling Price / Unit aur Variable Cost / Unit; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Break-Even Point ka formula: Contribution per unit = Selling Price − Variable Cost, yaani ₹250 − ₹150 = ₹100. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Break-Even Point ka formula: Contribution per unit = selling price − variable cost, yaani sp − vc. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "wc": {
     "inputs": {
@@ -1604,9 +1604,9 @@
       }
     ],
     "intro": "PPF Calculator, worked end to end. The calculator takes Yearly Contribution, Annual Interest Rate, Tenure; the example below runs one realistic set of those numbers through it.",
-    "outro": "PPF Calculator settles it with The balance grows at the PPF rate compounded annually on each year's contribution, and the maturity value is the sum at the end of 15 years. Change any field above and the answer updates with it.",
+    "outro": "PPF Calculator settles it with Each year's contribution compounds at the PPF rate for every year it stays in the account, so the maturity is the future value of an ordinary annuity, not a simple multiplication. Change any field above and the answer updates with it.",
     "hi_intro": "PPF Calculator ka poora hisaab. Tool leta hai Yearly Contribution aur Annual Interest Rate aur Tenure; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "PPF Calculator ka formula: Balance PPF rate par saalana compound hota hai har saal ki contribution par, aur maturity value 15 saal ke ant mein kul hoti hai. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "PPF Calculator ka formula: Har saal ki contribution PPF rate par utne saal compound hoti hai jitne wo account mein rehti hai, isliye maturity ek ordinary annuity ka future value hai, seedha multiplication nahi. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "fd": {
     "inputs": {
@@ -1651,9 +1651,9 @@
       }
     ],
     "intro": "RD (Recurring Deposit) Calculator, worked end to end. The calculator takes Monthly Deposit, Annual Interest Rate, Tenure; the example below runs one realistic set of those numbers through it.",
-    "outro": "RD (Recurring Deposit) Calculator settles it with Maturity = sum of P x (1 + r / 4)^(quarters remaining), over each monthly instalment. Change any field above and the answer updates with it.",
+    "outro": "RD (Recurring Deposit) Calculator settles it with Each monthly instalment earns interest for the months it remains in the account, so the first deposit compounds the longest and the last one for a single month. Change any field above and the answer updates with it.",
     "hi_intro": "RD (Recurring Deposit) Calculator ka poora hisaab. Tool leta hai Monthly Deposit aur Annual Interest Rate aur Tenure; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "RD (Recurring Deposit) Calculator ka formula: Maturity = sum of P x (1 + r / 4)^(bache quarters), har monthly instalment par. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "RD (Recurring Deposit) Calculator ka formula: Har monthly instalment utne mahine interest kamata hai jitne wo account mein rehta hai, isliye pehli deposit sabse lamba compound karti hai aur aakhri sirf ek mahina. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "epf": {
     "inputs": {
@@ -1721,7 +1721,7 @@
     "rows": [
       {
         "l": "Exact Age",
-        "v": "31 years, 4 months"
+        "v": "31 years, 5 months"
       }
     ],
     "intro": "Age Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
@@ -1756,10 +1756,10 @@
         "v": 3
       }
     ],
-    "intro": "Numerology Calculator, worked end to end. The calculator takes Name, Date of Birth; the example below runs one realistic set of those numbers through it.",
-    "outro": "Numerology Calculator settles it with Take the name with everything except letters and digits removed. Change any field above and the answer updates with it.",
-    "hi_intro": "Numerology Calculator ka poora hisaab. Tool leta hai Name aur Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Numerology Calculator ka formula: Naam me se letters aur digits ke alawa sab hata do. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "intro": "The name alone is enough: \"Aarav\" sums to 491 and reduces to 5. Add a birth date and the same field moves to a different digit.",
+    "outro": "With 14 August 2019 folded in, the total is 516 and the answer is 3. Type the name in lower case instead and it falls to 1 - a 32-point gap per letter, which is why the case of the name is part of the answer.",
+    "hi_intro": "Sirf naam hi kaafi hai: \"Aarav\" ka sum 491 banta hai aur 5 rehta hai. Date of birth milao to wahi field doosre digit par chala jaata hai.",
+    "hi_outro": "14 August 2019 jodne par total 516 hota hai aur jawab 3 aata hai. Naam small letters me likho to ye 1 par gir jaata hai - har letter par 32 ka farak, isliye naam ka case bhi jawab ka hissa hai."
   },
   "zodiac": {
     "inputs": {
@@ -1772,9 +1772,9 @@
       }
     ],
     "intro": "Zodiac Sign Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
-    "outro": "Zodiac Sign Calculator settles it with Each sign owns a fixed band of the calendar: Capricorn runs 22 December to 19 January, Aquarius 20 January to 18 February, Pisces 19 February to 20 March, Aries 21 March to 19 April, Taurus 20 April to 20 May, Gemini 21 May to 20 June, Cancer 21 June to 22 July, Leo 23 July to 22 August, Virgo 23 August to 22 September, Libra 23 September to 22 October, Scorpio 23 October to 21 November, Sagittarius 22 November to 21 December. Change any field above and the answer updates with it.",
+    "outro": "Zodiac Sign Calculator settles it with Each sign owns a fixed band of the calendar. Change any field above and the answer updates with it.",
     "hi_intro": "Zodiac Sign Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Zodiac Sign Calculator ka formula: Har sign ka calendar me ek fixed band hai: Capricorn 22 December se 19 January, Aquarius 20 January se 18 February, Pisces 19 February se 20 March, Aries 21 March se 19 April, Taurus 20 April se 20 May, Gemini 21 May se 20 June, Cancer 21 June se 22 July, Leo 23 July se 22 August, Virgo 23 August se 22 September, Libra 23 September se 22 October, Scorpio 23 October se 21 November, aur Sagittarius 22 November se 21 December. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Zodiac Sign Calculator ka formula: Har sign ka calendar me ek fixed band hai. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "rashi": {
     "inputs": {
@@ -1787,7 +1787,7 @@
       }
     ],
     "intro": "Rashi (Moon Sign) Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
-    "outro": "Rashi (Moon Sign) Calculator settles it with The moon covers the whole zodiac in about 27.3 days, so it spends roughly 2.25 days in each rashi. Change any field above and the answer updates with it.",
+    "outro": "Rashi (Moon Sign) Calculator settles it with The moon completes the zodiac in about 27.3 days, so it spends roughly 2.25 days in each of the twelve rashis. Change any field above and the answer updates with it.",
     "hi_intro": "Rashi (Moon Sign) Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
     "hi_outro": "Rashi (Moon Sign) Calculator ka formula: Chaand poora zodiac lagbhag 27.3 din me tay karta hai, yaani har rashi me takreeban 2.25 din. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
@@ -1816,10 +1816,10 @@
         "v": 9
       }
     ],
-    "intro": "Lucky Number Calculator, worked end to end. The calculator takes Date of Birth; the example below runs one realistic set of those numbers through it.",
-    "outro": "Lucky Number Calculator settles it with Strip the hyphens from the date of birth and add the eight digits. Change any field above and the answer updates with it.",
-    "hi_intro": "Lucky Number Calculator ka poora hisaab. Tool leta hai Date of Birth; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Lucky Number Calculator ka formula: Date of birth se hyphen hata kar aath digits jodo. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "intro": "A date of birth is the only input, so the answer is fixed the moment you type it: 15 June 1995 adds to 36 and then to 9.",
+    "outro": "Nine years later the same day still returns 9 - 2004-06-15 and 2013-06-15 both reduce to 9, because a nine-year step changes the digit total by a multiple of nine. Change the Date of Birth and the digit moves with it.",
+    "hi_intro": "Sirf date of birth daalni hai, to jawab type karte hi fix ho jaata hai: 15 June 1995 pehle 36 banti hai aur phir 9.",
+    "hi_outro": "Nau saal baad bhi wahi din 9 hi deta hai - 2004-06-15 aur 2013-06-15 dono 9 par aate hain, kyunki nau saal ka step digit total ko nau ke multiple se badalta hai. Date of Birth badlo aur digit bhi badal jaata hai."
   },
   "compatibility": {
     "inputs": {
