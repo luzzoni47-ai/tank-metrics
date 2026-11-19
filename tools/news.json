@@ -2,6 +2,65 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "mudra-loan-guarantee-extended-2031-fee-cut-075",
+   "title": "Mudra Guarantee Extended to 2031: Fee Cut to 0.75%",
+   "dek": "A Rs 5,000 crore fund backs collateral-free Mudra loans up to Rs 20 lakh until 2031, and the guarantee fee fell from 1% to 0.75%. Here is what a shop saves.",
+   "category": "Small Business",
+   "date": "2026-11-19",
+   "date_display": "November 19, 2026",
+   "source_name": "Prime Minister's Office",
+   "source_url": "https://www.pmindia.gov.in/en/news_updates/cabinet-approves-continuation-of-credit-guarantee-fund-for-micro-units/",
+   "cta": {
+    "text": "Work out what a loan really costs: enter the amount, rate and tenure, and see the monthly EMI and the total interest before you sign.",
+    "href": "/loan-emi-calculator",
+    "label": "Open the Loan EMI Calculator"
+   },
+   "related": [
+    {
+     "slug": "msme-loan-eligibility",
+     "title": "MSME Loan Eligibility: What Banks Check"
+    },
+    {
+     "slug": "why-profitable-shop-runs-out-of-cash",
+     "title": "Why a Profitable Shop Still Runs Out of Cash"
+    }
+   ],
+   "body_en": [
+    "<h2>What the Cabinet approved</h2>",
+    "<p>The Union Cabinet, chaired by Prime Minister Narendra Modi, has extended the Credit Guarantee Fund for Micro Units (CGFMU) for five more years, up to March 31, 2031. The scheme carries a corpus of Rs 5,000 crore and is expected to support Rs 12.6 lakh crore in loans under the Pradhan Mantri Mudra Yojana over that period.</p>",
+    "<p>The fund does not lend money itself. It gives banks and other lenders a government guarantee through the National Credit Guarantee Trustee Company (NCGTC), so a small borrower can get a loan without pledging collateral or a third-party guarantor.</p>",
+    "<h2>What changed for a borrower</h2>",
+    "<p>Two numbers matter most. First, the annual guarantee fee that lenders pay has been cut from 1% to 0.75%. Second, the cover now applies to Mudra loans of up to Rs 20 lakh, the same ceiling as before, but at the lower fee.</p>",
+    "<p>The fee is a cost to the lender, not a direct charge to you, but it works its way into what a bank can offer. When the risk is cheaper to cover, the loan is easier to approve and the pricing is more competitive.</p>",
+    "<h2>The arithmetic on a Rs 10 lakh loan</h2>",
+    "<p>Take a working-capital loan of Rs 10 lakh. The guarantee fee is charged on the guaranteed amount, not on the interest rate. At 1% a year that is Rs 10,000. At 0.75% it is Rs 7,500. The saving is Rs 2,500 a year on the cover.</p>",
+    "<p>Now look at the loan itself. At an interest rate of 12% a year over 36 months, the monthly EMI is about Rs 33,200, and the total interest over the term is close to Rs 1.96 lakh. Over five years the fee cut alone saves about Rs 12,500 on the same Rs 10 lakh. That is small, but it is money the shop keeps.</p>",
+    "<h2>Who is eligible</h2>",
+    "<p>The cover applies to three kinds of credit: Mudra loans of up to Rs 20 lakh to micro enterprises, overdrafts of up to Rs 10,000 on Pradhan Mantri Jan Dhan Yojana accounts, and loans to self-help groups where the portfolio is between Rs 10 lakh and Rs 20 lakh.</p>",
+    "<p>The revised scheme applies to loans extended under PMMY during the current Finance Commission cycle, from FY 2026-27 to FY 2030-31. Self-help groups keep their own fee: 0.25% in the first year and 0.50% after that.</p>",
+    "<h2>What it means for your shop</h2>",
+    "<p>As of September 2026, more than 60.36 crore loans worth Rs 43.34 lakh crore have been sanctioned under PMMY since it began. CGFMU, launched in January 2016, is what let many of those borrowers qualify in the first place.</p>",
+    "<p>If you run a shop, a workshop or a small trading business, the practical point is simple: collateral-free borrowing up to Rs 20 lakh stays open for five more years, and the cost of the guarantee behind it is lower. If a lender offers you a Mudra loan, ask what rate it carries and what the EMI will be. Use the Loan EMI Calculator to put your own number on it, and compare that monthly figure with what the money earns before you sign.</p>"
+   ],
+   "body_hinglish": [
+    "<h2>Cabinet ne kya approve kiya</h2>",
+    "<p>Union Cabinet, jiski adhyakshta PM Narendra Modi karte hain, ne Credit Guarantee Fund for Micro Units (CGFMU) ko paanch saal ke liye badha diya hai, March 31, 2031 tak. Scheme ke paas Rs 5,000 crore ka corpus hai aur isse Pradhan Mantri Mudra Yojana ke tahat agle paanch saalon mein Rs 12.6 lakh crore ke loan support hone ki umeed hai.</p>",
+    "<p>Ye fund khud paisa nahi deta. Ye banks aur doosre lenders ko National Credit Guarantee Trustee Company (NCGTC) ke through sarkari guarantee deta hai, jisse chhota karobar bina collateral ya guarantee ke loan le sakta hai.</p>",
+    "<h2>Borrower ke liye kya badla</h2>",
+    "<p>Do number sabse zyada maayne rakhte hain. Pehla, lenders jo annual guarantee fee dete hain wo 1% se 0.75% ho gayi hai. Doosra, cover ab Rs 20 lakh tak ke Mudra loans par lagti hai, pehle jaisa hi ceiling, lekin kam fee par.</p>",
+    "<p>Fee lender ka kharcha hai, aap par seedha charge nahi, par iska asar bank ke offer par padta hai. Jab risk cover karna sasta ho jata hai, loan approve karna aasan aur pricing competitive ho jati hai.</p>",
+    "<h2>Rs 10 lakh loan par ganit</h2>",
+    "<p>Rs 10 lakh ka working-capital loan lo. Guarantee fee guaranteed amount par lagti hai, interest rate par nahi. 1% par saal ka Rs 10,000. 0.75% par Rs 7,500. Cover par saal ki bachat Rs 2,500.</p>",
+    "<p>Ab loan khud dekho. 12% saalana interest par 36 mahine ka EMI lagbhag Rs 33,200 banta hai, aur poore term ka total interest karib Rs 1.96 lakh. Paanch saal mein sirf fee cut se usi Rs 10 lakh par karib Rs 12,500 bachte hain. Thoda hai, par dukaan ke liye apna paisa hai.</p>",
+    "<h2>Kaun eligible hai</h2>",
+    "<p>Cover teen tarah ke credit par lagti hai: Rs 20 lakh tak ke Mudra loans micro enterprises ko, Pradhan Mantri Jan Dhan Yojana accounts par Rs 10,000 tak ka overdraft, aur self-help groups ke loans jinka portfolio Rs 10 lakh se Rs 20 lakh ke beech ho.</p>",
+    "<p>Revised scheme PMMY ke tahat current Finance Commission cycle ke loans par lagti hai, FY 2026-27 se FY 2030-31 tak. Self-help groups ki apni fee wahi rahti hai: pehle saal 0.25% aur uske baad 0.50%.</p>",
+    "<h2>Aapki dukaan ke liye iska matlab</h2>",
+    "<p>September 2026 tak PMMY ke tahat 60.36 crore se zyada loans, Rs 43.34 lakh crore ke, sanction ho chuke hain. CGFMU, jo January 2016 mein shuru hua, ne hi bahut se borrowers ko pehli baar eligible banaya.</p>",
+    "<p>Agar aap dukaan, workshop ya chhota trading business chalate hain, to practical baat ye hai: Rs 20 lakh tak collateral-free borrowing paanch saal aur khuli rahegi, aur uske peeche guarantee ki cost kam hai. Agar lender Mudra loan offer kare, to puchho uski rate kya hai aur EMI kitna hoga. Loan EMI Calculator se apna number nikalo, aur sign karne se pehle us monthly figure ko apni kamai se compare karo.</p>"
+   ]
+  },
+  {
    "slug": "festive-sales-2026-smaller-baskets-more-orders",
    "title": "Festive Sales Up 29%: Smaller Baskets, More Orders",
    "dek": "Festive retail is set to hit Rs 1.55 lakh crore, up 29%, but the average basket fell 1.5%. Here is what more, smaller orders mean for a small shop's margins.",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T03:32:06Z",
+ "generated": "2026-11-19T01:32:16Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
@@ -13,7 +13,7 @@
    ]
   },
   {
-   "query": "fd calculator sbi",
+   "query": "fd calculator hdfc",
    "demand": 12,
    "covered": false,
    "score": 22.08,
@@ -40,15 +40,6 @@
    ]
   },
   {
-   "query": "fd calculator hdfc",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "fd calculator"
-   ]
-  },
-  {
    "query": "highest rate of recurring deposit",
    "demand": 11,
    "covered": false,
@@ -64,6 +55,15 @@
    "score": 18.4,
    "from": [
     "cagr calculator"
+   ]
+  },
+  {
+   "query": "fd calculator post office",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -193,7 +193,7 @@
    ]
   },
   {
-   "query": "fd calculator post office",
+   "query": "fd calculator axis bank",
    "demand": 9,
    "covered": false,
    "score": 16.56,
@@ -319,7 +319,7 @@
    ]
   },
   {
-   "query": "fd calculator axis bank",
+   "query": "fd calculator hdfc bank",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -454,7 +454,7 @@
    ]
   },
   {
-   "query": "fd calculator hdfc bank",
+   "query": "fd calculator icici",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -602,7 +602,7 @@
    ]
   },
   {
-   "query": "fd calculator icici",
+   "query": "fd calculator monthly payout",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -853,15 +853,6 @@
    "score": 9.2,
    "from": [
     "employee utilization rate"
-   ]
-  },
-  {
-   "query": "fd calculator monthly payout",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "fd calculator"
    ]
   },
   {
@@ -1118,7 +1109,7 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1857,7 +1848,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator car",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1992,7 +1983,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2505,7 +2496,7 @@
    ]
   },
   {
-   "query": "down payment calculator for mobile",
+   "query": "down payment calculator bike",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2568,6 +2559,15 @@
    ]
   },
   {
+   "query": "fd calculator monthly interest",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "fd fixed deposit rates",
    "demand": 11,
    "covered": true,
@@ -2613,7 +2613,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2658,7 +2658,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio in days",
+   "query": "inventory turnover ratio meaning",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3037,6 +3037,15 @@
    ]
   },
   {
+   "query": "fd calculator pnb",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "fd calculator"
+   ]
+  },
+  {
    "query": "freelance hourly rate netherlands",
    "demand": 4,
    "covered": false,
@@ -3345,7 +3354,7 @@
    ]
   },
   {
-   "query": "down payment calculator india",
+   "query": "down payment calculator for mobile",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3390,15 +3399,6 @@
    ]
   },
   {
-   "query": "fd calculator monthly interest",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "fd calculator"
-   ]
-  },
-  {
    "query": "gas agency profit margin india",
    "demand": 10,
    "covered": true,
@@ -3435,7 +3435,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator cgst sgst",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3459,6 +3459,15 @@
    "score": 6.9,
    "from": [
     "implied valuation"
+   ]
+  },
+  {
+   "query": "inventory turnover ratio in days",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "inventory turnover ratio"
    ]
   },
   {
@@ -3612,15 +3621,6 @@
    "score": 6.9,
    "from": [
     "revenue per employee"
-   ]
-  },
-  {
-   "query": "roi calculator online",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "roi calculator"
    ]
   }
  ]
