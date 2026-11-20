@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-20T01:33:05Z",
+ "generated": "2026-11-20T03:32:10Z",
  "seed_count": 149,
- "suggestion_count": 1044,
+ "suggestion_count": 1050,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -46,6 +46,15 @@
    "score": 20.24,
    "from": [
     "fd calculator"
+   ]
+  },
+  {
+   "query": "highest rate of recurring deposit",
+   "demand": 11,
+   "covered": false,
+   "score": 20.24,
+   "from": [
+    "rd recurring deposit calculator"
    ]
   },
   {
@@ -1731,6 +1740,15 @@
    ]
   },
   {
+   "query": "calculate my moon sign",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "rashi moon sign calculator"
+   ]
+  },
+  {
    "query": "cash conversion cycle formula",
    "demand": 12,
    "covered": true,
@@ -1920,7 +1938,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2106,6 +2124,15 @@
    "score": 8.28,
    "from": [
     "property valuation"
+   ]
+  },
+  {
+   "query": "recurring deposit formula",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "rd recurring deposit calculator"
    ]
   },
   {
@@ -2505,7 +2532,7 @@
    ]
   },
   {
-   "query": "epf calculator with current balance",
+   "query": "epf calculator with existing balance",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2559,7 +2586,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3327,7 +3354,7 @@
    ]
   },
   {
-   "query": "epf calculator on salary",
+   "query": "epf calculator with current balance",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3381,7 +3408,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator online",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3498,7 +3525,7 @@
    ]
   },
   {
-   "query": "ppf calculator online",
+   "query": "ppf calculator sbi",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3594,33 +3621,6 @@
    "score": 6.9,
    "from": [
     "run rate"
-   ]
-  },
-  {
-   "query": "salary take home",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "salary take home"
-   ]
-  },
-  {
-   "query": "share market calculator sip",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "market share calculator"
-   ]
-  },
-  {
-   "query": "stamp duty calculator mumbai",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "stamp duty calculator"
    ]
   }
  ]

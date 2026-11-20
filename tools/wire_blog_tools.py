@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-property-valuation-explained": [
+        ("/property-valuation-calculator", "Property Valuation Calculator",
+         "multiply your own carpet area by the going rate per square foot to get the value this post explains"),
+        ("/built-up-area-vs-carpet-area", "Built-up Area vs Carpet Area",
+         "see how much bigger the built-up figure is than the carpet area you actually use"),
+    ],
     "blog-employee-productivity-rate-explained": [
         ("/revenue-per-employee", "Revenue per Employee",
          "divide your yearly revenue by headcount to get the output per person this post explains"),

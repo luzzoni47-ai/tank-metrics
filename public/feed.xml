@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 20 Nov 2026 01:40:18 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 03:43:18 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Boba Bhai&#x27;s $18M Round: What One Store Must Earn</title>
@@ -14,6 +14,14 @@
     <pubDate>Fri, 20 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>Boba Bhai raised $18 million with 120 stores and Rs 70 crore of FY26 sales. Here is what each outlet must ring up, and why fast growth still burns cash.</description>
+  </item>
+  <item>
+    <title>Property Valuation: Area × Rate Explained</title>
+    <link>https://tankmetrics.in/property-valuation-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/property-valuation-explained</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Property valuation in India: how carpet area times the going per sq ft rate sets a flat&#x27;s worth, what moves that rate, and why a bank&#x27;s valuation is lower.</description>
   </item>
   <item>
     <title>Mudra Guarantee Extended to 2031: Fee Cut to 0.75%</title>
@@ -238,14 +246,6 @@
     <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
     <category>Funding</category>
     <description>GIVA raised over $100 million from Multiples PE. Revenue hit about Rs 865 crore in FY26 and it plans 1,000 stores. Here is the maths for a shop owner.</description>
-  </item>
-  <item>
-    <title>HSN Code for Online Sellers</title>
-    <link>https://tankmetrics.in/hsn-code-for-online-sellers</link>
-    <guid isPermaLink="true">https://tankmetrics.in/hsn-code-for-online-sellers</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>HSN codes explained for online sellers: what the eight digits mean, how the code sets your GST slab, and how to classify your own products the right way.</description>
   </item>
 </channel>
 </rss>
