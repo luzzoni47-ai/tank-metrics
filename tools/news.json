@@ -2,6 +2,79 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "boba-bhai-18-million-series-b-120-stores-store-maths",
+   "title": "Boba Bhai's $18M Round: What One Store Must Earn",
+   "dek": "Boba Bhai raised $18 million with 120 stores and Rs 70 crore of FY26 sales. Here is what each outlet must ring up, and why fast growth still burns cash.",
+   "category": "Small Business",
+   "date": "2026-11-20",
+   "date_display": "November 20, 2026",
+   "source_name": "Inc42",
+   "source_url": "https://inc42.com/buzz/boba-bhai-bags-18-mn-to-build-a-multi-brand-qsr-chain",
+   "cta": {
+    "text": "A food chain is only as good as one store's numbers. Check what a single outlet must ring up each month to cover rent, staff and ingredients and still pay you back.",
+    "href": "/franchise-store-roi",
+    "label": "Open the Franchise / Store ROI Calculator"
+   },
+   "related": [
+    {
+     "slug": "franchise-roi-explained",
+     "title": "Franchise ROI: What a Store Really Earns"
+    },
+    {
+     "slug": "coffee-shop-profit-margin",
+     "title": "Coffee Shop Profit Margin: What You Keep"
+    },
+    {
+     "slug": "revenue-multiple-calculator-india",
+     "title": "Revenue Multiple Calculator India"
+    }
+   ],
+   "body_en": [
+    "<p>Boba Bhai, the bubble tea and Korean street food chain, has raised $18 million in a Series B round, which is about Rs 168 crore at today's rate of roughly Rs 93 to the dollar. US-based Left Lane Capital is the new investor, leading the round with BIG Capital, which had already backed the company and put in more. Titan Capital and other existing investors also joined. Founder Dhruv Kohli told Inc42 that the round was mostly new money with a small secondary piece, where some early shares changed hands.</p>",
+    "<h2>What the company looks like today</h2>",
+    "<p>The brand started in October 2023 and now runs 120 stores, serving more than 3 lakh orders a month through counters and delivery apps. It reported Rs 70 crore of revenue in FY26, up 145% from Rs 28 crore the year before. The loss widened too, from Rs 9.5 crore to Rs 12.5 crore. Sales grew faster than the loss, which is the part investors read as progress.</p>",
+    "<p>The company says it is now billing about Rs 12.5 crore a month and has already crossed its whole FY26 revenue in the first half of FY27. Sales are split almost evenly between food and drinks, and same-store sales grew 30% to 40% during FY26, which means the older shops sold more rather than the growth coming only from new ones.</p>",
+    "<h2>The store maths: what one outlet has to ring up</h2>",
+    "<p>Rs 70 crore of revenue spread across 120 stores is a little under Rs 60 lakh a store in a year, or about Rs 5 lakh a month. That is the single most useful number in the story, because every outlet has to clear its own rent, wages and ingredients out of it.</p>",
+    "<p>Now work back from the other side. Rs 12.5 crore a month across 3.5 lakh orders is roughly Rs 350 an order. Spread 3.5 lakh orders over 120 outlets and each store serves about 3,000 orders a month, or about 100 a day. So the model is a small ticket, many times a day, which is why counter speed and repeat visits matter more here than a big-ticket menu.</p>",
+    "<p>Try the cost side with round numbers. Take a store ringing up Rs 5 lakh a month. Ingredients and packaging at 30% take Rs 1.5 lakh. Rent at 10% of sales is Rs 50,000. Four staff at Rs 25,000 each is Rs 1 lakh. Power, delivery commission and wastage at 10% is another Rs 50,000. That leaves Rs 1.5 lakh, or 30% of sales, before the company's own overheads. A Rs 45 lakh fit-out paid back out of Rs 1.5 lakh a month takes 30 months, two and a half years, which is why investors ask about payback period and not just growth.</p>",
+    "<h2>Why a growing chain still loses money</h2>",
+    "<p>The Rs 12.5 crore loss against Rs 70 crore of revenue is about 18 paise lost on every rupee of sale. That is not a shop losing money on a cup of tea. It is the cost of building a head office, a supply chain, a cold chain for boba and dairy, and a team to open 10 or 20 new doors a month. New stores also carry rent and staff before they reach full sales, so a chain that opens fast books losses even when each mature store is profitable.</p>",
+    "<p>Kohli has said the existing stores, the supply chain and the knowledge of what works in a location are the reason Left Lane came in. That is a store-level argument: the investor is buying the belief that store number 200 will look like store number 50, not like a first attempt.</p>",
+    "<h2>From 120 stores to 300</h2>",
+    "<p>The plan is to reach 250 to 300 outlets within 12 months, which means roughly 130 to 180 new doors. Put the Rs 168 crore against that and it is about Rs 1 crore of capital per new store if every rupee went into fit-outs. It will not all go there: part is for senior hires and for new brands.</p>",
+    "<p>Check what that implies for sales per store. If the chain doubles its store count and each store keeps ringing up about Rs 5 lakh a month, revenue roughly doubles too. If new stores come in at Rs 3 lakh a month instead, the average falls even though the total rises. That is the risk in any fast roll-out, and it is why same-store growth of 30% to 40% is worth more than a press release about a bigger store count.</p>",
+    "<p>The company is also widening the menu. Ramen is now about 5% of sales, and packaged Korean chips are on Blinkit in five cities, with quick commerce running at nearly 1,500 orders a day. A second brand, Oreco Mexican Kitchen, has two outlets in Bengaluru and is still being tested. New cities named for the next three to six months are Kolkata, Ahmedabad and Chandigarh, with more tier 2 and tier 3 towns such as Nashik after that.</p>",
+    "<h2>What it means if you run a food outlet</h2>",
+    "<p>Three lessons. First, know your per-store number. Rs 5 lakh a month is not a target someone picked; it is what this chain's 120 stores average. Work out yours the same way: yearly sales divided by the number of counters.</p>",
+    "<p>Second, watch the ticket and the count separately. Rs 350 an order at 100 orders a day is a very different business from Rs 700 an order at 50 orders a day, even though both ring up about Rs 5 lakh a month. Staffing, kitchen size and packaging cost change with the mix, so fix the one you can actually control.</p>",
+    "<p>Third, growth needs cash before it needs profit. Every new outlet takes a fit-out, a deposit, stock and a month of wages before it earns anything. The chain raised Rs 168 crore instead of waiting for profit to fund the next 150 stores, and the arithmetic above shows why: at Rs 1.5 lakh a month of store-level cash, a Rs 45 lakh fit-out takes 30 months to return.</p>",
+    "<p>For a shop owner the takeaway is unglamorous. A brand worth a large cheque is a set of stores whose numbers repeat. Get one store's rent, ingredients, staff and monthly sales onto a single sheet, and you can tell whether opening the second one is a plan or a hope.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Boba Bhai, bubble tea aur Korean street food chain, ne Series B round mein $18 million raise kiye hain, jo aaj ke lagbhag Rs 93 per dollar rate par takriban Rs 168 crore banta hai. US-based Left Lane Capital naya investor hai, jisne BIG Capital ke saath round lead kiya; BIG Capital pehle bhi invested tha aur is baar zyada paisa daala. Titan Capital aur baaki purane investors bhi shaamil hue. Founder Dhruv Kohli ne Inc42 ko bataya ki round zyadatar naya paisa hai aur thoda chhota secondary hissa hai, jisme kuch purane shares haath badle.</p>",
+    "<h2>Company aaj kaisi dikhti hai</h2>",
+    "<p>Brand October 2023 mein shuru hua aur ab 120 stores chalata hai, jo mahine mein 3 lakh se zyada orders dete hain, counter aur delivery apps dono se. FY26 mein company ne Rs 70 crore revenue report ki, jo pichhle saal ke Rs 28 crore se 145% zyada hai. Loss bhi badha, Rs 9.5 crore se Rs 12.5 crore. Sale loss se tez badhi, aur investors isi ko progress padhte hain.</p>",
+    "<p>Company kehti hai ki ab mahine ki billing lagbhag Rs 12.5 crore hai aur FY27 ki pehli chhah maheene mein hi pura FY26 revenue cross ho gaya. Sale lagbhag barabar food aur drinks mein bantti hai, aur FY26 mein same-store sales 30% se 40% badhi, matlab purani dukaanein bhi zyada bech rahi hain, growth sirf naye stores se nahi aayi.</p>",
+    "<h2>Store ka ganit: ek outlet ko kitna karna hai</h2>",
+    "<p>Rs 70 crore revenue ko 120 stores par baanto to ek store ka saalana lagbhag Rs 60 lakh se thoda kam banta hai, ya mahine ka kareeb Rs 5 lakh. Yeh story ka sabse kaam ka number hai, kyunki har outlet ko apna rent, salary aur ingredients isi se nikaalne hain.</p>",
+    "<p>Ab doosri taraf se gino. Mahine ke Rs 12.5 crore ko 3.5 lakh orders par baanto to ek order lagbhag Rs 350 ka banta hai. 3.5 lakh orders ko 120 outlets par baanto to ek store mahine mein kareeb 3,000 orders karta hai, ya rozana lagbhag 100 orders. Matlab model hai chhota ticket, din mein kai baar, isiliye yahan counter ki speed aur dobara aane wale customer bade menu se zyada maayne rakhte hain.</p>",
+    "<p>Cost side gol numbers se dekho. Maan lo ek store mahine mein Rs 5 lakh karta hai. Ingredients aur packaging 30% par Rs 1.5 lakh le jaate hain. Rent sale ka 10% yaani Rs 50,000. Chaar staff Rs 25,000 each par Rs 1 lakh. Bijli, delivery commission aur wastage 10% par Rs 50,000. Bachta hai Rs 1.5 lakh, ya sale ka 30%, company ke apne kharchon se pehle. Rs 45 lakh ka fit-out Rs 1.5 lakh mahine se nikaalne mein 30 mahine lagte hain, dhai saal, isiliye investors sirf growth nahi, payback period bhi poochhte hain.</p>",
+    "<h2>Badhti chain phir bhi loss kyun karti hai</h2>",
+    "<p>Rs 70 crore revenue par Rs 12.5 crore loss matlab har rupee sale par lagbhag 18 paise ka loss. Yeh koi dukaan chai ke cup par paisa khone wali baat nahi hai. Yeh head office, supply chain, boba aur dairy ki cold chain, aur mahine mein 10 se 20 naye darwaze kholne wali team banane ka kharcha hai. Naye stores puri sale tak pahunchne se pehle hi rent aur staff uthate hain, isiliye tez khulne wali chain loss dikhati hai chahe har purana store profit de raha ho.</p>",
+    "<p>Kohli ne kaha hai ki maujooda stores, supply chain aur location ki samajh hi Left Lane ke invest karne ki wajah hai. Yeh store-level daleel hai: investor is bharose par kharid raha hai ki store number 200, store number 50 jaisa dikhega, pehli koshish jaisa nahi.</p>",
+    "<h2>120 stores se 300 tak</h2>",
+    "<p>Plan hai 12 mahine mein 250 se 300 outlets, matlab lagbhag 130 se 180 naye darwaze. Rs 168 crore ko is par baanto to har naye store ke liye lagbhag Rs 1 crore capital banta hai, agar pura paisa fit-out mein jaaye. Pura wahan nahi jaayega: kuch hissa senior hiring aur naye brands ke liye hai.</p>",
+    "<p>Dekho iska per-store sale par kya matlab hai. Agar chain apne stores dugne karti hai aur har store mahine ka lagbhag Rs 5 lakh karta rehta hai to revenue bhi lagbhag dugna ho jaata hai. Agar naye stores mahine ke Rs 3 lakh par aayein to average gir jaata hai chahe total badhe. Yeh har tez roll-out ka risk hai, isiliye 30% se 40% same-store growth, bade store count ki khabar se zyada keemti hai.</p>",
+    "<p>Company menu bhi badha rahi hai. Ramen ab sale ka lagbhag 5% hai, aur packaged Korean chips paanch shehron mein Blinkit par hain, jahan quick commerce rozana kareeb 1,500 orders de raha hai. Doosra brand, Oreco Mexican Kitchen, Bengaluru mein do outlets ke saath abhi test phase mein hai. Agle teen se chhah mahine ke liye naam liye gaye naye shehar Kolkata, Ahmedabad aur Chandigarh hain, aur uske baad Nashik jaise tier 2 aur tier 3 kasbe.</p>",
+    "<h2>Agar aap food outlet chalate hain to iska matlab</h2>",
+    "<p>Teen sabak. Pehla, apna per-store number jaano. Mahine ka Rs 5 lakh kisi ne target tay nahi kiya; yahi is chain ke 120 stores ka average hai. Apna bhi isi tarah nikaalo: saalana sale ko counters ki ginti se divide karo.</p>",
+    "<p>Doosra, ticket aur order count alag-alag dekho. Rs 350 ka order rozana 100 baar, aur Rs 700 ka order rozana 50 baar, dono mahine ka lagbhag Rs 5 lakh karte hain, par dono bilkul alag business hain. Staffing, kitchen ka size aur packaging ka kharcha mix ke saath badalta hai, isiliye wahi pakdo jo aap sach mein control kar sakte ho.</p>",
+    "<p>Teesra, growth ko profit se pehle cash chahiye. Har naya outlet fit-out, deposit, stock aur ek mahine ki salary maangta hai, kuch kamane se pehle. Chain ne agle 150 stores profit se kholne ke intezaar ke bajaye Rs 168 crore raise kiye, aur upar ka ganit batata hai kyun: store-level cash Rs 1.5 lakh mahine par Rs 45 lakh ka fit-out nikaalne mein 30 mahine lagte hain.</p>",
+    "<p>Dukaan chalane wale ke liye sabak bina chamak wala hai. Bada cheque lene layak brand woh hota hai jiske stores ke numbers dohraate hain. Ek store ka rent, ingredients, staff aur mahine ki sale ek hi sheet par likh lo, phir aap bata sakte ho ki doosra store kholna plan hai ya sirf umeed.</p>"
+   ]
+  },
+  {
    "slug": "mudra-loan-guarantee-extended-2031-fee-cut-075",
    "title": "Mudra Guarantee Extended to 2031: Fee Cut to 0.75%",
    "dek": "A Rs 5,000 crore fund backs collateral-free Mudra loans up to Rs 20 lakh until 2031, and the guarantee fee fell from 1% to 0.75%. Here is what a shop saves.",

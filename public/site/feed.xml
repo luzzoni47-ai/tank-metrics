@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Thu, 19 Nov 2026 05:41:17 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 01:38:37 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Boba Bhai&#x27;s $18M Round: What One Store Must Earn</title>
+    <link>https://tankmetrics.in/news/boba-bhai-18-million-series-b-120-stores-store-maths</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/boba-bhai-18-million-series-b-120-stores-store-maths</guid>
+    <pubDate>Fri, 20 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>Boba Bhai raised $18 million with 120 stores and Rs 70 crore of FY26 sales. Here is what each outlet must ring up, and why fast growth still burns cash.</description>
+  </item>
   <item>
     <title>Mudra Guarantee Extended to 2031: Fee Cut to 0.75%</title>
     <link>https://tankmetrics.in/news/mudra-loan-guarantee-extended-2031-fee-cut-075</link>
@@ -238,14 +246,6 @@
     <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>HSN codes explained for online sellers: what the eight digits mean, how the code sets your GST slab, and how to classify your own products the right way.</description>
-  </item>
-  <item>
-    <title>Return on Ad Spend (ROAS) Explained</title>
-    <link>https://tankmetrics.in/roas-explained</link>
-    <guid isPermaLink="true">https://tankmetrics.in/roas-explained</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>ROAS explained for small businesses: the formula, a worked example, how ROAS differs from ROI, and the break-even ROAS your ads must clear to make a profit.</description>
   </item>
 </channel>
 </rss>

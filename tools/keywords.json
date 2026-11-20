@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-19T03:32:50Z",
+ "generated": "2026-11-20T01:33:05Z",
  "seed_count": 149,
- "suggestion_count": 1050,
+ "suggestion_count": 1044,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -46,15 +46,6 @@
    "score": 20.24,
    "from": [
     "fd calculator"
-   ]
-  },
-  {
-   "query": "highest rate of recurring deposit",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "rd recurring deposit calculator"
    ]
   },
   {
@@ -136,15 +127,6 @@
    "score": 18.4,
    "from": [
     "property valuation"
-   ]
-  },
-  {
-   "query": "runway 34",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -247,6 +229,15 @@
    ]
   },
   {
+   "query": "runway 34",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "runway"
+   ]
+  },
+  {
    "query": "salary estimator after taxes",
    "demand": 9,
    "covered": false,
@@ -307,15 +298,6 @@
    "score": 14.72,
    "from": [
     "cagr compound annual growth rate"
-   ]
-  },
-  {
-   "query": "employee productivity rate",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "employee utilization rate"
    ]
   },
   {
@@ -583,15 +565,6 @@
    ]
   },
   {
-   "query": "employee productivity rate formula",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "employee utilization rate"
-   ]
-  },
-  {
    "query": "employee utilization rate",
    "demand": 16,
    "covered": true,
@@ -844,15 +817,6 @@
    "score": 9.2,
    "from": [
     "ebitda"
-   ]
-  },
-  {
-   "query": "employee productivity rate epr",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "employee utilization rate"
    ]
   },
   {
@@ -1767,15 +1731,6 @@
    ]
   },
   {
-   "query": "calculate my moon sign",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "rashi moon sign calculator"
-   ]
-  },
-  {
    "query": "cash conversion cycle formula",
    "demand": 12,
    "covered": true,
@@ -1866,21 +1821,21 @@
    ]
   },
   {
+   "query": "ebitda full form",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda"
+   ]
+  },
+  {
    "query": "ebitda margin and revenue",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "ebitda and margin"
-   ]
-  },
-  {
-   "query": "ebitda means",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda"
    ]
   },
   {
@@ -1965,7 +1920,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1992,7 +1947,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2151,15 +2106,6 @@
    "score": 8.28,
    "from": [
     "property valuation"
-   ]
-  },
-  {
-   "query": "recurring deposit formula",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "rd recurring deposit calculator"
    ]
   },
   {
@@ -2343,7 +2289,7 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "age calculator by year",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2523,7 +2469,7 @@
    ]
   },
   {
-   "query": "ebitda full form",
+   "query": "ebitda means",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2559,7 +2505,7 @@
    ]
   },
   {
-   "query": "epf calculator with existing balance",
+   "query": "epf calculator with current balance",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2613,7 +2559,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2658,7 +2604,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio in days",
+   "query": "inventory turnover ratio meaning",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2811,7 +2757,7 @@
    ]
   },
   {
-   "query": "ppf calculator sbi",
+   "query": "ppf calculator post office monthly",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3182,7 +3128,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator app",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3381,7 +3327,7 @@
    ]
   },
   {
-   "query": "epf calculator with current balance",
+   "query": "epf calculator on salary",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3435,7 +3381,7 @@
    ]
   },
   {
-   "query": "gst calculator cgst sgst",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3459,6 +3405,15 @@
    "score": 6.9,
    "from": [
     "implied valuation"
+   ]
+  },
+  {
+   "query": "inventory turnover ratio in days",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "inventory turnover ratio"
    ]
   },
   {
@@ -3543,7 +3498,7 @@
    ]
   },
   {
-   "query": "ppf calculator monthly",
+   "query": "ppf calculator online",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3621,6 +3576,51 @@
    "score": 6.9,
    "from": [
     "roi calculator"
+   ]
+  },
+  {
+   "query": "royalty deal in business",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "royalty deal"
+   ]
+  },
+  {
+   "query": "run rate meaning",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "run rate"
+   ]
+  },
+  {
+   "query": "salary take home",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "salary take home"
+   ]
+  },
+  {
+   "query": "share market calculator sip",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "market share calculator"
+   ]
+  },
+  {
+   "query": "stamp duty calculator mumbai",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "stamp duty calculator"
    ]
   }
  ]
