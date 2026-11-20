@@ -396,17 +396,17 @@
    ]
   },
   "ccc": {
-   "what": "The cash conversion cycle is how many days your money is stuck in the business between paying for stock and getting paid by customers. A business can be profitable on paper and still run out of cash, and this is usually why. You buy inventory, hold it, sell it on credit, and only then collect. Every day in that chain is a day your money is working for someone else. Cutting the cycle is often faster than growing sales.",
-   "formula": "CCC = Days Inventory + Days Receivables − Days Payables. If stock sits for 60 days, customers take 45 days to pay, and you pay suppliers in 30 days, the cycle is 60 + 45 − 30 = 75 days. That means 75 days of costs have to be funded from somewhere - usually your own pocket or a loan. Negotiating 45-day supplier terms instead of 30 cuts the cycle to 60 days with no extra sales at all.",
+   "what": "Cash Conversion Cycle answers one question: how many days pass between the moment you pay a supplier and the moment a customer's payment reaches your bank. It takes three balance-sheet lines and turns each into days - how long stock sits before it sells, how long debtors take to settle, how long your own creditors let you wait - then nets the three into a single figure you can plan around.\n\nThe decision it settles is how much short-term funding the business actually needs. Two shops holding the same stock at the same margin can sit forty days apart on this measure purely because of the credit terms each one negotiated, and the one on the longer cycle is the one that needs an overdraft. Reach for it when you set credit periods for customers, when you agree supplier terms, or when a lender wants a cash-credit limit justified in days rather than in rupees.",
+   "formula": "Inventory Days = Inventory ÷ COGS (yearly) × 365. Receivable Days = Receivables ÷ Revenue (yearly) × 365. Payable Days = Payables ÷ Purchases (yearly) × 365. Cash Conversion Cycle = Inventory Days + Receivable Days − Payable Days.\n\nIn the worked example, stock of ₹6,00,000 against yearly COGS of ₹36,50,000 gives 60 inventory days; receivables of ₹9,00,000 against yearly revenue of ₹73,00,000 gives 45 receivable days; payables of ₹3,00,000 against yearly purchases of ₹36,50,000 gives 30 payable days. The cycle is 60 + 45 − 30 = 75 days, so seventy-five days of purchases have to be funded before your customers settle.",
    "when": [
-    "You are profitable but constantly short of cash and want to see where it is stuck.",
-    "You are negotiating payment terms with a supplier or a large customer.",
-    "You are planning how much working capital you need before the busy season."
+    "A customer wants 60-day terms instead of the usual 30 and you need to cost the extra thirty days of funding before you agree.",
+    "You are asking a bank for a cash-credit limit and have to express the limit in days of purchases rather than a round number.",
+    "Profit looks healthy every month, yet the bank balance dips each time a large purchase order goes out."
    ],
    "mistakes": [
-    "Measuring the cycle on the best customer and not the average one. One slow payer can carry the whole number.",
-    "Extending payables to improve the ratio without noticing that suppliers then raise prices or stop supplying.",
-    "Confusing profit with cash. A profitable business with a 90-day cycle can still fail."
+    "Dividing stock by revenue instead of COGS for inventory days. Revenue carries your margin on top of cost, so the answer comes out shorter than the stock is really sitting.",
+    "Using the 31 March balance sheet for a seasonal business. Stock and debtors are close to their lowest on that date, so the cycle flatters you for the other eleven months - average the quarter around your peak instead.",
+    "Stretching payables past the agreed due date to shorten the cycle. The days leave the calculation and return as a supplier demanding cash on delivery or cutting your credit line."
    ]
   },
   "churn": {
@@ -1525,17 +1525,17 @@
    ]
   },
   "wc": {
-   "what": "Working capital is the money tied up in running the business day to day: stock on the shelf, plus what customers owe you, minus what you owe suppliers. A business can be profitable and still run out of cash, because profit is an accounting number and working capital is cash. The calculator turns the three lines into one figure and a cycle length, so you can see how many days your money is locked up before it comes back.",
-   "formula": "Working Capital = Current Assets - Current Liabilities. Cash Conversion Cycle = Days Inventory + Days Receivable - Days Payable.",
+   "what": "Working capital is what the business owns in a form it can turn into cash inside a year, minus what it must settle inside that same year: stock, debtors and bank balance on one side, creditors, short-term borrowing and statutory dues on the other. It is a snapshot of the buffer under your feet, not a measure of what the business earns.\n\nThe question this page settles is whether the firm can ride out a weak month without borrowing. Two firms with identical profit can sit at opposite ends of this figure, and the one with the thinner buffer is the one that has to discount when a large payment arrives late. A bank reads it before anything else on an overdraft file, and a figure that falls two years running is the earliest sign that growth is being funded from the wrong pocket.",
+   "formula": "Working Capital = Current Assets − Current Liabilities. Current Assets is the total of stock, debtors and cash; Current Liabilities is the total of creditors, short-term borrowing and statutory dues. With current assets of ₹9,00,000 and current liabilities of ₹6,00,000 the tool returns ₹3,00,000, and the current ratio - current assets ÷ current liabilities - comes to 1.5, which is the figure most lenders ask for beside it. A ratio below 1 means the dues falling in the year are larger than the assets that are meant to pay them.",
    "when": [
-    "You are profitable but the bank account keeps going to zero and you need to see where the money sits.",
-    "A customer asks for 60-day terms and you want to price what that costs you.",
-    "You are applying for a working-capital limit and need the number a bank will ask for."
+    "You are filling in a cash-credit or overdraft application and the bank has asked for current assets and current liabilities.",
+    "You want to know whether one slow month can be survived without drawing on the lender's line.",
+    "You are comparing two year-ends and need to see whether the business is growing on its own money or on its creditors'."
    ],
    "mistakes": [
-    "Counting only stock and forgetting receivables. Slow-paying customers tie up more cash than slow-moving stock.",
-    "Treating a negative working capital as always bad. For a subscription business with prepaid plans it is healthy.",
-    "Ignoring the cycle length. 50 lakh tied up for 90 days is a very different business from the same amount tied up for 15."
+    "Leaving out the current portion of a term loan. The twelve months of principal falling due are a current liability, and dropping them makes the buffer look larger than the bank will accept.",
+    "Reading a negative figure as a failure. A business that collects before it pays - subscriptions, advance bookings, a cash-and-carry counter - is funded by its customers and runs negative by design.",
+    "Comparing this year with last without asking what moved. A buffer that fell because debtors grew is a collection problem; one that fell because stock grew is a buying problem, and the two need different fixes."
    ]
   },
   "zodiac": {

@@ -93,6 +93,12 @@ OVERRIDES: dict[str, dict[str, str]] = {
     "wacc": {"eq": "9000000", "debt": "3000000", "re": "18", "rd": "12", "tax": "25"},
     "invturn": {"cogs": "4800000", "inv": "800000"},
     "revperemp": {"revenue": "12000000", "emp": "12"},
+    # Without this, "COGS (yearly)" hits the "year" rule above and becomes 5,
+    # so the page shipped "3,90,55,000 days". Round figures that resolve to
+    # 60 inventory, 45 receivable and 30 payable days - the copy quotes them.
+    "ccc": {"inv": "600000", "cogs": "3650000", "recv": "900000",
+            "rev": "7300000", "pay": "300000", "purch": "3650000"},
+    "wc": {"ca": "900000", "cl": "600000"},
 }
 
 

@@ -396,17 +396,17 @@
    ]
   },
   "ccc": {
-   "what": "Cash conversion cycle batata hai ki stock ke liye paisa dene se lekar customers se paisa aane tak aapka paisa business mein kitne din phasa rehta hai. Business kagaz par profitable ho sakta hai aur phir bhi cash khatam ho sakta hai - aur aksar yahi wajah hoti hai. Aap inventory kharidte ho, rakhte ho, credit par bechte ho, aur tab jaakar collect karte ho. Us chain ka har din aapke paise ka din hai jo kisi aur ke liye kaam kar raha hai. Cycle ghataana aksar sales badhane se tez hota hai.",
-   "formula": "CCC = Days Inventory + Days Receivables − Days Payables. Stock 60 din padha, customers 45 din mein pay karte hain, aur aap suppliers ko 30 din mein dete ho, toh cycle 60 + 45 − 30 = 75 din. Matlab 75 din ki cost kahin se fund karni padegi - aksar apni jeb se ya loan se. Supplier terms 30 ki jagah 45 kar do toh cycle 60 din ho jaata hai, bina ek rupee extra sales ke.",
+   "what": "Cash Conversion Cycle ek hi sawaal ka jawab deta hai: supplier ko paisa dene ke din se lekar customer ka payment bank mein aane ke din tak kitne din lagte hain. Ye teen balance-sheet lines ko dinon mein badal deta hai - stock kitne din pada rehta hai, debtors kitne din mein settle karte hain, aur apne creditors aapko kitne din rukne dete hain - aur teeno ko jodkar ek aisa number bana deta hai jiske hisaab se planning ho sake.\n\nYe page jo faisla settle karta hai wo hai business ko kitni short-term funding chahiye. Do dukaan same stock aur same margin par bhi sirf credit terms ki wajah se chalees din alag ho sakti hain, aur lambi cycle wali dukaan ko hi overdraft chahiye hota hai. Isko tab dekho jab customer ke credit period tay kar rahe ho, supplier terms par baat kar rahe ho, ya bank ko cash-credit limit rupees ki jagah days mein justify karni ho.",
+   "formula": "Inventory Days = Inventory ÷ COGS (yearly) × 365. Receivable Days = Receivables ÷ Revenue (yearly) × 365. Payable Days = Payables ÷ Purchases (yearly) × 365. Cash Conversion Cycle = Inventory Days + Receivable Days − Payable Days.\n\nExample mein ₹6,00,000 stock aur ₹36,50,000 yearly COGS se 60 inventory days aate hain; ₹9,00,000 receivables aur ₹73,00,000 yearly revenue se 45 receivable days; ₹3,00,000 payables aur ₹36,50,000 yearly purchases se 30 payable days. Cycle = 60 + 45 − 30 = 75 din, matlab customers ke settle karne se pehle pachhattar din ki purchases fund karni padti hain.",
    "when": [
-    "Profitable ho par hamesha cash ki kami rahe, aur dekhna hai paisa kahaan phasa hai.",
-    "Supplier ya bade customer ke saath payment terms negotiate kar rahe ho.",
-    "Busy season se pehle kitna working capital chahiye ye plan kar rahe ho."
+    "Customer 30 ki jagah 60 din ki terms maang raha hai aur haan bolne se pehle un extra tees din ka funding cost nikalna hai.",
+    "Bank se cash-credit limit maang rahe ho aur limit ko round figure ki jagah purchases ke dinon mein dikhana hai.",
+    "Har mahine profit theek dikhta hai, par har bade purchase order ke saath bank balance dip kar jaata hai."
    ],
    "mistakes": [
-    "Cycle best customer par measure karna, average par nahi. Ek slow payer poora number kheench leta hai.",
-    "Ratio sudharne ke liye payables badhana bina ye dekhe ki suppliers phir price badha dete hain ya supply band kar dete hain.",
-    "Profit ko cash samajh lena. 90-din cycle wala profitable business bhi doob sakta hai."
+    "Inventory days ke liye COGS ki jagah revenue se divide karna. Revenue mein margin bhi juda hota hai, isliye jawab chhota aa jaata hai aur stock asal mein jitne din pada hai wo dikhta nahi.",
+    "Seasonal business mein 31 March ki balance sheet use karna. Us tareekh par stock aur debtors sabse kam hote hain, toh cycle baaki gyarah mahine ke liye achhi dikhti hai - peak ke aas-paas ke quarter ka average lo.",
+    "Cycle chhota dikhane ke liye payables ko due date se aage kheench dena. Din calculation se gayab ho jaate hain aur supplier cash-on-delivery maangne lagta hai ya credit line kaat deta hai."
    ]
   },
   "churn": {
@@ -1513,17 +1513,17 @@
    ]
   },
   "wc": {
-   "what": "Working capital wo paisa hai jo business ke rozana kaam me bandha hota hai: shelf par stock, plus jo customers aapko dena hai, minus jo aap suppliers ko dena hai. Business profitable ho sakta hai aur phir bhi cash khatam ho jaye, kyunki profit accounting ka number hai aur working capital cash ka. Calculator teen lines ko ek figure aur ek cycle length me badal deta hai, taaki dikhe ki aapka paisa kitne din ghoom kar wapas aata hai.",
-   "formula": "Working Capital = Current Assets - Current Liabilities. Cash Conversion Cycle = Days Inventory + Days Receivable - Days Payable.",
+   "what": "Working capital wo hai jo business ek saal ke andar cash mein badal sakta hai, minus wo jo usi saal mein dena hai: ek taraf stock, debtors aur bank balance, doosri taraf creditors, short-term borrowing aur statutory dues. Ye aapke buffer ka snapshot hai, kamai ka naap nahi.\n\nYe page ye faisla karta hai ki kamzor mahina bina udhaar liye nikal sakte ho ya nahi. Do firm ka profit same ho sakta hai par ye number bilkul ulta ho sakta hai, aur patla buffer wala hi bada payment late aane par discount par bechta hai. Overdraft file par bank sabse pehle yahi dekhta hai, aur do saal lagatar girta hua figure sabse pehla signal hai ki growth galat jeb se fund ho rahi hai.",
+   "formula": "Working Capital = Current Assets − Current Liabilities. Current Assets matlab stock, debtors aur cash ka total; Current Liabilities matlab creditors, short-term borrowing aur statutory dues ka total. Current assets ₹9,00,000 aur current liabilities ₹6,00,000 ho toh tool ₹3,00,000 deta hai, aur current ratio - current assets ÷ current liabilities - 1.5 banta hai, jo bank iske saath poochta hai. 1 se neeche ratio ka matlab saal ki dues us assets se zyada hain jo unhe pay karne the.",
    "when": [
-    "Aap profitable ho par bank account baar-baar zero hota hai aur dekhna hai paisa kahan baitha hai.",
-    "Customer 60 din ki terms maangta hai aur aapko uska cost price karna hai.",
-    "Aap working-capital limit ke liye apply kar rahe ho aur bank jo number poochega wo chahiye."
+    "Cash-credit ya overdraft application bhar rahe ho aur bank current assets aur current liabilities maang raha hai.",
+    "Dekhna hai ki ek slow mahina lender ki line chhue bina nikal jaayega ya nahi.",
+    "Do saal ke year-end compare kar rahe ho aur jaanna hai ki business apne paise par badh raha hai ya creditors ke paise par."
    ],
    "mistakes": [
-    "Sirf stock ginna aur receivables bhoolna. Slow-paying customers slow stock se zyada cash bandhte hain.",
-    "Negative working capital ko hamesha kharab maanna. Prepaid plans wale subscription business ke liye ye healthy hai.",
-    "Cycle length ignore karna. 50 lakh 90 din ke liye bandha aur wahi raqam 15 din ke liye - do alag business hain."
+    "Term loan ka current portion chhod dena. Agle barah mahine ka principal current liability hai, aur use hata dene se buffer bank ke hisaab se bada dikhta hai.",
+    "Negative figure ko failure samajhna. Jo business paisa pehle leta hai aur baad mein deta hai - subscription, advance booking, cash-and-carry counter - wo customers se fund hota hai aur jaan-boojhkar negative rehta hai.",
+    "Pichle saal se compare karna bina dekhe ki kya badla. Debtors badhne se gira buffer collection ki problem hai, stock badhne se gira buffer buying ki problem hai - dono ka ilaaj alag hai."
    ]
   },
   "zodiac": {

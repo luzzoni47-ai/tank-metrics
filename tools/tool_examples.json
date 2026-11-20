@@ -744,51 +744,51 @@
   },
   "wc": {
     "inputs": {
-      "Current Assets": "450000 ₹",
-      "Current Liabilities": "180000 ₹"
+      "Current Assets": "900000 ₹",
+      "Current Liabilities": "600000 ₹"
     },
     "rows": [
       {
         "l": "Working Capital",
-        "v": "₹2,70,000"
+        "v": "₹3,00,000"
       }
     ],
     "intro": "Working Capital, worked end to end. The calculator takes Current Assets, Current Liabilities; the example below runs one realistic set of those numbers through it.",
-    "outro": "Working Capital settles it with Working Capital = Current Assets - Current Liabilities. Change any field above and the answer updates with it.",
+    "outro": "Working Capital settles it with Working Capital = Current Assets − Current Liabilities. Change any field above and the answer updates with it.",
     "hi_intro": "Working Capital ka poora hisaab. Tool leta hai Current Assets aur Current Liabilities; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Working Capital ka formula: Working Capital = Current Assets - Current Liabilities. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Working Capital ka formula: Working Capital = Current Assets − Current Liabilities. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ccc": {
     "inputs": {
-      "Inventory": "450000 ₹",
-      "COGS (yearly)": "5 ₹",
-      "Receivables": "180000 ₹",
-      "Revenue (yearly)": "5 ₹",
-      "Payables": "95000 ₹",
-      "Purchases (yearly)": "5 ₹"
+      "Inventory": "600000 ₹",
+      "COGS (yearly)": "3650000 ₹",
+      "Receivables": "900000 ₹",
+      "Revenue (yearly)": "7300000 ₹",
+      "Payables": "300000 ₹",
+      "Purchases (yearly)": "3650000 ₹"
     },
     "rows": [
       {
         "l": "Inventory Days",
-        "v": "3,28,50,000"
+        "v": "60"
       },
       {
         "l": "Receivable Days",
-        "v": "1,31,40,000"
+        "v": "45"
       },
       {
         "l": "Payable Days",
-        "v": "69,35,000"
+        "v": "30"
       },
       {
         "l": "Cash Conversion Cycle",
-        "v": "3,90,55,000 days"
+        "v": "75 days"
       }
     ],
     "intro": "Cash Conversion Cycle, worked end to end. The calculator takes Inventory, COGS (yearly), Receivables, Revenue (yearly), Payables, Purchases (yearly); the example below runs one realistic set of those numbers through it.",
-    "outro": "Cash Conversion Cycle settles it with CCC = Days Inventory + Days Receivables − Days Payables. Change any field above and the answer updates with it.",
+    "outro": "Cash Conversion Cycle settles it with Inventory Days = Inventory ÷ COGS (yearly) × 365. Change any field above and the answer updates with it.",
     "hi_intro": "Cash Conversion Cycle ka poora hisaab. Tool leta hai Inventory aur COGS (yearly) aur Receivables aur Revenue (yearly) aur Payables aur Purchases (yearly); neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Cash Conversion Cycle ka formula: CCC = Days Inventory + Days Receivables − Days Payables. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Cash Conversion Cycle ka formula: Inventory Days = Inventory ÷ COGS (yearly) × 365. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "depreciation": {
     "inputs": {
