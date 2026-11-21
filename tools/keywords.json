@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-20T03:32:10Z",
+ "generated": "2026-11-21T01:32:27Z",
  "seed_count": 149,
- "suggestion_count": 1050,
+ "suggestion_count": 1051,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -1091,7 +1091,7 @@
    ]
   },
   {
-   "query": "down payment calculator",
+   "query": "down payment calculator car",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1304,15 +1304,6 @@
    "score": 8.97,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "lucky number calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "lucky number calculator"
    ]
   },
   {
@@ -1749,15 +1740,6 @@
    ]
   },
   {
-   "query": "cash conversion cycle formula",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "cash conversion cycle"
-   ]
-  },
-  {
    "query": "churn rate meaning",
    "demand": 12,
    "covered": true,
@@ -1830,7 +1812,7 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator bike",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1938,7 +1920,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2007,6 +1989,15 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator in tamil",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -2478,7 +2469,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator for mobile",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2586,7 +2577,7 @@
    ]
   },
   {
-   "query": "gst calculator formula",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2676,7 +2667,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator by name",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2784,7 +2775,7 @@
    ]
   },
   {
-   "query": "ppf calculator post office monthly",
+   "query": "ppf calculator sbi",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3137,6 +3128,15 @@
    ]
   },
   {
+   "query": "lucky number calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3318,7 +3318,7 @@
    ]
   },
   {
-   "query": "down payment calculator for mobile",
+   "query": "down payment calculator india",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3408,7 +3408,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3471,7 +3471,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator numerology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3525,7 +3525,7 @@
    ]
   },
   {
-   "query": "ppf calculator sbi",
+   "query": "ppf calculator monthly",
    "demand": 10,
    "covered": true,
    "score": 6.9,

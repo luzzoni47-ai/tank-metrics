@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 20 Nov 2026 05:38:08 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 01:36:01 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Boba Bhai&#x27;s $18M Round: What One Store Must Earn</title>
@@ -38,6 +38,14 @@
     <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Employee productivity rate explained: the formula, a worked example from a small Indian workshop, and how to compare output per employee fairly every month.</description>
+  </item>
+  <item>
+    <title>Henfruit Raises $15 Million: A ₹7 Egg, ₹350 Crore Brand</title>
+    <link>https://tankmetrics.in/news/henfruit-15-million-series-a-egg-brand-maths</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/henfruit-15-million-series-a-egg-brand-maths</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Funding</category>
+    <description>Egg brand Henfruit took its first outside money in 12 years. The unit maths behind it: ₹350 crore of sales, four crore eggs a month, and about ₹7 an egg.</description>
   </item>
   <item>
     <title>Festive Sales Up 29%: Smaller Baskets, More Orders</title>
@@ -238,14 +246,6 @@
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Revenue per employee shows how much revenue each person carries, how to work it out, and when a falling figure warns that your team is growing too fast.</description>
-  </item>
-  <item>
-    <title>GIVA&#x27;s $100 Million Bet: 400 Stores to 1,000</title>
-    <link>https://tankmetrics.in/news/giva-100-million-multiples-pe-1000-stores-2026</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/giva-100-million-multiples-pe-1000-stores-2026</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Funding</category>
-    <description>GIVA raised over $100 million from Multiples PE. Revenue hit about Rs 865 crore in FY26 and it plans 1,000 stores. Here is the maths for a shop owner.</description>
   </item>
 </channel>
 </rss>

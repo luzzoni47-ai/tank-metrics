@@ -2,6 +2,67 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "henfruit-15-million-series-a-egg-brand-maths",
+   "title": "Henfruit Raises $15 Million: A ₹7 Egg, ₹350 Crore Brand",
+   "dek": "Egg brand Henfruit took its first outside money in 12 years. The unit maths behind it: ₹350 crore of sales, four crore eggs a month, and about ₹7 an egg.",
+   "category": "Funding",
+   "date": "2026-11-18",
+   "date_display": "November 18, 2026",
+   "source_name": "The Hindu BusinessLine",
+   "source_url": "https://www.thehindubusinessline.com/markets/henfruit-raises-15-million-in-series-a-funding/article71714528.ece",
+   "cta": {
+    "text": "A food brand lives or dies on one number: what each rupee of sale is worth in valuation. Check the revenue multiple a brand your size can ask for.",
+    "href": "/revenue-multiple",
+    "label": "Open the Revenue Multiple Calculator"
+   },
+   "related": [
+    {
+     "slug": "valuation-multiple-d2c-brand-india",
+     "title": "Valuation Multiple for a D2C Brand in India"
+    },
+    {
+     "slug": "grocery-store-profit-margin",
+     "title": "Grocery Store Profit Margin: What You Keep"
+    }
+   ],
+   "body_en": [
+    "<p><strong>Henfruit</strong>, the egg brand, has raised $15 million in a Series A round from Lok Capital, DSG Consumer Partners and RPSG Capital Ventures. It is the first outside money the company has taken since it started in 2014 - 12 years funded by the business itself. At about ₹93 to the dollar, $15 million is roughly ₹140 crore.</p>",
+    "<h2>What Henfruit actually sells</h2>",
+    "<p>Eggs. The company says it processes more than four crore eggs every month and sells them across 15 major Indian cities. It expects FY27 revenue to cross ₹350 crore, after growing ten times in scale over the past three years. Founder Tarun Gupta says the 12 years went into \"technology, stringent quality standards and accountability\" - the money went into processing and testing, not into advertising.</p>",
+    "<h2>The maths: about ₹7 an egg</h2>",
+    "<p>Four crore eggs a month is 48 crore eggs a year. Divide ₹350 crore of expected revenue by 48 crore eggs and you get roughly ₹7 an egg. That one number explains the whole company. A ₹7 unit leaves very little room: the margin on a single egg is a few rupees at best, so the business only works at enormous volume.</p>",
+    "<p>Per city the figures are equally thin. ₹350 crore split across 15 cities is about ₹23 crore a year per city, roughly ₹2 crore a month. Four crore eggs split 15 ways is about 27 lakh eggs a month per city, or about 90,000 eggs a day. Each city needs its own cold chain, delivery route and shelf space to move that.</p>",
+    "<p>A shop does the same arithmetic in miniature. Sell 1,000 eggs a day at ₹10 and you take ₹10,000 a day, or ₹3 lakh a month. At a 20% gross margin you keep ₹60,000. Double the volume and you double the rupees you keep, which is why egg and dairy businesses chase footfall and subscriptions instead of cutting price.</p>",
+    "<h2>Why investors paid for a commodity</h2>",
+    "<p>DSG's Deepak Shahdadpuri calls eggs one of India's most widely consumed protein sources and points out that the category is still largely unbranded, with limited focus on safety and freshness. Henfruit's pitch is centralised processing, testing and traceability - a branded promise on a product most people still buy loose.</p>",
+    "<p>RPSG Capital Ventures' Abhishek Goenka puts a number on the opportunity: branded penetration is above 30% in categories such as dairy and atta, while eggs remain largely unorganised. That gap is the investment case. If a branded egg earns even ₹1 more than a loose one, at 48 crore eggs a year that is ₹48 crore of extra revenue before a single new customer.</p>",
+    "<h2>What the money is for</h2>",
+    "<p>Henfruit says the round will fund a pan-India push through online and offline distribution, more marketing, and heavier backend infrastructure. The order matters. In a ₹7-a-unit business, capacity and cold chain come before brand campaigns, because an egg that does not reach a shelf in time is a total loss, not a discount.</p>",
+    "<h2>What it means for your shop or brand</h2>",
+    "<p>Three takeaways. First, a commodity can be branded if you own the quality a customer cannot check on their own - testing, grading, traceability. Second, at a single-digit price per unit, distribution is the product: the winner is whoever reaches more counters, more reliably. Third, the arithmetic is identical whether you run one shop or a ₹350 crore brand - margin per unit multiplied by units sold, and nothing else.</p>",
+    "<h2>The number investors will test next</h2>",
+    "<p>A round like this is priced on a revenue multiple: how many rupees of valuation for each rupee of annual sales. Henfruit's ₹350 crore top line is the base any later round or sale will be measured against, and the multiple a food brand earns depends on how repeatable that revenue is, not on how fast it grew once.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Henfruit, egg brand, ne Series A round mein $15 million raise kiye hain. Paisa Lok Capital, DSG Consumer Partners aur RPSG Capital Ventures se aaya. 2014 mein shuru hui company ke liye yeh pehla bahar ka paisa hai - 12 saal business apne dum par chala. Rs 93 per dollar ke hisaab se yeh takriban Rs 140 crore banta hai.</p>",
+    "<h2>Henfruit bechti kya hai</h2>",
+    "<p>Ande. Company kehti hai ki woh har mahine char crore se zyada ande process karti hai aur 15 bade shehron mein bechti hai. FY27 mein revenue Rs 350 crore cross karne ki ummeed hai, teen saal mein scale das guna badhne ke baad. Founder Tarun Gupta kehte hain ki 12 saal technology, quality standards aur accountability mein gaye - paisa processing aur testing mein laga, advertising mein nahi.</p>",
+    "<h2>Ganit: ek ande ka takriban Rs 7</h2>",
+    "<p>Char crore ande mahine ke, matlab saal ke 48 crore. Rs 350 crore ko 48 crore se baanto to ek ande ka takriban Rs 7 banta hai. Yeh ek number pura business samjha deta hai. Rs 7 ke unit par margin do-teen rupaye hi hai, isliye business sirf bahut zyada volume par chalta hai.</p>",
+    "<p>Sheher ke hisaab se numbers bhi patle hain. Rs 350 crore ko 15 shehron mein baanto to ek sheher ka saalana takriban Rs 23 crore, mahine ka kareeb Rs 2 crore. Char crore ande 15 hisson mein baante to ek sheher mein mahine ke 27 lakh ande, rozana kareeb 90,000. Har sheher ko apni cold chain, delivery route aur shelf space chahiye.</p>",
+    "<p>Dukaan ka ganit chhote scale par wahi hai. Roz 1,000 ande Rs 10 par becho to roz Rs 10,000, mahine ke Rs 3 lakh. 20% gross margin par Rs 60,000 bachte hain. Volume double karo to bachat bhi double, isliye egg aur dairy business price par nahi, footfall aur subscription par ladte hain.</p>",
+    "<h2>Investors ne commodity ke liye paisa kyun diya</h2>",
+    "<p>DSG ke Deepak Shahdadpuri kehte hain ki ande India ke sabse zyada khaye jaane wale protein sources mein se hain, lekin category abhi bhi zyadatar unbranded hai, safety aur freshness par dhyan kam. Henfruit ka pitch hai centralised processing, testing aur traceability - jo cheez customer khud check nahi kar sakta, woh brand ka promise ban jaati hai.</p>",
+    "<p>RPSG Capital Ventures ke Abhishek Goenka mauka number mein batate hain: dairy aur atta jaisi categories mein branded penetration 30% se zyada hai, ande abhi bhi zyadatar unorganised hain. Agar branded ande par sirf Rs 1 zyada mile, to 48 crore ande par saal ke Rs 48 crore extra revenue banta hai.</p>",
+    "<h2>Paisa kis kaam aayega</h2>",
+    "<p>Company kehti hai ki round ka paisa pan-India expansion mein jayega - online aur offline distribution, marketing, aur backend infrastructure. Order matter karta hai. Rs 7 per unit ke business mein capacity aur cold chain pehle, brand campaign baad mein, kyunki time par na pahuncha ande pura loss hai, discount nahi.</p>",
+    "<h2>Aapki dukaan ya brand ke liye matlab</h2>",
+    "<p>Teen baatein. Pehla, commodity bhi brand ban sakti hai agar quality aapke haath mein ho - testing, grading, traceability. Doosra, single-digit price par distribution hi product hai: jeet uski jo zyada counters tak pahuncha. Teesra, ganit ek hi hai - chahe ek dukaan ho ya Rs 350 crore ka brand: per unit margin guna units sold, bas.</p>",
+    "<h2>Investor aage kaunsa number dekhenge</h2>",
+    "<p>Aisa round revenue multiple par price hota hai - har rupee sale par kitne rupee valuation. Henfruit ka Rs 350 crore top line wahi base hai jispar agli round ya sale tay hogi, aur food brand ka multiple is baat par tika hai ki revenue kitna repeatable hai, sirf ek baar kitna tezi se badha uspar nahi.</p>"
+   ]
+  },
+  {
    "slug": "boba-bhai-18-million-series-b-120-stores-store-maths",
    "title": "Boba Bhai's $18M Round: What One Store Must Earn",
    "dek": "Boba Bhai raised $18 million with 120 stores and Rs 70 crore of FY26 sales. Here is what each outlet must ring up, and why fast growth still burns cash.",
