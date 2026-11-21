@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.118,
-   "a": "/client-acquisition-cost-cac",
-   "b": "/customer-acquisition-cost-cac"
-  },
-  {
    "overlap": 0.114,
    "a": "/co-founder-equity-split",
    "b": "/debt-equity-deal"
@@ -26,17 +21,49 @@
    "overlap": 0.111,
    "a": "/compatibility-calculator",
    "b": "/love-calculator"
+  },
+  {
+   "overlap": 0.111,
+   "a": "/rashi-moon-sign-calculator",
+   "b": "/zodiac-sign-calculator"
+  },
+  {
+   "overlap": 0.109,
+   "a": "/debt-equity-deal",
+   "b": "/royalty-deal"
+  },
+  {
+   "overlap": 0.108,
+   "a": "/nps-calculator",
+   "b": "/sip-calculator"
+  },
+  {
+   "overlap": 0.108,
+   "a": "/gross-profit-and-margin",
+   "b": "/percentage-calculator"
+  },
+  {
+   "overlap": 0.107,
+   "a": "/baby-name-number-calculator",
+   "b": "/compatibility-calculator"
+  },
+  {
+   "overlap": 0.107,
+   "a": "/break-even-point",
+   "b": "/contribution-margin"
+  },
+  {
+   "overlap": 0.105,
+   "a": "/break-even-point",
+   "b": "/percentage-calculator"
+  },
+  {
+   "overlap": 0.105,
+   "a": "/home-loan-emi-calculator",
+   "b": "/loan-emi-calculator"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/client-acquisition-cost-cac",
-   "closest_overlap": 0.118
-  },
-  {
-   "page": "/customer-acquisition-cost-cac",
-   "closest_overlap": 0.118
-  },
   {
    "page": "/co-founder-equity-split",
    "closest_overlap": 0.114
@@ -48,6 +75,42 @@
   {
    "page": "/implied-valuation",
    "closest_overlap": 0.113
+  },
+  {
+   "page": "/pre-money-and-post-money-valuation",
+   "closest_overlap": 0.113
+  },
+  {
+   "page": "/break-even-point",
+   "closest_overlap": 0.112
+  },
+  {
+   "page": "/gross-profit-and-margin",
+   "closest_overlap": 0.112
+  },
+  {
+   "page": "/compatibility-calculator",
+   "closest_overlap": 0.111
+  },
+  {
+   "page": "/love-calculator",
+   "closest_overlap": 0.111
+  },
+  {
+   "page": "/rashi-moon-sign-calculator",
+   "closest_overlap": 0.111
+  },
+  {
+   "page": "/zodiac-sign-calculator",
+   "closest_overlap": 0.111
+  },
+  {
+   "page": "/royalty-deal",
+   "closest_overlap": 0.109
+  },
+  {
+   "page": "/nps-calculator",
+   "closest_overlap": 0.108
   }
  ],
  "median_overlap": 0.095

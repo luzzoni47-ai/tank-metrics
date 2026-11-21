@@ -199,17 +199,17 @@
    ]
   },
   "agencycac": {
-   "what": "Client acquisition cost matlab aapki agency ek retainer client jeetne par kitna kharch karti hai, aur yahi number tay karta hai ki business development par kitna kharch ho sakta hai. Yeh product company ke customer CAC se alag hai, kyunki agency ek rishta bechti hai: client ki cost mein sales salary, woh proposals aur pitches jo kahin nahi pahunche, aur leads dhoondhne-follow karne ke tools bhi shaamil hote hain - sirf advertising nahi. Marketing Spend, Sales Cost aur New Clients daalo, aur tool ek figure deta hai: har signed client ko jeetne mein kitna laga.\n\nMarketing budget badhane se pehle ise chalao, baad mein nahi. Jo agency marketing par ₹4,00,000 aur sales par ₹2,00,000 kharch karke 12 clients sign karti hai, uska client CAC ₹50,000 hai. Agar ek typical retainer apni life mein ₹2,00,000 ka hai, toh client har ek rupaye par chaar rupaye deta hai - healthy. Wahi ₹6,00,000 sirf 4 clients jeeta toh CAC ₹1,50,000 ho jaata hai aur har naya client cash position ko pehle kharab karta hai, aise hi agency loss mein grow karti hai.",
-   "formula": "Client CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Numerator mein business jeetne ki poori cost rakho - Marketing Spend (marketing) aur Sales Cost (sales), dono ₹ mein - aur denominator mein actually signed clients (clients). Marketing ₹4,00,000 aur sales ₹2,00,000 se numerator ₹6,00,000 banta hai; 12 naye clients par woh ₹6,00,000 ÷ 12 = ₹50,000 per client. Client ki lifetime value ko is figure se divide karo aur ratio milega; service agency aam taur par kam se kam 3:1 chahti hai, toh ₹50,000 CAC ke saamne ₹1,50,000 ya zyada LTV honi chahiye.",
+   "what": "Client acquisition cost usi ganit ka service-firm version hai, par yeh doosra sawaal poochta hai: ek signed retainer agency ko business development me kitne ka padta hai? Ye calculator Marketing Spend aur Sales Cost jodta hai - BD salary, conferences, CRM subscription, aur un proposals ke ghante jinka jawab kabhi nahi aaya - phir actually sign hue New Clients se divide karta hai. ₹3,00,000 marketing aur ₹1,50,000 sales cost se 9 clients sign hue toh ₹4,50,000 ÷ 9 = ₹50,000 per client, aur wahi 9 clients 45 pitches se aaye toh har pitch buyer ke saamne rakhne ka kharch ₹10,000 hua.\n\nYehi jodi tay karti hai ki firm kitni prospecting afford kar sakti hai. ₹25,000 mahine ka retainer saal bhar chale toh fee ₹3,00,000 banti hai, isliye ₹50,000 per client pehle saal me hi lagbhag chhe guna return hai - ek aur BD person rakhne ki jagah hai. Wahi ₹4,50,000 sirf 3 signed clients par kharch ho toh har client ₹1,50,000 ka pada, aur us waqt agency ghaate me revenue kharid rahi hai - naya lead generation budget lagane se pehle win rate theek karna hoga.",
+   "formula": "Client CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Marketing Spend me campaigns, events aur content aate hain; Sales Cost me business development salary, commission aur pitch ka kharch; New Clients me sirf signed contracts ginte hain - leads, discovery calls ya bheje proposals nahi. Ek quarter me marketing ₹3,00,000 aur sales ₹1,50,000 se ₹4,50,000 banta hai, jo 9 signed clients par ₹50,000 per client hai. Client ki pehle saal ki fee ko is figure se divide karo, aur win rate dekhne ke liye proposals ki ginti alag se rakho.",
    "when": [
-    "Agle quarter ka marketing aur sales budget set kar rahe ho aur ek client par kitna kharch ho sakta hai woh ceiling chahiye.",
-    "Paid ads, referrals aur outbound compare kar rahe ho aur ek cost-per-client figure chahiye.",
-    "Growth tez hai par cash tight hai, aur check karna hai ki har naya client apni cost wapas deta hai ya nahi."
+    "Agle quarter ka business development budget set karte waqt, ek signed client par kitna kharch ho sakta hai woh ceiling chahiye.",
+    "Referrals muft client laate hain aur outbound salary jalaata hai - dono ko ek cost-per-client figure par naapna hai.",
+    "Ek retainer client renew hone wala hai, aur check karna hai ki fee aaj bhi jeetne ke kharch ko cover karti hai."
    ],
    "mistakes": [
-    "Sirf ad spend ginna aur sales salary, proposal time aur CRM subscription numerator se bahar chhod dena.",
-    "Leads ya bheje proposals par divide karna, actually signed clients par nahi - isse number accha dikhta hai.",
-    "Client CAC ko ek mahine ki retainer fee se compare karna, poori lifetime value se nahi, jisse accha channel mehenga lagta hai."
+    "Bheje proposals ya hui discovery calls par divide karna, signed contracts par nahi - isse paanch me ek jeetne ka win rate accha dikhne lagta hai.",
+    "Partners ke unpaid pitch ghante Sales Cost se bahar rakhna, jisse paanch me ek pitch jeetne wali firm asli se kaafi sasti dikhti hai.",
+    "Client CAC ko ek mahine ke retainer se compare karna, pehle saal ki fee se nahi - tab healthy channel bhi afford se bahar lagta hai."
    ]
   },
   "agencymargin": {
@@ -354,17 +354,17 @@
    ]
   },
   "cac": {
-   "what": "Customer Acquisition Cost wo rupee figure hai jo ek hi sawaal ka jawab deta hai: ek customer jeetne me kitna kharcha hua? Ek period me ads, sales team ki salary, agency fees aur discounts - sab jodo, aur us kharch se aaye naye customers ki ginti se divide karo; CAC mil jaata hai. Ye pehla number hai jo founder ko pata hona chahiye, kyunki isi se decide hota hai ki growth paisa banati hai ya jalati hai. ₹1,00,000 kharch karke 200 customers laaye, toh har customer ₹500 ka pada - sasta ya mehnga, ye sirf us customer ki value ke saamne tay hota hai.",
-   "formula": "CAC = Total Sales aur Marketing Kharch ÷ Naye Customers. Ek fixed period me customer jeetne ka poora kharch lo - ad spend, sales team, agency fees, entry discount - aur usi period ke naye customers se divide karo. ₹1,00,000 ka kharch 200 naye customers laata hai toh CAC ₹500 hai. Salary ya discount chhod diya toh number accha dikhta hai par asli cost chhupi rehti hai.",
+   "what": "Customer Acquisition Cost ek product business ke liye ek hi sawaal ka jawab deta hai: kisi mahine me ek naya buyer laane par rupee me kitna kharch hua? Do inputs jaan-boojh kar seedhe rakhe gaye hain - Total Sales + Marketing Spend aur New Customers - kyunki imaandaar number me ad platform fees, campaign chalane wale ki salary, affiliate payout aur pehle order par diya gaya discount sab aata hai. ₹6,00,000 ka kharch 1,200 naye customers laata hai toh CAC ₹500 banta hai, aur ise turnover se nahi, pehle order ke gross profit se compare karna chahiye.\n\nIsse ek hi faisla nikalta hai: channel ko scale karna chahiye ya nahi. Agar pehla order ₹400 gross profit deta hai aur CAC ₹500 hai, toh har naya buyer ₹100 ke ghaate se shuru karta hai aur woh doosri kharid par hi wapas hota hai - ab campaign ka asli sawaal repeat rate ban jaata hai, cost per click nahi. Ye pata hone par aap per-acquisition bid ceiling rakh sakte ho, voucher ki limit tay kar sakte ho, ya us channel ko band kar sakte ho jo per click sasta par per customer ghaate ka hai.",
+   "formula": "CAC = (Total Sales + Marketing Spend) ÷ New Customers, dono ek hi period ke. Poora kharch ₹ me daalo - media cost, campaign manager ki salary, affiliate commission, gateway charges aur jo discount aapne khud uthaya - aur usi window me pehli baar kharidne wale customers se divide karo. ₹6,00,000 kharch aur 1,200 naye customers se ₹6,00,000 ÷ 1,200 = ₹500 per customer. Denominator me sirf first-time buyers hain, isliye repeat purchase ko naya customer kabhi na gino, warna number har mahine chupchaap girta jaata hai.",
    "when": [
-    "Ad spend badhane se pehle, per-customer cost jaanne ke liye.",
-    "Investor growth ki efficiency poochta hai, aur ek number se jawab dena hai.",
-    "Do channels compare kar rahe ho - sasta dikhne wala high-CAC channel aksar low-CAC se haar jaata hai."
+    "Meta ya Google ka budget badhane se pehle, ek naye buyer ke liye maximum kitna dena hai woh jaanne ke liye.",
+    "First-order discount voucher ki limit tay karte waqt, ek redemption par offer kitna mehnga pad sakta hai yeh dekhne ke liye.",
+    "Do ad sets ka cost per click bahut alag hai, aur kaun actually kamata hai yeh cost per paying customer se dekhna hai."
    ],
    "mistakes": [
-    "Sirf ad spend ginna aur sales salary, agency fees, tooling chhod dena, jisse CAC asli se kaafi kam dikhta hai.",
-    "Is mahine ka kharch pichle mahine ke customers se divide karna - do periods mix ho jaate hain.",
-    "CAC ko revenue se compare karna, gross profit se nahi - customer ka kharch profit se wapas aata hai, turnover se nahi."
+    "Sirf ad platform ka invoice ginna aur marketer ki salary, gateway fees aur diya gaya discount chhod dena - tab CAC asli se lagbhag ek-tihai kam dikhta hai.",
+    "Repeat buyers ko naya customer ginna, jisse purane base ke saath number girta jaata hai aur ghaate ka channel chhup jaata hai.",
+    "CAC ko order value se naapna, gross profit per order se nahi - ₹500 kharch par ₹400 margin wala channel theek lagne lagta hai."
    ]
   },
   "cagr": {

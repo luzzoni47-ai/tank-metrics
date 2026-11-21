@@ -199,17 +199,17 @@
    ]
   },
   "agencycac": {
-   "what": "Client acquisition cost is the rupee cost of winning one retainer client, and for an agency it is the number that decides how much business development the firm can afford. It is not the same as a product company's customer CAC, because an agency sells a relationship: the cost of a client includes the sales salary, the proposals and pitches that went nowhere, and the software used to find and follow up leads — not just advertising. Enter Marketing Spend, Sales Cost and New Clients, and the tool returns one figure: what each signed client cost you to win.\n\nRun it before you raise the marketing budget, not after. An agency that spends ₹4,00,000 on marketing and ₹2,00,000 on sales to sign 12 clients has a client CAC of ₹50,000. If a typical retainer is worth ₹2,00,000 over its life, that client returns four rupees for every one spent winning it — healthy. If the same ₹6,00,000 won only 4 clients, the CAC is ₹1,50,000 and each new client makes the cash position worse before it improves, which is how an agency grows itself into a loss.",
-   "formula": "Client CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Put the whole cost of winning business in the numerator — Marketing Spend (marketing) and Sales Cost (sales), both in ₹ — and the number of clients actually signed in the denominator (clients). With marketing ₹4,00,000 and sales ₹2,00,000 the numerator is ₹6,00,000; across 12 new clients that is ₹6,00,000 ÷ 12 = ₹50,000 a client. Divide the client's lifetime value by this figure to get the ratio; a service agency generally wants at least 3 to 1, so a CAC of ₹50,000 should sit against an LTV of ₹1,50,000 or more.",
+   "what": "Client acquisition cost is the service firm's version of the same arithmetic, and it answers a different question: what does one signed retainer cost the agency in business development? The calculator adds Marketing Spend and Sales Cost - the BD salary, the conferences, the CRM subscription and the unpaid hours spent writing proposals that were never accepted - then divides by New Clients actually signed. ₹3,00,000 of marketing plus ₹1,50,000 of sales cost that lands 9 signed clients is ₹4,50,000 ÷ 9 = ₹50,000 a client, and if those 9 came out of 45 pitches, each pitch cost ₹10,000 to put in front of a buyer.\n\nThat pair of numbers is what decides how much prospecting the firm can afford. A retainer billed at ₹25,000 a month for a year is a ₹3,00,000 fee, so ₹50,000 per client returns roughly six rupees in the first year alone - room to hire another BD person. Spread the same ₹4,50,000 over 3 signed clients instead and each one cost ₹1,50,000; at that point the agency is buying revenue at a loss and has to repair its win rate before spending another rupee on lead generation.",
+   "formula": "Client CAC = (Marketing Spend + Sales Cost) ÷ New Clients. Marketing Spend covers campaigns, events and content; Sales Cost covers the business development salary, commission and pitch expenses; New Clients counts only signed contracts - not leads, discovery calls or proposals sent. Marketing ₹3,00,000 and sales ₹1,50,000 over a quarter make ₹4,50,000, which across 9 signed clients is ₹50,000 each. Divide the client's first-year fee by that figure for the return, and keep the proposal count separately so the win rate behind it stays visible.",
    "when": [
-    "You are setting next quarter's marketing and sales budget and need the ceiling on what one client may cost.",
-    "You are comparing paid ads, referrals and outbound and want a single cost-per-client figure to judge them on.",
-    "Growth is fast but cash is tight, and you need to check whether each new client pays back what it cost to win."
+    "You are setting next quarter's business development budget and need the ceiling on what one signed client may cost.",
+    "Referrals bring clients free while outbound burns salary, and you want one cost-per-client figure that compares them fairly.",
+    "A retainer client is about to renew, and you need to confirm the fee still covers what it cost to win them."
    ],
    "mistakes": [
-    "Counting only ad spend and leaving the sales salary, the proposal time and the CRM subscription out of the numerator.",
-    "Dividing by leads or proposals sent rather than clients actually signed, which flatters the number.",
-    "Comparing client CAC with a single month's retainer fee instead of the client's full lifetime value, so a good channel looks expensive."
+    "Dividing by proposals sent or discovery calls held rather than contracts signed, which turns a one-in-five win rate into a flattering number.",
+    "Leaving the partners' unpaid pitch hours out of Sales Cost, so a firm that wins one pitch in five looks far cheaper than it is.",
+    "Comparing the client CAC with a single month's retainer instead of the first-year fee, so a healthy channel looks unaffordable."
    ]
   },
   "agencymargin": {
@@ -354,17 +354,17 @@
    ]
   },
   "cac": {
-   "what": "Customer Acquisition Cost is the rupee figure behind one question: what did it cost to win a single customer? Add up everything you spent on ads, sales salaries, agency fees and discounts in a period, divide by the number of new customers that spend brought in, and you have your CAC. It is the first number a founder should know, because it decides whether growth adds cash or burns it. Spend ₹1,00,000 to win 200 customers and each one cost ₹500 - cheap or expensive only next to what that customer is worth.",
-   "formula": "CAC = Total Sales and Marketing Spend ÷ New Customers Won. Count the whole cost of winning a customer - ad spend, the sales team, agency fees, introductory discounts - over a fixed period, then divide by the new customers added in that same period. ₹1,00,000 of spend that brings 200 new customers is a CAC of ₹500. If you leave out salaries or discounts, the number flatters you and the real cost stays hidden.",
+   "what": "Customer Acquisition Cost answers one narrow question for a product business: what did it cost, in rupees, to bring one new buyer through the door in a given month? The two inputs are deliberately blunt - Total Sales + Marketing Spend and New Customers - because the honest version of the number carries the ad platform fees, the salary of the person running the campaigns, affiliate payouts and any first-order discount you funded. ₹6,00,000 of spend that produces 1,200 new customers gives a CAC of ₹500, and that figure is compared with the gross profit on a first order, never with turnover.\n\nThe decision it settles is whether a channel can be scaled. If a first order earns ₹400 of gross profit while the CAC is ₹500, every new buyer starts ₹100 in the hole and only repays it on a second purchase - so the campaign's real question becomes repeat rate, not cost per click. Knowing that, you can put a hard bid ceiling on an acquisition, cap a voucher, or stop a channel that looks cheap per click and loses money per customer.",
+   "formula": "CAC = (Total Sales + Marketing Spend) ÷ New Customers, both counted over the same period. Enter the whole spend in ₹ - media cost, the campaign manager's salary, affiliate commission, payment gateway charges and the discount you absorbed - and divide it by the customers whose first order landed in that same window. ₹6,00,000 of spend across 1,200 new customers is ₹6,00,000 ÷ 1,200 = ₹500 per customer. Because the denominator holds first-time buyers only, a repeat purchase must never be counted as a new customer or the figure quietly falls every month.",
    "when": [
-    "You are about to scale ad spend and want the cost per customer before you commit the budget.",
-    "An investor asks whether your growth is efficient, and you need one number to answer.",
-    "You are comparing two channels - a cheap-looking one with a high CAC often loses to a costlier one with a low CAC."
+    "You are about to raise a Meta or Google budget and need the maximum you can pay for one new buyer before the campaign stops paying for itself.",
+    "You are setting a first-order discount voucher and want to know what the offer may cost per redemption.",
+    "Two ad sets report very different cost per click, and you need cost per paying customer to see which one actually earns."
    ],
    "mistakes": [
-    "Counting only ad spend and leaving out sales salaries, agency fees and tooling, so the CAC looks far lower than it is.",
-    "Dividing this month's spend by last month's customers, which mixes two periods and gives a number that means nothing.",
-    "Comparing CAC to revenue instead of to gross profit - you repay the cost of a customer out of profit, not turnover."
+    "Counting only the ad platform invoice and leaving out the marketer's salary, gateway fees and the discount you funded - the CAC then reads about a third lower than it is.",
+    "Counting repeat buyers as new customers, which drags the figure down as the base ages and hides a channel that loses money.",
+    "Judging the CAC against order value instead of gross profit per order, so a channel spending ₹500 to earn ₹400 of margin looks acceptable."
    ]
   },
   "cagr": {
