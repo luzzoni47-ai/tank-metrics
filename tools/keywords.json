@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-21T01:32:27Z",
+ "generated": "2026-11-22T01:32:58Z",
  "seed_count": 149,
- "suggestion_count": 1051,
+ "suggestion_count": 1050,
  "keywords": [
   {
    "query": "exit load calculator",
@@ -139,6 +139,15 @@
    ]
   },
   {
+   "query": "runway 34",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "runway"
+   ]
+  },
+  {
    "query": "startup valuation model",
    "demand": 10,
    "covered": false,
@@ -235,15 +244,6 @@
    "score": 16.56,
    "from": [
     "roas calculator"
-   ]
-  },
-  {
-   "query": "runway 34",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "runway"
    ]
   },
   {
@@ -1091,7 +1091,7 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1740,6 +1740,15 @@
    ]
   },
   {
+   "query": "cash conversion cycle formula",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "cash conversion cycle"
+   ]
+  },
+  {
    "query": "churn rate meaning",
    "demand": 12,
    "covered": true,
@@ -1812,7 +1821,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator car",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2469,7 +2478,7 @@
    ]
   },
   {
-   "query": "down payment calculator for mobile",
+   "query": "down payment calculator bike",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3155,7 +3164,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator online",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3318,7 +3327,7 @@
    ]
   },
   {
-   "query": "down payment calculator india",
+   "query": "down payment calculator for mobile",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3612,15 +3621,6 @@
    "score": 6.9,
    "from": [
     "royalty deal"
-   ]
-  },
-  {
-   "query": "run rate meaning",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "run rate"
    ]
   }
  ]

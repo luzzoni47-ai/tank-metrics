@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sat, 21 Nov 2026 05:35:11 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 22 Nov 2026 01:35:27 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>FD Rates Are Rising: Where a Shop Owner Parks Cash</title>
+    <link>https://tankmetrics.in/news/fd-rates-rise-ahead-of-rbi-december-meeting-what-to-do</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/fd-rates-rise-ahead-of-rbi-december-meeting-what-to-do</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>Banks raised FD rates across November after the RBI&#x27;s October hike. Here is the arithmetic of locking in now versus waiting for the December 4 decision.</description>
+  </item>
   <item>
     <title>Boba Bhai&#x27;s $18M Round: What One Store Must Earn</title>
     <link>https://tankmetrics.in/news/boba-bhai-18-million-series-b-120-stores-store-maths</link>
@@ -238,14 +246,6 @@
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
     <category>Startups</category>
     <description>Bengaluru&#x27;s Story TV maker raised $80 million from NBCUniversal and Hornbill at a $500 million valuation. Here is the arithmetic a founder should read.</description>
-  </item>
-  <item>
-    <title>Revenue Per Employee: What It Tells You</title>
-    <link>https://tankmetrics.in/revenue-per-employee-explained</link>
-    <guid isPermaLink="true">https://tankmetrics.in/revenue-per-employee-explained</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Revenue per employee shows how much revenue each person carries, how to work it out, and when a falling figure warns that your team is growing too fast.</description>
   </item>
 </channel>
 </rss>
