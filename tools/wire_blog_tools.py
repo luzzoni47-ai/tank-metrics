@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-mutual-fund-exit-load-explained": [
+        ("/sip-calculator", "SIP Calculator",
+         "see how a monthly investment grows when you hold past the exit load window"),
+        ("/cagr-compound-annual-growth-rate", "CAGR Calculator",
+         "compare the yearly return of funds held for different lengths of time"),
+    ],
     "blog-property-valuation-explained": [
         ("/property-valuation-calculator", "Property Valuation Calculator",
          "multiply your own carpet area by the going rate per square foot to get the value this post explains"),

@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sun, 22 Nov 2026 01:35:27 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 22 Nov 2026 03:34:48 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>FD Rates Are Rising: Where a Shop Owner Parks Cash</title>
@@ -14,6 +14,14 @@
     <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>Banks raised FD rates across November after the RBI&#x27;s October hike. Here is the arithmetic of locking in now versus waiting for the December 4 decision.</description>
+  </item>
+  <item>
+    <title>Mutual Fund Exit Load Explained</title>
+    <link>https://tankmetrics.in/mutual-fund-exit-load-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/mutual-fund-exit-load-explained</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Exit load is the fee a mutual fund charges when you sell units early. Learn how it is calculated, which funds charge it, and how to time a redemption.</description>
   </item>
   <item>
     <title>Boba Bhai&#x27;s $18M Round: What One Store Must Earn</title>
@@ -238,14 +246,6 @@
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
     <category>Funding</category>
     <description>Pune-based Peppermint Robotics has raised ₹100 crore in a pre-Series B round to build more cleaning robots in India and sell them across nine countries.</description>
-  </item>
-  <item>
-    <title>EloElo Raises $80M at $500M: The Valuation Math</title>
-    <link>https://tankmetrics.in/news/eloelo-80-million-series-c-500-million-valuation</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/eloelo-80-million-series-c-500-million-valuation</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Startups</category>
-    <description>Bengaluru&#x27;s Story TV maker raised $80 million from NBCUniversal and Hornbill at a $500 million valuation. Here is the arithmetic a founder should read.</description>
   </item>
 </channel>
 </rss>
