@@ -480,17 +480,17 @@
    ]
   },
   "cofounder": {
-   "what": "Co-founder equity split wo sabse mushkil baat ka jawab deta hai: kisko kitna milega. Sabse insaaf wala tareeka har founder ko uske diye gaye cheezon pe score karna hai - idea, paisa, time, skills, network, risk - aur equity usi hisaab se baantna. Har founder ka score daaliye, percentage mil jaata hai. Barabar 12-12-12 se saaf teen-way split hota hai, par asli splits aksar barabar nahi hote, aur abhi numbers me kaaran likh dena aage jhagde se bachaata hai jab company ki value badh jaaye.",
-   "formula": "Founder Share % = Founder Score ÷ Total of All Scores × 100. Teen founders 12, 12, 12 pe 33.3% rakhte hain; 20, 15, 10 pe 44.4%, 33.3%, 22.2%. Har banda kya de raha hai - paisa, full-time time, idea, skills - usko score karo, taaki split mehnat dikhaye, ye nahi ki pehle kaun bola.",
+   "what": "Co-founder Equity Split sabse mushkil startup baat ko ek aise hisaab me badal deta hai jo aap dikha sakte ho: kisko kitna, aur kyun. Teen logon me barabar baant dene ke bajaye, har founder ko un cheezon par score do jo asli me company banati hain — full-time ghante, lagaya paisa, shuruaati idea, business chalane wali skills, bikri ka network, aur har banda jo risk le raha hai. Calculator cap table ko unhi scores ke ratio me baant deta hai, toh Founder A, Founder B aur Founder C ko aisa percentage milta hai jise aap term sheet me defend kar sako. Ye do-aur-teen founder wali team ke liye bana hai: Founder A aur Founder B ke score daalo, aur teesra founder na ho toh Founder C khaali chhod do, kyunki khaali teesra score zero gina jaata hai aur saaf two-way split milta hai, koi phantom 0% shareholder nahi. Asli baat exact number nahi hai — ye hai ki vesting schedule sign karne se pehle har founder ko har percentage ke peeche ka input dikh jaaye, jo pehli cheque ke baad split theek karne se kaafi sasta padta hai.",
+   "formula": "Founder A % = a ÷ (a + b + c) × 100; Founder B % = b ÷ (a + b + c) × 100; Founder C % = c ÷ (a + b + c) × 100, jahan a, b aur c teen Founder Score fields hain aur Founder C khaali ho toh c ko 0 ginte hain. 20, 15 aur 10 ke score se 44.4%, 33.3% aur 22.2% milta hai; teen 12 ke score se 33.3% har ek ko. Sirf scores ke beech ka ratio maayne rakhta hai — teeno ko double karne se kuch nahi badalta.",
    "when": [
-    "Co-founders ke saath pehli baar cap table set kar rahe ho.",
-    "Naya co-founder aata hai aur purana split dobara karna hai.",
-    "Investor poochta hai ki founding equity aise kyun baanti gayi."
+    "Pehli cap table likh rahe ho aur aisa split chahiye jo har founder ko theek lage.",
+    "Teesra co-founder judta hai aur purana two-way split dobara score karna padta hai.",
+    "Investor ki due-diligence sheet poochti hai ki founding equity kaise nikli."
    ],
    "mistakes": [
-    "Jhagde se bachne ke liye barabar baant dena, phir jab ek founder zyada kaam kare toh chidh hona.",
-    "Idea ko sabse bada hissa dena aur jo business chalaayega usko chhota hissa.",
-    "Split ko chat me chhod dena, vesting ke saath signed agreement ke bajaye."
+    "Idea ko sabse bada contribution maan lena aur jo business full-time chalayega usko chhota score dena — idea ko score milta hai, poori table nahi.",
+    "Founder C khaali chhod dena jabki teesra co-founder asli me business me hai: khaali zero gina jaata hai, toh us founder ko chupchaap 0% mil jaata hai.",
+    "Har founder ko alag scale par khud ko score karne dena — split tabhi imaandaar hai jab ek hi banda teeno ko same out-of-100 basis par score kare."
    ]
   },
   "compatibility": {
@@ -578,17 +578,17 @@
    ]
   },
   "debteq": {
-   "what": "Debt-plus-equity deal me investor ka paisa do hisson me bant jaata hai: ek loan jo business ko chukana hai, aur equity jo pakka hissa kharidti hai. Shark Tank India me ye aam hai kyunki isse shark kam ownership lete hue bhi paisa wapas paata hai. Total deal, debt portion aur equity wali valuation daaliye - loan amount, equity amount aur stake dikh jaata hai. Debt cash flow se chukta hai, chahe business badhe ya na badhe; equity kabhi wapas nahi hoti.",
-   "formula": "Debt Amount = Total Deal × Debt Portion %; Equity Amount = Total Deal − Debt Amount; Equity % = Equity Amount ÷ Valuation × 100. ₹4.5 crore ke deal me 18% debt ho toh ₹81 lakh loan hai aur baaki equity. Debt pakki obligation hai, equity pakka claim - dono ko mila dena chhupa deta hai ki asli mehnga kaun hai.",
+   "what": "Debt + Equity Deal ek funding offer ke andar chhupi do bilkul alag cheezon ko alag karta hai: ek loan jo company ko chukana hai, aur equity jo pakka hissa kharidti hai. Shark jo mixed cheque de raha hai wo sirf stake nahi le raha — us paise ka kuch hissa debt ban ke wapas aata hai, aksar interest ke saath, chahe business badhe ya na badhe. Total Deal Amount, Debt Portion percentage me, aur equity wali Valuation daalo, toh calculator deal ko Debt Amount, Equity Amount aur us Equity % me tod deta hai jo equity wala hissa asli me kharidta hai. Ye Shark Tank India ka structure numbers me hai, aur yahi founders sabse zyada galat padhte hain: poore deal ko equity maan lena dilution badha ke dikhata hai aur repayment ka bojh chhupa deta hai, jabki pure debt maan lena wo stake bhool jaata hai jo kabhi wapas nahi hota. Dono hisse saath dekhne se aap offer ko business me bache cash aur liye gaye ownership par judge karte ho, sirf headline amount par nahi.",
+   "formula": "Debt Amount = total × debtpct ÷ 100; Equity Amount = total − Debt Amount; Equity % = Equity Amount ÷ val × 100, tool ke teen fields ke saath — total (Total Deal Amount), debtpct (Debt Portion) aur val (Valuation for the equity part). ₹1 crore ke deal me 20% debt ho toh ₹80 lakh equity bachti hai; ₹4 crore valuation par wo 20% stake hai. Valuation equity amount se badi honi chahiye, warna stake 100% se upar nikal jaata hai aur offer ka koi matlab nahi banta.",
    "when": [
-    "Term sheet me loan aur equity mila hua hai aur dono alag dekhne hain.",
-    "Tay kar rahe ho ki deal ka kitna hissa repayable debt lena hai, permanent equity nahi.",
+    "Term sheet me loan aur equity mila hua hai aur dono hisson ki alag keemat chahiye.",
+    "Tay kar rahe ho ki offer ka kitna hissa repayable debt lena hai, permanent equity nahi.",
     "Pure-equity offer aur debt-wale offer ko compare kar rahe ho."
    ],
    "mistakes": [
-    "Poore deal ko equity maan lena aur dilution kam ginna.",
-    "Debt portion bhool jaana, jo cash flow se chukta hai aur working capital dabata hai.",
-    "Sirf stake dekhkar deal judge karna jabki debt hi tay karta hai business saans le sakta hai ya nahi."
+    "Poore cheque ko equity keh dena aur sirf dilution ginna — debt wala hissa cash flow se chukana phir bhi padta hai.",
+    "Sirf stake dekh ke offer judge karna aur debt portion ka interest aur repayment schedule ignore kar dena.",
+    "Equity amount se chhoti valuation daal dena, jisse Equity % 100% se upar chala jaata hai — iska matlab valuation ya deal split galat hai."
    ]
   },
   "depreciation": {

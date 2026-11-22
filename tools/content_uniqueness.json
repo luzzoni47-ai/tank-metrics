@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.114,
-   "a": "/co-founder-equity-split",
-   "b": "/debt-equity-deal"
-  },
-  {
    "overlap": 0.113,
    "a": "/implied-valuation",
    "b": "/pre-money-and-post-money-valuation"
@@ -26,16 +21,6 @@
    "overlap": 0.111,
    "a": "/rashi-moon-sign-calculator",
    "b": "/zodiac-sign-calculator"
-  },
-  {
-   "overlap": 0.109,
-   "a": "/debt-equity-deal",
-   "b": "/royalty-deal"
-  },
-  {
-   "overlap": 0.108,
-   "a": "/nps-calculator",
-   "b": "/sip-calculator"
   },
   {
    "overlap": 0.108,
@@ -61,17 +46,14 @@
    "overlap": 0.105,
    "a": "/home-loan-emi-calculator",
    "b": "/loan-emi-calculator"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/arpu-mrr-and-arr",
+   "b": "/churn-rate"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/co-founder-equity-split",
-   "closest_overlap": 0.114
-  },
-  {
-   "page": "/debt-equity-deal",
-   "closest_overlap": 0.114
-  },
   {
    "page": "/implied-valuation",
    "closest_overlap": 0.113
@@ -105,12 +87,12 @@
    "closest_overlap": 0.111
   },
   {
-   "page": "/royalty-deal",
-   "closest_overlap": 0.109
+   "page": "/percentage-calculator",
+   "closest_overlap": 0.108
   },
   {
-   "page": "/nps-calculator",
-   "closest_overlap": 0.108
+   "page": "/baby-name-number-calculator",
+   "closest_overlap": 0.107
   }
  ],
  "median_overlap": 0.095

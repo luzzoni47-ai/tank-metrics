@@ -480,17 +480,17 @@
    ]
   },
   "cofounder": {
-   "what": "Co-founder equity split answers the hardest conversation in an early startup: who gets how much. The fairest approach scores each founder on what they actually bring - the idea, capital, time, skills, network and risk taken - and divides the equity in proportion to those scores. Enter each founder's score and the calculator gives the percentage. An equal 12-12-12 gives a clean three-way split, but most real splits are not equal, and putting the reasons into numbers now prevents a fight later when the company is worth something.",
-   "formula": "Founder Share % = Founder Score ÷ Total of All Scores × 100. Three founders scoring 12, 12 and 12 hold 33.3% each; scores of 20, 15 and 10 give 44.4%, 33.3% and 22.2%. Score what each person is contributing - money, full-time commitment, the idea, the skills - so the split reflects work rather than who spoke first.",
+   "what": "Co-founder Equity Split turns the most awkward startup conversation into a sum you can show: who owns what, and why. Instead of splitting three ways because it feels polite, you score each founder on the things that actually build the company — full-time hours, cash put in, the original idea, the skills the business runs on, the network it sells through, and the risk each person has taken. The calculator divides the cap table in the same ratio as those scores, so Founder A, Founder B and Founder C each come out with a percentage you can defend in a term sheet. It is built for two- and three-person founding teams: enter scores for Founder A and Founder B, and leave Founder C blank when there is no third founder, because the tool treats a blank third score as zero and gives a clean two-way split rather than a phantom 0% shareholder. The point is not the exact number. It is that every founder can see the input behind every percentage before anyone signs a vesting schedule — far cheaper than fixing a split after the first cheque.",
+   "formula": "Founder A % = a ÷ (a + b + c) × 100; Founder B % = b ÷ (a + b + c) × 100; Founder C % = c ÷ (a + b + c) × 100, where a, b and c are the three Founder Score fields and c counts as 0 when Founder C is left blank. Scores of 20, 15 and 10 give 44.4%, 33.3% and 22.2%; three scores of 12 give 33.3% each. Only the ratio between the scores matters — doubling all three changes nothing.",
    "when": [
-    "You and your co-founders are setting up the cap table for the first time.",
-    "A new co-founder joins and the existing split must be redone.",
-    "An investor asks why the founding equity is divided the way it is."
+    "You are writing the first cap table and need a split every founder can live with.",
+    "A third co-founder joins and the existing two-way split has to be re-scored.",
+    "An investor's due-diligence sheet asks how the founding equity was arrived at."
    ],
    "mistakes": [
-    "Splitting equally to avoid an argument, then resenting it when one founder does most of the work.",
-    "Giving the idea the largest share and the person who will actually run the business a smaller one.",
-    "Leaving the split in chat messages instead of a signed agreement with vesting."
+    "Scoring the idea as the biggest contribution and the founder who will actually run the business full-time as a smaller one — the idea earns a score, not the whole table.",
+    "Leaving Founder C blank while a third co-founder is really in the business: the blank counts as zero, so that founder silently ends up with 0%.",
+    "Letting each founder score themselves on a different scale — the split is only honest if one person scores all three on the same out-of-100 basis."
    ]
   },
   "compatibility": {
@@ -578,17 +578,17 @@
    ]
   },
   "debteq": {
-   "what": "A debt-plus-equity deal splits the money an investor puts in into two parts: a loan the business must repay, and equity that buys a permanent stake. It is common on Shark Tank India because it lets a shark take less ownership while still getting the cash back. Enter the total deal, the debt portion and the valuation for the equity part, and you see the loan amount, the equity amount and the stake it buys. The debt is repaid from cash flow whether or not the business grows; the equity is never repaid at all.",
-   "formula": "Debt Amount = Total Deal × Debt Portion %; Equity Amount = Total Deal − Debt Amount; Equity % = Equity Amount ÷ Valuation × 100. On a ₹4.5 crore deal with 18% as debt, ₹81 lakh is a loan and the rest buys equity at the agreed valuation. The debt is a fixed obligation, the equity a permanent claim - mixing them hides which one is actually expensive.",
+   "what": "Debt + Equity Deal separates the two very different things hiding inside one funding offer: a loan the company must repay, and equity that buys a permanent share. A shark offering a mixed cheque is not simply taking a stake — part of that money comes back as debt, usually with interest, whether or not the business grows. Enter the Total Deal Amount, the Debt Portion as a percentage, and the Valuation used for the equity part, and the calculator splits the deal into the Debt Amount, the Equity Amount and the Equity % that the equity half actually buys. This is the Shark Tank India structure in numbers, and it is the one founders most often misread: treating the full deal as equity overstates dilution and hides the repayment burden, while treating it as pure debt ignores the stake that is never repaid. Seeing both halves side by side lets you judge an offer on the cash it leaves in the business and the ownership it takes, not on the headline amount alone.",
+   "formula": "Debt Amount = total × debtpct ÷ 100; Equity Amount = total − Debt Amount; Equity % = Equity Amount ÷ val × 100, using the tool's three fields — total (Total Deal Amount), debtpct (Debt Portion) and val (Valuation for the equity part). A ₹1 crore deal with 20% debt leaves ₹80 lakh as equity; at a ₹4 crore valuation that is a 20% stake. The valuation has to be larger than the equity amount, or the stake comes out above 100% and the offer does not make sense.",
    "when": [
-    "A term sheet mixes a loan with equity and you want each part separated.",
-    "You are deciding how much of a deal to take as repayable debt rather than permanent equity.",
-    "You are comparing a pure-equity offer against one with a debt component."
+    "A term sheet mixes a loan and equity and you want each half priced separately.",
+    "You are deciding how much of an offer to take as repayable debt rather than permanent equity.",
+    "You are comparing a pure-equity offer against one that carries a debt component."
    ],
    "mistakes": [
-    "Treating the whole deal as equity and undercounting the dilution.",
-    "Forgetting the debt portion must be repaid from cash flow, which squeezes working capital.",
-    "Judging the deal on the stake alone when the debt is what decides whether the business can breathe."
+    "Calling the whole cheque equity and counting only the dilution — the debt half still has to be repaid from cash flow.",
+    "Judging the offer by the stake alone while ignoring the interest and repayment schedule attached to the debt portion.",
+    "Plugging in a valuation smaller than the equity amount, which pushes Equity % above 100% — a sign the valuation or the deal split is wrong."
    ]
   },
   "depreciation": {
