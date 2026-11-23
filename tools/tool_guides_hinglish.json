@@ -873,21 +873,21 @@
    ]
   },
   "impval": {
-   "what": "Implied valuation us ek sawaal ka jawab deta hai jo offer aate hi founder ke saamne aata hai: ye cheque aur ye stake milkar poori company ki kya keemat lagate hain? Jo investor ₹25,00,000 me 4% maangta hai, wo number bole bina hi business ko ₹6.25 crore ka price kar chuka hai. Tool us jodi ko us ek figure me badal deta hai jis par baat asli me ho rahi hoti hai, taaki offer ko cheque ke size par nahi, price par judge kiya ja sake.\n\nFounder ko iski zaroorat isliye hai ki log cheque dekhkar react karte hain, par asli number stake hota hai. Wahi ₹30,00,000 1% par ₹30 crore imply karta hai aur 5% par ₹6 crore — ek hi paise me paanch guna company. Har offer ko jawab dene se pehle is tarah padho, aur bade number par confidence wala round ya to kam price par sasta stake niklega, ya zyada price par mehnga stake. Fundraising ki baat-cheet me ye sabse tez sanity check hai, aur ise na model chahiye, na cap table, na valuer.",
-   "formula": "Implied Valuation = amt ÷ (eq ÷ 100), cheque ₹ me amt aur stake percent me eq. ₹25,00,000 aur eq = 4 par 25,00,000 ÷ 0.04 = ₹6,25,00,000. Claim test karne ke liye ulta padho: investor company ki value ₹10 crore batata hai aur ₹25,00,000 likhta hai, to wo cheque amt ÷ Implied Valuation × 100 = 25,00,000 ÷ 10,00,00,000 × 100 = 2.5% stake kharidta hai, 5% nahi. Implied equity = amt ÷ Implied Valuation × 100.",
-   "when": [
-    "Offer amount aur stake ke roop me aata hai — “₹20,00,000 for 4%” — aur cheque par react karne se pehle aap usme chhupi poori company ki price jaanna chahte ho.",
-    "Do offers alag cheque aur alag stake par hain aur unhe ek hi scale par rank karna hai.",
-    "Investor baat ke beech company ki valuation bata deta hai aur aap check karna chahte ho ki jo cheque wo likh raha hai us se us price par kitna stake milta hai.",
-    "Aap term sheet likh rahe ho aur stake naam karne se pehle yahi cheque 5%, 10% aur 20% par kaise padhta hai, ye dekhna chahte ho."
-   ],
+   "what": "Implied valuation ek back-solve hai. Aapko company ka ek chhota hissa diya jaata hai - ₹50 lakh ka cheque 5% ke liye - aur tool nikaalta hai ki poora business kitne ka hona chahiye tabhi ye hissa theek price par ho: ₹10 crore. Ye tool us decision ko settle karta hai ki WhatsApp message, term sheet ya pitch me jo number bola gaya hai woh business ka sachcha price hai ya sirf ek chhote hisse ka chikna price. Founders stake me baat karte hain aur investors cheque me, isliye dono apne side ka woh figure bolte hain jo saamne wala kabhi nahi kehta, aur yahi division dono ko ek page par laata hai.\n\nYe mismatched round pakadne ka sabse tez tareeka bhi hai. Agar ek angel ₹50 lakh de 5% ke liye (₹10 crore implied) aur doosra ₹1 crore de 20% ke liye (₹5 crore implied), to doosra deal aadhe price par chaar guna stake maangta hai - bada cheque aur kharab deal. Implied valuation compare karo, cheque size kabhi nahi. Aur answer ko post-money samjho, kyunki jo cheque price kar raha hai woh usme pehle se hai.",
+   "formula": "Implied Valuation = Investment Amount ÷ (Equity Offered ÷ 100). Calculator ke variables me ye amt ko eq ke fraction se divide karna hai: ₹50,00,000 for 5% se 50,00,000 ÷ 0.05 = ₹10,00,00,000, yani ₹10 crore. Ulta karke, ek cheque jitna stake kharidta hai woh amt ÷ implied valuation × 100 hai, isliye ₹10 crore company me ₹50 lakh 5% hai. Answer post-money valuation hai kyunki naya paisa usme shamil hai; pre-money is answer se cheque ghata kar milta hai, is example me ₹9.5 crore.",
    "mistakes": [
-    "Implied number ko company ki value maan lena, jabki ye sirf is ek offer ki price hai — usi business me alag stake alag valuation imply karta hai.",
-    "Convertible note, loan ya royalty cheque ko eq me equity ki tarah daal dena; equity ko debt se alag karne ke baad hi implied valuation ka matlab banta hai.",
-    "Implied valuation ko certified valuation bata dena — ye offer ka reading hai, aur official kaam ke liye CA ya merchant banker chahiye."
+    "Implied number ko pre-money samajhna. Cheque price me pehle se hai, isliye ₹50 lakh for 5% paisa aane ke baad ₹10 crore ki company imply karta hai, pehle nahi.",
+    "Cheque amount compare karna implied price ki jagah. ₹1 crore for 20% ₹5 crore imply karta hai, jo ₹50 lakh for 5% se kharab price hai chahe cheque do guna bada ho.",
+    "Number ko promise maan lena. Ye sirf ek offer ka hisaab hai, aur ESOP top-up ya liquidation preference sale ke din us 5% ki value badal sakte hain."
    ],
-   "hi_intro": "Maano ek founder ko business ke 10% ke liye ₹10,00,000 ka offer milta hai. Do chhote numbers lagte hain, par implied valuation inhi ko ek price bana deta hai — poori company ki value jo round ka asli sawaal hai.",
-   "hi_outro": "₹10,00,000 me 10% ka matlab ₹1,00,00,000 ki company. Wahi cheque 5% ke liye do to implied price dugna ho jaata hai; upar koi bhi field badlo aur poori company ki value saath badalti hai."
+   "when": [
+    "Investor ek hi line me cheque aur stake bolta hai aur aap uske peeche ka poora company price jaanna chahte ho.",
+    "Do offers alag cheque amounts ke saath aate hain aur aapko headline figure ki jagah har ek ke implied price se rank karna hai.",
+    "Team ko pitch valuation repeat karne se pehle aap check karna chahte ho ki 'X for Y%' ka hisaab sahi baithta hai.",
+    "Aapka koi dost stake ka offer le kar aaya hai aur aapko batana hai ki us offer me company ka asli price kya ban raha hai."
+   ],
+   "hi_intro": "Ek investor ₹50 lakh de raha hai company ke 5% ke liye. Dono numbers alag-alag kuch nahi batate; ek ko doosre se divide karo aur offer poore business ka ₹10 crore price ban jaata hai.",
+   "hi_outro": "₹50 lakh for 5% par cheque company ko ₹10 crore ka price deta hai. Wahi ₹50 lakh 10% ke liye do to implied price aadha, ₹5 crore - koi bhi field badlo aur poore company ki value saath chalti hai."
   },
   "incometax": {
    "what": "Old vs new regime calculator batata hai ki is saal India ke do income tax systems mein se kaunsa aapse kam leta hai - aur jawab lagbhag har salary ke saath badalta hai. New regime slab rates kam deta hai par zyadatar deductions chheen leta hai. Old regime ke rates zyada hain par 80C, 80D, HRA aur home loan interest tax se pehle ghata sakte ho. Isliye comparison rates ka nahi hai - ye dekhna hai ki aapke deductions rate cut ko beat karte hain ya nahi. Jiske paas investments nahi, woh lagbhag hamesha new regime mein better hai; jiske paas bada home loan aur poora 80C hai, woh aksar old regime mein.",
@@ -1202,21 +1202,21 @@
    ]
   },
   "prepost": {
-   "what": "Pre-money aur post-money term sheet ki do prices hain, aur inke farak ki asli wajah ye hai ki investor ka stake doosri price par naapa jaata hai. Pre-money matlab wo value jis par company naye cheque ke bahar rehte hue tay hui; post-money matlab wahi figure plus cheque. ₹8 crore pre-money aur ₹2 crore investment par round band hote hi company ₹10 crore ki hui, aur ₹2 crore ne usme paanchva hissa kharida.\n\nCalculator wo dilution sawaal saaf karta hai jo founders sabse zyada galat samajhte hain: naya investor ka percentage founder ke hisse se nikalta hai, company ke kisi khaali tukde se nahi. pre = 8,00,00,000 aur amt = 2,00,00,000 daalo, tool ₹10 crore post-money aur 20% diya gaya equity dikhata hai — aur yahi 20% purane shareholders ke hisse me ghatta hai. Isi wajah se kam pre-money par zyada paisa uthana founder ko cheque se kaafi zyada mehnga pad sakta hai, aur isi wajah se negotiate pre-money par hota hai, headline valuation par nahi.",
-   "formula": "Post-Money Valuation = pre + amt, aur Equity Given = amt ÷ Post-Money Valuation × 100. Pre-money pre me jaata hai aur cheque amt me, dono ₹ me. pre = 8,00,00,000 aur amt = 2,00,00,000 par post-money ₹10 crore hota hai aur equity given = 2,00,00,000 ÷ 10,00,00,000 × 100 = 20%. Stake hamesha post-money par naapa jaata hai, kyunki investor usi company me shaamil ho raha hai; pre-money par naapne se stake hamesha zyada dikhta hai.",
-   "when": [
-    "Term sheet me pre-money figure ho aur sign karne se pehle post-money aur diya gaya stake chahiye.",
-    "Kam pre-money par bada cheque aur zyada pre-money par chhota cheque — dono ka dilution saath-saath dekhna hai.",
-    "Simple cap table bana rahe ho aur shareholders me baantne se pehle post-money value chahiye.",
-    "Investor round ko sirf post-money se batata hai aur aap wo pre-money nikalna chahte ho jo usne tay kiya hoga."
-   ],
+   "what": "Pre-money aur post-money har funding round ke do price hain, aur dono ke beech ka gap bilkul cheque ke barabar hota hai. Pre-money woh value hai jo company ki thi naya paisa aane se theek pehle; post-money woh figure plus investment hai. ₹8 crore pre-money tay karo, ₹2 crore ka cheque lo, to round band hone par company ₹10 crore ki price par hai aur cheque uske 20% kharidta hai. Ye tool ye decision settle karta hai ki ek cheque company ka kitna hissa asli me kharidta hai - wahi number jo term sheet aur cap table me jaata hai.\n\nFounders aksar pre-money par negotiate karte hain aur phir stake dekh kar chauk jaate hain, kyunki stake ek bade number par naapa jaata hai. Cheque ko pre-money se divide karna har baar stake badha kar dikhata hai; post-money se divide karo to asli hissa milta hai. Fixed pre-money par cheque me har rupaya company ka thoda zyada hissa kharidta hai, isliye round pre-money par tay hota hai aur post-money par check hota hai. Implied Valuation tool yahi hisaab doosre sire se karta hai.",
+   "formula": "Post-money Valuation = Pre-money Valuation + Investment Amount. Equity Given = Investment Amount ÷ Post-money Valuation × 100. ₹8,00,00,000 pre-money aur ₹2,00,00,000 cheque par post-money ₹10,00,00,000 hai aur cheque 2,00,00,000 ÷ 10,00,00,000 = 20% kharidta hai. Term sheet test karne ke liye ulta chalao: agar investor kehta hai ₹2 crore se 20% milna chahiye, to tay hone wala pre-money ₹8 crore hai, ₹10 crore nahi. Dono price ke beech ka gap hamesha cheque hi hota hai.",
    "mistakes": [
-    "Equity given ko pre-money par naapna — pre-money ka 20% company ka 20% nahi hota, kyunki investment bhi us base ka hissa hai jisse stake divide hota hai.",
-    "Pre-money ko poori company ki price samajhna — ye naye paise se pehle ki price hai, aur sheet par hamesha chhota number hota hai.",
-    "Cheque ko pre-money me jod dena par founder ka apna hissa diye gaye equity se kam karna bhool jana; dono saath chalte hain, aur sirf post-money ise dikhata hai."
+    "Cheque ko pre-money se divide karna. ₹8 crore pre-money me ₹2 crore ₹10 crore post-money ka 20% hai, woh 25% nahi jo 2 ÷ 8 se lagta hai.",
+    "Post-money ko founder ka price samajhna. Isme naya paisa shamil hai, isliye ye hamesha bada figure hota hai aur stake isi par naapa jaata hai.",
+    "ESOP pool bhoolna, jo aksar pre-money me se nikaala jaata hai aur founders ko 100% minus investor ka hissa se kam chhod deta hai."
    ],
-   "hi_intro": "Term sheet me ₹90,00,000 pre-money aur ₹10,00,000 ka cheque likha hai. Ye do numbers akele nahi batate investor ka hissa kitna hoga; post-money batata hai, aur wo dono ka jod hai.",
-   "hi_outro": "₹90,00,000 pre-money par ₹10,00,000 ka cheque ₹1,00,00,000 ki company banata hai aur 10% deta hai. Pre-money badle bina cheque badhao to stake badh jaata hai; upar koi bhi field badlo aur hissa dekho."
+   "when": [
+    "Term sheet me pre-money aur cheque likha hai aur aapko post-money aur uska asli stake chahiye.",
+    "Wahi pre-money table par hai par cheque bada aur chhota do options me hai, aur aapko dono ka dilution chahiye.",
+    "Aap investor ke '₹X for Y%' ko us pre-money se check karna chahte ho jo woh kehta hai ki de raha hai.",
+    "Aap ek simple cap table bana rahe ho aur shareholders me baantne se pehle post-money value chahiye."
+   ],
+   "hi_intro": "Term sheet me ₹8 crore pre-money aur ₹2 crore ka cheque likha hai. Dono figures alag se ye nahi batate ki investor ka hissa kitna hoga; post-money inka jod hai, aur stake isi par naapa jaata hai.",
+   "hi_outro": "₹8 crore pre-money par ₹2 crore ka cheque ₹10 crore company banata hai aur 20% de deta hai. Pre-money na badal kar cheque badhao to stake badhta hai; upar koi bhi field badlo aur split dikh jaayega."
   },
   "propertyroi": {
    "what": "Property ROI calculator us sawaal ka jawab deta hai jo doosra ghar kharidne wala aksar galat nikalta hai: is flat ne mujhe actually kitna kamaya? Do alag return hote hain aur dono confuse karna aasan hai. Ek cash hai - jo kiraya aapne liya. Doosra kagaz par - flat ki value kitni badhi. Sirf appreciation dekhkar property badi investment lagti hai, par cash mein kuch nahi mila ho sakta - aur tenant jaane ya EMI rukne par yahi maayne rakhta hai. Yeh calculator dono ek saath dikhata hai, un saalon ke hisaab se jitne aapne rakha.",

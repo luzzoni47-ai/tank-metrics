@@ -267,7 +267,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T09:14:42Z",
-   "overlap": null,
+   "overlap": 0.107,
    "canonical_ok": true
   },
   {
@@ -387,7 +387,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T04:20:36Z",
-   "overlap": 0.114,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -399,7 +399,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-28T04:33:52Z",
-   "overlap": 0.109,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -423,7 +423,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T20:03:36Z",
-   "overlap": 0.114,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -939,7 +939,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T12:55:42Z",
-   "overlap": null,
+   "overlap": 0.105,
    "canonical_ok": true
   },
   {
@@ -1227,7 +1227,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T21:27:36Z",
-   "overlap": null,
+   "overlap": 0.107,
    "canonical_ok": true
   },
   {

@@ -291,10 +291,10 @@
         "v": "₹1,00,00,000"
       }
     ],
-    "intro": "Say a founder is offered ₹10,00,000 for 10% of the business. The two numbers look small next to each other; implied valuation turns them into the one figure the round is really about — the price they put on the whole company.",
-    "outro": "At ₹10,00,000 for 10%, the cheque implies a ₹1,00,00,000 company. Offer the same ₹10,00,000 for 5% instead and the implied price doubles; change either field above and the whole-company value moves with it.",
-    "hi_intro": "Maano ek founder ko business ke 10% ke liye ₹10,00,000 ka offer milta hai. Do chhote numbers lagte hain, par implied valuation inhi ko ek price bana deta hai — poori company ki value jo round ka asli sawaal hai.",
-    "hi_outro": "₹10,00,000 me 10% ka matlab ₹1,00,00,000 ki company. Wahi cheque 5% ke liye do to implied price dugna ho jaata hai; upar koi bhi field badlo aur poori company ki value saath badalti hai."
+    "intro": "An investor offers ₹50 lakh for 5% of the company. Neither number says what the business is worth; divide one by the other and the offer turns into a ₹10 crore price for the whole company.",
+    "outro": "At ₹50 lakh for 5% the cheque prices the company at ₹10 crore. Offer the same ₹50 lakh for 10% and the implied price halves to ₹5 crore - change either field and the whole-company value moves with it.",
+    "hi_intro": "Ek investor ₹50 lakh de raha hai company ke 5% ke liye. Dono numbers alag-alag kuch nahi batate; ek ko doosre se divide karo aur offer poore business ka ₹10 crore price ban jaata hai.",
+    "hi_outro": "₹50 lakh for 5% par cheque company ko ₹10 crore ka price deta hai. Wahi ₹50 lakh 10% ke liye do to implied price aadha, ₹5 crore - koi bhi field badlo aur poore company ki value saath chalti hai."
   },
   "prepost": {
     "inputs": {
@@ -311,10 +311,10 @@
         "v": "10.0%"
       }
     ],
-    "intro": "A term sheet names a ₹90,00,000 pre-money and a ₹10,00,000 cheque. Neither number on its own says what the investor ends up owning; the post-money does, and it is the sum of the two.",
-    "outro": "The ₹10,00,000 cheque on a ₹90,00,000 pre-money makes a ₹1,00,00,000 company and hands over 10%. Raise the cheque without moving the pre-money and the stake grows; change either field above to see the split.",
-    "hi_intro": "Term sheet me ₹90,00,000 pre-money aur ₹10,00,000 ka cheque likha hai. Ye do numbers akele nahi batate investor ka hissa kitna hoga; post-money batata hai, aur wo dono ka jod hai.",
-    "hi_outro": "₹90,00,000 pre-money par ₹10,00,000 ka cheque ₹1,00,00,000 ki company banata hai aur 10% deta hai. Pre-money badle bina cheque badhao to stake badh jaata hai; upar koi bhi field badlo aur hissa dekho."
+    "intro": "A term sheet names a ₹9 crore pre-money and a ₹1 crore cheque. Neither figure alone says what the investor ends up owning; the post-money is the sum of the two, and the stake is measured against it.",
+    "outro": "The ₹1 crore cheque on a ₹9 crore pre-money makes a ₹10 crore company and hands over 10%. Raise the cheque without moving the pre-money and the stake grows; change either field above to see the split.",
+    "hi_intro": "Term sheet me ₹9 crore pre-money aur ₹1 crore ka cheque likha hai. Dono figures alag se ye nahi batate ki investor ka hissa kitna hoga; post-money inka jod hai, aur stake isi par naapa jaata hai.",
+    "hi_outro": "₹9 crore pre-money par ₹1 crore ka cheque ₹10 crore company banata hai aur 10% de deta hai. Pre-money na badal kar cheque badhao to stake badhta hai; upar koi bhi field badlo aur split dikh jaayega."
   },
   "revmul": {
     "inputs": {
@@ -401,9 +401,9 @@
       }
     ],
     "intro": "Debt + Equity Deal, worked end to end. The calculator takes Total Deal Amount, Debt Portion, Valuation (for equity part); the example below runs one realistic set of those numbers through it.",
-    "outro": "Debt + Equity Deal settles it with Debt Amount = Total Deal × Debt Portion %; Equity Amount = Total Deal − Debt Amount; Equity % = Equity Amount ÷ Valuation × 100. Change any field above and the answer updates with it.",
+    "outro": "Debt + Equity Deal settles it with Debt Amount = total × debtpct ÷ 100; Equity Amount = total − Debt Amount; Equity % = Equity Amount ÷ val × 100, using the tool's three fields — total (Total Deal Amount), debtpct (Debt Portion) and val (Valuation for the equity part). Change any field above and the answer updates with it.",
     "hi_intro": "Debt + Equity Deal ka poora hisaab. Tool leta hai Total Deal Amount aur Debt Portion aur Valuation (for equity part); neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Debt + Equity Deal ka formula: Debt Amount = Total Deal × Debt Portion %; Equity Amount = Total Deal − Debt Amount; Equity % = Equity Amount ÷ Valuation × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Debt + Equity Deal ka formula: Debt Amount = total × debtpct ÷ 100; Equity Amount = total − Debt Amount; Equity % = Equity Amount ÷ val × 100, tool ke teen fields ke saath — total (Total Deal Amount), debtpct (Debt Portion) aur val (Valuation for the equity part). Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "royalty": {
     "inputs": {
@@ -463,9 +463,9 @@
       }
     ],
     "intro": "Co-founder Equity Split, worked end to end. The calculator takes Founder A Score, Founder B Score, Founder C Score (optional); the example below runs one realistic set of those numbers through it.",
-    "outro": "Co-founder Equity Split settles it with Founder Share % = Founder Score ÷ Total of All Scores × 100. Change any field above and the answer updates with it.",
+    "outro": "Co-founder Equity Split settles it with Founder A % = a ÷ (a + b + c) × 100; Founder B % = b ÷ (a + b + c) × 100; Founder C % = c ÷ (a + b + c) × 100, where a, b and c are the three Founder Score fields and c counts as 0 when Founder C is left blank. Change any field above and the answer updates with it.",
     "hi_intro": "Co-founder Equity Split ka poora hisaab. Tool leta hai Founder A Score aur Founder B Score aur Founder C Score (optional); neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Co-founder Equity Split ka formula: Founder Share % = Founder Score ÷ Total of All Scores × 100. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Co-founder Equity Split ka formula: Founder A % = a ÷ (a + b + c) × 100; Founder B % = b ÷ (a + b + c) × 100; Founder C % = c ÷ (a + b + c) × 100, jahan a, b aur c teen Founder Score fields hain aur Founder C khaali ho toh c ko 0 ginte hain. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "dscr": {
     "inputs": {
@@ -495,9 +495,9 @@
       }
     ],
     "intro": "Customer Acquisition Cost (CAC), worked end to end. The calculator takes Total Sales + Marketing Spend, New Customers; the example below runs one realistic set of those numbers through it.",
-    "outro": "Customer Acquisition Cost (CAC) settles it with CAC = Total Sales and Marketing Spend ÷ New Customers Won. Change any field above and the answer updates with it.",
+    "outro": "Customer Acquisition Cost (CAC) settles it with CAC = (Total Sales + Marketing Spend) ÷ New Customers, both counted over the same period. Change any field above and the answer updates with it.",
     "hi_intro": "Customer Acquisition Cost (CAC) ka poora hisaab. Tool leta hai Total Sales + Marketing Spend aur New Customers; neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai.",
-    "hi_outro": "Customer Acquisition Cost (CAC) ka formula: CAC = Total Sales aur Marketing Kharch ÷ Naye Customers. Koi bhi field badlo aur jawab turant badal jaata hai."
+    "hi_outro": "Customer Acquisition Cost (CAC) ka formula: CAC = (Total Sales + Marketing Spend) ÷ New Customers, dono ek hi period ke. Koi bhi field badlo aur jawab turant badal jaata hai."
   },
   "ltv": {
     "inputs": {

@@ -440,7 +440,9 @@
           "u": "₹"
         }
       ],
-      "compute": "function(e){var t=val(e,\"pre\"),a=val(e,\"amt\"),n=t+a,r=n?a/n*100:0;return{rows:[{l:\"Post-Money Valuation\",v:inr(n)},{l:\"Equity Given\",v:pct(r)}]}}"
+      "compute": "function(e){var t=val(e,\"pre\"),a=val(e,\"amt\"),n=t+a,r=n?a/n*100:0;return{rows:[{l:\"Post-Money Valuation\",v:inr(n)},{l:\"Equity Given\",v:pct(r)}]}}",
+      "seo_title": "Pre-Money & Post-Money Valuation Calculator | Tank Metrics",
+      "seo_desc": "Agree a pre-money and a cheque, then see the post-money value and exactly what stake the cheque buys. Free pre- and post-money calculator in ₹."
     },
     {
       "id": "revmul",

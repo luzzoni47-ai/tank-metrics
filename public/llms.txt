@@ -85,7 +85,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Operating Margin — Free Online Calculator](https://tankmetrics.in/operating-margin)
 - [Percentage Calculator — Free Calculator](https://tankmetrics.in/percentage-calculator)
 - [PPF Calculator — Free Online Calculator](https://tankmetrics.in/ppf-calculator)
-- [Pre-Money & Post-Money Valuation](https://tankmetrics.in/pre-money-and-post-money-valuation)
+- [Pre-Money & Post-Money Valuation Calculator](https://tankmetrics.in/pre-money-and-post-money-valuation)
 - [Property ROI Calculator India - Rental Yield](https://tankmetrics.in/property-roi-calculator)
 - [Property Valuation Calculator India - Free & Instant](https://tankmetrics.in/property-valuation-calculator)
 - [Rashi (Moon Sign) Calculator](https://tankmetrics.in/rashi-moon-sign-calculator)
