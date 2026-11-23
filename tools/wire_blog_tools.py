@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-advance-tax-four-dates": [
+        ("/income-tax-calculator-old-vs-new-regime", "Income Tax Calculator (Old vs New Regime)",
+         "work out the year's tax first, then split it into the four instalments this post explains"),
+        ("/working-capital", "Working Capital Calculator",
+         "see how much cash the instalments hold back while the year is still running"),
+    ],
     "blog-mutual-fund-exit-load-explained": [
         ("/sip-calculator", "SIP Calculator",
          "see how a monthly investment grows when you hold past the exit load window"),

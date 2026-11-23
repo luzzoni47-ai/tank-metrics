@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Mon, 23 Nov 2026 01:33:51 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 03:36:08 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Style Union&#x27;s ₹485 Crore Round: ₹7 Crore a Store</title>
@@ -14,6 +14,14 @@
     <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>Style Union raised ₹485 crore to open 250 more stores. The maths behind the round: each store now earns about ₹7 crore a year, up from ₹3 crore in FY23.</description>
+  </item>
+  <item>
+    <title>Advance Tax: The Four Dates Founders Miss</title>
+    <link>https://tankmetrics.in/advance-tax-four-dates</link>
+    <guid isPermaLink="true">https://tankmetrics.in/advance-tax-four-dates</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Advance tax explained in rupees: who must pay, the four instalment dates, what a missed quarter costs in interest, and how to set the money aside monthly.</description>
   </item>
   <item>
     <title>FD Rates Are Rising: Where a Shop Owner Parks Cash</title>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>The cash conversion cycle is the days your money is tied up in stock and unpaid customer invoices. See a small worked example and two ways to shorten it.</description>
-  </item>
-  <item>
-    <title>MSME Loan Eligibility: What Banks Check</title>
-    <link>https://tankmetrics.in/msme-loan-eligibility</link>
-    <guid isPermaLink="true">https://tankmetrics.in/msme-loan-eligibility</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>MSME loan eligibility explained: the DSCR and working capital numbers banks check before sanctioning a loan, with worked examples and rejection mistakes.</description>
   </item>
 </channel>
 </rss>
