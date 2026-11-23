@@ -2,6 +2,79 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "style-union-485-crore-series-e-7-crore-a-store",
+   "title": "Style Union's ₹485 Crore Round: ₹7 Crore a Store",
+   "dek": "Style Union raised ₹485 crore to open 250 more stores. The maths behind the round: each store now earns about ₹7 crore a year, up from ₹3 crore in FY23.",
+   "category": "Small Business",
+   "date": "2026-11-23",
+   "date_display": "November 23, 2026",
+   "source_name": "ET Retail",
+   "source_url": "https://retail.economictimes.indiatimes.com/news/apparel-fashion/style-union-raises-rs-485-crore-in-series-e-funding-led-by-venturi-partners/135980087",
+   "cta": {
+    "text": "A chain is only as good as one store. Enter the fit-out cost, monthly sales and margin, and see how many years one outlet takes to pay you back.",
+    "href": "/franchise-store-roi",
+    "label": "Open the Franchise / Store ROI Calculator"
+   },
+   "related": [
+    {
+     "slug": "franchise-roi-explained",
+     "title": "Franchise ROI: What a Store Really Earns"
+    },
+    {
+     "slug": "inventory-turnover-ratio-explained",
+     "title": "Inventory Turnover Ratio: What It Tells You"
+    },
+    {
+     "slug": "boutique-profit-margin-explained",
+     "title": "Boutique Profit Margin: What You Really Keep"
+    }
+   ],
+   "body_en": [
+    "<p>Value-fashion chain Style Union has raised ₹485 crore in a Series E round led by Venturi Partners, with Elev8 Venture Partners co-leading. The money is a mix of fresh capital and shares bought from existing holders, and most of it is going into new stores in western and northern India.</p>",
+    "<p>The company behind the brand, Nexon Omniverse, was set up in 2022 by Ekta Biyani, wife of former Future Retail managing director Rakesh Biyani. It sells everyday clothes, athleisure and ethnic wear at low prices, plus accessories and makeup, through its own stores and online. It competes with Zudio and Westside from the Tata group and Trends and Yousta from Reliance Retail.</p>",
+    "<h2>What the numbers say</h2>",
+    "<p>Style Union does not publish a full profit and loss statement, but the company put its scale into the announcement. In FY23 it ran 41 stores and booked net revenue of ₹123 crore. By FY26 it had 158 stores and revenue of more than ₹1,150 crore. It now runs about 200 stores across Karnataka, Telangana, Andhra Pradesh, Kerala, Tamil Nadu, Gujarat, Maharashtra and Delhi-NCR.</p>",
+    "<p>Divide revenue by stores and the story becomes simple arithmetic. In FY23, ₹123 crore across 41 stores was ₹3 crore a store a year. In FY26, ₹1,150 crore across 158 stores was about ₹7 crore a store. Same kind of shop, same price points, but each store now rings up more than twice as much. That is what makes a retail chain investable: the newer stores are better stores.</p>",
+    "<p>Store count grew about five times in three years. Revenue grew about nine times. The gap between those two numbers is the whole pitch.</p>",
+    "<h2>What ₹485 crore actually buys</h2>",
+    "<p>The company wants 220 stores by March 2027 and 450 by March 2030. Going from 200 to 450 means 250 new stores. ₹485 crore spread over 250 stores is about ₹2 crore a store, which is the kind of money it takes to fit out a mid-sized value-fashion outlet with racks, lighting, air conditioning, deposit and first stock.</p>",
+    "<p>If the new stores sell like the old ones, 450 stores at ₹7 crore each is revenue of more than ₹3,000 crore. That is the plan in one line: same store format, more cities, and a store count that more than doubles again.</p>",
+    "<p>Read the phrase \"primary and secondary\" carefully. Not all of the ₹485 crore is new money for the company. Part of it paid existing shareholders who sold some of their stake, and only the primary part funds new stores. A secondary sale gives early backers cash without a listing, and it tells you an investor was willing to buy at a higher price than before.</p>",
+    "<h2>Why value fashion is winning now</h2>",
+    "<p>In a tight month, a family rarely stops buying clothes. It buys cheaper ones. A shopper with a fixed clothing budget can take two shirts from a value store for what one branded shirt costs, and that trade is the entire business model here.</p>",
+    "<p>It also explains why the money is going into shops and not into discounts. Value fashion is a volume game on thin margins. It only works when the store is full, the stock turns fast, and rent stays a small share of sales. Navin Honagudi of Elev8 pointed at exactly that, calling the team's unit economics and inventory management its strengths.</p>",
+    "<h2>What it means for a shop of your own</h2>",
+    "<p>You do not need ₹485 crore to use the lesson. Take a shop doing ₹60 lakh of sales a year at a 40% gross margin. Gross profit is ₹24 lakh. Rent of ₹6 lakh, staff of ₹6 lakh, and ₹2 lakh of electricity, transport and other running costs leave ₹10 lakh before tax. That is about a 17% net margin, which is healthy for a small retailer.</p>",
+    "<p>Now ask the Style Union question: what happens if you sell more from the same shop? If sales rise to ₹90 lakh at the same 40% margin, gross profit is ₹36 lakh. Costs rise by maybe ₹3 lakh, so profit before tax is ₹19 lakh. Sales up 50%, profit up about 90%. Fixed costs do not grow with sales, and that is the whole reason a chain obsesses over revenue per store instead of the number of stores.</p>",
+    "<p>Two things follow. First, measure your own shop the way an investor would: annual sales, gross margin, and profit after rent. Second, before you take a bigger shop or a franchise of any brand, work out how many years of profit it takes to recover the fit-out cost. If the answer is more than four years, either the rent or the fit-out is too rich.</p>",
+    "<h2>What to watch</h2>",
+    "<p>Three things decide whether this round works. Payback on stores in the new western and northern markets, where rents are higher and the brand is unknown. Stock turns as the chain doubles its store count, because slow stock eats the margin value fashion depends on. And competition, since Zudio and Trends can open in the same mall at the same rent.</p>",
+    "<p>The headline is a ₹485 crore cheque. The number to track is ₹7 crore a store, and whether it holds when the map has 450 dots on it.</p>"
+   ],
+   "body_hinglish": [
+    "<p>Value-fashion chain Style Union ne ₹485 crore ka Series E round raise kiya hai. Round ko Venturi Partners lead kar raha hai aur Elev8 Venture Partners co-lead. Paisa primary aur secondary dono ka mix hai, aur iska bada hissa west aur north India ke naye stores mein ja raha hai.</p>",
+    "<p>Brand ke peeche ki company Nexon Omniverse hai, jo 2022 mein Ekta Biyani ne shuru ki thi. Ekta, former Future Retail managing director Rakesh Biyani ki patni hain. Company sasta everyday wear, athleisure aur ethnic wear bechti hai, saath mein accessories aur makeup bhi, apne stores aur online dono se. Muqabla Tata group ke Zudio aur Westside se hai, aur Reliance Retail ke Trends aur Yousta se bhi.</p>",
+    "<h2>Numbers kya kehte hain</h2>",
+    "<p>Style Union poora profit and loss statement publish nahi karti, lekin company ne announcement mein apna scale bataya. FY23 mein 41 stores the aur net revenue ₹123 crore tha. FY26 tak 158 stores ho gaye aur revenue ₹1,150 crore se zyada. Ab network mein lagbhag 200 stores hain - Karnataka, Telangana, Andhra Pradesh, Kerala, Tamil Nadu, Gujarat, Maharashtra aur Delhi-NCR mein.</p>",
+    "<p>Revenue ko stores se divide karo to kahani simple arithmetic ban jaati hai. FY23 mein ₹123 crore aur 41 stores, matlab ₹3 crore ek store ka saal ka. FY26 mein ₹1,150 crore aur 158 stores, matlab lagbhag ₹7 crore ek store ka. Wahi tarah ki dukaan, wahi price points, lekin har store ab do guna se zyada bikri kar raha hai. Yahi cheez retail chain ko investable banati hai: naye stores purane se behtar hain.</p>",
+    "<p>Teen saal mein store count lagbhag paanch guna badha. Revenue lagbhag nau guna. In do numbers ka gap hi poora pitch hai.</p>",
+    "<h2>₹485 crore se asal mein kya milta hai</h2>",
+    "<p>Company ko March 2027 tak 220 stores chahiye, aur March 2030 tak 450. 200 se 450 matlab 250 naye stores. ₹485 crore ko 250 stores par baanto to lagbhag ₹2 crore ek store, jitna ek mid-size value-fashion outlet ko racks, lighting, AC, deposit aur pehla stock ke saath taiyar karne mein lagta hai.</p>",
+    "<p>Agar naye stores purane jaisa bikri karte hain, to 450 stores aur ₹7 crore per store matlab ₹3,000 crore se zyada revenue. Poora plan ek line mein: wahi store format, aur zyada sheher, aur store count jo dugna se bhi zyada ho jaayega.</p>",
+    "<p>\"Primary and secondary\" wala phrase dhyan se padho. Poora ₹485 crore company ke liye naya paisa nahi hai. Iska ek hissa un purane shareholders ko gaya jinhone apna kuch stake becha, aur sirf primary hissa naye stores ko fund karta hai. Secondary sale se early investors ko listing ke bina cash milta hai, aur isse pata chalta hai ki koi investor pehle se zyada price par kharidne ko tayyar tha.</p>",
+    "<h2>Value fashion abhi kyun chal raha hai</h2>",
+    "<p>Tight mahine mein parivaar kapde khareedna band nahi karta. Sasta khareedta hai. Jis aadmi ka kapdon ka budget fix hai, wo ek branded shirt ke paison mein value store se do shirt le sakta hai, aur yahi trade is poore business model ka base hai.</p>",
+    "<p>Isi wajah se paisa discount mein nahi, dukaano mein ja raha hai. Value fashion volume ka khel hai, margin patla hota hai. Ye tabhi chalta hai jab store bhara ho, stock tezi se ghume, aur rent sales ka chhota hissa rahe. Elev8 ke Navin Honagudi ne bilkul yahi point kiya - team ki unit economics aur inventory management ko unki strength bataya.</p>",
+    "<h2>Aapki apni dukaan ke liye iska matlab</h2>",
+    "<p>Is seekh ke liye ₹485 crore ki zaroorat nahi. Ek dukaan lo jo saal mein ₹60 lakh ki bikri karti hai, 40% gross margin par. Gross profit ₹24 lakh. Rent ₹6 lakh, staff ₹6 lakh, aur bijli, transport aur baaki kharch ₹2 lakh, to tax se pehle ₹10 lakh bachta hai. Ye lagbhag 17% net margin hai, jo chhote retailer ke liye theek hai.</p>",
+    "<p>Ab Style Union wala sawaal poocho: usi dukaan se zyada bikri karo to kya hoga? Agar sales ₹90 lakh ho jaaye usi 40% margin par, gross profit ₹36 lakh. Kharch lagbhag ₹3 lakh badhta hai, to tax se pehle profit ₹19 lakh. Sales 50% upar, profit lagbhag 90% upar. Fixed cost sales ke saath nahi badhta, aur isi wajah se chain store ki sankhya se zyada revenue per store par nazar rakhti hai.</p>",
+    "<p>Do baatein nikalti hain. Pehli, apni dukaan ko investor ki tarah naapo: saal ki sales, gross margin, aur rent ke baad ka profit. Doosri, badi dukaan ya kisi brand ka franchise lene se pehle hisaab karo ki fit-out ka kharcha kitne saal ke profit mein wapas aayega. Agar jawab chaar saal se zyada hai, to rent ya fit-out dono mein se koi ek zyada mehnga hai.</p>",
+    "<h2>Kya dekhte rahein</h2>",
+    "<p>Teen cheezein tay karengi ki ye round chalta hai ya nahi. Naye west aur north markets mein store ka payback, jahan rent zyada hai aur brand naya hai. Store count double hone par stock turns, kyunki slow stock us margin ko kha jaata hai jis par value fashion chalta hai. Aur muqabla, kyunki Zudio aur Trends usi mall mein usi rent par khul sakte hain.</p>",
+    "<p>Headline ₹485 crore ka cheque hai. Asli number ₹7 crore per store hai, aur ye ki 450 dots wale map par ye number tikta hai ya nahi.</p>"
+   ]
+  },
+  {
    "slug": "fd-rates-rise-ahead-of-rbi-december-meeting-what-to-do",
    "title": "FD Rates Are Rising: Where a Shop Owner Parks Cash",
    "dek": "Banks raised FD rates across November after the RBI's October hike. Here is the arithmetic of locking in now versus waiting for the December 4 decision.",

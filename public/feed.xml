@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sun, 22 Nov 2026 05:36:59 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 01:33:51 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Style Union&#x27;s ₹485 Crore Round: ₹7 Crore a Store</title>
+    <link>https://tankmetrics.in/news/style-union-485-crore-series-e-7-crore-a-store</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/style-union-485-crore-series-e-7-crore-a-store</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>Style Union raised ₹485 crore to open 250 more stores. The maths behind the round: each store now earns about ₹7 crore a year, up from ₹3 crore in FY23.</description>
+  </item>
   <item>
     <title>FD Rates Are Rising: Where a Shop Owner Parks Cash</title>
     <link>https://tankmetrics.in/news/fd-rates-rise-ahead-of-rbi-december-meeting-what-to-do</link>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>MSME loan eligibility explained: the DSCR and working capital numbers banks check before sanctioning a loan, with worked examples and rejection mistakes.</description>
-  </item>
-  <item>
-    <title>Peppermint Robotics Raises ₹100 Crore for Cleaning Robots</title>
-    <link>https://tankmetrics.in/news/peppermint-robotics-100-crore-cleaning-robots-2026</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/peppermint-robotics-100-crore-cleaning-robots-2026</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Funding</category>
-    <description>Pune-based Peppermint Robotics has raised ₹100 crore in a pre-Series B round to build more cleaning robots in India and sell them across nine countries.</description>
   </item>
 </channel>
 </rss>

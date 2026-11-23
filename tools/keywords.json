@@ -1,17 +1,8 @@
 {
- "generated": "2026-11-22T03:31:44Z",
+ "generated": "2026-11-23T01:31:35Z",
  "seed_count": 149,
  "suggestion_count": 1050,
  "keywords": [
-  {
-   "query": "exit load calculator",
-   "demand": 12,
-   "covered": false,
-   "score": 22.08,
-   "from": [
-    "exit calculator"
-   ]
-  },
   {
    "query": "fd calculator sbi",
    "demand": 12,
@@ -1289,7 +1280,7 @@
    ]
   },
   {
-   "query": "love calculator name",
+   "query": "love calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1304,6 +1295,15 @@
    "score": 8.97,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -1524,7 +1524,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1875,6 +1875,15 @@
    ]
   },
   {
+   "query": "exit load calculator",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "exit calculator"
+   ]
+  },
+  {
    "query": "fd term deposit calculator",
    "demand": 12,
    "covered": true,
@@ -1983,7 +1992,7 @@
    ]
   },
   {
-   "query": "love calculator",
+   "query": "love calculator name",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -1998,15 +2007,6 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
-   ]
-  },
-  {
-   "query": "lucky number calculator in tamil",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "lucky number calculator"
    ]
   },
   {
@@ -2199,7 +2199,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2676,7 +2676,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator in tamil",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3137,15 +3137,6 @@
    ]
   },
   {
-   "query": "lucky number calculator by date of birth",
-   "demand": 13,
-   "covered": true,
-   "score": 7.02,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3164,7 +3155,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator online",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3480,7 +3471,7 @@
    ]
   },
   {
-   "query": "lucky number calculator numerology",
+   "query": "lucky number calculator by name",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3621,6 +3612,15 @@
    "score": 6.9,
    "from": [
     "royalty deal"
+   ]
+  },
+  {
+   "query": "run rate meaning",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "run rate"
    ]
   }
  ]
