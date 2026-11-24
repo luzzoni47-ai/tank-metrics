@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T01:33:00Z",
+ "generated": "2026-11-24T03:32:34Z",
  "seed_count": 149,
  "suggestion_count": 1049,
  "keywords": [
@@ -1298,15 +1298,6 @@
    ]
   },
   {
-   "query": "lucky number calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "market share calculator",
    "demand": 13,
    "covered": true,
@@ -2010,6 +2001,15 @@
    ]
   },
   {
+   "query": "lucky number calculator in tamil",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "market share calculator online",
    "demand": 12,
    "covered": true,
@@ -2316,7 +2316,7 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "age calculator by year",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2676,7 +2676,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator by name",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3128,6 +3128,15 @@
    ]
   },
   {
+   "query": "lucky number calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3146,7 +3155,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator app",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3472,7 +3481,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator numerology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3613,15 +3622,6 @@
    "score": 6.9,
    "from": [
     "royalty deal"
-   ]
-  },
-  {
-   "query": "run rate meaning",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "run rate"
    ]
   }
  ]

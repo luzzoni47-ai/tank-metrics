@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-fd-interest-after-tds": [
+        ("/fd-fixed-deposit-calculator", "FD (Fixed Deposit) Calculator",
+         "see the quarterly compounding and the maturity value behind the interest this post explains"),
+        ("/rd-recurring-deposit-calculator", "RD (Recurring Deposit) Calculator",
+         "compare the same after-tax return on monthly deposits instead of a lump sum"),
+    ],
     "blog-advance-tax-four-dates": [
         ("/income-tax-calculator-old-vs-new-regime", "Income Tax Calculator (Old vs New Regime)",
          "work out the year's tax first, then split it into the four instalments this post explains"),

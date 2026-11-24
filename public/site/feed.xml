@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Tue, 24 Nov 2026 01:39:15 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 03:41:30 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Shree Anandhaas raises ₹110 crore at 7x sales</title>
@@ -14,6 +14,14 @@
     <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>A 61-outlet sweets chain from Coimbatore has raised ₹110 crore and a ₹1,908 crore tag. Its ₹284 crore of sales last year left just ₹7.64 crore of profit.</description>
+  </item>
+  <item>
+    <title>FD Interest After TDS: What You Really Keep</title>
+    <link>https://tankmetrics.in/fd-interest-after-tds</link>
+    <guid isPermaLink="true">https://tankmetrics.in/fd-interest-after-tds</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>FD interest is taxed at your own slab rate, and the bank deducts TDS once yearly interest crosses the limit. See what a fixed deposit really leaves you.</description>
   </item>
   <item>
     <title>Style Union&#x27;s ₹485 Crore Round: ₹7 Crore a Store</title>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Inventory turnover ratio explained: how many times a year your stock sells through, the formula, a worked example, and how slow stock quietly traps your cash.</description>
-  </item>
-  <item>
-    <title>India-EU Trade Deal: What Duty-Free Europe Means</title>
-    <link>https://tankmetrics.in/news/india-eu-trade-deal-signing-december-2026-duties</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/india-eu-trade-deal-signing-december-2026-duties</guid>
-    <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Small Business</category>
-    <description>The India-EU trade deal is set to be signed on December 16. Here is the duty arithmetic for a small exporter, and why the saving can stay on paper instead.</description>
   </item>
 </channel>
 </rss>
