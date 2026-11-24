@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.113,
-   "a": "/implied-valuation",
-   "b": "/pre-money-and-post-money-valuation"
-  },
-  {
    "overlap": 0.112,
    "a": "/break-even-point",
    "b": "/gross-profit-and-margin"
@@ -51,17 +46,24 @@
    "overlap": 0.103,
    "a": "/arpu-mrr-and-arr",
    "b": "/churn-rate"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/burn-rate-and-runway",
+   "b": "/churn-rate"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/age-calculator",
+   "b": "/rashi-moon-sign-calculator"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/implied-valuation",
+   "b": "/pre-money-and-post-money-valuation"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/implied-valuation",
-   "closest_overlap": 0.113
-  },
-  {
-   "page": "/pre-money-and-post-money-valuation",
-   "closest_overlap": 0.113
-  },
   {
    "page": "/break-even-point",
    "closest_overlap": 0.112
@@ -93,6 +95,22 @@
   {
    "page": "/baby-name-number-calculator",
    "closest_overlap": 0.107
+  },
+  {
+   "page": "/contribution-margin",
+   "closest_overlap": 0.107
+  },
+  {
+   "page": "/home-loan-emi-calculator",
+   "closest_overlap": 0.105
+  },
+  {
+   "page": "/loan-emi-calculator",
+   "closest_overlap": 0.105
+  },
+  {
+   "page": "/arpu-mrr-and-arr",
+   "closest_overlap": 0.103
   }
  ],
  "median_overlap": 0.095

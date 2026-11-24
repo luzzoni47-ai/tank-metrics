@@ -291,10 +291,10 @@
         "v": "₹1,00,00,000"
       }
     ],
-    "intro": "An investor offers ₹50 lakh for 5% of the company. Neither number says what the business is worth; divide one by the other and the offer turns into a ₹10 crore price for the whole company.",
-    "outro": "At ₹50 lakh for 5% the cheque prices the company at ₹10 crore. Offer the same ₹50 lakh for 10% and the implied price halves to ₹5 crore - change either field and the whole-company value moves with it.",
-    "hi_intro": "Ek investor ₹50 lakh de raha hai company ke 5% ke liye. Dono numbers alag-alag kuch nahi batate; ek ko doosre se divide karo aur offer poore business ka ₹10 crore price ban jaata hai.",
-    "hi_outro": "₹50 lakh for 5% par cheque company ko ₹10 crore ka price deta hai. Wahi ₹50 lakh 10% ke liye do to implied price aadha, ₹5 crore - koi bhi field badlo aur poore company ki value saath chalti hai."
+    "intro": "An investor offers ₹10 lakh for 10% of the company. The cheque and the stake are two views of one price; divide the first by the second and the sentence turns into a ₹1 crore valuation of the whole business.",
+    "outro": "₹10 lakh for 10% prices the company at ₹1 crore - those are the two fields above. Ask for the same ₹10 lakh at 20% instead and the implied price drops to ₹50 lakh; change either field and the whole-company number follows.",
+    "hi_intro": "Ek investor ₹10 lakh de raha hai company ke 10% ke liye. Cheque aur stake ek hi price ke do roop hain; pehle ko doosre se divide karo aur sentence poore business ka ₹1 crore valuation ban jaata hai.",
+    "hi_outro": "₹10 lakh for 10% company ko ₹1 crore par rakhta hai - upar wahi do field hain. Wahi ₹10 lakh 20% ke liye maango to implied price ₹50 lakh par aa jaata hai; koi bhi field badlo aur poore company ka number saath chalta hai."
   },
   "prepost": {
     "inputs": {
@@ -311,10 +311,10 @@
         "v": "10.0%"
       }
     ],
-    "intro": "A term sheet names a ₹9 crore pre-money and a ₹1 crore cheque. Neither figure alone says what the investor ends up owning; the post-money is the sum of the two, and the stake is measured against it.",
-    "outro": "The ₹1 crore cheque on a ₹9 crore pre-money makes a ₹10 crore company and hands over 10%. Raise the cheque without moving the pre-money and the stake grows; change either field above to see the split.",
-    "hi_intro": "Term sheet me ₹9 crore pre-money aur ₹1 crore ka cheque likha hai. Dono figures alag se ye nahi batate ki investor ka hissa kitna hoga; post-money inka jod hai, aur stake isi par naapa jaata hai.",
-    "hi_outro": "₹9 crore pre-money par ₹1 crore ka cheque ₹10 crore company banata hai aur 10% de deta hai. Pre-money na badal kar cheque badhao to stake badhta hai; upar koi bhi field badlo aur split dikh jaayega."
+    "intro": "A term sheet names a ₹90,00,000 pre-money and a ₹10,00,000 cheque. Neither number says what the investor ends up owning; add them for the post-money, and measure the stake against that total.",
+    "outro": "₹10,00,000 on a ₹90,00,000 pre-money makes a ₹1,00,00,000 company and hands over 10%. Hold the pre-money and raise the cheque and the stake rises with it; change either field to watch the split move.",
+    "hi_intro": "Term sheet me ₹90,00,000 pre-money aur ₹10,00,000 ka cheque likha hai. Dono numbers alag se ye nahi batate ki investor ka hissa kitna hoga; inhe jodo to post-money milta hai, aur stake usi total par naapa jaata hai.",
+    "hi_outro": "₹90,00,000 pre-money par ₹10,00,000 ka cheque ₹1,00,00,000 company banata hai aur 10% de deta hai. Pre-money jaga par rakho aur cheque badhao to stake bhi badhta hai; split hilta dekhne ke liye koi bhi field badlo."
   },
   "revmul": {
     "inputs": {
