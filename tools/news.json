@@ -2,6 +2,65 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "shree-anandhaas-110-crore-round-1908-crore-valuation",
+   "title": "Shree Anandhaas raises ₹110 crore at 7x sales",
+   "dek": "A 61-outlet sweets chain from Coimbatore has raised ₹110 crore and a ₹1,908 crore tag. Its ₹284 crore of sales last year left just ₹7.64 crore of profit.",
+   "category": "Small Business",
+   "date": "2026-11-24",
+   "date_display": "November 24, 2026",
+   "source_name": "The Hindu",
+   "source_url": "https://www.thehindu.com/business/Industry/shree-anandhaas-raises-110-crore-in-a-fresh-round-of-funding/article71721044.ece",
+   "cta": {
+    "text": "A ₹284 crore chain kept under ₹3 of every ₹100 of sales. Enter your own monthly sales and costs and see what your shop actually keeps.",
+    "href": "/net-profit-margin",
+    "label": "Open the Net Profit Margin Calculator"
+   },
+   "related": [
+    {
+     "slug": "grocery-store-profit-margin",
+     "title": "Grocery Store Profit Margin: What You Keep"
+    },
+    {
+     "slug": "revenue-multiple-calculator-india",
+     "title": "Revenue Multiple Calculator India"
+    },
+    {
+     "slug": "break-even-point-explained",
+     "title": "How to Calculate Your Break-Even Point"
+    }
+   ],
+   "body_en": [
+    "<p><strong>Shree Anandhaas</strong>, the Coimbatore-based chain of sweets, savouries and vegetarian restaurants, has raised ₹110 crore in a fresh round led by Ayra Ventures, which put in ₹45 crore. Waterfield Advisors invested ₹15 crore, A91 Partners ₹10 crore, Ithought Financial Consulting ₹10 crore, and the five co-founders together put in ₹7.2 crore. Cricketer Ravichandran Ashwin also participated, the company said in a statement. The allotment values the 61-outlet business at about ₹1,908 crore.</p>",
+    "<h2>What the money is for</h2>",
+    "<p>The company says the proceeds will fund new outlets, production capacity, supply chain infrastructure and working capital. That list is worth reading closely, because it is the list of a business that has run out of room rather than one that has run out of demand: more stores, more kitchen capacity to feed them, more cold storage to move fresh sweets, and cash to hold stock while all of that happens.</p>",
+    "<p>The round is not the first. A91 Partners led a ₹175 crore Series A in August 2025, with Spring Marketing Capital participating. After the new allotment, A91 holds 26.24% and remains the largest outside shareholder, while the founders hold 56.54%, so the family still controls the company. The new valuation is about 3.3 times the ₹575 crore the business was tagged at in that Series A.</p>",
+    "<h2>The numbers behind the ₹1,908 crore tag</h2>",
+    "<p>Shree Anandhaas has not filed FY26 accounts yet. In FY25 it reported revenue of ₹284 crore, up 20.9% year on year, and a net profit of ₹7.64 crore, which was 7.1 times the previous year's profit. Two numbers do most of the work here. The first is growth: about one-fifth more sales in a year is fast for a chain selling fresh food. The second is margin. ₹7.64 crore of profit on ₹284 crore of sales is about 2.7%, which is under three paise of profit on every rupee that crosses the counter.</p>",
+    "<p>Then look at what investors paid. ₹1,908 crore against ₹284 crore of FY25 sales is a little under seven times revenue. A shop with a 3% net margin being valued at seven times sales is not being bought for today's profit. It is being bought for the assumption that the next 61 outlets will be cheaper to open, better supplied and more profitable than the last 61.</p>",
+    "<h2>Why the per-outlet maths matters more than the headline</h2>",
+    "<p>₹284 crore spread across 61 outlets is roughly ₹4.6 crore of sales an outlet a year. The fresh ₹110 crore works out to about ₹1.8 crore for every outlet the company runs today, so the cheque is large enough to rebuild the store network it already has, or to roughly double it if new outlets are opened at a modest cost. Both are hard. Fresh sweets spoil, festival demand is lumpy, and every new city needs its own kitchen within delivery distance.</p>",
+    "<p>The company started in 1998 as a 50-seater vegetarian restaurant and only entered organised sweets and savouries retail in 2017. It now sells more than 300 products, including the Badam Rose Laddu, Gulkand Biscuit and Elaneer Halwa, and ships across India and to overseas markets. A restaurant and a sweets counter are two different businesses inside one brand: one is a kitchen with tables, the other is a packaging and shelf-life operation. Running both under one profit and loss account is where a 2.7% margin comes from.</p>",
+    "<h2>What it means for you</h2>",
+    "<p>If you run a food shop, the lesson is not the ₹110 crore. It is the shape of the numbers. A business can grow 20% a year, be worth ₹1,900 crore on paper, and still keep under ₹3 out of every ₹100 of sales. At ₹10 lakh of sales a month, a 3% net margin leaves ₹30,000, which is about the salary of one counter hand. Every rupee of rent, wastage or discount comes straight out of that ₹30,000, because it is the last number in the chain, not the first.</p>",
+    "<p>So work out your own margin before you work out your valuation. Take a month's sales, subtract ingredients, rent, wages, power, packaging and delivery, and see what is left. If the answer is 3%, your growth plan has to be about volume and about shaving costs, not about a higher price tag. Investors will pay a multiple for a chain that can repeat one clean store. They will not pay it for one busy shop.</p>"
+   ],
+   "body_hinglish": [
+    "<p><strong>Shree Anandhaas</strong>, Coimbatore ki sweets, namkeen aur vegetarian restaurant chain, ne ₹110 crore ka naya round raise kiya hai. Round ko Ayra Ventures lead kar rahi hai, jisne ₹45 crore lagaye. Waterfield Advisors ne ₹15 crore, A91 Partners ne ₹10 crore, Ithought Financial Consulting ne ₹10 crore, aur paanch co-founders ne milkar ₹7.2 crore lagaye. Cricketer Ravichandran Ashwin bhi shamil hue, company ke statement ke mutabik. Is allotment se 61 outlets wale business ki value takriban ₹1,908 crore lagti hai.</p>",
+    "<h2>Paisa kis kaam aayega</h2>",
+    "<p>Company kehti hai ki paisa naye outlets, production capacity, supply chain aur working capital mein jaayega. Is list ko dhyan se padhiye, kyunki yeh us business ki list hai jiske paas jagah kam pad gayi hai, demand nahi: zyada stores, unhe feed karne ke liye zyada kitchen capacity, fresh mithai bhejne ke liye cold storage, aur stock hold karne ke liye cash.</p>",
+    "<p>Yeh pehla round nahi hai. A91 Partners ne August 2025 mein ₹175 crore ka Series A lead kiya tha, jisme Spring Marketing Capital bhi tha. Naye allotment ke baad A91 ke paas 26.24% hai aur woh sabse bada outside shareholder hai, jabki founders ke paas 56.54% hai, yani family ka control bana hua hai. Nayi valuation us ₹575 crore se takriban 3.3 guna hai jo Series A ke waqt thi.</p>",
+    "<h2>₹1,908 crore ke tag ke peeche ke numbers</h2>",
+    "<p>Shree Anandhaas ne FY26 ke accounts abhi file nahi kiye hain. FY25 mein revenue ₹284 crore tha, saal-dar-saal 20.9% zyada, aur net profit ₹7.64 crore, jo pichle saal ke profit ka 7.1 guna tha. Yahan do numbers asli kaam karte hain. Pehla growth: fresh food bechne wali chain ke liye ek saal mein paanchva hissa zyada sales tez hai. Doosra margin. ₹284 crore ki sales par ₹7.64 crore profit takriban 2.7% hai, yani counter se guzarte har sau rupee par teen paise se bhi kam profit.</p>",
+    "<p>Ab dekhiye investors ne kitna diya. FY25 ki ₹284 crore sales ke saamne ₹1,908 crore, yani revenue ka saat guna se thoda kam. Teen percent net margin wali dukaan ko saat guna sales par koi aaj ke profit ke liye nahi kharidta. Yeh is maan par kharida jaata hai ki agle 61 outlets kholne mein saste, supply mein behtar aur pichle 61 se zyada profitable honge.</p>",
+    "<h2>Per-outlet maths headline se zyada kyun maayne rakhta hai</h2>",
+    "<p>₹284 crore ko 61 outlets par baantein to ek outlet ka saalana sales takriban ₹4.6 crore banta hai. Naya ₹110 crore aaj chal rahe har outlet ke hisaab se takriban ₹1.8 crore hai, yani cheque itna bada hai ki purana network dobara khada ho jaye, ya kam cost par naye outlets kholkar network lagbhag double ho jaye. Dono mushkil hain. Fresh mithai kharab hoti hai, festival demand ek jaisi nahi rehti, aur har naye shehar ko delivery range mein apni kitchen chahiye.</p>",
+    "<p>Company 1998 mein 50-seater vegetarian restaurant ke roop mein shuru hui aur 2017 mein organised sweets aur namkeen retail mein aayi. Ab woh 300 se zyada products bechti hai, jinme Badam Rose Laddu, Gulkand Biscuit aur Elaneer Halwa shamil hain, aur India ke saath Singapore, US, UK aur Gulf jaise markets mein bhi bhejti hai. Restaurant aur mithai counter ek hi brand ke andar do alag businesses hain: ek kitchen hai jahan tables hain, doosra packaging aur shelf life ka kaam hai. Dono ko ek hi profit and loss mein chalane se 2.7% margin banta hai.</p>",
+    "<h2>Aapke liye iska kya matlab hai</h2>",
+    "<p>Agar aap food shop chalate hain to sabak ₹110 crore nahi hai. Sabak numbers ka shape hai. Ek business saal mein 20% badh sakta hai, kagaz par ₹1,900 crore ka ho sakta hai, aur phir bhi har sau rupee ki sales par teen rupee se kam rakh sakta hai. Mahine ki ₹10 lakh sales par 3% net margin se ₹30,000 bachte hain, jo lagbhag ek counter staff ki salary hai. Rent, wastage ya discount ka har rupee seedha isi ₹30,000 se jaata hai, kyunki yeh chain ka aakhri number hai, pehla nahi.</p>",
+    "<p>Isliye valuation se pehle apna margin nikaaliye. Mahine ki sales lijiye, usme se ingredients, rent, salary, bijli, packaging aur delivery ghataiye, aur dekhiye kya bachta hai. Agar jawab 3% hai to growth plan volume aur cost kam karne par hona chahiye, price tag par nahi. Investors us chain ko multiple dete hain jo ek saaf store ko repeat kar sake. Ek busy dukaan ke liye woh multiple nahi milta.</p>"
+   ]
+  },
+  {
    "slug": "style-union-485-crore-series-e-7-crore-a-store",
    "title": "Style Union's ₹485 Crore Round: ₹7 Crore a Store",
    "dek": "Style Union raised ₹485 crore to open 250 more stores. The maths behind the round: each store now earns about ₹7 crore a year, up from ₹3 crore in FY23.",

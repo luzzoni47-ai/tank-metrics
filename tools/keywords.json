@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-23T01:31:35Z",
+ "generated": "2026-11-24T01:33:00Z",
  "seed_count": 149,
- "suggestion_count": 1050,
+ "suggestion_count": 1049,
  "keywords": [
   {
    "query": "fd calculator sbi",
@@ -130,15 +130,6 @@
    ]
   },
   {
-   "query": "runway 34",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "runway"
-   ]
-  },
-  {
    "query": "startup valuation model",
    "demand": 10,
    "covered": false,
@@ -238,6 +229,15 @@
    ]
   },
   {
+   "query": "runway 34",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "runway"
+   ]
+  },
+  {
    "query": "salary estimator after taxes",
    "demand": 9,
    "covered": false,
@@ -289,15 +289,6 @@
    "score": 14.72,
    "from": [
     "cagr calculator"
-   ]
-  },
-  {
-   "query": "cagr cumulative annual growth rate",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "cagr compound annual growth rate"
    ]
   },
   {
@@ -409,7 +400,7 @@
    ]
   },
   {
-   "query": "cagr cumulative average growth rate",
+   "query": "cumulative annual growth rate cagr",
    "demand": 7,
    "covered": false,
    "score": 12.88,
@@ -542,6 +533,15 @@
    "score": 11.04,
    "from": [
     "burn rate"
+   ]
+  },
+  {
+   "query": "cagr cumulative average growth rate",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "cagr compound annual growth rate"
    ]
   },
   {
@@ -865,6 +865,15 @@
    ]
   },
   {
+   "query": "pre money post money safe",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "pre money post money"
+   ]
+  },
+  {
    "query": "property valuation bangalore",
    "demand": 5,
    "covered": false,
@@ -880,15 +889,6 @@
    "score": 9.2,
    "from": [
     "market share calculator"
-   ]
-  },
-  {
-   "query": "small business in india ideas",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "small business tax india"
    ]
   },
   {
@@ -1524,7 +1524,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -2199,7 +2199,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2316,12 +2316,21 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
    "from": [
     "age calculator"
+   ]
+  },
+  {
+   "query": "ask numerology calculator",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "ask calculator"
    ]
   },
   {
@@ -2331,15 +2340,6 @@
    "score": 7.59,
    "from": [
     "baby name number calculator"
-   ]
-  },
-  {
-   "query": "bid ask calculator",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "ask calculator"
    ]
   },
   {
@@ -2983,15 +2983,6 @@
    ]
   },
   {
-   "query": "domino's franchise roi",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "franchise roi"
-   ]
-  },
-  {
    "query": "ebitda kya hota hai",
    "demand": 4,
    "covered": false,
@@ -3028,21 +3019,12 @@
    ]
   },
   {
-   "query": "marketplace fees uber eats",
+   "query": "marketplace fees uber",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
     "marketplace fees"
-   ]
-  },
-  {
-   "query": "pre money post money safe",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "pre money post money"
    ]
   },
   {
@@ -3064,12 +3046,21 @@
    ]
   },
   {
-   "query": "share market calculator nepal",
+   "query": "share market calculator sbi",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
     "market share calculator"
+   ]
+  },
+  {
+   "query": "small business in india ideas",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "small business tax india"
    ]
   },
   {
@@ -3082,21 +3073,21 @@
    ]
   },
   {
-   "query": "cagr calculator calculate compound annual growth rate online icici direct",
-   "demand": 5,
-   "covered": false,
-   "score": 7.2,
-   "from": [
-    "cagr compound annual growth rate"
-   ]
-  },
-  {
    "query": "fintech customer life time value ltv dataset",
    "demand": 5,
    "covered": false,
    "score": 7.2,
    "from": [
     "customer lifetime value ltv"
+   ]
+  },
+  {
+   "query": "small business in india have multiple issues to deal with",
+   "demand": 5,
+   "covered": false,
+   "score": 7.2,
+   "from": [
+    "small business tax india"
    ]
   },
   {
@@ -3155,7 +3146,7 @@
    ]
   },
   {
-   "query": "age calculator online",
+   "query": "age calculator by year",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3173,7 +3164,7 @@
    ]
   },
   {
-   "query": "ask numerology calculator",
+   "query": "bid ask calculator",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3287,6 +3278,16 @@
    "score": 6.9,
    "from": [
     "customer acquisition cost"
+   ]
+  },
+  {
+   "query": "customer acquisition cost cac measures",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "client acquisition cost cac",
+    "customer acquisition cost cac"
    ]
   },
   {

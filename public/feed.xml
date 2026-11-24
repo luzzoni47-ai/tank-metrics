@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Mon, 23 Nov 2026 05:37:36 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 01:39:15 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Shree Anandhaas raises ₹110 crore at 7x sales</title>
+    <link>https://tankmetrics.in/news/shree-anandhaas-110-crore-round-1908-crore-valuation</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/shree-anandhaas-110-crore-round-1908-crore-valuation</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>A 61-outlet sweets chain from Coimbatore has raised ₹110 crore and a ₹1,908 crore tag. Its ₹284 crore of sales last year left just ₹7.64 crore of profit.</description>
+  </item>
   <item>
     <title>Style Union&#x27;s ₹485 Crore Round: ₹7 Crore a Store</title>
     <link>https://tankmetrics.in/news/style-union-485-crore-series-e-7-crore-a-store</link>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>The India-EU trade deal is set to be signed on December 16. Here is the duty arithmetic for a small exporter, and why the saving can stay on paper instead.</description>
-  </item>
-  <item>
-    <title>What Is the Cash Conversion Cycle?</title>
-    <link>https://tankmetrics.in/cash-conversion-cycle-explained</link>
-    <guid isPermaLink="true">https://tankmetrics.in/cash-conversion-cycle-explained</guid>
-    <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>The cash conversion cycle is the days your money is tied up in stock and unpaid customer invoices. See a small worked example and two ways to shorten it.</description>
   </item>
 </channel>
 </rss>
