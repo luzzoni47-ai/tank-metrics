@@ -226,6 +226,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [Startup Funding Fell 60% in October: What Changed](https://tankmetrics.in/startup-funding-october-2026-drops-60-percent)
 - [Style Union's ₹485 Crore Round: ₹7 Crore a Store](https://tankmetrics.in/style-union-485-crore-series-e-7-crore-a-store)
 - [UPI MDR Is Deferred to After Diwali: What a Shop Will Actually](https://tankmetrics.in/upi-mdr-deferred-after-diwali-what-shops-pay)
+- [Zavya raises ₹22.6 crore at 32 times its sales](https://tankmetrics.in/zavya-22-6-crore-round-32-times-sales-thin-margin)
 
 ## About this file
 Generated from tools/url-map.json, the source of truth for every clean URL, so no link here is a redirect. Regenerate with tools/gen_llms.py.

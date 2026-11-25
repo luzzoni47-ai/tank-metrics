@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Tue, 24 Nov 2026 05:34:43 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 01:38:02 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Zavya raises ₹22.6 crore at 32 times its sales</title>
+    <link>https://tankmetrics.in/news/zavya-22-6-crore-round-32-times-sales-thin-margin</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/zavya-22-6-crore-round-32-times-sales-thin-margin</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>Silver jewellery brand Zavya raised ₹22.6 crore at a ₹191.5 crore valuation. Its ₹6 crore of FY25 sales left just ₹54.7 lakh of profit, or under 1% margin.</description>
+  </item>
   <item>
     <title>Shree Anandhaas raises ₹110 crore at 7x sales</title>
     <link>https://tankmetrics.in/news/shree-anandhaas-110-crore-round-1908-crore-valuation</link>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>The Croffle Guys raised Rs 14 crore at a Rs 100 crore valuation. Its eight outlets make about Rs 3 crore each. Here is the store maths for a shop owner.</description>
-  </item>
-  <item>
-    <title>Inventory Turnover Ratio: What It Tells You</title>
-    <link>https://tankmetrics.in/inventory-turnover-ratio-explained</link>
-    <guid isPermaLink="true">https://tankmetrics.in/inventory-turnover-ratio-explained</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Inventory turnover ratio explained: how many times a year your stock sells through, the formula, a worked example, and how slow stock quietly traps your cash.</description>
   </item>
 </channel>
 </rss>
