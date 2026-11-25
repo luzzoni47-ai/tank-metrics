@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Wed, 25 Nov 2026 01:38:02 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 03:34:55 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Zavya raises ₹22.6 crore at 32 times its sales</title>
@@ -14,6 +14,14 @@
     <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>Silver jewellery brand Zavya raised ₹22.6 crore at a ₹191.5 crore valuation. Its ₹6 crore of FY25 sales left just ₹54.7 lakh of profit, or under 1% margin.</description>
+  </item>
+  <item>
+    <title>COD and RTO: Where Your Profit Goes</title>
+    <link>https://tankmetrics.in/cod-rto-loss-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/cod-rto-loss-explained</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>RTO and COD returns quietly eat D2C profit. See what one failed delivery really costs, how to price it into every order, and how to cut your RTO rate.</description>
   </item>
   <item>
     <title>Shree Anandhaas raises ₹110 crore at 7x sales</title>
@@ -238,14 +246,6 @@
     <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>FMCG distributor margin explained: how the company price, your margin and the retailer&#x27;s share fit inside one MRP, with a ₹100 pack worked through in full.</description>
-  </item>
-  <item>
-    <title>Croffle Guys Raises ₹14 Crore at ₹100 Crore Valuation</title>
-    <link>https://tankmetrics.in/news/croffle-guys-14-crore-v3-ventures-100-crore-valuation</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/croffle-guys-14-crore-v3-ventures-100-crore-valuation</guid>
-    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Small Business</category>
-    <description>The Croffle Guys raised Rs 14 crore at a Rs 100 crore valuation. Its eight outlets make about Rs 3 crore each. Here is the store maths for a shop owner.</description>
   </item>
 </channel>
 </rss>

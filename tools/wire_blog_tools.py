@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-cod-rto-loss-explained": [
+        ("/cod-and-rto-loss-calculator", "COD & RTO Loss Calculator",
+         "turn your own COD order count and RTO rate into the money the returns are costing"),
+        ("/discount-impact-on-profit", "Discount Impact on Profit",
+         "check what a prepaid discount really costs before you use it to cut the RTO rate"),
+    ],
     "blog-fd-interest-after-tds": [
         ("/fd-fixed-deposit-calculator", "FD (Fixed Deposit) Calculator",
          "see the quarterly compounding and the maturity value behind the interest this post explains"),

@@ -126,6 +126,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [CAGR: Compound Annual Growth Rate Explained](https://tankmetrics.in/cagr-explained)
 - [Cap Table Calculator for Indian Startups](https://tankmetrics.in/cap-table-calculator-india)
 - [What Is the Cash Conversion Cycle?](https://tankmetrics.in/cash-conversion-cycle-explained)
+- [COD and RTO: Where Your Profit Goes](https://tankmetrics.in/cod-rto-loss-explained)
 - [Coffee Shop Profit Margin: What You Keep](https://tankmetrics.in/coffee-shop-profit-margin)
 - [COGS Calculator India - Cost of Goods Sold](https://tankmetrics.in/cogs-calculator-india)
 - [Contribution Margin: What Each Sale Adds](https://tankmetrics.in/contribution-margin-explained)

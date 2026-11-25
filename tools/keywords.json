@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T01:32:46Z",
+ "generated": "2026-11-25T03:31:35Z",
  "seed_count": 149,
  "suggestion_count": 1049,
  "keywords": [
@@ -1082,7 +1082,7 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1821,7 +1821,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator car",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2478,7 +2478,7 @@
    ]
   },
   {
-   "query": "down payment calculator for mobile",
+   "query": "down payment calculator bike",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3319,7 +3319,7 @@
    ]
   },
   {
-   "query": "down payment calculator india",
+   "query": "down payment calculator for mobile",
    "demand": 10,
    "covered": true,
    "score": 6.9,
