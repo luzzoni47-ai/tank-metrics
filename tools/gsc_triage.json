@@ -135,7 +135,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-21T14:10:53Z",
-   "overlap": null,
+   "overlap": 0.105,
    "canonical_ok": true
   },
   {
@@ -315,7 +315,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:51:22Z",
-   "overlap": 0.113,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -327,7 +327,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T04:19:09Z",
-   "overlap": 0.113,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -531,7 +531,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:18:39Z",
-   "overlap": null,
+   "overlap": 0.103,
    "canonical_ok": true
   },
   {
