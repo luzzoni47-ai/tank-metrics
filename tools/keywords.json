@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-26T01:32:39Z",
+ "generated": "2026-11-26T03:32:26Z",
  "seed_count": 149,
- "suggestion_count": 1051,
+ "suggestion_count": 1049,
  "keywords": [
   {
    "query": "fd calculator sbi",
@@ -37,15 +37,6 @@
    "score": 20.24,
    "from": [
     "fd calculator"
-   ]
-  },
-  {
-   "query": "highest rate of recurring deposit",
-   "demand": 11,
-   "covered": false,
-   "score": 20.24,
-   "from": [
-    "rd recurring deposit calculator"
    ]
   },
   {
@@ -328,15 +319,6 @@
    ]
   },
   {
-   "query": "rental yield in bangalore",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "rental yield"
-   ]
-  },
-  {
    "query": "share market calculator nifty 50",
    "demand": 8,
    "covered": false,
@@ -478,6 +460,15 @@
    "score": 12.88,
    "from": [
     "marketplace fees"
+   ]
+  },
+  {
+   "query": "rental yield in dubai",
+   "demand": 7,
+   "covered": false,
+   "score": 12.88,
+   "from": [
+    "rental yield"
    ]
   },
   {
@@ -687,7 +678,7 @@
    ]
   },
   {
-   "query": "rental yield in dubai",
+   "query": "rental yield in bangalore",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -1785,6 +1776,15 @@
    ]
   },
   {
+   "query": "cash conversion cycle formula",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "cash conversion cycle"
+   ]
+  },
+  {
    "query": "churn rate meaning",
    "demand": 12,
    "covered": true,
@@ -1983,7 +1983,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2010,7 +2010,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio formula",
+   "query": "inventory turnover ratio meaning",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2622,7 +2622,7 @@
    ]
   },
   {
-   "query": "gross profit and margin difference",
+   "query": "gross profit and margin formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2631,7 +2631,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2667,7 +2667,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio in days",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3328,7 +3328,7 @@
    ]
   },
   {
-   "query": "distributor margin in pharma",
+   "query": "distributor margin in fmcg",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3418,7 +3418,7 @@
    ]
   },
   {
-   "query": "gross profit and margin calculator",
+   "query": "gross profit and margin difference",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3460,15 +3460,6 @@
    "score": 6.9,
    "from": [
     "income tax calculator"
-   ]
-  },
-  {
-   "query": "inventory turnover ratio in days",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "inventory turnover ratio"
    ]
   },
   {
@@ -3622,6 +3613,15 @@
    "score": 6.9,
    "from": [
     "revenue per employee"
+   ]
+  },
+  {
+   "query": "roi calculator online",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "roi calculator"
    ]
   }
  ]

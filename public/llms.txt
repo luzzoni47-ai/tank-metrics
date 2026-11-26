@@ -131,6 +131,7 @@ Every page below is a working calculator with a worked example, a formula and th
 - [COGS Calculator India - Cost of Goods Sold](https://tankmetrics.in/cogs-calculator-india)
 - [Contribution Margin: What Each Sale Adds](https://tankmetrics.in/contribution-margin-explained)
 - [CTC vs In-Hand Salary: What You Really Get](https://tankmetrics.in/ctc-vs-in-hand-salary)
+- [What a Dark Store Franchise Really Earns](https://tankmetrics.in/dark-store-franchise-roi-explained)
 - [Dilution Calculator for Founders - How Much You Lose?](https://tankmetrics.in/dilution-calculator-founders)
 - [Why a 10% Discount Cuts Profit by 25%](https://tankmetrics.in/discount-impact-on-profit-explained)
 - [EBITDA Calculator for Startups India](https://tankmetrics.in/ebitda-calculator-startups-india)

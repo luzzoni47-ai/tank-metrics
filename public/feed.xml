@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Thu, 26 Nov 2026 01:36:18 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 03:36:35 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Credit Line on UPI: What a $10 Mn Round Means for Shops</title>
@@ -14,6 +14,14 @@
     <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>Vegapay raised $10 Mn to put bank credit lines on UPI QR codes. Here is the arithmetic of what a single credit-paying customer is worth at a shop counter.</description>
+  </item>
+  <item>
+    <title>What a Dark Store Franchise Really Earns</title>
+    <link>https://tankmetrics.in/dark-store-franchise-roi-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/dark-store-franchise-roi-explained</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Dark store franchise maths in rupees: the margin one order really leaves, the fixed costs that run anyway, and the payback a quick-commerce store delivers.</description>
   </item>
   <item>
     <title>Zavya raises ₹22.6 crore at 32 times its sales</title>
@@ -238,14 +246,6 @@
     <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>Gross margin stops at the cost of goods, while EBITDA also pays the rent and the salaries. See both worked through one small business and when to use each.</description>
-  </item>
-  <item>
-    <title>Razorpay Gets SEBI Nod for IPO at Rs 49,000 Crore</title>
-    <link>https://tankmetrics.in/news/razorpay-sebi-ipo-approval-49000-crore-valuation-2026</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/razorpay-sebi-ipo-approval-49000-crore-valuation-2026</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Startups</category>
-    <description>Razorpay has SEBI approval to list at a reported Rs 49,000 crore valuation. Here is how a payments company gets priced, and what that means for a small shop.</description>
   </item>
 </channel>
 </rss>
