@@ -494,17 +494,17 @@
    ]
   },
   "compatibility": {
-   "what": "Compatibility calculator do naamon ko ek playful scoring formula se compare karta hai aur percentage deta hai. Yeh love calculator jaisa hi idea hai, bas method alag - letters match hote hain, gine jaate hain aur ek score mein ghata diye jaate hain. Iske peeche koi claim nahi hai aur koi evidence nahi hai. Yeh fun tool hai, aur site ise insight batane ki jagah saaf-saaf yahi kehti hai.",
-   "formula": "Dono naam letter-dar-letter match hote hain, common letters gine aur weight kiye jaate hain, aur total 100 mein se percentage bana diya jaata hai. Wahi jodi hamesha wahi result deti hai, aur yahi iski ekmaatra predictable baat hai. Zyada score kam score se zyada matlab nahi rakhta - dono letters par arithmetic hain.",
+   "what": "Compatibility Calculator do naam leta hai, First Name aur Second Name, aur 0 se 100 ke beech ek percentage deta hai. Yeh letters par ek hi fixed scoring rule hai: na astrology, na psychology, aur na hi kisi insaan ka koi data. Site ise entertainment likhti hai kyunki spelling se nikla number do logon ke asli rishte ke baare mein kuch nahi bata sakta.\n\nIs tool ko dekhne layak baat iska rule kitna patla hai. Dono naam usi order mein jode jaate hain jis order mein aap type karte ho, jo letter nahi hai woh hata diya jaata hai, aur har bache hue letter ko ek weight se multiply kiya jaata hai jo pehle letter ke liye 3 se shuru hota hai aur har letter par ek badhta hai. Weighted total ko 101 se divide karke remainder hi score banta hai. \"Amit\" phir \"Neha\" 79% deta hai; wahi do naam ulta type karo toh 38% aata hai. Jo tool naam ke order se 41 point badal jaaye, woh rishte ka kuch measure nahi kar raha tha.",
+   "formula": "Calculator name1 aur name2 ko lowercase karta hai, a se z ke alawa har character hata deta hai, aur dono ko bina space ke ek string mein jod deta hai. Phir index i ko 0 se le kar rule chalta hai: score = (score + letterCode x (i + 3)) mod 101, jahan letterCode letter ka character code hai (a ke liye 97, b ke liye 98, aur aage bhi). Aakhri letter ke baad jo remainder bachta hai wahi percentage hai. Pehla letter 3 se weight hota hai aur har agla letter pichle se ek zyada, isliye lambe surname ka tail first name se zyada bhaari padta hai, aur kyunki answer 101 se kam remainder hai, woh 100 tak pahunch sakta hai, 101 kabhi nahi.",
    "when": [
-    "Quick, playful jawab share karna hai.",
-    "Jaanna hai do naam ek doosre ke against kitna score karte hain.",
-    "Assessment nahi, halka-phulka tool chahiye."
+    "Do logon ke beech ek halka number share karna hai, aur aapko pata hai ki yeh sirf ek game hai.",
+    "Kisi ko dikhana hai ki name-scoring formula kaise behave karta hai: dono naam ulta type karo aur score uchhalte dekho.",
+    "Ise Love Calculator se compare karna hai, jo wahi loop chalata hai bas weights 1 se shuru hote hain, 3 se nahi."
    ],
    "mistakes": [
-    "Score ko logon ke beech asli compatibility ka measure padhna.",
-    "Isse rishte ke baare mein koi nateeja nikaalna.",
-    "Ye maanna ki alag spelling se jawab nahi badlega - badlega."
+    "Percentage ko rishte ka measure samajhna. Yeh spelling par arithmetic hai, aur log calculation mein aate hi nahi.",
+    "Ye maanna ki naamon ka order matter nahi karta. \"Amit\" phir \"Neha\" 79% deta hai jabki ulta 38%, kyunki har letter ka weight uski joined string mein position par depend karta hai.",
+    "Kam score ko warning samajhna. 101 se kam koi bhi remainder kisi cheez ka diagnosis nahi hai, aur zyada score bhi green signal nahi."
    ]
   },
   "compint": {
@@ -932,17 +932,17 @@
    ]
   },
   "lovefun": {
-   "what": "Love Calculator do naamon ko ek compatibility percentage mein badal deta hai, aur bas itna hi. Yeh ek name-scoring toy hai: Your Name aur Their Name leta hai, sirf letters rakhta hai, aur un par ek fixed arithmetic rule chalata hai, isliye wahi pair hamesha wahi number deta hai. Yeh astrology, psychology ya kisi tarah ki prediction nahi hai, aur site ise entertainment likhti hai kyunki woh sach mein wahi hai. Isme asli rishte ki koi reading nahi hai.\n\nYeh money-calculator site par isliye hai ki baaki sab Tank Metrics tools aise rules hain jinhe check kar sakte ho, aur yeh dikhata hai ki ek banaya hua rule kaisa lagta hai. Score poori tarah do naamon ki spelling se tay hota hai - \"Rahul\" aur \"Priya\" 38% dete hain - isliye spelling badlo toh jawab badal jaata hai, aur naam dobara type karne se number upar nahi jaata. Ise party trick samjho aur asli sawaal un tools ke liye rakho jo kuch real compute karte hain.",
-   "formula": "Calculator dono naam jodta hai, lowercase karta hai aur jo letter nahi hai use hata deta hai, phir string par ek-ek character chalta hai. Har character ke liye letter ka character code us character ki position se multiply hota hai (pehle letter ke liye 1, dusre ke liye 2, aur aage bhi), product running total mein jud jaata hai, aur total ka modulo 101 liya jaata hai. Wahi remainder percentage hota hai. \"RahulPriya\" 38 par aata hai, isliye Love Calculator 38% deta hai. Kyunki rule sirf letters aur unke order par nirbhar hai, wahi do naam har baar wahi score dete hain, aur ek letter badalne se doosra score aata hai.",
+   "what": "Love Calculator Your Name aur Their Name ko ek hi string mein jodta hai aur us string se ek percentage bana deta hai. Yeh ek name game hai jiska rule khula hua hai: sirf letters, ek fixed weighting, aur aakhir mein remainder. Kisi insaan ke baare mein kuch padha nahi jaata, aur kuch predict bhi nahi hota. Site ise entertainment likhti hai, aur yahi sahi description hai, baad mein chipkaya gaya disclaimer nahi.\n\nWeighting hi samajhne wali cheez hai. Joined string mein pehla letter ek baar ginta hai, doosra do baar, teesra teen baar, aur aage bhi, isliye doosre naam ke aakhri letters answer ka bada hissa tay karte hain aur shuru ke letters mushkil se ginte hain. \"Rahul\" ke saath \"Priya\" 38% deta hai; order badal ke \"Priya\" ke saath \"Rahul\" karo toh wahi do log 94% padhte hain, kyunki har letter nayi position par chala gaya aur dobara weight ho gaya. Space, dot aur digit ginti se pehle hata diye jaate hain, isliye \"Rahul K.\" bilkul \"Rahul\" jaisa score karta hai.",
+   "formula": "Tool name1 aur name2 ko type kiye gaye order mein jodta hai, lowercase karta hai, a se z ke bahar sab kuch hata deta hai, phir bachi hui string par index i ko 0 se shuru karke chalta hai. Har letter ke liye letterCode x (i + 1) running total mein judta hai aur total ko modulo 101 rakha jaata hai, jahan letterCode letter ka character code hai (a ke liye 97, b ke liye 98, aur aage bhi). Aakhri letter ke baad jo remainder bachta hai wahi percentage hai. \"RahulPriya\" is rule par 38 banta hai, isliye answer 38% aata hai. Wahi letters usi order mein hamesha wahi number dete hain, aur modulo 101 hi output ko 0 se 100 ke beech rakhta hai.",
    "when": [
-    "Group chat ya couple ke inside joke ke liye ek quick, harmless number chahiye.",
-    "Jaanna hai ki wahi do naam dobara try karne par wahi score dete hain (denge).",
-    "Kisi ko dikhana hai ki name-based score ek toy hai - ek spelling badlo aur number hilta dekho."
+    "Group chat ke liye ek harmless number chahiye aur woh ek click mein chahiye.",
+    "Kisi ko dikhana hai ki sirf spelling hi score fix karti hai - ek letter badlo aur number hil jaata hai.",
+    "Ek aisa worked example dekhna hai jo prediction jaisa lagta hai par sirf letters par arithmetic hai."
    ],
    "mistakes": [
-    "Percentage ko rishte ka verdict samajhna. Yeh entertainment hai aur iske peeche koi evidence nahi.",
-    "High score ka koi matlab maan lena. Number spelling se fix hota hai, logon se nahi.",
-    "Naam alag tarah se daal kar score badhane ki koshish, jab sirf letters badalne se hi number badalta hai."
+    "Percentage ko rishte ka faisla maan lena. Calculation ko log dikhte hi nahi, sirf unke type kiye letters dikhte hain.",
+    "Naam alag tarah se dobara type karke score upar karna. Sirf letters aur unka order ginte hain, isliye wahi jodi hamesha wahi number deti hai.",
+    "Ye sochna ki lamba naam zyada score karega. Total 101 se divide hone ke baad ka remainder hai, isliye lambi string chhote number par bhi pahunch sakti hai."
    ]
   },
   "ltv": {

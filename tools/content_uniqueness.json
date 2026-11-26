@@ -4,18 +4,8 @@
  "worst_pairs": [
   {
    "overlap": 0.111,
-   "a": "/compatibility-calculator",
-   "b": "/love-calculator"
-  },
-  {
-   "overlap": 0.111,
    "a": "/rashi-moon-sign-calculator",
    "b": "/zodiac-sign-calculator"
-  },
-  {
-   "overlap": 0.107,
-   "a": "/baby-name-number-calculator",
-   "b": "/compatibility-calculator"
   },
   {
    "overlap": 0.105,
@@ -26,17 +16,54 @@
    "overlap": 0.104,
    "a": "/break-even-point",
    "b": "/gross-profit-and-margin"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/arpu-mrr-and-arr",
+   "b": "/churn-rate"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/burn-rate-and-runway",
+   "b": "/churn-rate"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/age-calculator",
+   "b": "/rashi-moon-sign-calculator"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/implied-valuation",
+   "b": "/pre-money-and-post-money-valuation"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/import-duty-and-customs-calculator",
+   "b": "/landed-cost-calculator"
+  },
+  {
+   "overlap": 0.103,
+   "a": "/client-lifetime-value-ltv",
+   "b": "/customer-lifetime-value-ltv"
+  },
+  {
+   "overlap": 0.102,
+   "a": "/gross-profit-and-margin",
+   "b": "/percentage-calculator"
+  },
+  {
+   "overlap": 0.102,
+   "a": "/burn-rate-and-runway",
+   "b": "/run-rate"
+  },
+  {
+   "overlap": 0.102,
+   "a": "/client-acquisition-cost-cac",
+   "b": "/customer-acquisition-cost-cac"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/compatibility-calculator",
-   "closest_overlap": 0.111
-  },
-  {
-   "page": "/love-calculator",
-   "closest_overlap": 0.111
-  },
   {
    "page": "/rashi-moon-sign-calculator",
    "closest_overlap": 0.111
@@ -46,9 +73,45 @@
    "closest_overlap": 0.111
   },
   {
-   "page": "/baby-name-number-calculator",
-   "closest_overlap": 0.107
+   "page": "/home-loan-emi-calculator",
+   "closest_overlap": 0.105
+  },
+  {
+   "page": "/loan-emi-calculator",
+   "closest_overlap": 0.105
+  },
+  {
+   "page": "/break-even-point",
+   "closest_overlap": 0.104
+  },
+  {
+   "page": "/gross-profit-and-margin",
+   "closest_overlap": 0.104
+  },
+  {
+   "page": "/arpu-mrr-and-arr",
+   "closest_overlap": 0.103
+  },
+  {
+   "page": "/churn-rate",
+   "closest_overlap": 0.103
+  },
+  {
+   "page": "/burn-rate-and-runway",
+   "closest_overlap": 0.103
+  },
+  {
+   "page": "/age-calculator",
+   "closest_overlap": 0.103
+  },
+  {
+   "page": "/implied-valuation",
+   "closest_overlap": 0.103
+  },
+  {
+   "page": "/pre-money-and-post-money-valuation",
+   "closest_overlap": 0.103
   }
  ],
- "median_overlap": 0.095
+ "median_overlap": 0.093
 }

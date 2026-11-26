@@ -494,17 +494,17 @@
    ]
   },
   "compatibility": {
-   "what": "A compatibility calculator compares two names with a playful scoring formula and returns a percentage. It is the same idea as the love calculator with a different method - letters are matched, counted and reduced to a score. There is no claim behind it and no evidence for it. It is a fun tool, and the site says so plainly rather than dressing it up as insight.",
-   "formula": "The two names are matched letter by letter, common letters are counted and weighted, and the total is reduced to a percentage out of 100. The same pair of names always produces the same result, which is the only predictable thing about it. A high score is no more meaningful than a low one - both are arithmetic on letters.",
+   "what": "The Compatibility Calculator takes two names, First Name and Second Name, and returns a percentage between 0 and 100. It is one fixed scoring rule applied to letters: no astrology, no psychology, and no data about either person. The site prints it as entertainment because a number derived from spelling cannot say anything about how two people actually get on.\n\nWhat makes this tool worth a look is how thin the rule is. Both names are joined in the order you type them, anything that is not a letter is dropped, and each surviving letter is multiplied by a weight that starts at 3 for the first letter and rises by one per letter. The weighted total is then divided by 101 and the remainder is the score. \"Amit\" followed by \"Neha\" gives 79%; type the same two names the other way round and they score 38%. A tool that moves 41 points on the order of the names was never measuring the relationship.",
+   "formula": "The calculator lowercases name1 and name2, strips every character that is not a to z, and concatenates the two into one string with no space between them. It then loops with an index i starting at 0 and applies score = (score + letterCode x (i + 3)) mod 101, where letterCode is the letter's character code (97 for a, 98 for b, and so on). The remainder left after the final letter is the percentage. Because the first letter is weighted 3 and each later letter one more than the one before, the tail of a long surname outweighs the first name, and because the result is a remainder under 101 it can reach 100 but never 101.",
    "when": [
-    "You want a quick, playful answer to share.",
-    "You are curious how two names score against each other.",
-    "You want a light-hearted tool, not an assessment."
+    "You want a light number to share between two people, and you already know it is a game.",
+    "You are showing someone how a name-scoring formula behaves: enter the two names in the opposite order and watch the score jump.",
+    "You want to compare it with the Love Calculator, which runs the same loop with the weights starting at 1 instead of 3."
    ],
    "mistakes": [
-    "Reading the score as a real measure of compatibility between people.",
-    "Drawing any conclusion about a relationship from it.",
-    "Assuming a different spelling would not change the answer - it would."
+    "Treating the percentage as a measure of the relationship. It is arithmetic on spelling, and the people never enter the calculation.",
+    "Assuming the order of the names does not matter. \"Amit\" then \"Neha\" scores 79% while the reverse scores 38%, because each letter's weight depends on where it sits in the joined string.",
+    "Reading a low score as a warning sign. A remainder under 101 diagnoses nothing, and a high score is not a green light either."
    ]
   },
   "compint": {
@@ -934,17 +934,17 @@
    ]
   },
   "lovefun": {
-   "what": "The Love Calculator turns two names into a compatibility percentage and nothing more. It is a name-scoring toy: it takes Your Name and Their Name, keeps only the letters, and runs a fixed arithmetic rule over them so the same pair always returns the same number. It is not astrology, psychology or any kind of prediction, and the site labels it entertainment because that is exactly what it is. There is no reading of a real relationship in it.\n\nThe reason it lives on a money-calculator site is honesty by contrast: every other Tank Metrics tool is a rule you can check, and this one shows what a made-up rule looks like. The score is fully determined by the spelling of the two names — \"Rahul\" and \"Priya\" score 38% — so changing a spelling changes the answer, and no amount of typing a name twice can push the number up. Use it as a party trick and keep the real questions for the tools that compute something real.",
-   "formula": "The calculator joins the two names, lowercases them and strips everything that is not a letter, then walks the string one character at a time. For each character it multiplies the letter's character code by that character's position (1 for the first letter, 2 for the second, and so on), adds the product to a running total, and takes the total modulo 101. The remainder is the percentage. \"RahulPriya\" reduces to 38, so the Love Calculator returns 38%. Because the rule depends only on the letters and their order, the same two names give the same score every time, and a single changed letter gives a different one.",
+   "what": "The Love Calculator joins Your Name and Their Name into a single string and turns that string into a percentage. It is a name game with its rule in the open: letters only, one fixed weighting, a remainder at the end. Nothing about either person is read, and nothing is predicted. The site labels it entertainment, which is the accurate description rather than a disclaimer bolted on afterwards.\n\nThe weighting is the part worth understanding. In the joined string the first letter counts once, the second twice, the third three times, and so on to the end, so the last letters of the second name decide most of the answer and the opening letters barely register. \"Rahul\" with \"Priya\" scores 38%; swap the order to \"Priya\" with \"Rahul\" and the same two people read 94%, because every letter has moved to a new position and been re-weighted. Spaces, dots and digits are discarded before counting, so \"Rahul K.\" scores exactly like \"Rahul\".",
+   "formula": "The tool concatenates name1 and name2 in the order typed, lowercases the result, deletes every character outside a to z, then walks the remaining string with an index i starting at 0. For each letter it adds letterCode x (i + 1) to a running total and keeps the total modulo 101, where letterCode is the letter's character code (97 for a, 98 for b, and so on). The remainder after the last letter is the percentage. \"RahulPriya\" sums to 38 under that rule, so the answer is 38%. Same letters in the same order always return the same number, and the modulo 101 is what holds the output between 0 and 100.",
    "when": [
-    "You want a quick, harmless number for a group chat or a couple's inside joke.",
-    "You are curious whether the same two names still score the same on a second try (they will).",
-    "You want to show someone why a name-based score is a toy, by changing one spelling and watching the number move."
+    "You need a harmless number for a group chat and want it in a single click.",
+    "You want to prove to someone that spelling alone fixes the score - change one letter and the number moves.",
+    "You want a worked example of a rule that looks like a prediction but is only arithmetic on letters."
    ],
    "mistakes": [
-    "Reading the percentage as a verdict on a relationship. It is entertainment and carries no evidence.",
-    "Assuming a high score means anything. The number is fixed by the spelling, not by the people.",
-    "Trying to raise the score by entering a name differently, when the only thing that changes it is a different set of letters."
+    "Taking the percentage as a verdict on the relationship. The calculation never sees the people, only the letters they type.",
+    "Retyping a name in a different way to push the score up. Only the letters and their order count, so the same pair always returns the same number.",
+    "Assuming a longer name scores higher. The total is a remainder after dividing by 101, so a longer string can land on a smaller number just as easily."
    ]
   },
   "ltv": {
