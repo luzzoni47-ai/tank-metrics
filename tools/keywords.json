@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-25T03:31:35Z",
+ "generated": "2026-11-26T01:32:39Z",
  "seed_count": 149,
- "suggestion_count": 1049,
+ "suggestion_count": 1051,
  "keywords": [
   {
    "query": "fd calculator sbi",
@@ -49,6 +49,15 @@
    ]
   },
   {
+   "query": "income tax calculator fy 2026-27",
+   "demand": 11,
+   "covered": false,
+   "score": 20.24,
+   "from": [
+    "income tax calculator"
+   ]
+  },
+  {
    "query": "cagr calculator finology",
    "demand": 10,
    "covered": false,
@@ -73,24 +82,6 @@
    "score": 18.4,
    "from": [
     "freelancer hourly rate"
-   ]
-  },
-  {
-   "query": "income tax calculator fy 2026-27",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "income tax calculator"
-   ]
-  },
-  {
-   "query": "landed cost meaning in hindi",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "landed cost"
    ]
   },
   {
@@ -130,7 +121,25 @@
    ]
   },
   {
-   "query": "startup valuation model",
+   "query": "rental yield in mumbai",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "rental yield"
+   ]
+  },
+  {
+   "query": "runway 34",
+   "demand": 10,
+   "covered": false,
+   "score": 18.4,
+   "from": [
+    "runway"
+   ]
+  },
+  {
+   "query": "startup valuation report",
    "demand": 10,
    "covered": false,
    "score": 18.4,
@@ -193,12 +202,21 @@
    ]
   },
   {
-   "query": "landed cost in odoo",
+   "query": "landed cost meaning in hindi",
    "demand": 9,
    "covered": false,
    "score": 16.56,
    "from": [
     "landed cost"
+   ]
+  },
+  {
+   "query": "marketplace fees kya hoti hai",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "marketplace fees"
    ]
   },
   {
@@ -211,15 +229,6 @@
    ]
   },
   {
-   "query": "rental yield in mumbai",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "rental yield"
-   ]
-  },
-  {
    "query": "roas calculator dropshipping",
    "demand": 9,
    "covered": false,
@@ -229,21 +238,21 @@
    ]
   },
   {
-   "query": "runway 34",
-   "demand": 9,
-   "covered": false,
-   "score": 16.56,
-   "from": [
-    "runway"
-   ]
-  },
-  {
    "query": "salary estimator after taxes",
    "demand": 9,
    "covered": false,
    "score": 16.56,
    "from": [
     "salary take home estimator"
+   ]
+  },
+  {
+   "query": "startup valuation ranking",
+   "demand": 9,
+   "covered": false,
+   "score": 16.56,
+   "from": [
+    "startup valuation"
    ]
   },
   {
@@ -301,21 +310,12 @@
    ]
   },
   {
-   "query": "income tax calculator fy 25-26",
+   "query": "income tax calculator ay 2025-26",
    "demand": 8,
    "covered": false,
    "score": 14.72,
    "from": [
     "income tax calculator"
-   ]
-  },
-  {
-   "query": "marketplace fees kya hoti hai",
-   "demand": 8,
-   "covered": false,
-   "score": 14.72,
-   "from": [
-    "marketplace fees"
    ]
   },
   {
@@ -325,6 +325,15 @@
    "score": 14.72,
    "from": [
     "msme loan"
+   ]
+  },
+  {
+   "query": "rental yield in bangalore",
+   "demand": 8,
+   "covered": false,
+   "score": 14.72,
+   "from": [
+    "rental yield"
    ]
   },
   {
@@ -346,7 +355,7 @@
    ]
   },
   {
-   "query": "startup valuation report",
+   "query": "startup valuation course",
    "demand": 8,
    "covered": false,
    "score": 14.72,
@@ -361,6 +370,15 @@
    "score": 14.4,
    "from": [
     "import duty and customs calculator"
+   ]
+  },
+  {
+   "query": "landed cost management in oracle fusion",
+   "demand": 10,
+   "covered": false,
+   "score": 14.4,
+   "from": [
+    "landed cost"
    ]
   },
   {
@@ -400,15 +418,6 @@
    ]
   },
   {
-   "query": "cumulative annual growth rate cagr",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "cagr compound annual growth rate"
-   ]
-  },
-  {
    "query": "customer lifetime value clv ltv",
    "demand": 7,
    "covered": false,
@@ -436,12 +445,21 @@
    ]
   },
   {
-   "query": "income tax calculator ay 2025-26",
+   "query": "income tax calculator fy 25-26",
    "demand": 7,
    "covered": false,
    "score": 12.88,
    "from": [
     "income tax calculator"
+   ]
+  },
+  {
+   "query": "landed cost in odoo",
+   "demand": 7,
+   "covered": false,
+   "score": 12.88,
+   "from": [
+    "landed cost"
    ]
   },
   {
@@ -463,24 +481,6 @@
    ]
   },
   {
-   "query": "rental yield in bangalore",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "rental yield"
-   ]
-  },
-  {
-   "query": "salary take home chart",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "salary take home"
-   ]
-  },
-  {
    "query": "small business in india reddit",
    "demand": 7,
    "covered": false,
@@ -499,21 +499,12 @@
    ]
   },
   {
-   "query": "startup valuation course",
+   "query": "startup valuation methods duke university",
    "demand": 7,
    "covered": false,
    "score": 12.88,
    "from": [
     "startup valuation"
-   ]
-  },
-  {
-   "query": "customer acquisition cost meaning in tamil",
-   "demand": 8,
-   "covered": false,
-   "score": 11.52,
-   "from": [
-    "customer acquisition cost"
    ]
   },
   {
@@ -536,15 +527,6 @@
    ]
   },
   {
-   "query": "cagr cumulative average growth rate",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "cagr compound annual growth rate"
-   ]
-  },
-  {
    "query": "cpm to cpc calculator",
    "demand": 16,
    "covered": true,
@@ -555,6 +537,25 @@
    ]
   },
   {
+   "query": "cumulative annual growth rate cagr",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "cagr compound annual growth rate"
+   ]
+  },
+  {
+   "query": "customer acquisition cost cac formula",
+   "demand": 16,
+   "covered": true,
+   "score": 11.04,
+   "from": [
+    "client acquisition cost cac",
+    "customer acquisition cost cac"
+   ]
+  },
+  {
    "query": "customer lifetime value ltv",
    "demand": 16,
    "covered": true,
@@ -562,6 +563,15 @@
    "from": [
     "client lifetime value ltv",
     "customer lifetime value ltv"
+   ]
+  },
+  {
+   "query": "distributor margin in balaji wafers",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "distributor margin"
    ]
   },
   {
@@ -593,6 +603,15 @@
    ]
   },
   {
+   "query": "gross margin meaning in hindi",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "gross margin"
+   ]
+  },
+  {
    "query": "hra exemption calculator",
    "demand": 16,
    "covered": true,
@@ -600,6 +619,15 @@
    "from": [
     "hra exemption",
     "hra exemption calculator"
+   ]
+  },
+  {
+   "query": "income tax calculator fy 26-27",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "income tax calculator"
    ]
   },
   {
@@ -621,12 +649,21 @@
    ]
   },
   {
-   "query": "msme loan for women",
+   "query": "msme loan apply online",
    "demand": 6,
    "covered": false,
    "score": 11.04,
    "from": [
     "msme loan"
+   ]
+  },
+  {
+   "query": "property valuation bangalore",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "property valuation"
    ]
   },
   {
@@ -677,6 +714,15 @@
    ]
   },
   {
+   "query": "salary take home chart",
+   "demand": 6,
+   "covered": false,
+   "score": 11.04,
+   "from": [
+    "salary take home"
+   ]
+  },
+  {
    "query": "stamp duty calculator",
    "demand": 16,
    "covered": true,
@@ -687,7 +733,7 @@
    ]
   },
   {
-   "query": "startup valuation methods duke university",
+   "query": "startup valuation model",
    "demand": 6,
    "covered": false,
    "score": 11.04,
@@ -721,16 +767,6 @@
    "from": [
     "working capital",
     "working capital loan"
-   ]
-  },
-  {
-   "query": "customer acquisition cost cac formula",
-   "demand": 15,
-   "covered": true,
-   "score": 10.35,
-   "from": [
-    "client acquisition cost cac",
-    "customer acquisition cost cac"
    ]
   },
   {
@@ -802,16 +838,16 @@
    ]
   },
   {
-   "query": "distributor margin calculation excel",
+   "query": "cagr cumulative average growth rate",
    "demand": 5,
    "covered": false,
    "score": 9.2,
    "from": [
-    "distributor margin"
+    "cagr compound annual growth rate"
    ]
   },
   {
-   "query": "ebitda share price",
+   "query": "ebitda kya hota hai",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -838,12 +874,21 @@
    ]
   },
   {
-   "query": "income tax calculator fy 26-27",
+   "query": "gross margin kya hota hai",
    "demand": 5,
    "covered": false,
    "score": 9.2,
    "from": [
-    "income tax calculator"
+    "gross margin"
+   ]
+  },
+  {
+   "query": "landed cost in odoo 19",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "landed cost"
    ]
   },
   {
@@ -856,7 +901,7 @@
    ]
   },
   {
-   "query": "msme loan apply online",
+   "query": "msme loan for women",
    "demand": 5,
    "covered": false,
    "score": 9.2,
@@ -874,21 +919,21 @@
    ]
   },
   {
-   "query": "property valuation bangalore",
-   "demand": 5,
-   "covered": false,
-   "score": 9.2,
-   "from": [
-    "property valuation"
-   ]
-  },
-  {
    "query": "share market calculator 2025",
    "demand": 5,
    "covered": false,
    "score": 9.2,
    "from": [
     "market share calculator"
+   ]
+  },
+  {
+   "query": "startup valuation pdf",
+   "demand": 5,
+   "covered": false,
+   "score": 9.2,
+   "from": [
+    "startup valuation"
    ]
   },
   {
@@ -1042,15 +1087,6 @@
    "score": 8.97,
    "from": [
     "customer acquisition cost"
-   ]
-  },
-  {
-   "query": "customer acquisition cost cac",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "customer acquisition cost cac"
    ]
   },
   {
@@ -1280,7 +1316,7 @@
    ]
   },
   {
-   "query": "love calculator name",
+   "query": "love calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1524,7 +1560,7 @@
    ]
   },
   {
-   "query": "run rate",
+   "query": "run rate calculator",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -1623,12 +1659,21 @@
    ]
   },
   {
-   "query": "landed cost management in oracle fusion",
+   "query": "customer acquisition cost meaning in tamil",
    "demand": 6,
    "covered": false,
    "score": 8.64,
    "from": [
-    "landed cost"
+    "customer acquisition cost"
+   ]
+  },
+  {
+   "query": "age calculator by year",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "age calculator"
    ]
   },
   {
@@ -1740,15 +1785,6 @@
    ]
   },
   {
-   "query": "cash conversion cycle formula",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "cash conversion cycle"
-   ]
-  },
-  {
    "query": "churn rate meaning",
    "demand": 12,
    "covered": true,
@@ -1782,6 +1818,15 @@
    "score": 8.28,
    "from": [
     "contribution margin"
+   ]
+  },
+  {
+   "query": "customer acquisition cost cac",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "customer acquisition cost cac"
    ]
   },
   {
@@ -1821,21 +1866,12 @@
    ]
   },
   {
-   "query": "down payment calculator car",
+   "query": "down payment calculator for bike",
    "demand": 12,
    "covered": true,
    "score": 8.28,
    "from": [
     "down payment calculator"
-   ]
-  },
-  {
-   "query": "ebitda full form",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "ebitda"
    ]
   },
   {
@@ -1845,6 +1881,15 @@
    "score": 8.28,
    "from": [
     "ebitda and margin"
+   ]
+  },
+  {
+   "query": "ebitda means",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "ebitda"
    ]
   },
   {
@@ -1983,6 +2028,15 @@
    ]
   },
   {
+   "query": "landed cost calculator india",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "landed cost calculator"
+   ]
+  },
+  {
    "query": "loan emi calculator sbi",
    "demand": 12,
    "covered": true,
@@ -1992,7 +2046,7 @@
    ]
   },
   {
-   "query": "love calculator",
+   "query": "love calculator name",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2028,7 +2082,7 @@
    ]
   },
   {
-   "query": "marketplace fees meaning",
+   "query": "marketplace fees hsn code",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2091,7 +2145,7 @@
    ]
   },
   {
-   "query": "ppf calculator post office",
+   "query": "ppf calculator sbi",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2115,15 +2169,6 @@
    "score": 8.28,
    "from": [
     "property roi calculator"
-   ]
-  },
-  {
-   "query": "property valuation online",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "property valuation"
    ]
   },
   {
@@ -2154,7 +2199,7 @@
    ]
   },
   {
-   "query": "return on investment roi formula",
+   "query": "return on investment roi meaning",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2163,7 +2208,7 @@
    ]
   },
   {
-   "query": "revenue multiple formula",
+   "query": "revenue multiple valuation",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2172,7 +2217,7 @@
    ]
   },
   {
-   "query": "revenue per employee formula",
+   "query": "revenue per employee ranking",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2199,7 +2244,7 @@
    ]
   },
   {
-   "query": "run rate calculator",
+   "query": "run rate",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2262,7 +2307,7 @@
    ]
   },
   {
-   "query": "startup valuation calculator",
+   "query": "startup valuation methods",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2316,7 +2361,7 @@
    ]
   },
   {
-   "query": "age calculator by year",
+   "query": "age calculator app",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2388,7 +2433,7 @@
    ]
   },
   {
-   "query": "cac payback period calculation",
+   "query": "cac payback period meaning",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2478,7 +2523,7 @@
    ]
   },
   {
-   "query": "down payment calculator bike",
+   "query": "down payment calculator car",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2496,7 +2541,7 @@
    ]
   },
   {
-   "query": "ebitda means",
+   "query": "ebitda full form",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2559,7 +2604,7 @@
    ]
   },
   {
-   "query": "gratuity calculator online",
+   "query": "gratuity calculator for private employees",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2622,30 +2667,12 @@
    ]
   },
   {
-   "query": "income tax calculator new regime",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "income tax calculator"
-   ]
-  },
-  {
    "query": "inventory turnover ratio meaning",
    "demand": 11,
    "covered": true,
    "score": 7.59,
    "from": [
     "inventory turnover ratio"
-   ]
-  },
-  {
-   "query": "landed cost calculator india",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "landed cost calculator"
    ]
   },
   {
@@ -2694,7 +2721,7 @@
    ]
   },
   {
-   "query": "marketplace fees hsn code",
+   "query": "marketplace fees meaning",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2703,21 +2730,12 @@
    ]
   },
   {
-   "query": "markup vs margin formula",
+   "query": "markup vs margin difference",
    "demand": 11,
    "covered": true,
    "score": 7.59,
    "from": [
     "markup vs margin"
-   ]
-  },
-  {
-   "query": "moic and irr formula",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "moic and irr"
    ]
   },
   {
@@ -2784,12 +2802,21 @@
    ]
   },
   {
-   "query": "ppf calculator sbi",
+   "query": "ppf calculator post office",
    "demand": 11,
    "covered": true,
    "score": 7.59,
    "from": [
     "ppf calculator"
+   ]
+  },
+  {
+   "query": "property valuation online",
+   "demand": 11,
+   "covered": true,
+   "score": 7.59,
+   "from": [
+    "property valuation"
    ]
   },
   {
@@ -2820,7 +2847,7 @@
    ]
   },
   {
-   "query": "return on investment roi definition",
+   "query": "return on investment roi formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2829,7 +2856,7 @@
    ]
   },
   {
-   "query": "revenue multiple valuation",
+   "query": "revenue multiple formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2838,7 +2865,7 @@
    ]
   },
   {
-   "query": "revenue per employee ranking",
+   "query": "revenue per employee formula",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2901,7 +2928,7 @@
    ]
   },
   {
-   "query": "stamp duty calculator gujarat",
+   "query": "stamp duty calculator nsdl",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2910,7 +2937,7 @@
    ]
   },
   {
-   "query": "startup valuation methods",
+   "query": "startup valuation calculator",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2928,7 +2955,7 @@
    ]
   },
   {
-   "query": "wacc calculator nepal",
+   "query": "wacc calculator excel",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2974,30 +3001,21 @@
    ]
   },
   {
-   "query": "distributor margin in balaji wafers",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "distributor margin"
-   ]
-  },
-  {
-   "query": "ebitda kya hota hai",
-   "demand": 4,
-   "covered": false,
-   "score": 7.36,
-   "from": [
-    "ebitda"
-   ]
-  },
-  {
    "query": "employee productivity rate kpi",
    "demand": 4,
    "covered": false,
    "score": 7.36,
    "from": [
     "employee utilization rate"
+   ]
+  },
+  {
+   "query": "fd calculator pnb",
+   "demand": 4,
+   "covered": false,
+   "score": 7.36,
+   "from": [
+    "fd calculator"
    ]
   },
   {
@@ -3010,7 +3028,7 @@
    ]
   },
   {
-   "query": "landed cost odoo 19",
+   "query": "landed cost in d365",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3028,7 +3046,7 @@
    ]
   },
   {
-   "query": "property valuation west bengal",
+   "query": "property valuation online maharashtra",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3037,7 +3055,7 @@
    ]
   },
   {
-   "query": "rental yield in delhi",
+   "query": "rental yield for commercial property",
    "demand": 4,
    "covered": false,
    "score": 7.36,
@@ -3064,12 +3082,12 @@
    ]
   },
   {
-   "query": "startup valuation website",
-   "demand": 4,
+   "query": "average order value formula in excel",
+   "demand": 5,
    "covered": false,
-   "score": 7.36,
+   "score": 7.2,
    "from": [
-    "startup valuation"
+    "average order value"
    ]
   },
   {
@@ -3146,7 +3164,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator by dob",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3218,7 +3236,7 @@
    ]
   },
   {
-   "query": "cac payback period meaning",
+   "query": "cac payback period calculation",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3245,7 +3263,7 @@
    ]
   },
   {
-   "query": "compatibility calculator enphase",
+   "query": "compatibility calculator astrology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3355,7 +3373,7 @@
    ]
   },
   {
-   "query": "epf calculator with current balance",
+   "query": "epf calculator on salary",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3436,6 +3454,15 @@
    ]
   },
   {
+   "query": "income tax calculator new regime",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "income tax calculator"
+   ]
+  },
+  {
    "query": "inventory turnover ratio in days",
    "demand": 10,
    "covered": true,
@@ -3472,7 +3499,7 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator numerology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3481,12 +3508,21 @@
    ]
   },
   {
-   "query": "markup vs margin difference",
+   "query": "markup vs margin formula",
    "demand": 10,
    "covered": true,
    "score": 6.9,
    "from": [
     "markup vs margin"
+   ]
+  },
+  {
+   "query": "moic and irr formula",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "moic and irr"
    ]
   },
   {
@@ -3544,7 +3580,7 @@
    ]
   },
   {
-   "query": "property roi calculator malaysia",
+   "query": "property roi calculator south africa",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3553,21 +3589,12 @@
    ]
   },
   {
-   "query": "rental yield calculator bangalore",
+   "query": "rental yield calculator mumbai",
    "demand": 10,
    "covered": true,
    "score": 6.9,
    "from": [
     "rental yield calculator"
-   ]
-  },
-  {
-   "query": "rental yield in india",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "rental yield"
    ]
   },
   {
@@ -3580,7 +3607,7 @@
    ]
   },
   {
-   "query": "revenue multiple meaning",
+   "query": "revenue multiple valuation by industry",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3589,39 +3616,12 @@
    ]
   },
   {
-   "query": "revenue per employee in google",
+   "query": "revenue per employee meaning",
    "demand": 10,
    "covered": true,
    "score": 6.9,
    "from": [
     "revenue per employee"
-   ]
-  },
-  {
-   "query": "roi calculator online",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "roi calculator"
-   ]
-  },
-  {
-   "query": "royalty deal in business",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "royalty deal"
-   ]
-  },
-  {
-   "query": "run rate meaning",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "run rate"
    ]
   }
  ]

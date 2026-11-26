@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Wed, 25 Nov 2026 05:37:34 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 01:36:18 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Credit Line on UPI: What a $10 Mn Round Means for Shops</title>
+    <link>https://tankmetrics.in/news/vegapay-10-million-credit-line-on-upi-what-shops-get</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/vegapay-10-million-credit-line-on-upi-what-shops-get</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>Vegapay raised $10 Mn to put bank credit lines on UPI QR codes. Here is the arithmetic of what a single credit-paying customer is worth at a shop counter.</description>
+  </item>
   <item>
     <title>Zavya raises ₹22.6 crore at 32 times its sales</title>
     <link>https://tankmetrics.in/news/zavya-22-6-crore-round-32-times-sales-thin-margin</link>
@@ -238,14 +246,6 @@
     <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
     <category>Startups</category>
     <description>Razorpay has SEBI approval to list at a reported Rs 49,000 crore valuation. Here is how a payments company gets priced, and what that means for a small shop.</description>
-  </item>
-  <item>
-    <title>FMCG Distributor Margin: Who Earns What</title>
-    <link>https://tankmetrics.in/fmcg-distributor-margin-explained</link>
-    <guid isPermaLink="true">https://tankmetrics.in/fmcg-distributor-margin-explained</guid>
-    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>FMCG distributor margin explained: how the company price, your margin and the retailer&#x27;s share fit inside one MRP, with a ₹100 pack worked through in full.</description>
   </item>
 </channel>
 </rss>
