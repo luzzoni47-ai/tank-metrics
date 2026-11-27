@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T06:30",
+ "updated": "2026-11-27T18:31",
  "prepared_total": 3,
  "prepared": [
   "AlternativeTo",
@@ -7,6 +7,8 @@
   "Product Hunt"
  ],
  "prospects_total": 24,
- "dead": [],
+ "dead": [
+  "Awesome lists"
+ ],
  "citations": []
 }
