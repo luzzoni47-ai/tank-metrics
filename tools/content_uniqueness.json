@@ -21,6 +21,46 @@
    "overlap": 0.067,
    "a": "/return-on-ad-spend-roas",
    "b": "/return-on-capital-employed"
+  },
+  {
+   "overlap": 0.067,
+   "a": "/compatibility-calculator",
+   "b": "/love-calculator"
+  },
+  {
+   "overlap": 0.067,
+   "a": "/nps-calculator",
+   "b": "/sip-calculator"
+  },
+  {
+   "overlap": 0.067,
+   "a": "/return-on-ad-spend-roas",
+   "b": "/return-on-investment-roi"
+  },
+  {
+   "overlap": 0.065,
+   "a": "/rashi-moon-sign-calculator",
+   "b": "/zodiac-sign-calculator"
+  },
+  {
+   "overlap": 0.062,
+   "a": "/return-on-capital-employed",
+   "b": "/return-on-investment-roi"
+  },
+  {
+   "overlap": 0.061,
+   "a": "/agency-profit-margin",
+   "b": "/markup-vs-margin"
+  },
+  {
+   "overlap": 0.061,
+   "a": "/rent-vs-buy-calculator",
+   "b": "/rental-yield-calculator"
+  },
+  {
+   "overlap": 0.06,
+   "a": "/client-acquisition-cost-cac",
+   "b": "/customer-acquisition-cost-cac"
   }
  ],
  "worst_pages": [
@@ -39,6 +79,38 @@
   {
    "page": "/customer-lifetime-value-ltv",
    "closest_overlap": 0.071
+  },
+  {
+   "page": "/compound-interest",
+   "closest_overlap": 0.071
+  },
+  {
+   "page": "/simple-interest",
+   "closest_overlap": 0.071
+  },
+  {
+   "page": "/return-on-ad-spend-roas",
+   "closest_overlap": 0.067
+  },
+  {
+   "page": "/return-on-capital-employed",
+   "closest_overlap": 0.067
+  },
+  {
+   "page": "/compatibility-calculator",
+   "closest_overlap": 0.067
+  },
+  {
+   "page": "/love-calculator",
+   "closest_overlap": 0.067
+  },
+  {
+   "page": "/nps-calculator",
+   "closest_overlap": 0.067
+  },
+  {
+   "page": "/sip-calculator",
+   "closest_overlap": 0.067
   }
  ],
  "median_overlap": 0.055
