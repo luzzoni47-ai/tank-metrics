@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Thu, 26 Nov 2026 05:36:25 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 01:36:54 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Meesho Now Owns 93% of the Kirana Price App</title>
+    <link>https://tankmetrics.in/news/meesho-kirana-club-93-percent-stake-shop-owner-maths</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/meesho-kirana-club-93-percent-stake-shop-owner-maths</guid>
+    <pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Small Business</category>
+    <description>Meesho paid ₹186.71 crore for Kirana Club and took its stake to 93%. Here is the maths of a 41-lakh-shop network, and what it means at your own counter.</description>
+  </item>
   <item>
     <title>Credit Line on UPI: What a $10 Mn Round Means for Shops</title>
     <link>https://tankmetrics.in/news/vegapay-10-million-credit-line-on-upi-what-shops-get</link>
@@ -238,14 +246,6 @@
     <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
     <category>Funding</category>
     <description>Indian startups raised $290.55 million in the week to November 7, 2026, up 69% on the week. But five rounds took 83% of it. Here is what that maths means.</description>
-  </item>
-  <item>
-    <title>EBITDA vs Gross Margin: The Real Difference</title>
-    <link>https://tankmetrics.in/ebitda-vs-gross-margin</link>
-    <guid isPermaLink="true">https://tankmetrics.in/ebitda-vs-gross-margin</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>Gross margin stops at the cost of goods, while EBITDA also pays the rent and the salaries. See both worked through one small business and when to use each.</description>
   </item>
 </channel>
 </rss>

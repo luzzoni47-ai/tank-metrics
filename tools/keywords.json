@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T03:32:26Z",
+ "generated": "2026-11-27T01:33:06Z",
  "seed_count": 149,
  "suggestion_count": 1049,
  "keywords": [
@@ -1325,15 +1325,6 @@
    ]
   },
   {
-   "query": "lucky number calculator",
-   "demand": 13,
-   "covered": true,
-   "score": 8.97,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "market share calculator",
    "demand": 13,
    "covered": true,
@@ -1659,15 +1650,6 @@
    ]
   },
   {
-   "query": "age calculator by year",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "age calculator"
-   ]
-  },
-  {
    "query": "average order value aov formula",
    "demand": 12,
    "covered": true,
@@ -1983,7 +1965,7 @@
    ]
   },
   {
-   "query": "gst calculator india",
+   "query": "gst calculator online",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2010,7 +1992,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio meaning",
+   "query": "inventory turnover ratio formula",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2061,6 +2043,15 @@
    "score": 8.28,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator in tamil",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -2361,7 +2352,7 @@
    ]
   },
   {
-   "query": "age calculator app",
+   "query": "age calculator by year",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2631,7 +2622,7 @@
    ]
   },
   {
-   "query": "gst calculator online",
+   "query": "gst calculator india",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2667,7 +2658,7 @@
    ]
   },
   {
-   "query": "inventory turnover ratio in days",
+   "query": "inventory turnover ratio meaning",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2703,7 +2694,7 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
+   "query": "lucky number calculator numerology",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -2916,15 +2907,6 @@
    "score": 7.59,
    "from": [
     "simple interest"
-   ]
-  },
-  {
-   "query": "sip calculator with step up",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "sip calculator"
    ]
   },
   {
@@ -3146,6 +3128,15 @@
    ]
   },
   {
+   "query": "lucky number calculator by date of birth",
+   "demand": 13,
+   "covered": true,
+   "score": 7.02,
+   "from": [
+    "lucky number calculator"
+   ]
+  },
+  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3161,15 +3152,6 @@
    "score": 7.02,
    "from": [
     "runway"
-   ]
-  },
-  {
-   "query": "age calculator by dob",
-   "demand": 10,
-   "covered": true,
-   "score": 6.9,
-   "from": [
-    "age calculator"
    ]
   },
   {
@@ -3463,6 +3445,15 @@
    ]
   },
   {
+   "query": "inventory turnover ratio in days",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "inventory turnover ratio"
+   ]
+  },
+  {
    "query": "loan emi calculator monthly",
    "demand": 10,
    "covered": true,
@@ -3490,7 +3481,7 @@
    ]
   },
   {
-   "query": "lucky number calculator numerology",
+   "query": "lucky number calculator by name",
    "demand": 10,
    "covered": true,
    "score": 6.9,
@@ -3622,6 +3613,15 @@
    "score": 6.9,
    "from": [
     "roi calculator"
+   ]
+  },
+  {
+   "query": "royalty deal in business",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "royalty deal"
    ]
   }
  ]

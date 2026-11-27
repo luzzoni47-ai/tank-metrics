@@ -2,6 +2,65 @@
  "_comment": "News desk source. Every story needs: slug, title, dek, category, date (ISO), date_display, source_name, source_url, body_en[], body_hinglish[] with matching heading counts, and a cta that links to a calculator. Regenerate with: python3 tools/gen_news.py",
  "items": [
   {
+   "slug": "meesho-kirana-club-93-percent-stake-shop-owner-maths",
+   "title": "Meesho Now Owns 93% of the Kirana Price App",
+   "dek": "Meesho paid ₹186.71 crore for Kirana Club and took its stake to 93%. Here is the maths of a 41-lakh-shop network, and what it means at your own counter.",
+   "category": "Small Business",
+   "date": "2026-11-27",
+   "date_display": "November 27, 2026",
+   "source_name": "CNBC TV18",
+   "source_url": "https://www.cnbctv18.com/market/meesho-completes-majority-stake-acquisition-in-kirana-club-and-retail-pulse-labs-20029616.htm",
+   "cta": {
+    "text": "A retailer network is priced on its sales, and one day your shop will be too. See what yearly sales are worth at a given multiple.",
+    "href": "/revenue-multiple",
+    "label": "Open the Revenue Multiple Calculator"
+   },
+   "related": [
+    {
+     "slug": "revenue-multiple-calculator-india",
+     "title": "Revenue Multiple Calculator India"
+    },
+    {
+     "slug": "marketplace-fees-explained",
+     "title": "Marketplace Fees Explained for Sellers"
+    },
+    {
+     "slug": "grocery-store-profit-margin",
+     "title": "Grocery Store Profit Margin: What You Keep"
+    }
+   ],
+   "body_en": [
+    "<p>On 25 November 2026, Meesho subscribed to 4,550 more ordinary shares of Kirana Club Pte Ltd for SGD 831,120. That took its holding from 92.74% to 92.96%, a rise of 0.22 percentage points, according to the company's filing to the stock exchanges. The amount is small. The signal is not. The app that lakhs of shopkeepers use to check FMCG prices is now almost entirely owned by a listed marketplace that also sells to their customers.</p>",
+    "<p>The top-up sits on top of a much larger payment. Meesho completed the first two tranches of its Kirana Club purchase on 7 November 2026, paying ₹186.71 crore in cash for a 92.74% stake in Kirana Club and its Indian arm, Retail Pulse Labs. The deal was first disclosed on 12 June 2026 and was reported at an enterprise value of about ₹202 crore. This was not a rescue. It was a planned buyout, finished in stages.</p>",
+    "<h2>What Was Actually Bought</h2>",
+    "<p>Kirana Club was founded in 2020 by Anshul Gupta and Aishwarya Jain. It runs a mobile-first network for grocery shops in tier-2, tier-3 and tier-4 towns and in rural markets, and says it has more than 4.1 million registered retailers. Retail Pulse Labs is the Indian company that runs the marketplace side, where shops order stock from FMCG brands and distributors. It earns from commissions and from advertising. The model is deliberately asset-light: no warehouses of its own and no large field sales force.</p>",
+    "<p>That matters because the revenue is small. Retail Pulse Labs reported turnover of about ₹16 crore in FY26, up from ₹4.92 crore in FY25 and ₹2.7 crore in FY24. Meesho chief executive Vidit Aatrey said Kirana Club had built \"deep trust among small retailers through its asset-light and community-first approach\". For context, India's grocery market is estimated at roughly $650 billion, and kirana and general trade channels still account for about 90% of it, spread across more than 13 million shops.</p>",
+    "<h2>The Arithmetic: About 12 Times Sales, ₹500 a Shop</h2>",
+    "<p>Take the ₹200 crore headline, divide it by ₹16 crore of yearly sales, and you get about 12.5 times revenue. Round it to 12 times sales. A business that barely breaks even on ₹16 crore of sales was priced at more than a decade of those sales. Divide the same ₹200 crore by 41 lakh registered retailers and you get about ₹500 per shop.</p>",
+    "<p>Both numbers say the same thing. The buyer was not paying for profit. It was paying for a list: which shops buy what, at what price, in which town, and who they trust for advice. A free app can afford to stay free when the data and the advertising slots on it carry the value.</p>",
+    "<h2>What It Means at Your Counter</h2>",
+    "<p>Two things can change, and one does not. Prices and schemes may improve, because Meesho brings its own supplier base and logistics into the network, and a shop that can see more quotes should be able to buy better. The second change is the relationship. The price board you use is now owned by a company that also sells to the people who walk into your shop. That does not make the app useless. It does mean you should treat it as a supplier channel, not a neutral referee.</p>",
+    "<p>What does not change is the arithmetic of your own counter. Say you buy ₹1,00,000 of stock a month. A 2% better buying price saves ₹2,000. To earn that same ₹2,000 as profit at an 8% gross margin, you would have to sell ₹25,000 more goods, because 8% of ₹25,000 is ₹2,000. Buying better is cheaper than selling harder. Keep a simple record of your purchase prices for your top twenty items and compare them with the app every month.</p>",
+    "<h2>What to Do With This Story</h2>",
+    "<p>First, do not read the ₹202 crore price as a value for your own shop. A shop is valued on its profit and its stock, not on its customer list. Second, if you already order through Kirana Club, check who you are buying from and whether the commission is visible in the price you pay. Third, treat the app as one of several quotes, alongside your distributor and at least one cash-and-carry. A network of 41 lakh shops was bought because it sits between brands and shops. A single shop stays valuable by knowing its margin on every item, which no app can work out for you.</p>"
+   ],
+   "body_hinglish": [
+    "<p>25 November 2026 ko Meesho ne Kirana Club Pte Ltd ke 4,550 ordinary shares SGD 831,120 mein subscribe kiye. Isse uski holding 92.74% se 92.96% ho gayi, yani 0.22 percentage point ka badhotri. Raqam chhoti hai, ishaara bada hai. Lakhon dukandaar jo FMCG ke daam check karne ke liye ye app use karte hain, wo app ab ek listed marketplace ke paas hai, jo unke grahakon ko bhi bechta hai.</p>",
+    "<p>Ye chhota top-up ek badi payment ke upar baitha hai. Meesho ne 7 November 2026 ko Kirana Club aur uski Indian company Retail Pulse Labs mein 92.74% hissa ₹186.71 crore cash mein poora kiya. Deal 12 June 2026 ko batayi gayi thi, aur kareeb ₹202 crore ki value batayi gayi thi. Ye koi bachav nahi tha. Plan ke hisaab se kharid thi, tranches mein poori hui.</p>",
+    "<h2>Kharida kya gaya</h2>",
+    "<p>Kirana Club 2020 mein Anshul Gupta aur Aishwarya Jain ne shuru kiya. Ye tier-2, tier-3, tier-4 shehron aur gaon ke grocery dukaanon ka mobile network chalata hai, aur company kehti hai ki 41 lakh se zyada retailers registered hain. Retail Pulse Labs wo Indian company hai jo marketplace chalati hai, jahan dukaanen FMCG brands aur distributors se maal mangati hain. Kamai commission aur advertising se hoti hai. Model halka hai: apne warehouse nahi, bada field sales force nahi.</p>",
+    "<p>Revenue chhota hai. Retail Pulse Labs ka FY26 turnover kareeb ₹16 crore tha, FY25 mein ₹4.92 crore aur FY24 mein ₹2.7 crore. Meesho ke CEO Vidit Aatrey ne kaha ki Kirana Club ne chhote retailers ke beech bharosa banaya hai. India ka grocery bazaar kareeb $650 billion ka hai, aur usme kirana aur general trade ka hissa kareeb 90% hai, 1.3 crore se zyada dukaanon mein phaila hua.</p>",
+    "<h2>Hisaab: kareeb 12 guna sales, ₹500 per dukaan</h2>",
+    "<p>₹200 crore ko ₹16 crore saalana sales se divide karein to kareeb 12.5 guna aata hai. Gol karke 12 guna sales. Jo business ₹16 crore sales par mushkil se break-even karta hai, uski keemat uski saal bhar ki sales ke 12 saal ke barabar lagayi gayi. Usi ₹200 crore ko 41 lakh dukaanon se divide karein to kareeb ₹500 per dukaan banta hai.</p>",
+    "<p>Dono numbers ek hi baat kehte hain. Kharidaar profit ke liye pay nahi kar raha tha. Wo list ke liye pay kar raha tha: kaun dukaan kya kharidti hai, kis daam par, kis sheher mein, aur kiska mashwara maanti hai. Free app free reh sakti hai jab data aur ad slots value rakhte hain.</p>",
+    "<h2>Aapke counter par iska matlab</h2>",
+    "<p>Do cheezein badal sakti hain, ek nahi. Daam aur scheme behtar ho sakte hain, kyunki Meesho apne suppliers aur logistics laata hai, aur zyada quotes dekhne wali dukaan behtar kharid sakti hai. Doosra badlav rishta hai. Aapki price list ab us company ke paas hai jo aapke grahakon ko bhi bechti hai. Iska matlab app bekaar nahi hai, par use supplier channel samjhein, neutral referee nahi.</p>",
+    "<p>Jo nahi badalta wo aapke counter ka hisaab hai. Maan lijiye aap mahine mein ₹1,00,000 ka maal kharidte hain. 2% behtar kharid par ₹2,000 bachte hain. Wahi ₹2,000 profit se kamane ke liye 8% gross margin par ₹25,000 zyada bechna padega, kyunki ₹25,000 ka 8% ₹2,000 hota hai. Sasta kharidna zyada bechne se aasan hai. Apne top 20 items ke kharid daam likhiye aur har mahine app se milaiye.</p>",
+    "<h2>Is khabar ka kya karein</h2>",
+    "<p>Pehle, ₹202 crore ko apni dukaan ki keemat na samjhein. Dukaan ki keemat uske profit aur stock se hoti hai, customer list se nahi. Doosra, agar aap Kirana Club se order karte hain to dekhein kisse kharid rahe hain aur commission daam mein dikh raha hai ya nahi. Teesra, app ko kai quotes mein se ek maanein, apne distributor aur ek cash-and-carry ke saath. 41 lakh dukaanon ka network isliye kharida gaya ki wo brand aur dukaan ke beech baithta hai. Ek dukaan ki keemat uske per-item margin se banti hai, jo koi app aapke liye nahi kar sakta.</p>"
+   ]
+  },
+  {
    "slug": "vegapay-10-million-credit-line-on-upi-what-shops-get",
    "title": "Credit Line on UPI: What a $10 Mn Round Means for Shops",
    "dek": "Vegapay raised $10 Mn to put bank credit lines on UPI QR codes. Here is the arithmetic of what a single credit-paying customer is worth at a shop counter.",
