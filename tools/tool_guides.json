@@ -424,11 +424,11 @@
    ]
   },
   "clientltv": {
-   "what": "Client lifetime value is the total revenue one client brings you before they leave, and for an agency it is the number that decides how much you can afford to spend winning them. A client paying ₹40,000 a month who stays 18 months is worth ₹7.2 lakh - not ₹40,000. Agencies that price, hire and advertise as if every client is worth one month's fee are permanently cash-starved, because they are spending as though the relationship is a one-off when it is actually a year-and-a-half annuity.",
+   "what": "Client lifetime value is the total revenue one client brings you before they leave, and for an agency it is the number that decides how much you can afford to spend winning them. A client paying ₹40,000 a month who stays 18 months is worth ₹7.2 lakh - not ₹40,000. Agencies that price, hire and advertise as if every client is worth one month's fee are permanently cash-starved, because they are spending as though the relationship is a one-off when it is actually a year-and-a-half annuity.\n\nThe unit here is a signed account, not a basket. One retainer, one relationship manager, one onboarding, and a monthly fee that repeats until the account churns - so the two fields this tool asks for are Monthly Revenue and Average Lifetime in months, and the answer is what the account is worth if it lasts as long as your current clients do. If you sell a product where buyers come back and order again, the basket-based version of this sum fits better; reach for this one when the thing you win is a contract, because a retainer's cost is front-loaded into onboarding and a product order's is not.",
    "formula": "LTV = Monthly Revenue × Average Lifetime in months. ₹40,000 a month for 18 months is ₹7.2 lakh. For a truer figure, use gross margin instead of revenue: at a 60% margin the same client is worth ₹4.32 lakh of actual profit. The ratio that matters is LTV against the cost of acquiring the client - a healthy agency aims for LTV at three times CAC or better.",
    "when": [
     "You are setting a retainer price and want to know what the relationship is actually worth.",
-    "You are deciding how much you can pay for a lead or an outbound campaign.",
+    "An account manager asks for a discount and you need the lifetime fee at risk, not the monthly one.",
     "You are comparing two client types and want to know which is worth more over a year, not a month."
    ],
    "mistakes": [
@@ -948,10 +948,10 @@
    ]
   },
   "ltv": {
-   "what": "Customer Lifetime Value is what one customer is worth to you across the whole relationship, not just the first sale. It takes the average order value, how often a customer buys in a year, how many years they stay, and your gross margin, and turns them into a single rupee figure. If a customer spends ₹1,000 four times a year for three years at a 50% margin, that customer is worth ₹6,000 of profit. LTV is the ceiling on what you can sensibly pay to win them - pay more and every new customer makes you poorer.",
+   "what": "Customer Lifetime Value is what one customer is worth to you across the whole relationship, not just the first sale. It takes the average order value, how often a customer buys in a year, how many years they stay, and your gross margin, and turns them into a single rupee figure. If a customer spends ₹1,000 four times a year for three years at a 50% margin, that customer is worth ₹6,000 of profit. LTV is the ceiling on what you can sensibly pay to win them - pay more and every new customer makes you poorer.\n\nThis is the basket version of the sum, built for repeat orders rather than contracts. Four fields drive it: Average Order Value, Purchases per Year, Customer Lifespan and Gross Margin. Because the basket is small and the repeat rate is high, the arithmetic is sensitive to frequency - moving from four orders a year to five raises the answer by a quarter, while a one-off buyer at the same order value is worth a single basket. If your revenue arrives as a monthly retainer on a signed account, the account-based version is the one to use instead.",
    "formula": "LTV = Average Order Value × Purchases per Year × Customer Lifespan (years) × Gross Margin %. Margin matters: a customer who spends ₹12,000 but leaves you a 10% margin is worth ₹1,200, not ₹12,000. ₹1,000 × 4 × 3 × 50% = ₹6,000. The margin is what turns revenue into the profit that actually repays acquisition.",
    "when": [
-    "You are deciding how much you can afford to spend on ads per customer.",
+    "You are budgeting ad spend per buyer and need the hard ceiling on it.",
     "An investor asks for your unit economics and wants LTV next to CAC.",
     "You are choosing between a high-margin niche and a high-volume one."
    ],

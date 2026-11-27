@@ -63,7 +63,9 @@ HINGLISH = re.compile(
 # furniture, not per-page content, so they are not what this metric tracks.
 CHROME = re.compile(
     r'<div class="cta-inline".*?</div>|'
-    r'<section class="related-tools".*?</section>|'
+    # `related-tools` also carries a second class on the blog-link block
+    # (`related-tools tool-blog`), so match the prefix, not the exact attribute.
+    r'<section class="related-tools[^"]*".*?</section>|'
     r'<section class="tool-sources".*?</section>|'
     r'<nav class="tool-nav".*?</nav>',
     re.S | re.I,

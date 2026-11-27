@@ -315,7 +315,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:51:22Z",
-   "overlap": null,
+   "overlap": 0.103,
    "canonical_ok": true
   },
   {
@@ -327,7 +327,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T04:19:09Z",
-   "overlap": null,
+   "overlap": 0.103,
    "canonical_ok": true
   },
   {
@@ -1167,7 +1167,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T21:35:59Z",
-   "overlap": null,
+   "overlap": 0.103,
    "canonical_ok": true
   },
   {
@@ -1179,7 +1179,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": 0.111,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1227,7 +1227,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T21:27:36Z",
-   "overlap": 0.107,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1251,7 +1251,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T22:52:16Z",
-   "overlap": 0.111,
+   "overlap": null,
    "canonical_ok": true
   },
   {

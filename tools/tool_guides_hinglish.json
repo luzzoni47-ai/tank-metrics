@@ -424,11 +424,11 @@
    ]
   },
   "clientltv": {
-   "what": "Client lifetime value matlab ek client jaane se pehle kul kitna revenue deta hai, aur agency ke liye yahi number tay karta hai ki usse paane ke liye kitna kharch kar sakte ho. ₹40,000 mahina dene wala client jo 18 mahine rukta hai, woh ₹7.2 lakh ka hai - ₹40,000 ka nahi. Jo agencies har client ko ek mahine ki fee jitna maan kar price, hiring aur advertising karti hain, woh hamesha cash-starved rehti hain, kyunki woh rishte ko one-off samajh rahi hain jabki woh dedh saal ki annuity hai.",
+   "what": "Client lifetime value matlab ek client jaane se pehle kul kitna revenue deta hai, aur agency ke liye yahi number tay karta hai ki usse paane ke liye kitna kharch kar sakte ho. ₹40,000 mahina dene wala client jo 18 mahine rukta hai, woh ₹7.2 lakh ka hai - ₹40,000 ka nahi. Jo agencies har client ko ek mahine ki fee jitna maan kar price, hiring aur advertising karti hain, woh hamesha cash-starved rehti hain, kyunki woh rishte ko one-off samajh rahi hain jabki woh dedh saal ki annuity hai.\n\nYahan unit ek signed account hai, basket nahi. Ek retainer, ek relationship manager, ek onboarding, aur ek monthly fee jo account churn hone tak repeat hoti hai - isliye tool do cheezein maangta hai, Monthly Revenue aur Average Lifetime in months, aur jawab batata hai ki account ki value kitni hai agar woh tumhare current clients jitna chale. Agar tum product bechte ho jahan buyer baar baar order karta hai, toh basket wala version better fit hai; isko tab pakdo jab jeetne wali cheez ek contract ho, kyunki retainer ka kharch onboarding me pehle aata hai aur product order ka nahi.",
    "formula": "LTV = Monthly Revenue × Average Lifetime in months. ₹40,000 mahina, 18 mahine = ₹7.2 lakh. Zyada sahi figure ke liye revenue ki jagah gross margin lo: 60% margin par wahi client ₹4.32 lakh ka actual profit hai. Asli ratio LTV aur client paane ki cost ke beech hai - healthy agency LTV ko CAC ka teen guna ya zyada rakhti hai.",
    "when": [
     "Retainer price set kar rahe ho aur rishte ki asli value jaanna chahte ho.",
-    "Ek lead ya outbound campaign ke liye kitna de sakte ho ye decide karna hai.",
+    "Account manager discount maang raha hai aur poore rishte ki fee ka risk dekhna hai, mahine ki nahi.",
     "Do client types compare kar rahe ho aur dekhna hai saal mein kaunsa zyada deta hai, mahine mein nahi."
    ],
    "mistakes": [
@@ -946,10 +946,10 @@
    ]
   },
   "ltv": {
-   "what": "Customer Lifetime Value batati hai ki ek customer poori rishtedaari me aapke liye kitne ka hai, sirf pehli sale ka nahi. Average order value, saal me kitni baar kharidta hai, kitne saal rukta hai, aur gross margin - inhe ek rupee figure me badal deti hai. Customer ₹1,000 ka saal me 4 baar, 3 saal, 50% margin pe - matlab ₹6,000 ka profit. LTV hi wo chhat hai jitna aap customer jeetne me kharch kar sakte ho; isse zyada diya toh har naya customer aapko garib karta hai.",
+   "what": "Customer Lifetime Value batati hai ki ek customer poori rishtedaari me aapke liye kitne ka hai, sirf pehli sale ka nahi. Average order value, saal me kitni baar kharidta hai, kitne saal rukta hai, aur gross margin - inhe ek rupee figure me badal deti hai. Customer ₹1,000 ka saal me 4 baar, 3 saal, 50% margin pe - matlab ₹6,000 ka profit. LTV hi wo chhat hai jitna aap customer jeetne me kharch kar sakte ho; isse zyada diya toh har naya customer aapko garib karta hai.\n\nYe basket wala hisaab hai, repeat orders ke liye bana, contract ke liye nahi. Chaar field isko chalati hain: Average Order Value, Purchases per Year, Customer Lifespan aur Gross Margin. Basket chhota aur repeat rate zyada hone se ganit frequency pe turant hilta hai - saal me chaar order se paanch order karne par jawab chauthai badh jaata hai, jabki same order value wala one-off buyer sirf ek basket ka hai. Agar revenue monthly retainer me signed account se aata hai, toh account wala version use karo.",
    "formula": "LTV = Average Order Value × Saal me Purchases × Customer Lifespan (saal) × Gross Margin %. Margin maayne rakhta hai: ₹12,000 kharch karne wala customer 10% margin pe sirf ₹1,200 ka hai, ₹12,000 ka nahi. ₹1,000 × 4 × 3 × 50% = ₹6,000. Margin hi revenue ko us profit me badalta hai jo acquisition chukata hai.",
    "when": [
-    "Tay kar rahe ho ki per customer kitna ad spend kar sakte ho.",
+    "Per buyer ad spend ka budget bana rahe ho aur uski hard limit chahiye.",
     "Investor unit economics maangta hai aur LTV ko CAC ke saath dekhna hai.",
     "High-margin niche aur high-volume business ke beech chunna hai."
    ],

@@ -142,19 +142,17 @@ def faqs(c: dict) -> list[tuple[str, str]]:
     bench = re.sub(r"\s+", " ", c["bench"] or "").strip()
     q = [
         (f"What does the {name} work out?",
-         f"{d} From {entered}, it returns {outs_txt}."),
+         f"{d} It returns {outs_txt}."),
         (f"What do I need to enter for the {name}?",
-         f"Only {entered}. Type them in and {first_out.lower()} updates as you "
-         f"type — there is nothing else to fill."),
+         f"Just {entered}. The {name} asks for nothing more."),
         (f"How is {first_out.lower()} calculated?",
-         f"{bench} That is the arithmetic the {name} runs on {entered}." if bench
-         else f"The {name} applies its own formula to {entered} each time a "
-              f"value changes."),
+         f"{bench} The {name} runs exactly that arithmetic." if bench
+         else f"The {name} applies its own formula to {entered} on each change."),
         (f"Is anything I type into the {name} saved?",
-         f"No. {entered} are used only in the browser tab and are never sent "
-         f"to a server."),
+         f"No. Values you give the {name} live in this browser tab and are "
+         f"never uploaded."),
         (f"What does the {name} cost?",
-         f"Nothing. The {name} is free to use, with no sign-up and no paywall."),
+         f"The {name} is free — no sign-up, no paywall, no account."),
     ]
     return q
 
@@ -310,7 +308,8 @@ def example_html(c: dict) -> str:
         f'<h2>Worked example</h2>'
         f'<p>{ex["intro"]}</p>'
         f'<div class="worked"><div class="worked-col"><h3>What you enter</h3>'
-        f'<ul>{inputs}</ul></div><div class="worked-col"><h3>What you get</h3>'
+        f'<ul>{inputs}</ul></div><div class="worked-col">'
+        f'<h3>What the {c["name"]} returns</h3>'
         f'<ul>{results}</ul></div></div>'
         f'<p>{ex["outro"]}</p>'
     )
@@ -318,20 +317,21 @@ def example_html(c: dict) -> str:
 
 def guide_html(c: dict) -> str:
     g = guide_for(c)
+    name = c["name"]
     parts = []
     if g.get("what"):
-        parts.append("<h2>What this calculator is for</h2>")
+        parts.append(f"<h2>What the {name} is for</h2>")
         parts.append(f'<p>{g["what"]}</p>')
     if g.get("formula"):
-        parts.append("<h2>How the maths works</h2>")
+        parts.append(f"<h2>How the {name} does the maths</h2>")
         parts.append(f'<p>{g["formula"]}</p>')
     if g.get("when"):
         items = "".join(f"<li>{w}</li>" for w in g["when"])
-        parts.append("<h2>When to reach for it</h2>")
+        parts.append(f"<h2>When to reach for the {name}</h2>")
         parts.append(f"<ul class=\"plain-list\">{items}</ul>")
     if g.get("mistakes"):
         items = "".join(f"<li>{m}</li>" for m in g["mistakes"])
-        parts.append("<h2>Common mistakes</h2>")
+        parts.append(f"<h2>Mistakes the {name} avoids</h2>")
         parts.append(f"<ul class=\"plain-list\">{items}</ul>")
     return "".join(parts)
 
@@ -470,8 +470,8 @@ def page(c: dict, prev: dict, nxt: dict, slugs: dict[str, str],
 <div class="card" style="--accent:{accent}"><div class="card-title"><h2>{c['name']}</h2><button class="clear-btn" id="clearBtn" type="button">Clear</button></div><div class="inputs">{fields}</div><div class="readout" id="out"></div></div>
 <div class="tool-meta">{LANG_TOGGLE}</div>
 <div class="post-lang" data-lang="en">
-<h2>How this calculator works</h2>
-<p>{c['desc']} Enter {how_inputs(c)} above and the {c['name']} result appears instantly — nothing is stored or sent anywhere.</p>
+<h2>How the {c['name']} works</h2>
+<p>{c['desc']} Enter {how_inputs(c)} above. Nothing you type for the {c['name']} is sent anywhere.</p>
 {f'<p><strong>Good to know:</strong> {c["bench"]}</p>' if c['bench'] else ''}
 {example_html(c)}
 {guide_html(c)}

@@ -36,17 +36,6 @@ GUIDES = json.loads((ROOT / "tools" / "tool_guides.json").read_text(encoding="ut
 # to render under the Hinglish tab. guides["hi"] holds the twin guide text.
 HI_GUIDES = json.loads((ROOT / "tools" / "tool_guides_hinglish.json").read_text(encoding="utf-8"))
 
-HI_JOIN = " aur "
-
-
-def _input_labels(c: dict, join: str = ", ") -> str:
-    labels = [i["l"] for i in c["inputs"]]
-    if not labels:
-        return "the fields"
-    if len(labels) == 1:
-        return labels[0]
-    return join.join(labels[:-1]) + join + labels[-1]
-
 
 def _lead_sentence(text: str) -> str:
     """First sentence of a formula, trimmed — the specific hook for this tool."""
@@ -60,11 +49,7 @@ def intro_for(c: dict, guides: dict) -> str:
     g = guides["calcs"].get(c["id"], {})
     if g.get("intro"):
         return g["intro"]
-    return (
-        f"{c['name']}, worked end to end. The calculator takes "
-        f"{_input_labels(c)}; the example below runs one realistic set of those "
-        f"numbers through it."
-    )
+    return f"A realistic {c['name']} example, filled in below."
 
 
 def outro_for(c: dict, guides: dict) -> str:
@@ -73,24 +58,15 @@ def outro_for(c: dict, guides: dict) -> str:
         return g["outro"]
     lead = _lead_sentence(g.get("formula"))
     if lead:
-        return (
-            f"{c['name']} settles it with {lead}. Change any field above and the "
-            f"answer updates with it."
-        )
-    return (
-        f"{c['name']} recomputes as you type. Change any field above and the "
-        f"answer updates with it."
-    )
+        return f"{c['name']} settles it with {lead}. Edit any input above."
+    return f"{c['name']} recomputes as you type. Edit any input above."
 
 
 def hi_intro_for(c: dict) -> str:
     hg = HI_GUIDES["calcs"].get(c["id"], {})
     if hg.get("hi_intro"):
         return hg["hi_intro"]
-    return (
-        f"{c['name']} ka poora hisaab. Tool leta hai {_input_labels(c, HI_JOIN)}; "
-        f"neeche ek realistic set of numbers ke saath wahi ganit dikhaya gaya hai."
-    )
+    return f"Ek realistic {c['name']} example, neeche bhara hua."
 
 
 def hi_outro_for(c: dict) -> str:
@@ -99,14 +75,8 @@ def hi_outro_for(c: dict) -> str:
         return hg["hi_outro"]
     lead = _lead_sentence(hg.get("formula"))
     if lead:
-        return (
-            f"{c['name']} ka formula: {lead}. Koi bhi field badlo aur jawab turant "
-            f"badal jaata hai."
-        )
-    return (
-        f"{c['name']} type karte hi update ho jaata hai. Koi bhi field badlo aur "
-        f"jawab turant badal jaata hai."
-    )
+        return f"{c['name']} ka formula: {lead}. Koi bhi field badlo."
+    return f"{c['name']} type karte hi update ho jaata hai. Koi bhi field badlo."
 
 
 def main() -> None:

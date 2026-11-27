@@ -3,115 +3,43 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.111,
-   "a": "/rashi-moon-sign-calculator",
-   "b": "/zodiac-sign-calculator"
-  },
-  {
-   "overlap": 0.105,
+   "overlap": 0.077,
    "a": "/home-loan-emi-calculator",
    "b": "/loan-emi-calculator"
   },
   {
-   "overlap": 0.104,
-   "a": "/break-even-point",
-   "b": "/gross-profit-and-margin"
-  },
-  {
-   "overlap": 0.103,
-   "a": "/arpu-mrr-and-arr",
-   "b": "/churn-rate"
-  },
-  {
-   "overlap": 0.103,
-   "a": "/burn-rate-and-runway",
-   "b": "/churn-rate"
-  },
-  {
-   "overlap": 0.103,
-   "a": "/age-calculator",
-   "b": "/rashi-moon-sign-calculator"
-  },
-  {
-   "overlap": 0.103,
-   "a": "/implied-valuation",
-   "b": "/pre-money-and-post-money-valuation"
-  },
-  {
-   "overlap": 0.103,
-   "a": "/import-duty-and-customs-calculator",
-   "b": "/landed-cost-calculator"
-  },
-  {
-   "overlap": 0.103,
+   "overlap": 0.071,
    "a": "/client-lifetime-value-ltv",
    "b": "/customer-lifetime-value-ltv"
   },
   {
-   "overlap": 0.102,
-   "a": "/gross-profit-and-margin",
-   "b": "/percentage-calculator"
+   "overlap": 0.071,
+   "a": "/compound-interest",
+   "b": "/simple-interest"
   },
   {
-   "overlap": 0.102,
-   "a": "/burn-rate-and-runway",
-   "b": "/run-rate"
-  },
-  {
-   "overlap": 0.102,
-   "a": "/client-acquisition-cost-cac",
-   "b": "/customer-acquisition-cost-cac"
+   "overlap": 0.067,
+   "a": "/return-on-ad-spend-roas",
+   "b": "/return-on-capital-employed"
   }
  ],
  "worst_pages": [
   {
-   "page": "/rashi-moon-sign-calculator",
-   "closest_overlap": 0.111
-  },
-  {
-   "page": "/zodiac-sign-calculator",
-   "closest_overlap": 0.111
-  },
-  {
    "page": "/home-loan-emi-calculator",
-   "closest_overlap": 0.105
+   "closest_overlap": 0.077
   },
   {
    "page": "/loan-emi-calculator",
-   "closest_overlap": 0.105
+   "closest_overlap": 0.077
   },
   {
-   "page": "/break-even-point",
-   "closest_overlap": 0.104
+   "page": "/client-lifetime-value-ltv",
+   "closest_overlap": 0.071
   },
   {
-   "page": "/gross-profit-and-margin",
-   "closest_overlap": 0.104
-  },
-  {
-   "page": "/arpu-mrr-and-arr",
-   "closest_overlap": 0.103
-  },
-  {
-   "page": "/churn-rate",
-   "closest_overlap": 0.103
-  },
-  {
-   "page": "/burn-rate-and-runway",
-   "closest_overlap": 0.103
-  },
-  {
-   "page": "/age-calculator",
-   "closest_overlap": 0.103
-  },
-  {
-   "page": "/implied-valuation",
-   "closest_overlap": 0.103
-  },
-  {
-   "page": "/pre-money-and-post-money-valuation",
-   "closest_overlap": 0.103
+   "page": "/customer-lifetime-value-ltv",
+   "closest_overlap": 0.071
   }
  ],
- "median_overlap": 0.093
+ "median_overlap": 0.055
 }
