@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-27T01:33:06Z",
+ "generated": "2026-11-27T03:33:16Z",
  "seed_count": 149,
- "suggestion_count": 1049,
+ "suggestion_count": 1048,
  "keywords": [
   {
    "query": "fd calculator sbi",
@@ -19,15 +19,6 @@
    "score": 22.08,
    "from": [
     "income tax calculator"
-   ]
-  },
-  {
-   "query": "reverse price calculator",
-   "demand": 12,
-   "covered": false,
-   "score": 22.08,
-   "from": [
-    "mrp reverse calculator"
    ]
   },
   {
@@ -73,15 +64,6 @@
    "score": 18.4,
    "from": [
     "freelancer hourly rate"
-   ]
-  },
-  {
-   "query": "marketplace price calculator",
-   "demand": 10,
-   "covered": false,
-   "score": 18.4,
-   "from": [
-    "marketplace fee calculator"
    ]
   },
   {
@@ -445,15 +427,6 @@
    ]
   },
   {
-   "query": "market price calculator",
-   "demand": 7,
-   "covered": false,
-   "score": 12.88,
-   "from": [
-    "marketplace fee calculator"
-   ]
-  },
-  {
    "query": "marketplace fees roblox",
    "demand": 7,
    "covered": false,
@@ -619,15 +592,6 @@
    "score": 11.04,
    "from": [
     "income tax calculator"
-   ]
-  },
-  {
-   "query": "market price calculator car",
-   "demand": 6,
-   "covered": false,
-   "score": 11.04,
-   "from": [
-    "marketplace fee calculator"
    ]
   },
   {
@@ -1322,6 +1286,15 @@
    "score": 8.97,
    "from": [
     "ltv cac ratio"
+   ]
+  },
+  {
+   "query": "lucky number calculator",
+   "demand": 13,
+   "covered": true,
+   "score": 8.97,
+   "from": [
+    "lucky number calculator"
    ]
   },
   {
@@ -2046,15 +2019,6 @@
    ]
   },
   {
-   "query": "lucky number calculator in tamil",
-   "demand": 12,
-   "covered": true,
-   "score": 8.28,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "market share calculator online",
    "demand": 12,
    "covered": true,
@@ -2214,6 +2178,15 @@
    "score": 8.28,
    "from": [
     "revenue per employee"
+   ]
+  },
+  {
+   "query": "reverse price calculator",
+   "demand": 12,
+   "covered": true,
+   "score": 8.28,
+   "from": [
+    "mrp reverse calculator"
    ]
   },
   {
@@ -2694,7 +2667,7 @@
    ]
   },
   {
-   "query": "lucky number calculator numerology",
+   "query": "lucky number calculator in tamil",
    "demand": 11,
    "covered": true,
    "score": 7.59,
@@ -3128,15 +3101,6 @@
    ]
   },
   {
-   "query": "lucky number calculator by date of birth",
-   "demand": 13,
-   "covered": true,
-   "score": 7.02,
-   "from": [
-    "lucky number calculator"
-   ]
-  },
-  {
    "query": "pre money and post money valuation",
    "demand": 13,
    "covered": true,
@@ -3481,12 +3445,21 @@
    ]
   },
   {
-   "query": "lucky number calculator by name",
+   "query": "lucky number calculator numerology",
    "demand": 10,
    "covered": true,
    "score": 6.9,
    "from": [
     "lucky number calculator"
+   ]
+  },
+  {
+   "query": "marketplace price calculator",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "marketplace fee calculator"
    ]
   },
   {
@@ -3622,6 +3595,33 @@
    "score": 6.9,
    "from": [
     "royalty deal"
+   ]
+  },
+  {
+   "query": "run rate meaning",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "run rate"
+   ]
+  },
+  {
+   "query": "salary take home",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "salary take home"
+   ]
+  },
+  {
+   "query": "share market calculator sip",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "market share calculator"
    ]
   }
  ]

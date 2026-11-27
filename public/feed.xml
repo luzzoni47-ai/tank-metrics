@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 27 Nov 2026 01:36:54 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 03:37:21 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Meesho Now Owns 93% of the Kirana Price App</title>
@@ -14,6 +14,14 @@
     <pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>Meesho paid ₹186.71 crore for Kirana Club and took its stake to 93%. Here is the maths of a 41-lakh-shop network, and what it means at your own counter.</description>
+  </item>
+  <item>
+    <title>How Much Working Capital Your Shop Needs</title>
+    <link>https://tankmetrics.in/working-capital-explained</link>
+    <guid isPermaLink="true">https://tankmetrics.in/working-capital-explained</guid>
+    <pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Working capital is the money a shop keeps in motion. See how to work out how much your own shop needs, and how big a credit limit to arrange for it safely.</description>
   </item>
   <item>
     <title>Credit Line on UPI: What a $10 Mn Round Means for Shops</title>
@@ -238,14 +246,6 @@
     <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
     <category>Guide</category>
     <description>CTC vs in-hand salary explained for Indian founders: what the employer really pays, what is deducted from gross pay, and what lands in the bank each month.</description>
-  </item>
-  <item>
-    <title>Startup Funding Up 69%: Five Deals Took 83%</title>
-    <link>https://tankmetrics.in/news/india-startup-funding-rebound-november-2026-five-rounds-83-percent</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/india-startup-funding-rebound-november-2026-five-rounds-83-percent</guid>
-    <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Funding</category>
-    <description>Indian startups raised $290.55 million in the week to November 7, 2026, up 69% on the week. But five rounds took 83% of it. Here is what that maths means.</description>
   </item>
 </channel>
 </rss>

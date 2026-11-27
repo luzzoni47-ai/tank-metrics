@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-working-capital-explained": [
+        ("/working-capital", "Working Capital",
+         "put your own stock, customer dues and supplier bills into the number this post sizes"),
+        ("/cash-conversion-cycle", "Cash Conversion Cycle",
+         "see the days your money stays tied up, which is what sets the working capital you need"),
+    ],
     "blog-dark-store-franchise-roi-explained": [
         ("/franchise-store-roi", "Franchise / Store ROI",
          "put the opening cost and the monthly profit into the payback this post works out"),
