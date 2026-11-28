@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-27T03:33:16Z",
+ "generated": "2026-11-28T01:32:52Z",
  "seed_count": 149,
- "suggestion_count": 1048,
+ "suggestion_count": 1049,
  "keywords": [
   {
    "query": "fd calculator sbi",
@@ -1271,7 +1271,7 @@
    ]
   },
   {
-   "query": "love calculator",
+   "query": "love calculator name",
    "demand": 13,
    "covered": true,
    "score": 8.97,
@@ -2001,7 +2001,7 @@
    ]
   },
   {
-   "query": "love calculator name",
+   "query": "love calculator",
    "demand": 12,
    "covered": true,
    "score": 8.28,
@@ -2322,15 +2322,6 @@
    "score": 8.28,
    "from": [
     "working capital loan"
-   ]
-  },
-  {
-   "query": "age calculator by year",
-   "demand": 11,
-   "covered": true,
-   "score": 7.59,
-   "from": [
-    "age calculator"
    ]
   },
   {
@@ -3116,6 +3107,15 @@
    "score": 7.02,
    "from": [
     "runway"
+   ]
+  },
+  {
+   "query": "age calculator app",
+   "demand": 10,
+   "covered": true,
+   "score": 6.9,
+   "from": [
+    "age calculator"
    ]
   },
   {

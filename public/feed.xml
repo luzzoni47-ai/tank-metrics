@@ -5,8 +5,16 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Fri, 27 Nov 2026 05:36:55 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 01:35:56 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google Buys 1.43% of Rigi at a ₹670 Crore Value</title>
+    <link>https://tankmetrics.in/news/google-10-crore-rigi-stake-670-crore-valuation</link>
+    <guid isPermaLink="true">https://tankmetrics.in/news/google-10-crore-rigi-stake-670-crore-valuation</guid>
+    <pubDate>Sat, 28 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Startups</category>
+    <description>Google put ₹10 crore into Bengaluru&#x27;s Rigi for a 1.43% stake, pricing the startup near ₹670 crore. The maths behind a valuation, and what it means for owners.</description>
+  </item>
   <item>
     <title>Meesho Now Owns 93% of the Kirana Price App</title>
     <link>https://tankmetrics.in/news/meesho-kirana-club-93-percent-stake-shop-owner-maths</link>
@@ -238,14 +246,6 @@
     <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
     <category>Tax Rules</category>
     <description>From January 1, 2027, firms above ₹5 crore turnover must raise an e-invoice for reverse-charge self-invoices and imported services. Here is the maths.</description>
-  </item>
-  <item>
-    <title>CTC vs In-Hand Salary: What You Really Get</title>
-    <link>https://tankmetrics.in/ctc-vs-in-hand-salary</link>
-    <guid isPermaLink="true">https://tankmetrics.in/ctc-vs-in-hand-salary</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Guide</category>
-    <description>CTC vs in-hand salary explained for Indian founders: what the employer really pays, what is deducted from gross pay, and what lands in the bank each month.</description>
   </item>
 </channel>
 </rss>
