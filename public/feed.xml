@@ -5,7 +5,7 @@
   <link>https://tankmetrics.in/</link>
   <description>Shark Tank India deals, startup valuation and the money maths behind Indian businesses, explained in plain English and Hinglish.</description>
   <language>en-in</language>
-  <lastBuildDate>Sat, 28 Nov 2026 01:35:56 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 03:37:32 +0000</lastBuildDate>
   <atom:link href="https://tankmetrics.in/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Google Buys 1.43% of Rigi at a ₹670 Crore Value</title>
@@ -14,6 +14,14 @@
     <pubDate>Sat, 28 Nov 2026 00:00:00 +0000</pubDate>
     <category>Startups</category>
     <description>Google put ₹10 crore into Bengaluru&#x27;s Rigi for a 1.43% stake, pricing the startup near ₹670 crore. The maths behind a valuation, and what it means for owners.</description>
+  </item>
+  <item>
+    <title>Old vs New Tax Regime: Which Costs You Less?</title>
+    <link>https://tankmetrics.in/old-vs-new-tax-regime</link>
+    <guid isPermaLink="true">https://tankmetrics.in/old-vs-new-tax-regime</guid>
+    <pubDate>Sat, 28 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Compare India&#x27;s old and new tax regimes with three worked examples. See the slabs, the deductions you lose, and where the choice flips for a shop or startup.</description>
   </item>
   <item>
     <title>Meesho Now Owns 93% of the Kirana Price App</title>
@@ -238,14 +246,6 @@
     <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
     <category>Small Business</category>
     <description>India&#x27;s retail inflation hit 6.09% in October, past the RBI&#x27;s 6% limit, as food prices jumped 8.94%. Here is exactly what that does to a small shop&#x27;s margin.</description>
-  </item>
-  <item>
-    <title>GST E-Invoicing Widens to Reverse-Charge Bills in 2027</title>
-    <link>https://tankmetrics.in/news/gst-e-invoicing-reverse-charge-self-invoice-january-2027</link>
-    <guid isPermaLink="true">https://tankmetrics.in/news/gst-e-invoicing-reverse-charge-self-invoice-january-2027</guid>
-    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Tax Rules</category>
-    <description>From January 1, 2027, firms above ₹5 crore turnover must raise an e-invoice for reverse-charge self-invoices and imported services. Here is the maths.</description>
   </item>
 </channel>
 </rss>

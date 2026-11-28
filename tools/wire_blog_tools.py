@@ -32,6 +32,12 @@ MARKER = "<!-- blog-tools -->"
 
 # post slug -> [(clean url, tool name, why it is relevant)]
 MAP: dict[str, list[tuple[str, str, str]]] = {
+    "blog-old-vs-new-tax-regime": [
+        ("/income-tax-calculator-old-vs-new-regime", "Income Tax Calculator (Old vs New Regime)",
+         "run your own income through both sets of slabs and see which regime charges less"),
+        ("/salary-take-home-estimator", "Salary Take-Home Estimator",
+         "turn a CTC into the taxable salary the regime comparison actually starts from"),
+    ],
     "blog-working-capital-explained": [
         ("/working-capital", "Working Capital",
          "put your own stock, customer dues and supplier bills into the number this post sizes"),
