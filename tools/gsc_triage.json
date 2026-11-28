@@ -111,7 +111,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T17:19:27Z",
-   "overlap": null,
+   "overlap": 0.071,
    "canonical_ok": true
   },
   {
@@ -123,7 +123,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-21T11:48:35Z",
-   "overlap": null,
+   "overlap": 0.071,
    "canonical_ok": true
   },
   {
@@ -135,7 +135,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-21T14:10:53Z",
-   "overlap": 0.105,
+   "overlap": 0.077,
    "canonical_ok": true
   },
   {
@@ -219,7 +219,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:40:34Z",
-   "overlap": 0.104,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -303,7 +303,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:49:19Z",
-   "overlap": null,
+   "overlap": 0.067,
    "canonical_ok": true
   },
   {
@@ -315,7 +315,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:51:22Z",
-   "overlap": 0.103,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -327,7 +327,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T04:19:09Z",
-   "overlap": 0.103,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -447,7 +447,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-27T18:50:10Z",
-   "overlap": null,
+   "overlap": 0.071,
    "canonical_ok": true
   },
   {
@@ -507,7 +507,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T17:33:07Z",
-   "overlap": null,
+   "overlap": 0.067,
    "canonical_ok": true
   },
   {
@@ -531,7 +531,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T11:18:39Z",
-   "overlap": 0.103,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -579,7 +579,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T05:06:42Z",
-   "overlap": 0.103,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -591,7 +591,7 @@
    "cause": "Google has never seen this URL - it is new, or nothing indexed links to it.",
    "action": "Add 2-3 internal links from already-indexed pages, re-submit the sitemap, and Request Indexing for it in the GSC UI.",
    "last_crawl": null,
-   "overlap": 0.104,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -867,7 +867,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": null,
+   "overlap": 0.071,
    "canonical_ok": true
   },
   {
@@ -915,7 +915,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": 0.103,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -939,7 +939,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T12:55:42Z",
-   "overlap": 0.105,
+   "overlap": 0.077,
    "canonical_ok": true
   },
   {
@@ -1071,7 +1071,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T05:18:46Z",
-   "overlap": null,
+   "overlap": 0.067,
    "canonical_ok": true
   },
   {
@@ -1143,7 +1143,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-25T05:02:00Z",
-   "overlap": null,
+   "overlap": 0.067,
    "canonical_ok": true
   },
   {
@@ -1167,7 +1167,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T21:35:59Z",
-   "overlap": 0.103,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1179,7 +1179,7 @@
    "cause": "Google knows the URL but has not crawled it - crawl budget is going to the near-duplicate cluster instead.",
    "action": "Give the page unique per-tool copy, link it from indexed pages, then re-submit the sitemap.",
    "last_crawl": null,
-   "overlap": null,
+   "overlap": 0.067,
    "canonical_ok": true
   },
   {
@@ -1203,7 +1203,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T23:47:03Z",
-   "overlap": 0.111,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1215,7 +1215,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T20:50:35Z",
-   "overlap": 0.111,
+   "overlap": null,
    "canonical_ok": true
   },
   {
@@ -1251,7 +1251,7 @@
    "cause": "Indexed.",
    "action": null,
    "last_crawl": "2026-10-24T22:52:16Z",
-   "overlap": null,
+   "overlap": 0.067,
    "canonical_ok": true
   },
   {

@@ -27,7 +27,10 @@ OVERRIDES: dict[str, dict[str, str]] = {
     # Round, easy-to-follow numbers. The point of an example is that a reader
     # can check the arithmetic in their head, so avoid anything that needs a
     # calculator to follow.
-    "emi": {"p": "3000000", "r": "8", "m": "240"},
+    # The generic loan page demonstrates a car loan; the home loan page below
+    # demonstrates a mortgage. Identical example rows on both made the two pages
+    # read as the same calculator.
+    "emi": {"p": "800000", "r": "9", "m": "60"},
     "homeemi": {"loan": "3000000", "rate": "8", "years": "20"},
     "compint": {"p": "100000", "r": "10", "t": "5", "n": "1"},
     "simpleint": {"p": "100000", "r": "10", "t": "5"},

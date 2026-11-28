@@ -3,11 +3,6 @@
  "pages_with_a_near_duplicate": 0,
  "worst_pairs": [
   {
-   "overlap": 0.077,
-   "a": "/home-loan-emi-calculator",
-   "b": "/loan-emi-calculator"
-  },
-  {
    "overlap": 0.071,
    "a": "/client-lifetime-value-ltv",
    "b": "/customer-lifetime-value-ltv"
@@ -61,17 +56,14 @@
    "overlap": 0.06,
    "a": "/client-acquisition-cost-cac",
    "b": "/customer-acquisition-cost-cac"
+  },
+  {
+   "overlap": 0.06,
+   "a": "/cac-payback-period",
+   "b": "/franchise-store-roi"
   }
  ],
  "worst_pages": [
-  {
-   "page": "/home-loan-emi-calculator",
-   "closest_overlap": 0.077
-  },
-  {
-   "page": "/loan-emi-calculator",
-   "closest_overlap": 0.077
-  },
   {
    "page": "/client-lifetime-value-ltv",
    "closest_overlap": 0.071
@@ -111,6 +103,14 @@
   {
    "page": "/sip-calculator",
    "closest_overlap": 0.067
+  },
+  {
+   "page": "/return-on-investment-roi",
+   "closest_overlap": 0.067
+  },
+  {
+   "page": "/rashi-moon-sign-calculator",
+   "closest_overlap": 0.065
   }
  ],
  "median_overlap": 0.055

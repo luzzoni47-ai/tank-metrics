@@ -60,28 +60,28 @@
   },
   "emi": {
     "inputs": {
-      "Loan Amount": "3000000 ₹",
-      "Interest Rate": "8 % per year",
-      "Loan Tenure": "240 months"
+      "Loan Amount": "800000 ₹",
+      "Interest Rate": "9 % per year",
+      "Loan Tenure": "60 months"
     },
     "rows": [
       {
         "l": "Monthly EMI",
-        "v": "₹25,093.20"
+        "v": "₹16,606.68"
       },
       {
         "l": "Total Amount Paid",
-        "v": "₹60,22,368.50"
+        "v": "₹9,96,401.05"
       },
       {
         "l": "Total Interest",
-        "v": "₹30,22,368.50"
+        "v": "₹1,96,401.05"
       }
     ],
-    "intro": "A ₹10,00,000 loan at 8% for five years — a typical car or personal loan, not a mortgage. Here is the instalment the lender will quote.",
-    "outro": "The EMI is ₹20,276 and the interest over the five years is ₹2,16,584 — about a fifth of the loan. Push the same loan out to twenty years and the EMI halves to ₹8,364, but the interest crosses ₹10,00,000. That gap is why the term is entered in months and the total is watched, not just the instalment.",
-    "hi_intro": "Ek realistic Loan EMI Calculator example, neeche bhara hua.",
-    "hi_outro": "Loan EMI Calculator ka formula: EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P Loan Amount hai, r monthly rate (Interest Rate ÷ 12 ÷ 100) aur n Loan Tenure mahine mein. Koi bhi field badlo."
+    "intro": "An ₹8,00,000 car loan at 9% over sixty months — the sort of quote a dealership prints on a single page and asks you to sign.",
+    "outro": "Sixty instalments of ₹16,607 add up to ₹9,96,401, of which ₹1,96,401 is interest. Stretch the same loan to eighty-four months and the EMI falls to ₹12,871 while the interest climbs to ₹2,81,186.",
+    "hi_intro": "₹8,00,000 ki car loan, 9% par saath mahine — dealership aisa hi ek page ka quote print karke sign karwata hai.",
+    "hi_outro": "₹16,607 ki saath instalments milakar ₹9,96,401 bante hain, jisme ₹1,96,401 byaaj hai. Wahi loan chaurasi mahine kar do to EMI ₹12,871 ho jaati hai aur byaaj ₹2,81,186 tak chadhta hai."
   },
   "savegoal": {
     "inputs": {
@@ -1339,10 +1339,10 @@
         "v": "₹60,22,368.50"
       }
     ],
-    "intro": "A realistic Home Loan EMI Calculator example, filled in below.",
-    "outro": "Home Loan EMI Calculator settles it with EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P is the Loan Amount, r the monthly rate (Annual Interest Rate ÷ 12 ÷ 100) and n the term in months (Loan Tenure in years × 12). Edit any input above.",
-    "hi_intro": "Ek realistic Home Loan EMI Calculator example, neeche bhara hua.",
-    "hi_outro": "Home Loan EMI Calculator ka formula: EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), jahan P Loan Amount hai, r monthly rate (Annual Interest Rate ÷ 12 ÷ 100) aur n term mahine mein (Loan Tenure saal × 12). Koi bhi field badlo."
+    "intro": "A ₹30,00,000 flat at 8% over twenty years — the loan a first home outside a metro usually needs.",
+    "outro": "Twenty years at 8% gives an EMI of ₹25,093 and a Total Repayment of ₹60,22,368, close to double the amount borrowed. Shorten it to fifteen years and the EMI rises to ₹28,670 while the total falls to ₹51,60,521.",
+    "hi_intro": "₹30,00,000 ka flat, 8% par bees saal — metro ke bahar pehle ghar ke liye aisa hi loan chahiye hota hai.",
+    "hi_outro": "Bees saal 8% par EMI ₹25,093 aur Total Repayment ₹60,22,368 deta hai, matlab borrowed amount ka lagbhag dugna. Pandrah saal kar do to EMI ₹28,670 ho jaati hai aur total ₹51,60,521 par aa jaata hai."
   },
   "rentalyield": {
     "inputs": {
